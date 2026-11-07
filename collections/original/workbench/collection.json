@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "id": "workbench",
+  "title": "Workbench",
+  "kind": "original",
+  "renderer": "dom",
+  "summary": "The workbench in its own workbench. Dark monochrome chrome, precise containers and independent collection palettes.",
+  "tokens": "../../../packages/workbench/skins/workbench.tokens.json",
+  "themes": [
+    "workbench"
+  ],
+  "source": {
+    "repository": "https://github.com/rsteth/design-system",
+    "revision": "a2b8d727b85cb1824a8615c48057ab6c8b742289",
+    "path": "packages/workbench"
+  },
+  "provenance": {
+    "status": "author-owned",
+    "sources": []
+  },
+  "license": {
+    "spdx": "UNLICENSED",
+    "note": "Author-owned workbench. No new redistribution license selected. Dark monochrome shell is separate from application appearance."
+  },
+  "fixtures": [
+    {
+      "id": "live-controls",
+      "title": "Live controls and token inspector",
+      "section": "components",
+      "url": "./fixtures/index.html?view=components"
+    },
+    {
+      "id": "empty-loaded",
+      "title": "Empty and loaded collection states",
+      "section": "patterns",
+      "url": "./fixtures/index.html?view=patterns"
+    },
+    {
+      "id": "live-studio",
+      "title": "Live studio, applications only",
+      "section": "screens",
+      "url": "./fixtures/index.html?view=studio"
+    }
+  ],
+  "verification": {
+    "status": "local-unpublished",
+    "note": "Self previews use the real engine. Components/patterns contain no child fixtures; the studio preview excludes the Workbench collection to prevent recursion."
+  }
+}

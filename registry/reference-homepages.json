@@ -1,0 +1,1174 @@
+{
+  "schemaVersion": 1,
+  "sourceRevision": "fcc70284932276d085f01ef9f83edde90b1258cb",
+  "entries": {
+    "reference-1win": {
+      "status": "unverified",
+      "label": "Original homepage not verified",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://www.1wingroup.com/",
+          "title": "Claim your 1win Token — the drop",
+          "note": "Search result identified a holding-company candidate, not a verified public read of the casino design source."
+        }
+      ],
+      "notes": "Search returned multiple regional sites, mirrors and a holding-company candidate. Identity of the exact homepage represented by this casino/sportsbook analysis remains uncertain. No canonical URL asserted."
+    },
+    "reference-airbnb": {
+      "status": "verified",
+      "url": "https://www.airbnb.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://www.airbnb.com/",
+          "title": "Airbnb: Holiday Rentals, Cabins, Beach Houses, Unique Homes & Experiences",
+          "note": "Public homepage read requested https://www.airbnb.com; final URL https://www.airbnb.com/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    },
+    "reference-airtable": {
+      "status": "verified",
+      "url": "https://www.airtable.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://www.airtable.com/",
+          "title": "Airtable: Build Enterprise-ready AI Workflows, Apps & Agents | Airtable",
+          "note": "Public homepage read requested https://www.airtable.com; final URL https://www.airtable.com/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    },
+    "reference-aljazeera": {
+      "status": "verified",
+      "url": "https://www.aljazeera.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://www.aljazeera.com/",
+          "title": "Breaking News, World News and Video from Al Jazeera",
+          "note": "Public homepage read requested https://www.aljazeera.com; final URL https://www.aljazeera.com/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    },
+    "reference-apple": {
+      "status": "verified",
+      "url": "https://www.apple.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://www.apple.com/",
+          "title": "Apple",
+          "note": "Public homepage read requested https://www.apple.com; final URL https://www.apple.com/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    },
+    "reference-binance": {
+      "status": "verified",
+      "url": "https://www.binance.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://www.binance.com/en",
+          "title": "Binance Crypto Exchange: Buy, Sell Bitcoin, Ethereum, Stocks & More",
+          "note": "Public homepage read requested https://www.binance.com; final URL https://www.binance.com/en. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    },
+    "reference-bmw": {
+      "status": "verified",
+      "url": "https://www.bmw.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://www.bmw.it/it/home.html",
+          "title": "Il Sito ufficiale di BMW",
+          "note": "Public homepage read requested https://www.bmw.com; final URL https://www.bmw.it/it/home.html. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    },
+    "reference-bmw-m": {
+      "status": "verified",
+      "url": "https://www.bmw-m.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://www.bmw-m.com/en/index.html",
+          "title": "BMW M: Home of high performance cars",
+          "note": "Public homepage read requested https://www.bmw-m.com; final URL https://www.bmw-m.com/en/index.html. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    },
+    "reference-bugatti": {
+      "status": "blocked",
+      "url": "https://www.bugatti.com/",
+      "label": "Candidate homepage (read blocked)",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://www.bugatti.com/",
+          "note": "Failed to fetch https://www.bugatti.com/: (403) Forbidden"
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Public text read did not establish homepage content. Candidate is not verified; no access controls were bypassed."
+    },
+    "reference-cal": {
+      "status": "verified",
+      "url": "https://cal.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://cal.com/",
+          "title": "Cal.com | Scheduling Software for Online Bookings",
+          "note": "Public homepage read requested https://cal.com; final URL https://cal.com/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    },
+    "reference-claude": {
+      "status": "verified",
+      "url": "https://claude.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://claude.com/",
+          "title": "claude.com",
+          "note": "Public homepage read requested https://claude.com; final URL https://claude.com/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity. claude.ai redirected to /login; claude.com was discovered through its contact link and search and read as the marketing homepage."
+    },
+    "reference-clay": {
+      "status": "verified",
+      "url": "https://www.clay.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://www.clay.com/",
+          "title": "Clay | Build systems to grow revenue",
+          "note": "Public homepage read requested https://www.clay.com; final URL https://www.clay.com/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    },
+    "reference-clickhouse": {
+      "status": "verified",
+      "url": "https://clickhouse.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://clickhouse.com/",
+          "title": "Fast Open-Source OLAP DBMS | ClickHouse",
+          "note": "Public homepage read requested https://clickhouse.com; final URL https://clickhouse.com/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    },
+    "reference-cohere": {
+      "status": "verified",
+      "url": "https://cohere.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://cohere.com/",
+          "title": "Enterprise AI: Private, Secure, Customizable | Cohere",
+          "note": "Public homepage read requested https://cohere.com; final URL https://cohere.com/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    },
+    "reference-coinbase": {
+      "status": "verified",
+      "url": "https://www.coinbase.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://www.coinbase.com/",
+          "title": "Coinbase - Buy and Sell Bitcoin, Ethereum, and more with trust",
+          "note": "Public homepage read requested https://www.coinbase.com; final URL https://www.coinbase.com/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    },
+    "reference-composio": {
+      "status": "verified",
+      "url": "https://composio.dev/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://composio.dev/",
+          "title": "Composio",
+          "note": "Public homepage read requested https://composio.dev; final URL https://composio.dev/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    },
+    "reference-cursor": {
+      "status": "verified",
+      "url": "https://cursor.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://cursor.com/",
+          "title": "AI Coding Agent for Building Ambitious Software | Cursor",
+          "note": "Public homepage read requested https://cursor.com; final URL https://cursor.com/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    },
+    "reference-dell-1996": {
+      "status": "missing",
+      "label": "Historical homepage not verified",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://www.dell.com/en-us",
+          "title": "Computers, Monitors & Technology Solutions | Dell USA",
+          "note": "Read current corporate homepage; requested https://www.dell.com; final URL https://www.dell.com/en-us. This is not evidence of the 1996 design."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. No dated archive URL was supplied by the imported analysis. Historical source remains missing; current corporate website is contextual evidence only."
+    },
+    "reference-dji": {
+      "status": "verified",
+      "url": "https://www.dji.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://www.dji.com/",
+          "title": "DJI - Official Website",
+          "note": "Public homepage read requested https://www.dji.com; final URL https://www.dji.com/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    },
+    "reference-elevenlabs": {
+      "status": "verified",
+      "url": "https://elevenlabs.io/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://elevenlabs.io/",
+          "title": "Free AI Voice Generator & Voice Agents Platform | ElevenLabs",
+          "note": "Public homepage read requested https://elevenlabs.io; final URL https://elevenlabs.io/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    },
+    "reference-expo": {
+      "status": "verified",
+      "url": "https://expo.dev/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://expo.dev/",
+          "title": "Expo: Agentic Mobile Infrastructure for building application software",
+          "note": "Public homepage read requested https://expo.dev; final URL https://expo.dev/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    },
+    "reference-ferrari": {
+      "status": "blocked",
+      "url": "https://www.ferrari.com/",
+      "label": "Candidate homepage (read blocked)",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://www.ferrari.com/",
+          "title": "www.ferrari.com",
+          "note": "Page returned a JavaScript robot-verification challenge. No challenge attempted."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Public text read did not establish homepage content. Candidate is not verified; no access controls were bypassed."
+    },
+    "reference-figma": {
+      "status": "verified",
+      "url": "https://www.figma.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://www.figma.com/",
+          "title": "Figma: The collaborative canvas for design, code, and AI",
+          "note": "Public homepage read requested https://www.figma.com; final URL https://www.figma.com/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    },
+    "reference-framer": {
+      "status": "verified",
+      "url": "https://www.framer.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://www.framer.com/",
+          "title": "Framer: Free website builder and AI design agent",
+          "note": "Public homepage read requested https://www.framer.com; final URL https://www.framer.com/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    },
+    "reference-hashicorp": {
+      "status": "verified",
+      "url": "https://www.hashicorp.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://www.hashicorp.com/en",
+          "title": "HashiCorp | An IBM Company",
+          "note": "Public homepage read requested https://www.hashicorp.com; final URL https://www.hashicorp.com/en. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    },
+    "reference-hp": {
+      "status": "verified",
+      "url": "https://www.hp.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://www.hp.com/us-en/home.html",
+          "title": "Laptop Computers, Desktops, Printers, Ink & Toner | HP® Official Site",
+          "note": "Public homepage read requested https://www.hp.com; final URL https://www.hp.com/us-en/home.html. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    },
+    "reference-ibm": {
+      "status": "verified",
+      "url": "https://www.ibm.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://www.ibm.com/us-en",
+          "title": "IBM",
+          "note": "Public homepage read requested https://www.ibm.com; final URL https://www.ibm.com/us-en. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    },
+    "reference-intercom": {
+      "status": "verified",
+      "url": "https://www.intercom.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://www.intercom.com/",
+          "title": "Intercom | A complete system for human and AI customer service",
+          "note": "Public homepage read requested https://www.intercom.com; final URL https://www.intercom.com/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    },
+    "reference-jobright": {
+      "status": "verified",
+      "url": "https://jobright.ai/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://jobright.ai/",
+          "title": "Jobright: Your AI Job Search Copilot",
+          "note": "Public homepage read requested https://jobright.ai; final URL https://jobright.ai/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    },
+    "reference-kraken": {
+      "status": "verified",
+      "url": "https://www.kraken.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://www.kraken.com/",
+          "title": "Kraken | Own the Power of Your Money — Crypto, Stocks & more",
+          "note": "Public homepage read requested https://www.kraken.com; final URL https://www.kraken.com/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    },
+    "reference-lamborghini": {
+      "status": "verified",
+      "url": "https://www.lamborghini.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://www.lamborghini.com/en-en",
+          "title": "Automobili Lamborghini - Official Website | Lamborghini.com",
+          "note": "Public homepage read requested https://www.lamborghini.com; final URL https://www.lamborghini.com/en-en. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    },
+    "reference-linear-app": {
+      "status": "verified",
+      "url": "https://linear.app/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://linear.app/",
+          "title": "Linear – The system for product development",
+          "note": "Public homepage read requested https://linear.app; final URL https://linear.app/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    },
+    "reference-lovable": {
+      "status": "verified",
+      "url": "https://lovable.dev/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://lovable.dev/",
+          "title": "App & Website Builder | Build Software in Minutes | Lovable",
+          "note": "Public homepage read requested https://lovable.dev; final URL https://lovable.dev/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    },
+    "reference-mastercard": {
+      "status": "verified",
+      "url": "https://www.mastercard.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://www.mastercard.com/se/sv.html",
+          "title": "Mastercard – ett globalt teknikföretag inom betalningsindustrin",
+          "note": "Public homepage read requested https://www.mastercard.com; final URL https://www.mastercard.com/se/sv.html. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    },
+    "reference-mercury": {
+      "status": "verified",
+      "url": "https://mercury.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://mercury.com/",
+          "title": "Online Business Banking For Startups, Small Businesses & Scaling Companies",
+          "note": "Public homepage read requested https://mercury.com; final URL https://mercury.com/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    },
+    "reference-meta": {
+      "status": "blocked",
+      "url": "https://www.meta.com/",
+      "label": "Candidate homepage (read blocked)",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://www.meta.com/",
+          "note": "Failed to fetch https://www.meta.com/: (429) Too Many Requests"
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Public text read did not establish homepage content. Candidate is not verified; no access controls were bypassed."
+    },
+    "reference-minimax": {
+      "status": "verified",
+      "url": "https://www.minimax.io/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://www.minimax.io/",
+          "title": "MiniMax",
+          "note": "Public homepage read requested https://www.minimax.io; final URL https://www.minimax.io/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    },
+    "reference-mintlify": {
+      "status": "verified",
+      "url": "https://www.mintlify.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://www.mintlify.com/",
+          "title": "Mintlify - The documentation platform for agents",
+          "note": "Public homepage read requested https://www.mintlify.com; final URL https://www.mintlify.com/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    },
+    "reference-miro": {
+      "status": "verified",
+      "url": "https://miro.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://miro.com/",
+          "title": "AI Innovation Workspace | Miro",
+          "note": "Public homepage read requested https://miro.com; final URL https://miro.com/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    },
+    "reference-mistral-ai": {
+      "status": "verified",
+      "url": "https://mistral.ai/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://mistral.ai/",
+          "title": "Mistral | #1 in Sovereign AI: Frontier Open Models You Own",
+          "note": "Public homepage read requested https://mistral.ai; final URL https://mistral.ai/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    },
+    "reference-mongodb": {
+      "status": "verified",
+      "url": "https://www.mongodb.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://www.mongodb.com/",
+          "title": "MongoDB | The Intelligent Data Platform for the AI Era | MongoDB",
+          "note": "Public homepage read requested https://www.mongodb.com; final URL https://www.mongodb.com/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    },
+    "reference-mydealz": {
+      "status": "blocked",
+      "url": "https://www.mydealz.de/",
+      "label": "Candidate homepage (read blocked)",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://www.mydealz.de/",
+          "note": "Failed to fetch https://www.mydealz.de/: (403) Forbidden"
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Public text read did not establish homepage content. Candidate is not verified; no access controls were bypassed."
+    },
+    "reference-nerdwallet": {
+      "status": "verified",
+      "url": "https://www.nerdwallet.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://www.nerdwallet.com/",
+          "title": "NerdWallet: Finance smarter",
+          "note": "Public homepage read requested https://www.nerdwallet.com; final URL https://www.nerdwallet.com/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    },
+    "reference-nike": {
+      "status": "verified",
+      "url": "https://www.nike.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://www.nike.in/",
+          "title": "Nike. Just Do It. Nike IN",
+          "note": "Public homepage read requested https://www.nike.com; final URL https://www.nike.in/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    },
+    "reference-nintendo-2001": {
+      "status": "missing",
+      "label": "Historical homepage not verified",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://www.nintendo.com/jp/index.html",
+          "title": "任天堂ホームページ",
+          "note": "Read current corporate homepage; requested https://www.nintendo.com; final URL https://www.nintendo.com/jp/index.html. This is not evidence of the 2001 design."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. No dated archive URL was supplied by the imported analysis. Historical source remains missing; current corporate website is contextual evidence only."
+    },
+    "reference-notion": {
+      "status": "verified",
+      "url": "https://www.notion.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://www.notion.com/",
+          "title": "The AI workspace that works for you. | Notion",
+          "note": "Public homepage read requested https://www.notion.com; final URL https://www.notion.com/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    },
+    "reference-nvidia": {
+      "status": "verified",
+      "url": "https://www.nvidia.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://www.nvidia.com/da-dk/",
+          "title": "NVIDIA: Verdens førende virksomhed inden for databehandling med kunstig intelligens | NVIDIA",
+          "note": "Public homepage read requested https://www.nvidia.com; final URL https://www.nvidia.com/da-dk/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    },
+    "reference-ollama": {
+      "status": "verified",
+      "url": "https://ollama.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://ollama.com/",
+          "title": "Ollama · Run AI models locally and in the cloud",
+          "note": "Public homepage read requested https://ollama.com; final URL https://ollama.com/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    },
+    "reference-opencode-ai": {
+      "status": "verified",
+      "url": "https://opencode.ai/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://opencode.ai/",
+          "title": "OpenCode | The open source coding agent for any model",
+          "note": "Public homepage read requested https://opencode.ai; final URL https://opencode.ai/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    },
+    "reference-oracle": {
+      "status": "verified",
+      "url": "https://www.oracle.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://www.oracle.com/",
+          "title": "Oracle",
+          "note": "Public homepage read requested https://www.oracle.com; final URL https://www.oracle.com/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    },
+    "reference-oura": {
+      "status": "verified",
+      "url": "https://ouraring.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://ouraring.com/",
+          "title": "ouraring.com",
+          "note": "Public homepage read requested https://ouraring.com; final URL https://ouraring.com/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    },
+    "reference-pinterest": {
+      "status": "blocked",
+      "url": "https://www.pinterest.com/",
+      "label": "Candidate homepage (read blocked)",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://www.pinterest.com/",
+          "note": "Failed to fetch https://www.pinterest.com/: (403) Forbidden"
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Public text read did not establish homepage content. Candidate is not verified; no access controls were bypassed."
+    },
+    "reference-playstation": {
+      "status": "verified",
+      "url": "https://www.playstation.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://www.playstation.com/ja-jp/",
+          "title": "PlayStation 公式サイト | 本体・ゲームタイトル・周辺機器",
+          "note": "Public homepage read requested https://www.playstation.com; final URL https://www.playstation.com/ja-jp/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    },
+    "reference-posthog": {
+      "status": "verified",
+      "url": "https://posthog.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://posthog.com/",
+          "title": "PostHog – Your product’s context layer",
+          "note": "Public homepage read requested https://posthog.com; final URL https://posthog.com/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    },
+    "reference-raycast": {
+      "status": "verified",
+      "url": "https://www.raycast.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://www.raycast.com/",
+          "title": "Raycast - Your shortcut to everything",
+          "note": "Public homepage read requested https://www.raycast.com; final URL https://www.raycast.com/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    },
+    "reference-renault": {
+      "status": "verified",
+      "url": "https://www.renault.com/",
+      "label": "Current Renault Group homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://www.renaultgroup.com/",
+          "title": "Renault Group, constructeur automobile - Renault Group",
+          "note": "Public homepage read requested https://www.renault.com; final URL https://www.renaultgroup.com/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity. renault.com redirected to Renault Group; corporate page does not establish the original dealership/configurator surface."
+    },
+    "reference-replicate": {
+      "status": "verified",
+      "url": "https://replicate.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://replicate.com/",
+          "title": "Replicate - Run AI with an API",
+          "note": "Public homepage read requested https://replicate.com; final URL https://replicate.com/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    },
+    "reference-resend": {
+      "status": "verified",
+      "url": "https://resend.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://resend.com/",
+          "title": "Resend · Email for developers",
+          "note": "Public homepage read requested https://resend.com; final URL https://resend.com/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    },
+    "reference-revolut": {
+      "status": "verified",
+      "url": "https://www.revolut.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://www.revolut.com/",
+          "title": "Banking & Beyond | Revolut United Kingdom",
+          "note": "Public homepage read requested https://www.revolut.com; final URL https://www.revolut.com/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    },
+    "reference-runwayml": {
+      "status": "verified",
+      "url": "https://runwayml.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://runway.com/",
+          "title": "Runway | Intelligent tools for scaling content and teams.",
+          "note": "Public homepage read requested https://runwayml.com; final URL https://runway.com/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    },
+    "reference-sanity": {
+      "status": "verified",
+      "url": "https://www.sanity.io/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://www.sanity.io/",
+          "title": "The Content Operating System for the AI era | Sanity",
+          "note": "Public homepage read requested https://www.sanity.io; final URL https://www.sanity.io/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    },
+    "reference-sap": {
+      "status": "verified",
+      "url": "https://www.sap.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://www.sap.com/index.html",
+          "title": "SAP Software Solutions | Business Applications and Technology",
+          "note": "Public homepage read requested https://www.sap.com; final URL https://www.sap.com/index.html. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    },
+    "reference-sentry": {
+      "status": "blocked",
+      "url": "https://sentry.io/",
+      "label": "Candidate homepage (read blocked)",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://sentry.io/",
+          "note": "Failed to fetch https://sentry.io/: (400) Unsupported content-type: text/markdown"
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Public text read did not establish homepage content. Candidate is not verified; no access controls were bypassed."
+    },
+    "reference-shopify": {
+      "status": "verified",
+      "url": "https://www.shopify.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://www.shopify.com/",
+          "title": "Shopify: The All-in-One Commerce Platform for Businesses - Shopify",
+          "note": "Public homepage read requested https://www.shopify.com; final URL https://www.shopify.com/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    },
+    "reference-slack": {
+      "status": "verified",
+      "url": "https://slack.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://slack.com/",
+          "title": "Slack | AI Work Platform & Productivity Tools",
+          "note": "Public homepage read requested https://slack.com; final URL https://slack.com/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    },
+    "reference-spacex": {
+      "status": "unverified",
+      "url": "https://www.spacex.com/",
+      "label": "Candidate homepage (insufficient readable evidence)",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://www.spacex.com/",
+          "title": "SpaceX",
+          "note": "Public read requested https://www.spacex.com; final URL https://www.spacex.com/. Returned 0 readable lines; insufficient homepage content to confirm beyond title."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Title-only or sparse shell response is not sufficient for verified status."
+    },
+    "reference-spotify": {
+      "status": "unverified",
+      "url": "https://www.spotify.com/",
+      "label": "Candidate homepage (insufficient readable evidence)",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://open.spotify.com/",
+          "title": "Spotify - Web Player: Listen to Music, Podcasts, and Audiobooks Online",
+          "note": "Public read requested https://www.spotify.com; final URL https://open.spotify.com/. Returned 0 readable lines; insufficient homepage content to confirm beyond title."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Title-only or sparse shell response is not sufficient for verified status."
+    },
+    "reference-starbucks": {
+      "status": "verified",
+      "url": "https://www.starbucks.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://www.starbucks.com/",
+          "title": "Starbucks Coffee Company",
+          "note": "Public homepage read requested https://www.starbucks.com; final URL https://www.starbucks.com/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    },
+    "reference-stripe": {
+      "status": "verified",
+      "url": "https://stripe.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://stripe.com/en-de",
+          "title": "Stripe | Financial Infrastructure to Grow Your Revenue",
+          "note": "Public homepage read requested https://stripe.com; final URL https://stripe.com/en-de. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity. Source analysis uses the spelling Stripi; directory and financial-infrastructure description support the Stripe identity."
+    },
+    "reference-supabase": {
+      "status": "verified",
+      "url": "https://supabase.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://supabase.com/",
+          "title": "Supabase | The Postgres Development Platform",
+          "note": "Public homepage read requested https://supabase.com; final URL https://supabase.com/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    },
+    "reference-superhuman": {
+      "status": "verified",
+      "url": "https://superhuman.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://superhuman.com/",
+          "title": "Superhuman: Docs, Mail, and AI That Work Everywhere",
+          "note": "Public homepage read requested https://superhuman.com; final URL https://superhuman.com/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    },
+    "reference-tesla": {
+      "status": "unverified",
+      "url": "https://www.tesla.com/",
+      "label": "Candidate homepage (insufficient readable evidence)",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://www.tesla.com/",
+          "title": "Electric Cars, Solar & Clean Energy | Tesla",
+          "note": "Public read requested https://www.tesla.com; final URL https://www.tesla.com/. Returned 4 readable lines; insufficient homepage content to confirm beyond title."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Title-only or sparse shell response is not sufficient for verified status."
+    },
+    "reference-theverge": {
+      "status": "verified",
+      "url": "https://www.theverge.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://www.theverge.com/",
+          "title": "The Verge",
+          "note": "Public homepage read requested https://www.theverge.com; final URL https://www.theverge.com/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    },
+    "reference-together-ai": {
+      "status": "verified",
+      "url": "https://www.together.ai/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://www.together.ai/",
+          "title": "Together AI | The AI Native Cloud",
+          "note": "Public homepage read requested https://www.together.ai; final URL https://www.together.ai/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    },
+    "reference-uber": {
+      "status": "verified",
+      "url": "https://www.uber.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://www.uber.com/",
+          "title": "Explore the Uber Platform | Uber United States",
+          "note": "Public homepage read requested https://www.uber.com; final URL https://www.uber.com/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    },
+    "reference-vercel": {
+      "status": "verified",
+      "url": "https://vercel.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://vercel.com/",
+          "title": "Agentic Infrastructure - Vercel",
+          "note": "Public homepage read requested https://vercel.com; final URL https://vercel.com/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    },
+    "reference-vodafone": {
+      "status": "verified",
+      "url": "https://www.vodafone.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://www.vodafone.com/",
+          "title": "Vodafone",
+          "note": "Public homepage read requested https://www.vodafone.com; final URL https://www.vodafone.com/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    },
+    "reference-voltagent": {
+      "status": "verified",
+      "url": "https://voltagent.dev/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://voltagent.dev/",
+          "title": "VoltAgent - Open Source TypeScript AI Agent Framework",
+          "note": "Public homepage read requested https://voltagent.dev; final URL https://voltagent.dev/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    },
+    "reference-warp": {
+      "status": "verified",
+      "url": "https://www.warp.dev/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://www.warp.dev/",
+          "title": "Warp — Open Infrastructure for Cloud Software Factories",
+          "note": "Public homepage read requested https://www.warp.dev; final URL https://www.warp.dev/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    },
+    "reference-webflow": {
+      "status": "verified",
+      "url": "https://webflow.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://webflow.com/",
+          "title": "Webflow: The agentic web platform for modern businesses",
+          "note": "Public homepage read requested https://webflow.com; final URL https://webflow.com/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    },
+    "reference-wired": {
+      "status": "verified",
+      "url": "https://www.wired.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://www.wired.com/",
+          "title": "WIRED - The Latest in Technology, Science, Culture and Business | WIRED",
+          "note": "Public homepage read requested https://www.wired.com; final URL https://www.wired.com/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    },
+    "reference-wise": {
+      "status": "verified",
+      "url": "https://wise.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://wise.com/",
+          "title": "Wise: The international account | Money without borders | Wise United Kingdom",
+          "note": "Public homepage read requested https://wise.com; final URL https://wise.com/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    },
+    "reference-x-ai": {
+      "status": "verified",
+      "url": "https://x.ai/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://x.ai/",
+          "title": "SpaceXSI",
+          "note": "Public homepage read requested https://x.ai; final URL https://x.ai/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity. Observed current page title is SpaceXSI; Grok product links and console.x.ai/documentation links establish continuity with the x.ai domain, not unchanged branding."
+    },
+    "reference-zapier": {
+      "status": "verified",
+      "url": "https://zapier.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://zapier.com/",
+          "title": "Zapier: Automate AI Workflows, Agents, and Apps",
+          "note": "Public homepage read requested https://zapier.com; final URL https://zapier.com/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    }
+  }
+}

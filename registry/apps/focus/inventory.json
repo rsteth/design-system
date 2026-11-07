@@ -1,0 +1,463 @@
+{
+  "schemaVersion": 1,
+  "application": "focus",
+  "reviewedRevision": "ded1c6a3c8fa6fb10d61e66af83ff81cd770cf56",
+  "items": [
+    {
+      "id": "app",
+      "title": "Application screen switching",
+      "kind": "screen",
+      "source": [
+        "src/app/App.tsx"
+      ],
+      "fixtures": [
+        "library-empty",
+        "library-populated",
+        "library-loading",
+        "reader-progress"
+      ],
+      "states": [
+        "loading",
+        "library",
+        "reader",
+        "close/reopen"
+      ],
+      "coverage": "covered",
+      "notes": "Production App is exercised by appearance.browser.mjs and library.browser.mjs. Workbench renders its production child screens with memory state, not the persistent App."
+    },
+    {
+      "id": "library",
+      "title": "Library header and empty/populated layout",
+      "kind": "screen",
+      "source": [
+        "src/features/library/Library.tsx"
+      ],
+      "fixtures": [
+        "library-empty",
+        "library-populated"
+      ],
+      "states": [
+        "empty",
+        "populated",
+        "disabled backup",
+        "mobile",
+        "focus"
+      ],
+      "coverage": "covered",
+      "notes": ""
+    },
+    {
+      "id": "cards",
+      "title": "Text and EPUB cards",
+      "kind": "component",
+      "source": [
+        "src/features/library/Library.tsx"
+      ],
+      "fixtures": [
+        "library-populated"
+      ],
+      "states": [
+        "text",
+        "epub",
+        "progress badge",
+        "keyboard open",
+        "delete hover/focus"
+      ],
+      "coverage": "covered",
+      "notes": ""
+    },
+    {
+      "id": "paste",
+      "title": "Add content form",
+      "kind": "pattern",
+      "source": [
+        "src/features/library/Library.tsx"
+      ],
+      "fixtures": [
+        "add-paste",
+        "add-ready",
+        "add-processing",
+        "add-error"
+      ],
+      "states": [
+        "empty",
+        "populated",
+        "validation",
+        "processing",
+        "disabled",
+        "failure/retry",
+        "cancel/reopen"
+      ],
+      "coverage": "covered",
+      "notes": "Click Add to Library in processing/error fixtures to enter the live async state. Pending fixture deliberately remains pending until reload; no saved data is touched."
+    },
+    {
+      "id": "file",
+      "title": "File input and tab switch",
+      "kind": "pattern",
+      "source": [
+        "src/features/library/Library.tsx"
+      ],
+      "fixtures": [
+        "add-file"
+      ],
+      "states": [
+        "empty",
+        "file selected",
+        "validation",
+        "text/EPUB upload",
+        "switch tabs"
+      ],
+      "coverage": "covered",
+      "notes": "Native OS file-picker chrome is external. Automated tests supply synthetic files through actual input controls."
+    },
+    {
+      "id": "backup",
+      "title": "Backup and restore controls",
+      "kind": "pattern",
+      "source": [
+        "src/features/library/Library.tsx"
+      ],
+      "fixtures": [
+        "library-empty",
+        "library-populated",
+        "library-export-error"
+      ],
+      "states": [
+        "disabled",
+        "export",
+        "invalid import",
+        "repeat valid import",
+        "export failure/retry"
+      ],
+      "coverage": "partial",
+      "notes": "Actual production encoding/validation shared with fixture memory adapter. Standalone production test proves real download and EPUB round trip. Sandbox does not allow downloads or native modal UI; those browser surfaces are not represented in-frame."
+    },
+    {
+      "id": "delete",
+      "title": "Delete decision",
+      "kind": "pattern",
+      "source": [
+        "src/features/library/Library.tsx"
+      ],
+      "fixtures": [
+        "library-populated"
+      ],
+      "states": [
+        "cancel",
+        "confirm",
+        "repeat"
+      ],
+      "coverage": "partial",
+      "notes": "Native confirm is tested standalone. Embedded fixtures show a labeled harness decision adapter, not native browser chrome."
+    },
+    {
+      "id": "notices",
+      "title": "Validation and operation notices",
+      "kind": "pattern",
+      "source": [
+        "src/features/library/Library.tsx"
+      ],
+      "fixtures": [
+        "add-paste",
+        "add-file",
+        "add-error",
+        "library-export-error"
+      ],
+      "states": [
+        "validation",
+        "add failure",
+        "restore success/failure",
+        "export failure/retry"
+      ],
+      "coverage": "partial",
+      "notes": "Production alert remains unchanged. Embedded fixtures expose labeled harness notices because allow-modals is intentionally absent. Export failure is injected deterministically and tested, including retry."
+    },
+    {
+      "id": "library-loading",
+      "title": "Initial library loading",
+      "kind": "component",
+      "source": [
+        "src/ui/LibraryLoading.tsx"
+      ],
+      "fixtures": [
+        "library-loading"
+      ],
+      "states": [
+        "loading"
+      ],
+      "coverage": "covered",
+      "notes": ""
+    },
+    {
+      "id": "reader",
+      "title": "Reader shell and toolbar",
+      "kind": "screen",
+      "source": [
+        "src/features/reader/Reader.tsx"
+      ],
+      "fixtures": [
+        "reader-start",
+        "reader-progress",
+        "reader-end",
+        "reader-empty",
+        "reader-loading",
+        "reader-error",
+        "reader-epub"
+      ],
+      "states": [
+        "paused",
+        "playing",
+        "complete",
+        "loading",
+        "empty/error",
+        "close/reopen",
+        "mobile"
+      ],
+      "coverage": "covered",
+      "notes": ""
+    },
+    {
+      "id": "playback",
+      "title": "Playback transport and position",
+      "kind": "pattern",
+      "source": [
+        "src/features/reader/Reader.tsx"
+      ],
+      "fixtures": [
+        "reader-start",
+        "reader-progress",
+        "reader-end"
+      ],
+      "states": [
+        "play/pause",
+        "rewind/forward clamps",
+        "seek",
+        "speed",
+        "end/replay",
+        "appearance interrupts playback",
+        "progress persisted"
+      ],
+      "coverage": "covered",
+      "notes": ""
+    },
+    {
+      "id": "reader-status",
+      "title": "Reader loading and failures",
+      "kind": "pattern",
+      "source": [
+        "src/features/reader/Reader.tsx"
+      ],
+      "fixtures": [
+        "reader-loading",
+        "reader-error",
+        "reader-empty"
+      ],
+      "states": [
+        "loading",
+        "no readable words",
+        "extract failure",
+        "disabled transport",
+        "close while pending"
+      ],
+      "coverage": "covered",
+      "notes": "Load dependency seam holds or rejects EPUB extraction deterministically; production defaults to the real parser. No invented error UI."
+    },
+    {
+      "id": "word",
+      "title": "Responsive recognition-point word",
+      "kind": "component",
+      "source": [
+        "src/ui/WordDisplay.tsx"
+      ],
+      "fixtures": [
+        "word-short",
+        "word-long",
+        "word-empty"
+      ],
+      "states": [
+        "short",
+        "long responsive fit",
+        "empty"
+      ],
+      "coverage": "covered",
+      "notes": ""
+    },
+    {
+      "id": "appearance",
+      "title": "Theme toggle and accessibility dialog",
+      "kind": "component",
+      "source": [
+        "src/ui/AppearanceControls.tsx"
+      ],
+      "fixtures": [
+        "appearance"
+      ],
+      "states": [
+        "light/dark",
+        "four palettes",
+        "focus trap",
+        "Escape/backdrop/Close",
+        "device theme",
+        "denied storage"
+      ],
+      "coverage": "covered",
+      "notes": "Existing 16 production/workbench pixel-parity and reader tests remain active. All fixtures subscribe to the studio theme adapter."
+    },
+    {
+      "id": "tokens",
+      "title": "Existing visual foundation",
+      "kind": "domain",
+      "source": [
+        "src/styles/index.css",
+        "src/styles/tokens.css",
+        "design/tokens.json"
+      ],
+      "fixtures": [
+        "appearance",
+        "library-populated",
+        "reader-progress"
+      ],
+      "states": [
+        "eight theme/palette combinations"
+      ],
+      "coverage": "covered",
+      "notes": "Exact original color values and application styles preserved; CSS moved without editing."
+    },
+    {
+      "id": "storage",
+      "title": "Persistence, backup codec, domain model",
+      "kind": "domain",
+      "source": [
+        "src/domain/library.ts",
+        "src/domain/types.ts"
+      ],
+      "fixtures": [],
+      "states": [
+        "save",
+        "read",
+        "delete",
+        "progress",
+        "backup/restore"
+      ],
+      "coverage": "excluded",
+      "notes": "Not a separately rendered UI component. Production library browser test covers real IndexedDB, EPUB base64 round trip, progress/reload, repeated import and whole-backup validation before writes. Storage keys unchanged."
+    },
+    {
+      "id": "epub",
+      "title": "EPUB extraction",
+      "kind": "domain",
+      "source": [
+        "src/domain/epub.ts"
+      ],
+      "fixtures": [
+        "reader-epub",
+        "reader-error",
+        "reader-loading"
+      ],
+      "states": [
+        "success",
+        "pending",
+        "failure"
+      ],
+      "coverage": "partial",
+      "notes": "Fixtures use deterministic extraction adapters. Production library browser test imports a generated valid EPUB and an invalid archive through the actual parser. Third-party malformed EPUB variants and browser filesystem failures are not exhaustive."
+    },
+    {
+      "id": "startup-error",
+      "title": "Library initialization failure",
+      "kind": "external",
+      "source": [
+        "src/app/App.tsx"
+      ],
+      "fixtures": [],
+      "states": [
+        "load failure"
+      ],
+      "coverage": "blocked",
+      "notes": "Baseline has try/finally but no catch or explicit startup-error UI. No screen was invented and production behavior was not changed. Requires separate behavior decision."
+    },
+    {
+      "id": "browser-surfaces",
+      "title": "Native browser and OS surfaces",
+      "kind": "external",
+      "source": [
+        "src/features/library/Library.tsx"
+      ],
+      "fixtures": [],
+      "states": [
+        "native alert/confirm",
+        "download chrome",
+        "OS file picker"
+      ],
+      "coverage": "excluded",
+      "notes": "Outside app-owned design system. Native alert/confirm and download are exercised standalone where possible; browser/OS chrome is not faked in the sandbox. No sandbox permissions were relaxed."
+    },
+    {
+      "id": "irrelevant",
+      "title": "States without a production counterpart",
+      "kind": "external",
+      "source": [
+        "src/ui/WordDisplay.tsx",
+        "src/ui/AppearanceControls.tsx"
+      ],
+      "fixtures": [],
+      "states": [
+        "word loading/error/disabled",
+        "appearance network loading/error"
+      ],
+      "coverage": "excluded",
+      "notes": "Pure word rendering has no asynchronous operations or disabled interaction. Appearance is local-only and tolerates denied storage; no network loader/error state exists."
+    }
+  ],
+  "checks": [
+    {
+      "id": "static",
+      "label": "Build, lint and types",
+      "command": "npm run build && npm run lint && npm run typecheck",
+      "status": "passed",
+      "scope": "Entire production app and workbench",
+      "evidence": "review/workbench/validation.txt"
+    },
+    {
+      "id": "design",
+      "label": "Token/vendor integrity and source tests",
+      "command": "npm run check:design && npm test",
+      "status": "passed",
+      "scope": "Vendor integrity, exact tokens, architecture and coverage references",
+      "evidence": "review/workbench/validation.txt"
+    },
+    {
+      "id": "parity",
+      "label": "Original-token pixel parity",
+      "command": "npm run test:design:browser",
+      "status": "passed",
+      "scope": "16 production/workbench combinations, persistence, focus, device theme, denied storage",
+      "evidence": "review/design-foundation/integration.json"
+    },
+    {
+      "id": "reader",
+      "label": "Production reader regression",
+      "command": "npm run test:browser",
+      "status": "passed",
+      "scope": "Reader and library contrast, progress, keyboard, mobile, text zoom, forced colors",
+      "evidence": "review/contrast-results.json"
+    },
+    {
+      "id": "fixtures",
+      "label": "Complete fixture and flow matrix",
+      "command": "npm run test:workbench:browser",
+      "status": "passed",
+      "scope": "All 20 fixtures, repeated/interrupted actions, mobile",
+      "evidence": "review/workbench/results.json"
+    },
+    {
+      "id": "library",
+      "label": "Production persistence and EPUB",
+      "command": "npm run test:library:browser",
+      "status": "passed",
+      "scope": "Real parser, IndexedDB, backup, restore, delete, progress",
+      "evidence": "review/workbench/production-library.json"
+    }
+  ]
+}

@@ -1,0 +1,1961 @@
+{
+  "schemaVersion": 1,
+  "id": "reference-coinbase",
+  "title": "Coinbase",
+  "classification": "independent-unverified-analysis",
+  "source": {
+    "repository": "https://github.com/VoltAgent/awesome-design-md",
+    "fork": "https://github.com/rsteth/awesome-design-md-p",
+    "revision": "fcc70284932276d085f01ef9f83edde90b1258cb",
+    "path": "design-md/coinbase/DESIGN.md",
+    "sha256": "c8c67800dd7f58fcc87ed7d267a3bba862e3419e499e8a66d67731a69d2de1d6",
+    "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/coinbase/DESIGN.md"
+  },
+  "sourceName": "Coinbase-design-analysis",
+  "titleProvenance": {
+    "status": "inferred",
+    "basis": "Source directory label, normalized for navigation; original source name is retained without correction.",
+    "sourceValue": "coinbase",
+    "originalName": "Coinbase-design-analysis"
+  },
+  "description": "An institutional-grade crypto exchange whose marketing surfaces read like a quietly-confident financial-services brand. The base canvas is pure white; Coinbase Blue (`#0052ff`) is the single brand voltage, used scarcely on primary CTAs, signature glyphs, and inline accent moments. Type runs Coinbase's licensed CoinbaseDisplay (display) and CoinbaseSans (body) at modest weights — display sits at weight 400 not 700, signaling editorial calm rather than fintech-bombastic. Page rhythm rotates between bright white sections, soft gray elevation bands, and full-bleed dark editorial heroes (`#0a0b0d`) carrying product-ui mockup cards. Iconography is geometric and minimal; depth comes from card-on-card layering, never decorative shadows.",
+  "analysis": {
+    "version": "alpha",
+    "name": "Coinbase-design-analysis",
+    "description": "An institutional-grade crypto exchange whose marketing surfaces read like a quietly-confident financial-services brand. The base canvas is pure white; Coinbase Blue (`#0052ff`) is the single brand voltage, used scarcely on primary CTAs, signature glyphs, and inline accent moments. Type runs Coinbase's licensed CoinbaseDisplay (display) and CoinbaseSans (body) at modest weights — display sits at weight 400 not 700, signaling editorial calm rather than fintech-bombastic. Page rhythm rotates between bright white sections, soft gray elevation bands, and full-bleed dark editorial heroes (`#0a0b0d`) carrying product-ui mockup cards. Iconography is geometric and minimal; depth comes from card-on-card layering, never decorative shadows.",
+    "colors": {
+      "primary": "#0052ff",
+      "primary-active": "#003ecc",
+      "primary-disabled": "#a8b8cc",
+      "ink": "#0a0b0d",
+      "body": "#5b616e",
+      "body-strong": "#0a0b0d",
+      "muted": "#7c828a",
+      "muted-soft": "#a8acb3",
+      "hairline": "#dee1e6",
+      "hairline-soft": "#eef0f3",
+      "canvas": "#ffffff",
+      "surface-soft": "#f7f7f7",
+      "surface-card": "#ffffff",
+      "surface-strong": "#eef0f3",
+      "surface-dark": "#0a0b0d",
+      "surface-dark-elevated": "#16181c",
+      "on-primary": "#ffffff",
+      "on-dark": "#ffffff",
+      "on-dark-soft": "#a8acb3",
+      "semantic-up": "#05b169",
+      "semantic-down": "#cf202f",
+      "accent-yellow": "#f4b000"
+    },
+    "typography": {
+      "display-mega": {
+        "fontFamily": "'Coinbase Display', -apple-system, system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
+        "fontSize": "80px",
+        "fontWeight": 400,
+        "lineHeight": 1,
+        "letterSpacing": "-2px"
+      },
+      "display-xl": {
+        "fontFamily": "'Coinbase Display', sans-serif",
+        "fontSize": "64px",
+        "fontWeight": 400,
+        "lineHeight": 1,
+        "letterSpacing": "-1.6px"
+      },
+      "display-lg": {
+        "fontFamily": "'Coinbase Display', sans-serif",
+        "fontSize": "52px",
+        "fontWeight": 400,
+        "lineHeight": 1,
+        "letterSpacing": "-1.3px"
+      },
+      "display-md": {
+        "fontFamily": "'Coinbase Display', sans-serif",
+        "fontSize": "44px",
+        "fontWeight": 400,
+        "lineHeight": 1.09,
+        "letterSpacing": "-1px"
+      },
+      "display-sm": {
+        "fontFamily": "'Coinbase Sans', sans-serif",
+        "fontSize": "36px",
+        "fontWeight": 400,
+        "lineHeight": 1.11,
+        "letterSpacing": "-0.5px"
+      },
+      "title-lg": {
+        "fontFamily": "'Coinbase Sans', sans-serif",
+        "fontSize": "32px",
+        "fontWeight": 400,
+        "lineHeight": 1.13,
+        "letterSpacing": "-0.4px"
+      },
+      "title-md": {
+        "fontFamily": "'Coinbase Sans', sans-serif",
+        "fontSize": "18px",
+        "fontWeight": 600,
+        "lineHeight": 1.33,
+        "letterSpacing": 0
+      },
+      "title-sm": {
+        "fontFamily": "'Coinbase Sans', sans-serif",
+        "fontSize": "16px",
+        "fontWeight": 600,
+        "lineHeight": 1.25,
+        "letterSpacing": 0
+      },
+      "body-md": {
+        "fontFamily": "'Coinbase Sans', sans-serif",
+        "fontSize": "16px",
+        "fontWeight": 400,
+        "lineHeight": 1.5,
+        "letterSpacing": 0
+      },
+      "body-strong": {
+        "fontFamily": "'Coinbase Sans', sans-serif",
+        "fontSize": "16px",
+        "fontWeight": 700,
+        "lineHeight": 1.5,
+        "letterSpacing": 0
+      },
+      "body-sm": {
+        "fontFamily": "'Coinbase Sans', sans-serif",
+        "fontSize": "14px",
+        "fontWeight": 400,
+        "lineHeight": 1.5,
+        "letterSpacing": 0
+      },
+      "caption": {
+        "fontFamily": "'Coinbase Sans', sans-serif",
+        "fontSize": "13px",
+        "fontWeight": 400,
+        "lineHeight": 1.5,
+        "letterSpacing": 0
+      },
+      "caption-strong": {
+        "fontFamily": "'Coinbase Sans', sans-serif",
+        "fontSize": "12px",
+        "fontWeight": 600,
+        "lineHeight": 1.5,
+        "letterSpacing": 0
+      },
+      "number-display": {
+        "fontFamily": "'Coinbase Mono', 'Coinbase Sans', monospace",
+        "fontSize": "18px",
+        "fontWeight": 500,
+        "lineHeight": 1.4,
+        "letterSpacing": 0
+      },
+      "button": {
+        "fontFamily": "'Coinbase Sans', sans-serif",
+        "fontSize": "16px",
+        "fontWeight": 600,
+        "lineHeight": 1.15,
+        "letterSpacing": 0
+      },
+      "nav-link": {
+        "fontFamily": "'Coinbase Sans', sans-serif",
+        "fontSize": "14px",
+        "fontWeight": 500,
+        "lineHeight": 1.4,
+        "letterSpacing": 0
+      }
+    },
+    "rounded": {
+      "none": "0px",
+      "xs": "4px",
+      "sm": "8px",
+      "md": "12px",
+      "lg": "16px",
+      "xl": "24px",
+      "pill": "100px",
+      "full": "9999px"
+    },
+    "spacing": {
+      "xxs": "4px",
+      "xs": "8px",
+      "sm": "12px",
+      "base": "16px",
+      "md": "20px",
+      "lg": "24px",
+      "xl": "32px",
+      "xxl": "48px",
+      "section": "96px"
+    },
+    "components": {
+      "top-nav-light": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.nav-link}",
+        "height": "64px"
+      },
+      "top-nav-on-dark": {
+        "backgroundColor": "{colors.surface-dark}",
+        "textColor": "{colors.on-dark}",
+        "typography": "{typography.nav-link}",
+        "height": "64px"
+      },
+      "button-primary": {
+        "backgroundColor": "{colors.primary}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.button}",
+        "rounded": "{rounded.pill}",
+        "padding": "12px 20px",
+        "height": "44px"
+      },
+      "button-primary-active": {
+        "backgroundColor": "{colors.primary-active}",
+        "textColor": "{colors.on-primary}",
+        "rounded": "{rounded.pill}"
+      },
+      "button-primary-disabled": {
+        "backgroundColor": "{colors.primary-disabled}",
+        "textColor": "{colors.on-primary}",
+        "rounded": "{rounded.pill}"
+      },
+      "button-secondary-light": {
+        "backgroundColor": "{colors.surface-strong}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.button}",
+        "rounded": "{rounded.pill}",
+        "padding": "12px 20px",
+        "height": "44px"
+      },
+      "button-secondary-dark": {
+        "backgroundColor": "{colors.surface-dark-elevated}",
+        "textColor": "{colors.on-dark}",
+        "typography": "{typography.button}",
+        "rounded": "{rounded.pill}",
+        "padding": "12px 20px",
+        "height": "44px"
+      },
+      "button-outline-on-dark": {
+        "backgroundColor": "transparent",
+        "textColor": "{colors.on-dark}",
+        "typography": "{typography.button}",
+        "rounded": "{rounded.pill}",
+        "padding": "11px 19px",
+        "height": "44px"
+      },
+      "button-tertiary-text": {
+        "backgroundColor": "transparent",
+        "textColor": "{colors.primary}",
+        "typography": "{typography.button}"
+      },
+      "button-pill-cta": {
+        "backgroundColor": "{colors.primary}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.button}",
+        "rounded": "{rounded.pill}",
+        "padding": "16px 32px",
+        "height": "56px"
+      },
+      "hero-band-dark": {
+        "backgroundColor": "{colors.surface-dark}",
+        "textColor": "{colors.on-dark}",
+        "typography": "{typography.display-mega}",
+        "padding": "96px"
+      },
+      "hero-band-light": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.display-mega}",
+        "padding": "96px"
+      },
+      "product-ui-card-dark": {
+        "backgroundColor": "{colors.surface-dark-elevated}",
+        "textColor": "{colors.on-dark}",
+        "rounded": "{rounded.xl}",
+        "padding": "32px"
+      },
+      "product-ui-card-light": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "rounded": "{rounded.xl}",
+        "padding": "32px"
+      },
+      "feature-card": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.title-md}",
+        "rounded": "{rounded.xl}",
+        "padding": "32px"
+      },
+      "asset-row": {
+        "backgroundColor": "transparent",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-md}",
+        "padding": "16px 0"
+      },
+      "price-up-cell": {
+        "backgroundColor": "transparent",
+        "textColor": "{colors.semantic-up}",
+        "typography": "{typography.number-display}"
+      },
+      "price-down-cell": {
+        "backgroundColor": "transparent",
+        "textColor": "{colors.semantic-down}",
+        "typography": "{typography.number-display}"
+      },
+      "pricing-tier-card": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.xl}",
+        "padding": "32px"
+      },
+      "pricing-tier-featured": {
+        "backgroundColor": "{colors.surface-dark}",
+        "textColor": "{colors.on-dark}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.xl}",
+        "padding": "32px"
+      },
+      "cta-band-dark": {
+        "backgroundColor": "{colors.surface-dark}",
+        "textColor": "{colors.on-dark}",
+        "typography": "{typography.display-lg}",
+        "padding": "96px"
+      },
+      "text-input": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.md}",
+        "padding": "14px 16px",
+        "height": "48px"
+      },
+      "search-input-pill": {
+        "backgroundColor": "{colors.surface-strong}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.pill}",
+        "padding": "12px 20px",
+        "height": "44px"
+      },
+      "badge-pill": {
+        "backgroundColor": "{colors.surface-strong}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.caption-strong}",
+        "rounded": "{rounded.pill}",
+        "padding": "4px 12px"
+      },
+      "asset-icon-circular": {
+        "backgroundColor": "{colors.surface-strong}",
+        "rounded": "{rounded.full}",
+        "size": "32px"
+      },
+      "footer-light": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.body}",
+        "typography": "{typography.body-sm}",
+        "padding": "64px 48px"
+      },
+      "footer-link": {
+        "backgroundColor": "transparent",
+        "textColor": "{colors.body}",
+        "typography": "{typography.body-sm}"
+      },
+      "legal-band": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.muted}",
+        "typography": "{typography.caption}"
+      }
+    }
+  },
+  "normalizationRepairs": [],
+  "sections": [
+    {
+      "heading": "Overview",
+      "level": 2,
+      "text": "Coinbase reads like an institutional financial brand that happens to trade crypto — the marketing surfaces are quiet, white-canvas, editorially-spaced, and almost monochromatic. The single brand voltage is **Coinbase Blue** (`{colors.primary}` — #0052ff), used scarcely: every primary CTA pill, the brand wordmark, and inline emphasis links. Beyond that one blue, the system is white canvas + ink + soft gray elevation bands + a deep near-black editorial canvas (`{colors.surface-dark}` — #0a0b0d) for full-bleed product-mockup heroes.\n\nType pairs **CoinbaseDisplay** for hero headlines with **CoinbaseSans** for body, captions, and navigation. Display sits at **weight 400** — not the 700+ typical of trading platforms. The choice signals editorial calm and institutional trust rather than fintech urgency.\n\nThe page rhythm rotates three modes: bright white editorial sections, soft-gray elevation bands, and **full-bleed dark editorial heroes** carrying layered product-UI mockup cards. The dark hero with floating dashboard mockups is the single most distinctive component.\n\n**Key Characteristics:**\n- Single accent color: `{colors.primary}` (#0052ff Coinbase Blue) carries every primary CTA, wordmark, and inline brand link. Used scarcely.\n- Modest display weights — CoinbaseDisplay at weight 400, never 700+.\n- Editorial pill geometry: every CTA is `{rounded.pill}` (100px), every asset glyph is `{rounded.full}`, every card is `{rounded.xl}` (24px). Sharp corners absent.\n- Full-bleed dark heroes with floating product-UI cards: `{component.hero-band-dark}` plus inline `{component.product-ui-card-dark}` mockups is the brand's strongest signature pattern.\n- Trading semantics: `{colors.semantic-up}` (#05b169) and `{colors.semantic-down}` (#cf202f) — text color only, never background fills.\n- 96px section rhythm — generous editorial pacing.",
+      "line": 302
+    },
+    {
+      "heading": "Colors",
+      "level": 2,
+      "text": "",
+      "line": 318
+    },
+    {
+      "heading": "Brand & Accent",
+      "level": 3,
+      "text": "- **Coinbase Blue** (`{colors.primary}` — #0052ff): The single brand color. Every primary CTA pill, the Coinbase wordmark, and inline brand links.\n- **Coinbase Blue Active** (`{colors.primary-active}` — #003ecc): Press-state darken on the primary pill.\n- **Coinbase Blue Disabled** (`{colors.primary-disabled}` — #a8b8cc): Faded-blue tint for disabled CTAs.\n- **Accent Yellow** (`{colors.accent-yellow}` — #f4b000): A small sub-brand accent used very sparingly on Bitcoin/asset glyph fills inside feature cards. Illustrative-only, not an action color.",
+      "line": 320
+    },
+    {
+      "heading": "Surface",
+      "level": 3,
+      "text": "- **Canvas** (`{colors.canvas}` — #ffffff): The default page floor.\n- **Surface Soft** (`{colors.surface-soft}` — #f7f7f7): Subtle alternating band surface.\n- **Surface Strong** (`{colors.surface-strong}` — #eef0f3): The light-gray fill behind secondary buttons, search pills, asset-icon plates.\n- **Surface Dark** (`{colors.surface-dark}` — #0a0b0d): Deep near-black canvas for full-bleed dark heroes, CTA bands. Same hex as `{colors.ink}` — page-floor and text-color share the value.\n- **Surface Dark Elevated** (`{colors.surface-dark-elevated}` — #16181c): One step lighter, used for floating product-UI mockup cards inside dark heroes.",
+      "line": 326
+    },
+    {
+      "heading": "Hairlines",
+      "level": 3,
+      "text": "- **Hairline** (`{colors.hairline}` — #dee1e6): Default 1px divider on white surfaces.\n- **Hairline Soft** (`{colors.hairline-soft}` — #eef0f3): Lighter divider — same hex as `{colors.surface-strong}`.",
+      "line": 333
+    },
+    {
+      "heading": "Text",
+      "level": 3,
+      "text": "- **Ink** (`{colors.ink}` — #0a0b0d): Display headings, primary nav, body emphasis.\n- **Body** (`{colors.body}` — #5b616e): Default running-text — slightly cool gray.\n- **Body Strong** (`{colors.body-strong}` — #0a0b0d): Same as ink, used for stronger emphasis.\n- **Muted** (`{colors.muted}` — #7c828a): Sub-titles, breadcrumbs, footer secondary.\n- **Muted Soft** (`{colors.muted-soft}` — #a8acb3): Disabled link text.\n- **On Primary** (`{colors.on-primary}` — #ffffff): White text on Coinbase Blue CTAs.\n- **On Dark** (`{colors.on-dark}` — #ffffff): White text on dark heroes.\n- **On Dark Soft** (`{colors.on-dark-soft}` — #a8acb3): Muted off-white for secondary text on dark.",
+      "line": 337
+    },
+    {
+      "heading": "Trading Semantics",
+      "level": 3,
+      "text": "- **Semantic Up** (`{colors.semantic-up}` — #05b169): \"Price up\" green, text color only.\n- **Semantic Down** (`{colors.semantic-down}` — #cf202f): \"Price down\" red, text color only.",
+      "line": 347
+    },
+    {
+      "heading": "Typography",
+      "level": 2,
+      "text": "",
+      "line": 351
+    },
+    {
+      "heading": "Font Family",
+      "level": 3,
+      "text": "The system runs **CoinbaseDisplay** (display headlines), **CoinbaseSans** (body, navigation, captions, buttons), **CoinbaseIcons** (icon font), and **CoinbaseMono** for tabular numerical data. Fallback stack: `-apple-system, system-ui, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif`.\n\nThe display/body split is functional: CoinbaseDisplay carries hero headlines only; CoinbaseSans carries everything else.",
+      "line": 353
+    },
+    {
+      "heading": "Hierarchy",
+      "level": 3,
+      "text": "| Token | Size | Weight | Line Height | Letter Spacing | Use |\n|---|---|---|---|---|---|\n| `{typography.display-mega}` | 80px | 400 | 1.0 | -2px | Homepage hero h1 |\n| `{typography.display-xl}` | 64px | 400 | 1.0 | -1.6px | Subsidiary heroes |\n| `{typography.display-lg}` | 52px | 400 | 1.0 | -1.3px | Section heads |\n| `{typography.display-md}` | 44px | 400 | 1.09 | -1px | CTA-band headlines |\n| `{typography.display-sm}` | 36px | 400 | 1.11 | -0.5px | Sub-section heads — CoinbaseSans |\n| `{typography.title-lg}` | 32px | 400 | 1.13 | -0.4px | Card group titles |\n| `{typography.title-md}` | 18px | 600 | 1.33 | 0 | Component titles, asset row primary |\n| `{typography.title-sm}` | 16px | 600 | 1.25 | 0 | List labels |\n| `{typography.body-md}` | 16px | 400 | 1.5 | 0 | Default body |\n| `{typography.body-strong}` | 16px | 700 | 1.5 | 0 | Emphasized body |\n| `{typography.body-sm}` | 14px | 400 | 1.5 | 0 | Footer body |\n| `{typography.caption}` | 13px | 400 | 1.5 | 0 | Photo captions |\n| `{typography.caption-strong}` | 12px | 600 | 1.5 | 0 | Badge pill labels |\n| `{typography.number-display}` | 18px | 500 | 1.4 | 0 | Asset prices, percent changes — CoinbaseMono |\n| `{typography.button}` | 16px | 600 | 1.15 | 0 | Standard CTA pill |\n| `{typography.nav-link}` | 14px | 500 | 1.4 | 0 | Top-nav menu items |",
+      "line": 358
+    },
+    {
+      "heading": "Principles",
+      "level": 3,
+      "text": "- **Display weight stays at 400.** The single most distinctive typographic choice — signals \"calm institutional brand\" rather than \"trading-platform urgency.\"\n- **Negative letter-spacing on display only.** Display uses -1px to -2px tracking; body stays at 0.\n- **CoinbaseMono on every number.** Asset prices, percent changes — anything tabular renders in CoinbaseMono.",
+      "line": 379
+    },
+    {
+      "heading": "Note on Font Substitutes",
+      "level": 3,
+      "text": "CoinbaseDisplay, CoinbaseSans, and CoinbaseMono are licensed Coinbase typefaces.\n- **CoinbaseDisplay → Inter** at weight 400, letter-spacing -1.5%.\n- **CoinbaseSans → Inter** at weight 400/600.\n- **CoinbaseMono → JetBrains Mono** or **Geist Mono** at weight 500.",
+      "line": 384
+    },
+    {
+      "heading": "Layout",
+      "level": 2,
+      "text": "",
+      "line": 390
+    },
+    {
+      "heading": "Spacing System",
+      "level": 3,
+      "text": "- **Base unit:** 4px.\n- **Tokens:** `{spacing.xxs}` 4px · `{spacing.xs}` 8px · `{spacing.sm}` 12px · `{spacing.base}` 16px · `{spacing.md}` 20px · `{spacing.lg}` 24px · `{spacing.xl}` 32px · `{spacing.xxl}` 48px · `{spacing.section}` 96px.\n- **Section padding:** `{spacing.section}` (96px) for every major editorial band.\n- **Card internal padding:** `{spacing.xl}` (32px) for feature cards and product-UI mockups.",
+      "line": 392
+    },
+    {
+      "heading": "Grid & Container",
+      "level": 3,
+      "text": "- **Max content width:** ~1200px centered. Hero photography full-bleed.\n- **Editorial body:** Single 12-column grid.\n- **Feature card grids:** 2-up at desktop for hero splits, 3-up for benefit grids.\n- **Footer:** 6-column link list at desktop.",
+      "line": 398
+    },
+    {
+      "heading": "Whitespace Philosophy",
+      "level": 3,
+      "text": "Generous editorial pacing — closer to Bloomberg or the Financial Times than to a trading dashboard. 96px between bands; cards inside bands sit 24px apart. Density lives behind login walls, not on marketing.",
+      "line": 404
+    },
+    {
+      "heading": "Elevation & Depth",
+      "level": 2,
+      "text": "| Level | Treatment | Use |\n|---|---|---|\n| Flat | No shadow, no border | 80% of surfaces |\n| Hairline border | 1px `{colors.hairline}` | Feature card outlines on white |\n| Soft drop | `0 4px 12px rgba(0, 0, 0, 0.04)` | Single shadow tier — hovered cards |\n| Photographic | Full-bleed product-UI mockups | Hero depth |",
+      "line": 407
+    },
+    {
+      "heading": "Decorative Depth",
+      "level": 3,
+      "text": "- **Layered product-UI cards inside dark heroes** is the most distinctive decorative pattern — a `{component.product-ui-card-dark}` floats above a darker base canvas, often with a second smaller card overlapping at an angle.\n- **Geometric brand illustrations** carry illustrative depth where shadows would otherwise.",
+      "line": 416
+    },
+    {
+      "heading": "Shapes",
+      "level": 2,
+      "text": "",
+      "line": 420
+    },
+    {
+      "heading": "Border Radius Scale",
+      "level": 3,
+      "text": "| Token | Value | Use |\n|---|---|---|\n| `{rounded.none}` | 0px | Reserved (essentially unused) |\n| `{rounded.xs}` | 4px | Inline tags |\n| `{rounded.sm}` | 8px | Compact rows |\n| `{rounded.md}` | 12px | Form inputs |\n| `{rounded.lg}` | 16px | Mid-size cards |\n| `{rounded.xl}` | 24px | Feature cards, product-UI mockups, pricing tiers |\n| `{rounded.pill}` | 100px | All CTA buttons, search pills, badges |\n| `{rounded.full}` | 9999px | Asset icon circles, avatars |\n\nPill for interactive, card-radius (24px) for containers, full circle for icons. Sharp corners absent.",
+      "line": 422
+    },
+    {
+      "heading": "Components",
+      "level": 2,
+      "text": "",
+      "line": 437
+    },
+    {
+      "heading": "Top Navigation",
+      "level": 3,
+      "text": "**`top-nav-light`** — Default top nav on white pages. Background `{colors.canvas}`, text `{colors.ink}`, height 64px. Layout: Coinbase wordmark left, primary horizontal menu (Cryptocurrencies / Individuals / Businesses / Institutions / Developers / Company), search-icon + globe + Sign In + Sign Up CTAs right.\n\n**`top-nav-on-dark`** — Top nav over a dark hero band. Background `{colors.surface-dark}`, text `{colors.on-dark}`. Same layout.",
+      "line": 439
+    },
+    {
+      "heading": "Buttons",
+      "level": 3,
+      "text": "**`button-primary`** — The signature Coinbase Blue pill. Background `{colors.primary}`, text `{colors.on-primary}`, type `{typography.button}` (16px / 600), padding 12px × 20px, height 44px, rounded `{rounded.pill}` (100px).\n\n**`button-primary-active`** — Press state. Background `{colors.primary-active}`, deeper blue.\n\n**`button-primary-disabled`** — Faded blue tint. Background `{colors.primary-disabled}`. Cursor not-allowed.\n\n**`button-secondary-light`** — Soft-gray secondary on white surfaces. Background `{colors.surface-strong}`, text `{colors.ink}`, same pill geometry.\n\n**`button-secondary-dark`** — Used on dark heroes. Background `{colors.surface-dark-elevated}`, text `{colors.on-dark}`, same pill geometry.\n\n**`button-outline-on-dark`** — Transparent pill with white outline. Background transparent, text `{colors.on-dark}`, 1px white border.\n\n**`button-tertiary-text`** — Inline text link. Background transparent, text `{colors.primary}`, type `{typography.button}`.\n\n**`button-pill-cta`** — Larger pill CTA used on the homepage hero (\"Get started\"). Same Coinbase Blue palette but with 56px height and 16px × 32px padding for a prouder stance.",
+      "line": 445
+    },
+    {
+      "heading": "Hero Bands",
+      "level": 3,
+      "text": "**`hero-band-dark`** — The signature full-bleed dark hero. Background `{colors.surface-dark}`, text `{colors.on-dark}`, full-bleed layered product-UI mockup cards. Display headline left in `{typography.display-mega}` (80px / 400), subhead in `{typography.body-md}`, two CTAs.\n\n**`hero-band-light`** — White-canvas variant used on Wealth and Explore. Background `{colors.canvas}`, text `{colors.ink}`. Same skeleton, light palette.",
+      "line": 463
+    },
+    {
+      "heading": "Cards",
+      "level": 3,
+      "text": "**`product-ui-card-dark`** — The floating product-UI mockup. Background `{colors.surface-dark-elevated}`, text `{colors.on-dark}`, rounded `{rounded.xl}` (24px), padding 32px. Often shown as 2-3 stacked cards at slight rotation, mimicking a layered dashboard.\n\n**`product-ui-card-light`** — Light-canvas variant used on Explore for asset cards. Background `{colors.canvas}`, text `{colors.ink}`, same geometry, 1px hairline border.\n\n**`feature-card`** — Used in 3-up and 2-up grids. Background `{colors.canvas}`, text `{colors.ink}`, type `{typography.title-md}`, rounded `{rounded.xl}`, padding 32px.",
+      "line": 469
+    },
+    {
+      "heading": "Trading Surfaces",
+      "level": 3,
+      "text": "**`asset-row`** — Horizontal row in asset lists (Explore, Wealth). Background transparent, 1px hairline divider. Layout: 32px circular asset icon left, asset name + ticker, price column in `{typography.number-display}`, 24h change column with `{component.price-up-cell}` or `{component.price-down-cell}`.\n\n**`price-up-cell`** + **`price-down-cell`** — Inline price-change cells. Color only — green or red text in `{typography.number-display}`, no background fill.\n\n**`asset-icon-circular`** — Circular plate behind asset glyphs. Background `{colors.surface-strong}`, rounded `{rounded.full}`, 32px diameter.",
+      "line": 477
+    },
+    {
+      "heading": "Pricing",
+      "level": 3,
+      "text": "**`pricing-tier-card`** — Standard pricing tier on Developer Platform. Background `{colors.canvas}`, rounded `{rounded.xl}`, padding 32px, 1px hairline border. Layout: tier name + price + feature checklist + CTA pill.\n\n**`pricing-tier-featured`** — The featured tier. Background `{colors.surface-dark}`, text `{colors.on-dark}`. Same skeleton, dark palette — visual inversion signals \"highlighted choice\" without colored ribbons.",
+      "line": 485
+    },
+    {
+      "heading": "Forms",
+      "level": 3,
+      "text": "**`text-input`** — Standard text input. Background `{colors.canvas}`, text `{colors.ink}`, rounded `{rounded.md}` (12px), padding 14px × 16px, height 48px, 1px hairline border. On focus, border thickens to 2px Coinbase Blue.\n\n**`search-input-pill`** — Pill-shaped search bar. Background `{colors.surface-strong}`, rounded `{rounded.pill}`, padding 12px × 20px, height 44px.",
+      "line": 491
+    },
+    {
+      "heading": "Tags & Badges",
+      "level": 3,
+      "text": "**`badge-pill`** — Small uppercase pill used as section labels (\"INSTITUTIONAL\", \"REGULATED\"). Background `{colors.surface-strong}`, text `{colors.ink}`, type `{typography.caption-strong}`, rounded `{rounded.pill}`.",
+      "line": 497
+    },
+    {
+      "heading": "CTA / Footer",
+      "level": 3,
+      "text": "**`cta-band-dark`** — Pre-footer \"Take control of your money\" band. Background `{colors.surface-dark}`, text `{colors.on-dark}`, vertical padding 96px. Centered headline + two CTAs.\n\n**`footer-light`** — Closing white-canvas footer. Background `{colors.canvas}`, text `{colors.body}`. 6-column link list.\n\n**`footer-link`** — Individual footer link. Background transparent, text `{colors.body}`.\n\n**`legal-band`** — Bottom strip beneath footer columns. All text `{colors.muted}` at `{typography.caption}`.",
+      "line": 501
+    },
+    {
+      "heading": "Do's and Don'ts",
+      "level": 2,
+      "text": "",
+      "line": 511
+    },
+    {
+      "heading": "Do",
+      "level": 3,
+      "text": "- Reserve `{colors.primary}` (Coinbase Blue) for primary CTAs, wordmark, brand-glyph illustrations, inline accent links.\n- Set every CTA as `{rounded.pill}` (100px); every asset glyph as `{rounded.full}`.\n- Keep CoinbaseDisplay headlines at weight 400.\n- Use the dark/light band rotation as page rhythm.\n- Render every numerical value in CoinbaseMono via `{typography.number-display}`.\n- Pair every dark hero with a layered product-UI mockup card stack.",
+      "line": 513
+    },
+    {
+      "heading": "Don't",
+      "level": 3,
+      "text": "- Don't introduce a secondary brand color. Coinbase Blue is the only action color; trading green/red are semantic-only.\n- Don't bold display copy — display sits at weight 400; bolding shifts the brand voice.\n- Don't add drop shadow tiers — system has one shadow tier.\n- Don't use sharp `{rounded.none}` (0px) on CTAs.\n- Don't mix CoinbaseDisplay and CoinbaseSans inside the same headline.\n- Don't use trading green/red as a button background.\n- Don't extract a CTA color from a third-party widget (cookie consent, OneTrust). The brand's CTA color is what appears on actual product CTAs, not on injected modals.",
+      "line": 521
+    },
+    {
+      "heading": "Responsive Behavior",
+      "level": 2,
+      "text": "",
+      "line": 530
+    },
+    {
+      "heading": "Breakpoints",
+      "level": 3,
+      "text": "| Name | Width | Key Changes |\n|---|---|---|\n| Mobile | < 640px | Hero h1 80→40px; feature card grid 1-up; asset row stacks; nav collapses to hamburger; layered product-UI cards collapse to single card. |\n| Tablet | 640–1024px | Hero h1 64px; feature card grid 2-up; asset rows stay horizontal but compress columns. |\n| Desktop | 1024–1280px | Full hero h1 80px; feature card grid 3-up; full asset row layout. |\n| Wide | > 1280px | Content caps at 1200px; hero photography full-bleed. |",
+      "line": 532
+    },
+    {
+      "heading": "Touch Targets",
+      "level": 3,
+      "text": "- Primary CTA pill at 44px height — at WCAG AAA.\n- Larger hero pill (`{component.button-pill-cta}`) at 56px — well above AAA.\n- Asset icon circles at 32px — borderline; padded 8px row creates effective 48px tap zone.\n- Search pill at 44px height — at AAA.",
+      "line": 541
+    },
+    {
+      "heading": "Collapsing Strategy",
+      "level": 3,
+      "text": "- Top nav switches to hamburger sheet below 768px. Sign Up CTA stays visible.\n- Hero h1 steps down: 80 → 64 → 52 → 44 → 36px on smallest screens.\n- Layered product-UI mockup cards collapse from 2-3 stacked into a single card on mobile.\n- Pricing tier rows: 3-up → 2-up → 1-up.\n- Asset rows on mobile stack vertically: ticker line on top, price + change line beneath.",
+      "line": 547
+    },
+    {
+      "heading": "Iteration Guide",
+      "level": 2,
+      "text": "1. Focus on a single component at a time. Reference YAML keys directly.\n2. New CTAs default to `{rounded.pill}` (100px); new icon plates default to `{rounded.full}`. Cards use `{rounded.xl}`.\n3. Variants live as separate entries inside the `components:` block.\n4. Use `{token.refs}` everywhere — never inline hex.\n5. Hover state never documented. Only Default and Active/Pressed.\n6. CoinbaseDisplay 400 for display, CoinbaseSans 400/600/700 for body. CoinbaseMono on every number.\n7. Coinbase Blue stays scarce — one or two blue moments per band.",
+      "line": 554
+    },
+    {
+      "heading": "Known Gaps",
+      "level": 2,
+      "text": "- CoinbaseDisplay, CoinbaseSans, CoinbaseMono are licensed; Inter and JetBrains Mono are documented substitutes.\n- In-product trading surfaces (order book, charts, order forms) are behind login walls — this document covers marketing only.\n- Animation timings out of scope.\n- Form validation states beyond focus not visible on captured surfaces.\n- Accent yellow appears only inside Bitcoin asset glyph illustrations; documented as illustrative-only.",
+      "line": 564
+    }
+  ],
+  "tokens": [
+    {
+      "path": "colors.primary",
+      "sourcePath": "colors.primary",
+      "type": "color",
+      "value": "#0052ff",
+      "status": "unverified",
+      "evidence": {
+        "line": 7,
+        "sourcePath": "colors.primary"
+      }
+    },
+    {
+      "path": "colors.primaryactive",
+      "sourcePath": "colors.primary-active",
+      "type": "color",
+      "value": "#003ecc",
+      "status": "unverified",
+      "evidence": {
+        "line": 8,
+        "sourcePath": "colors.primary-active"
+      }
+    },
+    {
+      "path": "colors.primarydisabled",
+      "sourcePath": "colors.primary-disabled",
+      "type": "color",
+      "value": "#a8b8cc",
+      "status": "unverified",
+      "evidence": {
+        "line": 9,
+        "sourcePath": "colors.primary-disabled"
+      }
+    },
+    {
+      "path": "colors.ink",
+      "sourcePath": "colors.ink",
+      "type": "color",
+      "value": "#0a0b0d",
+      "status": "unverified",
+      "evidence": {
+        "line": 10,
+        "sourcePath": "colors.ink"
+      }
+    },
+    {
+      "path": "colors.body",
+      "sourcePath": "colors.body",
+      "type": "color",
+      "value": "#5b616e",
+      "status": "unverified",
+      "evidence": {
+        "line": 11,
+        "sourcePath": "colors.body"
+      }
+    },
+    {
+      "path": "colors.bodystrong",
+      "sourcePath": "colors.body-strong",
+      "type": "color",
+      "value": "#0a0b0d",
+      "status": "unverified",
+      "evidence": {
+        "line": 12,
+        "sourcePath": "colors.body-strong"
+      }
+    },
+    {
+      "path": "colors.muted",
+      "sourcePath": "colors.muted",
+      "type": "color",
+      "value": "#7c828a",
+      "status": "unverified",
+      "evidence": {
+        "line": 13,
+        "sourcePath": "colors.muted"
+      }
+    },
+    {
+      "path": "colors.mutedsoft",
+      "sourcePath": "colors.muted-soft",
+      "type": "color",
+      "value": "#a8acb3",
+      "status": "unverified",
+      "evidence": {
+        "line": 14,
+        "sourcePath": "colors.muted-soft"
+      }
+    },
+    {
+      "path": "colors.hairline",
+      "sourcePath": "colors.hairline",
+      "type": "color",
+      "value": "#dee1e6",
+      "status": "unverified",
+      "evidence": {
+        "line": 15,
+        "sourcePath": "colors.hairline"
+      }
+    },
+    {
+      "path": "colors.hairlinesoft",
+      "sourcePath": "colors.hairline-soft",
+      "type": "color",
+      "value": "#eef0f3",
+      "status": "unverified",
+      "evidence": {
+        "line": 16,
+        "sourcePath": "colors.hairline-soft"
+      }
+    },
+    {
+      "path": "colors.canvas",
+      "sourcePath": "colors.canvas",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 17,
+        "sourcePath": "colors.canvas"
+      }
+    },
+    {
+      "path": "colors.surfacesoft",
+      "sourcePath": "colors.surface-soft",
+      "type": "color",
+      "value": "#f7f7f7",
+      "status": "unverified",
+      "evidence": {
+        "line": 18,
+        "sourcePath": "colors.surface-soft"
+      }
+    },
+    {
+      "path": "colors.surfacecard",
+      "sourcePath": "colors.surface-card",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 19,
+        "sourcePath": "colors.surface-card"
+      }
+    },
+    {
+      "path": "colors.surfacestrong",
+      "sourcePath": "colors.surface-strong",
+      "type": "color",
+      "value": "#eef0f3",
+      "status": "unverified",
+      "evidence": {
+        "line": 20,
+        "sourcePath": "colors.surface-strong"
+      }
+    },
+    {
+      "path": "colors.surfacedark",
+      "sourcePath": "colors.surface-dark",
+      "type": "color",
+      "value": "#0a0b0d",
+      "status": "unverified",
+      "evidence": {
+        "line": 21,
+        "sourcePath": "colors.surface-dark"
+      }
+    },
+    {
+      "path": "colors.surfacedarkelevated",
+      "sourcePath": "colors.surface-dark-elevated",
+      "type": "color",
+      "value": "#16181c",
+      "status": "unverified",
+      "evidence": {
+        "line": 22,
+        "sourcePath": "colors.surface-dark-elevated"
+      }
+    },
+    {
+      "path": "colors.onprimary",
+      "sourcePath": "colors.on-primary",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 23,
+        "sourcePath": "colors.on-primary"
+      }
+    },
+    {
+      "path": "colors.ondark",
+      "sourcePath": "colors.on-dark",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 24,
+        "sourcePath": "colors.on-dark"
+      }
+    },
+    {
+      "path": "colors.ondarksoft",
+      "sourcePath": "colors.on-dark-soft",
+      "type": "color",
+      "value": "#a8acb3",
+      "status": "unverified",
+      "evidence": {
+        "line": 25,
+        "sourcePath": "colors.on-dark-soft"
+      }
+    },
+    {
+      "path": "colors.semanticup",
+      "sourcePath": "colors.semantic-up",
+      "type": "color",
+      "value": "#05b169",
+      "status": "unverified",
+      "evidence": {
+        "line": 26,
+        "sourcePath": "colors.semantic-up"
+      }
+    },
+    {
+      "path": "colors.semanticdown",
+      "sourcePath": "colors.semantic-down",
+      "type": "color",
+      "value": "#cf202f",
+      "status": "unverified",
+      "evidence": {
+        "line": 27,
+        "sourcePath": "colors.semantic-down"
+      }
+    },
+    {
+      "path": "colors.accentyellow",
+      "sourcePath": "colors.accent-yellow",
+      "type": "color",
+      "value": "#f4b000",
+      "status": "unverified",
+      "evidence": {
+        "line": 28,
+        "sourcePath": "colors.accent-yellow"
+      }
+    },
+    {
+      "path": "typography.displaymega.fontfamily",
+      "sourcePath": "typography.display-mega.fontFamily",
+      "type": "fontFamily",
+      "value": "'Coinbase Display', -apple-system, system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 32,
+        "sourcePath": "typography.display-mega.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displaymega.fontsize",
+      "sourcePath": "typography.display-mega.fontSize",
+      "type": "dimension",
+      "value": "80px",
+      "status": "unverified",
+      "evidence": {
+        "line": 33,
+        "sourcePath": "typography.display-mega.fontSize"
+      }
+    },
+    {
+      "path": "typography.displaymega.fontweight",
+      "sourcePath": "typography.display-mega.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 34,
+        "sourcePath": "typography.display-mega.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displaymega.lineheight",
+      "sourcePath": "typography.display-mega.lineHeight",
+      "type": "number",
+      "value": 1,
+      "status": "unverified",
+      "evidence": {
+        "line": 35,
+        "sourcePath": "typography.display-mega.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displaymega.letterspacing",
+      "sourcePath": "typography.display-mega.letterSpacing",
+      "type": "dimension",
+      "value": "-2px",
+      "status": "unverified",
+      "evidence": {
+        "line": 36,
+        "sourcePath": "typography.display-mega.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.displayxl.fontfamily",
+      "sourcePath": "typography.display-xl.fontFamily",
+      "type": "fontFamily",
+      "value": "'Coinbase Display', sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 38,
+        "sourcePath": "typography.display-xl.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displayxl.fontsize",
+      "sourcePath": "typography.display-xl.fontSize",
+      "type": "dimension",
+      "value": "64px",
+      "status": "unverified",
+      "evidence": {
+        "line": 39,
+        "sourcePath": "typography.display-xl.fontSize"
+      }
+    },
+    {
+      "path": "typography.displayxl.fontweight",
+      "sourcePath": "typography.display-xl.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 40,
+        "sourcePath": "typography.display-xl.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displayxl.lineheight",
+      "sourcePath": "typography.display-xl.lineHeight",
+      "type": "number",
+      "value": 1,
+      "status": "unverified",
+      "evidence": {
+        "line": 41,
+        "sourcePath": "typography.display-xl.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displayxl.letterspacing",
+      "sourcePath": "typography.display-xl.letterSpacing",
+      "type": "dimension",
+      "value": "-1.6px",
+      "status": "unverified",
+      "evidence": {
+        "line": 42,
+        "sourcePath": "typography.display-xl.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.displaylg.fontfamily",
+      "sourcePath": "typography.display-lg.fontFamily",
+      "type": "fontFamily",
+      "value": "'Coinbase Display', sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 44,
+        "sourcePath": "typography.display-lg.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displaylg.fontsize",
+      "sourcePath": "typography.display-lg.fontSize",
+      "type": "dimension",
+      "value": "52px",
+      "status": "unverified",
+      "evidence": {
+        "line": 45,
+        "sourcePath": "typography.display-lg.fontSize"
+      }
+    },
+    {
+      "path": "typography.displaylg.fontweight",
+      "sourcePath": "typography.display-lg.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 46,
+        "sourcePath": "typography.display-lg.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displaylg.lineheight",
+      "sourcePath": "typography.display-lg.lineHeight",
+      "type": "number",
+      "value": 1,
+      "status": "unverified",
+      "evidence": {
+        "line": 47,
+        "sourcePath": "typography.display-lg.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displaylg.letterspacing",
+      "sourcePath": "typography.display-lg.letterSpacing",
+      "type": "dimension",
+      "value": "-1.3px",
+      "status": "unverified",
+      "evidence": {
+        "line": 48,
+        "sourcePath": "typography.display-lg.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.displaymd.fontfamily",
+      "sourcePath": "typography.display-md.fontFamily",
+      "type": "fontFamily",
+      "value": "'Coinbase Display', sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 50,
+        "sourcePath": "typography.display-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displaymd.fontsize",
+      "sourcePath": "typography.display-md.fontSize",
+      "type": "dimension",
+      "value": "44px",
+      "status": "unverified",
+      "evidence": {
+        "line": 51,
+        "sourcePath": "typography.display-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.displaymd.fontweight",
+      "sourcePath": "typography.display-md.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 52,
+        "sourcePath": "typography.display-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displaymd.lineheight",
+      "sourcePath": "typography.display-md.lineHeight",
+      "type": "number",
+      "value": 1.09,
+      "status": "unverified",
+      "evidence": {
+        "line": 53,
+        "sourcePath": "typography.display-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displaymd.letterspacing",
+      "sourcePath": "typography.display-md.letterSpacing",
+      "type": "dimension",
+      "value": "-1px",
+      "status": "unverified",
+      "evidence": {
+        "line": 54,
+        "sourcePath": "typography.display-md.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.displaysm.fontfamily",
+      "sourcePath": "typography.display-sm.fontFamily",
+      "type": "fontFamily",
+      "value": "'Coinbase Sans', sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 56,
+        "sourcePath": "typography.display-sm.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displaysm.fontsize",
+      "sourcePath": "typography.display-sm.fontSize",
+      "type": "dimension",
+      "value": "36px",
+      "status": "unverified",
+      "evidence": {
+        "line": 57,
+        "sourcePath": "typography.display-sm.fontSize"
+      }
+    },
+    {
+      "path": "typography.displaysm.fontweight",
+      "sourcePath": "typography.display-sm.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 58,
+        "sourcePath": "typography.display-sm.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displaysm.lineheight",
+      "sourcePath": "typography.display-sm.lineHeight",
+      "type": "number",
+      "value": 1.11,
+      "status": "unverified",
+      "evidence": {
+        "line": 59,
+        "sourcePath": "typography.display-sm.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displaysm.letterspacing",
+      "sourcePath": "typography.display-sm.letterSpacing",
+      "type": "dimension",
+      "value": "-0.5px",
+      "status": "unverified",
+      "evidence": {
+        "line": 60,
+        "sourcePath": "typography.display-sm.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.titlelg.fontfamily",
+      "sourcePath": "typography.title-lg.fontFamily",
+      "type": "fontFamily",
+      "value": "'Coinbase Sans', sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 62,
+        "sourcePath": "typography.title-lg.fontFamily"
+      }
+    },
+    {
+      "path": "typography.titlelg.fontsize",
+      "sourcePath": "typography.title-lg.fontSize",
+      "type": "dimension",
+      "value": "32px",
+      "status": "unverified",
+      "evidence": {
+        "line": 63,
+        "sourcePath": "typography.title-lg.fontSize"
+      }
+    },
+    {
+      "path": "typography.titlelg.fontweight",
+      "sourcePath": "typography.title-lg.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 64,
+        "sourcePath": "typography.title-lg.fontWeight"
+      }
+    },
+    {
+      "path": "typography.titlelg.lineheight",
+      "sourcePath": "typography.title-lg.lineHeight",
+      "type": "number",
+      "value": 1.13,
+      "status": "unverified",
+      "evidence": {
+        "line": 65,
+        "sourcePath": "typography.title-lg.lineHeight"
+      }
+    },
+    {
+      "path": "typography.titlelg.letterspacing",
+      "sourcePath": "typography.title-lg.letterSpacing",
+      "type": "dimension",
+      "value": "-0.4px",
+      "status": "unverified",
+      "evidence": {
+        "line": 66,
+        "sourcePath": "typography.title-lg.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.titlemd.fontfamily",
+      "sourcePath": "typography.title-md.fontFamily",
+      "type": "fontFamily",
+      "value": "'Coinbase Sans', sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 68,
+        "sourcePath": "typography.title-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.titlemd.fontsize",
+      "sourcePath": "typography.title-md.fontSize",
+      "type": "dimension",
+      "value": "18px",
+      "status": "unverified",
+      "evidence": {
+        "line": 69,
+        "sourcePath": "typography.title-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.titlemd.fontweight",
+      "sourcePath": "typography.title-md.fontWeight",
+      "type": "number",
+      "value": 600,
+      "status": "unverified",
+      "evidence": {
+        "line": 70,
+        "sourcePath": "typography.title-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.titlemd.lineheight",
+      "sourcePath": "typography.title-md.lineHeight",
+      "type": "number",
+      "value": 1.33,
+      "status": "unverified",
+      "evidence": {
+        "line": 71,
+        "sourcePath": "typography.title-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.titlemd.letterspacing",
+      "sourcePath": "typography.title-md.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 72,
+        "sourcePath": "typography.title-md.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.titlesm.fontfamily",
+      "sourcePath": "typography.title-sm.fontFamily",
+      "type": "fontFamily",
+      "value": "'Coinbase Sans', sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 74,
+        "sourcePath": "typography.title-sm.fontFamily"
+      }
+    },
+    {
+      "path": "typography.titlesm.fontsize",
+      "sourcePath": "typography.title-sm.fontSize",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 75,
+        "sourcePath": "typography.title-sm.fontSize"
+      }
+    },
+    {
+      "path": "typography.titlesm.fontweight",
+      "sourcePath": "typography.title-sm.fontWeight",
+      "type": "number",
+      "value": 600,
+      "status": "unverified",
+      "evidence": {
+        "line": 76,
+        "sourcePath": "typography.title-sm.fontWeight"
+      }
+    },
+    {
+      "path": "typography.titlesm.lineheight",
+      "sourcePath": "typography.title-sm.lineHeight",
+      "type": "number",
+      "value": 1.25,
+      "status": "unverified",
+      "evidence": {
+        "line": 77,
+        "sourcePath": "typography.title-sm.lineHeight"
+      }
+    },
+    {
+      "path": "typography.titlesm.letterspacing",
+      "sourcePath": "typography.title-sm.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 78,
+        "sourcePath": "typography.title-sm.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.bodymd.fontfamily",
+      "sourcePath": "typography.body-md.fontFamily",
+      "type": "fontFamily",
+      "value": "'Coinbase Sans', sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 80,
+        "sourcePath": "typography.body-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodymd.fontsize",
+      "sourcePath": "typography.body-md.fontSize",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 81,
+        "sourcePath": "typography.body-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodymd.fontweight",
+      "sourcePath": "typography.body-md.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 82,
+        "sourcePath": "typography.body-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodymd.lineheight",
+      "sourcePath": "typography.body-md.lineHeight",
+      "type": "number",
+      "value": 1.5,
+      "status": "unverified",
+      "evidence": {
+        "line": 83,
+        "sourcePath": "typography.body-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodymd.letterspacing",
+      "sourcePath": "typography.body-md.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 84,
+        "sourcePath": "typography.body-md.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.bodystrong.fontfamily",
+      "sourcePath": "typography.body-strong.fontFamily",
+      "type": "fontFamily",
+      "value": "'Coinbase Sans', sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 86,
+        "sourcePath": "typography.body-strong.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodystrong.fontsize",
+      "sourcePath": "typography.body-strong.fontSize",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 87,
+        "sourcePath": "typography.body-strong.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodystrong.fontweight",
+      "sourcePath": "typography.body-strong.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 88,
+        "sourcePath": "typography.body-strong.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodystrong.lineheight",
+      "sourcePath": "typography.body-strong.lineHeight",
+      "type": "number",
+      "value": 1.5,
+      "status": "unverified",
+      "evidence": {
+        "line": 89,
+        "sourcePath": "typography.body-strong.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodystrong.letterspacing",
+      "sourcePath": "typography.body-strong.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 90,
+        "sourcePath": "typography.body-strong.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.bodysm.fontfamily",
+      "sourcePath": "typography.body-sm.fontFamily",
+      "type": "fontFamily",
+      "value": "'Coinbase Sans', sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 92,
+        "sourcePath": "typography.body-sm.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodysm.fontsize",
+      "sourcePath": "typography.body-sm.fontSize",
+      "type": "dimension",
+      "value": "14px",
+      "status": "unverified",
+      "evidence": {
+        "line": 93,
+        "sourcePath": "typography.body-sm.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodysm.fontweight",
+      "sourcePath": "typography.body-sm.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 94,
+        "sourcePath": "typography.body-sm.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodysm.lineheight",
+      "sourcePath": "typography.body-sm.lineHeight",
+      "type": "number",
+      "value": 1.5,
+      "status": "unverified",
+      "evidence": {
+        "line": 95,
+        "sourcePath": "typography.body-sm.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodysm.letterspacing",
+      "sourcePath": "typography.body-sm.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 96,
+        "sourcePath": "typography.body-sm.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.caption.fontfamily",
+      "sourcePath": "typography.caption.fontFamily",
+      "type": "fontFamily",
+      "value": "'Coinbase Sans', sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 98,
+        "sourcePath": "typography.caption.fontFamily"
+      }
+    },
+    {
+      "path": "typography.caption.fontsize",
+      "sourcePath": "typography.caption.fontSize",
+      "type": "dimension",
+      "value": "13px",
+      "status": "unverified",
+      "evidence": {
+        "line": 99,
+        "sourcePath": "typography.caption.fontSize"
+      }
+    },
+    {
+      "path": "typography.caption.fontweight",
+      "sourcePath": "typography.caption.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 100,
+        "sourcePath": "typography.caption.fontWeight"
+      }
+    },
+    {
+      "path": "typography.caption.lineheight",
+      "sourcePath": "typography.caption.lineHeight",
+      "type": "number",
+      "value": 1.5,
+      "status": "unverified",
+      "evidence": {
+        "line": 101,
+        "sourcePath": "typography.caption.lineHeight"
+      }
+    },
+    {
+      "path": "typography.caption.letterspacing",
+      "sourcePath": "typography.caption.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 102,
+        "sourcePath": "typography.caption.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.captionstrong.fontfamily",
+      "sourcePath": "typography.caption-strong.fontFamily",
+      "type": "fontFamily",
+      "value": "'Coinbase Sans', sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 104,
+        "sourcePath": "typography.caption-strong.fontFamily"
+      }
+    },
+    {
+      "path": "typography.captionstrong.fontsize",
+      "sourcePath": "typography.caption-strong.fontSize",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 105,
+        "sourcePath": "typography.caption-strong.fontSize"
+      }
+    },
+    {
+      "path": "typography.captionstrong.fontweight",
+      "sourcePath": "typography.caption-strong.fontWeight",
+      "type": "number",
+      "value": 600,
+      "status": "unverified",
+      "evidence": {
+        "line": 106,
+        "sourcePath": "typography.caption-strong.fontWeight"
+      }
+    },
+    {
+      "path": "typography.captionstrong.lineheight",
+      "sourcePath": "typography.caption-strong.lineHeight",
+      "type": "number",
+      "value": 1.5,
+      "status": "unverified",
+      "evidence": {
+        "line": 107,
+        "sourcePath": "typography.caption-strong.lineHeight"
+      }
+    },
+    {
+      "path": "typography.captionstrong.letterspacing",
+      "sourcePath": "typography.caption-strong.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 108,
+        "sourcePath": "typography.caption-strong.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.numberdisplay.fontfamily",
+      "sourcePath": "typography.number-display.fontFamily",
+      "type": "fontFamily",
+      "value": "'Coinbase Mono', 'Coinbase Sans', monospace",
+      "status": "unverified",
+      "evidence": {
+        "line": 110,
+        "sourcePath": "typography.number-display.fontFamily"
+      }
+    },
+    {
+      "path": "typography.numberdisplay.fontsize",
+      "sourcePath": "typography.number-display.fontSize",
+      "type": "dimension",
+      "value": "18px",
+      "status": "unverified",
+      "evidence": {
+        "line": 111,
+        "sourcePath": "typography.number-display.fontSize"
+      }
+    },
+    {
+      "path": "typography.numberdisplay.fontweight",
+      "sourcePath": "typography.number-display.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 112,
+        "sourcePath": "typography.number-display.fontWeight"
+      }
+    },
+    {
+      "path": "typography.numberdisplay.lineheight",
+      "sourcePath": "typography.number-display.lineHeight",
+      "type": "number",
+      "value": 1.4,
+      "status": "unverified",
+      "evidence": {
+        "line": 113,
+        "sourcePath": "typography.number-display.lineHeight"
+      }
+    },
+    {
+      "path": "typography.numberdisplay.letterspacing",
+      "sourcePath": "typography.number-display.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 114,
+        "sourcePath": "typography.number-display.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.button.fontfamily",
+      "sourcePath": "typography.button.fontFamily",
+      "type": "fontFamily",
+      "value": "'Coinbase Sans', sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 116,
+        "sourcePath": "typography.button.fontFamily"
+      }
+    },
+    {
+      "path": "typography.button.fontsize",
+      "sourcePath": "typography.button.fontSize",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 117,
+        "sourcePath": "typography.button.fontSize"
+      }
+    },
+    {
+      "path": "typography.button.fontweight",
+      "sourcePath": "typography.button.fontWeight",
+      "type": "number",
+      "value": 600,
+      "status": "unverified",
+      "evidence": {
+        "line": 118,
+        "sourcePath": "typography.button.fontWeight"
+      }
+    },
+    {
+      "path": "typography.button.lineheight",
+      "sourcePath": "typography.button.lineHeight",
+      "type": "number",
+      "value": 1.15,
+      "status": "unverified",
+      "evidence": {
+        "line": 119,
+        "sourcePath": "typography.button.lineHeight"
+      }
+    },
+    {
+      "path": "typography.button.letterspacing",
+      "sourcePath": "typography.button.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 120,
+        "sourcePath": "typography.button.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.navlink.fontfamily",
+      "sourcePath": "typography.nav-link.fontFamily",
+      "type": "fontFamily",
+      "value": "'Coinbase Sans', sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 122,
+        "sourcePath": "typography.nav-link.fontFamily"
+      }
+    },
+    {
+      "path": "typography.navlink.fontsize",
+      "sourcePath": "typography.nav-link.fontSize",
+      "type": "dimension",
+      "value": "14px",
+      "status": "unverified",
+      "evidence": {
+        "line": 123,
+        "sourcePath": "typography.nav-link.fontSize"
+      }
+    },
+    {
+      "path": "typography.navlink.fontweight",
+      "sourcePath": "typography.nav-link.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 124,
+        "sourcePath": "typography.nav-link.fontWeight"
+      }
+    },
+    {
+      "path": "typography.navlink.lineheight",
+      "sourcePath": "typography.nav-link.lineHeight",
+      "type": "number",
+      "value": 1.4,
+      "status": "unverified",
+      "evidence": {
+        "line": 125,
+        "sourcePath": "typography.nav-link.lineHeight"
+      }
+    },
+    {
+      "path": "typography.navlink.letterspacing",
+      "sourcePath": "typography.nav-link.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 126,
+        "sourcePath": "typography.nav-link.letterSpacing"
+      }
+    },
+    {
+      "path": "rounded.none",
+      "sourcePath": "rounded.none",
+      "type": "dimension",
+      "value": "0px",
+      "status": "unverified",
+      "evidence": {
+        "line": 129,
+        "sourcePath": "rounded.none"
+      }
+    },
+    {
+      "path": "rounded.xs",
+      "sourcePath": "rounded.xs",
+      "type": "dimension",
+      "value": "4px",
+      "status": "unverified",
+      "evidence": {
+        "line": 130,
+        "sourcePath": "rounded.xs"
+      }
+    },
+    {
+      "path": "rounded.sm",
+      "sourcePath": "rounded.sm",
+      "type": "dimension",
+      "value": "8px",
+      "status": "unverified",
+      "evidence": {
+        "line": 131,
+        "sourcePath": "rounded.sm"
+      }
+    },
+    {
+      "path": "rounded.md",
+      "sourcePath": "rounded.md",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 132,
+        "sourcePath": "rounded.md"
+      }
+    },
+    {
+      "path": "rounded.lg",
+      "sourcePath": "rounded.lg",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 133,
+        "sourcePath": "rounded.lg"
+      }
+    },
+    {
+      "path": "rounded.xl",
+      "sourcePath": "rounded.xl",
+      "type": "dimension",
+      "value": "24px",
+      "status": "unverified",
+      "evidence": {
+        "line": 134,
+        "sourcePath": "rounded.xl"
+      }
+    },
+    {
+      "path": "rounded.pill",
+      "sourcePath": "rounded.pill",
+      "type": "dimension",
+      "value": "100px",
+      "status": "unverified",
+      "evidence": {
+        "line": 135,
+        "sourcePath": "rounded.pill"
+      }
+    },
+    {
+      "path": "rounded.full",
+      "sourcePath": "rounded.full",
+      "type": "dimension",
+      "value": "9999px",
+      "status": "unverified",
+      "evidence": {
+        "line": 136,
+        "sourcePath": "rounded.full"
+      }
+    },
+    {
+      "path": "spacing.xxs",
+      "sourcePath": "spacing.xxs",
+      "type": "dimension",
+      "value": "4px",
+      "status": "unverified",
+      "evidence": {
+        "line": 139,
+        "sourcePath": "spacing.xxs"
+      }
+    },
+    {
+      "path": "spacing.xs",
+      "sourcePath": "spacing.xs",
+      "type": "dimension",
+      "value": "8px",
+      "status": "unverified",
+      "evidence": {
+        "line": 140,
+        "sourcePath": "spacing.xs"
+      }
+    },
+    {
+      "path": "spacing.sm",
+      "sourcePath": "spacing.sm",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 141,
+        "sourcePath": "spacing.sm"
+      }
+    },
+    {
+      "path": "spacing.base",
+      "sourcePath": "spacing.base",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 142,
+        "sourcePath": "spacing.base"
+      }
+    },
+    {
+      "path": "spacing.md",
+      "sourcePath": "spacing.md",
+      "type": "dimension",
+      "value": "20px",
+      "status": "unverified",
+      "evidence": {
+        "line": 143,
+        "sourcePath": "spacing.md"
+      }
+    },
+    {
+      "path": "spacing.lg",
+      "sourcePath": "spacing.lg",
+      "type": "dimension",
+      "value": "24px",
+      "status": "unverified",
+      "evidence": {
+        "line": 144,
+        "sourcePath": "spacing.lg"
+      }
+    },
+    {
+      "path": "spacing.xl",
+      "sourcePath": "spacing.xl",
+      "type": "dimension",
+      "value": "32px",
+      "status": "unverified",
+      "evidence": {
+        "line": 145,
+        "sourcePath": "spacing.xl"
+      }
+    },
+    {
+      "path": "spacing.xxl",
+      "sourcePath": "spacing.xxl",
+      "type": "dimension",
+      "value": "48px",
+      "status": "unverified",
+      "evidence": {
+        "line": 146,
+        "sourcePath": "spacing.xxl"
+      }
+    },
+    {
+      "path": "spacing.section",
+      "sourcePath": "spacing.section",
+      "type": "dimension",
+      "value": "96px",
+      "status": "unverified",
+      "evidence": {
+        "line": 147,
+        "sourcePath": "spacing.section"
+      }
+    }
+  ],
+  "rejectedTokens": [],
+  "homepage": {
+    "status": "missing",
+    "candidates": [],
+    "verification": {
+      "status": "verified",
+      "url": "https://www.coinbase.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://www.coinbase.com/",
+          "title": "Coinbase - Buy and Sell Bitcoin, Ethereum, and more with trust",
+          "note": "Public homepage read requested https://www.coinbase.com; final URL https://www.coinbase.com/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    }
+  },
+  "completeness": {
+    "presentFields": [
+      "colors",
+      "typography",
+      "rounded",
+      "spacing",
+      "components"
+    ],
+    "missingFields": [],
+    "tokenRoles": "incomplete",
+    "note": "Missing fields are not reconstructed. Prose-only colors have no inferred semantic role."
+  },
+  "provenance": {
+    "status": "independent-analysis",
+    "sources": [
+      {
+        "title": "VoltAgent awesome-design-md independent analysis",
+        "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/coinbase/DESIGN.md"
+      }
+    ],
+    "verification": "unverified-secondary-analysis"
+  },
+  "limitations": [
+    "Independent secondary analysis, not an official brand system; all reported values are unverified.",
+    "No brand assets, logos, font binaries or screenshots copied. Font names are documentary, not font licenses.",
+    "Safe CSS literals are extracted without claiming complete roles, state coverage or visual fidelity.",
+    "Markdown is retained as inert evidence, never executed or rendered as raw HTML."
+  ]
+}

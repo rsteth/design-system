@@ -1,0 +1,2108 @@
+{
+  "schemaVersion": 1,
+  "id": "reference-nvidia",
+  "title": "Nvidia",
+  "classification": "independent-unverified-analysis",
+  "source": {
+    "repository": "https://github.com/VoltAgent/awesome-design-md",
+    "fork": "https://github.com/rsteth/awesome-design-md-p",
+    "revision": "fcc70284932276d085f01ef9f83edde90b1258cb",
+    "path": "design-md/nvidia/DESIGN.md",
+    "sha256": "d649be85daf075c98a17071e707e3901c6e19150044a81716acd01ef1169cc83",
+    "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/nvidia/DESIGN.md"
+  },
+  "sourceName": "NVIDIA-design-analysis",
+  "titleProvenance": {
+    "status": "inferred",
+    "basis": "Source directory label, normalized for navigation; original source name is retained without correction.",
+    "sourceValue": "nvidia",
+    "originalName": "NVIDIA-design-analysis"
+  },
+  "description": "An engineering-grade marketing system organized around two surface modes — a deep black canvas for hero and footer chapters and a flat paper-white canvas for body content — connected by a single, almost violently saturated NVIDIA Green accent that carries every CTA, every active tab, and the small decorative corner squares that mark out cards. The system is unapologetically angular: 2px radius across every surface, tight bold sans-serif typography in NVIDIA's proprietary EMEA cut, and a hairline gray rule that separates dense multi-column technical content. There is no decorative gradient, no atmospheric mesh, no soft drop shadow — just black, white, gray, and green stacked into a structured editorial grid that scales from product cards to massive industry landing pages without bending its rules.\n",
+  "analysis": {
+    "version": "alpha",
+    "name": "NVIDIA-design-analysis",
+    "description": "An engineering-grade marketing system organized around two surface modes — a deep black canvas for hero and footer chapters and a flat paper-white canvas for body content — connected by a single, almost violently saturated NVIDIA Green accent that carries every CTA, every active tab, and the small decorative corner squares that mark out cards. The system is unapologetically angular: 2px radius across every surface, tight bold sans-serif typography in NVIDIA's proprietary EMEA cut, and a hairline gray rule that separates dense multi-column technical content. There is no decorative gradient, no atmospheric mesh, no soft drop shadow — just black, white, gray, and green stacked into a structured editorial grid that scales from product cards to massive industry landing pages without bending its rules.\n",
+    "colors": {
+      "primary": "#76b900",
+      "on-primary": "#000000",
+      "primary-dark": "#5a8d00",
+      "ink": "#000000",
+      "canvas": "#ffffff",
+      "surface-dark": "#000000",
+      "surface-soft": "#f7f7f7",
+      "surface-elevated": "#1a1a1a",
+      "hairline": "#cccccc",
+      "hairline-strong": "#5e5e5e",
+      "body": "#1a1a1a",
+      "mute": "#757575",
+      "stone": "#898989",
+      "ash": "#a7a7a7",
+      "on-dark": "#ffffff",
+      "on-dark-mute": "rgba(255,255,255,0.7)",
+      "link-blue": "#0046a4",
+      "blue-700": "#0046a4",
+      "error": "#e52020",
+      "error-deep": "#650b0b",
+      "warning": "#df6500",
+      "warning-bright": "#ef9100",
+      "success-deep": "#3f8500",
+      "accent-yellow-pale": "#feeeb2",
+      "accent-purple": "#952fc6",
+      "accent-purple-deep": "#4d1368",
+      "accent-purple-pale": "#f9d4ff",
+      "accent-green-pale": "#bff230"
+    },
+    "typography": {
+      "display-xl": {
+        "fontFamily": "NVIDIA-EMEA",
+        "fontSize": "48px",
+        "fontWeight": 700,
+        "lineHeight": 1.25,
+        "letterSpacing": 0
+      },
+      "display-lg": {
+        "fontFamily": "NVIDIA-EMEA",
+        "fontSize": "36px",
+        "fontWeight": 700,
+        "lineHeight": 1.25,
+        "letterSpacing": 0
+      },
+      "heading-xl": {
+        "fontFamily": "NVIDIA-EMEA",
+        "fontSize": "24px",
+        "fontWeight": 700,
+        "lineHeight": 1.25,
+        "letterSpacing": 0
+      },
+      "heading-lg": {
+        "fontFamily": "NVIDIA-EMEA",
+        "fontSize": "22px",
+        "fontWeight": 400,
+        "lineHeight": 1.75,
+        "letterSpacing": 0
+      },
+      "heading-md": {
+        "fontFamily": "NVIDIA-EMEA",
+        "fontSize": "20px",
+        "fontWeight": 700,
+        "lineHeight": 1.25,
+        "letterSpacing": 0
+      },
+      "heading-sm": {
+        "fontFamily": "NVIDIA-EMEA",
+        "fontSize": "18px",
+        "fontWeight": 700,
+        "lineHeight": 1.4,
+        "letterSpacing": 0
+      },
+      "card-title": {
+        "fontFamily": "NVIDIA-EMEA",
+        "fontSize": "17px",
+        "fontWeight": 700,
+        "lineHeight": 1.47,
+        "letterSpacing": 0
+      },
+      "body-md": {
+        "fontFamily": "NVIDIA-EMEA",
+        "fontSize": "16px",
+        "fontWeight": 400,
+        "lineHeight": 1.5,
+        "letterSpacing": 0
+      },
+      "body-strong": {
+        "fontFamily": "NVIDIA-EMEA",
+        "fontSize": "16px",
+        "fontWeight": 700,
+        "lineHeight": 1.5,
+        "letterSpacing": 0
+      },
+      "body-sm": {
+        "fontFamily": "NVIDIA-EMEA",
+        "fontSize": "15px",
+        "fontWeight": 400,
+        "lineHeight": 1.67,
+        "letterSpacing": 0
+      },
+      "button-lg": {
+        "fontFamily": "NVIDIA-EMEA",
+        "fontSize": "18px",
+        "fontWeight": 700,
+        "lineHeight": 1.25,
+        "letterSpacing": 0
+      },
+      "button-md": {
+        "fontFamily": "NVIDIA-EMEA",
+        "fontSize": "16px",
+        "fontWeight": 700,
+        "lineHeight": 1.25,
+        "letterSpacing": 0
+      },
+      "button-sm": {
+        "fontFamily": "NVIDIA-EMEA",
+        "fontSize": "14.4px",
+        "fontWeight": 700,
+        "lineHeight": 1,
+        "letterSpacing": "0.144px"
+      },
+      "link-md": {
+        "fontFamily": "NVIDIA-EMEA",
+        "fontSize": "15px",
+        "fontWeight": 400,
+        "lineHeight": 1.5,
+        "letterSpacing": 0
+      },
+      "caption-md": {
+        "fontFamily": "NVIDIA-EMEA",
+        "fontSize": "14px",
+        "fontWeight": 700,
+        "lineHeight": 1.43,
+        "letterSpacing": 0,
+        "textTransform": "uppercase"
+      },
+      "caption-sm": {
+        "fontFamily": "NVIDIA-EMEA",
+        "fontSize": "12px",
+        "fontWeight": 400,
+        "lineHeight": 1.25,
+        "letterSpacing": 0
+      },
+      "caption-xs": {
+        "fontFamily": "NVIDIA-EMEA",
+        "fontSize": "11px",
+        "fontWeight": 700,
+        "lineHeight": 1,
+        "letterSpacing": 0
+      },
+      "utility-xs": {
+        "fontFamily": "NVIDIA-EMEA",
+        "fontSize": "10px",
+        "fontWeight": 700,
+        "lineHeight": 1.5,
+        "letterSpacing": 0,
+        "textTransform": "uppercase"
+      }
+    },
+    "rounded": {
+      "none": "0px",
+      "xs": "1px",
+      "sm": "2px",
+      "full": "9999px"
+    },
+    "spacing": {
+      "xxs": "2px",
+      "xs": "4px",
+      "sm": "8px",
+      "md": "12px",
+      "lg": "16px",
+      "xl": "24px",
+      "xxl": "32px",
+      "section": "64px"
+    },
+    "components": {
+      "button-primary": {
+        "backgroundColor": "{colors.primary}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.sm}",
+        "padding": "11px 24px",
+        "height": "44px"
+      },
+      "button-primary-active": {
+        "backgroundColor": "{colors.primary-dark}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.sm}"
+      },
+      "button-outline": {
+        "backgroundColor": "transparent",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.sm}",
+        "padding": "11px 13px"
+      },
+      "button-outline-on-dark": {
+        "backgroundColor": "transparent",
+        "textColor": "{colors.on-dark}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.sm}"
+      },
+      "button-ghost-link": {
+        "textColor": "{colors.primary}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.none}"
+      },
+      "button-disabled": {
+        "backgroundColor": "{colors.surface-soft}",
+        "textColor": "{colors.ash}",
+        "rounded": "{rounded.sm}"
+      },
+      "pill-tab": {
+        "backgroundColor": "transparent",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.button-sm}",
+        "rounded": "{rounded.sm}",
+        "padding": "10px 18px"
+      },
+      "pill-tab-active": {
+        "backgroundColor": "{colors.ink}",
+        "textColor": "{colors.on-dark}",
+        "typography": "{typography.button-sm}",
+        "rounded": "{rounded.sm}"
+      },
+      "text-input": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.sm}",
+        "padding": "12px 16px",
+        "height": "44px"
+      },
+      "text-input-focused": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "rounded": "{rounded.sm}"
+      },
+      "search-input": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.sm}",
+        "padding": "10px 16px",
+        "height": "40px"
+      },
+      "product-card": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.card-title}",
+        "rounded": "{rounded.sm}",
+        "padding": "24px"
+      },
+      "feature-card": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.sm}",
+        "padding": "32px"
+      },
+      "resource-card": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.card-title}",
+        "rounded": "{rounded.sm}",
+        "padding": "24px"
+      },
+      "hero-card-dark": {
+        "backgroundColor": "{colors.surface-dark}",
+        "textColor": "{colors.on-dark}",
+        "typography": "{typography.display-xl}",
+        "rounded": "{rounded.none}",
+        "padding": "80px 48px"
+      },
+      "cta-strip-dark": {
+        "backgroundColor": "{colors.surface-dark}",
+        "textColor": "{colors.on-dark}",
+        "typography": "{typography.heading-xl}",
+        "rounded": "{rounded.none}",
+        "padding": "64px 48px"
+      },
+      "callout-stat": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.display-lg}",
+        "rounded": "{rounded.sm}",
+        "padding": "32px"
+      },
+      "corner-square": {
+        "backgroundColor": "{colors.primary}",
+        "rounded": "{rounded.none}",
+        "size": "12px"
+      },
+      "utility-bar": {
+        "backgroundColor": "{colors.surface-dark}",
+        "textColor": "{colors.on-dark}",
+        "typography": "{typography.caption-sm}",
+        "rounded": "{rounded.none}",
+        "height": "32px"
+      },
+      "primary-nav": {
+        "backgroundColor": "{colors.surface-dark}",
+        "textColor": "{colors.on-dark}",
+        "typography": "{typography.body-strong}",
+        "rounded": "{rounded.none}",
+        "height": "64px"
+      },
+      "breadcrumb-bar": {
+        "backgroundColor": "{colors.surface-soft}",
+        "textColor": "{colors.body}",
+        "typography": "{typography.caption-md}",
+        "rounded": "{rounded.none}",
+        "height": "48px"
+      },
+      "sub-nav-strip": {
+        "backgroundColor": "{colors.surface-soft}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.none}",
+        "height": "56px"
+      },
+      "footer-section": {
+        "backgroundColor": "{colors.surface-dark}",
+        "textColor": "{colors.on-dark-mute}",
+        "typography": "{typography.body-sm}",
+        "rounded": "{rounded.none}",
+        "padding": "64px 48px"
+      },
+      "link-inline": {
+        "textColor": "{colors.link-blue}",
+        "typography": "{typography.link-md}"
+      },
+      "badge-tag": {
+        "backgroundColor": "{colors.surface-soft}",
+        "textColor": "{colors.body}",
+        "typography": "{typography.caption-md}",
+        "rounded": "{rounded.sm}",
+        "padding": "4px 10px"
+      }
+    }
+  },
+  "normalizationRepairs": [],
+  "sections": [
+    {
+      "heading": "Overview",
+      "level": 2,
+      "text": "NVIDIA's marketing system is built like a piece of engineering documentation that learned graphic design — every page is a structured cascade of dense, factual information arranged on a paper-white grid, framed top and bottom by deep black hero/footer chapters. There is exactly one accent color in the entire system, and it is doing all the work: NVIDIA Green (`{colors.primary}` — `#76b900`), used for every primary CTA, every active tab, every link affordance on dark surfaces, and the small decorative corner squares that mark out card containers. Nothing else competes for attention.\n\nThe system's character comes from extreme typographic restraint and an almost punishingly angular geometry. Every container, button, and image uses `{rounded.sm}` (2px) — a token that's barely-there but never zero, giving the system the precise, technical feel of CAD output rather than warm consumer software. Cards sit on plain `{colors.canvas}` with a hairline `{colors.hairline}` border (no shadow, no elevation), separated by tight 8px-base spacing rhythm. Long-form pages stack 6–10 of these cards into multi-column technical grids without ever introducing decorative breaks.\n\nThe black-canvas hero and footer chapters are the system's \"headline moments\" — a single full-bleed photographic or 3D-rendered image with `{typography.display-xl}` headline copy laid in white, a single green CTA button, and a small green corner square as the only ornamentation. Everything else is subordinate.\n\n**Key Characteristics:**\n- Single-accent system: `{colors.primary}` carries every CTA, active state, and decorative motif. The rest is monochrome black/white/gray.\n- Two-mode surface architecture: `{colors.surface-dark}` for hero/footer chapters; `{colors.canvas}` for body — alternating in a predictable rhythm down the page\n- Hyper-angular geometry: `{rounded.sm}` (2px) on every interactive element. There are no pill buttons, no rounded cards, no soft chrome.\n- NVIDIA-EMEA proprietary sans-serif at weights 400 and 700, scaled across a 12-tier hierarchy from `{typography.utility-xs}` (10px) up to `{typography.display-xl}` (48px)\n- Card library leans on hairline `{colors.hairline}` borders and `{colors.surface-soft}` backgrounds rather than shadows for separation\n- Signature decorative element: the small `{component.corner-square}` (~12px green square) anchored to one corner of resource and feature cards\n- Dense multi-column footer with 4–6 link columns on `{colors.surface-dark}` — every page closes with the same structured global navigation",
+      "line": 307
+    },
+    {
+      "heading": "Colors",
+      "level": 2,
+      "text": "> **Source pages:** `/tr-tr/` (primary homepage), `/en-eu/industries/healthcare-life-sciences/`, `/en-eu/solutions/ai/`, `/en-eu/ai/foundry/`. The chrome palette is identical across all four — only photography and copy vary.",
+      "line": 324
+    },
+    {
+      "heading": "Brand & Accent",
+      "level": 3,
+      "text": "- **NVIDIA Green** (`{colors.primary}` — `#76b900`): the brand. Every primary CTA, every active state, every link affordance on dark surfaces, every corner square, and the brand wordmark itself.\n- **NVIDIA Green Dark** (`{colors.primary-dark}` — `#5a8d00`): pressed state for the primary button — a single notch deeper than the brand green.\n- **Accent Green Pale** (`{colors.accent-green-pale}` — `#bff230`): rare highlight tint used in editorial callouts and decorative micro-blocks; never on chrome.",
+      "line": 328
+    },
+    {
+      "heading": "Surface",
+      "level": 3,
+      "text": "- **Page Canvas** (`{colors.canvas}` — `#ffffff`): the body of every page. Cards sit directly on it with hairline rules.\n- **Soft Surface** (`{colors.surface-soft}` — `#f7f7f7`): breadcrumb strip, sub-nav, side-by-side comparison panels, alternating row backgrounds.\n- **Black Canvas** (`{colors.surface-dark}` — `#000000`): hero chapter, dark CTA strips, footer, primary nav. The system's \"frame\" color.\n- **Surface Elevated** (`{colors.surface-elevated}` — `#1a1a1a`): nested dark panels inside the footer (column dividers, fine-print bar).\n- **Hairline** (`{colors.hairline}` — `#cccccc`): 1px card border, table rule, divider between footer link sections.\n- **Hairline Strong** (`{colors.hairline-strong}` — `#5e5e5e`): 1px divider on dark surfaces (footer column rules, dark-mode card edges).",
+      "line": 333
+    },
+    {
+      "heading": "Text",
+      "level": 3,
+      "text": "- **Ink** (`{colors.ink}` — `#000000`): headlines and body text on `{colors.canvas}`.\n- **Body** (`{colors.body}` — `#1a1a1a`): long-form paragraph text where pure black is too heavy.\n- **Mute** (`{colors.mute}` — `#757575`): metadata, breadcrumb separators, footer copyright.\n- **Stone** (`{colors.stone}` — `#898989`): least-emphasis text and disabled state.\n- **Ash** (`{colors.ash}` — `#a7a7a7`): disabled icon color and faint utility text.\n- **On Dark** (`{colors.on-dark}` — `#ffffff`): primary text on `{colors.surface-dark}`.\n- **On Dark Mute** (`{colors.on-dark-mute}` — `rgba(255,255,255,0.7)`): secondary footer link text and dark-canvas body copy.",
+      "line": 341
+    },
+    {
+      "heading": "Semantic",
+      "level": 3,
+      "text": "- **Error** (`{colors.error}` — `#e52020`): validation messages, destructive confirmation.\n- **Error Deep** (`{colors.error-deep}` — `#650b0b`): pressed state for error buttons; hover-pressed validation icons.\n- **Warning** (`{colors.warning}` — `#df6500`): caution callouts, deprecated documentation banners.\n- **Warning Bright** (`{colors.warning-bright}` — `#ef9100`): inverse warning on dark canvas.\n- **Success Deep** (`{colors.success-deep}` — `#3f8500`): positive confirmation where NVIDIA Green's saturation would clash.\n- **Link Blue** (`{colors.link-blue}` — `#0046a4`): inline anchor link color on light canvas — the only blue in the system, reserved for prose-embedded hyperlinks.",
+      "line": 350
+    },
+    {
+      "heading": "Editorial Accents (used sparingly inside long-form content)",
+      "level": 3,
+      "text": "- **Accent Purple** (`{colors.accent-purple}` — `#952fc6`): research / scientific computing editorial accent.\n- **Accent Purple Deep** (`{colors.accent-purple-deep}` — `#4d1368`): paired dark for purple lockups.\n- **Accent Purple Pale** (`{colors.accent-purple-pale}` — `#f9d4ff`): wash background for editorial callouts.\n- **Accent Yellow Pale** (`{colors.accent-yellow-pale}` — `#feeeb2`): documentation tip / soft callout fill.",
+      "line": 358
+    },
+    {
+      "heading": "Typography",
+      "level": 2,
+      "text": "",
+      "line": 364
+    },
+    {
+      "heading": "Font Family",
+      "level": 3,
+      "text": "- **NVIDIA-EMEA** is the proprietary brand sans-serif used across every text role on the site. It carries weights 400 (regular) and 700 (bold) and falls back to Arial → Helvetica.\n- **Font Awesome 6 Pro** and **Font Awesome 6 Sharp** are used exclusively for iconography (chevrons, social glyphs, breadcrumb separators, search/menu icons) at sizes 14–22px.\n\nNVIDIA's type system is unusually flat: most chrome and body roles render at the same line-height (1.25–1.5) with the only meaningful variation coming from weight (400 vs 700) and size. The system relies on weight contrast — not size jumps and not color tinting — to establish hierarchy, which gives marketing copy and technical documentation an editorial newspaper feel.",
+      "line": 366
+    },
+    {
+      "heading": "Hierarchy",
+      "level": 3,
+      "text": "| Token | Size | Weight | Line Height | Letter Spacing | Use |\n|---|---|---|---|---|---|\n| `{typography.display-xl}` | 48px | 700 | 1.25 | 0 | Hero headline on `{component.hero-card-dark}` |\n| `{typography.display-lg}` | 36px | 700 | 1.25 | 0 | Section headline (\"Explore Our AI Solutions\"), large stat callouts |\n| `{typography.heading-xl}` | 24px | 700 | 1.25 | 0 | Sub-section title, dark CTA-strip headline |\n| `{typography.heading-lg}` | 22px | 400 | 1.75 | 0 | Long-form intro paragraph that doubles as a heading |\n| `{typography.heading-md}` | 20px | 700 | 1.25 | 0 | Card group title, sub-nav anchor heading |\n| `{typography.heading-sm}` | 18px | 700 | 1.4 | 0 | Side-rail filter group, small section label |\n| `{typography.card-title}` | 17px | 700 | 1.47 | 0 | Resource card title, product card title |\n| `{typography.body-md}` | 16px | 400 | 1.5 | 0 | Body copy, default paragraph |\n| `{typography.body-strong}` | 16px | 700 | 1.5 | 0 | Inline emphasis, primary nav link, label |\n| `{typography.body-sm}` | 15px | 400 | 1.67 | 0 | Card description, secondary copy |\n| `{typography.button-lg}` | 18px | 700 | 1.25 | 0 | Hero primary CTA |\n| `{typography.button-md}` | 16px | 700 | 1.25 | 0 | Standard primary/secondary buttons |\n| `{typography.button-sm}` | 14.4px | 700 | 1 | 0.144px | Compact pill tab, in-card secondary CTA |\n| `{typography.link-md}` | 15px | 400 | 1.5 | 0 | Inline anchor link in body prose |\n| `{typography.caption-md}` | 14px | 700 | 1.43 | 0 | Eyebrow over section heading, breadcrumb (uppercase) |\n| `{typography.caption-sm}` | 12px | 400 | 1.25 | 0 | Footnote copy, metadata, table caption |\n| `{typography.caption-xs}` | 11px | 700 | 1 | 0 | Pill chip label, utility-bar text |\n| `{typography.utility-xs}` | 10px | 700 | 1.5 | 0 | Legal fine-print bar at the very bottom (uppercase) |",
+      "line": 372
+    },
+    {
+      "heading": "Principles",
+      "level": 3,
+      "text": "The typography is brand-locked: NVIDIA-EMEA is used at every level, no serif, no display variant, no monospace, no italic. Hierarchy is built almost entirely from size and weight — color is reserved for emphasis (`{colors.primary}` on links over dark, `{colors.link-blue}` on light) and never used to separate type tiers.",
+      "line": 395
+    },
+    {
+      "heading": "Note on Font Substitutes",
+      "level": 3,
+      "text": "NVIDIA-EMEA is proprietary. The closest open-source pairing is **Inter** (weights 400/700) — its x-height and stroke contrast match NVIDIA-EMEA's optical metrics within ~2% at body sizes. **Arial** is the official documented fallback and is acceptable for any system where Inter is unavailable. Avoid Helvetica Now or Helvetica Neue substitutes; their slightly tighter cap heights drift away from the brand's geometry.",
+      "line": 398
+    },
+    {
+      "heading": "Layout",
+      "level": 2,
+      "text": "",
+      "line": 401
+    },
+    {
+      "heading": "Spacing System",
+      "level": 3,
+      "text": "- **Base unit:** 8px\n- **Tokens (front matter):** `{spacing.xxs}` (2px) · `{spacing.xs}` (4px) · `{spacing.sm}` (8px) · `{spacing.md}` (12px) · `{spacing.lg}` (16px) · `{spacing.xl}` (24px) · `{spacing.xxl}` (32px) · `{spacing.section}` (64px)\n- **Universal section rhythm:** every page in the set uses `{spacing.section}` (64px) as the vertical gap between major content blocks. Card grids use `{spacing.xl}` (24px) gutters; in-card padding sits at `{spacing.xl}` to `{spacing.xxl}` depending on density.\n- **Hero chapter padding:** 80px vertical / 48px horizontal — the largest spacing in the system, reserved for `{component.hero-card-dark}`.",
+      "line": 403
+    },
+    {
+      "heading": "Grid & Container",
+      "level": 3,
+      "text": "- **Max width:** ~1280px content area at desktop, with 24px gutters that grow to ~48px at ultrawide.\n- **Column patterns:**\n  - Card grids: 4-up at desktop, 3-up at 1024px, 2-up at 768px, 1-up at 480px.\n  - Long-form text: 2-column 60/40 split (body + sidebar) at desktop, single-column at < 960px.\n  - Footer: 6-up link columns at desktop, collapsing to 2-up on tablet, full accordion on mobile.\n- **Card aspect:** product cards lean to 1:1 or 4:3 with 16:9 imagery on top + 1–2 lines of metadata below. Resource cards are 3:2 imagery with a longer description block.",
+      "line": 409
+    },
+    {
+      "heading": "Whitespace Philosophy",
+      "level": 3,
+      "text": "Whitespace is structural, not atmospheric. Sections butt against each other with `{spacing.section}` rhythm — there are no decorative dividers, no empty \"breathing room\" bands, no gradient transitions between sections. The sense of air comes from `{colors.canvas}` body sections sandwiched between `{colors.surface-dark}` chapter blocks, not from generous padding inside any one component.",
+      "line": 417
+    },
+    {
+      "heading": "Elevation & Depth",
+      "level": 2,
+      "text": "| Level | Treatment | Use |\n|---|---|---|\n| 0 — Flat | No border, no shadow | Canvas-on-canvas blocks, hero chapter content, footer column body |\n| 1 — Hairline border | 1px solid `{colors.hairline}` | All cards on `{colors.canvas}`, table cells, comparison panels |\n| 2 — Hairline strong | 1px solid `{colors.hairline-strong}` | Dividers on `{colors.surface-dark}` (footer column rules, dark-card edges) |\n| 3 — Soft shadow | `0 0 5px 0 rgba(0,0,0,0.3)` | Sticky nav bottom edge when scrolled, sticky CTA bar — used very sparingly |\n\nNVIDIA's system has effectively no drop-shadow elevation in card or content surfaces. The only \"shadow\" in the extracted tokens is a subtle 5px ambient on sticky chrome bars. Cards do not lift; cards are flat rectangles with hairline borders.",
+      "line": 420
+    },
+    {
+      "heading": "Decorative Depth",
+      "level": 3,
+      "text": "Depth in NVIDIA's system comes from photography and 3D-rendered hero imagery rather than from CSS effects:\n- **Hero imagery:** full-bleed photographic or rendered scenes (data-center hardware, neural-net visualizations, life-sciences microscopy) sit behind hero copy with a dark gradient overlay for legibility.\n- **Decorative corner squares:** the small `{component.corner-square}` (~12px solid `{colors.primary}` square) anchored to the top-left or bottom-right corner of resource and feature cards — the system's only consistent ornamental device.\n- **Editorial 3D accents:** isometric or wireframe 3D renderings appear as illustration-style fills inside long-form articles, never as chrome.",
+      "line": 431
+    },
+    {
+      "heading": "Shapes",
+      "level": 2,
+      "text": "",
+      "line": 437
+    },
+    {
+      "heading": "Border Radius Scale",
+      "level": 3,
+      "text": "| Token | Value | Use |\n|---|---|---|\n| `{rounded.none}` | 0px | Hero chapter, footer, dark CTA strips, primary nav |\n| `{rounded.xs}` | 1px | Decorative micro-rules and inset accent strips |\n| `{rounded.sm}` | 2px | Every interactive element — buttons, cards, inputs, pill tabs, badges |\n| `{rounded.full}` | 9999px / 50% | Avatar circles, social-icon dots, brand wordmark icon |\n\nThe system is aggressively angular. Outside of avatar/icon circles, no element exceeds 2px radius. The 2px is enough to soften the optical aliasing on a sharp edge but small enough that the system reads as engineering-grade rather than consumer-friendly.",
+      "line": 439
+    },
+    {
+      "heading": "Photography Geometry",
+      "level": 3,
+      "text": "- **Hero imagery:** full-bleed 16:9 (desktop) cropping to 4:5 portrait on mobile.\n- **Card imagery:** 16:9 thumbnail at the top of resource cards; 1:1 square for product/SKU cards; 3:2 for editorial article cards.\n- **Decorative corner squares:** 12×12px on standard cards, scaled to 16×16 on hero callouts.\n- **Avatar/social icons:** 32–40px circles with 1px hairline.",
+      "line": 450
+    },
+    {
+      "heading": "Components",
+      "level": 2,
+      "text": "> **No hover states documented** per system policy. Each spec covers Default and Active/Pressed only; variants live as separate `components:` entries in the front matter.",
+      "line": 456
+    },
+    {
+      "heading": "Buttons",
+      "level": 3,
+      "text": "**`button-primary`** — the universal NVIDIA CTA\n- Background `{colors.primary}`, text `{colors.on-primary}`, type `{typography.button-md}`, padding `11px 24px`, height `44px`, rounded `{rounded.sm}`.\n- The single most-repeated component in the system: hero CTA, dark CTA strip, \"Learn More\" on every card group, \"Sign Up\" / \"Get Started\" on every long-form page bottom.\n- Pressed state lives in `button-primary-active` — background drops to `{colors.primary-dark}` (`#5a8d00`) with the same text color.\n\n**`button-outline`** — secondary on light canvas\n- Background transparent, text `{colors.ink}`, 2px solid `{colors.primary}` border, type `{typography.button-md}`, padding `11px 13px`, rounded `{rounded.sm}`.\n- The system's most distinctive secondary CTA: a clear pane bordered in NVIDIA Green. Used for \"Read the Documentation\", \"Watch the Video\", \"Compare Products\" — second-tier actions that still earn the brand color.\n\n**`button-outline-on-dark`** — outline on `{colors.surface-dark}`\n- Background transparent, text `{colors.on-dark}`, 1px solid `{colors.on-dark}`, type `{typography.button-md}`, rounded `{rounded.sm}`.\n- White-on-black variant used in dark hero/footer CTA strips paired with a primary green button.\n\n**`button-ghost-link`** — inline arrow link\n- Text `{colors.primary}` with a small right-arrow icon, type `{typography.button-md}`, no background, no border, rounded `{rounded.none}`.\n- \"Learn More →\" affordance sitting at the bottom of resource cards and long-form section blocks. The arrow is uppercase and bold per `{typography.caption-md}`-equivalent treatment.\n\n**`button-disabled`**\n- Background `{colors.surface-soft}`, text `{colors.ash}`, rounded `{rounded.sm}` — flat gray.",
+      "line": 460
+    },
+    {
+      "heading": "Tabs & Chips",
+      "level": 3,
+      "text": "**`pill-tab`** + **`pill-tab-active`**\n- Default: transparent background, text `{colors.ink}`, type `{typography.button-sm}`, padding `10px 18px`, rounded `{rounded.sm}`.\n- Active: background `{colors.ink}`, text `{colors.on-dark}` — the tab flips inverted on selection. Used in the \"Latest in AI Resources\" filter strip and similar segmented controls.\n\n**`badge-tag`**\n- Background `{colors.surface-soft}`, text `{colors.body}`, type `{typography.caption-md}`, padding `4px 10px`, rounded `{rounded.sm}` (uppercase).\n- Document type / category labels at the top of resource cards (\"WHITE PAPER\", \"WEBINAR\", \"BLOG\").",
+      "line": 482
+    },
+    {
+      "heading": "Inputs & Forms",
+      "level": 3,
+      "text": "**`text-input`** + **`text-input-focused`**\n- Default: background `{colors.canvas}`, text `{colors.ink}`, 1px solid `{colors.hairline}`, type `{typography.body-md}`, padding `12px 16px`, height `44px`, rounded `{rounded.sm}`.\n- Focused: same surface, border becomes 2px solid `{colors.primary}` — the green border is the only focus signal in the system.\n\n**`search-input`**\n- Used in the global search overlay — same treatment as `text-input` but at 40px height with a magnifier glyph at left.",
+      "line": 492
+    },
+    {
+      "heading": "Cards",
+      "level": 3,
+      "text": "**`product-card`**\n- Container: background `{colors.canvas}`, 1px solid `{colors.hairline}`, padding `{spacing.xl}` (24px), rounded `{rounded.sm}`.\n- Layout: 16:9 product image at top, `{typography.card-title}` title, `{typography.body-sm}` description, `{component.button-ghost-link}` \"Learn More →\" affordance at bottom.\n- The `{component.corner-square}` sits at the top-left corner.\n\n**`feature-card`**\n- Container: background `{colors.canvas}`, 1px solid `{colors.hairline}`, padding `{spacing.xxl}` (32px), rounded `{rounded.sm}`.\n- Layout: icon (Font Awesome at 22–24px) at top in `{colors.primary}` followed by `{typography.heading-md}` title and `{typography.body-md}` body.\n- Used in 3-up or 4-up grids that explain product capabilities (\"Agentic AI\", \"Data Science\", \"Inference\", \"Conversational AI\").\n\n**`resource-card`**\n- Container: background `{colors.canvas}`, 1px solid `{colors.hairline}`, padding `{spacing.xl}`, rounded `{rounded.sm}`.\n- Header strip: `{component.badge-tag}` document-type label.\n- Body: 3:2 thumbnail, `{typography.card-title}` title, `{typography.body-sm}` description.\n- Footer: ghost-link \"Read More →\" with right-pointing chevron in `{colors.primary}`.\n\n**`callout-stat`**\n- Background `{colors.canvas}` with 1px hairline `{colors.hairline}`, padding `{spacing.xxl}`, rounded `{rounded.sm}`.\n- Massive `{typography.display-lg}` (36px) numeric in `{colors.primary}` followed by `{typography.body-md}` caption underneath (\"4× faster training\", \"60% lower cost\", etc.). Used inside long-form industry pages.",
+      "line": 501
+    },
+    {
+      "heading": "Hero & CTA Strips",
+      "level": 3,
+      "text": "**`hero-card-dark`**\n- Background `{colors.surface-dark}` with full-bleed 16:9 photographic/3D image and dark gradient overlay; copy slot at left.\n- `{typography.display-xl}` headline `{colors.on-dark}`, `{typography.heading-lg}` subhead, single `{component.button-primary}` CTA (sometimes paired with `{component.button-outline-on-dark}`).\n- Anchors the top of every primary landing page.\n\n**`cta-strip-dark`**\n- Same surface as hero but compressed to a 1-row band with `{typography.heading-xl}` headline + single CTA.\n- Sits between content sections as a \"Ready to get started?\" bridge.",
+      "line": 523
+    },
+    {
+      "heading": "Decorative",
+      "level": 3,
+      "text": "**`corner-square`**\n- 12×12px solid `{colors.primary}` square anchored to a card corner. The brand's signature ornamental motif.\n- Used on resource cards, feature cards, and editorial callouts. Position varies (top-left, bottom-right) but the size and color are constant.",
+      "line": 534
+    },
+    {
+      "heading": "Navigation",
+      "level": 3,
+      "text": "**`utility-bar`**\n- Background `{colors.surface-dark}`, text `{colors.on-dark}`, height 32px, type `{typography.caption-sm}`, rounded `{rounded.none}`.\n- Right-aligned cluster: locale selector / \"Login\" / \"Account\". Always present at the very top of the page.\n\n**`primary-nav`**\n- Background `{colors.surface-dark}`, text `{colors.on-dark}`, height 64px, type `{typography.body-strong}`, rounded `{rounded.none}`.\n- Layout: NVIDIA wordmark at left, centered nav row (\"Products / Solutions / Industries / Resources / Support / Company\"), right cluster (search-glyph + \"Login\" button + green CTA \"Get Started\").\n\n**`breadcrumb-bar`**\n- Background `{colors.surface-soft}`, text `{colors.body}`, height 48px, type `{typography.caption-md}` (uppercase).\n- Sits directly under the primary nav on every interior page; chevron separators in `{colors.mute}`.\n\n**`sub-nav-strip`**\n- Background `{colors.surface-soft}`, text `{colors.ink}`, height 56px, type `{typography.button-md}`, rounded `{rounded.none}`.\n- Section-specific nav anchored above content (e.g., \"Healthcare → Drug Discovery / Medical Imaging / Genomics / Patient Care\").\n\n**Top Nav (Mobile)**\n- Hamburger menu icon (left), NVIDIA wordmark (center), search + locale icons (right). Primary nav collapses into a full-screen drawer that slides in from the right.",
+      "line": 540
+    },
+    {
+      "heading": "Footer",
+      "level": 3,
+      "text": "**`footer-section`**\n- Background `{colors.surface-dark}`, text `{colors.on-dark-mute}`, padding `{spacing.section}` (64px) vertical / 48px horizontal, rounded `{rounded.none}`.\n- Layout: 6-column link grid (Products / Software / Resources / Company Info / Solutions / Support) with column headers in `{typography.body-strong}` `{colors.on-dark}` and link lists in `{typography.body-sm}` `{colors.on-dark-mute}`.\n- Below the columns: social-icon strip + locale selector + legal/privacy fine-print row in `{typography.utility-xs}` (uppercase) `{colors.mute}`.",
+      "line": 561
+    },
+    {
+      "heading": "Inline",
+      "level": 3,
+      "text": "**`link-inline`**\n- Body-prose anchor link: `{colors.link-blue}` text with underline. The ONLY blue in the system — appears nowhere except inline links inside `{typography.body-md}` paragraphs.",
+      "line": 568
+    },
+    {
+      "heading": "Do's and Don'ts",
+      "level": 2,
+      "text": "",
+      "line": 573
+    },
+    {
+      "heading": "Do",
+      "level": 3,
+      "text": "- Reserve `{colors.primary}` for primary CTAs, active states, decorative corner squares, and the NVIDIA wordmark itself. Treat it as a precious resource.\n- Stack hero/footer chapters in `{colors.surface-dark}` and body sections in `{colors.canvas}` — alternate them in a predictable rhythm down the page.\n- Anchor a `{component.corner-square}` to one corner of every reusable card. It is the system's identity tag.\n- Use `{rounded.sm}` (2px) on every interactive element. Never go to 0, never go past 4.\n- Build hierarchy from font weight (400 vs 700) and size, not from color tinting. Body text stays `{colors.ink}` or `{colors.body}` regardless of context.\n- Stack content sections at `{spacing.section}` (64px) rhythm with no decorative dividers between them.\n- Pair `{component.button-primary}` (green fill) with `{component.button-outline}` (green border) for primary + secondary action pairs.",
+      "line": 575
+    },
+    {
+      "heading": "Don't",
+      "level": 3,
+      "text": "- Don't introduce drop shadows on cards or content surfaces. The only allowed shadow is the 5px ambient on sticky chrome.\n- Don't substitute `{colors.success-deep}`, `{colors.accent-green-pale}`, or any other green for `{colors.primary}` in CTAs. The brand green is precise.\n- Don't use `{colors.link-blue}` outside of inline body-prose links. It is not a button color, not a chrome color.\n- Don't soften the geometry. No pill buttons, no rounded cards, no `{rounded.lg}` or higher anywhere except avatars and social icons.\n- Don't pad the hero `{component.hero-card-dark}` symmetrically. Copy hugs the left third; imagery fills the right.\n- Don't add a second accent color for variety. The system is intentionally one-color.\n- Don't put `{component.button-primary}` on a `{colors.canvas}` background where green-on-white would clash with photo content — use `{component.button-outline}` instead and reserve fill for dark surfaces.",
+      "line": 584
+    },
+    {
+      "heading": "Responsive Behavior",
+      "level": 2,
+      "text": "",
+      "line": 593
+    },
+    {
+      "heading": "Breakpoints",
+      "level": 3,
+      "text": "| Name | Width | Key Changes |\n|---|---|---|\n| ultrawide | 1920px+ | Content max-width holds at 1280px; outer gutters grow to ~80px |\n| desktop-large | 1440px | Default desktop layout — 4-up card grid, 6-col footer |\n| desktop | 1280px | Same as large with slightly narrower outer gutters |\n| desktop-small | 1024px | 4-up cards collapse to 3-up; sub-nav remains horizontal |\n| tablet | 768px | 3-up cards collapse to 2-up; primary nav becomes hamburger drawer |\n| mobile | 480px | Single-column everything; footer columns collapse to accordion |\n| mobile-narrow | 320px | Hero `{typography.display-xl}` scales from 48px → 32px |",
+      "line": 595
+    },
+    {
+      "heading": "Touch Targets",
+      "level": 3,
+      "text": "All interactive elements meet WCAG AA (≥ 44×44px). `{component.button-primary}` sits at 44px height with 24px horizontal padding. `{component.text-input}` sits at 44px. `{component.pill-tab}` sits at ~40px height with extended hit-target padding to 44px. `{component.button-outline}` matches the 44px standard. Footer links are 18–20px line-height with 8–12px vertical padding to keep tap targets at ~36–44px depending on link length.",
+      "line": 607
+    },
+    {
+      "heading": "Collapsing Strategy",
+      "level": 3,
+      "text": "- **Primary nav:** desktop center cluster → tablet hamburger drawer at 768px.\n- **Card grid:** 4-up → 3-up → 2-up → 1-up at 1024, 768, and 480px; gutters drop from 24px to 16px on mobile.\n- **Footer:** 6-up link columns → 2-up at tablet → full accordion at mobile (each column header becomes a tap-to-expand row).\n- **Hero copy:** desktop `{typography.display-xl}` (48px) → tablet 36px → mobile 32px; line-height holds at 1.25.\n- **Sub-nav strip:** desktop horizontal anchor row → tablet horizontal scroll → mobile collapses into a select dropdown.\n- **Section padding:** `{spacing.section}` (64px) desktop → 48px tablet → 32px mobile.\n- **Long-form text:** desktop 60/40 body+sidebar → tablet/mobile single-column with sidebar pushed to the bottom.",
+      "line": 610
+    },
+    {
+      "heading": "Image Behavior",
+      "level": 3,
+      "text": "- Hero imagery uses art-direction crops: 16:9 wide hero on desktop swaps to 4:5 portrait on mobile so the subject stays centered and headline text still has overlay space.\n- Card imagery is a fixed aspect (16:9 for resource, 1:1 for product) that scales rather than re-crops between breakpoints.\n- All non-critical imagery is lazy-loaded as the user scrolls into the next grid row.",
+      "line": 619
+    },
+    {
+      "heading": "Iteration Guide",
+      "level": 2,
+      "text": "1. Focus on ONE component at a time. Pull its YAML entry from the front matter and verify every property resolves.\n2. Reference component names and tokens directly (`{colors.primary}`, `{component.button-primary-active}`, `{rounded.sm}`) — do not paraphrase.\n3. Run `npx @google/design.md lint DESIGN.md` after edits — `broken-ref`, `contrast-ratio`, and `orphaned-tokens` warnings flag issues automatically.\n4. Add new variants as separate component entries (`-active`, `-disabled`, `-focused`) — do not bury them inside prose.\n5. Default body to `{typography.body-md}`; reach for `{typography.body-strong}` for emphasis; reserve `{typography.display-xl}` strictly for hero chapter headlines.\n6. Keep `{colors.primary}` scarce per viewport — if more than one solid-green CTA appears in the same fold, neutralize one to `{component.button-outline}`.\n7. When introducing a new component, ask whether it can be expressed with the existing card + 2px-radius + corner-square + green-CTA vocabulary before adding new tokens. The system's strength is that it almost never needs new ones.",
+      "line": 624
+    },
+    {
+      "heading": "Known Gaps",
+      "level": 2,
+      "text": "- **Mobile screenshots not captured** — responsive behavior synthesizes NVIDIA's known mobile pattern (hamburger drawer, accordion footer, 1-up card grid, hero downscale) from desktop evidence and the documented breakpoint stack.\n- **Hover states not documented** by system policy.\n- **Dialog / modal styling** beyond the locale-selector overlay not visible in the captured surfaces.\n- **Form field styling** for full sign-up / contact forms is not present in the captured surfaces — only inline search and basic text inputs are documented.\n- **Login / authenticated chrome** not in the captured pages.",
+      "line": 634
+    }
+  ],
+  "tokens": [
+    {
+      "path": "colors.primary",
+      "sourcePath": "colors.primary",
+      "type": "color",
+      "value": "#76b900",
+      "status": "unverified",
+      "evidence": {
+        "line": 8,
+        "sourcePath": "colors.primary"
+      }
+    },
+    {
+      "path": "colors.onprimary",
+      "sourcePath": "colors.on-primary",
+      "type": "color",
+      "value": "#000000",
+      "status": "unverified",
+      "evidence": {
+        "line": 9,
+        "sourcePath": "colors.on-primary"
+      }
+    },
+    {
+      "path": "colors.primarydark",
+      "sourcePath": "colors.primary-dark",
+      "type": "color",
+      "value": "#5a8d00",
+      "status": "unverified",
+      "evidence": {
+        "line": 10,
+        "sourcePath": "colors.primary-dark"
+      }
+    },
+    {
+      "path": "colors.ink",
+      "sourcePath": "colors.ink",
+      "type": "color",
+      "value": "#000000",
+      "status": "unverified",
+      "evidence": {
+        "line": 11,
+        "sourcePath": "colors.ink"
+      }
+    },
+    {
+      "path": "colors.canvas",
+      "sourcePath": "colors.canvas",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 12,
+        "sourcePath": "colors.canvas"
+      }
+    },
+    {
+      "path": "colors.surfacedark",
+      "sourcePath": "colors.surface-dark",
+      "type": "color",
+      "value": "#000000",
+      "status": "unverified",
+      "evidence": {
+        "line": 13,
+        "sourcePath": "colors.surface-dark"
+      }
+    },
+    {
+      "path": "colors.surfacesoft",
+      "sourcePath": "colors.surface-soft",
+      "type": "color",
+      "value": "#f7f7f7",
+      "status": "unverified",
+      "evidence": {
+        "line": 14,
+        "sourcePath": "colors.surface-soft"
+      }
+    },
+    {
+      "path": "colors.surfaceelevated",
+      "sourcePath": "colors.surface-elevated",
+      "type": "color",
+      "value": "#1a1a1a",
+      "status": "unverified",
+      "evidence": {
+        "line": 15,
+        "sourcePath": "colors.surface-elevated"
+      }
+    },
+    {
+      "path": "colors.hairline",
+      "sourcePath": "colors.hairline",
+      "type": "color",
+      "value": "#cccccc",
+      "status": "unverified",
+      "evidence": {
+        "line": 16,
+        "sourcePath": "colors.hairline"
+      }
+    },
+    {
+      "path": "colors.hairlinestrong",
+      "sourcePath": "colors.hairline-strong",
+      "type": "color",
+      "value": "#5e5e5e",
+      "status": "unverified",
+      "evidence": {
+        "line": 17,
+        "sourcePath": "colors.hairline-strong"
+      }
+    },
+    {
+      "path": "colors.body",
+      "sourcePath": "colors.body",
+      "type": "color",
+      "value": "#1a1a1a",
+      "status": "unverified",
+      "evidence": {
+        "line": 18,
+        "sourcePath": "colors.body"
+      }
+    },
+    {
+      "path": "colors.mute",
+      "sourcePath": "colors.mute",
+      "type": "color",
+      "value": "#757575",
+      "status": "unverified",
+      "evidence": {
+        "line": 19,
+        "sourcePath": "colors.mute"
+      }
+    },
+    {
+      "path": "colors.stone",
+      "sourcePath": "colors.stone",
+      "type": "color",
+      "value": "#898989",
+      "status": "unverified",
+      "evidence": {
+        "line": 20,
+        "sourcePath": "colors.stone"
+      }
+    },
+    {
+      "path": "colors.ash",
+      "sourcePath": "colors.ash",
+      "type": "color",
+      "value": "#a7a7a7",
+      "status": "unverified",
+      "evidence": {
+        "line": 21,
+        "sourcePath": "colors.ash"
+      }
+    },
+    {
+      "path": "colors.ondark",
+      "sourcePath": "colors.on-dark",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 22,
+        "sourcePath": "colors.on-dark"
+      }
+    },
+    {
+      "path": "colors.ondarkmute",
+      "sourcePath": "colors.on-dark-mute",
+      "type": "color",
+      "value": "rgba(255,255,255,0.7)",
+      "status": "unverified",
+      "evidence": {
+        "line": 23,
+        "sourcePath": "colors.on-dark-mute"
+      }
+    },
+    {
+      "path": "colors.linkblue",
+      "sourcePath": "colors.link-blue",
+      "type": "color",
+      "value": "#0046a4",
+      "status": "unverified",
+      "evidence": {
+        "line": 24,
+        "sourcePath": "colors.link-blue"
+      }
+    },
+    {
+      "path": "colors.blue700",
+      "sourcePath": "colors.blue-700",
+      "type": "color",
+      "value": "#0046a4",
+      "status": "unverified",
+      "evidence": {
+        "line": 25,
+        "sourcePath": "colors.blue-700"
+      }
+    },
+    {
+      "path": "colors.error",
+      "sourcePath": "colors.error",
+      "type": "color",
+      "value": "#e52020",
+      "status": "unverified",
+      "evidence": {
+        "line": 26,
+        "sourcePath": "colors.error"
+      }
+    },
+    {
+      "path": "colors.errordeep",
+      "sourcePath": "colors.error-deep",
+      "type": "color",
+      "value": "#650b0b",
+      "status": "unverified",
+      "evidence": {
+        "line": 27,
+        "sourcePath": "colors.error-deep"
+      }
+    },
+    {
+      "path": "colors.warning",
+      "sourcePath": "colors.warning",
+      "type": "color",
+      "value": "#df6500",
+      "status": "unverified",
+      "evidence": {
+        "line": 28,
+        "sourcePath": "colors.warning"
+      }
+    },
+    {
+      "path": "colors.warningbright",
+      "sourcePath": "colors.warning-bright",
+      "type": "color",
+      "value": "#ef9100",
+      "status": "unverified",
+      "evidence": {
+        "line": 29,
+        "sourcePath": "colors.warning-bright"
+      }
+    },
+    {
+      "path": "colors.successdeep",
+      "sourcePath": "colors.success-deep",
+      "type": "color",
+      "value": "#3f8500",
+      "status": "unverified",
+      "evidence": {
+        "line": 30,
+        "sourcePath": "colors.success-deep"
+      }
+    },
+    {
+      "path": "colors.accentyellowpale",
+      "sourcePath": "colors.accent-yellow-pale",
+      "type": "color",
+      "value": "#feeeb2",
+      "status": "unverified",
+      "evidence": {
+        "line": 31,
+        "sourcePath": "colors.accent-yellow-pale"
+      }
+    },
+    {
+      "path": "colors.accentpurple",
+      "sourcePath": "colors.accent-purple",
+      "type": "color",
+      "value": "#952fc6",
+      "status": "unverified",
+      "evidence": {
+        "line": 32,
+        "sourcePath": "colors.accent-purple"
+      }
+    },
+    {
+      "path": "colors.accentpurpledeep",
+      "sourcePath": "colors.accent-purple-deep",
+      "type": "color",
+      "value": "#4d1368",
+      "status": "unverified",
+      "evidence": {
+        "line": 33,
+        "sourcePath": "colors.accent-purple-deep"
+      }
+    },
+    {
+      "path": "colors.accentpurplepale",
+      "sourcePath": "colors.accent-purple-pale",
+      "type": "color",
+      "value": "#f9d4ff",
+      "status": "unverified",
+      "evidence": {
+        "line": 34,
+        "sourcePath": "colors.accent-purple-pale"
+      }
+    },
+    {
+      "path": "colors.accentgreenpale",
+      "sourcePath": "colors.accent-green-pale",
+      "type": "color",
+      "value": "#bff230",
+      "status": "unverified",
+      "evidence": {
+        "line": 35,
+        "sourcePath": "colors.accent-green-pale"
+      }
+    },
+    {
+      "path": "typography.displayxl.fontfamily",
+      "sourcePath": "typography.display-xl.fontFamily",
+      "type": "fontFamily",
+      "value": "NVIDIA-EMEA",
+      "status": "unverified",
+      "evidence": {
+        "line": 39,
+        "sourcePath": "typography.display-xl.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displayxl.fontsize",
+      "sourcePath": "typography.display-xl.fontSize",
+      "type": "dimension",
+      "value": "48px",
+      "status": "unverified",
+      "evidence": {
+        "line": 40,
+        "sourcePath": "typography.display-xl.fontSize"
+      }
+    },
+    {
+      "path": "typography.displayxl.fontweight",
+      "sourcePath": "typography.display-xl.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 41,
+        "sourcePath": "typography.display-xl.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displayxl.lineheight",
+      "sourcePath": "typography.display-xl.lineHeight",
+      "type": "number",
+      "value": 1.25,
+      "status": "unverified",
+      "evidence": {
+        "line": 42,
+        "sourcePath": "typography.display-xl.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displayxl.letterspacing",
+      "sourcePath": "typography.display-xl.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 43,
+        "sourcePath": "typography.display-xl.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.displaylg.fontfamily",
+      "sourcePath": "typography.display-lg.fontFamily",
+      "type": "fontFamily",
+      "value": "NVIDIA-EMEA",
+      "status": "unverified",
+      "evidence": {
+        "line": 45,
+        "sourcePath": "typography.display-lg.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displaylg.fontsize",
+      "sourcePath": "typography.display-lg.fontSize",
+      "type": "dimension",
+      "value": "36px",
+      "status": "unverified",
+      "evidence": {
+        "line": 46,
+        "sourcePath": "typography.display-lg.fontSize"
+      }
+    },
+    {
+      "path": "typography.displaylg.fontweight",
+      "sourcePath": "typography.display-lg.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 47,
+        "sourcePath": "typography.display-lg.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displaylg.lineheight",
+      "sourcePath": "typography.display-lg.lineHeight",
+      "type": "number",
+      "value": 1.25,
+      "status": "unverified",
+      "evidence": {
+        "line": 48,
+        "sourcePath": "typography.display-lg.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displaylg.letterspacing",
+      "sourcePath": "typography.display-lg.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 49,
+        "sourcePath": "typography.display-lg.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.headingxl.fontfamily",
+      "sourcePath": "typography.heading-xl.fontFamily",
+      "type": "fontFamily",
+      "value": "NVIDIA-EMEA",
+      "status": "unverified",
+      "evidence": {
+        "line": 51,
+        "sourcePath": "typography.heading-xl.fontFamily"
+      }
+    },
+    {
+      "path": "typography.headingxl.fontsize",
+      "sourcePath": "typography.heading-xl.fontSize",
+      "type": "dimension",
+      "value": "24px",
+      "status": "unverified",
+      "evidence": {
+        "line": 52,
+        "sourcePath": "typography.heading-xl.fontSize"
+      }
+    },
+    {
+      "path": "typography.headingxl.fontweight",
+      "sourcePath": "typography.heading-xl.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 53,
+        "sourcePath": "typography.heading-xl.fontWeight"
+      }
+    },
+    {
+      "path": "typography.headingxl.lineheight",
+      "sourcePath": "typography.heading-xl.lineHeight",
+      "type": "number",
+      "value": 1.25,
+      "status": "unverified",
+      "evidence": {
+        "line": 54,
+        "sourcePath": "typography.heading-xl.lineHeight"
+      }
+    },
+    {
+      "path": "typography.headingxl.letterspacing",
+      "sourcePath": "typography.heading-xl.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 55,
+        "sourcePath": "typography.heading-xl.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.headinglg.fontfamily",
+      "sourcePath": "typography.heading-lg.fontFamily",
+      "type": "fontFamily",
+      "value": "NVIDIA-EMEA",
+      "status": "unverified",
+      "evidence": {
+        "line": 57,
+        "sourcePath": "typography.heading-lg.fontFamily"
+      }
+    },
+    {
+      "path": "typography.headinglg.fontsize",
+      "sourcePath": "typography.heading-lg.fontSize",
+      "type": "dimension",
+      "value": "22px",
+      "status": "unverified",
+      "evidence": {
+        "line": 58,
+        "sourcePath": "typography.heading-lg.fontSize"
+      }
+    },
+    {
+      "path": "typography.headinglg.fontweight",
+      "sourcePath": "typography.heading-lg.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 59,
+        "sourcePath": "typography.heading-lg.fontWeight"
+      }
+    },
+    {
+      "path": "typography.headinglg.lineheight",
+      "sourcePath": "typography.heading-lg.lineHeight",
+      "type": "number",
+      "value": 1.75,
+      "status": "unverified",
+      "evidence": {
+        "line": 60,
+        "sourcePath": "typography.heading-lg.lineHeight"
+      }
+    },
+    {
+      "path": "typography.headinglg.letterspacing",
+      "sourcePath": "typography.heading-lg.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 61,
+        "sourcePath": "typography.heading-lg.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.headingmd.fontfamily",
+      "sourcePath": "typography.heading-md.fontFamily",
+      "type": "fontFamily",
+      "value": "NVIDIA-EMEA",
+      "status": "unverified",
+      "evidence": {
+        "line": 63,
+        "sourcePath": "typography.heading-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.headingmd.fontsize",
+      "sourcePath": "typography.heading-md.fontSize",
+      "type": "dimension",
+      "value": "20px",
+      "status": "unverified",
+      "evidence": {
+        "line": 64,
+        "sourcePath": "typography.heading-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.headingmd.fontweight",
+      "sourcePath": "typography.heading-md.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 65,
+        "sourcePath": "typography.heading-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.headingmd.lineheight",
+      "sourcePath": "typography.heading-md.lineHeight",
+      "type": "number",
+      "value": 1.25,
+      "status": "unverified",
+      "evidence": {
+        "line": 66,
+        "sourcePath": "typography.heading-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.headingmd.letterspacing",
+      "sourcePath": "typography.heading-md.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 67,
+        "sourcePath": "typography.heading-md.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.headingsm.fontfamily",
+      "sourcePath": "typography.heading-sm.fontFamily",
+      "type": "fontFamily",
+      "value": "NVIDIA-EMEA",
+      "status": "unverified",
+      "evidence": {
+        "line": 69,
+        "sourcePath": "typography.heading-sm.fontFamily"
+      }
+    },
+    {
+      "path": "typography.headingsm.fontsize",
+      "sourcePath": "typography.heading-sm.fontSize",
+      "type": "dimension",
+      "value": "18px",
+      "status": "unverified",
+      "evidence": {
+        "line": 70,
+        "sourcePath": "typography.heading-sm.fontSize"
+      }
+    },
+    {
+      "path": "typography.headingsm.fontweight",
+      "sourcePath": "typography.heading-sm.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 71,
+        "sourcePath": "typography.heading-sm.fontWeight"
+      }
+    },
+    {
+      "path": "typography.headingsm.lineheight",
+      "sourcePath": "typography.heading-sm.lineHeight",
+      "type": "number",
+      "value": 1.4,
+      "status": "unverified",
+      "evidence": {
+        "line": 72,
+        "sourcePath": "typography.heading-sm.lineHeight"
+      }
+    },
+    {
+      "path": "typography.headingsm.letterspacing",
+      "sourcePath": "typography.heading-sm.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 73,
+        "sourcePath": "typography.heading-sm.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.cardtitle.fontfamily",
+      "sourcePath": "typography.card-title.fontFamily",
+      "type": "fontFamily",
+      "value": "NVIDIA-EMEA",
+      "status": "unverified",
+      "evidence": {
+        "line": 75,
+        "sourcePath": "typography.card-title.fontFamily"
+      }
+    },
+    {
+      "path": "typography.cardtitle.fontsize",
+      "sourcePath": "typography.card-title.fontSize",
+      "type": "dimension",
+      "value": "17px",
+      "status": "unverified",
+      "evidence": {
+        "line": 76,
+        "sourcePath": "typography.card-title.fontSize"
+      }
+    },
+    {
+      "path": "typography.cardtitle.fontweight",
+      "sourcePath": "typography.card-title.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 77,
+        "sourcePath": "typography.card-title.fontWeight"
+      }
+    },
+    {
+      "path": "typography.cardtitle.lineheight",
+      "sourcePath": "typography.card-title.lineHeight",
+      "type": "number",
+      "value": 1.47,
+      "status": "unverified",
+      "evidence": {
+        "line": 78,
+        "sourcePath": "typography.card-title.lineHeight"
+      }
+    },
+    {
+      "path": "typography.cardtitle.letterspacing",
+      "sourcePath": "typography.card-title.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 79,
+        "sourcePath": "typography.card-title.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.bodymd.fontfamily",
+      "sourcePath": "typography.body-md.fontFamily",
+      "type": "fontFamily",
+      "value": "NVIDIA-EMEA",
+      "status": "unverified",
+      "evidence": {
+        "line": 81,
+        "sourcePath": "typography.body-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodymd.fontsize",
+      "sourcePath": "typography.body-md.fontSize",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 82,
+        "sourcePath": "typography.body-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodymd.fontweight",
+      "sourcePath": "typography.body-md.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 83,
+        "sourcePath": "typography.body-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodymd.lineheight",
+      "sourcePath": "typography.body-md.lineHeight",
+      "type": "number",
+      "value": 1.5,
+      "status": "unverified",
+      "evidence": {
+        "line": 84,
+        "sourcePath": "typography.body-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodymd.letterspacing",
+      "sourcePath": "typography.body-md.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 85,
+        "sourcePath": "typography.body-md.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.bodystrong.fontfamily",
+      "sourcePath": "typography.body-strong.fontFamily",
+      "type": "fontFamily",
+      "value": "NVIDIA-EMEA",
+      "status": "unverified",
+      "evidence": {
+        "line": 87,
+        "sourcePath": "typography.body-strong.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodystrong.fontsize",
+      "sourcePath": "typography.body-strong.fontSize",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 88,
+        "sourcePath": "typography.body-strong.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodystrong.fontweight",
+      "sourcePath": "typography.body-strong.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 89,
+        "sourcePath": "typography.body-strong.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodystrong.lineheight",
+      "sourcePath": "typography.body-strong.lineHeight",
+      "type": "number",
+      "value": 1.5,
+      "status": "unverified",
+      "evidence": {
+        "line": 90,
+        "sourcePath": "typography.body-strong.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodystrong.letterspacing",
+      "sourcePath": "typography.body-strong.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 91,
+        "sourcePath": "typography.body-strong.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.bodysm.fontfamily",
+      "sourcePath": "typography.body-sm.fontFamily",
+      "type": "fontFamily",
+      "value": "NVIDIA-EMEA",
+      "status": "unverified",
+      "evidence": {
+        "line": 93,
+        "sourcePath": "typography.body-sm.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodysm.fontsize",
+      "sourcePath": "typography.body-sm.fontSize",
+      "type": "dimension",
+      "value": "15px",
+      "status": "unverified",
+      "evidence": {
+        "line": 94,
+        "sourcePath": "typography.body-sm.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodysm.fontweight",
+      "sourcePath": "typography.body-sm.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 95,
+        "sourcePath": "typography.body-sm.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodysm.lineheight",
+      "sourcePath": "typography.body-sm.lineHeight",
+      "type": "number",
+      "value": 1.67,
+      "status": "unverified",
+      "evidence": {
+        "line": 96,
+        "sourcePath": "typography.body-sm.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodysm.letterspacing",
+      "sourcePath": "typography.body-sm.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 97,
+        "sourcePath": "typography.body-sm.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.buttonlg.fontfamily",
+      "sourcePath": "typography.button-lg.fontFamily",
+      "type": "fontFamily",
+      "value": "NVIDIA-EMEA",
+      "status": "unverified",
+      "evidence": {
+        "line": 99,
+        "sourcePath": "typography.button-lg.fontFamily"
+      }
+    },
+    {
+      "path": "typography.buttonlg.fontsize",
+      "sourcePath": "typography.button-lg.fontSize",
+      "type": "dimension",
+      "value": "18px",
+      "status": "unverified",
+      "evidence": {
+        "line": 100,
+        "sourcePath": "typography.button-lg.fontSize"
+      }
+    },
+    {
+      "path": "typography.buttonlg.fontweight",
+      "sourcePath": "typography.button-lg.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 101,
+        "sourcePath": "typography.button-lg.fontWeight"
+      }
+    },
+    {
+      "path": "typography.buttonlg.lineheight",
+      "sourcePath": "typography.button-lg.lineHeight",
+      "type": "number",
+      "value": 1.25,
+      "status": "unverified",
+      "evidence": {
+        "line": 102,
+        "sourcePath": "typography.button-lg.lineHeight"
+      }
+    },
+    {
+      "path": "typography.buttonlg.letterspacing",
+      "sourcePath": "typography.button-lg.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 103,
+        "sourcePath": "typography.button-lg.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.buttonmd.fontfamily",
+      "sourcePath": "typography.button-md.fontFamily",
+      "type": "fontFamily",
+      "value": "NVIDIA-EMEA",
+      "status": "unverified",
+      "evidence": {
+        "line": 105,
+        "sourcePath": "typography.button-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.buttonmd.fontsize",
+      "sourcePath": "typography.button-md.fontSize",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 106,
+        "sourcePath": "typography.button-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.buttonmd.fontweight",
+      "sourcePath": "typography.button-md.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 107,
+        "sourcePath": "typography.button-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.buttonmd.lineheight",
+      "sourcePath": "typography.button-md.lineHeight",
+      "type": "number",
+      "value": 1.25,
+      "status": "unverified",
+      "evidence": {
+        "line": 108,
+        "sourcePath": "typography.button-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.buttonmd.letterspacing",
+      "sourcePath": "typography.button-md.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 109,
+        "sourcePath": "typography.button-md.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.buttonsm.fontfamily",
+      "sourcePath": "typography.button-sm.fontFamily",
+      "type": "fontFamily",
+      "value": "NVIDIA-EMEA",
+      "status": "unverified",
+      "evidence": {
+        "line": 111,
+        "sourcePath": "typography.button-sm.fontFamily"
+      }
+    },
+    {
+      "path": "typography.buttonsm.fontsize",
+      "sourcePath": "typography.button-sm.fontSize",
+      "type": "dimension",
+      "value": "14.4px",
+      "status": "unverified",
+      "evidence": {
+        "line": 112,
+        "sourcePath": "typography.button-sm.fontSize"
+      }
+    },
+    {
+      "path": "typography.buttonsm.fontweight",
+      "sourcePath": "typography.button-sm.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 113,
+        "sourcePath": "typography.button-sm.fontWeight"
+      }
+    },
+    {
+      "path": "typography.buttonsm.lineheight",
+      "sourcePath": "typography.button-sm.lineHeight",
+      "type": "number",
+      "value": 1,
+      "status": "unverified",
+      "evidence": {
+        "line": 114,
+        "sourcePath": "typography.button-sm.lineHeight"
+      }
+    },
+    {
+      "path": "typography.buttonsm.letterspacing",
+      "sourcePath": "typography.button-sm.letterSpacing",
+      "type": "dimension",
+      "value": "0.144px",
+      "status": "unverified",
+      "evidence": {
+        "line": 115,
+        "sourcePath": "typography.button-sm.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.linkmd.fontfamily",
+      "sourcePath": "typography.link-md.fontFamily",
+      "type": "fontFamily",
+      "value": "NVIDIA-EMEA",
+      "status": "unverified",
+      "evidence": {
+        "line": 117,
+        "sourcePath": "typography.link-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.linkmd.fontsize",
+      "sourcePath": "typography.link-md.fontSize",
+      "type": "dimension",
+      "value": "15px",
+      "status": "unverified",
+      "evidence": {
+        "line": 118,
+        "sourcePath": "typography.link-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.linkmd.fontweight",
+      "sourcePath": "typography.link-md.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 119,
+        "sourcePath": "typography.link-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.linkmd.lineheight",
+      "sourcePath": "typography.link-md.lineHeight",
+      "type": "number",
+      "value": 1.5,
+      "status": "unverified",
+      "evidence": {
+        "line": 120,
+        "sourcePath": "typography.link-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.linkmd.letterspacing",
+      "sourcePath": "typography.link-md.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 121,
+        "sourcePath": "typography.link-md.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.captionmd.fontfamily",
+      "sourcePath": "typography.caption-md.fontFamily",
+      "type": "fontFamily",
+      "value": "NVIDIA-EMEA",
+      "status": "unverified",
+      "evidence": {
+        "line": 123,
+        "sourcePath": "typography.caption-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.captionmd.fontsize",
+      "sourcePath": "typography.caption-md.fontSize",
+      "type": "dimension",
+      "value": "14px",
+      "status": "unverified",
+      "evidence": {
+        "line": 124,
+        "sourcePath": "typography.caption-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.captionmd.fontweight",
+      "sourcePath": "typography.caption-md.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 125,
+        "sourcePath": "typography.caption-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.captionmd.lineheight",
+      "sourcePath": "typography.caption-md.lineHeight",
+      "type": "number",
+      "value": 1.43,
+      "status": "unverified",
+      "evidence": {
+        "line": 126,
+        "sourcePath": "typography.caption-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.captionmd.letterspacing",
+      "sourcePath": "typography.caption-md.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 127,
+        "sourcePath": "typography.caption-md.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.captionsm.fontfamily",
+      "sourcePath": "typography.caption-sm.fontFamily",
+      "type": "fontFamily",
+      "value": "NVIDIA-EMEA",
+      "status": "unverified",
+      "evidence": {
+        "line": 130,
+        "sourcePath": "typography.caption-sm.fontFamily"
+      }
+    },
+    {
+      "path": "typography.captionsm.fontsize",
+      "sourcePath": "typography.caption-sm.fontSize",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 131,
+        "sourcePath": "typography.caption-sm.fontSize"
+      }
+    },
+    {
+      "path": "typography.captionsm.fontweight",
+      "sourcePath": "typography.caption-sm.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 132,
+        "sourcePath": "typography.caption-sm.fontWeight"
+      }
+    },
+    {
+      "path": "typography.captionsm.lineheight",
+      "sourcePath": "typography.caption-sm.lineHeight",
+      "type": "number",
+      "value": 1.25,
+      "status": "unverified",
+      "evidence": {
+        "line": 133,
+        "sourcePath": "typography.caption-sm.lineHeight"
+      }
+    },
+    {
+      "path": "typography.captionsm.letterspacing",
+      "sourcePath": "typography.caption-sm.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 134,
+        "sourcePath": "typography.caption-sm.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.captionxs.fontfamily",
+      "sourcePath": "typography.caption-xs.fontFamily",
+      "type": "fontFamily",
+      "value": "NVIDIA-EMEA",
+      "status": "unverified",
+      "evidence": {
+        "line": 136,
+        "sourcePath": "typography.caption-xs.fontFamily"
+      }
+    },
+    {
+      "path": "typography.captionxs.fontsize",
+      "sourcePath": "typography.caption-xs.fontSize",
+      "type": "dimension",
+      "value": "11px",
+      "status": "unverified",
+      "evidence": {
+        "line": 137,
+        "sourcePath": "typography.caption-xs.fontSize"
+      }
+    },
+    {
+      "path": "typography.captionxs.fontweight",
+      "sourcePath": "typography.caption-xs.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 138,
+        "sourcePath": "typography.caption-xs.fontWeight"
+      }
+    },
+    {
+      "path": "typography.captionxs.lineheight",
+      "sourcePath": "typography.caption-xs.lineHeight",
+      "type": "number",
+      "value": 1,
+      "status": "unverified",
+      "evidence": {
+        "line": 139,
+        "sourcePath": "typography.caption-xs.lineHeight"
+      }
+    },
+    {
+      "path": "typography.captionxs.letterspacing",
+      "sourcePath": "typography.caption-xs.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 140,
+        "sourcePath": "typography.caption-xs.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.utilityxs.fontfamily",
+      "sourcePath": "typography.utility-xs.fontFamily",
+      "type": "fontFamily",
+      "value": "NVIDIA-EMEA",
+      "status": "unverified",
+      "evidence": {
+        "line": 142,
+        "sourcePath": "typography.utility-xs.fontFamily"
+      }
+    },
+    {
+      "path": "typography.utilityxs.fontsize",
+      "sourcePath": "typography.utility-xs.fontSize",
+      "type": "dimension",
+      "value": "10px",
+      "status": "unverified",
+      "evidence": {
+        "line": 143,
+        "sourcePath": "typography.utility-xs.fontSize"
+      }
+    },
+    {
+      "path": "typography.utilityxs.fontweight",
+      "sourcePath": "typography.utility-xs.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 144,
+        "sourcePath": "typography.utility-xs.fontWeight"
+      }
+    },
+    {
+      "path": "typography.utilityxs.lineheight",
+      "sourcePath": "typography.utility-xs.lineHeight",
+      "type": "number",
+      "value": 1.5,
+      "status": "unverified",
+      "evidence": {
+        "line": 145,
+        "sourcePath": "typography.utility-xs.lineHeight"
+      }
+    },
+    {
+      "path": "typography.utilityxs.letterspacing",
+      "sourcePath": "typography.utility-xs.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 146,
+        "sourcePath": "typography.utility-xs.letterSpacing"
+      }
+    },
+    {
+      "path": "rounded.none",
+      "sourcePath": "rounded.none",
+      "type": "dimension",
+      "value": "0px",
+      "status": "unverified",
+      "evidence": {
+        "line": 150,
+        "sourcePath": "rounded.none"
+      }
+    },
+    {
+      "path": "rounded.xs",
+      "sourcePath": "rounded.xs",
+      "type": "dimension",
+      "value": "1px",
+      "status": "unverified",
+      "evidence": {
+        "line": 151,
+        "sourcePath": "rounded.xs"
+      }
+    },
+    {
+      "path": "rounded.sm",
+      "sourcePath": "rounded.sm",
+      "type": "dimension",
+      "value": "2px",
+      "status": "unverified",
+      "evidence": {
+        "line": 152,
+        "sourcePath": "rounded.sm"
+      }
+    },
+    {
+      "path": "rounded.full",
+      "sourcePath": "rounded.full",
+      "type": "dimension",
+      "value": "9999px",
+      "status": "unverified",
+      "evidence": {
+        "line": 153,
+        "sourcePath": "rounded.full"
+      }
+    },
+    {
+      "path": "spacing.xxs",
+      "sourcePath": "spacing.xxs",
+      "type": "dimension",
+      "value": "2px",
+      "status": "unverified",
+      "evidence": {
+        "line": 156,
+        "sourcePath": "spacing.xxs"
+      }
+    },
+    {
+      "path": "spacing.xs",
+      "sourcePath": "spacing.xs",
+      "type": "dimension",
+      "value": "4px",
+      "status": "unverified",
+      "evidence": {
+        "line": 157,
+        "sourcePath": "spacing.xs"
+      }
+    },
+    {
+      "path": "spacing.sm",
+      "sourcePath": "spacing.sm",
+      "type": "dimension",
+      "value": "8px",
+      "status": "unverified",
+      "evidence": {
+        "line": 158,
+        "sourcePath": "spacing.sm"
+      }
+    },
+    {
+      "path": "spacing.md",
+      "sourcePath": "spacing.md",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 159,
+        "sourcePath": "spacing.md"
+      }
+    },
+    {
+      "path": "spacing.lg",
+      "sourcePath": "spacing.lg",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 160,
+        "sourcePath": "spacing.lg"
+      }
+    },
+    {
+      "path": "spacing.xl",
+      "sourcePath": "spacing.xl",
+      "type": "dimension",
+      "value": "24px",
+      "status": "unverified",
+      "evidence": {
+        "line": 161,
+        "sourcePath": "spacing.xl"
+      }
+    },
+    {
+      "path": "spacing.xxl",
+      "sourcePath": "spacing.xxl",
+      "type": "dimension",
+      "value": "32px",
+      "status": "unverified",
+      "evidence": {
+        "line": 162,
+        "sourcePath": "spacing.xxl"
+      }
+    },
+    {
+      "path": "spacing.section",
+      "sourcePath": "spacing.section",
+      "type": "dimension",
+      "value": "64px",
+      "status": "unverified",
+      "evidence": {
+        "line": 163,
+        "sourcePath": "spacing.section"
+      }
+    }
+  ],
+  "rejectedTokens": [
+    {
+      "sourcePath": "typography.caption-md.textTransform",
+      "value": "uppercase",
+      "reason": "Not a supported safe CSS literal; preserved in analysis"
+    },
+    {
+      "sourcePath": "typography.utility-xs.textTransform",
+      "value": "uppercase",
+      "reason": "Not a supported safe CSS literal; preserved in analysis"
+    }
+  ],
+  "homepage": {
+    "status": "missing",
+    "candidates": [],
+    "verification": {
+      "status": "verified",
+      "url": "https://www.nvidia.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://www.nvidia.com/da-dk/",
+          "title": "NVIDIA: Verdens førende virksomhed inden for databehandling med kunstig intelligens | NVIDIA",
+          "note": "Public homepage read requested https://www.nvidia.com; final URL https://www.nvidia.com/da-dk/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    }
+  },
+  "completeness": {
+    "presentFields": [
+      "colors",
+      "typography",
+      "rounded",
+      "spacing",
+      "components"
+    ],
+    "missingFields": [],
+    "tokenRoles": "incomplete",
+    "note": "Missing fields are not reconstructed. Prose-only colors have no inferred semantic role."
+  },
+  "provenance": {
+    "status": "independent-analysis",
+    "sources": [
+      {
+        "title": "VoltAgent awesome-design-md independent analysis",
+        "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/nvidia/DESIGN.md"
+      }
+    ],
+    "verification": "unverified-secondary-analysis"
+  },
+  "limitations": [
+    "Independent secondary analysis, not an official brand system; all reported values are unverified.",
+    "No brand assets, logos, font binaries or screenshots copied. Font names are documentary, not font licenses.",
+    "Safe CSS literals are extracted without claiming complete roles, state coverage or visual fidelity.",
+    "Markdown is retained as inert evidence, never executed or rendered as raw HTML."
+  ]
+}

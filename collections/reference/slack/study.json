@@ -1,0 +1,1743 @@
+{
+  "schemaVersion": 1,
+  "id": "reference-slack",
+  "title": "Slack",
+  "classification": "independent-unverified-analysis",
+  "source": {
+    "repository": "https://github.com/VoltAgent/awesome-design-md",
+    "fork": "https://github.com/rsteth/awesome-design-md-p",
+    "revision": "fcc70284932276d085f01ef9f83edde90b1258cb",
+    "path": "design-md/slack/DESIGN.md",
+    "sha256": "03cb243015a2e11d0faf05caba7f3d0c7fda6839b1f5ce707a23e8d46d1a11bd",
+    "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/slack/DESIGN.md"
+  },
+  "sourceName": "Slacc-Inspired-design-analysis",
+  "titleProvenance": {
+    "status": "inferred",
+    "basis": "Source directory label, normalized for navigation; original source name is retained without correction.",
+    "sourceValue": "slack",
+    "originalName": "Slacc-Inspired-design-analysis"
+  },
+  "description": "An inspired interpretation of Slacc's design language — a workplace messaging brand built on a deep aubergine primary, with cream-lavender hero gradients, blue inline links, and pill CTAs. The system pairs a proprietary humanist sans for display with a separate utility sans for body, and stages product UI mockups inside soft pastel-mesh hero composites that act as both decoration and feature explanation.",
+  "analysis": {
+    "version": "alpha",
+    "name": "Slacc-Inspired-design-analysis",
+    "description": "An inspired interpretation of Slacc's design language — a workplace messaging brand built on a deep aubergine primary, with cream-lavender hero gradients, blue inline links, and pill CTAs. The system pairs a proprietary humanist sans for display with a separate utility sans for body, and stages product UI mockups inside soft pastel-mesh hero composites that act as both decoration and feature explanation.",
+    "colors": {
+      "primary": "#4a154b",
+      "primary-deep": "#481a54",
+      "primary-press": "#611f69",
+      "primary-tint": "#592466",
+      "on-primary": "#ffffff",
+      "ink": "#1d1d1d",
+      "ink-mute": "#696969",
+      "link-blue": "#1264a3",
+      "link-hover": "#3860be",
+      "canvas": "#ffffff",
+      "canvas-cream": "#f4ede4",
+      "canvas-lavender": "#f9f0ff",
+      "surface-elev": "#ffffff",
+      "surface-aubergine": "#4a154b",
+      "hairline": "#e6e6e6",
+      "hairline-strong": "#000000",
+      "semantic-error": "#cc4117",
+      "semantic-success": "#007a5a",
+      "on-aubergine-mute": "#d9bdde"
+    },
+    "typography": {
+      "display-xxl": {
+        "fontFamily": "Salesforce-Avant-Garde, system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+        "fontSize": "64px",
+        "fontWeight": 700,
+        "lineHeight": 1.12,
+        "letterSpacing": "-0.768px"
+      },
+      "display-xl": {
+        "fontFamily": "Salesforce-Avant-Garde, system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+        "fontSize": "58px",
+        "fontWeight": 600,
+        "lineHeight": 1.25,
+        "letterSpacing": "-0.464px"
+      },
+      "display-lg": {
+        "fontFamily": "Salesforce-Avant-Garde, system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+        "fontSize": "50px",
+        "fontWeight": 700,
+        "lineHeight": 1.12,
+        "letterSpacing": "-0.6px"
+      },
+      "display-md": {
+        "fontFamily": "Salesforce-Avant-Garde, system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+        "fontSize": "32px",
+        "fontWeight": 700,
+        "lineHeight": 1.25,
+        "letterSpacing": "-0.256px"
+      },
+      "heading-lg": {
+        "fontFamily": "Salesforce-Avant-Garde, system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+        "fontSize": "24px",
+        "fontWeight": 700,
+        "lineHeight": 1.33,
+        "letterSpacing": "-0.096px"
+      },
+      "heading-md": {
+        "fontFamily": "Salesforce-Avant-Garde, system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+        "fontSize": "22px",
+        "fontWeight": 600,
+        "lineHeight": 1.4,
+        "letterSpacing": 0
+      },
+      "heading-sm": {
+        "fontFamily": "Salesforce-Avant-Garde, system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+        "fontSize": "18px",
+        "fontWeight": 600,
+        "lineHeight": 1.56,
+        "letterSpacing": "-0.0216px"
+      },
+      "body-lg": {
+        "fontFamily": "Salesforce-Sans, system-ui, -apple-system, sans-serif",
+        "fontSize": "18px",
+        "fontWeight": 400,
+        "lineHeight": 1.55,
+        "letterSpacing": "-0.0216px"
+      },
+      "body-md": {
+        "fontFamily": "Salesforce-Sans, system-ui, -apple-system, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": 400,
+        "lineHeight": 1.55,
+        "letterSpacing": 0
+      },
+      "body-strong": {
+        "fontFamily": "Salesforce-Sans, system-ui, -apple-system, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": 700,
+        "lineHeight": 1.5,
+        "letterSpacing": "0.16px"
+      },
+      "button-lg": {
+        "fontFamily": "Salesforce-Sans, system-ui, -apple-system, sans-serif",
+        "fontSize": "18px",
+        "fontWeight": 700,
+        "lineHeight": 1,
+        "letterSpacing": 0
+      },
+      "button-md": {
+        "fontFamily": "Salesforce-Sans, system-ui, -apple-system, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": 700,
+        "lineHeight": 1.38,
+        "letterSpacing": "0.2px"
+      },
+      "button-cap": {
+        "fontFamily": "Salesforce-Sans, system-ui, -apple-system, sans-serif",
+        "fontSize": "14.4px",
+        "fontWeight": 700,
+        "lineHeight": 1,
+        "letterSpacing": "0.144px"
+      },
+      "caption": {
+        "fontFamily": "Salesforce-Sans, system-ui, -apple-system, sans-serif",
+        "fontSize": "14px",
+        "fontWeight": 400,
+        "lineHeight": 1.43,
+        "letterSpacing": "0.1px"
+      },
+      "micro-cap": {
+        "fontFamily": "Salesforce-Sans, system-ui, -apple-system, sans-serif",
+        "fontSize": "12px",
+        "fontWeight": 700,
+        "lineHeight": 1,
+        "letterSpacing": "0.96px"
+      }
+    },
+    "rounded": {
+      "xs": "2px",
+      "sm": "4px",
+      "md": "8px",
+      "lg": "12px",
+      "xl": "16px",
+      "xxl": "48px",
+      "pill": "90px"
+    },
+    "spacing": {
+      "xs": "4px",
+      "sm": "8px",
+      "md": "12px",
+      "lg": "16px",
+      "xl": "20px",
+      "xxl": "24px",
+      "huge": "28px"
+    },
+    "components": {
+      "button-primary-pill": {
+        "backgroundColor": "{colors.primary}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.pill}",
+        "padding": "14px 28px"
+      },
+      "button-primary-pill-pressed": {
+        "backgroundColor": "{colors.primary-press}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.pill}",
+        "padding": "14px 28px"
+      },
+      "button-secondary-pill": {
+        "backgroundColor": "{colors.canvas-lavender}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.pill}",
+        "padding": "10px 30px"
+      },
+      "button-outline-aubergine": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.primary}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.pill}",
+        "padding": "14px 28px"
+      },
+      "button-outline-on-aubergine": {
+        "backgroundColor": "{colors.surface-aubergine}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.pill}",
+        "padding": "14px 28px"
+      },
+      "text-input": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.sm}",
+        "padding": "10px 12px"
+      },
+      "pill-cap-shade": {
+        "backgroundColor": "{colors.canvas-cream}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.micro-cap}",
+        "rounded": "{rounded.pill}",
+        "padding": "4px 12px"
+      },
+      "card-pricing": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.xl}",
+        "padding": "32px"
+      },
+      "card-pricing-featured": {
+        "backgroundColor": "{colors.surface-aubergine}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.xl}",
+        "padding": "32px"
+      },
+      "card-feature-cream": {
+        "backgroundColor": "{colors.canvas-cream}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.xl}",
+        "padding": "32px"
+      },
+      "card-aubergine-band": {
+        "backgroundColor": "{colors.surface-aubergine}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.body-lg}",
+        "rounded": "{rounded.xl}",
+        "padding": "48px"
+      },
+      "card-stat": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.primary}",
+        "typography": "{typography.display-lg}",
+        "rounded": "{rounded.xl}",
+        "padding": "32px"
+      },
+      "nav-bar-light": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.xs}",
+        "padding": "16px 24px"
+      },
+      "link-on-light": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.link-blue}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.xs}",
+        "padding": "0px"
+      },
+      "link-on-aubergine": {
+        "backgroundColor": "{colors.surface-aubergine}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.xs}",
+        "padding": "0px"
+      },
+      "footer-aubergine": {
+        "backgroundColor": "{colors.surface-aubergine}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.caption}",
+        "rounded": "{rounded.xs}",
+        "padding": "32px 24px"
+      }
+    }
+  },
+  "normalizationRepairs": [],
+  "sections": [
+    {
+      "heading": "Overview",
+      "level": 2,
+      "text": "Slacc's design language centers on a deep aubergine primary (`{colors.primary}`) — the brand's most enduring visual asset — applied as the dominant button color, the footer band, the featured pricing tier, and the brand wordmark. Around that aubergine the system stages an unusually delicate ecosystem: cream-lavender hero canvases with soft pastel-mesh gradients (peachy oranges, lavenders, dusty greens) that pulse behind floating product UI mockups, with the actual interface chrome rendered in fine detail at 3:2 aspect.\n\nTypography splits between two proprietary humanist sans families. The display tier runs at 700 weight at sizes 32–64px with negative letter-spacing for tight optical density on hero headlines. The UI tier uses the second family at 400–700 with slightly relaxed leading (1.55) — the brand's body copy reads quietly without competing with the aubergine moments.\n\nButtons are pill-shaped at 90px radius with an unusual amount of horizontal padding (28–30px), giving them a distinctly comfortable, almost over-padded feel. The primary aubergine pill is the only filled button in most contexts; secondary actions use a soft lavender pill (`{colors.canvas-lavender}`) which reads as a gentler echo of the primary surface. Inline links shift to a saturated blue (`{colors.link-blue}`) — the brand's only chromatic departure from the aubergine-and-cream world.\n\n**Key Characteristics:**\n- Single aubergine primary (`{colors.primary}`) reused across CTAs, the featured pricing tier, the footer band, and the wordmark — the brand's chromatic monotheism.\n- Cream-lavender hero canvas (`{colors.canvas-cream}` / `{colors.canvas-lavender}`) with diffused pastel-mesh atmospheric gradients and floating UI mockups composited above.\n- Pill buttons at `{rounded.pill}` (90px radius) with generous 28–30px horizontal padding — over-padded by SaaS-default standards, deliberately so.\n- Tight negative letter-spacing on display sizes (-0.768px on 64px hero) for editorial-density headlines.\n- Blue inline links (`{colors.link-blue}`) — the only non-aubergine chromatic accent in body type.\n- Pastel-mesh gradient atmospherics: every hero band has a subtle peach-lavender-dusty-green wash behind it; product UI sits on top, never inside, the gradient.\n- Statistics cards rendered in massive aubergine display type (90% / 43 / 87%) on white — quantitative emphasis through scale alone.",
+      "line": 236
+    },
+    {
+      "heading": "Colors",
+      "level": 2,
+      "text": "> **Source pages:** home (`/`), `/features/channels`, `/pricing`, `/contact-sales`.",
+      "line": 253
+    },
+    {
+      "heading": "Brand & Accent",
+      "level": 3,
+      "text": "- **Aubergine** (`{colors.primary}` — `#4a154b`): The brand's primary surface and CTA color. Deep, warm purple with a hint of ruby — used on filled buttons, the featured pricing tier, the footer band, and the brand wordmark.\n- **Aubergine Deep** (`{colors.primary-deep}` — `#481a54`): A near-identical sibling of `{colors.primary}` extracted from a different surface; treat as functionally equivalent.\n- **Aubergine Press** (`{colors.primary-press}` — `#611f69`): Pressed-state lift of the primary, slightly lighter and warmer.\n- **Aubergine Tint** (`{colors.primary-tint}` — `#592466`): Border accent on aubergine-on-aubergine surfaces.\n- **Link Blue** (`{colors.link-blue}` — `#1264a3`): Inline link color — saturated, slightly warm blue. The only chromatic alternative to aubergine in body type.\n- **Link Hover** (`{colors.link-hover}` — `#3860be`): A more saturated blue used on link hover state.",
+      "line": 257
+    },
+    {
+      "heading": "Surface",
+      "level": 3,
+      "text": "- **Canvas White** (`{colors.canvas}` — `#ffffff`): Default content surface.\n- **Canvas Cream** (`{colors.canvas-cream}` — `#f4ede4`): Warm off-white used on hero gradients and feature bands. Adds editorial warmth.\n- **Canvas Lavender** (`{colors.canvas-lavender}` — `#f9f0ff`): Pale lavender tint used as the secondary-button surface and as a soft section band.\n- **Surface Aubergine** (`{colors.surface-aubergine}` — `#4a154b`): The primary aubergine reused as a surface — featured pricing tier, footer, dark feature bands.\n- **Hairline** (`{colors.hairline}` — `#e6e6e6`): 1px borders on cards and table dividers.",
+      "line": 265
+    },
+    {
+      "heading": "Text",
+      "level": 3,
+      "text": "- **Ink** (`{colors.ink}` — `#1d1d1d`): Primary body text on light surfaces. Just shy of pure black.\n- **Ink Mute** (`{colors.ink-mute}` — `#696969`): Secondary text, captions, helper copy.\n- **On Primary** (`{colors.on-primary}` — `#ffffff`): Text on aubergine surfaces and filled CTAs.\n- **On Aubergine Mute** (`{colors.on-aubergine-mute}` — `#d9bdde`): Secondary text on aubergine surfaces — a desaturated mauve that reads as muted-light.",
+      "line": 272
+    },
+    {
+      "heading": "Semantic",
+      "level": 3,
+      "text": "- **Error** (`{colors.semantic-error}` — `#cc4117`): Form error and destructive-action color.\n- **Success** (`{colors.semantic-success}` — `#007a5a`): Inline success indicators.",
+      "line": 278
+    },
+    {
+      "heading": "Typography",
+      "level": 2,
+      "text": "",
+      "line": 282
+    },
+    {
+      "heading": "Font Family",
+      "level": 3,
+      "text": "The display tier is **Salesforce Avant Garde** — a proprietary humanist sans with broad apertures and a slightly geometric character. When unavailable, fall back to the system font stack (`system-ui, -apple-system, BlinkMacSystemFont`).\n\nThe UI tier is **Salesforce Sans** — a separate proprietary face used for body, captions, and button labels. Same fallback chain.\n\nBoth faces are proprietary and not freely available. Substitute with **Inter** (open-source via Google Fonts) at matching weights for both display and body — Inter is the closest open analogue across both tiers.",
+      "line": 284
+    },
+    {
+      "heading": "Hierarchy",
+      "level": 3,
+      "text": "| Token | Size | Weight | Line Height | Letter Spacing | Use |\n|---|---|---|---|---|---|\n| `{typography.display-xxl}` | 64px | 700 | 1.12 | -0.768px | Marketing hero headline |\n| `{typography.display-xl}` | 58px | 600 | 1.25 | -0.464px | Section openers |\n| `{typography.display-lg}` | 50px | 700 | 1.12 | -0.6px | Statistics callouts |\n| `{typography.display-md}` | 32px | 700 | 1.25 | -0.256px | Card / feature titles |\n| `{typography.heading-lg}` | 24px | 700 | 1.33 | -0.096px | Pricing tier names |\n| `{typography.heading-md}` | 22px | 600 | 1.4 | 0 | Sub-section heading |\n| `{typography.heading-sm}` | 18px | 600 | 1.56 | -0.0216px | Compact card title |\n| `{typography.body-lg}` | 18px | 400 | 1.55 | -0.0216px | Marketing body lead |\n| `{typography.body-md}` | 16px | 400 | 1.55 | 0 | Default UI body |\n| `{typography.body-strong}` | 16px | 700 | 1.5 | 0.16px | Emphasized body |\n| `{typography.button-lg}` | 18px | 700 | 1.0 | 0 | Hero pill button label |\n| `{typography.button-md}` | 16px | 700 | 1.38 | 0.2px | Standard pill button label |\n| `{typography.button-cap}` | 14.4px | 700 | 1.0 | 0.144px | Compact pill label |\n| `{typography.caption}` | 14px | 400 | 1.43 | 0.1px | Helper, footnote |\n| `{typography.micro-cap}` | 12px | 700 | 1.0 | 0.96px | All-caps eyebrow |",
+      "line": 292
+    },
+    {
+      "heading": "Principles",
+      "level": 3,
+      "text": "- **Tight tracking on display.** Negative letter-spacing across 32–64px sizes; the proprietary face is wide by default, the negative tracking pulls it into editorial density.\n- **Body at 1.55 leading.** Slightly relaxed for marketing readability without crossing into airy / 1.7+ territory.\n- **Caps for eyebrows.** All eyebrows render uppercase with positive 0.96–0.144px tracking depending on size.",
+      "line": 312
+    },
+    {
+      "heading": "Note on Font Substitutes",
+      "level": 3,
+      "text": "Use **Inter** (open-source Google Fonts) for both display and UI tiers — Inter at 700 weight with `-0.768px` letter-spacing closely approximates the brand's display behavior. For maximum brand fidelity, **Lato** is a softer humanist alternative that pairs well at body sizes. Avoid System UI fonts on the body — the brand's subtle warmth disappears at default weights.",
+      "line": 317
+    },
+    {
+      "heading": "Layout",
+      "level": 2,
+      "text": "",
+      "line": 320
+    },
+    {
+      "heading": "Spacing System",
+      "level": 3,
+      "text": "- **Base unit**: 8px (with 4 / 12 / 16 / 20 / 24 / 28 sub-tokens for fine vertical rhythm).\n- **Tokens**: `{spacing.xs}` 4px · `{spacing.sm}` 8px · `{spacing.md}` 12px · `{spacing.lg}` 16px · `{spacing.xl}` 20px · `{spacing.xxl}` 24px · `{spacing.huge}` 28px.\n- **Section padding**: 64–96px on marketing surfaces; tightens to 48px on transactional pages.\n- **Card internal padding**: 32px on pricing cards; 48px on aubergine band cards.",
+      "line": 322
+    },
+    {
+      "heading": "Grid & Container",
+      "level": 3,
+      "text": "- Marketing pages center in a ~1240px container with edge-bleeding pastel-mesh gradients escaping the container.\n- Pricing collapses 4-up → 2-up → 1-up at 992 / 768 breakpoints.\n- Statistics row: 3-column grid with massive 50px aubergine display numerals.",
+      "line": 328
+    },
+    {
+      "heading": "Whitespace Philosophy",
+      "level": 3,
+      "text": "The pastel-mesh gradients fill most of the negative space on marketing pages — sections feel expansive without being literally empty. On transactional pages the gradients drop, and whitespace reverts to traditional 48px-section breathing room.",
+      "line": 333
+    },
+    {
+      "heading": "Elevation & Depth",
+      "level": 2,
+      "text": "| Level | Treatment | Use |\n|---|---|---|\n| 0 | Flat | Default surface |\n| 1 | `box-shadow: rgba(0,0,0,0.1) 0 5px 20px 0` | Floating buttons on hero |\n| 2 | `box-shadow: rgba(0,0,0,0.1) 0 0 32px 0` | Product UI mockup composites |\n| 3 | `box-shadow: rgba(0,0,0,0.2) 0 1px 10px 0` | Toast / notification chrome |\n| 4 | `box-shadow: rgb(97,31,105) 0 0 0 1px inset` | Aubergine inset border (button focus, special chrome) |",
+      "line": 336
+    },
+    {
+      "heading": "Decorative Depth",
+      "level": 3,
+      "text": "The brand's depth language is the **pastel-mesh gradient** — peach, lavender, dusty green stops blurred together at large radii to create soft atmospheric backdrops behind product UI screenshots. The gradient is the brand's flavor of \"depth without shadows\": the eye perceives the product mockup as floating above a luminous backdrop without any literal lift.",
+      "line": 346
+    },
+    {
+      "heading": "Shapes",
+      "level": 2,
+      "text": "",
+      "line": 349
+    },
+    {
+      "heading": "Border Radius Scale",
+      "level": 3,
+      "text": "| Token | Value | Use |\n|---|---|---|\n| `{rounded.xs}` | 2px | Hairline tags, status pills (rare) |\n| `{rounded.sm}` | 4px | Form inputs |\n| `{rounded.md}` | 8px | Compact card chrome, video frames |\n| `{rounded.lg}` | 12px | Mid-size cards, secondary surface |\n| `{rounded.xl}` | 16px | Pricing cards, feature cards |\n| `{rounded.xxl}` | 48px | Stat badge backdrops |\n| `{rounded.pill}` | 90px | All buttons |",
+      "line": 351
+    },
+    {
+      "heading": "Photography Geometry",
+      "level": 3,
+      "text": "The brand uses **product UI screenshots** more than photography. UI mockups sit on top of pastel-mesh gradients at roughly 4:3 aspect, with no shadow but with the gradient providing the \"lift\" the eye expects. Real photography appears in customer-logo strips and the occasional case-study card, treated as full-bleed inside `{rounded.xl}` containers.",
+      "line": 363
+    },
+    {
+      "heading": "Components",
+      "level": 2,
+      "text": "",
+      "line": 366
+    },
+    {
+      "heading": "Buttons",
+      "level": 3,
+      "text": "**`button-primary-pill`** — the dominant CTA system-wide.\n- Background `{colors.primary}`, text `{colors.on-primary}`, type `{typography.button-md}`, padding `14px 28px`, rounded `{rounded.pill}` 90px.\n- Pressed state `button-primary-pill-pressed` shifts background to `{colors.primary-press}`.\n\n**`button-secondary-pill`** — the soft lavender alternative.\n- Background `{colors.canvas-lavender}`, text `{colors.ink}`, padding `10px 30px`, same pill geometry. Used as the second action beside the primary aubergine pill.\n\n**`button-outline-aubergine`** — outline variant on white surfaces.\n- Background `{colors.canvas}`, text `{colors.primary}`, 2px solid `{colors.primary}` border, same pill shape.\n\n**`button-outline-on-aubergine`** — outline on aubergine canvas.\n- Background `{colors.surface-aubergine}` (transparent over the surface), text `{colors.on-primary}`, 2px solid `{colors.on-primary}` border, same pill shape.",
+      "line": 368
+    },
+    {
+      "heading": "Cards & Containers",
+      "level": 3,
+      "text": "**`card-pricing`** — standard pricing tier card.\n- Background `{colors.canvas}`, padding `{spacing.xxl}+` (32px), rounded `{rounded.xl}` 16px, 1px `{colors.hairline}` border. Title in `{typography.heading-lg}`, price in `{typography.display-md}`, body in `{typography.body-md}`, CTA pinned to bottom as `button-primary-pill`.\n\n**`card-pricing-featured`** — the inverted aubergine featured tier.\n- Background `{colors.surface-aubergine}`, text `{colors.on-primary}`, otherwise identical to `card-pricing`. The aubergine fill is the brand's signature featured-tier choice.\n\n**`card-feature-cream`** — feature explanation card on the cream track.\n- Background `{colors.canvas-cream}`, text `{colors.ink}`, rounded `{rounded.xl}`, padding 32px.\n\n**`card-aubergine-band`** — large horizontal band card with aubergine fill, often containing the closing CTA of a marketing page.\n- Background `{colors.surface-aubergine}`, text `{colors.on-primary}`, padding 48px, rounded `{rounded.xl}` 16px.\n\n**`card-stat`** — statistics callout card.\n- Background `{colors.canvas}`, text `{colors.primary}` rendered in `{typography.display-lg}` (50px aubergine numeral). Holds a single percentage/number with a small caption underneath.",
+      "line": 383
+    },
+    {
+      "heading": "Inputs & Forms",
+      "level": 3,
+      "text": "**`text-input`** — standard form field.\n- Background `{colors.canvas}`, text `{colors.ink}`, type `{typography.body-md}`, padding `10px 12px`, rounded `{rounded.sm}` 4px, 1px `{colors.hairline}` border.",
+      "line": 400
+    },
+    {
+      "heading": "Navigation",
+      "level": 3,
+      "text": "**`nav-bar-light`** — top nav across all marketing pages.\n- Background `{colors.canvas}`, text `{colors.ink}`, padding `{spacing.lg} {spacing.xxl}`. Logo wordmark on the left, nav items center, two pill buttons on the right (`button-secondary-pill` for \"Sign In\", `button-primary-pill` for \"Try For Free\").",
+      "line": 405
+    },
+    {
+      "heading": "Pills, Tags, and Chips",
+      "level": 3,
+      "text": "**`pill-cap-shade`** — small all-caps pill used as eyebrow above pricing-tier titles.\n- Background `{colors.canvas-cream}`, text `{colors.ink}`, type `{typography.micro-cap}`, padding `4px 12px`, rounded `{rounded.pill}`.",
+      "line": 410
+    },
+    {
+      "heading": "Signature Components",
+      "level": 3,
+      "text": "**Pastel-Mesh Gradient Backdrop** — peach (`#fff0e6`-ish) + lavender (`#e9d8ff`) + dusty green stops blurred together behind hero bands. Implemented as a CSS radial-gradient stack, not a single image. Provides the brand's depth/luminosity without literal shadows.\n\n**Floating Product UI Mockup** — product screenshots framed in `{rounded.lg}` (12px) containers, positioned above the pastel-mesh gradient with no border or shadow. The gradient does the lifting.\n\n**Aubergine Footer Band** — every marketing page closes with a full-bleed `card-aubergine-band` containing a closing CTA in white type. The band height is generous (~480–600px on desktop) and reads as the page's signature.\n\n**`link-on-light`** — inline links in body copy on light surfaces.\n- Text `{colors.link-blue}` rendered in `{typography.body-md}`. No underline by default; underline appears on hover via the link-hover behavior.\n\n**`link-on-aubergine`** — links inside aubergine surfaces.\n- Text `{colors.on-primary}` with persistent underline.\n\n**`footer-aubergine`** — site-wide footer.\n- Background `{colors.surface-aubergine}`, text `{colors.on-primary}` rendered in `{typography.caption}`, padding `{spacing.huge}+ {spacing.xxl}` (32px 24px). Holds 4–5 columns of `{colors.on-aubergine-mute}` link groups, social icons, and a small legal/copyright row at the bottom.",
+      "line": 415
+    },
+    {
+      "heading": "Do's and Don'ts",
+      "level": 2,
+      "text": "",
+      "line": 432
+    },
+    {
+      "heading": "Do",
+      "level": 3,
+      "text": "- Reserve `{colors.primary}` aubergine for filled CTAs, the featured pricing tier, and the closing aubergine band — it's the brand's chromatic monotheism.\n- Use `{rounded.pill}` (90px) for every button across the system — never a rounded-rectangle button.\n- Pair display tiers with negative letter-spacing (`-0.768px` at 64px); the proprietary face needs the tracking pull.\n- Compose hero bands with pastel-mesh gradient backdrop + floating product UI mockup; the gradient is the depth.\n- Use `{colors.link-blue}` for inline links — it's the only chromatic departure from aubergine and is part of the brand voice.",
+      "line": 434
+    },
+    {
+      "heading": "Don't",
+      "level": 3,
+      "text": "- Don't add a third accent color to the system — the aubergine + blue link combination is exhaustive.\n- Don't shrink button padding below `14px 28px` — the over-padded pill is part of the brand feel.\n- Don't render display tiers at default tracking (0) — without negative letter-spacing the headlines read loose and unedited.\n- Don't put product UI screenshots inside cards — they sit ABOVE the pastel-mesh gradient, never inside chrome.\n- Don't use aubergine for body text — it's a surface and CTA color, not a type color at body sizes.\n- Don't replace the pill shape with a square button anywhere.",
+      "line": 441
+    },
+    {
+      "heading": "Responsive Behavior",
+      "level": 2,
+      "text": "",
+      "line": 449
+    },
+    {
+      "heading": "Breakpoints",
+      "level": 3,
+      "text": "| Name | Width | Key Changes |\n|---|---|---|\n| Wide | ≥ 1440px | Full-bleed pastel-mesh hero; pricing 4-up |\n| Desktop | 1024–1440px | Default content max-width; pricing 4-up |\n| Tablet | 768–1023px | Pricing 2-up; product UI mockups crop to focal panel |\n| Mobile | < 768px | Pricing 1-up; hamburger nav; display-xxl drops 64 → 40px |",
+      "line": 451
+    },
+    {
+      "heading": "Touch Targets",
+      "level": 3,
+      "text": "- Pill buttons hit ≥ 48×48px due to the over-padded geometry. WCAG AAA compliant.\n- Form fields stay at the 44px minimum height.",
+      "line": 460
+    },
+    {
+      "heading": "Collapsing Strategy",
+      "level": 3,
+      "text": "- Display tiers stair-step 64 → 50 → 32 → 28 → 24 across breakpoints.\n- Pastel-mesh gradients re-tile on mobile to prevent the wash from disappearing entirely.\n- Floating product UI mockups crop to the most actionable inner panel on mobile.\n- Pricing tiers stair-step 4 → 2 → 1; aubergine featured tier stays distinguished.\n- Top nav collapses to hamburger below 768px; menu inherits canvas color.",
+      "line": 464
+    },
+    {
+      "heading": "Image Behavior",
+      "level": 3,
+      "text": "Product UI mockups use `srcset` for desktop / tablet / mobile crops; the mobile crop centers on the most actionable inner panel rather than scaling the whole composite down.",
+      "line": 471
+    },
+    {
+      "heading": "Iteration Guide",
+      "level": 2,
+      "text": "1. Focus on ONE component at a time.\n2. Reference component names and tokens directly (`{colors.primary}`, `{button-primary-pill}-pressed`, `{rounded.pill}`).\n3. Run `npx @google/design.md lint DESIGN.md` after edits.\n4. Add new variants as separate entries.\n5. Default body to `{typography.body-md}`; reserve `{typography.body-lg}` for marketing leads.\n6. Keep aubergine scarce — one filled aubergine button per viewport.\n7. Pair every hero band with the pastel-mesh gradient backdrop; bare-canvas heroes read as off-brand.",
+      "line": 474
+    }
+  ],
+  "tokens": [
+    {
+      "path": "colors.primary",
+      "sourcePath": "colors.primary",
+      "type": "color",
+      "value": "#4a154b",
+      "status": "unverified",
+      "evidence": {
+        "line": 7,
+        "sourcePath": "colors.primary"
+      }
+    },
+    {
+      "path": "colors.primarydeep",
+      "sourcePath": "colors.primary-deep",
+      "type": "color",
+      "value": "#481a54",
+      "status": "unverified",
+      "evidence": {
+        "line": 8,
+        "sourcePath": "colors.primary-deep"
+      }
+    },
+    {
+      "path": "colors.primarypress",
+      "sourcePath": "colors.primary-press",
+      "type": "color",
+      "value": "#611f69",
+      "status": "unverified",
+      "evidence": {
+        "line": 9,
+        "sourcePath": "colors.primary-press"
+      }
+    },
+    {
+      "path": "colors.primarytint",
+      "sourcePath": "colors.primary-tint",
+      "type": "color",
+      "value": "#592466",
+      "status": "unverified",
+      "evidence": {
+        "line": 10,
+        "sourcePath": "colors.primary-tint"
+      }
+    },
+    {
+      "path": "colors.onprimary",
+      "sourcePath": "colors.on-primary",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 11,
+        "sourcePath": "colors.on-primary"
+      }
+    },
+    {
+      "path": "colors.ink",
+      "sourcePath": "colors.ink",
+      "type": "color",
+      "value": "#1d1d1d",
+      "status": "unverified",
+      "evidence": {
+        "line": 12,
+        "sourcePath": "colors.ink"
+      }
+    },
+    {
+      "path": "colors.inkmute",
+      "sourcePath": "colors.ink-mute",
+      "type": "color",
+      "value": "#696969",
+      "status": "unverified",
+      "evidence": {
+        "line": 13,
+        "sourcePath": "colors.ink-mute"
+      }
+    },
+    {
+      "path": "colors.linkblue",
+      "sourcePath": "colors.link-blue",
+      "type": "color",
+      "value": "#1264a3",
+      "status": "unverified",
+      "evidence": {
+        "line": 14,
+        "sourcePath": "colors.link-blue"
+      }
+    },
+    {
+      "path": "colors.linkhover",
+      "sourcePath": "colors.link-hover",
+      "type": "color",
+      "value": "#3860be",
+      "status": "unverified",
+      "evidence": {
+        "line": 15,
+        "sourcePath": "colors.link-hover"
+      }
+    },
+    {
+      "path": "colors.canvas",
+      "sourcePath": "colors.canvas",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 16,
+        "sourcePath": "colors.canvas"
+      }
+    },
+    {
+      "path": "colors.canvascream",
+      "sourcePath": "colors.canvas-cream",
+      "type": "color",
+      "value": "#f4ede4",
+      "status": "unverified",
+      "evidence": {
+        "line": 17,
+        "sourcePath": "colors.canvas-cream"
+      }
+    },
+    {
+      "path": "colors.canvaslavender",
+      "sourcePath": "colors.canvas-lavender",
+      "type": "color",
+      "value": "#f9f0ff",
+      "status": "unverified",
+      "evidence": {
+        "line": 18,
+        "sourcePath": "colors.canvas-lavender"
+      }
+    },
+    {
+      "path": "colors.surfaceelev",
+      "sourcePath": "colors.surface-elev",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 19,
+        "sourcePath": "colors.surface-elev"
+      }
+    },
+    {
+      "path": "colors.surfaceaubergine",
+      "sourcePath": "colors.surface-aubergine",
+      "type": "color",
+      "value": "#4a154b",
+      "status": "unverified",
+      "evidence": {
+        "line": 20,
+        "sourcePath": "colors.surface-aubergine"
+      }
+    },
+    {
+      "path": "colors.hairline",
+      "sourcePath": "colors.hairline",
+      "type": "color",
+      "value": "#e6e6e6",
+      "status": "unverified",
+      "evidence": {
+        "line": 21,
+        "sourcePath": "colors.hairline"
+      }
+    },
+    {
+      "path": "colors.hairlinestrong",
+      "sourcePath": "colors.hairline-strong",
+      "type": "color",
+      "value": "#000000",
+      "status": "unverified",
+      "evidence": {
+        "line": 22,
+        "sourcePath": "colors.hairline-strong"
+      }
+    },
+    {
+      "path": "colors.semanticerror",
+      "sourcePath": "colors.semantic-error",
+      "type": "color",
+      "value": "#cc4117",
+      "status": "unverified",
+      "evidence": {
+        "line": 23,
+        "sourcePath": "colors.semantic-error"
+      }
+    },
+    {
+      "path": "colors.semanticsuccess",
+      "sourcePath": "colors.semantic-success",
+      "type": "color",
+      "value": "#007a5a",
+      "status": "unverified",
+      "evidence": {
+        "line": 24,
+        "sourcePath": "colors.semantic-success"
+      }
+    },
+    {
+      "path": "colors.onauberginemute",
+      "sourcePath": "colors.on-aubergine-mute",
+      "type": "color",
+      "value": "#d9bdde",
+      "status": "unverified",
+      "evidence": {
+        "line": 25,
+        "sourcePath": "colors.on-aubergine-mute"
+      }
+    },
+    {
+      "path": "typography.displayxxl.fontfamily",
+      "sourcePath": "typography.display-xxl.fontFamily",
+      "type": "fontFamily",
+      "value": "Salesforce-Avant-Garde, system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 29,
+        "sourcePath": "typography.display-xxl.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displayxxl.fontsize",
+      "sourcePath": "typography.display-xxl.fontSize",
+      "type": "dimension",
+      "value": "64px",
+      "status": "unverified",
+      "evidence": {
+        "line": 30,
+        "sourcePath": "typography.display-xxl.fontSize"
+      }
+    },
+    {
+      "path": "typography.displayxxl.fontweight",
+      "sourcePath": "typography.display-xxl.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 31,
+        "sourcePath": "typography.display-xxl.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displayxxl.lineheight",
+      "sourcePath": "typography.display-xxl.lineHeight",
+      "type": "number",
+      "value": 1.12,
+      "status": "unverified",
+      "evidence": {
+        "line": 32,
+        "sourcePath": "typography.display-xxl.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displayxxl.letterspacing",
+      "sourcePath": "typography.display-xxl.letterSpacing",
+      "type": "dimension",
+      "value": "-0.768px",
+      "status": "unverified",
+      "evidence": {
+        "line": 33,
+        "sourcePath": "typography.display-xxl.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.displayxl.fontfamily",
+      "sourcePath": "typography.display-xl.fontFamily",
+      "type": "fontFamily",
+      "value": "Salesforce-Avant-Garde, system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 35,
+        "sourcePath": "typography.display-xl.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displayxl.fontsize",
+      "sourcePath": "typography.display-xl.fontSize",
+      "type": "dimension",
+      "value": "58px",
+      "status": "unverified",
+      "evidence": {
+        "line": 36,
+        "sourcePath": "typography.display-xl.fontSize"
+      }
+    },
+    {
+      "path": "typography.displayxl.fontweight",
+      "sourcePath": "typography.display-xl.fontWeight",
+      "type": "number",
+      "value": 600,
+      "status": "unverified",
+      "evidence": {
+        "line": 37,
+        "sourcePath": "typography.display-xl.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displayxl.lineheight",
+      "sourcePath": "typography.display-xl.lineHeight",
+      "type": "number",
+      "value": 1.25,
+      "status": "unverified",
+      "evidence": {
+        "line": 38,
+        "sourcePath": "typography.display-xl.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displayxl.letterspacing",
+      "sourcePath": "typography.display-xl.letterSpacing",
+      "type": "dimension",
+      "value": "-0.464px",
+      "status": "unverified",
+      "evidence": {
+        "line": 39,
+        "sourcePath": "typography.display-xl.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.displaylg.fontfamily",
+      "sourcePath": "typography.display-lg.fontFamily",
+      "type": "fontFamily",
+      "value": "Salesforce-Avant-Garde, system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 41,
+        "sourcePath": "typography.display-lg.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displaylg.fontsize",
+      "sourcePath": "typography.display-lg.fontSize",
+      "type": "dimension",
+      "value": "50px",
+      "status": "unverified",
+      "evidence": {
+        "line": 42,
+        "sourcePath": "typography.display-lg.fontSize"
+      }
+    },
+    {
+      "path": "typography.displaylg.fontweight",
+      "sourcePath": "typography.display-lg.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 43,
+        "sourcePath": "typography.display-lg.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displaylg.lineheight",
+      "sourcePath": "typography.display-lg.lineHeight",
+      "type": "number",
+      "value": 1.12,
+      "status": "unverified",
+      "evidence": {
+        "line": 44,
+        "sourcePath": "typography.display-lg.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displaylg.letterspacing",
+      "sourcePath": "typography.display-lg.letterSpacing",
+      "type": "dimension",
+      "value": "-0.6px",
+      "status": "unverified",
+      "evidence": {
+        "line": 45,
+        "sourcePath": "typography.display-lg.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.displaymd.fontfamily",
+      "sourcePath": "typography.display-md.fontFamily",
+      "type": "fontFamily",
+      "value": "Salesforce-Avant-Garde, system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 47,
+        "sourcePath": "typography.display-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displaymd.fontsize",
+      "sourcePath": "typography.display-md.fontSize",
+      "type": "dimension",
+      "value": "32px",
+      "status": "unverified",
+      "evidence": {
+        "line": 48,
+        "sourcePath": "typography.display-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.displaymd.fontweight",
+      "sourcePath": "typography.display-md.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 49,
+        "sourcePath": "typography.display-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displaymd.lineheight",
+      "sourcePath": "typography.display-md.lineHeight",
+      "type": "number",
+      "value": 1.25,
+      "status": "unverified",
+      "evidence": {
+        "line": 50,
+        "sourcePath": "typography.display-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displaymd.letterspacing",
+      "sourcePath": "typography.display-md.letterSpacing",
+      "type": "dimension",
+      "value": "-0.256px",
+      "status": "unverified",
+      "evidence": {
+        "line": 51,
+        "sourcePath": "typography.display-md.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.headinglg.fontfamily",
+      "sourcePath": "typography.heading-lg.fontFamily",
+      "type": "fontFamily",
+      "value": "Salesforce-Avant-Garde, system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 53,
+        "sourcePath": "typography.heading-lg.fontFamily"
+      }
+    },
+    {
+      "path": "typography.headinglg.fontsize",
+      "sourcePath": "typography.heading-lg.fontSize",
+      "type": "dimension",
+      "value": "24px",
+      "status": "unverified",
+      "evidence": {
+        "line": 54,
+        "sourcePath": "typography.heading-lg.fontSize"
+      }
+    },
+    {
+      "path": "typography.headinglg.fontweight",
+      "sourcePath": "typography.heading-lg.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 55,
+        "sourcePath": "typography.heading-lg.fontWeight"
+      }
+    },
+    {
+      "path": "typography.headinglg.lineheight",
+      "sourcePath": "typography.heading-lg.lineHeight",
+      "type": "number",
+      "value": 1.33,
+      "status": "unverified",
+      "evidence": {
+        "line": 56,
+        "sourcePath": "typography.heading-lg.lineHeight"
+      }
+    },
+    {
+      "path": "typography.headinglg.letterspacing",
+      "sourcePath": "typography.heading-lg.letterSpacing",
+      "type": "dimension",
+      "value": "-0.096px",
+      "status": "unverified",
+      "evidence": {
+        "line": 57,
+        "sourcePath": "typography.heading-lg.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.headingmd.fontfamily",
+      "sourcePath": "typography.heading-md.fontFamily",
+      "type": "fontFamily",
+      "value": "Salesforce-Avant-Garde, system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 59,
+        "sourcePath": "typography.heading-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.headingmd.fontsize",
+      "sourcePath": "typography.heading-md.fontSize",
+      "type": "dimension",
+      "value": "22px",
+      "status": "unverified",
+      "evidence": {
+        "line": 60,
+        "sourcePath": "typography.heading-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.headingmd.fontweight",
+      "sourcePath": "typography.heading-md.fontWeight",
+      "type": "number",
+      "value": 600,
+      "status": "unverified",
+      "evidence": {
+        "line": 61,
+        "sourcePath": "typography.heading-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.headingmd.lineheight",
+      "sourcePath": "typography.heading-md.lineHeight",
+      "type": "number",
+      "value": 1.4,
+      "status": "unverified",
+      "evidence": {
+        "line": 62,
+        "sourcePath": "typography.heading-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.headingmd.letterspacing",
+      "sourcePath": "typography.heading-md.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 63,
+        "sourcePath": "typography.heading-md.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.headingsm.fontfamily",
+      "sourcePath": "typography.heading-sm.fontFamily",
+      "type": "fontFamily",
+      "value": "Salesforce-Avant-Garde, system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 65,
+        "sourcePath": "typography.heading-sm.fontFamily"
+      }
+    },
+    {
+      "path": "typography.headingsm.fontsize",
+      "sourcePath": "typography.heading-sm.fontSize",
+      "type": "dimension",
+      "value": "18px",
+      "status": "unverified",
+      "evidence": {
+        "line": 66,
+        "sourcePath": "typography.heading-sm.fontSize"
+      }
+    },
+    {
+      "path": "typography.headingsm.fontweight",
+      "sourcePath": "typography.heading-sm.fontWeight",
+      "type": "number",
+      "value": 600,
+      "status": "unverified",
+      "evidence": {
+        "line": 67,
+        "sourcePath": "typography.heading-sm.fontWeight"
+      }
+    },
+    {
+      "path": "typography.headingsm.lineheight",
+      "sourcePath": "typography.heading-sm.lineHeight",
+      "type": "number",
+      "value": 1.56,
+      "status": "unverified",
+      "evidence": {
+        "line": 68,
+        "sourcePath": "typography.heading-sm.lineHeight"
+      }
+    },
+    {
+      "path": "typography.headingsm.letterspacing",
+      "sourcePath": "typography.heading-sm.letterSpacing",
+      "type": "dimension",
+      "value": "-0.0216px",
+      "status": "unverified",
+      "evidence": {
+        "line": 69,
+        "sourcePath": "typography.heading-sm.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.bodylg.fontfamily",
+      "sourcePath": "typography.body-lg.fontFamily",
+      "type": "fontFamily",
+      "value": "Salesforce-Sans, system-ui, -apple-system, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 71,
+        "sourcePath": "typography.body-lg.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodylg.fontsize",
+      "sourcePath": "typography.body-lg.fontSize",
+      "type": "dimension",
+      "value": "18px",
+      "status": "unverified",
+      "evidence": {
+        "line": 72,
+        "sourcePath": "typography.body-lg.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodylg.fontweight",
+      "sourcePath": "typography.body-lg.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 73,
+        "sourcePath": "typography.body-lg.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodylg.lineheight",
+      "sourcePath": "typography.body-lg.lineHeight",
+      "type": "number",
+      "value": 1.55,
+      "status": "unverified",
+      "evidence": {
+        "line": 74,
+        "sourcePath": "typography.body-lg.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodylg.letterspacing",
+      "sourcePath": "typography.body-lg.letterSpacing",
+      "type": "dimension",
+      "value": "-0.0216px",
+      "status": "unverified",
+      "evidence": {
+        "line": 75,
+        "sourcePath": "typography.body-lg.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.bodymd.fontfamily",
+      "sourcePath": "typography.body-md.fontFamily",
+      "type": "fontFamily",
+      "value": "Salesforce-Sans, system-ui, -apple-system, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 77,
+        "sourcePath": "typography.body-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodymd.fontsize",
+      "sourcePath": "typography.body-md.fontSize",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 78,
+        "sourcePath": "typography.body-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodymd.fontweight",
+      "sourcePath": "typography.body-md.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 79,
+        "sourcePath": "typography.body-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodymd.lineheight",
+      "sourcePath": "typography.body-md.lineHeight",
+      "type": "number",
+      "value": 1.55,
+      "status": "unverified",
+      "evidence": {
+        "line": 80,
+        "sourcePath": "typography.body-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodymd.letterspacing",
+      "sourcePath": "typography.body-md.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 81,
+        "sourcePath": "typography.body-md.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.bodystrong.fontfamily",
+      "sourcePath": "typography.body-strong.fontFamily",
+      "type": "fontFamily",
+      "value": "Salesforce-Sans, system-ui, -apple-system, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 83,
+        "sourcePath": "typography.body-strong.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodystrong.fontsize",
+      "sourcePath": "typography.body-strong.fontSize",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 84,
+        "sourcePath": "typography.body-strong.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodystrong.fontweight",
+      "sourcePath": "typography.body-strong.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 85,
+        "sourcePath": "typography.body-strong.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodystrong.lineheight",
+      "sourcePath": "typography.body-strong.lineHeight",
+      "type": "number",
+      "value": 1.5,
+      "status": "unverified",
+      "evidence": {
+        "line": 86,
+        "sourcePath": "typography.body-strong.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodystrong.letterspacing",
+      "sourcePath": "typography.body-strong.letterSpacing",
+      "type": "dimension",
+      "value": "0.16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 87,
+        "sourcePath": "typography.body-strong.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.buttonlg.fontfamily",
+      "sourcePath": "typography.button-lg.fontFamily",
+      "type": "fontFamily",
+      "value": "Salesforce-Sans, system-ui, -apple-system, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 89,
+        "sourcePath": "typography.button-lg.fontFamily"
+      }
+    },
+    {
+      "path": "typography.buttonlg.fontsize",
+      "sourcePath": "typography.button-lg.fontSize",
+      "type": "dimension",
+      "value": "18px",
+      "status": "unverified",
+      "evidence": {
+        "line": 90,
+        "sourcePath": "typography.button-lg.fontSize"
+      }
+    },
+    {
+      "path": "typography.buttonlg.fontweight",
+      "sourcePath": "typography.button-lg.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 91,
+        "sourcePath": "typography.button-lg.fontWeight"
+      }
+    },
+    {
+      "path": "typography.buttonlg.lineheight",
+      "sourcePath": "typography.button-lg.lineHeight",
+      "type": "number",
+      "value": 1,
+      "status": "unverified",
+      "evidence": {
+        "line": 92,
+        "sourcePath": "typography.button-lg.lineHeight"
+      }
+    },
+    {
+      "path": "typography.buttonlg.letterspacing",
+      "sourcePath": "typography.button-lg.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 93,
+        "sourcePath": "typography.button-lg.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.buttonmd.fontfamily",
+      "sourcePath": "typography.button-md.fontFamily",
+      "type": "fontFamily",
+      "value": "Salesforce-Sans, system-ui, -apple-system, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 95,
+        "sourcePath": "typography.button-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.buttonmd.fontsize",
+      "sourcePath": "typography.button-md.fontSize",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 96,
+        "sourcePath": "typography.button-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.buttonmd.fontweight",
+      "sourcePath": "typography.button-md.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 97,
+        "sourcePath": "typography.button-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.buttonmd.lineheight",
+      "sourcePath": "typography.button-md.lineHeight",
+      "type": "number",
+      "value": 1.38,
+      "status": "unverified",
+      "evidence": {
+        "line": 98,
+        "sourcePath": "typography.button-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.buttonmd.letterspacing",
+      "sourcePath": "typography.button-md.letterSpacing",
+      "type": "dimension",
+      "value": "0.2px",
+      "status": "unverified",
+      "evidence": {
+        "line": 99,
+        "sourcePath": "typography.button-md.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.buttoncap.fontfamily",
+      "sourcePath": "typography.button-cap.fontFamily",
+      "type": "fontFamily",
+      "value": "Salesforce-Sans, system-ui, -apple-system, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 101,
+        "sourcePath": "typography.button-cap.fontFamily"
+      }
+    },
+    {
+      "path": "typography.buttoncap.fontsize",
+      "sourcePath": "typography.button-cap.fontSize",
+      "type": "dimension",
+      "value": "14.4px",
+      "status": "unverified",
+      "evidence": {
+        "line": 102,
+        "sourcePath": "typography.button-cap.fontSize"
+      }
+    },
+    {
+      "path": "typography.buttoncap.fontweight",
+      "sourcePath": "typography.button-cap.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 103,
+        "sourcePath": "typography.button-cap.fontWeight"
+      }
+    },
+    {
+      "path": "typography.buttoncap.lineheight",
+      "sourcePath": "typography.button-cap.lineHeight",
+      "type": "number",
+      "value": 1,
+      "status": "unverified",
+      "evidence": {
+        "line": 104,
+        "sourcePath": "typography.button-cap.lineHeight"
+      }
+    },
+    {
+      "path": "typography.buttoncap.letterspacing",
+      "sourcePath": "typography.button-cap.letterSpacing",
+      "type": "dimension",
+      "value": "0.144px",
+      "status": "unverified",
+      "evidence": {
+        "line": 105,
+        "sourcePath": "typography.button-cap.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.caption.fontfamily",
+      "sourcePath": "typography.caption.fontFamily",
+      "type": "fontFamily",
+      "value": "Salesforce-Sans, system-ui, -apple-system, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 107,
+        "sourcePath": "typography.caption.fontFamily"
+      }
+    },
+    {
+      "path": "typography.caption.fontsize",
+      "sourcePath": "typography.caption.fontSize",
+      "type": "dimension",
+      "value": "14px",
+      "status": "unverified",
+      "evidence": {
+        "line": 108,
+        "sourcePath": "typography.caption.fontSize"
+      }
+    },
+    {
+      "path": "typography.caption.fontweight",
+      "sourcePath": "typography.caption.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 109,
+        "sourcePath": "typography.caption.fontWeight"
+      }
+    },
+    {
+      "path": "typography.caption.lineheight",
+      "sourcePath": "typography.caption.lineHeight",
+      "type": "number",
+      "value": 1.43,
+      "status": "unverified",
+      "evidence": {
+        "line": 110,
+        "sourcePath": "typography.caption.lineHeight"
+      }
+    },
+    {
+      "path": "typography.caption.letterspacing",
+      "sourcePath": "typography.caption.letterSpacing",
+      "type": "dimension",
+      "value": "0.1px",
+      "status": "unverified",
+      "evidence": {
+        "line": 111,
+        "sourcePath": "typography.caption.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.microcap.fontfamily",
+      "sourcePath": "typography.micro-cap.fontFamily",
+      "type": "fontFamily",
+      "value": "Salesforce-Sans, system-ui, -apple-system, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 113,
+        "sourcePath": "typography.micro-cap.fontFamily"
+      }
+    },
+    {
+      "path": "typography.microcap.fontsize",
+      "sourcePath": "typography.micro-cap.fontSize",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 114,
+        "sourcePath": "typography.micro-cap.fontSize"
+      }
+    },
+    {
+      "path": "typography.microcap.fontweight",
+      "sourcePath": "typography.micro-cap.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 115,
+        "sourcePath": "typography.micro-cap.fontWeight"
+      }
+    },
+    {
+      "path": "typography.microcap.lineheight",
+      "sourcePath": "typography.micro-cap.lineHeight",
+      "type": "number",
+      "value": 1,
+      "status": "unverified",
+      "evidence": {
+        "line": 116,
+        "sourcePath": "typography.micro-cap.lineHeight"
+      }
+    },
+    {
+      "path": "typography.microcap.letterspacing",
+      "sourcePath": "typography.micro-cap.letterSpacing",
+      "type": "dimension",
+      "value": "0.96px",
+      "status": "unverified",
+      "evidence": {
+        "line": 117,
+        "sourcePath": "typography.micro-cap.letterSpacing"
+      }
+    },
+    {
+      "path": "rounded.xs",
+      "sourcePath": "rounded.xs",
+      "type": "dimension",
+      "value": "2px",
+      "status": "unverified",
+      "evidence": {
+        "line": 120,
+        "sourcePath": "rounded.xs"
+      }
+    },
+    {
+      "path": "rounded.sm",
+      "sourcePath": "rounded.sm",
+      "type": "dimension",
+      "value": "4px",
+      "status": "unverified",
+      "evidence": {
+        "line": 121,
+        "sourcePath": "rounded.sm"
+      }
+    },
+    {
+      "path": "rounded.md",
+      "sourcePath": "rounded.md",
+      "type": "dimension",
+      "value": "8px",
+      "status": "unverified",
+      "evidence": {
+        "line": 122,
+        "sourcePath": "rounded.md"
+      }
+    },
+    {
+      "path": "rounded.lg",
+      "sourcePath": "rounded.lg",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 123,
+        "sourcePath": "rounded.lg"
+      }
+    },
+    {
+      "path": "rounded.xl",
+      "sourcePath": "rounded.xl",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 124,
+        "sourcePath": "rounded.xl"
+      }
+    },
+    {
+      "path": "rounded.xxl",
+      "sourcePath": "rounded.xxl",
+      "type": "dimension",
+      "value": "48px",
+      "status": "unverified",
+      "evidence": {
+        "line": 125,
+        "sourcePath": "rounded.xxl"
+      }
+    },
+    {
+      "path": "rounded.pill",
+      "sourcePath": "rounded.pill",
+      "type": "dimension",
+      "value": "90px",
+      "status": "unverified",
+      "evidence": {
+        "line": 126,
+        "sourcePath": "rounded.pill"
+      }
+    },
+    {
+      "path": "spacing.xs",
+      "sourcePath": "spacing.xs",
+      "type": "dimension",
+      "value": "4px",
+      "status": "unverified",
+      "evidence": {
+        "line": 129,
+        "sourcePath": "spacing.xs"
+      }
+    },
+    {
+      "path": "spacing.sm",
+      "sourcePath": "spacing.sm",
+      "type": "dimension",
+      "value": "8px",
+      "status": "unverified",
+      "evidence": {
+        "line": 130,
+        "sourcePath": "spacing.sm"
+      }
+    },
+    {
+      "path": "spacing.md",
+      "sourcePath": "spacing.md",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 131,
+        "sourcePath": "spacing.md"
+      }
+    },
+    {
+      "path": "spacing.lg",
+      "sourcePath": "spacing.lg",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 132,
+        "sourcePath": "spacing.lg"
+      }
+    },
+    {
+      "path": "spacing.xl",
+      "sourcePath": "spacing.xl",
+      "type": "dimension",
+      "value": "20px",
+      "status": "unverified",
+      "evidence": {
+        "line": 133,
+        "sourcePath": "spacing.xl"
+      }
+    },
+    {
+      "path": "spacing.xxl",
+      "sourcePath": "spacing.xxl",
+      "type": "dimension",
+      "value": "24px",
+      "status": "unverified",
+      "evidence": {
+        "line": 134,
+        "sourcePath": "spacing.xxl"
+      }
+    },
+    {
+      "path": "spacing.huge",
+      "sourcePath": "spacing.huge",
+      "type": "dimension",
+      "value": "28px",
+      "status": "unverified",
+      "evidence": {
+        "line": 135,
+        "sourcePath": "spacing.huge"
+      }
+    }
+  ],
+  "rejectedTokens": [],
+  "homepage": {
+    "status": "missing",
+    "candidates": [],
+    "verification": {
+      "status": "verified",
+      "url": "https://slack.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://slack.com/",
+          "title": "Slack | AI Work Platform & Productivity Tools",
+          "note": "Public homepage read requested https://slack.com; final URL https://slack.com/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    }
+  },
+  "completeness": {
+    "presentFields": [
+      "colors",
+      "typography",
+      "rounded",
+      "spacing",
+      "components"
+    ],
+    "missingFields": [],
+    "tokenRoles": "incomplete",
+    "note": "Missing fields are not reconstructed. Prose-only colors have no inferred semantic role."
+  },
+  "provenance": {
+    "status": "independent-analysis",
+    "sources": [
+      {
+        "title": "VoltAgent awesome-design-md independent analysis",
+        "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/slack/DESIGN.md"
+      }
+    ],
+    "verification": "unverified-secondary-analysis"
+  },
+  "limitations": [
+    "Independent secondary analysis, not an official brand system; all reported values are unverified.",
+    "No brand assets, logos, font binaries or screenshots copied. Font names are documentary, not font licenses.",
+    "Safe CSS literals are extracted without claiming complete roles, state coverage or visual fidelity.",
+    "Markdown is retained as inert evidence, never executed or rendered as raw HTML."
+  ]
+}

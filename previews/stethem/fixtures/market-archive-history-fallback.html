@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><base href="/design-system/previews/stethem/market-river/"><script src="/design-system/previews/stethem/workbench/setup.js" data-fixture="market-archive-history-fallback"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market River — Generative Art from Live Stock Market Data · Robin Stethem</title>
+    <meta name="description" content="Generative river landscapes driven by live market and volatility moods, made at the open, midday, and close of each trading day. Browse recent snapshots.">
+    <meta name="author" content="Robin Stethem">
+    <link rel="canonical" href="https://stethem.com/market-river/">
+    <link rel="alternate" type="text/markdown" href="https://stethem.com/market-river/index.md" title="Markdown version">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Robin Stethem">
+    <meta property="og:title" content="Market River">
+    <meta property="og:description" content="Generative art driven by live stock market data: river landscapes made at the open, midday, and close of each trading day.">
+    <meta property="og:url" content="https://stethem.com/market-river/">
+    <meta property="og:image" content="https://stethem.com/images/og/market-river.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="A snowy floating island city with skyscrapers, a mountain waterfall, and a winding river">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:creator" content="@robinstethem">
+
+    <link rel="icon" type="image/png" sizes="64x64" href="../favicon.png">
+    <link rel="preload" href="../fonts/space-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/space-mono-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../styles.css?v=20261029-2">
+    <script src="../script.js?v=20261029-1" defer></script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "CreativeWork",
+          "@id": "https://stethem.com/market-river/#work",
+          "name": "Market River",
+          "url": "https://stethem.com/market-river/",
+          "creator": { "@type": "Person", "@id": "https://stethem.com/#person", "name": "Robin Stethem", "url": "https://stethem.com/" },
+          "genre": "Generative art",
+          "about": ["Stock market", "Market volatility", "Generative image systems"],
+          "image": "https://stethem.com/images/market-river/2026-10-23-close-353a8248769a-sunny.webp",
+          "description": "Generative art driven by live stock market data. At the open, midday, and close, market and volatility moods become a river landscape through versioned templates, with every image traceable to the market snapshot that made it."
+        },
+        {
+          "@type": "SoftwareSourceCode",
+          "name": "Market River Generator",
+          "codeRepository": "https://github.com/rsteth/market-river-generator",
+          "author": { "@id": "https://stethem.com/#person" },
+          "targetProduct": { "@id": "https://stethem.com/market-river/#work" }
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+    <main class="market-river-page">
+        <a class="market-river-page__back" href="/design-system/previews/stethem/fixtures/portfolio.html">robin stethem</a>
+        <header class="market-river-page__header">
+            <h1>market river</h1>
+            <p>market and volatility moods become river landscapes, with weather selected for your location. explore up to nine recent snapshots across market days, from open through midday to close.</p>
+            <p class="market-river__status" data-market-river-status>loading market river...</p>
+        </header>
+        <section class="market-river-gallery" aria-label="Market River archive">
+            <div class="market-river-gallery__rail" data-market-river-gallery aria-live="polite"></div>
+        </section>
+        <noscript>
+            <p>Market River loads its snapshots with JavaScript. Without it, see the <a href="https://github.com/rsteth/market-river-generator">market river generator on GitHub</a> or the <a href="/design-system/previews/stethem/fixtures/portfolio.html">rest of Robin Stethem's work</a>.</p>
+        </noscript>
+        <p class="market-river-page__repo">
+            <a href="https://github.com/rsteth/market-river-generator" target="_blank" rel="noopener">market river generator on github</a>
+        </p>
+    </main>
+</body>
+</html>

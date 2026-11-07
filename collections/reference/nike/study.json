@@ -1,0 +1,1713 @@
+{
+  "schemaVersion": 1,
+  "id": "reference-nike",
+  "title": "Nike",
+  "classification": "independent-unverified-analysis",
+  "source": {
+    "repository": "https://github.com/VoltAgent/awesome-design-md",
+    "fork": "https://github.com/rsteth/awesome-design-md-p",
+    "revision": "fcc70284932276d085f01ef9f83edde90b1258cb",
+    "path": "design-md/nike/DESIGN.md",
+    "sha256": "d2a3d363665839e2ddc15c91b8a9f3e92b1962ff55a7ca5d964ab3bb88b8186c",
+    "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/nike/DESIGN.md"
+  },
+  "sourceName": "Nike-design-analysis",
+  "titleProvenance": {
+    "status": "inferred",
+    "basis": "Source directory label, normalized for navigation; original source name is retained without correction.",
+    "sourceValue": "nike",
+    "originalName": "Nike-design-analysis"
+  },
+  "description": "A photography-first commerce system built on extreme typographic contrast — towering uppercase Futura display lockups burned into editorial campaign imagery, sitting above a dense, neutral, near-monochrome retail chrome of pill-shaped black CTAs, gray search and tag pills, and tight 8px-grid product cards. The brand's voice is athletic, kinetic, and absolute: pure black, pure white, a single soft surface gray, and a deliberately small set of semantic accents (sale red, success green, restrained category tints) — every chromatic moment is reserved for editorial photography or pricing signal, never decorative chrome.\n",
+  "analysis": {
+    "version": "alpha",
+    "name": "Nike-design-analysis",
+    "description": "A photography-first commerce system built on extreme typographic contrast — towering uppercase Futura display lockups burned into editorial campaign imagery, sitting above a dense, neutral, near-monochrome retail chrome of pill-shaped black CTAs, gray search and tag pills, and tight 8px-grid product cards. The brand's voice is athletic, kinetic, and absolute: pure black, pure white, a single soft surface gray, and a deliberately small set of semantic accents (sale red, success green, restrained category tints) — every chromatic moment is reserved for editorial photography or pricing signal, never decorative chrome.\n",
+    "colors": {
+      "primary": "#111111",
+      "on-primary": "#ffffff",
+      "canvas": "#ffffff",
+      "soft-cloud": "#f5f5f5",
+      "ink": "#111111",
+      "charcoal": "#39393b",
+      "ash": "#4b4b4d",
+      "mute": "#707072",
+      "stone": "#9e9ea0",
+      "hairline": "#cacacb",
+      "hairline-soft": "#e5e5e5",
+      "sale": "#d30005",
+      "sale-deep": "#780700",
+      "success": "#007d48",
+      "success-bright": "#1eaa52",
+      "info": "#1151ff",
+      "info-deep": "#0034e3",
+      "accent-pink": "#ed1aa0",
+      "accent-pink-soft": "#ffb0dd",
+      "accent-purple-soft": "#beaffd",
+      "accent-purple-pale": "#d6d1ff",
+      "accent-teal": "#0a7281",
+      "accent-pink-deep": "#4c012d"
+    },
+    "typography": {
+      "display-campaign": {
+        "fontFamily": "Nike Futura ND",
+        "fontSize": "96px",
+        "fontWeight": 500,
+        "lineHeight": 0.9,
+        "letterSpacing": 0,
+        "textTransform": "uppercase"
+      },
+      "heading-xl": {
+        "fontFamily": "Helvetica Now Display Medium",
+        "fontSize": "32px",
+        "fontWeight": 500,
+        "lineHeight": 1.2,
+        "letterSpacing": 0
+      },
+      "heading-lg": {
+        "fontFamily": "Helvetica Now Display Medium",
+        "fontSize": "24px",
+        "fontWeight": 500,
+        "lineHeight": 1.2,
+        "letterSpacing": 0
+      },
+      "heading-md": {
+        "fontFamily": "Helvetica Now Display Medium",
+        "fontSize": "16px",
+        "fontWeight": 500,
+        "lineHeight": 1.75,
+        "letterSpacing": 0
+      },
+      "body-md": {
+        "fontFamily": "Helvetica Now Text",
+        "fontSize": "16px",
+        "fontWeight": 400,
+        "lineHeight": 1.5,
+        "letterSpacing": 0
+      },
+      "body-strong": {
+        "fontFamily": "Helvetica Now Text Medium",
+        "fontSize": "16px",
+        "fontWeight": 500,
+        "lineHeight": 1.5,
+        "letterSpacing": 0
+      },
+      "button-lg": {
+        "fontFamily": "Helvetica Now Display Medium",
+        "fontSize": "24px",
+        "fontWeight": 500,
+        "lineHeight": 1.2,
+        "letterSpacing": 0
+      },
+      "button-md": {
+        "fontFamily": "Helvetica Now Text Medium",
+        "fontSize": "16px",
+        "fontWeight": 500,
+        "lineHeight": 1.5,
+        "letterSpacing": 0
+      },
+      "button-sm": {
+        "fontFamily": "Helvetica Now Text Medium",
+        "fontSize": "14px",
+        "fontWeight": 500,
+        "lineHeight": 1.5,
+        "letterSpacing": 0
+      },
+      "link-md": {
+        "fontFamily": "Helvetica Now Text",
+        "fontSize": "16px",
+        "fontWeight": 500,
+        "lineHeight": 1.75,
+        "letterSpacing": 0,
+        "textDecoration": "underline"
+      },
+      "caption-md": {
+        "fontFamily": "Helvetica Now Text Medium",
+        "fontSize": "14px",
+        "fontWeight": 500,
+        "lineHeight": 1.5,
+        "letterSpacing": 0
+      },
+      "caption-sm": {
+        "fontFamily": "Helvetica Now Text Medium",
+        "fontSize": "12px",
+        "fontWeight": 500,
+        "lineHeight": 1.5,
+        "letterSpacing": 0
+      },
+      "utility-xs": {
+        "fontFamily": "Helvetica Neue",
+        "fontSize": "9px",
+        "fontWeight": 500,
+        "lineHeight": 1.75,
+        "letterSpacing": 0
+      }
+    },
+    "rounded": {
+      "none": "0px",
+      "sm": "18px",
+      "md": "24px",
+      "lg": "30px",
+      "full": "9999px"
+    },
+    "spacing": {
+      "xxs": "2px",
+      "xs": "4px",
+      "sm": "8px",
+      "md": "12px",
+      "lg": "18px",
+      "xl": "24px",
+      "xxl": "30px",
+      "section": "48px"
+    },
+    "components": {
+      "button-primary": {
+        "backgroundColor": "{colors.ink}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.full}",
+        "padding": "16px 32px",
+        "height": "48px"
+      },
+      "button-primary-active": {
+        "backgroundColor": "{colors.ink}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.full}"
+      },
+      "button-secondary": {
+        "backgroundColor": "{colors.soft-cloud}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.full}",
+        "padding": "16px 32px",
+        "height": "48px"
+      },
+      "button-outline-on-image": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.full}",
+        "padding": "12px 24px"
+      },
+      "button-icon-circular": {
+        "backgroundColor": "{colors.soft-cloud}",
+        "textColor": "{colors.ink}",
+        "rounded": "{rounded.full}",
+        "size": "40px"
+      },
+      "search-pill": {
+        "backgroundColor": "{colors.soft-cloud}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.md}",
+        "padding": "8px 16px",
+        "height": "40px"
+      },
+      "search-pill-focused": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "rounded": "{rounded.md}"
+      },
+      "filter-chip": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.full}",
+        "padding": "8px 16px"
+      },
+      "filter-chip-active": {
+        "backgroundColor": "{colors.ink}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.full}"
+      },
+      "badge-promo": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.caption-sm}",
+        "rounded": "{rounded.full}",
+        "padding": "4px 12px"
+      },
+      "badge-sale-text": {
+        "textColor": "{colors.sale}",
+        "typography": "{typography.caption-md}"
+      },
+      "product-card": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-strong}",
+        "rounded": "{rounded.none}",
+        "padding": "0px"
+      },
+      "product-card-image": {
+        "backgroundColor": "{colors.soft-cloud}",
+        "rounded": "{rounded.none}"
+      },
+      "swatch-dot": {
+        "backgroundColor": "{colors.ink}",
+        "rounded": "{rounded.full}",
+        "size": "12px"
+      },
+      "swatch-dot-active": {
+        "backgroundColor": "{colors.ink}",
+        "rounded": "{rounded.full}",
+        "size": "12px"
+      },
+      "campaign-tile": {
+        "backgroundColor": "{colors.ink}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.display-campaign}",
+        "rounded": "{rounded.none}"
+      },
+      "category-icon-card": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.caption-md}",
+        "rounded": "{rounded.none}"
+      },
+      "member-benefit-card": {
+        "backgroundColor": "{colors.ink}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.heading-lg}",
+        "rounded": "{rounded.none}"
+      },
+      "faq-row": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.heading-md}",
+        "rounded": "{rounded.none}",
+        "padding": "24px 0px"
+      },
+      "pdp-disclosure-row": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-strong}",
+        "rounded": "{rounded.none}",
+        "padding": "24px 0px"
+      },
+      "utility-bar": {
+        "backgroundColor": "{colors.soft-cloud}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.caption-sm}",
+        "rounded": "{rounded.none}",
+        "height": "36px"
+      },
+      "primary-nav": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-strong}",
+        "rounded": "{rounded.none}",
+        "height": "56px"
+      },
+      "filter-sidebar": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-strong}",
+        "rounded": "{rounded.none}"
+      },
+      "footer": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.mute}",
+        "typography": "{typography.caption-md}",
+        "rounded": "{rounded.none}"
+      }
+    }
+  },
+  "normalizationRepairs": [],
+  "sections": [
+    {
+      "heading": "Overview",
+      "level": 2,
+      "text": "Nike's commerce system is built on a single, almost violently simple idea: photography speaks, the chrome doesn't. Every page reads as an athletic editorial — towering uppercase Futura display lockups (`{typography.display-campaign}`) burned into full-bleed campaign imagery, with everything else (nav, filters, buttons, cards, footer) reduced to neutral typography and pill geometry on `{colors.canvas}` and `{colors.soft-cloud}`. There is no decorative gradient, no soft shadow nostalgia, no accent color used for \"tone\" — the system saves all chromatic energy for product photography and the small handful of moments that actually need to signal (sale price `{colors.sale}`, success `{colors.success}`, swatch dots).\n\nThe result is a layout that feels physical — campaign hero, product grid, sport tile, footer — stacked like a printed catalog rather than animated like a typical SaaS landing page. Density is high but never crowded, because the system relies on three relentless devices: square or near-square 1:1 product imagery on `{colors.soft-cloud}`, pill-shaped black CTAs (`{rounded.full}`) anchoring every actionable surface, and a tight 8px-base spacing scale that keeps cards and filters mathematically aligned across PLP, PDP, and editorial pages.\n\nAcross `/men`, the trail-running listing, the Zegama PDP, `/membership`, and Jordan Golf, the same chrome appears in identical proportions — only the photography and copy change. That is the system's signature: maximum editorial expression in the imagery, maximum mechanical restraint everywhere else.\n\n**Key Characteristics:**\n- Editorial campaign hero with `{typography.display-campaign}` (Nike Futura ND, 96px, line-height 0.9, uppercase) burned directly into full-bleed photography\n- Pure black/white/single-gray UI palette: `{colors.ink}`, `{colors.canvas}`, and `{colors.soft-cloud}` carry ~95% of the chrome surface area\n- Pill geometry everywhere: every CTA, search field, filter chip, and badge uses `{rounded.full}` (30px) or `{rounded.md}` (24px) — there are no sharp-cornered buttons in the system\n- Product cards have zero radius, zero shadow, sit directly on `{colors.soft-cloud}` swatch backgrounds — the photograph is the card\n- Two-tone CTA hierarchy: `{component.button-primary}` (black on anything light) versus `{component.button-secondary}` (`{colors.soft-cloud}` on anything bright) — never both at once on the same surface\n- 8px spacing system with section rhythm at `{spacing.section}` (48px) creating consistent vertical breathing across PLP, PDP, and editorial pages\n- Sale signaling is the only place a non-neutral color appears in retail chrome: `{colors.sale}` price + strike-through original price, no badge background",
+      "line": 261
+    },
+    {
+      "heading": "Colors",
+      "level": 2,
+      "text": "> **Source pages:** `/men` (primary), `/w/mens-acg-trail-running-shoes-…`, `/t/acg-zegama-…`, `/membership`, `/w/jordan-golf-…`. The chrome palette is identical across all five — only photography varies.",
+      "line": 278
+    },
+    {
+      "heading": "Brand & Accent",
+      "level": 3,
+      "text": "- **Nike Black** (`{colors.ink}` — `#111111`): The brand's only \"color.\" It is the primary CTA, the swatch dot, the active filter chip, the campaign overlay, the headline color, and the body text. When Nike wants to assert anything, it goes black.\n- **Pure White** (`{colors.on-primary}`, `{colors.canvas}` — `#ffffff`): Equal partner to black. Carries every page background, the on-image CTA, and the inverse text on `{colors.ink}` surfaces.",
+      "line": 282
+    },
+    {
+      "heading": "Surface",
+      "level": 3,
+      "text": "- **Soft Cloud** (`{colors.soft-cloud}` — `#f5f5f5`): The most-used non-white surface in the entire system. Product card image backgrounds, search pill, secondary CTA, utility bar, sport-category swatch tiles. It is the \"color\" of every product photograph's stage.\n- **Hairline** (`{colors.hairline}` — `#cacacb`): 1px dividers between filter rows, footer columns, and PDP disclosure rows.\n- **Hairline Soft** (`{colors.hairline-soft}` — `#e5e5e5`): Inset 1px shadow under sticky bars and tab strips, the only \"shadow\" the system uses.",
+      "line": 286
+    },
+    {
+      "heading": "Text",
+      "level": 3,
+      "text": "- **Ink** (`{colors.ink}` — `#111111`): Primary text on light surfaces — headlines, product names, prices, nav.\n- **Charcoal** (`{colors.charcoal}` — `#39393b`): Slightly softer body where ink is too heavy.\n- **Ash** (`{colors.ash}` — `#4b4b4d`): Disabled secondary border on dark surfaces and very low-emphasis utility text.\n- **Mute** (`{colors.mute}` — `#707072`): Product category subtitles (\"Men's Trail Running Shoes\"), footer link text, secondary metadata.\n- **Stone** (`{colors.stone}` — `#9e9ea0`): Inverse secondary text on dark surfaces and lowest-emphasis utility text.",
+      "line": 291
+    },
+    {
+      "heading": "Semantic",
+      "level": 3,
+      "text": "- **Sale** (`{colors.sale}` — `#d30005`): Discounted price color and \"% off\" copy — the only red in the entire retail chrome.\n- **Sale Deep** (`{colors.sale-deep}` — `#780700`): Sale price hover/pressed and dark-mode sale anchor.\n- **Success** (`{colors.success}` — `#007d48`): Confirmation messages, in-stock indicators, eligibility ticks.\n- **Success Bright** (`{colors.success-bright}` — `#1eaa52`): Inverse success on dark surfaces.\n- **Info** (`{colors.info}` — `#1151ff`): Informational link/badge accent in member-experience callouts.\n- **Info Deep** (`{colors.info-deep}` — `#0034e3`): Pressed state for info accent.",
+      "line": 298
+    },
+    {
+      "heading": "Category Accents (sport / collection chips)",
+      "level": 3,
+      "text": "These appear sparingly — almost exclusively as small chip backgrounds, swatch dots, or category illustrations in editorial tiles. They are never used as text or primary CTA color.\n- **Accent Pink** (`{colors.accent-pink}` — `#ed1aa0`): SKIMS / women's collection moments.\n- **Accent Pink Soft** (`{colors.accent-pink-soft}` — `#ffb0dd`): Soft tinting on member-experience tiles.\n- **Accent Purple Soft** (`{colors.accent-purple-soft}` — `#beaffd`): Editorial swatch dot, soft category chip.\n- **Accent Purple Pale** (`{colors.accent-purple-pale}` — `#d6d1ff`): Lightest soft-tile fill.\n- **Accent Teal** (`{colors.accent-teal}` — `#0a7281`): Trail / outdoor / ACG editorial accent in lockups.\n- **Accent Pink Deep** (`{colors.accent-pink-deep}` — `#4c012d`): Deepest editorial overlay tint, used as wash on heritage / Jordan tiles.",
+      "line": 306
+    },
+    {
+      "heading": "Typography",
+      "level": 2,
+      "text": "",
+      "line": 315
+    },
+    {
+      "heading": "Font Family",
+      "level": 3,
+      "text": "- **Nike Futura ND** (display campaign only) — proprietary geometric sans for the towering uppercase headlines burned into campaign hero photography. Falls back to Helvetica Now Text Medium → Helvetica → Arial.\n- **Helvetica Now Display Medium** (headings 16–32px) — modern Helvetica cut tuned for display sizes; carries every section title, PDP product name, and dialog headline.\n- **Helvetica Now Text Medium** (UI 12–16px) — buttons, captions, swatch labels, badge text. The system's UI workhorse.\n- **Helvetica Now Text** (body and links) — long-form body and underlined inline links.\n- **Neue Frutiger Arabic** — RTL pairing for Arabic locales at `{typography.heading-lg}` and caption sizes.\n- **Helvetica Neue 9px** — legal-fine-print utility row only (`{typography.utility-xs}`).\n\nWhen substituting on systems without proprietary Nike fonts: pair **Inter** (Display 700 for body chrome, Display 500 for buttons) with **Bebas Neue** or **Anton** at 96px/0.9 line-height for the campaign headline tier. Tighten letter-spacing slightly (-0.5%) on the substitute to approximate Futura ND's optical weight.",
+      "line": 317
+    },
+    {
+      "heading": "Hierarchy",
+      "level": 3,
+      "text": "| Token | Size | Weight | Line Height | Letter Spacing | Use |\n|---|---|---|---|---|---|\n| `{typography.display-campaign}` | 96px | 500 | 0.9 | 0 | Editorial campaign headline burned into hero photography (uppercase) |\n| `{typography.heading-xl}` | 32px | 500 | 1.2 | 0 | Section headers — \"FEATURED FOOTWEAR\", \"LATEST IN CLOTHING\", PDP product title block |\n| `{typography.heading-lg}` | 24px | 500 | 1.2 | 0 | Subsection / member-benefit card title, large CTA label, PDP price |\n| `{typography.heading-md}` | 16px | 500 | 1.75 | 0 | Card title, FAQ row label, filter group header |\n| `{typography.body-md}` | 16px | 400 | 1.5 | 0 | Body copy, search-pill placeholder, product description |\n| `{typography.body-strong}` | 16px | 500 | 1.5 | 0 | Product card name, filter row label, primary nav link |\n| `{typography.button-lg}` | 24px | 500 | 1.2 | 0 | Pressed-letter campaign CTA inside hero blocks |\n| `{typography.button-md}` | 16px | 500 | 1.5 | 0 | Standard pill CTAs across the system |\n| `{typography.button-sm}` | 14px | 500 | 1.5 | 0 | Compact pill CTA, badge label, geo-selector button |\n| `{typography.link-md}` | 16px | 500 | 1.75 | 0 | Underlined inline link, \"View Product Details\" |\n| `{typography.caption-md}` | 14px | 500 | 1.5 | 0 | Product subtitle (\"Men's Trail Running Shoes\"), filter count, footer link |\n| `{typography.caption-sm}` | 12px | 500 | 1.5 | 0 | Filter chip label, badge text, color count |\n| `{typography.utility-xs}` | 9px | 500 | 1.75 | 0 | Legal copyright / fine-print row at the very bottom |",
+      "line": 327
+    },
+    {
+      "heading": "Principles",
+      "level": 3,
+      "text": "The system runs on extreme typographic contrast: a single 96px uppercase display tier reserved for editorial campaign moments, and a quiet 12–16px Helvetica Now Text/Medium tier carrying everything else. There is almost no middle ground — the jump from `{typography.heading-xl}` (32px) directly to `{typography.body-strong}` (16px) is intentional and creates the \"billboard above, catalog below\" effect across every page. Letter-spacing is left at 0 (Futura ND and Helvetica Now are both cut for tight optical fit at scale).",
+      "line": 345
+    },
+    {
+      "heading": "Note on Font Substitutes",
+      "level": 3,
+      "text": "The closest open-source path to Nike's display tier is **Bebas Neue** (free, geometric condensed) at 96px / 0.9 / uppercase / 500. For UI text, **Inter** is the safest substitute — match weights 400/500 and the system reads almost identically at button and caption sizes.",
+      "line": 348
+    },
+    {
+      "heading": "Layout",
+      "level": 2,
+      "text": "",
+      "line": 351
+    },
+    {
+      "heading": "Spacing System",
+      "level": 3,
+      "text": "- **Base unit:** 8px\n- **Tokens (front matter):** `{spacing.xxs}` (2px) · `{spacing.xs}` (4px) · `{spacing.sm}` (8px) · `{spacing.md}` (12px) · `{spacing.lg}` (18px) · `{spacing.xl}` (24px) · `{spacing.xxl}` (30px) · `{spacing.section}` (48px+)\n- **Universal rhythm:** every page in the set uses `{spacing.section}` (48px) as the vertical gap between major content blocks (campaign hero → trending row → featured row → shop-by-sport → latest-in-clothing → footer). PLP card grids use `{spacing.sm}` (8px) gutters. PDP disclosure rows are stacked at `{spacing.xl}` (24px) vertical padding.\n- **Card internal padding:** product cards use 0px internal padding — image is full-bleed; metadata rows sit directly below with `{spacing.sm}` (8px) gap between name, subtitle, and price.",
+      "line": 353
+    },
+    {
+      "heading": "Grid & Container",
+      "level": 3,
+      "text": "- **Max width:** ~1440px content area with edge gutters that grow to ~80px at 1920px (the system lets very wide viewports breathe rather than stretch).\n- **Column patterns:** PLP listing uses 3-up at desktop, collapsing to 2-up at 1023px and 1-up at 599px. The men's home `/men` mixes a 2-up campaign hero row, a 3- or 4-up \"Trending Now\" row, a horizontal-scroll \"Shop by Sport\" rail, and a 4-up \"Latest in Clothing\" thumbnail grid.\n- **Filter sidebar:** ~220px fixed-width left rail on PLP at desktop, collapsing into a `Hide Filters` toggle button at narrow widths.",
+      "line": 359
+    },
+    {
+      "heading": "Whitespace Philosophy",
+      "level": 3,
+      "text": "Whitespace is a tool for separation, not for breath. Sections butt directly against each other vertically with `{spacing.section}` rhythm, and product photos tile edge-to-edge inside their grid — there is no padding wrapped around the product image itself. The \"air\" comes from the `{colors.soft-cloud}` background of the photograph, not from layout margin. Headlines do not have decorative whitespace above them; they sit immediately under the section divider line.",
+      "line": 364
+    },
+    {
+      "heading": "Elevation & Depth",
+      "level": 2,
+      "text": "| Level | Treatment | Use |\n|---|---|---|\n| 0 — Flat | No shadow, no border | Default for cards, buttons, sections — the dominant treatment |\n| 1 — Hairline divider | 1px solid `{colors.hairline}` | Filter row separators, footer column borders, PDP disclosure-row separators |\n| 2 — Inset bottom-line | `box-shadow: inset 0 -1px 0 {colors.hairline-soft}` | Sticky utility/sub-nav bar bottom edge, tab strip underline |\n\nThe system has no drop-shadow elevation in its retail chrome at all. Cards do not lift on the page. The only depth cue is the 1px inset hairline on sticky strips and the contrast between full-bleed photography and `{colors.soft-cloud}` product backdrops.",
+      "line": 367
+    },
+    {
+      "heading": "Decorative Depth",
+      "level": 3,
+      "text": "Depth in Nike's system comes entirely from photography, not from CSS effects:\n- **Editorial campaign tiles** create depth via cinematic perspective — a runner on a trail, a model in a courtyard — with the Futura display headline overlaid in white or `{colors.ink}` directly on the image.\n- **Product card photography** is shot on flat `{colors.soft-cloud}` to remove any background depth, so the product itself is the only thing with form on the page.\n- **Sport-category tiles** on the home page are full-bleed cinematic photography with a small `{component.button-outline-on-image}` pill anchored at the bottom-left, giving a moment of crisp white pill against atmospheric image.",
+      "line": 377
+    },
+    {
+      "heading": "Shapes",
+      "level": 2,
+      "text": "",
+      "line": 383
+    },
+    {
+      "heading": "Border Radius Scale",
+      "level": 3,
+      "text": "| Token | Value | Use |\n|---|---|---|\n| `{rounded.none}` | 0px | Cards, campaign tiles, product imagery, navigation, footer — every container in the system |\n| `{rounded.sm}` | 18px | Avatar / icon container in member-benefit lockups |\n| `{rounded.md}` | 24px | Search pill, search submit, filter input |\n| `{rounded.lg}` | 30px | Every CTA pill — primary, secondary, on-image, filter chip, geo-selector, \"Notify Me\" |\n| `{rounded.full}` | 9999px | Color swatch dots and circular icon buttons (back, share, favorite, carousel paddle) |",
+      "line": 385
+    },
+    {
+      "heading": "Photography Geometry",
+      "level": 3,
+      "text": "- **Product cards:** consistent 1:1 square or near-square (~4:5 portrait on tall product crops), full-bleed within the card with no padding, sitting on `{colors.soft-cloud}` backdrop.\n- **Editorial campaign hero:** ~16:9 or wider cinematic crop, full-bleed across the content max-width, with the Futura display headline burned into the lower-left or upper-left third.\n- **Sport-category rail:** 4:5 portrait full-bleed thumbnails with a small CTA pill anchored bottom-left.\n- **PDP main image:** square primary image with vertical thumbnail rail to its left (~5–7 thumbnails stacked at small size), enabling rapid color/angle browsing without leaving the page.\n- **Avatar / category icon cards:** centered illustrated icon at ~80–96px on `{colors.canvas}` with `{typography.caption-md}` label below.",
+      "line": 395
+    },
+    {
+      "heading": "Components",
+      "level": 2,
+      "text": "> **No hover states documented** per system policy. Each spec covers Default and Active/Pressed only; variants live as separate `components:` entries in the front matter.",
+      "line": 402
+    },
+    {
+      "heading": "Buttons",
+      "level": 3,
+      "text": "**`button-primary`** — the universal Nike CTA\n- Background `{colors.ink}`, text `{colors.on-primary}`, type `{typography.button-md}`, padding `16px 32px`, height `{spacing.section}` (48px), rounded `{rounded.lg}` (30px pill).\n- Used on every primary action in the system: \"Sign Up\", \"Notify Me\", \"Buy\", \"Türkiye\" geo-confirm, \"Shop\" overlay on sport tiles, \"Continue\".\n- Pressed state lives in `button-primary-active` — the bg stays `{colors.ink}` while the surface shrinks to `scale(0.5)` with `opacity: 0.5` (Nike's signature \"tap collapse\" feedback that's extracted across all five pages).\n\n**`button-secondary`** — soft alternative on light surfaces\n- Background `{colors.soft-cloud}`, text `{colors.ink}`, type `{typography.button-md}`, padding `16px 32px`, rounded `{rounded.lg}`.\n- Used as the lower-emphasis alternate when a primary CTA already exists, e.g., \"United States\" geo-decline next to the black \"Türkiye\" confirm; \"Cancel\" or \"Discover More\" on light cards.\n\n**`button-outline-on-image`** — overlay CTA on photography\n- Background `{colors.canvas}`, text `{colors.ink}`, type `{typography.button-md}`, padding `12px 24px`, rounded `{rounded.lg}`.\n- The crisp white pill that anchors the bottom-left of every full-bleed sport-category and editorial campaign tile.\n\n**`button-icon-circular`** — chrome icon controls\n- Background `{colors.soft-cloud}` or transparent, icon `{colors.ink}`, rounded `{rounded.full}`, size 40px.\n- Used for back-arrow, carousel paddle (left/right), wishlist heart, share, and \"Hide Filters\" toggle.\n\n**`filter-chip`** + **`filter-chip-active`**\n- Default: background `{colors.canvas}`, text `{colors.ink}`, 1px hairline `{colors.hairline}`, type `{typography.button-md}`, rounded `{rounded.lg}`, padding `8px 16px`.\n- Active: background `{colors.ink}`, text `{colors.on-primary}` — the chip flips fully inverted when selected. No middle state.",
+      "line": 406
+    },
+    {
+      "heading": "Inputs & Forms",
+      "level": 3,
+      "text": "**`search-pill`** + **`search-pill-focused`**\n- Default: background `{colors.soft-cloud}`, text `{colors.ink}`, type `{typography.body-md}`, rounded `{rounded.md}` (24px), padding `8px 16px`, height `40px`. Anchored to the right of the primary nav with a small magnifier icon.\n- Focused: background `{colors.canvas}`, 2px solid border `{colors.ink}`, with a 12px outer halo of `{colors.soft-cloud}` (the system's only \"focus ring\" effect). The pill shape stays `{rounded.md}` so the halo reads as a soft glove, not a hard outline.",
+      "line": 429
+    },
+    {
+      "heading": "Cards & Containers",
+      "level": 3,
+      "text": "**`product-card`**\n- Container: background `{colors.canvas}`, rounded `{rounded.none}`, padding 0, no shadow.\n- Image area: `{component.product-card-image}` — full-bleed product photo on `{colors.soft-cloud}` square.\n- Below image (in this order with `{spacing.sm}` between): swatch dot row (3–6 dots at 12px circular), promo badge if applicable (`{component.badge-promo}` \"Just In\", \"Coming Soon\", \"Recycled Materials\"), product name `{typography.body-strong}` `{colors.ink}`, category subtitle `{typography.caption-md}` `{colors.mute}`, price row.\n- Price row: regular price `{typography.body-strong}` `{colors.ink}`. If on sale: discounted price `{colors.sale}` followed by strike-through original `{colors.mute}` followed by \"% off\" in `{colors.sale}`.\n\n**`campaign-tile`** — the brand's signature editorial unit\n- Full-bleed photography with `{typography.display-campaign}` headline burned in (uppercase, 96px, line-height 0.9).\n- Headline color is whichever of `{colors.canvas}` or `{colors.ink}` reads against the underlying image — not parameterized; chosen per-asset.\n- A single `{component.button-outline-on-image}` pill anchored bottom-left of the tile carries the call-to-action.\n\n**`category-icon-card`**\n- Container: background `{colors.canvas}`, rounded `{rounded.none}`.\n- Centered category illustration (~80px) + label `{typography.caption-md}` `{colors.ink}` directly below. Used in the \"Latest in Clothing\" 4–8-up icon strip on `/men`.\n\n**`member-benefit-card`**\n- Full-bleed photographic card on a dark image background; copy slot at the bottom-left with `{typography.heading-lg}` headline `{colors.on-primary}` and a `{component.button-outline-on-image}` \"Explore\" pill below.\n- Used in the `/membership` \"Member Benefits\" 3-up grid.\n\n**`swatch-dot`** + **`swatch-dot-active`**\n- 12px circle, rounded `{rounded.full}`, no border in default state. Renders the colorway options on every product card and PDP color picker.\n- Default: filled with the colorway's actual product color (extracted at runtime from the product image), 1px subtle outer ring in `{colors.hairline}` for white/light colorways so they remain visible on `{colors.canvas}`.\n- Active: identical fill with a 2px `{colors.ink}` outer ring and 2px white interior gap, creating Nike's signature concentric-ring \"selected\" state. No size change between default and active.\n\n**`badge-promo`**\n- Background `{colors.canvas}` with 1px hairline `{colors.hairline}`, text `{colors.ink}`, type `{typography.caption-sm}`, rounded `{rounded.lg}`, padding `4px 12px`.\n- Sits on top of product imagery (top-left of card) with copy like \"Just In\", \"Coming Soon\", \"Recycled Materials\", \"Member Exclusive\".\n\n**`badge-sale-text`**\n- Inline price-row text in `{colors.sale}` with no background — the only \"badge\" in the system that has no container.",
+      "line": 435
+    },
+    {
+      "heading": "Navigation",
+      "level": 3,
+      "text": "**`utility-bar`** — top utility strip\n- Background `{colors.soft-cloud}`, text `{colors.ink}`, type `{typography.caption-sm}`, height ~36px, rounded `{rounded.none}`.\n- Right-aligned cluster: \"Find a Store · Help · Join Us · Sign In\". Always present; never collapses.\n\n**`primary-nav`** — main navigation\n- Background `{colors.canvas}`, text `{colors.ink}`, type `{typography.body-strong}` for nav links, height 56–64px, rounded `{rounded.none}`.\n- Layout: Nike swoosh logo at left (32×32), centered nav row (\"New & Featured · Men · Women · Kids · Jordan · Nike SKIMS · Sport\"), right cluster (search pill, wishlist heart icon, bag icon).\n- The active section gets a 2px-bottom underline in `{colors.ink}` — no background fill.\n\n**Sub-nav strip** (PLP) — appears under primary nav with breadcrumb + sort + hide-filters controls.\n- Same `{colors.canvas}` background with a 1px inset hairline-soft bottom edge.\n- Left: breadcrumb in `{typography.caption-md}` `{colors.mute}` separated by \" / \".\n- Right: \"Hide Filters\" toggle + \"Sort By: …\" dropdown — both in `{typography.button-md}` with chevron icons.\n\n**Top Nav (Mobile)**\n- Hamburger menu icon (left), Nike swoosh (center), search + bag icons (right).\n- Search pill collapses into an icon-only button at narrow widths; tapping expands a full-width overlay search pill with `{rounded.md}`.\n- Primary nav collapses into a full-height drawer that slides in from the left, listing nav rows top-down with `{spacing.xl}` vertical padding.",
+      "line": 468
+    },
+    {
+      "heading": "Signature Components",
+      "level": 3,
+      "text": "**`pdp-disclosure-row`** — PDP information accordion rows\n- Stacked rows for \"View Product Details\", \"Shipping & Returns\", \"Reviews (n)\" with `{spacing.xl}` vertical padding and a 1px `{colors.hairline}` divider below each.\n- Label `{typography.body-strong}` `{colors.ink}` left-aligned; chevron `{colors.ink}` right-aligned.\n\n**`faq-row`** — `/membership` FAQ accordion\n- Identical pattern to `pdp-disclosure-row` but with `{typography.heading-md}` label weight; 1px `{colors.hairline}` divider below each.\n\n**`filter-sidebar`** — PLP left rail\n- Container `{colors.canvas}`, rounded `{rounded.none}`.\n- Section headers `{typography.body-strong}` `{colors.ink}` with `{spacing.lg}` (18px) vertical gap between groups.\n- Active filters get a 1px ink underline; counts in parentheses use `{colors.mute}`.\n\n**`footer`**\n- Background `{colors.canvas}` with a single 1px `{colors.hairline}` top divider.\n- Four columns: Resources / Help / Company / Promotions & Discounts, each with column header `{typography.body-strong}` `{colors.ink}` and link list `{typography.caption-md}` `{colors.mute}`.\n- Below the columns: a horizontal rule, then a fine-print row with `{typography.utility-xs}` `{colors.mute}` (copyright, locale switcher, terms, privacy, supply-chain act).",
+      "line": 489
+    },
+    {
+      "heading": "Do's and Don'ts",
+      "level": 2,
+      "text": "",
+      "line": 508
+    },
+    {
+      "heading": "Do",
+      "level": 3,
+      "text": "- Reserve `{typography.display-campaign}` exclusively for editorial campaign hero lockups — never use 96px Futura for section headers or product titles.\n- Use `{component.button-primary}` (`{colors.ink}` pill) as the single primary action per viewport. Pair it at most with `{component.button-secondary}` (`{colors.soft-cloud}` pill) for a soft alternative.\n- Stage every product photograph on `{colors.soft-cloud}` — the gray is the system's \"studio.\"\n- Keep all CTAs pill-shaped at `{rounded.lg}` (30px). Never introduce a square or `{rounded.sm}` button.\n- Use `{colors.sale}` only on price rows — never on backgrounds, badges, or chrome.\n- Stack content sections at `{spacing.section}` (48px) rhythm with no decorative dividers between them; the photography's bleed-edge is the divider.\n- Anchor on-image CTAs with `{component.button-outline-on-image}` (white pill) at bottom-left — the system's universal \"shop this image\" position.",
+      "line": 510
+    },
+    {
+      "heading": "Don't",
+      "level": 3,
+      "text": "- Don't introduce drop shadows or card elevation. Cards sit flat on the page; the only depth cue is the 1px inset hairline on sticky bars.\n- Don't use any of the category accent colors (`{colors.accent-pink}`, `{colors.accent-purple-soft}`, `{colors.accent-teal}`) for primary chrome — they belong to swatch dots, soft tile fills, and editorial moments only.\n- Don't replace `{colors.ink}` with a near-black gray like `{colors.charcoal}` for a CTA — Nike's primary pill is true `#111111`.\n- Don't pad inside product cards. The image is full-bleed; metadata sits directly below with `{spacing.sm}` (8px) between rows.\n- Don't put two campaign-tile lockups in the same row at the same scale — Nike alternates a single full-bleed editorial tile with a 2-up or 4-up product/category grid.\n- Don't underline anything other than `{typography.link-md}` inline links and the active primary-nav indicator. Buttons, headings, and prices stay un-underlined.\n- Don't introduce a third button shape. Pill or icon-circular — that's the entire button shape vocabulary.",
+      "line": 519
+    },
+    {
+      "heading": "Responsive Behavior",
+      "level": 2,
+      "text": "",
+      "line": 528
+    },
+    {
+      "heading": "Breakpoints",
+      "level": 3,
+      "text": "| Name | Width | Key Changes |\n|---|---|---|\n| ultrawide | 1920px+ | Content max-width holds at ~1440px; outer gutters grow to ~80px on each side |\n| desktop-large | 1440px | Default desktop layout — 3-up product grid, 4-up clothing strip, full primary nav |\n| desktop | 1200px | Same as large with slightly narrower outer gutters |\n| desktop-small | 1024px | Filter sidebar starts compressing; sport rail shows ~3 visible tiles |\n| tablet | 1023–961px | 3-up PLP collapses to 2-up; \"Hide Filters\" becomes a default toggle |\n| tablet-narrow | 960–640px | Primary nav center cluster collapses to a hamburger drawer; search pill becomes icon-only |\n| mobile-landscape | 639–600px | 2-up PLP collapses to 1-up; product cards become full-width with image and metadata stacking |\n| mobile | 599–320px | Single-column everything; campaign tiles render at full screen width with shorter Futura sizes (~64px) |",
+      "line": 530
+    },
+    {
+      "heading": "Touch Targets",
+      "level": 3,
+      "text": "All interactive elements meet WCAG AAA (44×44px minimum). Pills (`{component.button-primary}`, `{component.button-secondary}`) sit at 48px height with 32px horizontal padding. Icon-circular buttons (`{component.button-icon-circular}`) sit at 40px — Nike's PDP carousel paddle and wishlist heart sit just under AAA but above AA at 40×40, with hit-target padding extending the tappable area to 48px+. Filter-chip pills are 40px height with 16px padding.",
+      "line": 543
+    },
+    {
+      "heading": "Collapsing Strategy",
+      "level": 3,
+      "text": "- **Primary nav:** desktop center cluster → mobile drawer triggered by hamburger at left of the swoosh.\n- **PLP grid:** 3-up → 2-up → 1-up at 1023, 599, and below; gutters drop from `{spacing.sm}` to `{spacing.xs}` on mobile.\n- **Filter sidebar:** 220px fixed → \"Hide Filters\" toggle → off-canvas full-screen filter drawer at mobile.\n- **Sport rail:** desktop horizontal scroll with ~5 visible → mobile horizontal scroll with ~1.5 visible (peek-next-card pattern).\n- **Section spacing:** `{spacing.section}` 48px desktop → 32px tablet → 24px mobile to keep editorial rhythm tight on small screens.\n- **Editorial campaign headline:** desktop 96px → tablet 64px → mobile 48px, line-height stays at 0.9 across all sizes.",
+      "line": 546
+    },
+    {
+      "heading": "Image Behavior",
+      "level": 3,
+      "text": "- Product imagery is responsive at the same 1:1 ratio across all breakpoints — the image scales, the ratio doesn't.\n- Editorial campaign tiles use art-direction crops: a 16:9 wide hero on desktop swaps to a 4:5 portrait on mobile so the figure stays centered and the headline still has burn-in space.\n- All non-critical product imagery is lazy-loaded as the user scrolls into the next grid row.",
+      "line": 554
+    },
+    {
+      "heading": "Iteration Guide",
+      "level": 2,
+      "text": "1. Focus on ONE component at a time. Pull its YAML entry from the front matter and verify every property resolves.\n2. Reference component names and tokens directly (`{colors.ink}`, `{component.button-primary-active}`, `{rounded.lg}`) — do not paraphrase color names or radii in prose.\n3. Run `npx @google/design.md lint DESIGN.md` after edits — `broken-ref`, `contrast-ratio`, and `orphaned-tokens` warnings flag issues automatically.\n4. Add new variants as separate component entries (`-active`, `-disabled`, `-focused`) — do not bury them inside prose. Nike's pressed state (`scale(0.5) opacity 0.5`) is intentional and must be its own entry, not a hover stand-in.\n5. Default body to `{typography.body-md}`; reach for `{typography.body-strong}` for product names and primary nav links; reserve `{typography.display-campaign}` strictly for hero campaign lockups.\n6. Keep `{colors.ink}` scarce per viewport — if more than one solid-black pill or block appears in the same fold, neutralize one to `{component.button-secondary}` or `{component.button-outline-on-image}`.\n7. When introducing a new component, ask whether it can be expressed with the existing pill + flat-card + photography-on-`{colors.soft-cloud}` vocabulary before adding new tokens. The system's strength is that it almost never needs new ones.",
+      "line": 559
+    },
+    {
+      "heading": "Known Gaps",
+      "level": 2,
+      "text": "- **Mobile screenshots not captured** — responsive behavior described above synthesizes Nike's known mobile pattern (hamburger drawer, 1-up grid, headline downscale) from desktop evidence and the breakpoint list extracted from tokens.\n- **Hover states not documented** by system policy — Nike's CSS uses `--pds-color-element-hover` and `--pds-color-text-hover` tokens but these are not included here.\n- **Dialog / modal styling** beyond the geo-selector and the country-confirmation pill pair could not be confirmed from the captured surfaces; bag, wishlist, and login overlays are not documented.\n- **Form field styling** for checkout, sign-up, and address forms is not present in the captured surfaces — only the search pill is documented.\n- **Bag and wishlist** icon-state variants (filled count badges) not visible in the captured pages.",
+      "line": 569
+    }
+  ],
+  "tokens": [
+    {
+      "path": "colors.primary",
+      "sourcePath": "colors.primary",
+      "type": "color",
+      "value": "#111111",
+      "status": "unverified",
+      "evidence": {
+        "line": 8,
+        "sourcePath": "colors.primary"
+      }
+    },
+    {
+      "path": "colors.onprimary",
+      "sourcePath": "colors.on-primary",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 9,
+        "sourcePath": "colors.on-primary"
+      }
+    },
+    {
+      "path": "colors.canvas",
+      "sourcePath": "colors.canvas",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 10,
+        "sourcePath": "colors.canvas"
+      }
+    },
+    {
+      "path": "colors.softcloud",
+      "sourcePath": "colors.soft-cloud",
+      "type": "color",
+      "value": "#f5f5f5",
+      "status": "unverified",
+      "evidence": {
+        "line": 11,
+        "sourcePath": "colors.soft-cloud"
+      }
+    },
+    {
+      "path": "colors.ink",
+      "sourcePath": "colors.ink",
+      "type": "color",
+      "value": "#111111",
+      "status": "unverified",
+      "evidence": {
+        "line": 12,
+        "sourcePath": "colors.ink"
+      }
+    },
+    {
+      "path": "colors.charcoal",
+      "sourcePath": "colors.charcoal",
+      "type": "color",
+      "value": "#39393b",
+      "status": "unverified",
+      "evidence": {
+        "line": 13,
+        "sourcePath": "colors.charcoal"
+      }
+    },
+    {
+      "path": "colors.ash",
+      "sourcePath": "colors.ash",
+      "type": "color",
+      "value": "#4b4b4d",
+      "status": "unverified",
+      "evidence": {
+        "line": 14,
+        "sourcePath": "colors.ash"
+      }
+    },
+    {
+      "path": "colors.mute",
+      "sourcePath": "colors.mute",
+      "type": "color",
+      "value": "#707072",
+      "status": "unverified",
+      "evidence": {
+        "line": 15,
+        "sourcePath": "colors.mute"
+      }
+    },
+    {
+      "path": "colors.stone",
+      "sourcePath": "colors.stone",
+      "type": "color",
+      "value": "#9e9ea0",
+      "status": "unverified",
+      "evidence": {
+        "line": 16,
+        "sourcePath": "colors.stone"
+      }
+    },
+    {
+      "path": "colors.hairline",
+      "sourcePath": "colors.hairline",
+      "type": "color",
+      "value": "#cacacb",
+      "status": "unverified",
+      "evidence": {
+        "line": 17,
+        "sourcePath": "colors.hairline"
+      }
+    },
+    {
+      "path": "colors.hairlinesoft",
+      "sourcePath": "colors.hairline-soft",
+      "type": "color",
+      "value": "#e5e5e5",
+      "status": "unverified",
+      "evidence": {
+        "line": 18,
+        "sourcePath": "colors.hairline-soft"
+      }
+    },
+    {
+      "path": "colors.sale",
+      "sourcePath": "colors.sale",
+      "type": "color",
+      "value": "#d30005",
+      "status": "unverified",
+      "evidence": {
+        "line": 19,
+        "sourcePath": "colors.sale"
+      }
+    },
+    {
+      "path": "colors.saledeep",
+      "sourcePath": "colors.sale-deep",
+      "type": "color",
+      "value": "#780700",
+      "status": "unverified",
+      "evidence": {
+        "line": 20,
+        "sourcePath": "colors.sale-deep"
+      }
+    },
+    {
+      "path": "colors.success",
+      "sourcePath": "colors.success",
+      "type": "color",
+      "value": "#007d48",
+      "status": "unverified",
+      "evidence": {
+        "line": 21,
+        "sourcePath": "colors.success"
+      }
+    },
+    {
+      "path": "colors.successbright",
+      "sourcePath": "colors.success-bright",
+      "type": "color",
+      "value": "#1eaa52",
+      "status": "unverified",
+      "evidence": {
+        "line": 22,
+        "sourcePath": "colors.success-bright"
+      }
+    },
+    {
+      "path": "colors.info",
+      "sourcePath": "colors.info",
+      "type": "color",
+      "value": "#1151ff",
+      "status": "unverified",
+      "evidence": {
+        "line": 23,
+        "sourcePath": "colors.info"
+      }
+    },
+    {
+      "path": "colors.infodeep",
+      "sourcePath": "colors.info-deep",
+      "type": "color",
+      "value": "#0034e3",
+      "status": "unverified",
+      "evidence": {
+        "line": 24,
+        "sourcePath": "colors.info-deep"
+      }
+    },
+    {
+      "path": "colors.accentpink",
+      "sourcePath": "colors.accent-pink",
+      "type": "color",
+      "value": "#ed1aa0",
+      "status": "unverified",
+      "evidence": {
+        "line": 25,
+        "sourcePath": "colors.accent-pink"
+      }
+    },
+    {
+      "path": "colors.accentpinksoft",
+      "sourcePath": "colors.accent-pink-soft",
+      "type": "color",
+      "value": "#ffb0dd",
+      "status": "unverified",
+      "evidence": {
+        "line": 26,
+        "sourcePath": "colors.accent-pink-soft"
+      }
+    },
+    {
+      "path": "colors.accentpurplesoft",
+      "sourcePath": "colors.accent-purple-soft",
+      "type": "color",
+      "value": "#beaffd",
+      "status": "unverified",
+      "evidence": {
+        "line": 27,
+        "sourcePath": "colors.accent-purple-soft"
+      }
+    },
+    {
+      "path": "colors.accentpurplepale",
+      "sourcePath": "colors.accent-purple-pale",
+      "type": "color",
+      "value": "#d6d1ff",
+      "status": "unverified",
+      "evidence": {
+        "line": 28,
+        "sourcePath": "colors.accent-purple-pale"
+      }
+    },
+    {
+      "path": "colors.accentteal",
+      "sourcePath": "colors.accent-teal",
+      "type": "color",
+      "value": "#0a7281",
+      "status": "unverified",
+      "evidence": {
+        "line": 29,
+        "sourcePath": "colors.accent-teal"
+      }
+    },
+    {
+      "path": "colors.accentpinkdeep",
+      "sourcePath": "colors.accent-pink-deep",
+      "type": "color",
+      "value": "#4c012d",
+      "status": "unverified",
+      "evidence": {
+        "line": 30,
+        "sourcePath": "colors.accent-pink-deep"
+      }
+    },
+    {
+      "path": "typography.displaycampaign.fontfamily",
+      "sourcePath": "typography.display-campaign.fontFamily",
+      "type": "fontFamily",
+      "value": "Nike Futura ND",
+      "status": "unverified",
+      "evidence": {
+        "line": 34,
+        "sourcePath": "typography.display-campaign.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displaycampaign.fontsize",
+      "sourcePath": "typography.display-campaign.fontSize",
+      "type": "dimension",
+      "value": "96px",
+      "status": "unverified",
+      "evidence": {
+        "line": 35,
+        "sourcePath": "typography.display-campaign.fontSize"
+      }
+    },
+    {
+      "path": "typography.displaycampaign.fontweight",
+      "sourcePath": "typography.display-campaign.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 36,
+        "sourcePath": "typography.display-campaign.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displaycampaign.lineheight",
+      "sourcePath": "typography.display-campaign.lineHeight",
+      "type": "number",
+      "value": 0.9,
+      "status": "unverified",
+      "evidence": {
+        "line": 37,
+        "sourcePath": "typography.display-campaign.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displaycampaign.letterspacing",
+      "sourcePath": "typography.display-campaign.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 38,
+        "sourcePath": "typography.display-campaign.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.headingxl.fontfamily",
+      "sourcePath": "typography.heading-xl.fontFamily",
+      "type": "fontFamily",
+      "value": "Helvetica Now Display Medium",
+      "status": "unverified",
+      "evidence": {
+        "line": 41,
+        "sourcePath": "typography.heading-xl.fontFamily"
+      }
+    },
+    {
+      "path": "typography.headingxl.fontsize",
+      "sourcePath": "typography.heading-xl.fontSize",
+      "type": "dimension",
+      "value": "32px",
+      "status": "unverified",
+      "evidence": {
+        "line": 42,
+        "sourcePath": "typography.heading-xl.fontSize"
+      }
+    },
+    {
+      "path": "typography.headingxl.fontweight",
+      "sourcePath": "typography.heading-xl.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 43,
+        "sourcePath": "typography.heading-xl.fontWeight"
+      }
+    },
+    {
+      "path": "typography.headingxl.lineheight",
+      "sourcePath": "typography.heading-xl.lineHeight",
+      "type": "number",
+      "value": 1.2,
+      "status": "unverified",
+      "evidence": {
+        "line": 44,
+        "sourcePath": "typography.heading-xl.lineHeight"
+      }
+    },
+    {
+      "path": "typography.headingxl.letterspacing",
+      "sourcePath": "typography.heading-xl.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 45,
+        "sourcePath": "typography.heading-xl.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.headinglg.fontfamily",
+      "sourcePath": "typography.heading-lg.fontFamily",
+      "type": "fontFamily",
+      "value": "Helvetica Now Display Medium",
+      "status": "unverified",
+      "evidence": {
+        "line": 47,
+        "sourcePath": "typography.heading-lg.fontFamily"
+      }
+    },
+    {
+      "path": "typography.headinglg.fontsize",
+      "sourcePath": "typography.heading-lg.fontSize",
+      "type": "dimension",
+      "value": "24px",
+      "status": "unverified",
+      "evidence": {
+        "line": 48,
+        "sourcePath": "typography.heading-lg.fontSize"
+      }
+    },
+    {
+      "path": "typography.headinglg.fontweight",
+      "sourcePath": "typography.heading-lg.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 49,
+        "sourcePath": "typography.heading-lg.fontWeight"
+      }
+    },
+    {
+      "path": "typography.headinglg.lineheight",
+      "sourcePath": "typography.heading-lg.lineHeight",
+      "type": "number",
+      "value": 1.2,
+      "status": "unverified",
+      "evidence": {
+        "line": 50,
+        "sourcePath": "typography.heading-lg.lineHeight"
+      }
+    },
+    {
+      "path": "typography.headinglg.letterspacing",
+      "sourcePath": "typography.heading-lg.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 51,
+        "sourcePath": "typography.heading-lg.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.headingmd.fontfamily",
+      "sourcePath": "typography.heading-md.fontFamily",
+      "type": "fontFamily",
+      "value": "Helvetica Now Display Medium",
+      "status": "unverified",
+      "evidence": {
+        "line": 53,
+        "sourcePath": "typography.heading-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.headingmd.fontsize",
+      "sourcePath": "typography.heading-md.fontSize",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 54,
+        "sourcePath": "typography.heading-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.headingmd.fontweight",
+      "sourcePath": "typography.heading-md.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 55,
+        "sourcePath": "typography.heading-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.headingmd.lineheight",
+      "sourcePath": "typography.heading-md.lineHeight",
+      "type": "number",
+      "value": 1.75,
+      "status": "unverified",
+      "evidence": {
+        "line": 56,
+        "sourcePath": "typography.heading-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.headingmd.letterspacing",
+      "sourcePath": "typography.heading-md.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 57,
+        "sourcePath": "typography.heading-md.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.bodymd.fontfamily",
+      "sourcePath": "typography.body-md.fontFamily",
+      "type": "fontFamily",
+      "value": "Helvetica Now Text",
+      "status": "unverified",
+      "evidence": {
+        "line": 59,
+        "sourcePath": "typography.body-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodymd.fontsize",
+      "sourcePath": "typography.body-md.fontSize",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 60,
+        "sourcePath": "typography.body-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodymd.fontweight",
+      "sourcePath": "typography.body-md.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 61,
+        "sourcePath": "typography.body-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodymd.lineheight",
+      "sourcePath": "typography.body-md.lineHeight",
+      "type": "number",
+      "value": 1.5,
+      "status": "unverified",
+      "evidence": {
+        "line": 62,
+        "sourcePath": "typography.body-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodymd.letterspacing",
+      "sourcePath": "typography.body-md.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 63,
+        "sourcePath": "typography.body-md.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.bodystrong.fontfamily",
+      "sourcePath": "typography.body-strong.fontFamily",
+      "type": "fontFamily",
+      "value": "Helvetica Now Text Medium",
+      "status": "unverified",
+      "evidence": {
+        "line": 65,
+        "sourcePath": "typography.body-strong.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodystrong.fontsize",
+      "sourcePath": "typography.body-strong.fontSize",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 66,
+        "sourcePath": "typography.body-strong.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodystrong.fontweight",
+      "sourcePath": "typography.body-strong.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 67,
+        "sourcePath": "typography.body-strong.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodystrong.lineheight",
+      "sourcePath": "typography.body-strong.lineHeight",
+      "type": "number",
+      "value": 1.5,
+      "status": "unverified",
+      "evidence": {
+        "line": 68,
+        "sourcePath": "typography.body-strong.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodystrong.letterspacing",
+      "sourcePath": "typography.body-strong.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 69,
+        "sourcePath": "typography.body-strong.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.buttonlg.fontfamily",
+      "sourcePath": "typography.button-lg.fontFamily",
+      "type": "fontFamily",
+      "value": "Helvetica Now Display Medium",
+      "status": "unverified",
+      "evidence": {
+        "line": 71,
+        "sourcePath": "typography.button-lg.fontFamily"
+      }
+    },
+    {
+      "path": "typography.buttonlg.fontsize",
+      "sourcePath": "typography.button-lg.fontSize",
+      "type": "dimension",
+      "value": "24px",
+      "status": "unverified",
+      "evidence": {
+        "line": 72,
+        "sourcePath": "typography.button-lg.fontSize"
+      }
+    },
+    {
+      "path": "typography.buttonlg.fontweight",
+      "sourcePath": "typography.button-lg.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 73,
+        "sourcePath": "typography.button-lg.fontWeight"
+      }
+    },
+    {
+      "path": "typography.buttonlg.lineheight",
+      "sourcePath": "typography.button-lg.lineHeight",
+      "type": "number",
+      "value": 1.2,
+      "status": "unverified",
+      "evidence": {
+        "line": 74,
+        "sourcePath": "typography.button-lg.lineHeight"
+      }
+    },
+    {
+      "path": "typography.buttonlg.letterspacing",
+      "sourcePath": "typography.button-lg.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 75,
+        "sourcePath": "typography.button-lg.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.buttonmd.fontfamily",
+      "sourcePath": "typography.button-md.fontFamily",
+      "type": "fontFamily",
+      "value": "Helvetica Now Text Medium",
+      "status": "unverified",
+      "evidence": {
+        "line": 77,
+        "sourcePath": "typography.button-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.buttonmd.fontsize",
+      "sourcePath": "typography.button-md.fontSize",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 78,
+        "sourcePath": "typography.button-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.buttonmd.fontweight",
+      "sourcePath": "typography.button-md.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 79,
+        "sourcePath": "typography.button-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.buttonmd.lineheight",
+      "sourcePath": "typography.button-md.lineHeight",
+      "type": "number",
+      "value": 1.5,
+      "status": "unverified",
+      "evidence": {
+        "line": 80,
+        "sourcePath": "typography.button-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.buttonmd.letterspacing",
+      "sourcePath": "typography.button-md.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 81,
+        "sourcePath": "typography.button-md.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.buttonsm.fontfamily",
+      "sourcePath": "typography.button-sm.fontFamily",
+      "type": "fontFamily",
+      "value": "Helvetica Now Text Medium",
+      "status": "unverified",
+      "evidence": {
+        "line": 83,
+        "sourcePath": "typography.button-sm.fontFamily"
+      }
+    },
+    {
+      "path": "typography.buttonsm.fontsize",
+      "sourcePath": "typography.button-sm.fontSize",
+      "type": "dimension",
+      "value": "14px",
+      "status": "unverified",
+      "evidence": {
+        "line": 84,
+        "sourcePath": "typography.button-sm.fontSize"
+      }
+    },
+    {
+      "path": "typography.buttonsm.fontweight",
+      "sourcePath": "typography.button-sm.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 85,
+        "sourcePath": "typography.button-sm.fontWeight"
+      }
+    },
+    {
+      "path": "typography.buttonsm.lineheight",
+      "sourcePath": "typography.button-sm.lineHeight",
+      "type": "number",
+      "value": 1.5,
+      "status": "unverified",
+      "evidence": {
+        "line": 86,
+        "sourcePath": "typography.button-sm.lineHeight"
+      }
+    },
+    {
+      "path": "typography.buttonsm.letterspacing",
+      "sourcePath": "typography.button-sm.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 87,
+        "sourcePath": "typography.button-sm.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.linkmd.fontfamily",
+      "sourcePath": "typography.link-md.fontFamily",
+      "type": "fontFamily",
+      "value": "Helvetica Now Text",
+      "status": "unverified",
+      "evidence": {
+        "line": 89,
+        "sourcePath": "typography.link-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.linkmd.fontsize",
+      "sourcePath": "typography.link-md.fontSize",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 90,
+        "sourcePath": "typography.link-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.linkmd.fontweight",
+      "sourcePath": "typography.link-md.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 91,
+        "sourcePath": "typography.link-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.linkmd.lineheight",
+      "sourcePath": "typography.link-md.lineHeight",
+      "type": "number",
+      "value": 1.75,
+      "status": "unverified",
+      "evidence": {
+        "line": 92,
+        "sourcePath": "typography.link-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.linkmd.letterspacing",
+      "sourcePath": "typography.link-md.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 93,
+        "sourcePath": "typography.link-md.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.captionmd.fontfamily",
+      "sourcePath": "typography.caption-md.fontFamily",
+      "type": "fontFamily",
+      "value": "Helvetica Now Text Medium",
+      "status": "unverified",
+      "evidence": {
+        "line": 96,
+        "sourcePath": "typography.caption-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.captionmd.fontsize",
+      "sourcePath": "typography.caption-md.fontSize",
+      "type": "dimension",
+      "value": "14px",
+      "status": "unverified",
+      "evidence": {
+        "line": 97,
+        "sourcePath": "typography.caption-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.captionmd.fontweight",
+      "sourcePath": "typography.caption-md.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 98,
+        "sourcePath": "typography.caption-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.captionmd.lineheight",
+      "sourcePath": "typography.caption-md.lineHeight",
+      "type": "number",
+      "value": 1.5,
+      "status": "unverified",
+      "evidence": {
+        "line": 99,
+        "sourcePath": "typography.caption-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.captionmd.letterspacing",
+      "sourcePath": "typography.caption-md.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 100,
+        "sourcePath": "typography.caption-md.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.captionsm.fontfamily",
+      "sourcePath": "typography.caption-sm.fontFamily",
+      "type": "fontFamily",
+      "value": "Helvetica Now Text Medium",
+      "status": "unverified",
+      "evidence": {
+        "line": 102,
+        "sourcePath": "typography.caption-sm.fontFamily"
+      }
+    },
+    {
+      "path": "typography.captionsm.fontsize",
+      "sourcePath": "typography.caption-sm.fontSize",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 103,
+        "sourcePath": "typography.caption-sm.fontSize"
+      }
+    },
+    {
+      "path": "typography.captionsm.fontweight",
+      "sourcePath": "typography.caption-sm.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 104,
+        "sourcePath": "typography.caption-sm.fontWeight"
+      }
+    },
+    {
+      "path": "typography.captionsm.lineheight",
+      "sourcePath": "typography.caption-sm.lineHeight",
+      "type": "number",
+      "value": 1.5,
+      "status": "unverified",
+      "evidence": {
+        "line": 105,
+        "sourcePath": "typography.caption-sm.lineHeight"
+      }
+    },
+    {
+      "path": "typography.captionsm.letterspacing",
+      "sourcePath": "typography.caption-sm.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 106,
+        "sourcePath": "typography.caption-sm.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.utilityxs.fontfamily",
+      "sourcePath": "typography.utility-xs.fontFamily",
+      "type": "fontFamily",
+      "value": "Helvetica Neue",
+      "status": "unverified",
+      "evidence": {
+        "line": 108,
+        "sourcePath": "typography.utility-xs.fontFamily"
+      }
+    },
+    {
+      "path": "typography.utilityxs.fontsize",
+      "sourcePath": "typography.utility-xs.fontSize",
+      "type": "dimension",
+      "value": "9px",
+      "status": "unverified",
+      "evidence": {
+        "line": 109,
+        "sourcePath": "typography.utility-xs.fontSize"
+      }
+    },
+    {
+      "path": "typography.utilityxs.fontweight",
+      "sourcePath": "typography.utility-xs.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 110,
+        "sourcePath": "typography.utility-xs.fontWeight"
+      }
+    },
+    {
+      "path": "typography.utilityxs.lineheight",
+      "sourcePath": "typography.utility-xs.lineHeight",
+      "type": "number",
+      "value": 1.75,
+      "status": "unverified",
+      "evidence": {
+        "line": 111,
+        "sourcePath": "typography.utility-xs.lineHeight"
+      }
+    },
+    {
+      "path": "typography.utilityxs.letterspacing",
+      "sourcePath": "typography.utility-xs.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 112,
+        "sourcePath": "typography.utility-xs.letterSpacing"
+      }
+    },
+    {
+      "path": "rounded.none",
+      "sourcePath": "rounded.none",
+      "type": "dimension",
+      "value": "0px",
+      "status": "unverified",
+      "evidence": {
+        "line": 115,
+        "sourcePath": "rounded.none"
+      }
+    },
+    {
+      "path": "rounded.sm",
+      "sourcePath": "rounded.sm",
+      "type": "dimension",
+      "value": "18px",
+      "status": "unverified",
+      "evidence": {
+        "line": 116,
+        "sourcePath": "rounded.sm"
+      }
+    },
+    {
+      "path": "rounded.md",
+      "sourcePath": "rounded.md",
+      "type": "dimension",
+      "value": "24px",
+      "status": "unverified",
+      "evidence": {
+        "line": 117,
+        "sourcePath": "rounded.md"
+      }
+    },
+    {
+      "path": "rounded.lg",
+      "sourcePath": "rounded.lg",
+      "type": "dimension",
+      "value": "30px",
+      "status": "unverified",
+      "evidence": {
+        "line": 118,
+        "sourcePath": "rounded.lg"
+      }
+    },
+    {
+      "path": "rounded.full",
+      "sourcePath": "rounded.full",
+      "type": "dimension",
+      "value": "9999px",
+      "status": "unverified",
+      "evidence": {
+        "line": 119,
+        "sourcePath": "rounded.full"
+      }
+    },
+    {
+      "path": "spacing.xxs",
+      "sourcePath": "spacing.xxs",
+      "type": "dimension",
+      "value": "2px",
+      "status": "unverified",
+      "evidence": {
+        "line": 122,
+        "sourcePath": "spacing.xxs"
+      }
+    },
+    {
+      "path": "spacing.xs",
+      "sourcePath": "spacing.xs",
+      "type": "dimension",
+      "value": "4px",
+      "status": "unverified",
+      "evidence": {
+        "line": 123,
+        "sourcePath": "spacing.xs"
+      }
+    },
+    {
+      "path": "spacing.sm",
+      "sourcePath": "spacing.sm",
+      "type": "dimension",
+      "value": "8px",
+      "status": "unverified",
+      "evidence": {
+        "line": 124,
+        "sourcePath": "spacing.sm"
+      }
+    },
+    {
+      "path": "spacing.md",
+      "sourcePath": "spacing.md",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 125,
+        "sourcePath": "spacing.md"
+      }
+    },
+    {
+      "path": "spacing.lg",
+      "sourcePath": "spacing.lg",
+      "type": "dimension",
+      "value": "18px",
+      "status": "unverified",
+      "evidence": {
+        "line": 126,
+        "sourcePath": "spacing.lg"
+      }
+    },
+    {
+      "path": "spacing.xl",
+      "sourcePath": "spacing.xl",
+      "type": "dimension",
+      "value": "24px",
+      "status": "unverified",
+      "evidence": {
+        "line": 127,
+        "sourcePath": "spacing.xl"
+      }
+    },
+    {
+      "path": "spacing.xxl",
+      "sourcePath": "spacing.xxl",
+      "type": "dimension",
+      "value": "30px",
+      "status": "unverified",
+      "evidence": {
+        "line": 128,
+        "sourcePath": "spacing.xxl"
+      }
+    },
+    {
+      "path": "spacing.section",
+      "sourcePath": "spacing.section",
+      "type": "dimension",
+      "value": "48px",
+      "status": "unverified",
+      "evidence": {
+        "line": 129,
+        "sourcePath": "spacing.section"
+      }
+    }
+  ],
+  "rejectedTokens": [
+    {
+      "sourcePath": "typography.display-campaign.textTransform",
+      "value": "uppercase",
+      "reason": "Not a supported safe CSS literal; preserved in analysis"
+    },
+    {
+      "sourcePath": "typography.link-md.textDecoration",
+      "value": "underline",
+      "reason": "Not a supported safe CSS literal; preserved in analysis"
+    }
+  ],
+  "homepage": {
+    "status": "missing",
+    "candidates": [],
+    "verification": {
+      "status": "verified",
+      "url": "https://www.nike.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://www.nike.in/",
+          "title": "Nike. Just Do It. Nike IN",
+          "note": "Public homepage read requested https://www.nike.com; final URL https://www.nike.in/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    }
+  },
+  "completeness": {
+    "presentFields": [
+      "colors",
+      "typography",
+      "rounded",
+      "spacing",
+      "components"
+    ],
+    "missingFields": [],
+    "tokenRoles": "incomplete",
+    "note": "Missing fields are not reconstructed. Prose-only colors have no inferred semantic role."
+  },
+  "provenance": {
+    "status": "independent-analysis",
+    "sources": [
+      {
+        "title": "VoltAgent awesome-design-md independent analysis",
+        "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/nike/DESIGN.md"
+      }
+    ],
+    "verification": "unverified-secondary-analysis"
+  },
+  "limitations": [
+    "Independent secondary analysis, not an official brand system; all reported values are unverified.",
+    "No brand assets, logos, font binaries or screenshots copied. Font names are documentary, not font licenses.",
+    "Safe CSS literals are extracted without claiming complete roles, state coverage or visual fidelity.",
+    "Markdown is retained as inert evidence, never executed or rendered as raw HTML."
+  ]
+}

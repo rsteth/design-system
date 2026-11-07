@@ -1,0 +1,1800 @@
+{
+  "schemaVersion": 1,
+  "id": "reference-composio",
+  "title": "Composio",
+  "classification": "independent-unverified-analysis",
+  "source": {
+    "repository": "https://github.com/VoltAgent/awesome-design-md",
+    "fork": "https://github.com/rsteth/awesome-design-md-p",
+    "revision": "fcc70284932276d085f01ef9f83edde90b1258cb",
+    "path": "design-md/composio/DESIGN.md",
+    "sha256": "e7db886dabecca61f29b83e8f46d7a1e8a43889d30b81bc6e48162ccaafcbb2f",
+    "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/composio/DESIGN.md"
+  },
+  "sourceName": "Composio-design-analysis",
+  "titleProvenance": {
+    "status": "inferred",
+    "basis": "Source directory label, normalized for navigation; original source name is retained without correction.",
+    "sourceValue": "composio",
+    "originalName": "Composio-design-analysis"
+  },
+  "description": "A developer-tools brand for AI-agent tool integration whose marketing surfaces lean into a dark, technical aesthetic with a single deep-electric-blue voltage (`#0007cd`). The page floor is near-black (`#0f0f0f`); cards float above on subtle gray-tinted surfaces. abcDiatype carries display and body in a single sans family with weights 400-600. The brand's strongest visual signature is a four-pane terminal-style mockup (a 2×2 grid of dark code/output panels) with a central blue spotlight glow — used as the homepage hero anchor.",
+  "analysis": {
+    "version": "alpha",
+    "name": "Composio-design-analysis",
+    "description": "A developer-tools brand for AI-agent tool integration whose marketing surfaces lean into a dark, technical aesthetic with a single deep-electric-blue voltage (`#0007cd`). The page floor is near-black (`#0f0f0f`); cards float above on subtle gray-tinted surfaces. abcDiatype carries display and body in a single sans family with weights 400-600. The brand's strongest visual signature is a four-pane terminal-style mockup (a 2×2 grid of dark code/output panels) with a central blue spotlight glow — used as the homepage hero anchor.",
+    "colors": {
+      "primary": "#0007cd",
+      "primary-active": "#0005a3",
+      "primary-glow": "#1a26ff",
+      "ink": "#ffffff",
+      "body": "#a8a8a8",
+      "body-strong": "#ffffff",
+      "muted": "#888888",
+      "muted-soft": "#666666",
+      "hairline": "#222222",
+      "hairline-soft": "#1a1a1a",
+      "hairline-strong": "#333333",
+      "canvas": "#0f0f0f",
+      "canvas-deep": "#000000",
+      "surface-card": "#181818",
+      "surface-card-elevated": "#222222",
+      "surface-strong": "#2a2a2a",
+      "on-primary": "#ffffff",
+      "on-dark": "#ffffff",
+      "accent-cyan": "#00d4ff",
+      "accent-violet": "#7b3aed",
+      "semantic-error": "#ff4d4d",
+      "semantic-success": "#33d17a"
+    },
+    "typography": {
+      "display-mega": {
+        "fontFamily": "'abcDiatype', ui-sans-serif, system-ui, sans-serif",
+        "fontSize": "72px",
+        "fontWeight": 500,
+        "lineHeight": 1.05,
+        "letterSpacing": "-2.16px"
+      },
+      "display-xl": {
+        "fontFamily": "'abcDiatype', ui-sans-serif, system-ui, sans-serif",
+        "fontSize": "56px",
+        "fontWeight": 500,
+        "lineHeight": 1.05,
+        "letterSpacing": "-1.68px"
+      },
+      "display-lg": {
+        "fontFamily": "'abcDiatype', ui-sans-serif, system-ui, sans-serif",
+        "fontSize": "44px",
+        "fontWeight": 500,
+        "lineHeight": 1.1,
+        "letterSpacing": "-1.32px"
+      },
+      "display-md": {
+        "fontFamily": "'abcDiatype', ui-sans-serif, system-ui, sans-serif",
+        "fontSize": "32px",
+        "fontWeight": 500,
+        "lineHeight": 1.15,
+        "letterSpacing": "-0.96px"
+      },
+      "display-sm": {
+        "fontFamily": "'abcDiatype', ui-sans-serif, system-ui, sans-serif",
+        "fontSize": "24px",
+        "fontWeight": 500,
+        "lineHeight": 1.25,
+        "letterSpacing": "-0.5px"
+      },
+      "title-md": {
+        "fontFamily": "'abcDiatype', ui-sans-serif, system-ui, sans-serif",
+        "fontSize": "18px",
+        "fontWeight": 600,
+        "lineHeight": 1.4,
+        "letterSpacing": 0
+      },
+      "title-sm": {
+        "fontFamily": "'abcDiatype', ui-sans-serif, system-ui, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": 600,
+        "lineHeight": 1.4,
+        "letterSpacing": 0
+      },
+      "body-md": {
+        "fontFamily": "'abcDiatype', ui-sans-serif, system-ui, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": 400,
+        "lineHeight": 1.5,
+        "letterSpacing": 0
+      },
+      "body-sm": {
+        "fontFamily": "'abcDiatype', ui-sans-serif, system-ui, sans-serif",
+        "fontSize": "14px",
+        "fontWeight": 400,
+        "lineHeight": 1.5,
+        "letterSpacing": 0
+      },
+      "caption": {
+        "fontFamily": "'abcDiatype', ui-sans-serif, system-ui, sans-serif",
+        "fontSize": "13px",
+        "fontWeight": 400,
+        "lineHeight": 1.4,
+        "letterSpacing": 0
+      },
+      "caption-uppercase": {
+        "fontFamily": "'abcDiatype', ui-sans-serif, system-ui, sans-serif",
+        "fontSize": "11px",
+        "fontWeight": 600,
+        "lineHeight": 1.4,
+        "letterSpacing": "0.88px",
+        "textTransform": "uppercase"
+      },
+      "code": {
+        "fontFamily": "'JetBrains Mono', 'Fira Code', monospace",
+        "fontSize": "13px",
+        "fontWeight": 400,
+        "lineHeight": 1.5,
+        "letterSpacing": 0
+      },
+      "button": {
+        "fontFamily": "'abcDiatype', ui-sans-serif, system-ui, sans-serif",
+        "fontSize": "14px",
+        "fontWeight": 500,
+        "lineHeight": 1,
+        "letterSpacing": 0
+      },
+      "nav-link": {
+        "fontFamily": "'abcDiatype', ui-sans-serif, system-ui, sans-serif",
+        "fontSize": "14px",
+        "fontWeight": 500,
+        "lineHeight": 1.4,
+        "letterSpacing": 0
+      }
+    },
+    "rounded": {
+      "none": "0px",
+      "xs": "4px",
+      "sm": "6px",
+      "md": "8px",
+      "lg": "12px",
+      "xl": "16px",
+      "pill": "9999px",
+      "full": "9999px"
+    },
+    "spacing": {
+      "xxs": "4px",
+      "xs": "8px",
+      "sm": "12px",
+      "base": "16px",
+      "md": "20px",
+      "lg": "24px",
+      "xl": "32px",
+      "xxl": "48px",
+      "section": "96px"
+    },
+    "components": {
+      "top-nav-dark": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.body-strong}",
+        "typography": "{typography.nav-link}",
+        "height": "64px"
+      },
+      "button-primary": {
+        "backgroundColor": "{colors.primary}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.button}",
+        "rounded": "{rounded.md}",
+        "padding": "10px 18px",
+        "height": "40px"
+      },
+      "button-primary-active": {
+        "backgroundColor": "{colors.primary-active}",
+        "textColor": "{colors.on-primary}",
+        "rounded": "{rounded.md}"
+      },
+      "button-secondary-dark": {
+        "backgroundColor": "{colors.surface-card-elevated}",
+        "textColor": "{colors.body-strong}",
+        "typography": "{typography.button}",
+        "rounded": "{rounded.md}",
+        "padding": "10px 18px",
+        "height": "40px"
+      },
+      "button-outline": {
+        "backgroundColor": "transparent",
+        "textColor": "{colors.body-strong}",
+        "typography": "{typography.button}",
+        "rounded": "{rounded.md}",
+        "padding": "9px 17px",
+        "height": "40px"
+      },
+      "button-tertiary-text": {
+        "backgroundColor": "transparent",
+        "textColor": "{colors.body}",
+        "typography": "{typography.button}"
+      },
+      "hero-band": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.body-strong}",
+        "typography": "{typography.display-mega}",
+        "padding": "96px"
+      },
+      "terminal-mockup-grid": {
+        "backgroundColor": "{colors.canvas-deep}",
+        "textColor": "{colors.body-strong}",
+        "typography": "{typography.code}",
+        "rounded": "{rounded.xl}",
+        "padding": "32px"
+      },
+      "terminal-pane": {
+        "backgroundColor": "{colors.surface-card}",
+        "textColor": "{colors.body}",
+        "typography": "{typography.code}",
+        "rounded": "{rounded.lg}",
+        "padding": "20px"
+      },
+      "feature-card": {
+        "backgroundColor": "{colors.surface-card}",
+        "textColor": "{colors.body}",
+        "typography": "{typography.title-md}",
+        "rounded": "{rounded.xl}",
+        "padding": "28px"
+      },
+      "toolkit-card": {
+        "backgroundColor": "{colors.surface-card}",
+        "textColor": "{colors.body-strong}",
+        "typography": "{typography.title-sm}",
+        "rounded": "{rounded.lg}",
+        "padding": "20px"
+      },
+      "toolkit-icon": {
+        "backgroundColor": "{colors.surface-card-elevated}",
+        "rounded": "{rounded.md}",
+        "size": "40px"
+      },
+      "spotlight-glow-card": {
+        "backgroundColor": "{colors.surface-card}",
+        "textColor": "{colors.body-strong}",
+        "typography": "{typography.display-md}",
+        "rounded": "{rounded.xl}",
+        "padding": "48px"
+      },
+      "code-block": {
+        "backgroundColor": "{colors.canvas-deep}",
+        "textColor": "{colors.body}",
+        "typography": "{typography.code}",
+        "rounded": "{rounded.lg}",
+        "padding": "20px"
+      },
+      "badge-pill": {
+        "backgroundColor": "{colors.surface-card-elevated}",
+        "textColor": "{colors.body-strong}",
+        "typography": "{typography.caption-uppercase}",
+        "rounded": "{rounded.pill}",
+        "padding": "4px 10px"
+      },
+      "text-input": {
+        "backgroundColor": "{colors.surface-card}",
+        "textColor": "{colors.body-strong}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.md}",
+        "padding": "12px 16px",
+        "height": "44px"
+      },
+      "search-input": {
+        "backgroundColor": "{colors.surface-card}",
+        "textColor": "{colors.body-strong}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.md}",
+        "padding": "10px 16px",
+        "height": "40px"
+      },
+      "cta-band-spotlight": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.body-strong}",
+        "typography": "{typography.display-lg}",
+        "padding": "96px"
+      },
+      "testimonial-card": {
+        "backgroundColor": "{colors.surface-card}",
+        "textColor": "{colors.body}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.lg}",
+        "padding": "24px"
+      },
+      "footer-dark": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.body}",
+        "typography": "{typography.body-sm}",
+        "padding": "64px 48px"
+      },
+      "footer-link": {
+        "backgroundColor": "transparent",
+        "textColor": "{colors.body}",
+        "typography": "{typography.body-sm}"
+      }
+    }
+  },
+  "normalizationRepairs": [],
+  "sections": [
+    {
+      "heading": "Overview",
+      "level": 2,
+      "text": "Composio's marketing site reads like a serious developer-infrastructure brand — closer to Vercel or Stripe Docs in atmosphere than to a typical AI-tools startup. The base canvas is a near-black `{colors.canvas}` (#0f0f0f) holding white type and a single voltage of **deep electric blue** (`{colors.primary}` — #0007cd) carrying every primary CTA, brand wordmark, and atmospheric spotlight glow that backs the homepage hero.\n\nType runs **abcDiatype** as the single sans family across display, body, navigation, and captions. Display sits at weight 500 — confident but not bombastic. Code blocks and terminal mockups switch to JetBrains Mono.\n\nThe page rhythm is monolithic: dark canvas top to bottom with subtle elevation steps via card surfaces. The brand's strongest visual signature is a **four-pane terminal-style mockup** — a 2×2 grid of dark code/output panels with a central blue spotlight glow behind them.\n\n**Key Characteristics:**\n- Single accent: `{colors.primary}` (#0007cd) for primary CTAs, wordmark, spotlight glows.\n- Single sans family: abcDiatype carries everything except code (JetBrains Mono).\n- Dark monolithic canvas: `{colors.canvas}` runs top to bottom; depth from `{colors.surface-card}` and `{colors.surface-card-elevated}` brightness steps.\n- Terminal-mockup hero: 2×2 grid of code/output panes is the brand signature.\n- Compact pill geometry: CTAs sit at `{rounded.md}` (8px), not full pills — developer-tool dialect.\n- Spotlight-glow atmospheric backdrop: a radial blue glow centered behind hero content.\n- 96px section rhythm.",
+      "line": 260
+    },
+    {
+      "heading": "Colors",
+      "level": 2,
+      "text": "",
+      "line": 277
+    },
+    {
+      "heading": "Brand & Accent",
+      "level": 3,
+      "text": "- **Composio Blue** (`{colors.primary}` — #0007cd): Primary CTAs, wordmark, spotlight glow center.\n- **Composio Blue Active** (`{colors.primary-active}` — #0005a3): Press state.\n- **Spotlight Glow Tone** (`{colors.primary-glow}` — #1a26ff): Brighter blue used inside radial atmospheric glows.\n- **Accent Cyan** (`{colors.accent-cyan}` — #00d4ff): Sparingly on data-flow visualizations.\n- **Accent Violet** (`{colors.accent-violet}` — #7b3aed): Inside specific product illustrations only.",
+      "line": 279
+    },
+    {
+      "heading": "Surface",
+      "level": 3,
+      "text": "- **Canvas** (`{colors.canvas}` — #0f0f0f): Page floor — near-black.\n- **Canvas Deep** (`{colors.canvas-deep}` — #000000): Pure black for terminal mockup grids and code blocks.\n- **Surface Card** (`{colors.surface-card}` — #181818): Default content card.\n- **Surface Card Elevated** (`{colors.surface-card-elevated}` — #222222): Terminal panes, secondary buttons.\n- **Surface Strong** (`{colors.surface-strong}` — #2a2a2a): Dropdown menus.",
+      "line": 286
+    },
+    {
+      "heading": "Hairlines",
+      "level": 3,
+      "text": "- **Hairline** (`{colors.hairline}` — #222222): Default 1px divider.\n- **Hairline Soft** (`{colors.hairline-soft}` — #1a1a1a): Lighter divider.\n- **Hairline Strong** (`{colors.hairline-strong}` — #333333): Stronger panel outline.",
+      "line": 293
+    },
+    {
+      "heading": "Text",
+      "level": 3,
+      "text": "- **Ink** (`{colors.ink}` — #ffffff): Display headlines.\n- **Body** (`{colors.body}` — #a8a8a8): Default running-text — soft gray.\n- **Body Strong** (`{colors.body-strong}` — #ffffff): Same as ink.\n- **Muted** (`{colors.muted}` — #888888): Sub-titles, breadcrumbs.\n- **Muted Soft** (`{colors.muted-soft}` — #666666): Disabled text.\n- **On Primary** (`{colors.on-primary}` — #ffffff): White text on blue CTAs.",
+      "line": 298
+    },
+    {
+      "heading": "Semantic",
+      "level": 3,
+      "text": "- **Success** (`{colors.semantic-success}` — #33d17a): \"Online\", \"active\" indicators.\n- **Error** (`{colors.semantic-error}` — #ff4d4d): Validation errors.",
+      "line": 306
+    },
+    {
+      "heading": "Typography",
+      "level": 2,
+      "text": "",
+      "line": 310
+    },
+    {
+      "heading": "Font Family",
+      "level": 3,
+      "text": "The system runs **abcDiatype** (Lineto) across every text role. Code blocks switch to **JetBrains Mono**. Fallback: `ui-sans-serif, system-ui, sans-serif`.",
+      "line": 312
+    },
+    {
+      "heading": "Hierarchy",
+      "level": 3,
+      "text": "| Token | Size | Weight | Line Height | Letter Spacing | Use |\n|---|---|---|---|---|---|\n| `{typography.display-mega}` | 72px | 500 | 1.05 | -2.16px | Homepage hero h1 |\n| `{typography.display-xl}` | 56px | 500 | 1.05 | -1.68px | Subsidiary heroes |\n| `{typography.display-lg}` | 44px | 500 | 1.1 | -1.32px | Section heads |\n| `{typography.display-md}` | 32px | 500 | 1.15 | -0.96px | Sub-section heads |\n| `{typography.display-sm}` | 24px | 500 | 1.25 | -0.5px | Card group titles |\n| `{typography.title-md}` | 18px | 600 | 1.4 | 0 | Component titles |\n| `{typography.title-sm}` | 16px | 600 | 1.4 | 0 | Toolkit card titles |\n| `{typography.body-md}` | 16px | 400 | 1.5 | 0 | Default body |\n| `{typography.body-sm}` | 14px | 400 | 1.5 | 0 | Footer body |\n| `{typography.caption}` | 13px | 400 | 1.4 | 0 | Photo captions |\n| `{typography.caption-uppercase}` | 11px | 600 | 1.4 | 0.88px | Section labels, badge pills |\n| `{typography.code}` | 13px | 400 | 1.5 | 0 | Code blocks — JetBrains Mono |\n| `{typography.button}` | 14px | 500 | 1.0 | 0 | CTA pill labels |\n| `{typography.nav-link}` | 14px | 500 | 1.4 | 0 | Top-nav menu |",
+      "line": 315
+    },
+    {
+      "heading": "Principles",
+      "level": 3,
+      "text": "- **Display weight stays at 500.** Confident but not display-bold.\n- **abcDiatype across every role.** No display/body family split.\n- **JetBrains Mono on every code surface.**",
+      "line": 334
+    },
+    {
+      "heading": "Note on Font Substitutes",
+      "level": 3,
+      "text": "abcDiatype is a Lineto licensed typeface. Open-source substitute: **Inter** at weight 500 with letter-spacing -1.5%.",
+      "line": 339
+    },
+    {
+      "heading": "Layout",
+      "level": 2,
+      "text": "",
+      "line": 342
+    },
+    {
+      "heading": "Spacing System",
+      "level": 3,
+      "text": "- **Base unit:** 4px.\n- **Tokens:** `{spacing.xxs}` 4px · `{spacing.xs}` 8px · `{spacing.sm}` 12px · `{spacing.base}` 16px · `{spacing.md}` 20px · `{spacing.lg}` 24px · `{spacing.xl}` 32px · `{spacing.xxl}` 48px · `{spacing.section}` 96px.\n- **Section padding:** `{spacing.section}` (96px) for major bands.",
+      "line": 344
+    },
+    {
+      "heading": "Grid & Container",
+      "level": 3,
+      "text": "- Max content width: ~1200px.\n- Editorial body: 12-column grid.\n- Terminal mockup grid: 2×2 equal-size panes.\n- Toolkit grid: 4-up at desktop, 2-up tablet, 1-up mobile.\n- Footer: 5-column at desktop.",
+      "line": 349
+    },
+    {
+      "heading": "Whitespace Philosophy",
+      "level": 3,
+      "text": "The dark canvas creates its own depth — whitespace can stay tight without feeling crowded. 96px between bands; 24px between cards inside a band.",
+      "line": 356
+    },
+    {
+      "heading": "Elevation & Depth",
+      "level": 2,
+      "text": "The system uses **brightness-step elevation**: surfaces step up in brightness instead of casting drop shadows. Combined with subtle radial blue glows, this creates a focused dark-mode atmosphere.\n\n| Level | Treatment | Use |\n|---|---|---|\n| Flat (canvas) | `{colors.canvas}` (#0f0f0f) | Body bands, footer |\n| Recessed | `{colors.canvas-deep}` (#000000) | Terminal mockup grid background, code blocks |\n| Card | `{colors.surface-card}` (#181818) | Default content cards |\n| Card elevated | `{colors.surface-card-elevated}` (#222222) | Terminal panes, secondary buttons |\n| Atmospheric glow | Radial gradient using `{colors.primary-glow}` | Hero spotlight backdrop |",
+      "line": 359
+    },
+    {
+      "heading": "Decorative Depth",
+      "level": 3,
+      "text": "- **Spotlight glow backdrops** — radial blue gradient centered behind hero content.\n- **Terminal-pane brightness ladder** — 2×2 mockup uses canvas-deep outer + surface-card-elevated panes.",
+      "line": 371
+    },
+    {
+      "heading": "Shapes",
+      "level": 2,
+      "text": "",
+      "line": 375
+    },
+    {
+      "heading": "Border Radius Scale",
+      "level": 3,
+      "text": "| Token | Value | Use |\n|---|---|---|\n| `{rounded.none}` | 0px | Reserved |\n| `{rounded.xs}` | 4px | Inline tags |\n| `{rounded.sm}` | 6px | Compact rows |\n| `{rounded.md}` | 8px | CTA buttons, form inputs |\n| `{rounded.lg}` | 12px | Toolkit cards, code blocks, terminal panes |\n| `{rounded.xl}` | 16px | Feature cards, terminal mockup grids |\n| `{rounded.pill}` | 9999px | Section-label badges |\n| `{rounded.full}` | 9999px | Avatar plates (rare) |\n\nCompact developer-ergonomic radii — 8px CTAs, 12-16px cards. Signals \"developer tool\" rather than \"consumer brand.\"",
+      "line": 377
+    },
+    {
+      "heading": "Components",
+      "level": 2,
+      "text": "",
+      "line": 392
+    },
+    {
+      "heading": "Top Navigation",
+      "level": 3,
+      "text": "**`top-nav-dark`** — Default top nav. Background `{colors.canvas}`, text `{colors.body-strong}`, height 64px. Layout: Composio wordmark left, primary horizontal menu (Product / Toolkits / Docs / Pricing / Customers / Blog), GitHub stars + Sign In + \"Get started\" right.",
+      "line": 394
+    },
+    {
+      "heading": "Buttons",
+      "level": 3,
+      "text": "**`button-primary`** — The signature Composio Blue CTA. Background `{colors.primary}`, text `{colors.on-primary}`, type `{typography.button}` (14px / 500), padding 10px × 18px, height 40px, rounded `{rounded.md}` (8px).\n\n**`button-primary-active`** — Press state. Background `{colors.primary-active}`.\n\n**`button-secondary-dark`** — Surface-elevated secondary. Background `{colors.surface-card-elevated}`, text `{colors.body-strong}`.\n\n**`button-outline`** — Transparent with 1px hairline-strong border.\n\n**`button-tertiary-text`** — Inline text link.",
+      "line": 398
+    },
+    {
+      "heading": "Hero & Atmospheric",
+      "level": 3,
+      "text": "**`hero-band`** — Homepage hero. Background `{colors.canvas}`, full-width display headline in `{typography.display-mega}` (72px / 500), subhead, two CTAs, and a spotlight-glow backdrop emanating from behind the centered terminal-mockup grid.\n\n**`terminal-mockup-grid`** — The brand's strongest visual signature. 2×2 grid of dark code/output panels inside a `{rounded.xl}` (16px) container. Background `{colors.canvas-deep}`, padding 32px, gap 16px.\n\n**`terminal-pane`** — Individual code/output panel inside the mockup grid. Background `{colors.surface-card}`, text `{colors.body}` in `{typography.code}`, rounded `{rounded.lg}` (12px), padding 20px.\n\n**`spotlight-glow-card`** — Large feature card with centered display headline and a radial blue glow behind it. Background `{colors.surface-card}`, text `{colors.body-strong}` in `{typography.display-md}`, rounded `{rounded.xl}`, padding 48px.",
+      "line": 410
+    },
+    {
+      "heading": "Cards",
+      "level": 3,
+      "text": "**`feature-card`** — 3-up benefit grid. Background `{colors.surface-card}`, text `{colors.body}`, type `{typography.title-md}`, rounded `{rounded.xl}`, padding 28px.\n\n**`toolkit-card`** — 4-up toolkit grid (Slack, GitHub, Stripe, Notion, Linear, etc.). Background `{colors.surface-card}`, text `{colors.body-strong}`, type `{typography.title-sm}`, rounded `{rounded.lg}`, padding 20px. 40px square `{component.toolkit-icon}` top, toolkit name, one-line description.\n\n**`toolkit-icon`** — Square icon plate. Background `{colors.surface-card-elevated}`, rounded `{rounded.md}`, 40px size.\n\n**`testimonial-card`** — Quote card. Background `{colors.surface-card}`, text `{colors.body}`, rounded `{rounded.lg}`, padding 24px.",
+      "line": 420
+    },
+    {
+      "heading": "Code",
+      "level": 3,
+      "text": "**`code-block`** — Inline code/terminal block. Background `{colors.canvas-deep}`, text `{colors.body}` in `{typography.code}`, rounded `{rounded.lg}`, padding 20px.",
+      "line": 430
+    },
+    {
+      "heading": "Forms",
+      "level": 3,
+      "text": "**`text-input`** — Background `{colors.surface-card}`, text `{colors.body-strong}`, rounded `{rounded.md}` (8px), padding 12px × 16px, height 44px.\n\n**`search-input`** — Compact search field. Same surface and radius, smaller padding, 40px height.",
+      "line": 434
+    },
+    {
+      "heading": "Tags & Badges",
+      "level": 3,
+      "text": "**`badge-pill`** — Small uppercase pill. Background `{colors.surface-card-elevated}`, text `{colors.body-strong}`, type `{typography.caption-uppercase}`, rounded `{rounded.pill}`, padding 4px × 10px.",
+      "line": 440
+    },
+    {
+      "heading": "CTA / Footer",
+      "level": 3,
+      "text": "**`cta-band-spotlight`** — Pre-footer band. Background `{colors.canvas}` with centered radial spotlight glow. Display headline + single primary CTA pill. 96px padding.\n\n**`footer-dark`** — Closing footer. Background `{colors.canvas}`, text `{colors.body}`. 5-column link list. 64×48px padding.\n\n**`footer-link`** — Background transparent, text `{colors.body}`, type `{typography.body-sm}`.",
+      "line": 444
+    },
+    {
+      "heading": "Do's and Don'ts",
+      "level": 2,
+      "text": "",
+      "line": 452
+    },
+    {
+      "heading": "Do",
+      "level": 3,
+      "text": "- Reserve `{colors.primary}` for primary CTAs, wordmark, and spotlight glows.\n- Use `{rounded.md}` (8px) for every CTA — not full pills.\n- Use brightness-step ladder for elevation; avoid drop shadows.\n- Pair every hero with a centered radial blue spotlight glow.\n- Render code, CLI commands in JetBrains Mono via `{typography.code}`.\n- Use the 2×2 terminal-mockup grid as the homepage hero anchor.",
+      "line": 454
+    },
+    {
+      "heading": "Don't",
+      "level": 3,
+      "text": "- Don't introduce a secondary brand color. Cyan and violet are illustrative-only.\n- Don't use full pills on CTAs.\n- Don't drop display weight to 400.\n- Don't add drop shadow tiers.\n- Don't use canvas-deep (#000000) outside terminal/code surfaces.\n- Don't extract a CTA color from a third-party widget (cookie consent, OneTrust). The brand's CTA color is what appears on actual page CTAs.",
+      "line": 462
+    },
+    {
+      "heading": "Responsive Behavior",
+      "level": 2,
+      "text": "",
+      "line": 470
+    },
+    {
+      "heading": "Breakpoints",
+      "level": 3,
+      "text": "| Name | Width | Key Changes |\n|---|---|---|\n| Mobile | < 640px | Hero h1 72→36px; terminal mockup grid collapses to single pane; toolkit grid 1-up; nav hamburger. |\n| Tablet | 640–1024px | Hero h1 56px; terminal mockup grid stays 2×2; toolkit grid 2-up. |\n| Desktop | 1024–1280px | Full hero h1 72px; full 2×2 terminal mockup; toolkit grid 4-up. |\n| Wide | > 1280px | Content caps at 1200px. |",
+      "line": 472
+    },
+    {
+      "heading": "Touch Targets",
+      "level": 3,
+      "text": "- Primary CTA at 40px height — at WCAG AA, padded for AAA.\n- Search input at 40px.",
+      "line": 481
+    },
+    {
+      "heading": "Collapsing Strategy",
+      "level": 3,
+      "text": "- Top nav switches to hamburger below 768px.\n- Terminal mockup 2×2 grid collapses to a single pane on mobile.\n- Toolkit grid: 4-up → 2-up → 1-up.\n- Hero spotlight glow stays at every breakpoint.",
+      "line": 485
+    },
+    {
+      "heading": "Iteration Guide",
+      "level": 2,
+      "text": "1. Focus on a single component at a time.\n2. CTAs default to `{rounded.md}` (8px). Cards use `{rounded.lg}` or `{rounded.xl}`.\n3. Variants live as separate entries inside `components:`.\n4. Use `{token.refs}` everywhere — never inline hex.\n5. Hover state never documented.\n6. abcDiatype 500 for display, 400/600 for body. JetBrains Mono on every code surface.\n7. Composio Blue stays scarce.",
+      "line": 491
+    },
+    {
+      "heading": "Known Gaps",
+      "level": 2,
+      "text": "- abcDiatype is licensed; Inter is the substitute.\n- Animation timings out of scope.\n- In-product surfaces (toolkit dashboards, agent playground) are behind login walls.\n- Form validation states beyond focus not visible on captured surfaces.",
+      "line": 501
+    }
+  ],
+  "tokens": [
+    {
+      "path": "colors.primary",
+      "sourcePath": "colors.primary",
+      "type": "color",
+      "value": "#0007cd",
+      "status": "unverified",
+      "evidence": {
+        "line": 7,
+        "sourcePath": "colors.primary"
+      }
+    },
+    {
+      "path": "colors.primaryactive",
+      "sourcePath": "colors.primary-active",
+      "type": "color",
+      "value": "#0005a3",
+      "status": "unverified",
+      "evidence": {
+        "line": 8,
+        "sourcePath": "colors.primary-active"
+      }
+    },
+    {
+      "path": "colors.primaryglow",
+      "sourcePath": "colors.primary-glow",
+      "type": "color",
+      "value": "#1a26ff",
+      "status": "unverified",
+      "evidence": {
+        "line": 9,
+        "sourcePath": "colors.primary-glow"
+      }
+    },
+    {
+      "path": "colors.ink",
+      "sourcePath": "colors.ink",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 10,
+        "sourcePath": "colors.ink"
+      }
+    },
+    {
+      "path": "colors.body",
+      "sourcePath": "colors.body",
+      "type": "color",
+      "value": "#a8a8a8",
+      "status": "unverified",
+      "evidence": {
+        "line": 11,
+        "sourcePath": "colors.body"
+      }
+    },
+    {
+      "path": "colors.bodystrong",
+      "sourcePath": "colors.body-strong",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 12,
+        "sourcePath": "colors.body-strong"
+      }
+    },
+    {
+      "path": "colors.muted",
+      "sourcePath": "colors.muted",
+      "type": "color",
+      "value": "#888888",
+      "status": "unverified",
+      "evidence": {
+        "line": 13,
+        "sourcePath": "colors.muted"
+      }
+    },
+    {
+      "path": "colors.mutedsoft",
+      "sourcePath": "colors.muted-soft",
+      "type": "color",
+      "value": "#666666",
+      "status": "unverified",
+      "evidence": {
+        "line": 14,
+        "sourcePath": "colors.muted-soft"
+      }
+    },
+    {
+      "path": "colors.hairline",
+      "sourcePath": "colors.hairline",
+      "type": "color",
+      "value": "#222222",
+      "status": "unverified",
+      "evidence": {
+        "line": 15,
+        "sourcePath": "colors.hairline"
+      }
+    },
+    {
+      "path": "colors.hairlinesoft",
+      "sourcePath": "colors.hairline-soft",
+      "type": "color",
+      "value": "#1a1a1a",
+      "status": "unverified",
+      "evidence": {
+        "line": 16,
+        "sourcePath": "colors.hairline-soft"
+      }
+    },
+    {
+      "path": "colors.hairlinestrong",
+      "sourcePath": "colors.hairline-strong",
+      "type": "color",
+      "value": "#333333",
+      "status": "unverified",
+      "evidence": {
+        "line": 17,
+        "sourcePath": "colors.hairline-strong"
+      }
+    },
+    {
+      "path": "colors.canvas",
+      "sourcePath": "colors.canvas",
+      "type": "color",
+      "value": "#0f0f0f",
+      "status": "unverified",
+      "evidence": {
+        "line": 18,
+        "sourcePath": "colors.canvas"
+      }
+    },
+    {
+      "path": "colors.canvasdeep",
+      "sourcePath": "colors.canvas-deep",
+      "type": "color",
+      "value": "#000000",
+      "status": "unverified",
+      "evidence": {
+        "line": 19,
+        "sourcePath": "colors.canvas-deep"
+      }
+    },
+    {
+      "path": "colors.surfacecard",
+      "sourcePath": "colors.surface-card",
+      "type": "color",
+      "value": "#181818",
+      "status": "unverified",
+      "evidence": {
+        "line": 20,
+        "sourcePath": "colors.surface-card"
+      }
+    },
+    {
+      "path": "colors.surfacecardelevated",
+      "sourcePath": "colors.surface-card-elevated",
+      "type": "color",
+      "value": "#222222",
+      "status": "unverified",
+      "evidence": {
+        "line": 21,
+        "sourcePath": "colors.surface-card-elevated"
+      }
+    },
+    {
+      "path": "colors.surfacestrong",
+      "sourcePath": "colors.surface-strong",
+      "type": "color",
+      "value": "#2a2a2a",
+      "status": "unverified",
+      "evidence": {
+        "line": 22,
+        "sourcePath": "colors.surface-strong"
+      }
+    },
+    {
+      "path": "colors.onprimary",
+      "sourcePath": "colors.on-primary",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 23,
+        "sourcePath": "colors.on-primary"
+      }
+    },
+    {
+      "path": "colors.ondark",
+      "sourcePath": "colors.on-dark",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 24,
+        "sourcePath": "colors.on-dark"
+      }
+    },
+    {
+      "path": "colors.accentcyan",
+      "sourcePath": "colors.accent-cyan",
+      "type": "color",
+      "value": "#00d4ff",
+      "status": "unverified",
+      "evidence": {
+        "line": 25,
+        "sourcePath": "colors.accent-cyan"
+      }
+    },
+    {
+      "path": "colors.accentviolet",
+      "sourcePath": "colors.accent-violet",
+      "type": "color",
+      "value": "#7b3aed",
+      "status": "unverified",
+      "evidence": {
+        "line": 26,
+        "sourcePath": "colors.accent-violet"
+      }
+    },
+    {
+      "path": "colors.semanticerror",
+      "sourcePath": "colors.semantic-error",
+      "type": "color",
+      "value": "#ff4d4d",
+      "status": "unverified",
+      "evidence": {
+        "line": 27,
+        "sourcePath": "colors.semantic-error"
+      }
+    },
+    {
+      "path": "colors.semanticsuccess",
+      "sourcePath": "colors.semantic-success",
+      "type": "color",
+      "value": "#33d17a",
+      "status": "unverified",
+      "evidence": {
+        "line": 28,
+        "sourcePath": "colors.semantic-success"
+      }
+    },
+    {
+      "path": "typography.displaymega.fontfamily",
+      "sourcePath": "typography.display-mega.fontFamily",
+      "type": "fontFamily",
+      "value": "'abcDiatype', ui-sans-serif, system-ui, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 32,
+        "sourcePath": "typography.display-mega.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displaymega.fontsize",
+      "sourcePath": "typography.display-mega.fontSize",
+      "type": "dimension",
+      "value": "72px",
+      "status": "unverified",
+      "evidence": {
+        "line": 33,
+        "sourcePath": "typography.display-mega.fontSize"
+      }
+    },
+    {
+      "path": "typography.displaymega.fontweight",
+      "sourcePath": "typography.display-mega.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 34,
+        "sourcePath": "typography.display-mega.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displaymega.lineheight",
+      "sourcePath": "typography.display-mega.lineHeight",
+      "type": "number",
+      "value": 1.05,
+      "status": "unverified",
+      "evidence": {
+        "line": 35,
+        "sourcePath": "typography.display-mega.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displaymega.letterspacing",
+      "sourcePath": "typography.display-mega.letterSpacing",
+      "type": "dimension",
+      "value": "-2.16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 36,
+        "sourcePath": "typography.display-mega.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.displayxl.fontfamily",
+      "sourcePath": "typography.display-xl.fontFamily",
+      "type": "fontFamily",
+      "value": "'abcDiatype', ui-sans-serif, system-ui, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 38,
+        "sourcePath": "typography.display-xl.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displayxl.fontsize",
+      "sourcePath": "typography.display-xl.fontSize",
+      "type": "dimension",
+      "value": "56px",
+      "status": "unverified",
+      "evidence": {
+        "line": 39,
+        "sourcePath": "typography.display-xl.fontSize"
+      }
+    },
+    {
+      "path": "typography.displayxl.fontweight",
+      "sourcePath": "typography.display-xl.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 40,
+        "sourcePath": "typography.display-xl.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displayxl.lineheight",
+      "sourcePath": "typography.display-xl.lineHeight",
+      "type": "number",
+      "value": 1.05,
+      "status": "unverified",
+      "evidence": {
+        "line": 41,
+        "sourcePath": "typography.display-xl.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displayxl.letterspacing",
+      "sourcePath": "typography.display-xl.letterSpacing",
+      "type": "dimension",
+      "value": "-1.68px",
+      "status": "unverified",
+      "evidence": {
+        "line": 42,
+        "sourcePath": "typography.display-xl.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.displaylg.fontfamily",
+      "sourcePath": "typography.display-lg.fontFamily",
+      "type": "fontFamily",
+      "value": "'abcDiatype', ui-sans-serif, system-ui, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 44,
+        "sourcePath": "typography.display-lg.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displaylg.fontsize",
+      "sourcePath": "typography.display-lg.fontSize",
+      "type": "dimension",
+      "value": "44px",
+      "status": "unverified",
+      "evidence": {
+        "line": 45,
+        "sourcePath": "typography.display-lg.fontSize"
+      }
+    },
+    {
+      "path": "typography.displaylg.fontweight",
+      "sourcePath": "typography.display-lg.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 46,
+        "sourcePath": "typography.display-lg.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displaylg.lineheight",
+      "sourcePath": "typography.display-lg.lineHeight",
+      "type": "number",
+      "value": 1.1,
+      "status": "unverified",
+      "evidence": {
+        "line": 47,
+        "sourcePath": "typography.display-lg.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displaylg.letterspacing",
+      "sourcePath": "typography.display-lg.letterSpacing",
+      "type": "dimension",
+      "value": "-1.32px",
+      "status": "unverified",
+      "evidence": {
+        "line": 48,
+        "sourcePath": "typography.display-lg.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.displaymd.fontfamily",
+      "sourcePath": "typography.display-md.fontFamily",
+      "type": "fontFamily",
+      "value": "'abcDiatype', ui-sans-serif, system-ui, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 50,
+        "sourcePath": "typography.display-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displaymd.fontsize",
+      "sourcePath": "typography.display-md.fontSize",
+      "type": "dimension",
+      "value": "32px",
+      "status": "unverified",
+      "evidence": {
+        "line": 51,
+        "sourcePath": "typography.display-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.displaymd.fontweight",
+      "sourcePath": "typography.display-md.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 52,
+        "sourcePath": "typography.display-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displaymd.lineheight",
+      "sourcePath": "typography.display-md.lineHeight",
+      "type": "number",
+      "value": 1.15,
+      "status": "unverified",
+      "evidence": {
+        "line": 53,
+        "sourcePath": "typography.display-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displaymd.letterspacing",
+      "sourcePath": "typography.display-md.letterSpacing",
+      "type": "dimension",
+      "value": "-0.96px",
+      "status": "unverified",
+      "evidence": {
+        "line": 54,
+        "sourcePath": "typography.display-md.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.displaysm.fontfamily",
+      "sourcePath": "typography.display-sm.fontFamily",
+      "type": "fontFamily",
+      "value": "'abcDiatype', ui-sans-serif, system-ui, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 56,
+        "sourcePath": "typography.display-sm.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displaysm.fontsize",
+      "sourcePath": "typography.display-sm.fontSize",
+      "type": "dimension",
+      "value": "24px",
+      "status": "unverified",
+      "evidence": {
+        "line": 57,
+        "sourcePath": "typography.display-sm.fontSize"
+      }
+    },
+    {
+      "path": "typography.displaysm.fontweight",
+      "sourcePath": "typography.display-sm.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 58,
+        "sourcePath": "typography.display-sm.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displaysm.lineheight",
+      "sourcePath": "typography.display-sm.lineHeight",
+      "type": "number",
+      "value": 1.25,
+      "status": "unverified",
+      "evidence": {
+        "line": 59,
+        "sourcePath": "typography.display-sm.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displaysm.letterspacing",
+      "sourcePath": "typography.display-sm.letterSpacing",
+      "type": "dimension",
+      "value": "-0.5px",
+      "status": "unverified",
+      "evidence": {
+        "line": 60,
+        "sourcePath": "typography.display-sm.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.titlemd.fontfamily",
+      "sourcePath": "typography.title-md.fontFamily",
+      "type": "fontFamily",
+      "value": "'abcDiatype', ui-sans-serif, system-ui, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 62,
+        "sourcePath": "typography.title-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.titlemd.fontsize",
+      "sourcePath": "typography.title-md.fontSize",
+      "type": "dimension",
+      "value": "18px",
+      "status": "unverified",
+      "evidence": {
+        "line": 63,
+        "sourcePath": "typography.title-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.titlemd.fontweight",
+      "sourcePath": "typography.title-md.fontWeight",
+      "type": "number",
+      "value": 600,
+      "status": "unverified",
+      "evidence": {
+        "line": 64,
+        "sourcePath": "typography.title-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.titlemd.lineheight",
+      "sourcePath": "typography.title-md.lineHeight",
+      "type": "number",
+      "value": 1.4,
+      "status": "unverified",
+      "evidence": {
+        "line": 65,
+        "sourcePath": "typography.title-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.titlemd.letterspacing",
+      "sourcePath": "typography.title-md.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 66,
+        "sourcePath": "typography.title-md.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.titlesm.fontfamily",
+      "sourcePath": "typography.title-sm.fontFamily",
+      "type": "fontFamily",
+      "value": "'abcDiatype', ui-sans-serif, system-ui, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 68,
+        "sourcePath": "typography.title-sm.fontFamily"
+      }
+    },
+    {
+      "path": "typography.titlesm.fontsize",
+      "sourcePath": "typography.title-sm.fontSize",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 69,
+        "sourcePath": "typography.title-sm.fontSize"
+      }
+    },
+    {
+      "path": "typography.titlesm.fontweight",
+      "sourcePath": "typography.title-sm.fontWeight",
+      "type": "number",
+      "value": 600,
+      "status": "unverified",
+      "evidence": {
+        "line": 70,
+        "sourcePath": "typography.title-sm.fontWeight"
+      }
+    },
+    {
+      "path": "typography.titlesm.lineheight",
+      "sourcePath": "typography.title-sm.lineHeight",
+      "type": "number",
+      "value": 1.4,
+      "status": "unverified",
+      "evidence": {
+        "line": 71,
+        "sourcePath": "typography.title-sm.lineHeight"
+      }
+    },
+    {
+      "path": "typography.titlesm.letterspacing",
+      "sourcePath": "typography.title-sm.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 72,
+        "sourcePath": "typography.title-sm.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.bodymd.fontfamily",
+      "sourcePath": "typography.body-md.fontFamily",
+      "type": "fontFamily",
+      "value": "'abcDiatype', ui-sans-serif, system-ui, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 74,
+        "sourcePath": "typography.body-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodymd.fontsize",
+      "sourcePath": "typography.body-md.fontSize",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 75,
+        "sourcePath": "typography.body-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodymd.fontweight",
+      "sourcePath": "typography.body-md.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 76,
+        "sourcePath": "typography.body-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodymd.lineheight",
+      "sourcePath": "typography.body-md.lineHeight",
+      "type": "number",
+      "value": 1.5,
+      "status": "unverified",
+      "evidence": {
+        "line": 77,
+        "sourcePath": "typography.body-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodymd.letterspacing",
+      "sourcePath": "typography.body-md.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 78,
+        "sourcePath": "typography.body-md.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.bodysm.fontfamily",
+      "sourcePath": "typography.body-sm.fontFamily",
+      "type": "fontFamily",
+      "value": "'abcDiatype', ui-sans-serif, system-ui, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 80,
+        "sourcePath": "typography.body-sm.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodysm.fontsize",
+      "sourcePath": "typography.body-sm.fontSize",
+      "type": "dimension",
+      "value": "14px",
+      "status": "unverified",
+      "evidence": {
+        "line": 81,
+        "sourcePath": "typography.body-sm.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodysm.fontweight",
+      "sourcePath": "typography.body-sm.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 82,
+        "sourcePath": "typography.body-sm.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodysm.lineheight",
+      "sourcePath": "typography.body-sm.lineHeight",
+      "type": "number",
+      "value": 1.5,
+      "status": "unverified",
+      "evidence": {
+        "line": 83,
+        "sourcePath": "typography.body-sm.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodysm.letterspacing",
+      "sourcePath": "typography.body-sm.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 84,
+        "sourcePath": "typography.body-sm.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.caption.fontfamily",
+      "sourcePath": "typography.caption.fontFamily",
+      "type": "fontFamily",
+      "value": "'abcDiatype', ui-sans-serif, system-ui, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 86,
+        "sourcePath": "typography.caption.fontFamily"
+      }
+    },
+    {
+      "path": "typography.caption.fontsize",
+      "sourcePath": "typography.caption.fontSize",
+      "type": "dimension",
+      "value": "13px",
+      "status": "unverified",
+      "evidence": {
+        "line": 87,
+        "sourcePath": "typography.caption.fontSize"
+      }
+    },
+    {
+      "path": "typography.caption.fontweight",
+      "sourcePath": "typography.caption.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 88,
+        "sourcePath": "typography.caption.fontWeight"
+      }
+    },
+    {
+      "path": "typography.caption.lineheight",
+      "sourcePath": "typography.caption.lineHeight",
+      "type": "number",
+      "value": 1.4,
+      "status": "unverified",
+      "evidence": {
+        "line": 89,
+        "sourcePath": "typography.caption.lineHeight"
+      }
+    },
+    {
+      "path": "typography.caption.letterspacing",
+      "sourcePath": "typography.caption.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 90,
+        "sourcePath": "typography.caption.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.captionuppercase.fontfamily",
+      "sourcePath": "typography.caption-uppercase.fontFamily",
+      "type": "fontFamily",
+      "value": "'abcDiatype', ui-sans-serif, system-ui, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 92,
+        "sourcePath": "typography.caption-uppercase.fontFamily"
+      }
+    },
+    {
+      "path": "typography.captionuppercase.fontsize",
+      "sourcePath": "typography.caption-uppercase.fontSize",
+      "type": "dimension",
+      "value": "11px",
+      "status": "unverified",
+      "evidence": {
+        "line": 93,
+        "sourcePath": "typography.caption-uppercase.fontSize"
+      }
+    },
+    {
+      "path": "typography.captionuppercase.fontweight",
+      "sourcePath": "typography.caption-uppercase.fontWeight",
+      "type": "number",
+      "value": 600,
+      "status": "unverified",
+      "evidence": {
+        "line": 94,
+        "sourcePath": "typography.caption-uppercase.fontWeight"
+      }
+    },
+    {
+      "path": "typography.captionuppercase.lineheight",
+      "sourcePath": "typography.caption-uppercase.lineHeight",
+      "type": "number",
+      "value": 1.4,
+      "status": "unverified",
+      "evidence": {
+        "line": 95,
+        "sourcePath": "typography.caption-uppercase.lineHeight"
+      }
+    },
+    {
+      "path": "typography.captionuppercase.letterspacing",
+      "sourcePath": "typography.caption-uppercase.letterSpacing",
+      "type": "dimension",
+      "value": "0.88px",
+      "status": "unverified",
+      "evidence": {
+        "line": 96,
+        "sourcePath": "typography.caption-uppercase.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.code.fontfamily",
+      "sourcePath": "typography.code.fontFamily",
+      "type": "fontFamily",
+      "value": "'JetBrains Mono', 'Fira Code', monospace",
+      "status": "unverified",
+      "evidence": {
+        "line": 99,
+        "sourcePath": "typography.code.fontFamily"
+      }
+    },
+    {
+      "path": "typography.code.fontsize",
+      "sourcePath": "typography.code.fontSize",
+      "type": "dimension",
+      "value": "13px",
+      "status": "unverified",
+      "evidence": {
+        "line": 100,
+        "sourcePath": "typography.code.fontSize"
+      }
+    },
+    {
+      "path": "typography.code.fontweight",
+      "sourcePath": "typography.code.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 101,
+        "sourcePath": "typography.code.fontWeight"
+      }
+    },
+    {
+      "path": "typography.code.lineheight",
+      "sourcePath": "typography.code.lineHeight",
+      "type": "number",
+      "value": 1.5,
+      "status": "unverified",
+      "evidence": {
+        "line": 102,
+        "sourcePath": "typography.code.lineHeight"
+      }
+    },
+    {
+      "path": "typography.code.letterspacing",
+      "sourcePath": "typography.code.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 103,
+        "sourcePath": "typography.code.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.button.fontfamily",
+      "sourcePath": "typography.button.fontFamily",
+      "type": "fontFamily",
+      "value": "'abcDiatype', ui-sans-serif, system-ui, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 105,
+        "sourcePath": "typography.button.fontFamily"
+      }
+    },
+    {
+      "path": "typography.button.fontsize",
+      "sourcePath": "typography.button.fontSize",
+      "type": "dimension",
+      "value": "14px",
+      "status": "unverified",
+      "evidence": {
+        "line": 106,
+        "sourcePath": "typography.button.fontSize"
+      }
+    },
+    {
+      "path": "typography.button.fontweight",
+      "sourcePath": "typography.button.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 107,
+        "sourcePath": "typography.button.fontWeight"
+      }
+    },
+    {
+      "path": "typography.button.lineheight",
+      "sourcePath": "typography.button.lineHeight",
+      "type": "number",
+      "value": 1,
+      "status": "unverified",
+      "evidence": {
+        "line": 108,
+        "sourcePath": "typography.button.lineHeight"
+      }
+    },
+    {
+      "path": "typography.button.letterspacing",
+      "sourcePath": "typography.button.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 109,
+        "sourcePath": "typography.button.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.navlink.fontfamily",
+      "sourcePath": "typography.nav-link.fontFamily",
+      "type": "fontFamily",
+      "value": "'abcDiatype', ui-sans-serif, system-ui, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 111,
+        "sourcePath": "typography.nav-link.fontFamily"
+      }
+    },
+    {
+      "path": "typography.navlink.fontsize",
+      "sourcePath": "typography.nav-link.fontSize",
+      "type": "dimension",
+      "value": "14px",
+      "status": "unverified",
+      "evidence": {
+        "line": 112,
+        "sourcePath": "typography.nav-link.fontSize"
+      }
+    },
+    {
+      "path": "typography.navlink.fontweight",
+      "sourcePath": "typography.nav-link.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 113,
+        "sourcePath": "typography.nav-link.fontWeight"
+      }
+    },
+    {
+      "path": "typography.navlink.lineheight",
+      "sourcePath": "typography.nav-link.lineHeight",
+      "type": "number",
+      "value": 1.4,
+      "status": "unverified",
+      "evidence": {
+        "line": 114,
+        "sourcePath": "typography.nav-link.lineHeight"
+      }
+    },
+    {
+      "path": "typography.navlink.letterspacing",
+      "sourcePath": "typography.nav-link.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 115,
+        "sourcePath": "typography.nav-link.letterSpacing"
+      }
+    },
+    {
+      "path": "rounded.none",
+      "sourcePath": "rounded.none",
+      "type": "dimension",
+      "value": "0px",
+      "status": "unverified",
+      "evidence": {
+        "line": 118,
+        "sourcePath": "rounded.none"
+      }
+    },
+    {
+      "path": "rounded.xs",
+      "sourcePath": "rounded.xs",
+      "type": "dimension",
+      "value": "4px",
+      "status": "unverified",
+      "evidence": {
+        "line": 119,
+        "sourcePath": "rounded.xs"
+      }
+    },
+    {
+      "path": "rounded.sm",
+      "sourcePath": "rounded.sm",
+      "type": "dimension",
+      "value": "6px",
+      "status": "unverified",
+      "evidence": {
+        "line": 120,
+        "sourcePath": "rounded.sm"
+      }
+    },
+    {
+      "path": "rounded.md",
+      "sourcePath": "rounded.md",
+      "type": "dimension",
+      "value": "8px",
+      "status": "unverified",
+      "evidence": {
+        "line": 121,
+        "sourcePath": "rounded.md"
+      }
+    },
+    {
+      "path": "rounded.lg",
+      "sourcePath": "rounded.lg",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 122,
+        "sourcePath": "rounded.lg"
+      }
+    },
+    {
+      "path": "rounded.xl",
+      "sourcePath": "rounded.xl",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 123,
+        "sourcePath": "rounded.xl"
+      }
+    },
+    {
+      "path": "rounded.pill",
+      "sourcePath": "rounded.pill",
+      "type": "dimension",
+      "value": "9999px",
+      "status": "unverified",
+      "evidence": {
+        "line": 124,
+        "sourcePath": "rounded.pill"
+      }
+    },
+    {
+      "path": "rounded.full",
+      "sourcePath": "rounded.full",
+      "type": "dimension",
+      "value": "9999px",
+      "status": "unverified",
+      "evidence": {
+        "line": 125,
+        "sourcePath": "rounded.full"
+      }
+    },
+    {
+      "path": "spacing.xxs",
+      "sourcePath": "spacing.xxs",
+      "type": "dimension",
+      "value": "4px",
+      "status": "unverified",
+      "evidence": {
+        "line": 128,
+        "sourcePath": "spacing.xxs"
+      }
+    },
+    {
+      "path": "spacing.xs",
+      "sourcePath": "spacing.xs",
+      "type": "dimension",
+      "value": "8px",
+      "status": "unverified",
+      "evidence": {
+        "line": 129,
+        "sourcePath": "spacing.xs"
+      }
+    },
+    {
+      "path": "spacing.sm",
+      "sourcePath": "spacing.sm",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 130,
+        "sourcePath": "spacing.sm"
+      }
+    },
+    {
+      "path": "spacing.base",
+      "sourcePath": "spacing.base",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 131,
+        "sourcePath": "spacing.base"
+      }
+    },
+    {
+      "path": "spacing.md",
+      "sourcePath": "spacing.md",
+      "type": "dimension",
+      "value": "20px",
+      "status": "unverified",
+      "evidence": {
+        "line": 132,
+        "sourcePath": "spacing.md"
+      }
+    },
+    {
+      "path": "spacing.lg",
+      "sourcePath": "spacing.lg",
+      "type": "dimension",
+      "value": "24px",
+      "status": "unverified",
+      "evidence": {
+        "line": 133,
+        "sourcePath": "spacing.lg"
+      }
+    },
+    {
+      "path": "spacing.xl",
+      "sourcePath": "spacing.xl",
+      "type": "dimension",
+      "value": "32px",
+      "status": "unverified",
+      "evidence": {
+        "line": 134,
+        "sourcePath": "spacing.xl"
+      }
+    },
+    {
+      "path": "spacing.xxl",
+      "sourcePath": "spacing.xxl",
+      "type": "dimension",
+      "value": "48px",
+      "status": "unverified",
+      "evidence": {
+        "line": 135,
+        "sourcePath": "spacing.xxl"
+      }
+    },
+    {
+      "path": "spacing.section",
+      "sourcePath": "spacing.section",
+      "type": "dimension",
+      "value": "96px",
+      "status": "unverified",
+      "evidence": {
+        "line": 136,
+        "sourcePath": "spacing.section"
+      }
+    }
+  ],
+  "rejectedTokens": [
+    {
+      "sourcePath": "typography.caption-uppercase.textTransform",
+      "value": "uppercase",
+      "reason": "Not a supported safe CSS literal; preserved in analysis"
+    }
+  ],
+  "homepage": {
+    "status": "missing",
+    "candidates": [],
+    "verification": {
+      "status": "verified",
+      "url": "https://composio.dev/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://composio.dev/",
+          "title": "Composio",
+          "note": "Public homepage read requested https://composio.dev; final URL https://composio.dev/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    }
+  },
+  "completeness": {
+    "presentFields": [
+      "colors",
+      "typography",
+      "rounded",
+      "spacing",
+      "components"
+    ],
+    "missingFields": [],
+    "tokenRoles": "incomplete",
+    "note": "Missing fields are not reconstructed. Prose-only colors have no inferred semantic role."
+  },
+  "provenance": {
+    "status": "independent-analysis",
+    "sources": [
+      {
+        "title": "VoltAgent awesome-design-md independent analysis",
+        "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/composio/DESIGN.md"
+      }
+    ],
+    "verification": "unverified-secondary-analysis"
+  },
+  "limitations": [
+    "Independent secondary analysis, not an official brand system; all reported values are unverified.",
+    "No brand assets, logos, font binaries or screenshots copied. Font names are documentary, not font licenses.",
+    "Safe CSS literals are extracted without claiming complete roles, state coverage or visual fidelity.",
+    "Markdown is retained as inert evidence, never executed or rendered as raw HTML."
+  ]
+}

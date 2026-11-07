@@ -1,0 +1,1851 @@
+{
+  "schemaVersion": 1,
+  "id": "reference-renault",
+  "title": "Renault",
+  "classification": "independent-unverified-analysis",
+  "source": {
+    "repository": "https://github.com/VoltAgent/awesome-design-md",
+    "fork": "https://github.com/rsteth/awesome-design-md-p",
+    "revision": "fcc70284932276d085f01ef9f83edde90b1258cb",
+    "path": "design-md/renault/DESIGN.md",
+    "sha256": "b343df9a67e57f248e9eee704f52b17dff9cf6a46d1dc9f8d7ab36741940db59",
+    "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/renault/DESIGN.md"
+  },
+  "sourceName": "Renault-design-analysis",
+  "titleProvenance": {
+    "status": "inferred",
+    "basis": "Source directory label, normalized for navigation; original source name is retained without correction.",
+    "sourceValue": "renault",
+    "originalName": "Renault-design-analysis"
+  },
+  "description": "Renault's web presence pairs the freshly-modernised Renault diamond\n(the 2021 flat-line rhombus mark) with a stark black-and-white canvas, a\nsignature Sunlight Yellow accent, and the proprietary NouvelR display\ntypeface. The system reads as confident, photography-first automotive — large\nhero cars on neutral or atmospheric backdrops, square-edged or barely-rounded\ncontainers, and a small disciplined palette where every coloured element is\nintentional. Tile grids, full-bleed banners, and a recurring \"configurator\"\nsurface (white card, yellow accent dots, neutral product chrome) carry the\nmass-market dealership tone without crossing into luxury.\n",
+  "analysis": {
+    "version": "alpha",
+    "name": "Renault-design-analysis",
+    "description": "Renault's web presence pairs the freshly-modernised Renault diamond\n(the 2021 flat-line rhombus mark) with a stark black-and-white canvas, a\nsignature Sunlight Yellow accent, and the proprietary NouvelR display\ntypeface. The system reads as confident, photography-first automotive — large\nhero cars on neutral or atmospheric backdrops, square-edged or barely-rounded\ncontainers, and a small disciplined palette where every coloured element is\nintentional. Tile grids, full-bleed banners, and a recurring \"configurator\"\nsurface (white card, yellow accent dots, neutral product chrome) carry the\nmass-market dealership tone without crossing into luxury.\n",
+    "colors": {
+      "primary": "#ffed00",
+      "primary-deep": "#e6d200",
+      "on-primary": "#000000",
+      "ink": "#000000",
+      "body": "#222222",
+      "charcoal": "#333333",
+      "mute": "#666666",
+      "ash": "#8a8a8a",
+      "stone": "#c4c4c4",
+      "on-dark": "#ffffff",
+      "on-dark-mute": "rgba(255,255,255,0.72)",
+      "canvas": "#ffffff",
+      "surface-soft": "#f7f7f7",
+      "surface-card": "#ffffff",
+      "surface-dark": "#000000",
+      "surface-deep": "#111111",
+      "hairline": "#f2f2f2",
+      "hairline-strong": "#000000",
+      "divider-dark": "rgba(255,255,255,0.16)",
+      "badge-new": "#ffed00",
+      "link": "#0000ee",
+      "error": "#be6464",
+      "warning": "#f0ad4e",
+      "success": "#8dc572",
+      "info": "#337ab7"
+    },
+    "typography": {
+      "display-xl": {
+        "fontFamily": "NouvelR",
+        "fontSize": "56px",
+        "fontWeight": 700,
+        "lineHeight": 0.95,
+        "letterSpacing": 0
+      },
+      "display-lg": {
+        "fontFamily": "NouvelR",
+        "fontSize": "40px",
+        "fontWeight": 700,
+        "lineHeight": 0.95,
+        "letterSpacing": 0
+      },
+      "display-md": {
+        "fontFamily": "NouvelR",
+        "fontSize": "32px",
+        "fontWeight": 700,
+        "lineHeight": 0.95,
+        "letterSpacing": 0
+      },
+      "heading-lg": {
+        "fontFamily": "NouvelR",
+        "fontSize": "24px",
+        "fontWeight": 700,
+        "lineHeight": 0.95,
+        "letterSpacing": 0
+      },
+      "heading-md": {
+        "fontFamily": "NouvelR",
+        "fontSize": "20px",
+        "fontWeight": 700,
+        "lineHeight": 0.95,
+        "letterSpacing": 0
+      },
+      "heading-sm": {
+        "fontFamily": "NouvelR",
+        "fontSize": "18px",
+        "fontWeight": 700,
+        "lineHeight": 1,
+        "letterSpacing": 0
+      },
+      "subtitle": {
+        "fontFamily": "NouvelR",
+        "fontSize": "19.2px",
+        "fontWeight": 600,
+        "lineHeight": 1.3,
+        "letterSpacing": 0
+      },
+      "body-lg": {
+        "fontFamily": "NouvelR",
+        "fontSize": "18px",
+        "fontWeight": 400,
+        "lineHeight": 1.5,
+        "letterSpacing": 0
+      },
+      "body-md": {
+        "fontFamily": "NouvelR",
+        "fontSize": "16px",
+        "fontWeight": 400,
+        "lineHeight": 1.4,
+        "letterSpacing": 0
+      },
+      "body-sm": {
+        "fontFamily": "NouvelR",
+        "fontSize": "14px",
+        "fontWeight": 400,
+        "lineHeight": 1.57,
+        "letterSpacing": 0
+      },
+      "button-lg": {
+        "fontFamily": "NouvelR",
+        "fontSize": "16px",
+        "fontWeight": 700,
+        "lineHeight": 1,
+        "letterSpacing": 0
+      },
+      "button-md": {
+        "fontFamily": "NouvelR",
+        "fontSize": "14.4px",
+        "fontWeight": 700,
+        "lineHeight": 1,
+        "letterSpacing": "0.144px"
+      },
+      "button-sm": {
+        "fontFamily": "NouvelR",
+        "fontSize": "13px",
+        "fontWeight": 600,
+        "lineHeight": 1.2,
+        "letterSpacing": "0.13px"
+      },
+      "caption": {
+        "fontFamily": "NouvelR",
+        "fontSize": "12px",
+        "fontWeight": 400,
+        "lineHeight": 1.4,
+        "letterSpacing": 0
+      },
+      "overline": {
+        "fontFamily": "NouvelR",
+        "fontSize": "10px",
+        "fontWeight": 700,
+        "lineHeight": 1.45,
+        "letterSpacing": 0
+      }
+    },
+    "rounded": {
+      "none": "0px",
+      "xs": "2px",
+      "sm": "3px",
+      "md": "4px",
+      "pill": "46px",
+      "full": "9999px"
+    },
+    "spacing": {
+      "xxs": "4px",
+      "xs": "8px",
+      "sm": "12px",
+      "md": "16px",
+      "lg": "20px",
+      "xl": "24px",
+      "xxl": "32px",
+      "xxxl": "40px",
+      "section": "80px"
+    },
+    "components": {
+      "button-primary": {
+        "backgroundColor": "{colors.primary}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.xs}",
+        "padding": "14px 24px",
+        "height": "48px"
+      },
+      "button-primary-pressed": {
+        "backgroundColor": "{colors.primary-deep}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.xs}"
+      },
+      "button-secondary-dark": {
+        "backgroundColor": "{colors.surface-dark}",
+        "textColor": "{colors.on-dark}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.xs}",
+        "padding": "14px 24px"
+      },
+      "button-outline-dark": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.xs}",
+        "padding": "13px 23px"
+      },
+      "button-outline-light": {
+        "backgroundColor": "{colors.surface-dark}",
+        "textColor": "{colors.on-dark}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.xs}",
+        "padding": "13px 23px"
+      },
+      "button-pill": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.button-sm}",
+        "rounded": "{rounded.pill}",
+        "padding": "8px 16px",
+        "height": "36px"
+      },
+      "button-icon-square": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "rounded": "{rounded.xs}",
+        "size": "40px"
+      },
+      "text-input": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.none}",
+        "padding": "12px 16px",
+        "height": "48px"
+      },
+      "hero-banner": {
+        "backgroundColor": "{colors.surface-dark}",
+        "textColor": "{colors.on-dark}",
+        "rounded": "{rounded.none}",
+        "padding": 0
+      },
+      "promo-tile-light": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.heading-lg}",
+        "rounded": "{rounded.none}",
+        "padding": "32px"
+      },
+      "promo-tile-dark": {
+        "backgroundColor": "{colors.surface-dark}",
+        "textColor": "{colors.on-dark}",
+        "typography": "{typography.heading-lg}",
+        "rounded": "{rounded.none}",
+        "padding": "32px"
+      },
+      "promo-tile-yellow": {
+        "backgroundColor": "{colors.primary}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.heading-lg}",
+        "rounded": "{rounded.none}",
+        "padding": "32px"
+      },
+      "vehicle-card": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "rounded": "{rounded.none}",
+        "padding": 0
+      },
+      "configurator-row": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.none}",
+        "padding": "24px 0"
+      },
+      "configurator-swatch": {
+        "backgroundColor": "{colors.surface-soft}",
+        "rounded": "{rounded.full}",
+        "size": "56px"
+      },
+      "badge-new": {
+        "backgroundColor": "{colors.badge-new}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.full}",
+        "padding": "6px 14px"
+      },
+      "nav-bar": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.none}",
+        "height": "60px"
+      },
+      "sub-nav-pill": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.button-sm}",
+        "rounded": "{rounded.pill}",
+        "padding": "8px 16px"
+      },
+      "footer": {
+        "backgroundColor": "{colors.surface-dark}",
+        "textColor": "{colors.on-dark}",
+        "typography": "{typography.body-sm}",
+        "rounded": "{rounded.none}",
+        "padding": "64px 24px"
+      }
+    }
+  },
+  "normalizationRepairs": [],
+  "sections": [
+    {
+      "heading": "Overview",
+      "level": 2,
+      "text": "Renault's Turkish marketing surfaces are unapologetically high-contrast: a\nwhite canvas for browsing, a black canvas for product storytelling, and a\nsingle Sunlight Yellow accent (`{colors.primary}` — `#ffed00`) reserved for\nthe most consequential actions. The brand's modernised flat diamond logo sets\nthe tone — geometric, confident, slightly industrial — and the system follows\nsuit. Square corners dominate, hairline borders are rare, and elevation is\nexpressed through colour blocking rather than shadow.\n\nThe typography is monolithic. Every text on the site is set in **NouvelR**,\nRenault's bespoke display family, with a strong preference for weight 700 at\ndisplay sizes (with a tight `lineHeight: 0.95`) and weight 400 for body. There\nis no secondary serif, no decorative italic, no script — the discipline is\nthe signature.\n\nPage rhythm cycles between three surface modes: a **white catalogue mode** for\nlistings and configurators (`{colors.canvas}` with hairline-thin\n`{colors.hairline}` dividers), a **black storytelling mode** for hero\nsections, lifestyle imagery, and the lower half of campaign pages, and brief\n**yellow accent moments** (`{colors.primary}` tiles, \"NEW\" badges, R5-coded\nyellow paint shots) that punctuate the otherwise neutral palette.\n\n**Key Characteristics:**\n- Two-tone canvas system — `{colors.canvas}` (white) for browsing, `{colors.surface-dark}` (black) for storytelling — switched in full-bleed bands rather than subtle gradations.\n- A single brand accent — `{colors.primary}` Sunlight Yellow — used scarcely on primary CTAs, \"NEW\" badges, R5 hero photography, and configurator dot indicators.\n- **NouvelR everywhere**, with `{typography.display-xl}` headlines at 56px / weight 700 / `lineHeight: 0.95` so condensed multi-line headlines stack cleanly.\n- Square geometry: `{rounded.xs}` (2px) on buttons, `{rounded.none}` on tiles and product cards, `{rounded.pill}` reserved exclusively for sub-nav chips and decorative badges.\n- Photography-first product tiles — vehicle photos full-bleed inside otherwise neutral cards, with copy stacked beneath rather than overlaid.\n- Page-level rhythm cycles white → black → yellow accent → black, with the wordmark and footer always closing on `{colors.surface-dark}`.",
+      "line": 267
+    },
+    {
+      "heading": "Colors",
+      "level": 2,
+      "text": "",
+      "line": 298
+    },
+    {
+      "heading": "Brand & Accent",
+      "level": 3,
+      "text": "- **Sunlight Yellow** (`{colors.primary}` — `#ffed00`): the brand accent. Reserved for primary CTAs, \"NEW\" / \"yeni\" badges, configurator dot indicators, and full-bleed promotional tiles. Never decorative.\n- **Sunlight Yellow Pressed** (`{colors.primary-deep}` — `#e6d200`): the active/pressed state of `{colors.primary}` buttons and tiles.\n- **On-Primary** (`{colors.on-primary}` — `#000000`): label colour on top of `{colors.primary}` surfaces. Yellow always pairs with black text — never white.",
+      "line": 300
+    },
+    {
+      "heading": "Surface",
+      "level": 3,
+      "text": "- **Canvas** (`{colors.canvas}` — `#ffffff`): the default page background and card surface.\n- **Surface Soft** (`{colors.surface-soft}` — `#f7f7f7`): subtle elevation step for grouped configurator rows and inactive form fields.\n- **Surface Dark** (`{colors.surface-dark}` — `#000000`): the alternate canvas, used for hero bands, footer, and full-bleed storytelling sections.\n- **Surface Deep** (`{colors.surface-deep}` — `#111111`): a one-step-up elevation inside `{colors.surface-dark}` regions for inset cards and form panels.\n- **Hairline** (`{colors.hairline}` — `#f2f2f2`): the soft 1px divider between rows on white surfaces.\n- **Hairline Strong** (`{colors.hairline-strong}` — `#000000`): full-strength dividers on white, plus all card / button outlines.\n- **Divider Dark** (`{colors.divider-dark}` — `rgba(255,255,255,0.16)`): the corresponding low-contrast divider used inside `{colors.surface-dark}` regions.",
+      "line": 305
+    },
+    {
+      "heading": "Text",
+      "level": 3,
+      "text": "- **Ink** (`{colors.ink}` — `#000000`): primary text colour on white surfaces. The same value also drives logos, icons, and outline borders — black is structural, not decorative.\n- **Body** (`{colors.body}` — `#222222`): secondary body text where pure black would feel too heavy in long paragraphs.\n- **Charcoal** (`{colors.charcoal}` — `#333333`): captions, metadata, and small labels.\n- **Mute** (`{colors.mute}` — `#666666`): supporting text and inactive nav labels.\n- **Ash** (`{colors.ash}` — `#8a8a8a`): placeholder text, disabled labels.\n- **Stone** (`{colors.stone}` — `#c4c4c4`): disabled-state foreground.\n- **On-Dark** (`{colors.on-dark}` — `#ffffff`): primary text on `{colors.surface-dark}` surfaces.\n- **On-Dark Mute** (`{colors.on-dark-mute}` — `rgba(255,255,255,0.72)`): secondary text in dark regions; preserves the brand's high-contrast feel without resorting to mid-grey.",
+      "line": 314
+    },
+    {
+      "heading": "Semantic",
+      "level": 3,
+      "text": "- **Error** (`{colors.error}` — `#be6464`): muted desaturated red used for inline form errors. Notably warmer than typical pure-red error states.\n- **Warning** (`{colors.warning}` — `#f0ad4e`): amber alert.\n- **Success** (`{colors.success}` — `#8dc572`): muted green confirmation.\n- **Info** (`{colors.info}` — `#337ab7`): a desaturated mid-blue used in informational chips.\n- **Link** (`{colors.link}` — `#0000ee`): the unstyled-anchor default kept for fallback inline text links — production links inherit `{colors.ink}` and rely on underline/weight rather than colour.",
+      "line": 324
+    },
+    {
+      "heading": "Typography",
+      "level": 2,
+      "text": "",
+      "line": 331
+    },
+    {
+      "heading": "Font Family",
+      "level": 3,
+      "text": "The entire system is set in **NouvelR**, Renault's proprietary display\nfamily, used across navigation, headlines, body, captions, and button\nlabels. The family carries a slightly geometric, semi-condensed personality\nwith tall x-heights and squared apexes that pair naturally with the diamond\nlogomark.\n\nWhen NouvelR cannot be licensed, suitable open-source substitutes include\n**Inter Tight**, **Manrope**, or **HK Grotesk Semi Condensed** — all share\nthe geometric-with-warmth feel and adapt cleanly to weights 400 / 600 / 700.\nTighten `lineHeight` on display sizes to ~0.95 to match the original; do not\nrelax it.",
+      "line": 333
+    },
+    {
+      "heading": "Hierarchy",
+      "level": 3,
+      "text": "| Token | Size | Weight | Line Height | Letter Spacing | Use |\n|---|---|---|---|---|---|\n| `{typography.display-xl}` | 56px | 700 | 0.95 | 0 | Hero headlines, campaign titles (\"E-TECH ELEKTRİKLİ\", \"REVOLUTION\"). |\n| `{typography.display-lg}` | 40px | 700 | 0.95 | 0 | Secondary section titles. |\n| `{typography.display-md}` | 32px | 700 | 0.95 | 0 | Page-level H1 on sub-pages and configurator panels. |\n| `{typography.heading-lg}` | 24px | 700 | 0.95 | 0 | Section headers, card titles. |\n| `{typography.heading-md}` | 20px | 700 | 0.95 | 0 | Sub-section headers, prominent labels. |\n| `{typography.heading-sm}` | 18px | 700 | 1.0 | 0 | Tile titles, list group headers. |\n| `{typography.subtitle}` | 19.2px | 600 | 1.3 | 0 | Lead paragraphs, hero subtitles. |\n| `{typography.body-lg}` | 18px | 400 | 1.5 | 0 | Long-form body. |\n| `{typography.body-md}` | 16px | 400 | 1.4 | 0 | Default body and form fields. |\n| `{typography.body-sm}` | 14px | 400 | 1.57 | 0 | Captions, metadata. |\n| `{typography.button-lg}` | 16px | 700 | 1.0 | 0 | Large CTAs in hero bands. |\n| `{typography.button-md}` | 14.4px | 700 | 1.0 | 0.144px | Default button label across the system. |\n| `{typography.button-sm}` | 13px | 600 | 1.2 | 0.13px | Sub-nav pills, small in-card actions. |\n| `{typography.caption}` | 12px | 400 | 1.4 | 0 | Footer disclosure, regulatory text. |\n| `{typography.overline}` | 10px | 700 | 1.45 | 0 | Short uppercase labels above titles. |",
+      "line": 347
+    },
+    {
+      "heading": "Principles",
+      "level": 3,
+      "text": "- Display sizes always weight 700, always at `lineHeight: 0.95`. The tightness is what makes the brand feel confident rather than corporate.\n- Body copy stays at weight 400 — never 500. The contrast between body and display is part of the system.\n- Button labels carry a tiny positive letter-spacing (`0.144px` on `{typography.button-md}`) — almost imperceptible, but it adds the small bit of mechanical precision the brand wants on CTAs.\n- No italics, no script, no decorative ligatures.",
+      "line": 367
+    },
+    {
+      "heading": "Note on Font Substitutes",
+      "level": 3,
+      "text": "NouvelR is licensed; substitutes (Inter Tight / Manrope / HK Grotesk Semi\nCondensed) preserve the geometric character but typically render with\nslightly looser line heights at display sizes — clamp display\n`lineHeight` to 0.95 explicitly to match the source.",
+      "line": 373
+    },
+    {
+      "heading": "Layout",
+      "level": 2,
+      "text": "",
+      "line": 380
+    },
+    {
+      "heading": "Spacing System",
+      "level": 3,
+      "text": "- **Base unit**: 4px, with the working scale built on multiples of 4 and 8.\n- **Tokens**: `{spacing.xxs}` 4px · `{spacing.xs}` 8px · `{spacing.sm}` 12px · `{spacing.md}` 16px · `{spacing.lg}` 20px · `{spacing.xl}` 24px · `{spacing.xxl}` 32px · `{spacing.xxxl}` 40px · `{spacing.section}` 80px.\n- Section padding (full-bleed band → next band): `{spacing.section}` (80px) on desktop, collapsing to `{spacing.xxxl}` (40px) on mobile.\n- Promo-tile internal padding: `{spacing.xxl}` (32px) all sides on desktop.\n- Configurator row vertical padding: `{spacing.xl}` (24px) top/bottom with hairline divider between rows.",
+      "line": 382
+    },
+    {
+      "heading": "Grid & Container",
+      "level": 3,
+      "text": "- **Max content width** ≈ 1440px. Beyond that, content remains centred and the dark/light bands extend full-bleed.\n- **Promo grid** on the homepage: a 2-column tile grid on desktop, dropping to 1-up on mobile. Each tile is square-cornered (`{rounded.none}`) with the photography or solid colour as the background.\n- **Vehicle range grids**: 3 to 4 cars per row at desktop, collapsing 2-up at tablet and 1-up at small mobile.\n- **Configurator** uses a fixed left visualisation pane (~60% width) with a right-hand scrolling option list (~40% width) on desktop.",
+      "line": 389
+    },
+    {
+      "heading": "Whitespace Philosophy",
+      "level": 3,
+      "text": "- Whitespace is structural, not decorative. Sections are separated by colour-blocking (white → black) rather than soft padding ramps.\n- Inside cards and configurator rows, padding is generous but never airy — the brand is mass-market, so density is acceptable.\n- Hairline `{colors.hairline}` dividers on white surfaces create the sense of catalogue precision; on dark surfaces, `{colors.divider-dark}` carries the same role.",
+      "line": 395
+    },
+    {
+      "heading": "Elevation & Depth",
+      "level": 2,
+      "text": "| Level | Treatment | Use |\n|---|---|---|\n| 0 — flat | No shadow, no border | Default page surface, full-bleed bands. |\n| 1 — outline | 1px solid `{colors.hairline-strong}` or `{colors.hairline}` | Promo tiles on light, vehicle cards, configurator panels. |\n| 2 — colour-blocked elevation | Surface colour shift (e.g. `{colors.canvas}` card sitting inside a `{colors.surface-soft}` band) | Configurator detail cards, related-content rows. |\n| 3 — dark inversion | Card swaps to `{colors.surface-dark}` against a `{colors.canvas}` band | \"Ticari araç\" hero promo tiles, lifestyle storytelling cards. |\n\nDrop shadows are extracted from the system but rarely visible on the marketing\nsurfaces. When they appear, they are very subtle (~10% opacity, 2–4px blur)\nand used on floating elements like the configurator's sticky summary bar.",
+      "line": 400
+    },
+    {
+      "heading": "Decorative Depth",
+      "level": 3,
+      "text": "- The R5 hero band uses an atmospheric mesh-gradient backdrop — purple-to-pink-to-yellow glow behind the car silhouette — that acts as the only true atmospheric depth in the system. Everywhere else, depth is structural (colour-blocking + outlines), not atmospheric.\n- E-TECH electric powertrain pages use a luminous magenta-to-violet gradient behind cutaway diagrams, reserved for the electric sub-brand.",
+      "line": 413
+    },
+    {
+      "heading": "Shapes",
+      "level": 2,
+      "text": "",
+      "line": 417
+    },
+    {
+      "heading": "Border Radius Scale",
+      "level": 3,
+      "text": "| Token | Value | Use |\n|---|---|---|\n| `{rounded.none}` | 0px | Tiles, vehicle cards, dividers, banner bands, full-bleed images. |\n| `{rounded.xs}` | 2px | Default buttons (primary yellow, secondary black, outline). |\n| `{rounded.sm}` | 3px | Tab panels, small chips. |\n| `{rounded.md}` | 4px | Form labels, inline tags. |\n| `{rounded.pill}` | 46px | Sub-nav pills, \"yeni\" / \"NEW\" badges, decorative carousel chips. |\n| `{rounded.full}` | 9999px | Configurator colour swatches, avatar dots. |",
+      "line": 419
+    },
+    {
+      "heading": "Photography Geometry",
+      "level": 3,
+      "text": "- Vehicle photography is **always square-cornered** (`{rounded.none}`). No rounded vehicle hero shots, no soft-edged car cards.\n- Aspect ratios cluster around **16:9** (hero bands), **1:1** (square promo tiles), and **4:3** (vehicle range cards). Lifestyle imagery sometimes runs **2:1 wide** for full-bleed bands.\n- Avatars and small profile cues — when present — use `{rounded.full}` circles to contrast with the otherwise square geometry.",
+      "line": 430
+    },
+    {
+      "heading": "Components",
+      "level": 2,
+      "text": "",
+      "line": 435
+    },
+    {
+      "heading": "Buttons",
+      "level": 3,
+      "text": "**`button-primary`** — yellow CTA\n- Background `{colors.primary}`, label `{colors.on-primary}`, type `{typography.button-md}`, padding `14px 24px`, `rounded: {rounded.xs}`.\n- The single most important action on a page (e.g. \"Hemen randevu al\", \"Hesapla\", \"Konfigüratörü başlat\").\n- Pressed state lives in `button-primary-pressed` (background `{colors.primary-deep}`).\n\n**`button-secondary-dark`** — solid black CTA\n- Background `{colors.surface-dark}`, label `{colors.on-dark}`, type `{typography.button-md}`, `rounded: {rounded.xs}`.\n- Equal-weight secondary action paired with `{component.button-primary}`, or the primary action when used on a yellow tile background.\n\n**`button-outline-dark`** — outlined CTA on light\n- Background `{colors.canvas}`, label `{colors.ink}`, 1px solid `{colors.hairline-strong}`, type `{typography.button-md}`, `rounded: {rounded.xs}`.\n- Tertiary action; appears alongside primary/secondary for \"Detayları gör\", \"Modeller\", etc.\n\n**`button-outline-light`** — outlined CTA on dark\n- Background `{colors.surface-dark}`, label `{colors.on-dark}`, 1px solid `{colors.on-dark}`, type `{typography.button-md}`, `rounded: {rounded.xs}`.\n- The dark-canvas counterpart to `{component.button-outline-dark}`.\n\n**`button-pill`** — sub-nav chip\n- Background `{colors.canvas}`, label `{colors.ink}`, 1px solid `{colors.hairline-strong}`, type `{typography.button-sm}`, `rounded: {rounded.pill}`, height 36px.\n- The only place the system uses a pill — for top-level filter chips (\"Servis & randevu\", \"Sahiplik dönemi geçişi\", \"Kampanyalar\") and configurator tab switches.\n\n**`button-icon-square`** — small icon button\n- Background `{colors.canvas}`, 1px solid `{colors.hairline-strong}`, `rounded: {rounded.xs}`, 40×40px square.\n- Carousel arrows, share, language switcher.",
+      "line": 437
+    },
+    {
+      "heading": "Cards & Containers",
+      "level": 3,
+      "text": "**`promo-tile-light`** — white promo tile\n- Background `{colors.canvas}`, text `{colors.ink}`, type `{typography.heading-lg}`, padding `{spacing.xxl}`, `rounded: {rounded.none}`.\n- Used in the homepage 2-up grid for \"Hybrid araç modelleri\", \"binek araç satış kampanyaları\" tiles.\n\n**`promo-tile-dark`** — black promo tile\n- Background `{colors.surface-dark}`, text `{colors.on-dark}`, type `{typography.heading-lg}`, padding `{spacing.xxl}`, `rounded: {rounded.none}`.\n- Lifestyle / commercial-vehicle storytelling tiles (\"ticari araç satış kampanyaları\").\n\n**`promo-tile-yellow`** — accent promo tile\n- Background `{colors.primary}`, text `{colors.on-primary}`, type `{typography.heading-lg}`, padding `{spacing.xxl}`, `rounded: {rounded.none}`.\n- The single \"PARLAK SARI\" / \"Sunlight Yellow\" attention tile that anchors a campaign band. Reserved — usually one per page maximum.\n\n**`vehicle-card`** — car listing card\n- Background `{colors.canvas}`, full-bleed product photography on top, text below, `rounded: {rounded.none}`, no outer border.\n- Includes vehicle name (`{typography.heading-md}`), variant subtitle (`{typography.body-sm}`), and a single trailing arrow icon.\n\n**`hero-banner`** — full-bleed hero\n- Background `{colors.surface-dark}` with full-bleed photo or atmospheric gradient, content stacked left, type `{typography.display-xl}` for the title.\n- \"SCENIC E-TECH ELEKTRİKLİ\" hero on the homepage.",
+      "line": 464
+    },
+    {
+      "heading": "Inputs & Forms",
+      "level": 3,
+      "text": "**`text-input`** — default input\n- Background `{colors.canvas}`, text `{colors.ink}`, type `{typography.body-md}`, 1px bottom border `{colors.hairline-strong}`, `rounded: {rounded.none}`, padding `{spacing.sm} {spacing.md}`, height 48px.\n- Inputs intentionally minimal — borderless on top and sides, single hairline at the bottom — keeping the catalogue feel.",
+      "line": 486
+    },
+    {
+      "heading": "Configurator",
+      "level": 3,
+      "text": "**`configurator-row`** — option list row\n- Background `{colors.canvas}`, separator hairline `{colors.hairline}` between rows, padding `{spacing.xl}` top/bottom, type `{typography.body-md}`.\n- Right-side scrolling list on the configurator: \"kasa tipi\", \"motor seçimi\", \"versiyon seçimi\", \"renk seçenekleri\", etc.\n\n**`configurator-swatch`** — circular colour pick\n- Background `{colors.surface-soft}` (or the actual car colour), `rounded: {rounded.full}`, 56×56px.\n- Used for paint colour selection. Active state adds a 1px solid `{colors.hairline-strong}` ring.",
+      "line": 492
+    },
+    {
+      "heading": "Navigation",
+      "level": 3,
+      "text": "**`nav-bar`** — top nav (desktop)\n- Background `{colors.canvas}`, type `{typography.button-md}`, height 60px, hairline `{colors.hairline}` bottom border.\n- Left: diamond logomark. Centre: top-level nav (\"Modeller\", \"Hizmetler\", \"Renault Yaşamı\", \"MyRenault\"). Right: language switcher + login icon.\n\n**`nav-bar`** (mobile)\n- Same height 60px, collapses centre nav into a hamburger icon. Logo stays left, login stays right.\n\n**`sub-nav-pill`** — pill-style sub-nav\n- Pill chips set in a horizontal scroll bar between hero and content body (e.g. \"Servis & randevu\", \"Sahiplik dönemi geçişi\", \"Kampanyalar\"), `{component.button-pill}` styling.",
+      "line": 502
+    },
+    {
+      "heading": "Signature Components",
+      "level": 3,
+      "text": "**`badge-new`** — \"yeni\" badge\n- Background `{colors.primary}`, label `{colors.on-primary}`, type `{typography.button-md}`, `rounded: {rounded.full}`, padding `6px 14px`.\n- Anchored on the bottom-left of new vehicle cards.\n\n**`footer`** — global footer\n- Background `{colors.surface-dark}`, text `{colors.on-dark}`, type `{typography.body-sm}`, padding `64px 24px`.\n- Three-column legal/quick-links/locale grid above a single-line copyright row separated by `{colors.divider-dark}`.",
+      "line": 514
+    },
+    {
+      "heading": "Do's and Don'ts",
+      "level": 2,
+      "text": "",
+      "line": 524
+    },
+    {
+      "heading": "Do",
+      "level": 3,
+      "text": "- Reserve `{colors.primary}` exclusively for primary CTAs, \"yeni\"/\"NEW\" badges, and at most one accent promo tile per band — `{component.promo-tile-yellow}` is intentionally rare.\n- Pair `{colors.primary}` only with `{colors.on-primary}` text. Yellow + white is forbidden.\n- Set everything in **NouvelR** — no secondary serif, no script, no decorative italic.\n- Hold display headlines at `{typography.display-xl}` weight 700 with `lineHeight: 0.95` so they stack tightly on multi-line wraps.\n- Use `{rounded.xs}` (2px) on every standard button — the near-flat corner is part of the brand.\n- Switch full bands between `{colors.canvas}` and `{colors.surface-dark}` for storytelling rhythm. Avoid mid-greys as section backgrounds.\n- Show vehicle photography full-bleed inside `{component.vehicle-card}` with copy stacked beneath, never overlaid.\n- Use `{component.sub-nav-pill}` (`{rounded.pill}`) only for sub-nav and small filter rows — never for primary CTAs.",
+      "line": 526
+    },
+    {
+      "heading": "Don't",
+      "level": 3,
+      "text": "- Don't introduce a secondary accent colour. Yellow is the only brand accent; semantic colours (`{colors.error}`, `{colors.success}`, `{colors.warning}`) are functional, not decorative.\n- Don't round vehicle cards or promo tiles. Square-cornered photography is core to the brand expression.\n- Don't soften body weights to 500 or 600 — the system relies on the 400 / 700 contrast.\n- Don't apply `{colors.primary}` to body text or large surfaces beyond the single accent tile per band.\n- Don't add atmospheric gradient washes outside the dedicated R5 / E-TECH hero contexts.\n- Don't pair light grey text on white. Body text steps through `{colors.body}`, `{colors.charcoal}`, `{colors.mute}` — `{colors.ash}` and `{colors.stone}` are reserved for placeholders and disabled states.\n- Don't add drop shadows to vehicle cards or promo tiles — the system is shadow-free at the catalogue level.",
+      "line": 536
+    },
+    {
+      "heading": "Responsive Behavior",
+      "level": 2,
+      "text": "",
+      "line": 545
+    },
+    {
+      "heading": "Breakpoints",
+      "level": 3,
+      "text": "| Name | Width | Key Changes |\n|---|---|---|\n| Desktop XL | ≥ 1440px | Full max-width container, 3–4 column vehicle grid, 2-up promo tile grid. |\n| Desktop | 1280–1439px | Same layout, container shrinks to viewport with `{spacing.xl}` side padding. |\n| Tablet Large | 1024–1279px | Vehicle grid drops to 3-up, configurator left/right panes resize to 55/45. |\n| Tablet | 768–1023px | Promo tile grid collapses to 2-up, sub-nav pills become horizontal scroll. |\n| Mobile Large | 426–767px | Vehicle grid 2-up, configurator switches to stacked panes (visualisation on top, options below), nav collapses to hamburger. |\n| Mobile | ≤ 425px | All grids 1-up, hero `{typography.display-xl}` clamps to ~40px, section padding `{spacing.section}` collapses to `{spacing.xxxl}`. |",
+      "line": 547
+    },
+    {
+      "heading": "Touch Targets",
+      "level": 3,
+      "text": "- All buttons ship at minimum 44×44px on mobile; default `{component.button-primary}` is 48px tall, comfortably exceeding WCAG AAA.\n- `{component.sub-nav-pill}` (36px) is bumped to 40px tall on mobile via increased vertical padding.\n- `{component.button-icon-square}` (40px) sits at the WCAG AA minimum and remains tappable, but should grow to 44px when used as a primary navigation control.",
+      "line": 558
+    },
+    {
+      "heading": "Collapsing Strategy",
+      "level": 3,
+      "text": "- Top-level nav collapses to hamburger at < 1024px; the logo and login icon stay anchored.\n- 2-up promo grid collapses to 1-up at < 768px; tile padding shrinks from `{spacing.xxl}` to `{spacing.lg}`.\n- Configurator switches from side-by-side to stacked at < 1024px, with the visualisation pinned to the top of the viewport on scroll.\n- Display headlines clamp: `{typography.display-xl}` 56px → 40px → 32px across the breakpoint ladder.\n- Sub-nav pills convert from a wrap row to a horizontal scroll-rail at < 768px.",
+      "line": 563
+    },
+    {
+      "heading": "Image Behavior",
+      "level": 3,
+      "text": "- Vehicle photography is served at 1.5× and 2× DPR; below 768px, the system swaps to a portrait-oriented composition where art direction allows.\n- Hero atmospheric gradients (R5, E-TECH) load lazily after primary content; they are not blocking.\n- Lifestyle / commercial photography in `{component.promo-tile-dark}` keeps the same 16:9 framing across breakpoints, cropping inward rather than letterboxing.",
+      "line": 570
+    },
+    {
+      "heading": "Iteration Guide",
+      "level": 2,
+      "text": "1. Focus on ONE component at a time. Most components share `{rounded.xs}`, `{colors.canvas}` / `{colors.surface-dark}`, and NouvelR — only the role-specific tokens (`{colors.primary}`, `{component.promo-tile-yellow}`) shift between variants.\n2. Reference component names and tokens directly (`{colors.primary}`, `{component.button-primary-pressed}`, `{rounded.pill}`) — do not paraphrase.\n3. Run `npx @google/design.md lint DESIGN.md` after edits; the orphaned-tokens warning will catch unused entries before they ship.\n4. Add new variants as separate entries (`-pressed`, `-disabled`, `-outline`) — do not bury them in prose.\n5. Default body type to `{typography.body-md}`; reach for `{typography.subtitle}` only on hero subtitles and lead paragraphs.\n6. Keep `{colors.primary}` scarce — if more than one yellow element appears per viewport, ask whether one of them should drop to `{colors.surface-dark}` or `{colors.canvas}` instead.",
+      "line": 575
+    },
+    {
+      "heading": "Known Gaps",
+      "level": 2,
+      "text": "- Active/pressed visual states are not consistently observable in static surfaces; `button-primary-pressed` documents the extracted darkened-yellow value, but no other component has a pressed variant promoted to the YAML.\n- Drop-shadow values exist in the extracted tokens but are rarely surfaced visually; only the configurator's sticky summary bar uses them on the captured pages.\n- The MyRenault application surfaces (logged-in product) are out of scope for this extraction — only the public marketing canvas is documented.\n- Form-field focus styling is not extracted; the system likely relies on a thicker bottom border at `{colors.ink}`, but this is not visually confirmed on the captured pages.",
+      "line": 584
+    }
+  ],
+  "tokens": [
+    {
+      "path": "colors.primary",
+      "sourcePath": "colors.primary",
+      "type": "color",
+      "value": "#ffed00",
+      "status": "unverified",
+      "evidence": {
+        "line": 16,
+        "sourcePath": "colors.primary"
+      }
+    },
+    {
+      "path": "colors.primarydeep",
+      "sourcePath": "colors.primary-deep",
+      "type": "color",
+      "value": "#e6d200",
+      "status": "unverified",
+      "evidence": {
+        "line": 17,
+        "sourcePath": "colors.primary-deep"
+      }
+    },
+    {
+      "path": "colors.onprimary",
+      "sourcePath": "colors.on-primary",
+      "type": "color",
+      "value": "#000000",
+      "status": "unverified",
+      "evidence": {
+        "line": 18,
+        "sourcePath": "colors.on-primary"
+      }
+    },
+    {
+      "path": "colors.ink",
+      "sourcePath": "colors.ink",
+      "type": "color",
+      "value": "#000000",
+      "status": "unverified",
+      "evidence": {
+        "line": 19,
+        "sourcePath": "colors.ink"
+      }
+    },
+    {
+      "path": "colors.body",
+      "sourcePath": "colors.body",
+      "type": "color",
+      "value": "#222222",
+      "status": "unverified",
+      "evidence": {
+        "line": 20,
+        "sourcePath": "colors.body"
+      }
+    },
+    {
+      "path": "colors.charcoal",
+      "sourcePath": "colors.charcoal",
+      "type": "color",
+      "value": "#333333",
+      "status": "unverified",
+      "evidence": {
+        "line": 21,
+        "sourcePath": "colors.charcoal"
+      }
+    },
+    {
+      "path": "colors.mute",
+      "sourcePath": "colors.mute",
+      "type": "color",
+      "value": "#666666",
+      "status": "unverified",
+      "evidence": {
+        "line": 22,
+        "sourcePath": "colors.mute"
+      }
+    },
+    {
+      "path": "colors.ash",
+      "sourcePath": "colors.ash",
+      "type": "color",
+      "value": "#8a8a8a",
+      "status": "unverified",
+      "evidence": {
+        "line": 23,
+        "sourcePath": "colors.ash"
+      }
+    },
+    {
+      "path": "colors.stone",
+      "sourcePath": "colors.stone",
+      "type": "color",
+      "value": "#c4c4c4",
+      "status": "unverified",
+      "evidence": {
+        "line": 24,
+        "sourcePath": "colors.stone"
+      }
+    },
+    {
+      "path": "colors.ondark",
+      "sourcePath": "colors.on-dark",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 25,
+        "sourcePath": "colors.on-dark"
+      }
+    },
+    {
+      "path": "colors.ondarkmute",
+      "sourcePath": "colors.on-dark-mute",
+      "type": "color",
+      "value": "rgba(255,255,255,0.72)",
+      "status": "unverified",
+      "evidence": {
+        "line": 26,
+        "sourcePath": "colors.on-dark-mute"
+      }
+    },
+    {
+      "path": "colors.canvas",
+      "sourcePath": "colors.canvas",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 27,
+        "sourcePath": "colors.canvas"
+      }
+    },
+    {
+      "path": "colors.surfacesoft",
+      "sourcePath": "colors.surface-soft",
+      "type": "color",
+      "value": "#f7f7f7",
+      "status": "unverified",
+      "evidence": {
+        "line": 28,
+        "sourcePath": "colors.surface-soft"
+      }
+    },
+    {
+      "path": "colors.surfacecard",
+      "sourcePath": "colors.surface-card",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 29,
+        "sourcePath": "colors.surface-card"
+      }
+    },
+    {
+      "path": "colors.surfacedark",
+      "sourcePath": "colors.surface-dark",
+      "type": "color",
+      "value": "#000000",
+      "status": "unverified",
+      "evidence": {
+        "line": 30,
+        "sourcePath": "colors.surface-dark"
+      }
+    },
+    {
+      "path": "colors.surfacedeep",
+      "sourcePath": "colors.surface-deep",
+      "type": "color",
+      "value": "#111111",
+      "status": "unverified",
+      "evidence": {
+        "line": 31,
+        "sourcePath": "colors.surface-deep"
+      }
+    },
+    {
+      "path": "colors.hairline",
+      "sourcePath": "colors.hairline",
+      "type": "color",
+      "value": "#f2f2f2",
+      "status": "unverified",
+      "evidence": {
+        "line": 32,
+        "sourcePath": "colors.hairline"
+      }
+    },
+    {
+      "path": "colors.hairlinestrong",
+      "sourcePath": "colors.hairline-strong",
+      "type": "color",
+      "value": "#000000",
+      "status": "unverified",
+      "evidence": {
+        "line": 33,
+        "sourcePath": "colors.hairline-strong"
+      }
+    },
+    {
+      "path": "colors.dividerdark",
+      "sourcePath": "colors.divider-dark",
+      "type": "color",
+      "value": "rgba(255,255,255,0.16)",
+      "status": "unverified",
+      "evidence": {
+        "line": 34,
+        "sourcePath": "colors.divider-dark"
+      }
+    },
+    {
+      "path": "colors.badgenew",
+      "sourcePath": "colors.badge-new",
+      "type": "color",
+      "value": "#ffed00",
+      "status": "unverified",
+      "evidence": {
+        "line": 35,
+        "sourcePath": "colors.badge-new"
+      }
+    },
+    {
+      "path": "colors.link",
+      "sourcePath": "colors.link",
+      "type": "color",
+      "value": "#0000ee",
+      "status": "unverified",
+      "evidence": {
+        "line": 36,
+        "sourcePath": "colors.link"
+      }
+    },
+    {
+      "path": "colors.error",
+      "sourcePath": "colors.error",
+      "type": "color",
+      "value": "#be6464",
+      "status": "unverified",
+      "evidence": {
+        "line": 37,
+        "sourcePath": "colors.error"
+      }
+    },
+    {
+      "path": "colors.warning",
+      "sourcePath": "colors.warning",
+      "type": "color",
+      "value": "#f0ad4e",
+      "status": "unverified",
+      "evidence": {
+        "line": 38,
+        "sourcePath": "colors.warning"
+      }
+    },
+    {
+      "path": "colors.success",
+      "sourcePath": "colors.success",
+      "type": "color",
+      "value": "#8dc572",
+      "status": "unverified",
+      "evidence": {
+        "line": 39,
+        "sourcePath": "colors.success"
+      }
+    },
+    {
+      "path": "colors.info",
+      "sourcePath": "colors.info",
+      "type": "color",
+      "value": "#337ab7",
+      "status": "unverified",
+      "evidence": {
+        "line": 40,
+        "sourcePath": "colors.info"
+      }
+    },
+    {
+      "path": "typography.displayxl.fontfamily",
+      "sourcePath": "typography.display-xl.fontFamily",
+      "type": "fontFamily",
+      "value": "NouvelR",
+      "status": "unverified",
+      "evidence": {
+        "line": 44,
+        "sourcePath": "typography.display-xl.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displayxl.fontsize",
+      "sourcePath": "typography.display-xl.fontSize",
+      "type": "dimension",
+      "value": "56px",
+      "status": "unverified",
+      "evidence": {
+        "line": 45,
+        "sourcePath": "typography.display-xl.fontSize"
+      }
+    },
+    {
+      "path": "typography.displayxl.fontweight",
+      "sourcePath": "typography.display-xl.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 46,
+        "sourcePath": "typography.display-xl.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displayxl.lineheight",
+      "sourcePath": "typography.display-xl.lineHeight",
+      "type": "number",
+      "value": 0.95,
+      "status": "unverified",
+      "evidence": {
+        "line": 47,
+        "sourcePath": "typography.display-xl.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displayxl.letterspacing",
+      "sourcePath": "typography.display-xl.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 48,
+        "sourcePath": "typography.display-xl.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.displaylg.fontfamily",
+      "sourcePath": "typography.display-lg.fontFamily",
+      "type": "fontFamily",
+      "value": "NouvelR",
+      "status": "unverified",
+      "evidence": {
+        "line": 50,
+        "sourcePath": "typography.display-lg.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displaylg.fontsize",
+      "sourcePath": "typography.display-lg.fontSize",
+      "type": "dimension",
+      "value": "40px",
+      "status": "unverified",
+      "evidence": {
+        "line": 51,
+        "sourcePath": "typography.display-lg.fontSize"
+      }
+    },
+    {
+      "path": "typography.displaylg.fontweight",
+      "sourcePath": "typography.display-lg.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 52,
+        "sourcePath": "typography.display-lg.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displaylg.lineheight",
+      "sourcePath": "typography.display-lg.lineHeight",
+      "type": "number",
+      "value": 0.95,
+      "status": "unverified",
+      "evidence": {
+        "line": 53,
+        "sourcePath": "typography.display-lg.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displaylg.letterspacing",
+      "sourcePath": "typography.display-lg.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 54,
+        "sourcePath": "typography.display-lg.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.displaymd.fontfamily",
+      "sourcePath": "typography.display-md.fontFamily",
+      "type": "fontFamily",
+      "value": "NouvelR",
+      "status": "unverified",
+      "evidence": {
+        "line": 56,
+        "sourcePath": "typography.display-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displaymd.fontsize",
+      "sourcePath": "typography.display-md.fontSize",
+      "type": "dimension",
+      "value": "32px",
+      "status": "unverified",
+      "evidence": {
+        "line": 57,
+        "sourcePath": "typography.display-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.displaymd.fontweight",
+      "sourcePath": "typography.display-md.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 58,
+        "sourcePath": "typography.display-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displaymd.lineheight",
+      "sourcePath": "typography.display-md.lineHeight",
+      "type": "number",
+      "value": 0.95,
+      "status": "unverified",
+      "evidence": {
+        "line": 59,
+        "sourcePath": "typography.display-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displaymd.letterspacing",
+      "sourcePath": "typography.display-md.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 60,
+        "sourcePath": "typography.display-md.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.headinglg.fontfamily",
+      "sourcePath": "typography.heading-lg.fontFamily",
+      "type": "fontFamily",
+      "value": "NouvelR",
+      "status": "unverified",
+      "evidence": {
+        "line": 62,
+        "sourcePath": "typography.heading-lg.fontFamily"
+      }
+    },
+    {
+      "path": "typography.headinglg.fontsize",
+      "sourcePath": "typography.heading-lg.fontSize",
+      "type": "dimension",
+      "value": "24px",
+      "status": "unverified",
+      "evidence": {
+        "line": 63,
+        "sourcePath": "typography.heading-lg.fontSize"
+      }
+    },
+    {
+      "path": "typography.headinglg.fontweight",
+      "sourcePath": "typography.heading-lg.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 64,
+        "sourcePath": "typography.heading-lg.fontWeight"
+      }
+    },
+    {
+      "path": "typography.headinglg.lineheight",
+      "sourcePath": "typography.heading-lg.lineHeight",
+      "type": "number",
+      "value": 0.95,
+      "status": "unverified",
+      "evidence": {
+        "line": 65,
+        "sourcePath": "typography.heading-lg.lineHeight"
+      }
+    },
+    {
+      "path": "typography.headinglg.letterspacing",
+      "sourcePath": "typography.heading-lg.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 66,
+        "sourcePath": "typography.heading-lg.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.headingmd.fontfamily",
+      "sourcePath": "typography.heading-md.fontFamily",
+      "type": "fontFamily",
+      "value": "NouvelR",
+      "status": "unverified",
+      "evidence": {
+        "line": 68,
+        "sourcePath": "typography.heading-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.headingmd.fontsize",
+      "sourcePath": "typography.heading-md.fontSize",
+      "type": "dimension",
+      "value": "20px",
+      "status": "unverified",
+      "evidence": {
+        "line": 69,
+        "sourcePath": "typography.heading-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.headingmd.fontweight",
+      "sourcePath": "typography.heading-md.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 70,
+        "sourcePath": "typography.heading-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.headingmd.lineheight",
+      "sourcePath": "typography.heading-md.lineHeight",
+      "type": "number",
+      "value": 0.95,
+      "status": "unverified",
+      "evidence": {
+        "line": 71,
+        "sourcePath": "typography.heading-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.headingmd.letterspacing",
+      "sourcePath": "typography.heading-md.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 72,
+        "sourcePath": "typography.heading-md.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.headingsm.fontfamily",
+      "sourcePath": "typography.heading-sm.fontFamily",
+      "type": "fontFamily",
+      "value": "NouvelR",
+      "status": "unverified",
+      "evidence": {
+        "line": 74,
+        "sourcePath": "typography.heading-sm.fontFamily"
+      }
+    },
+    {
+      "path": "typography.headingsm.fontsize",
+      "sourcePath": "typography.heading-sm.fontSize",
+      "type": "dimension",
+      "value": "18px",
+      "status": "unverified",
+      "evidence": {
+        "line": 75,
+        "sourcePath": "typography.heading-sm.fontSize"
+      }
+    },
+    {
+      "path": "typography.headingsm.fontweight",
+      "sourcePath": "typography.heading-sm.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 76,
+        "sourcePath": "typography.heading-sm.fontWeight"
+      }
+    },
+    {
+      "path": "typography.headingsm.lineheight",
+      "sourcePath": "typography.heading-sm.lineHeight",
+      "type": "number",
+      "value": 1,
+      "status": "unverified",
+      "evidence": {
+        "line": 77,
+        "sourcePath": "typography.heading-sm.lineHeight"
+      }
+    },
+    {
+      "path": "typography.headingsm.letterspacing",
+      "sourcePath": "typography.heading-sm.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 78,
+        "sourcePath": "typography.heading-sm.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.subtitle.fontfamily",
+      "sourcePath": "typography.subtitle.fontFamily",
+      "type": "fontFamily",
+      "value": "NouvelR",
+      "status": "unverified",
+      "evidence": {
+        "line": 80,
+        "sourcePath": "typography.subtitle.fontFamily"
+      }
+    },
+    {
+      "path": "typography.subtitle.fontsize",
+      "sourcePath": "typography.subtitle.fontSize",
+      "type": "dimension",
+      "value": "19.2px",
+      "status": "unverified",
+      "evidence": {
+        "line": 81,
+        "sourcePath": "typography.subtitle.fontSize"
+      }
+    },
+    {
+      "path": "typography.subtitle.fontweight",
+      "sourcePath": "typography.subtitle.fontWeight",
+      "type": "number",
+      "value": 600,
+      "status": "unverified",
+      "evidence": {
+        "line": 82,
+        "sourcePath": "typography.subtitle.fontWeight"
+      }
+    },
+    {
+      "path": "typography.subtitle.lineheight",
+      "sourcePath": "typography.subtitle.lineHeight",
+      "type": "number",
+      "value": 1.3,
+      "status": "unverified",
+      "evidence": {
+        "line": 83,
+        "sourcePath": "typography.subtitle.lineHeight"
+      }
+    },
+    {
+      "path": "typography.subtitle.letterspacing",
+      "sourcePath": "typography.subtitle.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 84,
+        "sourcePath": "typography.subtitle.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.bodylg.fontfamily",
+      "sourcePath": "typography.body-lg.fontFamily",
+      "type": "fontFamily",
+      "value": "NouvelR",
+      "status": "unverified",
+      "evidence": {
+        "line": 86,
+        "sourcePath": "typography.body-lg.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodylg.fontsize",
+      "sourcePath": "typography.body-lg.fontSize",
+      "type": "dimension",
+      "value": "18px",
+      "status": "unverified",
+      "evidence": {
+        "line": 87,
+        "sourcePath": "typography.body-lg.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodylg.fontweight",
+      "sourcePath": "typography.body-lg.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 88,
+        "sourcePath": "typography.body-lg.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodylg.lineheight",
+      "sourcePath": "typography.body-lg.lineHeight",
+      "type": "number",
+      "value": 1.5,
+      "status": "unverified",
+      "evidence": {
+        "line": 89,
+        "sourcePath": "typography.body-lg.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodylg.letterspacing",
+      "sourcePath": "typography.body-lg.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 90,
+        "sourcePath": "typography.body-lg.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.bodymd.fontfamily",
+      "sourcePath": "typography.body-md.fontFamily",
+      "type": "fontFamily",
+      "value": "NouvelR",
+      "status": "unverified",
+      "evidence": {
+        "line": 92,
+        "sourcePath": "typography.body-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodymd.fontsize",
+      "sourcePath": "typography.body-md.fontSize",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 93,
+        "sourcePath": "typography.body-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodymd.fontweight",
+      "sourcePath": "typography.body-md.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 94,
+        "sourcePath": "typography.body-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodymd.lineheight",
+      "sourcePath": "typography.body-md.lineHeight",
+      "type": "number",
+      "value": 1.4,
+      "status": "unverified",
+      "evidence": {
+        "line": 95,
+        "sourcePath": "typography.body-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodymd.letterspacing",
+      "sourcePath": "typography.body-md.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 96,
+        "sourcePath": "typography.body-md.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.bodysm.fontfamily",
+      "sourcePath": "typography.body-sm.fontFamily",
+      "type": "fontFamily",
+      "value": "NouvelR",
+      "status": "unverified",
+      "evidence": {
+        "line": 98,
+        "sourcePath": "typography.body-sm.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodysm.fontsize",
+      "sourcePath": "typography.body-sm.fontSize",
+      "type": "dimension",
+      "value": "14px",
+      "status": "unverified",
+      "evidence": {
+        "line": 99,
+        "sourcePath": "typography.body-sm.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodysm.fontweight",
+      "sourcePath": "typography.body-sm.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 100,
+        "sourcePath": "typography.body-sm.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodysm.lineheight",
+      "sourcePath": "typography.body-sm.lineHeight",
+      "type": "number",
+      "value": 1.57,
+      "status": "unverified",
+      "evidence": {
+        "line": 101,
+        "sourcePath": "typography.body-sm.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodysm.letterspacing",
+      "sourcePath": "typography.body-sm.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 102,
+        "sourcePath": "typography.body-sm.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.buttonlg.fontfamily",
+      "sourcePath": "typography.button-lg.fontFamily",
+      "type": "fontFamily",
+      "value": "NouvelR",
+      "status": "unverified",
+      "evidence": {
+        "line": 104,
+        "sourcePath": "typography.button-lg.fontFamily"
+      }
+    },
+    {
+      "path": "typography.buttonlg.fontsize",
+      "sourcePath": "typography.button-lg.fontSize",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 105,
+        "sourcePath": "typography.button-lg.fontSize"
+      }
+    },
+    {
+      "path": "typography.buttonlg.fontweight",
+      "sourcePath": "typography.button-lg.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 106,
+        "sourcePath": "typography.button-lg.fontWeight"
+      }
+    },
+    {
+      "path": "typography.buttonlg.lineheight",
+      "sourcePath": "typography.button-lg.lineHeight",
+      "type": "number",
+      "value": 1,
+      "status": "unverified",
+      "evidence": {
+        "line": 107,
+        "sourcePath": "typography.button-lg.lineHeight"
+      }
+    },
+    {
+      "path": "typography.buttonlg.letterspacing",
+      "sourcePath": "typography.button-lg.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 108,
+        "sourcePath": "typography.button-lg.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.buttonmd.fontfamily",
+      "sourcePath": "typography.button-md.fontFamily",
+      "type": "fontFamily",
+      "value": "NouvelR",
+      "status": "unverified",
+      "evidence": {
+        "line": 110,
+        "sourcePath": "typography.button-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.buttonmd.fontsize",
+      "sourcePath": "typography.button-md.fontSize",
+      "type": "dimension",
+      "value": "14.4px",
+      "status": "unverified",
+      "evidence": {
+        "line": 111,
+        "sourcePath": "typography.button-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.buttonmd.fontweight",
+      "sourcePath": "typography.button-md.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 112,
+        "sourcePath": "typography.button-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.buttonmd.lineheight",
+      "sourcePath": "typography.button-md.lineHeight",
+      "type": "number",
+      "value": 1,
+      "status": "unverified",
+      "evidence": {
+        "line": 113,
+        "sourcePath": "typography.button-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.buttonmd.letterspacing",
+      "sourcePath": "typography.button-md.letterSpacing",
+      "type": "dimension",
+      "value": "0.144px",
+      "status": "unverified",
+      "evidence": {
+        "line": 114,
+        "sourcePath": "typography.button-md.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.buttonsm.fontfamily",
+      "sourcePath": "typography.button-sm.fontFamily",
+      "type": "fontFamily",
+      "value": "NouvelR",
+      "status": "unverified",
+      "evidence": {
+        "line": 116,
+        "sourcePath": "typography.button-sm.fontFamily"
+      }
+    },
+    {
+      "path": "typography.buttonsm.fontsize",
+      "sourcePath": "typography.button-sm.fontSize",
+      "type": "dimension",
+      "value": "13px",
+      "status": "unverified",
+      "evidence": {
+        "line": 117,
+        "sourcePath": "typography.button-sm.fontSize"
+      }
+    },
+    {
+      "path": "typography.buttonsm.fontweight",
+      "sourcePath": "typography.button-sm.fontWeight",
+      "type": "number",
+      "value": 600,
+      "status": "unverified",
+      "evidence": {
+        "line": 118,
+        "sourcePath": "typography.button-sm.fontWeight"
+      }
+    },
+    {
+      "path": "typography.buttonsm.lineheight",
+      "sourcePath": "typography.button-sm.lineHeight",
+      "type": "number",
+      "value": 1.2,
+      "status": "unverified",
+      "evidence": {
+        "line": 119,
+        "sourcePath": "typography.button-sm.lineHeight"
+      }
+    },
+    {
+      "path": "typography.buttonsm.letterspacing",
+      "sourcePath": "typography.button-sm.letterSpacing",
+      "type": "dimension",
+      "value": "0.13px",
+      "status": "unverified",
+      "evidence": {
+        "line": 120,
+        "sourcePath": "typography.button-sm.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.caption.fontfamily",
+      "sourcePath": "typography.caption.fontFamily",
+      "type": "fontFamily",
+      "value": "NouvelR",
+      "status": "unverified",
+      "evidence": {
+        "line": 122,
+        "sourcePath": "typography.caption.fontFamily"
+      }
+    },
+    {
+      "path": "typography.caption.fontsize",
+      "sourcePath": "typography.caption.fontSize",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 123,
+        "sourcePath": "typography.caption.fontSize"
+      }
+    },
+    {
+      "path": "typography.caption.fontweight",
+      "sourcePath": "typography.caption.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 124,
+        "sourcePath": "typography.caption.fontWeight"
+      }
+    },
+    {
+      "path": "typography.caption.lineheight",
+      "sourcePath": "typography.caption.lineHeight",
+      "type": "number",
+      "value": 1.4,
+      "status": "unverified",
+      "evidence": {
+        "line": 125,
+        "sourcePath": "typography.caption.lineHeight"
+      }
+    },
+    {
+      "path": "typography.caption.letterspacing",
+      "sourcePath": "typography.caption.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 126,
+        "sourcePath": "typography.caption.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.overline.fontfamily",
+      "sourcePath": "typography.overline.fontFamily",
+      "type": "fontFamily",
+      "value": "NouvelR",
+      "status": "unverified",
+      "evidence": {
+        "line": 128,
+        "sourcePath": "typography.overline.fontFamily"
+      }
+    },
+    {
+      "path": "typography.overline.fontsize",
+      "sourcePath": "typography.overline.fontSize",
+      "type": "dimension",
+      "value": "10px",
+      "status": "unverified",
+      "evidence": {
+        "line": 129,
+        "sourcePath": "typography.overline.fontSize"
+      }
+    },
+    {
+      "path": "typography.overline.fontweight",
+      "sourcePath": "typography.overline.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 130,
+        "sourcePath": "typography.overline.fontWeight"
+      }
+    },
+    {
+      "path": "typography.overline.lineheight",
+      "sourcePath": "typography.overline.lineHeight",
+      "type": "number",
+      "value": 1.45,
+      "status": "unverified",
+      "evidence": {
+        "line": 131,
+        "sourcePath": "typography.overline.lineHeight"
+      }
+    },
+    {
+      "path": "typography.overline.letterspacing",
+      "sourcePath": "typography.overline.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 132,
+        "sourcePath": "typography.overline.letterSpacing"
+      }
+    },
+    {
+      "path": "rounded.none",
+      "sourcePath": "rounded.none",
+      "type": "dimension",
+      "value": "0px",
+      "status": "unverified",
+      "evidence": {
+        "line": 135,
+        "sourcePath": "rounded.none"
+      }
+    },
+    {
+      "path": "rounded.xs",
+      "sourcePath": "rounded.xs",
+      "type": "dimension",
+      "value": "2px",
+      "status": "unverified",
+      "evidence": {
+        "line": 136,
+        "sourcePath": "rounded.xs"
+      }
+    },
+    {
+      "path": "rounded.sm",
+      "sourcePath": "rounded.sm",
+      "type": "dimension",
+      "value": "3px",
+      "status": "unverified",
+      "evidence": {
+        "line": 137,
+        "sourcePath": "rounded.sm"
+      }
+    },
+    {
+      "path": "rounded.md",
+      "sourcePath": "rounded.md",
+      "type": "dimension",
+      "value": "4px",
+      "status": "unverified",
+      "evidence": {
+        "line": 138,
+        "sourcePath": "rounded.md"
+      }
+    },
+    {
+      "path": "rounded.pill",
+      "sourcePath": "rounded.pill",
+      "type": "dimension",
+      "value": "46px",
+      "status": "unverified",
+      "evidence": {
+        "line": 139,
+        "sourcePath": "rounded.pill"
+      }
+    },
+    {
+      "path": "rounded.full",
+      "sourcePath": "rounded.full",
+      "type": "dimension",
+      "value": "9999px",
+      "status": "unverified",
+      "evidence": {
+        "line": 140,
+        "sourcePath": "rounded.full"
+      }
+    },
+    {
+      "path": "spacing.xxs",
+      "sourcePath": "spacing.xxs",
+      "type": "dimension",
+      "value": "4px",
+      "status": "unverified",
+      "evidence": {
+        "line": 143,
+        "sourcePath": "spacing.xxs"
+      }
+    },
+    {
+      "path": "spacing.xs",
+      "sourcePath": "spacing.xs",
+      "type": "dimension",
+      "value": "8px",
+      "status": "unverified",
+      "evidence": {
+        "line": 144,
+        "sourcePath": "spacing.xs"
+      }
+    },
+    {
+      "path": "spacing.sm",
+      "sourcePath": "spacing.sm",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 145,
+        "sourcePath": "spacing.sm"
+      }
+    },
+    {
+      "path": "spacing.md",
+      "sourcePath": "spacing.md",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 146,
+        "sourcePath": "spacing.md"
+      }
+    },
+    {
+      "path": "spacing.lg",
+      "sourcePath": "spacing.lg",
+      "type": "dimension",
+      "value": "20px",
+      "status": "unverified",
+      "evidence": {
+        "line": 147,
+        "sourcePath": "spacing.lg"
+      }
+    },
+    {
+      "path": "spacing.xl",
+      "sourcePath": "spacing.xl",
+      "type": "dimension",
+      "value": "24px",
+      "status": "unverified",
+      "evidence": {
+        "line": 148,
+        "sourcePath": "spacing.xl"
+      }
+    },
+    {
+      "path": "spacing.xxl",
+      "sourcePath": "spacing.xxl",
+      "type": "dimension",
+      "value": "32px",
+      "status": "unverified",
+      "evidence": {
+        "line": 149,
+        "sourcePath": "spacing.xxl"
+      }
+    },
+    {
+      "path": "spacing.xxxl",
+      "sourcePath": "spacing.xxxl",
+      "type": "dimension",
+      "value": "40px",
+      "status": "unverified",
+      "evidence": {
+        "line": 150,
+        "sourcePath": "spacing.xxxl"
+      }
+    },
+    {
+      "path": "spacing.section",
+      "sourcePath": "spacing.section",
+      "type": "dimension",
+      "value": "80px",
+      "status": "unverified",
+      "evidence": {
+        "line": 151,
+        "sourcePath": "spacing.section"
+      }
+    }
+  ],
+  "rejectedTokens": [],
+  "homepage": {
+    "status": "missing",
+    "candidates": [],
+    "verification": {
+      "status": "verified",
+      "url": "https://www.renault.com/",
+      "label": "Current Renault Group homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://www.renaultgroup.com/",
+          "title": "Renault Group, constructeur automobile - Renault Group",
+          "note": "Public homepage read requested https://www.renault.com; final URL https://www.renaultgroup.com/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity. renault.com redirected to Renault Group; corporate page does not establish the original dealership/configurator surface."
+    }
+  },
+  "completeness": {
+    "presentFields": [
+      "colors",
+      "typography",
+      "rounded",
+      "spacing",
+      "components"
+    ],
+    "missingFields": [],
+    "tokenRoles": "incomplete",
+    "note": "Missing fields are not reconstructed. Prose-only colors have no inferred semantic role."
+  },
+  "provenance": {
+    "status": "independent-analysis",
+    "sources": [
+      {
+        "title": "VoltAgent awesome-design-md independent analysis",
+        "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/renault/DESIGN.md"
+      }
+    ],
+    "verification": "unverified-secondary-analysis"
+  },
+  "limitations": [
+    "Independent secondary analysis, not an official brand system; all reported values are unverified.",
+    "No brand assets, logos, font binaries or screenshots copied. Font names are documentary, not font licenses.",
+    "Safe CSS literals are extracted without claiming complete roles, state coverage or visual fidelity.",
+    "Markdown is retained as inert evidence, never executed or rendered as raw HTML."
+  ]
+}

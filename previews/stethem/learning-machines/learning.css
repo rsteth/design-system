@@ -1,0 +1,154 @@
+/* Companion pages use the site's existing fonts and palette. */
+.learning-page { text-align:left; padding-top:48px; }
+.learning-page a { color:var(--accent); text-underline-offset:4px; }
+.learning-page .back { font-family:var(--font-mono);font-size:13px; }
+.learning-page header {margin:64px 0 72px;}
+.learning-page h1 {font-size:clamp(36px,6vw,52px);line-height:1.08;letter-spacing:-.04em;margin:16px 0 24px;}
+.learning-page h2 {font-size:28px;line-height:1.25;letter-spacing:-.025em;margin:14px 0 20px;}
+.learning-page h3 {font-size:18px;margin:0 0 18px;}
+.learning-page p {margin:18px 0;}
+.learning-page section {margin:0 0 80px;}
+.learning-page .eyebrow,.learning-page .small, .learning-page footer {font-size:13px;color:var(--muted);line-height:1.7;}
+.learning-page .eyebrow {font-family:var(--font-mono);}
+.learning-page footer {margin-top:64px;}
+.learning-page label[for=context] {display:flex;justify-content:space-between;gap:10px;font-size:14px;margin-top:32px;flex-wrap:wrap;}
+.learning-page output {font-family:var(--font-mono);font-size:13px;}
+.learning-page input[type=range] {width:100%;margin:16px 0 8px;accent-color:var(--accent);height:28px;box-sizing:border-box;}
+.range-ends {display:flex;justify-content:space-between;gap:12px;}
+.growth-chart {width:100%;height:auto;margin:24px 0 0;overflow:visible;}
+.growth-chart path {fill:none;stroke-width:2;}
+.growth-chart .axis {stroke:#d8d3cf;stroke-width:1;}
+.growth-chart .full-line {stroke:var(--accent);}
+.growth-chart .hybrid-line {stroke:var(--ink);stroke-dasharray:6 3;}
+.growth-chart .recurrent-line {stroke:var(--muted);stroke-dasharray:2 3;}
+.growth-chart .chart-arrow {stroke:var(--muted);stroke-width:.9;fill:none;}
+.growth-chart text {font-family:var(--font-mono);font-size:11px;fill:var(--muted);}
+#cursor {stroke:var(--muted);stroke-dasharray:3 5;stroke-width:1;}
+.readings {margin:12px 0 24px;font-size:14px;}
+.readings div {display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid #e8e4e0;gap:12px;}
+.readings dd {font-family:var(--font-mono);font-size:13px;margin:0;}
+.key {display:inline-block;width:16px;border-top:2px solid var(--accent);vertical-align:middle;margin-right:10px;}
+.key.hybrid {border-color:var(--ink);border-top-style:dashed;}.key.recurrent {border-color:var(--muted);border-top-style:dotted;}
+.learning-page fieldset {border:0;padding:0;margin:28px 0;display:flex;flex-wrap:wrap;gap:12px 24px;}
+.learning-page legend {margin-bottom:12px;}
+.choice {font-size:14px;display:flex;align-items:center;gap:8px;min-height:36px;}
+.choice input {accent-color:var(--accent);width:18px;height:18px;}
+.layers {display:grid;grid-template-columns:repeat(16,minmax(0,1fr));gap:5px;}
+.layer {display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:48px;background:#f3f1ed;font-family:var(--font-mono);font-size:12px;border:1px solid #d9d2cd;}
+.layer small {font-size:9px;}.layer.attention {background:var(--ink);color:white;border-color:var(--ink);}.layer.converted {background:var(--accent);color:white;border-color:var(--accent);}.layer.adapted {border-style:dashed;}
+.step-controls {display:flex;justify-content:space-between;gap:10px;align-items:center;margin:28px 0;}
+.learning-page button {font:13px var(--font-mono);color:var(--ink);background:white;border:1px solid #c5bcb6;border-radius:2px;padding:10px 12px;min-height:44px;cursor:pointer;}
+.learning-page button:disabled {opacity:.45;cursor:default;}
+.learning-page :focus-visible {outline:3px solid var(--accent);outline-offset:4px;}
+.toy-columns {display:grid;grid-template-columns:1fr 1fr;gap:32px;min-height:240px;border-block:1px solid #e8e4e0;padding:24px 0;font-size:14px;}
+.toy-columns ol {padding-left:20px;}.toy-columns li {padding:3px 0;}.toy-columns dl {margin:0;}.toy-columns dl div {display:flex;gap:20px;margin:8px 0;}.toy-columns dd {margin:0;font-family:var(--font-mono);font-size:13px;}
+.learning-page details {border-top:1px solid #e8e4e0;padding-top:24px;font-size:13px;color:var(--muted);}
+.learning-page summary {cursor:pointer;min-height:36px;font-family:var(--font-mono);color:var(--ink);}
+.source-details code {overflow-wrap:anywhere;font-size:12px;}
+@media(max-width:540px) {.learning-page {padding-inline:22px;}.learning-page header {margin:48px 0 56px;}.learning-page section {margin-bottom:64px;}.layers {grid-template-columns:repeat(8,minmax(0,1fr));}.toy-columns {grid-template-columns:1fr;min-height:0;gap:24px;}.step-controls {flex-wrap:wrap;}.step-controls output {order:-1;width:100%;}.readings div {font-size:13px;}}
+@media(prefers-reduced-motion:reduce) {.learning-page *, .learning-page *::before, .learning-page *::after {animation:none!important;transition:none!important;scroll-behavior:auto!important;}}
+
+/* Warm, pixel-dithered study artwork; semantic text stays at device resolution. */
+.learning-study {--page-background:#f6f3eb;--ink:#302e28;--muted:#6b695f;--accent:#9c523d;}
+.learning-study .learning-page {max-width:1000px;}
+.learning-study section {padding-top:28px;border-top:1px solid #d5d1c6;}
+.visual-panel {margin:30px 0 20px;}
+.visual-panel[hidden],.layers[hidden] {display:none;}
+.visual-panel canvas {display:block;width:100%;height:auto;image-rendering:pixelated;}
+.visual-note {font:12px var(--font-mono);color:var(--muted);text-align:right;}
+.visual-fallback-hidden {display:none;}
+.learning-study .readings {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:24px 0;}
+.learning-study .readings div {display:block;border:0;padding:0;}
+.learning-study .readings dd {font:28px var(--font-heading);margin-top:8px;}
+.learning-study .readings dt {font:12px var(--font-mono);}
+.learning-study .key {width:10px;height:10px;border:0;background:#c67f5d;}
+.learning-study .key.hybrid {background:#c2a66a;}.learning-study .key.recurrent {background:#9caa87;}
+.layer-ranges {display:grid;grid-template-columns:repeat(4,1fr);text-align:center;font:12px var(--font-mono);color:var(--muted);}
+.layer-navigation {display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:24px;}
+.layer-inspector {display:flex;gap:16px;align-items:center;flex-wrap:wrap;margin-top:24px;font:13px var(--font-mono);}
+.layer-inspector select {max-width:100%;min-height:44px;background:#f6f3eb;border:1px solid #c5bfb2;color:var(--ink);font:13px var(--font-mono);padding:8px;}
+#layer-canvas {cursor:pointer;}
+.learning-study button {background:#f6f3eb;border-color:#c5bfb2;}
+.learning-study .toy-columns {border-color:#d5d1c6;}
+.learning-study .choice {padding:8px 12px;border:1px solid #d5d1c6;border-radius:4px;}
+.learning-study .choice:has(input:checked) {background:#e7e6d9;}
+@media(max-width:540px) {
+ .learning-study .readings {gap:8px;}.learning-study .readings dd {font-size:19px;}.learning-study .readings dt {font-size:10px;}
+ .layer-navigation {flex-wrap:wrap;}.layer-navigation output {order:-1;width:100%;text-align:center;}
+ .layer-inspector {display:block;}.layer-inspector select {display:block;width:100%;margin-top:10px;}
+ .layer-ranges {font-size:10px;}
+}
+.layer-scene,.growth-scene {position:relative;}
+.layer-ranges {position:absolute;inset:0;align-items:end;pointer-events:none;font-size:11px;}
+.growth-ticks span {position:absolute;left:0;font:10px var(--font-mono);color:var(--muted);transform:translateY(-50%);}
+@media(max-width:540px) {.layer-ranges {grid-template-columns:repeat(2,1fr);grid-template-rows:repeat(2,1fr);font-size:11px;}.growth-ticks span {font-size:8px;}.visual-note {font-size:11px;text-align:left;}}
+
+/* Instrument system (v2): hairline-grid panels, viewfinder corners, one meaning per colour.
+   terracotta = full attention · sage = recurrent / GDN · ochre = hybrid / converted.
+   Token values use shape, not colour: filled dot = positive, ring = negative, tick = zero. */
+.learning-study {--hair:#e6e1d4;--frame:#302e28;--attention:#c67f5d;--recurrent:#9caa87;--hybrid:#c2a66a;}
+.viewfinder,.learning-study .visual-panel {--vf:var(--frame);--vf-len:14px;position:relative;
+ background:
+  linear-gradient(var(--vf),var(--vf)) 0 0/var(--vf-len) 1px no-repeat,linear-gradient(var(--vf),var(--vf)) 0 0/1px var(--vf-len) no-repeat,
+  linear-gradient(var(--vf),var(--vf)) 100% 0/var(--vf-len) 1px no-repeat,linear-gradient(var(--vf),var(--vf)) 100% 0/1px var(--vf-len) no-repeat,
+  linear-gradient(var(--vf),var(--vf)) 0 100%/var(--vf-len) 1px no-repeat,linear-gradient(var(--vf),var(--vf)) 0 100%/1px var(--vf-len) no-repeat,
+  linear-gradient(var(--vf),var(--vf)) 100% 100%/var(--vf-len) 1px no-repeat,linear-gradient(var(--vf),var(--vf)) 100% 100%/1px var(--vf-len) no-repeat;}
+.learning-study .visual-panel {padding:28px;margin:32px 0 20px;
+ background-color:#f6f3eb;background-image:
+  linear-gradient(var(--vf),var(--vf)),linear-gradient(var(--vf),var(--vf)),linear-gradient(var(--vf),var(--vf)),linear-gradient(var(--vf),var(--vf)),
+  linear-gradient(var(--vf),var(--vf)),linear-gradient(var(--vf),var(--vf)),linear-gradient(var(--vf),var(--vf)),linear-gradient(var(--vf),var(--vf)),
+  linear-gradient(var(--hair) 1px,transparent 1px),linear-gradient(90deg,var(--hair) 1px,transparent 1px);
+ background-size:var(--vf-len) 1px,1px var(--vf-len),var(--vf-len) 1px,1px var(--vf-len),var(--vf-len) 1px,1px var(--vf-len),var(--vf-len) 1px,1px var(--vf-len),24px 24px,24px 24px;
+ background-position:0 0,0 0,100% 0,100% 0,0 100%,0 100%,100% 100%,100% 100%,-1px -1px,-1px -1px;
+ background-repeat:no-repeat,no-repeat,no-repeat,no-repeat,no-repeat,no-repeat,no-repeat,no-repeat,repeat,repeat;}
+.learning-study .visual-panel canvas {outline:1px solid var(--hair);}
+.learning-study .eyebrow::before {content:'';display:inline-block;width:7px;height:7px;background:var(--accent);margin-right:10px;vertical-align:1px;}
+.learning-study header .eyebrow::before,.recall-card .eyebrow::before {background:var(--frame);}
+.learning-study .visual-note {text-align:left;margin:14px 0 0;}
+/* Growth tiles */
+.growth-labels {display:grid;grid-template-columns:repeat(3,1fr);padding-left:2.6%;margin-top:10px;font:11px var(--font-mono);color:var(--muted);}
+.growth-labels span::before {content:'';display:inline-block;width:8px;height:8px;margin-right:8px;background:var(--attention);}
+.growth-labels span:nth-child(2)::before {background:var(--hybrid);}.growth-labels span:nth-child(3)::before {background:var(--recurrent);}
+/* 64-layer strip */
+.layer-ranges {display:block;}
+.layer-ranges span {position:absolute;transform:translate(-50%,0);font:10px var(--font-mono);color:var(--muted);white-space:nowrap;}
+.layer-ranges .inset-label {transform:translate(-50%,-100%);font-size:11px;color:var(--ink);background:#f6f3eb;padding:0 6px;}
+/* Record vs state recall */
+.recall-card {padding:22px 24px;margin:28px 0 16px;}
+.recall-card .eyebrow {margin:0;}
+.recall-question {font:22px/1.3 var(--font-heading);margin:6px 0 18px!important;}
+.recall-answers {display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:0;}
+.recall-answers dt {font:11px var(--font-mono);color:var(--muted);}
+.recall-answers dd {margin:6px 0 0;font:18px var(--font-heading);}
+.recall-answers dd::before {content:'';display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:10px;background:#d5d1c6;vertical-align:1px;}
+.recall-card[data-outcome=both] dd::before {background:var(--recurrent);}
+.recall-card[data-outcome=lost] #recall-log::before {background:var(--recurrent);}
+.recall-card[data-outcome=lost] #recall-state::before {background:transparent;border:2px solid var(--attention);width:6px;height:6px;}
+.recall-card[data-outcome=lost] #recall-state {color:var(--accent);}
+@media(max-width:540px) {
+ .learning-study .visual-panel {padding:14px;}
+ .recall-answers {grid-template-columns:1fr;}
+ .growth-labels {font-size:9px;}.growth-labels span::before {width:6px;height:6px;margin-right:4px;}
+}
+
+/* Ordered dither (Bayer 4×4): deterministic grain. A colour is masked through a fixed threshold
+   pattern, so it renders identically on every load and at every zoom. */
+.learning-study {
+ --bayer-2:url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 8 8%27 shape-rendering=%27crispEdges%27%3E%3Crect x=%270%27 y=%270%27 width=%271%27 height=%271%27/%3E%3Crect x=%274%27 y=%274%27 width=%271%27 height=%271%27/%3E%3C/svg%3E");
+ --bayer-4:url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 8 8%27 shape-rendering=%27crispEdges%27%3E%3Crect x=%270%27 y=%270%27 width=%271%27 height=%271%27/%3E%3Crect x=%274%27 y=%270%27 width=%271%27 height=%271%27/%3E%3Crect x=%270%27 y=%274%27 width=%271%27 height=%271%27/%3E%3Crect x=%274%27 y=%274%27 width=%271%27 height=%271%27/%3E%3C/svg%3E");
+ --bayer-8:url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 8 8%27 shape-rendering=%27crispEdges%27%3E%3Crect x=%270%27 y=%270%27 width=%271%27 height=%271%27/%3E%3Crect x=%274%27 y=%270%27 width=%271%27 height=%271%27/%3E%3Crect x=%272%27 y=%272%27 width=%271%27 height=%271%27/%3E%3Crect x=%276%27 y=%272%27 width=%271%27 height=%271%27/%3E%3Crect x=%270%27 y=%274%27 width=%271%27 height=%271%27/%3E%3Crect x=%274%27 y=%274%27 width=%271%27 height=%271%27/%3E%3Crect x=%272%27 y=%276%27 width=%271%27 height=%271%27/%3E%3Crect x=%276%27 y=%276%27 width=%271%27 height=%271%27/%3E%3C/svg%3E");
+}
+.learning-study .visual-panel,.learning-study .pipeline,.piece-row .flow-piece,.ribbon-seg,.recall-card,.loop-panel {isolation:isolate;}
+.learning-study .visual-panel::after,.piece-row .flow-piece::after,.ribbon-seg::after,.recall-card::after,.loop-panel::after,.pg-dots::after {
+ content:'';position:absolute;inset:0;z-index:-1;pointer-events:none;background:var(--dither-color,#302e28);opacity:var(--dither-opacity,.07);
+ -webkit-mask:var(--dither,var(--bayer-2)) 0 0/8px 8px repeat;mask:var(--dither,var(--bayer-2)) 0 0/8px 8px repeat;}
+.recall-card,.loop-panel {position:relative;}
+@media(prefers-contrast:more){.learning-study .visual-panel::after,.piece-row .flow-piece::after,.recall-card::after,.loop-panel::after{display:none;}}
+/* Attention: tile readout under the growth canvas. */
+.tile-readout {font:12px var(--font-mono);color:var(--ink);min-height:1.7em;margin:10px 0 0;}
+.tile-readout:empty::before {content:'Hover a tile to see what it stands for.';color:var(--muted);}
+#growth-canvas {cursor:crosshair;}
+/* No graph paper: panels keep the viewfinder corners and the faint dither only. */
+.learning-study .visual-panel {background-size:var(--vf-len) 1px,1px var(--vf-len),var(--vf-len) 1px,1px var(--vf-len),var(--vf-len) 1px,1px var(--vf-len),var(--vf-len) 1px,1px var(--vf-len),0 0,0 0;}
+.learning-study .visual-panel canvas {outline:0;}
+

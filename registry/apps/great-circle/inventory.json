@@ -1,0 +1,399 @@
+{
+  "schemaVersion": 1,
+  "application": "great-circle",
+  "reviewedRevision": "1926e65152e26f5d380bf472a10d6352491ec543",
+  "items": [
+    {
+      "id": "appearance",
+      "title": "Theme and palette controls",
+      "kind": "component",
+      "source": [
+        "src/ui/Appearance.tsx"
+      ],
+      "fixtures": [
+        "appearance"
+      ],
+      "states": [
+        "light",
+        "dark",
+        "four palettes",
+        "dialog open",
+        "keyboard focus",
+        "dismiss",
+        "reopen",
+        "blocked storage",
+        "OS theme"
+      ],
+      "coverage": "covered",
+      "notes": "Actual production components; deterministic offline fixture."
+    },
+    {
+      "id": "number",
+      "title": "Validated numeric control",
+      "kind": "component",
+      "source": [
+        "src/ui/NumberControl.tsx"
+      ],
+      "fixtures": [
+        "number"
+      ],
+      "states": [
+        "default",
+        "invalid",
+        "focus",
+        "commit",
+        "Escape restore"
+      ],
+      "coverage": "covered",
+      "notes": "Actual production components; deterministic offline fixture."
+    },
+    {
+      "id": "radius",
+      "title": "Transactional radius editor",
+      "kind": "component",
+      "source": [
+        "src/features/planner/RadiusControl.tsx"
+      ],
+      "fixtures": [
+        "radius",
+        "disabled"
+      ],
+      "states": [
+        "default",
+        "editing",
+        "invalid",
+        "disabled",
+        "focus",
+        "commit",
+        "cancel",
+        "repeated edit"
+      ],
+      "coverage": "covered",
+      "notes": "Actual production components; deterministic offline fixture."
+    },
+    {
+      "id": "generation",
+      "title": "Generation modal",
+      "kind": "pattern",
+      "source": [
+        "src/features/planner/GenerationOverlay.tsx",
+        "src/app/App.tsx"
+      ],
+      "fixtures": [
+        "loading"
+      ],
+      "states": [
+        "pending",
+        "cancel",
+        "Escape",
+        "repeated open",
+        "focus return",
+        "background inert"
+      ],
+      "coverage": "covered",
+      "notes": "Actual production components; deterministic offline fixture."
+    },
+    {
+      "id": "settings",
+      "title": "Responsive route settings",
+      "kind": "pattern",
+      "source": [
+        "src/features/planner/SettingsDrawer.tsx",
+        "src/app/useMobileLayout.ts",
+        "src/app/App.tsx"
+      ],
+      "fixtures": [
+        "settings",
+        "planner"
+      ],
+      "states": [
+        "desktop sidebar",
+        "mobile drawer",
+        "focus trap",
+        "Escape",
+        "Done",
+        "close",
+        "reopen"
+      ],
+      "coverage": "covered",
+      "notes": "Actual production components; deterministic offline fixture."
+    },
+    {
+      "id": "coordinates",
+      "title": "Coordinate entry",
+      "kind": "pattern",
+      "source": [
+        "src/app/App.tsx"
+      ],
+      "fixtures": [
+        "coordinates"
+      ],
+      "states": [
+        "collapsed",
+        "expanded",
+        "invalid",
+        "valid apply"
+      ],
+      "coverage": "covered",
+      "notes": "Actual production components; deterministic offline fixture."
+    },
+    {
+      "id": "map",
+      "title": "Map layers and circle handles",
+      "kind": "pattern",
+      "source": [
+        "src/features/map/MapView.tsx",
+        "src/features/map/CenterLock.tsx"
+      ],
+      "fixtures": [
+        "map",
+        "route",
+        "larger"
+      ],
+      "states": [
+        "offline tiles",
+        "circle guide",
+        "Start",
+        "Size",
+        "center locked",
+        "center preview",
+        "cancel",
+        "commit",
+        "ideal layer visible/hidden",
+        "disabled locate"
+      ],
+      "coverage": "covered",
+      "notes": "Real Leaflet and production handles; generated grid, never live geographic tiles. Existing browser suites supplement fixture keyboard checks with touch/pointer regressions."
+    },
+    {
+      "id": "search",
+      "title": "Place search",
+      "kind": "pattern",
+      "source": [
+        "src/features/map/PlaceSearch.tsx",
+        "src/domain/geocoding.ts"
+      ],
+      "fixtures": [
+        "search",
+        "search-empty",
+        "search-error",
+        "search-loading"
+      ],
+      "states": [
+        "empty input",
+        "disabled submit",
+        "populated",
+        "no results",
+        "503",
+        "loading",
+        "cancel",
+        "Escape",
+        "select"
+      ],
+      "coverage": "covered",
+      "notes": "Production search component and parser against offline Photon-shaped response. Interactive recipe submits a query; no live search provider call."
+    },
+    {
+      "id": "planner",
+      "title": "Planner screen and navigation",
+      "kind": "screen",
+      "source": [
+        "src/app/App.tsx",
+        "src/main.tsx"
+      ],
+      "fixtures": [
+        "planner",
+        "route",
+        "larger",
+        "error",
+        "loading",
+        "no-loop",
+        "shape-tolerance",
+        "search-stopped",
+        "planning-stopped",
+        "map-error",
+        "map-download"
+      ],
+      "states": [
+        "empty",
+        "populated",
+        "loading",
+        "error",
+        "desktop",
+        "mobile",
+        "preferences",
+        "cardinal buttons",
+        "route invalidation",
+        "No eligible loop",
+        "Circle fit unavailable",
+        "Search budget stopped",
+        "Planning budget stopped",
+        "Map service error",
+        "Map download stopped"
+      ],
+      "coverage": "covered",
+      "notes": "Actual production components; deterministic offline fixture."
+    },
+    {
+      "id": "result",
+      "title": "Route results and export",
+      "kind": "pattern",
+      "source": [
+        "src/app/App.tsx",
+        "src/domain/routing/gpx.ts"
+      ],
+      "fixtures": [
+        "route",
+        "larger"
+      ],
+      "states": [
+        "metrics",
+        "snap note",
+        "details",
+        "distance warning",
+        "export",
+        "download again"
+      ],
+      "coverage": "partial",
+      "notes": "Actual standalone synthetic GPX download passed. In-frame downloads blocked by unchanged opaque sandbox. No claim of live route quality."
+    },
+    {
+      "id": "styles",
+      "title": "Existing styles and semantic tokens",
+      "kind": "component",
+      "source": [
+        "src/styles/style.css",
+        "src/styles/tokens.css",
+        "design/tokens.json"
+      ],
+      "fixtures": [
+        "appearance",
+        "planner",
+        "route"
+      ],
+      "states": [
+        "eight theme/palette combinations",
+        "desktop",
+        "mobile"
+      ],
+      "coverage": "covered",
+      "notes": "Production declarations preserved; original token rule pixel comparison retained. Workbench navigation CSS is isolated."
+    },
+    {
+      "id": "routing",
+      "title": "Domain and provider adapters",
+      "kind": "domain",
+      "source": [
+        "src/domain/routing/coverage.ts",
+        "src/domain/routing/engine.ts",
+        "src/domain/routing/engineComparison.ts",
+        "src/domain/routing/geo.ts",
+        "src/domain/routing/gpx.ts",
+        "src/domain/routing/graph.ts",
+        "src/domain/routing/limits.ts",
+        "src/domain/routing/overpass.ts",
+        "src/domain/routing/plan.ts",
+        "src/domain/routing/searchClient.ts",
+        "src/domain/routing/solve.ts",
+        "src/domain/routing/strategies.ts",
+        "src/domain/routing/types.ts",
+        "src/domain/routing/validateData.ts",
+        "src/domain/routing/worker.ts",
+        "src/domain/loop/client.ts",
+        "src/domain/loop/score.ts",
+        "src/domain/loop/types.ts",
+        "src/domain/circle.ts",
+        "src/domain/selection.ts",
+        "server/index.ts",
+        "server/lambda.ts",
+        "server/loop.ts",
+        "server/ors.ts"
+      ],
+      "fixtures": [],
+      "states": [
+        "unit and integration tests"
+      ],
+      "coverage": "excluded",
+      "notes": "Not visual components. All 135 existing domain/backend tests retained, with import paths updated only. No algorithm, provider security or backend configuration changes."
+    },
+    {
+      "id": "live",
+      "title": "Live providers and geolocation",
+      "kind": "external",
+      "source": [
+        "src/features/map/MapView.tsx",
+        "src/domain/geocoding.ts",
+        "src/domain/loop/client.ts"
+      ],
+      "fixtures": [],
+      "states": [
+        "disabled locate",
+        "offline substitutes"
+      ],
+      "coverage": "excluded",
+      "notes": "No live provider calls or production deployment. Geolocation remains disabled. Real provider availability, route suitability and geographic tile content require separately authorized live validation."
+    }
+  ],
+  "checks": [
+    {
+      "id": "unit",
+      "label": "Domain/backend regression",
+      "command": "npm test",
+      "status": "passed",
+      "scope": "135 Vitest tests plus 5 design integration checks"
+    },
+    {
+      "id": "build",
+      "label": "Typecheck and production/workbench build",
+      "command": "npm run build",
+      "status": "passed",
+      "scope": "All TypeScript and both Vite entries"
+    },
+    {
+      "id": "design",
+      "label": "Design boundaries and tokens",
+      "command": "npm run lint && npm run check:design",
+      "status": "passed",
+      "scope": "Vendor integrity, collection, original tokens, CORS/proxy boundaries"
+    },
+    {
+      "id": "appearance",
+      "label": "Appearance pixel preservation",
+      "command": "npm run test:design:browser",
+      "status": "passed",
+      "scope": "16 app/workbench theme/palette comparisons, keyboard, persistence, blocked storage",
+      "evidence": "review/design-foundation/integration.json"
+    },
+    {
+      "id": "fixtures",
+      "label": "Offline component and screen scenarios",
+      "command": "npm run test:workbench:browser",
+      "status": "passed",
+      "scope": "44 desktop/mobile scenarios, zero external requests, standalone synthetic GPX",
+      "evidence": "review/workbench/results.json"
+    },
+    {
+      "id": "browser",
+      "label": "Existing full browser regression",
+      "command": "npm run test:browser",
+      "status": "passed",
+      "scope": "108 passed, 10 deliberate touch-only/mobile-only project skips. Full suite after import-path and explicit projection synchronization repairs.",
+      "evidence": "review/workbench/legacy-browser.log"
+    },
+    {
+      "id": "ors-browser",
+      "label": "ORS-mode browser regression",
+      "command": "playwright test --config playwright.ors.config.ts",
+      "status": "passed",
+      "scope": "43 passed, 3 deliberate touch-only/project skips. Synthetic provider and no-key loopback backend only.",
+      "evidence": "review/workbench/ors-browser.log"
+    },
+    {
+      "id": "lambda-build",
+      "label": "Backend packaging",
+      "command": "npm run build:lambda",
+      "status": "passed",
+      "scope": "Local Lambda ZIP build only; no upload or deploy."
+    }
+  ]
+}

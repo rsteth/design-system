@@ -1,0 +1,1631 @@
+{
+  "schemaVersion": 1,
+  "id": "reference-cohere",
+  "title": "Cohere",
+  "classification": "independent-unverified-analysis",
+  "source": {
+    "repository": "https://github.com/VoltAgent/awesome-design-md",
+    "fork": "https://github.com/rsteth/awesome-design-md-p",
+    "revision": "fcc70284932276d085f01ef9f83edde90b1258cb",
+    "path": "design-md/cohere/DESIGN.md",
+    "sha256": "1c49a5a5f88d43841d4f4afa33831328d47a5715048700a3b75086a822575883",
+    "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/cohere/DESIGN.md"
+  },
+  "sourceName": "Cohere-design-analysis",
+  "titleProvenance": {
+    "status": "inferred",
+    "basis": "Source directory label, normalized for navigation; original source name is retained without correction.",
+    "sourceValue": "cohere",
+    "originalName": "Cohere-design-analysis"
+  },
+  "description": "Cohere's 2026 web system is a controlled enterprise AI interface built from stark white editorial space, deep green-black product bands, soft mineral surfaces, rounded media cards, and a distinctive type split between monospaced-feeling display headlines and precise Unica77 UI text.",
+  "analysis": {
+    "version": "alpha",
+    "name": "Cohere-design-analysis",
+    "description": "Cohere's 2026 web system is a controlled enterprise AI interface built from stark white editorial space, deep green-black product bands, soft mineral surfaces, rounded media cards, and a distinctive type split between monospaced-feeling display headlines and precise Unica77 UI text.",
+    "colors": {
+      "primary": "#17171c",
+      "cohere-black": "#000000",
+      "ink": "#212121",
+      "deep-green": "#003c33",
+      "dark-navy": "#071829",
+      "canvas": "#ffffff",
+      "soft-stone": "#eeece7",
+      "pale-green": "#edfce9",
+      "pale-blue": "#f1f5ff",
+      "hairline": "#d9d9dd",
+      "border-light": "#e5e7eb",
+      "card-border": "#f2f2f2",
+      "muted": "#93939f",
+      "slate": "#75758a",
+      "body-muted": "#616161",
+      "action-blue": "#1863dc",
+      "focus-blue": "#4c6ee6",
+      "coral": "#ff7759",
+      "coral-soft": "#ffad9b",
+      "form-focus": "#9b60aa",
+      "on-primary": "#ffffff",
+      "on-dark": "#ffffff",
+      "error": "#b30000"
+    },
+    "typography": {
+      "hero-display": {
+        "fontFamily": "CohereText",
+        "fontSize": "96px",
+        "fontWeight": 400,
+        "lineHeight": 1,
+        "letterSpacing": "-1.92px"
+      },
+      "product-display": {
+        "fontFamily": "CohereText",
+        "fontSize": "72px",
+        "fontWeight": 400,
+        "lineHeight": 1,
+        "letterSpacing": "-1.44px"
+      },
+      "section-display": {
+        "fontFamily": "Unica77 Cohere Web",
+        "fontSize": "60px",
+        "fontWeight": 400,
+        "lineHeight": 1,
+        "letterSpacing": "-1.2px"
+      },
+      "section-heading": {
+        "fontFamily": "Unica77 Cohere Web",
+        "fontSize": "48px",
+        "fontWeight": 400,
+        "lineHeight": 1.2,
+        "letterSpacing": "-0.48px"
+      },
+      "card-heading": {
+        "fontFamily": "Unica77 Cohere Web",
+        "fontSize": "32px",
+        "fontWeight": 400,
+        "lineHeight": 1.2,
+        "letterSpacing": "-0.32px"
+      },
+      "feature-heading": {
+        "fontFamily": "Unica77 Cohere Web",
+        "fontSize": "24px",
+        "fontWeight": 400,
+        "lineHeight": 1.3,
+        "letterSpacing": 0
+      },
+      "body-large": {
+        "fontFamily": "Unica77 Cohere Web",
+        "fontSize": "18px",
+        "fontWeight": 400,
+        "lineHeight": 1.4,
+        "letterSpacing": 0
+      },
+      "body": {
+        "fontFamily": "Unica77 Cohere Web",
+        "fontSize": "16px",
+        "fontWeight": 400,
+        "lineHeight": 1.5,
+        "letterSpacing": 0
+      },
+      "button": {
+        "fontFamily": "Unica77 Cohere Web",
+        "fontSize": "14px",
+        "fontWeight": 500,
+        "lineHeight": 1.71,
+        "letterSpacing": 0
+      },
+      "caption": {
+        "fontFamily": "Unica77 Cohere Web",
+        "fontSize": "14px",
+        "fontWeight": 400,
+        "lineHeight": 1.4,
+        "letterSpacing": 0
+      },
+      "mono-label": {
+        "fontFamily": "CohereMono",
+        "fontSize": "14px",
+        "fontWeight": 400,
+        "lineHeight": 1.4,
+        "letterSpacing": "0.28px"
+      },
+      "micro": {
+        "fontFamily": "Unica77 Cohere Web",
+        "fontSize": "12px",
+        "fontWeight": 400,
+        "lineHeight": 1.4,
+        "letterSpacing": 0
+      }
+    },
+    "rounded": {
+      "xs": "4px",
+      "sm": "8px",
+      "md": "16px",
+      "lg": "22px",
+      "xl": "30px",
+      "pill": "32px",
+      "full": "9999px"
+    },
+    "spacing": {
+      "xxs": "2px",
+      "xs": "6px",
+      "sm": "8px",
+      "md": "12px",
+      "lg": "16px",
+      "xl": "24px",
+      "xxl": "32px",
+      "section": "80px"
+    },
+    "components": {
+      "button-primary": {
+        "backgroundColor": "{colors.primary}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.button}",
+        "rounded": "{rounded.pill}",
+        "padding": "12px 24px"
+      },
+      "button-secondary": {
+        "backgroundColor": "transparent",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body}",
+        "rounded": "{rounded.xs}",
+        "padding": "8px 0"
+      },
+      "button-pill-outline": {
+        "backgroundColor": "transparent",
+        "textColor": "{colors.primary}",
+        "typography": "{typography.button}",
+        "rounded": "{rounded.xl}",
+        "padding": "6px 12px"
+      },
+      "announcement-bar": {
+        "backgroundColor": "{colors.cohere-black}",
+        "textColor": "{colors.on-dark}",
+        "typography": "{typography.micro}",
+        "height": "36px"
+      },
+      "hero-photo-card": {
+        "backgroundColor": "{colors.canvas}",
+        "rounded": "{rounded.lg}"
+      },
+      "agent-console-card": {
+        "backgroundColor": "{colors.primary}",
+        "textColor": "{colors.on-dark}",
+        "rounded": "{rounded.sm}",
+        "padding": "24px"
+      },
+      "trust-logo-strip": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.caption}"
+      },
+      "capability-card": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body}",
+        "rounded": "{rounded.xs}",
+        "padding": "24px"
+      },
+      "dark-feature-band": {
+        "backgroundColor": "{colors.deep-green}",
+        "textColor": "{colors.on-dark}",
+        "rounded": "{rounded.lg}",
+        "padding": "80px"
+      },
+      "product-card": {
+        "backgroundColor": "{colors.soft-stone}",
+        "textColor": "{colors.ink}",
+        "rounded": "{rounded.sm}",
+        "padding": "32px"
+      },
+      "blog-filter-chip": {
+        "backgroundColor": "transparent",
+        "textColor": "{colors.coral}",
+        "typography": "{typography.card-heading}",
+        "rounded": "{rounded.sm}",
+        "padding": "8px 14px"
+      },
+      "research-table": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-large}"
+      },
+      "contact-form-card": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "rounded": "{rounded.lg}",
+        "padding": "32px"
+      },
+      "footer-newsletter": {
+        "backgroundColor": "{colors.primary}",
+        "textColor": "{colors.on-dark}",
+        "typography": "{typography.micro}"
+      }
+    }
+  },
+  "normalizationRepairs": [],
+  "sections": [
+    {
+      "heading": "Overview",
+      "level": 2,
+      "text": "Cohere's current web presence feels like a sober enterprise AI command center with editorial restraint. The home page opens on a huge typographic declaration over a white canvas, then uses photography, dark product mockups, trust logos, and generous empty space to make AI infrastructure feel controlled rather than speculative. Product pages invert the tone into deep green-black or dark navy bands, while blog and research pages move toward publishing-system clarity: large filters, thin rules, dense lists, and pale technical backgrounds.\n\nWhat makes the system distinctive is the mix of austere black-and-white UI with bursts of tactile brand imagery. The site avoids decorative chrome in the normal interface; color arrives through photography, abstract 3D media, coral blog taxonomy chips, blue research links, and dark product environments. Cards are rounded but not cute. Type is large, tight, and almost monospaced in spirit, creating a research-lab cadence across marketing, product, and editorial surfaces.\n\n**Key Characteristics:**\n- Monumental display headlines with very tight line height and negative tracking.\n- White editorial canvases interrupted by deep green, dark navy, and image-led CTA bands.\n- Rounded media cards and product cards, usually 8px to 22px.\n- Pill CTAs in near-black or white, with most secondary actions rendered as underlined text links.\n- Trust-logo strips with monochrome partner marks and very wide vertical spacing.\n- Agent-console mockups using dark panels, small status chips, and product integration badges.\n- Blog and research surfaces with prominent taxonomy chips, long rule-separated lists, and search fields.",
+      "line": 197
+    },
+    {
+      "heading": "Colors",
+      "level": 2,
+      "text": "",
+      "line": 212
+    },
+    {
+      "heading": "Brand & Accent",
+      "level": 3,
+      "text": "- **Cohere Black** (`#000000`): Announcement bar, highest-contrast text, and the global brand anchor.\n- **Near-Black Primary** (`#17171c`): Primary CTA buttons, dark footer, and deep UI cards.\n- **Deep Enterprise Green** (`#003c33`): Product hero bands for North and Command-style dark sections.\n- **Dark Navy** (`#071829`): Financial-services and security-oriented solution bands.\n- **Action Blue** (`#1863dc`): Editorial links, pagination, and secondary action emphasis.\n- **Coral** (`#ff7759`): Blog category chips, taxonomy outlines, and warm product markers.\n- **Soft Coral** (`#ffad9b`): Pale chip borders and segmented article-label details.",
+      "line": 214
+    },
+    {
+      "heading": "Surface & Background",
+      "level": 3,
+      "text": "- **Canvas White** (`#ffffff`): Dominant page background and form/card surface.\n- **Soft Stone** (`#eeece7`): Product cards, testimonial placeholders, and warm neutral surface blocks.\n- **Pale Green Wash** (`#edfce9`): North page section backdrop behind stacked dark capability panels.\n- **Pale Blue Wash** (`#f1f5ff`): Blog CTA surface behind abstract 3D imagery.\n- **Card Border** (`#f2f2f2`): Softest card containment line.",
+      "line": 224
+    },
+    {
+      "heading": "Text & Rules",
+      "level": 3,
+      "text": "- **Ink** (`#212121`): Default body text and most link text on light backgrounds.\n- **Muted Slate** (`#93939f`): Footer links, dates, metadata, and de-emphasized labels.\n- **Slate** (`#75758a`): Research separators and tertiary text.\n- **Hairline** (`#d9d9dd`): Standard list rules and section dividers.\n- **Border Light** (`#e5e7eb`): Secondary divider and utility rule.",
+      "line": 232
+    },
+    {
+      "heading": "Semantic",
+      "level": 3,
+      "text": "- **Focus Blue** (`#4c6ee6`): Keyboard focus and ring color.\n- **Form Focus Violet** (`#9b60aa`): Focus border for text inputs.\n- **Error Red** (`#b30000`): Extracted ring/shadow color associated with validation-like states.",
+      "line": 240
+    },
+    {
+      "heading": "Gradient System",
+      "level": 3,
+      "text": "Cohere does not use gradients as a generic UI fill. Gradients and color fields are media-led: abstract 3D hero imagery, deep blue open-science particle fields, red-orange product video posters, and dark green-to-black product environments. Keep UI surfaces flat; reserve gradient richness for large media panels and CTA image bands.",
+      "line": 246
+    },
+    {
+      "heading": "Typography",
+      "level": 2,
+      "text": "",
+      "line": 250
+    },
+    {
+      "heading": "Font Family",
+      "level": 3,
+      "text": "- **Display**: `CohereText`, falling back to `Space Grotesk`, `Inter`, `ui-sans-serif`, and `system-ui`.\n- **Body/UI**: `Unica77 Cohere Web`, falling back to `Inter`, `Arial`, `ui-sans-serif`, and `system-ui`.\n- **Technical labels**: `CohereMono`, falling back to `Arial`, `ui-sans-serif`, and `system-ui`.\n- **Icons**: Cohere uses custom icon fonts and thin-line geometric illustrations.",
+      "line": 252
+    },
+    {
+      "heading": "Hierarchy",
+      "level": 3,
+      "text": "| Role | Font | Size | Weight | Line Height | Letter Spacing | Notes |\n|---|---|---:|---:|---:|---:|---|\n| Hero Display | CohereText | 96px | 400 | 1.00 | -1.92px | Home page declaration scale. |\n| Product Display | CohereText | 72px | 400 | 1.00 | -1.44px | Product and research hero headlines. |\n| Section Display | Unica77 | 60px | 400 | 1.00 | -1.2px | Large product-page headings. |\n| Section Heading | Unica77 | 48px | 400 | 1.20 | -0.48px | Split hero and CTA headings. |\n| Card Heading | Unica77 | 32px | 400 | 1.20 | -0.32px | Feature card and list section titles. |\n| Feature Heading | Unica77 | 24px | 400 | 1.30 | 0 | Cards, filters, and article titles. |\n| Body Large | Unica77 | 18px | 400 | 1.40 | 0 | Lead text and larger paragraphs. |\n| Body | Unica77 | 16px | 400 | 1.50 | 0 | Default copy and link text. |\n| Button | Unica77 | 14px | 500 | 1.71 | 0 | Compact CTA labels. |\n| Caption | Unica77 | 14px | 400 | 1.40 | 0 | Metadata and small explanatory text. |\n| Mono Label | CohereMono | 14px | 400 | 1.40 | 0.28px | Uppercase technical labels. |\n| Micro | Unica77 | 12px | 400 | 1.40 | 0 | Footer, nav microcopy, and small links. |",
+      "line": 259
+    },
+    {
+      "heading": "Principles",
+      "level": 3,
+      "text": "- Use massive type sparingly; Cohere pages often have one oversized headline and then settle into restrained 16px-24px UI copy.\n- Keep display type tight. Hero copy should feel compact and carved, not airy.\n- Avoid heavy bold weights. Size, spacing, and surface contrast do most of the hierarchy work.\n- Use uppercase mono labels for category and system markers, especially on product and research pages.\n- Editorial pages can use coral chips and blue links, but the base typography remains black and measured.",
+      "line": 276
+    },
+    {
+      "heading": "Layout",
+      "level": 2,
+      "text": "",
+      "line": 284
+    },
+    {
+      "heading": "Spacing System",
+      "level": 3,
+      "text": "The system uses an 8px base with many one-off alignment values: `2px`, `6px`, `8px`, `10px`, `12px`, `16px`, `20px`, `22px`, `24px`, `28px`, `32px`, `36px`, `40px`, `56px`, `60px`, `64px`, and `80px`.\n\nLarge sections rely on dramatic vertical breathing room. The home page places a trust-logo strip far below the hero media. Product pages often hold dark panels inside fields of empty white space, then transition to dense forms or footers only near the end.",
+      "line": 286
+    },
+    {
+      "heading": "Grid & Container",
+      "level": 3,
+      "text": "- Global nav uses a three-zone layout: logo left, menu centered, sign-in/CTA right.\n- Home hero is centered text above a two-card media composition: a wide product mockup card beside a narrower photography card.\n- Feature sections commonly use 3-column cards on desktop.\n- Product pages alternate centered hero blocks, trust-logo strips, large single-feature bands, and 2- or 3-column card grids.\n- Research pages use full-width lists with date and chip columns instead of decorative cards.\n- Forms use two-column input rows inside a rounded white card on dark or stone section backgrounds.",
+      "line": 292
+    },
+    {
+      "heading": "Whitespace Philosophy",
+      "level": 3,
+      "text": "Cohere uses whitespace as a trust signal. Large empty intervals separate the brand claim, customer proof, product proof, and CTA. Dense content appears only where it serves the information architecture: research paper rows, blog card grids, and contact form fields.",
+      "line": 301
+    },
+    {
+      "heading": "Elevation & Depth",
+      "level": 2,
+      "text": "Cohere is mostly flat. Depth comes from surface alternation, media contrast, rounded corners, and thin borders rather than drop shadows.\n\n| Level | Treatment | Use |\n|---|---|---|\n| Flat | No shadow, white or dark field | Hero copy, research lists, editorial surfaces |\n| Bordered | 1px `#d9d9dd`, `#e5e7eb`, or dark translucent rules | Research rows, forms, pale cards, footer inputs |\n| Media Lift | Rounded image or video over contrasting section color | Hero photo cards, product videos, CTA imagery |\n| Dark Product Field | Deep green or navy full-width band | Command, North, financial services, security sections |",
+      "line": 305
+    },
+    {
+      "heading": "Shapes",
+      "level": 2,
+      "text": "",
+      "line": 316
+    },
+    {
+      "heading": "Radius Scale",
+      "level": 3,
+      "text": "| Token | Value | Role |\n|---|---:|---|\n| `xs` | 4px | Small images, search fields, article thumbnails, utility elements |\n| `sm` | 8px | Blog chips, cards, small media, dialogs |\n| `md` | 16px | Medium product cards and grouped blocks |\n| `lg` | 22px | Signature media-card and soft placeholder radius |\n| `xl` | 30px | Research/topic filter pills |\n| `pill` | 32px | Primary CTA buttons |\n| `full` | 9999px | Round status elements and fully pill-shaped controls |",
+      "line": 318
+    },
+    {
+      "heading": "Image Treatment",
+      "level": 3,
+      "text": "Images are not decorative backdrops for text except in CTA bands. Most imagery sits as rounded cards with visible corners: product videos, enterprise photography, article thumbnails, and abstract 3D renders. The dominant radii are 8px and 22px.",
+      "line": 330
+    },
+    {
+      "heading": "Components",
+      "level": 2,
+      "text": "",
+      "line": 334
+    },
+    {
+      "heading": "**`button-primary`**",
+      "level": 3,
+      "text": "Near-black or white pill CTA, depending on surface contrast. Uses 14px-16px Unica77, 12px 24px padding, and a 32px pill radius. This is the primary action style for \"Request a demo\", \"Submit\", and hero CTAs.",
+      "line": 336
+    },
+    {
+      "heading": "**`button-secondary`**",
+      "level": 3,
+      "text": "Text-only action link, usually underlined or rule-aligned, with no filled background. Used for \"Explore products\", \"Try the Playground\", newsletter signup, and secondary hero actions.",
+      "line": 340
+    },
+    {
+      "heading": "**`button-pill-outline`**",
+      "level": 3,
+      "text": "Outlined pill control with transparent fill, 1px dark border, and 30px radius. Used for research filters, topic tags, and lightweight taxonomy controls.",
+      "line": 344
+    },
+    {
+      "heading": "**`announcement-bar`**",
+      "level": 3,
+      "text": "Full-width black strip above the nav, 36px tall, centered microcopy with an underlined \"Learn more\" link and a close control at the far right.",
+      "line": 348
+    },
+    {
+      "heading": "**`hero-photo-card`**",
+      "level": 3,
+      "text": "Rounded media card used in the home hero and solution pages. It combines photography or abstract imagery with an overlaid dark agent-console module. Radius is usually 22px on large cards and 8px on smaller thumbnails.",
+      "line": 352
+    },
+    {
+      "heading": "**`agent-console-card`**",
+      "level": 3,
+      "text": "Dark product mockup panel showing agent names, status chips, integration badges, prompt fields, and generated response cards. Background is near-black, text is white or muted, and small accent chips use product colors.",
+      "line": 356
+    },
+    {
+      "heading": "**`trust-logo-strip`**",
+      "level": 3,
+      "text": "Centered copy above a row of monochrome customer logos. It is intentionally quiet: no cards, no borders, just large horizontal spacing and black or white logos depending on the background.",
+      "line": 360
+    },
+    {
+      "heading": "**`capability-card`**",
+      "level": 3,
+      "text": "Content block with thin-line geometric illustration, 24px heading, body copy, and a text link. On light backgrounds, cards often have only a top rule or a subtle image/card relationship rather than full boxing.",
+      "line": 364
+    },
+    {
+      "heading": "**`dark-feature-band`**",
+      "level": 3,
+      "text": "Deep green or navy full-width section used for product capabilities, security claims, and feature breakdowns. Text turns white; cards use darker translucent surfaces, pale borders, and abstract line illustrations.",
+      "line": 368
+    },
+    {
+      "heading": "**`product-card`**",
+      "level": 3,
+      "text": "Warm stone card used for product/model summaries. Typically 3-column on desktop, with 8px radius, generous padding, a small pill button, a divider line, and checkmark bullet rows.",
+      "line": 372
+    },
+    {
+      "heading": "**`blog-filter-chip`**",
+      "level": 3,
+      "text": "Large coral taxonomy chip used on the blog index. Active chips invert to coral fill with dark text; inactive chips use coral outline and pale fill. Typography is oversized relative to typical filters, making the taxonomy a hero-level control.",
+      "line": 376
+    },
+    {
+      "heading": "**`research-table`**",
+      "level": 3,
+      "text": "Rule-separated publication list with title left, topic pills centered, and date right. Rows are tall, white, and border-driven; filters above use many compact outlined pills.",
+      "line": 380
+    },
+    {
+      "heading": "**`contact-form-card`**",
+      "level": 3,
+      "text": "Rounded white form panel set against dark green or warm stone sections. Inputs are rectangular with thin gray borders, 12px-16px padding, and compact labels/placeholders. Submit uses the same near-black pill style as primary CTAs.",
+      "line": 384
+    },
+    {
+      "heading": "**`footer-newsletter`**",
+      "level": 3,
+      "text": "Dark footer subscription block with coral \"AI moves fast\" label, white headline, muted legal microcopy, a single-line email field, and arrow submit marker. Footer columns use white section labels and muted links.",
+      "line": 388
+    },
+    {
+      "heading": "Do's and Don'ts",
+      "level": 2,
+      "text": "",
+      "line": 392
+    },
+    {
+      "heading": "Do",
+      "level": 3,
+      "text": "- Use white canvas as the default surface; introduce dark green or navy as full-width product bands.\n- Keep primary CTAs pill-shaped and near-black on light surfaces.\n- Use 22px radius on major media cards and placeholders.\n- Use coral for editorial taxonomy and small warm accents, not as the main CTA system.\n- Use monochrome trust logos with wide spacing.\n- Use thin-line geometric illustrations for research and capability icons.\n- Let photography and product mockups carry color, while the UI shell stays restrained.",
+      "line": 394
+    },
+    {
+      "heading": "Don't",
+      "level": 3,
+      "text": "- Do not turn coral or blue into broad decorative surface colors.\n- Do not add heavy drop shadows to cards.\n- Do not make every section card-based; Cohere often uses unframed rows, rules, and open space.\n- Do not use rounded cards below 8px for major media.\n- Do not replace the display/body type split with one generic sans-serif voice.\n- Do not render undocumented interaction variants in documentation or previews.\n- Do not use saturated gradients as normal UI backgrounds; keep gradients media-led.",
+      "line": 404
+    },
+    {
+      "heading": "Responsive Behavior",
+      "level": 2,
+      "text": "",
+      "line": 414
+    },
+    {
+      "heading": "Breakpoints",
+      "level": 3,
+      "text": "| Name | Width | Key Changes |\n|---|---:|---|\n| Small Mobile | <425px | Single-column cards, compact nav, reduced hero headline scale |\n| Mobile | 425-640px | Hero media stacks, card grids become one column, form rows stack |\n| Large Mobile | 640-768px | Wider one-column layouts with larger media cards |\n| Tablet | 768-1024px | Two-column cards begin, nav spacing tightens |\n| Desktop | 1024-1440px | Full nav, 3-column card grids, split hero compositions |\n| Large Desktop | 1440-2560px | Wide containers and large empty vertical intervals |",
+      "line": 416
+    },
+    {
+      "heading": "Touch Targets",
+      "level": 3,
+      "text": "Primary CTAs and pills meet comfortable touch sizing through 12px-24px padding and pill radii. Research filter chips and blog category chips are larger than standard tags, making dense taxonomy surfaces usable on touch devices.",
+      "line": 427
+    },
+    {
+      "heading": "Collapsing Strategy",
+      "level": 3,
+      "text": "- Nav collapses from full horizontal links to a compact mobile menu.\n- Hero media moves from split cards to stacked cards.\n- Product and capability grids collapse from 3 columns to 2 and then 1.\n- Form fields collapse from paired rows to a single column.\n- Research rows preserve their rule-separated structure but stack metadata below titles on smaller widths.",
+      "line": 431
+    },
+    {
+      "heading": "Iteration Guide",
+      "level": 2,
+      "text": "1. Start from a white canvas or a full-width dark green/navy band; avoid mid-tone page backgrounds unless the screenshot shows a specific CTA/form section.\n2. Use `button-primary` for the single highest-priority action and `button-secondary` for the companion action.\n3. Use `hero-photo-card` or `agent-console-card` when a page needs visual energy; avoid invented dashboard data.\n4. For editorial pages, combine `blog-filter-chip`, `button-pill-outline`, and `research-table` instead of generic marketing cards.\n5. Keep component examples structurally honest: placeholder product frames are better than invented product content.",
+      "line": 439
+    },
+    {
+      "heading": "Known Gaps",
+      "level": 2,
+      "text": "- Exact proprietary font files are not bundled; use the documented fallbacks when implementing externally.\n- Mobile screenshots were not regenerated in this public update, so mobile behavior is documented from the desktop system and existing responsive patterns.\n- Some live pages lazy-load content blocks late; blank testimonial placeholders are documented as placeholder skeleton surfaces rather than filled testimonial cards.",
+      "line": 447
+    }
+  ],
+  "tokens": [
+    {
+      "path": "colors.primary",
+      "sourcePath": "colors.primary",
+      "type": "color",
+      "value": "#17171c",
+      "status": "unverified",
+      "evidence": {
+        "line": 7,
+        "sourcePath": "colors.primary"
+      }
+    },
+    {
+      "path": "colors.cohereblack",
+      "sourcePath": "colors.cohere-black",
+      "type": "color",
+      "value": "#000000",
+      "status": "unverified",
+      "evidence": {
+        "line": 8,
+        "sourcePath": "colors.cohere-black"
+      }
+    },
+    {
+      "path": "colors.ink",
+      "sourcePath": "colors.ink",
+      "type": "color",
+      "value": "#212121",
+      "status": "unverified",
+      "evidence": {
+        "line": 9,
+        "sourcePath": "colors.ink"
+      }
+    },
+    {
+      "path": "colors.deepgreen",
+      "sourcePath": "colors.deep-green",
+      "type": "color",
+      "value": "#003c33",
+      "status": "unverified",
+      "evidence": {
+        "line": 10,
+        "sourcePath": "colors.deep-green"
+      }
+    },
+    {
+      "path": "colors.darknavy",
+      "sourcePath": "colors.dark-navy",
+      "type": "color",
+      "value": "#071829",
+      "status": "unverified",
+      "evidence": {
+        "line": 11,
+        "sourcePath": "colors.dark-navy"
+      }
+    },
+    {
+      "path": "colors.canvas",
+      "sourcePath": "colors.canvas",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 12,
+        "sourcePath": "colors.canvas"
+      }
+    },
+    {
+      "path": "colors.softstone",
+      "sourcePath": "colors.soft-stone",
+      "type": "color",
+      "value": "#eeece7",
+      "status": "unverified",
+      "evidence": {
+        "line": 13,
+        "sourcePath": "colors.soft-stone"
+      }
+    },
+    {
+      "path": "colors.palegreen",
+      "sourcePath": "colors.pale-green",
+      "type": "color",
+      "value": "#edfce9",
+      "status": "unverified",
+      "evidence": {
+        "line": 14,
+        "sourcePath": "colors.pale-green"
+      }
+    },
+    {
+      "path": "colors.paleblue",
+      "sourcePath": "colors.pale-blue",
+      "type": "color",
+      "value": "#f1f5ff",
+      "status": "unverified",
+      "evidence": {
+        "line": 15,
+        "sourcePath": "colors.pale-blue"
+      }
+    },
+    {
+      "path": "colors.hairline",
+      "sourcePath": "colors.hairline",
+      "type": "color",
+      "value": "#d9d9dd",
+      "status": "unverified",
+      "evidence": {
+        "line": 16,
+        "sourcePath": "colors.hairline"
+      }
+    },
+    {
+      "path": "colors.borderlight",
+      "sourcePath": "colors.border-light",
+      "type": "color",
+      "value": "#e5e7eb",
+      "status": "unverified",
+      "evidence": {
+        "line": 17,
+        "sourcePath": "colors.border-light"
+      }
+    },
+    {
+      "path": "colors.cardborder",
+      "sourcePath": "colors.card-border",
+      "type": "color",
+      "value": "#f2f2f2",
+      "status": "unverified",
+      "evidence": {
+        "line": 18,
+        "sourcePath": "colors.card-border"
+      }
+    },
+    {
+      "path": "colors.muted",
+      "sourcePath": "colors.muted",
+      "type": "color",
+      "value": "#93939f",
+      "status": "unverified",
+      "evidence": {
+        "line": 19,
+        "sourcePath": "colors.muted"
+      }
+    },
+    {
+      "path": "colors.slate",
+      "sourcePath": "colors.slate",
+      "type": "color",
+      "value": "#75758a",
+      "status": "unverified",
+      "evidence": {
+        "line": 20,
+        "sourcePath": "colors.slate"
+      }
+    },
+    {
+      "path": "colors.bodymuted",
+      "sourcePath": "colors.body-muted",
+      "type": "color",
+      "value": "#616161",
+      "status": "unverified",
+      "evidence": {
+        "line": 21,
+        "sourcePath": "colors.body-muted"
+      }
+    },
+    {
+      "path": "colors.actionblue",
+      "sourcePath": "colors.action-blue",
+      "type": "color",
+      "value": "#1863dc",
+      "status": "unverified",
+      "evidence": {
+        "line": 22,
+        "sourcePath": "colors.action-blue"
+      }
+    },
+    {
+      "path": "colors.focusblue",
+      "sourcePath": "colors.focus-blue",
+      "type": "color",
+      "value": "#4c6ee6",
+      "status": "unverified",
+      "evidence": {
+        "line": 23,
+        "sourcePath": "colors.focus-blue"
+      }
+    },
+    {
+      "path": "colors.coral",
+      "sourcePath": "colors.coral",
+      "type": "color",
+      "value": "#ff7759",
+      "status": "unverified",
+      "evidence": {
+        "line": 24,
+        "sourcePath": "colors.coral"
+      }
+    },
+    {
+      "path": "colors.coralsoft",
+      "sourcePath": "colors.coral-soft",
+      "type": "color",
+      "value": "#ffad9b",
+      "status": "unverified",
+      "evidence": {
+        "line": 25,
+        "sourcePath": "colors.coral-soft"
+      }
+    },
+    {
+      "path": "colors.formfocus",
+      "sourcePath": "colors.form-focus",
+      "type": "color",
+      "value": "#9b60aa",
+      "status": "unverified",
+      "evidence": {
+        "line": 26,
+        "sourcePath": "colors.form-focus"
+      }
+    },
+    {
+      "path": "colors.onprimary",
+      "sourcePath": "colors.on-primary",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 27,
+        "sourcePath": "colors.on-primary"
+      }
+    },
+    {
+      "path": "colors.ondark",
+      "sourcePath": "colors.on-dark",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 28,
+        "sourcePath": "colors.on-dark"
+      }
+    },
+    {
+      "path": "colors.error",
+      "sourcePath": "colors.error",
+      "type": "color",
+      "value": "#b30000",
+      "status": "unverified",
+      "evidence": {
+        "line": 29,
+        "sourcePath": "colors.error"
+      }
+    },
+    {
+      "path": "typography.herodisplay.fontfamily",
+      "sourcePath": "typography.hero-display.fontFamily",
+      "type": "fontFamily",
+      "value": "CohereText",
+      "status": "unverified",
+      "evidence": {
+        "line": 33,
+        "sourcePath": "typography.hero-display.fontFamily"
+      }
+    },
+    {
+      "path": "typography.herodisplay.fontsize",
+      "sourcePath": "typography.hero-display.fontSize",
+      "type": "dimension",
+      "value": "96px",
+      "status": "unverified",
+      "evidence": {
+        "line": 34,
+        "sourcePath": "typography.hero-display.fontSize"
+      }
+    },
+    {
+      "path": "typography.herodisplay.fontweight",
+      "sourcePath": "typography.hero-display.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 35,
+        "sourcePath": "typography.hero-display.fontWeight"
+      }
+    },
+    {
+      "path": "typography.herodisplay.lineheight",
+      "sourcePath": "typography.hero-display.lineHeight",
+      "type": "number",
+      "value": 1,
+      "status": "unverified",
+      "evidence": {
+        "line": 36,
+        "sourcePath": "typography.hero-display.lineHeight"
+      }
+    },
+    {
+      "path": "typography.herodisplay.letterspacing",
+      "sourcePath": "typography.hero-display.letterSpacing",
+      "type": "dimension",
+      "value": "-1.92px",
+      "status": "unverified",
+      "evidence": {
+        "line": 37,
+        "sourcePath": "typography.hero-display.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.productdisplay.fontfamily",
+      "sourcePath": "typography.product-display.fontFamily",
+      "type": "fontFamily",
+      "value": "CohereText",
+      "status": "unverified",
+      "evidence": {
+        "line": 39,
+        "sourcePath": "typography.product-display.fontFamily"
+      }
+    },
+    {
+      "path": "typography.productdisplay.fontsize",
+      "sourcePath": "typography.product-display.fontSize",
+      "type": "dimension",
+      "value": "72px",
+      "status": "unverified",
+      "evidence": {
+        "line": 40,
+        "sourcePath": "typography.product-display.fontSize"
+      }
+    },
+    {
+      "path": "typography.productdisplay.fontweight",
+      "sourcePath": "typography.product-display.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 41,
+        "sourcePath": "typography.product-display.fontWeight"
+      }
+    },
+    {
+      "path": "typography.productdisplay.lineheight",
+      "sourcePath": "typography.product-display.lineHeight",
+      "type": "number",
+      "value": 1,
+      "status": "unverified",
+      "evidence": {
+        "line": 42,
+        "sourcePath": "typography.product-display.lineHeight"
+      }
+    },
+    {
+      "path": "typography.productdisplay.letterspacing",
+      "sourcePath": "typography.product-display.letterSpacing",
+      "type": "dimension",
+      "value": "-1.44px",
+      "status": "unverified",
+      "evidence": {
+        "line": 43,
+        "sourcePath": "typography.product-display.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.sectiondisplay.fontfamily",
+      "sourcePath": "typography.section-display.fontFamily",
+      "type": "fontFamily",
+      "value": "Unica77 Cohere Web",
+      "status": "unverified",
+      "evidence": {
+        "line": 45,
+        "sourcePath": "typography.section-display.fontFamily"
+      }
+    },
+    {
+      "path": "typography.sectiondisplay.fontsize",
+      "sourcePath": "typography.section-display.fontSize",
+      "type": "dimension",
+      "value": "60px",
+      "status": "unverified",
+      "evidence": {
+        "line": 46,
+        "sourcePath": "typography.section-display.fontSize"
+      }
+    },
+    {
+      "path": "typography.sectiondisplay.fontweight",
+      "sourcePath": "typography.section-display.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 47,
+        "sourcePath": "typography.section-display.fontWeight"
+      }
+    },
+    {
+      "path": "typography.sectiondisplay.lineheight",
+      "sourcePath": "typography.section-display.lineHeight",
+      "type": "number",
+      "value": 1,
+      "status": "unverified",
+      "evidence": {
+        "line": 48,
+        "sourcePath": "typography.section-display.lineHeight"
+      }
+    },
+    {
+      "path": "typography.sectiondisplay.letterspacing",
+      "sourcePath": "typography.section-display.letterSpacing",
+      "type": "dimension",
+      "value": "-1.2px",
+      "status": "unverified",
+      "evidence": {
+        "line": 49,
+        "sourcePath": "typography.section-display.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.sectionheading.fontfamily",
+      "sourcePath": "typography.section-heading.fontFamily",
+      "type": "fontFamily",
+      "value": "Unica77 Cohere Web",
+      "status": "unverified",
+      "evidence": {
+        "line": 51,
+        "sourcePath": "typography.section-heading.fontFamily"
+      }
+    },
+    {
+      "path": "typography.sectionheading.fontsize",
+      "sourcePath": "typography.section-heading.fontSize",
+      "type": "dimension",
+      "value": "48px",
+      "status": "unverified",
+      "evidence": {
+        "line": 52,
+        "sourcePath": "typography.section-heading.fontSize"
+      }
+    },
+    {
+      "path": "typography.sectionheading.fontweight",
+      "sourcePath": "typography.section-heading.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 53,
+        "sourcePath": "typography.section-heading.fontWeight"
+      }
+    },
+    {
+      "path": "typography.sectionheading.lineheight",
+      "sourcePath": "typography.section-heading.lineHeight",
+      "type": "number",
+      "value": 1.2,
+      "status": "unverified",
+      "evidence": {
+        "line": 54,
+        "sourcePath": "typography.section-heading.lineHeight"
+      }
+    },
+    {
+      "path": "typography.sectionheading.letterspacing",
+      "sourcePath": "typography.section-heading.letterSpacing",
+      "type": "dimension",
+      "value": "-0.48px",
+      "status": "unverified",
+      "evidence": {
+        "line": 55,
+        "sourcePath": "typography.section-heading.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.cardheading.fontfamily",
+      "sourcePath": "typography.card-heading.fontFamily",
+      "type": "fontFamily",
+      "value": "Unica77 Cohere Web",
+      "status": "unverified",
+      "evidence": {
+        "line": 57,
+        "sourcePath": "typography.card-heading.fontFamily"
+      }
+    },
+    {
+      "path": "typography.cardheading.fontsize",
+      "sourcePath": "typography.card-heading.fontSize",
+      "type": "dimension",
+      "value": "32px",
+      "status": "unverified",
+      "evidence": {
+        "line": 58,
+        "sourcePath": "typography.card-heading.fontSize"
+      }
+    },
+    {
+      "path": "typography.cardheading.fontweight",
+      "sourcePath": "typography.card-heading.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 59,
+        "sourcePath": "typography.card-heading.fontWeight"
+      }
+    },
+    {
+      "path": "typography.cardheading.lineheight",
+      "sourcePath": "typography.card-heading.lineHeight",
+      "type": "number",
+      "value": 1.2,
+      "status": "unverified",
+      "evidence": {
+        "line": 60,
+        "sourcePath": "typography.card-heading.lineHeight"
+      }
+    },
+    {
+      "path": "typography.cardheading.letterspacing",
+      "sourcePath": "typography.card-heading.letterSpacing",
+      "type": "dimension",
+      "value": "-0.32px",
+      "status": "unverified",
+      "evidence": {
+        "line": 61,
+        "sourcePath": "typography.card-heading.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.featureheading.fontfamily",
+      "sourcePath": "typography.feature-heading.fontFamily",
+      "type": "fontFamily",
+      "value": "Unica77 Cohere Web",
+      "status": "unverified",
+      "evidence": {
+        "line": 63,
+        "sourcePath": "typography.feature-heading.fontFamily"
+      }
+    },
+    {
+      "path": "typography.featureheading.fontsize",
+      "sourcePath": "typography.feature-heading.fontSize",
+      "type": "dimension",
+      "value": "24px",
+      "status": "unverified",
+      "evidence": {
+        "line": 64,
+        "sourcePath": "typography.feature-heading.fontSize"
+      }
+    },
+    {
+      "path": "typography.featureheading.fontweight",
+      "sourcePath": "typography.feature-heading.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 65,
+        "sourcePath": "typography.feature-heading.fontWeight"
+      }
+    },
+    {
+      "path": "typography.featureheading.lineheight",
+      "sourcePath": "typography.feature-heading.lineHeight",
+      "type": "number",
+      "value": 1.3,
+      "status": "unverified",
+      "evidence": {
+        "line": 66,
+        "sourcePath": "typography.feature-heading.lineHeight"
+      }
+    },
+    {
+      "path": "typography.featureheading.letterspacing",
+      "sourcePath": "typography.feature-heading.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 67,
+        "sourcePath": "typography.feature-heading.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.bodylarge.fontfamily",
+      "sourcePath": "typography.body-large.fontFamily",
+      "type": "fontFamily",
+      "value": "Unica77 Cohere Web",
+      "status": "unverified",
+      "evidence": {
+        "line": 69,
+        "sourcePath": "typography.body-large.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodylarge.fontsize",
+      "sourcePath": "typography.body-large.fontSize",
+      "type": "dimension",
+      "value": "18px",
+      "status": "unverified",
+      "evidence": {
+        "line": 70,
+        "sourcePath": "typography.body-large.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodylarge.fontweight",
+      "sourcePath": "typography.body-large.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 71,
+        "sourcePath": "typography.body-large.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodylarge.lineheight",
+      "sourcePath": "typography.body-large.lineHeight",
+      "type": "number",
+      "value": 1.4,
+      "status": "unverified",
+      "evidence": {
+        "line": 72,
+        "sourcePath": "typography.body-large.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodylarge.letterspacing",
+      "sourcePath": "typography.body-large.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 73,
+        "sourcePath": "typography.body-large.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.body.fontfamily",
+      "sourcePath": "typography.body.fontFamily",
+      "type": "fontFamily",
+      "value": "Unica77 Cohere Web",
+      "status": "unverified",
+      "evidence": {
+        "line": 75,
+        "sourcePath": "typography.body.fontFamily"
+      }
+    },
+    {
+      "path": "typography.body.fontsize",
+      "sourcePath": "typography.body.fontSize",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 76,
+        "sourcePath": "typography.body.fontSize"
+      }
+    },
+    {
+      "path": "typography.body.fontweight",
+      "sourcePath": "typography.body.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 77,
+        "sourcePath": "typography.body.fontWeight"
+      }
+    },
+    {
+      "path": "typography.body.lineheight",
+      "sourcePath": "typography.body.lineHeight",
+      "type": "number",
+      "value": 1.5,
+      "status": "unverified",
+      "evidence": {
+        "line": 78,
+        "sourcePath": "typography.body.lineHeight"
+      }
+    },
+    {
+      "path": "typography.body.letterspacing",
+      "sourcePath": "typography.body.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 79,
+        "sourcePath": "typography.body.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.button.fontfamily",
+      "sourcePath": "typography.button.fontFamily",
+      "type": "fontFamily",
+      "value": "Unica77 Cohere Web",
+      "status": "unverified",
+      "evidence": {
+        "line": 81,
+        "sourcePath": "typography.button.fontFamily"
+      }
+    },
+    {
+      "path": "typography.button.fontsize",
+      "sourcePath": "typography.button.fontSize",
+      "type": "dimension",
+      "value": "14px",
+      "status": "unverified",
+      "evidence": {
+        "line": 82,
+        "sourcePath": "typography.button.fontSize"
+      }
+    },
+    {
+      "path": "typography.button.fontweight",
+      "sourcePath": "typography.button.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 83,
+        "sourcePath": "typography.button.fontWeight"
+      }
+    },
+    {
+      "path": "typography.button.lineheight",
+      "sourcePath": "typography.button.lineHeight",
+      "type": "number",
+      "value": 1.71,
+      "status": "unverified",
+      "evidence": {
+        "line": 84,
+        "sourcePath": "typography.button.lineHeight"
+      }
+    },
+    {
+      "path": "typography.button.letterspacing",
+      "sourcePath": "typography.button.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 85,
+        "sourcePath": "typography.button.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.caption.fontfamily",
+      "sourcePath": "typography.caption.fontFamily",
+      "type": "fontFamily",
+      "value": "Unica77 Cohere Web",
+      "status": "unverified",
+      "evidence": {
+        "line": 87,
+        "sourcePath": "typography.caption.fontFamily"
+      }
+    },
+    {
+      "path": "typography.caption.fontsize",
+      "sourcePath": "typography.caption.fontSize",
+      "type": "dimension",
+      "value": "14px",
+      "status": "unverified",
+      "evidence": {
+        "line": 88,
+        "sourcePath": "typography.caption.fontSize"
+      }
+    },
+    {
+      "path": "typography.caption.fontweight",
+      "sourcePath": "typography.caption.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 89,
+        "sourcePath": "typography.caption.fontWeight"
+      }
+    },
+    {
+      "path": "typography.caption.lineheight",
+      "sourcePath": "typography.caption.lineHeight",
+      "type": "number",
+      "value": 1.4,
+      "status": "unverified",
+      "evidence": {
+        "line": 90,
+        "sourcePath": "typography.caption.lineHeight"
+      }
+    },
+    {
+      "path": "typography.caption.letterspacing",
+      "sourcePath": "typography.caption.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 91,
+        "sourcePath": "typography.caption.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.monolabel.fontfamily",
+      "sourcePath": "typography.mono-label.fontFamily",
+      "type": "fontFamily",
+      "value": "CohereMono",
+      "status": "unverified",
+      "evidence": {
+        "line": 93,
+        "sourcePath": "typography.mono-label.fontFamily"
+      }
+    },
+    {
+      "path": "typography.monolabel.fontsize",
+      "sourcePath": "typography.mono-label.fontSize",
+      "type": "dimension",
+      "value": "14px",
+      "status": "unverified",
+      "evidence": {
+        "line": 94,
+        "sourcePath": "typography.mono-label.fontSize"
+      }
+    },
+    {
+      "path": "typography.monolabel.fontweight",
+      "sourcePath": "typography.mono-label.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 95,
+        "sourcePath": "typography.mono-label.fontWeight"
+      }
+    },
+    {
+      "path": "typography.monolabel.lineheight",
+      "sourcePath": "typography.mono-label.lineHeight",
+      "type": "number",
+      "value": 1.4,
+      "status": "unverified",
+      "evidence": {
+        "line": 96,
+        "sourcePath": "typography.mono-label.lineHeight"
+      }
+    },
+    {
+      "path": "typography.monolabel.letterspacing",
+      "sourcePath": "typography.mono-label.letterSpacing",
+      "type": "dimension",
+      "value": "0.28px",
+      "status": "unverified",
+      "evidence": {
+        "line": 97,
+        "sourcePath": "typography.mono-label.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.micro.fontfamily",
+      "sourcePath": "typography.micro.fontFamily",
+      "type": "fontFamily",
+      "value": "Unica77 Cohere Web",
+      "status": "unverified",
+      "evidence": {
+        "line": 99,
+        "sourcePath": "typography.micro.fontFamily"
+      }
+    },
+    {
+      "path": "typography.micro.fontsize",
+      "sourcePath": "typography.micro.fontSize",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 100,
+        "sourcePath": "typography.micro.fontSize"
+      }
+    },
+    {
+      "path": "typography.micro.fontweight",
+      "sourcePath": "typography.micro.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 101,
+        "sourcePath": "typography.micro.fontWeight"
+      }
+    },
+    {
+      "path": "typography.micro.lineheight",
+      "sourcePath": "typography.micro.lineHeight",
+      "type": "number",
+      "value": 1.4,
+      "status": "unverified",
+      "evidence": {
+        "line": 102,
+        "sourcePath": "typography.micro.lineHeight"
+      }
+    },
+    {
+      "path": "typography.micro.letterspacing",
+      "sourcePath": "typography.micro.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 103,
+        "sourcePath": "typography.micro.letterSpacing"
+      }
+    },
+    {
+      "path": "rounded.xs",
+      "sourcePath": "rounded.xs",
+      "type": "dimension",
+      "value": "4px",
+      "status": "unverified",
+      "evidence": {
+        "line": 106,
+        "sourcePath": "rounded.xs"
+      }
+    },
+    {
+      "path": "rounded.sm",
+      "sourcePath": "rounded.sm",
+      "type": "dimension",
+      "value": "8px",
+      "status": "unverified",
+      "evidence": {
+        "line": 107,
+        "sourcePath": "rounded.sm"
+      }
+    },
+    {
+      "path": "rounded.md",
+      "sourcePath": "rounded.md",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 108,
+        "sourcePath": "rounded.md"
+      }
+    },
+    {
+      "path": "rounded.lg",
+      "sourcePath": "rounded.lg",
+      "type": "dimension",
+      "value": "22px",
+      "status": "unverified",
+      "evidence": {
+        "line": 109,
+        "sourcePath": "rounded.lg"
+      }
+    },
+    {
+      "path": "rounded.xl",
+      "sourcePath": "rounded.xl",
+      "type": "dimension",
+      "value": "30px",
+      "status": "unverified",
+      "evidence": {
+        "line": 110,
+        "sourcePath": "rounded.xl"
+      }
+    },
+    {
+      "path": "rounded.pill",
+      "sourcePath": "rounded.pill",
+      "type": "dimension",
+      "value": "32px",
+      "status": "unverified",
+      "evidence": {
+        "line": 111,
+        "sourcePath": "rounded.pill"
+      }
+    },
+    {
+      "path": "rounded.full",
+      "sourcePath": "rounded.full",
+      "type": "dimension",
+      "value": "9999px",
+      "status": "unverified",
+      "evidence": {
+        "line": 112,
+        "sourcePath": "rounded.full"
+      }
+    },
+    {
+      "path": "spacing.xxs",
+      "sourcePath": "spacing.xxs",
+      "type": "dimension",
+      "value": "2px",
+      "status": "unverified",
+      "evidence": {
+        "line": 115,
+        "sourcePath": "spacing.xxs"
+      }
+    },
+    {
+      "path": "spacing.xs",
+      "sourcePath": "spacing.xs",
+      "type": "dimension",
+      "value": "6px",
+      "status": "unverified",
+      "evidence": {
+        "line": 116,
+        "sourcePath": "spacing.xs"
+      }
+    },
+    {
+      "path": "spacing.sm",
+      "sourcePath": "spacing.sm",
+      "type": "dimension",
+      "value": "8px",
+      "status": "unverified",
+      "evidence": {
+        "line": 117,
+        "sourcePath": "spacing.sm"
+      }
+    },
+    {
+      "path": "spacing.md",
+      "sourcePath": "spacing.md",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 118,
+        "sourcePath": "spacing.md"
+      }
+    },
+    {
+      "path": "spacing.lg",
+      "sourcePath": "spacing.lg",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 119,
+        "sourcePath": "spacing.lg"
+      }
+    },
+    {
+      "path": "spacing.xl",
+      "sourcePath": "spacing.xl",
+      "type": "dimension",
+      "value": "24px",
+      "status": "unverified",
+      "evidence": {
+        "line": 120,
+        "sourcePath": "spacing.xl"
+      }
+    },
+    {
+      "path": "spacing.xxl",
+      "sourcePath": "spacing.xxl",
+      "type": "dimension",
+      "value": "32px",
+      "status": "unverified",
+      "evidence": {
+        "line": 121,
+        "sourcePath": "spacing.xxl"
+      }
+    },
+    {
+      "path": "spacing.section",
+      "sourcePath": "spacing.section",
+      "type": "dimension",
+      "value": "80px",
+      "status": "unverified",
+      "evidence": {
+        "line": 122,
+        "sourcePath": "spacing.section"
+      }
+    }
+  ],
+  "rejectedTokens": [],
+  "homepage": {
+    "status": "missing",
+    "candidates": [],
+    "verification": {
+      "status": "verified",
+      "url": "https://cohere.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://cohere.com/",
+          "title": "Enterprise AI: Private, Secure, Customizable | Cohere",
+          "note": "Public homepage read requested https://cohere.com; final URL https://cohere.com/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    }
+  },
+  "completeness": {
+    "presentFields": [
+      "colors",
+      "typography",
+      "rounded",
+      "spacing",
+      "components"
+    ],
+    "missingFields": [],
+    "tokenRoles": "incomplete",
+    "note": "Missing fields are not reconstructed. Prose-only colors have no inferred semantic role."
+  },
+  "provenance": {
+    "status": "independent-analysis",
+    "sources": [
+      {
+        "title": "VoltAgent awesome-design-md independent analysis",
+        "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/cohere/DESIGN.md"
+      }
+    ],
+    "verification": "unverified-secondary-analysis"
+  },
+  "limitations": [
+    "Independent secondary analysis, not an official brand system; all reported values are unverified.",
+    "No brand assets, logos, font binaries or screenshots copied. Font names are documentary, not font licenses.",
+    "Safe CSS literals are extracted without claiming complete roles, state coverage or visual fidelity.",
+    "Markdown is retained as inert evidence, never executed or rendered as raw HTML."
+  ]
+}

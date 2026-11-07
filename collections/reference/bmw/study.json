@@ -1,0 +1,1783 @@
+{
+  "schemaVersion": 1,
+  "id": "reference-bmw",
+  "title": "Bmw",
+  "classification": "independent-unverified-analysis",
+  "source": {
+    "repository": "https://github.com/VoltAgent/awesome-design-md",
+    "fork": "https://github.com/rsteth/awesome-design-md-p",
+    "revision": "fcc70284932276d085f01ef9f83edde90b1258cb",
+    "path": "design-md/bmw/DESIGN.md",
+    "sha256": "b7268279e7c98e85fb80890e06765f4ee8340ba1ea1ccb5a8a5b134de43dac3e",
+    "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/bmw/DESIGN.md"
+  },
+  "sourceName": "BMW-design-analysis",
+  "titleProvenance": {
+    "status": "inferred",
+    "basis": "Source directory label, normalized for navigation; original source name is retained without correction.",
+    "sourceValue": "bmw",
+    "originalName": "BMW-design-analysis"
+  },
+  "description": "BMW's corporate site — distinct from BMW M's motorsport-bombastic variant, this is a measured and settled corporate-automotive interface. On a light (cream-tinted white) canvas, BMW corporate blue (#1c69d4) carries every primary CTA; dark navy hero bands frame model photography. BMW Type Next Latin sets the entire hierarchy on two weights — heavy 700 display and Light 300 body. Configuration and reservation flows ride a card-based 4-up grid, where each card holds a model render, a name, and a \"Learn More\" link.",
+  "analysis": {
+    "version": "alpha",
+    "name": "BMW-design-analysis",
+    "description": "BMW's corporate site — distinct from BMW M's motorsport-bombastic variant, this is a measured and settled corporate-automotive interface. On a light (cream-tinted white) canvas, BMW corporate blue (#1c69d4) carries every primary CTA; dark navy hero bands frame model photography. BMW Type Next Latin sets the entire hierarchy on two weights — heavy 700 display and Light 300 body. Configuration and reservation flows ride a card-based 4-up grid, where each card holds a model render, a name, and a \"Learn More\" link.",
+    "colors": {
+      "primary": "#1c69d4",
+      "primary-active": "#0653b6",
+      "primary-disabled": "#d6d6d6",
+      "ink": "#262626",
+      "body": "#3c3c3c",
+      "body-strong": "#1a1a1a",
+      "muted": "#6b6b6b",
+      "muted-soft": "#9a9a9a",
+      "hairline": "#e6e6e6",
+      "hairline-strong": "#cccccc",
+      "canvas": "#ffffff",
+      "surface-soft": "#f7f7f7",
+      "surface-card": "#fafafa",
+      "surface-strong": "#ebebeb",
+      "surface-dark": "#1a2129",
+      "surface-dark-elevated": "#262e38",
+      "on-primary": "#ffffff",
+      "on-dark": "#ffffff",
+      "on-dark-soft": "#bbbbbb",
+      "m-blue-light": "#0066b1",
+      "m-blue-dark": "#1c69d4",
+      "m-red": "#e22718",
+      "success": "#22c55e",
+      "warning": "#f59e0b",
+      "error": "#dc2626"
+    },
+    "typography": {
+      "display-xl": {
+        "fontFamily": "'BMW Type Next Latin', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+        "fontSize": "64px",
+        "fontWeight": 700,
+        "lineHeight": 1.05,
+        "letterSpacing": 0
+      },
+      "display-lg": {
+        "fontFamily": "'BMW Type Next Latin', sans-serif",
+        "fontSize": "48px",
+        "fontWeight": 700,
+        "lineHeight": 1.1,
+        "letterSpacing": 0
+      },
+      "display-md": {
+        "fontFamily": "'BMW Type Next Latin', sans-serif",
+        "fontSize": "32px",
+        "fontWeight": 700,
+        "lineHeight": 1.15,
+        "letterSpacing": 0
+      },
+      "display-sm": {
+        "fontFamily": "'BMW Type Next Latin', sans-serif",
+        "fontSize": "24px",
+        "fontWeight": 700,
+        "lineHeight": 1.25,
+        "letterSpacing": 0
+      },
+      "title-lg": {
+        "fontFamily": "'BMW Type Next Latin', sans-serif",
+        "fontSize": "20px",
+        "fontWeight": 700,
+        "lineHeight": 1.3,
+        "letterSpacing": 0
+      },
+      "title-md": {
+        "fontFamily": "'BMW Type Next Latin', sans-serif",
+        "fontSize": "18px",
+        "fontWeight": 700,
+        "lineHeight": 1.4,
+        "letterSpacing": 0
+      },
+      "title-sm": {
+        "fontFamily": "'BMW Type Next Latin', sans-serif",
+        "fontSize": "16px",
+        "fontWeight": 700,
+        "lineHeight": 1.4,
+        "letterSpacing": 0
+      },
+      "body-md": {
+        "fontFamily": "'BMW Type Next Latin', sans-serif",
+        "fontSize": "16px",
+        "fontWeight": 300,
+        "lineHeight": 1.55,
+        "letterSpacing": 0
+      },
+      "body-sm": {
+        "fontFamily": "'BMW Type Next Latin', sans-serif",
+        "fontSize": "14px",
+        "fontWeight": 300,
+        "lineHeight": 1.55,
+        "letterSpacing": 0
+      },
+      "caption": {
+        "fontFamily": "'BMW Type Next Latin', sans-serif",
+        "fontSize": "12px",
+        "fontWeight": 400,
+        "lineHeight": 1.4,
+        "letterSpacing": "0.5px"
+      },
+      "label-uppercase": {
+        "fontFamily": "'BMW Type Next Latin', sans-serif",
+        "fontSize": "13px",
+        "fontWeight": 700,
+        "lineHeight": 1.3,
+        "letterSpacing": "1.5px",
+        "textTransform": "uppercase"
+      },
+      "button": {
+        "fontFamily": "'BMW Type Next Latin', sans-serif",
+        "fontSize": "14px",
+        "fontWeight": 700,
+        "lineHeight": 1,
+        "letterSpacing": "0.5px"
+      },
+      "nav-link": {
+        "fontFamily": "'BMW Type Next Latin', sans-serif",
+        "fontSize": "14px",
+        "fontWeight": 400,
+        "lineHeight": 1.4,
+        "letterSpacing": "0.3px"
+      }
+    },
+    "rounded": {
+      "none": "0px",
+      "xs": "2px",
+      "sm": "4px",
+      "md": "8px",
+      "lg": "12px",
+      "pill": "9999px",
+      "full": "9999px"
+    },
+    "spacing": {
+      "xxs": "4px",
+      "xs": "8px",
+      "sm": "12px",
+      "md": "16px",
+      "lg": "24px",
+      "xl": "32px",
+      "xxl": "48px",
+      "section": "80px"
+    },
+    "components": {
+      "top-nav": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.nav-link}",
+        "height": "64px"
+      },
+      "button-primary": {
+        "backgroundColor": "{colors.primary}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.button}",
+        "rounded": "{rounded.none}",
+        "padding": "14px 32px",
+        "height": "48px"
+      },
+      "button-primary-active": {
+        "backgroundColor": "{colors.primary-active}",
+        "textColor": "{colors.on-primary}",
+        "rounded": "{rounded.none}"
+      },
+      "button-primary-disabled": {
+        "backgroundColor": "{colors.primary-disabled}",
+        "textColor": "{colors.muted}",
+        "rounded": "{rounded.none}"
+      },
+      "button-secondary": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.button}",
+        "rounded": "{rounded.none}",
+        "padding": "13px 31px",
+        "height": "48px"
+      },
+      "button-secondary-on-dark": {
+        "backgroundColor": "transparent",
+        "textColor": "{colors.on-dark}",
+        "typography": "{typography.button}",
+        "rounded": "{rounded.none}",
+        "padding": "13px 31px"
+      },
+      "button-text-link": {
+        "backgroundColor": "transparent",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.label-uppercase}"
+      },
+      "text-link": {
+        "backgroundColor": "transparent",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-md}"
+      },
+      "hero-band-dark": {
+        "backgroundColor": "{colors.surface-dark}",
+        "textColor": "{colors.on-dark}",
+        "typography": "{typography.display-xl}",
+        "padding": "80px"
+      },
+      "hero-photo-band": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.display-lg}",
+        "padding": "80px"
+      },
+      "model-card": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.title-md}",
+        "rounded": "{rounded.none}",
+        "padding": "24px"
+      },
+      "model-card-photo": {
+        "backgroundColor": "{colors.surface-card}",
+        "rounded": "{rounded.none}"
+      },
+      "feature-photo-card": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.title-md}",
+        "rounded": "{rounded.none}",
+        "padding": "24px"
+      },
+      "spec-cell": {
+        "backgroundColor": "transparent",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.display-sm}",
+        "rounded": "{rounded.none}",
+        "padding": "24px"
+      },
+      "inventory-card": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.title-sm}",
+        "rounded": "{rounded.none}",
+        "padding": "16px"
+      },
+      "filter-chip": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.caption}",
+        "rounded": "{rounded.none}",
+        "padding": "8px 14px"
+      },
+      "filter-chip-active": {
+        "backgroundColor": "{colors.ink}",
+        "textColor": "{colors.on-dark}",
+        "rounded": "{rounded.none}"
+      },
+      "configurator-option-tile": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.none}",
+        "padding": "16px 24px"
+      },
+      "configurator-option-tile-selected": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "rounded": "{rounded.none}",
+        "padding": "15px 23px"
+      },
+      "text-input": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.none}",
+        "padding": "14px 16px",
+        "height": "48px"
+      },
+      "cookie-consent-card": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.body}",
+        "typography": "{typography.body-sm}",
+        "rounded": "{rounded.none}",
+        "padding": "24px"
+      },
+      "category-tab": {
+        "backgroundColor": "transparent",
+        "textColor": "{colors.muted}",
+        "typography": "{typography.label-uppercase}",
+        "rounded": "{rounded.none}"
+      },
+      "category-tab-active": {
+        "backgroundColor": "transparent",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.label-uppercase}",
+        "rounded": "{rounded.none}"
+      },
+      "m-stripe-divider": {
+        "backgroundColor": "transparent",
+        "rounded": "{rounded.none}"
+      },
+      "cta-band-photo": {
+        "backgroundColor": "{colors.surface-dark}",
+        "textColor": "{colors.on-dark}",
+        "typography": "{typography.display-md}",
+        "padding": "80px"
+      },
+      "footer": {
+        "backgroundColor": "{colors.surface-soft}",
+        "textColor": "{colors.body}",
+        "typography": "{typography.body-sm}",
+        "padding": "64px"
+      }
+    }
+  },
+  "normalizationRepairs": [],
+  "sections": [
+    {
+      "heading": "Overview",
+      "level": 2,
+      "text": "BMW's corporate site carries a far more **measured, corporate-automotive** interface than its motorsport-bombastic cousin BMW M. The atmosphere is light: `{colors.canvas}` (#ffffff) is the base surface, `{colors.surface-card}` (#fafafa) carries the soft-grey card plates, and dark navy `{colors.surface-dark}` (#1a2129) appears only inside hero bands — one per page, framing the lead model render.\n\nType runs BMW's licensed **BMW Type Next Latin** at two weights: heavy 700 (display + button + nav) and Light 300 (body + secondary copy). That contrast — heavy display next to thin paragraph — is the editorial signature, channeling the brand's \"European-engineered\" voice. Weight 500 is deliberately absent; weight 400 only appears on caption and nav-link in neutral utility contexts.\n\nThe brand action color, **BMW corporate blue** (`{colors.primary}` — #1c69d4), works alone across every primary CTA — buttons are **rectangular, 0px corner**, with white type. The site rotates a blue-button + dark-navy-hero combination across page rhythm. The M tricolor stripe (`{colors.m-blue-light}` → `{colors.m-blue-dark}` → `{colors.m-red}`) only appears in motorsport contexts and as M-model badges/dividers — never in the corporate site's main language.\n\nThe configuration and reservation flows add a dealer-side inventory UI on top of the same system — filter chips, model cards, price tables — but typography and color stay identical; only density goes up.\n\n**Key Characteristics:**\n- Light `{colors.canvas}` is the base surface; dark navy `{colors.surface-dark}` appears only inside hero bands — page rhythm relies on contrast.\n- BMW corporate blue (`{colors.primary}` — #1c69d4) acts as the single primary action color.\n- BMW Type Next Latin: weight 700 display against weight 300 body is the signature.\n- Buttons are **rectangular, 0px radius** — corporate dialect, distinct from M's sportier radii.\n- Model cards run as 4-up or 5-up grids with no hairline border or only minimal border — just white plate + photo + title.\n- Photography (model renders) sits in environment, no shadow — depth comes entirely from color-block contrast.\n- M tricolor stripe appears only in M-model contexts — not part of the corporate language.\n- Section rhythm holds at `{spacing.section}` (80px) for every major band.",
+      "line": 271
+    },
+    {
+      "heading": "Colors",
+      "level": 2,
+      "text": "",
+      "line": 291
+    },
+    {
+      "heading": "Brand & Accent",
+      "level": 3,
+      "text": "- **BMW Blue (Primary)** (`{colors.primary}` — #1c69d4): The single brand action color. All primary CTAs, \"Learn More\" link prefixes (blue text), nav-link active state. Press shifts to `{colors.primary-active}` (#0653b6).\n- **M Blue Light** (`{colors.m-blue-light}` — #0066b1) + **M Blue Dark** (`{colors.m-blue-dark}` — #1c69d4) + **M Red** (`{colors.m-red}` — #e22718): The M tricolor stripe — appears on the corporate site only on M-model pages and the \"M\" badge. Never as CTA colors.",
+      "line": 293
+    },
+    {
+      "heading": "Surface",
+      "level": 3,
+      "text": "- **Canvas** (`{colors.canvas}` — #ffffff): The default page surface.\n- **Surface Soft** (`{colors.surface-soft}` — #f7f7f7): Soft grey for the footer and sub-navigation bands.\n- **Surface Card** (`{colors.surface-card}` — #fafafa): The light plate behind a model card's photo block.\n- **Surface Strong** (`{colors.surface-strong}` — #ebebeb): A slightly heavier grey used as a section divider.\n- **Surface Dark** (`{colors.surface-dark}` — #1a2129): Dark navy for hero bands and large dark CTAs. Not pure black — carries a warm undertone.\n- **Surface Dark Elevated** (`{colors.surface-dark-elevated}` — #262e38): One step lighter, used for nested cards on top of the dark hero.",
+      "line": 297
+    },
+    {
+      "heading": "Hairlines",
+      "level": 3,
+      "text": "- **Hairline** (`{colors.hairline}` — #e6e6e6): The 1px divider — input outline, configurator card outline, table separator.\n- **Hairline Strong** (`{colors.hairline-strong}` — #cccccc): A more visible 1px outline — disabled secondary buttons, emphasized table border.",
+      "line": 305
+    },
+    {
+      "heading": "Text",
+      "level": 3,
+      "text": "- **Ink** (`{colors.ink}` — #262626): All display and primary text. Not pure black — soft against photography.\n- **Body** (`{colors.body}` — #3c3c3c): Default running text.\n- **Body Strong** (`{colors.body-strong}` — #1a1a1a): Emphasized paragraphs and lead text.\n- **Muted** (`{colors.muted}` — #6b6b6b): Footer links, breadcrumbs, captions.\n- **Muted Soft** (`{colors.muted-soft}` — #9a9a9a): Disabled text, fine-print legal.\n- **On Primary** (`{colors.on-primary}` — #ffffff): White text on a blue button.\n- **On Dark** (`{colors.on-dark}` — #ffffff): White text on a dark hero band.\n- **On Dark Soft** (`{colors.on-dark-soft}` — #bbbbbb): A slightly muted white for secondary text on dark bands.",
+      "line": 309
+    },
+    {
+      "heading": "Semantic",
+      "level": 3,
+      "text": "- **Success** (`{colors.success}` — #22c55e): Confirmation messages and \"available\" indicators.\n- **Warning** (`{colors.warning}` — #f59e0b): Warning callouts.\n- **Error** (`{colors.error}` — #dc2626): Validation errors.",
+      "line": 319
+    },
+    {
+      "heading": "Typography",
+      "level": 2,
+      "text": "",
+      "line": 324
+    },
+    {
+      "heading": "Font Family",
+      "level": 3,
+      "text": "The system runs **BMW Type Next Latin** in two cuts: regular (display + UI labels) and **BMW Type Next Latin Light** (body + secondary copy). Fallback stack: `system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif`.\n\nThe display/body split is functional:\n- BMW Type Next Latin (700) → display headlines, button labels, nav links\n- BMW Type Next Latin Light (300) → paragraphs, descriptive copy\n- BMW Type Next Latin (400) → caption, neutral nav-link contexts\n\nThis three-way split mirrors BMW M's — corporate and the M sub-brand share the same typographic DNA; only the weight/size ratios differ.",
+      "line": 326
+    },
+    {
+      "heading": "Hierarchy",
+      "level": 3,
+      "text": "| Token | Size | Weight | Line Height | Letter Spacing | Use |\n|---|---|---|---|---|---|\n| `{typography.display-xl}` | 64px | 700 | 1.05 | 0 | Hero h1 (\"iX3\", model name) |\n| `{typography.display-lg}` | 48px | 700 | 1.1 | 0 | Section heads |\n| `{typography.display-md}` | 32px | 700 | 1.15 | 0 | Sub-section heads |\n| `{typography.display-sm}` | 24px | 700 | 1.25 | 0 | CTA-band headlines |\n| `{typography.title-lg}` | 20px | 700 | 1.3 | 0 | Card group titles |\n| `{typography.title-md}` | 18px | 700 | 1.4 | 0 | Model card title, intro paragraphs |\n| `{typography.title-sm}` | 16px | 700 | 1.4 | 0 | Inventory card title, list label |\n| `{typography.body-md}` | 16px | 300 (Light) | 1.55 | 0 | Default body — BMW Type Next Latin Light |\n| `{typography.body-sm}` | 14px | 300 (Light) | 1.55 | 0 | Footer body, fine-print |\n| `{typography.caption}` | 12px | 400 | 1.4 | 0.5px | Photo captions, meta |\n| `{typography.label-uppercase}` | 13px | 700 | 1.3 | 1.5px | \"LEARN MORE\" inline links, category tabs |\n| `{typography.button}` | 14px | 700 | 1.0 | 0.5px | Standard CTA button label |\n| `{typography.nav-link}` | 14px | 400 | 1.4 | 0.3px | Top-nav menu items |",
+      "line": 336
+    },
+    {
+      "heading": "Principles",
+      "level": 3,
+      "text": "- The **700/300 contrast** is the editorial signature. Weight 500 is absent from the system.\n- **No negative letter-spacing** — BMW Type Next Latin works on a wide body, so tracking stays at default. Apple/Cal.com-style tightening reads off-brand here.\n- **UPPERCASE inline links** — \"LEARN MORE\"-style CTAs run uppercase with 1.5px tracking. The \"machined precision\" voice.\n- **Weight 400 lives in a narrow lane** — only caption and nav-link, both neutral utility roles.",
+      "line": 354
+    },
+    {
+      "heading": "Note on Font Substitutes",
+      "level": 3,
+      "text": "BMW Type Next Latin is a licensed BMW typeface. Open-source alternatives:\n- **Inter** (variable) — close match at weight 700/300. Leave letter-spacing at 0.0em.\n- **Saira Condensed** — for a slightly more compressed BMW Type feel.",
+      "line": 360
+    },
+    {
+      "heading": "Layout",
+      "level": 2,
+      "text": "",
+      "line": 365
+    },
+    {
+      "heading": "Spacing System",
+      "level": 3,
+      "text": "- **Base unit:** 8px.\n- **Tokens:** `{spacing.xxs}` 4px · `{spacing.xs}` 8px · `{spacing.sm}` 12px · `{spacing.md}` 16px · `{spacing.lg}` 24px · `{spacing.xl}` 32px · `{spacing.xxl}` 48px · `{spacing.section}` 80px.\n- **Section padding:** `{spacing.section}` (80px) for every major editorial band.\n- **Card internal padding:** `{spacing.lg}` (24px) for model and feature cards.",
+      "line": 367
+    },
+    {
+      "heading": "Grid & Container",
+      "level": 3,
+      "text": "- **Max content width:** ~1440px center-aligned.\n- **Editorial body:** A single 12-column grid.\n- **Model card grids:** 4-up or 5-up at desktop, 2-up at tablet, 1-up on mobile.\n- **Configurator inventory grids:** 3-up filter row + 4-up vehicle cards, dense layout.",
+      "line": 373
+    },
+    {
+      "heading": "Whitespace Philosophy",
+      "level": 3,
+      "text": "BMW's whitespace strategy is tighter than BMW M's motorsport-aerated grenadier — the corporate side is more utility-driven. Section rhythm is 80px (not M's 96px). Card padding is 24px (not M's 32px). The page is denser, more dealership-functional.",
+      "line": 379
+    },
+    {
+      "heading": "Elevation & Depth",
+      "level": 2,
+      "text": "| Level | Treatment | Use |\n|---|---|---|\n| Flat | No shadow, no border | Body, top nav, footer, hero bands |\n| Soft hairline | 1px `{colors.hairline}` border | Configurator option tile, table divider |\n| Card surface | `{colors.surface-card}` background — no shadow | Model card photo plate |\n| Photographic | Edge-to-edge photography | Hero band, model renders |\n\nThe system never uses a drop shadow. Depth comes entirely from (a) color-block contrast (light canvas vs dark hero) and (b) photographic subject + lighting.",
+      "line": 382
+    },
+    {
+      "heading": "Decorative Depth",
+      "level": 3,
+      "text": "- **`m-stripe-divider`** — a 4px-tall horizontal tricolor stripe (`{colors.m-blue-light}` → `{colors.m-blue-dark}` → `{colors.m-red}`). Only in M-model contexts, motorsport badges, or as an M-related section divider. Not part of the main corporate flow.\n- **Photographic depth** — full-bleed vehicle photography (lighting + subject) does the work chrome would otherwise do.",
+      "line": 393
+    },
+    {
+      "heading": "Shapes",
+      "level": 2,
+      "text": "",
+      "line": 397
+    },
+    {
+      "heading": "Border Radius Scale",
+      "level": 3,
+      "text": "| Token | Value | Use |\n|---|---|---|\n| `{rounded.none}` | 0px | Every button, card, input, configurator chip — the dominant radius |\n| `{rounded.xs}` | 2px | Very small badges, very rare |\n| `{rounded.sm}` | 4px | Small inline button (rare) |\n| `{rounded.md}` | 8px | Mobile-only collapse cards (rare) |\n| `{rounded.lg}` | 12px | Very rare — modal/dialog corners |\n| `{rounded.pill}` | 9999px | Filter chips in some contexts (rare) |\n| `{rounded.full}` | 9999px / 50% | Avatar, circular icon button |\n\nThe radius hierarchy is binary: **rectangular for everything, circular only for icon buttons.** A clear departure from the soft-cornered SaaS dialect of Apple or Cal.com — closer to BMW corporate-automotive's \"engineered precision\" voice.",
+      "line": 399
+    },
+    {
+      "heading": "Photography Geometry",
+      "level": 3,
+      "text": "- Hero photography is full-bleed at 16:9 or 21:9 cinematic ratio.\n- Model card photos sit at 16:10, edge-to-edge with `{rounded.none}` corners.\n- Configurator vehicle renders sit on a white studio background, full silhouette visible.",
+      "line": 413
+    },
+    {
+      "heading": "Components",
+      "level": 2,
+      "text": "",
+      "line": 418
+    },
+    {
+      "heading": "Top Navigation",
+      "level": 3,
+      "text": "**`top-nav`** — A white sticky nav bar pinned to the top of the page. 64px tall, `{colors.canvas}` background. Left: BMW circular badge logo; center: primary horizontal menu (Models, Next Generation, Pre-Owned, Dealers, Test Drive); right: cart icon, language picker, profile. Menu items render in `{typography.nav-link}` (14px / 400 / 0.3px tracking).",
+      "line": 420
+    },
+    {
+      "heading": "Buttons",
+      "level": 3,
+      "text": "**`button-primary`** — The signature primary CTA. Background `{colors.primary}` (BMW Blue #1c69d4), text `{colors.on-primary}`, type `{typography.button}` (BMW Type Next Latin 14px / 700 / 0.5px tracking), padding 14px × 32px, height 48px, rounded `{rounded.none}` (0px — rectangular). Press state: `button-primary-active` shifts to `{colors.primary-active}`.\n\n**`button-secondary`** — A white button with a hairline outline. Background `{colors.canvas}`, text `{colors.ink}`, 1px `{colors.hairline-strong}` border, same padding + height + radius.\n\n**`button-secondary-on-dark`** — Used over a dark hero band. Background transparent, text `{colors.on-dark}`, 1px `{colors.on-dark}` border, same rectangular shape.\n\n**`button-text-link`** — An inline UPPERCASE letter-spaced link. No background, text `{colors.ink}`, type `{typography.label-uppercase}` (13px / 700 / 1.5px tracking). Reads as \"LEARN MORE\", terminated by a `›` chevron.\n\n**`text-link`** — An inline link inside body copy. `{colors.ink}` text, no underline by default; underlines per context.",
+      "line": 424
+    },
+    {
+      "heading": "Cards & Containers",
+      "level": 3,
+      "text": "**`hero-band-dark`** — Full-width dark navy hero. Background `{colors.surface-dark}`, text `{colors.on-dark}`, vertical padding `{spacing.section}` (80px). Centered: model name in `{typography.display-xl}` (64px / 700) + sub-headline + vehicle render (right-aligned or below). A single `{component.button-primary}` (blue) or `{component.button-secondary-on-dark}`.\n\n**`hero-photo-band`** — A light-canvas model showcase band. Background `{colors.canvas}`, text `{colors.ink}`. The vehicle render takes the wide area; right or below, a headline + two link CTAs + sub-tagline.\n\n**`model-card`** — Used in 4-up or 5-up model card grids on the homepage (\"BMW iX3\", \"BMW iX\", \"BMW 5 Series\"). Background `{colors.canvas}`, rounded `{rounded.none}`, padding `{spacing.lg}` (24px). Contents: model render at the top (`{component.model-card-photo}` on `{colors.surface-card}`), model name in `{typography.title-md}` (18px / 700) below, a one-line tagline in `{typography.body-sm}` (14px / 300), and a `{component.button-text-link}` (\"LEARN MORE ›\").\n\n**`model-card-photo`** — The card's photo plate. Background `{colors.surface-card}` (#fafafa — soft grey), rounded `{rounded.none}`, vehicle render in full silhouette. Zero padding — the photo runs edge-to-edge.\n\n**`feature-photo-card`** — A feature/lifestyle card. Background `{colors.canvas}`, padding `{spacing.lg}`. 16:9 photo at the top, `{typography.title-md}` headline + body excerpt below.\n\n**`spec-cell`** — A technical spec cell (model detail page). Transparent background, separated by hairline dividers. Value on top (`{typography.display-sm}` 24px / 700), label below (`{typography.label-uppercase}`).",
+      "line": 436
+    },
+    {
+      "heading": "Inventory & Configurator",
+      "level": 3,
+      "text": "**`inventory-card`** — One card per vehicle on the dealer inventory page. Background `{colors.canvas}`, padding `{spacing.md}` (16px), rounded `{rounded.none}`. Vehicle photo on top, model + variant name + price + \"View\" link below.\n\n**`filter-chip`** + **`filter-chip-active`** — Inventory filter chips (model, year, price range). Inactive: background `{colors.canvas}`, 1px `{colors.hairline-strong}` border, text `{colors.ink}`, type `{typography.caption}`. Active: background `{colors.ink}`, text `{colors.on-dark}`. Padding 8px × 14px, radius `{rounded.none}`.\n\n**`configurator-option-tile`** + **`configurator-option-tile-selected`** — Configurator selection cell (color, wheels, upholstery). Inactive: background `{colors.canvas}`, 1px hairline. Selected: 2px `{colors.primary}` border. Padding 16px × 24px, radius `{rounded.none}`.",
+      "line": 450
+    },
+    {
+      "heading": "Inputs & Forms",
+      "level": 3,
+      "text": "**`text-input`** — Standard text input. Background `{colors.canvas}`, text `{colors.ink}`, type `{typography.body-md}`, rounded `{rounded.none}` (0px), padding 14px × 16px, height 48px, 1px hairline border. On focus, the border thickens to ink.\n\n**`cookie-consent-card`** — Cookie banner. Background `{colors.canvas}`, 1px hairline, padding `{spacing.lg}` (24px), `{typography.body-sm}` (14px / 300 — Light even in legal copy).",
+      "line": 458
+    },
+    {
+      "heading": "Tabs / Tags",
+      "level": 3,
+      "text": "**`category-tab`** + **`category-tab-active`** — Category sub-nav. Inactive: transparent + `{colors.muted}` UPPERCASE label. Active: transparent + `{colors.ink}` UPPERCASE label + 2px ink underline. 12px vertical padding, no horizontal radius.",
+      "line": 464
+    },
+    {
+      "heading": "Brand Signature",
+      "level": 3,
+      "text": "**`m-stripe-divider`** — A 4px-tall horizontal tricolor stripe (`{colors.m-blue-light}` → `{colors.m-blue-dark}` → `{colors.m-red}`). Only in M-model contexts, motorsport badges, or as an M-related section divider. Absent from the corporate main flow; on M-model detail pages and the M Performance badge it plays an inline divider role.",
+      "line": 468
+    },
+    {
+      "heading": "CTA / Footer",
+      "level": 3,
+      "text": "**`cta-band-photo`** — A pre-footer \"Discover the New iX3\"-style band. Background `{colors.surface-dark}` with a full-bleed vehicle photo. Centered headline in `{typography.display-md}` (32px / 700) + a single `{component.button-secondary-on-dark}`. 80px padding.\n\n**`footer`** — The closing soft-grey footer. Background `{colors.surface-soft}` (#f7f7f7 — not pure white — soft grey), text `{colors.body}`. A 4-column link list: Models / Services / Dealers / About. Vertical padding 64px. Below, a copyright line in `{typography.body-sm}` with `{colors.muted}`.",
+      "line": 472
+    },
+    {
+      "heading": "Do's and Don'ts",
+      "level": 2,
+      "text": "",
+      "line": 478
+    },
+    {
+      "heading": "Do",
+      "level": 3,
+      "text": "- Sit every page on `{colors.canvas}` (pure white); reserve `{colors.surface-dark}` for hero bands only.\n- Pair primary CTAs with `{colors.primary}` (BMW Blue) + `{colors.on-primary}` white text + `{rounded.none}` 0px corners — the corporate signature.\n- Set display headlines in BMW Type Next Latin 700 and body in Light 300. The contrast is non-negotiable.\n- Use UPPERCASE letter-spaced links like \"LEARN MORE\" as inline CTAs.\n- Place the model card photo on `{colors.surface-card}` with the title beneath — the standard BMW corporate pattern.\n- Hold section rhythm at `{spacing.section}` (80px) — tighter than BMW M's 96px.\n- Reserve the M tricolor stripe for M-model contexts and motorsport dividers.",
+      "line": 480
+    },
+    {
+      "heading": "Don't",
+      "level": 3,
+      "text": "- Don't add a brand color other than blue — BMW Blue is the only primary action color.\n- Don't use pill or rounded buttons — `{rounded.none}` (0px) rectangular IS the brand button.\n- Don't drop display weight to 500 — the system uses 700 / 400 / 300; 500 is absent.\n- Don't bold body type — Light 300 is the BMW corporate editorial voice.\n- Don't add drop shadows to cards — depth comes from photo + color-block contrast.\n- Don't repeat the same surface mode across two consecutive bands — light → dark hero → light → light feature → dark CTA → light footer rotation is required.\n- Don't use the M tricolor stripe as a CTA fill — divider/accent role only.\n- Don't mix languages in a single page — UI language must stay consistent.",
+      "line": 489
+    },
+    {
+      "heading": "Responsive Behavior",
+      "level": 2,
+      "text": "",
+      "line": 499
+    },
+    {
+      "heading": "Breakpoints",
+      "level": 3,
+      "text": "| Name | Width | Key Changes |\n|---|---|---|\n| Mobile | < 768px | Hamburger nav; hero h1 64→40px; model card grid 1-up; configurator filter chips 2-up; footer 4 col → 1 col |\n| Tablet | 768–1024px | Top nav narrows, secondary menu hides under \"More\"; model card 2-up; inventory 2-up |\n| Desktop | 1024–1440px | Full top-nav; 4-up or 5-up model card grid; inventory 3-up; full configurator UI |\n| Wide | > 1440px | Same as desktop, content fixed at 1440px; gutters absorb the rest |",
+      "line": 501
+    },
+    {
+      "heading": "Touch Targets",
+      "level": 3,
+      "text": "- `{component.button-primary}` minimum 48 × 48px — above WCAG AAA (44 × 44).\n- `{component.text-input}` height 48px.\n- Category tabs run with 12px vertical padding, giving an effective tap area > 44px.",
+      "line": 510
+    },
+    {
+      "heading": "Collapsing Strategy",
+      "level": 3,
+      "text": "- The top nav collapses to a hamburger below 768px; the menu opens as a full-screen sheet.\n- The hero band's internal layout drops to a single column.\n- Model card grid 4-up/5-up → 2-up → 1-up.\n- The configurator filter chip row scrolls horizontally on mobile.\n- The M tricolor stripe stays at 4px height across every breakpoint.",
+      "line": 515
+    },
+    {
+      "heading": "Image Behavior",
+      "level": 3,
+      "text": "- Model renders scale at every breakpoint while preserving native aspect ratios.\n- Hero photography may shift to a more vertical crop on mobile (art direction).\n- Inventory vehicle photos may move from 16:9 to 4:3 on mobile.",
+      "line": 522
+    },
+    {
+      "heading": "Iteration Guide",
+      "level": 2,
+      "text": "1. Focus on a single component. Reference its YAML key directly (`{component.model-card}`, `{component.button-primary}`).\n2. New components default to `{rounded.none}` (0px). Use `{rounded.full}` only for circular icon buttons.\n3. Variants (`-active`, `-disabled`, `-selected`) live as separate entries inside the `components:` block.\n4. `{token.refs}` everywhere — never inline hex.\n5. Hover state is never documented. Only Default and Active/Pressed states.\n6. Display headlines stay BMW Type Next Latin 700; body stays Light 300; the trio is fixed.\n7. Keep UI strings in a single language — match the locale of the page.",
+      "line": 527
+    },
+    {
+      "heading": "Known Gaps",
+      "level": 2,
+      "text": "- BMW Type Next Latin is licensed to BMW and not published as a public web font; Inter at weights 700/300 is documented as the substitute.\n- Animation and transition timings (configurator color swap, model card hover-reveal) are out of scope here.\n- Form validation states beyond `{component.text-input}` focus were not extracted — error/success states would need a dedicated form page.\n- The dealer inventory sub-domain shares typography and color with the main corporate site; only UI density rises (filters, tables, prices).\n- A cookie consent overlay can occlude part of the hero — the lead hero band content may not be fully captured.\n- The M tricolor stripe appears infrequently on this corporate site; full motorsport context lives on the BMW M site.",
+      "line": 537
+    }
+  ],
+  "tokens": [
+    {
+      "path": "colors.primary",
+      "sourcePath": "colors.primary",
+      "type": "color",
+      "value": "#1c69d4",
+      "status": "unverified",
+      "evidence": {
+        "line": 7,
+        "sourcePath": "colors.primary"
+      }
+    },
+    {
+      "path": "colors.primaryactive",
+      "sourcePath": "colors.primary-active",
+      "type": "color",
+      "value": "#0653b6",
+      "status": "unverified",
+      "evidence": {
+        "line": 8,
+        "sourcePath": "colors.primary-active"
+      }
+    },
+    {
+      "path": "colors.primarydisabled",
+      "sourcePath": "colors.primary-disabled",
+      "type": "color",
+      "value": "#d6d6d6",
+      "status": "unverified",
+      "evidence": {
+        "line": 9,
+        "sourcePath": "colors.primary-disabled"
+      }
+    },
+    {
+      "path": "colors.ink",
+      "sourcePath": "colors.ink",
+      "type": "color",
+      "value": "#262626",
+      "status": "unverified",
+      "evidence": {
+        "line": 10,
+        "sourcePath": "colors.ink"
+      }
+    },
+    {
+      "path": "colors.body",
+      "sourcePath": "colors.body",
+      "type": "color",
+      "value": "#3c3c3c",
+      "status": "unverified",
+      "evidence": {
+        "line": 11,
+        "sourcePath": "colors.body"
+      }
+    },
+    {
+      "path": "colors.bodystrong",
+      "sourcePath": "colors.body-strong",
+      "type": "color",
+      "value": "#1a1a1a",
+      "status": "unverified",
+      "evidence": {
+        "line": 12,
+        "sourcePath": "colors.body-strong"
+      }
+    },
+    {
+      "path": "colors.muted",
+      "sourcePath": "colors.muted",
+      "type": "color",
+      "value": "#6b6b6b",
+      "status": "unverified",
+      "evidence": {
+        "line": 13,
+        "sourcePath": "colors.muted"
+      }
+    },
+    {
+      "path": "colors.mutedsoft",
+      "sourcePath": "colors.muted-soft",
+      "type": "color",
+      "value": "#9a9a9a",
+      "status": "unverified",
+      "evidence": {
+        "line": 14,
+        "sourcePath": "colors.muted-soft"
+      }
+    },
+    {
+      "path": "colors.hairline",
+      "sourcePath": "colors.hairline",
+      "type": "color",
+      "value": "#e6e6e6",
+      "status": "unverified",
+      "evidence": {
+        "line": 15,
+        "sourcePath": "colors.hairline"
+      }
+    },
+    {
+      "path": "colors.hairlinestrong",
+      "sourcePath": "colors.hairline-strong",
+      "type": "color",
+      "value": "#cccccc",
+      "status": "unverified",
+      "evidence": {
+        "line": 16,
+        "sourcePath": "colors.hairline-strong"
+      }
+    },
+    {
+      "path": "colors.canvas",
+      "sourcePath": "colors.canvas",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 17,
+        "sourcePath": "colors.canvas"
+      }
+    },
+    {
+      "path": "colors.surfacesoft",
+      "sourcePath": "colors.surface-soft",
+      "type": "color",
+      "value": "#f7f7f7",
+      "status": "unverified",
+      "evidence": {
+        "line": 18,
+        "sourcePath": "colors.surface-soft"
+      }
+    },
+    {
+      "path": "colors.surfacecard",
+      "sourcePath": "colors.surface-card",
+      "type": "color",
+      "value": "#fafafa",
+      "status": "unverified",
+      "evidence": {
+        "line": 19,
+        "sourcePath": "colors.surface-card"
+      }
+    },
+    {
+      "path": "colors.surfacestrong",
+      "sourcePath": "colors.surface-strong",
+      "type": "color",
+      "value": "#ebebeb",
+      "status": "unverified",
+      "evidence": {
+        "line": 20,
+        "sourcePath": "colors.surface-strong"
+      }
+    },
+    {
+      "path": "colors.surfacedark",
+      "sourcePath": "colors.surface-dark",
+      "type": "color",
+      "value": "#1a2129",
+      "status": "unverified",
+      "evidence": {
+        "line": 21,
+        "sourcePath": "colors.surface-dark"
+      }
+    },
+    {
+      "path": "colors.surfacedarkelevated",
+      "sourcePath": "colors.surface-dark-elevated",
+      "type": "color",
+      "value": "#262e38",
+      "status": "unverified",
+      "evidence": {
+        "line": 22,
+        "sourcePath": "colors.surface-dark-elevated"
+      }
+    },
+    {
+      "path": "colors.onprimary",
+      "sourcePath": "colors.on-primary",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 23,
+        "sourcePath": "colors.on-primary"
+      }
+    },
+    {
+      "path": "colors.ondark",
+      "sourcePath": "colors.on-dark",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 24,
+        "sourcePath": "colors.on-dark"
+      }
+    },
+    {
+      "path": "colors.ondarksoft",
+      "sourcePath": "colors.on-dark-soft",
+      "type": "color",
+      "value": "#bbbbbb",
+      "status": "unverified",
+      "evidence": {
+        "line": 25,
+        "sourcePath": "colors.on-dark-soft"
+      }
+    },
+    {
+      "path": "colors.mbluelight",
+      "sourcePath": "colors.m-blue-light",
+      "type": "color",
+      "value": "#0066b1",
+      "status": "unverified",
+      "evidence": {
+        "line": 26,
+        "sourcePath": "colors.m-blue-light"
+      }
+    },
+    {
+      "path": "colors.mbluedark",
+      "sourcePath": "colors.m-blue-dark",
+      "type": "color",
+      "value": "#1c69d4",
+      "status": "unverified",
+      "evidence": {
+        "line": 27,
+        "sourcePath": "colors.m-blue-dark"
+      }
+    },
+    {
+      "path": "colors.mred",
+      "sourcePath": "colors.m-red",
+      "type": "color",
+      "value": "#e22718",
+      "status": "unverified",
+      "evidence": {
+        "line": 28,
+        "sourcePath": "colors.m-red"
+      }
+    },
+    {
+      "path": "colors.success",
+      "sourcePath": "colors.success",
+      "type": "color",
+      "value": "#22c55e",
+      "status": "unverified",
+      "evidence": {
+        "line": 29,
+        "sourcePath": "colors.success"
+      }
+    },
+    {
+      "path": "colors.warning",
+      "sourcePath": "colors.warning",
+      "type": "color",
+      "value": "#f59e0b",
+      "status": "unverified",
+      "evidence": {
+        "line": 30,
+        "sourcePath": "colors.warning"
+      }
+    },
+    {
+      "path": "colors.error",
+      "sourcePath": "colors.error",
+      "type": "color",
+      "value": "#dc2626",
+      "status": "unverified",
+      "evidence": {
+        "line": 31,
+        "sourcePath": "colors.error"
+      }
+    },
+    {
+      "path": "typography.displayxl.fontfamily",
+      "sourcePath": "typography.display-xl.fontFamily",
+      "type": "fontFamily",
+      "value": "'BMW Type Next Latin', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 35,
+        "sourcePath": "typography.display-xl.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displayxl.fontsize",
+      "sourcePath": "typography.display-xl.fontSize",
+      "type": "dimension",
+      "value": "64px",
+      "status": "unverified",
+      "evidence": {
+        "line": 36,
+        "sourcePath": "typography.display-xl.fontSize"
+      }
+    },
+    {
+      "path": "typography.displayxl.fontweight",
+      "sourcePath": "typography.display-xl.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 37,
+        "sourcePath": "typography.display-xl.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displayxl.lineheight",
+      "sourcePath": "typography.display-xl.lineHeight",
+      "type": "number",
+      "value": 1.05,
+      "status": "unverified",
+      "evidence": {
+        "line": 38,
+        "sourcePath": "typography.display-xl.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displayxl.letterspacing",
+      "sourcePath": "typography.display-xl.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 39,
+        "sourcePath": "typography.display-xl.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.displaylg.fontfamily",
+      "sourcePath": "typography.display-lg.fontFamily",
+      "type": "fontFamily",
+      "value": "'BMW Type Next Latin', sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 41,
+        "sourcePath": "typography.display-lg.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displaylg.fontsize",
+      "sourcePath": "typography.display-lg.fontSize",
+      "type": "dimension",
+      "value": "48px",
+      "status": "unverified",
+      "evidence": {
+        "line": 42,
+        "sourcePath": "typography.display-lg.fontSize"
+      }
+    },
+    {
+      "path": "typography.displaylg.fontweight",
+      "sourcePath": "typography.display-lg.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 43,
+        "sourcePath": "typography.display-lg.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displaylg.lineheight",
+      "sourcePath": "typography.display-lg.lineHeight",
+      "type": "number",
+      "value": 1.1,
+      "status": "unverified",
+      "evidence": {
+        "line": 44,
+        "sourcePath": "typography.display-lg.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displaylg.letterspacing",
+      "sourcePath": "typography.display-lg.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 45,
+        "sourcePath": "typography.display-lg.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.displaymd.fontfamily",
+      "sourcePath": "typography.display-md.fontFamily",
+      "type": "fontFamily",
+      "value": "'BMW Type Next Latin', sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 47,
+        "sourcePath": "typography.display-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displaymd.fontsize",
+      "sourcePath": "typography.display-md.fontSize",
+      "type": "dimension",
+      "value": "32px",
+      "status": "unverified",
+      "evidence": {
+        "line": 48,
+        "sourcePath": "typography.display-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.displaymd.fontweight",
+      "sourcePath": "typography.display-md.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 49,
+        "sourcePath": "typography.display-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displaymd.lineheight",
+      "sourcePath": "typography.display-md.lineHeight",
+      "type": "number",
+      "value": 1.15,
+      "status": "unverified",
+      "evidence": {
+        "line": 50,
+        "sourcePath": "typography.display-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displaymd.letterspacing",
+      "sourcePath": "typography.display-md.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 51,
+        "sourcePath": "typography.display-md.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.displaysm.fontfamily",
+      "sourcePath": "typography.display-sm.fontFamily",
+      "type": "fontFamily",
+      "value": "'BMW Type Next Latin', sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 53,
+        "sourcePath": "typography.display-sm.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displaysm.fontsize",
+      "sourcePath": "typography.display-sm.fontSize",
+      "type": "dimension",
+      "value": "24px",
+      "status": "unverified",
+      "evidence": {
+        "line": 54,
+        "sourcePath": "typography.display-sm.fontSize"
+      }
+    },
+    {
+      "path": "typography.displaysm.fontweight",
+      "sourcePath": "typography.display-sm.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 55,
+        "sourcePath": "typography.display-sm.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displaysm.lineheight",
+      "sourcePath": "typography.display-sm.lineHeight",
+      "type": "number",
+      "value": 1.25,
+      "status": "unverified",
+      "evidence": {
+        "line": 56,
+        "sourcePath": "typography.display-sm.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displaysm.letterspacing",
+      "sourcePath": "typography.display-sm.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 57,
+        "sourcePath": "typography.display-sm.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.titlelg.fontfamily",
+      "sourcePath": "typography.title-lg.fontFamily",
+      "type": "fontFamily",
+      "value": "'BMW Type Next Latin', sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 59,
+        "sourcePath": "typography.title-lg.fontFamily"
+      }
+    },
+    {
+      "path": "typography.titlelg.fontsize",
+      "sourcePath": "typography.title-lg.fontSize",
+      "type": "dimension",
+      "value": "20px",
+      "status": "unverified",
+      "evidence": {
+        "line": 60,
+        "sourcePath": "typography.title-lg.fontSize"
+      }
+    },
+    {
+      "path": "typography.titlelg.fontweight",
+      "sourcePath": "typography.title-lg.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 61,
+        "sourcePath": "typography.title-lg.fontWeight"
+      }
+    },
+    {
+      "path": "typography.titlelg.lineheight",
+      "sourcePath": "typography.title-lg.lineHeight",
+      "type": "number",
+      "value": 1.3,
+      "status": "unverified",
+      "evidence": {
+        "line": 62,
+        "sourcePath": "typography.title-lg.lineHeight"
+      }
+    },
+    {
+      "path": "typography.titlelg.letterspacing",
+      "sourcePath": "typography.title-lg.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 63,
+        "sourcePath": "typography.title-lg.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.titlemd.fontfamily",
+      "sourcePath": "typography.title-md.fontFamily",
+      "type": "fontFamily",
+      "value": "'BMW Type Next Latin', sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 65,
+        "sourcePath": "typography.title-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.titlemd.fontsize",
+      "sourcePath": "typography.title-md.fontSize",
+      "type": "dimension",
+      "value": "18px",
+      "status": "unverified",
+      "evidence": {
+        "line": 66,
+        "sourcePath": "typography.title-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.titlemd.fontweight",
+      "sourcePath": "typography.title-md.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 67,
+        "sourcePath": "typography.title-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.titlemd.lineheight",
+      "sourcePath": "typography.title-md.lineHeight",
+      "type": "number",
+      "value": 1.4,
+      "status": "unverified",
+      "evidence": {
+        "line": 68,
+        "sourcePath": "typography.title-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.titlemd.letterspacing",
+      "sourcePath": "typography.title-md.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 69,
+        "sourcePath": "typography.title-md.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.titlesm.fontfamily",
+      "sourcePath": "typography.title-sm.fontFamily",
+      "type": "fontFamily",
+      "value": "'BMW Type Next Latin', sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 71,
+        "sourcePath": "typography.title-sm.fontFamily"
+      }
+    },
+    {
+      "path": "typography.titlesm.fontsize",
+      "sourcePath": "typography.title-sm.fontSize",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 72,
+        "sourcePath": "typography.title-sm.fontSize"
+      }
+    },
+    {
+      "path": "typography.titlesm.fontweight",
+      "sourcePath": "typography.title-sm.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 73,
+        "sourcePath": "typography.title-sm.fontWeight"
+      }
+    },
+    {
+      "path": "typography.titlesm.lineheight",
+      "sourcePath": "typography.title-sm.lineHeight",
+      "type": "number",
+      "value": 1.4,
+      "status": "unverified",
+      "evidence": {
+        "line": 74,
+        "sourcePath": "typography.title-sm.lineHeight"
+      }
+    },
+    {
+      "path": "typography.titlesm.letterspacing",
+      "sourcePath": "typography.title-sm.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 75,
+        "sourcePath": "typography.title-sm.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.bodymd.fontfamily",
+      "sourcePath": "typography.body-md.fontFamily",
+      "type": "fontFamily",
+      "value": "'BMW Type Next Latin', sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 77,
+        "sourcePath": "typography.body-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodymd.fontsize",
+      "sourcePath": "typography.body-md.fontSize",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 78,
+        "sourcePath": "typography.body-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodymd.fontweight",
+      "sourcePath": "typography.body-md.fontWeight",
+      "type": "number",
+      "value": 300,
+      "status": "unverified",
+      "evidence": {
+        "line": 79,
+        "sourcePath": "typography.body-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodymd.lineheight",
+      "sourcePath": "typography.body-md.lineHeight",
+      "type": "number",
+      "value": 1.55,
+      "status": "unverified",
+      "evidence": {
+        "line": 80,
+        "sourcePath": "typography.body-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodymd.letterspacing",
+      "sourcePath": "typography.body-md.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 81,
+        "sourcePath": "typography.body-md.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.bodysm.fontfamily",
+      "sourcePath": "typography.body-sm.fontFamily",
+      "type": "fontFamily",
+      "value": "'BMW Type Next Latin', sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 83,
+        "sourcePath": "typography.body-sm.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodysm.fontsize",
+      "sourcePath": "typography.body-sm.fontSize",
+      "type": "dimension",
+      "value": "14px",
+      "status": "unverified",
+      "evidence": {
+        "line": 84,
+        "sourcePath": "typography.body-sm.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodysm.fontweight",
+      "sourcePath": "typography.body-sm.fontWeight",
+      "type": "number",
+      "value": 300,
+      "status": "unverified",
+      "evidence": {
+        "line": 85,
+        "sourcePath": "typography.body-sm.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodysm.lineheight",
+      "sourcePath": "typography.body-sm.lineHeight",
+      "type": "number",
+      "value": 1.55,
+      "status": "unverified",
+      "evidence": {
+        "line": 86,
+        "sourcePath": "typography.body-sm.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodysm.letterspacing",
+      "sourcePath": "typography.body-sm.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 87,
+        "sourcePath": "typography.body-sm.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.caption.fontfamily",
+      "sourcePath": "typography.caption.fontFamily",
+      "type": "fontFamily",
+      "value": "'BMW Type Next Latin', sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 89,
+        "sourcePath": "typography.caption.fontFamily"
+      }
+    },
+    {
+      "path": "typography.caption.fontsize",
+      "sourcePath": "typography.caption.fontSize",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 90,
+        "sourcePath": "typography.caption.fontSize"
+      }
+    },
+    {
+      "path": "typography.caption.fontweight",
+      "sourcePath": "typography.caption.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 91,
+        "sourcePath": "typography.caption.fontWeight"
+      }
+    },
+    {
+      "path": "typography.caption.lineheight",
+      "sourcePath": "typography.caption.lineHeight",
+      "type": "number",
+      "value": 1.4,
+      "status": "unverified",
+      "evidence": {
+        "line": 92,
+        "sourcePath": "typography.caption.lineHeight"
+      }
+    },
+    {
+      "path": "typography.caption.letterspacing",
+      "sourcePath": "typography.caption.letterSpacing",
+      "type": "dimension",
+      "value": "0.5px",
+      "status": "unverified",
+      "evidence": {
+        "line": 93,
+        "sourcePath": "typography.caption.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.labeluppercase.fontfamily",
+      "sourcePath": "typography.label-uppercase.fontFamily",
+      "type": "fontFamily",
+      "value": "'BMW Type Next Latin', sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 95,
+        "sourcePath": "typography.label-uppercase.fontFamily"
+      }
+    },
+    {
+      "path": "typography.labeluppercase.fontsize",
+      "sourcePath": "typography.label-uppercase.fontSize",
+      "type": "dimension",
+      "value": "13px",
+      "status": "unverified",
+      "evidence": {
+        "line": 96,
+        "sourcePath": "typography.label-uppercase.fontSize"
+      }
+    },
+    {
+      "path": "typography.labeluppercase.fontweight",
+      "sourcePath": "typography.label-uppercase.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 97,
+        "sourcePath": "typography.label-uppercase.fontWeight"
+      }
+    },
+    {
+      "path": "typography.labeluppercase.lineheight",
+      "sourcePath": "typography.label-uppercase.lineHeight",
+      "type": "number",
+      "value": 1.3,
+      "status": "unverified",
+      "evidence": {
+        "line": 98,
+        "sourcePath": "typography.label-uppercase.lineHeight"
+      }
+    },
+    {
+      "path": "typography.labeluppercase.letterspacing",
+      "sourcePath": "typography.label-uppercase.letterSpacing",
+      "type": "dimension",
+      "value": "1.5px",
+      "status": "unverified",
+      "evidence": {
+        "line": 99,
+        "sourcePath": "typography.label-uppercase.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.button.fontfamily",
+      "sourcePath": "typography.button.fontFamily",
+      "type": "fontFamily",
+      "value": "'BMW Type Next Latin', sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 102,
+        "sourcePath": "typography.button.fontFamily"
+      }
+    },
+    {
+      "path": "typography.button.fontsize",
+      "sourcePath": "typography.button.fontSize",
+      "type": "dimension",
+      "value": "14px",
+      "status": "unverified",
+      "evidence": {
+        "line": 103,
+        "sourcePath": "typography.button.fontSize"
+      }
+    },
+    {
+      "path": "typography.button.fontweight",
+      "sourcePath": "typography.button.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 104,
+        "sourcePath": "typography.button.fontWeight"
+      }
+    },
+    {
+      "path": "typography.button.lineheight",
+      "sourcePath": "typography.button.lineHeight",
+      "type": "number",
+      "value": 1,
+      "status": "unverified",
+      "evidence": {
+        "line": 105,
+        "sourcePath": "typography.button.lineHeight"
+      }
+    },
+    {
+      "path": "typography.button.letterspacing",
+      "sourcePath": "typography.button.letterSpacing",
+      "type": "dimension",
+      "value": "0.5px",
+      "status": "unverified",
+      "evidence": {
+        "line": 106,
+        "sourcePath": "typography.button.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.navlink.fontfamily",
+      "sourcePath": "typography.nav-link.fontFamily",
+      "type": "fontFamily",
+      "value": "'BMW Type Next Latin', sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 108,
+        "sourcePath": "typography.nav-link.fontFamily"
+      }
+    },
+    {
+      "path": "typography.navlink.fontsize",
+      "sourcePath": "typography.nav-link.fontSize",
+      "type": "dimension",
+      "value": "14px",
+      "status": "unverified",
+      "evidence": {
+        "line": 109,
+        "sourcePath": "typography.nav-link.fontSize"
+      }
+    },
+    {
+      "path": "typography.navlink.fontweight",
+      "sourcePath": "typography.nav-link.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 110,
+        "sourcePath": "typography.nav-link.fontWeight"
+      }
+    },
+    {
+      "path": "typography.navlink.lineheight",
+      "sourcePath": "typography.nav-link.lineHeight",
+      "type": "number",
+      "value": 1.4,
+      "status": "unverified",
+      "evidence": {
+        "line": 111,
+        "sourcePath": "typography.nav-link.lineHeight"
+      }
+    },
+    {
+      "path": "typography.navlink.letterspacing",
+      "sourcePath": "typography.nav-link.letterSpacing",
+      "type": "dimension",
+      "value": "0.3px",
+      "status": "unverified",
+      "evidence": {
+        "line": 112,
+        "sourcePath": "typography.nav-link.letterSpacing"
+      }
+    },
+    {
+      "path": "rounded.none",
+      "sourcePath": "rounded.none",
+      "type": "dimension",
+      "value": "0px",
+      "status": "unverified",
+      "evidence": {
+        "line": 115,
+        "sourcePath": "rounded.none"
+      }
+    },
+    {
+      "path": "rounded.xs",
+      "sourcePath": "rounded.xs",
+      "type": "dimension",
+      "value": "2px",
+      "status": "unverified",
+      "evidence": {
+        "line": 116,
+        "sourcePath": "rounded.xs"
+      }
+    },
+    {
+      "path": "rounded.sm",
+      "sourcePath": "rounded.sm",
+      "type": "dimension",
+      "value": "4px",
+      "status": "unverified",
+      "evidence": {
+        "line": 117,
+        "sourcePath": "rounded.sm"
+      }
+    },
+    {
+      "path": "rounded.md",
+      "sourcePath": "rounded.md",
+      "type": "dimension",
+      "value": "8px",
+      "status": "unverified",
+      "evidence": {
+        "line": 118,
+        "sourcePath": "rounded.md"
+      }
+    },
+    {
+      "path": "rounded.lg",
+      "sourcePath": "rounded.lg",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 119,
+        "sourcePath": "rounded.lg"
+      }
+    },
+    {
+      "path": "rounded.pill",
+      "sourcePath": "rounded.pill",
+      "type": "dimension",
+      "value": "9999px",
+      "status": "unverified",
+      "evidence": {
+        "line": 120,
+        "sourcePath": "rounded.pill"
+      }
+    },
+    {
+      "path": "rounded.full",
+      "sourcePath": "rounded.full",
+      "type": "dimension",
+      "value": "9999px",
+      "status": "unverified",
+      "evidence": {
+        "line": 121,
+        "sourcePath": "rounded.full"
+      }
+    },
+    {
+      "path": "spacing.xxs",
+      "sourcePath": "spacing.xxs",
+      "type": "dimension",
+      "value": "4px",
+      "status": "unverified",
+      "evidence": {
+        "line": 124,
+        "sourcePath": "spacing.xxs"
+      }
+    },
+    {
+      "path": "spacing.xs",
+      "sourcePath": "spacing.xs",
+      "type": "dimension",
+      "value": "8px",
+      "status": "unverified",
+      "evidence": {
+        "line": 125,
+        "sourcePath": "spacing.xs"
+      }
+    },
+    {
+      "path": "spacing.sm",
+      "sourcePath": "spacing.sm",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 126,
+        "sourcePath": "spacing.sm"
+      }
+    },
+    {
+      "path": "spacing.md",
+      "sourcePath": "spacing.md",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 127,
+        "sourcePath": "spacing.md"
+      }
+    },
+    {
+      "path": "spacing.lg",
+      "sourcePath": "spacing.lg",
+      "type": "dimension",
+      "value": "24px",
+      "status": "unverified",
+      "evidence": {
+        "line": 128,
+        "sourcePath": "spacing.lg"
+      }
+    },
+    {
+      "path": "spacing.xl",
+      "sourcePath": "spacing.xl",
+      "type": "dimension",
+      "value": "32px",
+      "status": "unverified",
+      "evidence": {
+        "line": 129,
+        "sourcePath": "spacing.xl"
+      }
+    },
+    {
+      "path": "spacing.xxl",
+      "sourcePath": "spacing.xxl",
+      "type": "dimension",
+      "value": "48px",
+      "status": "unverified",
+      "evidence": {
+        "line": 130,
+        "sourcePath": "spacing.xxl"
+      }
+    },
+    {
+      "path": "spacing.section",
+      "sourcePath": "spacing.section",
+      "type": "dimension",
+      "value": "80px",
+      "status": "unverified",
+      "evidence": {
+        "line": 131,
+        "sourcePath": "spacing.section"
+      }
+    }
+  ],
+  "rejectedTokens": [
+    {
+      "sourcePath": "typography.label-uppercase.textTransform",
+      "value": "uppercase",
+      "reason": "Not a supported safe CSS literal; preserved in analysis"
+    }
+  ],
+  "homepage": {
+    "status": "missing",
+    "candidates": [],
+    "verification": {
+      "status": "verified",
+      "url": "https://www.bmw.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://www.bmw.it/it/home.html",
+          "title": "Il Sito ufficiale di BMW",
+          "note": "Public homepage read requested https://www.bmw.com; final URL https://www.bmw.it/it/home.html. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    }
+  },
+  "completeness": {
+    "presentFields": [
+      "colors",
+      "typography",
+      "rounded",
+      "spacing",
+      "components"
+    ],
+    "missingFields": [],
+    "tokenRoles": "incomplete",
+    "note": "Missing fields are not reconstructed. Prose-only colors have no inferred semantic role."
+  },
+  "provenance": {
+    "status": "independent-analysis",
+    "sources": [
+      {
+        "title": "VoltAgent awesome-design-md independent analysis",
+        "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/bmw/DESIGN.md"
+      }
+    ],
+    "verification": "unverified-secondary-analysis"
+  },
+  "limitations": [
+    "Independent secondary analysis, not an official brand system; all reported values are unverified.",
+    "No brand assets, logos, font binaries or screenshots copied. Font names are documentary, not font licenses.",
+    "Safe CSS literals are extracted without claiming complete roles, state coverage or visual fidelity.",
+    "Markdown is retained as inert evidence, never executed or rendered as raw HTML."
+  ]
+}

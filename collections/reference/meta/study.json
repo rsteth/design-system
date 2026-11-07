@@ -1,0 +1,1993 @@
+{
+  "schemaVersion": 1,
+  "id": "reference-meta",
+  "title": "Meta",
+  "classification": "independent-unverified-analysis",
+  "source": {
+    "repository": "https://github.com/VoltAgent/awesome-design-md",
+    "fork": "https://github.com/rsteth/awesome-design-md-p",
+    "revision": "fcc70284932276d085f01ef9f83edde90b1258cb",
+    "path": "design-md/meta/DESIGN.md",
+    "sha256": "306dfad97c006d47b134fb0dbd55ff68d3baa526844d6eb37346373c9ef35339",
+    "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/meta/DESIGN.md"
+  },
+  "sourceName": "Meta-design-analysis",
+  "titleProvenance": {
+    "status": "inferred",
+    "basis": "Source directory label, normalized for navigation; original source name is retained without correction.",
+    "sourceValue": "meta",
+    "originalName": "Meta-design-analysis"
+  },
+  "description": "Meta's design system spans hardware commerce (Quest VR, Ray-Ban Meta AI glasses) and brand surfaces with a confident product-merchandising voice. The system pairs a stark white canvas with full-bleed photographic product cards, a confident Optimistic VF wordmark/headline face, dual-CTA hero patterns (black primary + outlined secondary), and a saturated cobalt blue (#0064E0) for in-product purchase actions. Pill-shaped 100px-radius buttons, generous 24-32px card rounding, and tight three-tier text hierarchy carry across homepage, product detail (PDP), buy-now configurator, and accessory subpages.",
+  "analysis": {
+    "version": "alpha",
+    "name": "Meta-design-analysis",
+    "description": "Meta's design system spans hardware commerce (Quest VR, Ray-Ban Meta AI glasses) and brand surfaces with a confident product-merchandising voice. The system pairs a stark white canvas with full-bleed photographic product cards, a confident Optimistic VF wordmark/headline face, dual-CTA hero patterns (black primary + outlined secondary), and a saturated cobalt blue (#0064E0) for in-product purchase actions. Pill-shaped 100px-radius buttons, generous 24-32px card rounding, and tight three-tier text hierarchy carry across homepage, product detail (PDP), buy-now configurator, and accessory subpages.",
+    "colors": {
+      "primary": "#0064e0",
+      "primary-deep": "#0457cb",
+      "primary-soft": "#0091ff",
+      "on-primary": "#ffffff",
+      "ink-button": "#000000",
+      "on-ink-button": "#ffffff",
+      "fb-blue": "#1876f2",
+      "meta-link": "#385898",
+      "oculus-purple": "#a121ce",
+      "success": "#31a24c",
+      "success-bg": "#24e400",
+      "attention": "#f2a918",
+      "warning": "#f7b928",
+      "warning-bg": "#ffe200",
+      "critical": "#e41e3f",
+      "critical-strong": "#f0284a",
+      "canvas": "#ffffff",
+      "surface-soft": "#f1f4f7",
+      "ink-deep": "#0a1317",
+      "ink": "#1c1e21",
+      "charcoal": "#444950",
+      "slate": "#4b4c4f",
+      "steel": "#5d6c7b",
+      "stone": "#8595a4",
+      "hairline": "#ced0d4",
+      "hairline-soft": "#dee3e9",
+      "disabled-text": "#bcc0c4"
+    },
+    "typography": {
+      "hero-display": {
+        "fontFamily": "Optimistic VF",
+        "fontSize": "64px",
+        "fontWeight": 500,
+        "lineHeight": 1.16,
+        "fontFeature": "ss01, ss02"
+      },
+      "display-lg": {
+        "fontFamily": "Optimistic VF",
+        "fontSize": "48px",
+        "fontWeight": 500,
+        "lineHeight": 1.17,
+        "fontFeature": "ss01, ss02"
+      },
+      "heading-lg": {
+        "fontFamily": "Optimistic VF",
+        "fontSize": "36px",
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "fontFeature": "ss01, ss02"
+      },
+      "heading-md": {
+        "fontFamily": "Optimistic VF",
+        "fontSize": "28px",
+        "fontWeight": 300,
+        "lineHeight": 1.21,
+        "fontFeature": "ss01, ss02"
+      },
+      "heading-sm": {
+        "fontFamily": "Optimistic VF",
+        "fontSize": "24px",
+        "fontWeight": 500,
+        "lineHeight": 1.25,
+        "fontFeature": "ss01, ss02"
+      },
+      "subtitle-lg": {
+        "fontFamily": "Optimistic VF",
+        "fontSize": "18px",
+        "fontWeight": 700,
+        "lineHeight": 1.44
+      },
+      "subtitle-md": {
+        "fontFamily": "Optimistic VF",
+        "fontSize": "18px",
+        "fontWeight": 400,
+        "lineHeight": 1.44
+      },
+      "body-md-bold": {
+        "fontFamily": "Optimistic VF",
+        "fontSize": "16px",
+        "fontWeight": 700,
+        "lineHeight": 1.5,
+        "letterSpacing": "-0.16px"
+      },
+      "body-md": {
+        "fontFamily": "Optimistic VF",
+        "fontSize": "16px",
+        "fontWeight": 400,
+        "lineHeight": 1.5,
+        "letterSpacing": "-0.16px"
+      },
+      "body-sm-bold": {
+        "fontFamily": "Optimistic VF",
+        "fontSize": "14px",
+        "fontWeight": 700,
+        "lineHeight": 1.43,
+        "letterSpacing": "-0.14px"
+      },
+      "body-sm": {
+        "fontFamily": "Optimistic VF",
+        "fontSize": "14px",
+        "fontWeight": 400,
+        "lineHeight": 1.43,
+        "letterSpacing": "-0.14px"
+      },
+      "caption-bold": {
+        "fontFamily": "Optimistic VF",
+        "fontSize": "12px",
+        "fontWeight": 700,
+        "lineHeight": 1.33
+      },
+      "caption": {
+        "fontFamily": "Optimistic VF",
+        "fontSize": "12px",
+        "fontWeight": 400,
+        "lineHeight": 1.33
+      },
+      "button-md": {
+        "fontFamily": "Optimistic VF",
+        "fontSize": "14px",
+        "fontWeight": 700,
+        "lineHeight": 1.43,
+        "letterSpacing": "-0.14px"
+      },
+      "link-md": {
+        "fontFamily": "Optimistic VF",
+        "fontSize": "16px",
+        "fontWeight": 700,
+        "lineHeight": 1.5,
+        "letterSpacing": "-0.16px"
+      }
+    },
+    "rounded": {
+      "xs": "2px",
+      "sm": "4px",
+      "md": "6px",
+      "lg": "8px",
+      "xl": "16px",
+      "xxl": "24px",
+      "xxxl": "32px",
+      "feature": "40px",
+      "full": "100px",
+      "circle": "9999px"
+    },
+    "spacing": {
+      "xxs": "4px",
+      "xs": "8px",
+      "sm": "10px",
+      "md": "12px",
+      "base": "16px",
+      "lg": "20px",
+      "xl": "24px",
+      "xxl": "32px",
+      "xxxl": "40px",
+      "section-sm": "48px",
+      "section": "64px",
+      "section-lg": "80px",
+      "hero": "120px"
+    },
+    "components": {
+      "button-primary": {
+        "backgroundColor": "{colors.ink-button}",
+        "textColor": "{colors.on-ink-button}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.full}",
+        "padding": "14px 30px"
+      },
+      "button-primary-pressed": {
+        "backgroundColor": "{colors.charcoal}",
+        "textColor": "{colors.on-ink-button}"
+      },
+      "button-primary-disabled": {
+        "backgroundColor": "{colors.disabled-text}",
+        "textColor": "{colors.canvas}"
+      },
+      "button-buy-cta": {
+        "backgroundColor": "{colors.primary}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.full}",
+        "padding": "14px 30px"
+      },
+      "button-buy-cta-pressed": {
+        "backgroundColor": "{colors.primary-deep}",
+        "textColor": "{colors.on-primary}"
+      },
+      "button-secondary": {
+        "backgroundColor": "transparent",
+        "textColor": "{colors.ink-deep}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.full}",
+        "padding": "12px 28px",
+        "border": "2px solid {colors.ink-deep}"
+      },
+      "button-ghost": {
+        "backgroundColor": "transparent",
+        "textColor": "{colors.ink-deep}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.full}",
+        "padding": "10px 22px",
+        "border": "2px solid rgba(10, 19, 23, 0.12)"
+      },
+      "button-pill-tab": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-sm-bold}",
+        "rounded": "{rounded.full}",
+        "padding": "8px 16px",
+        "border": "1px solid {colors.hairline}"
+      },
+      "button-pill-tab-active": {
+        "backgroundColor": "{colors.ink-deep}",
+        "textColor": "{colors.canvas}"
+      },
+      "button-icon-circular": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "rounded": "{rounded.circle}",
+        "size": "40px"
+      },
+      "card-product-feature": {
+        "backgroundColor": "{colors.canvas}",
+        "rounded": "{rounded.xxxl}",
+        "padding": "{spacing.xxl}",
+        "border": "1px solid {colors.hairline-soft}"
+      },
+      "card-feature-photo": {
+        "backgroundColor": "{colors.canvas}",
+        "rounded": "{rounded.xxxl}",
+        "padding": "0",
+        "border": "none"
+      },
+      "card-promo-strip": {
+        "backgroundColor": "{colors.ink-deep}",
+        "textColor": "{colors.canvas}",
+        "rounded": "{rounded.xxxl}",
+        "padding": "{spacing.section}"
+      },
+      "card-icon-feature": {
+        "backgroundColor": "{colors.canvas}",
+        "rounded": "{rounded.xl}",
+        "padding": "{spacing.xl}"
+      },
+      "card-checkout-summary": {
+        "backgroundColor": "{colors.canvas}",
+        "rounded": "{rounded.xl}",
+        "padding": "{spacing.xl}",
+        "border": "1px solid {colors.hairline-soft}",
+        "shadow": "rgba(20, 22, 26, 0.3) 0px 1px 4px 0px"
+      },
+      "product-thumbnail": {
+        "backgroundColor": "{colors.surface-soft}",
+        "rounded": "{rounded.xl}",
+        "padding": "{spacing.base}",
+        "aspect-ratio": "1 / 1"
+      },
+      "text-input": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.lg}",
+        "padding": "{spacing.md}",
+        "border": "1px solid {colors.hairline}",
+        "height": "44px"
+      },
+      "text-input-focused": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "border": "2px solid {colors.fb-blue}"
+      },
+      "text-input-error": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "border": "1px solid {colors.critical-strong}"
+      },
+      "search-pill": {
+        "backgroundColor": "{colors.surface-soft}",
+        "textColor": "{colors.steel}",
+        "typography": "{typography.body-sm}",
+        "rounded": "{rounded.full}",
+        "padding": "{spacing.md} {spacing.lg}",
+        "height": "40px"
+      },
+      "radio-option": {
+        "backgroundColor": "{colors.canvas}",
+        "rounded": "{rounded.lg}",
+        "padding": "{spacing.lg}",
+        "border": "1px solid rgba(10, 19, 23, 0.12)"
+      },
+      "radio-option-selected": {
+        "backgroundColor": "{colors.canvas}",
+        "rounded": "{rounded.lg}",
+        "border": "2px solid #0143b5"
+      },
+      "color-swatch-circle": {
+        "rounded": "{rounded.circle}",
+        "size": "32px",
+        "border": "2px solid {colors.canvas}"
+      },
+      "badge-promo-yellow": {
+        "backgroundColor": "{colors.warning}",
+        "textColor": "{colors.ink-deep}",
+        "typography": "{typography.caption-bold}",
+        "rounded": "{rounded.full}",
+        "padding": "4px 10px"
+      },
+      "badge-attention": {
+        "backgroundColor": "{colors.attention}",
+        "textColor": "{colors.canvas}",
+        "typography": "{typography.caption-bold}",
+        "rounded": "{rounded.full}",
+        "padding": "4px 10px"
+      },
+      "badge-success": {
+        "backgroundColor": "{colors.success}",
+        "textColor": "{colors.canvas}",
+        "typography": "{typography.caption-bold}",
+        "rounded": "{rounded.full}",
+        "padding": "4px 10px"
+      },
+      "badge-critical": {
+        "backgroundColor": "{colors.critical}",
+        "textColor": "{colors.canvas}",
+        "typography": "{typography.caption-bold}",
+        "rounded": "{rounded.full}",
+        "padding": "4px 10px"
+      },
+      "promo-banner": {
+        "backgroundColor": "{colors.ink-deep}",
+        "textColor": "{colors.canvas}",
+        "typography": "{typography.body-sm-bold}",
+        "padding": "{spacing.md} {spacing.xl}"
+      },
+      "faq-accordion-item": {
+        "backgroundColor": "{colors.canvas}",
+        "rounded": "{rounded.xl}",
+        "padding": "{spacing.xl}",
+        "border": "1px solid {colors.hairline-soft}"
+      },
+      "why-buy-tile": {
+        "backgroundColor": "{colors.canvas}",
+        "rounded": "{rounded.xl}",
+        "padding": "{spacing.xxl} {spacing.xl}",
+        "border": "1px solid {colors.hairline-soft}"
+      },
+      "warranty-card": {
+        "backgroundColor": "{colors.surface-soft}",
+        "rounded": "{rounded.xxl}",
+        "padding": "{spacing.xxl}"
+      },
+      "footer-region": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.steel}",
+        "typography": "{typography.body-sm}",
+        "padding": "{spacing.section} {spacing.xxl}",
+        "border": "1px solid {colors.hairline-soft}"
+      },
+      "hero-band-marketing": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.canvas}",
+        "typography": "{typography.hero-display}",
+        "rounded": "{rounded.xxxl}",
+        "padding": "{spacing.section-lg}"
+      },
+      "product-gallery-pdp": {
+        "backgroundColor": "{colors.canvas}",
+        "rounded": "{rounded.xxxl}",
+        "padding": "{spacing.base}"
+      },
+      "color-sku-picker-row": {
+        "backgroundColor": "{colors.surface-soft}",
+        "rounded": "{rounded.lg}",
+        "padding": "{spacing.base}"
+      },
+      "feature-icon-row": {
+        "backgroundColor": "{colors.canvas}",
+        "rounded": "{rounded.xl}",
+        "padding": "{spacing.xl}",
+        "border": "1px solid {colors.hairline-soft}"
+      },
+      "tech-specs-table": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-sm}",
+        "rounded": "{rounded.lg}",
+        "padding": "{spacing.lg}",
+        "border": "1px solid {colors.hairline-soft}"
+      },
+      "testimonial-customer-card": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.xl}",
+        "padding": "{spacing.xxl}",
+        "border": "1px solid {colors.hairline-soft}"
+      }
+    }
+  },
+  "normalizationRepairs": [],
+  "sections": [
+    {
+      "heading": "Overview",
+      "level": 2,
+      "text": "Meta's commerce surfaces (homepage, Quest configurator, Ray-Ban product detail, prescription page) read as a confident hardware merchandiser. The brand voice is photography-first: large, full-bleed product imagery dominates above-the-fold real estate, with white space and tight typographic hierarchy carrying the rest. The system has a recognizable dual-CTA pattern — a black pill-shaped primary on marketing surfaces shifting to a saturated cobalt blue ({colors.primary}) inside the buy-now flows, paired with an outlined ghost button for secondary navigation.\n\nOptimistic VF — Meta's variable display face — anchors the entire system, ranging from a 64px hero display down to a 12px caption. The face's `ss01` and `ss02` stylistic sets are switched on across every heading role, contributing to the brand's slightly humanist, friendly geometric character. Below 768px the system collapses cleanly: hero stacks, pill nav becomes a hamburger, three-up feature grids flatten to a single column, and product configurators drop their right-rail summary into a sticky bottom bar.\n\n**Key Characteristics:**\n- Stark white canvas ({colors.canvas}) carrying full-bleed product photography with `{rounded.xxxl}` (32px) corner softening on showcase tiles\n- Two-tier primary button system: marketing CTAs use {colors.ink-button} pills; commerce CTAs use {colors.primary} cobalt pills inside buy-now panels\n- Optimistic VF as the universal display + body face with consistent `ss01, ss02` OpenType features\n- Pill-shaped buttons ({rounded.full}) and `{rounded.xxxl}`/`{rounded.feature}` cards as the dominant geometric signature\n- Saturated promotional banners (yellow {colors.warning}, dark {colors.ink-deep}) used sparingly above the nav for time-bound offers\n- Photographic feature cards with no card chrome (no border, no shadow) — the product imagery IS the surface treatment",
+      "line": 351
+    },
+    {
+      "heading": "Colors",
+      "level": 2,
+      "text": "> Source pages: meta.com/ (homepage), /ai-glasses/ray-ban-meta-skyler-gen-2/ (PDP), /quest/quest-3s/buy-now/ (configurator), /ai-glasses/prescription/ (lens upsell). Token coverage was identical across all four pages — the design system is genuinely unified.",
+      "line": 365
+    },
+    {
+      "heading": "Brand & Accent",
+      "level": 3,
+      "text": "- **Cobalt Primary** ({colors.primary}): The buy-now CTA color. Used on every \"Add to cart\", \"Configure\", \"Pre-order\" button inside the commerce flow and the right-rail purchase panel.\n- **Deep Cobalt** ({colors.primary-deep}): Pressed-state and dark-surface variant of the cobalt primary; also the active link color.\n- **Soft Cobalt** ({colors.primary-soft}): Translucent background tint for informational callouts (`{colors.primary-soft}` at 15% alpha).\n- **Facebook Blue** ({colors.fb-blue}): Selected radio/checkbox state and inline form-control activation color.\n- **Meta Link Blue** ({colors.meta-link}): Reserved for legacy navigation and footer link affordances.\n- **Oculus Purple** ({colors.oculus-purple}): VR product accent — used inside Quest-branded surfaces for category emphasis.",
+      "line": 369
+    },
+    {
+      "heading": "Surface",
+      "level": 3,
+      "text": "- **Canvas White** ({colors.canvas}): Page background and primary card surface.\n- **Soft Cloud** ({colors.surface-soft}): Subtle product-thumbnail and warranty-card background; also the search-pill rest state.\n- **Hairline Gray** ({colors.hairline}): 1px input border and form-control divider.\n- **Hairline Soft** ({colors.hairline-soft}): Quieter divider used on cards, footer separators, and section breaks.",
+      "line": 377
+    },
+    {
+      "heading": "Text",
+      "level": 3,
+      "text": "- **Deep Ink** ({colors.ink-deep}): Primary headline and body text on light surfaces.\n- **Ink** ({colors.ink}): Standard body and secondary headline text.\n- **Charcoal** ({colors.charcoal}): Tertiary body text and form-button labels.\n- **Slate** ({colors.slate}): Section-header copy and supporting microcopy.\n- **Steel** ({colors.steel}): Quieter caption text and footer link hierarchy.\n- **Stone** ({colors.stone}): Disabled or de-emphasized labels.",
+      "line": 383
+    },
+    {
+      "heading": "Semantic",
+      "level": 3,
+      "text": "- **Success** ({colors.success}): \"In stock\", \"Free returns\" affirmations.\n- **Attention** ({colors.attention}): Mid-priority alerts and timed callouts.\n- **Warning** ({colors.warning}): Promotional banners (\"Get 25% off…\") and limited-time tags.\n- **Critical** ({colors.critical}): Validation errors, destructive feedback.\n- **Critical Strong** ({colors.critical-strong}): Form-input error border and inline error labels.",
+      "line": 391
+    },
+    {
+      "heading": "Typography",
+      "level": 2,
+      "text": "",
+      "line": 398
+    },
+    {
+      "heading": "Font Family",
+      "level": 3,
+      "text": "**Optimistic VF** is Meta's proprietary variable display face. Fallbacks: Montserrat, Helvetica, Arial, Noto Sans. The variable axes carry from 300 (light heading-md, used for editorial intro headlines like \"Look forward\") through 500 (display, hero, heading-sm) up to 700 (subtitle, body emphasis, button labels). Stylistic sets `ss01` and `ss02` are switched on across every heading role — they soften the geometry and give the type a slightly humanist breathing.\n\nA secondary Helvetica fallback chain is used for technical microcopy (12px) inside spec sheets and footer fine print.",
+      "line": 400
+    },
+    {
+      "heading": "Hierarchy",
+      "level": 3,
+      "text": "| Token | Size | Weight | Line Height | Letter Spacing | OpenType | Use |\n|---|---|---|---|---|---|---|\n| `{typography.hero-display}` | 64px | 500 | 1.16 | 0 | ss01, ss02 | Homepage hero (\"Get 25% off…\", category opener) |\n| `{typography.display-lg}` | 48px | 500 | 1.17 | 0 | ss01, ss02 | Section-opener display (\"Made for prescriptions. Built for comfort.\") |\n| `{typography.heading-lg}` | 36px | 500 | 1.28 | 0 | ss01, ss02 | Subsection headlines (\"Why buy from Meta\", \"Tech specs\") |\n| `{typography.heading-md}` | 28px | 300 | 1.21 | 0 | ss01, ss02 | Editorial subheads in lighter weight (\"Look forward\", \"Built for prescriptions\") |\n| `{typography.heading-sm}` | 24px | 500 | 1.25 | 0 | ss01, ss02 | Card titles, feature-tile headers |\n| `{typography.subtitle-lg}` | 18px | 700 | 1.44 | 0 | — | Bold callouts, FAQ question titles |\n| `{typography.subtitle-md}` | 18px | 400 | 1.44 | 0 | — | Body lead and longer-line subtitles |\n| `{typography.body-md}` | 16px | 400 | 1.50 | -0.16px | — | Primary body text |\n| `{typography.body-md-bold}` | 16px | 700 | 1.50 | -0.16px | — | Body emphasis and link-md |\n| `{typography.body-sm}` | 14px | 400 | 1.43 | -0.14px | — | Secondary body, helper text |\n| `{typography.body-sm-bold}` | 14px | 700 | 1.43 | -0.14px | — | Pill tab labels, footer headings |\n| `{typography.caption-bold}` | 12px | 700 | 1.33 | 0 | — | Badge labels, timestamps |\n| `{typography.caption}` | 12px | 400 | 1.33 | 0 | — | Footer fine print, legal microcopy |\n| `{typography.button-md}` | 14px | 700 | 1.43 | -0.14px | — | Pill button labels |\n| `{typography.link-md}` | 16px | 700 | 1.50 | -0.16px | — | Inline navigation links |",
+      "line": 405
+    },
+    {
+      "heading": "Principles",
+      "level": 3,
+      "text": "- Negative letter-spacing on body roles (`-0.14px` to `-0.16px`) tightens the type fractionally — Optimistic VF was designed for this snug-but-not-condensed setting.\n- Editorial subheads use the 300 weight to introduce visual rest between the 500-weight display headlines and the 400-weight body, creating a three-tier visual rhythm.\n- All headings carry `ss01, ss02` stylistic sets together — the design treats them as a paired alternates package, never one without the other.\n- Buttons, pill tabs, and footer headings share `{typography.body-sm-bold}` (14px / 700 / -0.14px), creating a tight visual relationship between interactive elements.",
+      "line": 425
+    },
+    {
+      "heading": "Layout",
+      "level": 2,
+      "text": "",
+      "line": 431
+    },
+    {
+      "heading": "Spacing System",
+      "level": 3,
+      "text": "- **Base unit**: 4px increment with 8px as the dominant primary step.\n- **Tokens**: `{spacing.xxs}` (4px) · `{spacing.xs}` (8px) · `{spacing.sm}` (10px) · `{spacing.md}` (12px) · `{spacing.base}` (16px) · `{spacing.lg}` (20px) · `{spacing.xl}` (24px) · `{spacing.xxl}` (32px) · `{spacing.xxxl}` (40px) · `{spacing.section-sm}` (48px) · `{spacing.section}` (64px) · `{spacing.section-lg}` (80px) · `{spacing.hero}` (120px).\n- **Section rhythm**: Marketing sections separate at `{spacing.section-lg}` (80px); product detail sections compress to `{spacing.section}` (64px); FAQ stacks tighten further to `{spacing.xxl}` (32px).\n- **Card internal padding**: Standard `{spacing.xxl}` (32px); icon-feature tiles compress to `{spacing.xl}` (24px); promo-strip cards expand to `{spacing.section}` (64px) for hero presence.",
+      "line": 433
+    },
+    {
+      "heading": "Grid & Container",
+      "level": 3,
+      "text": "- Marketing page max-width sits around 1280px with 32–48px gutters.\n- The PDP layout uses a 2-column split: hero gallery (~58% width) + sticky purchase rail (~42%, with `max-width: 380px` on the rail).\n- Three-up feature grids (\"Why buy from Meta\") use a 24px column gap; six-up product thumbnail rows (color/SKU pickers) use a 12px gap.",
+      "line": 439
+    },
+    {
+      "heading": "Whitespace Philosophy",
+      "level": 3,
+      "text": "Whitespace is product-photography-first. Hero sections give product imagery 50–70% of the viewport height; copy is given oxygen to breathe in `{spacing.xxl}` to `{spacing.xxxl}` blocks above and below. Inside the configurator, whitespace tightens — the buy-now panel is information-dense, with `{spacing.base}` to `{spacing.lg}` rhythm between option groups.",
+      "line": 444
+    },
+    {
+      "heading": "Elevation & Depth",
+      "level": 2,
+      "text": "The system runs predominantly flat. Elevation is reserved for two interaction layers:\n\n| Level | Treatment | Use |\n|---|---|---|\n| 0 (flat) | No shadow; `{rounded.xxxl}` rounding + `{colors.hairline-soft}` border | Default product cards, why-buy tiles |\n| 1 (subtle) | `rgba(0, 0, 0, 0.2) 1px 1px 0px 0px` | Pill-tab activation indicator |\n| 2 (sticky panel) | `rgba(20, 22, 26, 0.3) 0px 1px 4px 0px` | PDP right-rail purchase summary, sticky mobile checkout bar |",
+      "line": 447
+    },
+    {
+      "heading": "Decorative Depth",
+      "level": 3,
+      "text": "- Photography-as-depth: full-bleed product imagery on `{rounded.xxxl}` cards creates atmospheric layering without shadows.\n- Translucent overlays (`rgba(255, 255, 255, 0.1)` to `rgba(10, 19, 23, 0.12)`) cover dark hero photography to lift legibility of overlaid text.\n- Decorative pastel tints inside accessory cards — soft pink, ice-blue, mint — appear briefly behind product cutouts but are NOT formalized as system tokens (treated as photographic content).",
+      "line": 457
+    },
+    {
+      "heading": "Shapes",
+      "level": 2,
+      "text": "",
+      "line": 462
+    },
+    {
+      "heading": "Border Radius Scale",
+      "level": 3,
+      "text": "| Token | Value | Use |\n|---|---|---|\n| `{rounded.xs}` | 2px | Inline checkbox marks, fine UI corners |\n| `{rounded.sm}` | 4px | Tags, micro-controls |\n| `{rounded.md}` | 6px | Square thumbnail rounding |\n| `{rounded.lg}` | 8px | Form inputs, radio-option containers |\n| `{rounded.xl}` | 16px | Standard feature cards, FAQ accordion items |\n| `{rounded.xxl}` | 24px | Warranty / accessory tiles, ghost-style action cards |\n| `{rounded.xxxl}` | 32px | Photographic feature cards, big promo strips |\n| `{rounded.feature}` | 40px | Accessory hero panels, \"Built for prescriptions\" cards |\n| `{rounded.full}` | 100px | Pill buttons, tab chips, badges |\n| `{rounded.circle}` | 50% | Color swatches, circular icon buttons |",
+      "line": 464
+    },
+    {
+      "heading": "Photography Geometry",
+      "level": 3,
+      "text": "- Product hero photography sits in `{rounded.xxxl}` (32px) frames more often than rectangles.\n- Color/material swatches are perfect circles (`{rounded.circle}`, 32px diameter, 2px white border ring when selected).\n- Square product thumbnails (`aspect-ratio: 1/1`) use `{rounded.xl}` rounding.\n- Six-up \"color & SKU\" picker rows use 1:1 aspect tiles with `{rounded.lg}` (8px) corners — tighter than the hero photography frames to differentiate selection-grid context from showcase context.",
+      "line": 479
+    },
+    {
+      "heading": "Components",
+      "level": 2,
+      "text": "> Per the no-hover policy, hover states are NOT documented for any component below. Default and pressed/active states only.",
+      "line": 485
+    },
+    {
+      "heading": "Buttons",
+      "level": 3,
+      "text": "**`button-primary`** — Black pill primary CTA for marketing surfaces (\"Shop\", \"Pre-order\").\n- Background `{colors.ink-button}`, text `{colors.on-ink-button}`, typography `{typography.button-md}`, padding `14px 30px`, rounded `{rounded.full}`.\n- Pressed state `button-primary-pressed` flips background to `{colors.charcoal}`.\n- Disabled state `button-primary-disabled` uses `{colors.disabled-text}` background.\n\n**`button-buy-cta`** — Cobalt pill primary CTA for commerce flows (\"Add to cart\", \"Configure\", \"Continue\").\n- Background `{colors.primary}`, text `{colors.on-primary}`, typography `{typography.button-md}`, padding `14px 30px`, rounded `{rounded.full}`.\n- Pressed state `button-buy-cta-pressed` deepens background to `{colors.primary-deep}`.\n- This variant ONLY appears inside the buy-now configurator and PDP purchase rail. Marketing surfaces use `button-primary` instead.\n\n**`button-secondary`** — Outlined ghost CTA, often paired with primary in dual-CTA hero patterns.\n- Background transparent, text `{colors.ink-deep}`, border `2px solid {colors.ink-deep}`, typography `{typography.button-md}`, padding `12px 28px`, rounded `{rounded.full}`.\n\n**`button-ghost`** — Quieter outlined variant used for tertiary CTAs.\n- Background transparent, text `{colors.ink-deep}`, border `2px solid rgba(10, 19, 23, 0.12)`, typography `{typography.button-md}`, padding `10px 22px`, rounded `{rounded.full}`.\n\n**`button-pill-tab`** + **`button-pill-tab-active`** — Top-of-page category navigation pills (\"Glasses / Quest / Apps\").\n- Inactive: background `{colors.canvas}`, text `{colors.ink}`, border `1px solid {colors.hairline}`, padding `8px 16px`, rounded `{rounded.full}`.\n- Active: background `{colors.ink-deep}`, text `{colors.canvas}`. No border in active state — the dark fill replaces it.\n\n**`button-icon-circular`** — 40×40px circular utility buttons (carousel arrows, share, favorite).\n- Background `{colors.canvas}`, icon color `{colors.ink}`, rounded `{rounded.circle}`.",
+      "line": 489
+    },
+    {
+      "heading": "Cards & Containers",
+      "level": 3,
+      "text": "**`card-product-feature`** — White feature card with product photography and copy (homepage \"Designed for sport\", \"Advanced. Inside and out.\").\n- Background `{colors.canvas}`, rounded `{rounded.xxxl}`, padding `{spacing.xxl}`, border `1px solid {colors.hairline-soft}`.\n\n**`card-feature-photo`** — Edge-to-edge photographic showcase tile with NO chrome (homepage \"Built for prescriptions\" full-bleed glasses card).\n- Background `{colors.canvas}` (visible only at the corners), rounded `{rounded.xxxl}`, no padding, no border. The image fills the card; copy is overlaid bottom-left in white.\n\n**`card-promo-strip`** — Dark full-width promo card with embedded copy + CTAs (homepage \"Meta Quest brings the magic of virtual reality\" wide strip).\n- Background `{colors.ink-deep}`, text `{colors.canvas}`, rounded `{rounded.xxxl}`, padding `{spacing.section}`.\n\n**`card-icon-feature`** — Three-up feature tile with line icon, headline, and short copy (\"Free 2-day delivery\", \"Free 30-day returns\", \"Worry-free warranty\", \"Buy now, pay later\").\n- Background `{colors.canvas}`, rounded `{rounded.xl}`, padding `{spacing.xl}`, border `1px solid {colors.hairline-soft}`.\n\n**`card-checkout-summary`** — PDP right-rail sticky summary with title, price, color picker, \"Add to cart\" button.\n- Background `{colors.canvas}`, rounded `{rounded.xl}`, padding `{spacing.xl}`, border `1px solid {colors.hairline-soft}`, shadow `rgba(20, 22, 26, 0.3) 0px 1px 4px 0px`.\n\n**`product-thumbnail`** — Square product image cell used in color/SKU pickers and \"People also bought\" rows.\n- Background `{colors.surface-soft}`, rounded `{rounded.xl}`, padding `{spacing.base}`, aspect-ratio `1 / 1`.\n\n**`warranty-card`** — Promo callout for warranty + finance offers (\"1y Warranty\", \"Meta Horizon+\").\n- Background `{colors.surface-soft}`, rounded `{rounded.xxl}`, padding `{spacing.xxl}`. Uses pastel-tinted variants for additional perks.\n\n**`why-buy-tile`** — 4-up reassurance tile row in the lower marketing zone.\n- Background `{colors.canvas}`, rounded `{rounded.xl}`, padding `{spacing.xxl} {spacing.xl}`, border `1px solid {colors.hairline-soft}`. Heading in `{typography.subtitle-lg}`, body in `{typography.body-sm}`.",
+      "line": 514
+    },
+    {
+      "heading": "Inputs & Forms",
+      "level": 3,
+      "text": "**`text-input`** — Standard form field (footer email subscribe, support form).\n- Background `{colors.canvas}`, text `{colors.ink}`, border `1px solid {colors.hairline}`, rounded `{rounded.lg}`, padding `{spacing.md}`, height 44px.\n\n**`text-input-focused`** — Activated state.\n- Border switches to `2px solid {colors.fb-blue}`.\n\n**`text-input-error`** — Validation error state.\n- Border switches to `1px solid {colors.critical-strong}`; error label below in `{colors.critical-strong}` `{typography.body-sm}`.\n\n**`search-pill`** — Top-nav search field.\n- Background `{colors.surface-soft}`, text `{colors.steel}`, typography `{typography.body-sm}`, rounded `{rounded.full}`, height 40px.\n\n**`radio-option`** + **`radio-option-selected`** — Configurator option cards (storage, color variant, shipping option).\n- Inactive: background `{colors.canvas}`, rounded `{rounded.lg}`, padding `{spacing.lg}`, border `1px solid rgba(10, 19, 23, 0.12)`.\n- Selected: border switches to `2px solid #0143b5` (deep cobalt) — the cobalt theme persists into form-control selection signaling.\n\n**`color-swatch-circle`** — Round color/material picker (Ray-Ban frame finishes, glass colors).\n- 32px diameter, `{rounded.circle}`, `2px solid {colors.canvas}` ring on selection over the swatch's own fill color.",
+      "line": 540
+    },
+    {
+      "heading": "Badges & Status",
+      "level": 3,
+      "text": "**`badge-promo-yellow`** — Limited-time offer chip (\"Limited time\", \"Sale\").\n- Background `{colors.warning}`, text `{colors.ink-deep}`, typography `{typography.caption-bold}`, rounded `{rounded.full}`, padding `4px 10px`.\n\n**`badge-attention`** — Mid-priority status indicator (\"Almost gone\", \"Selling fast\").\n- Background `{colors.attention}`, text `{colors.canvas}`, typography `{typography.caption-bold}`, rounded `{rounded.full}`, padding `4px 10px`.\n\n**`badge-success`** — Affirmative status (\"In stock\", \"Verified\", \"Free shipping\").\n- Background `{colors.success}`, text `{colors.canvas}`, typography `{typography.caption-bold}`, rounded `{rounded.full}`, padding `4px 10px`.\n\n**`badge-critical`** — Urgent/destructive label (\"Out of stock\", \"Discontinued\", error chips).\n- Background `{colors.critical}`, text `{colors.canvas}`, typography `{typography.caption-bold}`, rounded `{rounded.full}`, padding `4px 10px`.\n\n**`promo-banner`** — Sticky full-width promotional strip ABOVE the top nav (\"Get 25% off the #1 selling AI glasses\").\n- Background `{colors.ink-deep}` (or `{colors.warning}` for yellow promo variants), text `{colors.canvas}` (or `{colors.ink-deep}` on yellow), typography `{typography.body-sm-bold}`, padding `{spacing.md} {spacing.xl}`. Carries one-line offer copy plus an inline CTA link.",
+      "line": 561
+    },
+    {
+      "heading": "Navigation",
+      "level": 3,
+      "text": "**Top Navigation (Desktop)** — Sticky white bar with category pill tabs, search, account, cart.\n- Background `{colors.canvas}`, height ~64px with bottom `1px solid {colors.hairline-soft}`.\n- Left: Meta wordmark logo (61×14px). Center: pill-tab category nav. Right: search-pill + circular icon buttons (account, cart).\n\n**Top Navigation (Mobile)** — Compressed to logo + hamburger + cart icon. Pill-tab nav slides into a full-screen drawer below 768px.\n\n**Promo Banner** — Full-width strip ABOVE the nav for time-bound offers.\n- Background `{colors.ink-deep}` or `{colors.warning}` (yellow), text `{colors.canvas}` or `{colors.ink-deep}`, typography `{typography.body-sm-bold}`, padding `{spacing.md} {spacing.xl}`. Carries one-line offer copy + inline link.\n\n**Breadcrumb (PDP)** — Inline path above the product hero (\"Glasses › Ray-Ban Meta › Skyler (Gen 2)\").\n- Typography `{typography.body-sm}`, separator dot in `{colors.stone}`, active leaf in `{colors.ink}`, parent links in `{colors.steel}`.",
+      "line": 578
+    },
+    {
+      "heading": "Signature Components",
+      "level": 3,
+      "text": "**`hero-band-marketing`** — Full-bleed photographic hero with overlaid copy + dual-CTA pair.\n- Edge-to-edge product photography on a dark or photographic background. Overlay copy in `{typography.hero-display}` white. Below the title: 1-line subtitle in `{typography.subtitle-md}` then `button-primary` + `button-secondary` pair.\n\n**`product-gallery-pdp`** — Product detail page main hero: 4-up vertical thumbnail strip on the left, large product image center, sticky purchase rail right.\n- Thumbnails: 80×80px, `{rounded.lg}`, `{colors.surface-soft}` background, 1px `{colors.hairline-soft}` border (active border switches to `{colors.ink-deep}`).\n- Main image area: ~720×720px on desktop, `{rounded.xxxl}` rounding, photographic surface.\n- Sticky rail uses `card-checkout-summary`.\n\n**`color-sku-picker-row`** — Six-up grid of square product variants with name + price below each.\n- Tile background `{colors.surface-soft}`, rounded `{rounded.lg}`, image padded `{spacing.base}`. Active tile border switches to `2px solid {colors.ink-deep}`. Below the tile: variant name in `{typography.body-sm-bold}` and price in `{typography.body-sm}`.\n\n**`feature-icon-row`** — Four reassurance benefits (\"Free 2-day delivery\", \"Free 30-day returns\", \"Worry-free warranty\", \"Buy now, pay later\").\n- 4-column grid, each cell uses `card-icon-feature` chrome with a 32px line icon at top, headline `{typography.subtitle-lg}`, body `{typography.body-sm}`.\n\n**`faq-accordion`** — Vertical stack of expandable Q&A items.\n- Each item uses `faq-accordion-item` chrome. Question in `{typography.subtitle-lg}` left, chevron icon (`{colors.steel}`, 20px) right. Expanded answer drops in `{typography.body-md}` text below with `{spacing.base}` top padding.\n\n**`tech-specs-table`** — Two-column key/value table for product specifications.\n- Row layout: spec label (`{typography.body-sm-bold}` `{colors.ink}`) left, spec value (`{typography.body-sm}` `{colors.charcoal}`) right. Row separator `1px solid {colors.hairline-soft}`. Section headers in `{typography.heading-sm}` above each spec group.\n\n**`testimonial-customer-card`** — Small editorial card with author + quote + photo.\n- Background `{colors.canvas}`, rounded `{rounded.xl}`, padding `{spacing.xxl}`, border `1px solid {colors.hairline-soft}`. Avatar circle 40px, byline in `{typography.body-sm-bold}`, quote in `{typography.body-md}`.\n\n**`footer-region`** — Dense multi-column site footer.\n- Background `{colors.canvas}`, top border `1px solid {colors.hairline-soft}`, padding `{spacing.section} {spacing.xxl}`. Six column groups with section headings in `{typography.body-sm-bold}` `{colors.ink}` and link lists in `{typography.body-sm}` `{colors.steel}`. Bottom row contains language picker, region selector, legal links in `{typography.caption}` `{colors.stone}`.",
+      "line": 592
+    },
+    {
+      "heading": "Do's and Don'ts",
+      "level": 2,
+      "text": "",
+      "line": 620
+    },
+    {
+      "heading": "Do",
+      "level": 3,
+      "text": "- Reserve `{colors.primary}` (cobalt) for buy-now CTAs only — its visual weight is meaningful precisely because it doesn't appear on marketing pages.\n- Use `{colors.ink-button}` (black) for marketing-surface primary CTAs. Pair with `{colors.button-secondary}` ghost outline for the secondary action.\n- Apply `{rounded.full}` to every button, every category pill, every badge, every chip — buttons are NEVER squared in Meta's system.\n- Apply `{rounded.xxxl}` to photographic product cards and `{rounded.xl}` to icon-feature tiles to maintain the visible card-hierarchy contrast.\n- Switch on `ss01, ss02` together for any Optimistic VF heading. Never one stylistic set without the other.\n- Use the 300-weight `{typography.heading-md}` for editorial subheads — it creates the brand's signature visual rhythm against the 500-weight displays.",
+      "line": 622
+    },
+    {
+      "heading": "Don't",
+      "level": 3,
+      "text": "- Don't use `{colors.primary}` (cobalt) for marketing-surface primary buttons — it conflicts with Meta's brand-history positioning of black-CTA-on-white-canvas marketing.\n- Don't introduce additional accent colors beyond cobalt + Oculus purple. The hardware brand is deliberately monochromatic outside its product photography.\n- Don't soften the corners of pill buttons below `{rounded.full}`. The pill is a brand signature.\n- Don't run feature cards without rounding — `{rounded.xxxl}` is the minimum for any photographic surface.\n- Don't reduce `{typography.body-md}` line-height below 1.50 — the negative letter-spacing already tightens the metric and any further compression breaks legibility.\n- Don't apply heavy shadows to marketing cards. Elevation is a commerce-flow signal, not a marketing flourish.",
+      "line": 630
+    },
+    {
+      "heading": "Responsive Behavior",
+      "level": 2,
+      "text": "",
+      "line": 638
+    },
+    {
+      "heading": "Breakpoints",
+      "level": 3,
+      "text": "| Name | Width | Key Changes |\n|---|---|---|\n| Mobile (small) | < 480px | Single column. Hero text drops to `{typography.display-lg}` or smaller. Pill tabs collapse into hamburger drawer. PDP gallery stacks above purchase rail; rail becomes sticky bottom bar. |\n| Mobile (large) | 480 – 767px | Same as small but feature tiles render two-up. |\n| Tablet | 768 – 1023px | Two-column feature grids. Pill-tab nav returns. PDP gallery + purchase rail render side-by-side at compressed proportions (~60/40). |\n| Desktop | 1024 – 1359px | Full three- and four-up feature grids; full pill-tab category nav; PDP at standard 58/42 split. |\n| Wide Desktop | ≥ 1360px | Same as desktop with wider hero gutters and larger product photography. |",
+      "line": 640
+    },
+    {
+      "heading": "Touch Targets",
+      "level": 3,
+      "text": "- Pill buttons render at 40–44px effective height (with the 14px button text + `14px 30px` padding). Above the WCAG AAA 44px floor.\n- Circular icon buttons are 40×40px — at the AA floor; bumps to 44×44px on mobile via override.\n- Color swatch circles are 32×32px. To hit AAA, the swatch carries a 12px clear hit zone around it (effective hit target ~56px).\n- Form inputs render at 44px height to align with primary button height.",
+      "line": 649
+    },
+    {
+      "heading": "Collapsing Strategy",
+      "level": 3,
+      "text": "- **Promo banner** stays full-width on all breakpoints; truncates with ellipsis on small mobile, retains the inline link affordance.\n- **Pill-tab nav** below 768px collapses into a hamburger drawer; the active tab is rendered as a label inside the closed nav.\n- **PDP layout**: gallery stacks above the purchase summary at < 1024px; the summary becomes a sticky bottom bar with price + \"Add to cart\" button at < 768px. The full summary remains scrollable above the sticky bar.\n- **Feature grids** (3-up, 4-up) collapse to 2-up at 768–1023px and 1-up at < 768px. Card padding compresses from `{spacing.xxl}` to `{spacing.xl}` at the 1-up breakpoint.\n- **Hero typography**: `{typography.hero-display}` (64px) drops to `{typography.heading-lg}` (36px) at < 768px and `{typography.heading-sm}` (24px) at < 480px.\n- **Footer**: 6-column desktop layout reflows to 2-column at tablet and accordion-collapsed groups at mobile.",
+      "line": 655
+    },
+    {
+      "heading": "Image Behavior",
+      "level": 3,
+      "text": "- Product photography uses 1:1 (thumbnails, color pickers), 4:3 (PDP gallery), and 16:9 (homepage promo strips) ratios.\n- Hero photography is full-bleed with `{rounded.xxxl}` corners; lazy-loaded below the fold.\n- Product variant images preserve their `{rounded.lg}` thumbnails across all breakpoints — they never go full-width on mobile.",
+      "line": 663
+    },
+    {
+      "heading": "Iteration Guide",
+      "level": 2,
+      "text": "1. Focus on ONE component at a time. The system has high internal consistency — small precision wins compound.\n2. Reference component names and tokens directly (`{colors.primary}`, `{component-name}-pressed`, `{rounded.full}`) — do not paraphrase.\n3. Run `npx @google/design.md lint DESIGN.md` after edits to catch broken refs, contrast issues, orphaned tokens.\n4. Add new variants as separate `components:` entries (`-pressed`, `-disabled`, `-focused`) — do not bury them inside prose.\n5. Default to `{typography.body-md}` for body and `{typography.subtitle-lg}` for emphasis. Headlines step down through `hero-display → display-lg → heading-lg → heading-md → heading-sm`.\n6. Keep `{colors.primary}` (cobalt) scarce. If it appears outside the buy-now flow on a viewport, ask whether the surface really needs to look like a checkout panel.\n7. Pill-shaped buttons (`{rounded.full}`) always; squared buttons signal \"third-party widget\" in this design language and should be filtered out of any work surface.",
+      "line": 668
+    },
+    {
+      "heading": "Known Gaps",
+      "level": 2,
+      "text": "- Selected/checked states for non-button form controls (toggle, multi-select) were not visible on the captured surfaces — implement following the cobalt-on-white pattern from `radio-option-selected`.\n- Animation/transition timings are not extracted; recommend 150–250ms ease-out for primary surface transitions and 300ms ease-in-out for accordion expand/collapse.\n- Specific dark-mode token values for canvas, surface, ink, and hairline are not defined; the brand has not surfaced a published dark-mode token set on these commerce pages.\n- Pastel decorative tints inside accessory cards (soft pink, ice blue, mint) appear visually but are not formalized — treat them as photographic content, not as system colors.",
+      "line": 678
+    }
+  ],
+  "tokens": [
+    {
+      "path": "colors.primary",
+      "sourcePath": "colors.primary",
+      "type": "color",
+      "value": "#0064e0",
+      "status": "unverified",
+      "evidence": {
+        "line": 7,
+        "sourcePath": "colors.primary"
+      }
+    },
+    {
+      "path": "colors.primarydeep",
+      "sourcePath": "colors.primary-deep",
+      "type": "color",
+      "value": "#0457cb",
+      "status": "unverified",
+      "evidence": {
+        "line": 8,
+        "sourcePath": "colors.primary-deep"
+      }
+    },
+    {
+      "path": "colors.primarysoft",
+      "sourcePath": "colors.primary-soft",
+      "type": "color",
+      "value": "#0091ff",
+      "status": "unverified",
+      "evidence": {
+        "line": 9,
+        "sourcePath": "colors.primary-soft"
+      }
+    },
+    {
+      "path": "colors.onprimary",
+      "sourcePath": "colors.on-primary",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 10,
+        "sourcePath": "colors.on-primary"
+      }
+    },
+    {
+      "path": "colors.inkbutton",
+      "sourcePath": "colors.ink-button",
+      "type": "color",
+      "value": "#000000",
+      "status": "unverified",
+      "evidence": {
+        "line": 11,
+        "sourcePath": "colors.ink-button"
+      }
+    },
+    {
+      "path": "colors.oninkbutton",
+      "sourcePath": "colors.on-ink-button",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 12,
+        "sourcePath": "colors.on-ink-button"
+      }
+    },
+    {
+      "path": "colors.fbblue",
+      "sourcePath": "colors.fb-blue",
+      "type": "color",
+      "value": "#1876f2",
+      "status": "unverified",
+      "evidence": {
+        "line": 13,
+        "sourcePath": "colors.fb-blue"
+      }
+    },
+    {
+      "path": "colors.metalink",
+      "sourcePath": "colors.meta-link",
+      "type": "color",
+      "value": "#385898",
+      "status": "unverified",
+      "evidence": {
+        "line": 14,
+        "sourcePath": "colors.meta-link"
+      }
+    },
+    {
+      "path": "colors.oculuspurple",
+      "sourcePath": "colors.oculus-purple",
+      "type": "color",
+      "value": "#a121ce",
+      "status": "unverified",
+      "evidence": {
+        "line": 15,
+        "sourcePath": "colors.oculus-purple"
+      }
+    },
+    {
+      "path": "colors.success",
+      "sourcePath": "colors.success",
+      "type": "color",
+      "value": "#31a24c",
+      "status": "unverified",
+      "evidence": {
+        "line": 16,
+        "sourcePath": "colors.success"
+      }
+    },
+    {
+      "path": "colors.successbg",
+      "sourcePath": "colors.success-bg",
+      "type": "color",
+      "value": "#24e400",
+      "status": "unverified",
+      "evidence": {
+        "line": 17,
+        "sourcePath": "colors.success-bg"
+      }
+    },
+    {
+      "path": "colors.attention",
+      "sourcePath": "colors.attention",
+      "type": "color",
+      "value": "#f2a918",
+      "status": "unverified",
+      "evidence": {
+        "line": 18,
+        "sourcePath": "colors.attention"
+      }
+    },
+    {
+      "path": "colors.warning",
+      "sourcePath": "colors.warning",
+      "type": "color",
+      "value": "#f7b928",
+      "status": "unverified",
+      "evidence": {
+        "line": 19,
+        "sourcePath": "colors.warning"
+      }
+    },
+    {
+      "path": "colors.warningbg",
+      "sourcePath": "colors.warning-bg",
+      "type": "color",
+      "value": "#ffe200",
+      "status": "unverified",
+      "evidence": {
+        "line": 20,
+        "sourcePath": "colors.warning-bg"
+      }
+    },
+    {
+      "path": "colors.critical",
+      "sourcePath": "colors.critical",
+      "type": "color",
+      "value": "#e41e3f",
+      "status": "unverified",
+      "evidence": {
+        "line": 21,
+        "sourcePath": "colors.critical"
+      }
+    },
+    {
+      "path": "colors.criticalstrong",
+      "sourcePath": "colors.critical-strong",
+      "type": "color",
+      "value": "#f0284a",
+      "status": "unverified",
+      "evidence": {
+        "line": 22,
+        "sourcePath": "colors.critical-strong"
+      }
+    },
+    {
+      "path": "colors.canvas",
+      "sourcePath": "colors.canvas",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 23,
+        "sourcePath": "colors.canvas"
+      }
+    },
+    {
+      "path": "colors.surfacesoft",
+      "sourcePath": "colors.surface-soft",
+      "type": "color",
+      "value": "#f1f4f7",
+      "status": "unverified",
+      "evidence": {
+        "line": 24,
+        "sourcePath": "colors.surface-soft"
+      }
+    },
+    {
+      "path": "colors.inkdeep",
+      "sourcePath": "colors.ink-deep",
+      "type": "color",
+      "value": "#0a1317",
+      "status": "unverified",
+      "evidence": {
+        "line": 25,
+        "sourcePath": "colors.ink-deep"
+      }
+    },
+    {
+      "path": "colors.ink",
+      "sourcePath": "colors.ink",
+      "type": "color",
+      "value": "#1c1e21",
+      "status": "unverified",
+      "evidence": {
+        "line": 26,
+        "sourcePath": "colors.ink"
+      }
+    },
+    {
+      "path": "colors.charcoal",
+      "sourcePath": "colors.charcoal",
+      "type": "color",
+      "value": "#444950",
+      "status": "unverified",
+      "evidence": {
+        "line": 27,
+        "sourcePath": "colors.charcoal"
+      }
+    },
+    {
+      "path": "colors.slate",
+      "sourcePath": "colors.slate",
+      "type": "color",
+      "value": "#4b4c4f",
+      "status": "unverified",
+      "evidence": {
+        "line": 28,
+        "sourcePath": "colors.slate"
+      }
+    },
+    {
+      "path": "colors.steel",
+      "sourcePath": "colors.steel",
+      "type": "color",
+      "value": "#5d6c7b",
+      "status": "unverified",
+      "evidence": {
+        "line": 29,
+        "sourcePath": "colors.steel"
+      }
+    },
+    {
+      "path": "colors.stone",
+      "sourcePath": "colors.stone",
+      "type": "color",
+      "value": "#8595a4",
+      "status": "unverified",
+      "evidence": {
+        "line": 30,
+        "sourcePath": "colors.stone"
+      }
+    },
+    {
+      "path": "colors.hairline",
+      "sourcePath": "colors.hairline",
+      "type": "color",
+      "value": "#ced0d4",
+      "status": "unverified",
+      "evidence": {
+        "line": 31,
+        "sourcePath": "colors.hairline"
+      }
+    },
+    {
+      "path": "colors.hairlinesoft",
+      "sourcePath": "colors.hairline-soft",
+      "type": "color",
+      "value": "#dee3e9",
+      "status": "unverified",
+      "evidence": {
+        "line": 32,
+        "sourcePath": "colors.hairline-soft"
+      }
+    },
+    {
+      "path": "colors.disabledtext",
+      "sourcePath": "colors.disabled-text",
+      "type": "color",
+      "value": "#bcc0c4",
+      "status": "unverified",
+      "evidence": {
+        "line": 33,
+        "sourcePath": "colors.disabled-text"
+      }
+    },
+    {
+      "path": "typography.herodisplay.fontfamily",
+      "sourcePath": "typography.hero-display.fontFamily",
+      "type": "fontFamily",
+      "value": "Optimistic VF",
+      "status": "unverified",
+      "evidence": {
+        "line": 37,
+        "sourcePath": "typography.hero-display.fontFamily"
+      }
+    },
+    {
+      "path": "typography.herodisplay.fontsize",
+      "sourcePath": "typography.hero-display.fontSize",
+      "type": "dimension",
+      "value": "64px",
+      "status": "unverified",
+      "evidence": {
+        "line": 38,
+        "sourcePath": "typography.hero-display.fontSize"
+      }
+    },
+    {
+      "path": "typography.herodisplay.fontweight",
+      "sourcePath": "typography.hero-display.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 39,
+        "sourcePath": "typography.hero-display.fontWeight"
+      }
+    },
+    {
+      "path": "typography.herodisplay.lineheight",
+      "sourcePath": "typography.hero-display.lineHeight",
+      "type": "number",
+      "value": 1.16,
+      "status": "unverified",
+      "evidence": {
+        "line": 40,
+        "sourcePath": "typography.hero-display.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displaylg.fontfamily",
+      "sourcePath": "typography.display-lg.fontFamily",
+      "type": "fontFamily",
+      "value": "Optimistic VF",
+      "status": "unverified",
+      "evidence": {
+        "line": 43,
+        "sourcePath": "typography.display-lg.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displaylg.fontsize",
+      "sourcePath": "typography.display-lg.fontSize",
+      "type": "dimension",
+      "value": "48px",
+      "status": "unverified",
+      "evidence": {
+        "line": 44,
+        "sourcePath": "typography.display-lg.fontSize"
+      }
+    },
+    {
+      "path": "typography.displaylg.fontweight",
+      "sourcePath": "typography.display-lg.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 45,
+        "sourcePath": "typography.display-lg.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displaylg.lineheight",
+      "sourcePath": "typography.display-lg.lineHeight",
+      "type": "number",
+      "value": 1.17,
+      "status": "unverified",
+      "evidence": {
+        "line": 46,
+        "sourcePath": "typography.display-lg.lineHeight"
+      }
+    },
+    {
+      "path": "typography.headinglg.fontfamily",
+      "sourcePath": "typography.heading-lg.fontFamily",
+      "type": "fontFamily",
+      "value": "Optimistic VF",
+      "status": "unverified",
+      "evidence": {
+        "line": 49,
+        "sourcePath": "typography.heading-lg.fontFamily"
+      }
+    },
+    {
+      "path": "typography.headinglg.fontsize",
+      "sourcePath": "typography.heading-lg.fontSize",
+      "type": "dimension",
+      "value": "36px",
+      "status": "unverified",
+      "evidence": {
+        "line": 50,
+        "sourcePath": "typography.heading-lg.fontSize"
+      }
+    },
+    {
+      "path": "typography.headinglg.fontweight",
+      "sourcePath": "typography.heading-lg.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 51,
+        "sourcePath": "typography.heading-lg.fontWeight"
+      }
+    },
+    {
+      "path": "typography.headinglg.lineheight",
+      "sourcePath": "typography.heading-lg.lineHeight",
+      "type": "number",
+      "value": 1.28,
+      "status": "unverified",
+      "evidence": {
+        "line": 52,
+        "sourcePath": "typography.heading-lg.lineHeight"
+      }
+    },
+    {
+      "path": "typography.headingmd.fontfamily",
+      "sourcePath": "typography.heading-md.fontFamily",
+      "type": "fontFamily",
+      "value": "Optimistic VF",
+      "status": "unverified",
+      "evidence": {
+        "line": 55,
+        "sourcePath": "typography.heading-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.headingmd.fontsize",
+      "sourcePath": "typography.heading-md.fontSize",
+      "type": "dimension",
+      "value": "28px",
+      "status": "unverified",
+      "evidence": {
+        "line": 56,
+        "sourcePath": "typography.heading-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.headingmd.fontweight",
+      "sourcePath": "typography.heading-md.fontWeight",
+      "type": "number",
+      "value": 300,
+      "status": "unverified",
+      "evidence": {
+        "line": 57,
+        "sourcePath": "typography.heading-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.headingmd.lineheight",
+      "sourcePath": "typography.heading-md.lineHeight",
+      "type": "number",
+      "value": 1.21,
+      "status": "unverified",
+      "evidence": {
+        "line": 58,
+        "sourcePath": "typography.heading-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.headingsm.fontfamily",
+      "sourcePath": "typography.heading-sm.fontFamily",
+      "type": "fontFamily",
+      "value": "Optimistic VF",
+      "status": "unverified",
+      "evidence": {
+        "line": 61,
+        "sourcePath": "typography.heading-sm.fontFamily"
+      }
+    },
+    {
+      "path": "typography.headingsm.fontsize",
+      "sourcePath": "typography.heading-sm.fontSize",
+      "type": "dimension",
+      "value": "24px",
+      "status": "unverified",
+      "evidence": {
+        "line": 62,
+        "sourcePath": "typography.heading-sm.fontSize"
+      }
+    },
+    {
+      "path": "typography.headingsm.fontweight",
+      "sourcePath": "typography.heading-sm.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 63,
+        "sourcePath": "typography.heading-sm.fontWeight"
+      }
+    },
+    {
+      "path": "typography.headingsm.lineheight",
+      "sourcePath": "typography.heading-sm.lineHeight",
+      "type": "number",
+      "value": 1.25,
+      "status": "unverified",
+      "evidence": {
+        "line": 64,
+        "sourcePath": "typography.heading-sm.lineHeight"
+      }
+    },
+    {
+      "path": "typography.subtitlelg.fontfamily",
+      "sourcePath": "typography.subtitle-lg.fontFamily",
+      "type": "fontFamily",
+      "value": "Optimistic VF",
+      "status": "unverified",
+      "evidence": {
+        "line": 67,
+        "sourcePath": "typography.subtitle-lg.fontFamily"
+      }
+    },
+    {
+      "path": "typography.subtitlelg.fontsize",
+      "sourcePath": "typography.subtitle-lg.fontSize",
+      "type": "dimension",
+      "value": "18px",
+      "status": "unverified",
+      "evidence": {
+        "line": 68,
+        "sourcePath": "typography.subtitle-lg.fontSize"
+      }
+    },
+    {
+      "path": "typography.subtitlelg.fontweight",
+      "sourcePath": "typography.subtitle-lg.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 69,
+        "sourcePath": "typography.subtitle-lg.fontWeight"
+      }
+    },
+    {
+      "path": "typography.subtitlelg.lineheight",
+      "sourcePath": "typography.subtitle-lg.lineHeight",
+      "type": "number",
+      "value": 1.44,
+      "status": "unverified",
+      "evidence": {
+        "line": 70,
+        "sourcePath": "typography.subtitle-lg.lineHeight"
+      }
+    },
+    {
+      "path": "typography.subtitlemd.fontfamily",
+      "sourcePath": "typography.subtitle-md.fontFamily",
+      "type": "fontFamily",
+      "value": "Optimistic VF",
+      "status": "unverified",
+      "evidence": {
+        "line": 72,
+        "sourcePath": "typography.subtitle-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.subtitlemd.fontsize",
+      "sourcePath": "typography.subtitle-md.fontSize",
+      "type": "dimension",
+      "value": "18px",
+      "status": "unverified",
+      "evidence": {
+        "line": 73,
+        "sourcePath": "typography.subtitle-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.subtitlemd.fontweight",
+      "sourcePath": "typography.subtitle-md.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 74,
+        "sourcePath": "typography.subtitle-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.subtitlemd.lineheight",
+      "sourcePath": "typography.subtitle-md.lineHeight",
+      "type": "number",
+      "value": 1.44,
+      "status": "unverified",
+      "evidence": {
+        "line": 75,
+        "sourcePath": "typography.subtitle-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodymdbold.fontfamily",
+      "sourcePath": "typography.body-md-bold.fontFamily",
+      "type": "fontFamily",
+      "value": "Optimistic VF",
+      "status": "unverified",
+      "evidence": {
+        "line": 77,
+        "sourcePath": "typography.body-md-bold.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodymdbold.fontsize",
+      "sourcePath": "typography.body-md-bold.fontSize",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 78,
+        "sourcePath": "typography.body-md-bold.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodymdbold.fontweight",
+      "sourcePath": "typography.body-md-bold.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 79,
+        "sourcePath": "typography.body-md-bold.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodymdbold.lineheight",
+      "sourcePath": "typography.body-md-bold.lineHeight",
+      "type": "number",
+      "value": 1.5,
+      "status": "unverified",
+      "evidence": {
+        "line": 80,
+        "sourcePath": "typography.body-md-bold.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodymdbold.letterspacing",
+      "sourcePath": "typography.body-md-bold.letterSpacing",
+      "type": "dimension",
+      "value": "-0.16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 81,
+        "sourcePath": "typography.body-md-bold.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.bodymd.fontfamily",
+      "sourcePath": "typography.body-md.fontFamily",
+      "type": "fontFamily",
+      "value": "Optimistic VF",
+      "status": "unverified",
+      "evidence": {
+        "line": 83,
+        "sourcePath": "typography.body-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodymd.fontsize",
+      "sourcePath": "typography.body-md.fontSize",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 84,
+        "sourcePath": "typography.body-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodymd.fontweight",
+      "sourcePath": "typography.body-md.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 85,
+        "sourcePath": "typography.body-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodymd.lineheight",
+      "sourcePath": "typography.body-md.lineHeight",
+      "type": "number",
+      "value": 1.5,
+      "status": "unverified",
+      "evidence": {
+        "line": 86,
+        "sourcePath": "typography.body-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodymd.letterspacing",
+      "sourcePath": "typography.body-md.letterSpacing",
+      "type": "dimension",
+      "value": "-0.16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 87,
+        "sourcePath": "typography.body-md.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.bodysmbold.fontfamily",
+      "sourcePath": "typography.body-sm-bold.fontFamily",
+      "type": "fontFamily",
+      "value": "Optimistic VF",
+      "status": "unverified",
+      "evidence": {
+        "line": 89,
+        "sourcePath": "typography.body-sm-bold.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodysmbold.fontsize",
+      "sourcePath": "typography.body-sm-bold.fontSize",
+      "type": "dimension",
+      "value": "14px",
+      "status": "unverified",
+      "evidence": {
+        "line": 90,
+        "sourcePath": "typography.body-sm-bold.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodysmbold.fontweight",
+      "sourcePath": "typography.body-sm-bold.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 91,
+        "sourcePath": "typography.body-sm-bold.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodysmbold.lineheight",
+      "sourcePath": "typography.body-sm-bold.lineHeight",
+      "type": "number",
+      "value": 1.43,
+      "status": "unverified",
+      "evidence": {
+        "line": 92,
+        "sourcePath": "typography.body-sm-bold.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodysmbold.letterspacing",
+      "sourcePath": "typography.body-sm-bold.letterSpacing",
+      "type": "dimension",
+      "value": "-0.14px",
+      "status": "unverified",
+      "evidence": {
+        "line": 93,
+        "sourcePath": "typography.body-sm-bold.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.bodysm.fontfamily",
+      "sourcePath": "typography.body-sm.fontFamily",
+      "type": "fontFamily",
+      "value": "Optimistic VF",
+      "status": "unverified",
+      "evidence": {
+        "line": 95,
+        "sourcePath": "typography.body-sm.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodysm.fontsize",
+      "sourcePath": "typography.body-sm.fontSize",
+      "type": "dimension",
+      "value": "14px",
+      "status": "unverified",
+      "evidence": {
+        "line": 96,
+        "sourcePath": "typography.body-sm.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodysm.fontweight",
+      "sourcePath": "typography.body-sm.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 97,
+        "sourcePath": "typography.body-sm.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodysm.lineheight",
+      "sourcePath": "typography.body-sm.lineHeight",
+      "type": "number",
+      "value": 1.43,
+      "status": "unverified",
+      "evidence": {
+        "line": 98,
+        "sourcePath": "typography.body-sm.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodysm.letterspacing",
+      "sourcePath": "typography.body-sm.letterSpacing",
+      "type": "dimension",
+      "value": "-0.14px",
+      "status": "unverified",
+      "evidence": {
+        "line": 99,
+        "sourcePath": "typography.body-sm.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.captionbold.fontfamily",
+      "sourcePath": "typography.caption-bold.fontFamily",
+      "type": "fontFamily",
+      "value": "Optimistic VF",
+      "status": "unverified",
+      "evidence": {
+        "line": 101,
+        "sourcePath": "typography.caption-bold.fontFamily"
+      }
+    },
+    {
+      "path": "typography.captionbold.fontsize",
+      "sourcePath": "typography.caption-bold.fontSize",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 102,
+        "sourcePath": "typography.caption-bold.fontSize"
+      }
+    },
+    {
+      "path": "typography.captionbold.fontweight",
+      "sourcePath": "typography.caption-bold.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 103,
+        "sourcePath": "typography.caption-bold.fontWeight"
+      }
+    },
+    {
+      "path": "typography.captionbold.lineheight",
+      "sourcePath": "typography.caption-bold.lineHeight",
+      "type": "number",
+      "value": 1.33,
+      "status": "unverified",
+      "evidence": {
+        "line": 104,
+        "sourcePath": "typography.caption-bold.lineHeight"
+      }
+    },
+    {
+      "path": "typography.caption.fontfamily",
+      "sourcePath": "typography.caption.fontFamily",
+      "type": "fontFamily",
+      "value": "Optimistic VF",
+      "status": "unverified",
+      "evidence": {
+        "line": 106,
+        "sourcePath": "typography.caption.fontFamily"
+      }
+    },
+    {
+      "path": "typography.caption.fontsize",
+      "sourcePath": "typography.caption.fontSize",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 107,
+        "sourcePath": "typography.caption.fontSize"
+      }
+    },
+    {
+      "path": "typography.caption.fontweight",
+      "sourcePath": "typography.caption.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 108,
+        "sourcePath": "typography.caption.fontWeight"
+      }
+    },
+    {
+      "path": "typography.caption.lineheight",
+      "sourcePath": "typography.caption.lineHeight",
+      "type": "number",
+      "value": 1.33,
+      "status": "unverified",
+      "evidence": {
+        "line": 109,
+        "sourcePath": "typography.caption.lineHeight"
+      }
+    },
+    {
+      "path": "typography.buttonmd.fontfamily",
+      "sourcePath": "typography.button-md.fontFamily",
+      "type": "fontFamily",
+      "value": "Optimistic VF",
+      "status": "unverified",
+      "evidence": {
+        "line": 111,
+        "sourcePath": "typography.button-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.buttonmd.fontsize",
+      "sourcePath": "typography.button-md.fontSize",
+      "type": "dimension",
+      "value": "14px",
+      "status": "unverified",
+      "evidence": {
+        "line": 112,
+        "sourcePath": "typography.button-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.buttonmd.fontweight",
+      "sourcePath": "typography.button-md.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 113,
+        "sourcePath": "typography.button-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.buttonmd.lineheight",
+      "sourcePath": "typography.button-md.lineHeight",
+      "type": "number",
+      "value": 1.43,
+      "status": "unverified",
+      "evidence": {
+        "line": 114,
+        "sourcePath": "typography.button-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.buttonmd.letterspacing",
+      "sourcePath": "typography.button-md.letterSpacing",
+      "type": "dimension",
+      "value": "-0.14px",
+      "status": "unverified",
+      "evidence": {
+        "line": 115,
+        "sourcePath": "typography.button-md.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.linkmd.fontfamily",
+      "sourcePath": "typography.link-md.fontFamily",
+      "type": "fontFamily",
+      "value": "Optimistic VF",
+      "status": "unverified",
+      "evidence": {
+        "line": 117,
+        "sourcePath": "typography.link-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.linkmd.fontsize",
+      "sourcePath": "typography.link-md.fontSize",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 118,
+        "sourcePath": "typography.link-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.linkmd.fontweight",
+      "sourcePath": "typography.link-md.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 119,
+        "sourcePath": "typography.link-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.linkmd.lineheight",
+      "sourcePath": "typography.link-md.lineHeight",
+      "type": "number",
+      "value": 1.5,
+      "status": "unverified",
+      "evidence": {
+        "line": 120,
+        "sourcePath": "typography.link-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.linkmd.letterspacing",
+      "sourcePath": "typography.link-md.letterSpacing",
+      "type": "dimension",
+      "value": "-0.16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 121,
+        "sourcePath": "typography.link-md.letterSpacing"
+      }
+    },
+    {
+      "path": "rounded.xs",
+      "sourcePath": "rounded.xs",
+      "type": "dimension",
+      "value": "2px",
+      "status": "unverified",
+      "evidence": {
+        "line": 124,
+        "sourcePath": "rounded.xs"
+      }
+    },
+    {
+      "path": "rounded.sm",
+      "sourcePath": "rounded.sm",
+      "type": "dimension",
+      "value": "4px",
+      "status": "unverified",
+      "evidence": {
+        "line": 125,
+        "sourcePath": "rounded.sm"
+      }
+    },
+    {
+      "path": "rounded.md",
+      "sourcePath": "rounded.md",
+      "type": "dimension",
+      "value": "6px",
+      "status": "unverified",
+      "evidence": {
+        "line": 126,
+        "sourcePath": "rounded.md"
+      }
+    },
+    {
+      "path": "rounded.lg",
+      "sourcePath": "rounded.lg",
+      "type": "dimension",
+      "value": "8px",
+      "status": "unverified",
+      "evidence": {
+        "line": 127,
+        "sourcePath": "rounded.lg"
+      }
+    },
+    {
+      "path": "rounded.xl",
+      "sourcePath": "rounded.xl",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 128,
+        "sourcePath": "rounded.xl"
+      }
+    },
+    {
+      "path": "rounded.xxl",
+      "sourcePath": "rounded.xxl",
+      "type": "dimension",
+      "value": "24px",
+      "status": "unverified",
+      "evidence": {
+        "line": 129,
+        "sourcePath": "rounded.xxl"
+      }
+    },
+    {
+      "path": "rounded.xxxl",
+      "sourcePath": "rounded.xxxl",
+      "type": "dimension",
+      "value": "32px",
+      "status": "unverified",
+      "evidence": {
+        "line": 130,
+        "sourcePath": "rounded.xxxl"
+      }
+    },
+    {
+      "path": "rounded.feature",
+      "sourcePath": "rounded.feature",
+      "type": "dimension",
+      "value": "40px",
+      "status": "unverified",
+      "evidence": {
+        "line": 131,
+        "sourcePath": "rounded.feature"
+      }
+    },
+    {
+      "path": "rounded.full",
+      "sourcePath": "rounded.full",
+      "type": "dimension",
+      "value": "100px",
+      "status": "unverified",
+      "evidence": {
+        "line": 132,
+        "sourcePath": "rounded.full"
+      }
+    },
+    {
+      "path": "rounded.circle",
+      "sourcePath": "rounded.circle",
+      "type": "dimension",
+      "value": "9999px",
+      "status": "unverified",
+      "evidence": {
+        "line": 133,
+        "sourcePath": "rounded.circle"
+      }
+    },
+    {
+      "path": "spacing.xxs",
+      "sourcePath": "spacing.xxs",
+      "type": "dimension",
+      "value": "4px",
+      "status": "unverified",
+      "evidence": {
+        "line": 136,
+        "sourcePath": "spacing.xxs"
+      }
+    },
+    {
+      "path": "spacing.xs",
+      "sourcePath": "spacing.xs",
+      "type": "dimension",
+      "value": "8px",
+      "status": "unverified",
+      "evidence": {
+        "line": 137,
+        "sourcePath": "spacing.xs"
+      }
+    },
+    {
+      "path": "spacing.sm",
+      "sourcePath": "spacing.sm",
+      "type": "dimension",
+      "value": "10px",
+      "status": "unverified",
+      "evidence": {
+        "line": 138,
+        "sourcePath": "spacing.sm"
+      }
+    },
+    {
+      "path": "spacing.md",
+      "sourcePath": "spacing.md",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 139,
+        "sourcePath": "spacing.md"
+      }
+    },
+    {
+      "path": "spacing.base",
+      "sourcePath": "spacing.base",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 140,
+        "sourcePath": "spacing.base"
+      }
+    },
+    {
+      "path": "spacing.lg",
+      "sourcePath": "spacing.lg",
+      "type": "dimension",
+      "value": "20px",
+      "status": "unverified",
+      "evidence": {
+        "line": 141,
+        "sourcePath": "spacing.lg"
+      }
+    },
+    {
+      "path": "spacing.xl",
+      "sourcePath": "spacing.xl",
+      "type": "dimension",
+      "value": "24px",
+      "status": "unverified",
+      "evidence": {
+        "line": 142,
+        "sourcePath": "spacing.xl"
+      }
+    },
+    {
+      "path": "spacing.xxl",
+      "sourcePath": "spacing.xxl",
+      "type": "dimension",
+      "value": "32px",
+      "status": "unverified",
+      "evidence": {
+        "line": 143,
+        "sourcePath": "spacing.xxl"
+      }
+    },
+    {
+      "path": "spacing.xxxl",
+      "sourcePath": "spacing.xxxl",
+      "type": "dimension",
+      "value": "40px",
+      "status": "unverified",
+      "evidence": {
+        "line": 144,
+        "sourcePath": "spacing.xxxl"
+      }
+    },
+    {
+      "path": "spacing.sectionsm",
+      "sourcePath": "spacing.section-sm",
+      "type": "dimension",
+      "value": "48px",
+      "status": "unverified",
+      "evidence": {
+        "line": 145,
+        "sourcePath": "spacing.section-sm"
+      }
+    },
+    {
+      "path": "spacing.section",
+      "sourcePath": "spacing.section",
+      "type": "dimension",
+      "value": "64px",
+      "status": "unverified",
+      "evidence": {
+        "line": 146,
+        "sourcePath": "spacing.section"
+      }
+    },
+    {
+      "path": "spacing.sectionlg",
+      "sourcePath": "spacing.section-lg",
+      "type": "dimension",
+      "value": "80px",
+      "status": "unverified",
+      "evidence": {
+        "line": 147,
+        "sourcePath": "spacing.section-lg"
+      }
+    },
+    {
+      "path": "spacing.hero",
+      "sourcePath": "spacing.hero",
+      "type": "dimension",
+      "value": "120px",
+      "status": "unverified",
+      "evidence": {
+        "line": 148,
+        "sourcePath": "spacing.hero"
+      }
+    }
+  ],
+  "rejectedTokens": [
+    {
+      "sourcePath": "typography.hero-display.fontFeature",
+      "value": "ss01, ss02",
+      "reason": "Not a supported safe CSS literal; preserved in analysis"
+    },
+    {
+      "sourcePath": "typography.display-lg.fontFeature",
+      "value": "ss01, ss02",
+      "reason": "Not a supported safe CSS literal; preserved in analysis"
+    },
+    {
+      "sourcePath": "typography.heading-lg.fontFeature",
+      "value": "ss01, ss02",
+      "reason": "Not a supported safe CSS literal; preserved in analysis"
+    },
+    {
+      "sourcePath": "typography.heading-md.fontFeature",
+      "value": "ss01, ss02",
+      "reason": "Not a supported safe CSS literal; preserved in analysis"
+    },
+    {
+      "sourcePath": "typography.heading-sm.fontFeature",
+      "value": "ss01, ss02",
+      "reason": "Not a supported safe CSS literal; preserved in analysis"
+    }
+  ],
+  "homepage": {
+    "status": "missing",
+    "candidates": [],
+    "verification": {
+      "status": "blocked",
+      "url": "https://www.meta.com/",
+      "label": "Candidate homepage (read blocked)",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://www.meta.com/",
+          "note": "Failed to fetch https://www.meta.com/: (429) Too Many Requests"
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Public text read did not establish homepage content. Candidate is not verified; no access controls were bypassed."
+    }
+  },
+  "completeness": {
+    "presentFields": [
+      "colors",
+      "typography",
+      "rounded",
+      "spacing",
+      "components"
+    ],
+    "missingFields": [],
+    "tokenRoles": "incomplete",
+    "note": "Missing fields are not reconstructed. Prose-only colors have no inferred semantic role."
+  },
+  "provenance": {
+    "status": "independent-analysis",
+    "sources": [
+      {
+        "title": "VoltAgent awesome-design-md independent analysis",
+        "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/meta/DESIGN.md"
+      }
+    ],
+    "verification": "unverified-secondary-analysis"
+  },
+  "limitations": [
+    "Independent secondary analysis, not an official brand system; all reported values are unverified.",
+    "No brand assets, logos, font binaries or screenshots copied. Font names are documentary, not font licenses.",
+    "Safe CSS literals are extracted without claiming complete roles, state coverage or visual fidelity.",
+    "Markdown is retained as inert evidence, never executed or rendered as raw HTML."
+  ]
+}

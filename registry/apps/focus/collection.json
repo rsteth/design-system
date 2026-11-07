@@ -1,0 +1,285 @@
+{
+  "schemaVersion": 1,
+  "id": "focus",
+  "title": "Focus Speed Reader",
+  "kind": "app",
+  "renderer": "react",
+  "summary": "Complete production UI catalog with isolated deterministic fixtures and preserved app appearance. Public fixture preview: EPUB states use authored sample text. Real EPUB parsing is not included; uploaded files are not parsed by this preview.",
+  "tokens": "tokens.json",
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "source": {
+    "repository": "https://github.com/rsteth/focus-speed-reader",
+    "revision": "eaa95bf1316f5e5fcd8a7e9600eafaa2e52665f0",
+    "path": "."
+  },
+  "provenance": {
+    "status": "author-owned",
+    "sources": []
+  },
+  "license": {
+    "spdx": "UNLICENSED",
+    "note": "Existing repository terms apply."
+  },
+  "fixtures": [
+    {
+      "id": "appearance",
+      "title": "Production appearance controls",
+      "section": "components",
+      "url": "../../../previews/focus/workbench/",
+      "states": [
+        "default",
+        "dialog",
+        "focus",
+        "all themes and palettes"
+      ],
+      "description": "Public fixture preview: EPUB states use authored sample text. Real EPUB parsing is not included; uploaded files are not parsed by this preview."
+    },
+    {
+      "id": "library-empty",
+      "title": "Empty library",
+      "section": "screens",
+      "url": "../../../previews/focus/workbench/?fixture=library-empty",
+      "states": [
+        "empty",
+        "disabled backup"
+      ],
+      "description": "Public fixture preview: EPUB states use authored sample text. Real EPUB parsing is not included; uploaded files are not parsed by this preview."
+    },
+    {
+      "id": "library-populated",
+      "title": "Text and EPUB library",
+      "section": "screens",
+      "url": "../../../previews/focus/workbench/?fixture=library-populated",
+      "states": [
+        "populated",
+        "focus",
+        "delete confirm/cancel",
+        "backup",
+        "restore"
+      ],
+      "description": "Public fixture preview: EPUB states use authored sample text. Real EPUB parsing is not included; uploaded files are not parsed by this preview."
+    },
+    {
+      "id": "library-loading",
+      "title": "Library loading",
+      "section": "screens",
+      "url": "../../../previews/focus/workbench/?fixture=library-loading",
+      "states": [
+        "loading"
+      ],
+      "description": "Public fixture preview: EPUB states use authored sample text. Real EPUB parsing is not included; uploaded files are not parsed by this preview."
+    },
+    {
+      "id": "add-paste",
+      "title": "Paste content form",
+      "section": "patterns",
+      "url": "../../../previews/focus/workbench/?fixture=add-paste",
+      "states": [
+        "empty",
+        "validation",
+        "focus",
+        "cancel/reopen"
+      ],
+      "description": "Public fixture preview: EPUB states use authored sample text. Real EPUB parsing is not included; uploaded files are not parsed by this preview."
+    },
+    {
+      "id": "add-file",
+      "title": "Upload file form",
+      "section": "patterns",
+      "url": "../../../previews/focus/workbench/?fixture=add-file",
+      "states": [
+        "file input",
+        "validation",
+        "tab switching"
+      ],
+      "description": "Public fixture preview: EPUB states use authored sample text. Real EPUB parsing is not included; uploaded files are not parsed by this preview."
+    },
+    {
+      "id": "add-ready",
+      "title": "Ready to add text",
+      "section": "patterns",
+      "url": "../../../previews/focus/workbench/?fixture=add-ready",
+      "states": [
+        "populated",
+        "success",
+        "repeated submit"
+      ],
+      "description": "Public fixture preview: EPUB states use authored sample text. Real EPUB parsing is not included; uploaded files are not parsed by this preview."
+    },
+    {
+      "id": "add-processing",
+      "title": "Pending content save",
+      "section": "patterns",
+      "url": "../../../previews/focus/workbench/?fixture=add-processing",
+      "states": [
+        "loading",
+        "disabled",
+        "cancel during pending"
+      ],
+      "description": "Public fixture preview: EPUB states use authored sample text. Real EPUB parsing is not included; uploaded files are not parsed by this preview."
+    },
+    {
+      "id": "add-error",
+      "title": "Failed content save",
+      "section": "patterns",
+      "url": "../../../previews/focus/workbench/?fixture=add-error",
+      "states": [
+        "error",
+        "retry"
+      ],
+      "description": "Public fixture preview: EPUB states use authored sample text. Real EPUB parsing is not included; uploaded files are not parsed by this preview."
+    },
+    {
+      "id": "reader-start",
+      "title": "Reader at first word",
+      "section": "screens",
+      "url": "../../../previews/focus/workbench/?fixture=reader-start",
+      "states": [
+        "paused",
+        "playing",
+        "speed",
+        "seek",
+        "rewind/forward"
+      ],
+      "description": "Public fixture preview: EPUB states use authored sample text. Real EPUB parsing is not included; uploaded files are not parsed by this preview."
+    },
+    {
+      "id": "reader-progress",
+      "title": "Reader with saved progress",
+      "section": "screens",
+      "url": "../../../previews/focus/workbench/?fixture=reader-progress",
+      "states": [
+        "populated",
+        "appearance interrupts playback",
+        "close/reopen"
+      ],
+      "description": "Public fixture preview: EPUB states use authored sample text. Real EPUB parsing is not included; uploaded files are not parsed by this preview."
+    },
+    {
+      "id": "reader-end",
+      "title": "Reader at final word",
+      "section": "screens",
+      "url": "../../../previews/focus/workbench/?fixture=reader-end",
+      "states": [
+        "complete",
+        "replay"
+      ],
+      "description": "Public fixture preview: EPUB states use authored sample text. Real EPUB parsing is not included; uploaded files are not parsed by this preview."
+    },
+    {
+      "id": "reader-empty",
+      "title": "No readable words",
+      "section": "screens",
+      "url": "../../../previews/focus/workbench/?fixture=reader-empty",
+      "states": [
+        "empty",
+        "error",
+        "disabled"
+      ],
+      "description": "Public fixture preview: EPUB states use authored sample text. Real EPUB parsing is not included; uploaded files are not parsed by this preview."
+    },
+    {
+      "id": "reader-loading",
+      "title": "Pending EPUB extraction",
+      "section": "screens",
+      "url": "../../../previews/focus/workbench/?fixture=reader-loading",
+      "states": [
+        "loading",
+        "disabled",
+        "close while pending"
+      ],
+      "description": "Public fixture preview: EPUB states use authored sample text. Real EPUB parsing is not included; uploaded files are not parsed by this preview."
+    },
+    {
+      "id": "reader-error",
+      "title": "Failed EPUB extraction",
+      "section": "screens",
+      "url": "../../../previews/focus/workbench/?fixture=reader-error",
+      "states": [
+        "error",
+        "disabled",
+        "close/reopen"
+      ],
+      "description": "Public fixture preview: EPUB states use authored sample text. Real EPUB parsing is not included; uploaded files are not parsed by this preview."
+    },
+    {
+      "id": "reader-epub",
+      "title": "EPUB reader with extracted words",
+      "section": "screens",
+      "url": "../../../previews/focus/workbench/?fixture=reader-epub",
+      "states": [
+        "populated"
+      ],
+      "description": "Public fixture preview: EPUB states use authored sample text. Real EPUB parsing is not included; uploaded files are not parsed by this preview."
+    },
+    {
+      "id": "word-short",
+      "title": "Recognition-point word",
+      "section": "components",
+      "url": "../../../previews/focus/workbench/?fixture=word-short",
+      "states": [
+        "default"
+      ],
+      "description": "Public fixture preview: EPUB states use authored sample text. Real EPUB parsing is not included; uploaded files are not parsed by this preview."
+    },
+    {
+      "id": "word-long",
+      "title": "Long word fitting",
+      "section": "components",
+      "url": "../../../previews/focus/workbench/?fixture=word-long",
+      "states": [
+        "responsive"
+      ],
+      "description": "Public fixture preview: EPUB states use authored sample text. Real EPUB parsing is not included; uploaded files are not parsed by this preview."
+    },
+    {
+      "id": "word-empty",
+      "title": "Empty word primitive",
+      "section": "components",
+      "url": "../../../previews/focus/workbench/?fixture=word-empty",
+      "states": [
+        "empty"
+      ],
+      "description": "Public fixture preview: EPUB states use authored sample text. Real EPUB parsing is not included; uploaded files are not parsed by this preview."
+    },
+    {
+      "id": "library-export-error",
+      "title": "Failed library backup",
+      "section": "patterns",
+      "url": "../../../previews/focus/workbench/?fixture=library-export-error",
+      "states": [
+        "export failure",
+        "retry",
+        "native or embedded notice"
+      ],
+      "description": "Public fixture preview: EPUB states use authored sample text. Real EPUB parsing is not included; uploaded files are not parsed by this preview."
+    }
+  ],
+  "inventory": "inventory.json",
+  "registrySnapshot": {
+    "authority": "App-owned design collection, tokens and optional inventory",
+    "baseRevision": "eaa95bf1316f5e5fcd8a7e9600eafaa2e52665f0",
+    "inventorySha256": "385a3ecbe5a05edb8a6bdd21decc611bf10492b7b6b34fe385d7146ac7c4cca9",
+    "tokenSha256": "242f96e6bf0a13aaed72ccb45add9889cfb9cd989217112e6f9574b4df0de73e",
+    "integrationStatus": "unpublished-local-feature-commit",
+    "integrationRevision": "e0027eed7a6c1d7860559a8fd5eeb126ea7fc34e"
+  },
+  "publicRelease": {
+    "status": "static-app-owned-fixtures",
+    "source": {
+      "revision": "e0027eed7a6c1d7860559a8fd5eeb126ea7fc34e",
+      "dirty": true,
+      "sourceTreeSha256": "d7286779fdff7c16bffe8def168c36dba9cd27f82bd23422163d31847b40773e"
+    },
+    "epubMode": "fixture-only",
+    "limitation": "Public fixture preview: EPUB states use authored sample text. Real EPUB parsing is not included; uploaded files are not parsed by this preview.",
+    "excludedDependencies": [
+      "epubjs",
+      "marks-pane",
+      "path-webpack"
+    ]
+  }
+}

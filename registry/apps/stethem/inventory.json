@@ -1,0 +1,592 @@
+{
+  "schemaVersion": 1,
+  "application": "stethem",
+  "reviewedRevision": "8c1df30677eb880f7226c704226d988f19b30a9c",
+  "items": [
+    {
+      "id": "portfolio",
+      "title": "Portfolio",
+      "kind": "screen",
+      "source": [
+        "index.html",
+        "app/bootstrap.mjs"
+      ],
+      "fixtures": [
+        "portfolio"
+      ],
+      "states": [
+        "default"
+      ],
+      "coverage": "covered",
+      "notes": "Current authored portfolio has no feed rail. The retained legacy home-rail renderer is exercised by domain/render regression tests, not represented as a live homepage state."
+    },
+    {
+      "id": "not-found",
+      "title": "404 and recovery links",
+      "kind": "screen",
+      "source": [
+        "404.html"
+      ],
+      "fixtures": [
+        "not-found"
+      ],
+      "states": [
+        "default"
+      ],
+      "coverage": "covered",
+      "notes": "Actual production DOM and production modules; deterministic local preview."
+    },
+    {
+      "id": "mysterious-modular-device",
+      "title": "Mysterious Modular Device",
+      "kind": "screen",
+      "source": [
+        "objects/mysterious-modular-device/index.html"
+      ],
+      "fixtures": [
+        "mysterious-modular-device"
+      ],
+      "states": [
+        "default"
+      ],
+      "coverage": "covered",
+      "notes": "Actual production DOM and production modules; deterministic local preview."
+    },
+    {
+      "id": "fischer-price-revolutionary-device",
+      "title": "Fischer Price Revolutionary Device",
+      "kind": "screen",
+      "source": [
+        "objects/fischer-price-revolutionary-device/index.html"
+      ],
+      "fixtures": [
+        "fischer-price-revolutionary-device"
+      ],
+      "states": [
+        "default"
+      ],
+      "coverage": "covered",
+      "notes": "Actual production DOM and production modules; deterministic local preview."
+    },
+    {
+      "id": "the-spoon-app",
+      "title": "The Spoon App",
+      "kind": "screen",
+      "source": [
+        "objects/the-spoon-app/index.html"
+      ],
+      "fixtures": [
+        "the-spoon-app"
+      ],
+      "states": [
+        "default"
+      ],
+      "coverage": "covered",
+      "notes": "Actual production DOM and production modules; deterministic local preview."
+    },
+    {
+      "id": "learning-index",
+      "title": "Learning Machines collection",
+      "kind": "screen",
+      "source": [
+        "learning-machines/index.html"
+      ],
+      "fixtures": [
+        "learning-index"
+      ],
+      "states": [
+        "default"
+      ],
+      "coverage": "covered",
+      "notes": "Actual production DOM and production modules; deterministic local preview."
+    },
+    {
+      "id": "token-study",
+      "title": "Token study",
+      "kind": "screen",
+      "source": [
+        "learning-machines/tokens/index.html",
+        "features/learning/tokens/controller.mjs"
+      ],
+      "fixtures": [
+        "token-study-default",
+        "token-study-no-js",
+        "token-study-no-canvas"
+      ],
+      "states": [
+        "default",
+        "no-js",
+        "no-canvas"
+      ],
+      "coverage": "covered",
+      "notes": "Actual production DOM and production modules; deterministic local preview."
+    },
+    {
+      "id": "attention-study",
+      "title": "Attention and memory",
+      "kind": "screen",
+      "source": [
+        "learning-machines/attention-and-memory/index.html",
+        "features/learning/attention/controller.mjs"
+      ],
+      "fixtures": [
+        "attention-study-default",
+        "attention-study-no-js",
+        "attention-study-no-canvas"
+      ],
+      "states": [
+        "default",
+        "no-js",
+        "no-canvas"
+      ],
+      "coverage": "covered",
+      "notes": "Actual production DOM and production modules; deterministic local preview."
+    },
+    {
+      "id": "market-archive",
+      "title": "Market River archive",
+      "kind": "screen",
+      "source": [
+        "market-river/index.html",
+        "features/market-river/index.mjs"
+      ],
+      "fixtures": [
+        "market-archive-populated",
+        "market-archive-loading",
+        "market-archive-empty",
+        "market-archive-error",
+        "market-archive-history-fallback",
+        "market-archive-image-error",
+        "market-archive-no-js"
+      ],
+      "states": [
+        "populated",
+        "loading",
+        "empty",
+        "error",
+        "history-fallback",
+        "image-error",
+        "no-js"
+      ],
+      "coverage": "covered",
+      "notes": "Actual production DOM and production modules; deterministic local preview."
+    },
+    {
+      "id": "typography",
+      "title": "Typography, links and inline SVG arrows",
+      "kind": "component",
+      "source": [
+        "styles/site.css",
+        "learning-machines/arrows.mjs"
+      ],
+      "fixtures": [
+        "typography"
+      ],
+      "states": [
+        "default"
+      ],
+      "coverage": "covered",
+      "notes": "Actual production DOM and production modules; deterministic local preview."
+    },
+    {
+      "id": "project-cards",
+      "title": "Project grid, thumbnails and metadata",
+      "kind": "pattern",
+      "source": [
+        "index.html",
+        "styles/site.css"
+      ],
+      "fixtures": [
+        "project-cards"
+      ],
+      "states": [
+        "populated"
+      ],
+      "coverage": "covered",
+      "notes": "Actual production DOM and production modules; deterministic local preview."
+    },
+    {
+      "id": "museum-video",
+      "title": "Museum video controls and poster",
+      "kind": "component",
+      "source": [
+        "ui/museum-video.mjs"
+      ],
+      "fixtures": [
+        "museum-video-paused",
+        "museum-video-playing",
+        "museum-video-error"
+      ],
+      "states": [
+        "paused",
+        "playing",
+        "error"
+      ],
+      "coverage": "covered",
+      "notes": "Actual production DOM and production modules; deterministic local preview."
+    },
+    {
+      "id": "essay-structure",
+      "title": "Back link, essay and photo sequence",
+      "kind": "pattern",
+      "source": [
+        "objects/the-spoon-app/index.html",
+        "styles/site.css"
+      ],
+      "fixtures": [
+        "essay-structure"
+      ],
+      "states": [
+        "default"
+      ],
+      "coverage": "covered",
+      "notes": "Actual production DOM and production modules; deterministic local preview."
+    },
+    {
+      "id": "study-structure",
+      "title": "Study headings, caveats and provenance",
+      "kind": "pattern",
+      "source": [
+        "learning-machines/learning.css",
+        "learning-machines/tokens/explanation.css"
+      ],
+      "fixtures": [
+        "study-structure"
+      ],
+      "states": [
+        "default"
+      ],
+      "coverage": "covered",
+      "notes": "Actual production DOM and production modules; deterministic local preview."
+    },
+    {
+      "id": "token-stage",
+      "title": "Five-stage token story",
+      "kind": "pattern",
+      "source": [
+        "learning-machines/tokens/flow.mjs",
+        "features/learning/tokens/controller.mjs"
+      ],
+      "fixtures": [
+        "token-stage-pieces",
+        "token-stage-rows",
+        "token-stage-context",
+        "token-stage-scores",
+        "token-stage-append",
+        "token-stage-stop"
+      ],
+      "states": [
+        "pieces",
+        "rows",
+        "context",
+        "scores",
+        "append",
+        "stop"
+      ],
+      "coverage": "covered",
+      "notes": "Actual production DOM and production modules; deterministic local preview."
+    },
+    {
+      "id": "token-selection",
+      "title": "Piece selection and word splits",
+      "kind": "component",
+      "source": [
+        "learning-machines/tokens/flow.mjs"
+      ],
+      "fixtures": [
+        "token-selection-selected",
+        "token-selection-word"
+      ],
+      "states": [
+        "selected",
+        "word"
+      ],
+      "coverage": "covered",
+      "notes": "Actual production DOM and production modules; deterministic local preview."
+    },
+    {
+      "id": "token-config",
+      "title": "Sampling choice and seed validation",
+      "kind": "component",
+      "source": [
+        "features/learning/tokens/controller.mjs"
+      ],
+      "fixtures": [
+        "token-config-sample",
+        "token-config-invalid"
+      ],
+      "states": [
+        "sample",
+        "invalid"
+      ],
+      "coverage": "covered",
+      "notes": "Actual production DOM and production modules; deterministic local preview."
+    },
+    {
+      "id": "token-playground",
+      "title": "Seeded histogram playground",
+      "kind": "pattern",
+      "source": [
+        "features/learning/tokens/controller.mjs"
+      ],
+      "fixtures": [
+        "token-playground-empty",
+        "token-playground-populated"
+      ],
+      "states": [
+        "empty",
+        "populated"
+      ],
+      "coverage": "covered",
+      "notes": "Actual production DOM and production modules; deterministic local preview."
+    },
+    {
+      "id": "token-trace",
+      "title": "Component trace and worked disclosures",
+      "kind": "pattern",
+      "source": [
+        "learning-machines/tokens/explanation.mjs"
+      ],
+      "fixtures": [
+        "token-trace-hover",
+        "token-trace-pinned",
+        "token-trace-expanded"
+      ],
+      "states": [
+        "hover",
+        "pinned",
+        "expanded"
+      ],
+      "coverage": "covered",
+      "notes": "Actual production DOM and production modules; deterministic local preview."
+    },
+    {
+      "id": "token-art",
+      "title": "Generated teaching artwork",
+      "kind": "component",
+      "source": [
+        "learning-machines/tokens/worked-embedding.svg",
+        "learning-machines/tokens/worked-layers.svg",
+        "learning-machines/tokens/worked-layers-narrow.svg",
+        "learning-machines/tokens/worked-output.svg",
+        "learning-machines/tokens/worked-output-narrow.svg",
+        "learning-machines/tokens/visuals.mjs"
+      ],
+      "fixtures": [
+        "token-art"
+      ],
+      "states": [
+        "default"
+      ],
+      "coverage": "covered",
+      "notes": "Actual production DOM and production modules; deterministic local preview."
+    },
+    {
+      "id": "attention-growth",
+      "title": "Context range and countable growth tiles",
+      "kind": "component",
+      "source": [
+        "features/learning/attention/controller.mjs",
+        "learning-machines/attention-and-memory/visuals.mjs"
+      ],
+      "fixtures": [
+        "attention-growth-minimum",
+        "attention-growth-maximum",
+        "attention-growth-tile"
+      ],
+      "states": [
+        "minimum",
+        "maximum",
+        "tile"
+      ],
+      "coverage": "covered",
+      "notes": "Actual production DOM and production modules; deterministic local preview."
+    },
+    {
+      "id": "attention-layers",
+      "title": "Architecture choice and layer selection",
+      "kind": "pattern",
+      "source": [
+        "features/learning/attention/controller.mjs"
+      ],
+      "fixtures": [
+        "attention-layers-hybrid",
+        "attention-layers-converted",
+        "attention-layers-last"
+      ],
+      "states": [
+        "hybrid",
+        "converted",
+        "last"
+      ],
+      "coverage": "covered",
+      "notes": "Actual production DOM and production modules; deterministic local preview."
+    },
+    {
+      "id": "attention-recall",
+      "title": "Event stepper and lossy recall",
+      "kind": "pattern",
+      "source": [
+        "features/learning/attention/controller.mjs"
+      ],
+      "fixtures": [
+        "attention-recall-empty",
+        "attention-recall-populated",
+        "attention-recall-complete"
+      ],
+      "states": [
+        "empty",
+        "populated",
+        "complete"
+      ],
+      "coverage": "covered",
+      "notes": "Actual production DOM and production modules; deterministic local preview."
+    },
+    {
+      "id": "market-carousel",
+      "title": "Snapshot carousel and focused card",
+      "kind": "pattern",
+      "source": [
+        "features/market-river/index.mjs"
+      ],
+      "fixtures": [
+        "market-carousel-populated",
+        "market-carousel-focused"
+      ],
+      "states": [
+        "populated",
+        "focused"
+      ],
+      "coverage": "covered",
+      "notes": "Actual production DOM and production modules; deterministic local preview."
+    },
+    {
+      "id": "market-domain",
+      "title": "Manifest grouping, ordering, weather selection",
+      "kind": "domain",
+      "source": [
+        "domain/market-river.mjs"
+      ],
+      "fixtures": [
+        "market-domain"
+      ],
+      "states": [
+        "populated"
+      ],
+      "coverage": "covered",
+      "notes": "Production pure domain functions additionally exercised by deterministic regression tests. Live remote feed and geolocation are not tested."
+    },
+    {
+      "id": "mechanics",
+      "title": "Pinned educational models",
+      "kind": "domain",
+      "source": [
+        "learning-machines/tokens/mechanics.mjs",
+        "learning-machines/tokens/fixture.mjs",
+        "learning-machines/attention-and-memory/mechanics.mjs"
+      ],
+      "fixtures": [
+        "mechanics"
+      ],
+      "states": [
+        "default"
+      ],
+      "coverage": "covered",
+      "notes": "Pinned files and licenses unchanged; native module and generated-artifact regressions verify provenance."
+    },
+    {
+      "id": "external-projects",
+      "title": "Linked applications",
+      "kind": "external",
+      "source": [
+        "index.html",
+        "404.html"
+      ],
+      "fixtures": [],
+      "states": [],
+      "coverage": "excluded",
+      "notes": "Great Circle and Focus Speed Reader are separately hosted project paths, not authored screens in this checkout. Outbound project destinations are links, not replicas."
+    },
+    {
+      "id": "verbosele",
+      "title": "Verbosele submodule",
+      "kind": "external",
+      "source": [
+        ".gitmodules",
+        "index.html"
+      ],
+      "fixtures": [],
+      "states": [],
+      "coverage": "excluded",
+      "notes": "Uninitialized independently owned Git submodule; its application and interactions are not covered by this site workbench."
+    },
+    {
+      "id": "favicon",
+      "title": "Animated favicon",
+      "kind": "component",
+      "source": [
+        "ui/favicon.mjs",
+        "app/bootstrap.mjs",
+        "script.js"
+      ],
+      "fixtures": [
+        "portfolio"
+      ],
+      "states": [
+        "animated"
+      ],
+      "coverage": "partial",
+      "notes": "Actual production animation module runs on the portfolio. Browser-page screenshots do not capture tab-chrome favicon animation; animation appearance has not been separately pixel-compared."
+    }
+  ],
+  "checks": [
+    {
+      "id": "aggregate",
+      "label": "All static and generated-asset regressions",
+      "command": "npm run check && npm run build",
+      "status": "passed",
+      "scope": "All original regressions, exact public HTML/style guards, native JavaScript syntax, inventory and vendor integrity",
+      "evidence": "design/evidence/summary.json"
+    },
+    {
+      "id": "fixtures",
+      "label": "110 deterministic fixture runs",
+      "command": "npm run test:workbench",
+      "status": "passed",
+      "scope": "55 real-page scenarios at desktop and mobile; no remote requests or page errors",
+      "evidence": "design/evidence/fixtures.json"
+    },
+    {
+      "id": "appearance",
+      "label": "24 exact screen comparisons",
+      "command": "npm run test:appearance",
+      "status": "passed",
+      "scope": "All nine authored screens plus archive state variants, original/current screenshots and computed styles",
+      "evidence": "design/evidence/appearance.json"
+    },
+    {
+      "id": "interactions",
+      "label": "Repeated and interrupted interactions",
+      "command": "npm run test:interactions",
+      "status": "passed",
+      "scope": "Token, attention, archive and video flows at desktop/mobile",
+      "evidence": "design/evidence/interactions.json"
+    },
+    {
+      "id": "video",
+      "label": "Explicit video states under both motion preferences",
+      "command": "npm run test:video",
+      "status": "passed",
+      "scope": "Paused, playing and error with reduce and no-preference",
+      "evidence": "design/evidence/video.json"
+    },
+    {
+      "id": "nojs",
+      "label": "Actual JavaScript-disabled comparison",
+      "command": "npm run test:nojs",
+      "status": "passed",
+      "scope": "Original noscript copy and disabled controls for both studies and archive at both widths",
+      "evidence": "design/evidence/nojs.json"
+    }
+  ]
+}

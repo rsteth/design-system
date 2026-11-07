@@ -1,0 +1,21 @@
+/* Generated from design/tokens.json. Do not edit. Contract v1; stethem. */
+:root {
+  --ds-font-heading: "Space Grotesk", "Arial", sans-serif;
+  --ds-font-body: "Inter", "Arial", sans-serif;
+  --ds-font-mono: "Space Mono", "Courier New", monospace;
+  --ds-color-text: #24211f;
+  --ds-color-text-muted: #6b625d;
+  --ds-color-accent: #9c4635;
+  --ds-color-accent-hover: #783326;
+  --ds-color-background: #fff;
+  --ds-color-surface: #f3f1ed;
+  --font-heading: var(--ds-font-heading);
+  --font-body: var(--ds-font-body);
+  --font-mono: var(--ds-font-mono);
+  --ink: var(--ds-color-text);
+  --muted: var(--ds-color-text-muted);
+  --accent: var(--ds-color-accent);
+  --accent-hover: var(--ds-color-accent-hover);
+  --page-background: var(--ds-color-background);
+  --header-background: var(--ds-color-surface);
+}

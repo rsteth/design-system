@@ -1,0 +1,1754 @@
+{
+  "schemaVersion": 1,
+  "id": "reference-intercom",
+  "title": "Intercom",
+  "classification": "independent-unverified-analysis",
+  "source": {
+    "repository": "https://github.com/VoltAgent/awesome-design-md",
+    "fork": "https://github.com/rsteth/awesome-design-md-p",
+    "revision": "fcc70284932276d085f01ef9f83edde90b1258cb",
+    "path": "design-md/intercom/DESIGN.md",
+    "sha256": "962be23cd947e87a86b2ffbc0440e9d0808243a6ef3af2aa04e8e7cc04d48ba3",
+    "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/intercom/DESIGN.md"
+  },
+  "sourceName": "Intercom-design-analysis",
+  "titleProvenance": {
+    "status": "inferred",
+    "basis": "Source directory label, normalized for navigation; original source name is retained without correction.",
+    "sourceValue": "intercom",
+    "originalName": "Intercom-design-analysis"
+  },
+  "description": "An editorial customer-service marketing canvas built around a soft cream-white ground, charcoal type set in Saans (Intercom's proprietary geometric sans), and a single confident Fin Orange (#ff5600) reserved for the Fin AI brand. Cards live as floating white tiles with thin hairline borders and minimal radii (8–16px). Display headlines run Saans at weight 500 with measured negative tracking. The system reads as a careful, product-led publication: product screenshots dominate, ornament is rare, and the only place chromatic energy enters is the Fin Orange CTA.",
+  "analysis": {
+    "version": "alpha",
+    "name": "Intercom-design-analysis",
+    "description": "An editorial customer-service marketing canvas built around a soft cream-white ground, charcoal type set in Saans (Intercom's proprietary geometric sans), and a single confident Fin Orange (#ff5600) reserved for the Fin AI brand. Cards live as floating white tiles with thin hairline borders and minimal radii (8–16px). Display headlines run Saans at weight 500 with measured negative tracking. The system reads as a careful, product-led publication: product screenshots dominate, ornament is rare, and the only place chromatic energy enters is the Fin Orange CTA.",
+    "colors": {
+      "primary": "#111111",
+      "on-primary": "#ffffff",
+      "ink": "#111111",
+      "ink-muted": "#626260",
+      "ink-subtle": "#7b7b78",
+      "ink-tertiary": "#9c9fa5",
+      "canvas": "#f5f1ec",
+      "surface-1": "#ffffff",
+      "surface-2": "#ebe7e1",
+      "inverse-canvas": "#000000",
+      "inverse-surface-1": "#313130",
+      "inverse-ink": "#ffffff",
+      "inverse-ink-muted": "#9c9fa5",
+      "hairline": "#d3cec6",
+      "hairline-soft": "#ebe7e1",
+      "fin-orange": "#ff5600",
+      "report-orange": "#fe4c02",
+      "report-blue": "#65b5ff",
+      "report-green": "#0bdf50",
+      "report-pink": "#ff2067",
+      "report-lime": "#b3e01c",
+      "report-cyan": "#03b2cb",
+      "brand-blue": "#0007cb",
+      "semantic-error": "#c41c1c",
+      "semantic-success": "#0bdf50"
+    },
+    "typography": {
+      "display-xl": {
+        "fontFamily": "Saans",
+        "fontSize": "72px",
+        "fontWeight": 500,
+        "lineHeight": 1.05,
+        "letterSpacing": "-2.0px"
+      },
+      "display-lg": {
+        "fontFamily": "Saans",
+        "fontSize": "56px",
+        "fontWeight": 500,
+        "lineHeight": 1.1,
+        "letterSpacing": "-1.4px"
+      },
+      "display-md": {
+        "fontFamily": "Saans",
+        "fontSize": "40px",
+        "fontWeight": 500,
+        "lineHeight": 1.15,
+        "letterSpacing": "-0.8px"
+      },
+      "headline": {
+        "fontFamily": "Saans",
+        "fontSize": "28px",
+        "fontWeight": 500,
+        "lineHeight": 1.2,
+        "letterSpacing": "-0.5px"
+      },
+      "card-title": {
+        "fontFamily": "Saans",
+        "fontSize": "22px",
+        "fontWeight": 500,
+        "lineHeight": 1.25,
+        "letterSpacing": "-0.3px"
+      },
+      "subhead": {
+        "fontFamily": "Saans",
+        "fontSize": "20px",
+        "fontWeight": 400,
+        "lineHeight": 1.4,
+        "letterSpacing": "-0.2px"
+      },
+      "body-lg": {
+        "fontFamily": "Saans",
+        "fontSize": "18px",
+        "fontWeight": 400,
+        "lineHeight": 1.5,
+        "letterSpacing": "-0.1px"
+      },
+      "body": {
+        "fontFamily": "Saans",
+        "fontSize": "16px",
+        "fontWeight": 400,
+        "lineHeight": 1.5,
+        "letterSpacing": 0
+      },
+      "body-sm": {
+        "fontFamily": "Saans",
+        "fontSize": "14px",
+        "fontWeight": 400,
+        "lineHeight": 1.5,
+        "letterSpacing": 0
+      },
+      "caption": {
+        "fontFamily": "Saans",
+        "fontSize": "12px",
+        "fontWeight": 400,
+        "lineHeight": 1.4,
+        "letterSpacing": 0
+      },
+      "button": {
+        "fontFamily": "Saans",
+        "fontSize": "15px",
+        "fontWeight": 500,
+        "lineHeight": 1.2,
+        "letterSpacing": 0
+      },
+      "eyebrow": {
+        "fontFamily": "Saans",
+        "fontSize": "14px",
+        "fontWeight": 500,
+        "lineHeight": 1.3,
+        "letterSpacing": 0
+      },
+      "mono": {
+        "fontFamily": "SaansMono",
+        "fontSize": "13px",
+        "fontWeight": 400,
+        "lineHeight": 1.5,
+        "letterSpacing": 0
+      }
+    },
+    "rounded": {
+      "xs": "4px",
+      "sm": "6px",
+      "md": "8px",
+      "lg": "12px",
+      "xl": "16px",
+      "xxl": "24px",
+      "pill": "9999px",
+      "full": "9999px"
+    },
+    "spacing": {
+      "xxs": "4px",
+      "xs": "8px",
+      "sm": "12px",
+      "md": "16px",
+      "lg": "24px",
+      "xl": "32px",
+      "xxl": "48px",
+      "section": "96px"
+    },
+    "components": {
+      "button-primary": {
+        "backgroundColor": "{colors.ink}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.button}",
+        "rounded": "{rounded.md}",
+        "padding": "10px 18px"
+      },
+      "button-primary-pressed": {
+        "backgroundColor": "{colors.inverse-canvas}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.button}",
+        "rounded": "{rounded.md}"
+      },
+      "button-secondary": {
+        "backgroundColor": "{colors.surface-1}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.button}",
+        "rounded": "{rounded.md}",
+        "padding": "10px 18px"
+      },
+      "button-tertiary": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.button}",
+        "rounded": "{rounded.md}",
+        "padding": "10px 18px"
+      },
+      "button-fin": {
+        "backgroundColor": "{colors.fin-orange}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.button}",
+        "rounded": "{rounded.md}",
+        "padding": "10px 18px"
+      },
+      "pricing-card": {
+        "backgroundColor": "{colors.surface-1}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body}",
+        "rounded": "{rounded.lg}",
+        "padding": "24px"
+      },
+      "pricing-card-featured": {
+        "backgroundColor": "{colors.ink}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.body}",
+        "rounded": "{rounded.lg}",
+        "padding": "24px"
+      },
+      "feature-card": {
+        "backgroundColor": "{colors.surface-1}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body}",
+        "rounded": "{rounded.lg}",
+        "padding": "24px"
+      },
+      "product-mockup-card": {
+        "backgroundColor": "{colors.surface-1}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body}",
+        "rounded": "{rounded.xl}",
+        "padding": "24px"
+      },
+      "testimonial-card": {
+        "backgroundColor": "{colors.surface-1}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-lg}",
+        "rounded": "{rounded.lg}",
+        "padding": "32px"
+      },
+      "customer-logo-tile": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink-muted}",
+        "typography": "{typography.caption}",
+        "rounded": "{rounded.xs}",
+        "padding": "16px"
+      },
+      "text-input": {
+        "backgroundColor": "{colors.surface-1}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body}",
+        "rounded": "{rounded.md}",
+        "padding": "10px 14px"
+      },
+      "text-input-focused": {
+        "backgroundColor": "{colors.surface-1}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body}",
+        "rounded": "{rounded.md}",
+        "padding": "10px 14px"
+      },
+      "pricing-tab-default": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink-muted}",
+        "typography": "{typography.button}",
+        "rounded": "{rounded.pill}",
+        "padding": "8px 16px"
+      },
+      "pricing-tab-selected": {
+        "backgroundColor": "{colors.surface-1}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.button}",
+        "rounded": "{rounded.pill}",
+        "padding": "8px 16px"
+      },
+      "faq-row": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body}",
+        "rounded": "{rounded.md}",
+        "padding": "24px"
+      },
+      "cta-banner": {
+        "backgroundColor": "{colors.surface-1}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.headline}",
+        "rounded": "{rounded.lg}",
+        "padding": "48px"
+      },
+      "startup-discount-card": {
+        "backgroundColor": "{colors.surface-2}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body}",
+        "rounded": "{rounded.lg}",
+        "padding": "32px"
+      },
+      "top-nav": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-sm}",
+        "rounded": "{rounded.xs}",
+        "height": "56px"
+      },
+      "footer": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink-muted}",
+        "typography": "{typography.caption}",
+        "rounded": "{rounded.xs}",
+        "padding": "64px 32px"
+      }
+    }
+  },
+  "normalizationRepairs": [],
+  "sections": [
+    {
+      "heading": "Overview",
+      "level": 2,
+      "text": "Intercom's marketing canvas is a soft cream-white ground (`{colors.canvas}` ≈ #f5f1ec) — not pure white. The warmth is the brand's signal: this is editorial, calm, and product-focused, not bright SaaS. On top of the cream canvas sit white floating cards (`{colors.surface-1}`), thin hairline dividers (`{colors.hairline}`), and charcoal type (`{colors.ink}` #111111).\n\nDisplay type is **Saans** — Intercom's proprietary geometric sans — set at weight 500 with measured negative letter-spacing (-2.0px on 72px display). Body type is the same family at weight 400. The single proprietary mono is **SaansMono**, used sparingly for code snippets and product UI screenshots embedded in the marketing surface.\n\nThe single chromatic accent is **Fin Orange** (`{colors.fin-orange}` #ff5600) — Intercom's AI-product brand color. It surfaces on the Fin product CTA, the Fin badge in pricing, and a few inline emphasis moments. It is NOT a system primary; the system primary is charcoal `{colors.ink}`. Intercom also maintains a small **report palette** (`{colors.report-blue}`, `{colors.report-green}`, `{colors.report-pink}`, `{colors.report-lime}`) used inside in-product analytics surfaces shown in mockups.\n\nThe page rhythm is heavy on **product mockups**: every section's payload is a high-fidelity screenshot of Intercom's product UI, framed in white cards with `{rounded.xl}` 16px corners. The marketing chrome is intentionally quiet so the product can be the protagonist.\n\n**Key Characteristics:**\n- **Cream canvas** (`{colors.canvas}` #f5f1ec) is the brand's defining surface — neither white nor gray, deliberately warm.\n- Product-screenshot-led page rhythm: every section centers a product mockup card, marketing chrome stays minimal.\n- **Saans** proprietary sans-serif carries the entire hierarchy; SaansMono for code-only contexts.\n- **Charcoal** `{colors.ink}` (#111111) is the system primary — buttons, headlines, body type all sit on charcoal.\n- **Fin Orange** (`{colors.fin-orange}` #ff5600) is the AI product color — used on the Fin CTA and Fin badge, never decoratively.\n- Display tracking pulls aggressively negative (-2.0px on 72px); body stays at 0.\n- Card corners stay modest at `{rounded.lg}` 12px and `{rounded.xl}` 16px — never pill-rounded; never square.",
+      "line": 255
+    },
+    {
+      "heading": "Colors",
+      "level": 2,
+      "text": "> Source pages: intercom.com (home), /pricing, /helpdesk, /customers, /helpdesk/inbox.",
+      "line": 274
+    },
+    {
+      "heading": "Brand & Accent",
+      "level": 3,
+      "text": "- **Charcoal** ({colors.ink}): The system primary surface. Headlines, body type, primary CTA pill background — all charcoal.\n- **White** ({colors.on-primary}): Text on charcoal CTAs; canvas of floating cards.\n- **Fin Orange** ({colors.fin-orange}): The AI-product accent. Used on the Fin CTA, Fin badge, and a small set of inline emphasis moments.\n- **Report Orange** ({colors.report-orange}): A slightly different orange used inside the report / analytics palette for in-product mockups.\n- **Brand Blue** ({colors.brand-blue}): Saturated brand blue (#0007cb) — used on a small set of marketing illustrations.",
+      "line": 278
+    },
+    {
+      "heading": "Surface",
+      "level": 3,
+      "text": "- **Canvas** ({colors.canvas}): Default page background — soft cream-white #f5f1ec.\n- **Surface 1** ({colors.surface-1}): Pure white — used for floating cards (pricing, feature, product-mockup).\n- **Surface 2** ({colors.surface-2}): Slightly darker cream — startup-discount banner, alt-row stripes.\n- **Hairline** ({colors.hairline}): 1px borders on cards — soft warm gray (#d3cec6).\n- **Hairline Soft** ({colors.hairline-soft}): Even softer dividers between FAQ rows and footer columns.\n- **Inverse Canvas** ({colors.inverse-canvas}): Pure black — only on the testimonial / quote callout strip.\n- **Inverse Surface 1** ({colors.inverse-surface-1}): One step lighter — hovered footer items in dark contexts.",
+      "line": 285
+    },
+    {
+      "heading": "Text",
+      "level": 3,
+      "text": "- **Ink** ({colors.ink}): All headlines, body type, button labels — charcoal #111111.\n- **Ink Muted** ({colors.ink-muted}): Secondary type at #626260 — meta info, deselected pricing tabs.\n- **Ink Subtle** ({colors.ink-subtle}): Tertiary type at #7b7b78 — footer columns, helper text.\n- **Ink Tertiary** ({colors.ink-tertiary}): Quaternary type at #9c9fa5 — disabled, footnotes.\n- **Inverse Ink** ({colors.inverse-ink}): White on black — quote-strip type.\n- **Inverse Ink Muted** ({colors.inverse-ink-muted}): Light gray on black — quote-strip meta.",
+      "line": 294
+    },
+    {
+      "heading": "Semantic & Report Palette (in-product mockups)",
+      "level": 3,
+      "text": "- **Error Red** ({colors.semantic-error}): Form validation, destructive states.\n- **Success Green** ({colors.semantic-success}): Positive states (also `{colors.report-green}`).\n- **Report Blue** ({colors.report-blue}): Analytics chart blue.\n- **Report Pink** ({colors.report-pink}): Analytics chart pink.\n- **Report Lime** ({colors.report-lime}): Analytics chart lime.\n- **Report Cyan** ({colors.report-cyan}): Phone country selector accent.\n\nThe report palette appears INSIDE product UI mockups — these are Intercom's in-product chart colors, not marketing surface colors.",
+      "line": 302
+    },
+    {
+      "heading": "Typography",
+      "level": 2,
+      "text": "",
+      "line": 312
+    },
+    {
+      "heading": "Font Family",
+      "level": 3,
+      "text": "- **Saans** — Intercom's proprietary geometric sans, fallback `Saans Fallback, ui-sans-serif, system-ui`. Carries display, body, eyebrow, and button.\n- **SaansMono** — Proprietary mono, fallback `SaansMono Fallback, ui-monospace`. Used inside code snippets shown in product mockups.\n\nThe same family carries the entire hierarchy. Hierarchy is carried by size + weight + tracking, not by family change.",
+      "line": 314
+    },
+    {
+      "heading": "Hierarchy",
+      "level": 3,
+      "text": "| Token | Size | Weight | Line Height | Letter Spacing | Use |\n|---|---|---|---|---|---|\n| `{typography.display-xl}` | 72px | 500 | 1.05 | -2.0px | Largest hero headline |\n| `{typography.display-lg}` | 56px | 500 | 1.10 | -1.4px | Section opener headlines |\n| `{typography.display-md}` | 40px | 500 | 1.15 | -0.8px | Sub-section headlines |\n| `{typography.headline}` | 28px | 500 | 1.20 | -0.5px | Pricing tier titles, CTA banner |\n| `{typography.card-title}` | 22px | 500 | 1.25 | -0.3px | Card title, feature card |\n| `{typography.subhead}` | 20px | 400 | 1.40 | -0.2px | Lead body, intro paragraphs |\n| `{typography.body-lg}` | 18px | 400 | 1.50 | -0.1px | Hero subhead, lead paragraphs |\n| `{typography.body}` | 16px | 400 | 1.50 | 0 | Default body |\n| `{typography.body-sm}` | 14px | 400 | 1.50 | 0 | Card body, footer |\n| `{typography.caption}` | 12px | 400 | 1.40 | 0 | Captions, meta |\n| `{typography.button}` | 15px | 500 | 1.20 | 0 | Pill / square button labels |\n| `{typography.eyebrow}` | 14px | 500 | 1.30 | 0 | Section eyebrow (sentence case) |\n| `{typography.mono}` | 13px | 400 | 1.50 | 0 | SaansMono for code in mockups |",
+      "line": 321
+    },
+    {
+      "heading": "Principles",
+      "level": 3,
+      "text": "- **Weight 500 carries display.** Saans at 500 reads as confident without bold.\n- **Negative letter-spacing scales with size.** -2.0px at 72px (≈3% of size), down to 0 on body.\n- **Line-heights tighten on display, relax on body.** 1.05 at display-xl, 1.50 at body.\n- **No mono on chrome.** SaansMono lives in product UI; marketing chrome stays in Saans.\n- **Eyebrow uses sentence case** at 14px / 500 weight — no all-caps tracking.",
+      "line": 339
+    },
+    {
+      "heading": "Note on Font Substitutes",
+      "level": 3,
+      "text": "If implementing without Saans, suitable substitutes include **Söhne** (paid), **Inter** (free, weight 500), or **Geist Sans** (free). Inter at weight 500 is the closest free substitute; SaansMono can be approximated with **JetBrains Mono** at weight 400.",
+      "line": 347
+    },
+    {
+      "heading": "Layout",
+      "level": 2,
+      "text": "",
+      "line": 351
+    },
+    {
+      "heading": "Spacing System",
+      "level": 3,
+      "text": "- **Base unit**: 8px.\n- **Tokens (front matter)**: `{spacing.xxs}` 4px · `{spacing.xs}` 8px · `{spacing.sm}` 12px · `{spacing.md}` 16px · `{spacing.lg}` 24px · `{spacing.xl}` 32px · `{spacing.xxl}` 48px · `{spacing.section}` 96px.\n- Card interior padding: `{spacing.lg}` 24px on pricing/feature cards; `{spacing.xl}` 32px on testimonial/discount cards; `{spacing.xxl}` 48px on CTA banners.\n- Pill button padding: 10px vertical · 18px horizontal.",
+      "line": 353
+    },
+    {
+      "heading": "Grid & Container",
+      "level": 3,
+      "text": "- Max content width sits around 1280px.\n- Card grids are 3-up at desktop, 2-up at tablet, 1-up at mobile.\n- Pricing tier grid is 3-up; comparison strip below shows checkmarks per tier.\n- Product mockup cards span full content width — they're the protagonist of every section.",
+      "line": 360
+    },
+    {
+      "heading": "Whitespace Philosophy",
+      "level": 3,
+      "text": "The cream canvas does the work white space would in another brand. Sections separate by ample vertical breathing room (`{spacing.section}` 96px) plus the lift-onto-white cards.",
+      "line": 367
+    },
+    {
+      "heading": "Elevation & Depth",
+      "level": 2,
+      "text": "| Level | Treatment | Use |\n|---|---|---|\n| 0 (flat) | No shadow, no border | Default for body type, hero text, footer |\n| 1 (lift on cream) | `{colors.surface-1}` white background on `{colors.canvas}` cream | Pricing cards, feature cards, product mockups |\n| 2 (hairline lift) | `{colors.surface-1}` + 1px `{colors.hairline}` border | Floating tiles with extra definition |\n| 3 (deep accent) | `{colors.inverse-canvas}` true black | Quote / testimonial callout strip |\n\nIntercom resists drop shadows. Depth is communicated by the white-on-cream surface change.",
+      "line": 371
+    },
+    {
+      "heading": "Decorative Depth",
+      "level": 3,
+      "text": "- **Product UI mockups** dominate every section's right column or center band — these are screenshots, not illustrations.\n- **No atmospheric gradients, no spotlight cards, no pastel section blocks.** The cream + white system is deliberately restrained.",
+      "line": 382
+    },
+    {
+      "heading": "Shapes",
+      "level": 2,
+      "text": "",
+      "line": 387
+    },
+    {
+      "heading": "Border Radius Scale",
+      "level": 3,
+      "text": "| Token | Value | Use |\n|---|---|---|\n| `{rounded.xs}` | 4px | Small chips, badges |\n| `{rounded.sm}` | 6px | Inline tags |\n| `{rounded.md}` | 8px | All buttons, form inputs |\n| `{rounded.lg}` | 12px | Pricing cards, feature cards, FAQ rows |\n| `{rounded.xl}` | 16px | Product mockup cards |\n| `{rounded.xxl}` | 24px | Oversized CTA banners |\n| `{rounded.pill}` | 9999px | Tab toggles |\n| `{rounded.full}` | 9999px | Avatar circles |",
+      "line": 389
+    },
+    {
+      "heading": "Photography & Illustration Geometry",
+      "level": 3,
+      "text": "- Product UI screenshots dominate the marketing surface; they sit in `{rounded.xl}` 16px tiles.\n- Customer logo tiles render at small sizes (~24–32px logo height) on `{colors.canvas}` cream with no border.\n- Avatar circles in testimonial cards use `{rounded.full}` at 40–48px sizes.",
+      "line": 402
+    },
+    {
+      "heading": "Components",
+      "level": 2,
+      "text": "",
+      "line": 408
+    },
+    {
+      "heading": "Buttons",
+      "level": 3,
+      "text": "**`button-primary`** — Charcoal CTA. The default primary CTA across all pages.\n- Background `{colors.ink}`, text `{colors.on-primary}`, type `{typography.button}`, padding 10px 18px, rounded `{rounded.md}`.\n- Pressed state lives in `button-primary-pressed`.\n\n**`button-secondary`** — White button on cream. Used for secondary CTAs.\n- Background `{colors.surface-1}`, text `{colors.ink}`, type `{typography.button}`, padding 10px 18px, rounded `{rounded.md}`. 1px `{colors.hairline}` border.\n\n**`button-tertiary`** — Plain text button.\n- Background `{colors.canvas}`, text `{colors.ink}`, type `{typography.button}`, rounded `{rounded.md}`, padding 10px 18px.\n\n**`button-fin`** — Fin Orange CTA — reserved for Fin AI product CTAs.\n- Background `{colors.fin-orange}`, text `{colors.on-primary}`, type `{typography.button}`, rounded `{rounded.md}`, padding 10px 18px.",
+      "line": 410
+    },
+    {
+      "heading": "Pricing Tabs",
+      "level": 3,
+      "text": "**`pricing-tab-default`** + **`pricing-tab-selected`** — Pill-toggle on `/pricing`.\n- Default: `{colors.canvas}` background, `{colors.ink-muted}` text, rounded `{rounded.pill}`.\n- Selected: `{colors.surface-1}` white background, `{colors.ink}` text — selected = lift onto white.",
+      "line": 425
+    },
+    {
+      "heading": "Cards & Containers",
+      "level": 3,
+      "text": "**`pricing-card`** — Each tier on `/pricing`.\n- Background `{colors.surface-1}`, text `{colors.ink}`, type `{typography.body}`, rounded `{rounded.lg}`, padding 24px.\n\n**`pricing-card-featured`** — Featured / recommended tier — inverts to charcoal.\n- Background `{colors.ink}`, text `{colors.on-primary}`, otherwise identical structure.\n\n**`feature-card`** — Generic feature highlight.\n- Background `{colors.surface-1}`, text `{colors.ink}`, type `{typography.body}`, rounded `{rounded.lg}`, padding 24px.\n\n**`product-mockup-card`** — The dominant card type — frames a high-fidelity product UI screenshot.\n- Background `{colors.surface-1}`, text `{colors.ink}`, type `{typography.body}`, rounded `{rounded.xl}`, padding 24px.\n\n**`testimonial-card`** — Customer quote with avatar + name + company.\n- Background `{colors.surface-1}`, text `{colors.ink}`, type `{typography.body-lg}`, rounded `{rounded.lg}`, padding 32px.\n\n**`startup-discount-card`** — The \"Startups get 90% off\" tinted card.\n- Background `{colors.surface-2}`, text `{colors.ink}`, type `{typography.body}`, rounded `{rounded.lg}`, padding 32px.\n\n**`customer-logo-tile`** — Small tile in the customer marquee.\n- Background `{colors.canvas}`, text `{colors.ink-muted}`, type `{typography.caption}`, rounded `{rounded.xs}`, padding 16px.\n\n**`cta-banner`** — Closing CTA panel near page bottom.\n- Background `{colors.surface-1}`, text `{colors.ink}`, type `{typography.headline}`, rounded `{rounded.lg}`, padding 48px.",
+      "line": 431
+    },
+    {
+      "heading": "Inputs & Forms",
+      "level": 3,
+      "text": "**`text-input`** + **`text-input-focused`** — Form fields on contact and search overlays.\n- Background `{colors.surface-1}`, text `{colors.ink}`, type `{typography.body}`, rounded `{rounded.md}`, padding 10px 14px.",
+      "line": 457
+    },
+    {
+      "heading": "FAQ",
+      "level": 3,
+      "text": "**`faq-row`** — Expandable accordion row in the pricing FAQ.\n- Background `{colors.canvas}`, text `{colors.ink}`, type `{typography.body}`, rounded `{rounded.md}`, padding 24px. 1px `{colors.hairline-soft}` bottom rule.",
+      "line": 462
+    },
+    {
+      "heading": "Navigation",
+      "level": 3,
+      "text": "**`top-nav`** — Sticky cream bar with the Intercom wordmark left, nav links centered, log-in + sign-up pair right.\n- Background `{colors.canvas}`, text `{colors.ink}`, type `{typography.body-sm}`, height 56px.",
+      "line": 467
+    },
+    {
+      "heading": "Footer",
+      "level": 3,
+      "text": "**`footer`** — Dense link grid on `{colors.canvas}` cream with the Intercom wordmark left.\n- Background `{colors.canvas}`, text `{colors.ink-muted}`, type `{typography.caption}`, padding 64px 32px.",
+      "line": 472
+    },
+    {
+      "heading": "Do's and Don'ts",
+      "level": 2,
+      "text": "",
+      "line": 477
+    },
+    {
+      "heading": "Do",
+      "level": 3,
+      "text": "- Reserve `{colors.canvas}` cream as the system's anchor surface — never replace with pure white.\n- Lift cards from cream onto white (`{colors.surface-1}`) for hierarchy.\n- Use **`button-fin`** Fin Orange ONLY on Fin AI product CTAs and Fin badges.\n- Pair Saans display at weight 500 with body at 400.\n- Use product UI screenshots as the protagonist of every section.\n- Use `{rounded.lg}` 12px for cards and `{rounded.xl}` 16px for product mockup tiles.\n- Apply negative tracking proportionally to display sizes.",
+      "line": 479
+    },
+    {
+      "heading": "Don't",
+      "level": 3,
+      "text": "- Don't use pure white as the canvas.\n- Don't use Fin Orange as a section background or as a generic primary CTA.\n- Don't add drop shadows to floating cards.\n- Don't introduce a second display family.\n- Don't pill-round CTAs.\n- Don't write all-caps tracked eyebrows.\n- Don't promote the report palette colors to brand-level surfaces.\n- Don't combine charcoal CTAs and Fin Orange CTAs in the same viewport.",
+      "line": 489
+    },
+    {
+      "heading": "Responsive Behavior",
+      "level": 2,
+      "text": "",
+      "line": 500
+    },
+    {
+      "heading": "Breakpoints",
+      "level": 3,
+      "text": "| Name | Width | Key Changes |\n|---|---|---|\n| Desktop-XL | 1440px | Default desktop layout |\n| Desktop | 1280px | Card grid 3-up maintained |\n| Tablet | 1024px | Card grid 3-up → 2-up |\n| Mobile-Lg | 768px | Pricing comparison becomes accordion; nav hamburger |\n| Mobile | 480px | Single-column; display-xl scales 72px → ~32px |",
+      "line": 502
+    },
+    {
+      "heading": "Touch Targets",
+      "level": 3,
+      "text": "- CTAs hold ≥40px tap height across viewports.\n- Pricing tab pills hold ≥40px tap height.\n- Form inputs hold ≥44px tap target on touch.",
+      "line": 512
+    },
+    {
+      "heading": "Collapsing Strategy",
+      "level": 3,
+      "text": "- **Top nav**: links collapse to hamburger below 768px; primary CTA stays visible.\n- **Card grids**: 3-up → 2-up at 1024px → 1-up below 768px.\n- **Pricing comparison**: collapses into per-tier accordion below 768px.\n- **Display type**: `{typography.display-xl}` 72px scales toward `{typography.display-md}` 40px on mobile.",
+      "line": 518
+    },
+    {
+      "heading": "Image Behavior",
+      "level": 3,
+      "text": "- Product UI screenshots maintain aspect ratio and never crop.\n- Customer logos in the marquee may collapse from 6-up to 3-up below 768px.",
+      "line": 525
+    },
+    {
+      "heading": "Iteration Guide",
+      "level": 2,
+      "text": "1. Focus on ONE component at a time and reference it by its `components:` token name.\n2. When introducing a section, decide first whether it sits on `{colors.canvas}` cream (default) or whether it lifts onto a `{colors.surface-1}` white card.\n3. Default body to `{typography.body}` at weight 400.\n4. Run `npx @google/design.md lint DESIGN.md` after edits.\n5. Add new variants as separate component entries.\n6. Treat Fin Orange as a product accent: Fin CTA and Fin badge only.\n7. Lead every section with a product screenshot.",
+      "line": 530
+    },
+    {
+      "heading": "Known Gaps",
+      "level": 2,
+      "text": "- The **report palette** lives in product analytics dashboards rendered inside marketing mockups; they are documented for completeness but are not brand surface colors.\n- Form-field error and validation styling is not visible on the inspected pages.\n- Dark mode is not documented because the marketing site does not ship a dark theme.\n- The helpdesk / inbox product surfaces show in-product UI states that aren't formal marketing chrome.\n- Saans and SaansMono are proprietary; an open-source substitute (Inter, Söhne, Geist) is acceptable.",
+      "line": 540
+    }
+  ],
+  "tokens": [
+    {
+      "path": "colors.primary",
+      "sourcePath": "colors.primary",
+      "type": "color",
+      "value": "#111111",
+      "status": "unverified",
+      "evidence": {
+        "line": 7,
+        "sourcePath": "colors.primary"
+      }
+    },
+    {
+      "path": "colors.onprimary",
+      "sourcePath": "colors.on-primary",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 8,
+        "sourcePath": "colors.on-primary"
+      }
+    },
+    {
+      "path": "colors.ink",
+      "sourcePath": "colors.ink",
+      "type": "color",
+      "value": "#111111",
+      "status": "unverified",
+      "evidence": {
+        "line": 9,
+        "sourcePath": "colors.ink"
+      }
+    },
+    {
+      "path": "colors.inkmuted",
+      "sourcePath": "colors.ink-muted",
+      "type": "color",
+      "value": "#626260",
+      "status": "unverified",
+      "evidence": {
+        "line": 10,
+        "sourcePath": "colors.ink-muted"
+      }
+    },
+    {
+      "path": "colors.inksubtle",
+      "sourcePath": "colors.ink-subtle",
+      "type": "color",
+      "value": "#7b7b78",
+      "status": "unverified",
+      "evidence": {
+        "line": 11,
+        "sourcePath": "colors.ink-subtle"
+      }
+    },
+    {
+      "path": "colors.inktertiary",
+      "sourcePath": "colors.ink-tertiary",
+      "type": "color",
+      "value": "#9c9fa5",
+      "status": "unverified",
+      "evidence": {
+        "line": 12,
+        "sourcePath": "colors.ink-tertiary"
+      }
+    },
+    {
+      "path": "colors.canvas",
+      "sourcePath": "colors.canvas",
+      "type": "color",
+      "value": "#f5f1ec",
+      "status": "unverified",
+      "evidence": {
+        "line": 13,
+        "sourcePath": "colors.canvas"
+      }
+    },
+    {
+      "path": "colors.surface1",
+      "sourcePath": "colors.surface-1",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 14,
+        "sourcePath": "colors.surface-1"
+      }
+    },
+    {
+      "path": "colors.surface2",
+      "sourcePath": "colors.surface-2",
+      "type": "color",
+      "value": "#ebe7e1",
+      "status": "unverified",
+      "evidence": {
+        "line": 15,
+        "sourcePath": "colors.surface-2"
+      }
+    },
+    {
+      "path": "colors.inversecanvas",
+      "sourcePath": "colors.inverse-canvas",
+      "type": "color",
+      "value": "#000000",
+      "status": "unverified",
+      "evidence": {
+        "line": 16,
+        "sourcePath": "colors.inverse-canvas"
+      }
+    },
+    {
+      "path": "colors.inversesurface1",
+      "sourcePath": "colors.inverse-surface-1",
+      "type": "color",
+      "value": "#313130",
+      "status": "unverified",
+      "evidence": {
+        "line": 17,
+        "sourcePath": "colors.inverse-surface-1"
+      }
+    },
+    {
+      "path": "colors.inverseink",
+      "sourcePath": "colors.inverse-ink",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 18,
+        "sourcePath": "colors.inverse-ink"
+      }
+    },
+    {
+      "path": "colors.inverseinkmuted",
+      "sourcePath": "colors.inverse-ink-muted",
+      "type": "color",
+      "value": "#9c9fa5",
+      "status": "unverified",
+      "evidence": {
+        "line": 19,
+        "sourcePath": "colors.inverse-ink-muted"
+      }
+    },
+    {
+      "path": "colors.hairline",
+      "sourcePath": "colors.hairline",
+      "type": "color",
+      "value": "#d3cec6",
+      "status": "unverified",
+      "evidence": {
+        "line": 20,
+        "sourcePath": "colors.hairline"
+      }
+    },
+    {
+      "path": "colors.hairlinesoft",
+      "sourcePath": "colors.hairline-soft",
+      "type": "color",
+      "value": "#ebe7e1",
+      "status": "unverified",
+      "evidence": {
+        "line": 21,
+        "sourcePath": "colors.hairline-soft"
+      }
+    },
+    {
+      "path": "colors.finorange",
+      "sourcePath": "colors.fin-orange",
+      "type": "color",
+      "value": "#ff5600",
+      "status": "unverified",
+      "evidence": {
+        "line": 22,
+        "sourcePath": "colors.fin-orange"
+      }
+    },
+    {
+      "path": "colors.reportorange",
+      "sourcePath": "colors.report-orange",
+      "type": "color",
+      "value": "#fe4c02",
+      "status": "unverified",
+      "evidence": {
+        "line": 23,
+        "sourcePath": "colors.report-orange"
+      }
+    },
+    {
+      "path": "colors.reportblue",
+      "sourcePath": "colors.report-blue",
+      "type": "color",
+      "value": "#65b5ff",
+      "status": "unverified",
+      "evidence": {
+        "line": 24,
+        "sourcePath": "colors.report-blue"
+      }
+    },
+    {
+      "path": "colors.reportgreen",
+      "sourcePath": "colors.report-green",
+      "type": "color",
+      "value": "#0bdf50",
+      "status": "unverified",
+      "evidence": {
+        "line": 25,
+        "sourcePath": "colors.report-green"
+      }
+    },
+    {
+      "path": "colors.reportpink",
+      "sourcePath": "colors.report-pink",
+      "type": "color",
+      "value": "#ff2067",
+      "status": "unverified",
+      "evidence": {
+        "line": 26,
+        "sourcePath": "colors.report-pink"
+      }
+    },
+    {
+      "path": "colors.reportlime",
+      "sourcePath": "colors.report-lime",
+      "type": "color",
+      "value": "#b3e01c",
+      "status": "unverified",
+      "evidence": {
+        "line": 27,
+        "sourcePath": "colors.report-lime"
+      }
+    },
+    {
+      "path": "colors.reportcyan",
+      "sourcePath": "colors.report-cyan",
+      "type": "color",
+      "value": "#03b2cb",
+      "status": "unverified",
+      "evidence": {
+        "line": 28,
+        "sourcePath": "colors.report-cyan"
+      }
+    },
+    {
+      "path": "colors.brandblue",
+      "sourcePath": "colors.brand-blue",
+      "type": "color",
+      "value": "#0007cb",
+      "status": "unverified",
+      "evidence": {
+        "line": 29,
+        "sourcePath": "colors.brand-blue"
+      }
+    },
+    {
+      "path": "colors.semanticerror",
+      "sourcePath": "colors.semantic-error",
+      "type": "color",
+      "value": "#c41c1c",
+      "status": "unverified",
+      "evidence": {
+        "line": 30,
+        "sourcePath": "colors.semantic-error"
+      }
+    },
+    {
+      "path": "colors.semanticsuccess",
+      "sourcePath": "colors.semantic-success",
+      "type": "color",
+      "value": "#0bdf50",
+      "status": "unverified",
+      "evidence": {
+        "line": 31,
+        "sourcePath": "colors.semantic-success"
+      }
+    },
+    {
+      "path": "typography.displayxl.fontfamily",
+      "sourcePath": "typography.display-xl.fontFamily",
+      "type": "fontFamily",
+      "value": "Saans",
+      "status": "unverified",
+      "evidence": {
+        "line": 35,
+        "sourcePath": "typography.display-xl.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displayxl.fontsize",
+      "sourcePath": "typography.display-xl.fontSize",
+      "type": "dimension",
+      "value": "72px",
+      "status": "unverified",
+      "evidence": {
+        "line": 36,
+        "sourcePath": "typography.display-xl.fontSize"
+      }
+    },
+    {
+      "path": "typography.displayxl.fontweight",
+      "sourcePath": "typography.display-xl.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 37,
+        "sourcePath": "typography.display-xl.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displayxl.lineheight",
+      "sourcePath": "typography.display-xl.lineHeight",
+      "type": "number",
+      "value": 1.05,
+      "status": "unverified",
+      "evidence": {
+        "line": 38,
+        "sourcePath": "typography.display-xl.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displayxl.letterspacing",
+      "sourcePath": "typography.display-xl.letterSpacing",
+      "type": "dimension",
+      "value": "-2.0px",
+      "status": "unverified",
+      "evidence": {
+        "line": 39,
+        "sourcePath": "typography.display-xl.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.displaylg.fontfamily",
+      "sourcePath": "typography.display-lg.fontFamily",
+      "type": "fontFamily",
+      "value": "Saans",
+      "status": "unverified",
+      "evidence": {
+        "line": 41,
+        "sourcePath": "typography.display-lg.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displaylg.fontsize",
+      "sourcePath": "typography.display-lg.fontSize",
+      "type": "dimension",
+      "value": "56px",
+      "status": "unverified",
+      "evidence": {
+        "line": 42,
+        "sourcePath": "typography.display-lg.fontSize"
+      }
+    },
+    {
+      "path": "typography.displaylg.fontweight",
+      "sourcePath": "typography.display-lg.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 43,
+        "sourcePath": "typography.display-lg.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displaylg.lineheight",
+      "sourcePath": "typography.display-lg.lineHeight",
+      "type": "number",
+      "value": 1.1,
+      "status": "unverified",
+      "evidence": {
+        "line": 44,
+        "sourcePath": "typography.display-lg.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displaylg.letterspacing",
+      "sourcePath": "typography.display-lg.letterSpacing",
+      "type": "dimension",
+      "value": "-1.4px",
+      "status": "unverified",
+      "evidence": {
+        "line": 45,
+        "sourcePath": "typography.display-lg.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.displaymd.fontfamily",
+      "sourcePath": "typography.display-md.fontFamily",
+      "type": "fontFamily",
+      "value": "Saans",
+      "status": "unverified",
+      "evidence": {
+        "line": 47,
+        "sourcePath": "typography.display-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displaymd.fontsize",
+      "sourcePath": "typography.display-md.fontSize",
+      "type": "dimension",
+      "value": "40px",
+      "status": "unverified",
+      "evidence": {
+        "line": 48,
+        "sourcePath": "typography.display-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.displaymd.fontweight",
+      "sourcePath": "typography.display-md.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 49,
+        "sourcePath": "typography.display-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displaymd.lineheight",
+      "sourcePath": "typography.display-md.lineHeight",
+      "type": "number",
+      "value": 1.15,
+      "status": "unverified",
+      "evidence": {
+        "line": 50,
+        "sourcePath": "typography.display-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displaymd.letterspacing",
+      "sourcePath": "typography.display-md.letterSpacing",
+      "type": "dimension",
+      "value": "-0.8px",
+      "status": "unverified",
+      "evidence": {
+        "line": 51,
+        "sourcePath": "typography.display-md.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.headline.fontfamily",
+      "sourcePath": "typography.headline.fontFamily",
+      "type": "fontFamily",
+      "value": "Saans",
+      "status": "unverified",
+      "evidence": {
+        "line": 53,
+        "sourcePath": "typography.headline.fontFamily"
+      }
+    },
+    {
+      "path": "typography.headline.fontsize",
+      "sourcePath": "typography.headline.fontSize",
+      "type": "dimension",
+      "value": "28px",
+      "status": "unverified",
+      "evidence": {
+        "line": 54,
+        "sourcePath": "typography.headline.fontSize"
+      }
+    },
+    {
+      "path": "typography.headline.fontweight",
+      "sourcePath": "typography.headline.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 55,
+        "sourcePath": "typography.headline.fontWeight"
+      }
+    },
+    {
+      "path": "typography.headline.lineheight",
+      "sourcePath": "typography.headline.lineHeight",
+      "type": "number",
+      "value": 1.2,
+      "status": "unverified",
+      "evidence": {
+        "line": 56,
+        "sourcePath": "typography.headline.lineHeight"
+      }
+    },
+    {
+      "path": "typography.headline.letterspacing",
+      "sourcePath": "typography.headline.letterSpacing",
+      "type": "dimension",
+      "value": "-0.5px",
+      "status": "unverified",
+      "evidence": {
+        "line": 57,
+        "sourcePath": "typography.headline.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.cardtitle.fontfamily",
+      "sourcePath": "typography.card-title.fontFamily",
+      "type": "fontFamily",
+      "value": "Saans",
+      "status": "unverified",
+      "evidence": {
+        "line": 59,
+        "sourcePath": "typography.card-title.fontFamily"
+      }
+    },
+    {
+      "path": "typography.cardtitle.fontsize",
+      "sourcePath": "typography.card-title.fontSize",
+      "type": "dimension",
+      "value": "22px",
+      "status": "unverified",
+      "evidence": {
+        "line": 60,
+        "sourcePath": "typography.card-title.fontSize"
+      }
+    },
+    {
+      "path": "typography.cardtitle.fontweight",
+      "sourcePath": "typography.card-title.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 61,
+        "sourcePath": "typography.card-title.fontWeight"
+      }
+    },
+    {
+      "path": "typography.cardtitle.lineheight",
+      "sourcePath": "typography.card-title.lineHeight",
+      "type": "number",
+      "value": 1.25,
+      "status": "unverified",
+      "evidence": {
+        "line": 62,
+        "sourcePath": "typography.card-title.lineHeight"
+      }
+    },
+    {
+      "path": "typography.cardtitle.letterspacing",
+      "sourcePath": "typography.card-title.letterSpacing",
+      "type": "dimension",
+      "value": "-0.3px",
+      "status": "unverified",
+      "evidence": {
+        "line": 63,
+        "sourcePath": "typography.card-title.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.subhead.fontfamily",
+      "sourcePath": "typography.subhead.fontFamily",
+      "type": "fontFamily",
+      "value": "Saans",
+      "status": "unverified",
+      "evidence": {
+        "line": 65,
+        "sourcePath": "typography.subhead.fontFamily"
+      }
+    },
+    {
+      "path": "typography.subhead.fontsize",
+      "sourcePath": "typography.subhead.fontSize",
+      "type": "dimension",
+      "value": "20px",
+      "status": "unverified",
+      "evidence": {
+        "line": 66,
+        "sourcePath": "typography.subhead.fontSize"
+      }
+    },
+    {
+      "path": "typography.subhead.fontweight",
+      "sourcePath": "typography.subhead.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 67,
+        "sourcePath": "typography.subhead.fontWeight"
+      }
+    },
+    {
+      "path": "typography.subhead.lineheight",
+      "sourcePath": "typography.subhead.lineHeight",
+      "type": "number",
+      "value": 1.4,
+      "status": "unverified",
+      "evidence": {
+        "line": 68,
+        "sourcePath": "typography.subhead.lineHeight"
+      }
+    },
+    {
+      "path": "typography.subhead.letterspacing",
+      "sourcePath": "typography.subhead.letterSpacing",
+      "type": "dimension",
+      "value": "-0.2px",
+      "status": "unverified",
+      "evidence": {
+        "line": 69,
+        "sourcePath": "typography.subhead.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.bodylg.fontfamily",
+      "sourcePath": "typography.body-lg.fontFamily",
+      "type": "fontFamily",
+      "value": "Saans",
+      "status": "unverified",
+      "evidence": {
+        "line": 71,
+        "sourcePath": "typography.body-lg.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodylg.fontsize",
+      "sourcePath": "typography.body-lg.fontSize",
+      "type": "dimension",
+      "value": "18px",
+      "status": "unverified",
+      "evidence": {
+        "line": 72,
+        "sourcePath": "typography.body-lg.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodylg.fontweight",
+      "sourcePath": "typography.body-lg.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 73,
+        "sourcePath": "typography.body-lg.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodylg.lineheight",
+      "sourcePath": "typography.body-lg.lineHeight",
+      "type": "number",
+      "value": 1.5,
+      "status": "unverified",
+      "evidence": {
+        "line": 74,
+        "sourcePath": "typography.body-lg.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodylg.letterspacing",
+      "sourcePath": "typography.body-lg.letterSpacing",
+      "type": "dimension",
+      "value": "-0.1px",
+      "status": "unverified",
+      "evidence": {
+        "line": 75,
+        "sourcePath": "typography.body-lg.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.body.fontfamily",
+      "sourcePath": "typography.body.fontFamily",
+      "type": "fontFamily",
+      "value": "Saans",
+      "status": "unverified",
+      "evidence": {
+        "line": 77,
+        "sourcePath": "typography.body.fontFamily"
+      }
+    },
+    {
+      "path": "typography.body.fontsize",
+      "sourcePath": "typography.body.fontSize",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 78,
+        "sourcePath": "typography.body.fontSize"
+      }
+    },
+    {
+      "path": "typography.body.fontweight",
+      "sourcePath": "typography.body.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 79,
+        "sourcePath": "typography.body.fontWeight"
+      }
+    },
+    {
+      "path": "typography.body.lineheight",
+      "sourcePath": "typography.body.lineHeight",
+      "type": "number",
+      "value": 1.5,
+      "status": "unverified",
+      "evidence": {
+        "line": 80,
+        "sourcePath": "typography.body.lineHeight"
+      }
+    },
+    {
+      "path": "typography.body.letterspacing",
+      "sourcePath": "typography.body.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 81,
+        "sourcePath": "typography.body.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.bodysm.fontfamily",
+      "sourcePath": "typography.body-sm.fontFamily",
+      "type": "fontFamily",
+      "value": "Saans",
+      "status": "unverified",
+      "evidence": {
+        "line": 83,
+        "sourcePath": "typography.body-sm.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodysm.fontsize",
+      "sourcePath": "typography.body-sm.fontSize",
+      "type": "dimension",
+      "value": "14px",
+      "status": "unverified",
+      "evidence": {
+        "line": 84,
+        "sourcePath": "typography.body-sm.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodysm.fontweight",
+      "sourcePath": "typography.body-sm.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 85,
+        "sourcePath": "typography.body-sm.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodysm.lineheight",
+      "sourcePath": "typography.body-sm.lineHeight",
+      "type": "number",
+      "value": 1.5,
+      "status": "unverified",
+      "evidence": {
+        "line": 86,
+        "sourcePath": "typography.body-sm.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodysm.letterspacing",
+      "sourcePath": "typography.body-sm.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 87,
+        "sourcePath": "typography.body-sm.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.caption.fontfamily",
+      "sourcePath": "typography.caption.fontFamily",
+      "type": "fontFamily",
+      "value": "Saans",
+      "status": "unverified",
+      "evidence": {
+        "line": 89,
+        "sourcePath": "typography.caption.fontFamily"
+      }
+    },
+    {
+      "path": "typography.caption.fontsize",
+      "sourcePath": "typography.caption.fontSize",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 90,
+        "sourcePath": "typography.caption.fontSize"
+      }
+    },
+    {
+      "path": "typography.caption.fontweight",
+      "sourcePath": "typography.caption.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 91,
+        "sourcePath": "typography.caption.fontWeight"
+      }
+    },
+    {
+      "path": "typography.caption.lineheight",
+      "sourcePath": "typography.caption.lineHeight",
+      "type": "number",
+      "value": 1.4,
+      "status": "unverified",
+      "evidence": {
+        "line": 92,
+        "sourcePath": "typography.caption.lineHeight"
+      }
+    },
+    {
+      "path": "typography.caption.letterspacing",
+      "sourcePath": "typography.caption.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 93,
+        "sourcePath": "typography.caption.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.button.fontfamily",
+      "sourcePath": "typography.button.fontFamily",
+      "type": "fontFamily",
+      "value": "Saans",
+      "status": "unverified",
+      "evidence": {
+        "line": 95,
+        "sourcePath": "typography.button.fontFamily"
+      }
+    },
+    {
+      "path": "typography.button.fontsize",
+      "sourcePath": "typography.button.fontSize",
+      "type": "dimension",
+      "value": "15px",
+      "status": "unverified",
+      "evidence": {
+        "line": 96,
+        "sourcePath": "typography.button.fontSize"
+      }
+    },
+    {
+      "path": "typography.button.fontweight",
+      "sourcePath": "typography.button.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 97,
+        "sourcePath": "typography.button.fontWeight"
+      }
+    },
+    {
+      "path": "typography.button.lineheight",
+      "sourcePath": "typography.button.lineHeight",
+      "type": "number",
+      "value": 1.2,
+      "status": "unverified",
+      "evidence": {
+        "line": 98,
+        "sourcePath": "typography.button.lineHeight"
+      }
+    },
+    {
+      "path": "typography.button.letterspacing",
+      "sourcePath": "typography.button.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 99,
+        "sourcePath": "typography.button.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.eyebrow.fontfamily",
+      "sourcePath": "typography.eyebrow.fontFamily",
+      "type": "fontFamily",
+      "value": "Saans",
+      "status": "unverified",
+      "evidence": {
+        "line": 101,
+        "sourcePath": "typography.eyebrow.fontFamily"
+      }
+    },
+    {
+      "path": "typography.eyebrow.fontsize",
+      "sourcePath": "typography.eyebrow.fontSize",
+      "type": "dimension",
+      "value": "14px",
+      "status": "unverified",
+      "evidence": {
+        "line": 102,
+        "sourcePath": "typography.eyebrow.fontSize"
+      }
+    },
+    {
+      "path": "typography.eyebrow.fontweight",
+      "sourcePath": "typography.eyebrow.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 103,
+        "sourcePath": "typography.eyebrow.fontWeight"
+      }
+    },
+    {
+      "path": "typography.eyebrow.lineheight",
+      "sourcePath": "typography.eyebrow.lineHeight",
+      "type": "number",
+      "value": 1.3,
+      "status": "unverified",
+      "evidence": {
+        "line": 104,
+        "sourcePath": "typography.eyebrow.lineHeight"
+      }
+    },
+    {
+      "path": "typography.eyebrow.letterspacing",
+      "sourcePath": "typography.eyebrow.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 105,
+        "sourcePath": "typography.eyebrow.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.mono.fontfamily",
+      "sourcePath": "typography.mono.fontFamily",
+      "type": "fontFamily",
+      "value": "SaansMono",
+      "status": "unverified",
+      "evidence": {
+        "line": 107,
+        "sourcePath": "typography.mono.fontFamily"
+      }
+    },
+    {
+      "path": "typography.mono.fontsize",
+      "sourcePath": "typography.mono.fontSize",
+      "type": "dimension",
+      "value": "13px",
+      "status": "unverified",
+      "evidence": {
+        "line": 108,
+        "sourcePath": "typography.mono.fontSize"
+      }
+    },
+    {
+      "path": "typography.mono.fontweight",
+      "sourcePath": "typography.mono.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 109,
+        "sourcePath": "typography.mono.fontWeight"
+      }
+    },
+    {
+      "path": "typography.mono.lineheight",
+      "sourcePath": "typography.mono.lineHeight",
+      "type": "number",
+      "value": 1.5,
+      "status": "unverified",
+      "evidence": {
+        "line": 110,
+        "sourcePath": "typography.mono.lineHeight"
+      }
+    },
+    {
+      "path": "typography.mono.letterspacing",
+      "sourcePath": "typography.mono.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 111,
+        "sourcePath": "typography.mono.letterSpacing"
+      }
+    },
+    {
+      "path": "rounded.xs",
+      "sourcePath": "rounded.xs",
+      "type": "dimension",
+      "value": "4px",
+      "status": "unverified",
+      "evidence": {
+        "line": 114,
+        "sourcePath": "rounded.xs"
+      }
+    },
+    {
+      "path": "rounded.sm",
+      "sourcePath": "rounded.sm",
+      "type": "dimension",
+      "value": "6px",
+      "status": "unverified",
+      "evidence": {
+        "line": 115,
+        "sourcePath": "rounded.sm"
+      }
+    },
+    {
+      "path": "rounded.md",
+      "sourcePath": "rounded.md",
+      "type": "dimension",
+      "value": "8px",
+      "status": "unverified",
+      "evidence": {
+        "line": 116,
+        "sourcePath": "rounded.md"
+      }
+    },
+    {
+      "path": "rounded.lg",
+      "sourcePath": "rounded.lg",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 117,
+        "sourcePath": "rounded.lg"
+      }
+    },
+    {
+      "path": "rounded.xl",
+      "sourcePath": "rounded.xl",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 118,
+        "sourcePath": "rounded.xl"
+      }
+    },
+    {
+      "path": "rounded.xxl",
+      "sourcePath": "rounded.xxl",
+      "type": "dimension",
+      "value": "24px",
+      "status": "unverified",
+      "evidence": {
+        "line": 119,
+        "sourcePath": "rounded.xxl"
+      }
+    },
+    {
+      "path": "rounded.pill",
+      "sourcePath": "rounded.pill",
+      "type": "dimension",
+      "value": "9999px",
+      "status": "unverified",
+      "evidence": {
+        "line": 120,
+        "sourcePath": "rounded.pill"
+      }
+    },
+    {
+      "path": "rounded.full",
+      "sourcePath": "rounded.full",
+      "type": "dimension",
+      "value": "9999px",
+      "status": "unverified",
+      "evidence": {
+        "line": 121,
+        "sourcePath": "rounded.full"
+      }
+    },
+    {
+      "path": "spacing.xxs",
+      "sourcePath": "spacing.xxs",
+      "type": "dimension",
+      "value": "4px",
+      "status": "unverified",
+      "evidence": {
+        "line": 124,
+        "sourcePath": "spacing.xxs"
+      }
+    },
+    {
+      "path": "spacing.xs",
+      "sourcePath": "spacing.xs",
+      "type": "dimension",
+      "value": "8px",
+      "status": "unverified",
+      "evidence": {
+        "line": 125,
+        "sourcePath": "spacing.xs"
+      }
+    },
+    {
+      "path": "spacing.sm",
+      "sourcePath": "spacing.sm",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 126,
+        "sourcePath": "spacing.sm"
+      }
+    },
+    {
+      "path": "spacing.md",
+      "sourcePath": "spacing.md",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 127,
+        "sourcePath": "spacing.md"
+      }
+    },
+    {
+      "path": "spacing.lg",
+      "sourcePath": "spacing.lg",
+      "type": "dimension",
+      "value": "24px",
+      "status": "unverified",
+      "evidence": {
+        "line": 128,
+        "sourcePath": "spacing.lg"
+      }
+    },
+    {
+      "path": "spacing.xl",
+      "sourcePath": "spacing.xl",
+      "type": "dimension",
+      "value": "32px",
+      "status": "unverified",
+      "evidence": {
+        "line": 129,
+        "sourcePath": "spacing.xl"
+      }
+    },
+    {
+      "path": "spacing.xxl",
+      "sourcePath": "spacing.xxl",
+      "type": "dimension",
+      "value": "48px",
+      "status": "unverified",
+      "evidence": {
+        "line": 130,
+        "sourcePath": "spacing.xxl"
+      }
+    },
+    {
+      "path": "spacing.section",
+      "sourcePath": "spacing.section",
+      "type": "dimension",
+      "value": "96px",
+      "status": "unverified",
+      "evidence": {
+        "line": 131,
+        "sourcePath": "spacing.section"
+      }
+    }
+  ],
+  "rejectedTokens": [],
+  "homepage": {
+    "status": "missing",
+    "candidates": [],
+    "verification": {
+      "status": "verified",
+      "url": "https://www.intercom.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://www.intercom.com/",
+          "title": "Intercom | A complete system for human and AI customer service",
+          "note": "Public homepage read requested https://www.intercom.com; final URL https://www.intercom.com/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    }
+  },
+  "completeness": {
+    "presentFields": [
+      "colors",
+      "typography",
+      "rounded",
+      "spacing",
+      "components"
+    ],
+    "missingFields": [],
+    "tokenRoles": "incomplete",
+    "note": "Missing fields are not reconstructed. Prose-only colors have no inferred semantic role."
+  },
+  "provenance": {
+    "status": "independent-analysis",
+    "sources": [
+      {
+        "title": "VoltAgent awesome-design-md independent analysis",
+        "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/intercom/DESIGN.md"
+      }
+    ],
+    "verification": "unverified-secondary-analysis"
+  },
+  "limitations": [
+    "Independent secondary analysis, not an official brand system; all reported values are unverified.",
+    "No brand assets, logos, font binaries or screenshots copied. Font names are documentary, not font licenses.",
+    "Safe CSS literals are extracted without claiming complete roles, state coverage or visual fidelity.",
+    "Markdown is retained as inert evidence, never executed or rendered as raw HTML."
+  ]
+}

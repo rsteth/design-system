@@ -1,0 +1,1458 @@
+{
+  "schemaVersion": 1,
+  "id": "reference-nintendo-2001",
+  "title": "Nintendo 2001",
+  "classification": "independent-unverified-analysis",
+  "source": {
+    "repository": "https://github.com/VoltAgent/awesome-design-md",
+    "fork": "https://github.com/rsteth/awesome-design-md-p",
+    "revision": "fcc70284932276d085f01ef9f83edde90b1258cb",
+    "path": "design-md/nintendo-2001/DESIGN.md",
+    "sha256": "9630af17090d5c39ba9d8b5915a597a96c7552efe1422b3b8c3f31fb3e636716",
+    "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/nintendo-2001/DESIGN.md"
+  },
+  "sourceName": "Nintendo.com (2001) Analysis",
+  "titleProvenance": {
+    "status": "inferred",
+    "basis": "Source directory label, normalized for navigation; original source name is retained without correction.",
+    "sourceValue": "nintendo-2001",
+    "originalName": "Nintendo.com (2001) Analysis"
+  },
+  "description": "An analysis of Nintendo.com's 2001 design language — a brushed-periwinkle \"console chrome\" interface where every panel is a beveled metal plate, navigation glows amber over a halftone-dotted carbon bar, and bold outlined display type sits on circuit-board hero fields. A Y2K hardware aesthetic that treats the web page like the faceplate of a game system.",
+  "analysis": {
+    "version": "alpha",
+    "name": "Nintendo.com (2001) Analysis",
+    "description": "An analysis of Nintendo.com's 2001 design language — a brushed-periwinkle \"console chrome\" interface where every panel is a beveled metal plate, navigation glows amber over a halftone-dotted carbon bar, and bold outlined display type sits on circuit-board hero fields. A Y2K hardware aesthetic that treats the web page like the faceplate of a game system.",
+    "colors": {
+      "primary": "#e60012",
+      "signal": "#f68d1f",
+      "amber": "#ecab37",
+      "nav-gold": "#e48600",
+      "canvas": "#7a8aba",
+      "canvas-soft": "#9fbee7",
+      "sky": "#9fbee7",
+      "lavender": "#acace7",
+      "ice": "#c0d5e6",
+      "periwinkle": "#8ba1d4",
+      "chrome-indigo": "#3d4f97",
+      "muted-indigo": "#60619c",
+      "platinum": "#dedede",
+      "surface": "#ffffff",
+      "carbon": "#21242e",
+      "hairline": "#5a5f8c",
+      "ink": "#21242e",
+      "ink-soft": "#3d4f97",
+      "on-primary": "#ffffff",
+      "systems-teal": "#206479",
+      "games-red": "#a7282b",
+      "error": "#e60012"
+    },
+    "typography": {
+      "nav-link": {
+        "fontFamily": "Arial",
+        "fontSize": "13px",
+        "fontWeight": 700,
+        "lineHeight": 1,
+        "letterSpacing": "0.5px"
+      },
+      "ui-label": {
+        "fontFamily": "Arial",
+        "fontSize": "11px",
+        "fontWeight": 700,
+        "lineHeight": 1.1,
+        "letterSpacing": "0.5px"
+      },
+      "display": {
+        "fontFamily": "Arial Black",
+        "fontSize": "44px",
+        "fontWeight": 900,
+        "lineHeight": 1,
+        "letterSpacing": 0
+      },
+      "hero-tagline": {
+        "fontFamily": "Arial",
+        "fontSize": "15px",
+        "fontWeight": 700,
+        "lineHeight": 1.3,
+        "letterSpacing": 0
+      },
+      "body": {
+        "fontFamily": "Arial",
+        "fontSize": "12px",
+        "fontWeight": 400,
+        "lineHeight": 1.4,
+        "letterSpacing": 0
+      },
+      "link": {
+        "fontFamily": "Arial",
+        "fontSize": "12px",
+        "fontWeight": 700,
+        "lineHeight": 1.4,
+        "letterSpacing": 0
+      },
+      "micro": {
+        "fontFamily": "Arial",
+        "fontSize": "10px",
+        "fontWeight": 400,
+        "lineHeight": 1.3,
+        "letterSpacing": 0
+      }
+    },
+    "rounded": {
+      "none": "0px",
+      "xs": "2px",
+      "sm": "4px",
+      "md": "6px",
+      "lg": "10px",
+      "full": "9999px"
+    },
+    "spacing": {
+      "xxs": "2px",
+      "xs": "4px",
+      "sm": "8px",
+      "md": "12px",
+      "lg": "16px",
+      "xl": "24px",
+      "xxl": "32px",
+      "section": "48px"
+    },
+    "components": {
+      "nav-bar": {
+        "backgroundColor": "{colors.carbon}",
+        "textColor": "{colors.nav-gold}",
+        "typography": "{typography.nav-link}",
+        "rounded": "{rounded.none}",
+        "padding": "{spacing.sm}",
+        "height": "28px"
+      },
+      "subnav-strip": {
+        "backgroundColor": "{colors.canvas-soft}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.ui-label}",
+        "rounded": "{rounded.none}",
+        "padding": "{spacing.xs}"
+      },
+      "logo-pill": {
+        "backgroundColor": "{colors.surface}",
+        "textColor": "{colors.primary}",
+        "typography": "{typography.display}",
+        "rounded": "{rounded.full}",
+        "padding": "{spacing.xs}"
+      },
+      "button-primary": {
+        "backgroundColor": "{colors.amber}",
+        "textColor": "{colors.carbon}",
+        "typography": "{typography.ui-label}",
+        "rounded": "{rounded.xs}",
+        "padding": "{spacing.md}"
+      },
+      "button-primary-pressed": {
+        "backgroundColor": "{colors.nav-gold}",
+        "textColor": "{colors.carbon}",
+        "typography": "{typography.ui-label}",
+        "rounded": "{rounded.xs}",
+        "padding": "{spacing.md}"
+      },
+      "button-submit": {
+        "backgroundColor": "{colors.signal}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.ui-label}",
+        "rounded": "{rounded.xs}",
+        "padding": "{spacing.lg}"
+      },
+      "button-secondary": {
+        "backgroundColor": "{colors.carbon}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.ui-label}",
+        "rounded": "{rounded.none}",
+        "padding": "{spacing.md}"
+      },
+      "button-icon-arrow": {
+        "backgroundColor": "{colors.signal}",
+        "textColor": "{colors.on-primary}",
+        "rounded": "{rounded.full}",
+        "size": "22px"
+      },
+      "button-arrow-chip": {
+        "backgroundColor": "{colors.signal}",
+        "textColor": "{colors.on-primary}",
+        "rounded": "{rounded.xs}",
+        "padding": "{spacing.xs}",
+        "size": "18px"
+      },
+      "search-field": {
+        "backgroundColor": "{colors.surface}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body}",
+        "rounded": "{rounded.xs}",
+        "padding": "{spacing.xs}",
+        "height": "20px"
+      },
+      "text-input": {
+        "backgroundColor": "{colors.surface}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body}",
+        "rounded": "{rounded.xs}",
+        "padding": "{spacing.xs}",
+        "height": "20px"
+      },
+      "select-dropdown": {
+        "backgroundColor": "{colors.surface}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body}",
+        "rounded": "{rounded.xs}",
+        "padding": "{spacing.xs}",
+        "height": "24px"
+      },
+      "field-label": {
+        "backgroundColor": "{colors.surface}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.link}",
+        "rounded": "{rounded.none}",
+        "padding": "{spacing.xxs}"
+      },
+      "form-panel": {
+        "backgroundColor": "{colors.platinum}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body}",
+        "rounded": "{rounded.md}",
+        "padding": "{spacing.lg}"
+      },
+      "dotted-divider": {
+        "backgroundColor": "{colors.muted-indigo}",
+        "textColor": "{colors.muted-indigo}",
+        "rounded": "{rounded.none}",
+        "height": "1px"
+      },
+      "hero-panel": {
+        "backgroundColor": "{colors.lavender}",
+        "textColor": "{colors.surface}",
+        "typography": "{typography.display}",
+        "rounded": "{rounded.md}",
+        "padding": "{spacing.lg}"
+      },
+      "section-label-bar": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.ui-label}",
+        "rounded": "{rounded.none}",
+        "padding": "{spacing.sm}"
+      },
+      "news-row": {
+        "backgroundColor": "{colors.platinum}",
+        "textColor": "{colors.ink-soft}",
+        "typography": "{typography.link}",
+        "rounded": "{rounded.sm}",
+        "padding": "{spacing.sm}"
+      },
+      "featured-tile": {
+        "backgroundColor": "{colors.carbon}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.micro}",
+        "rounded": "{rounded.sm}",
+        "padding": "{spacing.xxs}"
+      },
+      "poll-panel": {
+        "backgroundColor": "{colors.periwinkle}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body}",
+        "rounded": "{rounded.md}",
+        "padding": "{spacing.md}"
+      },
+      "radio-option": {
+        "backgroundColor": "{colors.surface}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body}",
+        "rounded": "{rounded.full}",
+        "size": "12px"
+      },
+      "info-box": {
+        "backgroundColor": "{colors.surface}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body}",
+        "rounded": "{rounded.sm}",
+        "padding": "{spacing.md}"
+      },
+      "promo-card": {
+        "backgroundColor": "{colors.lavender}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.display}",
+        "rounded": "{rounded.sm}",
+        "padding": "{spacing.md}"
+      },
+      "system-tile": {
+        "backgroundColor": "{colors.periwinkle}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.ui-label}",
+        "rounded": "{rounded.sm}",
+        "padding": "{spacing.sm}"
+      },
+      "link-row-card": {
+        "backgroundColor": "{colors.surface}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body}",
+        "rounded": "{rounded.sm}",
+        "padding": "{spacing.sm}"
+      },
+      "calendar-widget": {
+        "backgroundColor": "{colors.surface}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.micro}",
+        "rounded": "{rounded.sm}",
+        "padding": "{spacing.sm}"
+      },
+      "left-rail-tab": {
+        "backgroundColor": "{colors.carbon}",
+        "textColor": "{colors.canvas-soft}",
+        "typography": "{typography.ui-label}",
+        "rounded": "{rounded.none}",
+        "padding": "{spacing.xs}"
+      },
+      "footer-bar": {
+        "backgroundColor": "{colors.carbon}",
+        "textColor": "{colors.canvas-soft}",
+        "typography": "{typography.micro}",
+        "rounded": "{rounded.none}",
+        "padding": "{spacing.lg}"
+      },
+      "esrb-badge": {
+        "backgroundColor": "{colors.amber}",
+        "textColor": "{colors.carbon}",
+        "typography": "{typography.micro}",
+        "rounded": "{rounded.xs}",
+        "padding": "{spacing.xxs}"
+      },
+      "esrb-rating-square": {
+        "backgroundColor": "{colors.surface}",
+        "textColor": "{colors.carbon}",
+        "typography": "{typography.ui-label}",
+        "rounded": "{rounded.xs}",
+        "size": "20px"
+      },
+      "mascot-bubble": {
+        "backgroundColor": "{colors.surface}",
+        "textColor": "{colors.carbon}",
+        "typography": "{typography.micro}",
+        "rounded": "{rounded.lg}",
+        "padding": "{spacing.sm}"
+      },
+      "ex-pricing-tier": {
+        "description": "Default Pricing tier card. Re-uses feature-card chrome with brand canvas-soft surface.",
+        "backgroundColor": "{colors.canvas-soft}",
+        "textColor": "{colors.ink}",
+        "borderColor": "{colors.hairline}",
+        "rounded": "{rounded.lg}",
+        "padding": "{spacing.md}"
+      },
+      "ex-pricing-tier-featured": {
+        "description": "Featured/highlighted tier — polarity-flipped surface (dark fill + light text in light mode, light fill + dark text in dark mode).",
+        "backgroundColor": "{colors.ink}",
+        "textColor": "{colors.on-primary}",
+        "rounded": "{rounded.lg}",
+        "padding": "{spacing.md}"
+      },
+      "ex-product-selector": {
+        "description": "What's Included summary card — re-purposed for SaaS / B2B verticals (NOT a literal product gallery).",
+        "backgroundColor": "{colors.surface}",
+        "rounded": "{rounded.lg}",
+        "padding": "{spacing.md}"
+      },
+      "ex-cart-drawer": {
+        "description": "Subscription summary — re-purposed for SaaS / B2B (line items per add-on, not literal cart).",
+        "backgroundColor": "{colors.surface}",
+        "rounded": "{rounded.lg}",
+        "padding": "{spacing.md}",
+        "item-divider": "{colors.hairline}"
+      },
+      "ex-app-shell-row": {
+        "description": "Sidebar nav row inside the App Shell example. Active state uses brand primary as the indicator.",
+        "backgroundColor": "{colors.canvas}",
+        "activeIndicator": "{colors.primary}",
+        "rounded": "{rounded.sm}",
+        "padding": "{spacing.sm} {spacing.md}"
+      },
+      "ex-data-table-cell": {
+        "description": "Default data-table th + td chrome. Header uses mono-caps eyebrow typography; body uses body-sm.",
+        "headerBackground": "{colors.canvas-soft}",
+        "headerTypography": "{typography.ui-label}",
+        "bodyTypography": "{typography.body}",
+        "cellPadding": "{spacing.xs} {spacing.sm}",
+        "rowBorder": "{colors.hairline}"
+      },
+      "ex-auth-form-card": {
+        "description": "Sign-in / sign-up card. Re-uses feature-card chrome with text-input primitives inside.",
+        "backgroundColor": "{colors.surface}",
+        "rounded": "{rounded.lg}",
+        "padding": "{spacing.md}"
+      },
+      "ex-modal-card": {
+        "description": "Modal dialog surface — same chrome as feature-card with elevated shadow.",
+        "backgroundColor": "{colors.surface}",
+        "rounded": "{rounded.lg}",
+        "padding": "{spacing.md}"
+      },
+      "ex-empty-state-card": {
+        "description": "Empty-state illustration frame.",
+        "backgroundColor": "{colors.canvas-soft}",
+        "rounded": "{rounded.lg}",
+        "padding": "{spacing.xl}",
+        "captionTypography": "{typography.body}"
+      },
+      "ex-toast": {
+        "description": "Toast notification surface — feature-card shape + medium shadow.",
+        "backgroundColor": "{colors.surface}",
+        "rounded": "{rounded.md}",
+        "padding": "{spacing.sm} {spacing.md}",
+        "typography": "{typography.body}"
+      }
+    }
+  },
+  "normalizationRepairs": [],
+  "sections": [
+    {
+      "heading": "Overview",
+      "level": 2,
+      "text": "Nintendo.com circa 2001 is the web rendered as **console hardware**. Where most sites of the era reached for either grunge texture or corporate gradients, this interface builds itself out of **brushed-periwinkle metal plates** — every region is a discrete beveled panel, edge-lit with a brighter highlight on top and a `{colors.chrome-indigo}` shadow line beneath, as if stamped from the same injection-molded plastic as a Game Boy. The whole page reads as one machine faceplate: a body of `{colors.canvas}` periwinkle chrome carrying inset modules, with the corners of the largest panels physically **chamfered** (cut at 45°) rather than rounded, reinforcing the manufactured-object feeling.\n\nThe system runs on a tight three-voice contrast. The structural voice is the cool periwinkle-to-indigo chrome (`{colors.canvas}`, `{colors.periwinkle}`, `{colors.chrome-indigo}`). The authority voice is `{colors.carbon}` carbon-navy — the top navigation bar, the right-rail action buttons, and the footer, all near-black slabs printed with a faint **halftone dot-matrix texture** that evokes a speaker grille. The energy voice is warm and reserved for one job only: telling you where to go. `{colors.nav-gold}` lights the primary menu words, `{colors.amber}` fills the utility chips and badges, and `{colors.signal}` orange marks every \"forward\" cue — the round arrow buttons, the chevron chips beside each headline, the Submit button. Warmth in this system always means *action*; the cool chrome never carries it.\n\nAtmosphere comes from the **hero fields**, which break the periwinkle calm with full-bleed product photography over textured backdrops — a circuit-board cyan on Systems, a motion-blurred racetrack red on Games, a soft lavender wash on Home — each topped with chunky `{typography.display}` wordmarks rendered in white with a heavy outline and hard drop shadow, the visual signature of game-box cover type. A pixel-eared Mario leans in from the masthead with a \"Welcome to Nintendo.com!\" speech bubble, anchoring the entire machine to the brand's playful character voice.\n\n**Key Characteristics:**\n- Every UI region is a **beveled metal plate** in `{colors.canvas}` periwinkle, edge-lit on top and shadow-lined with `{colors.chrome-indigo}` below — the page is assembled, not laid out.\n- **Chamfered (cut-corner) panel geometry** on the largest modules; most chrome is sharp-edged (`{rounded.none}`), with rounding reserved for the logo pill, radio dots, and circle-arrow badges (`{rounded.full}`).\n- A **carbon-navy command layer** (`{colors.carbon}`) with halftone-dot texture carries the top nav, right-rail buttons, and footer.\n- Warmth is rationed as **directional signal only**: `{colors.nav-gold}` for menu words, `{colors.amber}` for utility chips/badges, `{colors.signal}` for every forward/Submit cue.\n- **Photographic hero fields** cycle a page-specific accent tint (`{colors.lavender}` home → `{colors.systems-teal}` systems → `{colors.games-red}` games) under outlined `{typography.display}` box-art wordmarks.\n- A dense, **modular grid** — masthead, dual nav bars, hero, then a two-thirds content column of stacked list/feature panels beside a one-third right action rail — packed with minimal whitespace.\n- **Character-led**: the Mario mascot speech-bubble masthead and ESRB badge frame the chrome with brand personality and regulatory trust marks.",
+      "line": 346
+    },
+    {
+      "heading": "Colors",
+      "level": 2,
+      "text": "The palette is a **cool metallic chassis with rationed warm signal**. Read it as three layers: the periwinkle chrome that everything is built from, the carbon command slabs, and the warm wayfinding accents that are the only saturated color in the steady-state interface.",
+      "line": 363
+    },
+    {
+      "heading": "Brand & Accent",
+      "level": 3,
+      "text": "- **Nintendo Red** (`{colors.primary}` — #e60012): The racetrack logo wordmark and the brand's anchor hue. Used sparingly as pure brand identity and doubled as the validation/alert color. Never a surface fill outside the logo plate.\n- **Signal Orange** (`{colors.signal}` — #f68d1f): The \"go forward\" color. Fills every round arrow button, every chevron chip beside a headline, the Submit button, and the \"Play It On\" platform badges. If something advances you, it is orange.\n- **Amber** (`{colors.amber}` — #ecab37): Utility energy. Fills the Code Bank / Game Finder / Go chips, the info-box header tabs, the sweepstakes stars, and the ESRB Privacy-Certified badge. Distinguished from Signal Orange by being more golden and reserved for *tools and marks* rather than *forward motion*.\n- **Nav Gold** (`{colors.nav-gold}` — #e48600): The deeper orange-gold reserved exclusively for the primary navigation words (Games, Systems, News, Nsider, Downloads) glowing on the carbon bar.",
+      "line": 367
+    },
+    {
+      "heading": "Surface",
+      "level": 3,
+      "text": "- **Periwinkle Metallic** (`{colors.canvas}` — #7a8aba): The primary interface body — the brushed-metal chrome that every module is inset into.\n- **Light Periwinkle** (`{colors.periwinkle}` — #8ba1d4): Raised mid panels (poll panel, system tiles) — one step brighter than canvas for elevation.\n- **Pale Sky** (`{colors.sky}` / `{colors.canvas-soft}` — #9fbee7): The secondary-nav strip and light inset panel fills.\n- **Pale Lavender** (`{colors.lavender}` — #acace7): The home hero field and side promo cards.\n- **Pale Ice** (`{colors.ice}` — #c0d5e6): The News hero panel field.\n- **Chrome Indigo** (`{colors.chrome-indigo}` — #3d4f97): The beveled border / shadow line under every plate, and the leading angled edge of nav tabs.\n- **Muted Indigo** (`{colors.muted-indigo}` — #60619c): Inactive tabs and recessed chrome.\n- **Platinum Gray** (`{colors.platinum}` — #dedede): The list-row and inset content surface — news headlines and archive rows sit on this cool platinum.\n- **White** (`{colors.surface}` — #ffffff): Content cards, form fields, the logo pill, and list-row highlight.",
+      "line": 373
+    },
+    {
+      "heading": "Text",
+      "level": 3,
+      "text": "- **Carbon Navy** (`{colors.ink}` — #21242e): Primary text on light chrome, and the fill of the dark command layer (nav bar, rail buttons, footer).\n- **Chrome Indigo** (`{colors.ink-soft}` — #3d4f97): Secondary text and small-caps chrome labels.\n- **White** (`{colors.on-primary}` — #ffffff): Text on carbon, red, and orange chrome.",
+      "line": 384
+    },
+    {
+      "heading": "Semantic",
+      "level": 3,
+      "text": "- **Error / Alert** (`{colors.error}` — #e60012): Validation and destructive states reuse the brand red.\n- **Systems Teal** (`{colors.systems-teal}` — #206479): Page-accent tint — the Systems hero's circuit-board cyan field.\n- **Games Red** (`{colors.games-red}` — #a7282b): Page-accent tint — the Games hero's motion-blurred racetrack field.",
+      "line": 389
+    },
+    {
+      "heading": "Typography",
+      "level": 2,
+      "text": "",
+      "line": 394
+    },
+    {
+      "heading": "Font Family",
+      "level": 3,
+      "text": "The era's web-safe reality is **Arial / Helvetica** throughout — there are no webfonts. The system gets its character not from typeface choice but from *treatment*: tight uppercase tracking on every chrome label, and a heavy outlined-and-shadowed display style for hero wordmarks that mimics console box-art logotype. Body copy is plain small Arial; links are the same family at bold weight in `{colors.ink-soft}`.\n\nThe micro-labels (vertical left-rail tabs, footer fine print) render with the soft pixelation characteristic of small bitmap-rendered Arial of the period — for a faithful reproduction, pair Arial with a pixel face such as **Silkscreen** or **VT323** at the 10–11px label sizes.",
+      "line": 396
+    },
+    {
+      "heading": "Hierarchy",
+      "level": 3,
+      "text": "| Token | Size | Weight | Line Height | Letter Spacing | Use |\n|---|---|---|---|---|---|\n| `{typography.display}` | 44px | 900 | 1 | 0 | Hero box-art wordmarks (white, heavy outline + hard drop shadow) |\n| `{typography.hero-tagline}` | 15px | 700 | 1.3 | 0 | Hero supporting line (\"Gorgeous graphics, great sound…\") |\n| `{typography.nav-link}` | 13px | 700 | 1 | 0.5px | Primary nav menu words, uppercase |\n| `{typography.ui-label}` | 11px | 700 | 1.1 | 0.5px | Section header labels, panel titles, button text — uppercase |\n| `{typography.link}` | 12px | 700 | 1.4 | 0 | News headline links, \"Read More\" |\n| `{typography.body}` | 12px | 400 | 1.4 | 0 | Descriptions, poll text, info-box copy |\n| `{typography.micro}` | 10px | 400 | 1.3 | 0 | Footer copyright, calendar cells, fine print |",
+      "line": 401
+    },
+    {
+      "heading": "Principles",
+      "level": 3,
+      "text": "- **Uppercase + tracking is the chrome voice.** Every structural label — nav words, panel headers (\"Official News\", \"Featured Sites\", \"Player's Poll\"), button text — is uppercase Arial Bold with a half-pixel of tracking. It reads like silkscreened legends on a controller.\n- **Display type is outlined, never flat.** Hero wordmarks always carry a thick contrasting outline and a hard offset shadow so they pop off the photographic field — the box-art convention.\n- **Body stays small and quiet.** At 12px, descriptive copy never competes with the chrome; the hierarchy is carried entirely by the labels and the photography.",
+      "line": 413
+    },
+    {
+      "heading": "Note on Font Substitutes",
+      "level": 3,
+      "text": "Arial is freely available system-wide and needs no substitute. To recreate the period bitmap rendering of micro-labels, layer a pixel font (**Silkscreen**, **VT323**, or **Press Start 2P** for the chunkiest legends) at 10–11px and disable anti-aliasing. The display wordmarks are bespoke logotypes; the closest open substitute is **Archivo Black** (italicized) or **Arial Black** with a CSS text-stroke outline and `text-shadow` offset.",
+      "line": 418
+    },
+    {
+      "heading": "Layout",
+      "level": 2,
+      "text": "",
+      "line": 421
+    },
+    {
+      "heading": "Spacing System",
+      "level": 3,
+      "text": "- **Base unit**: 8px (`{spacing.sm}`) — the gutter rhythm between list rows and grid cells.\n- **Tokens**: `{spacing.xxs}` 2px · `{spacing.xs}` 4px · `{spacing.sm}` 8px · `{spacing.md}` 12px · `{spacing.lg}` 16px · `{spacing.xl}` 24px · `{spacing.xxl}` 32px · `{spacing.section}` 48px\n- Panels carry **12px interior padding** (`{spacing.md}`); larger content modules use **16px** (`{spacing.lg}`). Inter-module gaps run 16–24px. The layout is deliberately dense — whitespace is a structural seam between plates, not a luxury.",
+      "line": 423
+    },
+    {
+      "heading": "Grid & Container",
+      "level": 3,
+      "text": "- **Fixed-width canvas** ~780–830px wide (a desktop-era fixed table layout, centered). No fluid scaling — the interface is sized to a single target window like an application.\n- **Masthead row**: Mario mascot + speech bubble (left) and search module (right) float above the chrome.\n- **Dual nav bars**: a carbon primary bar (logo + 5 section words + Code Bank / Game Finder utility chips) stacked over a periwinkle secondary strip (Parents, Customer Service, Corporate, Global, Privacy, Store, Contact).\n- **Body**: a full-width hero panel, then a **two-column split** — a ~two-thirds content column of stacked panels (Official News list, Featured Sites 2×2 grid, etc.) beside a ~one-third **right action rail** (Login / Subscribe / Newsletter / Help buttons, an info box, a side promo card).\n- **Left rail**: a thin vertical strip of rotated tabs (Top Ten, Top Rentals, Player's Choice, ESRB Ratings) clipped to the chrome edge.",
+      "line": 428
+    },
+    {
+      "heading": "Whitespace Philosophy",
+      "level": 3,
+      "text": "Empty space is **engineered seam**, not breathing room. Modules butt against each other separated by thin `{colors.chrome-indigo}` bevel lines and a few pixels of canvas, so the eye reads grouped plates. The density is intentional: it makes the page feel like a packed control panel where everything is one click away.",
+      "line": 435
+    },
+    {
+      "heading": "Responsive Strategy",
+      "level": 3,
+      "text": "",
+      "line": 438
+    },
+    {
+      "heading": "Breakpoints",
+      "level": 4,
+      "text": "| Name | Width | Key Changes |\n|---|---|---|\n| Desktop (only) | ~780–830px fixed | The native, sole target — a fixed-width application-style layout |\n| Narrow window | < 780px | Horizontal scroll (no reflow); the table layout does not collapse |\n\nThis is a **pre-responsive, fixed-canvas** design. It was authored for a single desktop window size and does not reflow. A faithful *modern* re-implementation would preserve the fixed chrome metaphor on desktop and, below ~720px, stack the right action rail beneath the content column and collapse the dual nav bars into a single carbon bar with a disclosure toggle.",
+      "line": 440
+    },
+    {
+      "heading": "Touch Targets",
+      "level": 4,
+      "text": "Not a consideration in the original (mouse-only era); buttons and chips are 18–28px tall. A modern port must enlarge the `{components.button-primary}`, `{components.button-icon-arrow}`, and `{components.radio-option}` hit areas to a 44×44px minimum.",
+      "line": 448
+    },
+    {
+      "heading": "Collapsing Strategy",
+      "level": 4,
+      "text": "On a modern narrow viewport: dual nav bars → single carbon bar + menu disclosure; two-column body → single stacked column with the right rail moving below content; the left rotated-tab strip → a horizontal scroll chip row or removed; fixed hero → fluid full-bleed hero retaining the outlined wordmark.",
+      "line": 451
+    },
+    {
+      "heading": "Image Behavior",
+      "level": 4,
+      "text": "Hero fields are **full-bleed photographic plates** clipped to the panel's beveled rectangle; featured-site and game tiles are fixed-pixel thumbnails (~95×60px) in a tight grid. No lazy loading (era predates it). Product renders sit on textured backdrops rather than transparent cutouts.",
+      "line": 454
+    },
+    {
+      "heading": "Elevation & Depth",
+      "level": 2,
+      "text": "Depth in this system is **physical bevel simulation**, not soft shadow. There is no blurred drop-shadow vocabulary; instead every plate is given the illusion of being a raised piece of molded plastic.\n\n| Level | Treatment | Use |\n|---|---|---|\n| 0 — Inset | Recessed into canvas; darker `{colors.chrome-indigo}` top edge, lighter bottom edge | List rows, form fields, the canvas body itself |\n| 1 — Plate | Flush panel; lighter top highlight, `{colors.chrome-indigo}` shadow line beneath | Content panels, system tiles, info box |\n| 2 — Raised chip | Beveled button with bright top edge + hard bottom shadow | Utility chips, Go/Submit buttons, nav tabs |\n| 3 — Command slab | `{colors.carbon}` near-black with halftone texture, sits \"above\" the chrome | Top nav bar, right-rail buttons, footer |",
+      "line": 457
+    },
+    {
+      "heading": "Decorative Depth",
+      "level": 3,
+      "text": "Depth is also carried by **texture and photography**: the halftone dot-matrix on carbon slabs reads as a recessed speaker grille; hero fields use motion-blur, circuit-board patterns, and product renders with their own cast shadows to create literal pictorial depth; chamfered corners on the outer chrome suggest a machined faceplate edge. The left-rail rotated tabs appear to tuck *behind* the main chrome, a small but effective layered cue.",
+      "line": 468
+    },
+    {
+      "heading": "Shapes",
+      "level": 2,
+      "text": "",
+      "line": 471
+    },
+    {
+      "heading": "Border Radius Scale",
+      "level": 3,
+      "text": "| Token | Value | Use |\n|---|---|---|\n| `{rounded.none}` | 0px | The default — nav bar, footer, most chrome plates (sharp / chamfered, not rounded) |\n| `{rounded.xs}` | 2px | Utility buttons, form fields, badges |\n| `{rounded.sm}` | 4px | Small panels, featured tiles, list rows |\n| `{rounded.md}` | 6px | Content panels, hero panel |\n| `{rounded.lg}` | 10px | Outer section panels, mascot bubble |\n| `{rounded.full}` | 9999px | Logo racetrack pill, radio dots, circle-arrow badges |\n\nThe signature is **sharpness with rationed roundness**. The chrome is hard-edged and frequently *chamfered* (corners cut at 45° rather than curved) — this is the manufactured-faceplate look. Roundness appears only where it signals a physical control: the fully-pill logo, the round radio buttons, and the round Signal-Orange arrow badges. A modern reproduction should resist the urge to soften every corner; the tension between sharp plates and the few pill elements is the whole character.",
+      "line": 473
+    },
+    {
+      "heading": "Photography Geometry",
+      "level": 3,
+      "text": "Hero photography fills beveled rectangles at roughly 4:1 (banner) and 16:9 proportions, full-bleed within the panel. Featured-site and game thumbnails are near-4:3 fixed tiles (~95×60px) framed by a 1–2px `{colors.chrome-indigo}` edge with `{rounded.sm}` corners. The mascot is a transparent cutout overlapping the masthead, breaking the rectangular grid for personality.",
+      "line": 486
+    },
+    {
+      "heading": "Components",
+      "level": 2,
+      "text": "> No hover states are documented. Each spec below covers Default and (where extracted) Pressed/Active. Variants live as separate `components:` entries.",
+      "line": 489
+    },
+    {
+      "heading": "Navigation",
+      "level": 3,
+      "text": "**`nav-bar`** — Primary top navigation\n- `{colors.carbon}` slab with a faint halftone-dot texture, ~28px tall, carrying the `{components.logo-pill}` at left, the five `{colors.nav-gold}` section words in `{typography.nav-link}` uppercase, and the amber Code Bank / Game Finder utility chips at right. Sharp corners (`{rounded.none}`), `{spacing.sm}` padding.\n\n**`subnav-strip`** — Secondary navigation\n- A `{colors.canvas-soft}` pale-sky strip directly beneath the nav bar, carrying utility links (Parents, Customer Service, Corporate, Global, Privacy, Store, Contact) in `{typography.ui-label}` `{colors.ink}`, separated by thin dividers. Sharp, `{spacing.xs}` padding.\n\n**`left-rail-tab`** — Rotated section tabs\n- A thin vertical strip of `{colors.carbon}` tabs (Top Ten, Top Rentals, Player's Choice, ESRB Ratings) with vertically-rotated `{typography.ui-label}` text in `{colors.canvas-soft}`, clipped to the left chrome edge. Sharp corners, `{spacing.xs}` padding.",
+      "line": 493
+    },
+    {
+      "heading": "Brand & Masthead",
+      "level": 3,
+      "text": "**`logo-pill`** — Nintendo racetrack logo\n- The wordmark in `{colors.primary}` red set inside a white `{rounded.full}` racetrack pill, outlined. Sits at the left of the nav bar. `{spacing.xs}` padding.\n\n**`mascot-bubble`** — Mario welcome speech bubble\n- A white `{rounded.lg}` rounded-rectangle speech bubble with a tail, carrying \"Welcome to Nintendo.com!\" in `{typography.micro}` `{colors.carbon}`, paired with the Mario cutout in the masthead. `{spacing.sm}` padding.",
+      "line": 504
+    },
+    {
+      "heading": "Buttons",
+      "level": 3,
+      "text": "**`button-primary`** — Amber utility / Go chip\n- `{colors.amber}` fill, `{colors.carbon}` text in `{typography.ui-label}`, `{rounded.xs}` corners, `{spacing.md}` padding, with a beveled top highlight. The everyday tool button (Code Bank, Game Finder, Go).\n- Pressed state in **`button-primary-pressed`** — fill deepens to `{colors.nav-gold}`.\n\n**`button-submit`** — Forward / Submit\n- `{colors.signal}` orange fill, `{colors.on-primary}` white text in `{typography.ui-label}`, `{rounded.xs}`, `{spacing.lg}` padding. The \"commit\" action (poll Submit, Go on archives).\n\n**`button-secondary`** — Right-rail action button\n- `{colors.carbon}` near-black slab, `{colors.on-primary}` white text in `{typography.ui-label}`, sharp `{rounded.none}` corners, `{spacing.md}` padding, with a small leading icon. Used for Login / Subscribe / Newsletter / Help in the right rail.\n\n**`button-icon-arrow`** — Round forward arrow\n- A 22px `{colors.signal}` orange `{rounded.full}` disc with a white chevron — the primary \"go\" affordance on hero panels and section links.\n\n**`button-arrow-chip`** — Headline chevron chip\n- An 18px `{colors.signal}` orange `{rounded.xs}` chip with a white forward chevron, sitting at the right end of each `{components.news-row}` to advance to the article.",
+      "line": 512
+    },
+    {
+      "heading": "Inputs & Forms",
+      "level": 3,
+      "text": "**`search-field`** — Masthead search input\n- White `{colors.surface}` field, `{colors.ink}` text in `{typography.body}`, `{rounded.xs}` corners, 1px `{colors.hairline}` border, ~20px tall, paired with an \"All\" category dropdown and an amber Go chip.\n\n**`text-input`** — Generic text field\n- Same chassis as `search-field`: white fill, `{colors.ink}` text, `{rounded.xs}`, `{colors.hairline}` 1px border, `{spacing.xs}` padding. Used in the Login form (Username / Password / E-mail), news-archive keyword, and date fields.\n\n**`select-dropdown`** — Native select (\"Click to choose\")\n- A white `{colors.surface}` field with `{colors.ink}` text in `{typography.body}`, `{rounded.xs}` corners, and a hard 1px `{colors.carbon}` border (sharper than the inputs) closing on a beveled native dropdown-chevron button at the right edge. ~24px tall, `{spacing.xs}` padding. Used for the Register form's Month / Year pickers.\n\n**`field-label`** — Inline form label\n- A bold `{colors.ink}` label in `{typography.link}` (Arial Bold 12px) sitting left of its input (Username, Password, E-mail, Month, Year). `{rounded.none}`, `{spacing.xxs}` padding.\n\n**`radio-option`** — Poll radio button\n- A 12px white `{rounded.full}` radio dot with a `{colors.hairline}` ring, paired with `{typography.body}` option text. Used in the Player's Poll.\n\n**`form-panel`** — Form container (Login / Register)\n- A `{colors.platinum}` light-gray `{rounded.md}` panel holding a form, capped by a `{components.section-label-bar}` header (≡ LOG IN / ≡ REGISTER). `{spacing.lg}` interior. The Login page pairs two side by side.\n\n**`dotted-divider`** — Dotted hairline rule\n- A 1px dotted `{colors.muted-indigo}` separator rule used between form sub-sections (the \"Note:\" line, \"Forgot Your Password?\"). A recurring Y2K-chrome detail — dotted rather than solid.",
+      "line": 530
+    },
+    {
+      "heading": "Cards & Panels",
+      "level": 3,
+      "text": "**`hero-panel`** — Photographic hero plate\n- A `{rounded.md}` beveled rectangle filled with full-bleed product photography over a page-tinted field (`{colors.lavender}` / `{colors.systems-teal}` / `{colors.games-red}`), topped with an outlined `{typography.display}` wordmark and a `{components.button-icon-arrow}` call-to-action. `{spacing.lg}` interior.\n\n**`section-label-bar`** — Panel header\n- A `{colors.canvas}` header strip with a small grid/list glyph and an uppercase `{typography.ui-label}` title (\"Official News\", \"Featured Sites\", \"Player's Poll\"). Sharp corners, `{spacing.sm}` padding. Caps every content module.\n\n**`news-row`** — Headline list row\n- A `{colors.platinum}` `{rounded.sm}` row with a small category icon, a `{typography.link}` headline in `{colors.ink-soft}`, and a trailing `{components.button-arrow-chip}`. `{spacing.sm}` padding. Stacked into the Official News / Other Headlines lists.\n\n**`featured-tile`** — Featured-site thumbnail\n- A `{colors.carbon}`-framed `{rounded.sm}` tile (~95×60px) holding a screenshot thumbnail with a `{typography.micro}` URL caption (e.g. www.pokemon.com). Tight `{spacing.xxs}` padding, arranged in a 2×2 grid.\n\n**`poll-panel`** — Player's Poll module\n- A `{colors.periwinkle}` raised `{rounded.md}` panel posing a question, listing `{components.radio-option}` choices, and closing with a `{components.button-submit}`. `{spacing.md}` interior.\n\n**`info-box`** — \"What Is\" explainer card\n- A white `{colors.surface}` `{rounded.sm}` card with an amber header tab (\"What Is — Game Finder\") and `{typography.body}` explanatory copy. `{spacing.md}` padding. Sits in the right rail.\n\n**`promo-card`** — Side product promo\n- A `{colors.lavender}` `{rounded.sm}` card carrying an outlined product wordmark (e.g. Game Boy Advance) over a small product render, in the right rail. `{spacing.md}` padding.\n\n**`system-tile`** — Hardware grid tile (Systems page)\n- A `{colors.periwinkle}` `{rounded.sm}` tile holding a console render over a circuit-board backdrop with an outlined system name (Nintendo 64, Super Nintendo, Game Boy). `{spacing.sm}` padding, arranged in a 2×3 grid.\n\n**`link-row-card`** — Utility link card (Systems page)\n- A white `{rounded.sm}` card with an amber label tab (Technical Help, Store Locator, Online Store), a character icon, and a one-line `{typography.body}` description. `{spacing.sm}` padding.\n\n**`calendar-widget`** — Month calendar (News page)\n- A white `{rounded.sm}` grid calendar in `{typography.micro}`, with a `{colors.carbon}` caption header (e.g. \"June 01\"), highlighted event dates, and a month-select dropdown. `{spacing.sm}` padding.",
+      "line": 553
+    },
+    {
+      "heading": "Badges & Footer",
+      "level": 3,
+      "text": "**`esrb-badge`** — ESRB Privacy-Certified mark\n- A small `{colors.amber}` `{rounded.xs}` badge reading \"ESRB — Privacy Certified\" in `{typography.micro}` `{colors.carbon}`, pinned in the footer.\n\n**`esrb-rating-square`** — Game content-rating square\n- A 20px white `{rounded.xs}` square stamping the content-rating letter (E, T) in `{typography.ui-label}` `{colors.carbon}`, on each game card.\n\n**`footer-bar`** — Page footer\n- A `{colors.carbon}` chamfered slab with the \"©1997–2001 Nintendo…\" copyright in `{typography.micro}` `{colors.canvas-soft}`, the ESRB badge, and a privacy link. Sharp corners, `{spacing.lg}` padding.",
+      "line": 585
+    },
+    {
+      "heading": "Examples (illustrative)",
+      "level": 3,
+      "text": "> Kit-mirror demonstration surfaces. Each `ex-*` entry references brand-native primitives so downstream consumers (`/preview-design`, `/generate-kit`) re-skin the same 10 surfaces consistently.\n\n**`ex-pricing-tier`** — Default Pricing tier card. Re-uses feature-card chrome with brand canvas-soft surface.\n- Properties: `backgroundColor`, `textColor`, `borderColor`, `rounded`, `padding`\n\n**`ex-pricing-tier-featured`** — Featured/highlighted tier — polarity-flipped surface (dark fill + light text in light mode, light fill + dark text in dark mode).\n- Properties: `backgroundColor`, `textColor`, `rounded`, `padding`\n\n**`ex-product-selector`** — What's Included summary card — re-purposed for SaaS / B2B verticals (NOT a literal product gallery).\n- Properties: `backgroundColor`, `rounded`, `padding`\n\n**`ex-cart-drawer`** — Subscription summary — re-purposed for SaaS / B2B (line items per add-on, not literal cart).\n- Properties: `backgroundColor`, `rounded`, `padding`, `item-divider`\n\n**`ex-app-shell-row`** — Sidebar nav row inside the App Shell example. Active state uses brand primary as the indicator.\n- Properties: `backgroundColor`, `activeIndicator`, `rounded`, `padding`\n\n**`ex-data-table-cell`** — Default data-table th + td chrome. Header uses mono-caps eyebrow typography; body uses body-sm.\n- Properties: `headerBackground`, `headerTypography`, `bodyTypography`, `cellPadding`, `rowBorder`\n\n**`ex-auth-form-card`** — Sign-in / sign-up card. Re-uses feature-card chrome with text-input primitives inside.\n- Properties: `backgroundColor`, `rounded`, `padding`\n\n**`ex-modal-card`** — Modal dialog surface — same chrome as feature-card with elevated shadow.\n- Properties: `backgroundColor`, `rounded`, `padding`\n\n**`ex-empty-state-card`** — Empty-state illustration frame.\n- Properties: `backgroundColor`, `rounded`, `padding`, `captionTypography`\n\n**`ex-toast`** — Toast notification surface — feature-card shape + medium shadow.\n- Properties: `backgroundColor`, `rounded`, `padding`, `typography`",
+      "line": 596
+    },
+    {
+      "heading": "Do's and Don'ts",
+      "level": 2,
+      "text": "",
+      "line": 631
+    },
+    {
+      "heading": "Do",
+      "level": 3,
+      "text": "- Build every region as a **beveled plate**: a `{colors.canvas}` body with a brighter top edge and a `{colors.chrome-indigo}` shadow line beneath. The \"assembled machine\" feel depends on it.\n- Reserve warm color for **wayfinding only** — `{colors.nav-gold}` for nav words, `{colors.amber}` for utility/badges, `{colors.signal}` for forward/Submit. Cool chrome never carries action color.\n- Keep structural labels **uppercase Arial Bold with 0.5px tracking** (`{typography.ui-label}`) — it is the silkscreen-legend voice of the whole system.\n- Render hero wordmarks as **outlined + drop-shadowed `{typography.display}`** over full-bleed photographic fields tinted per page.\n- Use `{colors.carbon}` with halftone texture for the **command layer** (nav, right rail, footer) to separate \"system controls\" from \"content.\"\n- Let panels **butt together** with thin bevel seams; density is the intended texture.\n- Default corners to **sharp/chamfered** (`{rounded.none}`); spend roundness only on the logo pill, radio dots, and circle-arrow badges.",
+      "line": 633
+    },
+    {
+      "heading": "Don't",
+      "level": 3,
+      "text": "- Don't soften every corner — turning the sharp chrome into a uniformly rounded card system erases the manufactured-faceplate identity.\n- Don't introduce a **soft blurred drop-shadow** elevation language; depth here is hard bevels and pictorial photography, not Material elevation.\n- Don't let `{colors.signal}` and `{colors.amber}` bleed into decorative use — warm color must always mean \"act here.\"\n- Don't add accent colors outside the page-tint heroes (`{colors.systems-teal}`, `{colors.games-red}`); the steady-state chrome is strictly cool periwinkle + carbon.\n- Don't widen body copy or whitespace into an airy modern layout; the packed, fixed-canvas density is the brand.\n- Don't flatten the dual-nav structure (gold primary words over the pale secondary strip) into one bar — the layered command hierarchy is signature.\n- Don't render hero or system wordmarks as flat text; without the outline + shadow they lose the box-art reference entirely.",
+      "line": 642
+    }
+  ],
+  "tokens": [
+    {
+      "path": "colors.primary",
+      "sourcePath": "colors.primary",
+      "type": "color",
+      "value": "#e60012",
+      "status": "unverified",
+      "evidence": {
+        "line": 7,
+        "sourcePath": "colors.primary"
+      }
+    },
+    {
+      "path": "colors.signal",
+      "sourcePath": "colors.signal",
+      "type": "color",
+      "value": "#f68d1f",
+      "status": "unverified",
+      "evidence": {
+        "line": 8,
+        "sourcePath": "colors.signal"
+      }
+    },
+    {
+      "path": "colors.amber",
+      "sourcePath": "colors.amber",
+      "type": "color",
+      "value": "#ecab37",
+      "status": "unverified",
+      "evidence": {
+        "line": 9,
+        "sourcePath": "colors.amber"
+      }
+    },
+    {
+      "path": "colors.navgold",
+      "sourcePath": "colors.nav-gold",
+      "type": "color",
+      "value": "#e48600",
+      "status": "unverified",
+      "evidence": {
+        "line": 10,
+        "sourcePath": "colors.nav-gold"
+      }
+    },
+    {
+      "path": "colors.canvas",
+      "sourcePath": "colors.canvas",
+      "type": "color",
+      "value": "#7a8aba",
+      "status": "unverified",
+      "evidence": {
+        "line": 11,
+        "sourcePath": "colors.canvas"
+      }
+    },
+    {
+      "path": "colors.canvassoft",
+      "sourcePath": "colors.canvas-soft",
+      "type": "color",
+      "value": "#9fbee7",
+      "status": "unverified",
+      "evidence": {
+        "line": 12,
+        "sourcePath": "colors.canvas-soft"
+      }
+    },
+    {
+      "path": "colors.sky",
+      "sourcePath": "colors.sky",
+      "type": "color",
+      "value": "#9fbee7",
+      "status": "unverified",
+      "evidence": {
+        "line": 13,
+        "sourcePath": "colors.sky"
+      }
+    },
+    {
+      "path": "colors.lavender",
+      "sourcePath": "colors.lavender",
+      "type": "color",
+      "value": "#acace7",
+      "status": "unverified",
+      "evidence": {
+        "line": 14,
+        "sourcePath": "colors.lavender"
+      }
+    },
+    {
+      "path": "colors.ice",
+      "sourcePath": "colors.ice",
+      "type": "color",
+      "value": "#c0d5e6",
+      "status": "unverified",
+      "evidence": {
+        "line": 15,
+        "sourcePath": "colors.ice"
+      }
+    },
+    {
+      "path": "colors.periwinkle",
+      "sourcePath": "colors.periwinkle",
+      "type": "color",
+      "value": "#8ba1d4",
+      "status": "unverified",
+      "evidence": {
+        "line": 16,
+        "sourcePath": "colors.periwinkle"
+      }
+    },
+    {
+      "path": "colors.chromeindigo",
+      "sourcePath": "colors.chrome-indigo",
+      "type": "color",
+      "value": "#3d4f97",
+      "status": "unverified",
+      "evidence": {
+        "line": 17,
+        "sourcePath": "colors.chrome-indigo"
+      }
+    },
+    {
+      "path": "colors.mutedindigo",
+      "sourcePath": "colors.muted-indigo",
+      "type": "color",
+      "value": "#60619c",
+      "status": "unverified",
+      "evidence": {
+        "line": 18,
+        "sourcePath": "colors.muted-indigo"
+      }
+    },
+    {
+      "path": "colors.platinum",
+      "sourcePath": "colors.platinum",
+      "type": "color",
+      "value": "#dedede",
+      "status": "unverified",
+      "evidence": {
+        "line": 19,
+        "sourcePath": "colors.platinum"
+      }
+    },
+    {
+      "path": "colors.surface",
+      "sourcePath": "colors.surface",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 20,
+        "sourcePath": "colors.surface"
+      }
+    },
+    {
+      "path": "colors.carbon",
+      "sourcePath": "colors.carbon",
+      "type": "color",
+      "value": "#21242e",
+      "status": "unverified",
+      "evidence": {
+        "line": 21,
+        "sourcePath": "colors.carbon"
+      }
+    },
+    {
+      "path": "colors.hairline",
+      "sourcePath": "colors.hairline",
+      "type": "color",
+      "value": "#5a5f8c",
+      "status": "unverified",
+      "evidence": {
+        "line": 22,
+        "sourcePath": "colors.hairline"
+      }
+    },
+    {
+      "path": "colors.ink",
+      "sourcePath": "colors.ink",
+      "type": "color",
+      "value": "#21242e",
+      "status": "unverified",
+      "evidence": {
+        "line": 23,
+        "sourcePath": "colors.ink"
+      }
+    },
+    {
+      "path": "colors.inksoft",
+      "sourcePath": "colors.ink-soft",
+      "type": "color",
+      "value": "#3d4f97",
+      "status": "unverified",
+      "evidence": {
+        "line": 24,
+        "sourcePath": "colors.ink-soft"
+      }
+    },
+    {
+      "path": "colors.onprimary",
+      "sourcePath": "colors.on-primary",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 25,
+        "sourcePath": "colors.on-primary"
+      }
+    },
+    {
+      "path": "colors.systemsteal",
+      "sourcePath": "colors.systems-teal",
+      "type": "color",
+      "value": "#206479",
+      "status": "unverified",
+      "evidence": {
+        "line": 26,
+        "sourcePath": "colors.systems-teal"
+      }
+    },
+    {
+      "path": "colors.gamesred",
+      "sourcePath": "colors.games-red",
+      "type": "color",
+      "value": "#a7282b",
+      "status": "unverified",
+      "evidence": {
+        "line": 27,
+        "sourcePath": "colors.games-red"
+      }
+    },
+    {
+      "path": "colors.error",
+      "sourcePath": "colors.error",
+      "type": "color",
+      "value": "#e60012",
+      "status": "unverified",
+      "evidence": {
+        "line": 28,
+        "sourcePath": "colors.error"
+      }
+    },
+    {
+      "path": "typography.navlink.fontfamily",
+      "sourcePath": "typography.nav-link.fontFamily",
+      "type": "fontFamily",
+      "value": "Arial",
+      "status": "unverified",
+      "evidence": {
+        "line": 32,
+        "sourcePath": "typography.nav-link.fontFamily"
+      }
+    },
+    {
+      "path": "typography.navlink.fontsize",
+      "sourcePath": "typography.nav-link.fontSize",
+      "type": "dimension",
+      "value": "13px",
+      "status": "unverified",
+      "evidence": {
+        "line": 33,
+        "sourcePath": "typography.nav-link.fontSize"
+      }
+    },
+    {
+      "path": "typography.navlink.fontweight",
+      "sourcePath": "typography.nav-link.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 34,
+        "sourcePath": "typography.nav-link.fontWeight"
+      }
+    },
+    {
+      "path": "typography.navlink.lineheight",
+      "sourcePath": "typography.nav-link.lineHeight",
+      "type": "number",
+      "value": 1,
+      "status": "unverified",
+      "evidence": {
+        "line": 35,
+        "sourcePath": "typography.nav-link.lineHeight"
+      }
+    },
+    {
+      "path": "typography.navlink.letterspacing",
+      "sourcePath": "typography.nav-link.letterSpacing",
+      "type": "dimension",
+      "value": "0.5px",
+      "status": "unverified",
+      "evidence": {
+        "line": 36,
+        "sourcePath": "typography.nav-link.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.uilabel.fontfamily",
+      "sourcePath": "typography.ui-label.fontFamily",
+      "type": "fontFamily",
+      "value": "Arial",
+      "status": "unverified",
+      "evidence": {
+        "line": 38,
+        "sourcePath": "typography.ui-label.fontFamily"
+      }
+    },
+    {
+      "path": "typography.uilabel.fontsize",
+      "sourcePath": "typography.ui-label.fontSize",
+      "type": "dimension",
+      "value": "11px",
+      "status": "unverified",
+      "evidence": {
+        "line": 39,
+        "sourcePath": "typography.ui-label.fontSize"
+      }
+    },
+    {
+      "path": "typography.uilabel.fontweight",
+      "sourcePath": "typography.ui-label.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 40,
+        "sourcePath": "typography.ui-label.fontWeight"
+      }
+    },
+    {
+      "path": "typography.uilabel.lineheight",
+      "sourcePath": "typography.ui-label.lineHeight",
+      "type": "number",
+      "value": 1.1,
+      "status": "unverified",
+      "evidence": {
+        "line": 41,
+        "sourcePath": "typography.ui-label.lineHeight"
+      }
+    },
+    {
+      "path": "typography.uilabel.letterspacing",
+      "sourcePath": "typography.ui-label.letterSpacing",
+      "type": "dimension",
+      "value": "0.5px",
+      "status": "unverified",
+      "evidence": {
+        "line": 42,
+        "sourcePath": "typography.ui-label.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.display.fontfamily",
+      "sourcePath": "typography.display.fontFamily",
+      "type": "fontFamily",
+      "value": "Arial Black",
+      "status": "unverified",
+      "evidence": {
+        "line": 44,
+        "sourcePath": "typography.display.fontFamily"
+      }
+    },
+    {
+      "path": "typography.display.fontsize",
+      "sourcePath": "typography.display.fontSize",
+      "type": "dimension",
+      "value": "44px",
+      "status": "unverified",
+      "evidence": {
+        "line": 45,
+        "sourcePath": "typography.display.fontSize"
+      }
+    },
+    {
+      "path": "typography.display.fontweight",
+      "sourcePath": "typography.display.fontWeight",
+      "type": "number",
+      "value": 900,
+      "status": "unverified",
+      "evidence": {
+        "line": 46,
+        "sourcePath": "typography.display.fontWeight"
+      }
+    },
+    {
+      "path": "typography.display.lineheight",
+      "sourcePath": "typography.display.lineHeight",
+      "type": "number",
+      "value": 1,
+      "status": "unverified",
+      "evidence": {
+        "line": 47,
+        "sourcePath": "typography.display.lineHeight"
+      }
+    },
+    {
+      "path": "typography.display.letterspacing",
+      "sourcePath": "typography.display.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 48,
+        "sourcePath": "typography.display.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.herotagline.fontfamily",
+      "sourcePath": "typography.hero-tagline.fontFamily",
+      "type": "fontFamily",
+      "value": "Arial",
+      "status": "unverified",
+      "evidence": {
+        "line": 50,
+        "sourcePath": "typography.hero-tagline.fontFamily"
+      }
+    },
+    {
+      "path": "typography.herotagline.fontsize",
+      "sourcePath": "typography.hero-tagline.fontSize",
+      "type": "dimension",
+      "value": "15px",
+      "status": "unverified",
+      "evidence": {
+        "line": 51,
+        "sourcePath": "typography.hero-tagline.fontSize"
+      }
+    },
+    {
+      "path": "typography.herotagline.fontweight",
+      "sourcePath": "typography.hero-tagline.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 52,
+        "sourcePath": "typography.hero-tagline.fontWeight"
+      }
+    },
+    {
+      "path": "typography.herotagline.lineheight",
+      "sourcePath": "typography.hero-tagline.lineHeight",
+      "type": "number",
+      "value": 1.3,
+      "status": "unverified",
+      "evidence": {
+        "line": 53,
+        "sourcePath": "typography.hero-tagline.lineHeight"
+      }
+    },
+    {
+      "path": "typography.herotagline.letterspacing",
+      "sourcePath": "typography.hero-tagline.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 54,
+        "sourcePath": "typography.hero-tagline.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.body.fontfamily",
+      "sourcePath": "typography.body.fontFamily",
+      "type": "fontFamily",
+      "value": "Arial",
+      "status": "unverified",
+      "evidence": {
+        "line": 56,
+        "sourcePath": "typography.body.fontFamily"
+      }
+    },
+    {
+      "path": "typography.body.fontsize",
+      "sourcePath": "typography.body.fontSize",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 57,
+        "sourcePath": "typography.body.fontSize"
+      }
+    },
+    {
+      "path": "typography.body.fontweight",
+      "sourcePath": "typography.body.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 58,
+        "sourcePath": "typography.body.fontWeight"
+      }
+    },
+    {
+      "path": "typography.body.lineheight",
+      "sourcePath": "typography.body.lineHeight",
+      "type": "number",
+      "value": 1.4,
+      "status": "unverified",
+      "evidence": {
+        "line": 59,
+        "sourcePath": "typography.body.lineHeight"
+      }
+    },
+    {
+      "path": "typography.body.letterspacing",
+      "sourcePath": "typography.body.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 60,
+        "sourcePath": "typography.body.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.link.fontfamily",
+      "sourcePath": "typography.link.fontFamily",
+      "type": "fontFamily",
+      "value": "Arial",
+      "status": "unverified",
+      "evidence": {
+        "line": 62,
+        "sourcePath": "typography.link.fontFamily"
+      }
+    },
+    {
+      "path": "typography.link.fontsize",
+      "sourcePath": "typography.link.fontSize",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 63,
+        "sourcePath": "typography.link.fontSize"
+      }
+    },
+    {
+      "path": "typography.link.fontweight",
+      "sourcePath": "typography.link.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 64,
+        "sourcePath": "typography.link.fontWeight"
+      }
+    },
+    {
+      "path": "typography.link.lineheight",
+      "sourcePath": "typography.link.lineHeight",
+      "type": "number",
+      "value": 1.4,
+      "status": "unverified",
+      "evidence": {
+        "line": 65,
+        "sourcePath": "typography.link.lineHeight"
+      }
+    },
+    {
+      "path": "typography.link.letterspacing",
+      "sourcePath": "typography.link.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 66,
+        "sourcePath": "typography.link.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.micro.fontfamily",
+      "sourcePath": "typography.micro.fontFamily",
+      "type": "fontFamily",
+      "value": "Arial",
+      "status": "unverified",
+      "evidence": {
+        "line": 68,
+        "sourcePath": "typography.micro.fontFamily"
+      }
+    },
+    {
+      "path": "typography.micro.fontsize",
+      "sourcePath": "typography.micro.fontSize",
+      "type": "dimension",
+      "value": "10px",
+      "status": "unverified",
+      "evidence": {
+        "line": 69,
+        "sourcePath": "typography.micro.fontSize"
+      }
+    },
+    {
+      "path": "typography.micro.fontweight",
+      "sourcePath": "typography.micro.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 70,
+        "sourcePath": "typography.micro.fontWeight"
+      }
+    },
+    {
+      "path": "typography.micro.lineheight",
+      "sourcePath": "typography.micro.lineHeight",
+      "type": "number",
+      "value": 1.3,
+      "status": "unverified",
+      "evidence": {
+        "line": 71,
+        "sourcePath": "typography.micro.lineHeight"
+      }
+    },
+    {
+      "path": "typography.micro.letterspacing",
+      "sourcePath": "typography.micro.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 72,
+        "sourcePath": "typography.micro.letterSpacing"
+      }
+    },
+    {
+      "path": "rounded.none",
+      "sourcePath": "rounded.none",
+      "type": "dimension",
+      "value": "0px",
+      "status": "unverified",
+      "evidence": {
+        "line": 75,
+        "sourcePath": "rounded.none"
+      }
+    },
+    {
+      "path": "rounded.xs",
+      "sourcePath": "rounded.xs",
+      "type": "dimension",
+      "value": "2px",
+      "status": "unverified",
+      "evidence": {
+        "line": 76,
+        "sourcePath": "rounded.xs"
+      }
+    },
+    {
+      "path": "rounded.sm",
+      "sourcePath": "rounded.sm",
+      "type": "dimension",
+      "value": "4px",
+      "status": "unverified",
+      "evidence": {
+        "line": 77,
+        "sourcePath": "rounded.sm"
+      }
+    },
+    {
+      "path": "rounded.md",
+      "sourcePath": "rounded.md",
+      "type": "dimension",
+      "value": "6px",
+      "status": "unverified",
+      "evidence": {
+        "line": 78,
+        "sourcePath": "rounded.md"
+      }
+    },
+    {
+      "path": "rounded.lg",
+      "sourcePath": "rounded.lg",
+      "type": "dimension",
+      "value": "10px",
+      "status": "unverified",
+      "evidence": {
+        "line": 79,
+        "sourcePath": "rounded.lg"
+      }
+    },
+    {
+      "path": "rounded.full",
+      "sourcePath": "rounded.full",
+      "type": "dimension",
+      "value": "9999px",
+      "status": "unverified",
+      "evidence": {
+        "line": 80,
+        "sourcePath": "rounded.full"
+      }
+    },
+    {
+      "path": "spacing.xxs",
+      "sourcePath": "spacing.xxs",
+      "type": "dimension",
+      "value": "2px",
+      "status": "unverified",
+      "evidence": {
+        "line": 83,
+        "sourcePath": "spacing.xxs"
+      }
+    },
+    {
+      "path": "spacing.xs",
+      "sourcePath": "spacing.xs",
+      "type": "dimension",
+      "value": "4px",
+      "status": "unverified",
+      "evidence": {
+        "line": 84,
+        "sourcePath": "spacing.xs"
+      }
+    },
+    {
+      "path": "spacing.sm",
+      "sourcePath": "spacing.sm",
+      "type": "dimension",
+      "value": "8px",
+      "status": "unverified",
+      "evidence": {
+        "line": 85,
+        "sourcePath": "spacing.sm"
+      }
+    },
+    {
+      "path": "spacing.md",
+      "sourcePath": "spacing.md",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 86,
+        "sourcePath": "spacing.md"
+      }
+    },
+    {
+      "path": "spacing.lg",
+      "sourcePath": "spacing.lg",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 87,
+        "sourcePath": "spacing.lg"
+      }
+    },
+    {
+      "path": "spacing.xl",
+      "sourcePath": "spacing.xl",
+      "type": "dimension",
+      "value": "24px",
+      "status": "unverified",
+      "evidence": {
+        "line": 88,
+        "sourcePath": "spacing.xl"
+      }
+    },
+    {
+      "path": "spacing.xxl",
+      "sourcePath": "spacing.xxl",
+      "type": "dimension",
+      "value": "32px",
+      "status": "unverified",
+      "evidence": {
+        "line": 89,
+        "sourcePath": "spacing.xxl"
+      }
+    },
+    {
+      "path": "spacing.section",
+      "sourcePath": "spacing.section",
+      "type": "dimension",
+      "value": "48px",
+      "status": "unverified",
+      "evidence": {
+        "line": 90,
+        "sourcePath": "spacing.section"
+      }
+    }
+  ],
+  "rejectedTokens": [],
+  "homepage": {
+    "status": "missing",
+    "candidates": [],
+    "verification": {
+      "status": "missing",
+      "label": "Historical homepage not verified",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://www.nintendo.com/jp/index.html",
+          "title": "任天堂ホームページ",
+          "note": "Read current corporate homepage; requested https://www.nintendo.com; final URL https://www.nintendo.com/jp/index.html. This is not evidence of the 2001 design."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. No dated archive URL was supplied by the imported analysis. Historical source remains missing; current corporate website is contextual evidence only."
+    }
+  },
+  "completeness": {
+    "presentFields": [
+      "colors",
+      "typography",
+      "rounded",
+      "spacing",
+      "components"
+    ],
+    "missingFields": [],
+    "tokenRoles": "incomplete",
+    "note": "Missing fields are not reconstructed. Prose-only colors have no inferred semantic role."
+  },
+  "provenance": {
+    "status": "independent-analysis",
+    "sources": [
+      {
+        "title": "VoltAgent awesome-design-md independent analysis",
+        "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/nintendo-2001/DESIGN.md"
+      }
+    ],
+    "verification": "unverified-secondary-analysis"
+  },
+  "limitations": [
+    "Independent secondary analysis, not an official brand system; all reported values are unverified.",
+    "No brand assets, logos, font binaries or screenshots copied. Font names are documentary, not font licenses.",
+    "Safe CSS literals are extracted without claiming complete roles, state coverage or visual fidelity.",
+    "Markdown is retained as inert evidence, never executed or rendered as raw HTML."
+  ]
+}

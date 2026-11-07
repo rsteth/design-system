@@ -1,0 +1,383 @@
+{
+  "schemaVersion": 1,
+  "id": "reference-lovable",
+  "title": "Lovable",
+  "classification": "independent-unverified-analysis",
+  "source": {
+    "repository": "https://github.com/VoltAgent/awesome-design-md",
+    "fork": "https://github.com/rsteth/awesome-design-md-p",
+    "revision": "fcc70284932276d085f01ef9f83edde90b1258cb",
+    "path": "design-md/lovable/DESIGN.md",
+    "sha256": "92790895c833104072643929ba56ebbf42c8f88ffb7bff1926462545d0ace6c7",
+    "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/lovable/DESIGN.md"
+  },
+  "titleProvenance": {
+    "status": "inferred",
+    "basis": "Source directory label, normalized for navigation; original source name is retained without correction.",
+    "sourceValue": "lovable"
+  },
+  "analysis": {},
+  "normalizationRepairs": [],
+  "sections": [
+    {
+      "heading": "Design System Inspired by Lovable",
+      "level": 1,
+      "text": "",
+      "line": 1
+    },
+    {
+      "heading": "1. Visual Theme & Atmosphere",
+      "level": 2,
+      "text": "Lovable's website radiates warmth through restraint. The entire page sits on a creamy, parchment-toned background (`#f7f4ed`) that immediately separates it from the cold-white conventions of most developer tool sites. This isn't minimalism for minimalism's sake — it's a deliberate choice to feel approachable, almost analog, like a well-crafted notebook. The near-black text (`#1c1c1c`) against this warm cream creates a contrast ratio that's easy on the eyes while maintaining sharp readability.\n\nThe custom Camera Plain Variable typeface is the system's secret weapon. Unlike geometric sans-serifs that signal \"tech company,\" Camera Plain has a humanist warmth — slightly rounded terminals, organic curves, and a comfortable reading rhythm. At display sizes (48px–60px), weight 600 with aggressive negative letter-spacing (-0.9px to -1.5px) compresses headlines into confident, editorial statements. The font uses `ui-sans-serif, system-ui` as fallbacks, acknowledging that the custom typeface carries the brand personality.\n\nWhat makes Lovable's visual system distinctive is its opacity-driven depth model. Rather than using a traditional gray scale, the system modulates `#1c1c1c` at varying opacities (0.03, 0.04, 0.4, 0.82–0.83) to create a unified tonal range. Every shade of gray on the page is technically the same hue — just more or less transparent. This creates a visual coherence that's nearly impossible to achieve with arbitrary hex values. The border system follows suit: `1px solid #eceae4` for light divisions and `1px solid rgba(28, 28, 28, 0.4)` for stronger interactive boundaries.\n\n**Key Characteristics:**\n- Warm parchment background (`#f7f4ed`) — not white, not beige, a deliberate cream that feels hand-selected\n- Camera Plain Variable typeface with humanist warmth and editorial letter-spacing at display sizes\n- Opacity-driven color system: all grays derived from `#1c1c1c` at varying transparency levels\n- Inset shadow technique on buttons: `rgba(255,255,255,0.2) 0px 0.5px 0px 0px inset, rgba(0,0,0,0.2) 0px 0px 0px 0.5px inset`\n- Warm neutral border palette: `#eceae4` for subtle, `rgba(28,28,28,0.4)` for interactive elements\n- Full-pill radius (`9999px`) used extensively for action buttons and icon containers\n- Focus state uses `rgba(0,0,0,0.1) 0px 4px 12px` shadow for soft, warm emphasis\n- shadcn/ui + Radix UI component primitives with Tailwind CSS utility styling",
+      "line": 3
+    },
+    {
+      "heading": "2. Color Palette & Roles",
+      "level": 2,
+      "text": "",
+      "line": 21
+    },
+    {
+      "heading": "Primary",
+      "level": 3,
+      "text": "- **Cream** (`#f7f4ed`): Page background, card surfaces, button surfaces. The foundation — warm, paper-like, human.\n- **Charcoal** (`#1c1c1c`): Primary text, headings, dark button backgrounds. Not pure black — organic warmth.\n- **Off-White** (`#fcfbf8`): Button text on dark backgrounds, subtle highlight. Barely distinguishable from pure white.",
+      "line": 23
+    },
+    {
+      "heading": "Neutral Scale (Opacity-Based)",
+      "level": 3,
+      "text": "- **Charcoal 100%** (`#1c1c1c`): Primary text, headings, dark surfaces.\n- **Charcoal 83%** (`rgba(28,28,28,0.83)`): Strong secondary text.\n- **Charcoal 82%** (`rgba(28,28,28,0.82)`): Body copy.\n- **Muted Gray** (`#5f5f5d`): Secondary text, descriptions, captions.\n- **Charcoal 40%** (`rgba(28,28,28,0.4)`): Interactive borders, button outlines.\n- **Charcoal 4%** (`rgba(28,28,28,0.04)`): Subtle hover backgrounds, micro-tints.\n- **Charcoal 3%** (`rgba(28,28,28,0.03)`): Barely-visible overlays, background depth.",
+      "line": 28
+    },
+    {
+      "heading": "Surface & Border",
+      "level": 3,
+      "text": "- **Light Cream** (`#eceae4`): Card borders, dividers, image outlines. The warm divider line.\n- **Cream Surface** (`#f7f4ed`): Card backgrounds, section fills — same as page background for seamless integration.",
+      "line": 37
+    },
+    {
+      "heading": "Interactive",
+      "level": 3,
+      "text": "- **Ring Blue** (`#3b82f6` at 50% opacity): `--tw-ring-color`, Tailwind focus ring.\n- **Focus Shadow** (`rgba(0,0,0,0.1) 0px 4px 12px`): Focus and active state shadow — soft, warm, diffused.",
+      "line": 41
+    },
+    {
+      "heading": "Inset Shadows",
+      "level": 3,
+      "text": "- **Button Inset** (`rgba(255,255,255,0.2) 0px 0.5px 0px 0px inset, rgba(0,0,0,0.2) 0px 0px 0px 0.5px inset, rgba(0,0,0,0.05) 0px 1px 2px 0px`): The signature multi-layer inset shadow on dark buttons.",
+      "line": 45
+    },
+    {
+      "heading": "3. Typography Rules",
+      "level": 2,
+      "text": "",
+      "line": 48
+    },
+    {
+      "heading": "Font Family",
+      "level": 3,
+      "text": "- **Primary**: `Camera Plain Variable`, with fallbacks: `ui-sans-serif, system-ui`\n- **Weight range**: 400 (body/reading), 480 (special display), 600 (headings/emphasis)\n- **Feature**: Variable font with continuous weight axis — allows fine-tuned intermediary weights like 480.",
+      "line": 50
+    },
+    {
+      "heading": "Hierarchy",
+      "level": 3,
+      "text": "| Role | Font | Size | Weight | Line Height | Letter Spacing | Notes |\n|------|------|------|--------|-------------|----------------|-------|\n| Display Hero | Camera Plain Variable | 60px (3.75rem) | 600 | 1.00–1.10 (tight) | -1.5px | Maximum impact, editorial |\n| Display Alt | Camera Plain Variable | 60px (3.75rem) | 480 | 1.00 (tight) | normal | Lighter hero variant |\n| Section Heading | Camera Plain Variable | 48px (3.00rem) | 600 | 1.00 (tight) | -1.2px | Feature section titles |\n| Sub-heading | Camera Plain Variable | 36px (2.25rem) | 600 | 1.10 (tight) | -0.9px | Sub-sections |\n| Card Title | Camera Plain Variable | 20px (1.25rem) | 400 | 1.25 (tight) | normal | Card headings |\n| Body Large | Camera Plain Variable | 18px (1.13rem) | 400 | 1.38 | normal | Introductions |\n| Body | Camera Plain Variable | 16px (1.00rem) | 400 | 1.50 | normal | Standard reading text |\n| Button | Camera Plain Variable | 16px (1.00rem) | 400 | 1.50 | normal | Button labels |\n| Button Small | Camera Plain Variable | 14px (0.88rem) | 400 | 1.50 | normal | Compact buttons |\n| Link | Camera Plain Variable | 16px (1.00rem) | 400 | 1.50 | normal | Underline decoration |\n| Link Small | Camera Plain Variable | 14px (0.88rem) | 400 | 1.50 | normal | Footer links |\n| Caption | Camera Plain Variable | 14px (0.88rem) | 400 | 1.50 | normal | Metadata, small text |",
+      "line": 55
+    },
+    {
+      "heading": "Principles",
+      "level": 3,
+      "text": "- **Warm humanist voice**: Camera Plain Variable gives Lovable its approachable personality. The slightly rounded terminals and organic curves contrast with the sharp geometric sans-serifs used by most developer tools.\n- **Variable weight as design tool**: The font supports continuous weight values (e.g., 480), enabling nuanced hierarchy beyond standard weight stops. Weight 480 at 60px creates a display style that feels lighter than semibold but stronger than regular.\n- **Compression at scale**: Headlines use negative letter-spacing (-0.9px to -1.5px) for editorial impact. Body text stays at normal tracking for comfortable reading.\n- **Two weights, clear roles**: 400 (body/UI/links/buttons) and 600 (headings/emphasis). The narrow weight range creates hierarchy through size and spacing, not weight variation.",
+      "line": 72
+    },
+    {
+      "heading": "4. Component Stylings",
+      "level": 2,
+      "text": "",
+      "line": 78
+    },
+    {
+      "heading": "Buttons",
+      "level": 3,
+      "text": "**Primary Dark (Inset Shadow)**\n- Background: `#1c1c1c`\n- Text: `#fcfbf8`\n- Padding: 8px 16px\n- Radius: 6px\n- Shadow: `rgba(0,0,0,0) 0px 0px 0px 0px, rgba(0,0,0,0) 0px 0px 0px 0px, rgba(255,255,255,0.2) 0px 0.5px 0px 0px inset, rgba(0,0,0,0.2) 0px 0px 0px 0.5px inset, rgba(0,0,0,0.05) 0px 1px 2px 0px`\n- Active: opacity 0.8\n- Focus: `rgba(0,0,0,0.1) 0px 4px 12px` shadow\n- Use: Primary CTA (\"Start Building\", \"Get Started\")\n\n**Ghost / Outline**\n- Background: transparent\n- Text: `#1c1c1c`\n- Padding: 8px 16px\n- Radius: 6px\n- Border: `1px solid rgba(28,28,28,0.4)`\n- Active: opacity 0.8\n- Focus: `rgba(0,0,0,0.1) 0px 4px 12px` shadow\n- Use: Secondary actions (\"Log In\", \"Documentation\")\n\n**Cream Surface**\n- Background: `#f7f4ed`\n- Text: `#1c1c1c`\n- Padding: 8px 16px\n- Radius: 6px\n- No border\n- Active: opacity 0.8\n- Use: Tertiary actions, toolbar buttons\n\n**Pill / Icon Button**\n- Background: `#f7f4ed`\n- Text: `#1c1c1c`\n- Radius: 9999px (full pill)\n- Shadow: same inset pattern as primary dark\n- Opacity: 0.5 (default), 0.8 (active)\n- Use: Additional actions, plan mode toggle, voice recording",
+      "line": 80
+    },
+    {
+      "heading": "Cards & Containers",
+      "level": 3,
+      "text": "- Background: `#f7f4ed` (matches page)\n- Border: `1px solid #eceae4`\n- Radius: 12px (standard), 16px (featured), 8px (compact)\n- No box-shadow by default — borders define boundaries\n- Image cards: `1px solid #eceae4` with 12px radius",
+      "line": 119
+    },
+    {
+      "heading": "Inputs & Forms",
+      "level": 3,
+      "text": "- Background: `#f7f4ed`\n- Text: `#1c1c1c`\n- Border: `1px solid #eceae4`\n- Radius: 6px\n- Focus: ring blue (`rgba(59,130,246,0.5)`) outline\n- Placeholder: `#5f5f5d`",
+      "line": 126
+    },
+    {
+      "heading": "Navigation",
+      "level": 3,
+      "text": "- Clean horizontal nav on cream background, fixed\n- Logo/wordmark left-aligned (128.75 x 22px)\n- Links: Camera Plain 14–16px weight 400, `#1c1c1c` text\n- CTA: dark button with inset shadow, 6px radius\n- Mobile: hamburger menu with 6px radius button\n- Subtle border or no border on scroll",
+      "line": 134
+    },
+    {
+      "heading": "Links",
+      "level": 3,
+      "text": "- Color: `#1c1c1c`\n- Decoration: underline (default)\n- Hover: primary accent (via CSS variable `hsl(var(--primary))`)\n- No color change on hover — decoration carries the interactive signal",
+      "line": 142
+    },
+    {
+      "heading": "Image Treatment",
+      "level": 3,
+      "text": "- Showcase/portfolio images with `1px solid #eceae4` border\n- Consistent 12px border radius on all image containers\n- Soft gradient backgrounds behind hero content (warm multi-color wash)\n- Gallery-style presentation for template/project showcases",
+      "line": 148
+    },
+    {
+      "heading": "Distinctive Components",
+      "level": 3,
+      "text": "**AI Chat Input**\n- Large prompt input area with soft borders\n- Suggestion pills with `#eceae4` borders\n- Voice recording / plan mode toggle buttons as pill shapes (9999px)\n- Warm, inviting input area — not clinical\n\n**Template Gallery**\n- Card grid showing project templates\n- Each card: image + title, `1px solid #eceae4` border, 12px radius\n- Hover: subtle shadow or border darkening\n- Category labels as text links\n\n**Stats Bar**\n- Large metrics: \"0M+\" pattern in 48px+ weight 600\n- Descriptive text below in muted gray\n- Horizontal layout with generous spacing",
+      "line": 154
+    },
+    {
+      "heading": "5. Layout Principles",
+      "level": 2,
+      "text": "",
+      "line": 173
+    },
+    {
+      "heading": "Spacing System",
+      "level": 3,
+      "text": "- Base unit: 8px\n- Scale: 8px, 10px, 12px, 16px, 24px, 32px, 40px, 56px, 80px, 96px, 128px, 176px, 192px, 208px\n- The scale expands generously at the top end — sections use 80px–208px vertical spacing for editorial breathing room",
+      "line": 175
+    },
+    {
+      "heading": "Grid & Container",
+      "level": 3,
+      "text": "- Max content width: approximately 1200px (centered)\n- Hero: centered single-column with massive vertical padding (96px+)\n- Feature sections: 2–3 column grids\n- Full-width footer with multi-column link layout\n- Showcase sections with centered card grids",
+      "line": 180
+    },
+    {
+      "heading": "Whitespace Philosophy",
+      "level": 3,
+      "text": "- **Editorial generosity**: Lovable's spacing is lavish at section boundaries (80px–208px). The warm cream background makes these expanses feel cozy rather than empty.\n- **Content-driven rhythm**: Tight internal spacing within cards (12–24px) contrasts with wide section gaps, creating a reading rhythm that alternates between focused content and visual rest.\n- **Section separation**: Footer uses `1px solid #eceae4` border and 16px radius container. Sections defined by generous spacing rather than border lines.",
+      "line": 187
+    },
+    {
+      "heading": "Border Radius Scale",
+      "level": 3,
+      "text": "- Micro (4px): Small buttons, interactive elements\n- Standard (6px): Buttons, inputs, navigation menu\n- Comfortable (8px): Compact cards, divs\n- Card (12px): Standard cards, image containers, templates\n- Container (16px): Large containers, footer sections\n- Full Pill (9999px): Action pills, icon buttons, toggles",
+      "line": 192
+    },
+    {
+      "heading": "6. Depth & Elevation",
+      "level": 2,
+      "text": "| Level | Treatment | Use |\n|-------|-----------|-----|\n| Flat (Level 0) | No shadow, cream background | Page surface, most content |\n| Bordered (Level 1) | `1px solid #eceae4` | Cards, images, dividers |\n| Inset (Level 2) | `rgba(255,255,255,0.2) 0px 0.5px 0px inset, rgba(0,0,0,0.2) 0px 0px 0px 0.5px inset, rgba(0,0,0,0.05) 0px 1px 2px` | Dark buttons, primary actions |\n| Focus (Level 3) | `rgba(0,0,0,0.1) 0px 4px 12px` | Active/focus states |\n| Ring (Accessibility) | `rgba(59,130,246,0.5)` 2px ring | Keyboard focus on inputs |\n\n**Shadow Philosophy**: Lovable's depth system is intentionally shallow. Instead of floating cards with dramatic drop-shadows, the system relies on warm borders (`#eceae4`) against the cream surface to create gentle containment. The only notable shadow pattern is the inset shadow on dark buttons — a subtle multi-layer technique where a white highlight line sits at the top edge while a dark ring and soft drop handle the bottom. This creates a tactile, pressed-into-surface feeling rather than a hovering-above-surface feeling. The warm focus shadow (`rgba(0,0,0,0.1) 0px 4px 12px`) is deliberately diffused and large, creating a soft glow rather than a sharp outline.",
+      "line": 200
+    },
+    {
+      "heading": "Decorative Depth",
+      "level": 3,
+      "text": "- Hero: soft, warm multi-color gradient wash (pinks, oranges, blues) behind hero — atmospheric, barely visible\n- Footer: gradient background with warm tones transitioning to the bottom\n- No harsh section dividers — spacing and background warmth handle transitions",
+      "line": 212
+    },
+    {
+      "heading": "7. Do's and Don'ts",
+      "level": 2,
+      "text": "",
+      "line": 217
+    },
+    {
+      "heading": "Do",
+      "level": 3,
+      "text": "- Use the warm cream background (`#f7f4ed`) as the page foundation — it's the brand's signature warmth\n- Use Camera Plain Variable at display sizes with negative letter-spacing (-0.9px to -1.5px)\n- Derive all grays from `#1c1c1c` at varying opacity levels for tonal unity\n- Use the inset shadow technique on dark buttons for tactile depth\n- Use `#eceae4` borders instead of shadows for card containment\n- Keep the weight system narrow: 400 for body/UI, 600 for headings\n- Use full-pill radius (9999px) only for action pills and icon buttons\n- Apply opacity 0.8 on active states for responsive tactile feedback",
+      "line": 219
+    },
+    {
+      "heading": "Don't",
+      "level": 3,
+      "text": "- Don't use pure white (`#ffffff`) as a page background — the cream is intentional\n- Don't use heavy box-shadows for cards — borders are the containment mechanism\n- Don't introduce saturated accent colors — the palette is intentionally warm-neutral\n- Don't use weight 700 (bold) — 600 is the maximum weight in the system\n- Don't apply 9999px radius on rectangular buttons — pills are for icon/action toggles\n- Don't use sharp focus outlines — the system uses soft shadow-based focus indicators\n- Don't mix border styles — `#eceae4` for passive, `rgba(28,28,28,0.4)` for interactive\n- Don't increase letter-spacing on headings — Camera Plain is designed to run tight at scale",
+      "line": 229
+    },
+    {
+      "heading": "8. Responsive Behavior",
+      "level": 2,
+      "text": "",
+      "line": 239
+    },
+    {
+      "heading": "Breakpoints",
+      "level": 3,
+      "text": "| Name | Width | Key Changes |\n|------|-------|-------------|\n| Mobile Small | <600px | Tight single column, reduced padding |\n| Mobile | 600–640px | Standard mobile layout |\n| Tablet Small | 640–700px | 2-column grids begin |\n| Tablet | 700–768px | Card grids expand |\n| Desktop Small | 768–1024px | Multi-column layouts |\n| Desktop | 1024–1280px | Full feature layout |\n| Large Desktop | 1280–1536px | Maximum content width, generous margins |",
+      "line": 241
+    },
+    {
+      "heading": "Touch Targets",
+      "level": 3,
+      "text": "- Buttons: 8px 16px padding (comfortable touch)\n- Navigation: adequate spacing between items\n- Pill buttons: 9999px radius creates large tap-friendly targets\n- Menu toggle: 6px radius button with adequate sizing",
+      "line": 252
+    },
+    {
+      "heading": "Collapsing Strategy",
+      "level": 3,
+      "text": "- Hero: 60px → 48px → 36px headline scaling with proportional letter-spacing\n- Navigation: horizontal links → hamburger menu at 768px\n- Feature cards: 3-column → 2-column → single column stacked\n- Template gallery: grid → stacked vertical cards\n- Stats bar: horizontal → stacked vertical\n- Footer: multi-column → stacked single column\n- Section spacing: 128px+ → 64px on mobile",
+      "line": 258
+    },
+    {
+      "heading": "Image Behavior",
+      "level": 3,
+      "text": "- Template screenshots maintain `1px solid #eceae4` border at all sizes\n- 12px border radius preserved across breakpoints\n- Gallery images responsive with consistent aspect ratios\n- Hero gradient softens/simplifies on mobile",
+      "line": 267
+    },
+    {
+      "heading": "9. Agent Prompt Guide",
+      "level": 2,
+      "text": "",
+      "line": 273
+    },
+    {
+      "heading": "Quick Color Reference",
+      "level": 3,
+      "text": "- Primary CTA: Charcoal (`#1c1c1c`)\n- Background: Cream (`#f7f4ed`)\n- Heading text: Charcoal (`#1c1c1c`)\n- Body text: Muted Gray (`#5f5f5d`)\n- Border: `#eceae4` (passive), `rgba(28,28,28,0.4)` (interactive)\n- Focus: `rgba(0,0,0,0.1) 0px 4px 12px`\n- Button text on dark: `#fcfbf8`",
+      "line": 275
+    },
+    {
+      "heading": "Example Component Prompts",
+      "level": 3,
+      "text": "- \"Create a hero section on cream background (#f7f4ed). Headline at 60px Camera Plain Variable weight 600, line-height 1.10, letter-spacing -1.5px, color #1c1c1c. Subtitle at 18px weight 400, line-height 1.38, color #5f5f5d. Dark CTA button (#1c1c1c bg, #fcfbf8 text, 6px radius, 8px 16px padding, inset shadow) and ghost button (transparent bg, 1px solid rgba(28,28,28,0.4) border, 6px radius).\"\n- \"Design a card on cream (#f7f4ed) background. Border: 1px solid #eceae4. Radius 12px. No box-shadow. Title at 20px Camera Plain Variable weight 400, line-height 1.25, color #1c1c1c. Body at 14px weight 400, color #5f5f5d.\"\n- \"Build a template gallery: grid of cards with 12px radius, 1px solid #eceae4 border, cream backgrounds. Each card: image with 12px top radius, title below. Hover: subtle border darkening.\"\n- \"Create navigation: sticky on cream (#f7f4ed). Camera Plain 16px weight 400 for links, #1c1c1c text. Dark CTA button right-aligned with inset shadow. Mobile: hamburger menu with 6px radius.\"\n- \"Design a stats section: large numbers at 48px Camera Plain weight 600, letter-spacing -1.2px, #1c1c1c. Labels below at 16px weight 400, #5f5f5d. Horizontal layout with 32px gap.\"",
+      "line": 284
+    },
+    {
+      "heading": "Iteration Guide",
+      "level": 3,
+      "text": "1. Always use cream (`#f7f4ed`) as the base — never pure white\n2. Derive grays from `#1c1c1c` at opacity levels rather than using distinct hex values\n3. Use `#eceae4` borders for containment, not shadows\n4. Letter-spacing scales with size: -1.5px at 60px, -1.2px at 48px, -0.9px at 36px, normal at 16px\n5. Two weights: 400 (everything except headings) and 600 (headings)\n6. The inset shadow on dark buttons is the signature detail — don't skip it\n7. Camera Plain Variable at weight 480 is for special display moments only",
+      "line": 291
+    }
+  ],
+  "tokens": [
+    {
+      "path": "reported.color1",
+      "sourcePath": "line:5",
+      "type": "color",
+      "value": "#f7f4ed",
+      "status": "unverified",
+      "evidence": {
+        "line": 5,
+        "text": "Lovable's website radiates warmth through restraint. The entire page sits on a creamy, parchment-toned background (`#f7f4ed`) that immediately separates it from the cold-white conventions of most developer tool sites. This isn't minimalism for minimalism's sake — it's a deliberate choice to feel approachable, almost analog, like a well-crafted notebook. The near-black text (`#1c1c1c`) against this warm cream creates a contrast ratio that's easy on the eyes while maintaining sharp readability."
+      }
+    },
+    {
+      "path": "reported.color2",
+      "sourcePath": "line:5",
+      "type": "color",
+      "value": "#1c1c1c",
+      "status": "unverified",
+      "evidence": {
+        "line": 5,
+        "text": "Lovable's website radiates warmth through restraint. The entire page sits on a creamy, parchment-toned background (`#f7f4ed`) that immediately separates it from the cold-white conventions of most developer tool sites. This isn't minimalism for minimalism's sake — it's a deliberate choice to feel approachable, almost analog, like a well-crafted notebook. The near-black text (`#1c1c1c`) against this warm cream creates a contrast ratio that's easy on the eyes while maintaining sharp readability."
+      }
+    },
+    {
+      "path": "reported.color3",
+      "sourcePath": "line:9",
+      "type": "color",
+      "value": "#eceae4",
+      "status": "unverified",
+      "evidence": {
+        "line": 9,
+        "text": "What makes Lovable's visual system distinctive is its opacity-driven depth model. Rather than using a traditional gray scale, the system modulates `#1c1c1c` at varying opacities (0.03, 0.04, 0.4, 0.82–0.83) to create a unified tonal range. Every shade of gray on the page is technically the same hue — just more or less transparent. This creates a visual coherence that's nearly impossible to achieve with arbitrary hex values. The border system follows suit: `1px solid #eceae4` for light divisions and `1px solid rgba(28, 28, 28, 0.4)` for stronger interactive boundaries."
+      }
+    },
+    {
+      "path": "reported.color4",
+      "sourcePath": "line:26",
+      "type": "color",
+      "value": "#fcfbf8",
+      "status": "unverified",
+      "evidence": {
+        "line": 26,
+        "text": "- **Off-White** (`#fcfbf8`): Button text on dark backgrounds, subtle highlight. Barely distinguishable from pure white."
+      }
+    },
+    {
+      "path": "reported.color5",
+      "sourcePath": "line:32",
+      "type": "color",
+      "value": "#5f5f5d",
+      "status": "unverified",
+      "evidence": {
+        "line": 32,
+        "text": "- **Muted Gray** (`#5f5f5d`): Secondary text, descriptions, captions."
+      }
+    },
+    {
+      "path": "reported.color6",
+      "sourcePath": "line:42",
+      "type": "color",
+      "value": "#3b82f6",
+      "status": "unverified",
+      "evidence": {
+        "line": 42,
+        "text": "- **Ring Blue** (`#3b82f6` at 50% opacity): `--tw-ring-color`, Tailwind focus ring."
+      }
+    },
+    {
+      "path": "reported.color7",
+      "sourcePath": "line:230",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 230,
+        "text": "- Don't use pure white (`#ffffff`) as a page background — the cream is intentional"
+      }
+    }
+  ],
+  "rejectedTokens": [],
+  "homepage": {
+    "status": "missing",
+    "candidates": [],
+    "verification": {
+      "status": "verified",
+      "url": "https://lovable.dev/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://lovable.dev/",
+          "title": "App & Website Builder | Build Software in Minutes | Lovable",
+          "note": "Public homepage read requested https://lovable.dev; final URL https://lovable.dev/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    }
+  },
+  "completeness": {
+    "presentFields": [],
+    "missingFields": [
+      "colors",
+      "typography",
+      "rounded",
+      "spacing",
+      "components"
+    ],
+    "tokenRoles": "incomplete",
+    "note": "Missing fields are not reconstructed. Prose-only colors have no inferred semantic role."
+  },
+  "provenance": {
+    "status": "independent-analysis",
+    "sources": [
+      {
+        "title": "VoltAgent awesome-design-md independent analysis",
+        "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/lovable/DESIGN.md"
+      }
+    ],
+    "verification": "unverified-secondary-analysis"
+  },
+  "limitations": [
+    "Independent secondary analysis, not an official brand system; all reported values are unverified.",
+    "No brand assets, logos, font binaries or screenshots copied. Font names are documentary, not font licenses.",
+    "Safe CSS literals are extracted without claiming complete roles, state coverage or visual fidelity.",
+    "Markdown is retained as inert evidence, never executed or rendered as raw HTML."
+  ]
+}

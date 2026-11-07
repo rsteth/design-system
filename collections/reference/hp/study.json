@@ -1,0 +1,2025 @@
+{
+  "schemaVersion": 1,
+  "id": "reference-hp",
+  "title": "Hp",
+  "classification": "independent-unverified-analysis",
+  "source": {
+    "repository": "https://github.com/VoltAgent/awesome-design-md",
+    "fork": "https://github.com/rsteth/awesome-design-md-p",
+    "revision": "fcc70284932276d085f01ef9f83edde90b1258cb",
+    "path": "design-md/hp/DESIGN.md",
+    "sha256": "4c9a248046684bdde5311a0c9881814f50e2381c2b0f3c75b02a35fc64bc8bb8",
+    "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/hp/DESIGN.md"
+  },
+  "sourceName": "HP-design-analysis",
+  "titleProvenance": {
+    "status": "inferred",
+    "basis": "Source directory label, normalized for navigation; original source name is retained without correction.",
+    "sourceValue": "hp",
+    "originalName": "HP-design-analysis"
+  },
+  "description": "An inspired interpretation of HP's design language — a white-paper enterprise-consumer system anchored by HP Electric Blue (`#024ad8`) as the lone signal CTA, near-black ink (`#1a1a1a`) for headlines, geometric Forma-DJR sans throughout, and angular blue-chevron decorations that nod to the HP wordmark's slashes. Cards round at 8–16px, photos sit in soft 16px frames, and dark navy slabs anchor the customer-story and \"how can we help\" closing bands.",
+  "analysis": {
+    "version": "alpha",
+    "name": "HP-design-analysis",
+    "description": "An inspired interpretation of HP's design language — a white-paper enterprise-consumer system anchored by HP Electric Blue (`#024ad8`) as the lone signal CTA, near-black ink (`#1a1a1a`) for headlines, geometric Forma-DJR sans throughout, and angular blue-chevron decorations that nod to the HP wordmark's slashes. Cards round at 8–16px, photos sit in soft 16px frames, and dark navy slabs anchor the customer-story and \"how can we help\" closing bands.",
+    "colors": {
+      "primary": "#024ad8",
+      "primary-bright": "#296ef9",
+      "primary-deep": "#0e3191",
+      "primary-soft": "#c9e0fc",
+      "on-primary": "#ffffff",
+      "ink": "#1a1a1a",
+      "ink-deep": "#000000",
+      "ink-soft": "#292929",
+      "on-ink": "#ffffff",
+      "canvas": "#ffffff",
+      "paper": "#ffffff",
+      "cloud": "#f7f7f7",
+      "fog": "#e8e8e8",
+      "steel": "#c2c2c2",
+      "graphite": "#636363",
+      "charcoal": "#3d3d3d",
+      "hairline": "#e8e8e8",
+      "hairline-strong": "#c2c2c2",
+      "link": "#024ad8",
+      "link-pressed": "#0e3191",
+      "bloom-coral": "#ff5050",
+      "bloom-rose": "#f9d4d2",
+      "bloom-deep": "#b3262b",
+      "bloom-wine": "#5a1313",
+      "storm-mist": "#8ebdce",
+      "storm-sea": "#7fadbe",
+      "storm-deep": "#356373",
+      "error": "#b3262b"
+    },
+    "typography": {
+      "display-xxl": {
+        "fontFamily": "Forma DJR Micro",
+        "fontSize": "72px",
+        "fontWeight": 500,
+        "lineHeight": 1,
+        "letterSpacing": 0
+      },
+      "display-xl": {
+        "fontFamily": "Forma DJR Micro",
+        "fontSize": "56px",
+        "fontWeight": 500,
+        "lineHeight": 1,
+        "letterSpacing": 0
+      },
+      "display-lg": {
+        "fontFamily": "Forma DJR Micro",
+        "fontSize": "44px",
+        "fontWeight": 500,
+        "lineHeight": 1,
+        "letterSpacing": 0
+      },
+      "display-md": {
+        "fontFamily": "Forma DJR Micro",
+        "fontSize": "32px",
+        "fontWeight": 500,
+        "lineHeight": 1,
+        "letterSpacing": 0
+      },
+      "display-sm": {
+        "fontFamily": "Forma DJR Micro",
+        "fontSize": "24px",
+        "fontWeight": 500,
+        "lineHeight": 1.17,
+        "letterSpacing": 0
+      },
+      "display-xs": {
+        "fontFamily": "Forma DJR Micro",
+        "fontSize": "20px",
+        "fontWeight": 500,
+        "lineHeight": 1,
+        "letterSpacing": 0
+      },
+      "body-lg": {
+        "fontFamily": "Forma DJR Micro",
+        "fontSize": "18px",
+        "fontWeight": 400,
+        "lineHeight": 1.33,
+        "letterSpacing": 0
+      },
+      "body-md": {
+        "fontFamily": "Forma DJR Micro",
+        "fontSize": "16px",
+        "fontWeight": 400,
+        "lineHeight": 1.38,
+        "letterSpacing": 0
+      },
+      "body-emphasis": {
+        "fontFamily": "Forma DJR Micro",
+        "fontSize": "16px",
+        "fontWeight": 500,
+        "lineHeight": 1.38,
+        "letterSpacing": 0
+      },
+      "caption-md": {
+        "fontFamily": "Forma DJR Micro",
+        "fontSize": "14px",
+        "fontWeight": 400,
+        "lineHeight": 1.5,
+        "letterSpacing": 0
+      },
+      "caption-sm": {
+        "fontFamily": "Forma DJR Micro",
+        "fontSize": "12px",
+        "fontWeight": 400,
+        "lineHeight": 1.33,
+        "letterSpacing": 0
+      },
+      "caption-bold": {
+        "fontFamily": "Forma DJR Micro",
+        "fontSize": "14px",
+        "fontWeight": 700,
+        "lineHeight": 1.3,
+        "letterSpacing": 0
+      },
+      "link-md": {
+        "fontFamily": "Forma DJR Micro",
+        "fontSize": "16px",
+        "fontWeight": 500,
+        "lineHeight": 1.38,
+        "letterSpacing": 0
+      },
+      "button-md": {
+        "fontFamily": "Forma DJR Micro",
+        "fontSize": "14px",
+        "fontWeight": 600,
+        "lineHeight": 1.4,
+        "letterSpacing": "0.7px",
+        "textTransform": "uppercase"
+      },
+      "button-sm": {
+        "fontFamily": "Forma DJR Micro",
+        "fontSize": "12.6px",
+        "fontWeight": 700,
+        "lineHeight": 1,
+        "letterSpacing": "0.126px"
+      },
+      "price-md": {
+        "fontFamily": "Forma DJR Micro",
+        "fontSize": "24px",
+        "fontWeight": 500,
+        "lineHeight": 1.17,
+        "letterSpacing": 0
+      }
+    },
+    "rounded": {
+      "none": "0px",
+      "xs": "2px",
+      "sm": "3px",
+      "md": "4px",
+      "lg": "8px",
+      "xl": "16px",
+      "pill": "9999px",
+      "full": "9999px"
+    },
+    "spacing": {
+      "xxs": "4px",
+      "xs": "8px",
+      "sm": "12px",
+      "md": "16px",
+      "lg": "20px",
+      "xl": "24px",
+      "xxl": "32px",
+      "section": "80px"
+    },
+    "components": {
+      "button-primary": {
+        "backgroundColor": "{colors.primary}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.md}",
+        "padding": "12px 24px",
+        "height": "44px"
+      },
+      "button-primary-pressed": {
+        "backgroundColor": "{colors.primary-deep}",
+        "textColor": "{colors.on-primary}"
+      },
+      "button-primary-disabled": {
+        "backgroundColor": "{colors.steel}",
+        "textColor": "{colors.on-primary}"
+      },
+      "button-ink": {
+        "backgroundColor": "{colors.ink}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.md}",
+        "padding": "12px 24px",
+        "height": "44px"
+      },
+      "button-outline": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.primary}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.md}",
+        "padding": "12px 24px",
+        "height": "44px"
+      },
+      "button-outline-ink": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.md}",
+        "padding": "12px 24px",
+        "height": "44px"
+      },
+      "button-text-link": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.primary}",
+        "typography": "{typography.link-md}",
+        "padding": "4px 0"
+      },
+      "badge-pill-ink": {
+        "backgroundColor": "{colors.ink}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.lg}",
+        "padding": "6px 12px"
+      },
+      "badge-pill-outline": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.lg}",
+        "padding": "6px 12px"
+      },
+      "badge-sale-coral": {
+        "backgroundColor": "{colors.bloom-coral}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.caption-bold}",
+        "rounded": "{rounded.sm}",
+        "padding": "4px 8px"
+      },
+      "text-input": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.md}",
+        "padding": "12px 16px",
+        "height": "44px"
+      },
+      "text-input-focused": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}"
+      },
+      "text-input-search": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.md}",
+        "padding": "12px 16px",
+        "height": "40px"
+      },
+      "card-product": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "rounded": "{rounded.xl}",
+        "padding": "24px"
+      },
+      "card-product-feature": {
+        "backgroundColor": "{colors.cloud}",
+        "textColor": "{colors.ink}",
+        "rounded": "{rounded.xl}",
+        "padding": "32px"
+      },
+      "card-pricing-tier": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "rounded": "{rounded.xl}",
+        "padding": "24px"
+      },
+      "card-pricing-tier-featured": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "rounded": "{rounded.xl}",
+        "padding": "24px"
+      },
+      "card-customer-story": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "rounded": "{rounded.xl}",
+        "padding": "16px"
+      },
+      "card-article-tile": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "rounded": "{rounded.xl}",
+        "padding": "16px"
+      },
+      "card-category-icon": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-emphasis}",
+        "rounded": "{rounded.lg}",
+        "padding": "16px"
+      },
+      "promo-strip-dark": {
+        "backgroundColor": "{colors.ink}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.xl}",
+        "padding": "48px"
+      },
+      "hero-promo-card": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "rounded": "{rounded.xl}",
+        "padding": "32px"
+      },
+      "utility-strip": {
+        "backgroundColor": "{colors.ink}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.caption-md}",
+        "height": "36px",
+        "padding": "0 24px"
+      },
+      "nav-bar-top": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-md}",
+        "height": "64px",
+        "padding": "0 32px"
+      },
+      "nav-link": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-md}",
+        "padding": "8px 16px"
+      },
+      "category-tab": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-emphasis}",
+        "rounded": "{rounded.pill}",
+        "padding": "8px 20px"
+      },
+      "category-tab-active": {
+        "backgroundColor": "{colors.ink}",
+        "textColor": "{colors.on-primary}",
+        "rounded": "{rounded.pill}"
+      },
+      "faq-row": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-emphasis}",
+        "rounded": "{rounded.lg}",
+        "padding": "20px 24px"
+      },
+      "chevron-decoration": {
+        "backgroundColor": "{colors.primary}",
+        "textColor": "{colors.on-primary}",
+        "rounded": "{rounded.none}"
+      },
+      "help-band-dark": {
+        "backgroundColor": "{colors.ink}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.body-md}",
+        "padding": "64px 32px"
+      },
+      "footer-dark": {
+        "backgroundColor": "{colors.ink}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.body-md}",
+        "padding": "64px 32px"
+      }
+    }
+  },
+  "normalizationRepairs": [],
+  "sections": [
+    {
+      "heading": "Overview",
+      "level": 2,
+      "text": "HP reads like a long-running consumer-electronics catalog crossed with an enterprise-software product page. The whole system sits on **pure white** (`{colors.canvas}` — `#ffffff`) with thin gray panels (`{colors.cloud}` / `{colors.fog}`) for alternating section bands. There is one chromatic action color — **HP Electric Blue** (`{colors.primary}` — `#024ad8`) — and one ink color (`{colors.ink}` — `#1a1a1a`); together they do ninety percent of the work. Type is a single family across every surface: **Forma DJR Micro**, HP's bespoke geometric grotesque, set at weight 500 for headlines and 400 for body — clean, neutral, slightly mechanical.\n\nThe signature gesture is **angular blue chevrons** — sharp 0-radius slashes derived from the HP wordmark's pair of parallel slashes — that anchor the homepage hero, the laptop-page hero, and the printer pricing page. They appear on the left and right edges of the primary banner card, layered behind product photography. Outside those decorative slashes, every other surface is rectilinear with **soft 8–16px corners** on cards and a 4px corner on buttons.\n\nThe system breaks into three voice modes: a **white commercial body** for product browsing (cards, category icons, pricing tiers); a **dark navy slab** (`{colors.ink}` near-black) for testimonial bands, the closing \"How can we help?\" footer-prelude, and the page footer; and a **light fog band** (`{colors.cloud}` / `{colors.fog}`) for utility sections like comparison strips and FAQ accordions. The blue accent appears only on filled CTAs, link text, the chevron decorations, and the active price-stamp on a featured tier — never as a section background.\n\n**Key Characteristics:**\n- Pure white canvas (`{colors.canvas}`) with deep ink (`{colors.ink}`) running every body surface; light fog bands (`{colors.cloud}`, `{colors.fog}`) alternate for section rhythm\n- HP Electric Blue (`{colors.primary}`) is the lone CTA fill and link color; it appears at most twice per viewport\n- Bespoke Forma DJR Micro across every surface — display, body, button, caption — at weights 400 / 500 / 600 / 700\n- Cards round at `{rounded.xl}` (16px) for product/pricing tiles; buttons sit at `{rounded.md}` (4px) with capitalize labels\n- Geometric blue chevrons (`{colors.primary}` rectangles cut at 45°) frame hero photography and reinforce the wordmark\n- Dark-navy slabs (`{colors.ink}`) close every page rhythm — testimonial bands, \"how can we help?\" prelude, and the footer\n- Section rhythm: utility-strip → top nav → white body → cloud-band → ink slab → cloud-band → ink footer",
+      "line": 326
+    },
+    {
+      "heading": "Colors",
+      "level": 2,
+      "text": "> **No Interaction sub-section.** Hover colors are silently filtered. Allowed sub-sections: Brand & Accent, Surface, Text, Semantic.",
+      "line": 343
+    },
+    {
+      "heading": "Brand & Accent",
+      "level": 3,
+      "text": "- **HP Electric Blue** (`{colors.primary}` — `#024ad8`): the system's lone signal — primary CTA fill, link color, chevron-decoration fill, active sub-nav indicator. Reserved.\n- **Bright Blue** (`{colors.primary-bright}` — `#296ef9`): a slightly lighter variant used inside dark slabs (testimonial-card buttons, dark-band CTA links) where the deeper blue would muddy.\n- **Deep Navy** (`{colors.primary-deep}` — `#0e3191`): pressed state for the primary CTA and the visited-link color.\n- **Soft Blue** (`{colors.primary-soft}` — `#c9e0fc`): pale-blue surface used inside customer-story cards and selection chips.",
+      "line": 347
+    },
+    {
+      "heading": "Surface",
+      "level": 3,
+      "text": "- **Canvas** (`{colors.canvas}` — `#ffffff`): the universal page background. White, full opacity.\n- **Paper** (`{colors.paper}` — `#ffffff`): card surfaces — same white as canvas, with hairline borders or shadows providing the lift.\n- **Cloud** (`{colors.cloud}` — `#f7f7f7`): the lightest gray section band, used for alternating-row backgrounds and product-feature card groups.\n- **Fog** (`{colors.fog}` — `#e8e8e8`): a slightly darker gray surface band, used for FAQ outer panels and the \"Trending laptops\" header strip.\n- **Steel** (`{colors.steel}` — `#c2c2c2`): hairline border used on outlined elements with stronger emphasis (focus states, active filter).\n- **Bloom Coral / Bloom Rose** (`{colors.bloom-coral}` / `{colors.bloom-rose}` — `#ff5050`, `#f9d4d2`): the \"Get 25% off\" sale-tag chip + soft pink lifestyle accent on the sale hero.\n- **Storm Mist / Sea / Deep** (`{colors.storm-mist}`, `{colors.storm-sea}`, `{colors.storm-deep}` — `#8ebdce`, `#7fadbe`, `#356373`): the teal-storm tones reserved for the printer-plan illustration backdrop and supporting infographic accents.",
+      "line": 353
+    },
+    {
+      "heading": "Text",
+      "level": 3,
+      "text": "- **Ink** (`{colors.ink}` — `#1a1a1a`): the universal text color on white surfaces — headlines, body, button labels, navigation.\n- **Ink Deep** (`{colors.ink-deep}` — `#000000`): pure black used for the wordmark and 1px hairline strokes around badge outlines.\n- **Ink Soft** (`{colors.ink-soft}` — `#292929`): an alternate near-black used inside dark-navy slabs as a subtle textural shift.\n- **On Ink** (`{colors.on-ink}` — `#ffffff`): pure white used for headline and body text on every dark-navy slab.\n- **Charcoal** (`{colors.charcoal}` — `#3d3d3d`): muted body color on white surfaces — secondary descriptions, fine-print disclaimers.\n- **Graphite** (`{colors.graphite}` — `#636363`): smaller-print color, used for legal lines and timestamp metadata.",
+      "line": 362
+    },
+    {
+      "heading": "Semantic",
+      "level": 3,
+      "text": "- **Bloom Deep** (`{colors.bloom-deep}` — `#b3262b`) + **Bloom Wine** (`{colors.bloom-wine}` — `#5a1313`): error and discount-emphasis colors. The deep brick reads as \"sale\" or \"destructive\" depending on placement.\n- **Storm Deep** (`{colors.storm-deep}` — `#356373`): used as a neutral status accent (e.g., printer-plan tier \"Versatile\" tier color).",
+      "line": 370
+    },
+    {
+      "heading": "Typography",
+      "level": 2,
+      "text": "",
+      "line": 374
+    },
+    {
+      "heading": "Font Family",
+      "level": 3,
+      "text": "The voice is **single-family**: Forma DJR Micro (HP's bespoke geometric grotesque, fallback Arial) across every surface — display, body, button, caption. Forma DJR Micro is a wide, slightly rounded grotesque designed at small optical sizes to stay legible at UI-chrome scale. HP runs it at weight 400 for body, 500 for display headlines, 600/700 for emphasis and button labels.\n\nThe 16/14/12-px caption tier carries the catalog metadata — model numbers, spec rows, fine print — at weight 400 with a 1.4–1.5 line-height. Button labels lift to weight 600/700 with positive 0.5–1.1px letter-spacing and uppercase transform — the only place the system tracks letters.",
+      "line": 376
+    },
+    {
+      "heading": "Hierarchy",
+      "level": 3,
+      "text": "| Token | Size | Weight | Line Height | Letter Spacing | Use |\n|---|---|---|---|---|---|\n| `{typography.display-xxl}` | 72px | 500 | 1.0 | 0 | Hero headline (homepage, laptop hub) |\n| `{typography.display-xl}` | 56px | 500 | 1.0 | 0 | Section headlines on landing pages |\n| `{typography.display-lg}` | 44px | 500 | 1.0 | 0 | Sub-section headlines on shop pages |\n| `{typography.display-md}` | 32px | 500 | 1.0 | 0 | Promo strip headlines, FAQ section headers |\n| `{typography.display-sm}` | 24px | 500 | 1.17 | 0 | Card titles, pricing-tier names |\n| `{typography.display-xs}` | 20px | 500 | 1.0 | 0 | Inline list headers, accordion labels |\n| `{typography.body-lg}` | 18px | 400 | 1.33 | 0 | Lead paragraphs |\n| `{typography.body-md}` | 16px | 400 | 1.38 | 0 | Default body |\n| `{typography.body-emphasis}` | 16px | 500 | 1.38 | 0 | Bolded run-in copy |\n| `{typography.caption-md}` | 14px | 400 | 1.5 | 0 | Specs, metadata, captions |\n| `{typography.caption-bold}` | 14px | 700 | 1.3 | 0 | Sale tags, in-card highlights |\n| `{typography.caption-sm}` | 12px | 400 | 1.33 | 0 | Footnotes, legal lines |\n| `{typography.link-md}` | 16px | 500 | 1.38 | 0 | Inline link emphasis |\n| `{typography.button-md}` | 14px | 600 | 1.4 | 0.7px | Primary/secondary button labels (uppercase) |\n| `{typography.button-sm}` | 12.6px | 700 | 1.0 | 0.126px | Compact button labels in tight cells |\n| `{typography.price-md}` | 24px | 500 | 1.17 | 0 | Tier and product price stamps |",
+      "line": 382
+    },
+    {
+      "heading": "Principles",
+      "level": 3,
+      "text": "The typographic decision worth flagging: HP runs **weight 500 for every display size**, including the largest 72px hero headline. Most editorial systems jump to 600/700 at hero scale; HP doesn't. The result feels open and approachable rather than commanding — appropriate for a brand that sells across consumer, SMB, and enterprise audiences in the same catalog.\n\nForma DJR Micro's rounded-grotesque shapes do most of the warmth. There's no italic in the system except inside legal disclaimers; emphasis is carried by weight (500 → body-emphasis, 700 → caption-bold) instead.",
+      "line": 403
+    },
+    {
+      "heading": "Note on Font Substitutes",
+      "level": 3,
+      "text": "Forma DJR Micro is proprietary (Commercial Type / Mark Caneso). Closest open-source substitutes:\n- **Inter** at weights 400 / 500 / 600 / 700 — slightly narrower than Forma DJR Micro; bump font-size by ~3% to compensate\n- **Manrope** at weights 400 / 500 / 600 / 700 — closer in proportion, gentler curves; use directly with no metric adjustment\n- **Roboto** at weights 400 / 500 / 700 — flatter character; use as last-resort fallback\n\nWhen swapping, set body line-height to 1.4 and display line-height to 1.0 explicitly — the Forma DJR Micro line-height numbers are tight, and most substitutes default looser.",
+      "line": 409
+    },
+    {
+      "heading": "Layout",
+      "level": 2,
+      "text": "",
+      "line": 418
+    },
+    {
+      "heading": "Spacing System",
+      "level": 3,
+      "text": "- **Base unit**: 8px. Smaller half-step at 4px. The scale is gentle — most card padding lands at 16px or 24px; section gap at 80px.\n- **Tokens (front matter)**: `{spacing.xxs}` 4px · `{spacing.xs}` 8px · `{spacing.sm}` 12px · `{spacing.md}` 16px · `{spacing.lg}` 20px · `{spacing.xl}` 24px · `{spacing.xxl}` 32px · `{spacing.section}` 80px\n- **Section padding**: `{spacing.section}` (80px) vertical between major bands on desktop; collapses to ~48px on mobile.\n- **Card internal padding**: `{spacing.xl}` (24px) for product cards; `{spacing.xxl}` (32px) for promo strips and feature cards; `{spacing.md}` (16px) for compact article tiles.\n- **Gutter**: `{spacing.xl}` (24px) between grid columns at desktop; `{spacing.md}` (16px) on tablet/mobile.\n\nThe 80px section gap is the universal rhythm constant — it appears between every major homepage band, between the hero and the comparison table on the printer-plan page, and between feature rows on the laptop-shop page.",
+      "line": 420
+    },
+    {
+      "heading": "Grid & Container",
+      "level": 3,
+      "text": "- **Desktop max-width**: 1366px content container with full-bleed-on-canvas section backgrounds.\n- **Hero**: a single full-width photo card (homepage and laptop-hub hero) with the headline overlay positioned upper-left or upper-right.\n- **Product family grid**: 4 columns at >1200px, 3 at 1024–1199px, 2 at 768–1023px, 1 below 768px.\n- **Pricing tiers**: 4 columns at >1024px, 2x2 grid at 768–1023px, single-column accordion below 768px.\n- **Footer**: 5-column link grid at >1024px, collapsing to 2-column then accordion on mobile.",
+      "line": 430
+    },
+    {
+      "heading": "Whitespace Philosophy",
+      "level": 3,
+      "text": "Whitespace is **commercial-clean** — generous around hero photography, tight around catalog spec rows. Product cards leave breathing room above and below the photo (≥32px) so the laptop or printer reads as a hero shot rather than a thumbnail. The fine-print disclaimer regions (legal, footnote rows) tighten line-height to 1.3 and shrink type to 11–12px so the bulk of fine print stays compact.",
+      "line": 438
+    },
+    {
+      "heading": "Elevation & Depth",
+      "level": 2,
+      "text": "| Level | Treatment | Use |\n|---|---|---|\n| 0 — Flat | No border, no shadow. | Section bands (white, cloud, fog), full-bleed photo heroes |\n| 1 — Hairline | 1px solid `{colors.hairline}` (`#e8e8e8`) border, no shadow. | Outlined buttons, comparison-table cells, FAQ accordion outers |\n| 2 — Soft Lift | `0 2px 8px rgba(26, 26, 26, 0.08)`. | Product cards, pricing-tier columns, customer-story tiles |\n| 3 — Floating Modal | `0 8px 24px rgba(26, 26, 26, 0.12)`. | Add-to-cart drawer, mobile-nav sheet, image zoom modal |\n\nThe system is mostly flat — depth is communicated by **color contrast** (cloud-band vs. white card on the same band) rather than shadow elevation. The Soft Lift level is the workhorse for the catalog — every product tile and pricing column gets it; nothing else does. Modal-floating is rare and reserved for transient overlays.",
+      "line": 442
+    },
+    {
+      "heading": "Decorative Depth",
+      "level": 3,
+      "text": "The system's most distinctive depth gesture is the **HP blue chevron pair** — two angular `{colors.primary}` slashes (no radius, no shadow) that sit on the left and right of the homepage hero card and the laptop-shop hero. They're not decorative noise; they're a literal echo of the HP wordmark's two parallel slashes, scaled up to architectural size. Treat them as a brand artifact, not a generic geometric flourish.\n\nPhotography on the homepage and laptop-shop pages frames product imagery inside `{rounded.xl}` (16px) containers with a soft 1px hairline. Lifestyle photography (testimonials, \"How HP works for X\") sits full-bleed inside dark-navy slabs without rounding.",
+      "line": 453
+    },
+    {
+      "heading": "Shapes",
+      "level": 2,
+      "text": "",
+      "line": 459
+    },
+    {
+      "heading": "Border Radius Scale",
+      "level": 3,
+      "text": "| Token | Value | Use |\n|---|---|---|\n| `{rounded.none}` | 0px | Hero chevron decorations, full-bleed photo heroes, marquee strips |\n| `{rounded.xs}` | 2px | Secondary chip backgrounds, sale-tag pills |\n| `{rounded.sm}` | 3px | Default secondary CTA radius (small touch zones) |\n| `{rounded.md}` | 4px | Primary buttons, secondary buttons, text inputs |\n| `{rounded.lg}` | 8px | Badge pills, category-icon cards, FAQ row containers |\n| `{rounded.xl}` | 16px | Product cards, pricing tiers, customer-story tiles, photo frames |\n| `{rounded.pill}` | 9999px | Category sub-nav tabs, search-pill input, filter chips |\n\nThe system maintains a clear two-tier philosophy: **buttons stay sharp** (4px, almost rectilinear) while **cards and photo frames stay soft** (16px). This split is the visual signature — sharp interactive elements against softer container surfaces.",
+      "line": 461
+    },
+    {
+      "heading": "Photography Geometry",
+      "level": 3,
+      "text": "Hero photography sits in `{rounded.xl}` (16px) frames with no border. Product family thumbnails inside the laptop-grid are 1:1 (square) on a `{colors.canvas}` background, padded so the laptop is shown at ~70% of the frame. Customer-story photography uses 16:9 inside the same `{rounded.xl}` frame. There are no full-bleed circular avatars; testimonial avatars are 4px-rounded squares.",
+      "line": 475
+    },
+    {
+      "heading": "Components",
+      "level": 2,
+      "text": "> **No hover states documented.** Every component spec below documents only Default and Active/Pressed states. Variants live as separate front-matter entries.",
+      "line": 479
+    },
+    {
+      "heading": "Buttons",
+      "level": 3,
+      "text": "**`button-primary`** — the lone HP Electric Blue CTA\n- Background `{colors.primary}`, text `{colors.on-primary}`, type `{typography.button-md}` (uppercase, 0.7px tracking), padding `{spacing.sm} {spacing.xl}` (12 × 24), height 44px, rounded `{rounded.md}`\n- Pressed state `button-primary-pressed` — background `{colors.primary-deep}`, same text\n- Disabled state `button-primary-disabled` — background `{colors.steel}`, white text\n- Used for: \"Buy now\", \"Shop now\", \"Get a printer\", primary form submit\n\n**`button-ink`** — black filled CTA\n- Background `{colors.ink}`, text `{colors.on-primary}`, padding `{spacing.sm} {spacing.xl}`, height 44px, rounded `{rounded.md}`, type `{typography.button-md}`\n- Used for: \"Buy now\" on dark photo overlays, secondary primary actions where the blue would clash with imagery\n\n**`button-outline`** — blue-text outlined CTA\n- Background `{colors.canvas}`, text `{colors.primary}`, 1px `{colors.primary}` border, padding `{spacing.sm} {spacing.xl}`, height 44px, rounded `{rounded.md}`\n- Used for: \"Compare\", \"Customize\", \"Learn more\" — secondary actions on white surfaces\n\n**`button-outline-ink`** — black-text outlined CTA\n- Background `{colors.canvas}`, text `{colors.ink}`, 1px `{colors.ink}` border, padding `{spacing.sm} {spacing.xl}`, height 44px, rounded `{rounded.md}`\n- Used for: \"View\" buttons inside product family card grids — neutral against the blue primary\n\n**`button-text-link`** — inline blue link with underline\n- Background `{colors.canvas}`, text `{colors.primary}`, type `{typography.link-md}`, padding `{spacing.xxs} 0`\n- Used for: \"See details\", \"Read more\" inside cards and disclaimer rows",
+      "line": 483
+    },
+    {
+      "heading": "Cards & Containers",
+      "level": 3,
+      "text": "**`card-product`** — the workhorse product tile\n- Background `{colors.canvas}`, rounded `{rounded.xl}` (16px), padding `{spacing.xl}` (24px), Soft Lift shadow\n- Layout: hero photo (1:1 ratio) on top, title in `{typography.display-xs}`, spec rows in `{typography.caption-md}`, price in `{typography.price-md}`, CTA pinned to bottom\n- Used for: laptop catalog cards, desktop catalog cards\n\n**`card-product-feature`** — full-row feature card with photo + copy\n- Background `{colors.cloud}`, rounded `{rounded.xl}`, padding `{spacing.xxl}` (32px)\n- Layout: photo on the left (50% width), copy on the right with section eyebrow + title + body + CTA pair\n- Used for: \"Trending laptops\" feature rows, \"Shop these must haves\"\n\n**`card-pricing-tier`** + **`card-pricing-tier-featured`**\n- Background `{colors.canvas}`, rounded `{rounded.xl}`, padding `{spacing.xl}`, Soft Lift shadow\n- Tier name in `{typography.display-sm}`, monthly price in `{typography.display-md}` with `{typography.caption-md}` cadence, page count caption, full feature list, primary CTA\n- Featured tier carries `{colors.primary}` text accent on the price-stamp + a `{colors.primary}` thin top border instead of a colored card background — never inverted to dark\n\n**`card-customer-story`** — the three-up testimonial tile\n- Background `{colors.canvas}`, rounded `{rounded.xl}`, padding `{spacing.md}` (16px), Soft Lift shadow\n- 16:9 photo at top in `{rounded.xl}` frame, quote excerpt in `{typography.body-md}`, attribution row at the bottom\n- Used in the \"See what our customers say\" homepage section\n\n**`card-article-tile`** — the four-up \"Latest from HP\" tile\n- Background `{colors.canvas}`, rounded `{rounded.xl}`, padding `{spacing.md}`, Soft Lift shadow\n- 16:9 thumbnail at top, date eyebrow in `{typography.caption-sm}`, title in `{typography.body-emphasis}`, \"Read more\" link\n\n**`card-category-icon`** — the small icon-and-label card in the homepage \"Our Products\" row\n- Background `{colors.canvas}`, rounded `{rounded.lg}` (8px), padding `{spacing.md}`\n- 48px icon at top, label in `{typography.body-emphasis}` below\n- Used for: Laptops, Desktops, Printers, Computer Tools, Accessories, Enterprise Solutions\n\n**`hero-promo-card`** — the homepage hero card with chevron decorations\n- Background `{colors.canvas}`, rounded `{rounded.xl}`, padding `{spacing.xxl}` (32px)\n- Photography occupies left half; copy block (eyebrow + headline + price stamp + CTA pair) occupies right half\n- Flanked by `chevron-decoration` blue slashes outside the card's bounding box on left and right edges\n\n**`promo-strip-dark`** — the inline dark navy promo block\n- Background `{colors.ink}`, text `{colors.on-ink}`, rounded `{rounded.xl}`, padding `{spacing.xxl} 48px`\n- Used for: \"When did work start getting in the way of work?\" mid-page promo, the SMB testimonial slab",
+      "line": 507
+    },
+    {
+      "heading": "Inputs & Forms",
+      "level": 3,
+      "text": "**`text-input`** + **`text-input-focused`**\n- Background `{colors.canvas}`, text `{colors.ink}`, rounded `{rounded.md}`, padding `{spacing.sm} {spacing.md}`, height 44px\n- 1px `{colors.steel}` border in default; gains 1px `{colors.ink}` border on focus (no halo)\n\n**`text-input-search`** — pill search in the top nav\n- Background `{colors.canvas}`, rounded `{rounded.md}`, padding `{spacing.sm} {spacing.md}`, height 40px, 1px `{colors.steel}` border, magnifying-glass icon at right\n\n**`badge-pill-ink`** — filled tag pill\n- Background `{colors.ink}`, text `{colors.on-primary}`, rounded `{rounded.lg}`, padding 6px 12px, type `{typography.body-md}`\n- Used inline next to product titles to mark \"New\" or featured indicators\n\n**`badge-pill-outline`** — outlined tag pill\n- Background `{colors.canvas}`, text `{colors.ink}`, 1px `{colors.ink}` border, rounded `{rounded.lg}`, padding 6px 12px\n\n**`badge-sale-coral`** — the sale price-stamp\n- Background `{colors.bloom-coral}`, text `{colors.on-primary}`, rounded `{rounded.sm}`, padding `{spacing.xxs} {spacing.xs}`, type `{typography.caption-bold}`\n- Used for: \"Save $200\", \"25% off\" overlay tags on hero promo cards",
+      "line": 547
+    },
+    {
+      "heading": "Navigation",
+      "level": 3,
+      "text": "**`utility-strip`** — the top-of-page utility bar\n- Background `{colors.ink}`, text `{colors.on-primary}`, height 36px, padding 0 {spacing.xl}, type `{typography.caption-md}`\n- Holds: country/locale picker, \"For Business / For Home\" toggle, \"Sign in\" link, cart link\n\n**`nav-bar-top`** — desktop top nav (sits below utility strip)\n- Background `{colors.canvas}`, height 64px, padding 0 32px\n- Layout: HP wordmark logo flush left → middle category list (Laptops / Desktops / Printers / Accessories / Solutions / Support) → right slot with Search field, Sign-in link, Cart icon\n- 1px `{colors.hairline}` bottom border separates nav from page\n\n**`nav-link`**\n- Background `{colors.canvas}`, text `{colors.ink}`, type `{typography.body-md}`, padding `{spacing.xs} {spacing.md}`\n- Active page draws a 2px `{colors.primary}` underline below the text baseline\n\n**Top Nav (Mobile)**\n- Same height, hamburger icon replaces the middle category list, Search and Cart stay visible\n- Drawer expands as a full-canvas sheet with `{typography.body-lg}` link list and a sticky Sign-in CTA at bottom\n\n**`category-tab`** + **`category-tab-active`** — the pill sub-nav\n- Default: background `{colors.canvas}`, text `{colors.ink}`, type `{typography.body-emphasis}`, rounded `{rounded.pill}`, padding `{spacing.xs} {spacing.lg}`\n- Active: background `{colors.ink}`, text `{colors.on-primary}`, same rounding\n- Used on the laptop-shop page for \"All / Trending / On Sale\" filtering, and on the homepage \"How can we help?\" closing band",
+      "line": 567
+    },
+    {
+      "heading": "Signature Components",
+      "level": 3,
+      "text": "**`chevron-decoration`** — the geometric blue slash motif\n- Background `{colors.primary}`, rounded `{rounded.none}`, no shadow\n- Renders as a sharp parallelogram cut at ~60° angle, sized to the height of the hero card it flanks\n- Reserved for hero bands and full-page banners — never decorative noise inside cards\n\n**`faq-row`** — the accordion row on the printer-plan FAQ\n- Background `{colors.canvas}`, rounded `{rounded.lg}`, padding `{spacing.lg} {spacing.xl}`, type `{typography.body-emphasis}`\n- 1px `{colors.hairline}` divider between rows; chevron-down icon on the right collapsed, chevron-up when expanded\n- Body answer renders inside the same row container in `{typography.body-md}` after expansion\n\n**`help-band-dark`** — the closing \"How can we help?\" prelude band\n- Background `{colors.ink}`, text `{colors.on-primary}`, padding 64px {spacing.xl}\n- Layout: large lifestyle photograph as the band background (low-opacity) with chip-style category tabs centered: Browse Topics / Live Chat / Contact / Diagnose / Order Status\n\n**`footer-dark`**\n- Background `{colors.ink}`, text `{colors.on-primary}`, type `{typography.body-md}`, padding 64px {spacing.xl}\n- 5-column link grid (Company / Shop / Support / Resources / Connect) with `{typography.body-emphasis}` headers and `{typography.caption-md}` link rows\n- Bottom strip carries social icons, language picker, and legal lines in `{typography.caption-sm}` muted to `{colors.steel}`",
+      "line": 591
+    },
+    {
+      "heading": "Do's and Don'ts",
+      "level": 2,
+      "text": "",
+      "line": 612
+    },
+    {
+      "heading": "Do",
+      "level": 3,
+      "text": "- Reserve `{colors.primary}` for the primary CTA, link color, and `chevron-decoration` motif — at most twice per viewport\n- Set every headline in Forma DJR Micro at weight 500 with line-height 1.0 — resist the urge to bump weight at hero scale\n- Use `{rounded.xl}` (16px) for cards and photo frames; `{rounded.md}` (4px) for buttons and inputs — keep the two-tier split sharp\n- Pair white `{colors.canvas}` body bands with `{colors.cloud}` (`#f7f7f7`) alternating bands; let the gray do the breathing\n- Close every page rhythm with a dark-navy `{colors.ink}` slab — the \"How can we help?\" prelude + footer\n- Set button labels in uppercase with `{typography.button-md}` (0.7px tracking) — the only place the system tracks letters\n- Use Soft Lift shadow exclusively for product cards and pricing tiers — leave section bands flat\n- Frame product photography inside `{rounded.xl}` containers; never use full-bleed circular masks",
+      "line": 614
+    },
+    {
+      "heading": "Don't",
+      "level": 3,
+      "text": "- Don't introduce secondary saturated colors outside `{colors.primary}` family + the `bloom-coral` sale-tag and `storm` printer-plan accents\n- Don't apply heavy material shadows — depth is via color contrast (cloud vs. white) and Soft Lift only\n- Don't round buttons above `{rounded.md}` (4px); a soft 8px+ button reads as a different brand\n- Don't run Forma DJR Micro below 12px — small caption at 11px is the floor\n- Don't use the chevron decoration as inline noise; it is a hero-only architectural element tied to the wordmark\n- Don't drop ink text opacity to create hierarchy — switch surface or shift to `{colors.charcoal}` / `{colors.graphite}` instead\n- Don't replace the HP wordmark with a generic sans lockup; the wordmark is a custom mark with its own ratio",
+      "line": 624
+    },
+    {
+      "heading": "Responsive Behavior",
+      "level": 2,
+      "text": "",
+      "line": 633
+    },
+    {
+      "heading": "Breakpoints",
+      "level": 3,
+      "text": "| Name | Width | Key Changes |\n|---|---|---|\n| Mobile | < 480px | Single-column stack; hamburger nav; section padding drops to ~48px; hero serif scales to ~36px |\n| Mobile-Large | 480–767px | Same column count; hero scales to ~44px; pricing tiers stack vertically |\n| Tablet | 768–1023px | 2-column product grid; pricing 2x2; nav still full text labels |\n| Desktop | 1024–1279px | 3-column product grid; 4-column pricing; full nav |\n| Desktop-Large | ≥ 1280px | 4-column product grid; 1366px content max-width with full-bleed bands |",
+      "line": 635
+    },
+    {
+      "heading": "Touch Targets",
+      "level": 3,
+      "text": "Every interactive element clears 44×44px on mobile. `button-primary` at 44px height + 24px horizontal padding meets WCAG-AAA touch target. `category-tab` at 8px 20px padding bumps to 12px 24px on touch screens. Nav-link tap areas extend invisibly beyond the text run to the full 44px row height. Sticky cart/sign-in icons in the top nav use 44×44 invisible hit boxes around their visible 24×24 glyph.",
+      "line": 645
+    },
+    {
+      "heading": "Collapsing Strategy",
+      "level": 3,
+      "text": "- **Utility strip**: stays visible on every breakpoint; dropdowns collapse into a single \"Account\" icon below 768px\n- **Top nav**: middle category list collapses into a hamburger drawer below 1024px; the right-side Search + Sign-in + Cart stay visible\n- **Hero**: stays single-column at every breakpoint; chevron decorations shrink to ~60% size on tablet and disappear entirely on mobile\n- **Product family grid**: 4 → 3 → 2 → 1 column as breakpoints shrink; cards keep `{rounded.xl}` corners at every size\n- **Pricing comparison table**: 4-column grid on desktop collapses to 2x2 on tablet, then stacks into individual accordion-style cards on mobile\n- **Footer**: 5-column link grid → 2-column tablet → single-column accordion on mobile; HP wordmark stays flush left",
+      "line": 649
+    },
+    {
+      "heading": "Image Behavior",
+      "level": 3,
+      "text": "Hero photography uses `{rounded.xl}` containers at every breakpoint. The chevron decorations vanish on mobile; the underlying photo card centers in the viewport. Lifestyle photography in the testimonial and \"how-can-we-help\" bands maintains 16:9 ratio with horizontal cropping rather than letterboxing on mobile. There are no art-direction crop swaps between desktop and mobile — the same image is used at every size.",
+      "line": 658
+    },
+    {
+      "heading": "Iteration Guide",
+      "level": 2,
+      "text": "1. Focus on ONE component at a time; resist refactoring an entire section in one pass\n2. Reference component names and tokens directly (`{colors.primary}`, `{typography.display-xxl}`, `{rounded.xl}`, `card-product`) — do not paraphrase to hex/px in prose\n3. Run `npx @google/design.md lint DESIGN.md` after edits — `broken-ref`, `contrast-ratio`, and `orphaned-tokens` warnings flag issues automatically\n4. Add new variants as separate component entries (`-pressed`, `-disabled`, `-focused`); never bury state inside prose\n5. Default body to `{typography.body-md}`; reach for `{typography.body-emphasis}` for run-in bolds; keep display sizes for true heading roles\n6. Keep `{colors.primary}` scarce — at most two flame elements per viewport (one CTA + one chevron decoration). Three flame items in one viewport is over-saturation\n7. When introducing a new section band, choose from `{colors.canvas}` / `{colors.cloud}` / `{colors.fog}` / `{colors.ink}` — six pre-defined surface modes is the entire surface vocabulary",
+      "line": 662
+    }
+  ],
+  "tokens": [
+    {
+      "path": "colors.primary",
+      "sourcePath": "colors.primary",
+      "type": "color",
+      "value": "#024ad8",
+      "status": "unverified",
+      "evidence": {
+        "line": 7,
+        "sourcePath": "colors.primary"
+      }
+    },
+    {
+      "path": "colors.primarybright",
+      "sourcePath": "colors.primary-bright",
+      "type": "color",
+      "value": "#296ef9",
+      "status": "unverified",
+      "evidence": {
+        "line": 8,
+        "sourcePath": "colors.primary-bright"
+      }
+    },
+    {
+      "path": "colors.primarydeep",
+      "sourcePath": "colors.primary-deep",
+      "type": "color",
+      "value": "#0e3191",
+      "status": "unverified",
+      "evidence": {
+        "line": 9,
+        "sourcePath": "colors.primary-deep"
+      }
+    },
+    {
+      "path": "colors.primarysoft",
+      "sourcePath": "colors.primary-soft",
+      "type": "color",
+      "value": "#c9e0fc",
+      "status": "unverified",
+      "evidence": {
+        "line": 10,
+        "sourcePath": "colors.primary-soft"
+      }
+    },
+    {
+      "path": "colors.onprimary",
+      "sourcePath": "colors.on-primary",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 11,
+        "sourcePath": "colors.on-primary"
+      }
+    },
+    {
+      "path": "colors.ink",
+      "sourcePath": "colors.ink",
+      "type": "color",
+      "value": "#1a1a1a",
+      "status": "unverified",
+      "evidence": {
+        "line": 12,
+        "sourcePath": "colors.ink"
+      }
+    },
+    {
+      "path": "colors.inkdeep",
+      "sourcePath": "colors.ink-deep",
+      "type": "color",
+      "value": "#000000",
+      "status": "unverified",
+      "evidence": {
+        "line": 13,
+        "sourcePath": "colors.ink-deep"
+      }
+    },
+    {
+      "path": "colors.inksoft",
+      "sourcePath": "colors.ink-soft",
+      "type": "color",
+      "value": "#292929",
+      "status": "unverified",
+      "evidence": {
+        "line": 14,
+        "sourcePath": "colors.ink-soft"
+      }
+    },
+    {
+      "path": "colors.onink",
+      "sourcePath": "colors.on-ink",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 15,
+        "sourcePath": "colors.on-ink"
+      }
+    },
+    {
+      "path": "colors.canvas",
+      "sourcePath": "colors.canvas",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 16,
+        "sourcePath": "colors.canvas"
+      }
+    },
+    {
+      "path": "colors.paper",
+      "sourcePath": "colors.paper",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 17,
+        "sourcePath": "colors.paper"
+      }
+    },
+    {
+      "path": "colors.cloud",
+      "sourcePath": "colors.cloud",
+      "type": "color",
+      "value": "#f7f7f7",
+      "status": "unverified",
+      "evidence": {
+        "line": 18,
+        "sourcePath": "colors.cloud"
+      }
+    },
+    {
+      "path": "colors.fog",
+      "sourcePath": "colors.fog",
+      "type": "color",
+      "value": "#e8e8e8",
+      "status": "unverified",
+      "evidence": {
+        "line": 19,
+        "sourcePath": "colors.fog"
+      }
+    },
+    {
+      "path": "colors.steel",
+      "sourcePath": "colors.steel",
+      "type": "color",
+      "value": "#c2c2c2",
+      "status": "unverified",
+      "evidence": {
+        "line": 20,
+        "sourcePath": "colors.steel"
+      }
+    },
+    {
+      "path": "colors.graphite",
+      "sourcePath": "colors.graphite",
+      "type": "color",
+      "value": "#636363",
+      "status": "unverified",
+      "evidence": {
+        "line": 21,
+        "sourcePath": "colors.graphite"
+      }
+    },
+    {
+      "path": "colors.charcoal",
+      "sourcePath": "colors.charcoal",
+      "type": "color",
+      "value": "#3d3d3d",
+      "status": "unverified",
+      "evidence": {
+        "line": 22,
+        "sourcePath": "colors.charcoal"
+      }
+    },
+    {
+      "path": "colors.hairline",
+      "sourcePath": "colors.hairline",
+      "type": "color",
+      "value": "#e8e8e8",
+      "status": "unverified",
+      "evidence": {
+        "line": 23,
+        "sourcePath": "colors.hairline"
+      }
+    },
+    {
+      "path": "colors.hairlinestrong",
+      "sourcePath": "colors.hairline-strong",
+      "type": "color",
+      "value": "#c2c2c2",
+      "status": "unverified",
+      "evidence": {
+        "line": 24,
+        "sourcePath": "colors.hairline-strong"
+      }
+    },
+    {
+      "path": "colors.link",
+      "sourcePath": "colors.link",
+      "type": "color",
+      "value": "#024ad8",
+      "status": "unverified",
+      "evidence": {
+        "line": 25,
+        "sourcePath": "colors.link"
+      }
+    },
+    {
+      "path": "colors.linkpressed",
+      "sourcePath": "colors.link-pressed",
+      "type": "color",
+      "value": "#0e3191",
+      "status": "unverified",
+      "evidence": {
+        "line": 26,
+        "sourcePath": "colors.link-pressed"
+      }
+    },
+    {
+      "path": "colors.bloomcoral",
+      "sourcePath": "colors.bloom-coral",
+      "type": "color",
+      "value": "#ff5050",
+      "status": "unverified",
+      "evidence": {
+        "line": 27,
+        "sourcePath": "colors.bloom-coral"
+      }
+    },
+    {
+      "path": "colors.bloomrose",
+      "sourcePath": "colors.bloom-rose",
+      "type": "color",
+      "value": "#f9d4d2",
+      "status": "unverified",
+      "evidence": {
+        "line": 28,
+        "sourcePath": "colors.bloom-rose"
+      }
+    },
+    {
+      "path": "colors.bloomdeep",
+      "sourcePath": "colors.bloom-deep",
+      "type": "color",
+      "value": "#b3262b",
+      "status": "unverified",
+      "evidence": {
+        "line": 29,
+        "sourcePath": "colors.bloom-deep"
+      }
+    },
+    {
+      "path": "colors.bloomwine",
+      "sourcePath": "colors.bloom-wine",
+      "type": "color",
+      "value": "#5a1313",
+      "status": "unverified",
+      "evidence": {
+        "line": 30,
+        "sourcePath": "colors.bloom-wine"
+      }
+    },
+    {
+      "path": "colors.stormmist",
+      "sourcePath": "colors.storm-mist",
+      "type": "color",
+      "value": "#8ebdce",
+      "status": "unverified",
+      "evidence": {
+        "line": 31,
+        "sourcePath": "colors.storm-mist"
+      }
+    },
+    {
+      "path": "colors.stormsea",
+      "sourcePath": "colors.storm-sea",
+      "type": "color",
+      "value": "#7fadbe",
+      "status": "unverified",
+      "evidence": {
+        "line": 32,
+        "sourcePath": "colors.storm-sea"
+      }
+    },
+    {
+      "path": "colors.stormdeep",
+      "sourcePath": "colors.storm-deep",
+      "type": "color",
+      "value": "#356373",
+      "status": "unverified",
+      "evidence": {
+        "line": 33,
+        "sourcePath": "colors.storm-deep"
+      }
+    },
+    {
+      "path": "colors.error",
+      "sourcePath": "colors.error",
+      "type": "color",
+      "value": "#b3262b",
+      "status": "unverified",
+      "evidence": {
+        "line": 34,
+        "sourcePath": "colors.error"
+      }
+    },
+    {
+      "path": "typography.displayxxl.fontfamily",
+      "sourcePath": "typography.display-xxl.fontFamily",
+      "type": "fontFamily",
+      "value": "Forma DJR Micro",
+      "status": "unverified",
+      "evidence": {
+        "line": 38,
+        "sourcePath": "typography.display-xxl.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displayxxl.fontsize",
+      "sourcePath": "typography.display-xxl.fontSize",
+      "type": "dimension",
+      "value": "72px",
+      "status": "unverified",
+      "evidence": {
+        "line": 39,
+        "sourcePath": "typography.display-xxl.fontSize"
+      }
+    },
+    {
+      "path": "typography.displayxxl.fontweight",
+      "sourcePath": "typography.display-xxl.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 40,
+        "sourcePath": "typography.display-xxl.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displayxxl.lineheight",
+      "sourcePath": "typography.display-xxl.lineHeight",
+      "type": "number",
+      "value": 1,
+      "status": "unverified",
+      "evidence": {
+        "line": 41,
+        "sourcePath": "typography.display-xxl.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displayxxl.letterspacing",
+      "sourcePath": "typography.display-xxl.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 42,
+        "sourcePath": "typography.display-xxl.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.displayxl.fontfamily",
+      "sourcePath": "typography.display-xl.fontFamily",
+      "type": "fontFamily",
+      "value": "Forma DJR Micro",
+      "status": "unverified",
+      "evidence": {
+        "line": 44,
+        "sourcePath": "typography.display-xl.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displayxl.fontsize",
+      "sourcePath": "typography.display-xl.fontSize",
+      "type": "dimension",
+      "value": "56px",
+      "status": "unverified",
+      "evidence": {
+        "line": 45,
+        "sourcePath": "typography.display-xl.fontSize"
+      }
+    },
+    {
+      "path": "typography.displayxl.fontweight",
+      "sourcePath": "typography.display-xl.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 46,
+        "sourcePath": "typography.display-xl.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displayxl.lineheight",
+      "sourcePath": "typography.display-xl.lineHeight",
+      "type": "number",
+      "value": 1,
+      "status": "unverified",
+      "evidence": {
+        "line": 47,
+        "sourcePath": "typography.display-xl.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displayxl.letterspacing",
+      "sourcePath": "typography.display-xl.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 48,
+        "sourcePath": "typography.display-xl.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.displaylg.fontfamily",
+      "sourcePath": "typography.display-lg.fontFamily",
+      "type": "fontFamily",
+      "value": "Forma DJR Micro",
+      "status": "unverified",
+      "evidence": {
+        "line": 50,
+        "sourcePath": "typography.display-lg.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displaylg.fontsize",
+      "sourcePath": "typography.display-lg.fontSize",
+      "type": "dimension",
+      "value": "44px",
+      "status": "unverified",
+      "evidence": {
+        "line": 51,
+        "sourcePath": "typography.display-lg.fontSize"
+      }
+    },
+    {
+      "path": "typography.displaylg.fontweight",
+      "sourcePath": "typography.display-lg.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 52,
+        "sourcePath": "typography.display-lg.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displaylg.lineheight",
+      "sourcePath": "typography.display-lg.lineHeight",
+      "type": "number",
+      "value": 1,
+      "status": "unverified",
+      "evidence": {
+        "line": 53,
+        "sourcePath": "typography.display-lg.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displaylg.letterspacing",
+      "sourcePath": "typography.display-lg.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 54,
+        "sourcePath": "typography.display-lg.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.displaymd.fontfamily",
+      "sourcePath": "typography.display-md.fontFamily",
+      "type": "fontFamily",
+      "value": "Forma DJR Micro",
+      "status": "unverified",
+      "evidence": {
+        "line": 56,
+        "sourcePath": "typography.display-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displaymd.fontsize",
+      "sourcePath": "typography.display-md.fontSize",
+      "type": "dimension",
+      "value": "32px",
+      "status": "unverified",
+      "evidence": {
+        "line": 57,
+        "sourcePath": "typography.display-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.displaymd.fontweight",
+      "sourcePath": "typography.display-md.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 58,
+        "sourcePath": "typography.display-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displaymd.lineheight",
+      "sourcePath": "typography.display-md.lineHeight",
+      "type": "number",
+      "value": 1,
+      "status": "unverified",
+      "evidence": {
+        "line": 59,
+        "sourcePath": "typography.display-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displaymd.letterspacing",
+      "sourcePath": "typography.display-md.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 60,
+        "sourcePath": "typography.display-md.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.displaysm.fontfamily",
+      "sourcePath": "typography.display-sm.fontFamily",
+      "type": "fontFamily",
+      "value": "Forma DJR Micro",
+      "status": "unverified",
+      "evidence": {
+        "line": 62,
+        "sourcePath": "typography.display-sm.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displaysm.fontsize",
+      "sourcePath": "typography.display-sm.fontSize",
+      "type": "dimension",
+      "value": "24px",
+      "status": "unverified",
+      "evidence": {
+        "line": 63,
+        "sourcePath": "typography.display-sm.fontSize"
+      }
+    },
+    {
+      "path": "typography.displaysm.fontweight",
+      "sourcePath": "typography.display-sm.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 64,
+        "sourcePath": "typography.display-sm.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displaysm.lineheight",
+      "sourcePath": "typography.display-sm.lineHeight",
+      "type": "number",
+      "value": 1.17,
+      "status": "unverified",
+      "evidence": {
+        "line": 65,
+        "sourcePath": "typography.display-sm.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displaysm.letterspacing",
+      "sourcePath": "typography.display-sm.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 66,
+        "sourcePath": "typography.display-sm.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.displayxs.fontfamily",
+      "sourcePath": "typography.display-xs.fontFamily",
+      "type": "fontFamily",
+      "value": "Forma DJR Micro",
+      "status": "unverified",
+      "evidence": {
+        "line": 68,
+        "sourcePath": "typography.display-xs.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displayxs.fontsize",
+      "sourcePath": "typography.display-xs.fontSize",
+      "type": "dimension",
+      "value": "20px",
+      "status": "unverified",
+      "evidence": {
+        "line": 69,
+        "sourcePath": "typography.display-xs.fontSize"
+      }
+    },
+    {
+      "path": "typography.displayxs.fontweight",
+      "sourcePath": "typography.display-xs.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 70,
+        "sourcePath": "typography.display-xs.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displayxs.lineheight",
+      "sourcePath": "typography.display-xs.lineHeight",
+      "type": "number",
+      "value": 1,
+      "status": "unverified",
+      "evidence": {
+        "line": 71,
+        "sourcePath": "typography.display-xs.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displayxs.letterspacing",
+      "sourcePath": "typography.display-xs.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 72,
+        "sourcePath": "typography.display-xs.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.bodylg.fontfamily",
+      "sourcePath": "typography.body-lg.fontFamily",
+      "type": "fontFamily",
+      "value": "Forma DJR Micro",
+      "status": "unverified",
+      "evidence": {
+        "line": 74,
+        "sourcePath": "typography.body-lg.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodylg.fontsize",
+      "sourcePath": "typography.body-lg.fontSize",
+      "type": "dimension",
+      "value": "18px",
+      "status": "unverified",
+      "evidence": {
+        "line": 75,
+        "sourcePath": "typography.body-lg.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodylg.fontweight",
+      "sourcePath": "typography.body-lg.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 76,
+        "sourcePath": "typography.body-lg.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodylg.lineheight",
+      "sourcePath": "typography.body-lg.lineHeight",
+      "type": "number",
+      "value": 1.33,
+      "status": "unverified",
+      "evidence": {
+        "line": 77,
+        "sourcePath": "typography.body-lg.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodylg.letterspacing",
+      "sourcePath": "typography.body-lg.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 78,
+        "sourcePath": "typography.body-lg.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.bodymd.fontfamily",
+      "sourcePath": "typography.body-md.fontFamily",
+      "type": "fontFamily",
+      "value": "Forma DJR Micro",
+      "status": "unverified",
+      "evidence": {
+        "line": 80,
+        "sourcePath": "typography.body-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodymd.fontsize",
+      "sourcePath": "typography.body-md.fontSize",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 81,
+        "sourcePath": "typography.body-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodymd.fontweight",
+      "sourcePath": "typography.body-md.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 82,
+        "sourcePath": "typography.body-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodymd.lineheight",
+      "sourcePath": "typography.body-md.lineHeight",
+      "type": "number",
+      "value": 1.38,
+      "status": "unverified",
+      "evidence": {
+        "line": 83,
+        "sourcePath": "typography.body-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodymd.letterspacing",
+      "sourcePath": "typography.body-md.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 84,
+        "sourcePath": "typography.body-md.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.bodyemphasis.fontfamily",
+      "sourcePath": "typography.body-emphasis.fontFamily",
+      "type": "fontFamily",
+      "value": "Forma DJR Micro",
+      "status": "unverified",
+      "evidence": {
+        "line": 86,
+        "sourcePath": "typography.body-emphasis.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodyemphasis.fontsize",
+      "sourcePath": "typography.body-emphasis.fontSize",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 87,
+        "sourcePath": "typography.body-emphasis.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodyemphasis.fontweight",
+      "sourcePath": "typography.body-emphasis.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 88,
+        "sourcePath": "typography.body-emphasis.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodyemphasis.lineheight",
+      "sourcePath": "typography.body-emphasis.lineHeight",
+      "type": "number",
+      "value": 1.38,
+      "status": "unverified",
+      "evidence": {
+        "line": 89,
+        "sourcePath": "typography.body-emphasis.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodyemphasis.letterspacing",
+      "sourcePath": "typography.body-emphasis.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 90,
+        "sourcePath": "typography.body-emphasis.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.captionmd.fontfamily",
+      "sourcePath": "typography.caption-md.fontFamily",
+      "type": "fontFamily",
+      "value": "Forma DJR Micro",
+      "status": "unverified",
+      "evidence": {
+        "line": 92,
+        "sourcePath": "typography.caption-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.captionmd.fontsize",
+      "sourcePath": "typography.caption-md.fontSize",
+      "type": "dimension",
+      "value": "14px",
+      "status": "unverified",
+      "evidence": {
+        "line": 93,
+        "sourcePath": "typography.caption-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.captionmd.fontweight",
+      "sourcePath": "typography.caption-md.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 94,
+        "sourcePath": "typography.caption-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.captionmd.lineheight",
+      "sourcePath": "typography.caption-md.lineHeight",
+      "type": "number",
+      "value": 1.5,
+      "status": "unverified",
+      "evidence": {
+        "line": 95,
+        "sourcePath": "typography.caption-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.captionmd.letterspacing",
+      "sourcePath": "typography.caption-md.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 96,
+        "sourcePath": "typography.caption-md.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.captionsm.fontfamily",
+      "sourcePath": "typography.caption-sm.fontFamily",
+      "type": "fontFamily",
+      "value": "Forma DJR Micro",
+      "status": "unverified",
+      "evidence": {
+        "line": 98,
+        "sourcePath": "typography.caption-sm.fontFamily"
+      }
+    },
+    {
+      "path": "typography.captionsm.fontsize",
+      "sourcePath": "typography.caption-sm.fontSize",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 99,
+        "sourcePath": "typography.caption-sm.fontSize"
+      }
+    },
+    {
+      "path": "typography.captionsm.fontweight",
+      "sourcePath": "typography.caption-sm.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 100,
+        "sourcePath": "typography.caption-sm.fontWeight"
+      }
+    },
+    {
+      "path": "typography.captionsm.lineheight",
+      "sourcePath": "typography.caption-sm.lineHeight",
+      "type": "number",
+      "value": 1.33,
+      "status": "unverified",
+      "evidence": {
+        "line": 101,
+        "sourcePath": "typography.caption-sm.lineHeight"
+      }
+    },
+    {
+      "path": "typography.captionsm.letterspacing",
+      "sourcePath": "typography.caption-sm.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 102,
+        "sourcePath": "typography.caption-sm.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.captionbold.fontfamily",
+      "sourcePath": "typography.caption-bold.fontFamily",
+      "type": "fontFamily",
+      "value": "Forma DJR Micro",
+      "status": "unverified",
+      "evidence": {
+        "line": 104,
+        "sourcePath": "typography.caption-bold.fontFamily"
+      }
+    },
+    {
+      "path": "typography.captionbold.fontsize",
+      "sourcePath": "typography.caption-bold.fontSize",
+      "type": "dimension",
+      "value": "14px",
+      "status": "unverified",
+      "evidence": {
+        "line": 105,
+        "sourcePath": "typography.caption-bold.fontSize"
+      }
+    },
+    {
+      "path": "typography.captionbold.fontweight",
+      "sourcePath": "typography.caption-bold.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 106,
+        "sourcePath": "typography.caption-bold.fontWeight"
+      }
+    },
+    {
+      "path": "typography.captionbold.lineheight",
+      "sourcePath": "typography.caption-bold.lineHeight",
+      "type": "number",
+      "value": 1.3,
+      "status": "unverified",
+      "evidence": {
+        "line": 107,
+        "sourcePath": "typography.caption-bold.lineHeight"
+      }
+    },
+    {
+      "path": "typography.captionbold.letterspacing",
+      "sourcePath": "typography.caption-bold.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 108,
+        "sourcePath": "typography.caption-bold.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.linkmd.fontfamily",
+      "sourcePath": "typography.link-md.fontFamily",
+      "type": "fontFamily",
+      "value": "Forma DJR Micro",
+      "status": "unverified",
+      "evidence": {
+        "line": 110,
+        "sourcePath": "typography.link-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.linkmd.fontsize",
+      "sourcePath": "typography.link-md.fontSize",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 111,
+        "sourcePath": "typography.link-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.linkmd.fontweight",
+      "sourcePath": "typography.link-md.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 112,
+        "sourcePath": "typography.link-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.linkmd.lineheight",
+      "sourcePath": "typography.link-md.lineHeight",
+      "type": "number",
+      "value": 1.38,
+      "status": "unverified",
+      "evidence": {
+        "line": 113,
+        "sourcePath": "typography.link-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.linkmd.letterspacing",
+      "sourcePath": "typography.link-md.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 114,
+        "sourcePath": "typography.link-md.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.buttonmd.fontfamily",
+      "sourcePath": "typography.button-md.fontFamily",
+      "type": "fontFamily",
+      "value": "Forma DJR Micro",
+      "status": "unverified",
+      "evidence": {
+        "line": 116,
+        "sourcePath": "typography.button-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.buttonmd.fontsize",
+      "sourcePath": "typography.button-md.fontSize",
+      "type": "dimension",
+      "value": "14px",
+      "status": "unverified",
+      "evidence": {
+        "line": 117,
+        "sourcePath": "typography.button-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.buttonmd.fontweight",
+      "sourcePath": "typography.button-md.fontWeight",
+      "type": "number",
+      "value": 600,
+      "status": "unverified",
+      "evidence": {
+        "line": 118,
+        "sourcePath": "typography.button-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.buttonmd.lineheight",
+      "sourcePath": "typography.button-md.lineHeight",
+      "type": "number",
+      "value": 1.4,
+      "status": "unverified",
+      "evidence": {
+        "line": 119,
+        "sourcePath": "typography.button-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.buttonmd.letterspacing",
+      "sourcePath": "typography.button-md.letterSpacing",
+      "type": "dimension",
+      "value": "0.7px",
+      "status": "unverified",
+      "evidence": {
+        "line": 120,
+        "sourcePath": "typography.button-md.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.buttonsm.fontfamily",
+      "sourcePath": "typography.button-sm.fontFamily",
+      "type": "fontFamily",
+      "value": "Forma DJR Micro",
+      "status": "unverified",
+      "evidence": {
+        "line": 123,
+        "sourcePath": "typography.button-sm.fontFamily"
+      }
+    },
+    {
+      "path": "typography.buttonsm.fontsize",
+      "sourcePath": "typography.button-sm.fontSize",
+      "type": "dimension",
+      "value": "12.6px",
+      "status": "unverified",
+      "evidence": {
+        "line": 124,
+        "sourcePath": "typography.button-sm.fontSize"
+      }
+    },
+    {
+      "path": "typography.buttonsm.fontweight",
+      "sourcePath": "typography.button-sm.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 125,
+        "sourcePath": "typography.button-sm.fontWeight"
+      }
+    },
+    {
+      "path": "typography.buttonsm.lineheight",
+      "sourcePath": "typography.button-sm.lineHeight",
+      "type": "number",
+      "value": 1,
+      "status": "unverified",
+      "evidence": {
+        "line": 126,
+        "sourcePath": "typography.button-sm.lineHeight"
+      }
+    },
+    {
+      "path": "typography.buttonsm.letterspacing",
+      "sourcePath": "typography.button-sm.letterSpacing",
+      "type": "dimension",
+      "value": "0.126px",
+      "status": "unverified",
+      "evidence": {
+        "line": 127,
+        "sourcePath": "typography.button-sm.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.pricemd.fontfamily",
+      "sourcePath": "typography.price-md.fontFamily",
+      "type": "fontFamily",
+      "value": "Forma DJR Micro",
+      "status": "unverified",
+      "evidence": {
+        "line": 129,
+        "sourcePath": "typography.price-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.pricemd.fontsize",
+      "sourcePath": "typography.price-md.fontSize",
+      "type": "dimension",
+      "value": "24px",
+      "status": "unverified",
+      "evidence": {
+        "line": 130,
+        "sourcePath": "typography.price-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.pricemd.fontweight",
+      "sourcePath": "typography.price-md.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 131,
+        "sourcePath": "typography.price-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.pricemd.lineheight",
+      "sourcePath": "typography.price-md.lineHeight",
+      "type": "number",
+      "value": 1.17,
+      "status": "unverified",
+      "evidence": {
+        "line": 132,
+        "sourcePath": "typography.price-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.pricemd.letterspacing",
+      "sourcePath": "typography.price-md.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 133,
+        "sourcePath": "typography.price-md.letterSpacing"
+      }
+    },
+    {
+      "path": "rounded.none",
+      "sourcePath": "rounded.none",
+      "type": "dimension",
+      "value": "0px",
+      "status": "unverified",
+      "evidence": {
+        "line": 136,
+        "sourcePath": "rounded.none"
+      }
+    },
+    {
+      "path": "rounded.xs",
+      "sourcePath": "rounded.xs",
+      "type": "dimension",
+      "value": "2px",
+      "status": "unverified",
+      "evidence": {
+        "line": 137,
+        "sourcePath": "rounded.xs"
+      }
+    },
+    {
+      "path": "rounded.sm",
+      "sourcePath": "rounded.sm",
+      "type": "dimension",
+      "value": "3px",
+      "status": "unverified",
+      "evidence": {
+        "line": 138,
+        "sourcePath": "rounded.sm"
+      }
+    },
+    {
+      "path": "rounded.md",
+      "sourcePath": "rounded.md",
+      "type": "dimension",
+      "value": "4px",
+      "status": "unverified",
+      "evidence": {
+        "line": 139,
+        "sourcePath": "rounded.md"
+      }
+    },
+    {
+      "path": "rounded.lg",
+      "sourcePath": "rounded.lg",
+      "type": "dimension",
+      "value": "8px",
+      "status": "unverified",
+      "evidence": {
+        "line": 140,
+        "sourcePath": "rounded.lg"
+      }
+    },
+    {
+      "path": "rounded.xl",
+      "sourcePath": "rounded.xl",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 141,
+        "sourcePath": "rounded.xl"
+      }
+    },
+    {
+      "path": "rounded.pill",
+      "sourcePath": "rounded.pill",
+      "type": "dimension",
+      "value": "9999px",
+      "status": "unverified",
+      "evidence": {
+        "line": 142,
+        "sourcePath": "rounded.pill"
+      }
+    },
+    {
+      "path": "rounded.full",
+      "sourcePath": "rounded.full",
+      "type": "dimension",
+      "value": "9999px",
+      "status": "unverified",
+      "evidence": {
+        "line": 143,
+        "sourcePath": "rounded.full"
+      }
+    },
+    {
+      "path": "spacing.xxs",
+      "sourcePath": "spacing.xxs",
+      "type": "dimension",
+      "value": "4px",
+      "status": "unverified",
+      "evidence": {
+        "line": 146,
+        "sourcePath": "spacing.xxs"
+      }
+    },
+    {
+      "path": "spacing.xs",
+      "sourcePath": "spacing.xs",
+      "type": "dimension",
+      "value": "8px",
+      "status": "unverified",
+      "evidence": {
+        "line": 147,
+        "sourcePath": "spacing.xs"
+      }
+    },
+    {
+      "path": "spacing.sm",
+      "sourcePath": "spacing.sm",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 148,
+        "sourcePath": "spacing.sm"
+      }
+    },
+    {
+      "path": "spacing.md",
+      "sourcePath": "spacing.md",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 149,
+        "sourcePath": "spacing.md"
+      }
+    },
+    {
+      "path": "spacing.lg",
+      "sourcePath": "spacing.lg",
+      "type": "dimension",
+      "value": "20px",
+      "status": "unverified",
+      "evidence": {
+        "line": 150,
+        "sourcePath": "spacing.lg"
+      }
+    },
+    {
+      "path": "spacing.xl",
+      "sourcePath": "spacing.xl",
+      "type": "dimension",
+      "value": "24px",
+      "status": "unverified",
+      "evidence": {
+        "line": 151,
+        "sourcePath": "spacing.xl"
+      }
+    },
+    {
+      "path": "spacing.xxl",
+      "sourcePath": "spacing.xxl",
+      "type": "dimension",
+      "value": "32px",
+      "status": "unverified",
+      "evidence": {
+        "line": 152,
+        "sourcePath": "spacing.xxl"
+      }
+    },
+    {
+      "path": "spacing.section",
+      "sourcePath": "spacing.section",
+      "type": "dimension",
+      "value": "80px",
+      "status": "unverified",
+      "evidence": {
+        "line": 153,
+        "sourcePath": "spacing.section"
+      }
+    }
+  ],
+  "rejectedTokens": [
+    {
+      "sourcePath": "typography.button-md.textTransform",
+      "value": "uppercase",
+      "reason": "Not a supported safe CSS literal; preserved in analysis"
+    }
+  ],
+  "homepage": {
+    "status": "missing",
+    "candidates": [],
+    "verification": {
+      "status": "verified",
+      "url": "https://www.hp.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://www.hp.com/us-en/home.html",
+          "title": "Laptop Computers, Desktops, Printers, Ink & Toner | HP® Official Site",
+          "note": "Public homepage read requested https://www.hp.com; final URL https://www.hp.com/us-en/home.html. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    }
+  },
+  "completeness": {
+    "presentFields": [
+      "colors",
+      "typography",
+      "rounded",
+      "spacing",
+      "components"
+    ],
+    "missingFields": [],
+    "tokenRoles": "incomplete",
+    "note": "Missing fields are not reconstructed. Prose-only colors have no inferred semantic role."
+  },
+  "provenance": {
+    "status": "independent-analysis",
+    "sources": [
+      {
+        "title": "VoltAgent awesome-design-md independent analysis",
+        "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/hp/DESIGN.md"
+      }
+    ],
+    "verification": "unverified-secondary-analysis"
+  },
+  "limitations": [
+    "Independent secondary analysis, not an official brand system; all reported values are unverified.",
+    "No brand assets, logos, font binaries or screenshots copied. Font names are documentary, not font licenses.",
+    "Safe CSS literals are extracted without claiming complete roles, state coverage or visual fidelity.",
+    "Markdown is retained as inert evidence, never executed or rendered as raw HTML."
+  ]
+}

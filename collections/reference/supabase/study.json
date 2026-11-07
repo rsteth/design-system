@@ -1,0 +1,1655 @@
+{
+  "schemaVersion": 1,
+  "id": "reference-supabase",
+  "title": "Supabase",
+  "classification": "independent-unverified-analysis",
+  "source": {
+    "repository": "https://github.com/VoltAgent/awesome-design-md",
+    "fork": "https://github.com/rsteth/awesome-design-md-p",
+    "revision": "fcc70284932276d085f01ef9f83edde90b1258cb",
+    "path": "design-md/supabase/DESIGN.md",
+    "sha256": "f57287d7f44d59e8169dc4b4304ff03c1a2efb37f5433b9c04460caae7710880",
+    "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/supabase/DESIGN.md"
+  },
+  "sourceName": "Supabaze-Inspired-design-analysis",
+  "titleProvenance": {
+    "status": "inferred",
+    "basis": "Source directory label, normalized for navigation; original source name is retained without correction.",
+    "sourceValue": "supabase",
+    "originalName": "Supabaze-Inspired-design-analysis"
+  },
+  "description": "An inspired interpretation of Supabaze's design language — an open-source database platform built on a clean white-and-near-black system with a single signature emerald-green CTA, a custom humanist sans display tier, and dense product UI mockups composited above the hero. The brand reads as quietly technical: minimal chrome, a near-monochrome palette, and the green primary acting as the only chromatic event on the page.",
+  "analysis": {
+    "version": "alpha",
+    "name": "Supabaze-Inspired-design-analysis",
+    "description": "An inspired interpretation of Supabaze's design language — an open-source database platform built on a clean white-and-near-black system with a single signature emerald-green CTA, a custom humanist sans display tier, and dense product UI mockups composited above the hero. The brand reads as quietly technical: minimal chrome, a near-monochrome palette, and the green primary acting as the only chromatic event on the page.",
+    "colors": {
+      "primary": "#3ecf8e",
+      "primary-deep": "#24b47e",
+      "primary-soft": "#4ade80",
+      "ink": "#171717",
+      "ink-secondary": "#212121",
+      "ink-mute": "#707070",
+      "ink-mute-2": "#9a9a9a",
+      "ink-faint": "#b2b2b2",
+      "on-primary": "#171717",
+      "on-dark": "#ffffff",
+      "canvas": "#ffffff",
+      "canvas-soft": "#fafafa",
+      "canvas-night": "#1c1c1c",
+      "canvas-night-soft": "#202020",
+      "hairline": "#dfdfdf",
+      "hairline-strong": "#c7c7c7",
+      "hairline-cool": "#ededed",
+      "hairline-cool-2": "#efefef",
+      "hairline-cool-3": "#d4d4d4",
+      "accent-purple": "#6b01c2",
+      "accent-violet": "#644fc1",
+      "accent-purple-soft": "#eddbf9",
+      "accent-yellow": "#ffdb13",
+      "accent-tomato": "#ff2201",
+      "accent-pink": "#c7007e",
+      "accent-indigo": "#054cff",
+      "accent-crimson": "#e2005a"
+    },
+    "typography": {
+      "display-xxl": {
+        "fontFamily": "Circular, 'Helvetica Neue', Helvetica, Arial, sans-serif",
+        "fontSize": "64px",
+        "fontWeight": 500,
+        "lineHeight": 1.1,
+        "letterSpacing": "-1.92px"
+      },
+      "display-xl": {
+        "fontFamily": "Circular, 'Helvetica Neue', Helvetica, Arial, sans-serif",
+        "fontSize": "48px",
+        "fontWeight": 500,
+        "lineHeight": 1.1,
+        "letterSpacing": "-1.44px"
+      },
+      "display-lg": {
+        "fontFamily": "Circular, 'Helvetica Neue', Helvetica, Arial, sans-serif",
+        "fontSize": "36px",
+        "fontWeight": 500,
+        "lineHeight": 1.15,
+        "letterSpacing": "-0.72px"
+      },
+      "display-md": {
+        "fontFamily": "Circular, 'Helvetica Neue', Helvetica, Arial, sans-serif",
+        "fontSize": "28px",
+        "fontWeight": 500,
+        "lineHeight": 1.2,
+        "letterSpacing": "-0.42px"
+      },
+      "heading-lg": {
+        "fontFamily": "Circular, 'Helvetica Neue', Helvetica, Arial, sans-serif",
+        "fontSize": "22px",
+        "fontWeight": 500,
+        "lineHeight": 1.2,
+        "letterSpacing": 0
+      },
+      "heading-md": {
+        "fontFamily": "Circular, 'Helvetica Neue', Helvetica, Arial, sans-serif",
+        "fontSize": "18px",
+        "fontWeight": 500,
+        "lineHeight": 1.4,
+        "letterSpacing": 0
+      },
+      "body-lg": {
+        "fontFamily": "Circular, 'Helvetica Neue', Helvetica, Arial, sans-serif",
+        "fontSize": "18px",
+        "fontWeight": 400,
+        "lineHeight": 1.55,
+        "letterSpacing": 0
+      },
+      "body-md": {
+        "fontFamily": "Circular, 'Helvetica Neue', Helvetica, Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": 400,
+        "lineHeight": 1.5,
+        "letterSpacing": 0
+      },
+      "button-md": {
+        "fontFamily": "Circular, 'Helvetica Neue', Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "fontWeight": 500,
+        "lineHeight": 1,
+        "letterSpacing": 0
+      },
+      "caption": {
+        "fontFamily": "Circular, 'Helvetica Neue', Helvetica, Arial, sans-serif",
+        "fontSize": "13px",
+        "fontWeight": 400,
+        "lineHeight": 1.45,
+        "letterSpacing": 0
+      },
+      "micro": {
+        "fontFamily": "Circular, 'Helvetica Neue', Helvetica, Arial, sans-serif",
+        "fontSize": "12px",
+        "fontWeight": 400,
+        "lineHeight": 1.45,
+        "letterSpacing": 0
+      },
+      "code": {
+        "fontFamily": "ui-monospace, Menlo, Monaco, Consolas, 'Liberation Mono', monospace",
+        "fontSize": "14px",
+        "fontWeight": 400,
+        "lineHeight": 1.5,
+        "letterSpacing": 0
+      }
+    },
+    "rounded": {
+      "xs": "4px",
+      "sm": "6px",
+      "md": "8px",
+      "lg": "12px",
+      "xl": "16px",
+      "full": "9999px"
+    },
+    "spacing": {
+      "xxs": "2px",
+      "xs": "4px",
+      "sm": "8px",
+      "md": "12px",
+      "lg": "16px",
+      "xl": "24px",
+      "xxl": "32px",
+      "huge": "64px"
+    },
+    "components": {
+      "button-primary-green": {
+        "backgroundColor": "{colors.primary}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.sm}",
+        "padding": "8px 16px"
+      },
+      "button-primary-green-pressed": {
+        "backgroundColor": "{colors.primary-deep}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.sm}",
+        "padding": "8px 16px"
+      },
+      "button-secondary-outline": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.sm}",
+        "padding": "8px 16px"
+      },
+      "button-on-dark": {
+        "backgroundColor": "{colors.canvas-night}",
+        "textColor": "{colors.on-dark}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.sm}",
+        "padding": "8px 16px"
+      },
+      "button-link": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.xs}",
+        "padding": "0px"
+      },
+      "text-input": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.sm}",
+        "padding": "8px 12px"
+      },
+      "card-feature-light": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.lg}",
+        "padding": "32px"
+      },
+      "card-pricing": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.lg}",
+        "padding": "32px"
+      },
+      "card-pricing-featured": {
+        "backgroundColor": "{colors.canvas-night}",
+        "textColor": "{colors.on-dark}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.lg}",
+        "padding": "32px"
+      },
+      "card-feature-dark": {
+        "backgroundColor": "{colors.canvas-night}",
+        "textColor": "{colors.on-dark}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.lg}",
+        "padding": "32px"
+      },
+      "code-block": {
+        "backgroundColor": "{colors.canvas-night}",
+        "textColor": "{colors.on-dark}",
+        "typography": "{typography.code}",
+        "rounded": "{rounded.sm}",
+        "padding": "16px"
+      },
+      "pill-tag-green": {
+        "backgroundColor": "{colors.primary}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.micro}",
+        "rounded": "{rounded.full}",
+        "padding": "2px 8px"
+      },
+      "pill-tag-soft": {
+        "backgroundColor": "{colors.canvas-soft}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.micro}",
+        "rounded": "{rounded.full}",
+        "padding": "2px 8px"
+      },
+      "nav-bar-light": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.xs}",
+        "padding": "16px 24px"
+      },
+      "link-on-light": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.xs}",
+        "padding": "0px"
+      },
+      "footer-light": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink-mute}",
+        "typography": "{typography.caption}",
+        "rounded": "{rounded.xs}",
+        "padding": "64px 24px"
+      }
+    }
+  },
+  "normalizationRepairs": [
+    {
+      "line": 4,
+      "original": "description: An inspired interpretation of Supabaze's design language — an open-source database platform built on a clean white-and-near-black system with a single signature emerald-green CTA, a custom humanist sans display tier, and dense product UI mockups composited above the hero. The brand reads as quietly technical: minimal chrome, a near-monochrome palette, and the green primary acting as the only chromatic event on the page.",
+      "normalized": "description: \"An inspired interpretation of Supabaze's design language — an open-source database platform built on a clean white-and-near-black system with a single signature emerald-green CTA, a custom humanist sans display tier, and dense product UI mockups composited above the hero. The brand reads as quietly technical: minimal chrome, a near-monochrome palette, and the green primary acting as the only chromatic event on the page.\"",
+      "status": "inferred-parser-repair",
+      "reason": "Quote an invalid upstream plain scalar containing colon-space; no content or field-name correction."
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Overview",
+      "level": 2,
+      "text": "Supabaze's design language is engineered for clarity above all else. The marketing surfaces sit on `{colors.canvas}` (pure white), with text rendered in `{colors.ink}` (`#171717` — near-black, never pure black). Across the entire system the only consistent chromatic event is the **emerald green primary** (`{colors.primary}` — `#3ecf8e`) — used as the filled CTA, occasional accent dot, and the signature highlight color in the wordmark. Everything else is a calibrated grey ladder from `#ededed` hairline-cool to `#171717` ink, with thin black-on-white typography doing most of the visual work.\n\nTypography runs **Circular** at weight 500 for display and 400 for body. The display tier uses tight negative letter-spacing (-1.92px at 64px) to pull the rounded humanist letterforms into editorial density. There's no atmospheric gradient, no full-bleed photography, no dark-canvas marketing track — the brand commits to white.\n\nThe product itself appears as composited UI screenshots on every page: dashboard tables, SQL editors, query builders, log streams. These screenshots are the brand's argument. They sit inside `{rounded.lg}` 12px containers with subtle 1px hairlines, often arranged 2-up or in a floating \"stacked panes\" composition above the hero band.\n\n**Key Characteristics:**\n- Single emerald primary (`{colors.primary}` `#3ecf8e`) as the only chromatic event; everything else is monochrome.\n- White canvas marketing track with greyscale hierarchy from `{colors.hairline-cool}` to `{colors.ink}`.\n- Custom humanist sans display tier at weight 500 with negative letter-spacing of -1.92px to -0.42px.\n- Composited product UI screenshots (dashboard, SQL editor, log stream) are the dominant decorative element — never photography, never illustrations.\n- Tight 6px / 8px button radii — square-ish, technical, never pill-shaped.\n- Code blocks rendered in deep `{colors.canvas-night}` (`#1c1c1c`) with monospace inline code; the brand's developer DNA is visible in every snippet.\n- Pricing tiers use a dark inverted `{colors.canvas-night}` featured tier, not a green one — the green is reserved for buttons and dot accents.",
+      "line": 226
+    },
+    {
+      "heading": "Colors",
+      "level": 2,
+      "text": "> **Source pages:** home (`/`), `/database`, `/partners/integrations`, `/partners/integrations/powersync`, `/solutions/ai-builders`, `/pricing`.",
+      "line": 243
+    },
+    {
+      "heading": "Brand & Accent",
+      "level": 3,
+      "text": "- **Emerald** (`{colors.primary}` — `#3ecf8e`): The signature CTA color. Filled-button background, brand wordmark accent, dot indicator.\n- **Emerald Deep** (`{colors.primary-deep}` — `#24b47e`): Pressed-state lift of the primary.\n- **Emerald Soft** (`{colors.primary-soft}` — `#4ade80`): Lighter emerald used in chart accents and product UI.\n- **Accent Purple** (`{colors.accent-purple}` — `#6b01c2`): Rare accent used in integration logos and chart points; never a button.\n- **Accent Violet** (`{colors.accent-violet}` — `#644fc1`): Secondary accent in the same role as accent purple.\n- **Accent Yellow** (`{colors.accent-yellow}` — `#ffdb13`): Chart accent / status indicator only.\n- **Accent Pink / Crimson / Indigo / Tomato**: Reserved for integration logos and rare chart highlights, never as system colors.",
+      "line": 247
+    },
+    {
+      "heading": "Surface",
+      "level": 3,
+      "text": "- **Canvas** (`{colors.canvas}` — `#ffffff`): Default page background.\n- **Canvas Soft** (`{colors.canvas-soft}` — `#fafafa`): Barely-tinted off-white for alternating section bands.\n- **Canvas Night** (`{colors.canvas-night}` — `#1c1c1c`): Deep near-black used in code blocks, dashboard mockups, featured pricing tier.\n- **Canvas Night Soft** (`{colors.canvas-night-soft}` — `#202020`): Slightly lifted dark for nested chrome.\n- **Hairline** (`{colors.hairline}` — `#dfdfdf`): 1px borders on cards and tables.\n- **Hairline Strong** (`{colors.hairline-strong}` — `#c7c7c7`): Slightly darker border for emphasis.\n- **Hairline Cool** (`{colors.hairline-cool}` — `#ededed`) / **Hairline Cool 2** (`#efefef`) / **Hairline Cool 3** (`#d4d4d4`): The brand's grey ladder for fine chrome work.",
+      "line": 256
+    },
+    {
+      "heading": "Text",
+      "level": 3,
+      "text": "- **Ink** (`{colors.ink}` — `#171717`): Default body text. Near-black, never pure.\n- **Ink Secondary** (`{colors.ink-secondary}` — `#212121`): Slightly cooler near-black for body emphasis.\n- **Ink Mute** (`{colors.ink-mute}` — `#707070`): Secondary text and helper copy.\n- **Ink Mute 2** (`{colors.ink-mute-2}` — `#9a9a9a`): Tertiary text.\n- **Ink Faint** (`{colors.ink-faint}` — `#b2b2b2`): Disabled / placeholder text.\n- **On Primary** (`{colors.on-primary}` — `#171717`): Text on the emerald primary fill — near-black, not white. The button reads as a \"lit\" surface with dark type, not a colored chip.\n- **On Dark** (`{colors.on-dark}` — `#ffffff`): Text on canvas-night surfaces.",
+      "line": 265
+    },
+    {
+      "heading": "Typography",
+      "level": 2,
+      "text": "",
+      "line": 274
+    },
+    {
+      "heading": "Font Family",
+      "level": 3,
+      "text": "The display and UI tier is **Circular** — a proprietary geometric humanist sans by Lineto. Fallback chain: `'Helvetica Neue', Helvetica, Arial`.\n\nFor maximum brand fidelity when Circular isn't licensed, use **Inter** (open-source via Google Fonts) at weight 500 for display with `letter-spacing: -1.92px` at 64px. Inter is the closest open-source analogue to Circular's geometric humanist character.\n\nCode blocks use **system mono** (`ui-monospace`, with Menlo / Monaco / Consolas fallbacks).",
+      "line": 276
+    },
+    {
+      "heading": "Hierarchy",
+      "level": 3,
+      "text": "| Token | Size | Weight | Line Height | Letter Spacing | Use |\n|---|---|---|---|---|---|\n| `{typography.display-xxl}` | 64px | 500 | 1.1 | -1.92px | Hero headline |\n| `{typography.display-xl}` | 48px | 500 | 1.1 | -1.44px | Section opener |\n| `{typography.display-lg}` | 36px | 500 | 1.15 | -0.72px | Sub-section / pricing tier |\n| `{typography.display-md}` | 28px | 500 | 1.2 | -0.42px | Card title |\n| `{typography.heading-lg}` | 22px | 500 | 1.2 | 0 | Compact heading |\n| `{typography.heading-md}` | 18px | 500 | 1.4 | 0 | Section sub-heading |\n| `{typography.body-lg}` | 18px | 400 | 1.55 | 0 | Marketing body lead |\n| `{typography.body-md}` | 16px | 400 | 1.5 | 0 | Default UI body |\n| `{typography.button-md}` | 14px | 500 | 1.0 | 0 | Button label |\n| `{typography.caption}` | 13px | 400 | 1.45 | 0 | Helper, footnote |\n| `{typography.micro}` | 12px | 400 | 1.45 | 0 | Pill label, fine print |\n| `{typography.code}` | 14px | 400 | 1.5 | 0 | Code block content |",
+      "line": 284
+    },
+    {
+      "heading": "Principles",
+      "level": 3,
+      "text": "- **Weight 500 across display.** Mid-weight reads as engineered, not decorative.\n- **Negative tracking on display.** -1.92px at 64px scaling proportionally down — tightens the rounded humanist letterforms into editorial density.\n- **Mono for code.** System mono families (Menlo / Monaco) — no proprietary mono webfont.",
+      "line": 301
+    },
+    {
+      "heading": "Note on Font Substitutes",
+      "level": 3,
+      "text": "Circular is proprietary. Use **Inter** at weight 500 with `letter-spacing: -1.92px` for display tiers. **Geist Sans** (open-source from Vercel) is another close alternative for both display and body. Avoid Helvetica defaults — they're heavier and lack the geometric warmth.",
+      "line": 306
+    },
+    {
+      "heading": "Layout",
+      "level": 2,
+      "text": "",
+      "line": 309
+    },
+    {
+      "heading": "Spacing System",
+      "level": 3,
+      "text": "- **Base unit**: 8px (with 2 / 4 / 12 sub-tokens for fine work).\n- **Tokens**: `{spacing.xxs}` 2px · `{spacing.xs}` 4px · `{spacing.sm}` 8px · `{spacing.md}` 12px · `{spacing.lg}` 16px · `{spacing.xl}` 24px · `{spacing.xxl}` 32px · `{spacing.huge}` 64px.\n- **Section padding**: 64–96px on marketing surfaces.\n- **Card internal padding**: 32px on feature/pricing cards.",
+      "line": 311
+    },
+    {
+      "heading": "Grid & Container",
+      "level": 3,
+      "text": "- Marketing pages center in a ~1280px container with no edge-bleed; the brand keeps content inside the box.\n- Pricing collapses 4-up → 2-up → 1-up at 1024 / 768 breakpoints.\n- Product UI mockups stack 2-up or render as overlapping panes inside the same container.",
+      "line": 317
+    },
+    {
+      "heading": "Whitespace Philosophy",
+      "level": 3,
+      "text": "The brand uses generous 64–96px section padding without atmospheric gradients filling the space — the white canvas is the design. The composited product UI mockups break up sections without requiring decoration.",
+      "line": 322
+    },
+    {
+      "heading": "Elevation & Depth",
+      "level": 2,
+      "text": "| Level | Treatment | Use |\n|---|---|---|\n| 0 | Flat, 1px hairline | Default cards |\n| 1 | `box-shadow: 0 1px 3px rgba(0,0,0,0.06)` | Subtle card lift |\n| 2 | `box-shadow: 0 8px 24px rgba(0,0,0,0.08)` | Floating composited UI mockups |\n| 3 | `box-shadow: 0 16px 48px rgba(0,0,0,0.12)` | Modal overlays, deep elevation |",
+      "line": 325
+    },
+    {
+      "heading": "Decorative Depth",
+      "level": 3,
+      "text": "The brand's depth is **product UI mockups** rather than gradients. Stacked dashboard / SQL editor / log panes composite together with subtle Level 2 shadows to suggest spatial hierarchy.",
+      "line": 334
+    },
+    {
+      "heading": "Shapes",
+      "level": 2,
+      "text": "",
+      "line": 337
+    },
+    {
+      "heading": "Border Radius Scale",
+      "level": 3,
+      "text": "| Token | Value | Use |\n|---|---|---|\n| `{rounded.xs}` | 4px | Form inputs, hairline tags |\n| `{rounded.sm}` | 6px | Buttons (the brand's signature button radius), code blocks |\n| `{rounded.md}` | 8px | Compact cards, alerts |\n| `{rounded.lg}` | 12px | Pricing cards, feature cards, product mockups |\n| `{rounded.xl}` | 16px | Modal dialogs, large container chrome |\n| `{rounded.full}` | 9999px | Pill tags, avatars |",
+      "line": 339
+    },
+    {
+      "heading": "Photography Geometry",
+      "level": 3,
+      "text": "The brand uses minimal photography. Customer logo strips display wordmarks at uniform height (~24–32px) in greyscale; case-study cards (rare) use 4:3 photos inset in `{rounded.lg}` containers.",
+      "line": 350
+    },
+    {
+      "heading": "Components",
+      "level": 2,
+      "text": "",
+      "line": 353
+    },
+    {
+      "heading": "Buttons",
+      "level": 3,
+      "text": "**`button-primary-green`** — the signature CTA.\n- Background `{colors.primary}`, text `{colors.on-primary}` (near-black, NOT white), type `{typography.button-md}`, padding `{spacing.sm} {spacing.lg}` (8px 16px), rounded `{rounded.sm}` 6px.\n- Pressed state `button-primary-green-pressed` shifts to `{colors.primary-deep}`.\n\n**`button-secondary-outline`** — outline alternative on white.\n- Background `{colors.canvas}`, text `{colors.ink}`, 1px solid `{colors.hairline-strong}` border, same shape.\n\n**`button-on-dark`** — used on dark surfaces / code-block CTAs.\n- Background `{colors.canvas-night}`, text `{colors.on-dark}`, same shape.\n\n**`button-link`** — text-only inline button.\n- Transparent background, text `{colors.ink}` rendered in `{typography.button-md}`, no padding, with a subtle underline on hover.",
+      "line": 355
+    },
+    {
+      "heading": "Cards & Containers",
+      "level": 3,
+      "text": "**`card-feature-light`** — feature card on white.\n- Background `{colors.canvas}`, padding `{spacing.xxl}`, rounded `{rounded.lg}` 12px, 1px `{colors.hairline}` border.\n\n**`card-pricing`** — standard pricing tier.\n- Background `{colors.canvas}`, padding `{spacing.xxl}`, rounded `{rounded.lg}`, 1px `{colors.hairline}` border. Title in `{typography.heading-lg}`, price in `{typography.display-md}`, body in `{typography.body-md}`, CTA `button-primary-green` pinned bottom.\n\n**`card-pricing-featured`** — inverted dark featured tier.\n- Background `{colors.canvas-night}`, text `{colors.on-dark}`, otherwise identical structure.\n\n**`card-feature-dark`** — feature card with deep dark fill.\n- Background `{colors.canvas-night}`, text `{colors.on-dark}`, padding `{spacing.xxl}`, rounded `{rounded.lg}`. Used for code-heavy feature explanations.\n\n**`code-block`** — code snippet container.\n- Background `{colors.canvas-night}`, text `{colors.on-dark}` rendered in `{typography.code}`. Padding `{spacing.lg}` 16px, rounded `{rounded.sm}` 6px.",
+      "line": 370
+    },
+    {
+      "heading": "Inputs & Forms",
+      "level": 3,
+      "text": "**`text-input`** — standard form input.\n- Background `{colors.canvas}`, text `{colors.ink}`, type `{typography.body-md}`, padding `{spacing.sm} {spacing.md}` (8px 12px), rounded `{rounded.sm}` 6px, 1px `{colors.hairline}` border.",
+      "line": 387
+    },
+    {
+      "heading": "Navigation",
+      "level": 3,
+      "text": "**`nav-bar-light`** — top nav across the site.\n- Background `{colors.canvas}`, text `{colors.ink}`, padding `{spacing.lg} {spacing.xl}`. Logo on the left, primary nav center, \"Sign In\" link + filled `button-primary-green` on the right.",
+      "line": 392
+    },
+    {
+      "heading": "Pills, Tags, and Chips",
+      "level": 3,
+      "text": "**`pill-tag-green`** — small green pill used for \"new\" or featured indicators.\n- Background `{colors.primary}`, text `{colors.on-primary}`, type `{typography.micro}`, padding `{spacing.xxs} {spacing.sm}`, rounded `{rounded.full}`.\n\n**`pill-tag-soft`** — neutral pill on light surfaces.\n- Background `{colors.canvas-soft}`, text `{colors.ink}`, otherwise same shape.",
+      "line": 397
+    },
+    {
+      "heading": "Signature Components",
+      "level": 3,
+      "text": "**Composited Product UI Mockups** — multi-layer dashboard / SQL editor / log pane composites with subtle Level 2 shadows. The product is the brand's argument; mockups always sit on white canvas with no surrounding decoration.\n\n**`link-on-light`** — inline links in body copy.\n- Text `{colors.ink}` rendered in `{typography.body-md}` with a persistent underline.\n\n**`footer-light`** — site-wide footer.\n- Background `{colors.canvas}`, text `{colors.ink-mute}`, type `{typography.caption}`, padding `{spacing.huge} {spacing.xl}` (64px 24px). Holds 4–5 columns of link groups, social icons, and a small legal row.",
+      "line": 405
+    },
+    {
+      "heading": "Do's and Don'ts",
+      "level": 2,
+      "text": "",
+      "line": 415
+    },
+    {
+      "heading": "Do",
+      "level": 3,
+      "text": "- Reserve `{colors.primary}` emerald for filled CTAs and the wordmark accent — it should appear sparingly.\n- Render display tiers at weight 500 with negative letter-spacing — the engineered tightness is part of the brand.\n- Use `{rounded.sm}` 6px for buttons — square-ish radii, never pill-shaped.\n- Composite product UI mockups inside `{rounded.lg}` containers with subtle Level 2 shadows.\n- Use near-black `{colors.ink}` on the emerald button (not white) — the green reads as \"lit\" with dark type, which is the brand's idiosyncratic choice.\n- Apply system mono for every code block.",
+      "line": 417
+    },
+    {
+      "heading": "Don't",
+      "level": 3,
+      "text": "- Don't introduce additional accent colors as system colors — purples, yellows, and pinks belong inside chart points and integration logos only.\n- Don't bump display weight above 500 — the brand's calibrated mid-weight breaks at 600+.\n- Don't use pill-shaped buttons; the brand's button radius is square-ish 6px.\n- Don't use white text on the emerald button — the brand specifically uses near-black on green.\n- Don't add atmospheric gradients to hero bands — the white canvas is the design.",
+      "line": 425
+    },
+    {
+      "heading": "Responsive Behavior",
+      "level": 2,
+      "text": "",
+      "line": 432
+    },
+    {
+      "heading": "Breakpoints",
+      "level": 3,
+      "text": "| Name | Width | Key Changes |\n|---|---|---|\n| Wide | ≥ 1440px | Full container width; product mockups at full scale |\n| Desktop | 1024–1440px | Default content max-width; pricing 4-up |\n| Tablet | 768–1023px | Pricing 2-up; mockups simplify to single panel |\n| Mobile | < 768px | Pricing 1-up; hamburger nav; display drops 64 → 36px |",
+      "line": 434
+    },
+    {
+      "heading": "Touch Targets",
+      "level": 3,
+      "text": "- Buttons hit ≥ 36×36px on mobile; vertical padding scales up to maintain WCAG AA minimum.\n- Form fields stay at 36px minimum height.",
+      "line": 443
+    },
+    {
+      "heading": "Collapsing Strategy",
+      "level": 3,
+      "text": "- Display tiers stair-step 64 → 48 → 36 → 28 → 22px.\n- Product UI mockups simplify to a single primary panel on mobile.\n- Pricing tiers stair-step 4-up → 2-up → 1-up; dark featured tier always distinguished.",
+      "line": 447
+    },
+    {
+      "heading": "Image Behavior",
+      "level": 3,
+      "text": "Product UI mockups use `srcset` with desktop / mobile crops; mobile crops focus on the most actionable inner panel.",
+      "line": 452
+    },
+    {
+      "heading": "Iteration Guide",
+      "level": 2,
+      "text": "1. Focus on ONE component at a time.\n2. Reference component names and tokens directly.\n3. Run `npx @google/design.md lint DESIGN.md` after edits.\n4. Default body to `{typography.body-md}`; use `{typography.code}` for any developer-facing snippet.\n5. Keep emerald scarce; one filled green button per viewport.\n6. The white-canvas commitment is non-negotiable — adding atmospheric backdrops breaks the brand.",
+      "line": 455
+    }
+  ],
+  "tokens": [
+    {
+      "path": "colors.primary",
+      "sourcePath": "colors.primary",
+      "type": "color",
+      "value": "#3ecf8e",
+      "status": "unverified",
+      "evidence": {
+        "line": 7,
+        "sourcePath": "colors.primary"
+      }
+    },
+    {
+      "path": "colors.primarydeep",
+      "sourcePath": "colors.primary-deep",
+      "type": "color",
+      "value": "#24b47e",
+      "status": "unverified",
+      "evidence": {
+        "line": 8,
+        "sourcePath": "colors.primary-deep"
+      }
+    },
+    {
+      "path": "colors.primarysoft",
+      "sourcePath": "colors.primary-soft",
+      "type": "color",
+      "value": "#4ade80",
+      "status": "unverified",
+      "evidence": {
+        "line": 9,
+        "sourcePath": "colors.primary-soft"
+      }
+    },
+    {
+      "path": "colors.ink",
+      "sourcePath": "colors.ink",
+      "type": "color",
+      "value": "#171717",
+      "status": "unverified",
+      "evidence": {
+        "line": 10,
+        "sourcePath": "colors.ink"
+      }
+    },
+    {
+      "path": "colors.inksecondary",
+      "sourcePath": "colors.ink-secondary",
+      "type": "color",
+      "value": "#212121",
+      "status": "unverified",
+      "evidence": {
+        "line": 11,
+        "sourcePath": "colors.ink-secondary"
+      }
+    },
+    {
+      "path": "colors.inkmute",
+      "sourcePath": "colors.ink-mute",
+      "type": "color",
+      "value": "#707070",
+      "status": "unverified",
+      "evidence": {
+        "line": 12,
+        "sourcePath": "colors.ink-mute"
+      }
+    },
+    {
+      "path": "colors.inkmute2",
+      "sourcePath": "colors.ink-mute-2",
+      "type": "color",
+      "value": "#9a9a9a",
+      "status": "unverified",
+      "evidence": {
+        "line": 13,
+        "sourcePath": "colors.ink-mute-2"
+      }
+    },
+    {
+      "path": "colors.inkfaint",
+      "sourcePath": "colors.ink-faint",
+      "type": "color",
+      "value": "#b2b2b2",
+      "status": "unverified",
+      "evidence": {
+        "line": 14,
+        "sourcePath": "colors.ink-faint"
+      }
+    },
+    {
+      "path": "colors.onprimary",
+      "sourcePath": "colors.on-primary",
+      "type": "color",
+      "value": "#171717",
+      "status": "unverified",
+      "evidence": {
+        "line": 15,
+        "sourcePath": "colors.on-primary"
+      }
+    },
+    {
+      "path": "colors.ondark",
+      "sourcePath": "colors.on-dark",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 16,
+        "sourcePath": "colors.on-dark"
+      }
+    },
+    {
+      "path": "colors.canvas",
+      "sourcePath": "colors.canvas",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 17,
+        "sourcePath": "colors.canvas"
+      }
+    },
+    {
+      "path": "colors.canvassoft",
+      "sourcePath": "colors.canvas-soft",
+      "type": "color",
+      "value": "#fafafa",
+      "status": "unverified",
+      "evidence": {
+        "line": 18,
+        "sourcePath": "colors.canvas-soft"
+      }
+    },
+    {
+      "path": "colors.canvasnight",
+      "sourcePath": "colors.canvas-night",
+      "type": "color",
+      "value": "#1c1c1c",
+      "status": "unverified",
+      "evidence": {
+        "line": 19,
+        "sourcePath": "colors.canvas-night"
+      }
+    },
+    {
+      "path": "colors.canvasnightsoft",
+      "sourcePath": "colors.canvas-night-soft",
+      "type": "color",
+      "value": "#202020",
+      "status": "unverified",
+      "evidence": {
+        "line": 20,
+        "sourcePath": "colors.canvas-night-soft"
+      }
+    },
+    {
+      "path": "colors.hairline",
+      "sourcePath": "colors.hairline",
+      "type": "color",
+      "value": "#dfdfdf",
+      "status": "unverified",
+      "evidence": {
+        "line": 21,
+        "sourcePath": "colors.hairline"
+      }
+    },
+    {
+      "path": "colors.hairlinestrong",
+      "sourcePath": "colors.hairline-strong",
+      "type": "color",
+      "value": "#c7c7c7",
+      "status": "unverified",
+      "evidence": {
+        "line": 22,
+        "sourcePath": "colors.hairline-strong"
+      }
+    },
+    {
+      "path": "colors.hairlinecool",
+      "sourcePath": "colors.hairline-cool",
+      "type": "color",
+      "value": "#ededed",
+      "status": "unverified",
+      "evidence": {
+        "line": 23,
+        "sourcePath": "colors.hairline-cool"
+      }
+    },
+    {
+      "path": "colors.hairlinecool2",
+      "sourcePath": "colors.hairline-cool-2",
+      "type": "color",
+      "value": "#efefef",
+      "status": "unverified",
+      "evidence": {
+        "line": 24,
+        "sourcePath": "colors.hairline-cool-2"
+      }
+    },
+    {
+      "path": "colors.hairlinecool3",
+      "sourcePath": "colors.hairline-cool-3",
+      "type": "color",
+      "value": "#d4d4d4",
+      "status": "unverified",
+      "evidence": {
+        "line": 25,
+        "sourcePath": "colors.hairline-cool-3"
+      }
+    },
+    {
+      "path": "colors.accentpurple",
+      "sourcePath": "colors.accent-purple",
+      "type": "color",
+      "value": "#6b01c2",
+      "status": "unverified",
+      "evidence": {
+        "line": 26,
+        "sourcePath": "colors.accent-purple"
+      }
+    },
+    {
+      "path": "colors.accentviolet",
+      "sourcePath": "colors.accent-violet",
+      "type": "color",
+      "value": "#644fc1",
+      "status": "unverified",
+      "evidence": {
+        "line": 27,
+        "sourcePath": "colors.accent-violet"
+      }
+    },
+    {
+      "path": "colors.accentpurplesoft",
+      "sourcePath": "colors.accent-purple-soft",
+      "type": "color",
+      "value": "#eddbf9",
+      "status": "unverified",
+      "evidence": {
+        "line": 28,
+        "sourcePath": "colors.accent-purple-soft"
+      }
+    },
+    {
+      "path": "colors.accentyellow",
+      "sourcePath": "colors.accent-yellow",
+      "type": "color",
+      "value": "#ffdb13",
+      "status": "unverified",
+      "evidence": {
+        "line": 29,
+        "sourcePath": "colors.accent-yellow"
+      }
+    },
+    {
+      "path": "colors.accenttomato",
+      "sourcePath": "colors.accent-tomato",
+      "type": "color",
+      "value": "#ff2201",
+      "status": "unverified",
+      "evidence": {
+        "line": 30,
+        "sourcePath": "colors.accent-tomato"
+      }
+    },
+    {
+      "path": "colors.accentpink",
+      "sourcePath": "colors.accent-pink",
+      "type": "color",
+      "value": "#c7007e",
+      "status": "unverified",
+      "evidence": {
+        "line": 31,
+        "sourcePath": "colors.accent-pink"
+      }
+    },
+    {
+      "path": "colors.accentindigo",
+      "sourcePath": "colors.accent-indigo",
+      "type": "color",
+      "value": "#054cff",
+      "status": "unverified",
+      "evidence": {
+        "line": 32,
+        "sourcePath": "colors.accent-indigo"
+      }
+    },
+    {
+      "path": "colors.accentcrimson",
+      "sourcePath": "colors.accent-crimson",
+      "type": "color",
+      "value": "#e2005a",
+      "status": "unverified",
+      "evidence": {
+        "line": 33,
+        "sourcePath": "colors.accent-crimson"
+      }
+    },
+    {
+      "path": "typography.displayxxl.fontfamily",
+      "sourcePath": "typography.display-xxl.fontFamily",
+      "type": "fontFamily",
+      "value": "Circular, 'Helvetica Neue', Helvetica, Arial, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 37,
+        "sourcePath": "typography.display-xxl.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displayxxl.fontsize",
+      "sourcePath": "typography.display-xxl.fontSize",
+      "type": "dimension",
+      "value": "64px",
+      "status": "unverified",
+      "evidence": {
+        "line": 38,
+        "sourcePath": "typography.display-xxl.fontSize"
+      }
+    },
+    {
+      "path": "typography.displayxxl.fontweight",
+      "sourcePath": "typography.display-xxl.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 39,
+        "sourcePath": "typography.display-xxl.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displayxxl.lineheight",
+      "sourcePath": "typography.display-xxl.lineHeight",
+      "type": "number",
+      "value": 1.1,
+      "status": "unverified",
+      "evidence": {
+        "line": 40,
+        "sourcePath": "typography.display-xxl.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displayxxl.letterspacing",
+      "sourcePath": "typography.display-xxl.letterSpacing",
+      "type": "dimension",
+      "value": "-1.92px",
+      "status": "unverified",
+      "evidence": {
+        "line": 41,
+        "sourcePath": "typography.display-xxl.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.displayxl.fontfamily",
+      "sourcePath": "typography.display-xl.fontFamily",
+      "type": "fontFamily",
+      "value": "Circular, 'Helvetica Neue', Helvetica, Arial, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 43,
+        "sourcePath": "typography.display-xl.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displayxl.fontsize",
+      "sourcePath": "typography.display-xl.fontSize",
+      "type": "dimension",
+      "value": "48px",
+      "status": "unverified",
+      "evidence": {
+        "line": 44,
+        "sourcePath": "typography.display-xl.fontSize"
+      }
+    },
+    {
+      "path": "typography.displayxl.fontweight",
+      "sourcePath": "typography.display-xl.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 45,
+        "sourcePath": "typography.display-xl.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displayxl.lineheight",
+      "sourcePath": "typography.display-xl.lineHeight",
+      "type": "number",
+      "value": 1.1,
+      "status": "unverified",
+      "evidence": {
+        "line": 46,
+        "sourcePath": "typography.display-xl.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displayxl.letterspacing",
+      "sourcePath": "typography.display-xl.letterSpacing",
+      "type": "dimension",
+      "value": "-1.44px",
+      "status": "unverified",
+      "evidence": {
+        "line": 47,
+        "sourcePath": "typography.display-xl.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.displaylg.fontfamily",
+      "sourcePath": "typography.display-lg.fontFamily",
+      "type": "fontFamily",
+      "value": "Circular, 'Helvetica Neue', Helvetica, Arial, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 49,
+        "sourcePath": "typography.display-lg.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displaylg.fontsize",
+      "sourcePath": "typography.display-lg.fontSize",
+      "type": "dimension",
+      "value": "36px",
+      "status": "unverified",
+      "evidence": {
+        "line": 50,
+        "sourcePath": "typography.display-lg.fontSize"
+      }
+    },
+    {
+      "path": "typography.displaylg.fontweight",
+      "sourcePath": "typography.display-lg.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 51,
+        "sourcePath": "typography.display-lg.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displaylg.lineheight",
+      "sourcePath": "typography.display-lg.lineHeight",
+      "type": "number",
+      "value": 1.15,
+      "status": "unverified",
+      "evidence": {
+        "line": 52,
+        "sourcePath": "typography.display-lg.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displaylg.letterspacing",
+      "sourcePath": "typography.display-lg.letterSpacing",
+      "type": "dimension",
+      "value": "-0.72px",
+      "status": "unverified",
+      "evidence": {
+        "line": 53,
+        "sourcePath": "typography.display-lg.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.displaymd.fontfamily",
+      "sourcePath": "typography.display-md.fontFamily",
+      "type": "fontFamily",
+      "value": "Circular, 'Helvetica Neue', Helvetica, Arial, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 55,
+        "sourcePath": "typography.display-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displaymd.fontsize",
+      "sourcePath": "typography.display-md.fontSize",
+      "type": "dimension",
+      "value": "28px",
+      "status": "unverified",
+      "evidence": {
+        "line": 56,
+        "sourcePath": "typography.display-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.displaymd.fontweight",
+      "sourcePath": "typography.display-md.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 57,
+        "sourcePath": "typography.display-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displaymd.lineheight",
+      "sourcePath": "typography.display-md.lineHeight",
+      "type": "number",
+      "value": 1.2,
+      "status": "unverified",
+      "evidence": {
+        "line": 58,
+        "sourcePath": "typography.display-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displaymd.letterspacing",
+      "sourcePath": "typography.display-md.letterSpacing",
+      "type": "dimension",
+      "value": "-0.42px",
+      "status": "unverified",
+      "evidence": {
+        "line": 59,
+        "sourcePath": "typography.display-md.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.headinglg.fontfamily",
+      "sourcePath": "typography.heading-lg.fontFamily",
+      "type": "fontFamily",
+      "value": "Circular, 'Helvetica Neue', Helvetica, Arial, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 61,
+        "sourcePath": "typography.heading-lg.fontFamily"
+      }
+    },
+    {
+      "path": "typography.headinglg.fontsize",
+      "sourcePath": "typography.heading-lg.fontSize",
+      "type": "dimension",
+      "value": "22px",
+      "status": "unverified",
+      "evidence": {
+        "line": 62,
+        "sourcePath": "typography.heading-lg.fontSize"
+      }
+    },
+    {
+      "path": "typography.headinglg.fontweight",
+      "sourcePath": "typography.heading-lg.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 63,
+        "sourcePath": "typography.heading-lg.fontWeight"
+      }
+    },
+    {
+      "path": "typography.headinglg.lineheight",
+      "sourcePath": "typography.heading-lg.lineHeight",
+      "type": "number",
+      "value": 1.2,
+      "status": "unverified",
+      "evidence": {
+        "line": 64,
+        "sourcePath": "typography.heading-lg.lineHeight"
+      }
+    },
+    {
+      "path": "typography.headinglg.letterspacing",
+      "sourcePath": "typography.heading-lg.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 65,
+        "sourcePath": "typography.heading-lg.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.headingmd.fontfamily",
+      "sourcePath": "typography.heading-md.fontFamily",
+      "type": "fontFamily",
+      "value": "Circular, 'Helvetica Neue', Helvetica, Arial, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 67,
+        "sourcePath": "typography.heading-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.headingmd.fontsize",
+      "sourcePath": "typography.heading-md.fontSize",
+      "type": "dimension",
+      "value": "18px",
+      "status": "unverified",
+      "evidence": {
+        "line": 68,
+        "sourcePath": "typography.heading-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.headingmd.fontweight",
+      "sourcePath": "typography.heading-md.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 69,
+        "sourcePath": "typography.heading-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.headingmd.lineheight",
+      "sourcePath": "typography.heading-md.lineHeight",
+      "type": "number",
+      "value": 1.4,
+      "status": "unverified",
+      "evidence": {
+        "line": 70,
+        "sourcePath": "typography.heading-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.headingmd.letterspacing",
+      "sourcePath": "typography.heading-md.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 71,
+        "sourcePath": "typography.heading-md.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.bodylg.fontfamily",
+      "sourcePath": "typography.body-lg.fontFamily",
+      "type": "fontFamily",
+      "value": "Circular, 'Helvetica Neue', Helvetica, Arial, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 73,
+        "sourcePath": "typography.body-lg.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodylg.fontsize",
+      "sourcePath": "typography.body-lg.fontSize",
+      "type": "dimension",
+      "value": "18px",
+      "status": "unverified",
+      "evidence": {
+        "line": 74,
+        "sourcePath": "typography.body-lg.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodylg.fontweight",
+      "sourcePath": "typography.body-lg.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 75,
+        "sourcePath": "typography.body-lg.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodylg.lineheight",
+      "sourcePath": "typography.body-lg.lineHeight",
+      "type": "number",
+      "value": 1.55,
+      "status": "unverified",
+      "evidence": {
+        "line": 76,
+        "sourcePath": "typography.body-lg.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodylg.letterspacing",
+      "sourcePath": "typography.body-lg.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 77,
+        "sourcePath": "typography.body-lg.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.bodymd.fontfamily",
+      "sourcePath": "typography.body-md.fontFamily",
+      "type": "fontFamily",
+      "value": "Circular, 'Helvetica Neue', Helvetica, Arial, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 79,
+        "sourcePath": "typography.body-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodymd.fontsize",
+      "sourcePath": "typography.body-md.fontSize",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 80,
+        "sourcePath": "typography.body-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodymd.fontweight",
+      "sourcePath": "typography.body-md.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 81,
+        "sourcePath": "typography.body-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodymd.lineheight",
+      "sourcePath": "typography.body-md.lineHeight",
+      "type": "number",
+      "value": 1.5,
+      "status": "unverified",
+      "evidence": {
+        "line": 82,
+        "sourcePath": "typography.body-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodymd.letterspacing",
+      "sourcePath": "typography.body-md.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 83,
+        "sourcePath": "typography.body-md.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.buttonmd.fontfamily",
+      "sourcePath": "typography.button-md.fontFamily",
+      "type": "fontFamily",
+      "value": "Circular, 'Helvetica Neue', Helvetica, Arial, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 85,
+        "sourcePath": "typography.button-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.buttonmd.fontsize",
+      "sourcePath": "typography.button-md.fontSize",
+      "type": "dimension",
+      "value": "14px",
+      "status": "unverified",
+      "evidence": {
+        "line": 86,
+        "sourcePath": "typography.button-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.buttonmd.fontweight",
+      "sourcePath": "typography.button-md.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 87,
+        "sourcePath": "typography.button-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.buttonmd.lineheight",
+      "sourcePath": "typography.button-md.lineHeight",
+      "type": "number",
+      "value": 1,
+      "status": "unverified",
+      "evidence": {
+        "line": 88,
+        "sourcePath": "typography.button-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.buttonmd.letterspacing",
+      "sourcePath": "typography.button-md.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 89,
+        "sourcePath": "typography.button-md.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.caption.fontfamily",
+      "sourcePath": "typography.caption.fontFamily",
+      "type": "fontFamily",
+      "value": "Circular, 'Helvetica Neue', Helvetica, Arial, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 91,
+        "sourcePath": "typography.caption.fontFamily"
+      }
+    },
+    {
+      "path": "typography.caption.fontsize",
+      "sourcePath": "typography.caption.fontSize",
+      "type": "dimension",
+      "value": "13px",
+      "status": "unverified",
+      "evidence": {
+        "line": 92,
+        "sourcePath": "typography.caption.fontSize"
+      }
+    },
+    {
+      "path": "typography.caption.fontweight",
+      "sourcePath": "typography.caption.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 93,
+        "sourcePath": "typography.caption.fontWeight"
+      }
+    },
+    {
+      "path": "typography.caption.lineheight",
+      "sourcePath": "typography.caption.lineHeight",
+      "type": "number",
+      "value": 1.45,
+      "status": "unverified",
+      "evidence": {
+        "line": 94,
+        "sourcePath": "typography.caption.lineHeight"
+      }
+    },
+    {
+      "path": "typography.caption.letterspacing",
+      "sourcePath": "typography.caption.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 95,
+        "sourcePath": "typography.caption.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.micro.fontfamily",
+      "sourcePath": "typography.micro.fontFamily",
+      "type": "fontFamily",
+      "value": "Circular, 'Helvetica Neue', Helvetica, Arial, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 97,
+        "sourcePath": "typography.micro.fontFamily"
+      }
+    },
+    {
+      "path": "typography.micro.fontsize",
+      "sourcePath": "typography.micro.fontSize",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 98,
+        "sourcePath": "typography.micro.fontSize"
+      }
+    },
+    {
+      "path": "typography.micro.fontweight",
+      "sourcePath": "typography.micro.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 99,
+        "sourcePath": "typography.micro.fontWeight"
+      }
+    },
+    {
+      "path": "typography.micro.lineheight",
+      "sourcePath": "typography.micro.lineHeight",
+      "type": "number",
+      "value": 1.45,
+      "status": "unverified",
+      "evidence": {
+        "line": 100,
+        "sourcePath": "typography.micro.lineHeight"
+      }
+    },
+    {
+      "path": "typography.micro.letterspacing",
+      "sourcePath": "typography.micro.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 101,
+        "sourcePath": "typography.micro.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.code.fontfamily",
+      "sourcePath": "typography.code.fontFamily",
+      "type": "fontFamily",
+      "value": "ui-monospace, Menlo, Monaco, Consolas, 'Liberation Mono', monospace",
+      "status": "unverified",
+      "evidence": {
+        "line": 103,
+        "sourcePath": "typography.code.fontFamily"
+      }
+    },
+    {
+      "path": "typography.code.fontsize",
+      "sourcePath": "typography.code.fontSize",
+      "type": "dimension",
+      "value": "14px",
+      "status": "unverified",
+      "evidence": {
+        "line": 104,
+        "sourcePath": "typography.code.fontSize"
+      }
+    },
+    {
+      "path": "typography.code.fontweight",
+      "sourcePath": "typography.code.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 105,
+        "sourcePath": "typography.code.fontWeight"
+      }
+    },
+    {
+      "path": "typography.code.lineheight",
+      "sourcePath": "typography.code.lineHeight",
+      "type": "number",
+      "value": 1.5,
+      "status": "unverified",
+      "evidence": {
+        "line": 106,
+        "sourcePath": "typography.code.lineHeight"
+      }
+    },
+    {
+      "path": "typography.code.letterspacing",
+      "sourcePath": "typography.code.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 107,
+        "sourcePath": "typography.code.letterSpacing"
+      }
+    },
+    {
+      "path": "rounded.xs",
+      "sourcePath": "rounded.xs",
+      "type": "dimension",
+      "value": "4px",
+      "status": "unverified",
+      "evidence": {
+        "line": 110,
+        "sourcePath": "rounded.xs"
+      }
+    },
+    {
+      "path": "rounded.sm",
+      "sourcePath": "rounded.sm",
+      "type": "dimension",
+      "value": "6px",
+      "status": "unverified",
+      "evidence": {
+        "line": 111,
+        "sourcePath": "rounded.sm"
+      }
+    },
+    {
+      "path": "rounded.md",
+      "sourcePath": "rounded.md",
+      "type": "dimension",
+      "value": "8px",
+      "status": "unverified",
+      "evidence": {
+        "line": 112,
+        "sourcePath": "rounded.md"
+      }
+    },
+    {
+      "path": "rounded.lg",
+      "sourcePath": "rounded.lg",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 113,
+        "sourcePath": "rounded.lg"
+      }
+    },
+    {
+      "path": "rounded.xl",
+      "sourcePath": "rounded.xl",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 114,
+        "sourcePath": "rounded.xl"
+      }
+    },
+    {
+      "path": "rounded.full",
+      "sourcePath": "rounded.full",
+      "type": "dimension",
+      "value": "9999px",
+      "status": "unverified",
+      "evidence": {
+        "line": 115,
+        "sourcePath": "rounded.full"
+      }
+    },
+    {
+      "path": "spacing.xxs",
+      "sourcePath": "spacing.xxs",
+      "type": "dimension",
+      "value": "2px",
+      "status": "unverified",
+      "evidence": {
+        "line": 118,
+        "sourcePath": "spacing.xxs"
+      }
+    },
+    {
+      "path": "spacing.xs",
+      "sourcePath": "spacing.xs",
+      "type": "dimension",
+      "value": "4px",
+      "status": "unverified",
+      "evidence": {
+        "line": 119,
+        "sourcePath": "spacing.xs"
+      }
+    },
+    {
+      "path": "spacing.sm",
+      "sourcePath": "spacing.sm",
+      "type": "dimension",
+      "value": "8px",
+      "status": "unverified",
+      "evidence": {
+        "line": 120,
+        "sourcePath": "spacing.sm"
+      }
+    },
+    {
+      "path": "spacing.md",
+      "sourcePath": "spacing.md",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 121,
+        "sourcePath": "spacing.md"
+      }
+    },
+    {
+      "path": "spacing.lg",
+      "sourcePath": "spacing.lg",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 122,
+        "sourcePath": "spacing.lg"
+      }
+    },
+    {
+      "path": "spacing.xl",
+      "sourcePath": "spacing.xl",
+      "type": "dimension",
+      "value": "24px",
+      "status": "unverified",
+      "evidence": {
+        "line": 123,
+        "sourcePath": "spacing.xl"
+      }
+    },
+    {
+      "path": "spacing.xxl",
+      "sourcePath": "spacing.xxl",
+      "type": "dimension",
+      "value": "32px",
+      "status": "unverified",
+      "evidence": {
+        "line": 124,
+        "sourcePath": "spacing.xxl"
+      }
+    },
+    {
+      "path": "spacing.huge",
+      "sourcePath": "spacing.huge",
+      "type": "dimension",
+      "value": "64px",
+      "status": "unverified",
+      "evidence": {
+        "line": 125,
+        "sourcePath": "spacing.huge"
+      }
+    }
+  ],
+  "rejectedTokens": [],
+  "homepage": {
+    "status": "missing",
+    "candidates": [],
+    "verification": {
+      "status": "verified",
+      "url": "https://supabase.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://supabase.com/",
+          "title": "Supabase | The Postgres Development Platform",
+          "note": "Public homepage read requested https://supabase.com; final URL https://supabase.com/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    }
+  },
+  "completeness": {
+    "presentFields": [
+      "colors",
+      "typography",
+      "rounded",
+      "spacing",
+      "components"
+    ],
+    "missingFields": [],
+    "tokenRoles": "incomplete",
+    "note": "Missing fields are not reconstructed. Prose-only colors have no inferred semantic role."
+  },
+  "provenance": {
+    "status": "independent-analysis",
+    "sources": [
+      {
+        "title": "VoltAgent awesome-design-md independent analysis",
+        "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/supabase/DESIGN.md"
+      }
+    ],
+    "verification": "unverified-secondary-analysis"
+  },
+  "limitations": [
+    "Independent secondary analysis, not an official brand system; all reported values are unverified.",
+    "No brand assets, logos, font binaries or screenshots copied. Font names are documentary, not font licenses.",
+    "Safe CSS literals are extracted without claiming complete roles, state coverage or visual fidelity.",
+    "Markdown is retained as inert evidence, never executed or rendered as raw HTML."
+  ]
+}

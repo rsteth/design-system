@@ -1,0 +1,1979 @@
+{
+  "schemaVersion": 1,
+  "id": "reference-playstation",
+  "title": "Playstation",
+  "classification": "independent-unverified-analysis",
+  "source": {
+    "repository": "https://github.com/VoltAgent/awesome-design-md",
+    "fork": "https://github.com/rsteth/awesome-design-md-p",
+    "revision": "fcc70284932276d085f01ef9f83edde90b1258cb",
+    "path": "design-md/playstation/DESIGN.md",
+    "sha256": "2a56c109af6cb847fa091b768f719b498ac56b582d010860e73ea5fb72a1590d",
+    "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/playstation/DESIGN.md"
+  },
+  "sourceName": "PlayStation-design-analysis",
+  "titleProvenance": {
+    "status": "inferred",
+    "basis": "Source directory label, normalized for navigation; original source name is retained without correction.",
+    "sourceValue": "playstation",
+    "originalName": "PlayStation-design-analysis"
+  },
+  "description": "A three-surface marketing system organized around alternating black, white, and PlayStation Blue chapters that scroll past the viewer like a console launch trailer. Each section has a single editorial purpose — hero photography, console product render, PS Plus tier callout, news strip — and each owns one of three full-bleed canvas modes. The chrome is unusually quiet for a gaming brand: bright PlayStation Blue (`#0070d1`) carries every primary CTA as a fully-rounded pill, the proprietary SST face renders display copy at a signature weight 300 (light) for an airy, premium feel, and a crisp 8px-radius secondary card system carries product info on either canvas mode. The system never decorates — no gradient backgrounds on chrome, no atmospheric mesh, no drop shadows beyond a faint section-divide. Imagery does all the heavy lifting: console glamour shots, game key art, and PS Plus tier illustrations occupy 60-90% of every section, with copy compressed into a small editorial slot.\n",
+  "analysis": {
+    "version": "alpha",
+    "name": "PlayStation-design-analysis",
+    "description": "A three-surface marketing system organized around alternating black, white, and PlayStation Blue chapters that scroll past the viewer like a console launch trailer. Each section has a single editorial purpose — hero photography, console product render, PS Plus tier callout, news strip — and each owns one of three full-bleed canvas modes. The chrome is unusually quiet for a gaming brand: bright PlayStation Blue (`#0070d1`) carries every primary CTA as a fully-rounded pill, the proprietary SST face renders display copy at a signature weight 300 (light) for an airy, premium feel, and a crisp 8px-radius secondary card system carries product info on either canvas mode. The system never decorates — no gradient backgrounds on chrome, no atmospheric mesh, no drop shadows beyond a faint section-divide. Imagery does all the heavy lifting: console glamour shots, game key art, and PS Plus tier illustrations occupy 60-90% of every section, with copy compressed into a small editorial slot.\n",
+    "colors": {
+      "primary": "#0070d1",
+      "primary-pressed": "#0064b7",
+      "primary-active": "#004d8d",
+      "on-primary": "#ffffff",
+      "link-light": "#0064b7",
+      "link-dark": "#53b1ff",
+      "commerce": "#d53b00",
+      "commerce-pressed": "#aa2f00",
+      "commerce-link-base": "#d63d00",
+      "on-commerce": "#ffffff",
+      "ink": "#000000",
+      "ink-deep": "#121314",
+      "ink-elevated": "#181818",
+      "charcoal": "#1f2024",
+      "body-light": "rgba(0,0,0,0.6)",
+      "mute-light": "#6b6b6b",
+      "ash-light": "#cccccc",
+      "body-dark": "rgba(255,255,255,0.7)",
+      "mute-dark": "rgba(229,229,229,0.55)",
+      "ash-dark": "rgba(229,229,229,0.2)",
+      "canvas-light": "#ffffff",
+      "surface-soft": "#f3f3f3",
+      "surface-card": "#f5f7fa",
+      "surface-filter": "rgba(245,247,250,0.3)",
+      "canvas-dark": "#000000",
+      "surface-dark-elevated": "#121314",
+      "surface-dark-card": "#181818",
+      "hairline-light": "#f3f3f3",
+      "hairline-dark": "rgba(229,229,229,0.2)",
+      "on-dark": "#ffffff",
+      "on-dark-mute": "#cccccc",
+      "warning": "#c81b3a",
+      "ps-plus-gold-start": "#ffce21",
+      "ps-plus-gold-mid": "#f5a623",
+      "ps-plus-gold-end": "#ee8e00",
+      "marathon-yellow": "#deff20"
+    },
+    "typography": {
+      "display-xl": {
+        "fontFamily": "PlayStation SST",
+        "fontSize": "54px",
+        "fontWeight": 300,
+        "lineHeight": 1.25,
+        "letterSpacing": "-0.1px"
+      },
+      "display-lg": {
+        "fontFamily": "PlayStation SST",
+        "fontSize": "44px",
+        "fontWeight": 300,
+        "lineHeight": 1.25,
+        "letterSpacing": "0.1px"
+      },
+      "display-md": {
+        "fontFamily": "PlayStation SST",
+        "fontSize": "35px",
+        "fontWeight": 300,
+        "lineHeight": 1.25,
+        "letterSpacing": 0
+      },
+      "heading-xl": {
+        "fontFamily": "PlayStation SST",
+        "fontSize": "28px",
+        "fontWeight": 300,
+        "lineHeight": 1.25,
+        "letterSpacing": "0.1px"
+      },
+      "heading-lg": {
+        "fontFamily": "PlayStation SST",
+        "fontSize": "22px",
+        "fontWeight": 300,
+        "lineHeight": 1.25,
+        "letterSpacing": "0.1px"
+      },
+      "heading-md": {
+        "fontFamily": "PlayStation SST",
+        "fontSize": "18px",
+        "fontWeight": 600,
+        "lineHeight": 1,
+        "letterSpacing": 0
+      },
+      "body-md": {
+        "fontFamily": "PlayStation SST",
+        "fontSize": "18px",
+        "fontWeight": 400,
+        "lineHeight": 1.5,
+        "letterSpacing": "0.1px"
+      },
+      "body-strong": {
+        "fontFamily": "PlayStation SST",
+        "fontSize": "18px",
+        "fontWeight": 500,
+        "lineHeight": 1.25,
+        "letterSpacing": "0.4px"
+      },
+      "body-sm": {
+        "fontFamily": "PlayStation SST",
+        "fontSize": "16px",
+        "fontWeight": 400,
+        "lineHeight": 1.5,
+        "letterSpacing": 0
+      },
+      "caption-md": {
+        "fontFamily": "PlayStation SST",
+        "fontSize": "14px",
+        "fontWeight": 400,
+        "lineHeight": 1.5,
+        "letterSpacing": 0
+      },
+      "caption-sm": {
+        "fontFamily": "PlayStation SST",
+        "fontSize": "12px",
+        "fontWeight": 500,
+        "lineHeight": 1.5,
+        "letterSpacing": 0
+      },
+      "link-md": {
+        "fontFamily": "PlayStation SST",
+        "fontSize": "18px",
+        "fontWeight": 400,
+        "lineHeight": 1.5,
+        "letterSpacing": 0
+      },
+      "button-lg": {
+        "fontFamily": "PlayStation SST",
+        "fontSize": "18px",
+        "fontWeight": 700,
+        "lineHeight": 1.25,
+        "letterSpacing": "0.45px"
+      },
+      "button-md": {
+        "fontFamily": "PlayStation SST",
+        "fontSize": "14px",
+        "fontWeight": 700,
+        "lineHeight": 1.25,
+        "letterSpacing": "0.324px"
+      }
+    },
+    "rounded": {
+      "none": "0px",
+      "sm": "4px",
+      "md": "8px",
+      "lg": "16px",
+      "full": "9999px"
+    },
+    "spacing": {
+      "xxs": "4px",
+      "xs": "8px",
+      "sm": "12px",
+      "md": "16px",
+      "lg": "24px",
+      "xl": "32px",
+      "xxl": "48px",
+      "section": "96px"
+    },
+    "components": {
+      "button-primary": {
+        "backgroundColor": "{colors.primary}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.button-lg}",
+        "rounded": "{rounded.full}",
+        "padding": "12px 28px",
+        "height": "48px"
+      },
+      "button-primary-pressed": {
+        "backgroundColor": "{colors.primary-pressed}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.button-lg}",
+        "rounded": "{rounded.full}"
+      },
+      "button-commerce": {
+        "backgroundColor": "{colors.commerce}",
+        "textColor": "{colors.on-commerce}",
+        "typography": "{typography.button-lg}",
+        "rounded": "{rounded.full}",
+        "padding": "12px 28px",
+        "height": "48px"
+      },
+      "button-commerce-pressed": {
+        "backgroundColor": "{colors.commerce-pressed}",
+        "textColor": "{colors.on-commerce}",
+        "typography": "{typography.button-lg}",
+        "rounded": "{rounded.full}"
+      },
+      "button-secondary-light": {
+        "backgroundColor": "transparent",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.button-lg}",
+        "rounded": "{rounded.full}",
+        "padding": "12px 28px",
+        "height": "48px"
+      },
+      "button-secondary-dark": {
+        "backgroundColor": "transparent",
+        "textColor": "{colors.on-dark}",
+        "typography": "{typography.button-lg}",
+        "rounded": "{rounded.full}",
+        "padding": "12px 28px",
+        "height": "48px"
+      },
+      "button-disabled": {
+        "backgroundColor": "{colors.surface-soft}",
+        "textColor": "{colors.ash-light}",
+        "rounded": "{rounded.full}"
+      },
+      "text-input": {
+        "backgroundColor": "{colors.canvas-light}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.sm}",
+        "padding": "12px 16px",
+        "height": "48px"
+      },
+      "text-input-focused": {
+        "backgroundColor": "{colors.canvas-light}",
+        "textColor": "{colors.ink}",
+        "rounded": "{rounded.sm}"
+      },
+      "filter-pill": {
+        "backgroundColor": "{colors.surface-filter}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.full}",
+        "padding": "8px 16px"
+      },
+      "filter-pill-active": {
+        "backgroundColor": "{colors.canvas-light}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.full}"
+      },
+      "product-card": {
+        "backgroundColor": "{colors.surface-card}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.md}",
+        "padding": "24px"
+      },
+      "product-card-dark": {
+        "backgroundColor": "{colors.surface-dark-card}",
+        "textColor": "{colors.on-dark}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.md}",
+        "padding": "24px"
+      },
+      "game-tile": {
+        "backgroundColor": "{colors.surface-dark-elevated}",
+        "textColor": "{colors.on-dark}",
+        "typography": "{typography.body-sm}",
+        "rounded": "{rounded.md}",
+        "padding": "0px"
+      },
+      "feature-card": {
+        "backgroundColor": "{colors.canvas-light}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.md}",
+        "padding": "32px"
+      },
+      "hero-band-blue": {
+        "backgroundColor": "{colors.primary}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.display-md}",
+        "rounded": "{rounded.none}",
+        "padding": "96px 48px"
+      },
+      "hero-band-dark": {
+        "backgroundColor": "{colors.canvas-dark}",
+        "textColor": "{colors.on-dark}",
+        "typography": "{typography.display-xl}",
+        "rounded": "{rounded.none}",
+        "padding": "96px 48px"
+      },
+      "hero-band-light": {
+        "backgroundColor": "{colors.canvas-light}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.display-xl}",
+        "rounded": "{rounded.none}",
+        "padding": "96px 48px"
+      },
+      "ps-plus-banner": {
+        "backgroundColor": "{colors.surface-dark-elevated}",
+        "textColor": "{colors.on-dark}",
+        "typography": "{typography.heading-xl}",
+        "rounded": "{rounded.md}",
+        "padding": "48px 32px"
+      },
+      "carousel-paddle": {
+        "backgroundColor": "rgba(255,255,255,0.16)",
+        "textColor": "{colors.on-dark}",
+        "rounded": "{rounded.full}",
+        "size": "48px"
+      },
+      "pagination-dot": {
+        "backgroundColor": "{colors.ash-dark}",
+        "rounded": "{rounded.full}",
+        "size": "8px"
+      },
+      "pagination-dot-active": {
+        "backgroundColor": "{colors.on-dark}",
+        "rounded": "{rounded.full}",
+        "size": "8px"
+      },
+      "badge-info": {
+        "backgroundColor": "{colors.primary}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.caption-sm}",
+        "rounded": "{rounded.full}",
+        "padding": "4px 10px"
+      },
+      "primary-nav": {
+        "backgroundColor": "{colors.canvas-dark}",
+        "textColor": "{colors.on-dark}",
+        "typography": "{typography.body-strong}",
+        "rounded": "{rounded.none}",
+        "height": "48px"
+      },
+      "sub-nav": {
+        "backgroundColor": "{colors.canvas-dark}",
+        "textColor": "{colors.on-dark}",
+        "typography": "{typography.caption-md}",
+        "rounded": "{rounded.none}",
+        "height": "40px"
+      },
+      "footer-section": {
+        "backgroundColor": "{colors.primary}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.caption-md}",
+        "rounded": "{rounded.none}",
+        "padding": "48px 32px"
+      },
+      "support-search-bar": {
+        "backgroundColor": "{colors.canvas-light}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.full}",
+        "padding": "12px 24px",
+        "height": "56px"
+      },
+      "support-row": {
+        "backgroundColor": "{colors.canvas-light}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.none}",
+        "padding": "16px 0px"
+      },
+      "link-inline": {
+        "textColor": "{colors.link-light}",
+        "typography": "{typography.link-md}"
+      }
+    }
+  },
+  "normalizationRepairs": [],
+  "sections": [
+    {
+      "heading": "Overview",
+      "level": 2,
+      "text": "PlayStation's marketing system reads like a console launch trailer scrolling past the viewer in chapters. Each section is a full-bleed band — pure black `{colors.canvas-dark}`, true white `{colors.canvas-light}`, or PlayStation Blue `{colors.primary}` — and each chapter owns one editorial moment: hero console photography, a games-coming-soon strip, the PlayStation Plus tier banner, the \"30 Years of PlayStation\" anniversary band, the news strip from the PlayStation Blog. There is no decorative chrome between chapters; the section background change IS the divider. Sections stack at `{spacing.section}` (96px) rhythm with the next band's color taking over the page edge-to-edge.\n\nThe system has two distinct surface modes that alternate down the page: a **dark canvas mode** for editorial product moments (hero, \"ON PLAYSTATION\" band, marathon game pages) and a **light canvas mode** for utility surfaces (PS5 games listing, support pages, news index). Both modes use the same chrome vocabulary — fully-rounded `{rounded.full}` pill buttons, 8px-radius `{rounded.md}` cards, the proprietary PlayStation SST face — only the surface and on-surface colors change. The third surface mode is the **PlayStation Blue band** (`{colors.primary}` — `#0070d1`) reserved for the highest-priority moments: the Marathon launch CTA strip, the footer, and any \"Action Required\" banner.\n\nThe typography is the system's most distinctive choice. PlayStation SST renders display headlines at **weight 300** (light) — unusual for a gaming brand that could easily reach for bold geometric display faces. The light weight gives the chrome an airy, almost editorial quality that lets the imagery speak; copy is information rather than decoration. Heading sizes drop in tight increments (54 → 44 → 35 → 28 → 22 → 18) and body settles at 18px with 1.5 line-height for comfortable long-form reading on support and games pages.\n\n**Key Characteristics:**\n- Three-canvas chapter system: `{colors.canvas-dark}` (black), `{colors.canvas-light}` (white), `{colors.primary}` (PlayStation Blue) alternating down the page\n- PlayStation Blue (`{colors.primary}` — `#0070d1`) is the universal primary CTA — fully-rounded pill at `{rounded.full}` (9999px)\n- Commerce orange (`{colors.commerce}` — `#d53b00`) is the secondary CTA reserved for \"Buy now\" / \"Pre-order\" / store actions\n- PlayStation SST display tier renders at **weight 300** with -0.1px to +0.4px tracking — the brand's signature airy editorial voice\n- 8px-radius (`{rounded.md}`) for product cards and feature panels; 4px-radius (`{rounded.sm}`) for inputs; pills (`{rounded.full}`) for every CTA\n- Game tiles, console renders, and PS Plus tier illustrations occupy 60-90% of each section — imagery does the storytelling\n- Color-block page rhythm (one observed band sequence): dark hero → light console showcase → dark \"Great PS4 & PS5 games\" rail → light \"Discover PlayStation Plus\" tier band → light \"30 years of PlayStation\" callout → dark \"ON PLAYSTATION\" band → light news strip → blue footer",
+      "line": 316
+    },
+    {
+      "heading": "Colors",
+      "level": 2,
+      "text": "> **Source pages:** `/en-tr/` (home), `/en-tr/ps5/games/` (PS5 games listing), `/en-tr/games/marathon/` (single game page), `/tr-tr/support/account/` (support center). The chrome palette is identical across all four pages; the support page uses the light-canvas mode exclusively while marketing pages alternate.",
+      "line": 333
+    },
+    {
+      "heading": "Brand & Accent",
+      "level": 3,
+      "text": "- **PlayStation Blue** (`{colors.primary}` — `#0070d1`): the brand's universal primary. Every primary CTA pill, the active filter chip, the footer surface, badge fills, and inline link color on dark surfaces.\n- **PlayStation Blue Pressed** (`{colors.primary-pressed}` — `#0064b7`): pressed state for the primary pill — also doubles as the inline link color on light surfaces.\n- **PlayStation Blue Active** (`{colors.primary-active}` — `#004d8d`): deeply-pressed state for the primary button.\n- **Commerce Orange** (`{colors.commerce}` — `#d53b00`): the secondary CTA reserved for store/buy/pre-order actions. The only warm color in the system.\n- **Commerce Orange Pressed** (`{colors.commerce-pressed}` — `#aa2f00`): pressed state for commerce buttons.\n- **Marathon Yellow** (`{colors.marathon-yellow}` — `#deff20`): a single high-saturation game-page accent extracted from Marathon's product palette — used only inside the dedicated `/marathon/` game page chrome and not part of the system's general accent vocabulary.",
+      "line": 337
+    },
+    {
+      "heading": "Surface",
+      "level": 3,
+      "text": "- **Canvas Dark** (`{colors.canvas-dark}` — `#000000`): pure black hero band, primary nav background, footer base. The dominant surface for editorial product moments.\n- **Surface Dark Elevated** (`{colors.surface-dark-elevated}` — `#121314`): inset dark panels, PS Plus tier banner background, \"ON PLAYSTATION\" gradient end.\n- **Surface Dark Card** (`{colors.surface-dark-card}` — `#181818`): game tile fill, dark product card background.\n- **Canvas Light** (`{colors.canvas-light}` — `#ffffff`): true white console-showcase band, support page body, news strip background.\n- **Soft Surface** (`{colors.surface-soft}` — `#f3f3f3`): hairline-soft band fill on light pages, divider rule on light surfaces.\n- **Surface Card** (`{colors.surface-card}` — `#f5f7fa`): cool-blue-tinted product card and tier-card background on light canvas.\n- **Surface Filter** (`{colors.surface-filter}` — `rgba(245,247,250,0.3)`): translucent fill for filter-pill default state on light canvas.\n- **Hairline Light** (`{colors.hairline-light}` — `#f3f3f3`): 1px divider rule on light pages.\n- **Hairline Dark** (`{colors.hairline-dark}` — `rgba(229,229,229,0.2)`): translucent 1px divider on dark canvas.",
+      "line": 345
+    },
+    {
+      "heading": "Text",
+      "level": 3,
+      "text": "- **Ink** (`{colors.ink}` — `#000000`): primary text on `{colors.canvas-light}`. Headlines, button text, support body.\n- **Ink Deep** (`{colors.ink-deep}` — `#121314`): warmer near-black for in-card titles on dark surfaces and deep-shadow gradients.\n- **Ink Elevated** (`{colors.ink-elevated}` — `#181818`): the lightest of the dark-canvas inks, used for elevated card backgrounds.\n- **Body Light** (`{colors.body-light}` — `rgba(0,0,0,0.6)`): translucent body text on light canvas — the system's default paragraph color.\n- **Mute Light** (`{colors.mute-light}` — `#6b6b6b`): metadata text and footer link captions on light canvas.\n- **Ash Light** (`{colors.ash-light}` — `#cccccc`): disabled-state text and lowest-emphasis utility on light surfaces.\n- **On Dark** (`{colors.on-dark}` — `#ffffff`): primary text on `{colors.canvas-dark}` — headlines, button text on dark hero bands.\n- **Body Dark** (`{colors.body-dark}` — `rgba(255,255,255,0.7)`): translucent body text on dark canvas.\n- **On Dark Mute** (`{colors.on-dark-mute}` — `#cccccc`): secondary text and disabled state on dark surfaces.\n- **Mute Dark** (`{colors.mute-dark}` — `rgba(229,229,229,0.55)`): captions and metadata on dark canvas.",
+      "line": 356
+    },
+    {
+      "heading": "Semantic",
+      "level": 3,
+      "text": "- **Warning** (`{colors.warning}` — `#c81b3a`): validation errors and destructive confirmation copy.\n- **Link Light** (`{colors.link-light}` — `#0064b7`): inline body-prose anchor link on light canvas — same hex as `{colors.primary-pressed}`.\n- **Link Dark** (`{colors.link-dark}` — `#53b1ff`): inline body-prose anchor link on dark canvas — a brightened blue for dark-mode legibility.",
+      "line": 368
+    },
+    {
+      "heading": "Brand Gradient",
+      "level": 3,
+      "text": "- **PlayStation Plus Gold Gradient** — a horizontal three-stop gold gradient `{colors.ps-plus-gold-start}` (`#ffce21`) → `{colors.ps-plus-gold-mid}` (`#f5a623`) → `{colors.ps-plus-gold-end}` (`#ee8e00`) that anchors the PS Plus banner on the home page. The only gradient in the system; reserved exclusively for PS Plus chrome.",
+      "line": 373
+    },
+    {
+      "heading": "Typography",
+      "level": 2,
+      "text": "",
+      "line": 376
+    },
+    {
+      "heading": "Font Family",
+      "level": 3,
+      "text": "- **PlayStation SST** is the proprietary brand sans-serif used across every text role on the site. It carries weights 300 (light), 400 (regular), 500 (medium), 600 (semibold), and 700 (bold), and falls back through `sst` → `Arial` → `Helvetica`. The brand's distinctive choice is using **weight 300 (light) for display headlines** — unusual for a gaming brand and the source of the system's editorial, airy character.\n- **SST** appears as a secondary cut for in-product surfaces, falling back to Helvetica → Arial.",
+      "line": 378
+    },
+    {
+      "heading": "Hierarchy",
+      "level": 3,
+      "text": "| Token | Size | Weight | Line Height | Letter Spacing | Use |\n|---|---|---|---|---|---|\n| `{typography.display-xl}` | 54px | 300 | 1.25 | -0.1px | Hero headline (\"Discover all PS5 consoles and accessories\") |\n| `{typography.display-lg}` | 44px | 300 | 1.25 | 0.1px | Section headline (\"Great PS4 & PS5 games out now or coming soon\") |\n| `{typography.display-md}` | 35px | 300 | 1.25 | 0 | Mid-section headline, game-page sub-hero |\n| `{typography.heading-xl}` | 28px | 300 | 1.25 | 0.1px | \"30 Years of PlayStation\" callout, in-band sub-heading |\n| `{typography.heading-lg}` | 22px | 300 | 1.25 | 0.1px | News card title, support category title |\n| `{typography.heading-md}` | 18px | 600 | 1 | 0 | Card label, navigation menu heading, in-product strong title |\n| `{typography.body-md}` | 18px | 400 | 1.5 | 0.1px | Body copy, paragraph text, support article body |\n| `{typography.body-strong}` | 18px | 500 | 1.25 | 0.4px | Inline emphasis, primary nav link, button label (large) |\n| `{typography.body-sm}` | 16px | 400 | 1.5 | 0 | Card description, secondary body |\n| `{typography.caption-md}` | 14px | 400 | 1.5 | 0 | Footer link, metadata, sub-nav text |\n| `{typography.caption-sm}` | 12px | 500 | 1.5 | 0 | Smallest utility text, badge label |\n| `{typography.link-md}` | 18px | 400 | 1.5 | 0 | Inline body-prose anchor link |\n| `{typography.button-lg}` | 18px | 700 | 1.25 | 0.45px | Primary CTA pill |\n| `{typography.button-md}` | 14px | 700 | 1.25 | 0.324px | Compact pill, filter chip, secondary CTA |",
+      "line": 382
+    },
+    {
+      "heading": "Principles",
+      "level": 3,
+      "text": "The hierarchy works on a 1.25-line-height ladder almost exclusively — even body sits at 1.5 instead of the typical 1.6 — which keeps long-form support pages tight and console showcases efficient. The weight contrast between display (300) and button (700) is dramatic: a single 18px chrome line might host a heavyweight CTA next to a feather-light 22px headline, giving the system its editorial gaming-magazine feel.",
+      "line": 401
+    },
+    {
+      "heading": "Note on Font Substitutes",
+      "level": 3,
+      "text": "PlayStation SST is proprietary. The closest open-source substitutes:\n- **Roboto Light (300)** for the display tier — its slightly looser letter-spacing matches SST's display optical fit.\n- **Inter** at weights 400/500/600 for body and chrome — the closest geometric sans match for SST's body cut.\n- **Source Sans Pro Light (300)** as an alternative for the display tier when Roboto reads too utilitarian.\n\nWhen substituting, preserve the +0.1px to +0.45px tracking on display and button tiers — the spacing is part of what makes PlayStation SST feel premium at the light weight.",
+      "line": 404
+    },
+    {
+      "heading": "Layout",
+      "level": 2,
+      "text": "",
+      "line": 412
+    },
+    {
+      "heading": "Spacing System",
+      "level": 3,
+      "text": "- **Base unit:** 8px (with finer 4/12px steps for tight inline gaps).\n- **Tokens (front matter):** `{spacing.xxs}` (4px) · `{spacing.xs}` (8px) · `{spacing.sm}` (12px) · `{spacing.md}` (16px) · `{spacing.lg}` (24px) · `{spacing.xl}` (32px) · `{spacing.xxl}` (48px) · `{spacing.section}` (96px).\n- **Universal section rhythm:** every page in the set uses `{spacing.section}` (96px) as the vertical gap between major content blocks. Card grids use `{spacing.lg}` (24px) gutters; in-card padding sits at `{spacing.lg}` to `{spacing.xl}` depending on density.\n- **Hero band padding:** 96px vertical / 48px horizontal — the largest spacing in the system, reserved for full-bleed surface chapters.",
+      "line": 414
+    },
+    {
+      "heading": "Grid & Container",
+      "level": 3,
+      "text": "- **Max width:** ~1280px content area for body text on desktop with 24px gutters that expand to ~48px at ultrawide. Hero bands and game-tile rails go full-bleed with no max-width constraint on imagery.\n- **Game tile carousel:** 4-up at desktop with horizontal scroll on the same row, collapsing to 3-up at 1024px and 2-up at 768px. Each tile uses 16:9 cover art at `{rounded.md}`.\n- **Console showcase grid:** desktop 5-column thumbnail strip below the main hero render, collapsing to 3-up + horizontal scroll at tablet.\n- **Support page:** desktop 2-column 30/70 split (sidebar nav + article body), collapsing to single-column with the sidebar promoted to a top accordion at mobile.\n- **News strip:** 3-up card grid at desktop, 2-up at tablet, 1-up at mobile.",
+      "line": 420
+    },
+    {
+      "heading": "Whitespace Philosophy",
+      "level": 3,
+      "text": "Whitespace is structural and band-defined. The 96px `{spacing.section}` between chapters reads as silence between trailer cuts — there's no decorative wash, no gradient transition, no mid-section divider. Inside a section, content is left-aligned in a tight column with the imagery breathing in the right 60-70% of the band. Paragraph text is comfortable at 1.5 line-height but column widths stay narrow (~520px at desktop) to keep long-form copy readable.",
+      "line": 427
+    },
+    {
+      "heading": "Elevation & Depth",
+      "level": 2,
+      "text": "| Level | Treatment | Use |\n|---|---|---|\n| 0 — Flat | No border, no shadow | Default for hero bands, footer, full-bleed sections — the dominant treatment |\n| 1 — Hairline divider | 1px solid `{colors.hairline-light}` or `{colors.hairline-dark}` | Card borders, support row dividers, footer column rules |\n| 2 — Soft active shadow | `0 4px 12px rgba(0,0,0,0.16)` | Active/pressed CTAs, lifted product card |\n| 3 — Section gradient | Soft top-to-bottom darkening from `{colors.surface-dark-elevated}` to `{colors.canvas-dark}` | \"ON PLAYSTATION\" band — only place a gradient appears on chrome |\n\nThe system has effectively no resting shadow on cards; depth is built from surface-color contrast across band chapters. Cards lift only on press.",
+      "line": 430
+    },
+    {
+      "heading": "Decorative Depth",
+      "level": 3,
+      "text": "Depth comes from the alternating-band rhythm and from the imagery itself:\n- **Console product photography** — DualSense controller and PS5 console renders shot on neutral white with crisp edge lighting, full-bleed inside the light-canvas band.\n- **Game key art** — full-bleed cinematic stills (Marathon, the latest blockbuster releases) inside dark-canvas bands with title lockup overlaid in the lower-left.\n- **PS Plus tier banner** — a subtle horizontal gold gradient (`{colors.ps-plus-gold-start}` → `{colors.ps-plus-gold-end}`) sits as the only chrome gradient in the system, anchoring the \"Discover PlayStation Plus\" CTA.\n- **\"ON PLAYSTATION\" gradient band** — top-to-bottom deepening from `{colors.surface-dark-elevated}` (`#121314`) to `{colors.canvas-dark}` (`#000000`) creates a cinematic dimming effect under the anniversary callout.",
+      "line": 441
+    },
+    {
+      "heading": "Shapes",
+      "level": 2,
+      "text": "",
+      "line": 448
+    },
+    {
+      "heading": "Border Radius Scale",
+      "level": 3,
+      "text": "| Token | Value | Use |\n|---|---|---|\n| `{rounded.none}` | 0px | Hero bands, primary nav, footer, sub-nav, support article body — every full-bleed structural surface |\n| `{rounded.sm}` | 4px | Text inputs, support search field utilities |\n| `{rounded.md}` | 8px | Game tiles, product cards, feature cards, PS Plus banner |\n| `{rounded.lg}` | 16px | Rare large container with extra-soft corners (e.g., dialog cards) |\n| `{rounded.full}` | 9999px | Every CTA pill (primary / commerce / secondary), filter chips, pagination dots, carousel paddles |\n\nThe radius vocabulary works on a 4 / 8 / pill rhythm for chrome with structural surfaces staying flat at 0px.",
+      "line": 450
+    },
+    {
+      "heading": "Photography Geometry",
+      "level": 3,
+      "text": "- **Hero console render:** large centered console + DualSense composition on white, ~70% width of the band, with copy slot to the left.\n- **Game tiles:** 16:9 key art at `{rounded.md}` (8px), 4-up rail at desktop with horizontal carousel.\n- **Marathon game page hero:** full-bleed cinematic 16:9 still with the \"MARATHON\" wordmark in the lower-left at light weight, brand yellow `{colors.marathon-yellow}` accent on a few small UI tags.\n- **News card thumbnails:** 16:9 imagery at `{rounded.md}` with a small text block below.\n- **Avatar / brand icons:** 32–40px circles for sub-nav social row.",
+      "line": 462
+    },
+    {
+      "heading": "Components",
+      "level": 2,
+      "text": "> **No hover states documented** per system policy. Each spec covers Default and Active/Pressed only.",
+      "line": 469
+    },
+    {
+      "heading": "Buttons",
+      "level": 3,
+      "text": "**`button-primary`** — the universal PlayStation CTA\n- Background `{colors.primary}` (PlayStation Blue), text `{colors.on-primary}`, type `{typography.button-lg}`, padding `12px 28px`, height ~48px, rounded `{rounded.full}`.\n- Used for \"Add to bag\", \"Sign up\", \"Learn more\", \"Subscribe\" — every primary action across both light and dark canvases.\n- Pressed state lives in `button-primary-pressed` — background drops to `{colors.primary-pressed}` (`#0064b7`).\n\n**`button-commerce`** — orange store CTA\n- Background `{colors.commerce}` (`#d53b00`), text `{colors.on-commerce}`, type `{typography.button-lg}`, padding `12px 28px`, height ~48px, rounded `{rounded.full}`.\n- Reserved for \"Buy now\", \"Pre-order\", \"Add to cart\" — store actions only. The only warm color in the system.\n- Pressed state lives in `button-commerce-pressed` — background drops to `{colors.commerce-pressed}`.\n\n**`button-secondary-light`** — outline variant on light canvas\n- Background transparent, text `{colors.ink}`, 1px solid `{colors.ash-light}` border, type `{typography.button-lg}`, padding `12px 28px`, height ~48px, rounded `{rounded.full}`.\n- Lower-emphasis CTA on white surfaces (\"Learn more →\", \"Watch trailer\").\n\n**`button-secondary-dark`** — outline variant on dark canvas\n- Background transparent, text `{colors.on-dark}`, 1px solid `{colors.hairline-dark}`, type `{typography.button-lg}`, padding `12px 28px`, height ~48px, rounded `{rounded.full}`.\n- Same role as the light variant but inverted for use on `{colors.canvas-dark}` hero bands.\n\n**`button-disabled`**\n- Background `{colors.surface-soft}`, text `{colors.ash-light}`, rounded `{rounded.full}` — flat soft gray.",
+      "line": 473
+    },
+    {
+      "heading": "Filter & Tab Chips",
+      "level": 3,
+      "text": "**`filter-pill`** + **`filter-pill-active`**\n- Default: background `{colors.surface-filter}` (translucent), text `{colors.ink}`, type `{typography.button-md}`, padding `8px 16px`, rounded `{rounded.full}`.\n- Active: background flips to `{colors.canvas-light}` (opaque white) — the chip \"lifts\" from the translucent default.\n- Used in the PS5 games filter strip (\"All\", \"Coming Soon\", \"PlayStation VR2\", \"Recently Released\").",
+      "line": 496
+    },
+    {
+      "heading": "Inputs & Forms",
+      "level": 3,
+      "text": "**`text-input`** + **`text-input-focused`**\n- Default: background `{colors.canvas-light}`, text `{colors.ink}`, 1px solid `{colors.ash-light}`, type `{typography.body-md}`, padding `12px 16px`, height ~48px, rounded `{rounded.sm}` (4px).\n- Focused: 2px solid `{colors.primary}` border, no halo (relies on the border weight increase as the focus signal).\n\n**`support-search-bar`** — the support-page signature search field\n- Background `{colors.canvas-light}`, text `{colors.ink}`, type `{typography.body-md}`, padding `12px 24px`, height ~56px, rounded `{rounded.full}`.\n- Sits at the top of the support page hero with a magnifier icon at the left edge and \"Search the support center\" placeholder.",
+      "line": 503
+    },
+    {
+      "heading": "Cards & Containers",
+      "level": 3,
+      "text": "**`product-card`** — light-canvas product/feature card\n- Container: background `{colors.surface-card}` (`#f5f7fa` cool-blue-tinted), 1px solid `{colors.hairline-light}` (rare; usually borderless), padding `{spacing.lg}` (24px), rounded `{rounded.md}` (8px).\n- Used for the \"PlayStation Store\" sale callout, news cards, and PS Plus tier comparison cards on light canvas.\n\n**`product-card-dark`** — dark-canvas product card\n- Container: background `{colors.surface-dark-card}` (`#181818`), padding `{spacing.lg}`, rounded `{rounded.md}`.\n- Used for game-detail cards and dark-canvas feature panels.\n\n**`game-tile`** — game/console thumbnail tile\n- Container: background `{colors.surface-dark-elevated}`, padding 0, rounded `{rounded.md}`.\n- Layout: 16:9 cover art at full bleed inside the radius, with title + platform tag overlaid at the bottom-left in `{typography.body-sm}`.\n- Used in the \"Great PS4 & PS5 games\" rail and the PS5 games listing grid.\n\n**`feature-card`** — light-canvas marketing card\n- Container: background `{colors.canvas-light}`, padding `{spacing.xl}` (32px), rounded `{rounded.md}`.\n- Used for the \"PlayStation Store\" hero card and similar feature panels with a small product icon, title, body, and CTA.\n\n**`hero-band-blue`** — the PlayStation Blue full-bleed band\n- Background `{colors.primary}`, text `{colors.on-primary}` in `{typography.display-md}`, padding `96px 48px`, rounded `{rounded.none}`.\n- The Marathon launch CTA strip and the footer surface use this band. The band's defining purpose is \"this is the action moment of the page.\"\n\n**`hero-band-dark`** — full-bleed dark hero\n- Background `{colors.canvas-dark}` (with optional gradient end at `{colors.surface-dark-elevated}`), text `{colors.on-dark}` in `{typography.display-xl}`, padding `96px 48px`, rounded `{rounded.none}`.\n- The home-page hero, the game-detail page hero, and the \"ON PLAYSTATION\" anniversary band.\n\n**`hero-band-light`** — full-bleed white hero\n- Background `{colors.canvas-light}`, text `{colors.ink}` in `{typography.display-xl}`, padding `96px 48px`, rounded `{rounded.none}`.\n- The console showcase band (\"Discover all PS5 consoles and accessories\") and the support page top.\n\n**`ps-plus-banner`** — PlayStation Plus tier callout\n- Background `{colors.surface-dark-elevated}` with the `{colors.ps-plus-gold-start}` → `{colors.ps-plus-gold-end}` gold gradient as a horizontal accent bar across the top, text `{colors.on-dark}` in `{typography.heading-xl}`, padding `48px 32px`, rounded `{rounded.md}`.\n- The \"Discover PlayStation Plus\" full-width banner on the home page.\n\n**`carousel-paddle`** — circular carousel control\n- Background `rgba(255,255,255,0.16)`, icon `{colors.on-dark}`, rounded `{rounded.full}`, size 48px.\n- Anchored to the left/right edge of the game tile carousel.\n\n**`pagination-dot`** + **`pagination-dot-active`**\n- 8px circle at `{rounded.full}`. Default fill `{colors.ash-dark}`; active fill `{colors.on-dark}`.\n- Carousel position indicator below the game tile rail.",
+      "line": 513
+    },
+    {
+      "heading": "Inline",
+      "level": 3,
+      "text": "**`badge-info`** — small info tag\n- Background `{colors.primary}`, text `{colors.on-primary}` in `{typography.caption-sm}`, padding `4px 10px`, rounded `{rounded.full}`.\n- \"New\", \"Pre-order\", \"Coming Soon\" labels overlaid on game tiles.\n\n**`link-inline`** — body-prose anchor link\n- `{colors.link-light}` text on light canvas / `{colors.link-dark}` on dark canvas, no underline by default. Inline body links inside support article paragraphs.",
+      "line": 556
+    },
+    {
+      "heading": "Navigation",
+      "level": 3,
+      "text": "**`primary-nav`**\n- Background `{colors.canvas-dark}`, text `{colors.on-dark}`, height ~48px, type `{typography.body-strong}`, rounded `{rounded.none}`.\n- Layout (desktop): PlayStation P-logo at far-left, centered nav row (\"Games · PS5 · PS4 · PS VR2 · Subscriptions · Hardware · Mobile · News · Shop · Support\"), right cluster (search-glyph + locale + cart icon + user-avatar circle).\n\n**`sub-nav`** — secondary nav strip\n- Background `{colors.canvas-dark}`, text `{colors.on-dark}` in `{typography.caption-md}`, height ~40px, rounded `{rounded.none}`.\n- Sits directly below the primary nav on PS5 games / single game / PS Plus pages with section-specific anchor links.\n\n**Top Nav (Mobile)**\n- Hamburger menu icon at left, P-logo at center, search + cart icons at right. Primary nav collapses into a full-screen dark drawer that slides from the left.",
+      "line": 565
+    },
+    {
+      "heading": "Footer",
+      "level": 3,
+      "text": "**`footer-section`**\n- Background `{colors.primary}` (PlayStation Blue), text `{colors.on-primary}` in `{typography.caption-md}`, padding `{spacing.xxl}` (48px) vertical.\n- Layout: large PlayStation wordmark at top-left, multi-column link grid (locale selector, store links, account, support, social), bottom row with terms / privacy fine-print in `{typography.caption-sm}`.\n- The footer's blue surface is the system's \"we're done — return to the brand\" anchor.",
+      "line": 578
+    },
+    {
+      "heading": "Support-page-specific",
+      "level": 3,
+      "text": "**`support-row`** — support article-list row\n- Background `{colors.canvas-light}`, text `{colors.ink}` in `{typography.body-md}`, padding `16px 0`, with a 1px `{colors.hairline-light}` bottom rule.\n- Used for FAQ / category-listing rows on the support page with a small chevron-right icon at the right edge.",
+      "line": 585
+    },
+    {
+      "heading": "Do's and Don'ts",
+      "level": 2,
+      "text": "",
+      "line": 591
+    },
+    {
+      "heading": "Do",
+      "level": 3,
+      "text": "- Reserve `{colors.primary}` (PlayStation Blue) for primary CTAs and the footer surface only. The blue band is precious — at most one full-bleed blue band per page.\n- Reserve `{colors.commerce}` (orange) for store/buy/pre-order CTAs only. It is never used on marketing chrome or hero pills.\n- Use PlayStation SST at weight 300 for display headings (54 / 44 / 35 / 28 / 22). The light weight is the brand voice.\n- Stack content sections at `{spacing.section}` (96px) rhythm with the next band's surface color taking over the page edge-to-edge — no decorative dividers between bands.\n- Use `{rounded.full}` (9999px) on every CTA pill and `{rounded.md}` (8px) on every product card. The two-radius vocabulary is the entire shape system aside from inputs.\n- Pair full-bleed game key art and console renders inside dark or light bands; let imagery occupy 60-90% of the band's vertical height.\n- Use `{component.ps-plus-banner}` with the gold gradient exclusively for the PlayStation Plus tier callout — never decorate other components with the gold.",
+      "line": 593
+    },
+    {
+      "heading": "Don't",
+      "level": 3,
+      "text": "- Don't introduce drop shadows on resting cards. The system is flat-on-canvas; cards lift only on press.\n- Don't replace `{colors.primary}` with another shade of blue. The brand blue is precise — `#0070d1` for default and `#0064b7` for pressed.\n- Don't use `{colors.commerce}` (orange) on marketing/hero CTAs. It's reserved exclusively for store actions.\n- Don't introduce a sans-serif body font, italic, or monospace style. PlayStation SST carries every text role.\n- Don't soften pill geometry. CTAs are always `{rounded.full}` — no medium-radius buttons.\n- Don't use the gold PS Plus gradient on anything that isn't the PS Plus banner. It is a tier-specific brand asset.\n- Don't put a gradient on chrome. The only allowed gradient is the gold PS Plus accent and the soft top-to-bottom darkening of the \"ON PLAYSTATION\" band.",
+      "line": 602
+    },
+    {
+      "heading": "Responsive Behavior",
+      "level": 2,
+      "text": "",
+      "line": 611
+    },
+    {
+      "heading": "Breakpoints",
+      "level": 3,
+      "text": "| Name | Width | Key Changes |\n|---|---|---|\n| ultrawide | 1920px+ | Hero band stays at content max-width 1280px; outer gutters grow to ~80px |\n| desktop-large | 1440px | Default desktop — 4-up game tile carousel, full primary nav |\n| desktop | 1280px | Same layout with narrower outer gutters |\n| desktop-small | 1024px | Game tile rail collapses to 3-up; sub-nav remains horizontal |\n| tablet | 768px | Game tiles → 2-up; primary nav becomes hamburger drawer |\n| mobile | 480px | Single-column everything; hero `{typography.display-xl}` scales 54px → ~32px |\n| mobile-narrow | 320px | Section padding tightens to 32px; hero further scales to ~28px |",
+      "line": 613
+    },
+    {
+      "heading": "Touch Targets",
+      "level": 3,
+      "text": "All interactive elements meet WCAG AAA (≥ 44×44px). `{component.button-primary}` and `{component.button-commerce}` sit at 48px height with 28px horizontal padding (effective ~48×100px tappable). `{component.text-input}` sits at 48px. `{component.support-search-bar}` sits at 56px. `{component.filter-pill}` is ~36–40px height with 16px padding extending to 44px tappable via inline padding. `{component.carousel-paddle}` is exactly 48×48 circular.",
+      "line": 625
+    },
+    {
+      "heading": "Collapsing Strategy",
+      "level": 3,
+      "text": "- **Primary nav:** desktop horizontal cluster → tablet hamburger drawer at 768px. The right-cluster icons (search, cart, account) stay visible at every breakpoint.\n- **Sub-nav:** desktop horizontal anchor row → tablet horizontal scroll → mobile select dropdown.\n- **Game tile carousel:** 4-up → 3-up → 2-up at 1024 and 768px; carousel paddles stay visible at every desktop breakpoint, hide on mobile in favor of touch-swipe.\n- **Hero bands:** stay full-bleed at every breakpoint; only the internal content column reflows from 2-column (text-left + image-right) to single-column (text above image).\n- **Console showcase:** desktop 5-up thumbnail strip → tablet 3-up + horizontal scroll → mobile 1-up with paddle.\n- **Support page:** desktop 30/70 split (sidebar + body) → tablet sidebar promoted to top accordion → mobile fully collapsed accordion.\n- **Section padding:** `{spacing.section}` (96px) desktop → 64px tablet → 48px mobile.\n- **Hero headline:** `{typography.display-xl}` (54px) at desktop, scaling 44px / 32px / 28px down the breakpoint stack.",
+      "line": 628
+    },
+    {
+      "heading": "Image Behavior",
+      "level": 3,
+      "text": "- Hero imagery (console renders, game key art) uses art-direction crops on mobile so the central subject stays centered when the band collapses to single-column.\n- Game tile cover art preserves 16:9 ratio at every breakpoint; only the column count changes.\n- Console showcase thumbnails maintain their natural aspect (~1:1 product render) across breakpoints.\n- All non-critical imagery is lazy-loaded as the user scrolls into the next chapter.",
+      "line": 638
+    },
+    {
+      "heading": "Iteration Guide",
+      "level": 2,
+      "text": "1. Focus on ONE component at a time. Pull its YAML entry and verify every property resolves.\n2. Reference component names and tokens directly (`{colors.primary}`, `{component.button-primary-pressed}`, `{rounded.full}`) — do not paraphrase.\n3. Run `npx @google/design.md lint DESIGN.md` after edits — `broken-ref`, `contrast-ratio`, and `orphaned-tokens` warnings flag issues automatically.\n4. Add new variants as separate component entries (`-pressed`, `-disabled`) — do not bury them inside prose.\n5. Default body to `{typography.body-md}` (18px / 400 / 1.5); reach for `{typography.display-xl}` strictly for the page-top hero headline; use `{typography.body-strong}` for primary nav links.\n6. Keep `{colors.primary}` scarce per viewport — at most one full-bleed PlayStation Blue band per page.\n7. When introducing a new component, ask whether it can be expressed with the existing pill + 8px-radius card + full-bleed-band vocabulary before adding new tokens. The system's strength is that it almost never needs new ones.",
+      "line": 644
+    },
+    {
+      "heading": "Known Gaps",
+      "level": 2,
+      "text": "- **Mobile screenshots not captured** — responsive behavior synthesizes PlayStation's known mobile pattern (hamburger drawer, single-column band reflow, hero downscale) from desktop evidence and the breakpoint stack.\n- **Hover states not documented** by system policy.\n- **Sign-in / authentication chrome** (login modal, account dashboard, profile pages) not in the captured pages.\n- **PlayStation Store** in-store browsing surfaces (PDP / cart / checkout) are not in the captured set — those use a more dense data-table layout that this document does not describe.\n- **Game-page-specific theming** — the `/marathon/` page uses `{colors.marathon-yellow}` as a chapter accent. Other game pages may pull in their own per-title brand colors that vary outside the documented system.\n- **Form validation states** (success / error inline messages) not present in the captured surfaces beyond the `{colors.warning}` color token.",
+      "line": 654
+    }
+  ],
+  "tokens": [
+    {
+      "path": "colors.primary",
+      "sourcePath": "colors.primary",
+      "type": "color",
+      "value": "#0070d1",
+      "status": "unverified",
+      "evidence": {
+        "line": 8,
+        "sourcePath": "colors.primary"
+      }
+    },
+    {
+      "path": "colors.primarypressed",
+      "sourcePath": "colors.primary-pressed",
+      "type": "color",
+      "value": "#0064b7",
+      "status": "unverified",
+      "evidence": {
+        "line": 9,
+        "sourcePath": "colors.primary-pressed"
+      }
+    },
+    {
+      "path": "colors.primaryactive",
+      "sourcePath": "colors.primary-active",
+      "type": "color",
+      "value": "#004d8d",
+      "status": "unverified",
+      "evidence": {
+        "line": 10,
+        "sourcePath": "colors.primary-active"
+      }
+    },
+    {
+      "path": "colors.onprimary",
+      "sourcePath": "colors.on-primary",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 11,
+        "sourcePath": "colors.on-primary"
+      }
+    },
+    {
+      "path": "colors.linklight",
+      "sourcePath": "colors.link-light",
+      "type": "color",
+      "value": "#0064b7",
+      "status": "unverified",
+      "evidence": {
+        "line": 12,
+        "sourcePath": "colors.link-light"
+      }
+    },
+    {
+      "path": "colors.linkdark",
+      "sourcePath": "colors.link-dark",
+      "type": "color",
+      "value": "#53b1ff",
+      "status": "unverified",
+      "evidence": {
+        "line": 13,
+        "sourcePath": "colors.link-dark"
+      }
+    },
+    {
+      "path": "colors.commerce",
+      "sourcePath": "colors.commerce",
+      "type": "color",
+      "value": "#d53b00",
+      "status": "unverified",
+      "evidence": {
+        "line": 14,
+        "sourcePath": "colors.commerce"
+      }
+    },
+    {
+      "path": "colors.commercepressed",
+      "sourcePath": "colors.commerce-pressed",
+      "type": "color",
+      "value": "#aa2f00",
+      "status": "unverified",
+      "evidence": {
+        "line": 15,
+        "sourcePath": "colors.commerce-pressed"
+      }
+    },
+    {
+      "path": "colors.commercelinkbase",
+      "sourcePath": "colors.commerce-link-base",
+      "type": "color",
+      "value": "#d63d00",
+      "status": "unverified",
+      "evidence": {
+        "line": 16,
+        "sourcePath": "colors.commerce-link-base"
+      }
+    },
+    {
+      "path": "colors.oncommerce",
+      "sourcePath": "colors.on-commerce",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 17,
+        "sourcePath": "colors.on-commerce"
+      }
+    },
+    {
+      "path": "colors.ink",
+      "sourcePath": "colors.ink",
+      "type": "color",
+      "value": "#000000",
+      "status": "unverified",
+      "evidence": {
+        "line": 18,
+        "sourcePath": "colors.ink"
+      }
+    },
+    {
+      "path": "colors.inkdeep",
+      "sourcePath": "colors.ink-deep",
+      "type": "color",
+      "value": "#121314",
+      "status": "unverified",
+      "evidence": {
+        "line": 19,
+        "sourcePath": "colors.ink-deep"
+      }
+    },
+    {
+      "path": "colors.inkelevated",
+      "sourcePath": "colors.ink-elevated",
+      "type": "color",
+      "value": "#181818",
+      "status": "unverified",
+      "evidence": {
+        "line": 20,
+        "sourcePath": "colors.ink-elevated"
+      }
+    },
+    {
+      "path": "colors.charcoal",
+      "sourcePath": "colors.charcoal",
+      "type": "color",
+      "value": "#1f2024",
+      "status": "unverified",
+      "evidence": {
+        "line": 21,
+        "sourcePath": "colors.charcoal"
+      }
+    },
+    {
+      "path": "colors.bodylight",
+      "sourcePath": "colors.body-light",
+      "type": "color",
+      "value": "rgba(0,0,0,0.6)",
+      "status": "unverified",
+      "evidence": {
+        "line": 22,
+        "sourcePath": "colors.body-light"
+      }
+    },
+    {
+      "path": "colors.mutelight",
+      "sourcePath": "colors.mute-light",
+      "type": "color",
+      "value": "#6b6b6b",
+      "status": "unverified",
+      "evidence": {
+        "line": 23,
+        "sourcePath": "colors.mute-light"
+      }
+    },
+    {
+      "path": "colors.ashlight",
+      "sourcePath": "colors.ash-light",
+      "type": "color",
+      "value": "#cccccc",
+      "status": "unverified",
+      "evidence": {
+        "line": 24,
+        "sourcePath": "colors.ash-light"
+      }
+    },
+    {
+      "path": "colors.bodydark",
+      "sourcePath": "colors.body-dark",
+      "type": "color",
+      "value": "rgba(255,255,255,0.7)",
+      "status": "unverified",
+      "evidence": {
+        "line": 25,
+        "sourcePath": "colors.body-dark"
+      }
+    },
+    {
+      "path": "colors.mutedark",
+      "sourcePath": "colors.mute-dark",
+      "type": "color",
+      "value": "rgba(229,229,229,0.55)",
+      "status": "unverified",
+      "evidence": {
+        "line": 26,
+        "sourcePath": "colors.mute-dark"
+      }
+    },
+    {
+      "path": "colors.ashdark",
+      "sourcePath": "colors.ash-dark",
+      "type": "color",
+      "value": "rgba(229,229,229,0.2)",
+      "status": "unverified",
+      "evidence": {
+        "line": 27,
+        "sourcePath": "colors.ash-dark"
+      }
+    },
+    {
+      "path": "colors.canvaslight",
+      "sourcePath": "colors.canvas-light",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 28,
+        "sourcePath": "colors.canvas-light"
+      }
+    },
+    {
+      "path": "colors.surfacesoft",
+      "sourcePath": "colors.surface-soft",
+      "type": "color",
+      "value": "#f3f3f3",
+      "status": "unverified",
+      "evidence": {
+        "line": 29,
+        "sourcePath": "colors.surface-soft"
+      }
+    },
+    {
+      "path": "colors.surfacecard",
+      "sourcePath": "colors.surface-card",
+      "type": "color",
+      "value": "#f5f7fa",
+      "status": "unverified",
+      "evidence": {
+        "line": 30,
+        "sourcePath": "colors.surface-card"
+      }
+    },
+    {
+      "path": "colors.surfacefilter",
+      "sourcePath": "colors.surface-filter",
+      "type": "color",
+      "value": "rgba(245,247,250,0.3)",
+      "status": "unverified",
+      "evidence": {
+        "line": 31,
+        "sourcePath": "colors.surface-filter"
+      }
+    },
+    {
+      "path": "colors.canvasdark",
+      "sourcePath": "colors.canvas-dark",
+      "type": "color",
+      "value": "#000000",
+      "status": "unverified",
+      "evidence": {
+        "line": 32,
+        "sourcePath": "colors.canvas-dark"
+      }
+    },
+    {
+      "path": "colors.surfacedarkelevated",
+      "sourcePath": "colors.surface-dark-elevated",
+      "type": "color",
+      "value": "#121314",
+      "status": "unverified",
+      "evidence": {
+        "line": 33,
+        "sourcePath": "colors.surface-dark-elevated"
+      }
+    },
+    {
+      "path": "colors.surfacedarkcard",
+      "sourcePath": "colors.surface-dark-card",
+      "type": "color",
+      "value": "#181818",
+      "status": "unverified",
+      "evidence": {
+        "line": 34,
+        "sourcePath": "colors.surface-dark-card"
+      }
+    },
+    {
+      "path": "colors.hairlinelight",
+      "sourcePath": "colors.hairline-light",
+      "type": "color",
+      "value": "#f3f3f3",
+      "status": "unverified",
+      "evidence": {
+        "line": 35,
+        "sourcePath": "colors.hairline-light"
+      }
+    },
+    {
+      "path": "colors.hairlinedark",
+      "sourcePath": "colors.hairline-dark",
+      "type": "color",
+      "value": "rgba(229,229,229,0.2)",
+      "status": "unverified",
+      "evidence": {
+        "line": 36,
+        "sourcePath": "colors.hairline-dark"
+      }
+    },
+    {
+      "path": "colors.ondark",
+      "sourcePath": "colors.on-dark",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 37,
+        "sourcePath": "colors.on-dark"
+      }
+    },
+    {
+      "path": "colors.ondarkmute",
+      "sourcePath": "colors.on-dark-mute",
+      "type": "color",
+      "value": "#cccccc",
+      "status": "unverified",
+      "evidence": {
+        "line": 38,
+        "sourcePath": "colors.on-dark-mute"
+      }
+    },
+    {
+      "path": "colors.warning",
+      "sourcePath": "colors.warning",
+      "type": "color",
+      "value": "#c81b3a",
+      "status": "unverified",
+      "evidence": {
+        "line": 39,
+        "sourcePath": "colors.warning"
+      }
+    },
+    {
+      "path": "colors.psplusgoldstart",
+      "sourcePath": "colors.ps-plus-gold-start",
+      "type": "color",
+      "value": "#ffce21",
+      "status": "unverified",
+      "evidence": {
+        "line": 40,
+        "sourcePath": "colors.ps-plus-gold-start"
+      }
+    },
+    {
+      "path": "colors.psplusgoldmid",
+      "sourcePath": "colors.ps-plus-gold-mid",
+      "type": "color",
+      "value": "#f5a623",
+      "status": "unverified",
+      "evidence": {
+        "line": 41,
+        "sourcePath": "colors.ps-plus-gold-mid"
+      }
+    },
+    {
+      "path": "colors.psplusgoldend",
+      "sourcePath": "colors.ps-plus-gold-end",
+      "type": "color",
+      "value": "#ee8e00",
+      "status": "unverified",
+      "evidence": {
+        "line": 42,
+        "sourcePath": "colors.ps-plus-gold-end"
+      }
+    },
+    {
+      "path": "colors.marathonyellow",
+      "sourcePath": "colors.marathon-yellow",
+      "type": "color",
+      "value": "#deff20",
+      "status": "unverified",
+      "evidence": {
+        "line": 43,
+        "sourcePath": "colors.marathon-yellow"
+      }
+    },
+    {
+      "path": "typography.displayxl.fontfamily",
+      "sourcePath": "typography.display-xl.fontFamily",
+      "type": "fontFamily",
+      "value": "PlayStation SST",
+      "status": "unverified",
+      "evidence": {
+        "line": 47,
+        "sourcePath": "typography.display-xl.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displayxl.fontsize",
+      "sourcePath": "typography.display-xl.fontSize",
+      "type": "dimension",
+      "value": "54px",
+      "status": "unverified",
+      "evidence": {
+        "line": 48,
+        "sourcePath": "typography.display-xl.fontSize"
+      }
+    },
+    {
+      "path": "typography.displayxl.fontweight",
+      "sourcePath": "typography.display-xl.fontWeight",
+      "type": "number",
+      "value": 300,
+      "status": "unverified",
+      "evidence": {
+        "line": 49,
+        "sourcePath": "typography.display-xl.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displayxl.lineheight",
+      "sourcePath": "typography.display-xl.lineHeight",
+      "type": "number",
+      "value": 1.25,
+      "status": "unverified",
+      "evidence": {
+        "line": 50,
+        "sourcePath": "typography.display-xl.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displayxl.letterspacing",
+      "sourcePath": "typography.display-xl.letterSpacing",
+      "type": "dimension",
+      "value": "-0.1px",
+      "status": "unverified",
+      "evidence": {
+        "line": 51,
+        "sourcePath": "typography.display-xl.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.displaylg.fontfamily",
+      "sourcePath": "typography.display-lg.fontFamily",
+      "type": "fontFamily",
+      "value": "PlayStation SST",
+      "status": "unverified",
+      "evidence": {
+        "line": 53,
+        "sourcePath": "typography.display-lg.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displaylg.fontsize",
+      "sourcePath": "typography.display-lg.fontSize",
+      "type": "dimension",
+      "value": "44px",
+      "status": "unverified",
+      "evidence": {
+        "line": 54,
+        "sourcePath": "typography.display-lg.fontSize"
+      }
+    },
+    {
+      "path": "typography.displaylg.fontweight",
+      "sourcePath": "typography.display-lg.fontWeight",
+      "type": "number",
+      "value": 300,
+      "status": "unverified",
+      "evidence": {
+        "line": 55,
+        "sourcePath": "typography.display-lg.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displaylg.lineheight",
+      "sourcePath": "typography.display-lg.lineHeight",
+      "type": "number",
+      "value": 1.25,
+      "status": "unverified",
+      "evidence": {
+        "line": 56,
+        "sourcePath": "typography.display-lg.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displaylg.letterspacing",
+      "sourcePath": "typography.display-lg.letterSpacing",
+      "type": "dimension",
+      "value": "0.1px",
+      "status": "unverified",
+      "evidence": {
+        "line": 57,
+        "sourcePath": "typography.display-lg.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.displaymd.fontfamily",
+      "sourcePath": "typography.display-md.fontFamily",
+      "type": "fontFamily",
+      "value": "PlayStation SST",
+      "status": "unverified",
+      "evidence": {
+        "line": 59,
+        "sourcePath": "typography.display-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displaymd.fontsize",
+      "sourcePath": "typography.display-md.fontSize",
+      "type": "dimension",
+      "value": "35px",
+      "status": "unverified",
+      "evidence": {
+        "line": 60,
+        "sourcePath": "typography.display-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.displaymd.fontweight",
+      "sourcePath": "typography.display-md.fontWeight",
+      "type": "number",
+      "value": 300,
+      "status": "unverified",
+      "evidence": {
+        "line": 61,
+        "sourcePath": "typography.display-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displaymd.lineheight",
+      "sourcePath": "typography.display-md.lineHeight",
+      "type": "number",
+      "value": 1.25,
+      "status": "unverified",
+      "evidence": {
+        "line": 62,
+        "sourcePath": "typography.display-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displaymd.letterspacing",
+      "sourcePath": "typography.display-md.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 63,
+        "sourcePath": "typography.display-md.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.headingxl.fontfamily",
+      "sourcePath": "typography.heading-xl.fontFamily",
+      "type": "fontFamily",
+      "value": "PlayStation SST",
+      "status": "unverified",
+      "evidence": {
+        "line": 65,
+        "sourcePath": "typography.heading-xl.fontFamily"
+      }
+    },
+    {
+      "path": "typography.headingxl.fontsize",
+      "sourcePath": "typography.heading-xl.fontSize",
+      "type": "dimension",
+      "value": "28px",
+      "status": "unverified",
+      "evidence": {
+        "line": 66,
+        "sourcePath": "typography.heading-xl.fontSize"
+      }
+    },
+    {
+      "path": "typography.headingxl.fontweight",
+      "sourcePath": "typography.heading-xl.fontWeight",
+      "type": "number",
+      "value": 300,
+      "status": "unverified",
+      "evidence": {
+        "line": 67,
+        "sourcePath": "typography.heading-xl.fontWeight"
+      }
+    },
+    {
+      "path": "typography.headingxl.lineheight",
+      "sourcePath": "typography.heading-xl.lineHeight",
+      "type": "number",
+      "value": 1.25,
+      "status": "unverified",
+      "evidence": {
+        "line": 68,
+        "sourcePath": "typography.heading-xl.lineHeight"
+      }
+    },
+    {
+      "path": "typography.headingxl.letterspacing",
+      "sourcePath": "typography.heading-xl.letterSpacing",
+      "type": "dimension",
+      "value": "0.1px",
+      "status": "unverified",
+      "evidence": {
+        "line": 69,
+        "sourcePath": "typography.heading-xl.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.headinglg.fontfamily",
+      "sourcePath": "typography.heading-lg.fontFamily",
+      "type": "fontFamily",
+      "value": "PlayStation SST",
+      "status": "unverified",
+      "evidence": {
+        "line": 71,
+        "sourcePath": "typography.heading-lg.fontFamily"
+      }
+    },
+    {
+      "path": "typography.headinglg.fontsize",
+      "sourcePath": "typography.heading-lg.fontSize",
+      "type": "dimension",
+      "value": "22px",
+      "status": "unverified",
+      "evidence": {
+        "line": 72,
+        "sourcePath": "typography.heading-lg.fontSize"
+      }
+    },
+    {
+      "path": "typography.headinglg.fontweight",
+      "sourcePath": "typography.heading-lg.fontWeight",
+      "type": "number",
+      "value": 300,
+      "status": "unverified",
+      "evidence": {
+        "line": 73,
+        "sourcePath": "typography.heading-lg.fontWeight"
+      }
+    },
+    {
+      "path": "typography.headinglg.lineheight",
+      "sourcePath": "typography.heading-lg.lineHeight",
+      "type": "number",
+      "value": 1.25,
+      "status": "unverified",
+      "evidence": {
+        "line": 74,
+        "sourcePath": "typography.heading-lg.lineHeight"
+      }
+    },
+    {
+      "path": "typography.headinglg.letterspacing",
+      "sourcePath": "typography.heading-lg.letterSpacing",
+      "type": "dimension",
+      "value": "0.1px",
+      "status": "unverified",
+      "evidence": {
+        "line": 75,
+        "sourcePath": "typography.heading-lg.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.headingmd.fontfamily",
+      "sourcePath": "typography.heading-md.fontFamily",
+      "type": "fontFamily",
+      "value": "PlayStation SST",
+      "status": "unverified",
+      "evidence": {
+        "line": 77,
+        "sourcePath": "typography.heading-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.headingmd.fontsize",
+      "sourcePath": "typography.heading-md.fontSize",
+      "type": "dimension",
+      "value": "18px",
+      "status": "unverified",
+      "evidence": {
+        "line": 78,
+        "sourcePath": "typography.heading-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.headingmd.fontweight",
+      "sourcePath": "typography.heading-md.fontWeight",
+      "type": "number",
+      "value": 600,
+      "status": "unverified",
+      "evidence": {
+        "line": 79,
+        "sourcePath": "typography.heading-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.headingmd.lineheight",
+      "sourcePath": "typography.heading-md.lineHeight",
+      "type": "number",
+      "value": 1,
+      "status": "unverified",
+      "evidence": {
+        "line": 80,
+        "sourcePath": "typography.heading-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.headingmd.letterspacing",
+      "sourcePath": "typography.heading-md.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 81,
+        "sourcePath": "typography.heading-md.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.bodymd.fontfamily",
+      "sourcePath": "typography.body-md.fontFamily",
+      "type": "fontFamily",
+      "value": "PlayStation SST",
+      "status": "unverified",
+      "evidence": {
+        "line": 83,
+        "sourcePath": "typography.body-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodymd.fontsize",
+      "sourcePath": "typography.body-md.fontSize",
+      "type": "dimension",
+      "value": "18px",
+      "status": "unverified",
+      "evidence": {
+        "line": 84,
+        "sourcePath": "typography.body-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodymd.fontweight",
+      "sourcePath": "typography.body-md.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 85,
+        "sourcePath": "typography.body-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodymd.lineheight",
+      "sourcePath": "typography.body-md.lineHeight",
+      "type": "number",
+      "value": 1.5,
+      "status": "unverified",
+      "evidence": {
+        "line": 86,
+        "sourcePath": "typography.body-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodymd.letterspacing",
+      "sourcePath": "typography.body-md.letterSpacing",
+      "type": "dimension",
+      "value": "0.1px",
+      "status": "unverified",
+      "evidence": {
+        "line": 87,
+        "sourcePath": "typography.body-md.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.bodystrong.fontfamily",
+      "sourcePath": "typography.body-strong.fontFamily",
+      "type": "fontFamily",
+      "value": "PlayStation SST",
+      "status": "unverified",
+      "evidence": {
+        "line": 89,
+        "sourcePath": "typography.body-strong.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodystrong.fontsize",
+      "sourcePath": "typography.body-strong.fontSize",
+      "type": "dimension",
+      "value": "18px",
+      "status": "unverified",
+      "evidence": {
+        "line": 90,
+        "sourcePath": "typography.body-strong.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodystrong.fontweight",
+      "sourcePath": "typography.body-strong.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 91,
+        "sourcePath": "typography.body-strong.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodystrong.lineheight",
+      "sourcePath": "typography.body-strong.lineHeight",
+      "type": "number",
+      "value": 1.25,
+      "status": "unverified",
+      "evidence": {
+        "line": 92,
+        "sourcePath": "typography.body-strong.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodystrong.letterspacing",
+      "sourcePath": "typography.body-strong.letterSpacing",
+      "type": "dimension",
+      "value": "0.4px",
+      "status": "unverified",
+      "evidence": {
+        "line": 93,
+        "sourcePath": "typography.body-strong.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.bodysm.fontfamily",
+      "sourcePath": "typography.body-sm.fontFamily",
+      "type": "fontFamily",
+      "value": "PlayStation SST",
+      "status": "unverified",
+      "evidence": {
+        "line": 95,
+        "sourcePath": "typography.body-sm.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodysm.fontsize",
+      "sourcePath": "typography.body-sm.fontSize",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 96,
+        "sourcePath": "typography.body-sm.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodysm.fontweight",
+      "sourcePath": "typography.body-sm.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 97,
+        "sourcePath": "typography.body-sm.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodysm.lineheight",
+      "sourcePath": "typography.body-sm.lineHeight",
+      "type": "number",
+      "value": 1.5,
+      "status": "unverified",
+      "evidence": {
+        "line": 98,
+        "sourcePath": "typography.body-sm.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodysm.letterspacing",
+      "sourcePath": "typography.body-sm.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 99,
+        "sourcePath": "typography.body-sm.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.captionmd.fontfamily",
+      "sourcePath": "typography.caption-md.fontFamily",
+      "type": "fontFamily",
+      "value": "PlayStation SST",
+      "status": "unverified",
+      "evidence": {
+        "line": 101,
+        "sourcePath": "typography.caption-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.captionmd.fontsize",
+      "sourcePath": "typography.caption-md.fontSize",
+      "type": "dimension",
+      "value": "14px",
+      "status": "unverified",
+      "evidence": {
+        "line": 102,
+        "sourcePath": "typography.caption-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.captionmd.fontweight",
+      "sourcePath": "typography.caption-md.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 103,
+        "sourcePath": "typography.caption-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.captionmd.lineheight",
+      "sourcePath": "typography.caption-md.lineHeight",
+      "type": "number",
+      "value": 1.5,
+      "status": "unverified",
+      "evidence": {
+        "line": 104,
+        "sourcePath": "typography.caption-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.captionmd.letterspacing",
+      "sourcePath": "typography.caption-md.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 105,
+        "sourcePath": "typography.caption-md.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.captionsm.fontfamily",
+      "sourcePath": "typography.caption-sm.fontFamily",
+      "type": "fontFamily",
+      "value": "PlayStation SST",
+      "status": "unverified",
+      "evidence": {
+        "line": 107,
+        "sourcePath": "typography.caption-sm.fontFamily"
+      }
+    },
+    {
+      "path": "typography.captionsm.fontsize",
+      "sourcePath": "typography.caption-sm.fontSize",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 108,
+        "sourcePath": "typography.caption-sm.fontSize"
+      }
+    },
+    {
+      "path": "typography.captionsm.fontweight",
+      "sourcePath": "typography.caption-sm.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 109,
+        "sourcePath": "typography.caption-sm.fontWeight"
+      }
+    },
+    {
+      "path": "typography.captionsm.lineheight",
+      "sourcePath": "typography.caption-sm.lineHeight",
+      "type": "number",
+      "value": 1.5,
+      "status": "unverified",
+      "evidence": {
+        "line": 110,
+        "sourcePath": "typography.caption-sm.lineHeight"
+      }
+    },
+    {
+      "path": "typography.captionsm.letterspacing",
+      "sourcePath": "typography.caption-sm.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 111,
+        "sourcePath": "typography.caption-sm.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.linkmd.fontfamily",
+      "sourcePath": "typography.link-md.fontFamily",
+      "type": "fontFamily",
+      "value": "PlayStation SST",
+      "status": "unverified",
+      "evidence": {
+        "line": 113,
+        "sourcePath": "typography.link-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.linkmd.fontsize",
+      "sourcePath": "typography.link-md.fontSize",
+      "type": "dimension",
+      "value": "18px",
+      "status": "unverified",
+      "evidence": {
+        "line": 114,
+        "sourcePath": "typography.link-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.linkmd.fontweight",
+      "sourcePath": "typography.link-md.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 115,
+        "sourcePath": "typography.link-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.linkmd.lineheight",
+      "sourcePath": "typography.link-md.lineHeight",
+      "type": "number",
+      "value": 1.5,
+      "status": "unverified",
+      "evidence": {
+        "line": 116,
+        "sourcePath": "typography.link-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.linkmd.letterspacing",
+      "sourcePath": "typography.link-md.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 117,
+        "sourcePath": "typography.link-md.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.buttonlg.fontfamily",
+      "sourcePath": "typography.button-lg.fontFamily",
+      "type": "fontFamily",
+      "value": "PlayStation SST",
+      "status": "unverified",
+      "evidence": {
+        "line": 119,
+        "sourcePath": "typography.button-lg.fontFamily"
+      }
+    },
+    {
+      "path": "typography.buttonlg.fontsize",
+      "sourcePath": "typography.button-lg.fontSize",
+      "type": "dimension",
+      "value": "18px",
+      "status": "unverified",
+      "evidence": {
+        "line": 120,
+        "sourcePath": "typography.button-lg.fontSize"
+      }
+    },
+    {
+      "path": "typography.buttonlg.fontweight",
+      "sourcePath": "typography.button-lg.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 121,
+        "sourcePath": "typography.button-lg.fontWeight"
+      }
+    },
+    {
+      "path": "typography.buttonlg.lineheight",
+      "sourcePath": "typography.button-lg.lineHeight",
+      "type": "number",
+      "value": 1.25,
+      "status": "unverified",
+      "evidence": {
+        "line": 122,
+        "sourcePath": "typography.button-lg.lineHeight"
+      }
+    },
+    {
+      "path": "typography.buttonlg.letterspacing",
+      "sourcePath": "typography.button-lg.letterSpacing",
+      "type": "dimension",
+      "value": "0.45px",
+      "status": "unverified",
+      "evidence": {
+        "line": 123,
+        "sourcePath": "typography.button-lg.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.buttonmd.fontfamily",
+      "sourcePath": "typography.button-md.fontFamily",
+      "type": "fontFamily",
+      "value": "PlayStation SST",
+      "status": "unverified",
+      "evidence": {
+        "line": 125,
+        "sourcePath": "typography.button-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.buttonmd.fontsize",
+      "sourcePath": "typography.button-md.fontSize",
+      "type": "dimension",
+      "value": "14px",
+      "status": "unverified",
+      "evidence": {
+        "line": 126,
+        "sourcePath": "typography.button-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.buttonmd.fontweight",
+      "sourcePath": "typography.button-md.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 127,
+        "sourcePath": "typography.button-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.buttonmd.lineheight",
+      "sourcePath": "typography.button-md.lineHeight",
+      "type": "number",
+      "value": 1.25,
+      "status": "unverified",
+      "evidence": {
+        "line": 128,
+        "sourcePath": "typography.button-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.buttonmd.letterspacing",
+      "sourcePath": "typography.button-md.letterSpacing",
+      "type": "dimension",
+      "value": "0.324px",
+      "status": "unverified",
+      "evidence": {
+        "line": 129,
+        "sourcePath": "typography.button-md.letterSpacing"
+      }
+    },
+    {
+      "path": "rounded.none",
+      "sourcePath": "rounded.none",
+      "type": "dimension",
+      "value": "0px",
+      "status": "unverified",
+      "evidence": {
+        "line": 132,
+        "sourcePath": "rounded.none"
+      }
+    },
+    {
+      "path": "rounded.sm",
+      "sourcePath": "rounded.sm",
+      "type": "dimension",
+      "value": "4px",
+      "status": "unverified",
+      "evidence": {
+        "line": 133,
+        "sourcePath": "rounded.sm"
+      }
+    },
+    {
+      "path": "rounded.md",
+      "sourcePath": "rounded.md",
+      "type": "dimension",
+      "value": "8px",
+      "status": "unverified",
+      "evidence": {
+        "line": 134,
+        "sourcePath": "rounded.md"
+      }
+    },
+    {
+      "path": "rounded.lg",
+      "sourcePath": "rounded.lg",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 135,
+        "sourcePath": "rounded.lg"
+      }
+    },
+    {
+      "path": "rounded.full",
+      "sourcePath": "rounded.full",
+      "type": "dimension",
+      "value": "9999px",
+      "status": "unverified",
+      "evidence": {
+        "line": 136,
+        "sourcePath": "rounded.full"
+      }
+    },
+    {
+      "path": "spacing.xxs",
+      "sourcePath": "spacing.xxs",
+      "type": "dimension",
+      "value": "4px",
+      "status": "unverified",
+      "evidence": {
+        "line": 139,
+        "sourcePath": "spacing.xxs"
+      }
+    },
+    {
+      "path": "spacing.xs",
+      "sourcePath": "spacing.xs",
+      "type": "dimension",
+      "value": "8px",
+      "status": "unverified",
+      "evidence": {
+        "line": 140,
+        "sourcePath": "spacing.xs"
+      }
+    },
+    {
+      "path": "spacing.sm",
+      "sourcePath": "spacing.sm",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 141,
+        "sourcePath": "spacing.sm"
+      }
+    },
+    {
+      "path": "spacing.md",
+      "sourcePath": "spacing.md",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 142,
+        "sourcePath": "spacing.md"
+      }
+    },
+    {
+      "path": "spacing.lg",
+      "sourcePath": "spacing.lg",
+      "type": "dimension",
+      "value": "24px",
+      "status": "unverified",
+      "evidence": {
+        "line": 143,
+        "sourcePath": "spacing.lg"
+      }
+    },
+    {
+      "path": "spacing.xl",
+      "sourcePath": "spacing.xl",
+      "type": "dimension",
+      "value": "32px",
+      "status": "unverified",
+      "evidence": {
+        "line": 144,
+        "sourcePath": "spacing.xl"
+      }
+    },
+    {
+      "path": "spacing.xxl",
+      "sourcePath": "spacing.xxl",
+      "type": "dimension",
+      "value": "48px",
+      "status": "unverified",
+      "evidence": {
+        "line": 145,
+        "sourcePath": "spacing.xxl"
+      }
+    },
+    {
+      "path": "spacing.section",
+      "sourcePath": "spacing.section",
+      "type": "dimension",
+      "value": "96px",
+      "status": "unverified",
+      "evidence": {
+        "line": 146,
+        "sourcePath": "spacing.section"
+      }
+    }
+  ],
+  "rejectedTokens": [],
+  "homepage": {
+    "status": "missing",
+    "candidates": [],
+    "verification": {
+      "status": "verified",
+      "url": "https://www.playstation.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://www.playstation.com/ja-jp/",
+          "title": "PlayStation 公式サイト | 本体・ゲームタイトル・周辺機器",
+          "note": "Public homepage read requested https://www.playstation.com; final URL https://www.playstation.com/ja-jp/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    }
+  },
+  "completeness": {
+    "presentFields": [
+      "colors",
+      "typography",
+      "rounded",
+      "spacing",
+      "components"
+    ],
+    "missingFields": [],
+    "tokenRoles": "incomplete",
+    "note": "Missing fields are not reconstructed. Prose-only colors have no inferred semantic role."
+  },
+  "provenance": {
+    "status": "independent-analysis",
+    "sources": [
+      {
+        "title": "VoltAgent awesome-design-md independent analysis",
+        "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/playstation/DESIGN.md"
+      }
+    ],
+    "verification": "unverified-secondary-analysis"
+  },
+  "limitations": [
+    "Independent secondary analysis, not an official brand system; all reported values are unverified.",
+    "No brand assets, logos, font binaries or screenshots copied. Font names are documentary, not font licenses.",
+    "Safe CSS literals are extracted without claiming complete roles, state coverage or visual fidelity.",
+    "Markdown is retained as inert evidence, never executed or rendered as raw HTML."
+  ]
+}

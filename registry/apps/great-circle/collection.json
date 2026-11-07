@@ -1,0 +1,449 @@
+{
+  "schemaVersion": 1,
+  "id": "great-circle",
+  "title": "Great Circle",
+  "kind": "app",
+  "renderer": "react",
+  "summary": "Production UI inventory with deterministic offline planner, route, search and control scenarios.",
+  "tokens": "tokens.json",
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "source": {
+    "repository": "https://github.com/rsteth/great_circle",
+    "revision": "f84c7f80dbd115da710fca04e3267e4c96709442",
+    "path": "."
+  },
+  "provenance": {
+    "status": "author-owned",
+    "sources": []
+  },
+  "license": {
+    "spdx": "UNLICENSED",
+    "note": "Existing repository terms apply."
+  },
+  "fixtures": [
+    {
+      "id": "appearance",
+      "title": "Appearance",
+      "section": "components",
+      "url": "../../../previews/great-circle/workbench/",
+      "description": "Actual production UI; synthetic routes, offline grid tiles and search responses. Interactive state transitions are documented in workbench/COVERAGE.md. Use the real controls to enter states; see workbench/COVERAGE.md.",
+      "states": [
+        "light",
+        "dark",
+        "four palettes",
+        "dialog open",
+        "keyboard focus",
+        "dismiss",
+        "reopen",
+        "blocked storage",
+        "OS theme",
+        "eight theme/palette combinations",
+        "desktop",
+        "mobile"
+      ]
+    },
+    {
+      "id": "number",
+      "title": "Numeric input",
+      "section": "components",
+      "url": "../../../previews/great-circle/workbench/?fixture=number",
+      "description": "Actual production UI; synthetic routes, offline grid tiles and search responses. Interactive state transitions are documented in workbench/COVERAGE.md. Use the real controls to enter states; see workbench/COVERAGE.md.",
+      "states": [
+        "default",
+        "invalid",
+        "focus",
+        "commit",
+        "Escape restore"
+      ]
+    },
+    {
+      "id": "radius",
+      "title": "Radius editor",
+      "section": "components",
+      "url": "../../../previews/great-circle/workbench/?fixture=radius",
+      "description": "Actual production UI; synthetic routes, offline grid tiles and search responses. Interactive state transitions are documented in workbench/COVERAGE.md. Use the real controls to enter states; see workbench/COVERAGE.md.",
+      "states": [
+        "default",
+        "editing",
+        "invalid",
+        "disabled",
+        "focus",
+        "commit",
+        "cancel",
+        "repeated edit"
+      ]
+    },
+    {
+      "id": "disabled",
+      "title": "Disabled radius",
+      "section": "components",
+      "url": "../../../previews/great-circle/workbench/?fixture=disabled",
+      "description": "Actual production UI; synthetic routes, offline grid tiles and search responses. Interactive state transitions are documented in workbench/COVERAGE.md. Use the real controls to enter states; see workbench/COVERAGE.md.",
+      "states": [
+        "default",
+        "editing",
+        "invalid",
+        "disabled",
+        "focus",
+        "commit",
+        "cancel",
+        "repeated edit"
+      ]
+    },
+    {
+      "id": "planner",
+      "title": "Empty planner",
+      "section": "screens",
+      "url": "../../../previews/great-circle/workbench/?fixture=planner",
+      "description": "Actual production UI; synthetic routes, offline grid tiles and search responses. Interactive state transitions are documented in workbench/COVERAGE.md. Use the real controls to enter states; see workbench/COVERAGE.md.",
+      "states": [
+        "desktop sidebar",
+        "mobile drawer",
+        "focus trap",
+        "Escape",
+        "Done",
+        "close",
+        "reopen",
+        "empty",
+        "populated",
+        "loading",
+        "error",
+        "desktop",
+        "mobile",
+        "preferences",
+        "cardinal buttons",
+        "route invalidation",
+        "eight theme/palette combinations"
+      ]
+    },
+    {
+      "id": "route",
+      "title": "Route and metrics",
+      "section": "screens",
+      "url": "../../../previews/great-circle/workbench/?fixture=route",
+      "description": "Actual production UI; synthetic routes, offline grid tiles and search responses. Interactive state transitions are documented in workbench/COVERAGE.md. Use the real controls to enter states; see workbench/COVERAGE.md.",
+      "states": [
+        "offline tiles",
+        "circle guide",
+        "Start",
+        "Size",
+        "center locked",
+        "center preview",
+        "cancel",
+        "commit",
+        "ideal layer visible/hidden",
+        "disabled locate",
+        "empty",
+        "populated",
+        "loading",
+        "error",
+        "desktop",
+        "mobile",
+        "preferences",
+        "cardinal buttons",
+        "route invalidation",
+        "metrics",
+        "snap note",
+        "details",
+        "distance warning",
+        "export",
+        "download again",
+        "eight theme/palette combinations"
+      ]
+    },
+    {
+      "id": "larger",
+      "title": "Larger-loop warning",
+      "section": "screens",
+      "url": "../../../previews/great-circle/workbench/?fixture=larger",
+      "description": "Actual production UI; synthetic routes, offline grid tiles and search responses. Interactive state transitions are documented in workbench/COVERAGE.md. Use the real controls to enter states; see workbench/COVERAGE.md.",
+      "states": [
+        "offline tiles",
+        "circle guide",
+        "Start",
+        "Size",
+        "center locked",
+        "center preview",
+        "cancel",
+        "commit",
+        "ideal layer visible/hidden",
+        "disabled locate",
+        "empty",
+        "populated",
+        "loading",
+        "error",
+        "desktop",
+        "mobile",
+        "preferences",
+        "cardinal buttons",
+        "route invalidation",
+        "metrics",
+        "snap note",
+        "details",
+        "distance warning",
+        "export",
+        "download again"
+      ]
+    },
+    {
+      "id": "error",
+      "title": "Service error",
+      "section": "screens",
+      "url": "../../../previews/great-circle/workbench/?fixture=error",
+      "description": "Actual production UI; synthetic routes, offline grid tiles and search responses. Interactive state transitions are documented in workbench/COVERAGE.md. Use the real controls to enter states; see workbench/COVERAGE.md.",
+      "states": [
+        "empty",
+        "populated",
+        "loading",
+        "error",
+        "desktop",
+        "mobile",
+        "preferences",
+        "cardinal buttons",
+        "route invalidation"
+      ]
+    },
+    {
+      "id": "loading",
+      "title": "Generation and cancellation",
+      "section": "patterns",
+      "url": "../../../previews/great-circle/workbench/?fixture=loading",
+      "description": "Actual production UI; synthetic routes, offline grid tiles and search responses. Interactive state transitions are documented in workbench/COVERAGE.md. Use the real controls to enter states; see workbench/COVERAGE.md.",
+      "states": [
+        "pending",
+        "cancel",
+        "Escape",
+        "repeated open",
+        "focus return",
+        "background inert",
+        "empty",
+        "populated",
+        "loading",
+        "error",
+        "desktop",
+        "mobile",
+        "preferences",
+        "cardinal buttons",
+        "route invalidation"
+      ]
+    },
+    {
+      "id": "settings",
+      "title": "Mobile route settings",
+      "section": "patterns",
+      "url": "../../../previews/great-circle/workbench/?fixture=settings",
+      "description": "Actual production UI; synthetic routes, offline grid tiles and search responses. Interactive state transitions are documented in workbench/COVERAGE.md. Use the real controls to enter states; see workbench/COVERAGE.md.",
+      "states": [
+        "desktop sidebar",
+        "mobile drawer",
+        "focus trap",
+        "Escape",
+        "Done",
+        "close",
+        "reopen"
+      ]
+    },
+    {
+      "id": "coordinates",
+      "title": "Coordinate validation",
+      "section": "patterns",
+      "url": "../../../previews/great-circle/workbench/?fixture=coordinates",
+      "description": "Actual production UI; synthetic routes, offline grid tiles and search responses. Interactive state transitions are documented in workbench/COVERAGE.md. Use the real controls to enter states; see workbench/COVERAGE.md.",
+      "states": [
+        "collapsed",
+        "expanded",
+        "invalid",
+        "valid apply"
+      ]
+    },
+    {
+      "id": "map",
+      "title": "Map handles and layers",
+      "section": "patterns",
+      "url": "../../../previews/great-circle/workbench/?fixture=map",
+      "description": "Actual production UI; synthetic routes, offline grid tiles and search responses. Interactive state transitions are documented in workbench/COVERAGE.md. Use the real controls to enter states; see workbench/COVERAGE.md.",
+      "states": [
+        "offline tiles",
+        "circle guide",
+        "Start",
+        "Size",
+        "center locked",
+        "center preview",
+        "cancel",
+        "commit",
+        "ideal layer visible/hidden",
+        "disabled locate"
+      ]
+    },
+    {
+      "id": "search",
+      "title": "Place results",
+      "section": "patterns",
+      "url": "../../../previews/great-circle/workbench/?fixture=search",
+      "description": "Actual production UI; synthetic routes, offline grid tiles and search responses. Interactive state transitions are documented in workbench/COVERAGE.md. Use the real controls to enter states; see workbench/COVERAGE.md.",
+      "states": [
+        "empty input",
+        "disabled submit",
+        "populated",
+        "no results",
+        "503",
+        "loading",
+        "cancel",
+        "Escape",
+        "select"
+      ]
+    },
+    {
+      "id": "search-empty",
+      "title": "No places found",
+      "section": "patterns",
+      "url": "../../../previews/great-circle/workbench/?fixture=search-empty",
+      "description": "Actual production UI; synthetic routes, offline grid tiles and search responses. Interactive state transitions are documented in workbench/COVERAGE.md. Use the real controls to enter states; see workbench/COVERAGE.md.",
+      "states": [
+        "empty input",
+        "disabled submit",
+        "populated",
+        "no results",
+        "503",
+        "loading",
+        "cancel",
+        "Escape",
+        "select"
+      ]
+    },
+    {
+      "id": "search-error",
+      "title": "Search service error",
+      "section": "patterns",
+      "url": "../../../previews/great-circle/workbench/?fixture=search-error",
+      "description": "Actual production UI; synthetic routes, offline grid tiles and search responses. Interactive state transitions are documented in workbench/COVERAGE.md. Use the real controls to enter states; see workbench/COVERAGE.md.",
+      "states": [
+        "empty input",
+        "disabled submit",
+        "populated",
+        "no results",
+        "503",
+        "loading",
+        "cancel",
+        "Escape",
+        "select"
+      ]
+    },
+    {
+      "id": "search-loading",
+      "title": "Pending search and cancellation",
+      "section": "patterns",
+      "url": "../../../previews/great-circle/workbench/?fixture=search-loading",
+      "description": "Actual production UI; synthetic routes, offline grid tiles and search responses. Interactive state transitions are documented in workbench/COVERAGE.md. Use the real controls to enter states; see workbench/COVERAGE.md.",
+      "states": [
+        "empty input",
+        "disabled submit",
+        "populated",
+        "no results",
+        "503",
+        "loading",
+        "cancel",
+        "Escape",
+        "select"
+      ]
+    },
+    {
+      "id": "no-loop",
+      "title": "No eligible loop",
+      "section": "screens",
+      "url": "../../../previews/great-circle/workbench/?fixture=no-loop",
+      "description": "Actual production error/status branch with deterministic initial state. Historical budget/map states retain the current routing-mode heading; no provider call.",
+      "states": [
+        "error",
+        "status",
+        "retry",
+        "empty metrics"
+      ]
+    },
+    {
+      "id": "shape-tolerance",
+      "title": "Circle fit unavailable",
+      "section": "screens",
+      "url": "../../../previews/great-circle/workbench/?fixture=shape-tolerance",
+      "description": "Actual production error/status branch with deterministic initial state. Historical budget/map states retain the current routing-mode heading; no provider call.",
+      "states": [
+        "error",
+        "status",
+        "retry",
+        "empty metrics"
+      ]
+    },
+    {
+      "id": "search-stopped",
+      "title": "Search budget stopped",
+      "section": "screens",
+      "url": "../../../previews/great-circle/workbench/?fixture=search-stopped",
+      "description": "Actual production error/status branch with deterministic initial state. Historical budget/map states retain the current routing-mode heading; no provider call.",
+      "states": [
+        "error",
+        "status",
+        "retry",
+        "empty metrics"
+      ]
+    },
+    {
+      "id": "planning-stopped",
+      "title": "Planning budget stopped",
+      "section": "screens",
+      "url": "../../../previews/great-circle/workbench/?fixture=planning-stopped",
+      "description": "Actual production error/status branch with deterministic initial state. Historical budget/map states retain the current routing-mode heading; no provider call.",
+      "states": [
+        "error",
+        "status",
+        "retry",
+        "empty metrics"
+      ]
+    },
+    {
+      "id": "map-error",
+      "title": "Map service error",
+      "section": "screens",
+      "url": "../../../previews/great-circle/workbench/?fixture=map-error",
+      "description": "Actual production error/status branch with deterministic initial state. Historical budget/map states retain the current routing-mode heading; no provider call.",
+      "states": [
+        "error",
+        "status",
+        "retry",
+        "empty metrics"
+      ]
+    },
+    {
+      "id": "map-download",
+      "title": "Map download stopped",
+      "section": "screens",
+      "url": "../../../previews/great-circle/workbench/?fixture=map-download",
+      "description": "Actual production error/status branch with deterministic initial state. Historical budget/map states retain the current routing-mode heading; no provider call.",
+      "states": [
+        "error",
+        "status",
+        "retry",
+        "empty metrics"
+      ]
+    }
+  ],
+  "inventory": "inventory.json",
+  "registrySnapshot": {
+    "authority": "App-owned design collection, tokens and optional inventory",
+    "baseRevision": "f84c7f80dbd115da710fca04e3267e4c96709442",
+    "inventorySha256": "68f05190ac278116a52e3a5201b061c03db0b66c6f16e36870954c20a3e25acf",
+    "tokenSha256": "1ff86a3f92bbe4b58a500ced27c54481c432965066b89d19ce06b23f5a291910",
+    "integrationStatus": "unpublished-local-feature-commit",
+    "integrationRevision": "0d571c71a91df22884c3402ecb56de08c74eb983"
+  },
+  "publicRelease": {
+    "status": "static-app-owned-fixtures",
+    "source": {
+      "revision": "0d571c71a91df22884c3402ecb56de08c74eb983",
+      "dirty": true,
+      "sourceTreeSha256": "5d776dcfd9ade8b131563b336d6e890263fbedc3f2d39d5aa554caa4e62f69aa"
+    }
+  }
+}

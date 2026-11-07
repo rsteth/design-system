@@ -1,0 +1,1554 @@
+{
+  "schemaVersion": 1,
+  "id": "reference-dell-1996",
+  "title": "Dell 1996",
+  "classification": "independent-unverified-analysis",
+  "source": {
+    "repository": "https://github.com/VoltAgent/awesome-design-md",
+    "fork": "https://github.com/rsteth/awesome-design-md-p",
+    "revision": "fcc70284932276d085f01ef9f83edde90b1258cb",
+    "path": "design-md/dell-1996/DESIGN.md",
+    "sha256": "e186c614b1223fe7015670472ac6bc84b5b3fdd5de5325b3ce5bfb7fbe9c8d6e",
+    "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/dell-1996/DESIGN.md"
+  },
+  "sourceName": "Dell 1996 Inspired",
+  "titleProvenance": {
+    "status": "inferred",
+    "basis": "Source directory label, normalized for navigation; original source name is retained without correction.",
+    "sourceValue": "dell-1996",
+    "originalName": "Dell 1996 Inspired"
+  },
+  "description": "An inspired interpretation of Dell.com's 1996 design language — a catalog-era enterprise web design built around a literal black page frame, vivid flat color-block \"ribbon cards\" tinted in sage, salmon, periwinkle, sky, peach and lime, chunky Helvetica-Black display titles, Times Roman body copy, and an entire visual vocabulary of pre-Photoshop hand-cut GIF stickers (NEW! bursts, award seals, beveled product photos).",
+  "analysis": {
+    "version": "alpha",
+    "name": "Dell 1996 Inspired",
+    "description": "An inspired interpretation of Dell.com's 1996 design language — a catalog-era enterprise web design built around a literal black page frame, vivid flat color-block \"ribbon cards\" tinted in sage, salmon, periwinkle, sky, peach and lime, chunky Helvetica-Black display titles, Times Roman body copy, and an entire visual vocabulary of pre-Photoshop hand-cut GIF stickers (NEW! bursts, award seals, beveled product photos).",
+    "colors": {
+      "primary": "#e91d2a",
+      "on-primary": "#ffffff",
+      "canvas": "#ffffff",
+      "surface": "#ffffff",
+      "ink": "#000000",
+      "frame-ink": "#000000",
+      "yellow-sticker": "#fcc20f",
+      "purple-stripe": "#6a26a4",
+      "link": "#0000ee",
+      "tint-olive": "#8e8a25",
+      "tint-sage": "#b3bd95",
+      "tint-salmon": "#d77a7a",
+      "tint-peach": "#e6915d",
+      "tint-lime": "#c0d4a7",
+      "tint-sky": "#9ab6c8",
+      "tint-steel": "#a5b8c0",
+      "tint-periwinkle": "#8c9ae0"
+    },
+    "typography": {
+      "display": {
+        "fontFamily": "Arial Black",
+        "fontSize": "36px",
+        "fontWeight": 900,
+        "lineHeight": 1,
+        "letterSpacing": 0
+      },
+      "heading-1": {
+        "fontFamily": "Arial Black",
+        "fontSize": "24px",
+        "fontWeight": 900,
+        "lineHeight": 1.05,
+        "letterSpacing": 0
+      },
+      "heading-2": {
+        "fontFamily": "Helvetica",
+        "fontSize": "16px",
+        "fontWeight": 700,
+        "lineHeight": 1.2,
+        "letterSpacing": 0
+      },
+      "heading-3": {
+        "fontFamily": "Helvetica",
+        "fontSize": "14px",
+        "fontWeight": 700,
+        "lineHeight": 1.2,
+        "letterSpacing": 0
+      },
+      "body": {
+        "fontFamily": "Times New Roman",
+        "fontSize": "14px",
+        "fontWeight": 400,
+        "lineHeight": 1.4,
+        "letterSpacing": 0
+      },
+      "body-sm": {
+        "fontFamily": "Times New Roman",
+        "fontSize": "12px",
+        "fontWeight": 400,
+        "lineHeight": 1.4,
+        "letterSpacing": 0
+      },
+      "caption": {
+        "fontFamily": "Times New Roman",
+        "fontSize": "11px",
+        "fontWeight": 400,
+        "lineHeight": 1.35,
+        "letterSpacing": 0
+      },
+      "button": {
+        "fontFamily": "Helvetica",
+        "fontSize": "12px",
+        "fontWeight": 700,
+        "lineHeight": 1,
+        "letterSpacing": 0
+      },
+      "link": {
+        "fontFamily": "Times New Roman",
+        "fontSize": "14px",
+        "fontWeight": 400,
+        "lineHeight": 1.4,
+        "letterSpacing": 0
+      },
+      "ui-label": {
+        "fontFamily": "Helvetica",
+        "fontSize": "12px",
+        "fontWeight": 700,
+        "lineHeight": 1,
+        "letterSpacing": 0
+      }
+    },
+    "rounded": {
+      "none": "0px",
+      "full": "9999px"
+    },
+    "spacing": {
+      "xxs": "2px",
+      "xs": "4px",
+      "s": "6px",
+      "sm": "8px",
+      "m": "10px",
+      "md": "12px",
+      "lg": "16px",
+      "xl": "20px",
+      "xxl": "24px",
+      "section-sm": "32px",
+      "section": "40px",
+      "section-lg": "48px"
+    },
+    "components": {
+      "page-frame": {
+        "backgroundColor": "{colors.frame-ink}",
+        "textColor": "{colors.canvas}",
+        "rounded": "{rounded.none}",
+        "padding": "8px"
+      },
+      "top-banner": {
+        "backgroundColor": "{colors.frame-ink}",
+        "textColor": "{colors.canvas}",
+        "typography": "{typography.heading-2}",
+        "rounded": "{rounded.none}",
+        "padding": "12px 16px"
+      },
+      "section-eyebrow-olive": {
+        "backgroundColor": "{colors.tint-olive}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.display}",
+        "rounded": "{rounded.none}",
+        "padding": "24px 16px"
+      },
+      "section-eyebrow-salmon": {
+        "backgroundColor": "{colors.tint-salmon}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.display}",
+        "rounded": "{rounded.none}",
+        "padding": "24px 16px"
+      },
+      "ribbon-card-title": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "borderColor": "{colors.frame-ink}",
+        "typography": "{typography.heading-3}",
+        "rounded": "{rounded.none}",
+        "padding": "6px 12px"
+      },
+      "ribbon-card-body-sage": {
+        "backgroundColor": "{colors.tint-sage}",
+        "textColor": "{colors.ink}",
+        "borderColor": "{colors.frame-ink}",
+        "typography": "{typography.body}",
+        "rounded": "{rounded.none}",
+        "padding": "12px 16px"
+      },
+      "ribbon-card-body-salmon": {
+        "backgroundColor": "{colors.tint-salmon}",
+        "textColor": "{colors.ink}",
+        "borderColor": "{colors.frame-ink}",
+        "typography": "{typography.body}",
+        "rounded": "{rounded.none}",
+        "padding": "12px 16px"
+      },
+      "ribbon-card-body-peach": {
+        "backgroundColor": "{colors.tint-peach}",
+        "textColor": "{colors.ink}",
+        "borderColor": "{colors.frame-ink}",
+        "typography": "{typography.body}",
+        "rounded": "{rounded.none}",
+        "padding": "12px 16px"
+      },
+      "ribbon-card-body-lime": {
+        "backgroundColor": "{colors.tint-lime}",
+        "textColor": "{colors.ink}",
+        "borderColor": "{colors.frame-ink}",
+        "typography": "{typography.body}",
+        "rounded": "{rounded.none}",
+        "padding": "12px 16px"
+      },
+      "ribbon-card-body-sky": {
+        "backgroundColor": "{colors.tint-sky}",
+        "textColor": "{colors.ink}",
+        "borderColor": "{colors.frame-ink}",
+        "typography": "{typography.body}",
+        "rounded": "{rounded.none}",
+        "padding": "12px 16px"
+      },
+      "ribbon-card-body-steel": {
+        "backgroundColor": "{colors.tint-steel}",
+        "textColor": "{colors.ink}",
+        "borderColor": "{colors.frame-ink}",
+        "typography": "{typography.body}",
+        "rounded": "{rounded.none}",
+        "padding": "12px 16px"
+      },
+      "ribbon-card-body-periwinkle": {
+        "backgroundColor": "{colors.tint-periwinkle}",
+        "textColor": "{colors.ink}",
+        "borderColor": "{colors.frame-ink}",
+        "typography": "{typography.body}",
+        "rounded": "{rounded.none}",
+        "padding": "12px 16px"
+      },
+      "cta-block-red": {
+        "backgroundColor": "{colors.primary}",
+        "textColor": "{colors.on-primary}",
+        "borderColor": "{colors.frame-ink}",
+        "typography": "{typography.body}",
+        "rounded": "{rounded.none}",
+        "padding": "16px"
+      },
+      "phone-callout": {
+        "backgroundColor": "{colors.frame-ink}",
+        "textColor": "{colors.primary}",
+        "typography": "{typography.heading-2}",
+        "rounded": "{rounded.none}",
+        "padding": "4px 8px"
+      },
+      "buy-a-dell-sticker": {
+        "backgroundColor": "{colors.yellow-sticker}",
+        "textColor": "{colors.ink}",
+        "borderColor": "{colors.frame-ink}",
+        "typography": "{typography.button}",
+        "rounded": "{rounded.none}",
+        "padding": "4px 8px"
+      },
+      "new-burst-sticker": {
+        "backgroundColor": "{colors.yellow-sticker}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.button}",
+        "rounded": "{rounded.none}",
+        "padding": "4px 8px"
+      },
+      "cert-seal": {
+        "backgroundColor": "{colors.primary}",
+        "textColor": "{colors.canvas}",
+        "typography": "{typography.button}",
+        "rounded": "{rounded.full}",
+        "size": "64px"
+      },
+      "icon-label-nav": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.ui-label}",
+        "rounded": "{rounded.none}",
+        "padding": "8px"
+      },
+      "text-input": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "borderColor": "{colors.frame-ink}",
+        "typography": "{typography.body}",
+        "rounded": "{rounded.none}",
+        "padding": "4px 6px"
+      },
+      "button-primary": {
+        "backgroundColor": "{colors.frame-ink}",
+        "textColor": "{colors.on-primary}",
+        "borderColor": "{colors.frame-ink}",
+        "typography": "{typography.button}",
+        "rounded": "{rounded.none}",
+        "padding": "6px 16px"
+      },
+      "button-secondary": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "borderColor": "{colors.frame-ink}",
+        "typography": "{typography.button}",
+        "rounded": "{rounded.none}",
+        "padding": "6px 16px"
+      },
+      "button-text-link": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.link}",
+        "typography": "{typography.link}",
+        "rounded": "{rounded.none}"
+      },
+      "footer-band": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "borderColor": "{colors.frame-ink}",
+        "typography": "{typography.body-sm}",
+        "padding": "16px"
+      },
+      "ex-pricing-tier": {
+        "description": "Default Pricing tier card. Re-uses feature-card chrome with the base white surface.",
+        "backgroundColor": "{colors.surface}",
+        "textColor": "{colors.ink}",
+        "borderColor": "{colors.frame-ink}",
+        "rounded": "{rounded.none}",
+        "padding": "{spacing.lg}"
+      },
+      "ex-pricing-tier-featured": {
+        "description": "Featured/highlighted tier — polarity-flipped surface (dark fill + light text in light mode, light fill + dark text in dark mode).",
+        "backgroundColor": "{colors.ink}",
+        "textColor": "{colors.on-primary}",
+        "rounded": "{rounded.none}",
+        "padding": "{spacing.lg}"
+      },
+      "ex-product-selector": {
+        "description": "What's Included summary card — re-purposed for SaaS / B2B verticals (NOT a literal product gallery).",
+        "backgroundColor": "{colors.surface}",
+        "rounded": "{rounded.none}",
+        "padding": "{spacing.lg}"
+      },
+      "ex-cart-drawer": {
+        "description": "Subscription summary — re-purposed for SaaS / B2B (line items per add-on, not literal cart).",
+        "backgroundColor": "{colors.surface}",
+        "rounded": "{rounded.none}",
+        "padding": "{spacing.lg}",
+        "item-divider": "{colors.frame-ink}"
+      },
+      "ex-app-shell-row": {
+        "description": "Sidebar nav row inside the App Shell example. Active state uses brand primary as the indicator.",
+        "backgroundColor": "{colors.canvas}",
+        "activeIndicator": "{colors.primary}",
+        "rounded": "{rounded.none}",
+        "padding": "{spacing.sm} {spacing.md}"
+      },
+      "ex-data-table-cell": {
+        "description": "Default data-table th + td chrome. Header uses mono-caps eyebrow typography; body uses body-sm.",
+        "headerBackground": "{colors.surface}",
+        "headerTypography": "{typography.caption}",
+        "bodyTypography": "{typography.body-sm}",
+        "cellPadding": "{spacing.s} {spacing.md}",
+        "rowBorder": "{colors.frame-ink}"
+      },
+      "ex-auth-form-card": {
+        "description": "Sign-in / sign-up card. Re-uses feature-card chrome with text-input primitives inside.",
+        "backgroundColor": "{colors.surface}",
+        "rounded": "{rounded.none}",
+        "padding": "{spacing.lg}"
+      },
+      "ex-modal-card": {
+        "description": "Modal dialog surface — same chrome as feature-card with elevated shadow.",
+        "backgroundColor": "{colors.surface}",
+        "rounded": "{rounded.none}",
+        "padding": "{spacing.lg}"
+      },
+      "ex-empty-state-card": {
+        "description": "Empty-state illustration frame.",
+        "backgroundColor": "{colors.surface}",
+        "rounded": "{rounded.none}",
+        "padding": "{spacing.xl}",
+        "captionTypography": "{typography.body}"
+      },
+      "ex-toast": {
+        "description": "Toast notification surface — feature-card shape + medium shadow.",
+        "backgroundColor": "{colors.surface}",
+        "rounded": "{rounded.none}",
+        "padding": "{spacing.md} {spacing.lg}",
+        "typography": "{typography.body-sm}"
+      }
+    }
+  },
+  "normalizationRepairs": [],
+  "sections": [
+    {
+      "heading": "Overview",
+      "level": 2,
+      "text": "Dell's December 1996 home page is a perfectly preserved fossil of catalog-era enterprise web design — the moment when a Fortune-100 brand decided the web was *important enough* to invest in, but two years before CSS would be widely adopted and three years before \"design system\" was a phrase anyone used. Every visual choice on the page is a downstream consequence of that constraint: layout via HTML tables, type via the browser's built-in font stack (Arial Black / Helvetica / Times Roman), color via 8-bit-safe flat fills, and decoration via hand-cut GIF \"stickers\" (the NEW! burst, the round PC Magazine Readers' Choice seal, the beveled \"BUY a DELL\" yellow tab). The page is bordered — literally bordered, in a 1-cell-wide black HTML table — and inside that frame, every product line gets a \"ribbon card\": a white title bar with a sharp black underline, a tinted body block in one of eight catalog colors (sage, salmon, peach, lime, sky, steel, periwinkle, olive), and a beveled product photograph notched into the right edge of the card.\n\nThe brand voice carries through in two anchors: a vivid Dell-red CTA panel on the left of the homepage (cream-yellow Times Roman copy on a `{colors.primary}` fill, set inside the black frame) and a screaming red phone number — `1-800-213-DELL` — pinned to the top-right of every page, because in 1996 the website was a brochure that ended with a phone call. The footer is a row of four hand-drawn icon-labels (FIND / HOME / ONLINE STORE / SERVICE & SUPPORT) linked by a thin green horizontal rule, and a single classic-Mosaic-blue underlined \"Copyright\" link sitting above the legal small print in Times Roman.\n\n**Key Characteristics:**\n- Literal page frame: every page sits inside a `{colors.frame-ink}` (black) outer border ~8 px thick — the design treats the browser window as a printed picture frame\n- Flat color-block \"ribbon cards\" tint each product family with a dedicated catalog color (`{colors.tint-sage}` Latitude, `{colors.tint-salmon}` OptiPlex GX, `{colors.tint-periwinkle}` PowerEdge, `{colors.tint-sky}` Dellware, etc.) — no gradients, no shadows, no opacity\n- Chunky display typography in `{typography.display}` (Arial Black 36 / weight 900) for section title blocks; `{typography.heading-2}` (Helvetica Bold 16) for product row titles; `{typography.body}` Times Roman 14 for everything else\n- Hand-cut GIF \"stickers\" overlay the layout: yellow \"BUY a DELL\" tab in the top right, angled \"NEW!\" bursts on new product rows, round red PC Magazine Readers' Choice seals\n- `{colors.primary}` (Dell red) reserved for two things only: the homepage CTA panel and the top-right phone number — never decorative\n- Footer icon-nav with classic-blue (`{colors.link}` #0000ee) anchor underlines — the unmistakable Netscape 3.x link colour",
+      "line": 347
+    },
+    {
+      "heading": "Colors",
+      "level": 2,
+      "text": "",
+      "line": 361
+    },
+    {
+      "heading": "Brand & Accent",
+      "level": 3,
+      "text": "- **Dell Red** (`{colors.primary}` — #e91d2a): The brand's signature red. Reserved for the homepage CTA panel (\"At Dell.com, we'll help you find the right system…\"), the top-right phone number, and the PC Magazine Readers' Choice seal ring. Never used as a card body fill.\n- **Dell Yellow** (`{colors.yellow-sticker}` — #fcc20f): Sticker yellow — the \"BUY a DELL\" tab in the top banner, and the angled \"NEW!\" bursts overlapping new product rows.\n- **Dell Purple** (`{colors.purple-stripe}` — #6a26a4): The accent stripe behind the lowercase \".com\" / \"DELL\" wordmark text — appears inside the \"BUY a DELL\" sticker chrome only.",
+      "line": 363
+    },
+    {
+      "heading": "Surface",
+      "level": 3,
+      "text": "- **Frame Ink** (`{colors.frame-ink}` — #000000): Pure black. The page frame, the top banner background, button fills, and all 1 px ribbon-card hairlines.\n- **Canvas** (`{colors.canvas}` — #ffffff): True white inside the frame. The page surface, the ribbon-card title-bar fill, and the icon-label nav backdrop.",
+      "line": 368
+    },
+    {
+      "heading": "Text",
+      "level": 3,
+      "text": "- **Ink** (`{colors.ink}` — #000000): Body text, headings, link copy before visit. Pure black; no warm-near-black softening in 1996.\n- **Link** (`{colors.link}` — #0000ee): Classic Mosaic / Netscape 3.x default link blue. Underlined inline anchors (\"Copyright\", \"(Terms of Use)\", inline \"from Dell's award-winning service and support teams\").",
+      "line": 372
+    },
+    {
+      "heading": "Ribbon-Card Tint Family",
+      "level": 3,
+      "text": "Eight catalog colors, one per product line — these are the page's chromatic personality:\n- **Olive** (`{colors.tint-olive}` — #8e8a25): \"DIMENSION DESKTOPS\" eyebrow block\n- **Sage** (`{colors.tint-sage}` — #b3bd95): Latitude Notebooks ribbon body\n- **Salmon** (`{colors.tint-salmon}` — #d77a7a): \"OPTIPLEX DESKTOP SYSTEMS\" eyebrow + GX Series body\n- **Peach** (`{colors.tint-peach}` — #e6915d): Dimension card body + OptiPlex Gs body\n- **Lime** (`{colors.tint-lime}` — #c0d4a7): OptiPlex G Series body\n- **Sky** (`{colors.tint-sky}` — #9ab6c8): Dellware ribbon body\n- **Steel** (`{colors.tint-steel}` — #a5b8c0): Dimension XPS Pro ribbon body\n- **Periwinkle** (`{colors.tint-periwinkle}` — #8c9ae0): PowerEdge ribbon body\n\nThe tints are saturated but not vivid — they sit just below true neutral chroma, the signature of GIF-era web-safe-palette quantization.",
+      "line": 376
+    },
+    {
+      "heading": "Typography",
+      "level": 2,
+      "text": "",
+      "line": 389
+    },
+    {
+      "heading": "Font Family",
+      "level": 3,
+      "text": "Three system-stack families, no webfonts (webfonts didn't exist yet):\n\n- **Arial Black** (fallback: Helvetica, system-ui sans) — display headings only. The chunky stenciled section eyebrows (\"DIMENSION DESKTOPS\", \"OPTIPLEX DESKTOP SYSTEMS\") are Arial Black at weight 900, set in all-caps with normal tracking.\n- **Helvetica** (fallback: Arial, system-ui sans) — product-row titles, button labels, the top banner's \"BUILD YOUR OWN COMPUTER. ONLINE.\" headline. Always bold (700), always all-caps.\n- **Times New Roman** (fallback: Times, serif) — body copy. Every paragraph, every caption, every inline anchor sits in default-rendered Times Roman. The serifs date the design instantly — body text on the modern web is almost never serif.",
+      "line": 391
+    },
+    {
+      "heading": "Hierarchy",
+      "level": 3,
+      "text": "| Token | Size | Weight | Line Height | Use |\n|---|---|---|---|---|\n| `{typography.display}` | 36px | 900 | 1.0 | Section eyebrow titles (\"DIMENSION DESKTOPS\", \"OPTIPLEX DESKTOP SYSTEMS\") |\n| `{typography.heading-1}` | 24px | 900 | 1.05 | Sub-page hero headlines |\n| `{typography.heading-2}` | 16px | 700 | 1.2 | Top banner copy, product-line H1 (\"Reliable PC's for High-Performance Computing.\") |\n| `{typography.heading-3}` | 14px | 700 | 1.2 | Ribbon-card title bar (\"OPTIPLEX GX PRO\", \"DIMENSION XPS\") |\n| `{typography.body}` | 14px | 400 | 1.4 | Default paragraph copy, ribbon-card body, CTA-panel copy |\n| `{typography.body-sm}` | 12px | 400 | 1.4 | \"This site is best viewed with browser versions 3.0 and higher.\" |\n| `{typography.caption}` | 11px | 400 | 1.35 | Footer copyright text |\n| `{typography.button}` | 12px | 700 | 1.0 | Button labels, \"NEW!\" sticker, BUY-a-DELL sticker |\n| `{typography.ui-label}` | 12px | 700 | 1.0 | Icon-label nav uppercase labels (\"FIND\", \"HOME\", \"ONLINE STORE\", \"SERVICE & SUPPORT\") |",
+      "line": 399
+    },
+    {
+      "heading": "Principles",
+      "level": 3,
+      "text": "- Sans for UI, serif for body — the inverse of the modern convention, and a dead giveaway of mid-90s typography.\n- Display weights are extreme (900 / Black) and never softer. The \"Dimension\" / \"OptiPlex\" eyebrow blocks lean on the heaviest weight the font ships.\n- No letter-spacing tracking adjustments — pixel-fonts in 1996 didn't reward it. Everything is set at the browser's default kern.\n- Line-height is tight on display (1.0) and conventional on body (1.4) — a holdover from print-magazine catalog layout.",
+      "line": 413
+    },
+    {
+      "heading": "Note on Font Substitutes",
+      "level": 3,
+      "text": "All three families are operating-system defaults on every consumer OS shipped in 1996 (Windows 95: Arial / Times New Roman; Mac OS 7.5+: Helvetica / Times). The brand had no fallback strategy because no fallback was needed — the fonts were always present. Modern reproductions can stay on this exact stack (Arial Black / Helvetica / Times New Roman) for authenticity.",
+      "line": 419
+    },
+    {
+      "heading": "Layout",
+      "level": 2,
+      "text": "",
+      "line": 422
+    },
+    {
+      "heading": "Spacing System",
+      "level": 3,
+      "text": "- **Base unit**: 4 px (with 2 / 6 / 10 intermediates). 1996 page layout was driven by HTML table cell padding (`cellpadding=\"4\"` / `cellspacing=\"0\"`) rather than a designed scale.\n- **Tokens**: `{spacing.xxs}` 2px · `{spacing.xs}` 4px · `{spacing.s}` 6px · `{spacing.sm}` 8px · `{spacing.m}` 10px · `{spacing.md}` 12px · `{spacing.lg}` 16px · `{spacing.xl}` 20px · `{spacing.xxl}` 24px · `{spacing.section-sm}` 32px · `{spacing.section}` 40px · `{spacing.section-lg}` 48px.\n- **Card interior padding**: `{spacing.md}` 12 px vertical / `{spacing.lg}` 16 px horizontal on ribbon-card bodies.\n- **Section vertical rhythm**: `{spacing.section}` 40 px between product-ribbon stacks; `{spacing.section-sm}` 32 px between the eyebrow color block and its first ribbon-card.",
+      "line": 424
+    },
+    {
+      "heading": "Grid & Container",
+      "level": 3,
+      "text": "- Fixed-width table layout pinned around 760 px wide — the de facto 1996 standard targeting 800×600 monitors with a small scrollbar gutter.\n- Two-column outer structure: left rail (~28 %) carries the homepage icon-link grid + CTA red panel; right column (~72 %) carries the product ribbon stack.\n- No grid system in the modern sense — every section is its own `<table>` declaration with hard-coded column widths.",
+      "line": 431
+    },
+    {
+      "heading": "Whitespace Philosophy",
+      "level": 3,
+      "text": "Tight by modern standards. Catalog density wins over editorial breath — every pixel inside the black frame is doing work (illustration, color block, headline, body). The compensating decompression happens *inside* each ribbon card: white title bar + tinted body block + product photo notch creates internal breathing room without enlarging the overall page.",
+      "line": 436
+    },
+    {
+      "heading": "Responsive Strategy",
+      "level": 3,
+      "text": "",
+      "line": 439
+    },
+    {
+      "heading": "Breakpoints",
+      "level": 4,
+      "text": "| Name | Width | Key Changes |\n|---|---|---|\n| Period default | 800 × 600 | Fixed 760 px layout, designed for the era's standard monitor |\n| Modern desktop | 1280+ px | Layout sits centered with generous side gutters — emulates \"magazine spread in the middle of the screen\" |\n| Tablet | 768 px | Black frame compresses to 4 px; ribbon-cards stack at full width inside |\n| Mobile | < 480 px | Black frame to 2 px; two-column structure collapses to single column; left rail icon grid stacks above the right-column product stack |",
+      "line": 441
+    },
+    {
+      "heading": "Touch Targets",
+      "level": 4,
+      "text": "1996 had no notion of touch — the original designs assume mouse-only. Modern reproductions need to widen the icon-label nav targets to 44 × 44 px minimum at mobile (the 1996 icons sat at ~24 × 24 with 8 px label below, well under modern guidelines).",
+      "line": 449
+    },
+    {
+      "heading": "Collapsing Strategy",
+      "level": 4,
+      "text": "- At ≤ 768 px, the homepage's left-rail icon-link grid (Online Store / Service / Why Dell? / Government / Worldwide / Order Status / Company Info / U.S. Careers) collapses from a 2 × 4 grid to a single-column stack\n- Ribbon-card right-edge product photo notch becomes a top-aligned full-width image at mobile\n- The top banner's tagline (\"BUILD YOUR OWN COMPUTER. ONLINE.\") shrinks one type tier; the phone number wraps below the BUY-a-DELL sticker\n- Footer icon-label nav stays 4-up at all widths — the icons are small enough to survive",
+      "line": 452
+    },
+    {
+      "heading": "Image Behavior",
+      "level": 4,
+      "text": "Product photos are bitmap GIFs with hand-applied bevel shadows — they were authored at fixed pixel widths (typically 80–120 px wide). The right-edge notch effect was achieved by table-cell negative spacing. Modern reproductions should keep the bevel shadow effect (it's signature) but use SVG drop-shadow or CSS `filter: drop-shadow(2px 2px 0 #000)` to recreate it crisply at high-DPI.",
+      "line": 458
+    },
+    {
+      "heading": "Elevation & Depth",
+      "level": 2,
+      "text": "| Level | Treatment | Use |\n|---|---|---|\n| 0 — Flush | No shadow, no border | Body text, copyright row, footer band background |\n| 1 — Hairline | `1px solid {colors.frame-ink}` | Ribbon-card outer edge, table-cell dividers |\n| 2 — Frame | `8px solid {colors.frame-ink}` | The page-frame border around the entire viewport |\n| 3 — Bevel | Hard-edge 1 px highlight + 1 px shadow on GIF stickers and product photos | \"BUY a DELL\" yellow sticker, NEW! bursts, award seals, product photographs |\n\nThere are **no soft shadows** in the 1996 design — every depth cue is either a hard 1 px border or a hand-painted bevel inside a GIF. Modern reproductions that need to feel period-accurate must resist the urge to add Material-style elevation or atmospheric drop shadows.",
+      "line": 461
+    },
+    {
+      "heading": "Decorative Depth",
+      "level": 3,
+      "text": "Bevels and frames carry the entire depth vocabulary:\n- The **page frame** is the strongest depth cue — it tells the viewer \"this is a contained document, not a continuous canvas.\"\n- **Bevels on stickers** (BUY a DELL, NEW!, PC Magazine Readers' Choice) push them forward off the page surface as if pinned on with thumbtacks.\n- **Product photographs** carry their own hand-painted bevel + drop-shadow, baked into the GIF itself.",
+      "line": 472
+    },
+    {
+      "heading": "Shapes",
+      "level": 2,
+      "text": "",
+      "line": 478
+    },
+    {
+      "heading": "Border Radius Scale",
+      "level": 3,
+      "text": "| Token | Value | Use |\n|---|---|---|\n| `{rounded.none}` | 0px | Universal default — buttons, cards, inputs, banners, page frame, ribbon-card bodies, eyebrow blocks |\n| `{rounded.full}` | 9999px | Circular award seals (PC Magazine Readers' Choice), the round \"h\" sticker on the HOME icon |\n\nThe 1996 design has effectively **two** radius modes: square (everything) and round (decorative seal stickers). No 4 / 8 / 12 px subtle radius tier — that vocabulary belongs to the post-Bootstrap web.",
+      "line": 480
+    },
+    {
+      "heading": "Photography Geometry",
+      "level": 3,
+      "text": "Product photos are rectangular GIFs with their own internal beveled \"monitor\" framing — they sit at native pixel dimensions, never scaled. Aspect ratios cluster around 4:3 (the era's standard CRT shape). Avatars don't exist on this site — staff photography was reserved for \"About Dell\" pages not captured in these snapshots.",
+      "line": 489
+    },
+    {
+      "heading": "Components",
+      "level": 2,
+      "text": "> **No hover states documented.** Per the global no-hover policy, every component below documents Default state only.",
+      "line": 492
+    },
+    {
+      "heading": "Frame & Banner",
+      "level": 3,
+      "text": "**`page-frame`** — the literal black border around the entire viewport.\n- Background `{colors.frame-ink}`, padding `{spacing.sm}` 8 px on every side, no radius.\n- The page sits *inside* this border. Treat it as a non-negotiable container chrome; collapsing it on mobile is acceptable (to ~4 px), but removing it entirely loses the brand.\n\n**`top-banner`** — pure-black strip running across the top with white \"BUILD YOUR OWN COMPUTER. ONLINE.\" headline + sub-tagline, the yellow \"BUY a DELL\" sticker pinned at right, and the red \"1-800-213-DELL\" phone number.\n- Background `{colors.frame-ink}`, text `{colors.canvas}`, type `{typography.heading-2}`, padding 12 px vertical / 16 px horizontal, no radius.",
+      "line": 496
+    },
+    {
+      "heading": "Section Eyebrow Blocks",
+      "level": 3,
+      "text": "**`section-eyebrow-olive`** — large tinted color block holding the chunky stenciled section title (\"DIMENSION DESKTOPS\"). Used at the top of the Dimension product page.\n- Background `{colors.tint-olive}`, text `{colors.ink}`, type `{typography.display}` (Arial Black 36 / 900), padding 24 × 16, no radius.\n\n**`section-eyebrow-salmon`** — same chrome with the OptiPlex line's salmon-pink fill (\"OPTIPLEX DESKTOP SYSTEMS\").\n- Background `{colors.tint-salmon}`, otherwise identical to the olive variant.",
+      "line": 505
+    },
+    {
+      "heading": "Ribbon Cards",
+      "level": 3,
+      "text": "The brand's signature component. Each product-row \"card\" is a stack of three pieces:\n1. **`ribbon-card-title`** — white horizontal title bar with the product variant name in Helvetica Bold all-caps (e.g. \"OPTIPLEX GX PRO\", \"DIMENSION XPS\", \"POWEREDGE SERVERS\"). 1 px bottom border in `{colors.frame-ink}`.\n   - Background `{colors.canvas}`, text `{colors.ink}`, type `{typography.heading-3}`, padding 6 × 12, no radius.\n2. **`ribbon-card-body-<tint>`** — color-block body in one of eight tints, holding the short marketing pitch in `{typography.body}` (Times Roman 14). Padding 12 × 16. The product photograph notches into the right edge with a transparent GIF cutout.\n3. **Photo notch** — the GIF sits in the rightmost ~25 % of the row, hanging slightly above and below the body bar like a card pinned to a corkboard.\n\nEach tint variant is its own component entry. Pick the one that matches the product family:\n\n- **`ribbon-card-body-sage`** — `{colors.tint-sage}` fill, used for Latitude Notebooks rows\n- **`ribbon-card-body-salmon`** — `{colors.tint-salmon}` fill, used for OptiPlex GX Series rows\n- **`ribbon-card-body-peach`** — `{colors.tint-peach}` fill, used for Dimension rows and OptiPlex Gs\n- **`ribbon-card-body-lime`** — `{colors.tint-lime}` fill, used for OptiPlex G Series rows\n- **`ribbon-card-body-sky`** — `{colors.tint-sky}` fill, used for Dellware rows\n- **`ribbon-card-body-steel`** — `{colors.tint-steel}` fill, used for Dimension XPS Pro rows\n- **`ribbon-card-body-periwinkle`** — `{colors.tint-periwinkle}` fill, used for PowerEdge Server rows\n\nAll seven share identical chrome: 1 px solid `{colors.frame-ink}` border, `{spacing.md}` × `{spacing.lg}` (12 × 16) padding, `{rounded.none}` (sharp corners), `{typography.body}` Times Roman 14 inside. Only the fill color changes per product family.",
+      "line": 513
+    },
+    {
+      "heading": "Call-to-Action",
+      "level": 3,
+      "text": "**`cta-block-red`** — the homepage's vivid Dell-red panel (\"At Dell.com, we'll help you find the right system, configure it, price it, and order it…\").\n- Background `{colors.primary}`, text `{colors.on-primary}` (white), 1 px solid frame-ink border, type `{typography.body}` (Times Roman 14), padding 16 px, no radius.\n- One per page maximum. The brand's most aggressive attention-grab — never use it for anything except a top-tier sales message.\n\n**`phone-callout`** — top-right phone number (\"1-800-213-DELL\") rendered as red on the black banner.\n- Background `{colors.frame-ink}`, text `{colors.primary}`, type `{typography.heading-2}` Helvetica Bold 16, padding 4 × 8, no radius. Pinned to the right of the top banner on every page.",
+      "line": 533
+    },
+    {
+      "heading": "Stickers (GIF-style overlays)",
+      "level": 3,
+      "text": "**`buy-a-dell-sticker`** — yellow rectangular sticker with \"BUY a DELL\" in Helvetica Bold, the \"a\" set in a small purple stripe, the \"DELL\" wordmark in black. Pinned to the top-right of every page.\n- Background `{colors.yellow-sticker}`, text `{colors.ink}`, 1 px black border, type `{typography.button}`, padding 4 × 8, no radius.\n\n**`new-burst-sticker`** — angled yellow burst with \"NEW!\" in Helvetica Bold black, overlapping the right side of new product ribbon-cards. Slight rotation (~15°) gives it the pinned-on-with-tape feel.\n- Background `{colors.yellow-sticker}`, text `{colors.ink}`, type `{typography.button}`, padding 4 × 8, no radius (rotation applied separately).\n\n**`cert-seal`** — round red award seal: center reads \"PC MAGAZINE\", ringed by \"SERVICE · RELIABILITY · READERS' CHOICE\", with an inner white field and red bordered ring. Sits on the right rail of product pages.\n- Background `{colors.primary}`, text `{colors.canvas}`, type `{typography.button}`, rounded `{rounded.full}`, 64 px size.",
+      "line": 542
+    },
+    {
+      "heading": "Navigation",
+      "level": 3,
+      "text": "**`icon-label-nav`** — bottom-of-page navigation row: four hand-drawn icons (eyeglasses-FIND / house-HOME / yellow-sticker-ONLINE STORE / wrench-SERVICE & SUPPORT) connected by a thin green horizontal rule, each with an uppercase Helvetica label beneath.\n- Background `{colors.canvas}`, text `{colors.ink}`, type `{typography.ui-label}`, padding 8 px around each icon-label pair, no radius.\n- The connecting green rule is part of the GIF imagery, not a CSS border.",
+      "line": 553
+    },
+    {
+      "heading": "Inputs & Buttons",
+      "level": 3,
+      "text": "**`text-input`** — bordered HTML input. White fill, 1 px solid black border, Times Roman 14 inside.\n- Background `{colors.canvas}`, text `{colors.ink}`, 1 px solid frame-ink, type `{typography.body}`, padding 4 × 6, no radius.\n- Used on the Search and \"Configure & Buy\" forms (not visible in these three captures but consistent with the era's HTML 3.2 form widgets).\n\n**`button-primary`** — black filled button with white Helvetica Bold uppercase label.\n- Background `{colors.frame-ink}`, text `{colors.on-primary}`, 1 px solid frame-ink, type `{typography.button}`, padding 6 × 16, no radius.\n\n**`button-secondary`** — white filled outlined button. Same chrome with inverted colours.\n- Background `{colors.canvas}`, text `{colors.ink}`, 1 px solid frame-ink, type `{typography.button}`, padding 6 × 16, no radius.\n\n**`button-text-link`** — bare underlined anchor in classic-Mosaic blue.\n- Text `{colors.link}` #0000ee, type `{typography.link}` Times Roman 14, underline on default. No padding, no radius.",
+      "line": 559
+    },
+    {
+      "heading": "Footer",
+      "level": 3,
+      "text": "**`footer-band`** — the bottom of every page: icon-label nav row, classic-blue Copyright link, \"(Terms of Use)\" parenthetical, browser-compatibility small print, and the Microsoft BackOffice / Internet Explorer logo banners.\n- Background `{colors.canvas}`, text `{colors.ink}`, 1 px top border in frame-ink, type `{typography.body-sm}`, padding 16 px.",
+      "line": 574
+    },
+    {
+      "heading": "Examples (illustrative)",
+      "level": 3,
+      "text": "> Auto-derived kit-mirror demonstration surfaces (`scripts/derive-examples-block.mjs`). Each `ex-*` entry references brand-native primitives so downstream consumers (`/preview-design`, `/generate-kit`) re-skin the same 10 surfaces consistently. `TO_FILL` markers indicate missing primitives — resolve in the LLM judgment pass.\n\n**`ex-pricing-tier`** — Default Pricing tier card. Re-uses feature-card chrome with the base white surface.\n- Properties: `backgroundColor`, `textColor`, `borderColor`, `rounded`, `padding`\n\n**`ex-pricing-tier-featured`** — Featured/highlighted tier — polarity-flipped surface (dark fill + light text in light mode, light fill + dark text in dark mode).\n- Properties: `backgroundColor`, `textColor`, `rounded`, `padding`\n\n**`ex-product-selector`** — What's Included summary card — re-purposed for SaaS / B2B verticals (NOT a literal product gallery).\n- Properties: `backgroundColor`, `rounded`, `padding`\n\n**`ex-cart-drawer`** — Subscription summary — re-purposed for SaaS / B2B (line items per add-on, not literal cart).\n- Properties: `backgroundColor`, `rounded`, `padding`, `item-divider`\n\n**`ex-app-shell-row`** — Sidebar nav row inside the App Shell example. Active state uses brand primary as the indicator.\n- Properties: `backgroundColor`, `activeIndicator`, `rounded`, `padding`\n\n**`ex-data-table-cell`** — Default data-table th + td chrome. Header uses mono-caps eyebrow typography; body uses body-sm.\n- Properties: `headerBackground`, `headerTypography`, `bodyTypography`, `cellPadding`, `rowBorder`\n\n**`ex-auth-form-card`** — Sign-in / sign-up card. Re-uses feature-card chrome with text-input primitives inside.\n- Properties: `backgroundColor`, `rounded`, `padding`\n\n**`ex-modal-card`** — Modal dialog surface — same chrome as feature-card with elevated shadow.\n- Properties: `backgroundColor`, `rounded`, `padding`\n\n**`ex-empty-state-card`** — Empty-state illustration frame.\n- Properties: `backgroundColor`, `rounded`, `padding`, `captionTypography`\n\n**`ex-toast`** — Toast notification surface — feature-card shape + medium shadow.\n- Properties: `backgroundColor`, `rounded`, `padding`, `typography`",
+      "line": 579
+    },
+    {
+      "heading": "Do's and Don'ts",
+      "level": 2,
+      "text": "",
+      "line": 614
+    },
+    {
+      "heading": "Do",
+      "level": 3,
+      "text": "- Keep the literal `{components.page-frame}` black border on every page — this is the brand's single most identifiable container chrome.\n- Reserve `{colors.primary}` (Dell red) for the `{components.cta-block-red}` panel and the `{components.phone-callout}` only. Every other use dilutes the urgency signal.\n- Use the eight ribbon-card tint colors (`{colors.tint-olive}` / sage / salmon / peach / lime / sky / steel / periwinkle) as a *family* — pick one per product line and stay with it across the line's marketing surfaces.\n- Set every display headline in `{typography.display}` (Arial Black 36 / weight 900). The brand's typographic register depends on extreme weight against flat color.\n- Keep body copy in `{typography.body}` Times Roman 14 — substituting a modern sans loses the catalog feel entirely.\n- Render every CTA / button at `{rounded.none}` (0 px). Modern soft-radius buttons betray the era.\n- Use hand-painted bevels / hard-edge GIF shadows on stickers and product photos. Never substitute a soft CSS shadow.",
+      "line": 616
+    },
+    {
+      "heading": "Don't",
+      "level": 3,
+      "text": "- Don't introduce a chromatic accent outside the eight catalog tints + Dell red + Dell yellow + classic link blue. The palette is closed by design.\n- Don't soften any corner. `{rounded.none}` is the universal modifier; only award seals get `{rounded.full}`.\n- Don't replace Times Roman body with Arial / Helvetica / Inter / a webfont — the serif body is the era's signature.\n- Don't add soft drop-shadows or atmospheric gradients. The brand has hard borders and flat fills; everything else reads as anachronism.\n- Don't crop or \"tuck\" product photos with `border-radius` or `clip-path`. The notch into the ribbon-card right edge is the framing — the photo itself stays a hard rectangle.\n- Don't pair two `{components.cta-block-red}` panels on the same page. The red fill is meant to be the singular attention pole.\n- Don't strip the `{components.phone-callout}` from the top banner. In 1996 the website existed to drive phone-call orders; the phone number IS the navigation.",
+      "line": 625
+    }
+  ],
+  "tokens": [
+    {
+      "path": "colors.primary",
+      "sourcePath": "colors.primary",
+      "type": "color",
+      "value": "#e91d2a",
+      "status": "unverified",
+      "evidence": {
+        "line": 7,
+        "sourcePath": "colors.primary"
+      }
+    },
+    {
+      "path": "colors.onprimary",
+      "sourcePath": "colors.on-primary",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 8,
+        "sourcePath": "colors.on-primary"
+      }
+    },
+    {
+      "path": "colors.canvas",
+      "sourcePath": "colors.canvas",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 9,
+        "sourcePath": "colors.canvas"
+      }
+    },
+    {
+      "path": "colors.surface",
+      "sourcePath": "colors.surface",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 10,
+        "sourcePath": "colors.surface"
+      }
+    },
+    {
+      "path": "colors.ink",
+      "sourcePath": "colors.ink",
+      "type": "color",
+      "value": "#000000",
+      "status": "unverified",
+      "evidence": {
+        "line": 11,
+        "sourcePath": "colors.ink"
+      }
+    },
+    {
+      "path": "colors.frameink",
+      "sourcePath": "colors.frame-ink",
+      "type": "color",
+      "value": "#000000",
+      "status": "unverified",
+      "evidence": {
+        "line": 12,
+        "sourcePath": "colors.frame-ink"
+      }
+    },
+    {
+      "path": "colors.yellowsticker",
+      "sourcePath": "colors.yellow-sticker",
+      "type": "color",
+      "value": "#fcc20f",
+      "status": "unverified",
+      "evidence": {
+        "line": 13,
+        "sourcePath": "colors.yellow-sticker"
+      }
+    },
+    {
+      "path": "colors.purplestripe",
+      "sourcePath": "colors.purple-stripe",
+      "type": "color",
+      "value": "#6a26a4",
+      "status": "unverified",
+      "evidence": {
+        "line": 14,
+        "sourcePath": "colors.purple-stripe"
+      }
+    },
+    {
+      "path": "colors.link",
+      "sourcePath": "colors.link",
+      "type": "color",
+      "value": "#0000ee",
+      "status": "unverified",
+      "evidence": {
+        "line": 15,
+        "sourcePath": "colors.link"
+      }
+    },
+    {
+      "path": "colors.tintolive",
+      "sourcePath": "colors.tint-olive",
+      "type": "color",
+      "value": "#8e8a25",
+      "status": "unverified",
+      "evidence": {
+        "line": 18,
+        "sourcePath": "colors.tint-olive"
+      }
+    },
+    {
+      "path": "colors.tintsage",
+      "sourcePath": "colors.tint-sage",
+      "type": "color",
+      "value": "#b3bd95",
+      "status": "unverified",
+      "evidence": {
+        "line": 19,
+        "sourcePath": "colors.tint-sage"
+      }
+    },
+    {
+      "path": "colors.tintsalmon",
+      "sourcePath": "colors.tint-salmon",
+      "type": "color",
+      "value": "#d77a7a",
+      "status": "unverified",
+      "evidence": {
+        "line": 20,
+        "sourcePath": "colors.tint-salmon"
+      }
+    },
+    {
+      "path": "colors.tintpeach",
+      "sourcePath": "colors.tint-peach",
+      "type": "color",
+      "value": "#e6915d",
+      "status": "unverified",
+      "evidence": {
+        "line": 21,
+        "sourcePath": "colors.tint-peach"
+      }
+    },
+    {
+      "path": "colors.tintlime",
+      "sourcePath": "colors.tint-lime",
+      "type": "color",
+      "value": "#c0d4a7",
+      "status": "unverified",
+      "evidence": {
+        "line": 22,
+        "sourcePath": "colors.tint-lime"
+      }
+    },
+    {
+      "path": "colors.tintsky",
+      "sourcePath": "colors.tint-sky",
+      "type": "color",
+      "value": "#9ab6c8",
+      "status": "unverified",
+      "evidence": {
+        "line": 23,
+        "sourcePath": "colors.tint-sky"
+      }
+    },
+    {
+      "path": "colors.tintsteel",
+      "sourcePath": "colors.tint-steel",
+      "type": "color",
+      "value": "#a5b8c0",
+      "status": "unverified",
+      "evidence": {
+        "line": 24,
+        "sourcePath": "colors.tint-steel"
+      }
+    },
+    {
+      "path": "colors.tintperiwinkle",
+      "sourcePath": "colors.tint-periwinkle",
+      "type": "color",
+      "value": "#8c9ae0",
+      "status": "unverified",
+      "evidence": {
+        "line": 25,
+        "sourcePath": "colors.tint-periwinkle"
+      }
+    },
+    {
+      "path": "typography.display.fontfamily",
+      "sourcePath": "typography.display.fontFamily",
+      "type": "fontFamily",
+      "value": "Arial Black",
+      "status": "unverified",
+      "evidence": {
+        "line": 29,
+        "sourcePath": "typography.display.fontFamily"
+      }
+    },
+    {
+      "path": "typography.display.fontsize",
+      "sourcePath": "typography.display.fontSize",
+      "type": "dimension",
+      "value": "36px",
+      "status": "unverified",
+      "evidence": {
+        "line": 30,
+        "sourcePath": "typography.display.fontSize"
+      }
+    },
+    {
+      "path": "typography.display.fontweight",
+      "sourcePath": "typography.display.fontWeight",
+      "type": "number",
+      "value": 900,
+      "status": "unverified",
+      "evidence": {
+        "line": 31,
+        "sourcePath": "typography.display.fontWeight"
+      }
+    },
+    {
+      "path": "typography.display.lineheight",
+      "sourcePath": "typography.display.lineHeight",
+      "type": "number",
+      "value": 1,
+      "status": "unverified",
+      "evidence": {
+        "line": 32,
+        "sourcePath": "typography.display.lineHeight"
+      }
+    },
+    {
+      "path": "typography.display.letterspacing",
+      "sourcePath": "typography.display.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 33,
+        "sourcePath": "typography.display.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.heading1.fontfamily",
+      "sourcePath": "typography.heading-1.fontFamily",
+      "type": "fontFamily",
+      "value": "Arial Black",
+      "status": "unverified",
+      "evidence": {
+        "line": 35,
+        "sourcePath": "typography.heading-1.fontFamily"
+      }
+    },
+    {
+      "path": "typography.heading1.fontsize",
+      "sourcePath": "typography.heading-1.fontSize",
+      "type": "dimension",
+      "value": "24px",
+      "status": "unverified",
+      "evidence": {
+        "line": 36,
+        "sourcePath": "typography.heading-1.fontSize"
+      }
+    },
+    {
+      "path": "typography.heading1.fontweight",
+      "sourcePath": "typography.heading-1.fontWeight",
+      "type": "number",
+      "value": 900,
+      "status": "unverified",
+      "evidence": {
+        "line": 37,
+        "sourcePath": "typography.heading-1.fontWeight"
+      }
+    },
+    {
+      "path": "typography.heading1.lineheight",
+      "sourcePath": "typography.heading-1.lineHeight",
+      "type": "number",
+      "value": 1.05,
+      "status": "unverified",
+      "evidence": {
+        "line": 38,
+        "sourcePath": "typography.heading-1.lineHeight"
+      }
+    },
+    {
+      "path": "typography.heading1.letterspacing",
+      "sourcePath": "typography.heading-1.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 39,
+        "sourcePath": "typography.heading-1.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.heading2.fontfamily",
+      "sourcePath": "typography.heading-2.fontFamily",
+      "type": "fontFamily",
+      "value": "Helvetica",
+      "status": "unverified",
+      "evidence": {
+        "line": 41,
+        "sourcePath": "typography.heading-2.fontFamily"
+      }
+    },
+    {
+      "path": "typography.heading2.fontsize",
+      "sourcePath": "typography.heading-2.fontSize",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 42,
+        "sourcePath": "typography.heading-2.fontSize"
+      }
+    },
+    {
+      "path": "typography.heading2.fontweight",
+      "sourcePath": "typography.heading-2.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 43,
+        "sourcePath": "typography.heading-2.fontWeight"
+      }
+    },
+    {
+      "path": "typography.heading2.lineheight",
+      "sourcePath": "typography.heading-2.lineHeight",
+      "type": "number",
+      "value": 1.2,
+      "status": "unverified",
+      "evidence": {
+        "line": 44,
+        "sourcePath": "typography.heading-2.lineHeight"
+      }
+    },
+    {
+      "path": "typography.heading2.letterspacing",
+      "sourcePath": "typography.heading-2.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 45,
+        "sourcePath": "typography.heading-2.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.heading3.fontfamily",
+      "sourcePath": "typography.heading-3.fontFamily",
+      "type": "fontFamily",
+      "value": "Helvetica",
+      "status": "unverified",
+      "evidence": {
+        "line": 47,
+        "sourcePath": "typography.heading-3.fontFamily"
+      }
+    },
+    {
+      "path": "typography.heading3.fontsize",
+      "sourcePath": "typography.heading-3.fontSize",
+      "type": "dimension",
+      "value": "14px",
+      "status": "unverified",
+      "evidence": {
+        "line": 48,
+        "sourcePath": "typography.heading-3.fontSize"
+      }
+    },
+    {
+      "path": "typography.heading3.fontweight",
+      "sourcePath": "typography.heading-3.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 49,
+        "sourcePath": "typography.heading-3.fontWeight"
+      }
+    },
+    {
+      "path": "typography.heading3.lineheight",
+      "sourcePath": "typography.heading-3.lineHeight",
+      "type": "number",
+      "value": 1.2,
+      "status": "unverified",
+      "evidence": {
+        "line": 50,
+        "sourcePath": "typography.heading-3.lineHeight"
+      }
+    },
+    {
+      "path": "typography.heading3.letterspacing",
+      "sourcePath": "typography.heading-3.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 51,
+        "sourcePath": "typography.heading-3.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.body.fontfamily",
+      "sourcePath": "typography.body.fontFamily",
+      "type": "fontFamily",
+      "value": "Times New Roman",
+      "status": "unverified",
+      "evidence": {
+        "line": 53,
+        "sourcePath": "typography.body.fontFamily"
+      }
+    },
+    {
+      "path": "typography.body.fontsize",
+      "sourcePath": "typography.body.fontSize",
+      "type": "dimension",
+      "value": "14px",
+      "status": "unverified",
+      "evidence": {
+        "line": 54,
+        "sourcePath": "typography.body.fontSize"
+      }
+    },
+    {
+      "path": "typography.body.fontweight",
+      "sourcePath": "typography.body.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 55,
+        "sourcePath": "typography.body.fontWeight"
+      }
+    },
+    {
+      "path": "typography.body.lineheight",
+      "sourcePath": "typography.body.lineHeight",
+      "type": "number",
+      "value": 1.4,
+      "status": "unverified",
+      "evidence": {
+        "line": 56,
+        "sourcePath": "typography.body.lineHeight"
+      }
+    },
+    {
+      "path": "typography.body.letterspacing",
+      "sourcePath": "typography.body.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 57,
+        "sourcePath": "typography.body.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.bodysm.fontfamily",
+      "sourcePath": "typography.body-sm.fontFamily",
+      "type": "fontFamily",
+      "value": "Times New Roman",
+      "status": "unverified",
+      "evidence": {
+        "line": 59,
+        "sourcePath": "typography.body-sm.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodysm.fontsize",
+      "sourcePath": "typography.body-sm.fontSize",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 60,
+        "sourcePath": "typography.body-sm.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodysm.fontweight",
+      "sourcePath": "typography.body-sm.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 61,
+        "sourcePath": "typography.body-sm.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodysm.lineheight",
+      "sourcePath": "typography.body-sm.lineHeight",
+      "type": "number",
+      "value": 1.4,
+      "status": "unverified",
+      "evidence": {
+        "line": 62,
+        "sourcePath": "typography.body-sm.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodysm.letterspacing",
+      "sourcePath": "typography.body-sm.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 63,
+        "sourcePath": "typography.body-sm.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.caption.fontfamily",
+      "sourcePath": "typography.caption.fontFamily",
+      "type": "fontFamily",
+      "value": "Times New Roman",
+      "status": "unverified",
+      "evidence": {
+        "line": 65,
+        "sourcePath": "typography.caption.fontFamily"
+      }
+    },
+    {
+      "path": "typography.caption.fontsize",
+      "sourcePath": "typography.caption.fontSize",
+      "type": "dimension",
+      "value": "11px",
+      "status": "unverified",
+      "evidence": {
+        "line": 66,
+        "sourcePath": "typography.caption.fontSize"
+      }
+    },
+    {
+      "path": "typography.caption.fontweight",
+      "sourcePath": "typography.caption.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 67,
+        "sourcePath": "typography.caption.fontWeight"
+      }
+    },
+    {
+      "path": "typography.caption.lineheight",
+      "sourcePath": "typography.caption.lineHeight",
+      "type": "number",
+      "value": 1.35,
+      "status": "unverified",
+      "evidence": {
+        "line": 68,
+        "sourcePath": "typography.caption.lineHeight"
+      }
+    },
+    {
+      "path": "typography.caption.letterspacing",
+      "sourcePath": "typography.caption.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 69,
+        "sourcePath": "typography.caption.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.button.fontfamily",
+      "sourcePath": "typography.button.fontFamily",
+      "type": "fontFamily",
+      "value": "Helvetica",
+      "status": "unverified",
+      "evidence": {
+        "line": 71,
+        "sourcePath": "typography.button.fontFamily"
+      }
+    },
+    {
+      "path": "typography.button.fontsize",
+      "sourcePath": "typography.button.fontSize",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 72,
+        "sourcePath": "typography.button.fontSize"
+      }
+    },
+    {
+      "path": "typography.button.fontweight",
+      "sourcePath": "typography.button.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 73,
+        "sourcePath": "typography.button.fontWeight"
+      }
+    },
+    {
+      "path": "typography.button.lineheight",
+      "sourcePath": "typography.button.lineHeight",
+      "type": "number",
+      "value": 1,
+      "status": "unverified",
+      "evidence": {
+        "line": 74,
+        "sourcePath": "typography.button.lineHeight"
+      }
+    },
+    {
+      "path": "typography.button.letterspacing",
+      "sourcePath": "typography.button.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 75,
+        "sourcePath": "typography.button.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.link.fontfamily",
+      "sourcePath": "typography.link.fontFamily",
+      "type": "fontFamily",
+      "value": "Times New Roman",
+      "status": "unverified",
+      "evidence": {
+        "line": 77,
+        "sourcePath": "typography.link.fontFamily"
+      }
+    },
+    {
+      "path": "typography.link.fontsize",
+      "sourcePath": "typography.link.fontSize",
+      "type": "dimension",
+      "value": "14px",
+      "status": "unverified",
+      "evidence": {
+        "line": 78,
+        "sourcePath": "typography.link.fontSize"
+      }
+    },
+    {
+      "path": "typography.link.fontweight",
+      "sourcePath": "typography.link.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 79,
+        "sourcePath": "typography.link.fontWeight"
+      }
+    },
+    {
+      "path": "typography.link.lineheight",
+      "sourcePath": "typography.link.lineHeight",
+      "type": "number",
+      "value": 1.4,
+      "status": "unverified",
+      "evidence": {
+        "line": 80,
+        "sourcePath": "typography.link.lineHeight"
+      }
+    },
+    {
+      "path": "typography.link.letterspacing",
+      "sourcePath": "typography.link.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 81,
+        "sourcePath": "typography.link.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.uilabel.fontfamily",
+      "sourcePath": "typography.ui-label.fontFamily",
+      "type": "fontFamily",
+      "value": "Helvetica",
+      "status": "unverified",
+      "evidence": {
+        "line": 83,
+        "sourcePath": "typography.ui-label.fontFamily"
+      }
+    },
+    {
+      "path": "typography.uilabel.fontsize",
+      "sourcePath": "typography.ui-label.fontSize",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 84,
+        "sourcePath": "typography.ui-label.fontSize"
+      }
+    },
+    {
+      "path": "typography.uilabel.fontweight",
+      "sourcePath": "typography.ui-label.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 85,
+        "sourcePath": "typography.ui-label.fontWeight"
+      }
+    },
+    {
+      "path": "typography.uilabel.lineheight",
+      "sourcePath": "typography.ui-label.lineHeight",
+      "type": "number",
+      "value": 1,
+      "status": "unverified",
+      "evidence": {
+        "line": 86,
+        "sourcePath": "typography.ui-label.lineHeight"
+      }
+    },
+    {
+      "path": "typography.uilabel.letterspacing",
+      "sourcePath": "typography.ui-label.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 87,
+        "sourcePath": "typography.ui-label.letterSpacing"
+      }
+    },
+    {
+      "path": "rounded.none",
+      "sourcePath": "rounded.none",
+      "type": "dimension",
+      "value": "0px",
+      "status": "unverified",
+      "evidence": {
+        "line": 90,
+        "sourcePath": "rounded.none"
+      }
+    },
+    {
+      "path": "rounded.full",
+      "sourcePath": "rounded.full",
+      "type": "dimension",
+      "value": "9999px",
+      "status": "unverified",
+      "evidence": {
+        "line": 91,
+        "sourcePath": "rounded.full"
+      }
+    },
+    {
+      "path": "spacing.xxs",
+      "sourcePath": "spacing.xxs",
+      "type": "dimension",
+      "value": "2px",
+      "status": "unverified",
+      "evidence": {
+        "line": 94,
+        "sourcePath": "spacing.xxs"
+      }
+    },
+    {
+      "path": "spacing.xs",
+      "sourcePath": "spacing.xs",
+      "type": "dimension",
+      "value": "4px",
+      "status": "unverified",
+      "evidence": {
+        "line": 95,
+        "sourcePath": "spacing.xs"
+      }
+    },
+    {
+      "path": "spacing.s",
+      "sourcePath": "spacing.s",
+      "type": "dimension",
+      "value": "6px",
+      "status": "unverified",
+      "evidence": {
+        "line": 96,
+        "sourcePath": "spacing.s"
+      }
+    },
+    {
+      "path": "spacing.sm",
+      "sourcePath": "spacing.sm",
+      "type": "dimension",
+      "value": "8px",
+      "status": "unverified",
+      "evidence": {
+        "line": 97,
+        "sourcePath": "spacing.sm"
+      }
+    },
+    {
+      "path": "spacing.m",
+      "sourcePath": "spacing.m",
+      "type": "dimension",
+      "value": "10px",
+      "status": "unverified",
+      "evidence": {
+        "line": 98,
+        "sourcePath": "spacing.m"
+      }
+    },
+    {
+      "path": "spacing.md",
+      "sourcePath": "spacing.md",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 99,
+        "sourcePath": "spacing.md"
+      }
+    },
+    {
+      "path": "spacing.lg",
+      "sourcePath": "spacing.lg",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 100,
+        "sourcePath": "spacing.lg"
+      }
+    },
+    {
+      "path": "spacing.xl",
+      "sourcePath": "spacing.xl",
+      "type": "dimension",
+      "value": "20px",
+      "status": "unverified",
+      "evidence": {
+        "line": 101,
+        "sourcePath": "spacing.xl"
+      }
+    },
+    {
+      "path": "spacing.xxl",
+      "sourcePath": "spacing.xxl",
+      "type": "dimension",
+      "value": "24px",
+      "status": "unverified",
+      "evidence": {
+        "line": 102,
+        "sourcePath": "spacing.xxl"
+      }
+    },
+    {
+      "path": "spacing.sectionsm",
+      "sourcePath": "spacing.section-sm",
+      "type": "dimension",
+      "value": "32px",
+      "status": "unverified",
+      "evidence": {
+        "line": 103,
+        "sourcePath": "spacing.section-sm"
+      }
+    },
+    {
+      "path": "spacing.section",
+      "sourcePath": "spacing.section",
+      "type": "dimension",
+      "value": "40px",
+      "status": "unverified",
+      "evidence": {
+        "line": 104,
+        "sourcePath": "spacing.section"
+      }
+    },
+    {
+      "path": "spacing.sectionlg",
+      "sourcePath": "spacing.section-lg",
+      "type": "dimension",
+      "value": "48px",
+      "status": "unverified",
+      "evidence": {
+        "line": 105,
+        "sourcePath": "spacing.section-lg"
+      }
+    }
+  ],
+  "rejectedTokens": [],
+  "homepage": {
+    "status": "missing",
+    "candidates": [],
+    "verification": {
+      "status": "missing",
+      "label": "Historical homepage not verified",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://www.dell.com/en-us",
+          "title": "Computers, Monitors & Technology Solutions | Dell USA",
+          "note": "Read current corporate homepage; requested https://www.dell.com; final URL https://www.dell.com/en-us. This is not evidence of the 1996 design."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. No dated archive URL was supplied by the imported analysis. Historical source remains missing; current corporate website is contextual evidence only."
+    }
+  },
+  "completeness": {
+    "presentFields": [
+      "colors",
+      "typography",
+      "rounded",
+      "spacing",
+      "components"
+    ],
+    "missingFields": [],
+    "tokenRoles": "incomplete",
+    "note": "Missing fields are not reconstructed. Prose-only colors have no inferred semantic role."
+  },
+  "provenance": {
+    "status": "independent-analysis",
+    "sources": [
+      {
+        "title": "VoltAgent awesome-design-md independent analysis",
+        "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/dell-1996/DESIGN.md"
+      }
+    ],
+    "verification": "unverified-secondary-analysis"
+  },
+  "limitations": [
+    "Independent secondary analysis, not an official brand system; all reported values are unverified.",
+    "No brand assets, logos, font binaries or screenshots copied. Font names are documentary, not font licenses.",
+    "Safe CSS literals are extracted without claiming complete roles, state coverage or visual fidelity.",
+    "Markdown is retained as inert evidence, never executed or rendered as raw HTML."
+  ],
+  "specimenProvenance": {
+    "sourceCommit": "fcc70284932276d085f01ef9f83edde90b1258cb",
+    "evidence": "Black frame, white canvas, yellow #fcc20f, ribbon tints sage #b3bd95, salmon #d77a7a and sky #9ab6c8; square corners, Times body, heavy sans headings and a centered roughly 760px catalog.",
+    "inferred": "The garden tool catalog, CSS tool silhouettes, filter behavior and draft dialog are original. Modern semantic HTML, focus outlines, 44px controls and responsive stacking replace historical table layout. No photographs, logos, phone sales block or historical claims are reproduced."
+  }
+}

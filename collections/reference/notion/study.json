@@ -1,0 +1,2365 @@
+{
+  "schemaVersion": 1,
+  "id": "reference-notion",
+  "title": "Notion",
+  "classification": "independent-unverified-analysis",
+  "source": {
+    "repository": "https://github.com/VoltAgent/awesome-design-md",
+    "fork": "https://github.com/rsteth/awesome-design-md-p",
+    "revision": "fcc70284932276d085f01ef9f83edde90b1258cb",
+    "path": "design-md/notion/DESIGN.md",
+    "sha256": "fa9d6e78216d8f3e5d3990709ca2de6bc2e268e945bb94f255fd1bfb15455266",
+    "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/notion/DESIGN.md"
+  },
+  "sourceName": "Notion-design-analysis",
+  "titleProvenance": {
+    "status": "inferred",
+    "basis": "Source directory label, normalized for navigation; original source name is retained without correction.",
+    "sourceValue": "notion",
+    "originalName": "Notion-design-analysis"
+  },
+  "description": "Notion presents itself as the all-in-one workspace through a confident, illustration-rich brand voice — anchored by a deep navy hero band ({colors.brand-navy}) decorated with brand-colored sticky-note dots and mesh wire illustrations, a signature purple pill primary CTA ({colors.primary}), and a rich palette of pastel-tinted feature cards that echo the colorful database properties of the live product. The system uses a Notion-Sans (Inter-based) typeface across every UI surface, anchors a 4-tier pricing comparison (Free / Plus / Business / Enterprise), and presents the live workspace UI mockup directly inside the hero band. Coverage spans homepage, Enterprise, Product AI, Product Agents, Startups, and Pricing surfaces.",
+  "analysis": {
+    "version": "alpha",
+    "name": "Notion-design-analysis",
+    "description": "Notion presents itself as the all-in-one workspace through a confident, illustration-rich brand voice — anchored by a deep navy hero band ({colors.brand-navy}) decorated with brand-colored sticky-note dots and mesh wire illustrations, a signature purple pill primary CTA ({colors.primary}), and a rich palette of pastel-tinted feature cards that echo the colorful database properties of the live product. The system uses a Notion-Sans (Inter-based) typeface across every UI surface, anchors a 4-tier pricing comparison (Free / Plus / Business / Enterprise), and presents the live workspace UI mockup directly inside the hero band. Coverage spans homepage, Enterprise, Product AI, Product Agents, Startups, and Pricing surfaces.",
+    "colors": {
+      "primary": "#5645d4",
+      "primary-pressed": "#4534b3",
+      "primary-deep": "#3a2a99",
+      "on-primary": "#ffffff",
+      "brand-navy": "#0a1530",
+      "brand-navy-deep": "#070f24",
+      "brand-navy-mid": "#1a2a52",
+      "link-blue": "#0075de",
+      "link-blue-pressed": "#005bab",
+      "brand-orange": "#dd5b00",
+      "brand-orange-deep": "#793400",
+      "brand-pink": "#ff64c8",
+      "brand-pink-deep": "#a02e6d",
+      "brand-purple": "#7b3ff2",
+      "brand-purple-300": "#d6b6f6",
+      "brand-purple-800": "#391c57",
+      "brand-teal": "#2a9d99",
+      "brand-green": "#1aae39",
+      "brand-yellow": "#f5d75e",
+      "brand-brown": "#523410",
+      "card-tint-peach": "#ffe8d4",
+      "card-tint-rose": "#fde0ec",
+      "card-tint-mint": "#d9f3e1",
+      "card-tint-lavender": "#e6e0f5",
+      "card-tint-sky": "#dcecfa",
+      "card-tint-yellow": "#fef7d6",
+      "card-tint-yellow-bold": "#f9e79f",
+      "card-tint-cream": "#f8f5e8",
+      "card-tint-gray": "#f0eeec",
+      "canvas": "#ffffff",
+      "surface": "#f6f5f4",
+      "surface-soft": "#fafaf9",
+      "hairline": "#e5e3df",
+      "hairline-soft": "#ede9e4",
+      "hairline-strong": "#c8c4be",
+      "ink-deep": "#000000",
+      "ink": "#1a1a1a",
+      "charcoal": "#37352f",
+      "slate": "#5d5b54",
+      "steel": "#787671",
+      "stone": "#a4a097",
+      "muted": "#bbb8b1",
+      "on-dark": "#ffffff",
+      "on-dark-muted": "#a4a097",
+      "semantic-success": "#1aae39",
+      "semantic-warning": "#dd5b00",
+      "semantic-error": "#e03131"
+    },
+    "typography": {
+      "hero-display": {
+        "fontFamily": "Notion Sans",
+        "fontSize": "80px",
+        "fontWeight": 600,
+        "lineHeight": 1.05,
+        "letterSpacing": "-2px"
+      },
+      "display-lg": {
+        "fontFamily": "Notion Sans",
+        "fontSize": "56px",
+        "fontWeight": 600,
+        "lineHeight": 1.1,
+        "letterSpacing": "-1px"
+      },
+      "heading-1": {
+        "fontFamily": "Notion Sans",
+        "fontSize": "48px",
+        "fontWeight": 600,
+        "lineHeight": 1.15,
+        "letterSpacing": "-0.5px"
+      },
+      "heading-2": {
+        "fontFamily": "Notion Sans",
+        "fontSize": "36px",
+        "fontWeight": 600,
+        "lineHeight": 1.2,
+        "letterSpacing": "-0.5px"
+      },
+      "heading-3": {
+        "fontFamily": "Notion Sans",
+        "fontSize": "28px",
+        "fontWeight": 600,
+        "lineHeight": 1.25
+      },
+      "heading-4": {
+        "fontFamily": "Notion Sans",
+        "fontSize": "22px",
+        "fontWeight": 600,
+        "lineHeight": 1.3
+      },
+      "heading-5": {
+        "fontFamily": "Notion Sans",
+        "fontSize": "18px",
+        "fontWeight": 600,
+        "lineHeight": 1.4
+      },
+      "subtitle": {
+        "fontFamily": "Notion Sans",
+        "fontSize": "18px",
+        "fontWeight": 400,
+        "lineHeight": 1.5
+      },
+      "body-md": {
+        "fontFamily": "Notion Sans",
+        "fontSize": "16px",
+        "fontWeight": 400,
+        "lineHeight": 1.55
+      },
+      "body-md-medium": {
+        "fontFamily": "Notion Sans",
+        "fontSize": "16px",
+        "fontWeight": 500,
+        "lineHeight": 1.55
+      },
+      "body-sm": {
+        "fontFamily": "Notion Sans",
+        "fontSize": "14px",
+        "fontWeight": 400,
+        "lineHeight": 1.5
+      },
+      "body-sm-medium": {
+        "fontFamily": "Notion Sans",
+        "fontSize": "14px",
+        "fontWeight": 500,
+        "lineHeight": 1.5
+      },
+      "caption": {
+        "fontFamily": "Notion Sans",
+        "fontSize": "13px",
+        "fontWeight": 400,
+        "lineHeight": 1.4
+      },
+      "caption-bold": {
+        "fontFamily": "Notion Sans",
+        "fontSize": "13px",
+        "fontWeight": 600,
+        "lineHeight": 1.4
+      },
+      "micro": {
+        "fontFamily": "Notion Sans",
+        "fontSize": "12px",
+        "fontWeight": 500,
+        "lineHeight": 1.4
+      },
+      "micro-uppercase": {
+        "fontFamily": "Notion Sans",
+        "fontSize": "11px",
+        "fontWeight": 600,
+        "lineHeight": 1.4,
+        "letterSpacing": "1px"
+      },
+      "button-md": {
+        "fontFamily": "Notion Sans",
+        "fontSize": "14px",
+        "fontWeight": 500,
+        "lineHeight": 1.3
+      }
+    },
+    "rounded": {
+      "xs": "4px",
+      "sm": "6px",
+      "md": "8px",
+      "lg": "12px",
+      "xl": "16px",
+      "xxl": "20px",
+      "xxxl": "24px",
+      "full": "9999px"
+    },
+    "spacing": {
+      "xxs": "4px",
+      "xs": "8px",
+      "sm": "12px",
+      "md": "16px",
+      "lg": "20px",
+      "xl": "24px",
+      "xxl": "32px",
+      "xxxl": "40px",
+      "section-sm": "48px",
+      "section": "64px",
+      "section-lg": "96px",
+      "hero": "120px"
+    },
+    "components": {
+      "button-primary": {
+        "backgroundColor": "{colors.primary}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.md}",
+        "padding": "10px 18px"
+      },
+      "button-primary-pressed": {
+        "backgroundColor": "{colors.primary-pressed}",
+        "textColor": "{colors.on-primary}"
+      },
+      "button-primary-disabled": {
+        "backgroundColor": "{colors.hairline}",
+        "textColor": "{colors.muted}"
+      },
+      "button-dark": {
+        "backgroundColor": "{colors.ink-deep}",
+        "textColor": "{colors.on-dark}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.md}",
+        "padding": "10px 18px"
+      },
+      "button-secondary": {
+        "backgroundColor": "transparent",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.md}",
+        "padding": "10px 18px",
+        "border": "1px solid {colors.hairline-strong}"
+      },
+      "button-on-dark": {
+        "backgroundColor": "{colors.on-dark}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.md}",
+        "padding": "10px 18px"
+      },
+      "button-secondary-on-dark": {
+        "backgroundColor": "transparent",
+        "textColor": "{colors.on-dark}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.md}",
+        "padding": "10px 18px",
+        "border": "1px solid {colors.on-dark-muted}"
+      },
+      "button-ghost": {
+        "backgroundColor": "transparent",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.sm}",
+        "padding": "8px 12px"
+      },
+      "button-link": {
+        "backgroundColor": "transparent",
+        "textColor": "{colors.link-blue}",
+        "typography": "{typography.body-sm-medium}",
+        "padding": "0"
+      },
+      "card-base": {
+        "backgroundColor": "{colors.canvas}",
+        "rounded": "{rounded.lg}",
+        "padding": "{spacing.xl}",
+        "border": "1px solid {colors.hairline}"
+      },
+      "card-feature": {
+        "backgroundColor": "{colors.canvas}",
+        "rounded": "{rounded.lg}",
+        "padding": "{spacing.xxl}",
+        "border": "1px solid {colors.hairline}"
+      },
+      "card-feature-yellow-bold": {
+        "backgroundColor": "{colors.card-tint-yellow-bold}",
+        "textColor": "{colors.charcoal}",
+        "rounded": "{rounded.lg}",
+        "padding": "{spacing.xxl}"
+      },
+      "card-feature-peach": {
+        "backgroundColor": "{colors.card-tint-peach}",
+        "textColor": "{colors.charcoal}",
+        "rounded": "{rounded.lg}",
+        "padding": "{spacing.xxl}"
+      },
+      "card-feature-rose": {
+        "backgroundColor": "{colors.card-tint-rose}",
+        "textColor": "{colors.charcoal}",
+        "rounded": "{rounded.lg}",
+        "padding": "{spacing.xxl}"
+      },
+      "card-feature-mint": {
+        "backgroundColor": "{colors.card-tint-mint}",
+        "textColor": "{colors.charcoal}",
+        "rounded": "{rounded.lg}",
+        "padding": "{spacing.xxl}"
+      },
+      "card-feature-sky": {
+        "backgroundColor": "{colors.card-tint-sky}",
+        "textColor": "{colors.charcoal}",
+        "rounded": "{rounded.lg}",
+        "padding": "{spacing.xxl}"
+      },
+      "card-feature-lavender": {
+        "backgroundColor": "{colors.card-tint-lavender}",
+        "textColor": "{colors.charcoal}",
+        "rounded": "{rounded.lg}",
+        "padding": "{spacing.xxl}"
+      },
+      "card-feature-yellow": {
+        "backgroundColor": "{colors.card-tint-yellow}",
+        "textColor": "{colors.charcoal}",
+        "rounded": "{rounded.lg}",
+        "padding": "{spacing.xxl}"
+      },
+      "card-feature-cream": {
+        "backgroundColor": "{colors.card-tint-cream}",
+        "textColor": "{colors.charcoal}",
+        "rounded": "{rounded.lg}",
+        "padding": "{spacing.xxl}"
+      },
+      "card-agent-tile": {
+        "backgroundColor": "{colors.canvas}",
+        "rounded": "{rounded.lg}",
+        "padding": "{spacing.xl}",
+        "border": "1px solid {colors.hairline}"
+      },
+      "card-template": {
+        "backgroundColor": "{colors.canvas}",
+        "rounded": "{rounded.lg}",
+        "padding": "{spacing.lg}",
+        "border": "1px solid {colors.hairline}"
+      },
+      "card-startup-perk": {
+        "backgroundColor": "{colors.canvas}",
+        "rounded": "{rounded.lg}",
+        "padding": "{spacing.xl}",
+        "border": "1px solid {colors.hairline}"
+      },
+      "pricing-card": {
+        "backgroundColor": "{colors.canvas}",
+        "rounded": "{rounded.lg}",
+        "padding": "{spacing.xxl}",
+        "border": "1px solid {colors.hairline}"
+      },
+      "pricing-card-featured": {
+        "backgroundColor": "{colors.surface}",
+        "rounded": "{rounded.lg}",
+        "padding": "{spacing.xxl}",
+        "border": "2px solid {colors.primary}"
+      },
+      "text-input": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.md}",
+        "padding": "{spacing.sm} {spacing.md}",
+        "border": "1px solid {colors.hairline-strong}",
+        "height": "44px"
+      },
+      "text-input-focused": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "border": "2px solid {colors.primary}"
+      },
+      "search-pill": {
+        "backgroundColor": "{colors.surface}",
+        "textColor": "{colors.steel}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.md}",
+        "padding": "{spacing.sm} {spacing.md}",
+        "height": "44px",
+        "border": "1px solid {colors.hairline}"
+      },
+      "pill-tab": {
+        "backgroundColor": "transparent",
+        "textColor": "{colors.steel}",
+        "typography": "{typography.body-sm-medium}",
+        "rounded": "{rounded.full}",
+        "padding": "{spacing.xs} {spacing.md}",
+        "border": "1px solid {colors.hairline}"
+      },
+      "pill-tab-active": {
+        "backgroundColor": "{colors.ink-deep}",
+        "textColor": "{colors.on-dark}",
+        "rounded": "{rounded.full}",
+        "border": "1px solid {colors.ink-deep}"
+      },
+      "segmented-tab": {
+        "backgroundColor": "transparent",
+        "textColor": "{colors.steel}",
+        "typography": "{typography.body-sm-medium}",
+        "padding": "{spacing.sm} {spacing.md}",
+        "border": "0 0 2px transparent solid"
+      },
+      "segmented-tab-active": {
+        "backgroundColor": "transparent",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-sm-medium}",
+        "border": "0 0 2px {colors.ink} solid"
+      },
+      "badge-purple": {
+        "backgroundColor": "{colors.primary}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.caption-bold}",
+        "rounded": "{rounded.full}",
+        "padding": "4px 10px"
+      },
+      "badge-pink": {
+        "backgroundColor": "{colors.brand-pink}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.caption-bold}",
+        "rounded": "{rounded.full}",
+        "padding": "4px 10px"
+      },
+      "badge-orange": {
+        "backgroundColor": "{colors.brand-orange}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.caption-bold}",
+        "rounded": "{rounded.full}",
+        "padding": "4px 10px"
+      },
+      "badge-tag-purple": {
+        "backgroundColor": "{colors.card-tint-lavender}",
+        "textColor": "{colors.brand-purple-800}",
+        "typography": "{typography.caption-bold}",
+        "rounded": "{rounded.sm}",
+        "padding": "2px 8px"
+      },
+      "badge-tag-orange": {
+        "backgroundColor": "{colors.card-tint-peach}",
+        "textColor": "{colors.brand-orange-deep}",
+        "typography": "{typography.caption-bold}",
+        "rounded": "{rounded.sm}",
+        "padding": "2px 8px"
+      },
+      "badge-tag-green": {
+        "backgroundColor": "{colors.card-tint-mint}",
+        "textColor": "{colors.brand-green}",
+        "typography": "{typography.caption-bold}",
+        "rounded": "{rounded.sm}",
+        "padding": "2px 8px"
+      },
+      "badge-popular": {
+        "backgroundColor": "{colors.primary}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.caption-bold}",
+        "rounded": "{rounded.full}",
+        "padding": "4px 10px"
+      },
+      "promo-banner": {
+        "backgroundColor": "{colors.surface}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-sm-medium}",
+        "padding": "{spacing.sm} {spacing.md}"
+      },
+      "hero-band-dark": {
+        "backgroundColor": "{colors.brand-navy}",
+        "textColor": "{colors.on-dark}",
+        "rounded": "0",
+        "padding": "{spacing.hero}"
+      },
+      "workspace-mockup-card": {
+        "backgroundColor": "{colors.canvas}",
+        "rounded": "{rounded.lg}",
+        "padding": "0",
+        "border": "1px solid {colors.hairline}",
+        "shadow": "rgba(15, 15, 15, 0.2) 0px 24px 48px -8px"
+      },
+      "cta-banner-light": {
+        "backgroundColor": "{colors.surface}",
+        "textColor": "{colors.ink}",
+        "rounded": "{rounded.lg}",
+        "padding": "{spacing.section}"
+      },
+      "comparison-table": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-sm}",
+        "rounded": "{rounded.md}",
+        "border": "1px solid {colors.hairline}"
+      },
+      "comparison-row": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "padding": "{spacing.md} {spacing.lg}",
+        "border": "0 0 1px {colors.hairline-soft} solid"
+      },
+      "testimonial-card": {
+        "backgroundColor": "{colors.canvas}",
+        "rounded": "{rounded.lg}",
+        "padding": "{spacing.xxl}",
+        "border": "1px solid {colors.hairline}"
+      },
+      "logo-wall-item": {
+        "backgroundColor": "transparent",
+        "textColor": "{colors.steel}",
+        "typography": "{typography.body-md-medium}",
+        "padding": "{spacing.lg}"
+      },
+      "faq-accordion-item": {
+        "backgroundColor": "{colors.canvas}",
+        "rounded": "{rounded.md}",
+        "padding": "{spacing.xl}",
+        "border": "0 0 1px {colors.hairline} solid"
+      },
+      "stat-row": {
+        "backgroundColor": "{colors.surface}",
+        "textColor": "{colors.ink}",
+        "rounded": "{rounded.lg}",
+        "padding": "{spacing.section-sm}"
+      },
+      "footer-region": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.charcoal}",
+        "typography": "{typography.body-sm}",
+        "padding": "{spacing.section} {spacing.xxl}",
+        "border": "1px solid {colors.hairline}"
+      },
+      "footer-link": {
+        "backgroundColor": "transparent",
+        "textColor": "{colors.steel}",
+        "typography": "{typography.body-sm}",
+        "padding": "{spacing.xxs} 0"
+      }
+    }
+  },
+  "normalizationRepairs": [],
+  "sections": [
+    {
+      "heading": "Overview",
+      "level": 2,
+      "text": "Notion presents itself as the all-in-one workspace through a confident, illustration-rich brand voice. The homepage opens with **\"Meet the night shift.\"** rendered centered over a deep navy hero band ({colors.brand-navy}), decorated with brand-colored sticky-note dots and mesh wire illustrations scattered around the headline. The signature **purple pill primary CTA** ({colors.primary}) \"Get Notion free\" sits at the visual center, paired with an outlined \"Request a demo\" secondary. Below the buttons, a real Notion workspace UI mockup card (the \"Ramp HQ\" kanban board) breaks out of the hero band with a deep diffuse drop shadow.\n\nBelow the hero, the page cycles through a distinctive sequence of feature sections: a dense sticky-note \"Keep work moving 24/7\" panel with red/blue/green/purple/teal status icons; a **bold yellow** ({colors.card-tint-yellow-bold}) \"Ask your on-demand assistants\" banner card flanked by orange/rose/mint pastel feature tiles showing assistant UI mockups; and a \"Bring all your work together\" 3-column grid with brand-colored mockups (sky-blue tutorial card, light Notion calendar, brown/rust testimonial slate). The pricing page renders 4 tiers (Free / Plus / Business / Enterprise) horizontally with one tier featured (purple-bordered) and a dense feature comparison table running below.\n\nThe system uses a Notion-Sans typeface (Inter-based) across every UI surface — humanist-geometric character that pairs naturally with the colorful illustrations. Buttons are `{rounded.md}` (8px) rectangles, NOT pills — distinguishing Notion's sober rectangular geometry from competitors that use pills universally. Cards use `{rounded.lg}` (12px) consistently.\n\n**Key Characteristics:**\n- Deep navy hero band ({colors.brand-navy}) with scattered sticky-note dots + mesh wire decorative illustrations\n- **Signature purple pill** ({colors.primary}) primary CTA — Notion's recognizable \"Get Notion free\" button color\n- Real Notion workspace UI mockup card embedded in the hero with deep drop shadow\n- Bold yellow feature banner ({colors.card-tint-yellow-bold}) for high-emphasis content sections\n- Pastel feature card palette (peach, rose, mint, lavender, sky, yellow) echoing the live product database properties\n- Notion-Sans (Inter-based) across every UI surface\n- 8px-rounded buttons (NOT pills), 12px-rounded cards — sober editorial geometry\n- 4-tier pricing comparison with dense feature table\n- Centered hero layout (different from the left-aligned norm of most B2B SaaS)",
+      "line": 446
+    },
+    {
+      "heading": "Colors",
+      "level": 2,
+      "text": "> Source pages: notion.com/ (homepage), /enterprise, /product/ai, /product/agents, /startups, /pricing. Token coverage was identical across all six pages.",
+      "line": 465
+    },
+    {
+      "heading": "Brand & Primary",
+      "level": 3,
+      "text": "- **Notion Purple** ({colors.primary}): Signature primary CTA color — the unmistakable \"Get Notion free\" pill button. Reserved for the dominant CTA only.\n- **Purple Pressed** ({colors.primary-pressed}): Pressed-state variant\n- **Purple Deep** ({colors.primary-deep}): Deeper variant for emphasis\n- **Brand Navy** ({colors.brand-navy}): Hero band background — deep navy\n- **Brand Navy Deep** ({colors.brand-navy-deep}): Deeper navy for promo banner\n- **Brand Navy Mid** ({colors.brand-navy-mid}): Mid-spectrum navy\n- **Link Blue** ({colors.link-blue}): Inline text link blue (NOT primary CTA)\n- **Link Blue Pressed** ({colors.link-blue-pressed}): Pressed-state link blue",
+      "line": 469
+    },
+    {
+      "heading": "Brand Color Spectrum (echoes live product database properties)",
+      "level": 3,
+      "text": "- **Brand Pink** ({colors.brand-pink}): Pink accent\n- **Brand Pink Deep** ({colors.brand-pink-deep}): Deeper pink\n- **Brand Orange** ({colors.brand-orange}): Orange accent\n- **Brand Orange Deep** ({colors.brand-orange-deep}): Deeper orange-rust\n- **Brand Purple** ({colors.brand-purple}): Purple accent variant\n- **Brand Purple 300** ({colors.brand-purple-300}): Light purple\n- **Brand Purple 800** ({colors.brand-purple-800}): Deep purple for tag text\n- **Brand Teal** ({colors.brand-teal}): Teal accent\n- **Brand Green** ({colors.brand-green}): Bright green\n- **Brand Yellow** ({colors.brand-yellow}): Soft yellow\n- **Brand Brown** ({colors.brand-brown}): Brand brown for \"earthy\" tints",
+      "line": 479
+    },
+    {
+      "heading": "Card Tints (Pastel Feature Card Backgrounds)",
+      "level": 3,
+      "text": "- **Tint Peach** ({colors.card-tint-peach}): Pale peach\n- **Tint Rose** ({colors.card-tint-rose}): Pale rose-pink\n- **Tint Mint** ({colors.card-tint-mint}): Pale mint-green\n- **Tint Lavender** ({colors.card-tint-lavender}): Pale lavender\n- **Tint Sky** ({colors.card-tint-sky}): Pale sky-blue\n- **Tint Yellow** ({colors.card-tint-yellow}): Pale yellow\n- **Tint Yellow Bold** ({colors.card-tint-yellow-bold}): Bold yellow for high-emphasis feature banners (\"Ask your on-demand assistants\")\n- **Tint Cream** ({colors.card-tint-cream}): Cream tint\n- **Tint Gray** ({colors.card-tint-gray}): Neutral surface",
+      "line": 492
+    },
+    {
+      "heading": "Surface",
+      "level": 3,
+      "text": "- **Canvas White** ({colors.canvas}): Page background and primary card surface\n- **Surface** ({colors.surface}): Subtle section backgrounds, search-pill rest, featured pricing tier\n- **Surface Soft** ({colors.surface-soft}): Quieter section divisions\n- **Hairline** ({colors.hairline}): 1px borders and primary dividers\n- **Hairline Soft** ({colors.hairline-soft}): Quieter dividers\n- **Hairline Strong** ({colors.hairline-strong}): Stronger 1px border for inputs",
+      "line": 503
+    },
+    {
+      "heading": "Text",
+      "level": 3,
+      "text": "- **Ink Deep** ({colors.ink-deep}): Pure black for emphasis\n- **Ink** ({colors.ink}): Primary headlines and body text\n- **Charcoal** ({colors.charcoal}): Body emphasis (Notion's signature warm-charcoal)\n- **Slate** ({colors.slate}): Secondary text\n- **Steel** ({colors.steel}): Tertiary, footer links\n- **Stone** ({colors.stone}): Muted labels\n- **Muted** ({colors.muted}): Disabled, placeholders\n- **On Dark** ({colors.on-dark}): White text on dark surfaces\n- **On Dark Muted** ({colors.on-dark-muted}): Reduced-opacity white",
+      "line": 511
+    },
+    {
+      "heading": "Semantic",
+      "level": 3,
+      "text": "- **Success** ({colors.semantic-success}): Confirmation green\n- **Warning** ({colors.semantic-warning}): Mid-priority alerts (orange)\n- **Error** ({colors.semantic-error}): Validation errors (red)",
+      "line": 522
+    },
+    {
+      "heading": "Typography",
+      "level": 2,
+      "text": "",
+      "line": 527
+    },
+    {
+      "heading": "Font Family",
+      "level": 3,
+      "text": "**Notion Sans** (primary): Notion's custom Inter-based variable typeface. Fallbacks: Inter, -apple-system, system-ui, 'Segoe UI', Helvetica, sans-serif. Humanist-geometric character used across every UI surface.",
+      "line": 529
+    },
+    {
+      "heading": "Hierarchy",
+      "level": 3,
+      "text": "| Token | Size | Weight | Line Height | Letter Spacing | Use |\n|---|---|---|---|---|---|\n| `{typography.hero-display}` | 80px | 600 | 1.05 | -2px | Hero (\"Meet the night shift\") |\n| `{typography.display-lg}` | 56px | 600 | 1.10 | -1px | Section openers |\n| `{typography.heading-1}` | 48px | 600 | 1.15 | -0.5px | Page-level headlines (\"Try for free\") |\n| `{typography.heading-2}` | 36px | 600 | 1.20 | -0.5px | Subsection headlines (\"Keep work moving 24/7\") |\n| `{typography.heading-3}` | 28px | 600 | 1.25 | 0 | Card titles |\n| `{typography.heading-4}` | 22px | 600 | 1.30 | 0 | Feature tile titles |\n| `{typography.heading-5}` | 18px | 600 | 1.40 | 0 | FAQ questions |\n| `{typography.subtitle}` | 18px | 400 | 1.50 | 0 | Hero subtitle |\n| `{typography.body-md}` | 16px | 400 | 1.55 | 0 | Primary body text |\n| `{typography.body-md-medium}` | 16px | 500 | 1.55 | 0 | Body emphasis |\n| `{typography.body-sm}` | 14px | 400 | 1.50 | 0 | Secondary body |\n| `{typography.body-sm-medium}` | 14px | 500 | 1.50 | 0 | Active sidebar, button labels |\n| `{typography.caption-bold}` | 13px | 600 | 1.40 | 0 | Badge labels |\n| `{typography.button-md}` | 14px | 500 | 1.30 | 0 | Button labels |",
+      "line": 532
+    },
+    {
+      "heading": "Principles",
+      "level": 3,
+      "text": "- Tight hero leading (1.05) on 80px display\n- Negative letter-spacing on display sizes (-2px to -0.5px)\n- Generous body leading (1.55) for documentation readability\n- 600 weight for headlines + 500 for buttons; 400 body",
+      "line": 551
+    },
+    {
+      "heading": "Layout",
+      "level": 2,
+      "text": "",
+      "line": 557
+    },
+    {
+      "heading": "Spacing System",
+      "level": 3,
+      "text": "- **Base unit**: 4px (8px primary increment)\n- **Tokens**: `{spacing.xxs}` (4px) through `{spacing.hero}` (120px)\n- **Section rhythm**: Marketing pages use `{spacing.section-lg}` (96px); pricing tightens to `{spacing.section}` (64px)",
+      "line": 559
+    },
+    {
+      "heading": "Grid & Container",
+      "level": 3,
+      "text": "- 1280px max-width with 32px gutters\n- Pricing: 4-tier card row at desktop with dense comparison table\n- Homepage: centered hero with workspace mockup below buttons; alternating colorful feature card sections",
+      "line": 564
+    },
+    {
+      "heading": "Whitespace Philosophy",
+      "level": 3,
+      "text": "Marketing surfaces use generous breathing room between feature card bands. Workspace mockup card on hero gets full-width treatment with deep drop shadow.",
+      "line": 569
+    },
+    {
+      "heading": "Elevation & Depth",
+      "level": 2,
+      "text": "| Level | Treatment | Use |\n|---|---|---|\n| 0 (flat) | No shadow; `{colors.hairline}` border | Default cards, table rows |\n| 1 (subtle) | `rgba(15, 15, 15, 0.04) 0px 1px 2px 0px` | Hover-elevated tiles |\n| 2 (card) | `rgba(15, 15, 15, 0.08) 0px 4px 12px 0px` | Feature cards |\n| 3 (mockup) | `rgba(15, 15, 15, 0.20) 0px 24px 48px -8px` | Hero workspace mockup card |\n| 4 (modal) | `rgba(15, 15, 15, 0.16) 0px 16px 48px -8px` | Modals, dropdowns |",
+      "line": 572
+    },
+    {
+      "heading": "Decorative Depth",
+      "level": 3,
+      "text": "- Hero workspace mockup card uses deep diffuse drop shadow (Level 3) — significant elevation against the navy band\n- Pastel feature cards carry their own visual weight via tint backgrounds\n- Sticky-note dot illustrations and mesh wires add atmospheric decoration to navy hero",
+      "line": 582
+    },
+    {
+      "heading": "Shapes",
+      "level": 2,
+      "text": "",
+      "line": 587
+    },
+    {
+      "heading": "Border Radius Scale",
+      "level": 3,
+      "text": "| Token | Value | Use |\n|---|---|---|\n| `{rounded.xs}` | 4px | Tag chips |\n| `{rounded.sm}` | 6px | Type badges |\n| `{rounded.md}` | 8px | Buttons, inputs, search-pill |\n| `{rounded.lg}` | 12px | Cards, pricing tiers, agent tiles, workspace mockup |\n| `{rounded.xl}` | 16px | Larger feature panels |\n| `{rounded.xxl}` | 20px | Featured product showcases |\n| `{rounded.xxxl}` | 24px | Larger feature cards |\n| `{rounded.full}` | 9999px | Status badges, pill tabs (NOT regular buttons) |\n\nNotion's geometry is sober-editorial — `{rounded.md}` (8px) buttons distinguish it from pill-button-everywhere brands.",
+      "line": 589
+    },
+    {
+      "heading": "Components",
+      "level": 2,
+      "text": "> Per the no-hover policy, hover states are NOT documented.",
+      "line": 604
+    },
+    {
+      "heading": "Buttons",
+      "level": 3,
+      "text": "**`button-primary`** — Signature purple rectangular primary CTA, the dominant action.\n- Background `{colors.primary}`, text `{colors.on-primary}`, typography `{typography.button-md}`, padding `10px 18px`, rounded `{rounded.md}`.\n- Pressed state `button-primary-pressed` deepens to `{colors.primary-pressed}`.\n- Disabled state uses `{colors.hairline}` background.\n\n**`button-dark`** — Black rectangular CTA on light backgrounds.\n- Background `{colors.ink-deep}`, text `{colors.on-dark}`, typography `{typography.button-md}`, padding `10px 18px`, rounded `{rounded.md}`.\n\n**`button-secondary`** — Outlined rectangular for secondary actions (\"Request a demo\").\n- Background transparent, text `{colors.ink}`, border `1px solid {colors.hairline-strong}`, typography `{typography.button-md}`, padding `10px 18px`, rounded `{rounded.md}`.\n\n**`button-on-dark`** — White button on dark hero bands.\n- Background `{colors.on-dark}`, text `{colors.ink}`, typography `{typography.button-md}`, padding `10px 18px`, rounded `{rounded.md}`.\n\n**`button-secondary-on-dark`** — Outlined button on dark.\n- Background transparent, text `{colors.on-dark}`, border `1px solid {colors.on-dark-muted}`, typography `{typography.button-md}`, padding `10px 18px`, rounded `{rounded.md}`.\n\n**`button-ghost`** — Quieter ghost button.\n- Background transparent, text `{colors.ink}`, typography `{typography.button-md}`, padding `8px 12px`, rounded `{rounded.sm}`.\n\n**`button-link`** — Inline blue text link (NOT primary purple).\n- Background transparent, text `{colors.link-blue}`, typography `{typography.body-sm-medium}`, padding `0`.",
+      "line": 608
+    },
+    {
+      "heading": "Cards & Containers",
+      "level": 3,
+      "text": "**`card-base`** — Standard content card.\n- Background `{colors.canvas}`, rounded `{rounded.lg}`, padding `{spacing.xl}`, border `1px solid {colors.hairline}`.\n\n**`card-feature`** — Feature card with larger padding.\n- Background `{colors.canvas}`, rounded `{rounded.lg}`, padding `{spacing.xxl}`, border `1px solid {colors.hairline}`.\n\n**`card-feature-yellow-bold`** — Bold yellow feature banner for high-emphasis content (\"Ask your on-demand assistants\").\n- Background `{colors.card-tint-yellow-bold}`, text `{colors.charcoal}`, rounded `{rounded.lg}`, padding `{spacing.xxl}`.\n\n**`card-feature-peach`** + **`card-feature-rose`** + **`card-feature-mint`** + **`card-feature-sky`** + **`card-feature-lavender`** + **`card-feature-yellow`** + **`card-feature-cream`** — Pastel-tinted feature cards.\n- Each variant uses its corresponding `card-tint-*` color as background, text `{colors.charcoal}`, rounded `{rounded.lg}`, padding `{spacing.xxl}`.\n\n**`card-agent-tile`** — Agent assistant tile.\n- Background `{colors.canvas}`, rounded `{rounded.lg}`, padding `{spacing.xl}`, border `1px solid {colors.hairline}`.\n\n**`card-template`** — Template thumbnail card.\n- Background `{colors.canvas}`, rounded `{rounded.lg}`, padding `{spacing.lg}`, border `1px solid {colors.hairline}`.\n\n**`card-startup-perk`** — Startup-program perk grid item.\n- Background `{colors.canvas}`, rounded `{rounded.lg}`, padding `{spacing.xl}`, border `1px solid {colors.hairline}`.\n\n**`pricing-card`** — Standard pricing tier card.\n- Background `{colors.canvas}`, rounded `{rounded.lg}`, padding `{spacing.xxl}`, border `1px solid {colors.hairline}`.\n\n**`pricing-card-featured`** — Featured pricing tier (Plus or Business — purple-bordered).\n- Background `{colors.surface}`, rounded `{rounded.lg}`, padding `{spacing.xxl}`, border `2px solid {colors.primary}`.",
+      "line": 633
+    },
+    {
+      "heading": "Inputs & Forms",
+      "level": 3,
+      "text": "**`text-input`** — Standard text field.\n- Background `{colors.canvas}`, text `{colors.ink}`, border `1px solid {colors.hairline-strong}`, rounded `{rounded.md}`, padding `{spacing.sm} {spacing.md}`, height 44px.\n\n**`text-input-focused`** — Activated state.\n- Border switches to `2px solid {colors.primary}` (purple).\n\n**`search-pill`** — Search bar.\n- Background `{colors.surface}`, text `{colors.steel}`, typography `{typography.body-md}`, rounded `{rounded.md}`, height 44px, border `1px solid {colors.hairline}`.",
+      "line": 662
+    },
+    {
+      "heading": "Tabs",
+      "level": 3,
+      "text": "**`pill-tab`** + **`pill-tab-active`** — Pill-style tab nav for top-level switching.\n- Inactive: text `{colors.steel}`, border `1px solid {colors.hairline}`, padding `{spacing.xs} {spacing.md}`, rounded `{rounded.full}`.\n- Active: background `{colors.ink-deep}`, text `{colors.on-dark}`.\n\n**`segmented-tab`** + **`segmented-tab-active`** — Underline-style tab navigation.\n- Inactive: text `{colors.steel}`, no border. Active: text `{colors.ink}`, 2px bottom border in `{colors.ink}`.",
+      "line": 673
+    },
+    {
+      "heading": "Badges & Status",
+      "level": 3,
+      "text": "**`badge-purple`** — Purple status badge (matches primary CTA).\n- Background `{colors.primary}`, text `{colors.on-primary}`, typography `{typography.caption-bold}`, rounded `{rounded.full}`, padding `4px 10px`.\n\n**`badge-pink`** — Pink accent badge.\n- Background `{colors.brand-pink}`, text `{colors.on-primary}`, typography `{typography.caption-bold}`, rounded `{rounded.full}`, padding `4px 10px`.\n\n**`badge-orange`** — Orange accent badge.\n- Background `{colors.brand-orange}`, text `{colors.on-primary}`, typography `{typography.caption-bold}`, rounded `{rounded.full}`, padding `4px 10px`.\n\n**`badge-tag-purple`** — Soft-purple feature tag chip.\n- Background `{colors.card-tint-lavender}`, text `{colors.brand-purple-800}`, typography `{typography.caption-bold}`, rounded `{rounded.sm}`, padding `2px 8px`.\n\n**`badge-tag-orange`** — Soft-orange feature tag.\n- Background `{colors.card-tint-peach}`, text `{colors.brand-orange-deep}`, typography `{typography.caption-bold}`, rounded `{rounded.sm}`, padding `2px 8px`.\n\n**`badge-tag-green`** — Soft-mint feature tag.\n- Background `{colors.card-tint-mint}`, text `{colors.brand-green}`, typography `{typography.caption-bold}`, rounded `{rounded.sm}`, padding `2px 8px`.\n\n**`badge-popular`** — \"Most Popular\" tier indicator.\n- Background `{colors.primary}`, text `{colors.on-primary}`, typography `{typography.caption-bold}`, rounded `{rounded.full}`, padding `4px 10px`.\n\n**`promo-banner`** — Light surface promo strip ABOVE the top nav.\n- Background `{colors.surface}`, text `{colors.ink}`, typography `{typography.body-sm-medium}`, padding `{spacing.sm} {spacing.md}`. (\"Developers: Get a first look at our new Developer Platform on May 13.\")",
+      "line": 682
+    },
+    {
+      "heading": "Tables",
+      "level": 3,
+      "text": "**`comparison-table`** — Pricing feature comparison table.\n- Background `{colors.canvas}`, text `{colors.ink}`, typography `{typography.body-sm}`, rounded `{rounded.md}`, border `1px solid {colors.hairline}`.\n\n**`comparison-row`** — Individual feature row.\n- Background `{colors.canvas}`, text `{colors.ink}`, padding `{spacing.md} {spacing.lg}`, bottom border `1px solid {colors.hairline-soft}`.",
+      "line": 708
+    },
+    {
+      "heading": "Documentation Components",
+      "level": 3,
+      "text": "**`workspace-mockup-card`** — Embedded Notion workspace UI mockup on hero band (\"Ramp HQ\" kanban board).\n- Background `{colors.canvas}`, rounded `{rounded.lg}`, border `1px solid {colors.hairline}`, deep shadow `rgba(15, 15, 15, 0.20) 0px 24px 48px -8px`. Carries actual Notion product UI mock.\n\n**`testimonial-card`** — Customer testimonial card.\n- Background `{colors.canvas}`, rounded `{rounded.lg}`, padding `{spacing.xxl}`, border `1px solid {colors.hairline}`.\n\n**`logo-wall-item`** — Customer logo wordmark cell.\n- Background transparent, text `{colors.steel}`, typography `{typography.body-md-medium}`, padding `{spacing.lg}`.\n\n**`faq-accordion-item`** — FAQ panel.\n- Background `{colors.canvas}`, rounded `{rounded.md}`, padding `{spacing.xl}`, bottom border `1px solid {colors.hairline}`.\n\n**`stat-row`** — Stats strip with bar chart visualization (\"More productivity. Fewer tools.\").\n- Background `{colors.surface}`, text `{colors.ink}`, rounded `{rounded.lg}`, padding `{spacing.section-sm}`.\n\n**`cta-banner-light`** — Light surface CTA banner.\n- Background `{colors.surface}`, text `{colors.ink}`, rounded `{rounded.lg}`, padding `{spacing.section}`.",
+      "line": 716
+    },
+    {
+      "heading": "Navigation",
+      "level": 3,
+      "text": "**Top Navigation (Marketing)** — Sticky white bar.\n- Background `{colors.canvas}`, height ~64px, bottom border `1px solid {colors.hairline}`.\n- Left: Notion \"N\" logo + \"Product / AI / Solutions / Resources / Enterprise / Pricing / Request a demo\" links.\n- Right: \"Get Notion free\" purple button + \"Log in\" link.",
+      "line": 736
+    },
+    {
+      "heading": "Signature Components",
+      "level": 3,
+      "text": "**`hero-band-dark`** — Deep navy hero band with embedded workspace mockup and decorative dots/wires.\n- Background `{colors.brand-navy}`, text `{colors.on-dark}`, padding `{spacing.hero}`.\n- Layout: centered headline `{typography.hero-display}`, subtitle, button row (`button-primary` purple + `button-secondary-on-dark`), `workspace-mockup-card` below.\n- Atmospheric decoration: scattered colorful sticky-note dots and mesh wire illustrations around the hero content (NOT a literal pattern fill — handled per-page via SVG/illustration).\n\n**`footer-region`** — Multi-column light footer.\n- Background `{colors.canvas}`, padding `{spacing.section} {spacing.xxl}`, top border `1px solid {colors.hairline}`.\n- 6-column link grid (Product / Download / Resources / Notion for / Company / Legal).\n\n**`footer-link`** — Individual footer link.\n- Background transparent, text `{colors.steel}`, typography `{typography.body-sm}`, padding `{spacing.xxs} 0`.",
+      "line": 743
+    },
+    {
+      "heading": "Do's and Don'ts",
+      "level": 2,
+      "text": "",
+      "line": 757
+    },
+    {
+      "heading": "Do",
+      "level": 3,
+      "text": "- Use `{colors.primary}` (purple) as the dominant CTA across all surfaces — it's the brand's recognizable signal\n- Pair deep navy hero bands ({colors.brand-navy}) with the purple button + decorative sticky-note dots\n- Use pastel feature card tints (peach, rose, mint, lavender, sky, yellow) generously\n- Use `{colors.card-tint-yellow-bold}` for high-emphasis \"Ask the assistant\"-style banner cards\n- Apply `{rounded.md}` (8px) to buttons consistently — Notion uses rectangles, not pills\n- Apply `{rounded.lg}` (12px) to all card families\n- Maintain Notion-Sans across every UI surface\n- Use the workspace mockup card on hero bands to show actual product UI",
+      "line": 759
+    },
+    {
+      "heading": "Don't",
+      "level": 3,
+      "text": "- Don't use the purple for body text or large background surfaces\n- Don't use pill-shaped buttons; Notion's geometry is rectangular-sober\n- Don't mix link-blue ({colors.link-blue}) with primary-purple ({colors.primary}) — they have distinct roles\n- Don't apply heavy shadows on flat documentation cards\n- Don't replace Notion-Sans with a generic Inter",
+      "line": 769
+    },
+    {
+      "heading": "Responsive Behavior",
+      "level": 2,
+      "text": "",
+      "line": 776
+    },
+    {
+      "heading": "Breakpoints",
+      "level": 3,
+      "text": "| Name | Width | Key Changes |\n|---|---|---|\n| Mobile (small) | < 480px | Single column. Hero 36px. Pricing 1-up. |\n| Mobile (large) | 480 – 767px | Feature cards 2-up. Hero 48px. |\n| Tablet | 768 – 1023px | 2-column feature grids. Hero 56px. |\n| Desktop | 1024 – 1279px | 4-tier pricing card row. Hero 72px. |\n| Wide Desktop | ≥ 1280px | Full 80px hero presentation. |",
+      "line": 778
+    },
+    {
+      "heading": "Touch Targets",
+      "level": 3,
+      "text": "- Buttons render at 40–44px effective height\n- Form inputs render at 44px height\n- Pill tabs ~32px → 44px on mobile",
+      "line": 787
+    },
+    {
+      "heading": "Collapsing Strategy",
+      "level": 3,
+      "text": "- **Promo banner** stays full-width; truncates at < 480px\n- **Top nav** below 1024px collapses to hamburger\n- **Hero band**: workspace mockup card moves below text/buttons on mobile\n- **Pricing tiers**: 4-column → 2-column tablet → 1-column mobile\n- **Feature cards**: 3-up desktop → 2-up tablet → 1-up mobile\n- **Hero typography**: 80px → 56px → 48px → 36px\n- **Footer**: 6-column desktop → 3-column tablet → accordion mobile",
+      "line": 792
+    },
+    {
+      "heading": "Image Behavior",
+      "level": 3,
+      "text": "- Workspace mockup card maintains aspect ratio\n- Pastel illustrations inside feature cards scale proportionally\n- Customer logo wall: wordmarks at consistent 60–80px height",
+      "line": 801
+    },
+    {
+      "heading": "Iteration Guide",
+      "level": 2,
+      "text": "1. Focus on ONE component at a time\n2. Reference component names and tokens directly\n3. Run `npx @google/design.md lint DESIGN.md` after edits\n4. Add new variants as separate `components:` entries\n5. Default to `{typography.body-md}` for body\n6. Keep `{colors.primary}` (purple) as the primary CTA — distinct from `{colors.link-blue}` for inline links\n7. Use `{rounded.md}` for buttons (rectangles), `{rounded.lg}` for cards, `{rounded.full}` for pill tabs/badges only",
+      "line": 806
+    },
+    {
+      "heading": "Known Gaps",
+      "level": 2,
+      "text": "- Specific dark-mode token values not surfaced beyond hero bands\n- Animation/transition timings not extracted; recommend 150–200ms ease\n- Form validation success state not explicitly captured\n- Pastel-tint mapping (which feature uses which tint) is observation-based — the actual brand library may have more entries",
+      "line": 816
+    }
+  ],
+  "tokens": [
+    {
+      "path": "colors.primary",
+      "sourcePath": "colors.primary",
+      "type": "color",
+      "value": "#5645d4",
+      "status": "unverified",
+      "evidence": {
+        "line": 7,
+        "sourcePath": "colors.primary"
+      }
+    },
+    {
+      "path": "colors.primarypressed",
+      "sourcePath": "colors.primary-pressed",
+      "type": "color",
+      "value": "#4534b3",
+      "status": "unverified",
+      "evidence": {
+        "line": 8,
+        "sourcePath": "colors.primary-pressed"
+      }
+    },
+    {
+      "path": "colors.primarydeep",
+      "sourcePath": "colors.primary-deep",
+      "type": "color",
+      "value": "#3a2a99",
+      "status": "unverified",
+      "evidence": {
+        "line": 9,
+        "sourcePath": "colors.primary-deep"
+      }
+    },
+    {
+      "path": "colors.onprimary",
+      "sourcePath": "colors.on-primary",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 10,
+        "sourcePath": "colors.on-primary"
+      }
+    },
+    {
+      "path": "colors.brandnavy",
+      "sourcePath": "colors.brand-navy",
+      "type": "color",
+      "value": "#0a1530",
+      "status": "unverified",
+      "evidence": {
+        "line": 11,
+        "sourcePath": "colors.brand-navy"
+      }
+    },
+    {
+      "path": "colors.brandnavydeep",
+      "sourcePath": "colors.brand-navy-deep",
+      "type": "color",
+      "value": "#070f24",
+      "status": "unverified",
+      "evidence": {
+        "line": 12,
+        "sourcePath": "colors.brand-navy-deep"
+      }
+    },
+    {
+      "path": "colors.brandnavymid",
+      "sourcePath": "colors.brand-navy-mid",
+      "type": "color",
+      "value": "#1a2a52",
+      "status": "unverified",
+      "evidence": {
+        "line": 13,
+        "sourcePath": "colors.brand-navy-mid"
+      }
+    },
+    {
+      "path": "colors.linkblue",
+      "sourcePath": "colors.link-blue",
+      "type": "color",
+      "value": "#0075de",
+      "status": "unverified",
+      "evidence": {
+        "line": 14,
+        "sourcePath": "colors.link-blue"
+      }
+    },
+    {
+      "path": "colors.linkbluepressed",
+      "sourcePath": "colors.link-blue-pressed",
+      "type": "color",
+      "value": "#005bab",
+      "status": "unverified",
+      "evidence": {
+        "line": 15,
+        "sourcePath": "colors.link-blue-pressed"
+      }
+    },
+    {
+      "path": "colors.brandorange",
+      "sourcePath": "colors.brand-orange",
+      "type": "color",
+      "value": "#dd5b00",
+      "status": "unverified",
+      "evidence": {
+        "line": 16,
+        "sourcePath": "colors.brand-orange"
+      }
+    },
+    {
+      "path": "colors.brandorangedeep",
+      "sourcePath": "colors.brand-orange-deep",
+      "type": "color",
+      "value": "#793400",
+      "status": "unverified",
+      "evidence": {
+        "line": 17,
+        "sourcePath": "colors.brand-orange-deep"
+      }
+    },
+    {
+      "path": "colors.brandpink",
+      "sourcePath": "colors.brand-pink",
+      "type": "color",
+      "value": "#ff64c8",
+      "status": "unverified",
+      "evidence": {
+        "line": 18,
+        "sourcePath": "colors.brand-pink"
+      }
+    },
+    {
+      "path": "colors.brandpinkdeep",
+      "sourcePath": "colors.brand-pink-deep",
+      "type": "color",
+      "value": "#a02e6d",
+      "status": "unverified",
+      "evidence": {
+        "line": 19,
+        "sourcePath": "colors.brand-pink-deep"
+      }
+    },
+    {
+      "path": "colors.brandpurple",
+      "sourcePath": "colors.brand-purple",
+      "type": "color",
+      "value": "#7b3ff2",
+      "status": "unverified",
+      "evidence": {
+        "line": 20,
+        "sourcePath": "colors.brand-purple"
+      }
+    },
+    {
+      "path": "colors.brandpurple300",
+      "sourcePath": "colors.brand-purple-300",
+      "type": "color",
+      "value": "#d6b6f6",
+      "status": "unverified",
+      "evidence": {
+        "line": 21,
+        "sourcePath": "colors.brand-purple-300"
+      }
+    },
+    {
+      "path": "colors.brandpurple800",
+      "sourcePath": "colors.brand-purple-800",
+      "type": "color",
+      "value": "#391c57",
+      "status": "unverified",
+      "evidence": {
+        "line": 22,
+        "sourcePath": "colors.brand-purple-800"
+      }
+    },
+    {
+      "path": "colors.brandteal",
+      "sourcePath": "colors.brand-teal",
+      "type": "color",
+      "value": "#2a9d99",
+      "status": "unverified",
+      "evidence": {
+        "line": 23,
+        "sourcePath": "colors.brand-teal"
+      }
+    },
+    {
+      "path": "colors.brandgreen",
+      "sourcePath": "colors.brand-green",
+      "type": "color",
+      "value": "#1aae39",
+      "status": "unverified",
+      "evidence": {
+        "line": 24,
+        "sourcePath": "colors.brand-green"
+      }
+    },
+    {
+      "path": "colors.brandyellow",
+      "sourcePath": "colors.brand-yellow",
+      "type": "color",
+      "value": "#f5d75e",
+      "status": "unverified",
+      "evidence": {
+        "line": 25,
+        "sourcePath": "colors.brand-yellow"
+      }
+    },
+    {
+      "path": "colors.brandbrown",
+      "sourcePath": "colors.brand-brown",
+      "type": "color",
+      "value": "#523410",
+      "status": "unverified",
+      "evidence": {
+        "line": 26,
+        "sourcePath": "colors.brand-brown"
+      }
+    },
+    {
+      "path": "colors.cardtintpeach",
+      "sourcePath": "colors.card-tint-peach",
+      "type": "color",
+      "value": "#ffe8d4",
+      "status": "unverified",
+      "evidence": {
+        "line": 27,
+        "sourcePath": "colors.card-tint-peach"
+      }
+    },
+    {
+      "path": "colors.cardtintrose",
+      "sourcePath": "colors.card-tint-rose",
+      "type": "color",
+      "value": "#fde0ec",
+      "status": "unverified",
+      "evidence": {
+        "line": 28,
+        "sourcePath": "colors.card-tint-rose"
+      }
+    },
+    {
+      "path": "colors.cardtintmint",
+      "sourcePath": "colors.card-tint-mint",
+      "type": "color",
+      "value": "#d9f3e1",
+      "status": "unverified",
+      "evidence": {
+        "line": 29,
+        "sourcePath": "colors.card-tint-mint"
+      }
+    },
+    {
+      "path": "colors.cardtintlavender",
+      "sourcePath": "colors.card-tint-lavender",
+      "type": "color",
+      "value": "#e6e0f5",
+      "status": "unverified",
+      "evidence": {
+        "line": 30,
+        "sourcePath": "colors.card-tint-lavender"
+      }
+    },
+    {
+      "path": "colors.cardtintsky",
+      "sourcePath": "colors.card-tint-sky",
+      "type": "color",
+      "value": "#dcecfa",
+      "status": "unverified",
+      "evidence": {
+        "line": 31,
+        "sourcePath": "colors.card-tint-sky"
+      }
+    },
+    {
+      "path": "colors.cardtintyellow",
+      "sourcePath": "colors.card-tint-yellow",
+      "type": "color",
+      "value": "#fef7d6",
+      "status": "unverified",
+      "evidence": {
+        "line": 32,
+        "sourcePath": "colors.card-tint-yellow"
+      }
+    },
+    {
+      "path": "colors.cardtintyellowbold",
+      "sourcePath": "colors.card-tint-yellow-bold",
+      "type": "color",
+      "value": "#f9e79f",
+      "status": "unverified",
+      "evidence": {
+        "line": 33,
+        "sourcePath": "colors.card-tint-yellow-bold"
+      }
+    },
+    {
+      "path": "colors.cardtintcream",
+      "sourcePath": "colors.card-tint-cream",
+      "type": "color",
+      "value": "#f8f5e8",
+      "status": "unverified",
+      "evidence": {
+        "line": 34,
+        "sourcePath": "colors.card-tint-cream"
+      }
+    },
+    {
+      "path": "colors.cardtintgray",
+      "sourcePath": "colors.card-tint-gray",
+      "type": "color",
+      "value": "#f0eeec",
+      "status": "unverified",
+      "evidence": {
+        "line": 35,
+        "sourcePath": "colors.card-tint-gray"
+      }
+    },
+    {
+      "path": "colors.canvas",
+      "sourcePath": "colors.canvas",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 36,
+        "sourcePath": "colors.canvas"
+      }
+    },
+    {
+      "path": "colors.surface",
+      "sourcePath": "colors.surface",
+      "type": "color",
+      "value": "#f6f5f4",
+      "status": "unverified",
+      "evidence": {
+        "line": 37,
+        "sourcePath": "colors.surface"
+      }
+    },
+    {
+      "path": "colors.surfacesoft",
+      "sourcePath": "colors.surface-soft",
+      "type": "color",
+      "value": "#fafaf9",
+      "status": "unverified",
+      "evidence": {
+        "line": 38,
+        "sourcePath": "colors.surface-soft"
+      }
+    },
+    {
+      "path": "colors.hairline",
+      "sourcePath": "colors.hairline",
+      "type": "color",
+      "value": "#e5e3df",
+      "status": "unverified",
+      "evidence": {
+        "line": 39,
+        "sourcePath": "colors.hairline"
+      }
+    },
+    {
+      "path": "colors.hairlinesoft",
+      "sourcePath": "colors.hairline-soft",
+      "type": "color",
+      "value": "#ede9e4",
+      "status": "unverified",
+      "evidence": {
+        "line": 40,
+        "sourcePath": "colors.hairline-soft"
+      }
+    },
+    {
+      "path": "colors.hairlinestrong",
+      "sourcePath": "colors.hairline-strong",
+      "type": "color",
+      "value": "#c8c4be",
+      "status": "unverified",
+      "evidence": {
+        "line": 41,
+        "sourcePath": "colors.hairline-strong"
+      }
+    },
+    {
+      "path": "colors.inkdeep",
+      "sourcePath": "colors.ink-deep",
+      "type": "color",
+      "value": "#000000",
+      "status": "unverified",
+      "evidence": {
+        "line": 42,
+        "sourcePath": "colors.ink-deep"
+      }
+    },
+    {
+      "path": "colors.ink",
+      "sourcePath": "colors.ink",
+      "type": "color",
+      "value": "#1a1a1a",
+      "status": "unverified",
+      "evidence": {
+        "line": 43,
+        "sourcePath": "colors.ink"
+      }
+    },
+    {
+      "path": "colors.charcoal",
+      "sourcePath": "colors.charcoal",
+      "type": "color",
+      "value": "#37352f",
+      "status": "unverified",
+      "evidence": {
+        "line": 44,
+        "sourcePath": "colors.charcoal"
+      }
+    },
+    {
+      "path": "colors.slate",
+      "sourcePath": "colors.slate",
+      "type": "color",
+      "value": "#5d5b54",
+      "status": "unverified",
+      "evidence": {
+        "line": 45,
+        "sourcePath": "colors.slate"
+      }
+    },
+    {
+      "path": "colors.steel",
+      "sourcePath": "colors.steel",
+      "type": "color",
+      "value": "#787671",
+      "status": "unverified",
+      "evidence": {
+        "line": 46,
+        "sourcePath": "colors.steel"
+      }
+    },
+    {
+      "path": "colors.stone",
+      "sourcePath": "colors.stone",
+      "type": "color",
+      "value": "#a4a097",
+      "status": "unverified",
+      "evidence": {
+        "line": 47,
+        "sourcePath": "colors.stone"
+      }
+    },
+    {
+      "path": "colors.muted",
+      "sourcePath": "colors.muted",
+      "type": "color",
+      "value": "#bbb8b1",
+      "status": "unverified",
+      "evidence": {
+        "line": 48,
+        "sourcePath": "colors.muted"
+      }
+    },
+    {
+      "path": "colors.ondark",
+      "sourcePath": "colors.on-dark",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 49,
+        "sourcePath": "colors.on-dark"
+      }
+    },
+    {
+      "path": "colors.ondarkmuted",
+      "sourcePath": "colors.on-dark-muted",
+      "type": "color",
+      "value": "#a4a097",
+      "status": "unverified",
+      "evidence": {
+        "line": 50,
+        "sourcePath": "colors.on-dark-muted"
+      }
+    },
+    {
+      "path": "colors.semanticsuccess",
+      "sourcePath": "colors.semantic-success",
+      "type": "color",
+      "value": "#1aae39",
+      "status": "unverified",
+      "evidence": {
+        "line": 51,
+        "sourcePath": "colors.semantic-success"
+      }
+    },
+    {
+      "path": "colors.semanticwarning",
+      "sourcePath": "colors.semantic-warning",
+      "type": "color",
+      "value": "#dd5b00",
+      "status": "unverified",
+      "evidence": {
+        "line": 52,
+        "sourcePath": "colors.semantic-warning"
+      }
+    },
+    {
+      "path": "colors.semanticerror",
+      "sourcePath": "colors.semantic-error",
+      "type": "color",
+      "value": "#e03131",
+      "status": "unverified",
+      "evidence": {
+        "line": 53,
+        "sourcePath": "colors.semantic-error"
+      }
+    },
+    {
+      "path": "typography.herodisplay.fontfamily",
+      "sourcePath": "typography.hero-display.fontFamily",
+      "type": "fontFamily",
+      "value": "Notion Sans",
+      "status": "unverified",
+      "evidence": {
+        "line": 57,
+        "sourcePath": "typography.hero-display.fontFamily"
+      }
+    },
+    {
+      "path": "typography.herodisplay.fontsize",
+      "sourcePath": "typography.hero-display.fontSize",
+      "type": "dimension",
+      "value": "80px",
+      "status": "unverified",
+      "evidence": {
+        "line": 58,
+        "sourcePath": "typography.hero-display.fontSize"
+      }
+    },
+    {
+      "path": "typography.herodisplay.fontweight",
+      "sourcePath": "typography.hero-display.fontWeight",
+      "type": "number",
+      "value": 600,
+      "status": "unverified",
+      "evidence": {
+        "line": 59,
+        "sourcePath": "typography.hero-display.fontWeight"
+      }
+    },
+    {
+      "path": "typography.herodisplay.lineheight",
+      "sourcePath": "typography.hero-display.lineHeight",
+      "type": "number",
+      "value": 1.05,
+      "status": "unverified",
+      "evidence": {
+        "line": 60,
+        "sourcePath": "typography.hero-display.lineHeight"
+      }
+    },
+    {
+      "path": "typography.herodisplay.letterspacing",
+      "sourcePath": "typography.hero-display.letterSpacing",
+      "type": "dimension",
+      "value": "-2px",
+      "status": "unverified",
+      "evidence": {
+        "line": 61,
+        "sourcePath": "typography.hero-display.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.displaylg.fontfamily",
+      "sourcePath": "typography.display-lg.fontFamily",
+      "type": "fontFamily",
+      "value": "Notion Sans",
+      "status": "unverified",
+      "evidence": {
+        "line": 63,
+        "sourcePath": "typography.display-lg.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displaylg.fontsize",
+      "sourcePath": "typography.display-lg.fontSize",
+      "type": "dimension",
+      "value": "56px",
+      "status": "unverified",
+      "evidence": {
+        "line": 64,
+        "sourcePath": "typography.display-lg.fontSize"
+      }
+    },
+    {
+      "path": "typography.displaylg.fontweight",
+      "sourcePath": "typography.display-lg.fontWeight",
+      "type": "number",
+      "value": 600,
+      "status": "unverified",
+      "evidence": {
+        "line": 65,
+        "sourcePath": "typography.display-lg.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displaylg.lineheight",
+      "sourcePath": "typography.display-lg.lineHeight",
+      "type": "number",
+      "value": 1.1,
+      "status": "unverified",
+      "evidence": {
+        "line": 66,
+        "sourcePath": "typography.display-lg.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displaylg.letterspacing",
+      "sourcePath": "typography.display-lg.letterSpacing",
+      "type": "dimension",
+      "value": "-1px",
+      "status": "unverified",
+      "evidence": {
+        "line": 67,
+        "sourcePath": "typography.display-lg.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.heading1.fontfamily",
+      "sourcePath": "typography.heading-1.fontFamily",
+      "type": "fontFamily",
+      "value": "Notion Sans",
+      "status": "unverified",
+      "evidence": {
+        "line": 69,
+        "sourcePath": "typography.heading-1.fontFamily"
+      }
+    },
+    {
+      "path": "typography.heading1.fontsize",
+      "sourcePath": "typography.heading-1.fontSize",
+      "type": "dimension",
+      "value": "48px",
+      "status": "unverified",
+      "evidence": {
+        "line": 70,
+        "sourcePath": "typography.heading-1.fontSize"
+      }
+    },
+    {
+      "path": "typography.heading1.fontweight",
+      "sourcePath": "typography.heading-1.fontWeight",
+      "type": "number",
+      "value": 600,
+      "status": "unverified",
+      "evidence": {
+        "line": 71,
+        "sourcePath": "typography.heading-1.fontWeight"
+      }
+    },
+    {
+      "path": "typography.heading1.lineheight",
+      "sourcePath": "typography.heading-1.lineHeight",
+      "type": "number",
+      "value": 1.15,
+      "status": "unverified",
+      "evidence": {
+        "line": 72,
+        "sourcePath": "typography.heading-1.lineHeight"
+      }
+    },
+    {
+      "path": "typography.heading1.letterspacing",
+      "sourcePath": "typography.heading-1.letterSpacing",
+      "type": "dimension",
+      "value": "-0.5px",
+      "status": "unverified",
+      "evidence": {
+        "line": 73,
+        "sourcePath": "typography.heading-1.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.heading2.fontfamily",
+      "sourcePath": "typography.heading-2.fontFamily",
+      "type": "fontFamily",
+      "value": "Notion Sans",
+      "status": "unverified",
+      "evidence": {
+        "line": 75,
+        "sourcePath": "typography.heading-2.fontFamily"
+      }
+    },
+    {
+      "path": "typography.heading2.fontsize",
+      "sourcePath": "typography.heading-2.fontSize",
+      "type": "dimension",
+      "value": "36px",
+      "status": "unverified",
+      "evidence": {
+        "line": 76,
+        "sourcePath": "typography.heading-2.fontSize"
+      }
+    },
+    {
+      "path": "typography.heading2.fontweight",
+      "sourcePath": "typography.heading-2.fontWeight",
+      "type": "number",
+      "value": 600,
+      "status": "unverified",
+      "evidence": {
+        "line": 77,
+        "sourcePath": "typography.heading-2.fontWeight"
+      }
+    },
+    {
+      "path": "typography.heading2.lineheight",
+      "sourcePath": "typography.heading-2.lineHeight",
+      "type": "number",
+      "value": 1.2,
+      "status": "unverified",
+      "evidence": {
+        "line": 78,
+        "sourcePath": "typography.heading-2.lineHeight"
+      }
+    },
+    {
+      "path": "typography.heading2.letterspacing",
+      "sourcePath": "typography.heading-2.letterSpacing",
+      "type": "dimension",
+      "value": "-0.5px",
+      "status": "unverified",
+      "evidence": {
+        "line": 79,
+        "sourcePath": "typography.heading-2.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.heading3.fontfamily",
+      "sourcePath": "typography.heading-3.fontFamily",
+      "type": "fontFamily",
+      "value": "Notion Sans",
+      "status": "unverified",
+      "evidence": {
+        "line": 81,
+        "sourcePath": "typography.heading-3.fontFamily"
+      }
+    },
+    {
+      "path": "typography.heading3.fontsize",
+      "sourcePath": "typography.heading-3.fontSize",
+      "type": "dimension",
+      "value": "28px",
+      "status": "unverified",
+      "evidence": {
+        "line": 82,
+        "sourcePath": "typography.heading-3.fontSize"
+      }
+    },
+    {
+      "path": "typography.heading3.fontweight",
+      "sourcePath": "typography.heading-3.fontWeight",
+      "type": "number",
+      "value": 600,
+      "status": "unverified",
+      "evidence": {
+        "line": 83,
+        "sourcePath": "typography.heading-3.fontWeight"
+      }
+    },
+    {
+      "path": "typography.heading3.lineheight",
+      "sourcePath": "typography.heading-3.lineHeight",
+      "type": "number",
+      "value": 1.25,
+      "status": "unverified",
+      "evidence": {
+        "line": 84,
+        "sourcePath": "typography.heading-3.lineHeight"
+      }
+    },
+    {
+      "path": "typography.heading4.fontfamily",
+      "sourcePath": "typography.heading-4.fontFamily",
+      "type": "fontFamily",
+      "value": "Notion Sans",
+      "status": "unverified",
+      "evidence": {
+        "line": 86,
+        "sourcePath": "typography.heading-4.fontFamily"
+      }
+    },
+    {
+      "path": "typography.heading4.fontsize",
+      "sourcePath": "typography.heading-4.fontSize",
+      "type": "dimension",
+      "value": "22px",
+      "status": "unverified",
+      "evidence": {
+        "line": 87,
+        "sourcePath": "typography.heading-4.fontSize"
+      }
+    },
+    {
+      "path": "typography.heading4.fontweight",
+      "sourcePath": "typography.heading-4.fontWeight",
+      "type": "number",
+      "value": 600,
+      "status": "unverified",
+      "evidence": {
+        "line": 88,
+        "sourcePath": "typography.heading-4.fontWeight"
+      }
+    },
+    {
+      "path": "typography.heading4.lineheight",
+      "sourcePath": "typography.heading-4.lineHeight",
+      "type": "number",
+      "value": 1.3,
+      "status": "unverified",
+      "evidence": {
+        "line": 89,
+        "sourcePath": "typography.heading-4.lineHeight"
+      }
+    },
+    {
+      "path": "typography.heading5.fontfamily",
+      "sourcePath": "typography.heading-5.fontFamily",
+      "type": "fontFamily",
+      "value": "Notion Sans",
+      "status": "unverified",
+      "evidence": {
+        "line": 91,
+        "sourcePath": "typography.heading-5.fontFamily"
+      }
+    },
+    {
+      "path": "typography.heading5.fontsize",
+      "sourcePath": "typography.heading-5.fontSize",
+      "type": "dimension",
+      "value": "18px",
+      "status": "unverified",
+      "evidence": {
+        "line": 92,
+        "sourcePath": "typography.heading-5.fontSize"
+      }
+    },
+    {
+      "path": "typography.heading5.fontweight",
+      "sourcePath": "typography.heading-5.fontWeight",
+      "type": "number",
+      "value": 600,
+      "status": "unverified",
+      "evidence": {
+        "line": 93,
+        "sourcePath": "typography.heading-5.fontWeight"
+      }
+    },
+    {
+      "path": "typography.heading5.lineheight",
+      "sourcePath": "typography.heading-5.lineHeight",
+      "type": "number",
+      "value": 1.4,
+      "status": "unverified",
+      "evidence": {
+        "line": 94,
+        "sourcePath": "typography.heading-5.lineHeight"
+      }
+    },
+    {
+      "path": "typography.subtitle.fontfamily",
+      "sourcePath": "typography.subtitle.fontFamily",
+      "type": "fontFamily",
+      "value": "Notion Sans",
+      "status": "unverified",
+      "evidence": {
+        "line": 96,
+        "sourcePath": "typography.subtitle.fontFamily"
+      }
+    },
+    {
+      "path": "typography.subtitle.fontsize",
+      "sourcePath": "typography.subtitle.fontSize",
+      "type": "dimension",
+      "value": "18px",
+      "status": "unverified",
+      "evidence": {
+        "line": 97,
+        "sourcePath": "typography.subtitle.fontSize"
+      }
+    },
+    {
+      "path": "typography.subtitle.fontweight",
+      "sourcePath": "typography.subtitle.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 98,
+        "sourcePath": "typography.subtitle.fontWeight"
+      }
+    },
+    {
+      "path": "typography.subtitle.lineheight",
+      "sourcePath": "typography.subtitle.lineHeight",
+      "type": "number",
+      "value": 1.5,
+      "status": "unverified",
+      "evidence": {
+        "line": 99,
+        "sourcePath": "typography.subtitle.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodymd.fontfamily",
+      "sourcePath": "typography.body-md.fontFamily",
+      "type": "fontFamily",
+      "value": "Notion Sans",
+      "status": "unverified",
+      "evidence": {
+        "line": 101,
+        "sourcePath": "typography.body-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodymd.fontsize",
+      "sourcePath": "typography.body-md.fontSize",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 102,
+        "sourcePath": "typography.body-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodymd.fontweight",
+      "sourcePath": "typography.body-md.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 103,
+        "sourcePath": "typography.body-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodymd.lineheight",
+      "sourcePath": "typography.body-md.lineHeight",
+      "type": "number",
+      "value": 1.55,
+      "status": "unverified",
+      "evidence": {
+        "line": 104,
+        "sourcePath": "typography.body-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodymdmedium.fontfamily",
+      "sourcePath": "typography.body-md-medium.fontFamily",
+      "type": "fontFamily",
+      "value": "Notion Sans",
+      "status": "unverified",
+      "evidence": {
+        "line": 106,
+        "sourcePath": "typography.body-md-medium.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodymdmedium.fontsize",
+      "sourcePath": "typography.body-md-medium.fontSize",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 107,
+        "sourcePath": "typography.body-md-medium.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodymdmedium.fontweight",
+      "sourcePath": "typography.body-md-medium.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 108,
+        "sourcePath": "typography.body-md-medium.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodymdmedium.lineheight",
+      "sourcePath": "typography.body-md-medium.lineHeight",
+      "type": "number",
+      "value": 1.55,
+      "status": "unverified",
+      "evidence": {
+        "line": 109,
+        "sourcePath": "typography.body-md-medium.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodysm.fontfamily",
+      "sourcePath": "typography.body-sm.fontFamily",
+      "type": "fontFamily",
+      "value": "Notion Sans",
+      "status": "unverified",
+      "evidence": {
+        "line": 111,
+        "sourcePath": "typography.body-sm.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodysm.fontsize",
+      "sourcePath": "typography.body-sm.fontSize",
+      "type": "dimension",
+      "value": "14px",
+      "status": "unverified",
+      "evidence": {
+        "line": 112,
+        "sourcePath": "typography.body-sm.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodysm.fontweight",
+      "sourcePath": "typography.body-sm.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 113,
+        "sourcePath": "typography.body-sm.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodysm.lineheight",
+      "sourcePath": "typography.body-sm.lineHeight",
+      "type": "number",
+      "value": 1.5,
+      "status": "unverified",
+      "evidence": {
+        "line": 114,
+        "sourcePath": "typography.body-sm.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodysmmedium.fontfamily",
+      "sourcePath": "typography.body-sm-medium.fontFamily",
+      "type": "fontFamily",
+      "value": "Notion Sans",
+      "status": "unverified",
+      "evidence": {
+        "line": 116,
+        "sourcePath": "typography.body-sm-medium.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodysmmedium.fontsize",
+      "sourcePath": "typography.body-sm-medium.fontSize",
+      "type": "dimension",
+      "value": "14px",
+      "status": "unverified",
+      "evidence": {
+        "line": 117,
+        "sourcePath": "typography.body-sm-medium.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodysmmedium.fontweight",
+      "sourcePath": "typography.body-sm-medium.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 118,
+        "sourcePath": "typography.body-sm-medium.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodysmmedium.lineheight",
+      "sourcePath": "typography.body-sm-medium.lineHeight",
+      "type": "number",
+      "value": 1.5,
+      "status": "unverified",
+      "evidence": {
+        "line": 119,
+        "sourcePath": "typography.body-sm-medium.lineHeight"
+      }
+    },
+    {
+      "path": "typography.caption.fontfamily",
+      "sourcePath": "typography.caption.fontFamily",
+      "type": "fontFamily",
+      "value": "Notion Sans",
+      "status": "unverified",
+      "evidence": {
+        "line": 121,
+        "sourcePath": "typography.caption.fontFamily"
+      }
+    },
+    {
+      "path": "typography.caption.fontsize",
+      "sourcePath": "typography.caption.fontSize",
+      "type": "dimension",
+      "value": "13px",
+      "status": "unverified",
+      "evidence": {
+        "line": 122,
+        "sourcePath": "typography.caption.fontSize"
+      }
+    },
+    {
+      "path": "typography.caption.fontweight",
+      "sourcePath": "typography.caption.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 123,
+        "sourcePath": "typography.caption.fontWeight"
+      }
+    },
+    {
+      "path": "typography.caption.lineheight",
+      "sourcePath": "typography.caption.lineHeight",
+      "type": "number",
+      "value": 1.4,
+      "status": "unverified",
+      "evidence": {
+        "line": 124,
+        "sourcePath": "typography.caption.lineHeight"
+      }
+    },
+    {
+      "path": "typography.captionbold.fontfamily",
+      "sourcePath": "typography.caption-bold.fontFamily",
+      "type": "fontFamily",
+      "value": "Notion Sans",
+      "status": "unverified",
+      "evidence": {
+        "line": 126,
+        "sourcePath": "typography.caption-bold.fontFamily"
+      }
+    },
+    {
+      "path": "typography.captionbold.fontsize",
+      "sourcePath": "typography.caption-bold.fontSize",
+      "type": "dimension",
+      "value": "13px",
+      "status": "unverified",
+      "evidence": {
+        "line": 127,
+        "sourcePath": "typography.caption-bold.fontSize"
+      }
+    },
+    {
+      "path": "typography.captionbold.fontweight",
+      "sourcePath": "typography.caption-bold.fontWeight",
+      "type": "number",
+      "value": 600,
+      "status": "unverified",
+      "evidence": {
+        "line": 128,
+        "sourcePath": "typography.caption-bold.fontWeight"
+      }
+    },
+    {
+      "path": "typography.captionbold.lineheight",
+      "sourcePath": "typography.caption-bold.lineHeight",
+      "type": "number",
+      "value": 1.4,
+      "status": "unverified",
+      "evidence": {
+        "line": 129,
+        "sourcePath": "typography.caption-bold.lineHeight"
+      }
+    },
+    {
+      "path": "typography.micro.fontfamily",
+      "sourcePath": "typography.micro.fontFamily",
+      "type": "fontFamily",
+      "value": "Notion Sans",
+      "status": "unverified",
+      "evidence": {
+        "line": 131,
+        "sourcePath": "typography.micro.fontFamily"
+      }
+    },
+    {
+      "path": "typography.micro.fontsize",
+      "sourcePath": "typography.micro.fontSize",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 132,
+        "sourcePath": "typography.micro.fontSize"
+      }
+    },
+    {
+      "path": "typography.micro.fontweight",
+      "sourcePath": "typography.micro.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 133,
+        "sourcePath": "typography.micro.fontWeight"
+      }
+    },
+    {
+      "path": "typography.micro.lineheight",
+      "sourcePath": "typography.micro.lineHeight",
+      "type": "number",
+      "value": 1.4,
+      "status": "unverified",
+      "evidence": {
+        "line": 134,
+        "sourcePath": "typography.micro.lineHeight"
+      }
+    },
+    {
+      "path": "typography.microuppercase.fontfamily",
+      "sourcePath": "typography.micro-uppercase.fontFamily",
+      "type": "fontFamily",
+      "value": "Notion Sans",
+      "status": "unverified",
+      "evidence": {
+        "line": 136,
+        "sourcePath": "typography.micro-uppercase.fontFamily"
+      }
+    },
+    {
+      "path": "typography.microuppercase.fontsize",
+      "sourcePath": "typography.micro-uppercase.fontSize",
+      "type": "dimension",
+      "value": "11px",
+      "status": "unverified",
+      "evidence": {
+        "line": 137,
+        "sourcePath": "typography.micro-uppercase.fontSize"
+      }
+    },
+    {
+      "path": "typography.microuppercase.fontweight",
+      "sourcePath": "typography.micro-uppercase.fontWeight",
+      "type": "number",
+      "value": 600,
+      "status": "unverified",
+      "evidence": {
+        "line": 138,
+        "sourcePath": "typography.micro-uppercase.fontWeight"
+      }
+    },
+    {
+      "path": "typography.microuppercase.lineheight",
+      "sourcePath": "typography.micro-uppercase.lineHeight",
+      "type": "number",
+      "value": 1.4,
+      "status": "unverified",
+      "evidence": {
+        "line": 139,
+        "sourcePath": "typography.micro-uppercase.lineHeight"
+      }
+    },
+    {
+      "path": "typography.microuppercase.letterspacing",
+      "sourcePath": "typography.micro-uppercase.letterSpacing",
+      "type": "dimension",
+      "value": "1px",
+      "status": "unverified",
+      "evidence": {
+        "line": 140,
+        "sourcePath": "typography.micro-uppercase.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.buttonmd.fontfamily",
+      "sourcePath": "typography.button-md.fontFamily",
+      "type": "fontFamily",
+      "value": "Notion Sans",
+      "status": "unverified",
+      "evidence": {
+        "line": 142,
+        "sourcePath": "typography.button-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.buttonmd.fontsize",
+      "sourcePath": "typography.button-md.fontSize",
+      "type": "dimension",
+      "value": "14px",
+      "status": "unverified",
+      "evidence": {
+        "line": 143,
+        "sourcePath": "typography.button-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.buttonmd.fontweight",
+      "sourcePath": "typography.button-md.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 144,
+        "sourcePath": "typography.button-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.buttonmd.lineheight",
+      "sourcePath": "typography.button-md.lineHeight",
+      "type": "number",
+      "value": 1.3,
+      "status": "unverified",
+      "evidence": {
+        "line": 145,
+        "sourcePath": "typography.button-md.lineHeight"
+      }
+    },
+    {
+      "path": "rounded.xs",
+      "sourcePath": "rounded.xs",
+      "type": "dimension",
+      "value": "4px",
+      "status": "unverified",
+      "evidence": {
+        "line": 148,
+        "sourcePath": "rounded.xs"
+      }
+    },
+    {
+      "path": "rounded.sm",
+      "sourcePath": "rounded.sm",
+      "type": "dimension",
+      "value": "6px",
+      "status": "unverified",
+      "evidence": {
+        "line": 149,
+        "sourcePath": "rounded.sm"
+      }
+    },
+    {
+      "path": "rounded.md",
+      "sourcePath": "rounded.md",
+      "type": "dimension",
+      "value": "8px",
+      "status": "unverified",
+      "evidence": {
+        "line": 150,
+        "sourcePath": "rounded.md"
+      }
+    },
+    {
+      "path": "rounded.lg",
+      "sourcePath": "rounded.lg",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 151,
+        "sourcePath": "rounded.lg"
+      }
+    },
+    {
+      "path": "rounded.xl",
+      "sourcePath": "rounded.xl",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 152,
+        "sourcePath": "rounded.xl"
+      }
+    },
+    {
+      "path": "rounded.xxl",
+      "sourcePath": "rounded.xxl",
+      "type": "dimension",
+      "value": "20px",
+      "status": "unverified",
+      "evidence": {
+        "line": 153,
+        "sourcePath": "rounded.xxl"
+      }
+    },
+    {
+      "path": "rounded.xxxl",
+      "sourcePath": "rounded.xxxl",
+      "type": "dimension",
+      "value": "24px",
+      "status": "unverified",
+      "evidence": {
+        "line": 154,
+        "sourcePath": "rounded.xxxl"
+      }
+    },
+    {
+      "path": "rounded.full",
+      "sourcePath": "rounded.full",
+      "type": "dimension",
+      "value": "9999px",
+      "status": "unverified",
+      "evidence": {
+        "line": 155,
+        "sourcePath": "rounded.full"
+      }
+    },
+    {
+      "path": "spacing.xxs",
+      "sourcePath": "spacing.xxs",
+      "type": "dimension",
+      "value": "4px",
+      "status": "unverified",
+      "evidence": {
+        "line": 158,
+        "sourcePath": "spacing.xxs"
+      }
+    },
+    {
+      "path": "spacing.xs",
+      "sourcePath": "spacing.xs",
+      "type": "dimension",
+      "value": "8px",
+      "status": "unverified",
+      "evidence": {
+        "line": 159,
+        "sourcePath": "spacing.xs"
+      }
+    },
+    {
+      "path": "spacing.sm",
+      "sourcePath": "spacing.sm",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 160,
+        "sourcePath": "spacing.sm"
+      }
+    },
+    {
+      "path": "spacing.md",
+      "sourcePath": "spacing.md",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 161,
+        "sourcePath": "spacing.md"
+      }
+    },
+    {
+      "path": "spacing.lg",
+      "sourcePath": "spacing.lg",
+      "type": "dimension",
+      "value": "20px",
+      "status": "unverified",
+      "evidence": {
+        "line": 162,
+        "sourcePath": "spacing.lg"
+      }
+    },
+    {
+      "path": "spacing.xl",
+      "sourcePath": "spacing.xl",
+      "type": "dimension",
+      "value": "24px",
+      "status": "unverified",
+      "evidence": {
+        "line": 163,
+        "sourcePath": "spacing.xl"
+      }
+    },
+    {
+      "path": "spacing.xxl",
+      "sourcePath": "spacing.xxl",
+      "type": "dimension",
+      "value": "32px",
+      "status": "unverified",
+      "evidence": {
+        "line": 164,
+        "sourcePath": "spacing.xxl"
+      }
+    },
+    {
+      "path": "spacing.xxxl",
+      "sourcePath": "spacing.xxxl",
+      "type": "dimension",
+      "value": "40px",
+      "status": "unverified",
+      "evidence": {
+        "line": 165,
+        "sourcePath": "spacing.xxxl"
+      }
+    },
+    {
+      "path": "spacing.sectionsm",
+      "sourcePath": "spacing.section-sm",
+      "type": "dimension",
+      "value": "48px",
+      "status": "unverified",
+      "evidence": {
+        "line": 166,
+        "sourcePath": "spacing.section-sm"
+      }
+    },
+    {
+      "path": "spacing.section",
+      "sourcePath": "spacing.section",
+      "type": "dimension",
+      "value": "64px",
+      "status": "unverified",
+      "evidence": {
+        "line": 167,
+        "sourcePath": "spacing.section"
+      }
+    },
+    {
+      "path": "spacing.sectionlg",
+      "sourcePath": "spacing.section-lg",
+      "type": "dimension",
+      "value": "96px",
+      "status": "unverified",
+      "evidence": {
+        "line": 168,
+        "sourcePath": "spacing.section-lg"
+      }
+    },
+    {
+      "path": "spacing.hero",
+      "sourcePath": "spacing.hero",
+      "type": "dimension",
+      "value": "120px",
+      "status": "unverified",
+      "evidence": {
+        "line": 169,
+        "sourcePath": "spacing.hero"
+      }
+    }
+  ],
+  "rejectedTokens": [],
+  "homepage": {
+    "status": "missing",
+    "candidates": [],
+    "verification": {
+      "status": "verified",
+      "url": "https://www.notion.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://www.notion.com/",
+          "title": "The AI workspace that works for you. | Notion",
+          "note": "Public homepage read requested https://www.notion.com; final URL https://www.notion.com/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    }
+  },
+  "completeness": {
+    "presentFields": [
+      "colors",
+      "typography",
+      "rounded",
+      "spacing",
+      "components"
+    ],
+    "missingFields": [],
+    "tokenRoles": "incomplete",
+    "note": "Missing fields are not reconstructed. Prose-only colors have no inferred semantic role."
+  },
+  "provenance": {
+    "status": "independent-analysis",
+    "sources": [
+      {
+        "title": "VoltAgent awesome-design-md independent analysis",
+        "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/notion/DESIGN.md"
+      }
+    ],
+    "verification": "unverified-secondary-analysis"
+  },
+  "limitations": [
+    "Independent secondary analysis, not an official brand system; all reported values are unverified.",
+    "No brand assets, logos, font binaries or screenshots copied. Font names are documentary, not font licenses.",
+    "Safe CSS literals are extracted without claiming complete roles, state coverage or visual fidelity.",
+    "Markdown is retained as inert evidence, never executed or rendered as raw HTML."
+  ]
+}

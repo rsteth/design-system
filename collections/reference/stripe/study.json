@@ -1,0 +1,1844 @@
+{
+  "schemaVersion": 1,
+  "id": "reference-stripe",
+  "title": "Stripe",
+  "classification": "independent-unverified-analysis",
+  "source": {
+    "repository": "https://github.com/VoltAgent/awesome-design-md",
+    "fork": "https://github.com/rsteth/awesome-design-md-p",
+    "revision": "fcc70284932276d085f01ef9f83edde90b1258cb",
+    "path": "design-md/stripe/DESIGN.md",
+    "sha256": "5c8806b7dd3e0c2554ccba9d1e2a7c78e7c6e50e44fcf6ff5daea6026f8a9ed9",
+    "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/stripe/DESIGN.md"
+  },
+  "sourceName": "Stripi-Inspired-design-analysis",
+  "titleProvenance": {
+    "status": "inferred",
+    "basis": "Source directory label, normalized for navigation; original source name is retained without correction.",
+    "sourceValue": "stripe",
+    "originalName": "Stripi-Inspired-design-analysis"
+  },
+  "description": "An inspired interpretation of Stripi's design language — a financial-infrastructure brand built on a deep navy ink, an electric indigo primary, and a recurring atmospheric gradient mesh that occupies the upper third of nearly every marketing page. The system pairs the proprietary Sohne family at thin (300) weights with negative letter-spacing for editorial-density display headlines, and uses tabular-figure body type where money and numerics matter. Buttons are tight-radius pills, cards live on near-white surfaces, and the dashboard track flips polarity to a familiar dark-app shell.",
+  "analysis": {
+    "version": "alpha",
+    "name": "Stripi-Inspired-design-analysis",
+    "description": "An inspired interpretation of Stripi's design language — a financial-infrastructure brand built on a deep navy ink, an electric indigo primary, and a recurring atmospheric gradient mesh that occupies the upper third of nearly every marketing page. The system pairs the proprietary Sohne family at thin (300) weights with negative letter-spacing for editorial-density display headlines, and uses tabular-figure body type where money and numerics matter. Buttons are tight-radius pills, cards live on near-white surfaces, and the dashboard track flips polarity to a familiar dark-app shell.",
+    "colors": {
+      "primary": "#533afd",
+      "primary-deep": "#4434d4",
+      "primary-press": "#2e2b8c",
+      "primary-soft": "#665efd",
+      "primary-bg-subdued-hover": "#b9b9f9",
+      "brand-dark-900": "#1c1e54",
+      "ink": "#0d253d",
+      "ink-secondary": "#273951",
+      "ink-mute": "#64748d",
+      "ink-mute-2": "#61718a",
+      "on-primary": "#ffffff",
+      "canvas": "#ffffff",
+      "canvas-soft": "#f6f9fc",
+      "canvas-cream": "#f5e9d4",
+      "hairline": "#e3e8ee",
+      "hairline-input": "#a8c3de",
+      "ruby": "#ea2261",
+      "magenta": "#f96bee",
+      "lemon": "#9b6829",
+      "shadow-blue": "#003770"
+    },
+    "typography": {
+      "display-xxl": {
+        "fontFamily": "sohne-var, 'SF Pro Display', system-ui, -apple-system, sans-serif",
+        "fontSize": "56px",
+        "fontWeight": 300,
+        "lineHeight": 1.03,
+        "letterSpacing": "-1.4px",
+        "fontFeature": "ss01"
+      },
+      "display-xl": {
+        "fontFamily": "sohne-var, 'SF Pro Display', system-ui, -apple-system, sans-serif",
+        "fontSize": "48px",
+        "fontWeight": 300,
+        "lineHeight": 1.15,
+        "letterSpacing": "-0.96px",
+        "fontFeature": "ss01"
+      },
+      "display-lg": {
+        "fontFamily": "sohne-var, 'SF Pro Display', system-ui, -apple-system, sans-serif",
+        "fontSize": "32px",
+        "fontWeight": 300,
+        "lineHeight": 1.1,
+        "letterSpacing": "-0.64px",
+        "fontFeature": "ss01"
+      },
+      "display-md": {
+        "fontFamily": "sohne-var, 'SF Pro Display', system-ui, -apple-system, sans-serif",
+        "fontSize": "26px",
+        "fontWeight": 300,
+        "lineHeight": 1.12,
+        "letterSpacing": "-0.26px",
+        "fontFeature": "ss01"
+      },
+      "heading-lg": {
+        "fontFamily": "sohne-var, 'SF Pro Display', system-ui, -apple-system, sans-serif",
+        "fontSize": "22px",
+        "fontWeight": 300,
+        "lineHeight": 1.1,
+        "letterSpacing": "-0.22px",
+        "fontFeature": "ss01"
+      },
+      "heading-md": {
+        "fontFamily": "sohne-var, 'SF Pro Display', system-ui, -apple-system, sans-serif",
+        "fontSize": "20px",
+        "fontWeight": 300,
+        "lineHeight": 1.4,
+        "letterSpacing": "-0.2px",
+        "fontFeature": "ss01"
+      },
+      "heading-sm": {
+        "fontFamily": "sohne-var, 'SF Pro Display', system-ui, -apple-system, sans-serif",
+        "fontSize": "18px",
+        "fontWeight": 300,
+        "lineHeight": 1.4,
+        "letterSpacing": 0,
+        "fontFeature": "ss01"
+      },
+      "body-lg": {
+        "fontFamily": "sohne-var, 'SF Pro Display', system-ui, -apple-system, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": 300,
+        "lineHeight": 1.4,
+        "letterSpacing": 0,
+        "fontFeature": "ss01"
+      },
+      "body-md": {
+        "fontFamily": "sohne-var, 'SF Pro Display', system-ui, -apple-system, sans-serif",
+        "fontSize": "15px",
+        "fontWeight": 300,
+        "lineHeight": 1.4,
+        "letterSpacing": 0,
+        "fontFeature": "ss01"
+      },
+      "body-tabular": {
+        "fontFamily": "sohne-var, 'SF Pro Display', system-ui, -apple-system, sans-serif",
+        "fontSize": "14px",
+        "fontWeight": 300,
+        "lineHeight": 1.4,
+        "letterSpacing": "-0.42px",
+        "fontFeature": "tnum"
+      },
+      "button-md": {
+        "fontFamily": "sohne-var, 'SF Pro Display', system-ui, -apple-system, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": 400,
+        "lineHeight": 1,
+        "letterSpacing": 0,
+        "fontFeature": "ss01"
+      },
+      "button-sm": {
+        "fontFamily": "sohne-var, 'SF Pro Display', system-ui, -apple-system, sans-serif",
+        "fontSize": "14px",
+        "fontWeight": 400,
+        "lineHeight": 1,
+        "letterSpacing": 0,
+        "fontFeature": "ss01"
+      },
+      "caption": {
+        "fontFamily": "sohne-var, 'SF Pro Display', system-ui, -apple-system, sans-serif",
+        "fontSize": "13px",
+        "fontWeight": 400,
+        "lineHeight": 1.4,
+        "letterSpacing": "-0.39px",
+        "fontFeature": "tnum"
+      },
+      "micro": {
+        "fontFamily": "sohne-var, 'SF Pro Display', system-ui, -apple-system, sans-serif",
+        "fontSize": "11px",
+        "fontWeight": 300,
+        "lineHeight": 1.4,
+        "letterSpacing": 0,
+        "fontFeature": "ss01"
+      },
+      "micro-cap": {
+        "fontFamily": "sohne-var, 'SF Pro Display', system-ui, -apple-system, sans-serif",
+        "fontSize": "10px",
+        "fontWeight": 400,
+        "lineHeight": 1.15,
+        "letterSpacing": "0.1px",
+        "fontFeature": "ss01"
+      }
+    },
+    "rounded": {
+      "xs": "4px",
+      "sm": "6px",
+      "md": "8px",
+      "lg": "12px",
+      "xl": "16px",
+      "pill": "9999px"
+    },
+    "spacing": {
+      "xxs": "2px",
+      "xs": "4px",
+      "sm": "8px",
+      "md": "12px",
+      "lg": "16px",
+      "xl": "24px",
+      "xxl": "32px",
+      "huge": "64px"
+    },
+    "components": {
+      "button-primary-pill": {
+        "backgroundColor": "{colors.primary}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.pill}",
+        "padding": "8px 16px"
+      },
+      "button-primary-pill-pressed": {
+        "backgroundColor": "{colors.primary-press}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.pill}",
+        "padding": "8px 16px"
+      },
+      "button-secondary": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.primary}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.pill}",
+        "padding": "8px 16px"
+      },
+      "button-on-dark": {
+        "backgroundColor": "{colors.brand-dark-900}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.pill}",
+        "padding": "8px 16px"
+      },
+      "text-input": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.sm}",
+        "padding": "8px 12px"
+      },
+      "text-input-focused": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.sm}",
+        "padding": "8px 12px"
+      },
+      "card-feature-light": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.lg}",
+        "padding": "32px"
+      },
+      "card-pricing": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.lg}",
+        "padding": "32px"
+      },
+      "card-pricing-featured": {
+        "backgroundColor": "{colors.brand-dark-900}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.lg}",
+        "padding": "32px"
+      },
+      "card-cream-band": {
+        "backgroundColor": "{colors.canvas-cream}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.lg}",
+        "padding": "32px"
+      },
+      "card-dashboard-mockup": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-tabular}",
+        "rounded": "{rounded.lg}",
+        "padding": "24px"
+      },
+      "pill-tag-soft": {
+        "backgroundColor": "{colors.primary-bg-subdued-hover}",
+        "textColor": "{colors.primary-deep}",
+        "typography": "{typography.micro-cap}",
+        "rounded": "{rounded.pill}",
+        "padding": "4px 8px"
+      },
+      "nav-bar-on-mesh": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.xs}",
+        "padding": "16px 24px"
+      },
+      "link-on-light": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.primary}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.xs}",
+        "padding": "0px"
+      },
+      "footer-light": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink-mute}",
+        "typography": "{typography.caption}",
+        "rounded": "{rounded.xs}",
+        "padding": "64px 24px"
+      }
+    }
+  },
+  "normalizationRepairs": [],
+  "sections": [
+    {
+      "heading": "Overview",
+      "level": 2,
+      "text": "Stripi's design language opens with the gradient mesh. A wide horizontal band of pastel cream, sherbet orange, lavender, electric indigo, and ruby pink occupies the upper third of nearly every marketing page — the brand's instantly-recognizable atmospheric backdrop. Type and product UI mockups float above it on `{colors.canvas}` (white), with the gradient acting as both decoration and visual anchor. The lower portion of the page returns to white, with feature explanations on `{colors.canvas-soft}` (a barely-tinted cool off-white) and dashboard product mockups composited as faux IDE/console panels in deep navy.\n\nThe color system has two primary roles. **Indigo** (`{colors.primary}` — `#533afd`) is the brand's signature CTA color, used sparingly: one filled pill per band. **Deep navy** (`{colors.ink}` — `#0d253d`) is the universal body text color and the fill of dashboard mockups, the featured pricing tier, and the dark-app surfaces on the dashboard track. Ruby (`{colors.ruby}`) and magenta (`{colors.magenta}`) appear inside the gradient mesh and as accent dots in product UI mockups; they are not used as button colors.\n\nTypography is built around **Sohne** at weight 300 with negative letter-spacing — the brand's editorial-density display signature. Display sizes (32–56px) use -1.4px to -0.64px tracking; body sizes use 0; tabular caption sizes (where money and numerics matter) use the OpenType `tnum` feature plus a tightening -0.36 to -0.42px tracking. The `ss01` stylistic set is enabled across all roles.\n\n**Key Characteristics:**\n- Gradient-mesh backdrop on every marketing hero — cream/orange/lavender/indigo/ruby horizontally washed across the upper third of the page.\n- Single-indigo CTA hierarchy: filled `{colors.primary}` pill is the only filled button on marketing surfaces.\n- Sohne thin (weight 300) display tier with negative tracking from -1.4px to -0.2px depending on size.\n- Tabular-figure body type (`tnum`) for any cell containing money or numerics — the brand's quiet financial-data signal.\n- Dark-app dashboard track: deep navy product UI mockups sit composited above the white canvas, frequently with rendered code or dashboard tables inside.\n- Pill-shaped buttons (`{rounded.pill}` 9999px) with tight `8px 16px` padding — short, decisive, transactional.\n- Cream-band feature cards (`{colors.canvas-cream}`) introduce a warm interlude between blue/white sections without breaking the brand's chromatic logic.",
+      "line": 246
+    },
+    {
+      "heading": "Colors",
+      "level": 2,
+      "text": "> **Source pages:** home (`/`), `/payments`, `/pricing`, `dashboard.stripe.com/register/payments`.",
+      "line": 263
+    },
+    {
+      "heading": "Brand & Accent",
+      "level": 3,
+      "text": "- **Indigo** (`{colors.primary}` — `#533afd`): The brand's signature CTA color. Filled-pill button, link emphasis, gradient anchor.\n- **Indigo Deep** (`{colors.primary-deep}` — `#4434d4`): A deeper indigo used in gradient mid-stops and as the press-state warmer alternative.\n- **Indigo Press** (`{colors.primary-press}` — `#2e2b8c`): Pressed-state lift of the primary.\n- **Indigo Soft** (`{colors.primary-soft}` — `#665efd`): A lighter indigo used in product-UI accents and chart highlights.\n- **Indigo Subdued** (`{colors.primary-bg-subdued-hover}` — `#b9b9f9`): Pale indigo fill used as soft tag background.\n- **Brand Dark 900** (`{colors.brand-dark-900}` — `#1c1e54`): The deep navy used on the featured pricing tier and dashboard chrome.\n- **Ruby** (`{colors.ruby}` — `#ea2261`): Gradient accent and chart highlight; never a button.\n- **Magenta** (`{colors.magenta}` — `#f96bee`): Brighter pink stop in gradient meshes.\n- **Lemon** (`{colors.lemon}` — `#9b6829`): Warm sherbet stop in gradient backdrops.",
+      "line": 267
+    },
+    {
+      "heading": "Surface",
+      "level": 3,
+      "text": "- **Canvas** (`{colors.canvas}` — `#ffffff`): Default page background.\n- **Canvas Soft** (`{colors.canvas-soft}` — `#f6f9fc`): Cool-tinted off-white used on feature bands beneath the gradient hero.\n- **Canvas Cream** (`{colors.canvas-cream}` — `#f5e9d4`): Warm cream used as a feature-band fill — the brand's chromatic interlude.\n- **Hairline** (`{colors.hairline}` — `#e3e8ee`): 1px borders on cards and tables.\n- **Hairline Input** (`{colors.hairline-input}` — `#a8c3de`): Slightly cooler hairline used on form inputs.",
+      "line": 278
+    },
+    {
+      "heading": "Text",
+      "level": 3,
+      "text": "- **Ink** (`{colors.ink}` — `#0d253d`): Default body text color across the brand. Deep navy, never pure black.\n- **Ink Secondary** (`{colors.ink-secondary}` — `#273951`): Secondary text on white.\n- **Ink Mute** (`{colors.ink-mute}` — `#64748d`): Helper text, captions, table labels.\n- **Ink Mute 2** (`{colors.ink-mute-2}` — `#61718a`): Near-equivalent to ink-mute used in nav.\n- **On Primary** (`{colors.on-primary}` — `#ffffff`): Text on indigo / dark-navy surfaces.",
+      "line": 285
+    },
+    {
+      "heading": "Semantic",
+      "level": 3,
+      "text": "The brand does not use a separate semantic color palette in the marketing system — error / success states live in dashboard-product UI specifically.",
+      "line": 292
+    },
+    {
+      "heading": "Typography",
+      "level": 2,
+      "text": "",
+      "line": 295
+    },
+    {
+      "heading": "Font Family",
+      "level": 3,
+      "text": "The display and UI tier is **Sohne** (proprietary, licensed from Klim Type Foundry) at weights 300 (thin) and 400 (regular). The variable font (`sohne-var`) is loaded with `font-feature-settings: \"ss01\"` enabled globally — the stylistic set substitutes a single-story `a` and other character variants that are part of the brand's typographic signature.\n\nWhen Sohne is unavailable, fall back to **SF Pro Display** at thin weights, then system-ui. For maximum brand fidelity, **Inter** (open-source) at weight 300 with `font-feature-settings: \"ss01\"` and `letter-spacing: -1.4px` on display sizes approximates the rhythm closely.",
+      "line": 297
+    },
+    {
+      "heading": "Hierarchy",
+      "level": 3,
+      "text": "| Token | Size | Weight | Line Height | Letter Spacing | Use |\n|---|---|---|---|---|---|\n| `{typography.display-xxl}` | 56px | 300 | 1.03 | -1.4px | Hero headline |\n| `{typography.display-xl}` | 48px | 300 | 1.15 | -0.96px | Section opener |\n| `{typography.display-lg}` | 32px | 300 | 1.1 | -0.64px | Card title / sub-section |\n| `{typography.display-md}` | 26px | 300 | 1.12 | -0.26px | Compact card title |\n| `{typography.heading-lg}` | 22px | 300 | 1.1 | -0.22px | Pricing tier name |\n| `{typography.heading-md}` | 20px | 300 | 1.4 | -0.2px | Section sub-heading |\n| `{typography.heading-sm}` | 18px | 300 | 1.4 | 0 | Mini-section label |\n| `{typography.body-lg}` | 16px | 300 | 1.4 | 0 | Marketing body lead |\n| `{typography.body-md}` | 15px | 300 | 1.4 | 0 | Default UI body |\n| `{typography.body-tabular}` | 14px | 300 | 1.4 | -0.42px | Money / numeric tables (uses `tnum`) |\n| `{typography.button-md}` | 16px | 400 | 1.0 | 0 | Pill button label |\n| `{typography.button-sm}` | 14px | 400 | 1.0 | 0 | Compact pill label |\n| `{typography.caption}` | 13px | 400 | 1.4 | -0.39px | Helper, table labels |\n| `{typography.micro}` | 11px | 300 | 1.4 | 0 | Fine print |\n| `{typography.micro-cap}` | 10px | 400 | 1.15 | 0.1px | All-caps eyebrow |",
+      "line": 303
+    },
+    {
+      "heading": "Principles",
+      "level": 3,
+      "text": "- **Thin weight is the brand.** Display tiers always render at weight 300. Bumping to 400+ removes the brand's editorial air.\n- **Negative tracking on display.** -1.4px at 56px, scaling proportionally down to -0.2px at 20px. The negative tracking is the brand's typographic signature.\n- **Tabular figures for money.** Any cell rendering currency, transaction amounts, or numeric counts uses `font-feature-settings: \"tnum\"` plus a tightening tracking. The brand quietly signals its financial DNA through this micro-detail.\n- **`ss01` globally.** Apply `font-feature-settings: \"ss01\"` to the body element so the stylistic-set substitution is on for every text role.",
+      "line": 323
+    },
+    {
+      "heading": "Note on Font Substitutes",
+      "level": 3,
+      "text": "Sohne is proprietary. Use **Inter** (open-source via Google Fonts) at weight 300 with `letter-spacing: -1.4px` and `font-feature-settings: \"ss01\"` for display tiers — Inter is the closest open-source analogue. For body sizes, Inter at 300 weight with `font-feature-settings: \"tnum\"` (where applicable) is the canonical substitute. Avoid Helvetica or system-ui defaults — they're heavier than the brand needs.",
+      "line": 329
+    },
+    {
+      "heading": "Layout",
+      "level": 2,
+      "text": "",
+      "line": 332
+    },
+    {
+      "heading": "Spacing System",
+      "level": 3,
+      "text": "- **Base unit**: 8px (with 2 / 4 / 12 sub-tokens for fine work).\n- **Tokens**: `{spacing.xxs}` 2px · `{spacing.xs}` 4px · `{spacing.sm}` 8px · `{spacing.md}` 12px · `{spacing.lg}` 16px · `{spacing.xl}` 24px · `{spacing.xxl}` 32px · `{spacing.huge}` 64px.\n- **Section padding**: 64–96px on marketing surfaces; 32–48px on dashboard / product surfaces.\n- **Card internal padding**: 32px on feature cards; 24px on dashboard mockups.",
+      "line": 334
+    },
+    {
+      "heading": "Grid & Container",
+      "level": 3,
+      "text": "- Marketing pages center in a ~1200px container with the gradient mesh extending edge-to-edge above.\n- Pricing collapses 4-up → 2-up → 1-up at 1024 / 768 breakpoints.\n- Dashboard product mockups use their own internal grids (12-col tables, 3-col card grids) rendered as static composites.",
+      "line": 340
+    },
+    {
+      "heading": "Whitespace Philosophy",
+      "level": 3,
+      "text": "The gradient mesh occupies the upper third of the page; the white canvas below is generously padded. Section gaps tend toward 96px, with content tightening to 32px on dashboard / pricing pages where users compare and act.",
+      "line": 345
+    },
+    {
+      "heading": "Elevation & Depth",
+      "level": 2,
+      "text": "| Level | Treatment | Use |\n|---|---|---|\n| 0 | Flat | Default surface |\n| 1 | `box-shadow: rgba(0,55,112,0.08) 0 1px 3px` | Card lift on white |\n| 2 | `box-shadow: rgba(0,55,112,0.08) 0 8px 24px, rgba(0,55,112,0.04) 0 2px 6px` | Floating panels, dashboard mockup chrome |\n| 3 | Gradient mesh backdrop | The brand's primary depth medium — atmospheric color rather than literal shadow |",
+      "line": 348
+    },
+    {
+      "heading": "Decorative Depth",
+      "level": 3,
+      "text": "The gradient mesh IS the depth system. Implemented as a layered SVG or large background image rather than CSS gradients (the actual mesh has organic blob shapes that aren't CSS-renderable). The mesh provides the brand's signature lift; literal shadows are reserved for product-UI mockups and stay subtle.",
+      "line": 357
+    },
+    {
+      "heading": "Shapes",
+      "level": 2,
+      "text": "",
+      "line": 360
+    },
+    {
+      "heading": "Border Radius Scale",
+      "level": 3,
+      "text": "| Token | Value | Use |\n|---|---|---|\n| `{rounded.xs}` | 4px | Hairline tags, table chrome |\n| `{rounded.sm}` | 6px | Form inputs |\n| `{rounded.md}` | 8px | Compact cards, alerts |\n| `{rounded.lg}` | 12px | Pricing cards, feature cards |\n| `{rounded.xl}` | 16px | Dashboard product mockup chrome |\n| `{rounded.pill}` | 9999px | All buttons, tag pills |",
+      "line": 362
+    },
+    {
+      "heading": "Photography Geometry",
+      "level": 3,
+      "text": "The brand uses **product UI mockups** more than photography. Dashboard composites render as faux IDE/terminal/dashboard chrome inside `{rounded.lg}` 12px containers with a subtle `box-shadow`. Real photography appears in customer logo strips and the rare case-study card; treated as inset 4:3 with no shadow.",
+      "line": 373
+    },
+    {
+      "heading": "Components",
+      "level": 2,
+      "text": "",
+      "line": 376
+    },
+    {
+      "heading": "Buttons",
+      "level": 3,
+      "text": "**`button-primary-pill`** — the dominant CTA system-wide.\n- Background `{colors.primary}`, text `{colors.on-primary}`, type `{typography.button-md}`, padding `{spacing.sm} {spacing.lg}` (8px 16px), rounded `{rounded.pill}` 9999px.\n- Pressed state `button-primary-pill-pressed` shifts background to `{colors.primary-press}`.\n\n**`button-secondary`** — outline-style alternative.\n- Background `{colors.canvas}`, text `{colors.primary}`, 1px solid `{colors.primary}` border, same pill geometry.\n\n**`button-on-dark`** — used on dashboard / dark surfaces.\n- Background `{colors.brand-dark-900}`, text `{colors.on-primary}`, same pill geometry.",
+      "line": 378
+    },
+    {
+      "heading": "Cards & Containers",
+      "level": 3,
+      "text": "**`card-feature-light`** — feature explanation card on white.\n- Background `{colors.canvas}`, padding `{spacing.xxl}`, rounded `{rounded.lg}` 12px, 1px `{colors.hairline}` border, optional Level 1 shadow.\n\n**`card-pricing`** — standard pricing tier.\n- Background `{colors.canvas}`, padding `{spacing.xxl}`, rounded `{rounded.lg}`, 1px `{colors.hairline}` border. Title `{typography.heading-lg}`, price `{typography.display-md}`, body `{typography.body-md}`, CTA pinned bottom as `button-primary-pill`.\n\n**`card-pricing-featured`** — the inverted dark featured tier.\n- Background `{colors.brand-dark-900}`, text `{colors.on-primary}`, otherwise identical structure to `card-pricing`. The deep-navy fill is the brand's distinctive featured-tier choice.\n\n**`card-cream-band`** — warm interlude card.\n- Background `{colors.canvas-cream}`, text `{colors.ink}`, padding `{spacing.xxl}`, rounded `{rounded.lg}`. Used to break up the indigo / white rhythm with warmth.\n\n**`card-dashboard-mockup`** — composited dashboard / product UI screenshot.\n- Background `{colors.canvas}`, type `{typography.body-tabular}` (with `tnum`), padding `{spacing.xl}` 24px, rounded `{rounded.lg}` 12px, Level 2 shadow. Often contains nested mini-mockups: code preview + dashboard table + chart card.",
+      "line": 390
+    },
+    {
+      "heading": "Inputs & Forms",
+      "level": 3,
+      "text": "**`text-input`** — standard form field.\n- Background `{colors.canvas}`, text `{colors.ink}`, type `{typography.body-md}`, padding `{spacing.sm} {spacing.md}` (8px 12px), rounded `{rounded.sm}` 6px, 1px `{colors.hairline-input}` border.\n- Focus state `text-input-focused`: border swaps to `{colors.primary}`.",
+      "line": 407
+    },
+    {
+      "heading": "Navigation",
+      "level": 3,
+      "text": "**`nav-bar-on-mesh`** — top nav floating over the gradient hero.\n- Background `{colors.canvas}` (or transparent depending on scroll), text `{colors.ink}`, padding `{spacing.lg} {spacing.xl}`. Logo wordmark on the left, primary nav center, sign-in + filled `button-primary-pill` on the right.",
+      "line": 413
+    },
+    {
+      "heading": "Pills, Tags, and Chips",
+      "level": 3,
+      "text": "**`pill-tag-soft`** — subdued indigo tag.\n- Background `{colors.primary-bg-subdued-hover}`, text `{colors.primary-deep}`, type `{typography.micro-cap}`, padding `4px 8px`, rounded `{rounded.pill}`.",
+      "line": 418
+    },
+    {
+      "heading": "Signature Components",
+      "level": 3,
+      "text": "**Gradient Mesh Backdrop** — pastel cream → sherbet orange → lavender → indigo → ruby pink stops blurred horizontally across the upper third of the page. Implemented as SVG or a large background image — not a flat CSS gradient (the real mesh has organic blob shapes).\n\n**Composited Dashboard Mockup** — multi-layer faux-product-UI compositions: an IDE panel on the left, a dashboard table center, a chart card on the right, all rendered at small scale inside `{rounded.lg}` containers with subtle Level 2 shadows. The composite is the brand's most-photographed feature.\n\n**Tabular-Figure Money Type** — every number rendering money, count, or transaction value uses `font-feature-settings: \"tnum\"`. The brand's quiet signal that it's a financial-infrastructure platform.\n\n**`link-on-light`** — inline links on light surfaces.\n- Text `{colors.primary}` rendered in `{typography.body-md}`, no underline by default.\n\n**`footer-light`** — site-wide footer.\n- Background `{colors.canvas}`, text `{colors.ink-mute}`, type `{typography.caption}`, padding `{spacing.huge} {spacing.xl}` (64px 24px). Holds 4–6 columns of link groups, social icons, and a small legal row.",
+      "line": 423
+    },
+    {
+      "heading": "Do's and Don'ts",
+      "level": 2,
+      "text": "",
+      "line": 437
+    },
+    {
+      "heading": "Do",
+      "level": 3,
+      "text": "- Reserve `{colors.primary}` for filled CTAs and inline link emphasis — it should appear sparingly, one filled button per band.\n- Apply the gradient mesh to every marketing hero; bare-canvas heroes feel off-brand.\n- Render display tiers at weight 300 with negative letter-spacing — the thin tracking is the typographic signature.\n- Use `font-feature-settings: \"tnum\"` on every money / numeric cell.\n- Apply `font-feature-settings: \"ss01\"` globally on the body element.\n- Pair every feature explanation with a composited product UI mockup; the brand's argument is \"look at the actual product.\"",
+      "line": 439
+    },
+    {
+      "heading": "Don't",
+      "level": 3,
+      "text": "- Don't bump display weight above 300 — at 400 the brand's editorial air collapses.\n- Don't add new accent colors outside the documented gradient stops (cream / orange / lavender / indigo / ruby / magenta).\n- Don't use the indigo `{colors.primary}` as a body-text color — it's a CTA and link color, not a type color at body size.\n- Don't shrink button padding below `8px 16px` — the tight pill is part of the brand's transactional feel.\n- Don't render money cells without `tnum` — it breaks the quiet financial-data signature.\n- Don't replace the pill shape with rounded-rectangles for buttons.",
+      "line": 447
+    },
+    {
+      "heading": "Responsive Behavior",
+      "level": 2,
+      "text": "",
+      "line": 455
+    },
+    {
+      "heading": "Breakpoints",
+      "level": 3,
+      "text": "| Name | Width | Key Changes |\n|---|---|---|\n| Wide | ≥ 1440px | Full gradient mesh edge-to-edge; dashboard composite at full scale |\n| Desktop | 1024–1440px | Default content max-width; pricing 4-up |\n| Tablet | 768–1023px | Pricing 2-up; dashboard composite simplifies to 2 panels |\n| Mobile | < 768px | Pricing 1-up; hamburger nav; display drops 56 → 36px |",
+      "line": 457
+    },
+    {
+      "heading": "Touch Targets",
+      "level": 3,
+      "text": "- Pill buttons hit ≥ 40×40px on mobile via padding scaling. On smaller screens, buttons size up to 44×44px to maintain WCAG AAA.\n- Form fields stay at 40px minimum height.",
+      "line": 466
+    },
+    {
+      "heading": "Collapsing Strategy",
+      "level": 3,
+      "text": "- Display tiers stair-step 56 → 48 → 32 → 26 → 22px through the breakpoints.\n- Gradient mesh re-tiles on mobile to preserve the wash without disappearing.\n- Dashboard composites simplify to single-panel mockups on mobile; the multi-layer composition only renders at desktop+.\n- Pricing tiers stair-step 4-up → 2-up → 1-up.",
+      "line": 470
+    },
+    {
+      "heading": "Image Behavior",
+      "level": 3,
+      "text": "Product UI composites use `srcset` with art-direction crops at major breakpoints. Mobile crops focus on the most actionable inner panel; desktop crops show the full multi-layer composition.",
+      "line": 476
+    },
+    {
+      "heading": "Iteration Guide",
+      "level": 2,
+      "text": "1. Focus on ONE component at a time.\n2. Reference component names and tokens directly (`{colors.primary}`, `{button-primary-pill}-pressed`, `{rounded.pill}`).\n3. Run `npx @google/design.md lint DESIGN.md` after edits.\n4. Add new variants as separate entries.\n5. Default body to `{typography.body-md}` (15px); use `{typography.body-tabular}` for any money / numeric cell.\n6. Apply `ss01` globally on the body; apply `tnum` per-element on numeric content.\n7. The gradient mesh is non-negotiable on marketing heroes — bare-canvas heroes break the brand.",
+      "line": 479
+    }
+  ],
+  "tokens": [
+    {
+      "path": "colors.primary",
+      "sourcePath": "colors.primary",
+      "type": "color",
+      "value": "#533afd",
+      "status": "unverified",
+      "evidence": {
+        "line": 7,
+        "sourcePath": "colors.primary"
+      }
+    },
+    {
+      "path": "colors.primarydeep",
+      "sourcePath": "colors.primary-deep",
+      "type": "color",
+      "value": "#4434d4",
+      "status": "unverified",
+      "evidence": {
+        "line": 8,
+        "sourcePath": "colors.primary-deep"
+      }
+    },
+    {
+      "path": "colors.primarypress",
+      "sourcePath": "colors.primary-press",
+      "type": "color",
+      "value": "#2e2b8c",
+      "status": "unverified",
+      "evidence": {
+        "line": 9,
+        "sourcePath": "colors.primary-press"
+      }
+    },
+    {
+      "path": "colors.primarysoft",
+      "sourcePath": "colors.primary-soft",
+      "type": "color",
+      "value": "#665efd",
+      "status": "unverified",
+      "evidence": {
+        "line": 10,
+        "sourcePath": "colors.primary-soft"
+      }
+    },
+    {
+      "path": "colors.primarybgsubduedhover",
+      "sourcePath": "colors.primary-bg-subdued-hover",
+      "type": "color",
+      "value": "#b9b9f9",
+      "status": "unverified",
+      "evidence": {
+        "line": 11,
+        "sourcePath": "colors.primary-bg-subdued-hover"
+      }
+    },
+    {
+      "path": "colors.branddark900",
+      "sourcePath": "colors.brand-dark-900",
+      "type": "color",
+      "value": "#1c1e54",
+      "status": "unverified",
+      "evidence": {
+        "line": 12,
+        "sourcePath": "colors.brand-dark-900"
+      }
+    },
+    {
+      "path": "colors.ink",
+      "sourcePath": "colors.ink",
+      "type": "color",
+      "value": "#0d253d",
+      "status": "unverified",
+      "evidence": {
+        "line": 13,
+        "sourcePath": "colors.ink"
+      }
+    },
+    {
+      "path": "colors.inksecondary",
+      "sourcePath": "colors.ink-secondary",
+      "type": "color",
+      "value": "#273951",
+      "status": "unverified",
+      "evidence": {
+        "line": 14,
+        "sourcePath": "colors.ink-secondary"
+      }
+    },
+    {
+      "path": "colors.inkmute",
+      "sourcePath": "colors.ink-mute",
+      "type": "color",
+      "value": "#64748d",
+      "status": "unverified",
+      "evidence": {
+        "line": 15,
+        "sourcePath": "colors.ink-mute"
+      }
+    },
+    {
+      "path": "colors.inkmute2",
+      "sourcePath": "colors.ink-mute-2",
+      "type": "color",
+      "value": "#61718a",
+      "status": "unverified",
+      "evidence": {
+        "line": 16,
+        "sourcePath": "colors.ink-mute-2"
+      }
+    },
+    {
+      "path": "colors.onprimary",
+      "sourcePath": "colors.on-primary",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 17,
+        "sourcePath": "colors.on-primary"
+      }
+    },
+    {
+      "path": "colors.canvas",
+      "sourcePath": "colors.canvas",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 18,
+        "sourcePath": "colors.canvas"
+      }
+    },
+    {
+      "path": "colors.canvassoft",
+      "sourcePath": "colors.canvas-soft",
+      "type": "color",
+      "value": "#f6f9fc",
+      "status": "unverified",
+      "evidence": {
+        "line": 19,
+        "sourcePath": "colors.canvas-soft"
+      }
+    },
+    {
+      "path": "colors.canvascream",
+      "sourcePath": "colors.canvas-cream",
+      "type": "color",
+      "value": "#f5e9d4",
+      "status": "unverified",
+      "evidence": {
+        "line": 20,
+        "sourcePath": "colors.canvas-cream"
+      }
+    },
+    {
+      "path": "colors.hairline",
+      "sourcePath": "colors.hairline",
+      "type": "color",
+      "value": "#e3e8ee",
+      "status": "unverified",
+      "evidence": {
+        "line": 21,
+        "sourcePath": "colors.hairline"
+      }
+    },
+    {
+      "path": "colors.hairlineinput",
+      "sourcePath": "colors.hairline-input",
+      "type": "color",
+      "value": "#a8c3de",
+      "status": "unverified",
+      "evidence": {
+        "line": 22,
+        "sourcePath": "colors.hairline-input"
+      }
+    },
+    {
+      "path": "colors.ruby",
+      "sourcePath": "colors.ruby",
+      "type": "color",
+      "value": "#ea2261",
+      "status": "unverified",
+      "evidence": {
+        "line": 23,
+        "sourcePath": "colors.ruby"
+      }
+    },
+    {
+      "path": "colors.magenta",
+      "sourcePath": "colors.magenta",
+      "type": "color",
+      "value": "#f96bee",
+      "status": "unverified",
+      "evidence": {
+        "line": 24,
+        "sourcePath": "colors.magenta"
+      }
+    },
+    {
+      "path": "colors.lemon",
+      "sourcePath": "colors.lemon",
+      "type": "color",
+      "value": "#9b6829",
+      "status": "unverified",
+      "evidence": {
+        "line": 25,
+        "sourcePath": "colors.lemon"
+      }
+    },
+    {
+      "path": "colors.shadowblue",
+      "sourcePath": "colors.shadow-blue",
+      "type": "color",
+      "value": "#003770",
+      "status": "unverified",
+      "evidence": {
+        "line": 26,
+        "sourcePath": "colors.shadow-blue"
+      }
+    },
+    {
+      "path": "typography.displayxxl.fontfamily",
+      "sourcePath": "typography.display-xxl.fontFamily",
+      "type": "fontFamily",
+      "value": "sohne-var, 'SF Pro Display', system-ui, -apple-system, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 30,
+        "sourcePath": "typography.display-xxl.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displayxxl.fontsize",
+      "sourcePath": "typography.display-xxl.fontSize",
+      "type": "dimension",
+      "value": "56px",
+      "status": "unverified",
+      "evidence": {
+        "line": 31,
+        "sourcePath": "typography.display-xxl.fontSize"
+      }
+    },
+    {
+      "path": "typography.displayxxl.fontweight",
+      "sourcePath": "typography.display-xxl.fontWeight",
+      "type": "number",
+      "value": 300,
+      "status": "unverified",
+      "evidence": {
+        "line": 32,
+        "sourcePath": "typography.display-xxl.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displayxxl.lineheight",
+      "sourcePath": "typography.display-xxl.lineHeight",
+      "type": "number",
+      "value": 1.03,
+      "status": "unverified",
+      "evidence": {
+        "line": 33,
+        "sourcePath": "typography.display-xxl.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displayxxl.letterspacing",
+      "sourcePath": "typography.display-xxl.letterSpacing",
+      "type": "dimension",
+      "value": "-1.4px",
+      "status": "unverified",
+      "evidence": {
+        "line": 34,
+        "sourcePath": "typography.display-xxl.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.displayxl.fontfamily",
+      "sourcePath": "typography.display-xl.fontFamily",
+      "type": "fontFamily",
+      "value": "sohne-var, 'SF Pro Display', system-ui, -apple-system, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 37,
+        "sourcePath": "typography.display-xl.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displayxl.fontsize",
+      "sourcePath": "typography.display-xl.fontSize",
+      "type": "dimension",
+      "value": "48px",
+      "status": "unverified",
+      "evidence": {
+        "line": 38,
+        "sourcePath": "typography.display-xl.fontSize"
+      }
+    },
+    {
+      "path": "typography.displayxl.fontweight",
+      "sourcePath": "typography.display-xl.fontWeight",
+      "type": "number",
+      "value": 300,
+      "status": "unverified",
+      "evidence": {
+        "line": 39,
+        "sourcePath": "typography.display-xl.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displayxl.lineheight",
+      "sourcePath": "typography.display-xl.lineHeight",
+      "type": "number",
+      "value": 1.15,
+      "status": "unverified",
+      "evidence": {
+        "line": 40,
+        "sourcePath": "typography.display-xl.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displayxl.letterspacing",
+      "sourcePath": "typography.display-xl.letterSpacing",
+      "type": "dimension",
+      "value": "-0.96px",
+      "status": "unverified",
+      "evidence": {
+        "line": 41,
+        "sourcePath": "typography.display-xl.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.displaylg.fontfamily",
+      "sourcePath": "typography.display-lg.fontFamily",
+      "type": "fontFamily",
+      "value": "sohne-var, 'SF Pro Display', system-ui, -apple-system, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 44,
+        "sourcePath": "typography.display-lg.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displaylg.fontsize",
+      "sourcePath": "typography.display-lg.fontSize",
+      "type": "dimension",
+      "value": "32px",
+      "status": "unverified",
+      "evidence": {
+        "line": 45,
+        "sourcePath": "typography.display-lg.fontSize"
+      }
+    },
+    {
+      "path": "typography.displaylg.fontweight",
+      "sourcePath": "typography.display-lg.fontWeight",
+      "type": "number",
+      "value": 300,
+      "status": "unverified",
+      "evidence": {
+        "line": 46,
+        "sourcePath": "typography.display-lg.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displaylg.lineheight",
+      "sourcePath": "typography.display-lg.lineHeight",
+      "type": "number",
+      "value": 1.1,
+      "status": "unverified",
+      "evidence": {
+        "line": 47,
+        "sourcePath": "typography.display-lg.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displaylg.letterspacing",
+      "sourcePath": "typography.display-lg.letterSpacing",
+      "type": "dimension",
+      "value": "-0.64px",
+      "status": "unverified",
+      "evidence": {
+        "line": 48,
+        "sourcePath": "typography.display-lg.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.displaymd.fontfamily",
+      "sourcePath": "typography.display-md.fontFamily",
+      "type": "fontFamily",
+      "value": "sohne-var, 'SF Pro Display', system-ui, -apple-system, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 51,
+        "sourcePath": "typography.display-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displaymd.fontsize",
+      "sourcePath": "typography.display-md.fontSize",
+      "type": "dimension",
+      "value": "26px",
+      "status": "unverified",
+      "evidence": {
+        "line": 52,
+        "sourcePath": "typography.display-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.displaymd.fontweight",
+      "sourcePath": "typography.display-md.fontWeight",
+      "type": "number",
+      "value": 300,
+      "status": "unverified",
+      "evidence": {
+        "line": 53,
+        "sourcePath": "typography.display-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displaymd.lineheight",
+      "sourcePath": "typography.display-md.lineHeight",
+      "type": "number",
+      "value": 1.12,
+      "status": "unverified",
+      "evidence": {
+        "line": 54,
+        "sourcePath": "typography.display-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displaymd.letterspacing",
+      "sourcePath": "typography.display-md.letterSpacing",
+      "type": "dimension",
+      "value": "-0.26px",
+      "status": "unverified",
+      "evidence": {
+        "line": 55,
+        "sourcePath": "typography.display-md.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.headinglg.fontfamily",
+      "sourcePath": "typography.heading-lg.fontFamily",
+      "type": "fontFamily",
+      "value": "sohne-var, 'SF Pro Display', system-ui, -apple-system, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 58,
+        "sourcePath": "typography.heading-lg.fontFamily"
+      }
+    },
+    {
+      "path": "typography.headinglg.fontsize",
+      "sourcePath": "typography.heading-lg.fontSize",
+      "type": "dimension",
+      "value": "22px",
+      "status": "unverified",
+      "evidence": {
+        "line": 59,
+        "sourcePath": "typography.heading-lg.fontSize"
+      }
+    },
+    {
+      "path": "typography.headinglg.fontweight",
+      "sourcePath": "typography.heading-lg.fontWeight",
+      "type": "number",
+      "value": 300,
+      "status": "unverified",
+      "evidence": {
+        "line": 60,
+        "sourcePath": "typography.heading-lg.fontWeight"
+      }
+    },
+    {
+      "path": "typography.headinglg.lineheight",
+      "sourcePath": "typography.heading-lg.lineHeight",
+      "type": "number",
+      "value": 1.1,
+      "status": "unverified",
+      "evidence": {
+        "line": 61,
+        "sourcePath": "typography.heading-lg.lineHeight"
+      }
+    },
+    {
+      "path": "typography.headinglg.letterspacing",
+      "sourcePath": "typography.heading-lg.letterSpacing",
+      "type": "dimension",
+      "value": "-0.22px",
+      "status": "unverified",
+      "evidence": {
+        "line": 62,
+        "sourcePath": "typography.heading-lg.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.headingmd.fontfamily",
+      "sourcePath": "typography.heading-md.fontFamily",
+      "type": "fontFamily",
+      "value": "sohne-var, 'SF Pro Display', system-ui, -apple-system, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 65,
+        "sourcePath": "typography.heading-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.headingmd.fontsize",
+      "sourcePath": "typography.heading-md.fontSize",
+      "type": "dimension",
+      "value": "20px",
+      "status": "unverified",
+      "evidence": {
+        "line": 66,
+        "sourcePath": "typography.heading-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.headingmd.fontweight",
+      "sourcePath": "typography.heading-md.fontWeight",
+      "type": "number",
+      "value": 300,
+      "status": "unverified",
+      "evidence": {
+        "line": 67,
+        "sourcePath": "typography.heading-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.headingmd.lineheight",
+      "sourcePath": "typography.heading-md.lineHeight",
+      "type": "number",
+      "value": 1.4,
+      "status": "unverified",
+      "evidence": {
+        "line": 68,
+        "sourcePath": "typography.heading-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.headingmd.letterspacing",
+      "sourcePath": "typography.heading-md.letterSpacing",
+      "type": "dimension",
+      "value": "-0.2px",
+      "status": "unverified",
+      "evidence": {
+        "line": 69,
+        "sourcePath": "typography.heading-md.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.headingsm.fontfamily",
+      "sourcePath": "typography.heading-sm.fontFamily",
+      "type": "fontFamily",
+      "value": "sohne-var, 'SF Pro Display', system-ui, -apple-system, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 72,
+        "sourcePath": "typography.heading-sm.fontFamily"
+      }
+    },
+    {
+      "path": "typography.headingsm.fontsize",
+      "sourcePath": "typography.heading-sm.fontSize",
+      "type": "dimension",
+      "value": "18px",
+      "status": "unverified",
+      "evidence": {
+        "line": 73,
+        "sourcePath": "typography.heading-sm.fontSize"
+      }
+    },
+    {
+      "path": "typography.headingsm.fontweight",
+      "sourcePath": "typography.heading-sm.fontWeight",
+      "type": "number",
+      "value": 300,
+      "status": "unverified",
+      "evidence": {
+        "line": 74,
+        "sourcePath": "typography.heading-sm.fontWeight"
+      }
+    },
+    {
+      "path": "typography.headingsm.lineheight",
+      "sourcePath": "typography.heading-sm.lineHeight",
+      "type": "number",
+      "value": 1.4,
+      "status": "unverified",
+      "evidence": {
+        "line": 75,
+        "sourcePath": "typography.heading-sm.lineHeight"
+      }
+    },
+    {
+      "path": "typography.headingsm.letterspacing",
+      "sourcePath": "typography.heading-sm.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 76,
+        "sourcePath": "typography.heading-sm.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.bodylg.fontfamily",
+      "sourcePath": "typography.body-lg.fontFamily",
+      "type": "fontFamily",
+      "value": "sohne-var, 'SF Pro Display', system-ui, -apple-system, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 79,
+        "sourcePath": "typography.body-lg.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodylg.fontsize",
+      "sourcePath": "typography.body-lg.fontSize",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 80,
+        "sourcePath": "typography.body-lg.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodylg.fontweight",
+      "sourcePath": "typography.body-lg.fontWeight",
+      "type": "number",
+      "value": 300,
+      "status": "unverified",
+      "evidence": {
+        "line": 81,
+        "sourcePath": "typography.body-lg.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodylg.lineheight",
+      "sourcePath": "typography.body-lg.lineHeight",
+      "type": "number",
+      "value": 1.4,
+      "status": "unverified",
+      "evidence": {
+        "line": 82,
+        "sourcePath": "typography.body-lg.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodylg.letterspacing",
+      "sourcePath": "typography.body-lg.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 83,
+        "sourcePath": "typography.body-lg.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.bodymd.fontfamily",
+      "sourcePath": "typography.body-md.fontFamily",
+      "type": "fontFamily",
+      "value": "sohne-var, 'SF Pro Display', system-ui, -apple-system, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 86,
+        "sourcePath": "typography.body-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodymd.fontsize",
+      "sourcePath": "typography.body-md.fontSize",
+      "type": "dimension",
+      "value": "15px",
+      "status": "unverified",
+      "evidence": {
+        "line": 87,
+        "sourcePath": "typography.body-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodymd.fontweight",
+      "sourcePath": "typography.body-md.fontWeight",
+      "type": "number",
+      "value": 300,
+      "status": "unverified",
+      "evidence": {
+        "line": 88,
+        "sourcePath": "typography.body-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodymd.lineheight",
+      "sourcePath": "typography.body-md.lineHeight",
+      "type": "number",
+      "value": 1.4,
+      "status": "unverified",
+      "evidence": {
+        "line": 89,
+        "sourcePath": "typography.body-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodymd.letterspacing",
+      "sourcePath": "typography.body-md.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 90,
+        "sourcePath": "typography.body-md.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.bodytabular.fontfamily",
+      "sourcePath": "typography.body-tabular.fontFamily",
+      "type": "fontFamily",
+      "value": "sohne-var, 'SF Pro Display', system-ui, -apple-system, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 93,
+        "sourcePath": "typography.body-tabular.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodytabular.fontsize",
+      "sourcePath": "typography.body-tabular.fontSize",
+      "type": "dimension",
+      "value": "14px",
+      "status": "unverified",
+      "evidence": {
+        "line": 94,
+        "sourcePath": "typography.body-tabular.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodytabular.fontweight",
+      "sourcePath": "typography.body-tabular.fontWeight",
+      "type": "number",
+      "value": 300,
+      "status": "unverified",
+      "evidence": {
+        "line": 95,
+        "sourcePath": "typography.body-tabular.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodytabular.lineheight",
+      "sourcePath": "typography.body-tabular.lineHeight",
+      "type": "number",
+      "value": 1.4,
+      "status": "unverified",
+      "evidence": {
+        "line": 96,
+        "sourcePath": "typography.body-tabular.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodytabular.letterspacing",
+      "sourcePath": "typography.body-tabular.letterSpacing",
+      "type": "dimension",
+      "value": "-0.42px",
+      "status": "unverified",
+      "evidence": {
+        "line": 97,
+        "sourcePath": "typography.body-tabular.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.buttonmd.fontfamily",
+      "sourcePath": "typography.button-md.fontFamily",
+      "type": "fontFamily",
+      "value": "sohne-var, 'SF Pro Display', system-ui, -apple-system, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 100,
+        "sourcePath": "typography.button-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.buttonmd.fontsize",
+      "sourcePath": "typography.button-md.fontSize",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 101,
+        "sourcePath": "typography.button-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.buttonmd.fontweight",
+      "sourcePath": "typography.button-md.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 102,
+        "sourcePath": "typography.button-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.buttonmd.lineheight",
+      "sourcePath": "typography.button-md.lineHeight",
+      "type": "number",
+      "value": 1,
+      "status": "unverified",
+      "evidence": {
+        "line": 103,
+        "sourcePath": "typography.button-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.buttonmd.letterspacing",
+      "sourcePath": "typography.button-md.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 104,
+        "sourcePath": "typography.button-md.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.buttonsm.fontfamily",
+      "sourcePath": "typography.button-sm.fontFamily",
+      "type": "fontFamily",
+      "value": "sohne-var, 'SF Pro Display', system-ui, -apple-system, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 107,
+        "sourcePath": "typography.button-sm.fontFamily"
+      }
+    },
+    {
+      "path": "typography.buttonsm.fontsize",
+      "sourcePath": "typography.button-sm.fontSize",
+      "type": "dimension",
+      "value": "14px",
+      "status": "unverified",
+      "evidence": {
+        "line": 108,
+        "sourcePath": "typography.button-sm.fontSize"
+      }
+    },
+    {
+      "path": "typography.buttonsm.fontweight",
+      "sourcePath": "typography.button-sm.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 109,
+        "sourcePath": "typography.button-sm.fontWeight"
+      }
+    },
+    {
+      "path": "typography.buttonsm.lineheight",
+      "sourcePath": "typography.button-sm.lineHeight",
+      "type": "number",
+      "value": 1,
+      "status": "unverified",
+      "evidence": {
+        "line": 110,
+        "sourcePath": "typography.button-sm.lineHeight"
+      }
+    },
+    {
+      "path": "typography.buttonsm.letterspacing",
+      "sourcePath": "typography.button-sm.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 111,
+        "sourcePath": "typography.button-sm.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.caption.fontfamily",
+      "sourcePath": "typography.caption.fontFamily",
+      "type": "fontFamily",
+      "value": "sohne-var, 'SF Pro Display', system-ui, -apple-system, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 114,
+        "sourcePath": "typography.caption.fontFamily"
+      }
+    },
+    {
+      "path": "typography.caption.fontsize",
+      "sourcePath": "typography.caption.fontSize",
+      "type": "dimension",
+      "value": "13px",
+      "status": "unverified",
+      "evidence": {
+        "line": 115,
+        "sourcePath": "typography.caption.fontSize"
+      }
+    },
+    {
+      "path": "typography.caption.fontweight",
+      "sourcePath": "typography.caption.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 116,
+        "sourcePath": "typography.caption.fontWeight"
+      }
+    },
+    {
+      "path": "typography.caption.lineheight",
+      "sourcePath": "typography.caption.lineHeight",
+      "type": "number",
+      "value": 1.4,
+      "status": "unverified",
+      "evidence": {
+        "line": 117,
+        "sourcePath": "typography.caption.lineHeight"
+      }
+    },
+    {
+      "path": "typography.caption.letterspacing",
+      "sourcePath": "typography.caption.letterSpacing",
+      "type": "dimension",
+      "value": "-0.39px",
+      "status": "unverified",
+      "evidence": {
+        "line": 118,
+        "sourcePath": "typography.caption.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.micro.fontfamily",
+      "sourcePath": "typography.micro.fontFamily",
+      "type": "fontFamily",
+      "value": "sohne-var, 'SF Pro Display', system-ui, -apple-system, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 121,
+        "sourcePath": "typography.micro.fontFamily"
+      }
+    },
+    {
+      "path": "typography.micro.fontsize",
+      "sourcePath": "typography.micro.fontSize",
+      "type": "dimension",
+      "value": "11px",
+      "status": "unverified",
+      "evidence": {
+        "line": 122,
+        "sourcePath": "typography.micro.fontSize"
+      }
+    },
+    {
+      "path": "typography.micro.fontweight",
+      "sourcePath": "typography.micro.fontWeight",
+      "type": "number",
+      "value": 300,
+      "status": "unverified",
+      "evidence": {
+        "line": 123,
+        "sourcePath": "typography.micro.fontWeight"
+      }
+    },
+    {
+      "path": "typography.micro.lineheight",
+      "sourcePath": "typography.micro.lineHeight",
+      "type": "number",
+      "value": 1.4,
+      "status": "unverified",
+      "evidence": {
+        "line": 124,
+        "sourcePath": "typography.micro.lineHeight"
+      }
+    },
+    {
+      "path": "typography.micro.letterspacing",
+      "sourcePath": "typography.micro.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 125,
+        "sourcePath": "typography.micro.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.microcap.fontfamily",
+      "sourcePath": "typography.micro-cap.fontFamily",
+      "type": "fontFamily",
+      "value": "sohne-var, 'SF Pro Display', system-ui, -apple-system, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 128,
+        "sourcePath": "typography.micro-cap.fontFamily"
+      }
+    },
+    {
+      "path": "typography.microcap.fontsize",
+      "sourcePath": "typography.micro-cap.fontSize",
+      "type": "dimension",
+      "value": "10px",
+      "status": "unverified",
+      "evidence": {
+        "line": 129,
+        "sourcePath": "typography.micro-cap.fontSize"
+      }
+    },
+    {
+      "path": "typography.microcap.fontweight",
+      "sourcePath": "typography.micro-cap.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 130,
+        "sourcePath": "typography.micro-cap.fontWeight"
+      }
+    },
+    {
+      "path": "typography.microcap.lineheight",
+      "sourcePath": "typography.micro-cap.lineHeight",
+      "type": "number",
+      "value": 1.15,
+      "status": "unverified",
+      "evidence": {
+        "line": 131,
+        "sourcePath": "typography.micro-cap.lineHeight"
+      }
+    },
+    {
+      "path": "typography.microcap.letterspacing",
+      "sourcePath": "typography.micro-cap.letterSpacing",
+      "type": "dimension",
+      "value": "0.1px",
+      "status": "unverified",
+      "evidence": {
+        "line": 132,
+        "sourcePath": "typography.micro-cap.letterSpacing"
+      }
+    },
+    {
+      "path": "rounded.xs",
+      "sourcePath": "rounded.xs",
+      "type": "dimension",
+      "value": "4px",
+      "status": "unverified",
+      "evidence": {
+        "line": 136,
+        "sourcePath": "rounded.xs"
+      }
+    },
+    {
+      "path": "rounded.sm",
+      "sourcePath": "rounded.sm",
+      "type": "dimension",
+      "value": "6px",
+      "status": "unverified",
+      "evidence": {
+        "line": 137,
+        "sourcePath": "rounded.sm"
+      }
+    },
+    {
+      "path": "rounded.md",
+      "sourcePath": "rounded.md",
+      "type": "dimension",
+      "value": "8px",
+      "status": "unverified",
+      "evidence": {
+        "line": 138,
+        "sourcePath": "rounded.md"
+      }
+    },
+    {
+      "path": "rounded.lg",
+      "sourcePath": "rounded.lg",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 139,
+        "sourcePath": "rounded.lg"
+      }
+    },
+    {
+      "path": "rounded.xl",
+      "sourcePath": "rounded.xl",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 140,
+        "sourcePath": "rounded.xl"
+      }
+    },
+    {
+      "path": "rounded.pill",
+      "sourcePath": "rounded.pill",
+      "type": "dimension",
+      "value": "9999px",
+      "status": "unverified",
+      "evidence": {
+        "line": 141,
+        "sourcePath": "rounded.pill"
+      }
+    },
+    {
+      "path": "spacing.xxs",
+      "sourcePath": "spacing.xxs",
+      "type": "dimension",
+      "value": "2px",
+      "status": "unverified",
+      "evidence": {
+        "line": 144,
+        "sourcePath": "spacing.xxs"
+      }
+    },
+    {
+      "path": "spacing.xs",
+      "sourcePath": "spacing.xs",
+      "type": "dimension",
+      "value": "4px",
+      "status": "unverified",
+      "evidence": {
+        "line": 145,
+        "sourcePath": "spacing.xs"
+      }
+    },
+    {
+      "path": "spacing.sm",
+      "sourcePath": "spacing.sm",
+      "type": "dimension",
+      "value": "8px",
+      "status": "unverified",
+      "evidence": {
+        "line": 146,
+        "sourcePath": "spacing.sm"
+      }
+    },
+    {
+      "path": "spacing.md",
+      "sourcePath": "spacing.md",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 147,
+        "sourcePath": "spacing.md"
+      }
+    },
+    {
+      "path": "spacing.lg",
+      "sourcePath": "spacing.lg",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 148,
+        "sourcePath": "spacing.lg"
+      }
+    },
+    {
+      "path": "spacing.xl",
+      "sourcePath": "spacing.xl",
+      "type": "dimension",
+      "value": "24px",
+      "status": "unverified",
+      "evidence": {
+        "line": 149,
+        "sourcePath": "spacing.xl"
+      }
+    },
+    {
+      "path": "spacing.xxl",
+      "sourcePath": "spacing.xxl",
+      "type": "dimension",
+      "value": "32px",
+      "status": "unverified",
+      "evidence": {
+        "line": 150,
+        "sourcePath": "spacing.xxl"
+      }
+    },
+    {
+      "path": "spacing.huge",
+      "sourcePath": "spacing.huge",
+      "type": "dimension",
+      "value": "64px",
+      "status": "unverified",
+      "evidence": {
+        "line": 151,
+        "sourcePath": "spacing.huge"
+      }
+    }
+  ],
+  "rejectedTokens": [
+    {
+      "sourcePath": "typography.display-xxl.fontFeature",
+      "value": "ss01",
+      "reason": "Not a supported safe CSS literal; preserved in analysis"
+    },
+    {
+      "sourcePath": "typography.display-xl.fontFeature",
+      "value": "ss01",
+      "reason": "Not a supported safe CSS literal; preserved in analysis"
+    },
+    {
+      "sourcePath": "typography.display-lg.fontFeature",
+      "value": "ss01",
+      "reason": "Not a supported safe CSS literal; preserved in analysis"
+    },
+    {
+      "sourcePath": "typography.display-md.fontFeature",
+      "value": "ss01",
+      "reason": "Not a supported safe CSS literal; preserved in analysis"
+    },
+    {
+      "sourcePath": "typography.heading-lg.fontFeature",
+      "value": "ss01",
+      "reason": "Not a supported safe CSS literal; preserved in analysis"
+    },
+    {
+      "sourcePath": "typography.heading-md.fontFeature",
+      "value": "ss01",
+      "reason": "Not a supported safe CSS literal; preserved in analysis"
+    },
+    {
+      "sourcePath": "typography.heading-sm.fontFeature",
+      "value": "ss01",
+      "reason": "Not a supported safe CSS literal; preserved in analysis"
+    },
+    {
+      "sourcePath": "typography.body-lg.fontFeature",
+      "value": "ss01",
+      "reason": "Not a supported safe CSS literal; preserved in analysis"
+    },
+    {
+      "sourcePath": "typography.body-md.fontFeature",
+      "value": "ss01",
+      "reason": "Not a supported safe CSS literal; preserved in analysis"
+    },
+    {
+      "sourcePath": "typography.body-tabular.fontFeature",
+      "value": "tnum",
+      "reason": "Not a supported safe CSS literal; preserved in analysis"
+    },
+    {
+      "sourcePath": "typography.button-md.fontFeature",
+      "value": "ss01",
+      "reason": "Not a supported safe CSS literal; preserved in analysis"
+    },
+    {
+      "sourcePath": "typography.button-sm.fontFeature",
+      "value": "ss01",
+      "reason": "Not a supported safe CSS literal; preserved in analysis"
+    },
+    {
+      "sourcePath": "typography.caption.fontFeature",
+      "value": "tnum",
+      "reason": "Not a supported safe CSS literal; preserved in analysis"
+    },
+    {
+      "sourcePath": "typography.micro.fontFeature",
+      "value": "ss01",
+      "reason": "Not a supported safe CSS literal; preserved in analysis"
+    },
+    {
+      "sourcePath": "typography.micro-cap.fontFeature",
+      "value": "ss01",
+      "reason": "Not a supported safe CSS literal; preserved in analysis"
+    }
+  ],
+  "homepage": {
+    "status": "missing",
+    "candidates": [],
+    "verification": {
+      "status": "verified",
+      "url": "https://stripe.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://stripe.com/en-de",
+          "title": "Stripe | Financial Infrastructure to Grow Your Revenue",
+          "note": "Public homepage read requested https://stripe.com; final URL https://stripe.com/en-de. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity. Source analysis uses the spelling Stripi; directory and financial-infrastructure description support the Stripe identity."
+    }
+  },
+  "completeness": {
+    "presentFields": [
+      "colors",
+      "typography",
+      "rounded",
+      "spacing",
+      "components"
+    ],
+    "missingFields": [],
+    "tokenRoles": "incomplete",
+    "note": "Missing fields are not reconstructed. Prose-only colors have no inferred semantic role."
+  },
+  "provenance": {
+    "status": "independent-analysis",
+    "sources": [
+      {
+        "title": "VoltAgent awesome-design-md independent analysis",
+        "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/stripe/DESIGN.md"
+      }
+    ],
+    "verification": "unverified-secondary-analysis"
+  },
+  "limitations": [
+    "Independent secondary analysis, not an official brand system; all reported values are unverified.",
+    "No brand assets, logos, font binaries or screenshots copied. Font names are documentary, not font licenses.",
+    "Safe CSS literals are extracted without claiming complete roles, state coverage or visual fidelity.",
+    "Markdown is retained as inert evidence, never executed or rendered as raw HTML."
+  ],
+  "specimenProvenance": {
+    "sourceCommit": "fcc70284932276d085f01ef9f83edde90b1258cb",
+    "evidence": "Indigo #533afd, ink #0d253d, cream #f5e9d4 and cool white #f6f9fc; thin negative-tracked headings, pill buttons, tabular numerals, 12px cards and an upper-page color atmosphere.",
+    "inferred": "The community-budget scenario, CSS gradient geometry (not the source mesh), chart data, responsive composition and draft interaction are original. System fonts replace proprietary type. Only the light marketing track is studied."
+  }
+}

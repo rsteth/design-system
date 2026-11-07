@@ -1,0 +1,4946 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-11-07T22:22:28.722Z",
+  "status": "approved-static-release-artifact",
+  "licenseGaps": [],
+  "focusEpub": "fixture-only",
+  "base": "/design-system/",
+  "fixtureCount": 97,
+  "source": {
+    "designSystem": {
+      "revision": "5f0a9ca45f6224711a984e3caca189513e33bdf5",
+      "dirty": true,
+      "sourceTreeSha256": "8fa2c1f486f79bdf0420c744ec7d0f67a2ad284c5df4b37daaa893f34983092d"
+    },
+    "focus": {
+      "revision": "e0027eed7a6c1d7860559a8fd5eeb126ea7fc34e",
+      "dirty": true,
+      "sourceTreeSha256": "d7286779fdff7c16bffe8def168c36dba9cd27f82bd23422163d31847b40773e"
+    },
+    "great-circle": {
+      "revision": "0d571c71a91df22884c3402ecb56de08c74eb983",
+      "dirty": true,
+      "sourceTreeSha256": "5d776dcfd9ade8b131563b336d6e890263fbedc3f2d39d5aa554caa4e62f69aa"
+    },
+    "stethem": {
+      "revision": "49b2e1de8f18afbf10d12de3bc099a55b0cf6eef",
+      "dirty": false,
+      "sourceTreeSha256": "199dd9f3c356617578800dce1e9eaf28e8605a975c1ab1f5210c5e979fd769aa"
+    }
+  },
+  "limitations": [
+    "This manifest identifies the approved static artifact; live availability is verified separately.",
+    "Fixture packaging and browser checks are separate from application production CI.",
+    "No original-work redistribution license selected.",
+    "Opaque sandbox requires CORS for static assets."
+  ],
+  "artifacts": [
+    {
+      "path": ".nojekyll",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "BUNDLED-DEPENDENCIES.json",
+      "bytes": 1249,
+      "sha256": "3144ad6e3180a760d3b91cb3866cd0730ed28e373d5eef9fcc50ee22c2d258c0"
+    },
+    {
+      "path": "README.md",
+      "bytes": 807,
+      "sha256": "7d44985c3d3d41f860362fa29a10cc144f379c76d9782be0ca0b62c5168b06f9"
+    },
+    {
+      "path": "RELEASE-NOTES.html",
+      "bytes": 2171,
+      "sha256": "7d4c90d88017ee54412d5bb88b3031e4f5b33a695fec3c4a314cff4e805edf47"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "bytes": 1530,
+      "sha256": "0bf83073dbae1738804688efb4c2e448857f44a7513be5978019328090b6be88"
+    },
+    {
+      "path": "_headers",
+      "bytes": 115,
+      "sha256": "e3e50278b2449862dc5886b7117bde4eb537528b0fc87dd3e786836955a0e822"
+    },
+    {
+      "path": "apps/studio/capture-studio.css",
+      "bytes": 5234,
+      "sha256": "75d6d758b8c892a939fd59fedd0dd97f894bb43b9fbc68dfee764ca62d531fd7"
+    },
+    {
+      "path": "apps/studio/capture-studio.mjs",
+      "bytes": 611,
+      "sha256": "31777326222a99383cc6d174d6bc0185bfe46a7b1820be51e07dd4cb48c8bcef"
+    },
+    {
+      "path": "apps/studio/index.html",
+      "bytes": 1668,
+      "sha256": "75b0a65a5dc228dd57644e278b16d4ac97c111679d010496c7c4bfafdab05a84"
+    },
+    {
+      "path": "apps/studio/main.mjs",
+      "bytes": 3881,
+      "sha256": "a40eb4f302db58d8081183da7aa2590ddba9bf73e4a3e31e4fdbf24ddcb29774"
+    },
+    {
+      "path": "apps/studio/style.css",
+      "bytes": 2776,
+      "sha256": "790a7605a16f2f9a7aacd5631a20803f8e5bbf1eca2c412ddb6b86aa05dac510"
+    },
+    {
+      "path": "collections/original/workbench/collection.json",
+      "bytes": 1551,
+      "sha256": "12a7e681eac9e5e5b9539e3e68660b908a316063cff4a34f5142c2df4b884ccd"
+    },
+    {
+      "path": "collections/original/workbench/fixtures/index.html",
+      "bytes": 925,
+      "sha256": "9c698339ec0695043dfcd3bcbcd9fd44aac19795f34a7ea5bb5573f4d8719d4a"
+    },
+    {
+      "path": "collections/original/workbench/fixtures/main.mjs",
+      "bytes": 2065,
+      "sha256": "ad0ed1d57ce29f17a794c13c9dbbd1d2c7f54e590db95382a9e3743f34dd82d9"
+    },
+    {
+      "path": "collections/original/workbench/registry.json",
+      "bytes": 73,
+      "sha256": "50fb90384d80858a81b2202f024404d444cf47ee34e0518f3e4a9298bd042d6b"
+    },
+    {
+      "path": "collections/reference/1win/ATTRIBUTION.md",
+      "bytes": 504,
+      "sha256": "4adaa4e61452a33ee057cabfdc57d4625e12f5b74d8c8f950aa3e7f61b5d7f84"
+    },
+    {
+      "path": "collections/reference/1win/DESIGN.md",
+      "bytes": 23906,
+      "sha256": "64d02d344cb16d68b6882054f35e3bfb7241ad60dc8b7f84f6636a7d1379496a"
+    },
+    {
+      "path": "collections/reference/1win/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/1win/collection.json",
+      "bytes": 2427,
+      "sha256": "fc9cbd798564793bed53b355f2c7a76ddb0f71518ae5060c3f2b48563f3920f9"
+    },
+    {
+      "path": "collections/reference/1win/study.json",
+      "bytes": 46419,
+      "sha256": "2781285dc7d396558432c006530e75fb301d886bc7038ba05903c81f75875804"
+    },
+    {
+      "path": "collections/reference/1win/tokens.css",
+      "bytes": 2037,
+      "sha256": "253057c15105ee21a912337fdb3fb05327cec035d75260f6944537c745087c95"
+    },
+    {
+      "path": "collections/reference/1win/tokens.json",
+      "bytes": 19014,
+      "sha256": "85823c51592f9865e0de3c3390ce7f8799c41e3f032b266b56fb5bbcae0dc08f"
+    },
+    {
+      "path": "collections/reference/airbnb/ATTRIBUTION.md",
+      "bytes": 506,
+      "sha256": "0c0bfe0be921e59e7fd363dc06a8511d307ef74006b19cc389d55e9bc619162d"
+    },
+    {
+      "path": "collections/reference/airbnb/DESIGN.md",
+      "bytes": 30517,
+      "sha256": "add34130d67209ad105346d60fe2b290728b9711683969db4b7760e29477a5fe"
+    },
+    {
+      "path": "collections/reference/airbnb/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/airbnb/collection.json",
+      "bytes": 2445,
+      "sha256": "710a8594ad61b4b6861abd69696d81778d94e9bd22269b1822eab943603acba1"
+    },
+    {
+      "path": "collections/reference/airbnb/study.json",
+      "bytes": 77337,
+      "sha256": "b6bab59d3cc09c6dcb6fb5903f520d3f15176db30c5707d6d310ed5335c9954b"
+    },
+    {
+      "path": "collections/reference/airbnb/tokens.css",
+      "bytes": 6009,
+      "sha256": "35bdca43118e54bc39b25e8281b23f7305b4d08014fee9f694ff6c82de0b274a"
+    },
+    {
+      "path": "collections/reference/airbnb/tokens.json",
+      "bytes": 47228,
+      "sha256": "e743c157e7cb72e425a822dda075245bd36b534051ca17d57c1636f66eae0515"
+    },
+    {
+      "path": "collections/reference/airtable/ATTRIBUTION.md",
+      "bytes": 508,
+      "sha256": "248d365b320ccce7afb6ce719e41da5f9d6a9d137c832cca7c683e647c4e177b"
+    },
+    {
+      "path": "collections/reference/airtable/DESIGN.md",
+      "bytes": 35266,
+      "sha256": "1d225e511213044d3c705bde50265ad010932bfd8a15740a144dd4f480128889"
+    },
+    {
+      "path": "collections/reference/airtable/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/airtable/collection.json",
+      "bytes": 2463,
+      "sha256": "709c6e10a39a5214f97697e175d60f6eeec5a7f31ea5197c37f838cde633115b"
+    },
+    {
+      "path": "collections/reference/airtable/study.json",
+      "bytes": 76319,
+      "sha256": "f3311d9fb71f6789ba1293e68413b1219d46e8c2062530cdf2eb2e8ade80bf52"
+    },
+    {
+      "path": "collections/reference/airtable/tokens.css",
+      "bytes": 4907,
+      "sha256": "4ee9801ecaf313d15d6860dcb57c21dedfae9a110492577e105cc18163542fe6"
+    },
+    {
+      "path": "collections/reference/airtable/tokens.json",
+      "bytes": 40601,
+      "sha256": "73fd16190c6f276dae136c740a7ec4c70b5dea2bd3d00bfb6c7ca83464ed9e03"
+    },
+    {
+      "path": "collections/reference/aljazeera/ATTRIBUTION.md",
+      "bytes": 509,
+      "sha256": "409deb6581c3c78ef8576a463a91deb8fa4c01e2168b54ce1eec7b61aedd5532"
+    },
+    {
+      "path": "collections/reference/aljazeera/DESIGN.md",
+      "bytes": 28031,
+      "sha256": "37614fc72658ffa30faca01049bd1efa8a9baafa4750501405eeea66f149466a"
+    },
+    {
+      "path": "collections/reference/aljazeera/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/aljazeera/collection.json",
+      "bytes": 2472,
+      "sha256": "18e19cb8dafa46246821119310a0c3e0805be6fc1c779d81ffcb822cf1a339e9"
+    },
+    {
+      "path": "collections/reference/aljazeera/study.json",
+      "bytes": 61914,
+      "sha256": "b1d2160cd88bb4757906773a356ed7fd056fc18a61956217021b14dc8efc65e0"
+    },
+    {
+      "path": "collections/reference/aljazeera/tokens.css",
+      "bytes": 3605,
+      "sha256": "666bbe7a37b870d0e18befd4008b3f29d35174458376907c38ef1935b918379d"
+    },
+    {
+      "path": "collections/reference/aljazeera/tokens.json",
+      "bytes": 31783,
+      "sha256": "a4cfe3574f0ba255b37ed3fc85498830975560d546f7e3af719035e6d9596e64"
+    },
+    {
+      "path": "collections/reference/apple/ATTRIBUTION.md",
+      "bytes": 505,
+      "sha256": "a754a485cd3f5210f22a3ba4e7f496708a08300bad67d9cbf88f2aa9e74a1f79"
+    },
+    {
+      "path": "collections/reference/apple/DESIGN.md",
+      "bytes": 37096,
+      "sha256": "83fbc614443a9b3d7569e9956a43e7b8740f9d0f939f58b8154f7a7cec3002b2"
+    },
+    {
+      "path": "collections/reference/apple/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/apple/collection.json",
+      "bytes": 2436,
+      "sha256": "4ec773a8c3b4cc53012c559583eb89dafc604a15bced19d9f04ab4c183f3f093"
+    },
+    {
+      "path": "collections/reference/apple/study.json",
+      "bytes": 79916,
+      "sha256": "4f7fd0d8f976c455e9655b221435b220244db6edeae83c7c6d689588a2a5a480"
+    },
+    {
+      "path": "collections/reference/apple/tokens.css",
+      "bytes": 5636,
+      "sha256": "9cb5fe3aa460a8a0ba714f2931dec40235ab713e7dfc21cf9eea304294abc176"
+    },
+    {
+      "path": "collections/reference/apple/tokens.json",
+      "bytes": 42877,
+      "sha256": "a64949462192ca9401c4553748669afcc425d475b44cf78da240de09fbe42680"
+    },
+    {
+      "path": "collections/reference/binance/ATTRIBUTION.md",
+      "bytes": 507,
+      "sha256": "9cbac8b94cdf07bf37c558d6343ac91633a99e68f9ca0d6c2b5ce0ff33a1a7db"
+    },
+    {
+      "path": "collections/reference/binance/DESIGN.md",
+      "bytes": 39918,
+      "sha256": "378ff97d568ccbc316519b9d45a29d6649ed8961c9c486c3ed4cea7501d72371"
+    },
+    {
+      "path": "collections/reference/binance/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/binance/collection.json",
+      "bytes": 2454,
+      "sha256": "3c35c40990a87b16861e0e2f23766dfd0e9eede155da6e2943d141f6758d6acb"
+    },
+    {
+      "path": "collections/reference/binance/study.json",
+      "bytes": 82575,
+      "sha256": "f1fddddb81393a87039e5546fadae76e2a93e820556890bc5d037f4f9e4682c3"
+    },
+    {
+      "path": "collections/reference/binance/tokens.css",
+      "bytes": 5033,
+      "sha256": "ce4b31dfe3d0380bdc2f9fd7620ea5cf34d15ecb87368b968cd84900bbfadf43"
+    },
+    {
+      "path": "collections/reference/binance/tokens.json",
+      "bytes": 41408,
+      "sha256": "896673b242d14b4ee41178da896dcf3ec04de829e66b2d58ed85bf66086a75bc"
+    },
+    {
+      "path": "collections/reference/bmw/ATTRIBUTION.md",
+      "bytes": 503,
+      "sha256": "a6657cf769806ee920c88050a02e09bbad654a95a45b620ed140e5ece3417668"
+    },
+    {
+      "path": "collections/reference/bmw/DESIGN.md",
+      "bytes": 27907,
+      "sha256": "b7268279e7c98e85fb80890e06765f4ee8340ba1ea1ccb5a8a5b134de43dac3e"
+    },
+    {
+      "path": "collections/reference/bmw/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/bmw/collection.json",
+      "bytes": 2418,
+      "sha256": "d00f4a830b38ee676c4a5b05fe78e2f208a574ddf77cf52a851d860fc963298a"
+    },
+    {
+      "path": "collections/reference/bmw/study.json",
+      "bytes": 67064,
+      "sha256": "723ac2228e0f534efbeb00c65434a7ed4a44a33c023dd9bbd885e9a7fdc36e00"
+    },
+    {
+      "path": "collections/reference/bmw/tokens.css",
+      "bytes": 4659,
+      "sha256": "6de31e58932a2f0a2f2b8846483cccedbaa85e5e90dfdfa509b02628829a1c13"
+    },
+    {
+      "path": "collections/reference/bmw/tokens.json",
+      "bytes": 37929,
+      "sha256": "1ddcb65a07ef7d7562873eda86decbc5a7af083e4f65fabc350aa7029b2bbcf8"
+    },
+    {
+      "path": "collections/reference/bmw-m/ATTRIBUTION.md",
+      "bytes": 505,
+      "sha256": "2b0bfd96a569508253d0e117c45f70b236256479f19b0514cec2864124acaf87"
+    },
+    {
+      "path": "collections/reference/bmw-m/DESIGN.md",
+      "bytes": 30697,
+      "sha256": "824a1707c0a8d1609d72477d0fa211b9ebe4bdeb3e1fd701790af7b7bb669a4a"
+    },
+    {
+      "path": "collections/reference/bmw-m/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/bmw-m/collection.json",
+      "bytes": 2436,
+      "sha256": "4254d4bbbd0c43405b4ef91269b002c2fd9e245911dc8905c967952e7a16751e"
+    },
+    {
+      "path": "collections/reference/bmw-m/study.json",
+      "bytes": 67666,
+      "sha256": "a76d60e4722b2e7671434dbe9cedd8f54c3ba83d9c7aa5d9507efd334510fade"
+    },
+    {
+      "path": "collections/reference/bmw-m/tokens.css",
+      "bytes": 4350,
+      "sha256": "473fa5bf6e9e06bc13ac2f2f19583431066c3b716f4d095f6014e2bc8e718df3"
+    },
+    {
+      "path": "collections/reference/bmw-m/tokens.json",
+      "bytes": 35805,
+      "sha256": "c81206eaa60a245e499123e8e2da9aa4428478509f6ae1da7921fca76a86f7e8"
+    },
+    {
+      "path": "collections/reference/bugatti/ATTRIBUTION.md",
+      "bytes": 507,
+      "sha256": "56d1a9402ef80f8a4b41d58d3b63971496a4a724f93a4729f93ab3c98f4d81e1"
+    },
+    {
+      "path": "collections/reference/bugatti/DESIGN.md",
+      "bytes": 28535,
+      "sha256": "375f0a20ada88cdee5e995ca7edcfbd584ddf5f887024deebd1bc75bfd55b1bc"
+    },
+    {
+      "path": "collections/reference/bugatti/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/bugatti/collection.json",
+      "bytes": 2454,
+      "sha256": "fad30622873dc52db07bf7c732253d02cd65e57a1cbdbe5c245ba188f80bddca"
+    },
+    {
+      "path": "collections/reference/bugatti/study.json",
+      "bytes": 62234,
+      "sha256": "45a4934c9eed62ba1fa43b31f6233c6de33198164a577a368204eb363986fdfc"
+    },
+    {
+      "path": "collections/reference/bugatti/tokens.css",
+      "bytes": 3985,
+      "sha256": "9bee3b23904e24c86c0a1ac3d015e08ba03db4785b0fd83171cbafffbef99937"
+    },
+    {
+      "path": "collections/reference/bugatti/tokens.json",
+      "bytes": 32371,
+      "sha256": "499464802772e26679bddc2848308026a887c9bbc4a8d2e0d84ccc6cb7dad25c"
+    },
+    {
+      "path": "collections/reference/cal/ATTRIBUTION.md",
+      "bytes": 503,
+      "sha256": "ef0fe80032a6fcd1aba75023af53955137f5192425b473d43e2cdc703e5ba91e"
+    },
+    {
+      "path": "collections/reference/cal/DESIGN.md",
+      "bytes": 31176,
+      "sha256": "8cd21b7d67e94c899843d517f4b426e4fee33d47354a433d6a63ebcf79d5a654"
+    },
+    {
+      "path": "collections/reference/cal/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/cal/collection.json",
+      "bytes": 2418,
+      "sha256": "dadb9a892a4e1b2dd6837c84cb243b6f24675f86cca6567e9c6960cbfce6fd69"
+    },
+    {
+      "path": "collections/reference/cal/study.json",
+      "bytes": 69896,
+      "sha256": "92c1179c1499c5dd2f5133f74c69d8490eb9872b3cadc342046a2f14e47de9d7"
+    },
+    {
+      "path": "collections/reference/cal/tokens.css",
+      "bytes": 4442,
+      "sha256": "ecd08a605543fd2226ba3e4b924ee13c681c5439d4c9e5cd3cbbc3fb8d008476"
+    },
+    {
+      "path": "collections/reference/cal/tokens.json",
+      "bytes": 37919,
+      "sha256": "cd58d9b35d03d905846b37ff66f28c65a60e14747665ce513c9f108fa0e2dec0"
+    },
+    {
+      "path": "collections/reference/claude/ATTRIBUTION.md",
+      "bytes": 506,
+      "sha256": "fdceff6623a442b830758013ccb11766de25cb150dd74c21ac0909d00e017b66"
+    },
+    {
+      "path": "collections/reference/claude/DESIGN.md",
+      "bytes": 33586,
+      "sha256": "3d972f34f8d4f33b442fa28220cf3b7ca2f13c0a97c468e3988148f82521f9df"
+    },
+    {
+      "path": "collections/reference/claude/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/claude/collection.json",
+      "bytes": 2445,
+      "sha256": "5c375f7e1981f916b7d93c3474fc50ed8491c6e09acea95ef946b76ba726a22b"
+    },
+    {
+      "path": "collections/reference/claude/study.json",
+      "bytes": 74247,
+      "sha256": "e89d3e9cc74538a7d0154159fa7488f2506b366fdccc9e7562f2e6433f6db40c"
+    },
+    {
+      "path": "collections/reference/claude/tokens.css",
+      "bytes": 4816,
+      "sha256": "e1d47492787acfa5d9d80d4ff6e4409febe7adbfcf86fc499258d8690b32fb7b"
+    },
+    {
+      "path": "collections/reference/claude/tokens.json",
+      "bytes": 39737,
+      "sha256": "02f6dba3970e0bc4ef4f14c2489c4b872e7c61893c82507fcc9e2b9c4bc3b70a"
+    },
+    {
+      "path": "collections/reference/clay/ATTRIBUTION.md",
+      "bytes": 504,
+      "sha256": "7b677f94304cc2a95a1d08f9448a9b9fd8a371140971ef7f77427c2eccb2103e"
+    },
+    {
+      "path": "collections/reference/clay/DESIGN.md",
+      "bytes": 25705,
+      "sha256": "1abd803a207fbe950a06e155adcd6013c2e149b13e7b88844f5069f9d3d99eb3"
+    },
+    {
+      "path": "collections/reference/clay/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/clay/collection.json",
+      "bytes": 2427,
+      "sha256": "c8e1a4dbebdf6f050001ed70d191838342bd7e569f0776b428e9d15ac647db54"
+    },
+    {
+      "path": "collections/reference/clay/study.json",
+      "bytes": 65299,
+      "sha256": "9083954be10797587589fd99fe3d8c0fbf386e59ffe2c433fa555d40954b23a3"
+    },
+    {
+      "path": "collections/reference/clay/tokens.css",
+      "bytes": 4599,
+      "sha256": "5955372dc272da765a842bb1fada110870e4bed5cc959b7aaba3b8466ca9bfb7"
+    },
+    {
+      "path": "collections/reference/clay/tokens.json",
+      "bytes": 39109,
+      "sha256": "dc59f707705667d0dcb1c34ba0a086728c828a642b0fa43a818fce9c62de965c"
+    },
+    {
+      "path": "collections/reference/clickhouse/ATTRIBUTION.md",
+      "bytes": 510,
+      "sha256": "a696db73849cc0799abf5c8ea103e4bc29bdcd4b378ff9fe40eb53793bc92e6e"
+    },
+    {
+      "path": "collections/reference/clickhouse/DESIGN.md",
+      "bytes": 25986,
+      "sha256": "50987e29b603cc7503ebe724af810fcf43845e96fdd4083e0fbe5fe00d2cdd2e"
+    },
+    {
+      "path": "collections/reference/clickhouse/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/clickhouse/collection.json",
+      "bytes": 2481,
+      "sha256": "544300d53264130bfc6c7ce4445523abc6458b5f28ee4743d4b0c268d6150343"
+    },
+    {
+      "path": "collections/reference/clickhouse/study.json",
+      "bytes": 67171,
+      "sha256": "8b2ac55ead7590cded289a453b5791cb97575eea4a0dd59ebd824b53b770fa3c"
+    },
+    {
+      "path": "collections/reference/clickhouse/tokens.css",
+      "bytes": 4845,
+      "sha256": "671cb7777375cff0e676081689479167962f43f07a7d29ccb07e5faf21655fcc"
+    },
+    {
+      "path": "collections/reference/clickhouse/tokens.json",
+      "bytes": 40839,
+      "sha256": "e9e772e54382b0c061c875ed4ee03b58c1b422c04da792f752385063e39c5b10"
+    },
+    {
+      "path": "collections/reference/cohere/ATTRIBUTION.md",
+      "bytes": 506,
+      "sha256": "765d69f99e5ff410d0ef80630e2fc1c22541360b99ed20619494ed5e85707095"
+    },
+    {
+      "path": "collections/reference/cohere/DESIGN.md",
+      "bytes": 20020,
+      "sha256": "1c49a5a5f88d43841d4f4afa33831328d47a5715048700a3b75086a822575883"
+    },
+    {
+      "path": "collections/reference/cohere/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/cohere/collection.json",
+      "bytes": 2445,
+      "sha256": "0f35587b201faf33a31513a1ad1581d88705d001257c1618bafe4b7a6c10ab68"
+    },
+    {
+      "path": "collections/reference/cohere/study.json",
+      "bytes": 56237,
+      "sha256": "a45bd7a59bc6b10bfe8c6f150c1832ce00be56adb547aec74abfeb171dfb7db9"
+    },
+    {
+      "path": "collections/reference/cohere/tokens.css",
+      "bytes": 4168,
+      "sha256": "ce2b00fcdf31b0483f5dc23e2860e57ebed8c937f2ff8ae7d36b3df663fe3e9a"
+    },
+    {
+      "path": "collections/reference/cohere/tokens.json",
+      "bytes": 35345,
+      "sha256": "083fc1c4bfdae3660b39857354de3495427b93035b08cd2466f65f449e1d753a"
+    },
+    {
+      "path": "collections/reference/coinbase/ATTRIBUTION.md",
+      "bytes": 508,
+      "sha256": "f1eae55554278c005ae83c3c46170cab6a329046e0e12950a3f7c39450879070"
+    },
+    {
+      "path": "collections/reference/coinbase/DESIGN.md",
+      "bytes": 25853,
+      "sha256": "c8c67800dd7f58fcc87ed7d267a3bba862e3419e499e8a66d67731a69d2de1d6"
+    },
+    {
+      "path": "collections/reference/coinbase/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/coinbase/collection.json",
+      "bytes": 2463,
+      "sha256": "26004819786197db302aba7e83e7dc9a99f3786783e795cb3aa7222d1af38fb6"
+    },
+    {
+      "path": "collections/reference/coinbase/study.json",
+      "bytes": 69702,
+      "sha256": "51d3d3ba2e4505b8b4e8b5b5c8292f46ddfc2681feb91c776bea115928a15f90"
+    },
+    {
+      "path": "collections/reference/coinbase/tokens.css",
+      "bytes": 5363,
+      "sha256": "4a6f5e459c1cd2ae668f5f117d899bc02a81547cf036633c979f2be89c5190ac"
+    },
+    {
+      "path": "collections/reference/coinbase/tokens.json",
+      "bytes": 43398,
+      "sha256": "5ae4d80885ddeaae66e6b69da3e5429af77da0c4200043d1cb66ebf24f1a9dd1"
+    },
+    {
+      "path": "collections/reference/composio/ATTRIBUTION.md",
+      "bytes": 508,
+      "sha256": "96e5550037134537561807c27dd8d924efd9d53b935ebd8fc45b45fc555c19d2"
+    },
+    {
+      "path": "collections/reference/composio/DESIGN.md",
+      "bytes": 20606,
+      "sha256": "e7db886dabecca61f29b83e8f46d7a1e8a43889d30b81bc6e48162ccaafcbb2f"
+    },
+    {
+      "path": "collections/reference/composio/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/composio/collection.json",
+      "bytes": 2463,
+      "sha256": "4fba233cfdf88c43046f07269525b1d35b1116163bc07e7c051d8f2665ef3891"
+    },
+    {
+      "path": "collections/reference/composio/study.json",
+      "bytes": 60967,
+      "sha256": "f90d873daea97221266ac48fdbd1f93c908296bcbce3ecfb624fc86ebd8d6bb8"
+    },
+    {
+      "path": "collections/reference/composio/tokens.css",
+      "bytes": 5074,
+      "sha256": "c221a6c338c9874a2258864bb600d384fb1f30b4d6105b85e7d4dd49b4290835"
+    },
+    {
+      "path": "collections/reference/composio/tokens.json",
+      "bytes": 39740,
+      "sha256": "0fa1d18aec890598147cf82c6bb133ce37709d1b128da71afa7879ab5d9211a6"
+    },
+    {
+      "path": "collections/reference/cursor/ATTRIBUTION.md",
+      "bytes": 506,
+      "sha256": "a8a0355a1e4555d16017c0404218b2ab0a23bb8c3315f9e314a8e6b422eb0366"
+    },
+    {
+      "path": "collections/reference/cursor/DESIGN.md",
+      "bytes": 21771,
+      "sha256": "a3db9b3019dc2f514fdee7cd0ca0a5232c0bd0119e23178e8eebaf6916258d9d"
+    },
+    {
+      "path": "collections/reference/cursor/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/cursor/collection.json",
+      "bytes": 2445,
+      "sha256": "13c528f890907f1d771ee469e723d4cbe6f5cee5f8d105d0fbe1df4080ea411f"
+    },
+    {
+      "path": "collections/reference/cursor/study.json",
+      "bytes": 62613,
+      "sha256": "b58ef2fe9bb8fa8b5a44050501d3dd3eb4f1bb69f5355968d43c87538b5ba722"
+    },
+    {
+      "path": "collections/reference/cursor/tokens.css",
+      "bytes": 4821,
+      "sha256": "3aeea52d14701f75a31780742e996d3b8b368a4573f6e95033575a7139ba8423"
+    },
+    {
+      "path": "collections/reference/cursor/tokens.json",
+      "bytes": 39517,
+      "sha256": "6c0d7191370ad488a8d2643586182d60e9dea2cd5e9c476167bc21b6fcce20de"
+    },
+    {
+      "path": "collections/reference/dell-1996/ATTRIBUTION.md",
+      "bytes": 509,
+      "sha256": "1965e5f6e649fe66a70d44c2735cbb5294d6d176b13f226fc5b412058cfb1e0a"
+    },
+    {
+      "path": "collections/reference/dell-1996/DESIGN.md",
+      "bytes": 34592,
+      "sha256": "e186c614b1223fe7015670472ac6bc84b5b3fdd5de5325b3ce5bfb7fbe9c8d6e"
+    },
+    {
+      "path": "collections/reference/dell-1996/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/dell-1996/collection.json",
+      "bytes": 4047,
+      "sha256": "ef6c4cd0c959b199423546502a910b96cea351c287e2bca9daafc03dc97761c8"
+    },
+    {
+      "path": "collections/reference/dell-1996/study.json",
+      "bytes": 66619,
+      "sha256": "8fa2712bfb32b214555e82de46f549bc8b450c749777a7c8b4a8e9ecb7468e19"
+    },
+    {
+      "path": "collections/reference/dell-1996/tokens.css",
+      "bytes": 3245,
+      "sha256": "79194c0f6cb6531cdeb33a23b7eb8e71730a16065cd07de0431c71bd4f08785f"
+    },
+    {
+      "path": "collections/reference/dell-1996/tokens.json",
+      "bytes": 28698,
+      "sha256": "ac75b3b5a8a759d26a4e27fbc81a13b8c49d892f4be99c157472c060d61ec0e9"
+    },
+    {
+      "path": "collections/reference/dji/ATTRIBUTION.md",
+      "bytes": 503,
+      "sha256": "a1db0b8bf3ecd72005f25870affbeb8450d68f5a34f59182c9c975493ff3c508"
+    },
+    {
+      "path": "collections/reference/dji/DESIGN.md",
+      "bytes": 42268,
+      "sha256": "c8a57520b87286869a88cdd2c07f21080ebda9fb3eee315b11d95c752582c1a9"
+    },
+    {
+      "path": "collections/reference/dji/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/dji/collection.json",
+      "bytes": 2418,
+      "sha256": "3670d94f2bbe45a3db6d9a31a934088a9bd1f1dca26115506c674e0e02d8670f"
+    },
+    {
+      "path": "collections/reference/dji/study.json",
+      "bytes": 95384,
+      "sha256": "12fee8700ba6879f68a225e6fca7d90f39545d01cd2b07985860d4b709433591"
+    },
+    {
+      "path": "collections/reference/dji/tokens.css",
+      "bytes": 6382,
+      "sha256": "730730ecc02cb5b2c6b416d1d8d7dacdfd1e937c474578e30626297d8c08b4ad"
+    },
+    {
+      "path": "collections/reference/dji/tokens.json",
+      "bytes": 55312,
+      "sha256": "cf5e5bd1ef8667fc2956136222e0ee5bea5e2891640969c0de3e6b8f3a107dcd"
+    },
+    {
+      "path": "collections/reference/elevenlabs/ATTRIBUTION.md",
+      "bytes": 510,
+      "sha256": "612773414df9546a6fca2d83ecf71a6e289bfe4c2566643053047eb4c836e87c"
+    },
+    {
+      "path": "collections/reference/elevenlabs/DESIGN.md",
+      "bytes": 20943,
+      "sha256": "3b359acfaafadbb499c7ed3eebe813a76e0be497a7157b77de207fe275068a66"
+    },
+    {
+      "path": "collections/reference/elevenlabs/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/elevenlabs/collection.json",
+      "bytes": 2481,
+      "sha256": "ae908f425f1f39c9b19863b2051bb19a3900631280886d6cafb8657fd5028674"
+    },
+    {
+      "path": "collections/reference/elevenlabs/study.json",
+      "bytes": 64671,
+      "sha256": "d932f0425d439d2d509544d4f5440ce0d2277269404f2e6b619f1fce09feeb82"
+    },
+    {
+      "path": "collections/reference/elevenlabs/tokens.css",
+      "bytes": 4932,
+      "sha256": "5e0111e61559e8c2fc37dcf45d546582457ab7f9a08a635f4ac9a0f0fa32d4e6"
+    },
+    {
+      "path": "collections/reference/elevenlabs/tokens.json",
+      "bytes": 41509,
+      "sha256": "6afde8625847580c3adde28d7a94b799cab578e02ba7959913b12277be3dd5b1"
+    },
+    {
+      "path": "collections/reference/expo/ATTRIBUTION.md",
+      "bytes": 504,
+      "sha256": "83c15b61025821e35ca5b3875ef706782573a4c976b5aab5e1bb25061a0ae39e"
+    },
+    {
+      "path": "collections/reference/expo/DESIGN.md",
+      "bytes": 21660,
+      "sha256": "1be7e129b6f75afaa12318a7c51ab22f6f74a214dec22c4827cecc519f112363"
+    },
+    {
+      "path": "collections/reference/expo/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/expo/collection.json",
+      "bytes": 2427,
+      "sha256": "09c334d1ad4e7ccfd359c28008d496067fb3c5dbf136738c479e7ff95433ccf3"
+    },
+    {
+      "path": "collections/reference/expo/study.json",
+      "bytes": 63955,
+      "sha256": "dc2ad475092a324d63d44116751e668df5b78c2094e920500a9f4a966af35b77"
+    },
+    {
+      "path": "collections/reference/expo/tokens.css",
+      "bytes": 4953,
+      "sha256": "f661a54f648e96c1bd24f98e85dd9300bf6b13c7b320725ed8ad3a4215956737"
+    },
+    {
+      "path": "collections/reference/expo/tokens.json",
+      "bytes": 41781,
+      "sha256": "79d4a8b0ac37d3b29d5e50871395e6b9596e276f8c17b99944e0b7d62db59298"
+    },
+    {
+      "path": "collections/reference/ferrari/ATTRIBUTION.md",
+      "bytes": 507,
+      "sha256": "5c2ee7fcdc8a846399aaedf2e8f99aaf8de12d61d925c4dd05f4be8b537de2fa"
+    },
+    {
+      "path": "collections/reference/ferrari/DESIGN.md",
+      "bytes": 24365,
+      "sha256": "1199e2832641cac7e384aaf3b1f3db87f992240cea5d3d1eee04d9dc00acb17c"
+    },
+    {
+      "path": "collections/reference/ferrari/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/ferrari/collection.json",
+      "bytes": 2454,
+      "sha256": "c8df0112a5761b752331cc6b915f76e00365714520c51fdffc68f4907c85300b"
+    },
+    {
+      "path": "collections/reference/ferrari/study.json",
+      "bytes": 64634,
+      "sha256": "4aef60b694969be4a8249dd0253cd94eda7d5d81beef4bddf77206c2f1e2395c"
+    },
+    {
+      "path": "collections/reference/ferrari/tokens.css",
+      "bytes": 4695,
+      "sha256": "ea3c2ab6767f2a987639c68648968913af9f8df433bcfe99069a8222cfe4fac9"
+    },
+    {
+      "path": "collections/reference/ferrari/tokens.json",
+      "bytes": 38779,
+      "sha256": "e0123f4e406064947ac00cc5ae78a6cd8f5a505f2fe71a1b9a3d37963354cc15"
+    },
+    {
+      "path": "collections/reference/figma/ATTRIBUTION.md",
+      "bytes": 505,
+      "sha256": "49df1b028b03fb2f3ba869aa906440d4fc5bbcc1e7f788b743afe98f75787860"
+    },
+    {
+      "path": "collections/reference/figma/DESIGN.md",
+      "bytes": 32316,
+      "sha256": "716ce8431f47eb8b8135552710e3c4d538bccccf1202e4ceac5428c9aada9972"
+    },
+    {
+      "path": "collections/reference/figma/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/figma/collection.json",
+      "bytes": 2436,
+      "sha256": "d0673d26bd73de3c7541bd855414058c1a2cbe7456cb8f8c96b411f063860d7e"
+    },
+    {
+      "path": "collections/reference/figma/study.json",
+      "bytes": 70269,
+      "sha256": "256484e99f753429184bc9b46af2321ffd55eb9552365f4aa7407048e3bd4a50"
+    },
+    {
+      "path": "collections/reference/figma/tokens.css",
+      "bytes": 3908,
+      "sha256": "da80acdd9f3c1e191054617663f1716b96514744a2890a38f4c14fa41c8bd327"
+    },
+    {
+      "path": "collections/reference/figma/tokens.json",
+      "bytes": 34223,
+      "sha256": "93a1ea45690c7dcbaee2a06d1d4c7b029f13404ba056d3421a2b92493ce4c341"
+    },
+    {
+      "path": "collections/reference/framer/ATTRIBUTION.md",
+      "bytes": 506,
+      "sha256": "4ac500f1e53816183157ff8bdd731f61556eeff1c61438f529e273a8d7bbc2ab"
+    },
+    {
+      "path": "collections/reference/framer/DESIGN.md",
+      "bytes": 29119,
+      "sha256": "a5d47dddacf5a04577cec0be6fe0fc53b7402254c7686874af3e59bcc7588cb4"
+    },
+    {
+      "path": "collections/reference/framer/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/framer/collection.json",
+      "bytes": 2445,
+      "sha256": "b8a06ee719006856b2b55b2055dfac85957c5d124904be70ce93a4d9438524d4"
+    },
+    {
+      "path": "collections/reference/framer/study.json",
+      "bytes": 66309,
+      "sha256": "79c42c4b50a5e963d9567404150bce09591ba108b1c924e09a493825bc6d7678"
+    },
+    {
+      "path": "collections/reference/framer/tokens.css",
+      "bytes": 3934,
+      "sha256": "9557c53fa806b6b16d88d3067a61ccedc0c51f6a32c4e021a780365884195867"
+    },
+    {
+      "path": "collections/reference/framer/tokens.json",
+      "bytes": 33696,
+      "sha256": "ce3e7bbee7c21706b2840ef54f093223713f9a91b67fa17cb9b96e711793c67c"
+    },
+    {
+      "path": "collections/reference/hashicorp/ATTRIBUTION.md",
+      "bytes": 509,
+      "sha256": "4b3b778890fd7fd4b55b4435378aba9bfac0f4c6396fbb076c7e966e2233852c"
+    },
+    {
+      "path": "collections/reference/hashicorp/DESIGN.md",
+      "bytes": 28023,
+      "sha256": "d2df9be72d867e48d318fd18db04e60a78357c27e392ab921fc2ba7f46951442"
+    },
+    {
+      "path": "collections/reference/hashicorp/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/hashicorp/collection.json",
+      "bytes": 2472,
+      "sha256": "28b702d4e3b47032dada503f0ea096d30f88d3fb28b6fd0142dc8de0b645223b"
+    },
+    {
+      "path": "collections/reference/hashicorp/study.json",
+      "bytes": 67200,
+      "sha256": "9c87c857fe6de94d81d7da05821831d00a30a1af322eb0c077612455dc5cdfdb"
+    },
+    {
+      "path": "collections/reference/hashicorp/tokens.css",
+      "bytes": 4385,
+      "sha256": "d7dc7c712b4ff6994b4e63f8c095a3a6f7b5c537cae8ffb8e34d983b7b69a227"
+    },
+    {
+      "path": "collections/reference/hashicorp/tokens.json",
+      "bytes": 38125,
+      "sha256": "3bfc74ebb2510fa6f353586060938c43b9b1106fe551cbd6313c004a36dfa295"
+    },
+    {
+      "path": "collections/reference/hp/ATTRIBUTION.md",
+      "bytes": 502,
+      "sha256": "696330fb9c92122eae7e36d0e2f9ea59b6e65c43adcb40199c4f752342656d2a"
+    },
+    {
+      "path": "collections/reference/hp/DESIGN.md",
+      "bytes": 36335,
+      "sha256": "4c9a248046684bdde5311a0c9881814f50e2381c2b0f3c75b02a35fc64bc8bb8"
+    },
+    {
+      "path": "collections/reference/hp/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/hp/collection.json",
+      "bytes": 2409,
+      "sha256": "4ef8458cd4215f7829a7d00b6d66ca7c2f01a89a90f4bcaea17944a6dedd5201"
+    },
+    {
+      "path": "collections/reference/hp/study.json",
+      "bytes": 80893,
+      "sha256": "6888547d2c36ab288c0c2bb9effde62a8772e18ea0a2345991668c0ae66f6c0b"
+    },
+    {
+      "path": "collections/reference/hp/tokens.css",
+      "bytes": 5183,
+      "sha256": "63fc44dff923b1ccaeeff3f273448d466735591397ccf5056905221147d972f3"
+    },
+    {
+      "path": "collections/reference/hp/tokens.json",
+      "bytes": 44613,
+      "sha256": "cb08ddf457f763208249c43fe56d7efc65c543307651d3c59d6c742d9e262d9b"
+    },
+    {
+      "path": "collections/reference/ibm/ATTRIBUTION.md",
+      "bytes": 503,
+      "sha256": "354e9e40fb1c143bf992bb6bd1eff4b449a060d0e633ad804d902a24cb699042"
+    },
+    {
+      "path": "collections/reference/ibm/DESIGN.md",
+      "bytes": 26481,
+      "sha256": "46f6fd65b5e7524fed1133b9b3c0dd619f9a0f145fbb2b87f3675c701a88f3bd"
+    },
+    {
+      "path": "collections/reference/ibm/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/ibm/collection.json",
+      "bytes": 2418,
+      "sha256": "49b29a56c9198d0f5d4c2390f33e29a338a258fb9dfafca5d36fc1ad766ad757"
+    },
+    {
+      "path": "collections/reference/ibm/study.json",
+      "bytes": 63806,
+      "sha256": "eb7d1ec82b6013819d9b62b1712ebfd8135bd77b01f1861fe55c69395e763820"
+    },
+    {
+      "path": "collections/reference/ibm/tokens.css",
+      "bytes": 4225,
+      "sha256": "6e9d695a7a26cdc905f416cc1688b6386f550eda681eff2f33d25e5ec3cb4602"
+    },
+    {
+      "path": "collections/reference/ibm/tokens.json",
+      "bytes": 36280,
+      "sha256": "3f31ee5288a6bcd0fdc21e3619993f4350a0e924689fa455d4ebbbd9daaa1875"
+    },
+    {
+      "path": "collections/reference/intercom/ATTRIBUTION.md",
+      "bytes": 508,
+      "sha256": "2271ed90f36a8406ee9d9b86ac1ed905b80ce8d4fd421fdcd4fa8e629b1602c6"
+    },
+    {
+      "path": "collections/reference/intercom/DESIGN.md",
+      "bytes": 23278,
+      "sha256": "962be23cd947e87a86b2ffbc0440e9d0808243a6ef3af2aa04e8e7cc04d48ba3"
+    },
+    {
+      "path": "collections/reference/intercom/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/intercom/collection.json",
+      "bytes": 2463,
+      "sha256": "9b45ae3042409a0da9973c2402b0a713eaea28f6041ca78f734691ffc94ab637"
+    },
+    {
+      "path": "collections/reference/intercom/study.json",
+      "bytes": 61706,
+      "sha256": "0c14bb386dc4e2ce2eb5d5a763a4e31eb2a81616d359dcb665fd8795cde052fa"
+    },
+    {
+      "path": "collections/reference/intercom/tokens.css",
+      "bytes": 4247,
+      "sha256": "219d6ebcdb9e29eb266349cb4a8153a4267c9ee4f1319e928e4954ef7ecd27e7"
+    },
+    {
+      "path": "collections/reference/intercom/tokens.json",
+      "bytes": 37706,
+      "sha256": "97d95e8e7a1ad58ce5ad4ecd844607e76fd0fd24bc1bf2420678defc993a5d25"
+    },
+    {
+      "path": "collections/reference/jobright/ATTRIBUTION.md",
+      "bytes": 508,
+      "sha256": "b4a4ce5dbb15b6d69017b828c2c492e0f74fdf044f9039d06fd0481da9024211"
+    },
+    {
+      "path": "collections/reference/jobright/DESIGN.md",
+      "bytes": 26861,
+      "sha256": "9e682194e3f846915164189538741133ab1e2779730677e92d28f873f782999b"
+    },
+    {
+      "path": "collections/reference/jobright/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/jobright/collection.json",
+      "bytes": 2463,
+      "sha256": "7813844438ddbcd8989bb6df1075dc287c7fbfaca8acec4b0d8160f2dc0f5977"
+    },
+    {
+      "path": "collections/reference/jobright/study.json",
+      "bytes": 58027,
+      "sha256": "3dea350a5cbfbd4f8ff71caf300028b3a0d5818c38f0e5385aedac1a1f23c6dd"
+    },
+    {
+      "path": "collections/reference/jobright/tokens.css",
+      "bytes": 3267,
+      "sha256": "2e5d5933a98f1f60b24d8dab9e7c9b7c9d8db4cddb61fa3c477d485290a5d3bd"
+    },
+    {
+      "path": "collections/reference/jobright/tokens.json",
+      "bytes": 28887,
+      "sha256": "679567d68a44c5eb69bdcbc44ad918de153b28b59ebcd5e1024a281296ac149f"
+    },
+    {
+      "path": "collections/reference/kraken/ATTRIBUTION.md",
+      "bytes": 506,
+      "sha256": "1801f80987c178f721f94f2a6cf80da9f7993d187ac62bbc4912782c8156895e"
+    },
+    {
+      "path": "collections/reference/kraken/DESIGN.md",
+      "bytes": 4350,
+      "sha256": "41bcbd5642c926a549f0d50f1151484c5776b4536233240c8415cfb79bcf1f38"
+    },
+    {
+      "path": "collections/reference/kraken/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/kraken/collection.json",
+      "bytes": 2445,
+      "sha256": "571542a05cbb0873b6ea2748437542b4534493360f99ec5fadc721b9b7e9559f"
+    },
+    {
+      "path": "collections/reference/kraken/study.json",
+      "bytes": 13323,
+      "sha256": "6a7c32bf720ba3721b90380221e554c7a644341888830a62a76cc9d83a6c4e7b"
+    },
+    {
+      "path": "collections/reference/kraken/tokens.css",
+      "bytes": 460,
+      "sha256": "a489ec63b026ed0f6ca4cb0144677fdb43e68591602caa46e0e02385af2f15b4"
+    },
+    {
+      "path": "collections/reference/kraken/tokens.json",
+      "bytes": 5197,
+      "sha256": "eee864e761233b7f2f11003b37529564aa88a67bc56bc457c803e1163723e8d5"
+    },
+    {
+      "path": "collections/reference/lamborghini/ATTRIBUTION.md",
+      "bytes": 511,
+      "sha256": "4a0ef002eba6730fb64258d4d62acc08d05e85cec6aa7d538da6298a570fcb87"
+    },
+    {
+      "path": "collections/reference/lamborghini/DESIGN.md",
+      "bytes": 21119,
+      "sha256": "9aa68c53b481a0befdf72859db5625f85454122294509989aa58414aaee04b34"
+    },
+    {
+      "path": "collections/reference/lamborghini/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/lamborghini/collection.json",
+      "bytes": 2490,
+      "sha256": "faecf79d385a7dfa3b4b925d5f50d96938675eea2e2f7e75cb6e935ae1c97126"
+    },
+    {
+      "path": "collections/reference/lamborghini/study.json",
+      "bytes": 35128,
+      "sha256": "ac17261fa227e39c57f7b451b3b35a448bbdfcd515ab4a54a7da0d4b6454d3e3"
+    },
+    {
+      "path": "collections/reference/lamborghini/tokens.css",
+      "bytes": 771,
+      "sha256": "4a9b69f5b8090bdcff326964e443759e80db8008993b354531fa42ada01da82b"
+    },
+    {
+      "path": "collections/reference/lamborghini/tokens.json",
+      "bytes": 9321,
+      "sha256": "33b6b2d63c34257c0ac22f75bfe41e96c2802d1826363f692d893b095d7efbda"
+    },
+    {
+      "path": "collections/reference/linear-app/ATTRIBUTION.md",
+      "bytes": 510,
+      "sha256": "37f4e68f8ae42eb8d3b19dadedd518520597e62f2a70c4ec2efbb3051373cf53"
+    },
+    {
+      "path": "collections/reference/linear-app/DESIGN.md",
+      "bytes": 24354,
+      "sha256": "30bd30e72c48a16e4bdbd010f2d1c85fab657c6fae3cc85389399aab10f9cb5f"
+    },
+    {
+      "path": "collections/reference/linear-app/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/linear-app/collection.json",
+      "bytes": 3973,
+      "sha256": "c44cee1d676c0172b1f6442dce6fdc51d3cb28a7bddf06d2780a8de0ef53bc92"
+    },
+    {
+      "path": "collections/reference/linear-app/study.json",
+      "bytes": 63075,
+      "sha256": "31ea990a0d680bda2be09380d308b7ec7880a3b72d2c257f3c2d6ee04846d51a"
+    },
+    {
+      "path": "collections/reference/linear-app/tokens.css",
+      "bytes": 4291,
+      "sha256": "e8a07d4c2729a3604f4ce2473cba365df4c8747d4c2763bd31213ed27cbf37a5"
+    },
+    {
+      "path": "collections/reference/linear-app/tokens.json",
+      "bytes": 37177,
+      "sha256": "a7286cf53e46f7887fea067da49de15b88df8aa39f83516516f6e7961584e035"
+    },
+    {
+      "path": "collections/reference/lovable/ATTRIBUTION.md",
+      "bytes": 507,
+      "sha256": "b5550b12d2dbd8eda00778d97e62efc0cf71402ae67ac47f38b63454a6436740"
+    },
+    {
+      "path": "collections/reference/lovable/DESIGN.md",
+      "bytes": 17384,
+      "sha256": "92790895c833104072643929ba56ebbf42c8f88ffb7bff1926462545d0ace6c7"
+    },
+    {
+      "path": "collections/reference/lovable/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/lovable/collection.json",
+      "bytes": 2454,
+      "sha256": "952758f0ca880e8c1b37630396f831797fd50ab3a77bb46ea91c8a65f7d43fbf"
+    },
+    {
+      "path": "collections/reference/lovable/study.json",
+      "bytes": 27076,
+      "sha256": "1e59234c018a3025abec246504a68223447fde770d64e2be772ea9996520181b"
+    },
+    {
+      "path": "collections/reference/lovable/tokens.css",
+      "bytes": 327,
+      "sha256": "0d8dfc7914b9b69439717127e0d35ed1e180352546b527b0edcde5d0a090fcf1"
+    },
+    {
+      "path": "collections/reference/lovable/tokens.json",
+      "bytes": 4187,
+      "sha256": "3b319b78533513b47f1b382df77ad4fb52e4c98feb8a6aaac9fc4803f0d8f00a"
+    },
+    {
+      "path": "collections/reference/mastercard/ATTRIBUTION.md",
+      "bytes": 510,
+      "sha256": "42e74ebdbb4672a7ab3ebd249df242791d340b3d576beb4b6e96a0b5074ea3be"
+    },
+    {
+      "path": "collections/reference/mastercard/DESIGN.md",
+      "bytes": 26995,
+      "sha256": "e76ceaa187f43bd24b8338d2b2314e71e9225b36492e40f32a55782281a10437"
+    },
+    {
+      "path": "collections/reference/mastercard/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/mastercard/collection.json",
+      "bytes": 2481,
+      "sha256": "ea5b238a920df334cb208a8fe0b746a270c64863c7b54e29d991e2e9f46c760e"
+    },
+    {
+      "path": "collections/reference/mastercard/study.json",
+      "bytes": 40972,
+      "sha256": "18c0be6243e31ef99199990e4f6954b8f6dffce509c5a061234ddd5a0056e05b"
+    },
+    {
+      "path": "collections/reference/mastercard/tokens.css",
+      "bytes": 736,
+      "sha256": "1d136ab1dc0583818d6a1111b1ac43de107113b06587ca9db4451a93932b4d6f"
+    },
+    {
+      "path": "collections/reference/mastercard/tokens.json",
+      "bytes": 8876,
+      "sha256": "981e93c18d13ce994a5bc14b1b2ae3fd3228701e9d50590857f535a7aa90bdb7"
+    },
+    {
+      "path": "collections/reference/mercury/ATTRIBUTION.md",
+      "bytes": 507,
+      "sha256": "ff84a253d52a887e91d5bd75416d5c1ab33ca98c5fd91ce03127678356652264"
+    },
+    {
+      "path": "collections/reference/mercury/DESIGN.md",
+      "bytes": 25065,
+      "sha256": "dabb3683422a9841369b0db53ff13ed375b0b6f019157a5c90e9fca165cc111f"
+    },
+    {
+      "path": "collections/reference/mercury/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/mercury/collection.json",
+      "bytes": 2454,
+      "sha256": "87f7fa2861127d094ad58c1501012330f620557b7edb6006969b0ed2bc16bb43"
+    },
+    {
+      "path": "collections/reference/mercury/study.json",
+      "bytes": 57249,
+      "sha256": "9f77c0bf4b28996ead50acbfa5d633824d8bf6d96a72b5148be9df8e2cfbda3b"
+    },
+    {
+      "path": "collections/reference/mercury/tokens.css",
+      "bytes": 3374,
+      "sha256": "2082a9fc6fee7c684128f9564369cafa21171500e57ffcb49e5b00e3821b9c88"
+    },
+    {
+      "path": "collections/reference/mercury/tokens.json",
+      "bytes": 30273,
+      "sha256": "4817c1425333a3188c14568ffc5014dc72a8e56fbd2cb1d911f76ad017f68d09"
+    },
+    {
+      "path": "collections/reference/meta/ATTRIBUTION.md",
+      "bytes": 504,
+      "sha256": "9bcbe6c0931d150828b37eb5e1921c2d23715ebc03c29b9de8c715a523175861"
+    },
+    {
+      "path": "collections/reference/meta/DESIGN.md",
+      "bytes": 37986,
+      "sha256": "306dfad97c006d47b134fb0dbd55ff68d3baa526844d6eb37346373c9ef35339"
+    },
+    {
+      "path": "collections/reference/meta/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/meta/collection.json",
+      "bytes": 2427,
+      "sha256": "ace76740d51685acdfd0a67233cbb3ff1a8dfb58a773697f1b901b3eeb8d78c1"
+    },
+    {
+      "path": "collections/reference/meta/study.json",
+      "bytes": 80867,
+      "sha256": "c0f71f064a6aba5571f0da6a9f4f567ec312c8fa8b930389f8308afa89c7c565"
+    },
+    {
+      "path": "collections/reference/meta/tokens.css",
+      "bytes": 4746,
+      "sha256": "850e84ac11b2536ff687638f5a86e39ea14d676face6b9febdf44ffc7977ac18"
+    },
+    {
+      "path": "collections/reference/meta/tokens.json",
+      "bytes": 41394,
+      "sha256": "f4ac4374a58b8dd8bee875ea02cc79c295d88f037c8ce97448498c0361220475"
+    },
+    {
+      "path": "collections/reference/minimax/ATTRIBUTION.md",
+      "bytes": 507,
+      "sha256": "aed9b0c46eb9f9e034ac26ad2bb8684cf60133433828e7fe5c244662b0ca2f9d"
+    },
+    {
+      "path": "collections/reference/minimax/DESIGN.md",
+      "bytes": 37920,
+      "sha256": "2658b96488bb629749259b152c5ba2912a0e8feb6a03477e265879abd9264c50"
+    },
+    {
+      "path": "collections/reference/minimax/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/minimax/collection.json",
+      "bytes": 2454,
+      "sha256": "b861220760c31deb163c38bb19b366097ff7cf8366fbd973687231f2349e13a7"
+    },
+    {
+      "path": "collections/reference/minimax/study.json",
+      "bytes": 79634,
+      "sha256": "4156c97023ff44f955f875bec4685ec336887b69e2f4130ab42d19f9cf8251a7"
+    },
+    {
+      "path": "collections/reference/minimax/tokens.css",
+      "bytes": 4519,
+      "sha256": "c19e45538c922d84c6709e9d2c4957bec1185c22c1c31fb2af3d5cbabd322f0b"
+    },
+    {
+      "path": "collections/reference/minimax/tokens.json",
+      "bytes": 40193,
+      "sha256": "29f7bdf62437a2c0a0104b7a6594b24fd50085dc9e06aee64e90a53c3d80d6ad"
+    },
+    {
+      "path": "collections/reference/mintlify/ATTRIBUTION.md",
+      "bytes": 508,
+      "sha256": "e79b8b399c3b9736b3e4c98d1ca47ff1a4d4993e5a599cc1f01f1309590e4bd7"
+    },
+    {
+      "path": "collections/reference/mintlify/DESIGN.md",
+      "bytes": 44083,
+      "sha256": "754ffcf35dcd39ef8aef450085ce936aaca5b872ff92caa66be99e91a5c3d5ec"
+    },
+    {
+      "path": "collections/reference/mintlify/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/mintlify/collection.json",
+      "bytes": 2463,
+      "sha256": "b25305456b297c3335b6ff5683633c1414d6c9633c661cad729a0d1760857b0a"
+    },
+    {
+      "path": "collections/reference/mintlify/study.json",
+      "bytes": 93563,
+      "sha256": "73b45e945d774cf8bff9748f972f58607dc3fdeed3567649b500e835a466d0be"
+    },
+    {
+      "path": "collections/reference/mintlify/tokens.css",
+      "bytes": 5564,
+      "sha256": "3c175c3a171131a19059cfc069a2ca1eeb1e616dfd6057c5c6d4cb24c37f4394"
+    },
+    {
+      "path": "collections/reference/mintlify/tokens.json",
+      "bytes": 48852,
+      "sha256": "7209f4f43698a9482b78e42b78d5ad500b434895e201a58a67a3a3cad5804753"
+    },
+    {
+      "path": "collections/reference/miro/ATTRIBUTION.md",
+      "bytes": 504,
+      "sha256": "f2cad108c551bacf287b65c03255663044686f400c41bb84da3bb0f4e96eb1fd"
+    },
+    {
+      "path": "collections/reference/miro/DESIGN.md",
+      "bytes": 36542,
+      "sha256": "87c71f76297277d64f9679e015a50da88e72d86d7b41badf8733eae1e4cde335"
+    },
+    {
+      "path": "collections/reference/miro/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/miro/collection.json",
+      "bytes": 2427,
+      "sha256": "67b2d449cd8a0584fe2b0928fcc42ac14c704790d04f389c337057aaef0f3373"
+    },
+    {
+      "path": "collections/reference/miro/study.json",
+      "bytes": 86295,
+      "sha256": "6838422c3396b4df70e533ca60aa9ee26f0f9ba2949c4cfdfdaea7c4dee95b48"
+    },
+    {
+      "path": "collections/reference/miro/tokens.css",
+      "bytes": 5697,
+      "sha256": "3277a3709d4c6e49b160a94917612164864fcc541057d93a351cc4d60816fb98"
+    },
+    {
+      "path": "collections/reference/miro/tokens.json",
+      "bytes": 49716,
+      "sha256": "e78e3e8fe773b5d6038bdae4b4483b50a8e68fe437e1d8bc82ceea994b02ba04"
+    },
+    {
+      "path": "collections/reference/mistral-ai/ATTRIBUTION.md",
+      "bytes": 510,
+      "sha256": "27fdf67333884949865c4ef27495d4ab036e3c31810969e5e22b094bb42dc5b4"
+    },
+    {
+      "path": "collections/reference/mistral-ai/DESIGN.md",
+      "bytes": 35508,
+      "sha256": "40e2c692d72c54bae1e43446e2d059b71d773668d39d71ccb7ededa9fa07d145"
+    },
+    {
+      "path": "collections/reference/mistral-ai/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/mistral-ai/collection.json",
+      "bytes": 2481,
+      "sha256": "6c311c70517fd20a242408d9e7e0462de7fe6b4d126bdb8acbc06de405156ece"
+    },
+    {
+      "path": "collections/reference/mistral-ai/study.json",
+      "bytes": 84491,
+      "sha256": "ef40d51fd3bebfad5deaab4fff034844495c2c30516cc4f15abcfdef61b7c48a"
+    },
+    {
+      "path": "collections/reference/mistral-ai/tokens.css",
+      "bytes": 5596,
+      "sha256": "2a9f801ed5ce4b8a21cf1d709e1afe02f9d098bceb7d984547789df903f507fd"
+    },
+    {
+      "path": "collections/reference/mistral-ai/tokens.json",
+      "bytes": 49055,
+      "sha256": "1ca9c5690416ddbf7fccc3e996667ac6cd98d893b5290524f6227be5d70b4688"
+    },
+    {
+      "path": "collections/reference/mongodb/ATTRIBUTION.md",
+      "bytes": 507,
+      "sha256": "96a540ce5de2145ba159d65b386baade52dfa4c933673a0ef4507c7782a2af05"
+    },
+    {
+      "path": "collections/reference/mongodb/DESIGN.md",
+      "bytes": 32077,
+      "sha256": "4523f10efd5ccd46f9aeac3b98626e24bcf907bc0c1e46500cb0e3920f932e71"
+    },
+    {
+      "path": "collections/reference/mongodb/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/mongodb/collection.json",
+      "bytes": 2454,
+      "sha256": "65e7296996d56530e3e44444eb998c6a69fd45d63e04ce8d4690460c27e738d6"
+    },
+    {
+      "path": "collections/reference/mongodb/study.json",
+      "bytes": 79447,
+      "sha256": "bc8de11b6a6dc252a23e47c3d149b19374614ae8a11fcb88b1df45d1148faec6"
+    },
+    {
+      "path": "collections/reference/mongodb/tokens.css",
+      "bytes": 5500,
+      "sha256": "aef2c4f2c1430f0fed3986937aeaea00a62ecb4b4e0d45807a5c2205bacada26"
+    },
+    {
+      "path": "collections/reference/mongodb/tokens.json",
+      "bytes": 46798,
+      "sha256": "570e80a25d7f2180dadcd43d77227b82faa2c6f1e1be142babc9833f043b4a99"
+    },
+    {
+      "path": "collections/reference/mydealz/ATTRIBUTION.md",
+      "bytes": 507,
+      "sha256": "cc6575e0bb11edeeef775835bec529dfa9552e1ca073e44b90477ec445c6b2a7"
+    },
+    {
+      "path": "collections/reference/mydealz/DESIGN.md",
+      "bytes": 25797,
+      "sha256": "598698a1bd0824260d57eb21f728b79cd702916f918de2b6f39b3720ba727872"
+    },
+    {
+      "path": "collections/reference/mydealz/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/mydealz/collection.json",
+      "bytes": 2454,
+      "sha256": "fa79a609dd0bd7b7a1bd3f4a5ddab5c1c76abec75580db31f9951b6361b983af"
+    },
+    {
+      "path": "collections/reference/mydealz/study.json",
+      "bytes": 54263,
+      "sha256": "72ebc65d61ce61e0ec478c80f6d70171cad8fe1144d30d7709773ccee1fef76e"
+    },
+    {
+      "path": "collections/reference/mydealz/tokens.css",
+      "bytes": 2839,
+      "sha256": "558bd204c5093d0f9db721b5eeeafd3d813f63b05085b8bc98bd38c7f594a668"
+    },
+    {
+      "path": "collections/reference/mydealz/tokens.json",
+      "bytes": 25578,
+      "sha256": "996114ec74bbe73b92bafffb84264f3a9fdabe61a9228bad5d00aa163fac4e72"
+    },
+    {
+      "path": "collections/reference/nerdwallet/ATTRIBUTION.md",
+      "bytes": 510,
+      "sha256": "f62ceb398a7f0a9b6522bdab20e80e3daa10e414c9bf09e4071c17673ff9b9aa"
+    },
+    {
+      "path": "collections/reference/nerdwallet/DESIGN.md",
+      "bytes": 36240,
+      "sha256": "478475273beb642f0661fb1aef7107bac5cde69250794bc148b28ee2c61960c7"
+    },
+    {
+      "path": "collections/reference/nerdwallet/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/nerdwallet/collection.json",
+      "bytes": 2481,
+      "sha256": "219992b1986cd1dd562f504fda8157e52ba40ed9f21fe0c29a90e1225d28c365"
+    },
+    {
+      "path": "collections/reference/nerdwallet/study.json",
+      "bytes": 77977,
+      "sha256": "a0804b19ca077cc770b40249f18e8b2aa1863e5446f2361d2a3b737ca447e846"
+    },
+    {
+      "path": "collections/reference/nerdwallet/tokens.css",
+      "bytes": 4632,
+      "sha256": "863b5ee65bc3d637cd0d06b92c3669dc8678d66a915f1f98196e0f8a1b3fd03f"
+    },
+    {
+      "path": "collections/reference/nerdwallet/tokens.json",
+      "bytes": 41527,
+      "sha256": "5db0f461cdd76904ad9caa50dd95fc1b64171e95b3e2cd9cb8e0b5eed558b978"
+    },
+    {
+      "path": "collections/reference/nike/ATTRIBUTION.md",
+      "bytes": 504,
+      "sha256": "c3fe16d8df0752cdb1dd858dd0d44eb9910ecaed4ba3f005712038d57d1d4ed4"
+    },
+    {
+      "path": "collections/reference/nike/DESIGN.md",
+      "bytes": 36697,
+      "sha256": "d2a3d363665839e2ddc15c91b8a9f3e92b1962ff55a7ca5d964ab3bb88b8186c"
+    },
+    {
+      "path": "collections/reference/nike/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/nike/collection.json",
+      "bytes": 2427,
+      "sha256": "0cfe185ca658d286bea6669aa947134a1dc0c1160d81dcae466fc4de3ff6e237"
+    },
+    {
+      "path": "collections/reference/nike/study.json",
+      "bytes": 74835,
+      "sha256": "6a5ea81c57121010c137e14eb65c009fa1479f475872d784b3f7b7cf4eb06569"
+    },
+    {
+      "path": "collections/reference/nike/tokens.css",
+      "bytes": 4379,
+      "sha256": "f86b69ccf08dddf2c5e12d20cf72b727c079a0d58ee7a30cb64291b11bb2ee58"
+    },
+    {
+      "path": "collections/reference/nike/tokens.json",
+      "bytes": 36565,
+      "sha256": "206b006683958b2a8ce2d0ecb697ff2763a25399c6d79ad1a7ea0d9483e8c3f9"
+    },
+    {
+      "path": "collections/reference/nintendo-2001/ATTRIBUTION.md",
+      "bytes": 513,
+      "sha256": "fc927316b64e389009c712c2a7d9ad20c6cc9b0d0e6d21908c187ca931681a58"
+    },
+    {
+      "path": "collections/reference/nintendo-2001/DESIGN.md",
+      "bytes": 38977,
+      "sha256": "9630af17090d5c39ba9d8b5915a597a96c7552efe1422b3b8c3f31fb3e636716"
+    },
+    {
+      "path": "collections/reference/nintendo-2001/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/nintendo-2001/collection.json",
+      "bytes": 2508,
+      "sha256": "b79d5d7b66aad0bcdb62fb823bd07c3fb120698c2e5b0dde9de2e45322557e0c"
+    },
+    {
+      "path": "collections/reference/nintendo-2001/study.json",
+      "bytes": 66260,
+      "sha256": "9b0324ae8e43f535655b671fe488d61068d22dc627230a6c649f269bff1a22b7"
+    },
+    {
+      "path": "collections/reference/nintendo-2001/tokens.css",
+      "bytes": 2677,
+      "sha256": "15dc671ce4f584449eb5d36def551a855a97a8d565524aa025be79b8352e0db2"
+    },
+    {
+      "path": "collections/reference/nintendo-2001/tokens.json",
+      "bytes": 24648,
+      "sha256": "956158221f3c330d8f5da97db821941a2f7ae71f1879a826b39f914c0875050b"
+    },
+    {
+      "path": "collections/reference/notion/ATTRIBUTION.md",
+      "bytes": 506,
+      "sha256": "b7f4b8b396e1d060fb730fc1ff7c5ba0961fdda48dea63a79c65640055607eb6"
+    },
+    {
+      "path": "collections/reference/notion/DESIGN.md",
+      "bytes": 35176,
+      "sha256": "fa9d6e78216d8f3e5d3990709ca2de6bc2e268e945bb94f255fd1bfb15455266"
+    },
+    {
+      "path": "collections/reference/notion/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/notion/collection.json",
+      "bytes": 2445,
+      "sha256": "0caca53ba633311ad471a09962879f90cb056950bc000bedafa1e5a26eb0c0fd"
+    },
+    {
+      "path": "collections/reference/notion/study.json",
+      "bytes": 85380,
+      "sha256": "e6419d1538b023cda2905b47803cb202f7775da3be685d04951a94bd858634f8"
+    },
+    {
+      "path": "collections/reference/notion/tokens.css",
+      "bytes": 5721,
+      "sha256": "fac3354044de1dd4971f25fe85c802c7696401087e38f7e050468ab24075a5e5"
+    },
+    {
+      "path": "collections/reference/notion/tokens.json",
+      "bytes": 50005,
+      "sha256": "b6bc65ec3a9a62a36e48805b82420e1baa6abe7857046c3b730c50164cb0c45d"
+    },
+    {
+      "path": "collections/reference/nvidia/ATTRIBUTION.md",
+      "bytes": 506,
+      "sha256": "c08b4b4621258b743f57ad20edc273cd6d11f9a97396cceb3ce3f935e9851bd3"
+    },
+    {
+      "path": "collections/reference/nvidia/DESIGN.md",
+      "bytes": 35591,
+      "sha256": "d649be85daf075c98a17071e707e3901c6e19150044a81716acd01ef1169cc83"
+    },
+    {
+      "path": "collections/reference/nvidia/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/nvidia/collection.json",
+      "bytes": 2445,
+      "sha256": "a2f3739e8695f53baa2b59430fda7d7eebb0f7055344100613e1123d6680c269"
+    },
+    {
+      "path": "collections/reference/nvidia/study.json",
+      "bytes": 83101,
+      "sha256": "cdd35cee62965cf314a85e2aff7eb0c705680157205a4ef726973c268107d0c1"
+    },
+    {
+      "path": "collections/reference/nvidia/tokens.css",
+      "bytes": 5532,
+      "sha256": "30f504f93d669bbb6b9fcc64987eb0237a204eb7296f4c6919faeee461b6c350"
+    },
+    {
+      "path": "collections/reference/nvidia/tokens.json",
+      "bytes": 47173,
+      "sha256": "122ab86ab24b7c3ea69eb8ae45667756f53205839a211a13dc63eef25db3ff02"
+    },
+    {
+      "path": "collections/reference/ollama/ATTRIBUTION.md",
+      "bytes": 506,
+      "sha256": "f07d4ff308fad1526732a8131cfab99e27f1b2837ea071ef63a267b3216db7b9"
+    },
+    {
+      "path": "collections/reference/ollama/DESIGN.md",
+      "bytes": 32747,
+      "sha256": "3f36f897e5aad870344dd97e282c8f125ad208dc99449bb08dd38b9259d2f451"
+    },
+    {
+      "path": "collections/reference/ollama/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/ollama/collection.json",
+      "bytes": 2445,
+      "sha256": "ee5b01a0de09b353e53ebfe4b4d4a7de47dc2af116d823b10871aede5177d425"
+    },
+    {
+      "path": "collections/reference/ollama/study.json",
+      "bytes": 70371,
+      "sha256": "6372016a055624000b3f81063869ded7a9a65d2f4f77dfff4b97f4b48b732208"
+    },
+    {
+      "path": "collections/reference/ollama/tokens.css",
+      "bytes": 4173,
+      "sha256": "85b17a31b1d2711d1c6fe03d40216b429af5c578b1f1d289864a0fa381645e18"
+    },
+    {
+      "path": "collections/reference/ollama/tokens.json",
+      "bytes": 35694,
+      "sha256": "b0e22ec0fc1533447fb48154d32dc860086c26e64a843796d5a80f00c066330e"
+    },
+    {
+      "path": "collections/reference/opencode-ai/ATTRIBUTION.md",
+      "bytes": 511,
+      "sha256": "8d6630150632295e6d48912cb37c161caf3049317a10b248b4aed69ca998205e"
+    },
+    {
+      "path": "collections/reference/opencode-ai/DESIGN.md",
+      "bytes": 32647,
+      "sha256": "d1a8893c4b8ac90b1e86230eee2effa8bd15add3582853477920e32432336dda"
+    },
+    {
+      "path": "collections/reference/opencode-ai/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/opencode-ai/collection.json",
+      "bytes": 2490,
+      "sha256": "fe4b69d1084252c8709300cbe2e67870048d000348943b69870bd5b508ad5a99"
+    },
+    {
+      "path": "collections/reference/opencode-ai/study.json",
+      "bytes": 63728,
+      "sha256": "755be46234581d7bcaa0e2e6cf00f986aa132cb42566f228464ad08699b124c5"
+    },
+    {
+      "path": "collections/reference/opencode-ai/tokens.css",
+      "bytes": 3180,
+      "sha256": "3663f1b1277d3e752e65dfe85f90ec16f295e3bc81540375c0237bcb54c4fea4"
+    },
+    {
+      "path": "collections/reference/opencode-ai/tokens.json",
+      "bytes": 27947,
+      "sha256": "a3dc601fbbda1b64f3494f6ec36dfbd5334a9e63d7d35bfa52f115cce9e9d7d6"
+    },
+    {
+      "path": "collections/reference/oracle/ATTRIBUTION.md",
+      "bytes": 506,
+      "sha256": "236eff259ebfe5559906220f4985a524126ba2760c8a599f4fa125c1f7f9350a"
+    },
+    {
+      "path": "collections/reference/oracle/DESIGN.md",
+      "bytes": 42525,
+      "sha256": "23f03014c1654ff72e9a2185f1c3d1f3b51eabc8124c14f6ddd51b17a36a85a6"
+    },
+    {
+      "path": "collections/reference/oracle/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/oracle/collection.json",
+      "bytes": 2445,
+      "sha256": "9635eff1cf8f8bd7ab48793393ea538c0a6491821ca3c78fb34b373d56e379dd"
+    },
+    {
+      "path": "collections/reference/oracle/study.json",
+      "bytes": 87789,
+      "sha256": "8ae601b57220cbb59c2f8d7cba4d3adb810208e428189dd01130e9f3895516c6"
+    },
+    {
+      "path": "collections/reference/oracle/tokens.css",
+      "bytes": 5256,
+      "sha256": "214fa20b6e5d63f24a39dd3c2e8efe71db724f20046c5b190136e41ee2d613b2"
+    },
+    {
+      "path": "collections/reference/oracle/tokens.json",
+      "bytes": 44582,
+      "sha256": "1ffd444d787a3c33d564aa57f9c526869704a8a59521955e9ea6c052dc0469b6"
+    },
+    {
+      "path": "collections/reference/oura/ATTRIBUTION.md",
+      "bytes": 504,
+      "sha256": "cdf20170831e62b054f28f4ccb3af6c4d3e8528fcb3ae58ecbb6ebe5ac14f2e0"
+    },
+    {
+      "path": "collections/reference/oura/DESIGN.md",
+      "bytes": 31798,
+      "sha256": "8674dbeb48bf7e3ff5271e79a6222084118ba1630db4a2199d1492568850fa08"
+    },
+    {
+      "path": "collections/reference/oura/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/oura/collection.json",
+      "bytes": 2427,
+      "sha256": "34a2182f000bb5f87b15250297748f8647cb03eaed9c75f02b8ed9d6c0acd618"
+    },
+    {
+      "path": "collections/reference/oura/study.json",
+      "bytes": 71037,
+      "sha256": "0e5070c9005476c769ca0a95f72196a2ecc3b8046c3b6c77e13c4bb2317d20a4"
+    },
+    {
+      "path": "collections/reference/oura/tokens.css",
+      "bytes": 4361,
+      "sha256": "9e08c0ed4c3c124c47596d64e70110d771e7092575756f1f484e47c829bc0eba"
+    },
+    {
+      "path": "collections/reference/oura/tokens.json",
+      "bytes": 39092,
+      "sha256": "858c7ce151b16e031bc476a9fd432b22b5ac52f4dcc5516b562c455ae0313b27"
+    },
+    {
+      "path": "collections/reference/pinterest/ATTRIBUTION.md",
+      "bytes": 509,
+      "sha256": "b51335d5d7497b4ae22e2072f854e0959c7b3527d7f9311f592b6cf1947d20f0"
+    },
+    {
+      "path": "collections/reference/pinterest/DESIGN.md",
+      "bytes": 36392,
+      "sha256": "26a202fd244e9213d5e2475d81581828da1dd97e089e44639d9783d04f96e4a8"
+    },
+    {
+      "path": "collections/reference/pinterest/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/pinterest/collection.json",
+      "bytes": 2472,
+      "sha256": "4b44119cbe39fe172c8cdbf3ba46598d36e48ba220cee95ed61e85ae4aa8352c"
+    },
+    {
+      "path": "collections/reference/pinterest/study.json",
+      "bytes": 78007,
+      "sha256": "33f38513efc3160f239b88ffb10f528fec34519e554a41dd6ab7892ec7e2d33a"
+    },
+    {
+      "path": "collections/reference/pinterest/tokens.css",
+      "bytes": 4711,
+      "sha256": "f422e2ed08e7663e1305b44d8bd0658ae3b5061de208f03d392b5d3ca909b0c7"
+    },
+    {
+      "path": "collections/reference/pinterest/tokens.json",
+      "bytes": 40973,
+      "sha256": "d5c5b1d6709549e12749668423d86eca11cb5641261b771cb03c1bca45eae4c8"
+    },
+    {
+      "path": "collections/reference/playstation/ATTRIBUTION.md",
+      "bytes": 511,
+      "sha256": "fdeb7be3dc45c3571173e9b50754df0a883bd431900ea8e4b44cc458bd7dfb20"
+    },
+    {
+      "path": "collections/reference/playstation/DESIGN.md",
+      "bytes": 39766,
+      "sha256": "2a56c109af6cb847fa091b768f719b498ac56b582d010860e73ea5fb72a1590d"
+    },
+    {
+      "path": "collections/reference/playstation/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/playstation/collection.json",
+      "bytes": 2490,
+      "sha256": "87b9dcc767e9ff8ba9ca021f08f9da968a5bfa232184c3482473450edaf836d6"
+    },
+    {
+      "path": "collections/reference/playstation/study.json",
+      "bytes": 83804,
+      "sha256": "c942667cee69c45a78eca1944c330a9f7c19a9d4a497663626b7375696412e57"
+    },
+    {
+      "path": "collections/reference/playstation/tokens.css",
+      "bytes": 5102,
+      "sha256": "10a13d3b729a93b8f6fe42a0659f9029cde7ec333aaffd04012eda551ab8beed"
+    },
+    {
+      "path": "collections/reference/playstation/tokens.json",
+      "bytes": 42956,
+      "sha256": "435b3c1868f40eb8feea66dcfc8b1d90f2c146369d534820e0dd1f2674140314"
+    },
+    {
+      "path": "collections/reference/posthog/ATTRIBUTION.md",
+      "bytes": 507,
+      "sha256": "d9720a82f0c92627f3bddf6c3acc081e4c9840a6eef081ecfc7aa1b616f9dde6"
+    },
+    {
+      "path": "collections/reference/posthog/DESIGN.md",
+      "bytes": 40498,
+      "sha256": "01f497f751d56296bfcd5eb8806325a4bb4786d364941ec6e65c65fa9ee6d362"
+    },
+    {
+      "path": "collections/reference/posthog/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/posthog/collection.json",
+      "bytes": 2454,
+      "sha256": "45f80737adb8dc6ae3a0110dbdb8bf4a23548c7c2f1c2172868941d18187aee6"
+    },
+    {
+      "path": "collections/reference/posthog/study.json",
+      "bytes": 92738,
+      "sha256": "296ab490b023de0d7a3a06f6f390096e8fab16aaf040a5f9ce47cc0069a01cd8"
+    },
+    {
+      "path": "collections/reference/posthog/tokens.css",
+      "bytes": 6285,
+      "sha256": "7f86408f8a2805181a163e6d3fd60868a4329ae0de0258da8b4dc23262bb0d3e"
+    },
+    {
+      "path": "collections/reference/posthog/tokens.json",
+      "bytes": 52145,
+      "sha256": "b7d32ad6f32bba4d5348b3d99cd77b718505436c36afc49ba73caa94ba26aff6"
+    },
+    {
+      "path": "collections/reference/raycast/ATTRIBUTION.md",
+      "bytes": 507,
+      "sha256": "a3465ce4b17ed9c50484cf2465341a9a5445040935af287ec6fddbeba20d1b3d"
+    },
+    {
+      "path": "collections/reference/raycast/DESIGN.md",
+      "bytes": 41275,
+      "sha256": "6e2c5137e4d914b70996d589688374a801b6f29a35c9c019c22abb5e0170bda3"
+    },
+    {
+      "path": "collections/reference/raycast/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/raycast/collection.json",
+      "bytes": 2454,
+      "sha256": "fc1721b6d8cc85dd8b4f64e561aefa1db112e46d62f75140d82ae5ae4ca8209d"
+    },
+    {
+      "path": "collections/reference/raycast/study.json",
+      "bytes": 90695,
+      "sha256": "c93bfca0ab9a7e5287f3591c8ef90ab2776950d2f7e11ef6991f02d5a0077c4d"
+    },
+    {
+      "path": "collections/reference/raycast/tokens.css",
+      "bytes": 5054,
+      "sha256": "718510f5184615fdc623000ccca5d679ec0d443e212f8db5e0a5fca835c7aea4"
+    },
+    {
+      "path": "collections/reference/raycast/tokens.json",
+      "bytes": 43604,
+      "sha256": "1b6d29e8482c3cef9c8750332e81fc08b469259ef7c9de42a16e753db02eb515"
+    },
+    {
+      "path": "collections/reference/renault/ATTRIBUTION.md",
+      "bytes": 507,
+      "sha256": "557cbbf1fb95bdc77df5f8120e00e3d33d1ee881c76c85ee344c926647427cf8"
+    },
+    {
+      "path": "collections/reference/renault/DESIGN.md",
+      "bytes": 30076,
+      "sha256": "b343df9a67e57f248e9eee704f52b17dff9cf6a46d1dc9f8d7ab36741940db59"
+    },
+    {
+      "path": "collections/reference/renault/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/renault/collection.json",
+      "bytes": 2454,
+      "sha256": "81a271a149cb2ef6142a436989482c3b8a4b4b0284226fcc91189aaf82255b4c"
+    },
+    {
+      "path": "collections/reference/renault/study.json",
+      "bytes": 71572,
+      "sha256": "22820d5cdfb5d38132a0c1809a5c06f4bf976e6c0ad48d3689ae4e7c26273913"
+    },
+    {
+      "path": "collections/reference/renault/tokens.css",
+      "bytes": 4696,
+      "sha256": "ec8f5ef4c68c6da1205823991b8d02f1d94f8f868a54f4335d2448b15b1dd5a6"
+    },
+    {
+      "path": "collections/reference/renault/tokens.json",
+      "bytes": 41165,
+      "sha256": "11b8e00c01dea5fb0a7a2fee24e5a1746b6d94c58a48c1e72f454c1aaf74d775"
+    },
+    {
+      "path": "collections/reference/replicate/ATTRIBUTION.md",
+      "bytes": 509,
+      "sha256": "2708e679e334f35e304617ed7c0797ec72c6b7f92cdfcc9ba7d4b9ee750c1ed2"
+    },
+    {
+      "path": "collections/reference/replicate/DESIGN.md",
+      "bytes": 31495,
+      "sha256": "c22062d7b4174bf9ced7bc61c48389086cf6eed96a958e098ee70389893b0a15"
+    },
+    {
+      "path": "collections/reference/replicate/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/replicate/collection.json",
+      "bytes": 2472,
+      "sha256": "fdf2077f132b304e8a563d342ba5bebf3ffb5507b8bb27312ecde1caedc4e7b6"
+    },
+    {
+      "path": "collections/reference/replicate/study.json",
+      "bytes": 76706,
+      "sha256": "b30f9a548a917302422f0e84dd717ca4f7b8854e5df31f72e07be7a88d24bd8e"
+    },
+    {
+      "path": "collections/reference/replicate/tokens.css",
+      "bytes": 5402,
+      "sha256": "c25f76bf643a9267272801787866200db1f1b4922f3b19d7e4b8753efcf0dcaf"
+    },
+    {
+      "path": "collections/reference/replicate/tokens.json",
+      "bytes": 45854,
+      "sha256": "04a4030aeab67fa74869ffc6b813634c49a1340b801ea02d677a0a4fef76821e"
+    },
+    {
+      "path": "collections/reference/resend/ATTRIBUTION.md",
+      "bytes": 506,
+      "sha256": "25e549ed8534ab13eb57c71c3ddfe0c6dc4540b0455fc5bb9fddb7a2e67802bc"
+    },
+    {
+      "path": "collections/reference/resend/DESIGN.md",
+      "bytes": 31461,
+      "sha256": "99536f1b2380511a539f7f3466d46d351e4bf35a5af0c0df395bdc20af05c9be"
+    },
+    {
+      "path": "collections/reference/resend/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/resend/collection.json",
+      "bytes": 2445,
+      "sha256": "5075cfd71c8e673c0cf89c05dde8d7f75d11285872caf1f674aa3bbd722980c7"
+    },
+    {
+      "path": "collections/reference/resend/study.json",
+      "bytes": 71750,
+      "sha256": "f0e8b18d4486235cfb0bc75a54d18357cd3ce99a676b0895304c29715ef5e46a"
+    },
+    {
+      "path": "collections/reference/resend/tokens.css",
+      "bytes": 4518,
+      "sha256": "f6583c59908e9125781474166e8a582d00f90419fc7435ecadb27b54e739a6af"
+    },
+    {
+      "path": "collections/reference/resend/tokens.json",
+      "bytes": 38665,
+      "sha256": "bde8a8aef1d0cc85ae165ccc35e66be64923f845c073ce01932e2fcea6abbfa1"
+    },
+    {
+      "path": "collections/reference/revolut/ATTRIBUTION.md",
+      "bytes": 507,
+      "sha256": "ea0f6a224201309e7320857b433b190c2dc2ad310c5bdd5ed2690d38124965c6"
+    },
+    {
+      "path": "collections/reference/revolut/DESIGN.md",
+      "bytes": 32034,
+      "sha256": "b7fa8473315541f5d7e7d76f68a77105d255e6dae00d31d5eb34621d1d52de59"
+    },
+    {
+      "path": "collections/reference/revolut/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/revolut/collection.json",
+      "bytes": 2454,
+      "sha256": "a8babb34a6e28babccbc4a66e9f48105715ec8b8ff31fff493ac5f9cca4edad1"
+    },
+    {
+      "path": "collections/reference/revolut/study.json",
+      "bytes": 77410,
+      "sha256": "698197ed76136848e6fcf840bb3921c8c1cd09b20a67cecc65f43bb2831c8209"
+    },
+    {
+      "path": "collections/reference/revolut/tokens.css",
+      "bytes": 5296,
+      "sha256": "264ccd12c8d8d9f94f9f57fb08576bad07bfa7b048daf19df790220f3654dc34"
+    },
+    {
+      "path": "collections/reference/revolut/tokens.json",
+      "bytes": 45951,
+      "sha256": "6da162eb6f9db2be9fb2426eabeaf616352e25a4e15a5750f59b733175c65cf6"
+    },
+    {
+      "path": "collections/reference/runwayml/ATTRIBUTION.md",
+      "bytes": 508,
+      "sha256": "8568c268ea495f6cae5b4cdec6fcb257ab0d4de9ebd03c07d90b2311f5079841"
+    },
+    {
+      "path": "collections/reference/runwayml/DESIGN.md",
+      "bytes": 14353,
+      "sha256": "b0e69bf643f89bb57ac0b82a3bf025e59ff1478c244cb0528ad1e38b3f80dac9"
+    },
+    {
+      "path": "collections/reference/runwayml/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/runwayml/collection.json",
+      "bytes": 2463,
+      "sha256": "da97301a5ed214cb20c4c26c57b72408e819f1a684a1a053c7775be1cf0b7535"
+    },
+    {
+      "path": "collections/reference/runwayml/study.json",
+      "bytes": 25325,
+      "sha256": "a2c6b993ede8e651d634eedaac5e79ddb87d5216930685f0e457d9001185b2e5"
+    },
+    {
+      "path": "collections/reference/runwayml/tokens.css",
+      "bytes": 666,
+      "sha256": "f32983288247aa7ff659935ea8826d3293c8df72f23424a970f15eeef0fb7860"
+    },
+    {
+      "path": "collections/reference/runwayml/tokens.json",
+      "bytes": 6583,
+      "sha256": "aec3a227b29d4dc2c5ad1337f8c1d4765a46c737c6ac551e5a8f6f60e3f1aeee"
+    },
+    {
+      "path": "collections/reference/sanity/ATTRIBUTION.md",
+      "bytes": 506,
+      "sha256": "cc309ef3c3e183bff3a8b0c4371b557a6813991174d675035788f75a29b86de4"
+    },
+    {
+      "path": "collections/reference/sanity/DESIGN.md",
+      "bytes": 21231,
+      "sha256": "ea1c442de2b23443f79af46524a81f33951606c8ff043ea9c25ba886264fbdd8"
+    },
+    {
+      "path": "collections/reference/sanity/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/sanity/collection.json",
+      "bytes": 2445,
+      "sha256": "bc7170e1ecb8e28d056853c23776920c233f8825f7a7405c1c1c20fe5a810102"
+    },
+    {
+      "path": "collections/reference/sanity/study.json",
+      "bytes": 37160,
+      "sha256": "47934f722c85b802d95a3608f6aeca827589c92a0898894dc4e5d3d6cf8d067a"
+    },
+    {
+      "path": "collections/reference/sanity/tokens.css",
+      "bytes": 630,
+      "sha256": "99b6e655c7713bb942779b98c1e9aeef6bfbf307d209bf2fc5395954751ce164"
+    },
+    {
+      "path": "collections/reference/sanity/tokens.json",
+      "bytes": 11119,
+      "sha256": "3b60364d7c526eae7f10ae64c14484c8ec9c74b30e44ffdb6cb4559702401336"
+    },
+    {
+      "path": "collections/reference/sap/ATTRIBUTION.md",
+      "bytes": 503,
+      "sha256": "f7935931d682bd20988ce5386ee585895cf481c2c6c348cfe373c6d2aaee402d"
+    },
+    {
+      "path": "collections/reference/sap/DESIGN.md",
+      "bytes": 33615,
+      "sha256": "f14c951d6112efce488f56d189b9bcdf58f5b9f87ae1e2ee68f062e6a6967d97"
+    },
+    {
+      "path": "collections/reference/sap/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/sap/collection.json",
+      "bytes": 2418,
+      "sha256": "295e726e9f18b6f263f20eabd58eb24c3c42e7e3f1ea63c66d4495fd2205138e"
+    },
+    {
+      "path": "collections/reference/sap/study.json",
+      "bytes": 69467,
+      "sha256": "d9f2b56c1bef5b2356ea09de48a96752b1628e21b3949ecf650c0cbe7a692b52"
+    },
+    {
+      "path": "collections/reference/sap/tokens.css",
+      "bytes": 3878,
+      "sha256": "7085a106181cd076d1394d0d54a3914efea3b8be8def20813e7a7ea151648cab"
+    },
+    {
+      "path": "collections/reference/sap/tokens.json",
+      "bytes": 34049,
+      "sha256": "b1bbf902e7d79a3d738e7e8946c06ab7ca2dfbe5e752396cec7849829bc02d6f"
+    },
+    {
+      "path": "collections/reference/sentry/ATTRIBUTION.md",
+      "bytes": 506,
+      "sha256": "1812d84f773ea8a32f98eacf932bbb41f6e8219841dacdfa1d577718998acfd7"
+    },
+    {
+      "path": "collections/reference/sentry/DESIGN.md",
+      "bytes": 35444,
+      "sha256": "655c91d7d23b5e869a966b7f1b63ae650567ad5d69003cfc64b0ee62c8e02c1f"
+    },
+    {
+      "path": "collections/reference/sentry/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/sentry/collection.json",
+      "bytes": 2445,
+      "sha256": "2ba079c9b4214ebc9b13a2a7d830ab691748ae74fdf97e4bcf8a05ed0643a14d"
+    },
+    {
+      "path": "collections/reference/sentry/study.json",
+      "bytes": 77973,
+      "sha256": "a576e6c85f1512a160afcdc8cc72b954b659cf5b96f1a84adc3bba5a3f4be92b"
+    },
+    {
+      "path": "collections/reference/sentry/tokens.css",
+      "bytes": 5507,
+      "sha256": "4c92723557fb95d985e2f95f12307d7dea3004b72647cc1269a8e4025af6f90d"
+    },
+    {
+      "path": "collections/reference/sentry/tokens.json",
+      "bytes": 42785,
+      "sha256": "bfae2c448b9a3c761364940c6885561b62fe320440b478bb56da724069570e1a"
+    },
+    {
+      "path": "collections/reference/shopify/ATTRIBUTION.md",
+      "bytes": 507,
+      "sha256": "240d2e593aa9f84762f92932f6e4780f2fe02d852ff2e4b632de466bee1785ed"
+    },
+    {
+      "path": "collections/reference/shopify/DESIGN.md",
+      "bytes": 27067,
+      "sha256": "495e89b8d0a1848ded013c040f7a2ae62077e9d87fc4385350e25dee02ccdb38"
+    },
+    {
+      "path": "collections/reference/shopify/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/shopify/collection.json",
+      "bytes": 2454,
+      "sha256": "f3f3e762c1533f1270def4be2623aeb84abf9602f436e7bff8ce5d9b3bdf072b"
+    },
+    {
+      "path": "collections/reference/shopify/study.json",
+      "bytes": 70642,
+      "sha256": "6a06eff928c2f9a219d0adaf52cc15102a06ba6b0142ea3af3851819e0fa0cc5"
+    },
+    {
+      "path": "collections/reference/shopify/tokens.css",
+      "bytes": 5302,
+      "sha256": "7f00cb88dd126a4b30503ac352cfdd712fbfe3b4d23fbc34e06b16f115eaec15"
+    },
+    {
+      "path": "collections/reference/shopify/tokens.json",
+      "bytes": 40736,
+      "sha256": "ae90b5f01c0b84a04db5856dc9c617dd3dfd1ecc4c35647d267c2d8eb2b849a7"
+    },
+    {
+      "path": "collections/reference/slack/ATTRIBUTION.md",
+      "bytes": 505,
+      "sha256": "1953dcb3043063e659ca53982fc7cd9d6882a31e5aabbd3490dbf95224fe5d69"
+    },
+    {
+      "path": "collections/reference/slack/DESIGN.md",
+      "bytes": 24529,
+      "sha256": "03cb243015a2e11d0faf05caba7f3d0c7fda6839b1f5ce707a23e8d46d1a11bd"
+    },
+    {
+      "path": "collections/reference/slack/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/slack/collection.json",
+      "bytes": 2436,
+      "sha256": "0d71ec01e4c6346d1a9f994dfffda63ede3caa7a0e38e0c010ba89b1eed5c6b5"
+    },
+    {
+      "path": "collections/reference/slack/study.json",
+      "bytes": 64670,
+      "sha256": "1360d4fb195188690f8399abf158aab846c56b006638dcf1aa987fca19ad359c"
+    },
+    {
+      "path": "collections/reference/slack/tokens.css",
+      "bytes": 5468,
+      "sha256": "1c33640eda899fdd68ea805d158bfbda586948c0abe23a7382ea5bf61f843b1f"
+    },
+    {
+      "path": "collections/reference/slack/tokens.json",
+      "bytes": 40111,
+      "sha256": "2909efbdd701c0c52ada8c7df9b158c8364b2df3a3a4253f891b88845bb4235f"
+    },
+    {
+      "path": "collections/reference/spacex/ATTRIBUTION.md",
+      "bytes": 506,
+      "sha256": "32a4cfba2450efde2ced16b10a21771f37464305f9f94783220c0a5f6f3d74bd"
+    },
+    {
+      "path": "collections/reference/spacex/DESIGN.md",
+      "bytes": 19679,
+      "sha256": "495450c79faab54d12d677649ca0a2c30a60f64f536a802e945ad54185c5baad"
+    },
+    {
+      "path": "collections/reference/spacex/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/spacex/collection.json",
+      "bytes": 2445,
+      "sha256": "5b232b89a7ed44e06989dbaa26890ab2ec305c689c9763e41842b13a4e66d42b"
+    },
+    {
+      "path": "collections/reference/spacex/study.json",
+      "bytes": 46017,
+      "sha256": "78432243ff7ae4155e9869a2af04a5c0931f84e3c966f0ef95319c74ec0db58d"
+    },
+    {
+      "path": "collections/reference/spacex/tokens.css",
+      "bytes": 2991,
+      "sha256": "12e896437d1ea3962c1f7768fe06569e29c21edb80c2ea373eecdaaa1a148e8a"
+    },
+    {
+      "path": "collections/reference/spacex/tokens.json",
+      "bytes": 23944,
+      "sha256": "1cc97c921510dadfcc1aa0c4fb8862c1a2b213be3d95ad9f12c2a6e01ac0a0ba"
+    },
+    {
+      "path": "collections/reference/spotify/ATTRIBUTION.md",
+      "bytes": 507,
+      "sha256": "0ff4b2a5a61fcba176b71a521f047d28f63bd8cb710daaa00e287713ea9783cc"
+    },
+    {
+      "path": "collections/reference/spotify/DESIGN.md",
+      "bytes": 12955,
+      "sha256": "72e964a6cf551d0603f9854f2f42ee08e97ad4d9e17e037f50f6233508288295"
+    },
+    {
+      "path": "collections/reference/spotify/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/spotify/collection.json",
+      "bytes": 2454,
+      "sha256": "b623309f52b6107e6e441f15600d9646a2d0bc90e586da95256c26ba726b3567"
+    },
+    {
+      "path": "collections/reference/spotify/study.json",
+      "bytes": 25631,
+      "sha256": "6e7348e3af06162754725b73f5f09eadb5a3a8bd578f84f33aa1d68ff1c0f40c"
+    },
+    {
+      "path": "collections/reference/spotify/tokens.css",
+      "bytes": 699,
+      "sha256": "a6be4569e0515a86a7b724ffffeeae02588b6f91c06fff2a2933de8c8b6e1150"
+    },
+    {
+      "path": "collections/reference/spotify/tokens.json",
+      "bytes": 8537,
+      "sha256": "788caffa44137c3db85f99c72082cb86ae152ad7f7657258f0f9c4e7f8384b3f"
+    },
+    {
+      "path": "collections/reference/starbucks/ATTRIBUTION.md",
+      "bytes": 509,
+      "sha256": "85f0ca06455fcdb9a03941ec0f4332af4d180cf38fbcd18fd1fd9766999dfe6a"
+    },
+    {
+      "path": "collections/reference/starbucks/DESIGN.md",
+      "bytes": 37329,
+      "sha256": "e20338ee10226c63cf2588207288c08e12d60754a53f681657adaf364dfe8fa7"
+    },
+    {
+      "path": "collections/reference/starbucks/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/starbucks/collection.json",
+      "bytes": 2472,
+      "sha256": "882b190f5ba051ae5fb31e407b272ad26df717e765069a0b41bcdd606d2431ed"
+    },
+    {
+      "path": "collections/reference/starbucks/study.json",
+      "bytes": 53445,
+      "sha256": "2c0bff7aeb4c01adfa3d4f51eae61ea9bd8f84af8db4ff863950cb46ef43f35d"
+    },
+    {
+      "path": "collections/reference/starbucks/tokens.css",
+      "bytes": 701,
+      "sha256": "688b157a18d02aa557f9ec1163205df0f294ad6f63b3bf7f4148c9fe737b30b7"
+    },
+    {
+      "path": "collections/reference/starbucks/tokens.json",
+      "bytes": 10615,
+      "sha256": "541dbda5e2df73a25a2990ea27461dbcd7c67d69e2171f2739038fb15b5ecc2e"
+    },
+    {
+      "path": "collections/reference/stripe/ATTRIBUTION.md",
+      "bytes": 506,
+      "sha256": "a1e41fb9b62547375b2a69e22d0cf5baba01585f2ce4f6f250b7f8fc73b4fe44"
+    },
+    {
+      "path": "collections/reference/stripe/DESIGN.md",
+      "bytes": 24606,
+      "sha256": "5c8806b7dd3e0c2554ccba9d1e2a7c78e7c6e50e44fcf6ff5daea6026f8a9ed9"
+    },
+    {
+      "path": "collections/reference/stripe/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/stripe/collection.json",
+      "bytes": 3947,
+      "sha256": "56cdf1859a676ef42f3d19ae6f30ef08a1b7ec996882bae50236136e6d927314"
+    },
+    {
+      "path": "collections/reference/stripe/study.json",
+      "bytes": 68299,
+      "sha256": "d9fc5a9eeccf1278ccd5ab0de9e65ac895bdc72635d10821934340a64bc83b96"
+    },
+    {
+      "path": "collections/reference/stripe/tokens.css",
+      "bytes": 5429,
+      "sha256": "e4cf96b5de75ed84bc9d2ccc545425afa6d126e436af2a411f5bb0d1f13ae1b2"
+    },
+    {
+      "path": "collections/reference/stripe/tokens.json",
+      "bytes": 40282,
+      "sha256": "7f683a120f6cebdd613d2e72fe0465f77b6fff3be44872a2341f030088a3765f"
+    },
+    {
+      "path": "collections/reference/supabase/ATTRIBUTION.md",
+      "bytes": 508,
+      "sha256": "3b328afaf137c5a563a244671c801bdf79f4d8161ecd8a494f69c4f7fbc96fb3"
+    },
+    {
+      "path": "collections/reference/supabase/DESIGN.md",
+      "bytes": 21315,
+      "sha256": "f57287d7f44d59e8169dc4b4304ff03c1a2efb37f5433b9c04460caae7710880"
+    },
+    {
+      "path": "collections/reference/supabase/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/supabase/collection.json",
+      "bytes": 2463,
+      "sha256": "c5047aa35c95a75ff1bbcf32cf708803501c613d3f1b54d41675c7cece036890"
+    },
+    {
+      "path": "collections/reference/supabase/study.json",
+      "bytes": 59495,
+      "sha256": "6d3e8881a3cfd26619c213bcb1ec1f339524df98d55fbdd68a5ff45dfdc500dc"
+    },
+    {
+      "path": "collections/reference/supabase/tokens.css",
+      "bytes": 4695,
+      "sha256": "00b0fb62f2a2cd7702f1d05efbd7733e9f683c55c1c3d69c0d94758b15bd4719"
+    },
+    {
+      "path": "collections/reference/supabase/tokens.json",
+      "bytes": 36653,
+      "sha256": "56c05741e68f038ccac8ca0417289968712fea8e5be9cc04ee30e95db1e76896"
+    },
+    {
+      "path": "collections/reference/superhuman/ATTRIBUTION.md",
+      "bytes": 510,
+      "sha256": "0854adb25ffafdebb91c31e661ba3256562a90ca22251f57534d74389845d59e"
+    },
+    {
+      "path": "collections/reference/superhuman/DESIGN.md",
+      "bytes": 21877,
+      "sha256": "3640298bd2957aee80ce88eb465a7541ba835ec105cba364a6a621d885c7f34f"
+    },
+    {
+      "path": "collections/reference/superhuman/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/superhuman/collection.json",
+      "bytes": 2481,
+      "sha256": "68649a91aed6ffa3e2deef02f2d6696a6df4ab92d4e1a477852243e21c020d23"
+    },
+    {
+      "path": "collections/reference/superhuman/study.json",
+      "bytes": 56187,
+      "sha256": "23e101722bde1021b990e3788d9101fa993807ee49855be3721bbb205eceaeab"
+    },
+    {
+      "path": "collections/reference/superhuman/tokens.css",
+      "bytes": 4492,
+      "sha256": "ae17f70cad29e9030c77bbd59e9ece2ef351e3a61722fa3f93b38e6a083d1977"
+    },
+    {
+      "path": "collections/reference/superhuman/tokens.json",
+      "bytes": 32874,
+      "sha256": "8973d259dbebaf0fdf7e428297ecc8cb5d993416e92403f4aaaec06a467a5a34"
+    },
+    {
+      "path": "collections/reference/tesla/ATTRIBUTION.md",
+      "bytes": 505,
+      "sha256": "d80e748efd58c2e3d9f5a3a1144391735e4305d819a4e53c8cc93271838ba7fa"
+    },
+    {
+      "path": "collections/reference/tesla/DESIGN.md",
+      "bytes": 22212,
+      "sha256": "19f2f7e6073d708f46d2512e6bab3c7c417cf2b4d9f57ff6ec6f2e056ea942b0"
+    },
+    {
+      "path": "collections/reference/tesla/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/tesla/collection.json",
+      "bytes": 2436,
+      "sha256": "a73ced4be92e4afeca0adf37b068e0802e3a96bddebcee7b0f6751d95fd28c17"
+    },
+    {
+      "path": "collections/reference/tesla/study.json",
+      "bytes": 32187,
+      "sha256": "db8bce767db3c95d956802d5fd3289577daf63df8fc0e8be710f17c83aaddb53"
+    },
+    {
+      "path": "collections/reference/tesla/tokens.css",
+      "bytes": 391,
+      "sha256": "ac38b13e1cfdfb52f1c5fccefa136b3d65df31ce80f23f8f272e484695655137"
+    },
+    {
+      "path": "collections/reference/tesla/tokens.json",
+      "bytes": 4528,
+      "sha256": "1a7ae6614bbfde681df851596ea843f6d401eba43834b897509d47bf752cb67d"
+    },
+    {
+      "path": "collections/reference/theverge/ATTRIBUTION.md",
+      "bytes": 508,
+      "sha256": "6ef6e2773aebb96703a68a6b1c4618d14018961e1bcb61f975b8f7f650ebe0b2"
+    },
+    {
+      "path": "collections/reference/theverge/DESIGN.md",
+      "bytes": 28368,
+      "sha256": "5da2c3116e6845826b043ac115a80896a399efda2cebc0188981fba2ef9bb526"
+    },
+    {
+      "path": "collections/reference/theverge/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/theverge/collection.json",
+      "bytes": 2463,
+      "sha256": "99a3fb4e7a5ade9abd3865b09d18a3f9e9a51caecf9280fee83c08d47a4ffdb6"
+    },
+    {
+      "path": "collections/reference/theverge/study.json",
+      "bytes": 42620,
+      "sha256": "08afbcee5e5147d5d1518be90989dcddafe99dcb9efd2504c4f2771bb9541266"
+    },
+    {
+      "path": "collections/reference/theverge/tokens.css",
+      "bytes": 632,
+      "sha256": "99acdda2239ddf402b944455f7a97eddf1bd6fb5801fdb87464121616032f3d1"
+    },
+    {
+      "path": "collections/reference/theverge/tokens.json",
+      "bytes": 9296,
+      "sha256": "c082c62546c2d78a058868430c6a3711a4f6fa16213ab94e39149ba50f7ac797"
+    },
+    {
+      "path": "collections/reference/together-ai/ATTRIBUTION.md",
+      "bytes": 511,
+      "sha256": "25a126443dff5ad5035e9a445b5ecd218a387880bc448332e34546ef01fdd6fc"
+    },
+    {
+      "path": "collections/reference/together-ai/DESIGN.md",
+      "bytes": 38343,
+      "sha256": "aee472c583f55a2f2c7ee1c403a96dddadb3ff6dc518335451f431e313bf43cf"
+    },
+    {
+      "path": "collections/reference/together-ai/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/together-ai/collection.json",
+      "bytes": 2490,
+      "sha256": "fe2e0ad40fa70031cb047de8a828fc2373926bad2f880bcd16202ab2bed023d3"
+    },
+    {
+      "path": "collections/reference/together-ai/study.json",
+      "bytes": 76717,
+      "sha256": "e1f03c961e9a5e293f41b233bd533cf7383ae4b9ab66e76ffb5f7f89fcaa044a"
+    },
+    {
+      "path": "collections/reference/together-ai/tokens.css",
+      "bytes": 4973,
+      "sha256": "d312d63a1b8b7b76e7aaeaa43c5ee8d4ab55bd95814961bb25822407840c1877"
+    },
+    {
+      "path": "collections/reference/together-ai/tokens.json",
+      "bytes": 36730,
+      "sha256": "b5d25f8c59c986dba3c02696a6c5af73bbbf68fe3eb10a610fe61d7dde0ba0be"
+    },
+    {
+      "path": "collections/reference/uber/ATTRIBUTION.md",
+      "bytes": 504,
+      "sha256": "63e70c6648877417d51595164fa7c51a8cce3f00eb799fc832fac1001e86572a"
+    },
+    {
+      "path": "collections/reference/uber/DESIGN.md",
+      "bytes": 34760,
+      "sha256": "f30d2257d2d090790332d00ccb16cd2516c3c6008be61ad2ce83c4e991bcc803"
+    },
+    {
+      "path": "collections/reference/uber/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/uber/collection.json",
+      "bytes": 2427,
+      "sha256": "0cdf0d6a3f75f701137c036d08ea56d2a6346aa71ebfc8b34f5353d0bc28b2dc"
+    },
+    {
+      "path": "collections/reference/uber/study.json",
+      "bytes": 67131,
+      "sha256": "15e80bbb41535153b936d943f5cad25853a57f1e1d334547b01b467b9641902f"
+    },
+    {
+      "path": "collections/reference/uber/tokens.css",
+      "bytes": 4003,
+      "sha256": "b288cea0e190fcbcda98dff5f278a4b034d3dd541d7a5f6b5e01428e5120bc0a"
+    },
+    {
+      "path": "collections/reference/uber/tokens.json",
+      "bytes": 29485,
+      "sha256": "e3d0f6ff4cb4a342b6013ba3bbc38fb3a25ed79f0e29f0cec444b178faddd482"
+    },
+    {
+      "path": "collections/reference/vercel/ATTRIBUTION.md",
+      "bytes": 506,
+      "sha256": "a0439c34a6cf18e1f8f7fbf13df61a3e75f089d97ea4a594fa1ebae9005e1399"
+    },
+    {
+      "path": "collections/reference/vercel/DESIGN.md",
+      "bytes": 41405,
+      "sha256": "d0951b93c2b4ce9840c715c9f9b3e58a386c6c58ae5cc0f804dec3b116b95bd8"
+    },
+    {
+      "path": "collections/reference/vercel/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/vercel/collection.json",
+      "bytes": 2445,
+      "sha256": "20812cf998288f046fac61745617738544b2b3c7d3cba378572332caf3483c7a"
+    },
+    {
+      "path": "collections/reference/vercel/study.json",
+      "bytes": 85186,
+      "sha256": "0ddef13cc09c83cff0ede8ee0bfcdd7665325023c765c37e2c4bd187dbfe8155"
+    },
+    {
+      "path": "collections/reference/vercel/tokens.css",
+      "bytes": 5432,
+      "sha256": "10762e933f90de172da3029f6cf86d40a4d1adb063bed63d8cd247ce29f1562e"
+    },
+    {
+      "path": "collections/reference/vercel/tokens.json",
+      "bytes": 43309,
+      "sha256": "f0040d740b692194519b0beec90e3d4fcb2e9a394b26c085bf9a814ffa7a5809"
+    },
+    {
+      "path": "collections/reference/vodafone/ATTRIBUTION.md",
+      "bytes": 508,
+      "sha256": "e327451200a7022e0a5dd6b21be055a1f84fc2d822813d05c5ed2d7d915a5f63"
+    },
+    {
+      "path": "collections/reference/vodafone/DESIGN.md",
+      "bytes": 28106,
+      "sha256": "293a40951e654283978fa744b24177a159d8f2a60f402bc735bf081618af0ef6"
+    },
+    {
+      "path": "collections/reference/vodafone/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/vodafone/collection.json",
+      "bytes": 2463,
+      "sha256": "d907388703b45e147e70bb2f1fb4d8df55e9a0f654a15e83160748f376c559f0"
+    },
+    {
+      "path": "collections/reference/vodafone/study.json",
+      "bytes": 64766,
+      "sha256": "76ff75f286d4d1ca699c585ccbdfbe58748083214aae4661689aa8c085d9dc95"
+    },
+    {
+      "path": "collections/reference/vodafone/tokens.css",
+      "bytes": 4921,
+      "sha256": "26a8f2dd946d9faa493bb5bb20eed4436ec5065201776322f01500631b40b56e"
+    },
+    {
+      "path": "collections/reference/vodafone/tokens.json",
+      "bytes": 35390,
+      "sha256": "90fd8b73bc3d72d0c225493ccea6f1ff2a8b2ceb77a8b202d54601a2346cd626"
+    },
+    {
+      "path": "collections/reference/voltagent/ATTRIBUTION.md",
+      "bytes": 509,
+      "sha256": "b96960ce2cfcd1a708c7c95cf04aecf34ac740587049b5a276e4cc05c6b3d579"
+    },
+    {
+      "path": "collections/reference/voltagent/DESIGN.md",
+      "bytes": 25915,
+      "sha256": "4457887741ae5e965e205282b03c4bff83e47dd7a03cd7f38c64623a17569fcd"
+    },
+    {
+      "path": "collections/reference/voltagent/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/voltagent/collection.json",
+      "bytes": 2472,
+      "sha256": "6fa5298223d14233bbe76727f2a63e8ac63fa77b95ea0879858c9108c7a843a3"
+    },
+    {
+      "path": "collections/reference/voltagent/study.json",
+      "bytes": 63382,
+      "sha256": "9c6190d0c26fbd3f6ad2c5f91e28925ac20e0a7eb9831d508fdc133de51d57ed"
+    },
+    {
+      "path": "collections/reference/voltagent/tokens.css",
+      "bytes": 4870,
+      "sha256": "0751d7aea186c7552368a613b64d4e7db98cc1b4cbf9edca67fd25f8620b056a"
+    },
+    {
+      "path": "collections/reference/voltagent/tokens.json",
+      "bytes": 36678,
+      "sha256": "35ff3c67707aab2c0c87fc417a778b46437962c1745b82a61cc1946b1b8ba71a"
+    },
+    {
+      "path": "collections/reference/warp/ATTRIBUTION.md",
+      "bytes": 504,
+      "sha256": "db5b912356b7fd0eaedc041205901942f505a4134d6a12aebb91793c5b9c6c20"
+    },
+    {
+      "path": "collections/reference/warp/DESIGN.md",
+      "bytes": 24438,
+      "sha256": "5b1201f7b1b4e72570d148d1f980fd1cb35e6e4122d48dd271787aa3538a25ad"
+    },
+    {
+      "path": "collections/reference/warp/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/warp/collection.json",
+      "bytes": 2427,
+      "sha256": "9ce5c54ce2f6d2fd28286e6c598a51c29b81397fb466ffeffdcf4710320f544c"
+    },
+    {
+      "path": "collections/reference/warp/study.json",
+      "bytes": 58325,
+      "sha256": "66878e647f1429002dbbe0984936132110ad3a7a10202708c2313a7abfec7f5a"
+    },
+    {
+      "path": "collections/reference/warp/tokens.css",
+      "bytes": 4188,
+      "sha256": "aa69a99d19fee364fea3be856939cd0570ba80e47bd7918b0c76530f08bf6797"
+    },
+    {
+      "path": "collections/reference/warp/tokens.json",
+      "bytes": 32285,
+      "sha256": "6a18353c3a6b7d064f148de7b0133023336f6b05ebc21a843f853c95622ff849"
+    },
+    {
+      "path": "collections/reference/webflow/ATTRIBUTION.md",
+      "bytes": 507,
+      "sha256": "bed67d6192bd3b684049fdb97d769b36890ae664d9c53591016e0ca02f9f8075"
+    },
+    {
+      "path": "collections/reference/webflow/DESIGN.md",
+      "bytes": 28179,
+      "sha256": "9230c7b3951371fc2edc04958962e32bb7ec9a9b703aa6b72eaf5c7991b7c984"
+    },
+    {
+      "path": "collections/reference/webflow/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/webflow/collection.json",
+      "bytes": 2454,
+      "sha256": "4ac2567a25425d20a2140299d063e4399b2593acee2a0f715dd392fedf39bd47"
+    },
+    {
+      "path": "collections/reference/webflow/study.json",
+      "bytes": 67545,
+      "sha256": "16b4951356d98c8189e15726273c7051e0a5714f1b3aa8fc7874c30f1a5603d8"
+    },
+    {
+      "path": "collections/reference/webflow/tokens.css",
+      "bytes": 5249,
+      "sha256": "36c96c4f71ad0c534acd47011339043045ad8746f1223dd5f922b95369d37793"
+    },
+    {
+      "path": "collections/reference/webflow/tokens.json",
+      "bytes": 38490,
+      "sha256": "3bd346e79ec76e5d3ad91ef8cf1d46dda13fae45055505fac05b0907cb2f74cb"
+    },
+    {
+      "path": "collections/reference/wired/ATTRIBUTION.md",
+      "bytes": 505,
+      "sha256": "8f9cb2f73acd2f96c462af593588284772078fda5e68dae5af542dc8b898d518"
+    },
+    {
+      "path": "collections/reference/wired/DESIGN.md",
+      "bytes": 23661,
+      "sha256": "eb439dcc573401dc30583f40e7eef8a60b769232da59e524de6dce56d5c3593e"
+    },
+    {
+      "path": "collections/reference/wired/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/wired/collection.json",
+      "bytes": 2436,
+      "sha256": "3415562a31baa5d31889640c2b6c162e86f3952b86cafe36699651713f128de8"
+    },
+    {
+      "path": "collections/reference/wired/study.json",
+      "bytes": 57868,
+      "sha256": "fb830b4202bb77c8369fd3a7343c2f68b85f03bbb257174c0eb970ca9b52d9c5"
+    },
+    {
+      "path": "collections/reference/wired/tokens.css",
+      "bytes": 4421,
+      "sha256": "af3c19793d987cdba63fdadd7e775ee19285af41088e7e9d3ca70ef1a94609c0"
+    },
+    {
+      "path": "collections/reference/wired/tokens.json",
+      "bytes": 32653,
+      "sha256": "1ff292be833e29b0767bb78a3bb225733b61f0f683eb5d2ad2b228846d97ef0b"
+    },
+    {
+      "path": "collections/reference/wise/ATTRIBUTION.md",
+      "bytes": 504,
+      "sha256": "8aa413b98a6ca8b11d3b3be9c9d774e249de5bde755023cc1493501e7e03394d"
+    },
+    {
+      "path": "collections/reference/wise/DESIGN.md",
+      "bytes": 24586,
+      "sha256": "442df0ad7380efd8712f5574bdca34a73cfb41a2a43454ff459863a6258af547"
+    },
+    {
+      "path": "collections/reference/wise/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/wise/collection.json",
+      "bytes": 2427,
+      "sha256": "c063d0d8c350f023a0b9673eff5b6cb203dccb7a19bb3912e597ecca89679f1b"
+    },
+    {
+      "path": "collections/reference/wise/study.json",
+      "bytes": 60475,
+      "sha256": "46ebe64cf0dda9e0c11ef753cfab0d9a8c679ec657ac9d861075429acdc1ad7c"
+    },
+    {
+      "path": "collections/reference/wise/tokens.css",
+      "bytes": 4334,
+      "sha256": "c4db69a52e1951cfdf207147607f3f9fdb6d2479a665f5a082df50d7591b4ae3"
+    },
+    {
+      "path": "collections/reference/wise/tokens.json",
+      "bytes": 34891,
+      "sha256": "ba931b58fa4b26e85e624572ada68ef1ff9b5a1998a6af2534cc8e8d21d4520a"
+    },
+    {
+      "path": "collections/reference/x-ai/ATTRIBUTION.md",
+      "bytes": 504,
+      "sha256": "b6ddee52c502bc63fab4b900be4b9508d3864be10eab31b8a3a0042122fb3421"
+    },
+    {
+      "path": "collections/reference/x-ai/DESIGN.md",
+      "bytes": 21781,
+      "sha256": "9c9ef45d8c0c3b9a7622833cdff8bd125ed6bf296a82cc7274215276706e52eb"
+    },
+    {
+      "path": "collections/reference/x-ai/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/x-ai/collection.json",
+      "bytes": 2427,
+      "sha256": "4c1ae835c230697e5a0f23c3c8a361b0050a9bb605eea14724d6b8dc95bc406a"
+    },
+    {
+      "path": "collections/reference/x-ai/study.json",
+      "bytes": 53077,
+      "sha256": "30e823d0461abe3ec488a6cc44b08dd59e1d4dd92dddc6365e8ac7b63ee9a87c"
+    },
+    {
+      "path": "collections/reference/x-ai/tokens.css",
+      "bytes": 3808,
+      "sha256": "28f536ff01e5a499d98bf386dcf2067afc4b352608d307a2f1e35bb9bc2b6ed4"
+    },
+    {
+      "path": "collections/reference/x-ai/tokens.json",
+      "bytes": 29620,
+      "sha256": "d6bffa32d15b88ad4512effc32ec34618a87ccc68a3c1506f98a3696ae5279fb"
+    },
+    {
+      "path": "collections/reference/zapier/ATTRIBUTION.md",
+      "bytes": 506,
+      "sha256": "d45b88fafe49d6682921361774fcb8f6fcd6fc6568714f59d89a4c23c86c70db"
+    },
+    {
+      "path": "collections/reference/zapier/DESIGN.md",
+      "bytes": 22995,
+      "sha256": "9aee43ba8ece1b4fd0753b4cad0a29f3497331882fa376f0dd4fea8a018c32fc"
+    },
+    {
+      "path": "collections/reference/zapier/LICENSE",
+      "bytes": 1066,
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    },
+    {
+      "path": "collections/reference/zapier/collection.json",
+      "bytes": 2445,
+      "sha256": "e91194b114b9883d00a809b30c87b36938dcfa817c298f6f6b8e434f0208530b"
+    },
+    {
+      "path": "collections/reference/zapier/study.json",
+      "bytes": 59061,
+      "sha256": "f8cca94d0df764a5abd17c8eee3dd1120caee2fc4dadaff8de3ae038b0e4c156"
+    },
+    {
+      "path": "collections/reference/zapier/tokens.css",
+      "bytes": 4483,
+      "sha256": "a132f6673d60a8ccddd0b3f1c980fa0676c9d1a1d02ba97ca0404d3bd9915a8d"
+    },
+    {
+      "path": "collections/reference/zapier/tokens.json",
+      "bytes": 34898,
+      "sha256": "cb27f42b102f709963d752e3f97c8c187947af0960c5644e3bbc72f77bd30200"
+    },
+    {
+      "path": "collections/reference-sheets/1win/index.html",
+      "bytes": 106469,
+      "sha256": "ea1d40e913e53768c49741f0ab843aa62ad73941b15336d2818cd576075ea429"
+    },
+    {
+      "path": "collections/reference-sheets/1win/patterns.html",
+      "bytes": 11280,
+      "sha256": "925fdeedfab195531870b83102c7dfc5c283c4adbe273781fe0229514e097535"
+    },
+    {
+      "path": "collections/reference-sheets/README.md",
+      "bytes": 2487,
+      "sha256": "f149257432ea9b55206131b05f367c495f524d9e634950b3fd12a6dd4be72cd5"
+    },
+    {
+      "path": "collections/reference-sheets/airbnb/index.html",
+      "bytes": 171439,
+      "sha256": "bae63af0f1c9204bf6ebc74856a9f54e33e2bec1ed05fb818b705eb5edcc763c"
+    },
+    {
+      "path": "collections/reference-sheets/airbnb/patterns.html",
+      "bytes": 11342,
+      "sha256": "83ff911b4ba6fdd0445782967464a79fcf6c2f56c1946db4b6ec9768d81b511c"
+    },
+    {
+      "path": "collections/reference-sheets/airtable/index.html",
+      "bytes": 148282,
+      "sha256": "580492cfc8f49ffe864b8d3c47e9778f578d8d1e08657268bc24c63db7dfb517"
+    },
+    {
+      "path": "collections/reference-sheets/airtable/patterns.html",
+      "bytes": 11354,
+      "sha256": "02ac5efd3a671574d29fc97b52cf0b9fe69b765e830306e5cfcd0c188de9539f"
+    },
+    {
+      "path": "collections/reference-sheets/aljazeera/index.html",
+      "bytes": 156461,
+      "sha256": "e29ada126e01c2d81dfc3f459dd66f1026f1766c9790f69eb4f62083ab93c18a"
+    },
+    {
+      "path": "collections/reference-sheets/aljazeera/patterns.html",
+      "bytes": 10218,
+      "sha256": "4e6a23af021538052af05a22a35b556c89466381f8a7237c0f25ee407f5aee2b"
+    },
+    {
+      "path": "collections/reference-sheets/apple/index.html",
+      "bytes": 136785,
+      "sha256": "e62fec3f9cd3dc2c56396bf3c4ec6383b3c32dbfaeddc4804154c76be9939bf8"
+    },
+    {
+      "path": "collections/reference-sheets/apple/patterns.html",
+      "bytes": 11092,
+      "sha256": "03ca6df7f13614d8d20023f1499e127988db9539e933499232bd798462f1feca"
+    },
+    {
+      "path": "collections/reference-sheets/binance/index.html",
+      "bytes": 180948,
+      "sha256": "390e4de21ebb7a38f84da2eaa8db1c7aa47f5a3868c044c048730a8c86e7f882"
+    },
+    {
+      "path": "collections/reference-sheets/binance/patterns.html",
+      "bytes": 11358,
+      "sha256": "6b71018b64511b28afd454b1fc1b0478cb891dcaee70184669dd158b2990f617"
+    },
+    {
+      "path": "collections/reference-sheets/bmw/index.html",
+      "bytes": 138193,
+      "sha256": "0d5d5c28a0a8b49333a092ef32a03d0f444a0242131888d4f4b1fcbad7141301"
+    },
+    {
+      "path": "collections/reference-sheets/bmw/patterns.html",
+      "bytes": 11281,
+      "sha256": "71594ca8aef6520e57a4100ba226c9a72faa79e9258418a27711e500f80533da"
+    },
+    {
+      "path": "collections/reference-sheets/bmw-m/index.html",
+      "bytes": 123270,
+      "sha256": "03d3b05e9d5a39a720c7ea4ec92a19683d65160084ca21a3a5c092681bbb6779"
+    },
+    {
+      "path": "collections/reference-sheets/bmw-m/patterns.html",
+      "bytes": 11091,
+      "sha256": "e1739bb485249d4ecb15e8db7df49b9fd3b0506f7d79c6c24b25837288e0d693"
+    },
+    {
+      "path": "collections/reference-sheets/bugatti/index.html",
+      "bytes": 104565,
+      "sha256": "f18adb330c40749c76aa124cc3a0c1e9f794a29298690d50d64dd4db066f65cd"
+    },
+    {
+      "path": "collections/reference-sheets/bugatti/patterns.html",
+      "bytes": 10920,
+      "sha256": "42be9ed56a27a1d1f714dc9e4dcc31677e4a8338f2392f06b6148ce39d4bb4ef"
+    },
+    {
+      "path": "collections/reference-sheets/cal/index.html",
+      "bytes": 136345,
+      "sha256": "2fc61e45603d640c04af3672c8f6ff2f4987f5eab9b842239c17c421e16ddb70"
+    },
+    {
+      "path": "collections/reference-sheets/cal/patterns.html",
+      "bytes": 11280,
+      "sha256": "98d69f712e701c9875b5abbc14ae9dd1cec4d201ea520171a330cff1f9f329a9"
+    },
+    {
+      "path": "collections/reference-sheets/claude/index.html",
+      "bytes": 154960,
+      "sha256": "61035b0a1dd2c56fbf006c8f6e20a92a9e2204fce69a77d23551ee81a298db96"
+    },
+    {
+      "path": "collections/reference-sheets/claude/patterns.html",
+      "bytes": 10892,
+      "sha256": "1aa061462d06ba991bdeca4ed05cbee695cbc42c42d717c2244aaaec46045043"
+    },
+    {
+      "path": "collections/reference-sheets/clay/index.html",
+      "bytes": 151848,
+      "sha256": "0c015d6246bb9ab2de1ee2d014f835ee606ead3cfcd02e55f7a606f7145a707e"
+    },
+    {
+      "path": "collections/reference-sheets/clay/patterns.html",
+      "bytes": 11298,
+      "sha256": "66d71f84812b15288111faf1f7ac6c78b15dc5c5ce4af3cde09b53e87c94f370"
+    },
+    {
+      "path": "collections/reference-sheets/clickhouse/index.html",
+      "bytes": 150341,
+      "sha256": "8ce82d2fbc56897fa4ce5f48c5c4697d27a1e0f9e2c371dbe9415decbb57d26e"
+    },
+    {
+      "path": "collections/reference-sheets/clickhouse/patterns.html",
+      "bytes": 11163,
+      "sha256": "1b417544c8dc345b0b736442b1985f075f86d99c2b21daebfc186d4ae0be6225"
+    },
+    {
+      "path": "collections/reference-sheets/cohere/index.html",
+      "bytes": 90635,
+      "sha256": "b904a254c52c38d7689cad22e68659c6e249eba4fabba02b0cf48bfdb9de6c59"
+    },
+    {
+      "path": "collections/reference-sheets/cohere/patterns.html",
+      "bytes": 10627,
+      "sha256": "ef7b2076361782b1dd6af15cd295bd320528d6983c3cb595ecc9a4170d5d981f"
+    },
+    {
+      "path": "collections/reference-sheets/coinbase/index.html",
+      "bytes": 155361,
+      "sha256": "7a81ae2cba5331f647ddb94d69bce66919dc28b92752fe645d89097b7bf33f05"
+    },
+    {
+      "path": "collections/reference-sheets/coinbase/patterns.html",
+      "bytes": 11357,
+      "sha256": "2f21924e1587572d1efb83ea53d8189d013398cedb10bdfeebb41adf5bfe2720"
+    },
+    {
+      "path": "collections/reference-sheets/composio/index.html",
+      "bytes": 131757,
+      "sha256": "6dc86a42ef3092c77ee7b979a643b234b8cfcfe25d219f797a569be5ec81ed18"
+    },
+    {
+      "path": "collections/reference-sheets/composio/patterns.html",
+      "bytes": 10692,
+      "sha256": "db30846bc3b072ca3849eacdc6b79f4a691d3825c9a567d2450febf7a9220633"
+    },
+    {
+      "path": "collections/reference-sheets/cursor/index.html",
+      "bytes": 147685,
+      "sha256": "1740bfef76f32878f1363a5a5cd3b65e823e84ae60b8cadcd42a1ccbc0d5b379"
+    },
+    {
+      "path": "collections/reference-sheets/cursor/patterns.html",
+      "bytes": 10884,
+      "sha256": "7e4b4fe1564ba3f22dd74c991e6fa5fc53f32c5b3deb6a424fc3cff531d14b98"
+    },
+    {
+      "path": "collections/reference-sheets/dell-1996/index.html",
+      "bytes": 163334,
+      "sha256": "9e46d338236b86c1a18853c9663cadfa2fb186f65ee190571b37ae9f8ce046e6"
+    },
+    {
+      "path": "collections/reference-sheets/dell-1996/patterns.html",
+      "bytes": 10457,
+      "sha256": "3a43cd4fa2d0b4857e0c30d7302a53dd73b30f5527871d36ab88e95cd15157c6"
+    },
+    {
+      "path": "collections/reference-sheets/dji/index.html",
+      "bytes": 278914,
+      "sha256": "793b83df607612a6815b4a002b4d78920ffadd43c00d43cff55348c639e782b9"
+    },
+    {
+      "path": "collections/reference-sheets/dji/patterns.html",
+      "bytes": 11284,
+      "sha256": "71b048bc5ce7756bb698f894bde2d1f61cc577b773b3a54b7d4198e4a317b532"
+    },
+    {
+      "path": "collections/reference-sheets/elevenlabs/index.html",
+      "bytes": 126017,
+      "sha256": "069d7262d9c83593b657b99618cbace70ac4a9cb53a5053fea93bd2ede9f6d5f"
+    },
+    {
+      "path": "collections/reference-sheets/elevenlabs/patterns.html",
+      "bytes": 11389,
+      "sha256": "210b6c2a347dd748d5310fc25ad7b889a5164bbec45f7aaedf88d633bb76fda5"
+    },
+    {
+      "path": "collections/reference-sheets/expo/index.html",
+      "bytes": 130633,
+      "sha256": "1031e27689a9809daf361a9e392e451adbf1710cfb685a2637a3bda285896cdb"
+    },
+    {
+      "path": "collections/reference-sheets/expo/patterns.html",
+      "bytes": 11295,
+      "sha256": "3a60a975fdc4c51298f72aafa390c7119dae094c73f5084c2fced97ba11bcc67"
+    },
+    {
+      "path": "collections/reference-sheets/ferrari/index.html",
+      "bytes": 143767,
+      "sha256": "ccdd832b32089ff0f308b2f5dd8a24c172d7f437ab1d15cebeca050d3c42ebc7"
+    },
+    {
+      "path": "collections/reference-sheets/ferrari/patterns.html",
+      "bytes": 10476,
+      "sha256": "e07d2c74999f77c532aba0e31d43211f04ce0798c38fbbac9dd59bd80ebb75ff"
+    },
+    {
+      "path": "collections/reference-sheets/figma/index.html",
+      "bytes": 149076,
+      "sha256": "d73b7aa9447c97823b3d801a27438af4fe12ea28ec3fa6a0bed082c0f847ac96"
+    },
+    {
+      "path": "collections/reference-sheets/figma/patterns.html",
+      "bytes": 10830,
+      "sha256": "3d5064830757ac603a7fc06415d6ea7f0a7568c193740b80d397f47640821af4"
+    },
+    {
+      "path": "collections/reference-sheets/framer/index.html",
+      "bytes": 139469,
+      "sha256": "3fca8cb8d38ef58de23ae3e6a7ee33f43c6f2afe7db38e743cc4c7e1a793a9b3"
+    },
+    {
+      "path": "collections/reference-sheets/framer/patterns.html",
+      "bytes": 11325,
+      "sha256": "86ea0ecbd906de93fdffb92ca7a4cc47f01d9cf0cb7f5bfbe10beb8563086468"
+    },
+    {
+      "path": "collections/reference-sheets/hashicorp/index.html",
+      "bytes": 137293,
+      "sha256": "3edc4cda4ce62ba9c8b858cc7dee02d19d44a5005b8a93ba0af7e8b9d898011c"
+    },
+    {
+      "path": "collections/reference-sheets/hashicorp/patterns.html",
+      "bytes": 10923,
+      "sha256": "273f00da2217dcadb4d46b0730fb02d82076208b7739ced6fe1cf873181d4f4d"
+    },
+    {
+      "path": "collections/reference-sheets/hp/index.html",
+      "bytes": 157232,
+      "sha256": "56555350a542bde20e45e5f543f24d1f81052732a470354258ae2cde771b6771"
+    },
+    {
+      "path": "collections/reference-sheets/hp/patterns.html",
+      "bytes": 10836,
+      "sha256": "b14ec1f2a9de5edfae8cdcf6cfff7a252003f06e29d9efe5b451a95cf3809937"
+    },
+    {
+      "path": "collections/reference-sheets/ibm/index.html",
+      "bytes": 150893,
+      "sha256": "f9f0dcc88cd63878e10b05ed924165b75c1b10a695b6bf9470354da35e6cb4c7"
+    },
+    {
+      "path": "collections/reference-sheets/ibm/patterns.html",
+      "bytes": 11277,
+      "sha256": "6234d333e1bf9a1757cbdb0f9f2048ee90c465fca051614ed41f38828b143348"
+    },
+    {
+      "path": "collections/reference-sheets/intercom/index.html",
+      "bytes": 129729,
+      "sha256": "e9647e200bc401304d2985e24d09c83cf379ff48e6f1345160654f3631375f2a"
+    },
+    {
+      "path": "collections/reference-sheets/intercom/patterns.html",
+      "bytes": 11352,
+      "sha256": "217f7dc004ffa18fa5c55d6cb352ddd9fd31ed2f152884363acf61b0ab27f54e"
+    },
+    {
+      "path": "collections/reference-sheets/jobright/index.html",
+      "bytes": 141067,
+      "sha256": "ae40b25051efd2368b222b18607e21564bb7c1295132cb43188f50f785753c38"
+    },
+    {
+      "path": "collections/reference-sheets/jobright/patterns.html",
+      "bytes": 10429,
+      "sha256": "4666e27667cf7456215bf4a6c85ee171ec93a78b5b15ddc1bf534eddbd45ff5d"
+    },
+    {
+      "path": "collections/reference-sheets/kraken/index.html",
+      "bytes": 29806,
+      "sha256": "840b9ec73e71d334dbcd80fcad28ca16c8136b1e7b078fb7586fa339353370d4"
+    },
+    {
+      "path": "collections/reference-sheets/kraken/patterns.html",
+      "bytes": 10484,
+      "sha256": "728ec5e9f0af9017de92f394ec25e5b02cc03323821019bac36e2da24013bbbf"
+    },
+    {
+      "path": "collections/reference-sheets/lamborghini/index.html",
+      "bytes": 32471,
+      "sha256": "fd979c28fe2c342cad39a00a800eb379543c8376daa0b4730c641d1e04e04d96"
+    },
+    {
+      "path": "collections/reference-sheets/lamborghini/patterns.html",
+      "bytes": 10281,
+      "sha256": "b86b164dd5b05fec73283f0b86f199e0a9c74bfd03af893c2080a0ceb23a7b95"
+    },
+    {
+      "path": "collections/reference-sheets/linear-app/index.html",
+      "bytes": 133475,
+      "sha256": "f91761dbabd01f2ff1aafa2d7c7c99c8be1b527d7c8291b4a2343b1a89410c07"
+    },
+    {
+      "path": "collections/reference-sheets/linear-app/patterns.html",
+      "bytes": 11395,
+      "sha256": "56e9d32bcc2820addeb432400f68b57b77ba216d7ddb887a8adcf76a39573ed2"
+    },
+    {
+      "path": "collections/reference-sheets/lovable/index.html",
+      "bytes": 31605,
+      "sha256": "ad51320ef8f5691e66c7ead47c65cfbebf257d12d6109186e18598c5d87baab0"
+    },
+    {
+      "path": "collections/reference-sheets/lovable/patterns.html",
+      "bytes": 10048,
+      "sha256": "4bc927ba5554f7fa42f0a490470ba410592cbf64049cab363fba452d042b9da7"
+    },
+    {
+      "path": "collections/reference-sheets/mastercard/index.html",
+      "bytes": 36004,
+      "sha256": "3071fdcb69d9a5c0493cc5243f7c6bd48692e8b3de31c9aa7b914b30ca79d0cc"
+    },
+    {
+      "path": "collections/reference-sheets/mastercard/patterns.html",
+      "bytes": 10299,
+      "sha256": "e47adc10811ea7c27cdd16445fbd97865e1a3dffa9081190004866f97e5c395b"
+    },
+    {
+      "path": "collections/reference-sheets/mercury/index.html",
+      "bytes": 151146,
+      "sha256": "e906e084e85e11041aed656c6bba50f76a12fa127ef53b34b9ee4323fa4663ac"
+    },
+    {
+      "path": "collections/reference-sheets/mercury/patterns.html",
+      "bytes": 10865,
+      "sha256": "6d4bb77563f0deb20ea9a2aeba2a8e8c44fe6095018816c6907266c70d46c8dd"
+    },
+    {
+      "path": "collections/reference-sheets/meta/index.html",
+      "bytes": 164797,
+      "sha256": "f550a7195211fbb96780ba8424e55a4fcaca9648b22de007d64f90db61139fea"
+    },
+    {
+      "path": "collections/reference-sheets/meta/patterns.html",
+      "bytes": 10822,
+      "sha256": "42ff7c0863d96a97047e23f603423903ed2d0e80391ef8c45b57af44b005a935"
+    },
+    {
+      "path": "collections/reference-sheets/minimax/index.html",
+      "bytes": 187464,
+      "sha256": "8c213c3863a94fbe5035216abac1c49d9e5b5bd277041b5ba0b985e7ce5b878d"
+    },
+    {
+      "path": "collections/reference-sheets/minimax/patterns.html",
+      "bytes": 10856,
+      "sha256": "fd45d1d4e9c1ff0d6843673d22ee5c94dc3f5b1b0444d3b53d30df8210eddc13"
+    },
+    {
+      "path": "collections/reference-sheets/mintlify/index.html",
+      "bytes": 221612,
+      "sha256": "e95d9261eaebb7a3de66ab6a979bbf8cb8de2ee35f263fa9e8bb64bb79a0991b"
+    },
+    {
+      "path": "collections/reference-sheets/mintlify/patterns.html",
+      "bytes": 10869,
+      "sha256": "3be3216fb4045eec79c627984c012dceb5440d98d8e7208d0a3c63af5bd2e29a"
+    },
+    {
+      "path": "collections/reference-sheets/miro/index.html",
+      "bytes": 207839,
+      "sha256": "867499ae0b8dd363ecb155ef01f68f1ec894651ac8782d339df5530584d75cdd"
+    },
+    {
+      "path": "collections/reference-sheets/miro/patterns.html",
+      "bytes": 10817,
+      "sha256": "8733a42e293ce8b19add4a29643fce7d1928b8fab10e857c40d162bd6fe3dcbb"
+    },
+    {
+      "path": "collections/reference-sheets/mistral-ai/index.html",
+      "bytes": 190920,
+      "sha256": "c6a8e041e312adf6c649daa01c64ecf4d11478534057ae0642c99d0b69051a70"
+    },
+    {
+      "path": "collections/reference-sheets/mistral-ai/patterns.html",
+      "bytes": 10905,
+      "sha256": "cfefee9eeda0c9d95ba449078df50eed861b6e4d2b9c170049146d01e0896e1e"
+    },
+    {
+      "path": "collections/reference-sheets/mongodb/index.html",
+      "bytes": 192307,
+      "sha256": "23368ab74d83050c2d012724dc1a1e28013f670bfb876345cd46a75e396e178a"
+    },
+    {
+      "path": "collections/reference-sheets/mongodb/patterns.html",
+      "bytes": 10415,
+      "sha256": "a2bfb6ef9f6d1b3df6a9651b7ea016993123a774285e817b205f4beee13f8ee4"
+    },
+    {
+      "path": "collections/reference-sheets/mydealz/index.html",
+      "bytes": 149827,
+      "sha256": "f7b1b3ccb5e2222013fcce1bc110c9adb5aca05fff998d56d61f50871f102200"
+    },
+    {
+      "path": "collections/reference-sheets/mydealz/patterns.html",
+      "bytes": 10884,
+      "sha256": "a13164d5ed0a2ddf8a468bd1b13597081d396344ce3a5cc2bc1d0d327a60642f"
+    },
+    {
+      "path": "collections/reference-sheets/nerdwallet/index.html",
+      "bytes": 178309,
+      "sha256": "554d6b2612e0a956e61efb1b0a7e597704c9ecb40ec1146846f8c35457fda30b"
+    },
+    {
+      "path": "collections/reference-sheets/nerdwallet/patterns.html",
+      "bytes": 11119,
+      "sha256": "cce23c14b7220750e74813b0937d8f0999b3f0a2357c3c69463c051ce1cb650c"
+    },
+    {
+      "path": "collections/reference-sheets/nike/index.html",
+      "bytes": 130643,
+      "sha256": "29f202ddf3577c324184ede223b7ae6839e3dfabf3afcf032d64c248198b2cdb"
+    },
+    {
+      "path": "collections/reference-sheets/nike/patterns.html",
+      "bytes": 10608,
+      "sha256": "5e6af6fb2f30e1cf580a8d7f72aab71a81f6559a6219778229564b119ab1d625"
+    },
+    {
+      "path": "collections/reference-sheets/nintendo-2001/index.html",
+      "bytes": 185314,
+      "sha256": "7c201a12a8de96c3b81242ca2142b48a7e4abd153cb5eaaa0d0f794bd29f3e48"
+    },
+    {
+      "path": "collections/reference-sheets/nintendo-2001/patterns.html",
+      "bytes": 10474,
+      "sha256": "2861a56b626451ca65c42b03cd7a20a3a91019d5c16abc57874dcb6f2c858b04"
+    },
+    {
+      "path": "collections/reference-sheets/notion/index.html",
+      "bytes": 210371,
+      "sha256": "dc0b82f58599fc8c30a73c74aafa02f6545465bb30bbc428f260b123be18c3ab"
+    },
+    {
+      "path": "collections/reference-sheets/notion/patterns.html",
+      "bytes": 10845,
+      "sha256": "302c32389577d35a150f9db1010f3f9d7ccf7d67b26805070463464f9578cd02"
+    },
+    {
+      "path": "collections/reference-sheets/nvidia/index.html",
+      "bytes": 152574,
+      "sha256": "5df79caa9847c17102ba065e43ebe2964298c0f392b2704aabd9264c6dd58726"
+    },
+    {
+      "path": "collections/reference-sheets/nvidia/patterns.html",
+      "bytes": 10626,
+      "sha256": "6db315b9910be87f54996d0d9fce04777c2a11f237551c7453e4968fb493eea1"
+    },
+    {
+      "path": "collections/reference-sheets/ollama/index.html",
+      "bytes": 124322,
+      "sha256": "b0883c2102bbef441a041e06b8c51f29fbfb1cf7a0e7202e71d5d429b55cc029"
+    },
+    {
+      "path": "collections/reference-sheets/ollama/patterns.html",
+      "bytes": 11063,
+      "sha256": "02ad7336346f6848f5151afa1cabda7b3008f97b36fa18bcd9aa0a5f19109311"
+    },
+    {
+      "path": "collections/reference-sheets/opencode-ai/index.html",
+      "bytes": 117088,
+      "sha256": "32e41300d205a4acb0c4a5e7d3ad941d88a4738159173e98e20d08053321c1f3"
+    },
+    {
+      "path": "collections/reference-sheets/opencode-ai/patterns.html",
+      "bytes": 11142,
+      "sha256": "05308ea75e69c37a49f2e6c8fd9691e2aeb39e907e48b5c9eaabc54693138911"
+    },
+    {
+      "path": "collections/reference-sheets/oracle/index.html",
+      "bytes": 209824,
+      "sha256": "6ea8fee37d0b73c0404a30d5acfd6d021d44d385dbc7a8409ed2311b6ae3d5bc"
+    },
+    {
+      "path": "collections/reference-sheets/oracle/patterns.html",
+      "bytes": 10842,
+      "sha256": "2acc7f927c08b506da3593785bb668f62ac82c4de0208b3f8dc04d800d62a163"
+    },
+    {
+      "path": "collections/reference-sheets/oura/index.html",
+      "bytes": 153349,
+      "sha256": "bd71b6a5742010a96042bc2fe4c6085ed9f30be10ffa8be7772c009a5cfd4cb3"
+    },
+    {
+      "path": "collections/reference-sheets/oura/patterns.html",
+      "bytes": 10381,
+      "sha256": "8c737bf4447131ab69da351f9d0f2965998ff04ea5829a8f3fb22e98a7a7bc57"
+    },
+    {
+      "path": "collections/reference-sheets/patterns.css",
+      "bytes": 7403,
+      "sha256": "9162f15f574cd949630ba8bcf34497444bf1887734f8729c7c772de769e4b4f6"
+    },
+    {
+      "path": "collections/reference-sheets/patterns.mjs",
+      "bytes": 3999,
+      "sha256": "6c5218c3444b40474c8cc47a9b457c9dc13459a8c5a5b5dad717fd2ac1c376a2"
+    },
+    {
+      "path": "collections/reference-sheets/pinterest/index.html",
+      "bytes": 140300,
+      "sha256": "62d679ba48f2bd75e7e2a6ef0a429f480303fb1db8e0b3adc38fdd7aca1056d6"
+    },
+    {
+      "path": "collections/reference-sheets/pinterest/patterns.html",
+      "bytes": 10664,
+      "sha256": "5b4cdcdc36db2a97ec639dfee690ab6d49e653eab626fa2d349f58152bc3466c"
+    },
+    {
+      "path": "collections/reference-sheets/playstation/index.html",
+      "bytes": 161662,
+      "sha256": "9cfd80c58f8fdd4b814626382814c9f6219d09c3141933ebf565255217109277"
+    },
+    {
+      "path": "collections/reference-sheets/playstation/patterns.html",
+      "bytes": 10523,
+      "sha256": "d2cfc8f2e99c49fce35e5a4c9afc14ca6b00690ebc7ecde5c79c276f3acc360f"
+    },
+    {
+      "path": "collections/reference-sheets/posthog/index.html",
+      "bytes": 181707,
+      "sha256": "2876582da0ee4a91dd5c12aeacf46ffb933190e7f3674fd558357111eb5da39e"
+    },
+    {
+      "path": "collections/reference-sheets/posthog/patterns.html",
+      "bytes": 10638,
+      "sha256": "d9bc0cfc20dc9c4acfb8c776beff7c408bd0eb6f42b219a5c83b9feee1703cfe"
+    },
+    {
+      "path": "collections/reference-sheets/raycast/index.html",
+      "bytes": 177990,
+      "sha256": "478c275bb1fd1f826e88dcdc25775634da2de93e7ce3964bcb61571c1d7016f4"
+    },
+    {
+      "path": "collections/reference-sheets/raycast/patterns.html",
+      "bytes": 11073,
+      "sha256": "af8864795a6fcf22f9ebb3cb7754e50f0cdf2d86c3a12f7512cc38c121f80fbe"
+    },
+    {
+      "path": "collections/reference-sheets/renault/index.html",
+      "bytes": 123283,
+      "sha256": "569bd3de5f7eb59faf3533ea56bb58b599e2b305b161d1377b7ea9842f08161d"
+    },
+    {
+      "path": "collections/reference-sheets/renault/patterns.html",
+      "bytes": 11340,
+      "sha256": "ce692e7c3c1d9ca5355d498f46e309a7998663c800f7f4a1be645fe40d365dd2"
+    },
+    {
+      "path": "collections/reference-sheets/replicate/index.html",
+      "bytes": 137986,
+      "sha256": "70f899103c9fd88d2d58d47f5d4146b8ffbf7176e9adb4a2ef9f84c3382ef19c"
+    },
+    {
+      "path": "collections/reference-sheets/replicate/patterns.html",
+      "bytes": 11395,
+      "sha256": "521aed62026da87df76aa4712a2c5d6b4d017ba6cc08115f8ef127dbfb781689"
+    },
+    {
+      "path": "collections/reference-sheets/report.json",
+      "bytes": 3956685,
+      "sha256": "b2425cedd23ccc3c9c2e3fd1d9b475db1cecc060e22052a89dad58f04db78633"
+    },
+    {
+      "path": "collections/reference-sheets/resend/index.html",
+      "bytes": 126309,
+      "sha256": "43c382ef985d76221185c785903e5f537a68c782a634e119f3e0aaab4ab681e8"
+    },
+    {
+      "path": "collections/reference-sheets/resend/patterns.html",
+      "bytes": 10415,
+      "sha256": "d02c35d02274f875e1fcd990508ce168b1199b0ebeb33ca4aebccc228615eab1"
+    },
+    {
+      "path": "collections/reference-sheets/revolut/index.html",
+      "bytes": 140944,
+      "sha256": "dcd31ee78f06e865c44f9893310ba0fa90fd48a98abe695865aa9c1306c63ac2"
+    },
+    {
+      "path": "collections/reference-sheets/revolut/patterns.html",
+      "bytes": 10483,
+      "sha256": "164f9935860648db5dc5445df03548e0aadc34e34fb1b4da083bd4c2bc4feb06"
+    },
+    {
+      "path": "collections/reference-sheets/runwayml/index.html",
+      "bytes": 29425,
+      "sha256": "40ac4abd45df56b3fb1d6128f1335cda5a5a6621c6740d24520c488b7dbaef25"
+    },
+    {
+      "path": "collections/reference-sheets/runwayml/patterns.html",
+      "bytes": 9796,
+      "sha256": "b91e9ff28f1d20e539416994cffb8f13b979339473527f6113f3fc9f6d9e62bb"
+    },
+    {
+      "path": "collections/reference-sheets/sanity/index.html",
+      "bytes": 36048,
+      "sha256": "5f5fd6fea0fd8163174893949f733c4cc6c1bee36999488d0930e7aba435f841"
+    },
+    {
+      "path": "collections/reference-sheets/sanity/patterns.html",
+      "bytes": 10915,
+      "sha256": "8747303cbb105253ab30ce2363523130ff27d0262218e3401b2e1eca47202543"
+    },
+    {
+      "path": "collections/reference-sheets/sap/index.html",
+      "bytes": 182422,
+      "sha256": "4c9b51587bcd72e110eac8c91db9dd17c9958c56e0d0d0c76251078315f9a75a"
+    },
+    {
+      "path": "collections/reference-sheets/sap/patterns.html",
+      "bytes": 10819,
+      "sha256": "fc1ec6157069fcfcc13781f911254bd7ea3c78594b57f14a999d67936f03f24c"
+    },
+    {
+      "path": "collections/reference-sheets/sentry/index.html",
+      "bytes": 138409,
+      "sha256": "96ba7e68545158a28a69017e24db03aabcec3f11570a6a7d165a2f87ddf9be79"
+    },
+    {
+      "path": "collections/reference-sheets/sentry/patterns.html",
+      "bytes": 10214,
+      "sha256": "31a0336ddb1b31da442cd1e6fc654c0afd3a432578aa3698f71b3a6d87529dbb"
+    },
+    {
+      "path": "collections/reference-sheets/sheet.css",
+      "bytes": 8370,
+      "sha256": "c1aa5c610e1d71766d34cae63b1c0e1aa7f44de94e38a547fc45b675eb5aef91"
+    },
+    {
+      "path": "collections/reference-sheets/sheet.mjs",
+      "bytes": 1555,
+      "sha256": "f67437749ac1d9e17d728604039351b6001d10686115f9612a0b2274994ef7cd"
+    },
+    {
+      "path": "collections/reference-sheets/shopify/index.html",
+      "bytes": 137222,
+      "sha256": "e6b6c37ff321a89a1e3c72cc615a499d9f579f0f9dca6de6ddfcb8e7efcbd1f7"
+    },
+    {
+      "path": "collections/reference-sheets/shopify/patterns.html",
+      "bytes": 10704,
+      "sha256": "49df010e2896e553a773ef7fadc4f45e6771deff9e06c03e6aa57c1f02eb7575"
+    },
+    {
+      "path": "collections/reference-sheets/slack/index.html",
+      "bytes": 116566,
+      "sha256": "9c985381915fadebc463bf19bf1c352cad9adea1d1d371d6d4e655b58efc4702"
+    },
+    {
+      "path": "collections/reference-sheets/slack/patterns.html",
+      "bytes": 11097,
+      "sha256": "fd332657abc4d5055bdba6ed5b1094cd862c27d8ecc794637fc1d3279b9a16f8"
+    },
+    {
+      "path": "collections/reference-sheets/spacex/index.html",
+      "bytes": 73283,
+      "sha256": "2f88272539a01685cc3ce30d2fcc89432fc8c1635060cc9893c7a836b2fa3648"
+    },
+    {
+      "path": "collections/reference-sheets/spacex/patterns.html",
+      "bytes": 9987,
+      "sha256": "648e45f0cf1e67005615f8487b23896a5356b558bb07ee751a454c25aa860468"
+    },
+    {
+      "path": "collections/reference-sheets/spotify/index.html",
+      "bytes": 32145,
+      "sha256": "8efaddcef36cdb662b84a9c8c51a87c4bddd23f9e54eb0efef6e09a861568290"
+    },
+    {
+      "path": "collections/reference-sheets/spotify/patterns.html",
+      "bytes": 10928,
+      "sha256": "055931f6871cd3c216aed7c3a6d53a5e25703ef1829f3ebd29a303f888f47219"
+    },
+    {
+      "path": "collections/reference-sheets/starbucks/index.html",
+      "bytes": 39926,
+      "sha256": "6f521935c6ca4f25faa89ba8802d0c4c279334e0335e55374d4719ca8cfeb1c4"
+    },
+    {
+      "path": "collections/reference-sheets/starbucks/patterns.html",
+      "bytes": 10300,
+      "sha256": "ddd9652426398780540366b7714b6f7940f522a141b53925711ead721c1f0e0e"
+    },
+    {
+      "path": "collections/reference-sheets/stripe/index.html",
+      "bytes": 124614,
+      "sha256": "8ffd471f08a246f88c1dbdc8d53f58f6486c0e94abdd2e0e836cb913ad420f8a"
+    },
+    {
+      "path": "collections/reference-sheets/stripe/patterns.html",
+      "bytes": 11333,
+      "sha256": "f6c684ecb47fe408cfd884aa6eb800621003168b706c100a184b06c0d8763d85"
+    },
+    {
+      "path": "collections/reference-sheets/supabase/index.html",
+      "bytes": 113010,
+      "sha256": "1618ec35b358d784af3ec77b5daebee4b39071e4cce9f9cde32d49227d53430e"
+    },
+    {
+      "path": "collections/reference-sheets/supabase/patterns.html",
+      "bytes": 10915,
+      "sha256": "81d1ec99ef09a9b07d0569b63e83f446d85c2101a02f333fc5a952895af7a8b0"
+    },
+    {
+      "path": "collections/reference-sheets/superhuman/index.html",
+      "bytes": 110504,
+      "sha256": "a6067f9cf7d67c81244b2f36460c852357042734edc825ee4bf8e3d2d08175fe"
+    },
+    {
+      "path": "collections/reference-sheets/superhuman/patterns.html",
+      "bytes": 11388,
+      "sha256": "fc87ccb1c37b961201efa0829087d4b47248cdb5afda753cf41c3f806a134972"
+    },
+    {
+      "path": "collections/reference-sheets/tesla/index.html",
+      "bytes": 31556,
+      "sha256": "b7d90181dda53e051d66a78a1b636dd2e3fa7c04a2e070e6e2175a6deac22cbf"
+    },
+    {
+      "path": "collections/reference-sheets/tesla/patterns.html",
+      "bytes": 10205,
+      "sha256": "1313551dce06431fb9e19f72938a8910ea984e4f6a71cd46a5e6bc6e28e30f06"
+    },
+    {
+      "path": "collections/reference-sheets/theverge/index.html",
+      "bytes": 36538,
+      "sha256": "5bbc32724c81777e4f47854b737e00144aee1e8ddbe96d05fc2dc87f0ca0527c"
+    },
+    {
+      "path": "collections/reference-sheets/theverge/patterns.html",
+      "bytes": 10727,
+      "sha256": "2d5fedf8741eba33546ca4c35fdbfdc18ad9f3d2c9083adccf156868e69b086f"
+    },
+    {
+      "path": "collections/reference-sheets/together-ai/index.html",
+      "bytes": 175072,
+      "sha256": "a299ae8f4e5dc3dc4b03a41b76ea005ef9670ad32395c9c85d93d3f0e1a8c2a6"
+    },
+    {
+      "path": "collections/reference-sheets/together-ai/patterns.html",
+      "bytes": 10953,
+      "sha256": "395e7764fc320517a665b6209771866db6836982ad4fa9e9100bd153cb8fa66b"
+    },
+    {
+      "path": "collections/reference-sheets/uber/index.html",
+      "bytes": 166471,
+      "sha256": "7e35cddd08e7bac8e6ddae8fde905bd7aa5d2ffb55f73af0bd9f5958a2b48bca"
+    },
+    {
+      "path": "collections/reference-sheets/uber/patterns.html",
+      "bytes": 11076,
+      "sha256": "ce9198c7171c4c4fb50f7bf50866803679c45ed4dc472d402950f5a5993b45c2"
+    },
+    {
+      "path": "collections/reference-sheets/vercel/index.html",
+      "bytes": 199724,
+      "sha256": "11899bee5e1e1072693cbbec2db9819a535839b097b2708cc57cb022564ae063"
+    },
+    {
+      "path": "collections/reference-sheets/vercel/patterns.html",
+      "bytes": 11322,
+      "sha256": "db39ac790f9b3978f60ae425fba5239d0b67891b7df2c50ce5949c1b5818dea7"
+    },
+    {
+      "path": "collections/reference-sheets/vodafone/index.html",
+      "bytes": 129454,
+      "sha256": "69c5b2d473b57e201c6042ec8e7b91ac99ad462774b769a4365057c4e10d8fe9"
+    },
+    {
+      "path": "collections/reference-sheets/vodafone/patterns.html",
+      "bytes": 10474,
+      "sha256": "060612e8d3a8ac70d1633e59380a010850642c46fc15732b015b0ee05f22f14c"
+    },
+    {
+      "path": "collections/reference-sheets/voltagent/index.html",
+      "bytes": 132980,
+      "sha256": "15a3844aa50f437662c8397ba6540e51332e5cf1c2718db6593d25ab66dc0368"
+    },
+    {
+      "path": "collections/reference-sheets/voltagent/patterns.html",
+      "bytes": 11148,
+      "sha256": "0d47693e5fc1a74fb8b5c59da5c94a13c6e474deb795bd589819fa5992af7e3b"
+    },
+    {
+      "path": "collections/reference-sheets/warp/index.html",
+      "bytes": 131415,
+      "sha256": "b5580176affe9e77380d863b973fc1aa7a41be9de97acb9adf7e99b59821bd21"
+    },
+    {
+      "path": "collections/reference-sheets/warp/patterns.html",
+      "bytes": 11074,
+      "sha256": "340c0e958d1524d29fc73d68300fe4e95d946d33ac03811dc820d0df7e8d7e30"
+    },
+    {
+      "path": "collections/reference-sheets/webflow/index.html",
+      "bytes": 157866,
+      "sha256": "3527714e9e6a54233e9661f6b35cb9667bdb4d34acba02bb57f8733f0a1f1aa2"
+    },
+    {
+      "path": "collections/reference-sheets/webflow/patterns.html",
+      "bytes": 11119,
+      "sha256": "e029e576432482c00010610136fb04fcd900982343cbf66820eac4626ba361e5"
+    },
+    {
+      "path": "collections/reference-sheets/wired/index.html",
+      "bytes": 124694,
+      "sha256": "8e19b231bbd3704b2faecea36ba1ec0706a773554bd0eae3f2a637e59cbf2e29"
+    },
+    {
+      "path": "collections/reference-sheets/wired/patterns.html",
+      "bytes": 10896,
+      "sha256": "623f236bb558fadefc502ec2b07ec5a5ca5198394d290148f9f1cf578a635465"
+    },
+    {
+      "path": "collections/reference-sheets/wise/index.html",
+      "bytes": 137853,
+      "sha256": "fb3016f19e27b9ce9f19c760bc6fba38164dbba4f2d2048cda8fd7818dcee984"
+    },
+    {
+      "path": "collections/reference-sheets/wise/patterns.html",
+      "bytes": 10649,
+      "sha256": "8fa1bb4cea295bbbc5e4402073a627c7ac724711caee67954473fa0d3e5e26d4"
+    },
+    {
+      "path": "collections/reference-sheets/x-ai/index.html",
+      "bytes": 114321,
+      "sha256": "2cdae89c97009f2befe13e120295abfb86b5bfcfcdf7825e8f1e33c756e5e76c"
+    },
+    {
+      "path": "collections/reference-sheets/x-ai/patterns.html",
+      "bytes": 11072,
+      "sha256": "2d3b0f38d434bae477f7031154a8b16c80491de2b92d2e19918ced4b2a2ba62c"
+    },
+    {
+      "path": "collections/reference-sheets/zapier/index.html",
+      "bytes": 142724,
+      "sha256": "e0bbbf2fea02d5541a8a25285cc3e9d3017cabcd6eabfb9c5774cd7fe72721b8"
+    },
+    {
+      "path": "collections/reference-sheets/zapier/patterns.html",
+      "bytes": 10671,
+      "sha256": "bb387f85ed18d2892feae636ab1b3efb08da9ec10a427c35290d7ddb9888405b"
+    },
+    {
+      "path": "collections/reference-specimens/README.md",
+      "bytes": 1201,
+      "sha256": "4895846b442ee9a0a9828d4c27c036e15644c94b4d609e288d69aac95a8900d4"
+    },
+    {
+      "path": "collections/reference-specimens/base.css",
+      "bytes": 3338,
+      "sha256": "aef22b6c87f5462e55aa793b4c6bcecf0b63a0c6f11bd00d857b5dae7f9a51b6"
+    },
+    {
+      "path": "collections/reference-specimens/dell-1996/index.html",
+      "bytes": 5525,
+      "sha256": "82cb64ab7a89af865afad1657358f702515c39fb309c0eab089daf97cd838431"
+    },
+    {
+      "path": "collections/reference-specimens/dell-1996/study.css",
+      "bytes": 2215,
+      "sha256": "4f0fa7a1d50989d5343991fe39bdd6672cc13953c05682e5a3e9cfa4ef17f54e"
+    },
+    {
+      "path": "collections/reference-specimens/linear.app/index.html",
+      "bytes": 5182,
+      "sha256": "7d29d69f35fa74048feb0b018179cb1a4f1bb29e8cda438a29027935b80a9480"
+    },
+    {
+      "path": "collections/reference-specimens/linear.app/study.css",
+      "bytes": 1060,
+      "sha256": "cd1cb6f822de4878bc474e12adc9f378ba07e3cb3e670079e7fbca5efdd01a87"
+    },
+    {
+      "path": "collections/reference-specimens/manifest.json",
+      "bytes": 4104,
+      "sha256": "10b281ff58d2e0e64792c1dc28eb9aea095597ed486d9e199acbce47e2b898bf"
+    },
+    {
+      "path": "collections/reference-specimens/specimen.mjs",
+      "bytes": 2388,
+      "sha256": "d222646d613e518f922b9c9a10f68ab209fd9b0d5ea7a75b5b72b47b612d2a82"
+    },
+    {
+      "path": "collections/reference-specimens/stripe/index.html",
+      "bytes": 5404,
+      "sha256": "c685dccf3775845f5511533ee7de5cf1a67842a2378d5110f970b83128919d09"
+    },
+    {
+      "path": "collections/reference-specimens/stripe/study.css",
+      "bytes": 756,
+      "sha256": "6a6ad4b7d8c2d625549fe7daaee4f0b0525617d9c437870b32b12948e37caa42"
+    },
+    {
+      "path": "index.html",
+      "bytes": 283,
+      "sha256": "1c5a7863ac1668692cd5701c03e2a25a3cb889968304c3dd2d539ada214a04e4"
+    },
+    {
+      "path": "licenses/idb-keyval@6.2.2/LICENCE",
+      "bytes": 555,
+      "sha256": "20c27d6339619eeb3113cb865d4e98a3f559e52964fc75caea9cb5fa72674565"
+    },
+    {
+      "path": "licenses/leaflet@1.9.4/LICENSE",
+      "bytes": 1395,
+      "sha256": "53e8dc25862014e4324741ca18fbe3611e11d42ef69f59f86ea8c5389647d4cb"
+    },
+    {
+      "path": "licenses/lucide-react@0.562.0/LICENSE",
+      "bytes": 2004,
+      "sha256": "3c57143f22dac950efebf84002e360bba5458c7b90fe583b0667aaaef1a7256e"
+    },
+    {
+      "path": "licenses/react-dom@19.2.3/LICENSE",
+      "bytes": 1088,
+      "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+    },
+    {
+      "path": "licenses/react-dom@19.3.1/LICENSE",
+      "bytes": 1088,
+      "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+    },
+    {
+      "path": "licenses/react@19.2.3/LICENSE",
+      "bytes": 1088,
+      "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+    },
+    {
+      "path": "licenses/react@19.3.1/LICENSE",
+      "bytes": 1088,
+      "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+    },
+    {
+      "path": "licenses/scheduler@0.27.0/LICENSE",
+      "bytes": 1088,
+      "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+    },
+    {
+      "path": "licenses/scheduler@0.28.0/LICENSE",
+      "bytes": 1088,
+      "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+    },
+    {
+      "path": "licenses/tailwindcss@4.1.18/LICENSE",
+      "bytes": 1071,
+      "sha256": "60e0b68c0f35c078eef3a5d29419d0b03ff84ec1df9c3f9d6e39a519a5ae7985"
+    },
+    {
+      "path": "packages/appearance/index.d.mts",
+      "bytes": 936,
+      "sha256": "eca1b15dfddbff608baff90d82ed3e4ba70ed7c3088fbd4d6e2f937369fff4a4"
+    },
+    {
+      "path": "packages/appearance/index.d.ts",
+      "bytes": 936,
+      "sha256": "eca1b15dfddbff608baff90d82ed3e4ba70ed7c3088fbd4d6e2f937369fff4a4"
+    },
+    {
+      "path": "packages/appearance/index.mjs",
+      "bytes": 3296,
+      "sha256": "d553e419bf1481512f2d3452a7dcadeb505d0124b9d1089b02201150202fa57a"
+    },
+    {
+      "path": "packages/react/index.d.mts",
+      "bytes": 401,
+      "sha256": "f820313fa0f0b662cd505b9d5d353092a9cc399abff5ee71b41c997a875497b3"
+    },
+    {
+      "path": "packages/react/index.d.ts",
+      "bytes": 401,
+      "sha256": "f820313fa0f0b662cd505b9d5d353092a9cc399abff5ee71b41c997a875497b3"
+    },
+    {
+      "path": "packages/react/index.mjs",
+      "bytes": 895,
+      "sha256": "4c40b1efdf373ff378f489e39d2eb14a1b27dada9d4b575be70bb49c0afa0214"
+    },
+    {
+      "path": "packages/tokens/collection.schema.json",
+      "bytes": 3438,
+      "sha256": "a43e4e7eebbae3276e8799a1c6c758f3590714bf3a7065dfddf00dea0e76f97d"
+    },
+    {
+      "path": "packages/tokens/index.d.mts",
+      "bytes": 667,
+      "sha256": "e553961a07f78506bba2d560baf9d6733039c8ad3dfb4b1e6d13b7db18bbdfc6"
+    },
+    {
+      "path": "packages/tokens/index.d.ts",
+      "bytes": 667,
+      "sha256": "e553961a07f78506bba2d560baf9d6733039c8ad3dfb4b1e6d13b7db18bbdfc6"
+    },
+    {
+      "path": "packages/tokens/index.mjs",
+      "bytes": 9229,
+      "sha256": "3f300c4cbafc882e18e12c6820375fb045f9f32523d3f84364bcafb38ac97cbb"
+    },
+    {
+      "path": "packages/tokens/inventory.schema.json",
+      "bytes": 4241,
+      "sha256": "ee5423f7275223301410f73fff1f1e3a056f4854442914976d35775a53669782"
+    },
+    {
+      "path": "packages/tokens/tokens.schema.json",
+      "bytes": 1628,
+      "sha256": "5598e76b3b8e139403d76e0cbe0b67c95c2c50edc14bfdb3b768496030c34dbd"
+    },
+    {
+      "path": "packages/workbench/README.md",
+      "bytes": 6587,
+      "sha256": "bde51c2cce1f42717018a7313e9c253cb4c148e7d62644085bb54051a6b8e9a5"
+    },
+    {
+      "path": "packages/workbench/index.d.mts",
+      "bytes": 3809,
+      "sha256": "f5a1f4fb78173bae8973b4e546a4a78613811b48697c5e7756b8a5051a9adaac"
+    },
+    {
+      "path": "packages/workbench/index.mjs",
+      "bytes": 27818,
+      "sha256": "243ae6358a9f2fff047aa724ff8c425cef6b023ff81b6dfb34c7d7fbc3fd8113"
+    },
+    {
+      "path": "packages/workbench/skins/stethem.css",
+      "bytes": 1330,
+      "sha256": "8e26d2876ce903aaee44fc1f909e14d92deaf8b113f56316d205a15372d5c1b4"
+    },
+    {
+      "path": "packages/workbench/skins/stethem.tokens.json",
+      "bytes": 2339,
+      "sha256": "3e30d34ec1974336e97031ba9b8d634320295ac3a778797d194c835283296326"
+    },
+    {
+      "path": "packages/workbench/skins/workbench.css",
+      "bytes": 1572,
+      "sha256": "4ad17ab643502c795257a2dda8499d3018ade375cdd17e9052b65cf8b87d11b3"
+    },
+    {
+      "path": "packages/workbench/skins/workbench.tokens.json",
+      "bytes": 2758,
+      "sha256": "77385790d6b3f2475e4f43cea5038f8d5a4d469479b9f8d5d15444e2621cec0a"
+    },
+    {
+      "path": "packages/workbench/style.css",
+      "bytes": 10805,
+      "sha256": "7d2d8bb4fe6a111ef6b6b0888e925a667e4a97a78d111aabb5218eddf2fe8841"
+    },
+    {
+      "path": "packages/workbench/theme-adapter.d.mts",
+      "bytes": 368,
+      "sha256": "22cd75785d017b8a913d9db7f68db19dbd613eb37322db2d2716a4bcd4663c68"
+    },
+    {
+      "path": "packages/workbench/theme-adapter.mjs",
+      "bytes": 1247,
+      "sha256": "8bb5c72e5edb47e6e584b54aa85b299801d979a92fccb4e5c1d8d2e73bc6483d"
+    },
+    {
+      "path": "previews/focus/assets/workbench-C0dByoBP.js",
+      "bytes": 225724,
+      "sha256": "709841ec12cbd65dc51674dd299661c59c3b6b48a04eb8e0dc4c09b509ddd037"
+    },
+    {
+      "path": "previews/focus/assets/workbench-D8-kiAf8.css",
+      "bytes": 22173,
+      "sha256": "75d64a5f7631bbaed64504ffb8c1ed5f8a806c7a851f0d42528006d656f6054e"
+    },
+    {
+      "path": "previews/focus/favicon.png",
+      "bytes": 1351,
+      "sha256": "4e435840c374a915cca0ca718c2c233ed52c520230f2b1441c3dd29cfd43eb36"
+    },
+    {
+      "path": "previews/focus/workbench/index.html",
+      "bytes": 1431,
+      "sha256": "919cbdf4416a6ee1247fa96787fa737bf5e5f4fd6531ca1d77b0a80395b5c14d"
+    },
+    {
+      "path": "previews/great-circle/assets/workbench-Bw8pTKR6.js",
+      "bytes": 461046,
+      "sha256": "9659c701ddfe50847ca86643bc886fc5fb024be86e89bba56b4795754c2d1cb5"
+    },
+    {
+      "path": "previews/great-circle/assets/workbench-DT9YMVnv.css",
+      "bytes": 60060,
+      "sha256": "75b1d94de157476f59fe51082c8f6f723effd850bb338fc25a1d41ec73c3dcdc"
+    },
+    {
+      "path": "previews/great-circle/assets/worker-C8rNlveS.js",
+      "bytes": 24447,
+      "sha256": "d336ffa342e560d281c1f36db82e7a572e04ee142897e864959fb983c0fe6fc6"
+    },
+    {
+      "path": "previews/great-circle/workbench/circle.svg",
+      "bytes": 1061,
+      "sha256": "42a51977323b52fda3d7543e50ce4eaa0cf6d4724a3742f4c00d55e6ea296341"
+    },
+    {
+      "path": "previews/great-circle/workbench/index.html",
+      "bytes": 1234,
+      "sha256": "27c2b8fe0b019007bf60d340b90f308143ff3514c0a818272f747af9f9c32813"
+    },
+    {
+      "path": "previews/stethem/404.html",
+      "bytes": 1891,
+      "sha256": "f6e7ceb139a883b6cc950052d02ce356d9dbacd21a9b52dd4bf9bd6a30c91827"
+    },
+    {
+      "path": "previews/stethem/app/bootstrap.mjs",
+      "bytes": 296,
+      "sha256": "7dd764bec7d0ee48e3158d2537e1d5d3d1a08d88296393ba719ca2f5cbb5b4f6"
+    },
+    {
+      "path": "previews/stethem/design/tokens.css",
+      "bytes": 806,
+      "sha256": "9d95236b05c226d2c2d84a386777125e7894cfa27d3cdc0c1f8afbd56f2346a6"
+    },
+    {
+      "path": "previews/stethem/domain/market-river.mjs",
+      "bytes": 3441,
+      "sha256": "6cb72337cf648cd588857ae2ce79bb7fcc8f332aaa29544e930de9967f47a5b9"
+    },
+    {
+      "path": "previews/stethem/favicon.png",
+      "bytes": 1351,
+      "sha256": "4e435840c374a915cca0ca718c2c233ed52c520230f2b1441c3dd29cfd43eb36"
+    },
+    {
+      "path": "previews/stethem/features/learning/attention/controller.mjs",
+      "bytes": 8415,
+      "sha256": "ca71bf0e18d5765b462ede286dc04e16a4009bc4d663e5c32af1ac4b63a3645e"
+    },
+    {
+      "path": "previews/stethem/features/learning/tokens/controller.mjs",
+      "bytes": 10636,
+      "sha256": "eb8bd28a827eff02f9e74c328365cc3f6e875324627a75e0007c202884d84bb1"
+    },
+    {
+      "path": "previews/stethem/features/market-river/index.mjs",
+      "bytes": 24648,
+      "sha256": "9861e6d6994d4ab5ff1a9762016d4071d14c69d6d378e36dee34300d56335101"
+    },
+    {
+      "path": "previews/stethem/fixtures/attention-growth-maximum.html",
+      "bytes": 14536,
+      "sha256": "bf4ffce9e58be52eed4ac35a05c0817e6418a8cd2da432ded30c6f6e54a8797e"
+    },
+    {
+      "path": "previews/stethem/fixtures/attention-growth-minimum.html",
+      "bytes": 14536,
+      "sha256": "7882d1c44abd10a8bc46555cf43c6ccec2f8eeb2cc889b68e614b612c9a11cc3"
+    },
+    {
+      "path": "previews/stethem/fixtures/attention-growth-tile.html",
+      "bytes": 14533,
+      "sha256": "847aa31b67e9080ce677512c8fb33441a0ca8b1fff5af8593a2754c7bf15c19d"
+    },
+    {
+      "path": "previews/stethem/fixtures/attention-layers-converted.html",
+      "bytes": 14538,
+      "sha256": "6c7529c2eb0e6e8a2801b02db526dc117916e31e2ac76b7e6c7756ffd1b3ad74"
+    },
+    {
+      "path": "previews/stethem/fixtures/attention-layers-hybrid.html",
+      "bytes": 14535,
+      "sha256": "808b51d7ebfde49ccb3d214b86e585c4c11a3acc9636ed5af61f9d465b03bf75"
+    },
+    {
+      "path": "previews/stethem/fixtures/attention-layers-last.html",
+      "bytes": 14533,
+      "sha256": "b9bcde2bf335af3ebd171720488e4c6a2277254549584bd0bed9f3162a6c5fbc"
+    },
+    {
+      "path": "previews/stethem/fixtures/attention-recall-complete.html",
+      "bytes": 14537,
+      "sha256": "2c5a6a5b95dbe78737b13a13734e944c812c770ea14ff416defb5a20c7a640d8"
+    },
+    {
+      "path": "previews/stethem/fixtures/attention-recall-empty.html",
+      "bytes": 14534,
+      "sha256": "d68a6bc135bb4a0dc4f05a186382a66996e4173833e3a9bd6e2862694ade3d67"
+    },
+    {
+      "path": "previews/stethem/fixtures/attention-recall-populated.html",
+      "bytes": 14538,
+      "sha256": "ba0c0c9a45682fd03f2c400e1e9a9b6df23dddc283cdf4cd83c96009c78c2b9f"
+    },
+    {
+      "path": "previews/stethem/fixtures/attention-study-default.html",
+      "bytes": 14535,
+      "sha256": "39b2368a223f27651f8a85adc3359748b80046f5d435c1dc174b2197fd6897cf"
+    },
+    {
+      "path": "previews/stethem/fixtures/attention-study-no-canvas.html",
+      "bytes": 14537,
+      "sha256": "3f45acf8cf243f10748bbb7a8a6029a5109635f86e39649c6aa92194554e7550"
+    },
+    {
+      "path": "previews/stethem/fixtures/attention-study-no-js.html",
+      "bytes": 14446,
+      "sha256": "851537c8bdbed6a22c136006c7d039d4256657a80ac019f110fe2db82f54371d"
+    },
+    {
+      "path": "previews/stethem/fixtures/essay-structure.html",
+      "bytes": 4836,
+      "sha256": "d69ac2db0b4f4fd45cf08245284717e90f10f445703702ae2dfe6810a1846723"
+    },
+    {
+      "path": "previews/stethem/fixtures/fischer-price-revolutionary-device.html",
+      "bytes": 5330,
+      "sha256": "f27cda18ea5c827b58751ef385eccc3fccb549aacfcccf7feda3571f23a6c3ae"
+    },
+    {
+      "path": "previews/stethem/fixtures/learning-index.html",
+      "bytes": 2555,
+      "sha256": "cb18fb15414993b48b6d75acd66170b32acc238e5b8921483c9216e779070bd2"
+    },
+    {
+      "path": "previews/stethem/fixtures/market-archive-empty.html",
+      "bytes": 4817,
+      "sha256": "59c94bbb51a2b4e55da98ef51508c0bf70edfc06e5123e78e6b7b30afa23b017"
+    },
+    {
+      "path": "previews/stethem/fixtures/market-archive-error.html",
+      "bytes": 4817,
+      "sha256": "f5ea1ab1cd697aaacf074ac29e30ee61f465ea52a11a04283b3828d0f3a43393"
+    },
+    {
+      "path": "previews/stethem/fixtures/market-archive-history-fallback.html",
+      "bytes": 4828,
+      "sha256": "4040079e47df8a2c6d0160bd75a3fbe90511b9cf77e190ea245b5628af37909e"
+    },
+    {
+      "path": "previews/stethem/fixtures/market-archive-image-error.html",
+      "bytes": 4823,
+      "sha256": "592a881bc40fb4b09d775f8364c6727d02020959c8fc90e6f2590517f1128e3c"
+    },
+    {
+      "path": "previews/stethem/fixtures/market-archive-loading.html",
+      "bytes": 4819,
+      "sha256": "863fedc3d46dcdd9bdc2f79ecf2126105ab76b5725626268d08ad4aa9ada6c1f"
+    },
+    {
+      "path": "previews/stethem/fixtures/market-archive-no-js.html",
+      "bytes": 3467,
+      "sha256": "51d2ce17dba63aa173e2cac0040bf0555ce959b6d5e6b38d58f0f15d17914fd4"
+    },
+    {
+      "path": "previews/stethem/fixtures/market-archive-populated.html",
+      "bytes": 4821,
+      "sha256": "ce0b70ad0cd33ac20e55021ea3ce191fd9c6b92ffce55a390aa92ca9e8bbc273"
+    },
+    {
+      "path": "previews/stethem/fixtures/market-carousel-focused.html",
+      "bytes": 4820,
+      "sha256": "ff6f2811f1a8d20fe5c7ab84b6f26eb670b00e2ccabb5f1aa60eef5fb2699732"
+    },
+    {
+      "path": "previews/stethem/fixtures/market-carousel-populated.html",
+      "bytes": 4822,
+      "sha256": "dbdf0ca5cc5ecea77d9ee5c249265f3e289ec31cfc49d76a2a64d3b8700d4dbe"
+    },
+    {
+      "path": "previews/stethem/fixtures/market-domain.html",
+      "bytes": 4810,
+      "sha256": "5c2d1d6d50c928a990150e6e7b88ca5ea90d7d2c1ec063c23ae9cc4e89cf7c2f"
+    },
+    {
+      "path": "previews/stethem/fixtures/mechanics.html",
+      "bytes": 56122,
+      "sha256": "28f9097821d3fdce83c89a54d97584f73b82beb1317ee370921fa4085cfafbf8"
+    },
+    {
+      "path": "previews/stethem/fixtures/museum-video-error.html",
+      "bytes": 18363,
+      "sha256": "f53b5db7504b732d7d2a5b1af154e6f4cf717adcbf193223d5458d937a1c45ac"
+    },
+    {
+      "path": "previews/stethem/fixtures/museum-video-paused.html",
+      "bytes": 18364,
+      "sha256": "d6217873438addb5f5943b1c662797fe2df19d1378c5788ad23170d8c66d6b7e"
+    },
+    {
+      "path": "previews/stethem/fixtures/museum-video-playing.html",
+      "bytes": 18365,
+      "sha256": "edd83b81e047f2ee897bdb1285e5ebf4653d338327362578c95c377f40b1cbf1"
+    },
+    {
+      "path": "previews/stethem/fixtures/mysterious-modular-device.html",
+      "bytes": 5183,
+      "sha256": "a01e2d43c8fae4d06c97ca2f7bfce0a66ba6df6a1532459fd3a4eb2e7d812bcd"
+    },
+    {
+      "path": "previews/stethem/fixtures/not-found.html",
+      "bytes": 2036,
+      "sha256": "efa5550861609979da681864ba7cf1c85fcc94077fada3e6b5f99f98fc1b9e20"
+    },
+    {
+      "path": "previews/stethem/fixtures/portfolio.html",
+      "bytes": 18354,
+      "sha256": "c7d5c2d62acc7a5bb9d45f6ffa83a3c30c9249e7fd2120b5edec7c96936ef2f4"
+    },
+    {
+      "path": "previews/stethem/fixtures/project-cards.html",
+      "bytes": 18358,
+      "sha256": "945c11220202f3fd1e91de4e06393a3e3b589dd1294e308053f0cb17e0da0dec"
+    },
+    {
+      "path": "previews/stethem/fixtures/study-structure.html",
+      "bytes": 56128,
+      "sha256": "45ab0eaa146100f04536d2577ee548e5f63376c58de39b51ead147edda36ec9c"
+    },
+    {
+      "path": "previews/stethem/fixtures/the-spoon-app.html",
+      "bytes": 4834,
+      "sha256": "867402f8ea3998df2c5e3f3a9b4ce75415fabc1d54452020c6b88f570a427837"
+    },
+    {
+      "path": "previews/stethem/fixtures/token-art.html",
+      "bytes": 56122,
+      "sha256": "238f7ee2dca1dffe932227fe744230974e3be9614e5a95e0061b1494969ec8a8"
+    },
+    {
+      "path": "previews/stethem/fixtures/token-config-invalid.html",
+      "bytes": 56133,
+      "sha256": "e73098a6f907852860d43774c4e639d66ce9008c2dca3e8005c7fd0751d0f37a"
+    },
+    {
+      "path": "previews/stethem/fixtures/token-config-sample.html",
+      "bytes": 56132,
+      "sha256": "658451b17d4e00eb89a36f522e37e73c084b8476b6c369e56065fefe3da5e654"
+    },
+    {
+      "path": "previews/stethem/fixtures/token-playground-empty.html",
+      "bytes": 56135,
+      "sha256": "c23d2a2c316565bc81e7a2875f5d94528402c48f9071b19732b99a2dd144335f"
+    },
+    {
+      "path": "previews/stethem/fixtures/token-playground-populated.html",
+      "bytes": 56139,
+      "sha256": "429f3dd61167b7fec87e3327dd9872f71a79df5135dbee180e4c5ebb5aeb615e"
+    },
+    {
+      "path": "previews/stethem/fixtures/token-selection-selected.html",
+      "bytes": 56137,
+      "sha256": "5eac54d810776ce923de990af2360cfe67908d95722f15a25eb7225d4d00bcc2"
+    },
+    {
+      "path": "previews/stethem/fixtures/token-selection-word.html",
+      "bytes": 56133,
+      "sha256": "f85201117424a78d7a323c2d8f7de2cf746643924772a811f983dcc4818c06e5"
+    },
+    {
+      "path": "previews/stethem/fixtures/token-stage-append.html",
+      "bytes": 56131,
+      "sha256": "da3a4b895a48e626fc8251cd4a716a4e8da2ccd58e7fbc2e4a6aafc92b8bbd7f"
+    },
+    {
+      "path": "previews/stethem/fixtures/token-stage-context.html",
+      "bytes": 56132,
+      "sha256": "3afe1a73c28e2d7002a748c752f0bb380d1df22d9e83d0b3c058bfc5cc355801"
+    },
+    {
+      "path": "previews/stethem/fixtures/token-stage-pieces.html",
+      "bytes": 56131,
+      "sha256": "2fb3edc7997ac06b7bbef420483a13f744f191e569181e97aad96188aaf46412"
+    },
+    {
+      "path": "previews/stethem/fixtures/token-stage-rows.html",
+      "bytes": 56129,
+      "sha256": "28bf1a0e7df6f37ce7f8f1dde94c6f3cafd1fde539f6d47ac5cb8775ee605e48"
+    },
+    {
+      "path": "previews/stethem/fixtures/token-stage-scores.html",
+      "bytes": 56131,
+      "sha256": "aade0a7f917142ee4b95fd44e558a026f4fb6bd9e61163217e4ac1466319b701"
+    },
+    {
+      "path": "previews/stethem/fixtures/token-stage-stop.html",
+      "bytes": 56129,
+      "sha256": "66ef960c48072bf091906db809c872ec8863955064c9d0b8aafd9cf8981cbb69"
+    },
+    {
+      "path": "previews/stethem/fixtures/token-study-default.html",
+      "bytes": 56132,
+      "sha256": "5a6a313bd4fc51140fe7d3f5b9889d8b600f35b16dc5bbf77f86f5e36f1edfd7"
+    },
+    {
+      "path": "previews/stethem/fixtures/token-study-no-canvas.html",
+      "bytes": 56134,
+      "sha256": "06a9436753929fb232adfb4a8a8cecedaf19f7e9cb7390420144a5afa4e671ce"
+    },
+    {
+      "path": "previews/stethem/fixtures/token-study-no-js.html",
+      "bytes": 56045,
+      "sha256": "e0f68e39bc2d0cd78b2f75a16dd4bdab41362d9fa0fad60b80f58a1f5ce665c5"
+    },
+    {
+      "path": "previews/stethem/fixtures/token-trace-expanded.html",
+      "bytes": 56133,
+      "sha256": "1009e6ecf401538d490d0eafb4a3e2327964c785e3e66c52816257a8015e3de7"
+    },
+    {
+      "path": "previews/stethem/fixtures/token-trace-hover.html",
+      "bytes": 56130,
+      "sha256": "caa25b36d87d095e4faac48fab728e2f9b0dce40308f9a4f09582feaacec0759"
+    },
+    {
+      "path": "previews/stethem/fixtures/token-trace-pinned.html",
+      "bytes": 56131,
+      "sha256": "94d2e246c3937fe6124e8cb92c0f83064cc25728e3b1f1a423109d4cd3238d57"
+    },
+    {
+      "path": "previews/stethem/fixtures/typography.html",
+      "bytes": 2037,
+      "sha256": "0aa951acb9ef92e6596521f3a7ceb80aaa418ff93e13d875e658e56c8b25e6c3"
+    },
+    {
+      "path": "previews/stethem/fonts/README.md",
+      "bytes": 583,
+      "sha256": "7efb64f8c41573406dbdc356b8e7192bacbd69276449c40b303382b2079aae2a"
+    },
+    {
+      "path": "previews/stethem/fonts/inter-OFL.txt",
+      "bytes": 4377,
+      "sha256": "5b9321a4298cfeb6b34354164a1c3afc3db114569984c502b9b35d988fd58c57"
+    },
+    {
+      "path": "previews/stethem/fonts/inter-latin.woff2",
+      "bytes": 48256,
+      "sha256": "3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62"
+    },
+    {
+      "path": "previews/stethem/fonts/sources.json",
+      "bytes": 1423,
+      "sha256": "19d6dd24d46cad163096c26165005fe70e9d43b511fea5026950f82adeb6bd43"
+    },
+    {
+      "path": "previews/stethem/fonts/space-grotesk-OFL.txt",
+      "bytes": 4495,
+      "sha256": "564ce565c371c5e5bbf286006565a7c9aa55a9f56e7ca58d56e05d649dd61a72"
+    },
+    {
+      "path": "previews/stethem/fonts/space-grotesk-latin.woff2",
+      "bytes": 22288,
+      "sha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d"
+    },
+    {
+      "path": "previews/stethem/fonts/space-mono-OFL.txt",
+      "bytes": 4392,
+      "sha256": "8e4ee42b2553e1e01504e61cb0d46d148cd8c9e5eacaa3622a7df2d4f2955b9f"
+    },
+    {
+      "path": "previews/stethem/fonts/space-mono-latin.woff2",
+      "bytes": 16520,
+      "sha256": "fb4a81a2d0a893e5c38c394a7e716a1cef0b24610a0af49c96f6d529bd66bf2b"
+    },
+    {
+      "path": "previews/stethem/image.gif",
+      "bytes": 15669382,
+      "sha256": "dc4ae4c53b98b51dba9afd9c88b7787e5e8c4396c2685cfcb5b41314efe150bf"
+    },
+    {
+      "path": "previews/stethem/images/apps/focus-speed-reader.jpeg",
+      "bytes": 12066,
+      "sha256": "a82dc0f454e6f174bf1616c1cbb482b3ea0d3ce1935a43bfb64e76f539ee96e5"
+    },
+    {
+      "path": "previews/stethem/images/apps/great-circle.jpeg",
+      "bytes": 117561,
+      "sha256": "5d84a211ba7e98eb43602353e43f01395a23d76ed91ee2980f78f9a4d20d2611"
+    },
+    {
+      "path": "previews/stethem/images/apps/spoon-app.jpeg",
+      "bytes": 42918,
+      "sha256": "23a1a5298b31ff67859d85c12ad44a4ad4ecb38aa5cce98fa131760c26958ded"
+    },
+    {
+      "path": "previews/stethem/images/apps/verbosele.jpeg",
+      "bytes": 90097,
+      "sha256": "cbe1b8fe1810ca1c5e98f18a6157b8a119dba0e55c463595d25b78350df0d864"
+    },
+    {
+      "path": "previews/stethem/images/invisible-objects/IMG_8484.jpeg",
+      "bytes": 187694,
+      "sha256": "d810ea891f593e52c208de8e7702dcd390c81234ac2bed2815a697d9e24dbe3e"
+    },
+    {
+      "path": "previews/stethem/images/invisible-objects/IMG_8485.jpeg",
+      "bytes": 114972,
+      "sha256": "03aed3163508783993c9853797de58ab6bce648e907ef829cefb92a8013746b1"
+    },
+    {
+      "path": "previews/stethem/images/invisible-objects/IMG_8487.jpeg",
+      "bytes": 114231,
+      "sha256": "83b655a290c48fe44b8b458dd50522cfe513df9f8e94811b8b29f58c26fa6f53"
+    },
+    {
+      "path": "previews/stethem/images/invisible-objects/IMG_8488.jpeg",
+      "bytes": 230889,
+      "sha256": "7ab671d28941cab474445958fe6897a3110f9c0ef96b8e7e07e9f5aaae9a5baa"
+    },
+    {
+      "path": "previews/stethem/images/invisible-objects/IMG_8494.jpeg",
+      "bytes": 152359,
+      "sha256": "620ff6ea352fd5be178433889b823c67f94ee6c22b69a7b341fb30f68905476e"
+    },
+    {
+      "path": "previews/stethem/images/invisible-objects/IMG_8495.jpeg",
+      "bytes": 135146,
+      "sha256": "5c86caa6ca40f50f34b22330d2757ac9858d8bf56cc3afbff074731c59196599"
+    },
+    {
+      "path": "previews/stethem/images/market-river/2026-10-23-close-353a8248769a-sunny.webp",
+      "bytes": 181976,
+      "sha256": "7b04f79894d95057f4d75718e448c07fbe81943d153f28c6a62e6f29829ca852"
+    },
+    {
+      "path": "previews/stethem/images/og/fischer-price-revolutionary-device.jpg",
+      "bytes": 33555,
+      "sha256": "270e3cfc62722139b885da51f407a4f0e681051c9fd65ffb515470a660dfedb5"
+    },
+    {
+      "path": "previews/stethem/images/og/home.jpg",
+      "bytes": 126080,
+      "sha256": "e70360da9182193e5c322030ff0bb0d6e9be9f4e58983560271ffc02931e8a03"
+    },
+    {
+      "path": "previews/stethem/images/og/market-river.jpg",
+      "bytes": 168011,
+      "sha256": "ff3b20ca0a266176634310b985d0d0bdc3cef250545f257bbc18426a87633130"
+    },
+    {
+      "path": "previews/stethem/images/og/mysterious-modular-device.jpg",
+      "bytes": 30395,
+      "sha256": "a1b1a9bdd73ca7a9049c6ccf861ab4c19f74bc1676ce8d155513682fbbc0f555"
+    },
+    {
+      "path": "previews/stethem/images/og/the-spoon-app.jpg",
+      "bytes": 60505,
+      "sha256": "cbc35850b7e7615a4dc726f527fdc7499af04cf1e586fc791d51dc01e611f91a"
+    },
+    {
+      "path": "previews/stethem/images/og/verbosele.jpg",
+      "bytes": 32871,
+      "sha256": "7a47a4febb6a8cd95078a605c6dab64f2de07dc9e9668334626d61384ef6c44a"
+    },
+    {
+      "path": "previews/stethem/index.html",
+      "bytes": 18209,
+      "sha256": "4626ee5a282d41cf5ee7fa3cfab0b08aba3ab6cfde7f593b7322f4ed326b69c4"
+    },
+    {
+      "path": "previews/stethem/learning-machines/arrows.mjs",
+      "bytes": 2030,
+      "sha256": "108fad9cfcf67db4f521fe3a0f93ed2ec4c79397e2dbc5f0fcae7f5ccc0f737b"
+    },
+    {
+      "path": "previews/stethem/learning-machines/attention-and-memory/index.html",
+      "bytes": 14337,
+      "sha256": "5bfeff7c9e44d960c2431ac6490d52201f0839fffa9c120b2cabf76a315ccc63"
+    },
+    {
+      "path": "previews/stethem/learning-machines/attention-and-memory/mechanics-LICENSE.txt",
+      "bytes": 1380,
+      "sha256": "26926a11dbfe9ae174f49a3ded516f835f90467e021756905925e064bb2479e4"
+    },
+    {
+      "path": "previews/stethem/learning-machines/attention-and-memory/mechanics-pin.json",
+      "bytes": 435,
+      "sha256": "49eb028f2537a69b2b83eef270db22cea4ec4f92cd0f2b95931a96ff5114f358"
+    },
+    {
+      "path": "previews/stethem/learning-machines/attention-and-memory/mechanics.mjs",
+      "bytes": 1618,
+      "sha256": "1bf483c77945e1be9b332a742efd908262171fdc49b76fa9865ad47460eaa69c"
+    },
+    {
+      "path": "previews/stethem/learning-machines/attention-and-memory/page.mjs",
+      "bytes": 134,
+      "sha256": "b62997622e139083d6be8c141ad6a2203fab7851e15215d60a043009d337bd9c"
+    },
+    {
+      "path": "previews/stethem/learning-machines/attention-and-memory/visuals.mjs",
+      "bytes": 7604,
+      "sha256": "cea9a22f562ff5c19e3f1b539b46218941433daed58b08d99a94c38cb6768ba4"
+    },
+    {
+      "path": "previews/stethem/learning-machines/index.html",
+      "bytes": 2387,
+      "sha256": "5411c6c9289185039d73992e5ebd5a2fe952668e605a9ec2c2c2ae71959e3b08"
+    },
+    {
+      "path": "previews/stethem/learning-machines/learning.css",
+      "bytes": 14641,
+      "sha256": "eb3337007f97d91b4f585152345a6c02f5d7b7961d1c5a1ba7d38cedcf760146"
+    },
+    {
+      "path": "previews/stethem/learning-machines/thumbnail.svg",
+      "bytes": 3622,
+      "sha256": "3171ebc6b131245c1f7f3c4e42f67cbea82025a9e873d5f3b09105bbfde6d280"
+    },
+    {
+      "path": "previews/stethem/learning-machines/tokens/explanation.css",
+      "bytes": 10522,
+      "sha256": "882b06d93643f4882342b26bc718fd64341e3d0d457f58040dac0bb7bf434307"
+    },
+    {
+      "path": "previews/stethem/learning-machines/tokens/explanation.mjs",
+      "bytes": 12924,
+      "sha256": "0d6627a8441efa58ed516edda0a2b8ef1a51e1a1a0bf7b813cdc57e5e440a466"
+    },
+    {
+      "path": "previews/stethem/learning-machines/tokens/fixture.mjs",
+      "bytes": 1735,
+      "sha256": "d46f4bd2d68bfac4a8ff59386d74d5778076920049b101a5c336c2b781c33381"
+    },
+    {
+      "path": "previews/stethem/learning-machines/tokens/flow.mjs",
+      "bytes": 9544,
+      "sha256": "3178526508c7f4f847be9b88a0627389515df3f91cb043550a27a992cee42f3d"
+    },
+    {
+      "path": "previews/stethem/learning-machines/tokens/index.html",
+      "bytes": 55952,
+      "sha256": "fbf6f5eb60665bca6e328c76328f38542b53d3795812c58778b7b089d959c0fe"
+    },
+    {
+      "path": "previews/stethem/learning-machines/tokens/mechanics-LICENSE.txt",
+      "bytes": 1380,
+      "sha256": "26926a11dbfe9ae174f49a3ded516f835f90467e021756905925e064bb2479e4"
+    },
+    {
+      "path": "previews/stethem/learning-machines/tokens/mechanics-pin.json",
+      "bytes": 666,
+      "sha256": "d604b6fdef5e3753f152f0da157423edf8e27ae182b41000e93caca5cfd1b5e3"
+    },
+    {
+      "path": "previews/stethem/learning-machines/tokens/mechanics.mjs",
+      "bytes": 8038,
+      "sha256": "e2b8fb84725911a41db3b0b1f6c256571de7a43e0485fb67bdc6b5f5603523c7"
+    },
+    {
+      "path": "previews/stethem/learning-machines/tokens/page.mjs",
+      "bytes": 131,
+      "sha256": "50fd01afae35a5bbb5c9504bdd3ac74199279379361af81d564c8ac47a1f7a27"
+    },
+    {
+      "path": "previews/stethem/learning-machines/tokens/tokens.css",
+      "bytes": 20002,
+      "sha256": "d7c249fdeb15f9f3992bc826ad4c58398c831d0349266fe7e50a15b7b4dd39bb"
+    },
+    {
+      "path": "previews/stethem/learning-machines/tokens/visuals.mjs",
+      "bytes": 2324,
+      "sha256": "f638822495c83298fc9f3908f5bc792ee8cbe52c0bfe6a4f97a49fb61def6b62"
+    },
+    {
+      "path": "previews/stethem/learning-machines/tokens/worked-embedding.svg",
+      "bytes": 9025,
+      "sha256": "01fda459183d3559eefb8816e6e249f28ac1b8dff2b32e2ffb8cdc7674ac36fe"
+    },
+    {
+      "path": "previews/stethem/learning-machines/tokens/worked-layers-narrow.svg",
+      "bytes": 20253,
+      "sha256": "c84fa99045e530af64095e7e904ef36c0ca4a9f47a55ac6ae21d88f429f2e6eb"
+    },
+    {
+      "path": "previews/stethem/learning-machines/tokens/worked-layers.svg",
+      "bytes": 19584,
+      "sha256": "5f3406489e2e9c8e03bb7e39ae9eec627c18053853e3314379aae09b07f25ef1"
+    },
+    {
+      "path": "previews/stethem/learning-machines/tokens/worked-output-narrow.svg",
+      "bytes": 5704,
+      "sha256": "2e45bf9b3cf6e22a1df61093ff0e98911dd913a30020201911e601eb48b3ca29"
+    },
+    {
+      "path": "previews/stethem/learning-machines/tokens/worked-output.svg",
+      "bytes": 6645,
+      "sha256": "f114f1dbf3cbf6aab2e3a70e43d77b74d30fd90da4012d13139ac1cb8dd64d27"
+    },
+    {
+      "path": "previews/stethem/market-river/index.html",
+      "bytes": 4648,
+      "sha256": "dea97134ba9d32cab8ffcfd04e29d92feebb8e28f1ca89076277d177aaf8ea7b"
+    },
+    {
+      "path": "previews/stethem/market-river/index.md",
+      "bytes": 831,
+      "sha256": "44d4c5dbcc33e785b181b5c2cf1aa8fb46c1cfee17a551627ec1b6cd19ec7d6e"
+    },
+    {
+      "path": "previews/stethem/museum-poster.jpg",
+      "bytes": 120956,
+      "sha256": "26ee096a493b8f405a5574cb68647be0c85db5bed72ad404447cab4ca6b7386f"
+    },
+    {
+      "path": "previews/stethem/museum-video.js",
+      "bytes": 99,
+      "sha256": "9515de78b0064b683f591d4a201f0002ade72d259ad260d38570f79d543acea7"
+    },
+    {
+      "path": "previews/stethem/museum.mp4",
+      "bytes": 726855,
+      "sha256": "5844871e544cb4bb531921e000c31b80b9cd81cc6fd78cee7a082796ca5fe045"
+    },
+    {
+      "path": "previews/stethem/museum.webp",
+      "bytes": 2545008,
+      "sha256": "17df21626566d1b35589ccea437b8c6d3dbced37b080abfa3a7363f99125c634"
+    },
+    {
+      "path": "previews/stethem/objects/fischer-price-revolutionary-device/index.html",
+      "bytes": 5117,
+      "sha256": "512d21942c747e7c6c696ba44d797f19600ac0ba822de30512c3cab58fc1aba9"
+    },
+    {
+      "path": "previews/stethem/objects/fischer-price-revolutionary-device/index.md",
+      "bytes": 1320,
+      "sha256": "d1246477cc43e1c5b46c979b31cfa7beec713cca2ca32382bfa74bff84b0ef67"
+    },
+    {
+      "path": "previews/stethem/objects/mysterious-modular-device/index.html",
+      "bytes": 4988,
+      "sha256": "1a812f63791ed054d2fd7e09294089c4449dddc097c68f3cb139ecd1f64663c5"
+    },
+    {
+      "path": "previews/stethem/objects/mysterious-modular-device/index.md",
+      "bytes": 1283,
+      "sha256": "e3e16cef9c757e298fbdaefc976cfb390073f135a9449b7edbf076f98ffc02f5"
+    },
+    {
+      "path": "previews/stethem/objects/the-spoon-app/index.html",
+      "bytes": 4663,
+      "sha256": "54dbb63df5a8d64d0ba7717bfcc96f4e438702cb27f58c1bd004a91460d11124"
+    },
+    {
+      "path": "previews/stethem/objects/the-spoon-app/index.md",
+      "bytes": 1142,
+      "sha256": "86e01628c8111462667a149a59c35fc85d3f82c91db4876d94ecc563a4d55d7d"
+    },
+    {
+      "path": "previews/stethem/placeholder.webp",
+      "bytes": 109672,
+      "sha256": "21f430a993e856664219d0297c2d654922a4d9a728f2592bf8e4f805de4a1b65"
+    },
+    {
+      "path": "previews/stethem/script.js",
+      "bytes": 149,
+      "sha256": "620779bb211c94d298f1ae512f6624c581615766ad76e815935b1d04d7f749d2"
+    },
+    {
+      "path": "previews/stethem/sitemap.xml",
+      "bytes": 945,
+      "sha256": "b6303f1e7c30b887fad644b822f6e83d10881294f119a75735abb892828e455e"
+    },
+    {
+      "path": "previews/stethem/styles/site.css",
+      "bytes": 17839,
+      "sha256": "dc68b21b2a54748b1bf624c4942abd7eec608954c219f3f07b3194d1caffd316"
+    },
+    {
+      "path": "previews/stethem/styles.css",
+      "bytes": 73,
+      "sha256": "7606e71837d048df4d146556405b8405b40ed2568581c7bfa619c69b293af630"
+    },
+    {
+      "path": "previews/stethem/ui/favicon.mjs",
+      "bytes": 2069,
+      "sha256": "864f71e3670ba7b796ec66465a357d0dfd07d1ccc25e51b8112f00ce98780207"
+    },
+    {
+      "path": "previews/stethem/ui/museum-video.mjs",
+      "bytes": 1726,
+      "sha256": "3d7bc42e55cf29ac8c78f826359223e685e0d7abaa535df66df8576ee652d788"
+    },
+    {
+      "path": "previews/stethem/vendor/design-system/packages/workbench/theme-adapter.mjs",
+      "bytes": 1247,
+      "sha256": "8bb5c72e5edb47e6e584b54aa85b299801d979a92fccb4e5c1d8d2e73bc6483d"
+    },
+    {
+      "path": "previews/stethem/workbench/market-metadata.json",
+      "bytes": 87,
+      "sha256": "831715286e78b3b3c573b14853773c9cf429c0107514b1152cd5dc8d1b57b268"
+    },
+    {
+      "path": "previews/stethem/workbench/setup.js",
+      "bytes": 4961,
+      "sha256": "75983a720069409281232b2a2392ed817eba8f39c7f668d1a1cbc94e0e02eadf"
+    },
+    {
+      "path": "registry/apps/focus/collection.json",
+      "bytes": 10474,
+      "sha256": "35d7c9028053808f7ccd4f17a4fb3e669c1ebaa38cbbb4ff3920c176dbf0eb27"
+    },
+    {
+      "path": "registry/apps/focus/inventory.json",
+      "bytes": 12941,
+      "sha256": "385a3ecbe5a05edb8a6bdd21decc611bf10492b7b6b34fe385d7146ac7c4cca9"
+    },
+    {
+      "path": "registry/apps/focus/tokens.json",
+      "bytes": 5732,
+      "sha256": "242f96e6bf0a13aaed72ccb45add9889cfb9cd989217112e6f9574b4df0de73e"
+    },
+    {
+      "path": "registry/apps/great-circle/collection.json",
+      "bytes": 15272,
+      "sha256": "814a39bbd61f011ced04c4deaa8569c7b9326774b3d447c9f3b1afbea1af6647"
+    },
+    {
+      "path": "registry/apps/great-circle/inventory.json",
+      "bytes": 11027,
+      "sha256": "68f05190ac278116a52e3a5201b061c03db0b66c6f16e36870954c20a3e25acf"
+    },
+    {
+      "path": "registry/apps/great-circle/tokens.json",
+      "bytes": 8219,
+      "sha256": "1ff86a3f92bbe4b58a500ced27c54481c432965066b89d19ce06b23f5a291910"
+    },
+    {
+      "path": "registry/apps/stethem/collection.json",
+      "bytes": 28061,
+      "sha256": "b803f4c174ea5fa3ac81516e68961a12ebb72d994ab30a82fac298c34aa2bbe4"
+    },
+    {
+      "path": "registry/apps/stethem/inventory.json",
+      "bytes": 16589,
+      "sha256": "9970bd1ae0644d629f703feb83d6181c842f3dee99be747dc32d8549a2738cd7"
+    },
+    {
+      "path": "registry/apps/stethem/tokens.json",
+      "bytes": 1451,
+      "sha256": "27ab783e82cd1dd46fc6b4f566ff778b70d421496cb79d32928577353914bbea"
+    },
+    {
+      "path": "registry/index.json",
+      "bytes": 216,
+      "sha256": "1c27c05baf67cc875679aba2fb7232de23262603a74198512373fe4e44471d17"
+    },
+    {
+      "path": "registry/reference-homepages.json",
+      "bytes": 63282,
+      "sha256": "fb5a532ed4a306dda0e4b8eec4cfb4d258beaf7adccc3b59e7956bc016af5604"
+    },
+    {
+      "path": "registry/reference-supplements.json",
+      "bytes": 20561,
+      "sha256": "158e376ace69db9f748d8f861d934b9c738f2b1167f048d1a93882554b486889"
+    },
+    {
+      "path": "registry/references.json",
+      "bytes": 4878,
+      "sha256": "3338e590d09c08be0b369288dada6fdf9f39e0654566a85f90531acf40c25819"
+    }
+  ],
+  "publication": {
+    "provider": "GitHub Pages",
+    "repository": "rsteth/design-system",
+    "branch": "gh-pages",
+    "url": "https://stethem.com/design-system/",
+    "scope": "Reviewed fixture-only static viewer. No capture runner or application service."
+  }
+}

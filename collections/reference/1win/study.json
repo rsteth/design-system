@@ -1,0 +1,1137 @@
+{
+  "schemaVersion": 1,
+  "id": "reference-1win",
+  "title": "1win",
+  "classification": "independent-unverified-analysis",
+  "source": {
+    "repository": "https://github.com/VoltAgent/awesome-design-md",
+    "fork": "https://github.com/rsteth/awesome-design-md-p",
+    "revision": "fcc70284932276d085f01ef9f83edde90b1258cb",
+    "path": "design-md/1win/DESIGN.md",
+    "sha256": "64d02d344cb16d68b6882054f35e3bfb7241ad60dc8b7f84f6636a7d1379496a",
+    "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/1win/DESIGN.md"
+  },
+  "sourceName": "1win Analysis",
+  "titleProvenance": {
+    "status": "inferred",
+    "basis": "Source directory label, normalized for navigation; original source name is retained without correction.",
+    "sourceValue": "1win",
+    "originalName": "1win Analysis"
+  },
+  "description": "An analysis of 1win's design language — a near-black crypto casino and sportsbook built on Inter at heavy weights, where a vivid green action color and an electric blue secondary carry every CTA across dense, full-bleed game-tile rails, promo cards, and live betting panels on a flat dark-grey surface ladder.",
+  "analysis": {
+    "version": "alpha",
+    "name": "1win Analysis",
+    "description": "An analysis of 1win's design language — a near-black crypto casino and sportsbook built on Inter at heavy weights, where a vivid green action color and an electric blue secondary carry every CTA across dense, full-bleed game-tile rails, promo cards, and live betting panels on a flat dark-grey surface ladder.",
+    "colors": {
+      "primary": "#00b24b",
+      "secondary": "#0075ff",
+      "on-primary": "#ffffff",
+      "canvas": "#141415",
+      "surface": "#2e3035",
+      "hairline": "#2d2f33",
+      "ink": "#f0f2f5",
+      "muted": "#9aa1b1",
+      "faint": "#53575f",
+      "black": "#000000"
+    },
+    "typography": {
+      "display": {
+        "fontFamily": "Inter",
+        "fontSize": "33px",
+        "fontWeight": 800,
+        "lineHeight": 1.1,
+        "letterSpacing": 0
+      },
+      "heading": {
+        "fontFamily": "Inter",
+        "fontSize": "20px",
+        "fontWeight": 800,
+        "lineHeight": 1.2,
+        "letterSpacing": 0
+      },
+      "title": {
+        "fontFamily": "Inter",
+        "fontSize": "16px",
+        "fontWeight": 600,
+        "lineHeight": 1.3,
+        "letterSpacing": 0
+      },
+      "body": {
+        "fontFamily": "Inter",
+        "fontSize": "14px",
+        "fontWeight": 600,
+        "lineHeight": 1.4,
+        "letterSpacing": 0
+      },
+      "ui": {
+        "fontFamily": "Inter",
+        "fontSize": "13px",
+        "fontWeight": 600,
+        "lineHeight": 1.3,
+        "letterSpacing": 0
+      },
+      "caption": {
+        "fontFamily": "Inter",
+        "fontSize": "12px",
+        "fontWeight": 600,
+        "lineHeight": 1.3,
+        "letterSpacing": 0
+      }
+    },
+    "rounded": {
+      "xs": "4px",
+      "sm": "6px",
+      "md": "8px",
+      "lg": "10px",
+      "xl": "12px",
+      "card": "16px",
+      "full": "999px"
+    },
+    "spacing": {
+      "xxs": "2px",
+      "xs": "4px",
+      "sm": "8px",
+      "md": "12px",
+      "lg": "16px",
+      "xl": "20px",
+      "xxl": "24px",
+      "xxxl": "32px"
+    },
+    "components": {
+      "button-primary": {
+        "backgroundColor": "{colors.primary}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.body}",
+        "rounded": "{rounded.lg}",
+        "padding": "8px 12px"
+      },
+      "button-secondary": {
+        "backgroundColor": "{colors.secondary}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.body}",
+        "rounded": "{rounded.lg}",
+        "padding": "8px 12px"
+      },
+      "button-tertiary": {
+        "backgroundColor": "{colors.surface}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body}",
+        "rounded": "{rounded.xl}",
+        "padding": "8px 12px"
+      },
+      "button-ghost": {
+        "backgroundColor": "{colors.surface}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body}",
+        "rounded": "{rounded.lg}",
+        "padding": "0px 8px"
+      },
+      "pill-badge": {
+        "backgroundColor": "{colors.secondary}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.caption}",
+        "rounded": "{rounded.full}",
+        "padding": "0px 4px"
+      },
+      "pill-outline": {
+        "textColor": "{colors.ink}",
+        "typography": "{typography.title}",
+        "rounded": "{rounded.full}",
+        "padding": "0px 8px"
+      },
+      "top-nav": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "padding": "8px 16px"
+      },
+      "sidebar-rail": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.muted}",
+        "padding": "8px"
+      },
+      "game-tile": {
+        "backgroundColor": "{colors.surface}",
+        "rounded": "{rounded.card}"
+      },
+      "hero-banner": {
+        "backgroundColor": "{colors.surface}",
+        "textColor": "{colors.ink}",
+        "rounded": "{rounded.card}",
+        "padding": "24px"
+      },
+      "promo-card": {
+        "backgroundColor": "{colors.surface}",
+        "textColor": "{colors.ink}",
+        "rounded": "{rounded.card}",
+        "padding": "16px"
+      },
+      "feature-card": {
+        "backgroundColor": "{colors.surface}",
+        "textColor": "{colors.ink}",
+        "rounded": "{rounded.card}",
+        "padding": "16px"
+      },
+      "feature-card-elevated": {
+        "backgroundColor": "{colors.surface}",
+        "textColor": "{colors.ink}",
+        "rounded": "{rounded.card}",
+        "padding": "16px"
+      },
+      "bet-odds-button": {
+        "backgroundColor": "{colors.surface}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.ui}",
+        "rounded": "{rounded.md}",
+        "padding": "8px 12px"
+      },
+      "betslip-panel": {
+        "backgroundColor": "{colors.surface}",
+        "textColor": "{colors.ink}",
+        "rounded": "{rounded.card}",
+        "padding": "16px"
+      },
+      "text-input": {
+        "backgroundColor": "{colors.surface}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body}",
+        "rounded": "{rounded.md}",
+        "padding": "8px 12px"
+      },
+      "footer": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.muted}",
+        "padding": "24px"
+      },
+      "ex-pricing-tier": {
+        "description": "Default Pricing tier card. Re-uses feature-card chrome with brand canvas-soft surface.",
+        "backgroundColor": "{colors.surface}",
+        "textColor": "{colors.ink}",
+        "borderColor": "{colors.hairline}",
+        "rounded": "{rounded.card}",
+        "padding": "{spacing.lg}"
+      },
+      "ex-pricing-tier-featured": {
+        "description": "Featured/highlighted tier — polarity-flipped surface (dark fill + light text in light mode, light fill + dark text in dark mode).",
+        "backgroundColor": "{colors.ink}",
+        "textColor": "{colors.on-primary}",
+        "rounded": "{rounded.card}",
+        "padding": "{spacing.lg}"
+      },
+      "ex-product-selector": {
+        "description": "What's Included summary card — re-purposed for SaaS / B2B verticals (NOT a literal product gallery).",
+        "backgroundColor": "{colors.surface}",
+        "rounded": "{rounded.card}",
+        "padding": "{spacing.lg}"
+      },
+      "ex-cart-drawer": {
+        "description": "Subscription summary — re-purposed for SaaS / B2B (line items per add-on, not literal cart).",
+        "backgroundColor": "{colors.surface}",
+        "rounded": "{rounded.card}",
+        "padding": "{spacing.lg}",
+        "item-divider": "{colors.hairline}"
+      },
+      "ex-app-shell-row": {
+        "description": "Sidebar nav row inside the App Shell example. Active state uses brand primary as the indicator.",
+        "backgroundColor": "{colors.canvas}",
+        "activeIndicator": "{colors.primary}",
+        "rounded": "{rounded.sm}",
+        "padding": "{spacing.sm} {spacing.md}"
+      },
+      "ex-data-table-cell": {
+        "description": "Default data-table th + td chrome. Header uses mono-caps eyebrow typography; body uses body-sm.",
+        "headerBackground": "{colors.surface}",
+        "headerTypography": "{typography.caption}",
+        "bodyTypography": "{typography.body}",
+        "cellPadding": "{spacing.sm} {spacing.md}",
+        "rowBorder": "{colors.hairline}"
+      },
+      "ex-auth-form-card": {
+        "description": "Sign-in / sign-up card. Re-uses feature-card chrome with text-input primitives inside.",
+        "backgroundColor": "{colors.surface}",
+        "rounded": "{rounded.card}",
+        "padding": "{spacing.lg}"
+      },
+      "ex-modal-card": {
+        "description": "Modal dialog surface — same chrome as feature-card with elevated shadow.",
+        "backgroundColor": "{colors.surface}",
+        "rounded": "{rounded.card}",
+        "padding": "{spacing.lg}"
+      },
+      "ex-empty-state-card": {
+        "description": "Empty-state illustration frame.",
+        "backgroundColor": "{colors.surface}",
+        "rounded": "{rounded.card}",
+        "padding": "{spacing.xxl}",
+        "captionTypography": "{typography.body}"
+      },
+      "ex-toast": {
+        "description": "Toast notification surface — feature-card shape + medium shadow.",
+        "backgroundColor": "{colors.surface}",
+        "rounded": "{rounded.card}",
+        "padding": "{spacing.md} {spacing.lg}",
+        "typography": "{typography.body}"
+      }
+    }
+  },
+  "normalizationRepairs": [],
+  "sections": [
+    {
+      "heading": "Overview",
+      "level": 2,
+      "text": "1win is a crypto casino and sportsbook that runs almost entirely on a near-black canvas (`{colors.canvas}` — #141415), a flat, slightly cool dark field that lets thousands of vibrant game thumbnails do the shouting. The chrome around the content is deliberately quiet: dark-grey surfaces (`{colors.surface}` — #2e3035), faint translucent hairlines, and off-white text (`{colors.ink}` — #f0f2f5). Against that restraint, two action colors carry the entire interactive layer — a vivid green (`{colors.primary}` — #00b24b) on the \"Registration\" CTA and every primary confirm, and an electric blue (`{colors.secondary}` — #0075ff) on \"Log In\", links, the \"Show more\" pill, active tabs, and bet highlights.\n\nThe layout is a high-density product surface, not a marketing page. A fixed left icon rail holds category navigation; the main column is a long stack of horizontally-scrolling rails — \"Top games\", \"Slots\", \"Originals\", game providers — each a row of full-bleed, brightly-illustrated `game-tile` thumbnails. Promotional bonuses ride in gradient-rich `hero-banner` cards at the top, and the sportsbook adds match rows with `bet-odds-button` chips and a right-hand `betslip-panel`. Typography is Inter set at heavy weights only (600 and 800) — even body copy is semibold — which gives the dense UI a punchy, app-like confidence rather than an editorial calm.\n\nColor discipline is the key to reading this brand correctly: the loud purples, reds, ambers, and violets that fill the screen all live *inside* game artwork and bonus-card illustrations — they are content, not chrome. The system itself is monochrome dark plus exactly two signals: green for \"go / win / register\" and blue for \"secondary / navigate / live\". Everything structural is built from the dark surface ladder and those two accents.\n\n**Key Characteristics:**\n- Near-black `{colors.canvas}` foundation with a flat `{colors.surface}` card/tile ladder — depth comes from surface shifts and faint `{colors.hairline}` borders, not heavy shadow.\n- Two-signal action system: green `{colors.primary}` for primary CTAs (Registration, confirm) and blue `{colors.secondary}` for secondary actions, links, and live/betting highlights.\n- Inter at heavy weights only (600 / 800) — even `{typography.body}` is semibold, giving the dense UI an app-like punch.\n- Content-forward game rails — full-bleed `game-tile` artwork supplies all the saturation; the surrounding frame stays monochrome dark.\n- Pill language for badges and status (`{rounded.full}`), modest `{rounded.lg}`–`{rounded.xl}` on buttons, and `{rounded.card}` (16px) on tiles, promo cards, and panels.\n- A left icon `sidebar-rail` + dense horizontally-scrolling rails define the shell, closer to a native app than a website.",
+      "line": 228
+    },
+    {
+      "heading": "Colors",
+      "level": 2,
+      "text": "> Source pages analyzed: home, promotions, betting, vip-club.",
+      "line": 244
+    },
+    {
+      "heading": "Brand & Accent",
+      "level": 3,
+      "text": "- **Action Green** (`{colors.primary}` — #00b24b): The primary action color — the \"Registration\" CTA, primary confirms, betslip place-bet, and section accent icons. The brand's \"go / win\" signal.\n- **Electric Blue** (`{colors.secondary}` — #0075ff): The secondary action — \"Log In\", text links, the \"Show more\" pill, active tabs, badges, and live/betting highlights.\n- **On Primary** (`{colors.on-primary}` — #ffffff): White text/icons on the green and blue fills.",
+      "line": 248
+    },
+    {
+      "heading": "Surface",
+      "level": 3,
+      "text": "- **Canvas** (`{colors.canvas}` — #141415): The page background and the fill of the nav and `sidebar-rail` — a flat near-black.\n- **Surface** (`{colors.surface}` — #2e3035): Cards, game tiles, promo cards, betslip panels, utility buttons, and input fields — the single elevated dark step.\n- **Hairline** (`{colors.hairline}` — #2d2f33): The faint 1px divider/card border, a translucent cool-grey edge that reads against both canvas and surface.",
+      "line": 253
+    },
+    {
+      "heading": "Text",
+      "level": 3,
+      "text": "- **Ink** (`{colors.ink}` — #f0f2f5): Primary text, the wordmark, and headings — a soft off-white.\n- **Muted** (`{colors.muted}` — #9aa1b1): Secondary labels, inactive nav glyphs, footer text.\n- **Faint** (`{colors.faint}` — #53575f): Tertiary/placeholder text and disabled labels.\n- **Black** (`{colors.black}` — #000000): Maximum-contrast text used on the brightest accent fills and light promo surfaces.",
+      "line": 258
+    },
+    {
+      "heading": "Typography",
+      "level": 2,
+      "text": "",
+      "line": 264
+    },
+    {
+      "heading": "Font Family",
+      "level": 3,
+      "text": "The entire system is set in **Inter** (`Inter, sans-serif`), and only at heavy weights — **600 (semibold)** and **800 (extrabold)**. There is no regular-weight body text; even running copy is semibold, which is what gives the dense, data-heavy interface its punchy, native-app feel. Headlines and bonus figures use 800; everything functional uses 600.",
+      "line": 266
+    },
+    {
+      "heading": "Hierarchy",
+      "level": 3,
+      "text": "| Token | Size | Weight | Line Height | Letter Spacing | Use |\n|---|---|---|---|---|---|\n| `{typography.display}` | 33px | 800 | 1.1 | 0 | Hero / page headlines (bonus figures, \"Promotions\") |\n| `{typography.heading}` | 20px | 800 | 1.2 | 0 | Section + card titles |\n| `{typography.title}` | 16px | 600 | 1.3 | 0 | Game titles, row headers, outlined pills |\n| `{typography.body}` | 14px | 600 | 1.4 | 0 | Default body, button labels |\n| `{typography.ui}` | 13px | 600 | 1.3 | 0 | Inline UI text, odds, metadata |\n| `{typography.caption}` | 12px | 600 | 1.3 | 0 | Badges, chips, micro-labels |",
+      "line": 269
+    },
+    {
+      "heading": "Principles",
+      "level": 3,
+      "text": "Hierarchy is built from size and the 600↔800 weight jump, never from a light/regular contrast. The heavy floor keeps small UI text legible against the dark, busy backdrop and matches the high-energy gambling context.",
+      "line": 280
+    },
+    {
+      "heading": "Note on Font Substitutes",
+      "level": 3,
+      "text": "Inter is an open-source Google Font, so no substitution is needed. If a fallback is required, any grotesque with a strong semibold (e.g. Manrope, Geist) preserves the heavy-weight character; keep body at 600+ to retain the app-like density.",
+      "line": 283
+    },
+    {
+      "heading": "Layout",
+      "level": 2,
+      "text": "",
+      "line": 286
+    },
+    {
+      "heading": "Spacing System",
+      "level": 3,
+      "text": "- **Base unit**: 8px.\n- **Tokens (front matter)**: `{spacing.xxs}` 2px · `{spacing.xs}` 4px · `{spacing.sm}` 8px · `{spacing.md}` 12px · `{spacing.lg}` 16px · `{spacing.xl}` 20px · `{spacing.xxl}` 24px · `{spacing.xxxl}` 32px\n- Controls run tight — `{spacing.sm}`×`{spacing.md}` (8×12px) is the recurring button padding; cards and panels use `{spacing.lg}`–`{spacing.xxl}` (16–24px) interiors.",
+      "line": 288
+    },
+    {
+      "heading": "Grid & Container",
+      "level": 3,
+      "text": "The shell is a fixed left icon `sidebar-rail` plus a fluid content column. Discovery uses horizontally-scrolling rails (carousels) of `game-tile` thumbnails rather than wrapping grids; the promotions page uses a 2-up card grid, and the sportsbook uses full-width match rows with a docked right-hand `betslip-panel`.",
+      "line": 293
+    },
+    {
+      "heading": "Whitespace Philosophy",
+      "level": 3,
+      "text": "Density is the point — tiles pack close together to maximize the number of games in view, and the dark canvas itself does the separating between rails. Vertical gaps between labeled rails are modest; the brightness step between a tile and the canvas, plus a faint `{colors.hairline}`, supplies most of the structure.",
+      "line": 296
+    },
+    {
+      "heading": "Responsive Strategy",
+      "level": 3,
+      "text": "",
+      "line": 299
+    },
+    {
+      "heading": "Breakpoints",
+      "level": 4,
+      "text": "| Name | Width | Key Changes |\n|---|---|---|\n| Mobile | < 768px | Left rail collapses to a bottom/hamburger nav; rails shorten; betslip becomes a bottom sheet |\n| Tablet | 768–1023px | Condensed rail; fewer tiles per rail; 2-up promo grid retained |\n| Laptop | 1024–1439px | Full rail + multi-tile rails |\n| Desktop | ≥ 1440px (up to 1920px) | Widest rails + persistent betslip panel |",
+      "line": 301
+    },
+    {
+      "heading": "Touch Targets",
+      "level": 4,
+      "text": "Buttons carry `{spacing.sm}`×`{spacing.md}` padding and pills clear comfortable tap sizes; the green `button-primary` is the largest, highest-priority tap surface. Aim for 44×44px minimum on the dense rails.",
+      "line": 309
+    },
+    {
+      "heading": "Collapsing Strategy",
+      "level": 4,
+      "text": "The left `sidebar-rail` collapses first (to a hamburger or bottom bar). Category tab strips and `bet-odds-button` rows become horizontally scrollable rather than wrapping. Game rails keep their carousel behavior at every width, simply showing fewer tiles. The `betslip-panel` docks to the right on desktop and becomes a bottom sheet on mobile.",
+      "line": 312
+    },
+    {
+      "heading": "Image Behavior",
+      "level": 4,
+      "text": "Game thumbnails are full-bleed inside `{rounded.card}` corners (no internal padding) in portrait-leaning and square ratios; the artwork supplies all the color. Promo cards carry edge-to-edge photography behind an `{colors.ink}` title. Tiles lazy-load as rails scroll into view, with the `{colors.surface}` tile color as the placeholder.",
+      "line": 315
+    },
+    {
+      "heading": "Elevation & Depth",
+      "level": 2,
+      "text": "Depth is mostly tonal — a flat two-step surface ladder rather than layered shadows.\n\n| Level | Treatment | Use |\n|---|---|---|\n| 0 | `{colors.canvas}` flat | Page background, nav, sidebar rail |\n| 1 | `{colors.surface}` + `{colors.hairline}` border | Cards, tiles, promo cards, betslip, buttons, inputs |\n| Floating | `{colors.surface}` + soft `rgba(0,0,0,0.4)` shadow | Modals, dropdowns, the docked betslip lifted above content |",
+      "line": 318
+    },
+    {
+      "heading": "Decorative Depth",
+      "level": 3,
+      "text": "The brand's visual richness comes from the game and promo artwork (radial-gradient bonus banners, illustrated tiles) layered on the flat dark canvas — not from UI shadows. Selected/active states use the green or blue accent as a glow-like emphasis rather than elevation.",
+      "line": 328
+    },
+    {
+      "heading": "Shapes",
+      "level": 2,
+      "text": "",
+      "line": 331
+    },
+    {
+      "heading": "Border Radius Scale",
+      "level": 3,
+      "text": "| Token | Value | Use |\n|---|---|---|\n| `{rounded.xs}` | 4px | Small chips, inner elements |\n| `{rounded.sm}` | 6px | Compact cards, small media |\n| `{rounded.md}` | 8px | Inputs, odds buttons, medium elements |\n| `{rounded.lg}` | 10px | Primary / secondary / ghost buttons |\n| `{rounded.xl}` | 12px | Utility buttons |\n| `{rounded.card}` | 16px | Game tiles, promo cards, hero banners, panels |\n| `{rounded.full}` | 999px | Pills, badges, avatars, circular controls |",
+      "line": 333
+    },
+    {
+      "heading": "Photography Geometry",
+      "level": 3,
+      "text": "Game artwork is framed at `{rounded.card}` (16px) and runs full-bleed inside the tile. Promo cards use the same 16px frame with edge-to-edge imagery. Avatars, status badges, and provider chips use `{rounded.full}`. There is no exposed photography outside the gaming/promo content — the structural chrome stays geometric and flat.",
+      "line": 345
+    },
+    {
+      "heading": "Components",
+      "level": 2,
+      "text": "> **No hover states documented.** Each spec covers Default and Active/Pressed only. Variants live as separate `components:` entries.",
+      "line": 348
+    },
+    {
+      "heading": "Buttons",
+      "level": 3,
+      "text": "**`button-primary`** — the green \"Registration\" / primary-confirm CTA, the highest-visibility control.\n- Background `{colors.primary}`, text `{colors.on-primary}`, type `{typography.body}`, rounded `{rounded.lg}`, padding `{spacing.sm}` `{spacing.md}` (8×12px).\n\n**`button-secondary`** — the blue \"Log In\" / secondary action and the \"Show more\" pill.\n- Background `{colors.secondary}`, text `{colors.on-primary}`, type `{typography.body}`, rounded `{rounded.lg}`, padding 8×12px.\n\n**`button-tertiary`** — the dark-grey utility button (\"More events\", \"Read more\").\n- Background `{colors.surface}`, text `{colors.ink}`, type `{typography.body}`, rounded `{rounded.xl}`, padding 8×12px.\n\n**`button-ghost`** — a low-emphasis grey control on dense rows.\n- Background `{colors.surface}`, text `{colors.ink}`, type `{typography.body}`, rounded `{rounded.lg}`, padding `0` `{spacing.sm}` (0×8px).",
+      "line": 352
+    },
+    {
+      "heading": "Navigation",
+      "level": 3,
+      "text": "**`top-nav`** — the sticky header carrying the 1win wordmark, search, balance, and the green Registration + blue Log In CTAs.\n- Background `{colors.canvas}`, text `{colors.ink}`, padding 8×16px, with a `{colors.hairline}` base edge.\n\n**`sidebar-rail`** — the fixed left icon rail (Casino, Sports, categories).\n- Background `{colors.canvas}`, glyphs `{colors.muted}`, padding `{spacing.sm}`. Active item marked in `{colors.primary}`.",
+      "line": 366
+    },
+    {
+      "heading": "Inputs & Forms",
+      "level": 3,
+      "text": "**`text-input`** — search and betslip amount fields.\n- Background `{colors.surface}`, text `{colors.ink}`, placeholder `{colors.faint}`, border `{colors.hairline}`, type `{typography.body}`, rounded `{rounded.md}`, padding 8×12px.\n\n**`bet-odds-button`** — the odds chip in sportsbook match rows.\n- Background `{colors.surface}`, text `{colors.ink}`, type `{typography.ui}`, rounded `{rounded.md}`, padding 8×12px. Selected state highlights in `{colors.secondary}`.",
+      "line": 374
+    },
+    {
+      "heading": "Pills & Badges",
+      "level": 3,
+      "text": "**`pill-badge`** — the solid blue status/count badge.\n- Background `{colors.secondary}`, text `{colors.on-primary}`, type `{typography.caption}`, rounded `{rounded.full}`, padding `0` `{spacing.xs}` (0×4px).\n\n**`pill-outline`** — the bordered filter/category pill.\n- Text `{colors.ink}`, type `{typography.title}`, rounded `{rounded.full}`, padding 0×8px, with a `{colors.hairline}` border.",
+      "line": 382
+    },
+    {
+      "heading": "Cards & Containers",
+      "level": 3,
+      "text": "**`game-tile`** — the core discovery unit: a full-bleed game thumbnail.\n- Background `{colors.surface}` (placeholder), rounded `{rounded.card}`. Artwork fills edge-to-edge with no padding.\n\n**`hero-banner`** — the top welcome-bonus / promo banner.\n- Background `{colors.surface}` with edge-to-edge gradient imagery, headline `{colors.ink}` in `{typography.display}`, rounded `{rounded.card}`, padding `{spacing.xxl}`.\n\n**`promo-card`** — a promotions-page card (full-bleed photo + title + chips).\n- Background `{colors.surface}`, title `{colors.ink}`, rounded `{rounded.card}`, padding `{spacing.lg}`.\n\n**`feature-card`** — generic dark content card.\n- Background `{colors.surface}`, text `{colors.ink}`, border `{colors.hairline}`, rounded `{rounded.card}`, padding `{spacing.lg}`.\n\n**`feature-card-elevated`** — a feature card lifted above the page (floating shadow), base for modal/toast surfaces.\n- Background `{colors.surface}`, text `{colors.ink}`, rounded `{rounded.card}`, padding `{spacing.lg}`, soft `rgba(0,0,0,0.4)` shadow.\n\n**`betslip-panel`** — the docked sportsbook betslip / wheel-of-fortune panel.\n- Background `{colors.surface}`, text `{colors.ink}`, rounded `{rounded.card}`, padding `{spacing.lg}`. Confirm action uses `button-primary`.\n\n**`footer`** — the page footer (support, information, categories columns).\n- Background `{colors.canvas}`, text `{colors.muted}`, headings `{colors.ink}`, padding `{spacing.xxl}`.",
+      "line": 390
+    },
+    {
+      "heading": "Examples (illustrative)",
+      "level": 3,
+      "text": "> Kit-mirror demonstration surfaces. Each `ex-*` entry references 1win's brand-native primitives (`{colors.surface}`, `{colors.primary}`, `{rounded.card}`, the spacing scale) so downstream consumers re-skin the same 10 illustrative surfaces consistently. These are not extracted brand components.\n\n**`ex-pricing-tier`** — Default Pricing tier card. Re-uses feature-card chrome with brand canvas-soft surface.\n- Properties: `backgroundColor`, `textColor`, `borderColor`, `rounded`, `padding`\n\n**`ex-pricing-tier-featured`** — Featured/highlighted tier — polarity-flipped surface (dark fill + light text in light mode, light fill + dark text in dark mode).\n- Properties: `backgroundColor`, `textColor`, `rounded`, `padding`\n\n**`ex-product-selector`** — What's Included summary card — re-purposed for SaaS / B2B verticals (NOT a literal product gallery).\n- Properties: `backgroundColor`, `rounded`, `padding`\n\n**`ex-cart-drawer`** — Subscription summary — re-purposed for SaaS / B2B (line items per add-on, not literal cart).\n- Properties: `backgroundColor`, `rounded`, `padding`, `item-divider`\n\n**`ex-app-shell-row`** — Sidebar nav row inside the App Shell example. Active state uses brand primary as the indicator.\n- Properties: `backgroundColor`, `activeIndicator`, `rounded`, `padding`\n\n**`ex-data-table-cell`** — Default data-table th + td chrome. Header uses mono-caps eyebrow typography; body uses body-sm.\n- Properties: `headerBackground`, `headerTypography`, `bodyTypography`, `cellPadding`, `rowBorder`\n\n**`ex-auth-form-card`** — Sign-in / sign-up card. Re-uses feature-card chrome with text-input primitives inside.\n- Properties: `backgroundColor`, `rounded`, `padding`\n\n**`ex-modal-card`** — Modal dialog surface — same chrome as feature-card with elevated shadow.\n- Properties: `backgroundColor`, `rounded`, `padding`\n\n**`ex-empty-state-card`** — Empty-state illustration frame.\n- Properties: `backgroundColor`, `rounded`, `padding`, `captionTypography`\n\n**`ex-toast`** — Toast notification surface — feature-card shape + medium shadow.\n- Properties: `backgroundColor`, `rounded`, `padding`, `typography`",
+      "line": 413
+    },
+    {
+      "heading": "Do's and Don'ts",
+      "level": 2,
+      "text": "",
+      "line": 448
+    },
+    {
+      "heading": "Do",
+      "level": 3,
+      "text": "- Reserve `{colors.primary}` (green) for primary actions — Registration, confirm, place-bet — and `{colors.secondary}` (blue) for secondary actions, links, and live/betting highlights.\n- Build depth with the surface ladder (`{colors.canvas}` → `{colors.surface}`) plus a faint `{colors.hairline}` edge; avoid heavy shadows.\n- Set every label in Inter 600+ (`{typography.body}` / `{typography.caption}`); use the 800 weight for headlines and bonus figures.\n- Let game and promo artwork supply the color — keep the surrounding chrome monochrome dark.\n- Use `{rounded.lg}`–`{rounded.xl}` on buttons, `{rounded.card}` (16px) on tiles/cards/panels, and `{rounded.full}` on pills and badges.\n- Pair accent fills with `{colors.on-primary}` (white) text for legibility.",
+      "line": 450
+    },
+    {
+      "heading": "Don't",
+      "level": 3,
+      "text": "- Don't promote game-tile or bonus-banner gradient colors (the purples, reds, violets, ambers) into the UI palette — they are content, not chrome.\n- Don't add a third structural accent; the system is green + blue only.\n- Don't use pure-regular weights — there is no Inter 400 here; body copy is semibold.\n- Don't pad game tiles — artwork is full-bleed inside `{rounded.card}` corners.\n- Don't rely on drop shadows for elevation; the surface brightness step is the elevation language.",
+      "line": 458
+    }
+  ],
+  "tokens": [
+    {
+      "path": "colors.primary",
+      "sourcePath": "colors.primary",
+      "type": "color",
+      "value": "#00b24b",
+      "status": "unverified",
+      "evidence": {
+        "line": 7,
+        "sourcePath": "colors.primary"
+      }
+    },
+    {
+      "path": "colors.secondary",
+      "sourcePath": "colors.secondary",
+      "type": "color",
+      "value": "#0075ff",
+      "status": "unverified",
+      "evidence": {
+        "line": 8,
+        "sourcePath": "colors.secondary"
+      }
+    },
+    {
+      "path": "colors.onprimary",
+      "sourcePath": "colors.on-primary",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 9,
+        "sourcePath": "colors.on-primary"
+      }
+    },
+    {
+      "path": "colors.canvas",
+      "sourcePath": "colors.canvas",
+      "type": "color",
+      "value": "#141415",
+      "status": "unverified",
+      "evidence": {
+        "line": 10,
+        "sourcePath": "colors.canvas"
+      }
+    },
+    {
+      "path": "colors.surface",
+      "sourcePath": "colors.surface",
+      "type": "color",
+      "value": "#2e3035",
+      "status": "unverified",
+      "evidence": {
+        "line": 11,
+        "sourcePath": "colors.surface"
+      }
+    },
+    {
+      "path": "colors.hairline",
+      "sourcePath": "colors.hairline",
+      "type": "color",
+      "value": "#2d2f33",
+      "status": "unverified",
+      "evidence": {
+        "line": 12,
+        "sourcePath": "colors.hairline"
+      }
+    },
+    {
+      "path": "colors.ink",
+      "sourcePath": "colors.ink",
+      "type": "color",
+      "value": "#f0f2f5",
+      "status": "unverified",
+      "evidence": {
+        "line": 13,
+        "sourcePath": "colors.ink"
+      }
+    },
+    {
+      "path": "colors.muted",
+      "sourcePath": "colors.muted",
+      "type": "color",
+      "value": "#9aa1b1",
+      "status": "unverified",
+      "evidence": {
+        "line": 14,
+        "sourcePath": "colors.muted"
+      }
+    },
+    {
+      "path": "colors.faint",
+      "sourcePath": "colors.faint",
+      "type": "color",
+      "value": "#53575f",
+      "status": "unverified",
+      "evidence": {
+        "line": 15,
+        "sourcePath": "colors.faint"
+      }
+    },
+    {
+      "path": "colors.black",
+      "sourcePath": "colors.black",
+      "type": "color",
+      "value": "#000000",
+      "status": "unverified",
+      "evidence": {
+        "line": 16,
+        "sourcePath": "colors.black"
+      }
+    },
+    {
+      "path": "typography.display.fontfamily",
+      "sourcePath": "typography.display.fontFamily",
+      "type": "fontFamily",
+      "value": "Inter",
+      "status": "unverified",
+      "evidence": {
+        "line": 20,
+        "sourcePath": "typography.display.fontFamily"
+      }
+    },
+    {
+      "path": "typography.display.fontsize",
+      "sourcePath": "typography.display.fontSize",
+      "type": "dimension",
+      "value": "33px",
+      "status": "unverified",
+      "evidence": {
+        "line": 21,
+        "sourcePath": "typography.display.fontSize"
+      }
+    },
+    {
+      "path": "typography.display.fontweight",
+      "sourcePath": "typography.display.fontWeight",
+      "type": "number",
+      "value": 800,
+      "status": "unverified",
+      "evidence": {
+        "line": 22,
+        "sourcePath": "typography.display.fontWeight"
+      }
+    },
+    {
+      "path": "typography.display.lineheight",
+      "sourcePath": "typography.display.lineHeight",
+      "type": "number",
+      "value": 1.1,
+      "status": "unverified",
+      "evidence": {
+        "line": 23,
+        "sourcePath": "typography.display.lineHeight"
+      }
+    },
+    {
+      "path": "typography.display.letterspacing",
+      "sourcePath": "typography.display.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 24,
+        "sourcePath": "typography.display.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.heading.fontfamily",
+      "sourcePath": "typography.heading.fontFamily",
+      "type": "fontFamily",
+      "value": "Inter",
+      "status": "unverified",
+      "evidence": {
+        "line": 26,
+        "sourcePath": "typography.heading.fontFamily"
+      }
+    },
+    {
+      "path": "typography.heading.fontsize",
+      "sourcePath": "typography.heading.fontSize",
+      "type": "dimension",
+      "value": "20px",
+      "status": "unverified",
+      "evidence": {
+        "line": 27,
+        "sourcePath": "typography.heading.fontSize"
+      }
+    },
+    {
+      "path": "typography.heading.fontweight",
+      "sourcePath": "typography.heading.fontWeight",
+      "type": "number",
+      "value": 800,
+      "status": "unverified",
+      "evidence": {
+        "line": 28,
+        "sourcePath": "typography.heading.fontWeight"
+      }
+    },
+    {
+      "path": "typography.heading.lineheight",
+      "sourcePath": "typography.heading.lineHeight",
+      "type": "number",
+      "value": 1.2,
+      "status": "unverified",
+      "evidence": {
+        "line": 29,
+        "sourcePath": "typography.heading.lineHeight"
+      }
+    },
+    {
+      "path": "typography.heading.letterspacing",
+      "sourcePath": "typography.heading.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 30,
+        "sourcePath": "typography.heading.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.title.fontfamily",
+      "sourcePath": "typography.title.fontFamily",
+      "type": "fontFamily",
+      "value": "Inter",
+      "status": "unverified",
+      "evidence": {
+        "line": 32,
+        "sourcePath": "typography.title.fontFamily"
+      }
+    },
+    {
+      "path": "typography.title.fontsize",
+      "sourcePath": "typography.title.fontSize",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 33,
+        "sourcePath": "typography.title.fontSize"
+      }
+    },
+    {
+      "path": "typography.title.fontweight",
+      "sourcePath": "typography.title.fontWeight",
+      "type": "number",
+      "value": 600,
+      "status": "unverified",
+      "evidence": {
+        "line": 34,
+        "sourcePath": "typography.title.fontWeight"
+      }
+    },
+    {
+      "path": "typography.title.lineheight",
+      "sourcePath": "typography.title.lineHeight",
+      "type": "number",
+      "value": 1.3,
+      "status": "unverified",
+      "evidence": {
+        "line": 35,
+        "sourcePath": "typography.title.lineHeight"
+      }
+    },
+    {
+      "path": "typography.title.letterspacing",
+      "sourcePath": "typography.title.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 36,
+        "sourcePath": "typography.title.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.body.fontfamily",
+      "sourcePath": "typography.body.fontFamily",
+      "type": "fontFamily",
+      "value": "Inter",
+      "status": "unverified",
+      "evidence": {
+        "line": 38,
+        "sourcePath": "typography.body.fontFamily"
+      }
+    },
+    {
+      "path": "typography.body.fontsize",
+      "sourcePath": "typography.body.fontSize",
+      "type": "dimension",
+      "value": "14px",
+      "status": "unverified",
+      "evidence": {
+        "line": 39,
+        "sourcePath": "typography.body.fontSize"
+      }
+    },
+    {
+      "path": "typography.body.fontweight",
+      "sourcePath": "typography.body.fontWeight",
+      "type": "number",
+      "value": 600,
+      "status": "unverified",
+      "evidence": {
+        "line": 40,
+        "sourcePath": "typography.body.fontWeight"
+      }
+    },
+    {
+      "path": "typography.body.lineheight",
+      "sourcePath": "typography.body.lineHeight",
+      "type": "number",
+      "value": 1.4,
+      "status": "unverified",
+      "evidence": {
+        "line": 41,
+        "sourcePath": "typography.body.lineHeight"
+      }
+    },
+    {
+      "path": "typography.body.letterspacing",
+      "sourcePath": "typography.body.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 42,
+        "sourcePath": "typography.body.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.ui.fontfamily",
+      "sourcePath": "typography.ui.fontFamily",
+      "type": "fontFamily",
+      "value": "Inter",
+      "status": "unverified",
+      "evidence": {
+        "line": 44,
+        "sourcePath": "typography.ui.fontFamily"
+      }
+    },
+    {
+      "path": "typography.ui.fontsize",
+      "sourcePath": "typography.ui.fontSize",
+      "type": "dimension",
+      "value": "13px",
+      "status": "unverified",
+      "evidence": {
+        "line": 45,
+        "sourcePath": "typography.ui.fontSize"
+      }
+    },
+    {
+      "path": "typography.ui.fontweight",
+      "sourcePath": "typography.ui.fontWeight",
+      "type": "number",
+      "value": 600,
+      "status": "unverified",
+      "evidence": {
+        "line": 46,
+        "sourcePath": "typography.ui.fontWeight"
+      }
+    },
+    {
+      "path": "typography.ui.lineheight",
+      "sourcePath": "typography.ui.lineHeight",
+      "type": "number",
+      "value": 1.3,
+      "status": "unverified",
+      "evidence": {
+        "line": 47,
+        "sourcePath": "typography.ui.lineHeight"
+      }
+    },
+    {
+      "path": "typography.ui.letterspacing",
+      "sourcePath": "typography.ui.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 48,
+        "sourcePath": "typography.ui.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.caption.fontfamily",
+      "sourcePath": "typography.caption.fontFamily",
+      "type": "fontFamily",
+      "value": "Inter",
+      "status": "unverified",
+      "evidence": {
+        "line": 50,
+        "sourcePath": "typography.caption.fontFamily"
+      }
+    },
+    {
+      "path": "typography.caption.fontsize",
+      "sourcePath": "typography.caption.fontSize",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 51,
+        "sourcePath": "typography.caption.fontSize"
+      }
+    },
+    {
+      "path": "typography.caption.fontweight",
+      "sourcePath": "typography.caption.fontWeight",
+      "type": "number",
+      "value": 600,
+      "status": "unverified",
+      "evidence": {
+        "line": 52,
+        "sourcePath": "typography.caption.fontWeight"
+      }
+    },
+    {
+      "path": "typography.caption.lineheight",
+      "sourcePath": "typography.caption.lineHeight",
+      "type": "number",
+      "value": 1.3,
+      "status": "unverified",
+      "evidence": {
+        "line": 53,
+        "sourcePath": "typography.caption.lineHeight"
+      }
+    },
+    {
+      "path": "typography.caption.letterspacing",
+      "sourcePath": "typography.caption.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 54,
+        "sourcePath": "typography.caption.letterSpacing"
+      }
+    },
+    {
+      "path": "rounded.xs",
+      "sourcePath": "rounded.xs",
+      "type": "dimension",
+      "value": "4px",
+      "status": "unverified",
+      "evidence": {
+        "line": 57,
+        "sourcePath": "rounded.xs"
+      }
+    },
+    {
+      "path": "rounded.sm",
+      "sourcePath": "rounded.sm",
+      "type": "dimension",
+      "value": "6px",
+      "status": "unverified",
+      "evidence": {
+        "line": 58,
+        "sourcePath": "rounded.sm"
+      }
+    },
+    {
+      "path": "rounded.md",
+      "sourcePath": "rounded.md",
+      "type": "dimension",
+      "value": "8px",
+      "status": "unverified",
+      "evidence": {
+        "line": 59,
+        "sourcePath": "rounded.md"
+      }
+    },
+    {
+      "path": "rounded.lg",
+      "sourcePath": "rounded.lg",
+      "type": "dimension",
+      "value": "10px",
+      "status": "unverified",
+      "evidence": {
+        "line": 60,
+        "sourcePath": "rounded.lg"
+      }
+    },
+    {
+      "path": "rounded.xl",
+      "sourcePath": "rounded.xl",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 61,
+        "sourcePath": "rounded.xl"
+      }
+    },
+    {
+      "path": "rounded.card",
+      "sourcePath": "rounded.card",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 62,
+        "sourcePath": "rounded.card"
+      }
+    },
+    {
+      "path": "rounded.full",
+      "sourcePath": "rounded.full",
+      "type": "dimension",
+      "value": "999px",
+      "status": "unverified",
+      "evidence": {
+        "line": 63,
+        "sourcePath": "rounded.full"
+      }
+    },
+    {
+      "path": "spacing.xxs",
+      "sourcePath": "spacing.xxs",
+      "type": "dimension",
+      "value": "2px",
+      "status": "unverified",
+      "evidence": {
+        "line": 66,
+        "sourcePath": "spacing.xxs"
+      }
+    },
+    {
+      "path": "spacing.xs",
+      "sourcePath": "spacing.xs",
+      "type": "dimension",
+      "value": "4px",
+      "status": "unverified",
+      "evidence": {
+        "line": 67,
+        "sourcePath": "spacing.xs"
+      }
+    },
+    {
+      "path": "spacing.sm",
+      "sourcePath": "spacing.sm",
+      "type": "dimension",
+      "value": "8px",
+      "status": "unverified",
+      "evidence": {
+        "line": 68,
+        "sourcePath": "spacing.sm"
+      }
+    },
+    {
+      "path": "spacing.md",
+      "sourcePath": "spacing.md",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 69,
+        "sourcePath": "spacing.md"
+      }
+    },
+    {
+      "path": "spacing.lg",
+      "sourcePath": "spacing.lg",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 70,
+        "sourcePath": "spacing.lg"
+      }
+    },
+    {
+      "path": "spacing.xl",
+      "sourcePath": "spacing.xl",
+      "type": "dimension",
+      "value": "20px",
+      "status": "unverified",
+      "evidence": {
+        "line": 71,
+        "sourcePath": "spacing.xl"
+      }
+    },
+    {
+      "path": "spacing.xxl",
+      "sourcePath": "spacing.xxl",
+      "type": "dimension",
+      "value": "24px",
+      "status": "unverified",
+      "evidence": {
+        "line": 72,
+        "sourcePath": "spacing.xxl"
+      }
+    },
+    {
+      "path": "spacing.xxxl",
+      "sourcePath": "spacing.xxxl",
+      "type": "dimension",
+      "value": "32px",
+      "status": "unverified",
+      "evidence": {
+        "line": 73,
+        "sourcePath": "spacing.xxxl"
+      }
+    }
+  ],
+  "rejectedTokens": [],
+  "homepage": {
+    "status": "missing",
+    "candidates": [],
+    "verification": {
+      "status": "unverified",
+      "label": "Original homepage not verified",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://www.1wingroup.com/",
+          "title": "Claim your 1win Token — the drop",
+          "note": "Search result identified a holding-company candidate, not a verified public read of the casino design source."
+        }
+      ],
+      "notes": "Search returned multiple regional sites, mirrors and a holding-company candidate. Identity of the exact homepage represented by this casino/sportsbook analysis remains uncertain. No canonical URL asserted."
+    }
+  },
+  "completeness": {
+    "presentFields": [
+      "colors",
+      "typography",
+      "rounded",
+      "spacing",
+      "components"
+    ],
+    "missingFields": [],
+    "tokenRoles": "incomplete",
+    "note": "Missing fields are not reconstructed. Prose-only colors have no inferred semantic role."
+  },
+  "provenance": {
+    "status": "independent-analysis",
+    "sources": [
+      {
+        "title": "VoltAgent awesome-design-md independent analysis",
+        "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/1win/DESIGN.md"
+      }
+    ],
+    "verification": "unverified-secondary-analysis"
+  },
+  "limitations": [
+    "Independent secondary analysis, not an official brand system; all reported values are unverified.",
+    "No brand assets, logos, font binaries or screenshots copied. Font names are documentary, not font licenses.",
+    "Safe CSS literals are extracted without claiming complete roles, state coverage or visual fidelity.",
+    "Markdown is retained as inert evidence, never executed or rendered as raw HTML."
+  ]
+}

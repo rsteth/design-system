@@ -1,0 +1,2099 @@
+{
+  "schemaVersion": 1,
+  "id": "reference-raycast",
+  "title": "Raycast",
+  "classification": "independent-unverified-analysis",
+  "source": {
+    "repository": "https://github.com/VoltAgent/awesome-design-md",
+    "fork": "https://github.com/rsteth/awesome-design-md-p",
+    "revision": "fcc70284932276d085f01ef9f83edde90b1258cb",
+    "path": "design-md/raycast/DESIGN.md",
+    "sha256": "6e2c5137e4d914b70996d589688374a801b6f29a35c9c019c22abb5e0170bda3",
+    "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/raycast/DESIGN.md"
+  },
+  "sourceName": "Raycast-design-analysis",
+  "titleProvenance": {
+    "status": "inferred",
+    "basis": "Source directory label, normalized for navigation; original source name is retained without correction.",
+    "sourceValue": "raycast",
+    "originalName": "Raycast-design-analysis"
+  },
+  "description": "Raycast's marketing system reads like an extended product screenshot. The chrome IS the in-product chrome at marketing scale: pure-near-black canvas, hairline 1px borders, command-palette-style cards, Inter typography with the ss03 stylistic set enabled site-wide, white CTA pill, and a small set of saturated category accent colors (yellow / red / green / blue) reserved for extension and feature illustrations. Section rhythm is generous (~96px) but the page never breaks tonal continuity — the whole site sits in one continuous dark mode.\n",
+  "analysis": {
+    "version": "alpha",
+    "name": "Raycast-design-analysis",
+    "属于": "A dark-canvas developer-tools system that treats the marketing page like an extended product screenshot — pure-near-black background, command-palette mockups as the hero, Inter typography with the ss03 stylistic set turned on, and a single white CTA pill that doesn't break the inky atmosphere. The chrome reads like Raycast's own command-palette UI scaled up to a marketing page: monochrome dark surfaces with a faint surface ladder (#07080a → #0d0d0d → #101111), tight 6–10px radius on cards, hairline 1px borders in #242728, and rare splashes of saturated accent (Hacker News yellow, Slack red, Mac green, info blue) reserved for product-tile category illustrations. The signature visual moment is a red gradient hero wordmark — three diagonal red stripes laid across the very top of the home page like a launch-banner — paired with full-bleed product UI screenshots that show Raycast's actual command palette, store, and AI chat surfaces.",
+    "description": "Raycast's marketing system reads like an extended product screenshot. The chrome IS the in-product chrome at marketing scale: pure-near-black canvas, hairline 1px borders, command-palette-style cards, Inter typography with the ss03 stylistic set enabled site-wide, white CTA pill, and a small set of saturated category accent colors (yellow / red / green / blue) reserved for extension and feature illustrations. Section rhythm is generous (~96px) but the page never breaks tonal continuity — the whole site sits in one continuous dark mode.\n",
+    "colors": {
+      "primary": "#ffffff",
+      "primary-pressed": "#e8e8e8",
+      "on-primary": "#000000",
+      "ink": "#f4f4f6",
+      "body": "#cdcdcd",
+      "charcoal": "#d3d3d4",
+      "mute": "#9c9c9d",
+      "ash": "#6a6b6c",
+      "stone": "#434345",
+      "on-dark": "#ffffff",
+      "on-dark-mute": "rgba(255,255,255,0.72)",
+      "canvas": "#07080a",
+      "surface": "#0d0d0d",
+      "surface-elevated": "#101111",
+      "surface-card": "#121212",
+      "button-fg": "#18191a",
+      "hairline": "#242728",
+      "hairline-soft": "rgba(255,255,255,0.08)",
+      "hairline-strong": "rgba(255,255,255,0.16)",
+      "accent-blue": "#57c1ff",
+      "accent-blue-soft": "rgba(87,193,255,0.15)",
+      "accent-red": "#ff6161",
+      "accent-red-soft": "rgba(255,97,97,0.15)",
+      "accent-green": "#59d499",
+      "accent-green-soft": "rgba(89,212,153,0.15)",
+      "accent-yellow": "#ffc533",
+      "accent-yellow-soft": "rgba(255,197,51,0.15)",
+      "hero-stripe-start": "#ff5757",
+      "hero-stripe-end": "#a1131a",
+      "key-bg-start": "#121212",
+      "key-bg-end": "#0d0d0d"
+    },
+    "typography": {
+      "display-xl": {
+        "fontFamily": "Inter",
+        "fontSize": "64px",
+        "fontWeight": 600,
+        "lineHeight": 1.1,
+        "letterSpacing": 0,
+        "fontFeature": "\"calt\", \"kern\", \"liga\", \"ss03\""
+      },
+      "display-lg": {
+        "fontFamily": "Inter",
+        "fontSize": "56px",
+        "fontWeight": 500,
+        "lineHeight": 1.17,
+        "letterSpacing": "0.2px",
+        "fontFeature": "\"calt\", \"kern\", \"liga\", \"ss03\""
+      },
+      "heading-xl": {
+        "fontFamily": "Inter",
+        "fontSize": "24px",
+        "fontWeight": 500,
+        "lineHeight": 1.6,
+        "letterSpacing": "0.2px",
+        "fontFeature": "\"calt\", \"kern\", \"liga\", \"ss03\""
+      },
+      "heading-lg": {
+        "fontFamily": "Inter",
+        "fontSize": "22px",
+        "fontWeight": 500,
+        "lineHeight": 1.15,
+        "letterSpacing": 0,
+        "fontFeature": "\"calt\", \"kern\", \"liga\", \"ss03\""
+      },
+      "heading-md": {
+        "fontFamily": "Inter",
+        "fontSize": "20px",
+        "fontWeight": 500,
+        "lineHeight": 1.4,
+        "letterSpacing": "0.2px",
+        "fontFeature": "\"calt\", \"kern\", \"liga\", \"ss03\""
+      },
+      "heading-sm": {
+        "fontFamily": "Inter",
+        "fontSize": "18px",
+        "fontWeight": 500,
+        "lineHeight": 1.4,
+        "letterSpacing": "0.2px",
+        "fontFeature": "\"calt\", \"kern\", \"liga\", \"ss03\""
+      },
+      "body-lg": {
+        "fontFamily": "Inter",
+        "fontSize": "18px",
+        "fontWeight": 400,
+        "lineHeight": 1.6,
+        "letterSpacing": 0,
+        "fontFeature": "\"calt\", \"kern\", \"liga\", \"ss03\""
+      },
+      "body-md": {
+        "fontFamily": "Inter",
+        "fontSize": "16px",
+        "fontWeight": 400,
+        "lineHeight": 1.6,
+        "letterSpacing": 0,
+        "fontFeature": "\"calt\", \"kern\", \"liga\", \"ss03\""
+      },
+      "body-strong": {
+        "fontFamily": "Inter",
+        "fontSize": "16px",
+        "fontWeight": 500,
+        "lineHeight": 1.4,
+        "letterSpacing": "0.2px",
+        "fontFeature": "\"calt\", \"kern\", \"liga\", \"ss03\""
+      },
+      "body-sm": {
+        "fontFamily": "Inter",
+        "fontSize": "14px",
+        "fontWeight": 400,
+        "lineHeight": 1.6,
+        "letterSpacing": 0,
+        "fontFeature": "\"calt\", \"kern\", \"liga\", \"ss03\""
+      },
+      "body-sm-strong": {
+        "fontFamily": "Inter",
+        "fontSize": "14px",
+        "fontWeight": 500,
+        "lineHeight": 1.6,
+        "letterSpacing": "0.2px",
+        "fontFeature": "\"calt\", \"kern\", \"liga\", \"ss03\""
+      },
+      "caption-md": {
+        "fontFamily": "Inter",
+        "fontSize": "13px",
+        "fontWeight": 400,
+        "lineHeight": 1.4,
+        "letterSpacing": "0.1px",
+        "fontFeature": "\"calt\", \"kern\", \"liga\", \"ss03\""
+      },
+      "caption-sm": {
+        "fontFamily": "Inter",
+        "fontSize": "12px",
+        "fontWeight": 400,
+        "lineHeight": 1.5,
+        "letterSpacing": "0.4px",
+        "fontFeature": "\"calt\", \"kern\", \"liga\", \"ss03\""
+      },
+      "link-md": {
+        "fontFamily": "Inter",
+        "fontSize": "16px",
+        "fontWeight": 500,
+        "lineHeight": 1.4,
+        "letterSpacing": "0.3px",
+        "fontFeature": "\"calt\", \"kern\", \"liga\", \"ss03\""
+      },
+      "button-md": {
+        "fontFamily": "Inter",
+        "fontSize": "14px",
+        "fontWeight": 500,
+        "lineHeight": 1.6,
+        "letterSpacing": "0.2px",
+        "fontFeature": "\"calt\", \"kern\", \"liga\", \"ss03\""
+      }
+    },
+    "rounded": {
+      "none": "0px",
+      "xs": "4px",
+      "sm": "6px",
+      "md": "8px",
+      "lg": "10px",
+      "xl": "16px",
+      "full": "9999px"
+    },
+    "spacing": {
+      "xxs": "2px",
+      "xs": "4px",
+      "sm": "8px",
+      "md": "12px",
+      "lg": "16px",
+      "xl": "24px",
+      "xxl": "32px",
+      "section": "96px"
+    },
+    "components": {
+      "button-primary": {
+        "backgroundColor": "{colors.primary}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.md}",
+        "padding": "8px 16px",
+        "height": "36px"
+      },
+      "button-primary-pressed": {
+        "backgroundColor": "{colors.primary-pressed}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.md}"
+      },
+      "button-secondary": {
+        "backgroundColor": "transparent",
+        "textColor": "{colors.on-dark}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.md}",
+        "padding": "8px 16px",
+        "height": "36px"
+      },
+      "button-tertiary": {
+        "backgroundColor": "{colors.surface-elevated}",
+        "textColor": "{colors.on-dark}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.md}",
+        "padding": "8px 16px",
+        "height": "36px"
+      },
+      "button-disabled": {
+        "backgroundColor": "{colors.surface-elevated}",
+        "textColor": "{colors.ash}",
+        "rounded": "{rounded.md}"
+      },
+      "install-button": {
+        "backgroundColor": "transparent",
+        "textColor": "{colors.on-dark}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.md}",
+        "padding": "6px 14px"
+      },
+      "text-input": {
+        "backgroundColor": "{colors.surface-elevated}",
+        "textColor": "{colors.on-dark}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.md}",
+        "padding": "8px 12px",
+        "height": "36px"
+      },
+      "text-input-focused": {
+        "backgroundColor": "{colors.surface-elevated}",
+        "textColor": "{colors.on-dark}",
+        "rounded": "{rounded.md}"
+      },
+      "store-search-bar": {
+        "backgroundColor": "{colors.surface-elevated}",
+        "textColor": "{colors.on-dark}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.md}",
+        "padding": "10px 16px",
+        "height": "44px"
+      },
+      "command-palette-row": {
+        "backgroundColor": "transparent",
+        "textColor": "{colors.on-dark}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.sm}",
+        "padding": "6px 10px"
+      },
+      "command-palette-row-active": {
+        "backgroundColor": "{colors.surface-card}",
+        "textColor": "{colors.on-dark}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.sm}"
+      },
+      "pill-tab": {
+        "backgroundColor": "transparent",
+        "textColor": "{colors.body}",
+        "typography": "{typography.body-sm}",
+        "rounded": "{rounded.full}",
+        "padding": "4px 10px"
+      },
+      "pill-tab-active": {
+        "backgroundColor": "{colors.surface-elevated}",
+        "textColor": "{colors.on-dark}",
+        "typography": "{typography.body-sm}",
+        "rounded": "{rounded.full}"
+      },
+      "badge-pro": {
+        "backgroundColor": "{colors.surface-elevated}",
+        "textColor": "{colors.on-dark-mute}",
+        "typography": "{typography.caption-sm}",
+        "rounded": "{rounded.xs}",
+        "padding": "2px 6px"
+      },
+      "badge-info-soft": {
+        "backgroundColor": "{colors.accent-blue-soft}",
+        "textColor": "{colors.accent-blue}",
+        "typography": "{typography.caption-sm}",
+        "rounded": "{rounded.xs}",
+        "padding": "2px 8px"
+      },
+      "keycap": {
+        "backgroundColor": "{colors.surface-card}",
+        "textColor": "{colors.body}",
+        "typography": "{typography.caption-md}",
+        "rounded": "{rounded.xs}",
+        "padding": "1px 6px",
+        "height": "20px"
+      },
+      "command-palette-card": {
+        "backgroundColor": "{colors.surface}",
+        "textColor": "{colors.on-dark}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.lg}",
+        "padding": "0px"
+      },
+      "feature-card-dark": {
+        "backgroundColor": "{colors.surface}",
+        "textColor": "{colors.on-dark}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.lg}",
+        "padding": "24px"
+      },
+      "feature-card-elevated": {
+        "backgroundColor": "{colors.surface-elevated}",
+        "textColor": "{colors.on-dark}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.lg}",
+        "padding": "24px"
+      },
+      "store-extension-card": {
+        "backgroundColor": "{colors.surface}",
+        "textColor": "{colors.on-dark}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.md}",
+        "padding": "16px"
+      },
+      "pricing-tier-card": {
+        "backgroundColor": "{colors.surface}",
+        "textColor": "{colors.on-dark}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.lg}",
+        "padding": "24px"
+      },
+      "pricing-tier-card-featured": {
+        "backgroundColor": "{colors.surface-elevated}",
+        "textColor": "{colors.on-dark}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.lg}",
+        "padding": "24px"
+      },
+      "hero-stripe-band": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.on-dark}",
+        "typography": "{typography.display-xl}",
+        "rounded": "{rounded.none}",
+        "padding": "96px 48px"
+      },
+      "app-icon-tile": {
+        "backgroundColor": "{colors.surface-card}",
+        "rounded": "{rounded.md}",
+        "size": "48px"
+      },
+      "app-icon-tile-large": {
+        "backgroundColor": "{colors.surface-card}",
+        "rounded": "{rounded.md}",
+        "size": "64px"
+      },
+      "primary-nav": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.on-dark}",
+        "typography": "{typography.body-sm-strong}",
+        "rounded": "{rounded.none}",
+        "height": "56px"
+      },
+      "footer-section": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.body}",
+        "typography": "{typography.body-sm}",
+        "rounded": "{rounded.none}",
+        "padding": "64px 48px"
+      },
+      "link-inline": {
+        "textColor": "{colors.on-dark}",
+        "typography": "{typography.link-md}"
+      }
+    }
+  },
+  "normalizationRepairs": [
+    {
+      "line": 4,
+      "original": "属于: A dark-canvas developer-tools system that treats the marketing page like an extended product screenshot — pure-near-black background, command-palette mockups as the hero, Inter typography with the ss03 stylistic set turned on, and a single white CTA pill that doesn't break the inky atmosphere. The chrome reads like Raycast's own command-palette UI scaled up to a marketing page: monochrome dark surfaces with a faint surface ladder (#07080a → #0d0d0d → #101111), tight 6–10px radius on cards, hairline 1px borders in #242728, and rare splashes of saturated accent (Hacker News yellow, Slack red, Mac green, info blue) reserved for product-tile category illustrations. The signature visual moment is a red gradient hero wordmark — three diagonal red stripes laid across the very top of the home page like a launch-banner — paired with full-bleed product UI screenshots that show Raycast's actual command palette, store, and AI chat surfaces.",
+      "normalized": "属于: \"A dark-canvas developer-tools system that treats the marketing page like an extended product screenshot — pure-near-black background, command-palette mockups as the hero, Inter typography with the ss03 stylistic set turned on, and a single white CTA pill that doesn't break the inky atmosphere. The chrome reads like Raycast's own command-palette UI scaled up to a marketing page: monochrome dark surfaces with a faint surface ladder (#07080a → #0d0d0d → #101111), tight 6–10px radius on cards, hairline 1px borders in #242728, and rare splashes of saturated accent (Hacker News yellow, Slack red, Mac green, info blue) reserved for product-tile category illustrations. The signature visual moment is a red gradient hero wordmark — three diagonal red stripes laid across the very top of the home page like a launch-banner — paired with full-bleed product UI screenshots that show Raycast's actual command palette, store, and AI chat surfaces.\"",
+      "status": "inferred-parser-repair",
+      "reason": "Quote an invalid upstream plain scalar containing colon-space; no content or field-name correction."
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Overview",
+      "level": 2,
+      "text": "Raycast's marketing site reads like an extended product screenshot. The chrome IS the in-product command palette at marketing scale: pure near-black canvas (`{colors.canvas}` — `#07080a`), hairline 1px borders (`{colors.hairline}` — `#242728`), command-palette-style cards with rounded corners between 6 and 16px, Inter typography with the **ss03 stylistic set enabled site-wide** (a single character — the alternate `g` — that gives Raycast's typography its signature subtle distinction), a single white CTA pill that anchors every primary action, and small splashes of saturated accent reserved for category illustrations.\n\nThe system has effectively one surface mode — dark — with a faint three-step surface ladder (`{colors.canvas}` → `{colors.surface}` → `{colors.surface-elevated}` → `{colors.surface-card}`) carrying cards, in-card panels, and key-cap glyph backgrounds. The signature decorative moment is a **red diagonal-stripe gradient band** across the very top of the home page hero, used as a launch-banner motif behind the headline (the only time saturated red appears on chrome). Beyond that single moment, color in the chrome is reserved for category accents inside extension and feature illustrations: Hacker News yellow, Slack red, Linear green, info blue.\n\nThe design philosophy is \"the marketing page is the product.\" Section rhythm is generous (`{spacing.section}` 96px) but the page never breaks tonal continuity — the whole site sits in one continuous dark mode, full-bleed product UI screenshots show Raycast's actual command palette / store / AI chat surfaces, and the typography ligature settings (`ss03`) are inherited from the in-product app's text rendering.\n\n**Key Characteristics:**\n- Single dark surface mode with a 4-step surface ladder: `{colors.canvas}` (#07080a) → `{colors.surface}` (#0d0d0d) → `{colors.surface-elevated}` (#101111) → `{colors.surface-card}` (#121212)\n- White CTA pill (`{colors.primary}` — #ffffff) is the universal primary action; everything else is monochrome dark\n- Inter typography with `font-feature-settings: \"calt\", \"kern\", \"liga\", \"ss03\"` enabled site-wide — the ss03 alternate `g` is part of the brand voice\n- Hairline 1px borders (`{colors.hairline}` — #242728) carry every card edge; there are no drop shadows in the system\n- Multi-radius card vocabulary: `{rounded.sm}` (6px) for keycaps, `{rounded.md}` (8px) for buttons and small cards, `{rounded.lg}` (10px) for feature cards, `{rounded.xl}` (16px) for hero command-palette mockup containers\n- Saturated category accents (`{colors.accent-yellow}` for Hacker News, `{colors.accent-red}` for Slack/Apple, `{colors.accent-green}` for productivity tools, `{colors.accent-blue}` for info) appear only inside extension tile imagery — never on chrome\n- Signature red diagonal-stripe gradient band at the very top of the hero — three angled stripes in `{colors.hero-stripe-start}` → `{colors.hero-stripe-end}`, used once per page maximum",
+      "line": 330
+    },
+    {
+      "heading": "Colors",
+      "level": 2,
+      "text": "> **Source pages:** `/` (home), `/store` (extension marketplace), `/core-features/ai` (feature page), `/pricing` (plan tiers), `/thomas/hacker-news` (single extension detail). The chrome palette is identical across all five pages — the dark surface ladder, hairline borders, white CTA, and ss03-enabled typography are the same on every page.",
+      "line": 347
+    },
+    {
+      "heading": "Brand & Accent",
+      "level": 3,
+      "text": "- **White** (`{colors.primary}` — `#ffffff`): the universal primary CTA pill background. \"Download\" / \"Install Extension\" / \"Get Pro\" — every primary action carries it.\n- **White Pressed** (`{colors.primary-pressed}` — `#e8e8e8`): pressed-state for the primary pill — a single notch dimmer.\n- **On Primary** (`{colors.on-primary}` — `#000000`): pure black text on the white CTA — the only place black appears as text in the system.",
+      "line": 351
+    },
+    {
+      "heading": "Surface",
+      "level": 3,
+      "text": "- **Canvas** (`{colors.canvas}` — `#07080a`): pure-near-black page background. The dominant surface across every page.\n- **Surface** (`{colors.surface}` — `#0d0d0d`): card and elevated panel background — one notch lighter than canvas.\n- **Surface Elevated** (`{colors.surface-elevated}` — `#101111`): button-tertiary fill, text-input fill, store-search-bar fill, pill-tab-active fill.\n- **Surface Card** (`{colors.surface-card}` — `#121212`): app-icon-tile background, keycap fill, command-palette row hover.\n- **Button FG (in-card)** (`{colors.button-fg}` — `#18191a`): rare deep-card variant used inside featured pricing tier card backgrounds.\n- **Hairline** (`{colors.hairline}` — `#242728`): the universal 1px card border. Carries every card edge across every page.\n- **Hairline Soft** (`{colors.hairline-soft}` — `rgba(255,255,255,0.08)`): even fainter border on translucent over-image overlays.\n- **Hairline Strong** (`{colors.hairline-strong}` — `rgba(255,255,255,0.16)`): stronger 1px divider where a regular hairline reads as too soft.",
+      "line": 356
+    },
+    {
+      "heading": "Text",
+      "level": 3,
+      "text": "- **Ink** (`{colors.ink}` — `#f4f4f6`): primary headlines on dark canvas. Slightly off-white for tonal coherence with the near-black background.\n- **Body** (`{colors.body}` — `#cdcdcd`): default paragraph text and inline-link color.\n- **Charcoal** (`{colors.charcoal}` — `#d3d3d4`): subtly brighter body where ink reads too soft.\n- **Mute** (`{colors.mute}` — `#9c9c9d`): metadata, footer link text, secondary captions.\n- **Ash** (`{colors.ash}` — `#6a6b6c`): disabled-state text, lowest-emphasis utility.\n- **Stone** (`{colors.stone}` — `#434345`): least-emphasis caption text and disabled icon color.\n- **On Dark** (`{colors.on-dark}` — `#ffffff`): interactive-state primary text (button label, focused tab).\n- **On Dark Mute** (`{colors.on-dark-mute}` — `rgba(255,255,255,0.72)`): translucent secondary text on dark surfaces.",
+      "line": 366
+    },
+    {
+      "heading": "Semantic",
+      "level": 3,
+      "text": "- **Accent Blue** (`{colors.accent-blue}` — `#57c1ff`) + **Soft** (`{colors.accent-blue-soft}` — `rgba(87,193,255,0.15)`): info and informational badge — used inside feature illustrations and the rare \"New\" pill.\n- **Accent Red** (`{colors.accent-red}` — `#ff6161`) + **Soft** (`{colors.accent-red-soft}` — `rgba(255,97,97,0.15)`): destructive/error indicator + Slack/Apple category accent in extension illustrations.\n- **Accent Green** (`{colors.accent-green}` — `#59d499`) + **Soft** (`{colors.accent-green-soft}` — `rgba(89,212,153,0.15)`): success state + productivity category accent in extension illustrations.\n- **Accent Yellow** (`{colors.accent-yellow}` — `#ffc533`) + **Soft** (`{colors.accent-yellow-soft}` — `rgba(255,197,51,0.15)`): \"warning\" semantic + the Hacker News orange-yellow that appears as the most prominent accent illustration on the home page hero.",
+      "line": 376
+    },
+    {
+      "heading": "Brand Gradient",
+      "level": 3,
+      "text": "- **Hero Stripe Gradient** — three diagonal red stripes layered across the very top of the home page hero, fading from `{colors.hero-stripe-start}` (`#ff5757`) to `{colors.hero-stripe-end}` (`#a1131a`). The system's only chromatic gradient on chrome — used once per page maximum and reserved for hero launch-banner moments.\n- **Keycap Gradient** — the small key-glyph background uses a subtle linear-gradient from `{colors.key-bg-start}` (`#121212`) to `{colors.key-bg-end}` (`#0d0d0d`) that gives Raycast's keycap UI its slight 3D-key feel.",
+      "line": 382
+    },
+    {
+      "heading": "Typography",
+      "level": 2,
+      "text": "",
+      "line": 386
+    },
+    {
+      "heading": "Font Family",
+      "level": 3,
+      "text": "**Inter** is the system's primary face, loaded with the `Inter Fallback` system fallback variant. Critically, Raycast enables `font-feature-settings: \"calt\", \"kern\", \"liga\", \"ss03\"` site-wide — the **ss03 stylistic set** swaps in Inter's alternate `g` glyph (single-story open `g`), which is the brand's signature typographic detail. Standard ligatures (`liga`), kerning (`kern`), and contextual alternates (`calt`) are also active. The display tier additionally enables `ss02` and `ss08` and disables standard `liga` to render the hero \"Raycast Pro\" wordmark with its distinctive geometric construction.\n\nThere is no monospace face used outside of inline `<code>` chips in documentation; the marketing pages use Inter for everything.",
+      "line": 388
+    },
+    {
+      "heading": "Hierarchy",
+      "level": 3,
+      "text": "| Token | Size | Weight | Line Height | Letter Spacing | Use |\n|---|---|---|---|---|---|\n| `{typography.display-xl}` | 64px | 600 | 1.1 | 0 | Hero \"Built for the perfect tools\" / \"The new way to...\" headline (with `liga: 0`, `ss02`, `ss08`) |\n| `{typography.display-lg}` | 56px | 500 | 1.17 | 0.2px | Section headline (\"Explore\", \"Pricing\", store hero \"Store\") |\n| `{typography.heading-xl}` | 24px | 500 | 1.6 | 0.2px | Sub-section heading, pricing-tier name |\n| `{typography.heading-lg}` | 22px | 500 | 1.15 | 0 | Mid-section feature heading |\n| `{typography.heading-md}` | 20px | 500 | 1.4 | 0.2px | Card group title, in-card heading |\n| `{typography.heading-sm}` | 18px | 500 | 1.4 | 0.2px | Small heading, extension card title |\n| `{typography.body-lg}` | 18px | 400 | 1.6 | 0 | Pricing tier description, hero subtitle |\n| `{typography.body-md}` | 16px | 400 | 1.6 | 0 | Default body, paragraph text |\n| `{typography.body-strong}` | 16px | 500 | 1.4 | 0.2px | Inline emphasis, primary nav link |\n| `{typography.body-sm}` | 14px | 400 | 1.6 | 0 | Card description, secondary copy |\n| `{typography.body-sm-strong}` | 14px | 500 | 1.6 | 0.2px | In-card label, table-header text |\n| `{typography.caption-md}` | 13px | 400 | 1.4 | 0.1px | Caption, metadata |\n| `{typography.caption-sm}` | 12px | 400 | 1.5 | 0.4px | Smallest utility text, badge label |\n| `{typography.link-md}` | 16px | 500 | 1.4 | 0.3px | Inline body anchor link |\n| `{typography.button-md}` | 14px | 500 | 1.6 | 0.2px | Standard button label |",
+      "line": 393
+    },
+    {
+      "heading": "Principles",
+      "level": 3,
+      "text": "The hierarchy works on a 1.6-line-height ladder for body and a 1.1–1.4 ladder for display/heading. Letter-spacing is consistently positive (0.1–0.4px) — slightly opening the type — which gives Raycast's chrome an airy quality at body sizes despite the dark canvas. The `ss03` stylistic set is the brand's most distinctive typographic detail; without it, the body face renders identically to plain Inter and loses Raycast's signature rendering.",
+      "line": 413
+    },
+    {
+      "heading": "Note on Font Substitutes",
+      "level": 3,
+      "text": "Inter is open-source and Google-Fonts-hosted; load it directly. To preserve the brand's signature look, you must enable `font-feature-settings: \"calt\", \"kern\", \"liga\", \"ss03\"` on the body element. Without `ss03`, the typography is recognizably \"Inter default\" rather than \"Raycast.\" On systems where Inter cannot be loaded, the documented fallback is `Inter Fallback` (a self-hosted variant) → `system-ui`. **JetBrains Mono** or **Geist Mono** are acceptable substitutes for inline code chips when needed, though Raycast's marketing chrome rarely uses code-styled text.",
+      "line": 416
+    },
+    {
+      "heading": "Layout",
+      "level": 2,
+      "text": "",
+      "line": 419
+    },
+    {
+      "heading": "Spacing System",
+      "level": 3,
+      "text": "- **Base unit:** 8px (with 2/4/12px steps for tight inline gaps).\n- **Tokens (front matter):** `{spacing.xxs}` (2px) · `{spacing.xs}` (4px) · `{spacing.sm}` (8px) · `{spacing.md}` (12px) · `{spacing.lg}` (16px) · `{spacing.xl}` (24px) · `{spacing.xxl}` (32px) · `{spacing.section}` (96px).\n- **Universal section rhythm:** every page in the set uses `{spacing.section}` (96px) as the vertical gap between major content blocks. Card grids use `{spacing.lg}` (16px) gutters; in-card padding sits at `{spacing.xl}` (24px) for feature cards and `{spacing.lg}` (16px) for store extension cards.",
+      "line": 421
+    },
+    {
+      "heading": "Grid & Container",
+      "level": 3,
+      "text": "- **Max width:** ~1240px content area at desktop with 24px gutters (~48px at ultrawide). Hero command-palette mockups run wider (~1080px) with the page background extending to full bleed.\n- **Store extension grid:** 2-up at desktop with rows of 2 cards stacked, collapsing to 1-up at mobile. Each card is a horizontal layout with a large square app icon at the left and copy + Install button at the right.\n- **Pricing tier grid:** 3-up at desktop (Free / Pro / Pro+Advanced AI), collapsing to 1-up stacked at mobile.\n- **Featured extension card grid:** 3-up at desktop in the \"Featured\" row at the top of the store page.\n- **Comparison table:** full-width on the pricing page below the tier cards — 5-column table (Free / Pro / Advanced AI / Custom for Teams / Enterprise) with feature rows.\n- **Footer:** 6-column horizontal link grid at desktop, collapsing to 2-up at tablet and 1-up at mobile.",
+      "line": 426
+    },
+    {
+      "heading": "Whitespace Philosophy",
+      "level": 3,
+      "text": "Whitespace is generous and the canvas is uninterrupted. Sections sit 96px apart with no decorative dividers between them — the dark canvas continues edge-to-edge from hero to footer. Inside a section, content is left-aligned in a tight column, with command-palette mockup imagery occupying the right 50–60% of the band on home-page feature rows. The signature decorative element — the red diagonal-stripe gradient band — only appears in the very first hero band; from the second section down, the page is monochrome dark.",
+      "line": 434
+    },
+    {
+      "heading": "Elevation & Depth",
+      "level": 2,
+      "text": "| Level | Treatment | Use |\n|---|---|---|\n| 0 — Flat | No border, no shadow | Default for canvas-on-canvas blocks, hero text, footer body |\n| 1 — Hairline border | 1px solid `{colors.hairline}` (#242728) | Every card on `{colors.surface}`, store extension card, pricing tier card |\n| 2 — Hairline strong | 1px solid `{colors.hairline-strong}` | Stronger inline divider, table-row separator on the comparison table |\n| 3 — Surface ladder elevation | `{colors.canvas}` → `{colors.surface}` → `{colors.surface-elevated}` → `{colors.surface-card}` | Multi-step background-color ladder used to create elevation without shadows |\n\nThe system has no drop-shadow elevation at all. Depth is built entirely from the surface-color ladder: each notch lighter on the dark scale reads as one step closer to the viewer.",
+      "line": 437
+    },
+    {
+      "heading": "Decorative Depth",
+      "level": 3,
+      "text": "Depth comes from product imagery and a single stripe-gradient band:\n- **Hero stripe gradient** — three diagonal red stripes (`{colors.hero-stripe-start}` → `{colors.hero-stripe-end}`) layered across the home-page hero band, evoking a launch-banner / motion-blur effect. The system's signature decorative moment.\n- **Command-palette mockups** — full-fidelity Raycast in-product UI screenshots (the actual Spotlight-style overlay with rounded keycaps, command rows, and accent-color glyphs) sitting inside the home-page hero and feature rows. These ARE the brand decoration.\n- **App icon tiles** — small 48–64px rounded-corner tiles displaying real app icons (Slack, Spotify, Figma, Notion, Linear, Hacker News) inside store and feature illustrations.\n- **Keycap glyphs** — subtle gradient-filled rounded keycap glyphs used inline to indicate keyboard shortcuts (e.g., `⌘ K`), with a faint `{colors.key-bg-start}` → `{colors.key-bg-end}` linear gradient suggesting a physical key surface.",
+      "line": 448
+    },
+    {
+      "heading": "Shapes",
+      "level": 2,
+      "text": "",
+      "line": 455
+    },
+    {
+      "heading": "Border Radius Scale",
+      "level": 3,
+      "text": "| Token | Value | Use |\n|---|---|---|\n| `{rounded.none}` | 0px | Hero band, primary nav, footer, full-bleed structural surfaces |\n| `{rounded.xs}` | 4px | Keycap glyphs, badge-pro chips, small inline tags |\n| `{rounded.sm}` | 6px | Command-palette row, inline buttons, micro chips |\n| `{rounded.md}` | 8px | Standard buttons, text inputs, store search bar, app-icon tiles, store extension card |\n| `{rounded.lg}` | 10px | Feature card, command-palette mockup card, pricing tier card |\n| `{rounded.xl}` | 16px | Large hero command-palette mockup container, oversized feature panel |\n| `{rounded.full}` | 9999px | Pill-tab chips, avatar circles |\n\nThe radius vocabulary clusters tightly between 4 and 16px, with most chrome at 6–10px. The system never goes flat (0px) on cards and never above 16px except for fully-rounded pills.",
+      "line": 457
+    },
+    {
+      "heading": "Photography Geometry",
+      "level": 3,
+      "text": "There is no traditional photography. Visual elements are limited to:\n- **Command-palette mockups** — full-fidelity Raycast UI screenshots at 16:9 or 4:3 aspect inside `{rounded.xl}` (16px) containers.\n- **App icon tiles** — 48–64px square at `{rounded.md}` (8px), displaying real app icons.\n- **Avatar circles** — 32–40px at `{rounded.full}` for in-extension author attribution.\n- **Hero stripe gradient** — full-bleed wash with no aspect ratio.",
+      "line": 471
+    },
+    {
+      "heading": "Components",
+      "level": 2,
+      "text": "> **No hover states documented** per system policy. Each spec covers Default and Active/Pressed only.",
+      "line": 478
+    },
+    {
+      "heading": "Buttons",
+      "level": 3,
+      "text": "**`button-primary`** — the universal Raycast CTA\n- Background `{colors.primary}` (white), text `{colors.on-primary}` (black), type `{typography.button-md}`, padding `8px 16px`, height ~36px, rounded `{rounded.md}`.\n- Used for \"Download\" (sticky top-nav CTA), \"Get Pro\", \"Install\" — every primary action across every surface.\n- Pressed state lives in `button-primary-pressed` — background dims to `{colors.primary-pressed}`.\n\n**`button-secondary`** — transparent text button\n- Background transparent, text `{colors.on-dark}`, type `{typography.button-md}`, padding `8px 16px`, height ~36px, rounded `{rounded.md}`.\n- Lower-emphasis action: \"Sign in\" (top nav), \"Learn more →\", \"View on GitHub\".\n\n**`button-tertiary`** — soft surface button\n- Background `{colors.surface-elevated}`, text `{colors.on-dark}`, type `{typography.button-md}`, padding `8px 16px`, height ~36px, rounded `{rounded.md}`.\n- Mid-emphasis: \"Watch demo\", \"View extension\", \"Manage\" buttons inside cards.\n\n**`button-disabled`**\n- Background `{colors.surface-elevated}`, text `{colors.ash}` — dim utility state.\n\n**`install-button`** — the store-page install pill\n- Background transparent with 1px solid `{colors.hairline-strong}` border, text `{colors.on-dark}`, type `{typography.button-md}`, padding `6px 14px`, rounded `{rounded.md}`.\n- Sits at the right edge of every store extension card with the label \"Install Extension\".",
+      "line": 482
+    },
+    {
+      "heading": "Filter & Tab Chips",
+      "level": 3,
+      "text": "**`pill-tab`** + **`pill-tab-active`** — small filter chip strip\n- Default: transparent background, text `{colors.body}`, type `{typography.body-sm}`, padding `4px 10px`, rounded `{rounded.full}`.\n- Active: background flips to `{colors.surface-elevated}`, text `{colors.on-dark}` — the chip \"lifts\" by one surface notch.\n- Used in the store filter row (\"All Extensions\", \"Recently Added\", \"Most Popular\") and similar segmented controls.\n\n**`badge-pro`** — small Pro/Plan label\n- Background `{colors.surface-elevated}`, text `{colors.on-dark-mute}`, type `{typography.caption-sm}`, padding `2px 6px`, rounded `{rounded.xs}`.\n- Inline \"Pro\" / \"Pro+\" / \"Free\" tier indicators on pricing tier cards.\n\n**`badge-info-soft`** — translucent info chip\n- Background `{colors.accent-blue-soft}`, text `{colors.accent-blue}`, type `{typography.caption-sm}`, padding `2px 8px`, rounded `{rounded.xs}`.\n- Rare \"New\" / \"Beta\" inline tag.",
+      "line": 504
+    },
+    {
+      "heading": "Inputs & Forms",
+      "level": 3,
+      "text": "**`text-input`** + **`text-input-focused`**\n- Default: background `{colors.surface-elevated}`, text `{colors.on-dark}`, 1px solid `{colors.hairline}`, type `{typography.body-md}`, padding `8px 12px`, height ~36px, rounded `{rounded.md}`.\n- Focused: same surface; 1px border becomes `{colors.hairline-strong}` — a subtle brightening rather than a colored ring.\n\n**`store-search-bar`** — the store-page search field\n- Background `{colors.surface-elevated}`, text `{colors.on-dark}`, type `{typography.body-md}`, padding `10px 16px`, height ~44px, rounded `{rounded.md}`.\n- Sits at the top of the store page hero with a magnifier icon at the left and \"Search the store...\" placeholder. Slightly taller than the standard `text-input`.",
+      "line": 519
+    },
+    {
+      "heading": "Cards & Containers",
+      "level": 3,
+      "text": "**`command-palette-card`** — the home-page hero command-palette mockup\n- Container: background `{colors.surface}`, 1px solid `{colors.hairline}`, padding 0 (the mockup contents fill the card), rounded `{rounded.lg}` or `{rounded.xl}` depending on hero size.\n- Layout: top header strip with macOS traffic-light dots + a search input row, body with a vertical stack of `{component.command-palette-row}` items, bottom-right keycap hint cluster.\n\n**`command-palette-row`** + **`command-palette-row-active`** — single row inside the command palette\n- Default: transparent background, text `{colors.on-dark}` in `{typography.body-md}`, padding `6px 10px`, rounded `{rounded.sm}`.\n- Active: background `{colors.surface-card}` (one notch lighter than the surrounding palette card) — the selection state.\n- Each row contains a small app-icon tile + label + optional keycap shortcut at the right edge.\n\n**`feature-card-dark`** — standard product feature card\n- Container: background `{colors.surface}`, 1px solid `{colors.hairline}`, padding `{spacing.xl}` (24px), rounded `{rounded.lg}`.\n- Used in 2- or 3-up grids on home and feature pages — pairs a small product mockup or app-icon row with body copy and a \"Learn more →\" `{component.button-secondary}`.\n\n**`feature-card-elevated`** — slightly-elevated variant\n- Same chrome as `feature-card-dark` but background flips to `{colors.surface-elevated}` — used to break visual rhythm in alternating feature rows.\n\n**`store-extension-card`** — store-page extension card\n- Container: background `{colors.surface}`, 1px solid `{colors.hairline}`, padding `{spacing.lg}` (16px), rounded `{rounded.md}`.\n- Layout: 48px `{component.app-icon-tile}` at left, vertical stack of name + by-author metadata + 1-line description in the center, `{component.install-button}` at the right edge.\n\n**`pricing-tier-card`** — pricing plan card (default tier)\n- Container: background `{colors.surface}`, 1px solid `{colors.hairline}`, padding `{spacing.xl}` (24px), rounded `{rounded.lg}`.\n- Layout: tier name in `{typography.heading-xl}` (24px), price in larger numeric in `{typography.display-lg}`, body description in `{typography.body-lg}`, CTA `{component.button-primary}` (or `{component.button-secondary}` for free tier), feature checklist with `✓` glyphs.\n\n**`pricing-tier-card-featured`** — middle \"Pro\" featured tier\n- Same chrome but background flips to `{colors.surface-elevated}` (one notch lighter) — the only visual cue distinguishing the featured tier from the surrounding cards.\n\n**`hero-stripe-band`** — home-page hero with red stripe gradient\n- Background `{colors.canvas}` with three diagonal red stripes layered across the top half (`{colors.hero-stripe-start}` → `{colors.hero-stripe-end}`).\n- Padding `{spacing.section}` 96px vertical / 48px horizontal, rounded `{rounded.none}`.\n- Carries the hero headline in `{typography.display-xl}` and a single `{component.button-primary}` \"Download\" CTA.",
+      "line": 529
+    },
+    {
+      "heading": "Decorative",
+      "level": 3,
+      "text": "**`app-icon-tile`** — small 48px square app icon\n- Background `{colors.surface-card}`, padding 0 (icon fills the tile), rounded `{rounded.md}`, size 48×48.\n- Used in command-palette rows and store extension cards.\n\n**`app-icon-tile-large`** — 64px feature variant\n- Same but at 64×64. Used in featured store cards and home-page hero illustration rows.\n\n**`keycap`** — keyboard shortcut glyph\n- Background `{colors.surface-card}` with a subtle linear gradient `{colors.key-bg-start}` → `{colors.key-bg-end}`, text `{colors.body}` in `{typography.caption-md}`, padding `1px 6px`, height ~20px, rounded `{rounded.xs}`.\n- Renders inline command-palette shortcut hints like `⌘ K`, `⏎`, `Esc`. The signature \"physical-key\" feel on a flat dark canvas.",
+      "line": 563
+    },
+    {
+      "heading": "Navigation",
+      "level": 3,
+      "text": "**`primary-nav`**\n- Background `{colors.canvas}`, text `{colors.on-dark}`, height ~56px, type `{typography.body-sm-strong}`, rounded `{rounded.none}`, with a 1px `{colors.hairline}` bottom rule.\n- Layout (desktop): Raycast wordmark at left, centered nav cluster (\"Pro · AI · Store · Manual · Changelog · Blog · Pricing\"), right cluster (Sign in link + the always-white `{component.button-primary}` \"Download\" CTA pill).\n\n**Top Nav (Mobile)**\n- Hamburger menu icon at left, Raycast wordmark at center, \"Download\" white CTA pill at right. Primary nav collapses into a full-screen drawer that slides from the left.",
+      "line": 576
+    },
+    {
+      "heading": "Footer",
+      "level": 3,
+      "text": "**`footer-section`**\n- Background `{colors.canvas}`, text `{colors.body}` in `{typography.body-sm}`, padding `64px 48px`, with a 1px `{colors.hairline}` top rule.\n- Layout: 6-column horizontal link grid (Product · Core Features · Top Extensions · Company · Community · By Raycast) with column headers in `{typography.body-sm-strong}` `{colors.on-dark}` and link lists in `{typography.body-sm}` `{colors.body}`.\n- Bottom row: small Raycast wordmark + a subscribe newsletter input field with `{component.button-primary}` \"Subscribe\" at the right.\n- The very top of the footer band has a faint red stripe-gradient repeat — a smaller echo of the hero's diagonal stripe motif.",
+      "line": 585
+    },
+    {
+      "heading": "Inline",
+      "level": 3,
+      "text": "**`link-inline`** — body-prose anchor link\n- `{colors.on-dark}` text with no underline by default; underlines on focus. Inline body links are full-white rather than a tinted accent color, which keeps the dark canvas tonally pure.",
+      "line": 593
+    },
+    {
+      "heading": "Do's and Don'ts",
+      "level": 2,
+      "text": "",
+      "line": 598
+    },
+    {
+      "heading": "Do",
+      "level": 3,
+      "text": "- Render the entire site in one continuous dark mode. There is no light variant in the system.\n- Use `{colors.primary}` (white pill) for every primary CTA. There is no second primary color — white IS the brand action.\n- Build elevation from the surface-color ladder (`{colors.canvas}` → `{colors.surface}` → `{colors.surface-elevated}` → `{colors.surface-card}`), never from drop shadows.\n- Enable `font-feature-settings: \"calt\", \"kern\", \"liga\", \"ss03\"` on the body element. The ss03 alternate `g` is part of the brand identity.\n- Anchor a `{component.command-palette-card}` mockup as the hero's load-bearing visual. Real Raycast UI is the brand.\n- Use `{component.keycap}` glyphs inline to indicate keyboard shortcuts. Subtle key-bg gradient (`{colors.key-bg-start}` → `{colors.key-bg-end}`) is the brand's only \"depth\" decoration.\n- Reserve `{colors.hero-stripe-start}` → `{colors.hero-stripe-end}` red gradient for the hero band exactly once per page. Never repeat the stripe gradient deeper in the page.\n- Use saturated category accents (`{colors.accent-yellow}`, `{colors.accent-red}`, `{colors.accent-green}`, `{colors.accent-blue}`) only inside extension and feature illustrations — never on chrome buttons or text.",
+      "line": 600
+    },
+    {
+      "heading": "Don't",
+      "level": 3,
+      "text": "- Don't introduce a light mode. The system is dark-only by design.\n- Don't add drop shadows on cards. Elevation is built from the surface ladder, not from shadows.\n- Don't replace `{colors.primary}` (white) with a tinted accent for the primary CTA. Pure white is the brand action color.\n- Don't use the saturated accent colors (`{colors.accent-yellow}`, `{colors.accent-red}`, `{colors.accent-green}`, `{colors.accent-blue}`) on text, buttons, or chrome surfaces. They belong inside extension illustrations.\n- Don't repeat the hero stripe gradient outside the top hero band. The one-band rule is the system's restraint.\n- Don't use Inter without the `ss03` feature flag enabled. The chrome will lose its signature voice.\n- Don't pad cards with 32px+ on all sides. The system runs tight at 16–24px in-card padding.",
+      "line": 610
+    },
+    {
+      "heading": "Responsive Behavior",
+      "level": 2,
+      "text": "",
+      "line": 619
+    },
+    {
+      "heading": "Breakpoints",
+      "level": 3,
+      "text": "| Name | Width | Key Changes |\n|---|---|---|\n| ultrawide | 1920px+ | Content max-width holds at 1240px; outer gutters grow to ~80px |\n| desktop-large | 1440px | Default — 3-up pricing grid, 2-up store extension grid |\n| desktop | 1280px | Same with narrower outer gutters |\n| desktop-small | 1024px | 3-up pricing collapses to 2+1; primary nav remains horizontal |\n| tablet | 768px | Pricing → 1-up stacked; primary nav becomes hamburger drawer |\n| mobile | 480px | Single-column everything; hero `{typography.display-xl}` scales 64px → ~36px |\n| mobile-narrow | 320px | Section padding tightens to 48px |",
+      "line": 621
+    },
+    {
+      "heading": "Touch Targets",
+      "level": 3,
+      "text": "All interactive elements meet WCAG AA at 36px+. `{component.button-primary}` and `{component.button-tertiary}` sit at 36px height with 16px padding. `{component.text-input}` sits at 36px. `{component.store-search-bar}` sits at 44px (above AAA). `{component.pill-tab}` is ~24–28px height with 10px padding extending to 36–40px tappable via inline padding (above AA but below AAA — intentional, the chips are compact). `{component.install-button}` sits at ~32px height with 14px padding.",
+      "line": 633
+    },
+    {
+      "heading": "Collapsing Strategy",
+      "level": 3,
+      "text": "- **Primary nav:** desktop horizontal cluster → tablet hamburger drawer at 768px. The white \"Download\" CTA stays visible at every breakpoint.\n- **Hero command-palette mockup:** desktop full-fidelity 2-column with copy at left + mockup at right → tablet stacks vertical with mockup below copy → mobile mockup scales down to ~80% width.\n- **Store extension grid:** 2-up → 1-up at tablet.\n- **Pricing tier grid:** 3-up → 2+1 at desktop-small → 1-up stacked at tablet.\n- **Comparison table:** desktop full 5-column → tablet horizontal scroll → mobile vertical card stack with one tier per card.\n- **Footer:** 6-up link columns → 3-up at tablet → 2-up at mobile-landscape → 1-up at mobile.\n- **Section padding:** `{spacing.section}` (96px) desktop → 64px tablet → 48px mobile.\n- **Hero headline:** `{typography.display-xl}` (64px) at desktop, scaling 56px / 44px / 36px down the breakpoint stack.",
+      "line": 636
+    },
+    {
+      "heading": "Image Behavior",
+      "level": 3,
+      "text": "The only \"imagery\" in the system is in-product Raycast UI screenshots and small app-icon assets:\n- **Command-palette mockups** scale fluidly with the container; the in-product UI itself is responsive and re-renders for each breakpoint.\n- **App-icon tiles** stay at 48–64px fixed size at every breakpoint; they tile in flexible rows that wrap at narrower widths.\n- **Hero stripe gradient** stays at the top of the hero band at every breakpoint with the stripe angle preserved.",
+      "line": 646
+    },
+    {
+      "heading": "Iteration Guide",
+      "level": 2,
+      "text": "1. Focus on ONE component at a time. Pull its YAML entry and verify every property resolves.\n2. Reference component names and tokens directly (`{colors.primary}`, `{component.button-primary-pressed}`, `{rounded.md}`) — do not paraphrase.\n3. Run `npx @google/design.md lint DESIGN.md` after edits — `broken-ref`, `contrast-ratio`, and `orphaned-tokens` warnings flag issues automatically.\n4. Add new variants as separate component entries (`-pressed`, `-disabled`, `-active`) — do not bury them inside prose.\n5. Default body to `{typography.body-md}` (16px / 400 / 1.6); reach for `{typography.body-strong}` for emphasis; reserve `{typography.display-xl}` strictly for the hero band.\n6. Keep `{colors.primary}` (white CTA pill) scarce per viewport — at most one solid white pill per fold.\n7. When introducing a new component, ask whether it can be expressed with the existing surface-ladder + 8px-radius + ss03-Inter vocabulary before adding new tokens. The system's strength is that it almost never needs new ones.",
+      "line": 652
+    },
+    {
+      "heading": "Known Gaps",
+      "level": 2,
+      "text": "- **Mobile screenshots not captured** — responsive behavior synthesizes Raycast's mobile pattern (hamburger drawer, single-column grid, hero downscale) from desktop evidence and the breakpoint stack.\n- **Hover states not documented** by system policy. Raycast's in-product app has rich hover behavior on command-palette rows that this document doesn't capture.\n- **In-product app chrome** (the actual Raycast launcher running on macOS) is referenced in marketing screenshots but not documented as a separate UI system here. The marketing site is documented; the in-product app surface is its own design system.\n- **Dark mode is the only mode** — no light variant exists in the captured surfaces.\n- **Form validation states** beyond the focused-input border treatment are not present in the captured surfaces.\n- **Authenticated chrome** (account dashboard, billing settings, team management) not in the captured pages.",
+      "line": 662
+    }
+  ],
+  "tokens": [
+    {
+      "path": "colors.primary",
+      "sourcePath": "colors.primary",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 9,
+        "sourcePath": "colors.primary"
+      }
+    },
+    {
+      "path": "colors.primarypressed",
+      "sourcePath": "colors.primary-pressed",
+      "type": "color",
+      "value": "#e8e8e8",
+      "status": "unverified",
+      "evidence": {
+        "line": 10,
+        "sourcePath": "colors.primary-pressed"
+      }
+    },
+    {
+      "path": "colors.onprimary",
+      "sourcePath": "colors.on-primary",
+      "type": "color",
+      "value": "#000000",
+      "status": "unverified",
+      "evidence": {
+        "line": 11,
+        "sourcePath": "colors.on-primary"
+      }
+    },
+    {
+      "path": "colors.ink",
+      "sourcePath": "colors.ink",
+      "type": "color",
+      "value": "#f4f4f6",
+      "status": "unverified",
+      "evidence": {
+        "line": 12,
+        "sourcePath": "colors.ink"
+      }
+    },
+    {
+      "path": "colors.body",
+      "sourcePath": "colors.body",
+      "type": "color",
+      "value": "#cdcdcd",
+      "status": "unverified",
+      "evidence": {
+        "line": 13,
+        "sourcePath": "colors.body"
+      }
+    },
+    {
+      "path": "colors.charcoal",
+      "sourcePath": "colors.charcoal",
+      "type": "color",
+      "value": "#d3d3d4",
+      "status": "unverified",
+      "evidence": {
+        "line": 14,
+        "sourcePath": "colors.charcoal"
+      }
+    },
+    {
+      "path": "colors.mute",
+      "sourcePath": "colors.mute",
+      "type": "color",
+      "value": "#9c9c9d",
+      "status": "unverified",
+      "evidence": {
+        "line": 15,
+        "sourcePath": "colors.mute"
+      }
+    },
+    {
+      "path": "colors.ash",
+      "sourcePath": "colors.ash",
+      "type": "color",
+      "value": "#6a6b6c",
+      "status": "unverified",
+      "evidence": {
+        "line": 16,
+        "sourcePath": "colors.ash"
+      }
+    },
+    {
+      "path": "colors.stone",
+      "sourcePath": "colors.stone",
+      "type": "color",
+      "value": "#434345",
+      "status": "unverified",
+      "evidence": {
+        "line": 17,
+        "sourcePath": "colors.stone"
+      }
+    },
+    {
+      "path": "colors.ondark",
+      "sourcePath": "colors.on-dark",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 18,
+        "sourcePath": "colors.on-dark"
+      }
+    },
+    {
+      "path": "colors.ondarkmute",
+      "sourcePath": "colors.on-dark-mute",
+      "type": "color",
+      "value": "rgba(255,255,255,0.72)",
+      "status": "unverified",
+      "evidence": {
+        "line": 19,
+        "sourcePath": "colors.on-dark-mute"
+      }
+    },
+    {
+      "path": "colors.canvas",
+      "sourcePath": "colors.canvas",
+      "type": "color",
+      "value": "#07080a",
+      "status": "unverified",
+      "evidence": {
+        "line": 20,
+        "sourcePath": "colors.canvas"
+      }
+    },
+    {
+      "path": "colors.surface",
+      "sourcePath": "colors.surface",
+      "type": "color",
+      "value": "#0d0d0d",
+      "status": "unverified",
+      "evidence": {
+        "line": 21,
+        "sourcePath": "colors.surface"
+      }
+    },
+    {
+      "path": "colors.surfaceelevated",
+      "sourcePath": "colors.surface-elevated",
+      "type": "color",
+      "value": "#101111",
+      "status": "unverified",
+      "evidence": {
+        "line": 22,
+        "sourcePath": "colors.surface-elevated"
+      }
+    },
+    {
+      "path": "colors.surfacecard",
+      "sourcePath": "colors.surface-card",
+      "type": "color",
+      "value": "#121212",
+      "status": "unverified",
+      "evidence": {
+        "line": 23,
+        "sourcePath": "colors.surface-card"
+      }
+    },
+    {
+      "path": "colors.buttonfg",
+      "sourcePath": "colors.button-fg",
+      "type": "color",
+      "value": "#18191a",
+      "status": "unverified",
+      "evidence": {
+        "line": 24,
+        "sourcePath": "colors.button-fg"
+      }
+    },
+    {
+      "path": "colors.hairline",
+      "sourcePath": "colors.hairline",
+      "type": "color",
+      "value": "#242728",
+      "status": "unverified",
+      "evidence": {
+        "line": 25,
+        "sourcePath": "colors.hairline"
+      }
+    },
+    {
+      "path": "colors.hairlinesoft",
+      "sourcePath": "colors.hairline-soft",
+      "type": "color",
+      "value": "rgba(255,255,255,0.08)",
+      "status": "unverified",
+      "evidence": {
+        "line": 26,
+        "sourcePath": "colors.hairline-soft"
+      }
+    },
+    {
+      "path": "colors.hairlinestrong",
+      "sourcePath": "colors.hairline-strong",
+      "type": "color",
+      "value": "rgba(255,255,255,0.16)",
+      "status": "unverified",
+      "evidence": {
+        "line": 27,
+        "sourcePath": "colors.hairline-strong"
+      }
+    },
+    {
+      "path": "colors.accentblue",
+      "sourcePath": "colors.accent-blue",
+      "type": "color",
+      "value": "#57c1ff",
+      "status": "unverified",
+      "evidence": {
+        "line": 28,
+        "sourcePath": "colors.accent-blue"
+      }
+    },
+    {
+      "path": "colors.accentbluesoft",
+      "sourcePath": "colors.accent-blue-soft",
+      "type": "color",
+      "value": "rgba(87,193,255,0.15)",
+      "status": "unverified",
+      "evidence": {
+        "line": 29,
+        "sourcePath": "colors.accent-blue-soft"
+      }
+    },
+    {
+      "path": "colors.accentred",
+      "sourcePath": "colors.accent-red",
+      "type": "color",
+      "value": "#ff6161",
+      "status": "unverified",
+      "evidence": {
+        "line": 30,
+        "sourcePath": "colors.accent-red"
+      }
+    },
+    {
+      "path": "colors.accentredsoft",
+      "sourcePath": "colors.accent-red-soft",
+      "type": "color",
+      "value": "rgba(255,97,97,0.15)",
+      "status": "unverified",
+      "evidence": {
+        "line": 31,
+        "sourcePath": "colors.accent-red-soft"
+      }
+    },
+    {
+      "path": "colors.accentgreen",
+      "sourcePath": "colors.accent-green",
+      "type": "color",
+      "value": "#59d499",
+      "status": "unverified",
+      "evidence": {
+        "line": 32,
+        "sourcePath": "colors.accent-green"
+      }
+    },
+    {
+      "path": "colors.accentgreensoft",
+      "sourcePath": "colors.accent-green-soft",
+      "type": "color",
+      "value": "rgba(89,212,153,0.15)",
+      "status": "unverified",
+      "evidence": {
+        "line": 33,
+        "sourcePath": "colors.accent-green-soft"
+      }
+    },
+    {
+      "path": "colors.accentyellow",
+      "sourcePath": "colors.accent-yellow",
+      "type": "color",
+      "value": "#ffc533",
+      "status": "unverified",
+      "evidence": {
+        "line": 34,
+        "sourcePath": "colors.accent-yellow"
+      }
+    },
+    {
+      "path": "colors.accentyellowsoft",
+      "sourcePath": "colors.accent-yellow-soft",
+      "type": "color",
+      "value": "rgba(255,197,51,0.15)",
+      "status": "unverified",
+      "evidence": {
+        "line": 35,
+        "sourcePath": "colors.accent-yellow-soft"
+      }
+    },
+    {
+      "path": "colors.herostripestart",
+      "sourcePath": "colors.hero-stripe-start",
+      "type": "color",
+      "value": "#ff5757",
+      "status": "unverified",
+      "evidence": {
+        "line": 36,
+        "sourcePath": "colors.hero-stripe-start"
+      }
+    },
+    {
+      "path": "colors.herostripeend",
+      "sourcePath": "colors.hero-stripe-end",
+      "type": "color",
+      "value": "#a1131a",
+      "status": "unverified",
+      "evidence": {
+        "line": 37,
+        "sourcePath": "colors.hero-stripe-end"
+      }
+    },
+    {
+      "path": "colors.keybgstart",
+      "sourcePath": "colors.key-bg-start",
+      "type": "color",
+      "value": "#121212",
+      "status": "unverified",
+      "evidence": {
+        "line": 38,
+        "sourcePath": "colors.key-bg-start"
+      }
+    },
+    {
+      "path": "colors.keybgend",
+      "sourcePath": "colors.key-bg-end",
+      "type": "color",
+      "value": "#0d0d0d",
+      "status": "unverified",
+      "evidence": {
+        "line": 39,
+        "sourcePath": "colors.key-bg-end"
+      }
+    },
+    {
+      "path": "typography.displayxl.fontfamily",
+      "sourcePath": "typography.display-xl.fontFamily",
+      "type": "fontFamily",
+      "value": "Inter",
+      "status": "unverified",
+      "evidence": {
+        "line": 43,
+        "sourcePath": "typography.display-xl.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displayxl.fontsize",
+      "sourcePath": "typography.display-xl.fontSize",
+      "type": "dimension",
+      "value": "64px",
+      "status": "unverified",
+      "evidence": {
+        "line": 44,
+        "sourcePath": "typography.display-xl.fontSize"
+      }
+    },
+    {
+      "path": "typography.displayxl.fontweight",
+      "sourcePath": "typography.display-xl.fontWeight",
+      "type": "number",
+      "value": 600,
+      "status": "unverified",
+      "evidence": {
+        "line": 45,
+        "sourcePath": "typography.display-xl.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displayxl.lineheight",
+      "sourcePath": "typography.display-xl.lineHeight",
+      "type": "number",
+      "value": 1.1,
+      "status": "unverified",
+      "evidence": {
+        "line": 46,
+        "sourcePath": "typography.display-xl.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displayxl.letterspacing",
+      "sourcePath": "typography.display-xl.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 47,
+        "sourcePath": "typography.display-xl.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.displaylg.fontfamily",
+      "sourcePath": "typography.display-lg.fontFamily",
+      "type": "fontFamily",
+      "value": "Inter",
+      "status": "unverified",
+      "evidence": {
+        "line": 50,
+        "sourcePath": "typography.display-lg.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displaylg.fontsize",
+      "sourcePath": "typography.display-lg.fontSize",
+      "type": "dimension",
+      "value": "56px",
+      "status": "unverified",
+      "evidence": {
+        "line": 51,
+        "sourcePath": "typography.display-lg.fontSize"
+      }
+    },
+    {
+      "path": "typography.displaylg.fontweight",
+      "sourcePath": "typography.display-lg.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 52,
+        "sourcePath": "typography.display-lg.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displaylg.lineheight",
+      "sourcePath": "typography.display-lg.lineHeight",
+      "type": "number",
+      "value": 1.17,
+      "status": "unverified",
+      "evidence": {
+        "line": 53,
+        "sourcePath": "typography.display-lg.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displaylg.letterspacing",
+      "sourcePath": "typography.display-lg.letterSpacing",
+      "type": "dimension",
+      "value": "0.2px",
+      "status": "unverified",
+      "evidence": {
+        "line": 54,
+        "sourcePath": "typography.display-lg.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.headingxl.fontfamily",
+      "sourcePath": "typography.heading-xl.fontFamily",
+      "type": "fontFamily",
+      "value": "Inter",
+      "status": "unverified",
+      "evidence": {
+        "line": 57,
+        "sourcePath": "typography.heading-xl.fontFamily"
+      }
+    },
+    {
+      "path": "typography.headingxl.fontsize",
+      "sourcePath": "typography.heading-xl.fontSize",
+      "type": "dimension",
+      "value": "24px",
+      "status": "unverified",
+      "evidence": {
+        "line": 58,
+        "sourcePath": "typography.heading-xl.fontSize"
+      }
+    },
+    {
+      "path": "typography.headingxl.fontweight",
+      "sourcePath": "typography.heading-xl.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 59,
+        "sourcePath": "typography.heading-xl.fontWeight"
+      }
+    },
+    {
+      "path": "typography.headingxl.lineheight",
+      "sourcePath": "typography.heading-xl.lineHeight",
+      "type": "number",
+      "value": 1.6,
+      "status": "unverified",
+      "evidence": {
+        "line": 60,
+        "sourcePath": "typography.heading-xl.lineHeight"
+      }
+    },
+    {
+      "path": "typography.headingxl.letterspacing",
+      "sourcePath": "typography.heading-xl.letterSpacing",
+      "type": "dimension",
+      "value": "0.2px",
+      "status": "unverified",
+      "evidence": {
+        "line": 61,
+        "sourcePath": "typography.heading-xl.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.headinglg.fontfamily",
+      "sourcePath": "typography.heading-lg.fontFamily",
+      "type": "fontFamily",
+      "value": "Inter",
+      "status": "unverified",
+      "evidence": {
+        "line": 64,
+        "sourcePath": "typography.heading-lg.fontFamily"
+      }
+    },
+    {
+      "path": "typography.headinglg.fontsize",
+      "sourcePath": "typography.heading-lg.fontSize",
+      "type": "dimension",
+      "value": "22px",
+      "status": "unverified",
+      "evidence": {
+        "line": 65,
+        "sourcePath": "typography.heading-lg.fontSize"
+      }
+    },
+    {
+      "path": "typography.headinglg.fontweight",
+      "sourcePath": "typography.heading-lg.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 66,
+        "sourcePath": "typography.heading-lg.fontWeight"
+      }
+    },
+    {
+      "path": "typography.headinglg.lineheight",
+      "sourcePath": "typography.heading-lg.lineHeight",
+      "type": "number",
+      "value": 1.15,
+      "status": "unverified",
+      "evidence": {
+        "line": 67,
+        "sourcePath": "typography.heading-lg.lineHeight"
+      }
+    },
+    {
+      "path": "typography.headinglg.letterspacing",
+      "sourcePath": "typography.heading-lg.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 68,
+        "sourcePath": "typography.heading-lg.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.headingmd.fontfamily",
+      "sourcePath": "typography.heading-md.fontFamily",
+      "type": "fontFamily",
+      "value": "Inter",
+      "status": "unverified",
+      "evidence": {
+        "line": 71,
+        "sourcePath": "typography.heading-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.headingmd.fontsize",
+      "sourcePath": "typography.heading-md.fontSize",
+      "type": "dimension",
+      "value": "20px",
+      "status": "unverified",
+      "evidence": {
+        "line": 72,
+        "sourcePath": "typography.heading-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.headingmd.fontweight",
+      "sourcePath": "typography.heading-md.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 73,
+        "sourcePath": "typography.heading-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.headingmd.lineheight",
+      "sourcePath": "typography.heading-md.lineHeight",
+      "type": "number",
+      "value": 1.4,
+      "status": "unverified",
+      "evidence": {
+        "line": 74,
+        "sourcePath": "typography.heading-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.headingmd.letterspacing",
+      "sourcePath": "typography.heading-md.letterSpacing",
+      "type": "dimension",
+      "value": "0.2px",
+      "status": "unverified",
+      "evidence": {
+        "line": 75,
+        "sourcePath": "typography.heading-md.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.headingsm.fontfamily",
+      "sourcePath": "typography.heading-sm.fontFamily",
+      "type": "fontFamily",
+      "value": "Inter",
+      "status": "unverified",
+      "evidence": {
+        "line": 78,
+        "sourcePath": "typography.heading-sm.fontFamily"
+      }
+    },
+    {
+      "path": "typography.headingsm.fontsize",
+      "sourcePath": "typography.heading-sm.fontSize",
+      "type": "dimension",
+      "value": "18px",
+      "status": "unverified",
+      "evidence": {
+        "line": 79,
+        "sourcePath": "typography.heading-sm.fontSize"
+      }
+    },
+    {
+      "path": "typography.headingsm.fontweight",
+      "sourcePath": "typography.heading-sm.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 80,
+        "sourcePath": "typography.heading-sm.fontWeight"
+      }
+    },
+    {
+      "path": "typography.headingsm.lineheight",
+      "sourcePath": "typography.heading-sm.lineHeight",
+      "type": "number",
+      "value": 1.4,
+      "status": "unverified",
+      "evidence": {
+        "line": 81,
+        "sourcePath": "typography.heading-sm.lineHeight"
+      }
+    },
+    {
+      "path": "typography.headingsm.letterspacing",
+      "sourcePath": "typography.heading-sm.letterSpacing",
+      "type": "dimension",
+      "value": "0.2px",
+      "status": "unverified",
+      "evidence": {
+        "line": 82,
+        "sourcePath": "typography.heading-sm.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.bodylg.fontfamily",
+      "sourcePath": "typography.body-lg.fontFamily",
+      "type": "fontFamily",
+      "value": "Inter",
+      "status": "unverified",
+      "evidence": {
+        "line": 85,
+        "sourcePath": "typography.body-lg.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodylg.fontsize",
+      "sourcePath": "typography.body-lg.fontSize",
+      "type": "dimension",
+      "value": "18px",
+      "status": "unverified",
+      "evidence": {
+        "line": 86,
+        "sourcePath": "typography.body-lg.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodylg.fontweight",
+      "sourcePath": "typography.body-lg.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 87,
+        "sourcePath": "typography.body-lg.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodylg.lineheight",
+      "sourcePath": "typography.body-lg.lineHeight",
+      "type": "number",
+      "value": 1.6,
+      "status": "unverified",
+      "evidence": {
+        "line": 88,
+        "sourcePath": "typography.body-lg.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodylg.letterspacing",
+      "sourcePath": "typography.body-lg.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 89,
+        "sourcePath": "typography.body-lg.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.bodymd.fontfamily",
+      "sourcePath": "typography.body-md.fontFamily",
+      "type": "fontFamily",
+      "value": "Inter",
+      "status": "unverified",
+      "evidence": {
+        "line": 92,
+        "sourcePath": "typography.body-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodymd.fontsize",
+      "sourcePath": "typography.body-md.fontSize",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 93,
+        "sourcePath": "typography.body-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodymd.fontweight",
+      "sourcePath": "typography.body-md.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 94,
+        "sourcePath": "typography.body-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodymd.lineheight",
+      "sourcePath": "typography.body-md.lineHeight",
+      "type": "number",
+      "value": 1.6,
+      "status": "unverified",
+      "evidence": {
+        "line": 95,
+        "sourcePath": "typography.body-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodymd.letterspacing",
+      "sourcePath": "typography.body-md.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 96,
+        "sourcePath": "typography.body-md.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.bodystrong.fontfamily",
+      "sourcePath": "typography.body-strong.fontFamily",
+      "type": "fontFamily",
+      "value": "Inter",
+      "status": "unverified",
+      "evidence": {
+        "line": 99,
+        "sourcePath": "typography.body-strong.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodystrong.fontsize",
+      "sourcePath": "typography.body-strong.fontSize",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 100,
+        "sourcePath": "typography.body-strong.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodystrong.fontweight",
+      "sourcePath": "typography.body-strong.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 101,
+        "sourcePath": "typography.body-strong.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodystrong.lineheight",
+      "sourcePath": "typography.body-strong.lineHeight",
+      "type": "number",
+      "value": 1.4,
+      "status": "unverified",
+      "evidence": {
+        "line": 102,
+        "sourcePath": "typography.body-strong.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodystrong.letterspacing",
+      "sourcePath": "typography.body-strong.letterSpacing",
+      "type": "dimension",
+      "value": "0.2px",
+      "status": "unverified",
+      "evidence": {
+        "line": 103,
+        "sourcePath": "typography.body-strong.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.bodysm.fontfamily",
+      "sourcePath": "typography.body-sm.fontFamily",
+      "type": "fontFamily",
+      "value": "Inter",
+      "status": "unverified",
+      "evidence": {
+        "line": 106,
+        "sourcePath": "typography.body-sm.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodysm.fontsize",
+      "sourcePath": "typography.body-sm.fontSize",
+      "type": "dimension",
+      "value": "14px",
+      "status": "unverified",
+      "evidence": {
+        "line": 107,
+        "sourcePath": "typography.body-sm.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodysm.fontweight",
+      "sourcePath": "typography.body-sm.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 108,
+        "sourcePath": "typography.body-sm.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodysm.lineheight",
+      "sourcePath": "typography.body-sm.lineHeight",
+      "type": "number",
+      "value": 1.6,
+      "status": "unverified",
+      "evidence": {
+        "line": 109,
+        "sourcePath": "typography.body-sm.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodysm.letterspacing",
+      "sourcePath": "typography.body-sm.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 110,
+        "sourcePath": "typography.body-sm.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.bodysmstrong.fontfamily",
+      "sourcePath": "typography.body-sm-strong.fontFamily",
+      "type": "fontFamily",
+      "value": "Inter",
+      "status": "unverified",
+      "evidence": {
+        "line": 113,
+        "sourcePath": "typography.body-sm-strong.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodysmstrong.fontsize",
+      "sourcePath": "typography.body-sm-strong.fontSize",
+      "type": "dimension",
+      "value": "14px",
+      "status": "unverified",
+      "evidence": {
+        "line": 114,
+        "sourcePath": "typography.body-sm-strong.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodysmstrong.fontweight",
+      "sourcePath": "typography.body-sm-strong.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 115,
+        "sourcePath": "typography.body-sm-strong.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodysmstrong.lineheight",
+      "sourcePath": "typography.body-sm-strong.lineHeight",
+      "type": "number",
+      "value": 1.6,
+      "status": "unverified",
+      "evidence": {
+        "line": 116,
+        "sourcePath": "typography.body-sm-strong.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodysmstrong.letterspacing",
+      "sourcePath": "typography.body-sm-strong.letterSpacing",
+      "type": "dimension",
+      "value": "0.2px",
+      "status": "unverified",
+      "evidence": {
+        "line": 117,
+        "sourcePath": "typography.body-sm-strong.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.captionmd.fontfamily",
+      "sourcePath": "typography.caption-md.fontFamily",
+      "type": "fontFamily",
+      "value": "Inter",
+      "status": "unverified",
+      "evidence": {
+        "line": 120,
+        "sourcePath": "typography.caption-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.captionmd.fontsize",
+      "sourcePath": "typography.caption-md.fontSize",
+      "type": "dimension",
+      "value": "13px",
+      "status": "unverified",
+      "evidence": {
+        "line": 121,
+        "sourcePath": "typography.caption-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.captionmd.fontweight",
+      "sourcePath": "typography.caption-md.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 122,
+        "sourcePath": "typography.caption-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.captionmd.lineheight",
+      "sourcePath": "typography.caption-md.lineHeight",
+      "type": "number",
+      "value": 1.4,
+      "status": "unverified",
+      "evidence": {
+        "line": 123,
+        "sourcePath": "typography.caption-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.captionmd.letterspacing",
+      "sourcePath": "typography.caption-md.letterSpacing",
+      "type": "dimension",
+      "value": "0.1px",
+      "status": "unverified",
+      "evidence": {
+        "line": 124,
+        "sourcePath": "typography.caption-md.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.captionsm.fontfamily",
+      "sourcePath": "typography.caption-sm.fontFamily",
+      "type": "fontFamily",
+      "value": "Inter",
+      "status": "unverified",
+      "evidence": {
+        "line": 127,
+        "sourcePath": "typography.caption-sm.fontFamily"
+      }
+    },
+    {
+      "path": "typography.captionsm.fontsize",
+      "sourcePath": "typography.caption-sm.fontSize",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 128,
+        "sourcePath": "typography.caption-sm.fontSize"
+      }
+    },
+    {
+      "path": "typography.captionsm.fontweight",
+      "sourcePath": "typography.caption-sm.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 129,
+        "sourcePath": "typography.caption-sm.fontWeight"
+      }
+    },
+    {
+      "path": "typography.captionsm.lineheight",
+      "sourcePath": "typography.caption-sm.lineHeight",
+      "type": "number",
+      "value": 1.5,
+      "status": "unverified",
+      "evidence": {
+        "line": 130,
+        "sourcePath": "typography.caption-sm.lineHeight"
+      }
+    },
+    {
+      "path": "typography.captionsm.letterspacing",
+      "sourcePath": "typography.caption-sm.letterSpacing",
+      "type": "dimension",
+      "value": "0.4px",
+      "status": "unverified",
+      "evidence": {
+        "line": 131,
+        "sourcePath": "typography.caption-sm.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.linkmd.fontfamily",
+      "sourcePath": "typography.link-md.fontFamily",
+      "type": "fontFamily",
+      "value": "Inter",
+      "status": "unverified",
+      "evidence": {
+        "line": 134,
+        "sourcePath": "typography.link-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.linkmd.fontsize",
+      "sourcePath": "typography.link-md.fontSize",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 135,
+        "sourcePath": "typography.link-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.linkmd.fontweight",
+      "sourcePath": "typography.link-md.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 136,
+        "sourcePath": "typography.link-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.linkmd.lineheight",
+      "sourcePath": "typography.link-md.lineHeight",
+      "type": "number",
+      "value": 1.4,
+      "status": "unverified",
+      "evidence": {
+        "line": 137,
+        "sourcePath": "typography.link-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.linkmd.letterspacing",
+      "sourcePath": "typography.link-md.letterSpacing",
+      "type": "dimension",
+      "value": "0.3px",
+      "status": "unverified",
+      "evidence": {
+        "line": 138,
+        "sourcePath": "typography.link-md.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.buttonmd.fontfamily",
+      "sourcePath": "typography.button-md.fontFamily",
+      "type": "fontFamily",
+      "value": "Inter",
+      "status": "unverified",
+      "evidence": {
+        "line": 141,
+        "sourcePath": "typography.button-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.buttonmd.fontsize",
+      "sourcePath": "typography.button-md.fontSize",
+      "type": "dimension",
+      "value": "14px",
+      "status": "unverified",
+      "evidence": {
+        "line": 142,
+        "sourcePath": "typography.button-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.buttonmd.fontweight",
+      "sourcePath": "typography.button-md.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 143,
+        "sourcePath": "typography.button-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.buttonmd.lineheight",
+      "sourcePath": "typography.button-md.lineHeight",
+      "type": "number",
+      "value": 1.6,
+      "status": "unverified",
+      "evidence": {
+        "line": 144,
+        "sourcePath": "typography.button-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.buttonmd.letterspacing",
+      "sourcePath": "typography.button-md.letterSpacing",
+      "type": "dimension",
+      "value": "0.2px",
+      "status": "unverified",
+      "evidence": {
+        "line": 145,
+        "sourcePath": "typography.button-md.letterSpacing"
+      }
+    },
+    {
+      "path": "rounded.none",
+      "sourcePath": "rounded.none",
+      "type": "dimension",
+      "value": "0px",
+      "status": "unverified",
+      "evidence": {
+        "line": 149,
+        "sourcePath": "rounded.none"
+      }
+    },
+    {
+      "path": "rounded.xs",
+      "sourcePath": "rounded.xs",
+      "type": "dimension",
+      "value": "4px",
+      "status": "unverified",
+      "evidence": {
+        "line": 150,
+        "sourcePath": "rounded.xs"
+      }
+    },
+    {
+      "path": "rounded.sm",
+      "sourcePath": "rounded.sm",
+      "type": "dimension",
+      "value": "6px",
+      "status": "unverified",
+      "evidence": {
+        "line": 151,
+        "sourcePath": "rounded.sm"
+      }
+    },
+    {
+      "path": "rounded.md",
+      "sourcePath": "rounded.md",
+      "type": "dimension",
+      "value": "8px",
+      "status": "unverified",
+      "evidence": {
+        "line": 152,
+        "sourcePath": "rounded.md"
+      }
+    },
+    {
+      "path": "rounded.lg",
+      "sourcePath": "rounded.lg",
+      "type": "dimension",
+      "value": "10px",
+      "status": "unverified",
+      "evidence": {
+        "line": 153,
+        "sourcePath": "rounded.lg"
+      }
+    },
+    {
+      "path": "rounded.xl",
+      "sourcePath": "rounded.xl",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 154,
+        "sourcePath": "rounded.xl"
+      }
+    },
+    {
+      "path": "rounded.full",
+      "sourcePath": "rounded.full",
+      "type": "dimension",
+      "value": "9999px",
+      "status": "unverified",
+      "evidence": {
+        "line": 155,
+        "sourcePath": "rounded.full"
+      }
+    },
+    {
+      "path": "spacing.xxs",
+      "sourcePath": "spacing.xxs",
+      "type": "dimension",
+      "value": "2px",
+      "status": "unverified",
+      "evidence": {
+        "line": 158,
+        "sourcePath": "spacing.xxs"
+      }
+    },
+    {
+      "path": "spacing.xs",
+      "sourcePath": "spacing.xs",
+      "type": "dimension",
+      "value": "4px",
+      "status": "unverified",
+      "evidence": {
+        "line": 159,
+        "sourcePath": "spacing.xs"
+      }
+    },
+    {
+      "path": "spacing.sm",
+      "sourcePath": "spacing.sm",
+      "type": "dimension",
+      "value": "8px",
+      "status": "unverified",
+      "evidence": {
+        "line": 160,
+        "sourcePath": "spacing.sm"
+      }
+    },
+    {
+      "path": "spacing.md",
+      "sourcePath": "spacing.md",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 161,
+        "sourcePath": "spacing.md"
+      }
+    },
+    {
+      "path": "spacing.lg",
+      "sourcePath": "spacing.lg",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 162,
+        "sourcePath": "spacing.lg"
+      }
+    },
+    {
+      "path": "spacing.xl",
+      "sourcePath": "spacing.xl",
+      "type": "dimension",
+      "value": "24px",
+      "status": "unverified",
+      "evidence": {
+        "line": 163,
+        "sourcePath": "spacing.xl"
+      }
+    },
+    {
+      "path": "spacing.xxl",
+      "sourcePath": "spacing.xxl",
+      "type": "dimension",
+      "value": "32px",
+      "status": "unverified",
+      "evidence": {
+        "line": 164,
+        "sourcePath": "spacing.xxl"
+      }
+    },
+    {
+      "path": "spacing.section",
+      "sourcePath": "spacing.section",
+      "type": "dimension",
+      "value": "96px",
+      "status": "unverified",
+      "evidence": {
+        "line": 165,
+        "sourcePath": "spacing.section"
+      }
+    }
+  ],
+  "rejectedTokens": [
+    {
+      "sourcePath": "typography.display-xl.fontFeature",
+      "value": "\"calt\", \"kern\", \"liga\", \"ss03\"",
+      "reason": "Not a supported safe CSS literal; preserved in analysis"
+    },
+    {
+      "sourcePath": "typography.display-lg.fontFeature",
+      "value": "\"calt\", \"kern\", \"liga\", \"ss03\"",
+      "reason": "Not a supported safe CSS literal; preserved in analysis"
+    },
+    {
+      "sourcePath": "typography.heading-xl.fontFeature",
+      "value": "\"calt\", \"kern\", \"liga\", \"ss03\"",
+      "reason": "Not a supported safe CSS literal; preserved in analysis"
+    },
+    {
+      "sourcePath": "typography.heading-lg.fontFeature",
+      "value": "\"calt\", \"kern\", \"liga\", \"ss03\"",
+      "reason": "Not a supported safe CSS literal; preserved in analysis"
+    },
+    {
+      "sourcePath": "typography.heading-md.fontFeature",
+      "value": "\"calt\", \"kern\", \"liga\", \"ss03\"",
+      "reason": "Not a supported safe CSS literal; preserved in analysis"
+    },
+    {
+      "sourcePath": "typography.heading-sm.fontFeature",
+      "value": "\"calt\", \"kern\", \"liga\", \"ss03\"",
+      "reason": "Not a supported safe CSS literal; preserved in analysis"
+    },
+    {
+      "sourcePath": "typography.body-lg.fontFeature",
+      "value": "\"calt\", \"kern\", \"liga\", \"ss03\"",
+      "reason": "Not a supported safe CSS literal; preserved in analysis"
+    },
+    {
+      "sourcePath": "typography.body-md.fontFeature",
+      "value": "\"calt\", \"kern\", \"liga\", \"ss03\"",
+      "reason": "Not a supported safe CSS literal; preserved in analysis"
+    },
+    {
+      "sourcePath": "typography.body-strong.fontFeature",
+      "value": "\"calt\", \"kern\", \"liga\", \"ss03\"",
+      "reason": "Not a supported safe CSS literal; preserved in analysis"
+    },
+    {
+      "sourcePath": "typography.body-sm.fontFeature",
+      "value": "\"calt\", \"kern\", \"liga\", \"ss03\"",
+      "reason": "Not a supported safe CSS literal; preserved in analysis"
+    },
+    {
+      "sourcePath": "typography.body-sm-strong.fontFeature",
+      "value": "\"calt\", \"kern\", \"liga\", \"ss03\"",
+      "reason": "Not a supported safe CSS literal; preserved in analysis"
+    },
+    {
+      "sourcePath": "typography.caption-md.fontFeature",
+      "value": "\"calt\", \"kern\", \"liga\", \"ss03\"",
+      "reason": "Not a supported safe CSS literal; preserved in analysis"
+    },
+    {
+      "sourcePath": "typography.caption-sm.fontFeature",
+      "value": "\"calt\", \"kern\", \"liga\", \"ss03\"",
+      "reason": "Not a supported safe CSS literal; preserved in analysis"
+    },
+    {
+      "sourcePath": "typography.link-md.fontFeature",
+      "value": "\"calt\", \"kern\", \"liga\", \"ss03\"",
+      "reason": "Not a supported safe CSS literal; preserved in analysis"
+    },
+    {
+      "sourcePath": "typography.button-md.fontFeature",
+      "value": "\"calt\", \"kern\", \"liga\", \"ss03\"",
+      "reason": "Not a supported safe CSS literal; preserved in analysis"
+    }
+  ],
+  "homepage": {
+    "status": "missing",
+    "candidates": [],
+    "verification": {
+      "status": "verified",
+      "url": "https://www.raycast.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://www.raycast.com/",
+          "title": "Raycast - Your shortcut to everything",
+          "note": "Public homepage read requested https://www.raycast.com; final URL https://www.raycast.com/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    }
+  },
+  "completeness": {
+    "presentFields": [
+      "colors",
+      "typography",
+      "rounded",
+      "spacing",
+      "components"
+    ],
+    "missingFields": [],
+    "tokenRoles": "incomplete",
+    "note": "Missing fields are not reconstructed. Prose-only colors have no inferred semantic role."
+  },
+  "provenance": {
+    "status": "independent-analysis",
+    "sources": [
+      {
+        "title": "VoltAgent awesome-design-md independent analysis",
+        "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/raycast/DESIGN.md"
+      }
+    ],
+    "verification": "unverified-secondary-analysis"
+  },
+  "limitations": [
+    "Independent secondary analysis, not an official brand system; all reported values are unverified.",
+    "No brand assets, logos, font binaries or screenshots copied. Font names are documentary, not font licenses.",
+    "Safe CSS literals are extracted without claiming complete roles, state coverage or visual fidelity.",
+    "Markdown is retained as inert evidence, never executed or rendered as raw HTML."
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "id": "reference-dell-1996",
+  "title": "Dell 1996",
+  "kind": "reference",
+  "renderer": "dom",
+  "summary": "Independent unverified reference",
+  "tokens": "tokens.json",
+  "study": "study.json",
+  "themes": [
+    "analysis"
+  ],
+  "source": {
+    "repository": "https://github.com/VoltAgent/awesome-design-md",
+    "fork": "https://github.com/rsteth/awesome-design-md-p",
+    "revision": "fcc70284932276d085f01ef9f83edde90b1258cb",
+    "path": "design-md/dell-1996/DESIGN.md",
+    "sha256": "e186c614b1223fe7015670472ac6bc84b5b3fdd5de5325b3ce5bfb7fbe9c8d6e",
+    "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/dell-1996/DESIGN.md"
+  },
+  "provenance": {
+    "status": "independent-analysis",
+    "sources": [
+      {
+        "title": "VoltAgent awesome-design-md independent analysis",
+        "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/dell-1996/DESIGN.md"
+      }
+    ],
+    "verification": "unverified-secondary-analysis"
+  },
+  "license": {
+    "spdx": "MIT",
+    "file": "LICENSE",
+    "note": "Upstream analysis copyright (c) 2026 VoltAgent, MIT. Brand names belong to their respective owners; no affiliation or asset/font license is implied."
+  },
+  "fixtures": [
+    {
+      "id": "reference-dell-1996-standard-patterns",
+      "title": "Standard patterns · original compositions",
+      "section": "patterns",
+      "url": "../../reference-sheets/dell-1996/patterns.html",
+      "description": "Three original illustrative patterns composed from the study tokens: overview, search and selection, and editable preferences. Not official or copied site UI.",
+      "states": [
+        "default",
+        "completed",
+        "filtered",
+        "empty",
+        "selected",
+        "invalid",
+        "saved locally",
+        "canceled"
+      ]
+    },
+    {
+      "id": "reference-dell-1996-recipe-sheet",
+      "title": "Source-linked recipe sheet · authored interpretation",
+      "section": "components",
+      "url": "../../reference-sheets/dell-1996/index.html",
+      "description": "Generated visual foundations and component interpretations. Unofficial; neutral authored structure and system fonts, not original product components."
+    },
+    {
+      "id": "dell-1996-components",
+      "title": "The framed catalog components",
+      "section": "components",
+      "url": "../../reference-specimens/dell-1996/index.html?view=components",
+      "description": "Original neutral specimen inferred from unverified secondary analysis; not a branded reproduction."
+    },
+    {
+      "id": "dell-1996-patterns",
+      "title": "The framed catalog interaction pattern",
+      "section": "patterns",
+      "url": "../../reference-specimens/dell-1996/index.html?view=patterns",
+      "description": "Original neutral specimen inferred from unverified secondary analysis; not a branded reproduction."
+    },
+    {
+      "id": "dell-1996-screens",
+      "title": "Meadow Supply overview",
+      "section": "screens",
+      "url": "../../reference-specimens/dell-1996/index.html?view=screens",
+      "description": "Original neutral specimen inferred from unverified secondary analysis; not a branded reproduction."
+    }
+  ],
+  "verification": {
+    "status": "unverified-secondary-analysis",
+    "note": "Source values have not been verified against the brand website."
+  },
+  "specimenProvenance": {
+    "sourceCommit": "fcc70284932276d085f01ef9f83edde90b1258cb",
+    "evidence": "Black frame, white canvas, yellow #fcc20f, ribbon tints sage #b3bd95, salmon #d77a7a and sky #9ab6c8; square corners, Times body, heavy sans headings and a centered roughly 760px catalog.",
+    "inferred": "The garden tool catalog, CSS tool silhouettes, filter behavior and draft dialog are original. Modern semantic HTML, focus outlines, 44px controls and responsive stacking replace historical table layout. No photographs, logos, phone sales block or historical claims are reproduced."
+  }
+}

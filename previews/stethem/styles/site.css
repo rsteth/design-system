@@ -1,0 +1,801 @@
+@import url("../design/tokens.css");
+
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/inter-latin.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Space Grotesk";
+    src: url("../fonts/space-grotesk-latin.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 300 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Space Mono";
+    src: url("../fonts/space-mono-latin.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+
+
+
+body {
+    margin: 0;
+    background: var(--page-background);
+    color: var(--ink);
+    font-family: var(--font-body);
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--font-heading);
+    font-weight: 500;
+}
+
+.portfolio,
+.project-detail,
+.market-river-page {
+    text-transform: lowercase;
+}
+
+code,
+pre,
+kbd,
+samp {
+    text-transform: none;
+}
+
+.container {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 48px 28px 80px;
+}
+
+.centered-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.object-work {
+    margin: 32px 0 0;
+    text-align: left;
+}
+
+.object-work h1 {
+    margin: 28px 0 20px;
+    font-size: clamp(28px, 3.2vw, 38px);
+    letter-spacing: -0.03em;
+    line-height: 1.2;
+}
+
+.object-work p {
+    margin: 24px 0;
+    line-height: 1.6;
+}
+
+.container.portfolio {
+    max-width: 1080px;
+    padding: 48px 28px;
+}
+
+.portfolio-intro {
+    margin: 0 -28px 48px;
+    padding: 40px 28px 32px;
+    background: var(--header-background);
+}
+
+.portfolio-intro h1 {
+    margin: 0;
+    font-size: clamp(48px, 4.2vw, 56px);
+    line-height: 1.1;
+    letter-spacing: -0.035em;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
+    gap: 64px 32px;
+    text-align: left;
+}
+
+.project-card {
+    position: relative;
+    min-width: 0;
+}
+
+.project-card--featured {
+    grid-column: 1 / -1;
+}
+
+.project-card--last {
+    grid-column: 2;
+}
+
+.project-card__content {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Only the title is the link; its ::after stretches over the whole card so
+   the entire card stays clickable while the link text is just the title. */
+.project-card__link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.project-card__link::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+}
+
+.project-thumbnail {
+    position: relative;
+    display: block;
+    aspect-ratio: 4 / 3;
+    width: 100%;
+    overflow: hidden;
+    background: transparent;
+}
+
+.project-thumbnail img {
+    position: absolute;
+    inset: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* The museum keeps its natural composition at the full grid width. */
+.project-card--featured .project-thumbnail {
+    aspect-ratio: auto;
+    overflow: visible;
+}
+
+.project-card--featured .project-thumbnail img {
+    position: static;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Keep the portrait's spoon bowl and the river's mountain/city in view. */
+.project-thumbnail--spoon img {
+    object-position: 50% 23%;
+}
+
+.project-thumbnail--market-river img {
+    object-position: 50% 15%;
+}
+
+.project-card h2 {
+    margin: 18px 0 10px;
+    font-size: 26px;
+    line-height: 1.25;
+    letter-spacing: -0.025em;
+}
+
+.project-card p {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.project-card__action {
+    display: inline-block;
+    margin-top: 14px;
+    color: var(--accent);
+    font-family: var(--font-mono);
+    font-size: 14px;
+    line-height: 1.6;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.25em;
+}
+
+.project-card__link:hover {
+    color: inherit;
+}
+
+.project-card:has(.project-card__link:hover) .project-card__action {
+    color: var(--accent-hover);
+    text-decoration-thickness: 2px;
+}
+
+.project-card:has(.project-card__link:hover) h2 {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.18em;
+}
+
+/* Keyboard focus outlines the whole card, as before. */
+@supports selector(:has(*)) {
+    .project-card__link:focus-visible {
+        outline: none;
+    }
+
+    .project-card:has(.project-card__link:focus-visible) {
+        outline: 2px solid var(--accent);
+        outline-offset: 5px;
+        border-radius: 2px;
+    }
+}
+
+.container.project-detail {
+    padding-top: 48px;
+    padding-bottom: 80px;
+}
+
+.project-detail__back {
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-size: 13px;
+}
+
+@media (max-width: 640px) {
+    body {
+        font-size: 17px;
+    }
+
+    .container.portfolio {
+        padding: 56px 20px 40px;
+    }
+
+    .portfolio-intro {
+        margin-right: -20px;
+        margin-left: -20px;
+        padding: 32px 20px 24px;
+        margin-bottom: 36px;
+    }
+
+    .portfolio-intro h1 {
+        font-size: clamp(36px, 8vw, 40px);
+    }
+
+    .project-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 48px;
+    }
+
+    .project-card--last {
+        grid-column: auto;
+    }
+
+    .project-card p {
+        font-size: 17px;
+    }
+
+    .container.project-detail {
+        padding: 36px 20px 64px;
+    }
+}
+
+.market-river {
+    margin: 24px auto 72px;
+    text-align: left;
+}
+
+.market-river-home {
+    --market-current-width: min(558px, calc(100vw - 32px));
+    --market-current-half: min(279px, calc(50vw - 16px));
+    --market-peek-width: clamp(150px, 20vw, 240px);
+    --market-carousel-edge: max(16px, calc(50vw - var(--market-current-half)));
+    --market-card-body-height: 180px;
+    --market-carousel-height: calc(var(--market-current-width) + var(--market-card-body-height) + 14px);
+}
+
+.market-river__status {
+    margin: 0 0 12px;
+    color: var(--muted);
+    font-size: 13px;
+    text-align: center;
+}
+
+.market-river-home__viewport {
+    overflow-x: auto;
+    overflow-y: hidden;
+    overscroll-behavior-x: contain;
+    scroll-padding-inline: var(--market-carousel-edge);
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    touch-action: pan-y;
+    -webkit-overflow-scrolling: touch;
+    width: 100vw;
+    min-height: var(--market-carousel-height);
+    margin-left: calc(50% - 50vw);
+    padding: 2px 0 4px;
+}
+
+.market-river-home__viewport::-webkit-scrollbar,
+.market-river-gallery__day-rail::-webkit-scrollbar {
+    display: none;
+}
+
+.market-river-home__track {
+    display: flex;
+    width: max-content;
+    gap: 20px;
+    align-items: flex-start;
+    padding: 4px var(--market-carousel-edge) 8px;
+}
+
+.market-river-home .market-river__card {
+    width: var(--market-peek-width);
+}
+
+.market-river-home .market-river__card--current {
+    width: var(--market-current-width);
+}
+
+.market-river-home .market-river__card--current .market-river__card-body {
+    box-sizing: border-box;
+    width: min(500px, calc(100vw - 40px));
+    min-height: var(--market-card-body-height);
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.market-river-gallery .market-river__card--current .market-river__card-body {
+    min-height: var(--market-card-body-height);
+}
+
+.market-river__card {
+    overflow: hidden;
+    min-width: 0;
+    flex: 0 0 auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #fff;
+}
+
+.market-river-home .market-river__card,
+.market-river-gallery .market-river__card {
+    margin-top: calc((var(--market-current-width) - var(--market-peek-width)) / 2);
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    opacity: 0.7;
+    transition:
+        width 180ms ease,
+        margin-top 180ms ease,
+        opacity 180ms ease;
+}
+
+.market-river-home .market-river__card--current,
+.market-river-gallery .market-river__card--current {
+    margin-top: 0;
+    opacity: 1;
+}
+
+.market-river-home .market-river__card:not(.market-river__card--current) .market-river__card-body,
+.market-river-gallery .market-river__card:not(.market-river__card--current) .market-river__card-body {
+    display: none;
+}
+
+.market-river-home .market-river__card:not(.market-river__card--current) .market-river__image-wrap,
+.market-river-gallery .market-river__card:not(.market-river__card--current) .market-river__image-wrap {
+    --market-image-feather: 28px;
+    cursor: pointer;
+}
+
+.market-river__image-wrap,
+.market-river__placeholder,
+.market-river__image-error {
+    display: grid;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    place-items: center;
+    background: #f4f4f4;
+    color: #777;
+    font-size: 13px;
+}
+
+.market-river__image-wrap {
+    --market-image-feather: 48px;
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+}
+
+.market-river__image-wrap::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background:
+        linear-gradient(to right, #fff 0, rgba(255, 255, 255, 0.84) 12px, rgba(255, 255, 255, 0) var(--market-image-feather)),
+        linear-gradient(to left, #fff 0, rgba(255, 255, 255, 0.84) 12px, rgba(255, 255, 255, 0) var(--market-image-feather)),
+        linear-gradient(to bottom, #fff 0, rgba(255, 255, 255, 0.84) 12px, rgba(255, 255, 255, 0) var(--market-image-feather)),
+        linear-gradient(to top, #fff 0, rgba(255, 255, 255, 0.84) 12px, rgba(255, 255, 255, 0) var(--market-image-feather));
+}
+
+.market-river__image-wrap img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.market-river__image-wrap img[hidden],
+.market-river__image-error[hidden] {
+    display: none;
+}
+
+.market-river__image-error {
+    padding: 12px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.market-river__image-link {
+    display: block;
+    color: inherit;
+}
+
+.market-river__image-link:hover {
+    text-decoration: none;
+}
+
+.market-river__image-link:hover img {
+    filter: contrast(1.03);
+}
+
+.market-river__card-body {
+    padding: 12px;
+    text-align: left;
+}
+
+.market-river__eyebrow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 8px;
+    justify-content: space-between;
+    color: var(--muted);
+    font-size: 12px;
+    text-transform: lowercase;
+}
+
+.market-river__eyebrow span {
+    color: #111;
+    font-weight: 700;
+}
+
+.market-river__caption {
+    margin: 10px 0 14px;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.market-river__moods {
+    display: grid;
+    gap: 8px;
+    margin: 0;
+}
+
+.market-river__moods div {
+    min-width: 0;
+}
+
+.market-river__moods dt {
+    margin-bottom: 2px;
+    color: var(--muted);
+    font-size: 11px;
+    text-transform: lowercase;
+}
+
+.market-river__moods dd {
+    margin: 0;
+    overflow-wrap: anywhere;
+    font-size: 13px;
+}
+
+.market-river__metadata {
+    margin: 12px 0 0;
+    font-size: 12px;
+}
+
+.market-river__card--empty {
+    width: var(--market-current-width, 320px);
+    border-style: dashed;
+    color: #777;
+}
+
+.market-river__card--empty h3,
+.market-river__card--empty p {
+    margin-right: 12px;
+    margin-left: 12px;
+    text-align: center;
+}
+
+.market-river__card--empty h3 {
+    margin-top: 12px;
+    margin-bottom: 4px;
+    color: #555;
+    font-size: 14px;
+}
+
+.market-river__card--empty p {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 13px;
+}
+
+.market-river-page {
+    max-width: none;
+    margin: 0;
+    padding: 40px 0 56px;
+    text-align: left;
+}
+
+.market-river-page__back {
+    display: inline-block;
+    margin-left: 24px;
+    color: var(--accent);
+    font-family: var(--font-mono);
+    font-size: 13px;
+}
+
+.market-river-page__header {
+    max-width: 600px;
+    margin: 48px auto 28px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.market-river-page h1 {
+    margin: 0 0 16px;
+    font-size: clamp(36px, 4.2vw, 52px);
+    letter-spacing: -0.035em;
+    line-height: 1.1;
+}
+
+.market-river-gallery {
+    --market-current-width: min(620px, calc(100vw - 48px));
+    --market-current-half: min(310px, calc(50vw - 24px));
+    --market-peek-width: clamp(150px, 22vw, 280px);
+    --market-carousel-edge: max(24px, calc(50vw - var(--market-current-half)));
+    --market-card-body-height: 190px;
+    --market-carousel-height: calc(var(--market-current-width) + var(--market-card-body-height) + 32px);
+    overflow: hidden;
+}
+
+.market-river-gallery__day-rail {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    padding: 4px var(--market-carousel-edge) 28px;
+    scroll-padding-inline: var(--market-carousel-edge);
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    align-items: flex-start;
+    touch-action: pan-y;
+    min-height: var(--market-carousel-height);
+    -webkit-overflow-scrolling: touch;
+}
+
+.market-river-gallery .market-river__card {
+    width: var(--market-peek-width);
+}
+
+.market-river-gallery .market-river__card--current {
+    width: var(--market-current-width);
+}
+
+.market-river-page__repo {
+    margin: 8px 24px 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+.container > a + p {
+    margin-bottom: 60px;
+}
+
+a {
+    color: var(--accent);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.25em;
+}
+
+a:hover {
+    color: var(--accent-hover);
+    text-decoration-thickness: 2px;
+}
+
+a:focus-visible,
+button:focus-visible,
+[tabindex]:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 5px;
+    border-radius: 2px;
+}
+
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4px 24px;
+    margin-top: 20px;
+    color: var(--muted);
+    font-family: var(--font-mono);
+    font-size: 13px;
+    line-height: 2;
+}
+
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 32px;
+}
+
+@media (min-width: 641px) {
+    .market-river-home__viewport,
+    .market-river-gallery__day-rail {
+        overflow-x: hidden;
+        scroll-snap-type: none;
+    }
+}
+
+@media (max-width: 640px) {
+    .container {
+        padding: 30svh 16px 32px;
+    }
+
+    .market-river {
+        margin-bottom: 60px;
+    }
+
+    .market-river-home__track {
+        gap: 14px;
+    }
+
+    .market-river-home,
+    .market-river-gallery {
+        --market-peek-width: 160px;
+    }
+
+    .market-river-page {
+        padding-top: 28px;
+    }
+
+    .market-river-page__back {
+        margin-left: 16px;
+    }
+
+    .market-river-gallery__day-rail {
+        gap: 14px;
+    }
+
+    .market-river-page__repo {
+        margin-right: 16px;
+        margin-left: 16px;
+    }
+}
+
+.market-river-gallery__rail {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+}
+
+/* Keep each scroll viewport within the page instead of its cards’ intrinsic width. */
+.market-river-gallery__day {
+    min-width: 0;
+}
+
+.market-river-gallery__date {
+    margin: 0 24px 8px;
+    text-align: center;
+    color: var(--muted);
+    font-size: 12px;
+    font-weight: normal;
+    text-transform: lowercase;
+}
+
+.market-river-gallery__day:not(.market-river-gallery__day--current) .market-river-gallery__day-rail {
+    min-height: 0;
+}
+
+.market-river-gallery__day:not(.market-river-gallery__day--current) .market-river__card {
+    margin-top: 0;
+}
+
+.market-river-gallery__day--current .market-river-gallery__date {
+    color: #111;
+}
+
+.market-river-gallery .market-river__card:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: -2px;
+}
+
+.market-river-gallery__date button {
+    border: 0;
+    padding: 4px 8px;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    text-transform: inherit;
+    cursor: pointer;
+}
+
+.market-river__status,
+.market-river__eyebrow,
+.market-river__moods dt,
+.market-river__metadata,
+.market-river-page__repo,
+.market-river-gallery__date {
+    font-family: var(--font-mono);
+}
+
+.market-river__eyebrow span {
+    font-weight: 400;
+}
+
+/* The poster remains visible until video playback actually starts. */
+.project-card--featured { position: relative; }
+.museum-animation__video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    pointer-events: none;
+}
+.museum-animation__video[hidden],
+.museum-animation__toggle[hidden] { display: none; }
+.museum-animation__toggle {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    z-index: 1;
+    border: 1px solid currentColor;
+    border-radius: 3px;
+    padding: 6px 10px;
+    background: #fff;
+    color: var(--accent);
+    font: 13px/1.4 var(--font-mono);
+    cursor: pointer;
+}
+.museum-animation__toggle:hover { color: var(--accent-hover); }
+
+/* Learning Machines thumbnail only. The existing stretched link owns interaction. */
+.project-thumbnail--learning .learning-thumbnail-art {display:block;width:100%;height:100%;pointer-events:none;}
+@media (hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference) {
+ .project-thumbnail--learning .learning-thumb-slab {transition:transform 180ms ease-out;}
+ .project-card:has(.project-card__link:hover) .learning-thumb-slab,
+ .project-card:has(.project-card__link:focus-visible) .learning-thumb-slab {transform:translateY(var(--slab-lift));}
+}
+
+/* Arrows (SVG, see learning-machines/arrows.mjs). Thin by default, like the text glyphs they replace. */
+.arrow {display:inline-block;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;overflow:visible;flex-shrink:0;}
+.arrow-w,.arrow-e {width:.62em;height:.28em;vertical-align:.03em;}
+.arrow-n,.arrow-s {width:.38em;height:.56em;vertical-align:.07em;stroke-width:2;}
+.arrow-ne {width:.6em;height:.6em;vertical-align:0;stroke-width:3.1;}
+.arrow-ccw {width:.74em;height:.88em;vertical-align:-.02em;stroke-width:2.1;}
+.arrow-ccw .arrow-head {fill:currentColor;stroke:none;}
+/* Next to link text, margins stand in for the space so the underline covers words only. */
+.arrow-before {margin-right:1ch;}
+.arrow-after {margin-left:.3em;}

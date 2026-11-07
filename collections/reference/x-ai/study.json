@@ -1,0 +1,1421 @@
+{
+  "schemaVersion": 1,
+  "id": "reference-x-ai",
+  "title": "X Ai",
+  "classification": "independent-unverified-analysis",
+  "source": {
+    "repository": "https://github.com/VoltAgent/awesome-design-md",
+    "fork": "https://github.com/rsteth/awesome-design-md-p",
+    "revision": "fcc70284932276d085f01ef9f83edde90b1258cb",
+    "path": "design-md/x.ai/DESIGN.md",
+    "sha256": "9c9ef45d8c0c3b9a7622833cdff8bd125ed6bf296a82cc7274215276706e52eb",
+    "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/x.ai/DESIGN.md"
+  },
+  "sourceName": "xAI-Inspired-design-analysis",
+  "titleProvenance": {
+    "status": "inferred",
+    "basis": "Source directory label, normalized for navigation; original source name is retained without correction.",
+    "sourceValue": "x.ai",
+    "originalName": "xAI-Inspired-design-analysis"
+  },
+  "description": "An inspired interpretation of xAI's design language — Elon Musk's frontier-AI company whose web surface is a strict near-black canvas broken only by white pill outlines, occasional warm sunset / dusk gradient accents, a custom geometric sans (Universal Sans) for display, and an uppercase tracked monospace caption face; the whole system reads as engineered-cosmic, unmarketed.",
+  "analysis": {
+    "version": "alpha",
+    "name": "xAI-Inspired-design-analysis",
+    "description": "An inspired interpretation of xAI's design language — Elon Musk's frontier-AI company whose web surface is a strict near-black canvas broken only by white pill outlines, occasional warm sunset / dusk gradient accents, a custom geometric sans (Universal Sans) for display, and an uppercase tracked monospace caption face; the whole system reads as engineered-cosmic, unmarketed.",
+    "colors": {
+      "primary": "#ffffff",
+      "on-primary": "#0a0a0a",
+      "ink": "#ffffff",
+      "ink-hover": "#fafaf7",
+      "body": "#dadbdf",
+      "body-mid": "#7d8187",
+      "mute": "#7d8187",
+      "hairline": "#212327",
+      "canvas": "#0a0a0a",
+      "canvas-soft": "#1a1c20",
+      "canvas-card": "#191919",
+      "canvas-mid": "#363a3f",
+      "accent-sunset": "#ff7a17",
+      "accent-sunset-soft": "#ffc285",
+      "accent-dusk": "#7c3aed",
+      "accent-twilight": "#c4b5fd",
+      "accent-breeze": "#a0c3ec",
+      "accent-midnight": "#0d1726"
+    },
+    "typography": {
+      "display-xl": {
+        "fontFamily": "universalSans, Inter, system-ui, -apple-system, sans-serif",
+        "fontSize": "96px",
+        "fontWeight": 400,
+        "lineHeight": "96px",
+        "letterSpacing": "-2.4px"
+      },
+      "display-lg": {
+        "fontFamily": "universalSans, Inter, system-ui, sans-serif",
+        "fontSize": "72px",
+        "fontWeight": 400,
+        "lineHeight": "72px",
+        "letterSpacing": "-1.8px"
+      },
+      "display-md": {
+        "fontFamily": "universalSans, Inter, system-ui, sans-serif",
+        "fontSize": "48px",
+        "fontWeight": 400,
+        "lineHeight": "48px",
+        "letterSpacing": "-1.2px"
+      },
+      "display-sm": {
+        "fontFamily": "universalSans, Inter, system-ui, sans-serif",
+        "fontSize": "32px",
+        "fontWeight": 400,
+        "lineHeight": "36px",
+        "letterSpacing": "-0.6px"
+      },
+      "display-xs": {
+        "fontFamily": "universalSans, Inter, system-ui, sans-serif",
+        "fontSize": "20px",
+        "fontWeight": 400,
+        "lineHeight": "28px"
+      },
+      "body-lg": {
+        "fontFamily": "universalSans, Inter, system-ui, sans-serif",
+        "fontSize": "18px",
+        "fontWeight": 400,
+        "lineHeight": "28px"
+      },
+      "body-md": {
+        "fontFamily": "universalSans, Inter, system-ui, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": 400,
+        "lineHeight": "24px"
+      },
+      "body-sm": {
+        "fontFamily": "universalSans, Inter, system-ui, sans-serif",
+        "fontSize": "14px",
+        "fontWeight": 400,
+        "lineHeight": "20px"
+      },
+      "caption-mono": {
+        "fontFamily": "GeistMono, ui-monospace, SFMono-Regular, Menlo, Monaco, monospace",
+        "fontSize": "14px",
+        "fontWeight": 400,
+        "lineHeight": "20px",
+        "letterSpacing": "1.4px"
+      },
+      "caption-mono-sm": {
+        "fontFamily": "GeistMono, ui-monospace, SFMono-Regular, Menlo, monospace",
+        "fontSize": "12px",
+        "fontWeight": 400,
+        "lineHeight": "16px",
+        "letterSpacing": "1.2px"
+      },
+      "button-md": {
+        "fontFamily": "universalSans, Inter, system-ui, sans-serif",
+        "fontSize": "14px",
+        "fontWeight": 400,
+        "lineHeight": "20px"
+      }
+    },
+    "rounded": {
+      "none": "0px",
+      "sm": "8px",
+      "pill": "9999px",
+      "full": "9999px"
+    },
+    "spacing": {
+      "xxs": "2px",
+      "xs": "4px",
+      "sm": "8px",
+      "md": "12px",
+      "lg": "16px",
+      "xl": "24px",
+      "2xl": "32px",
+      "3xl": "48px",
+      "4xl": "64px"
+    },
+    "components": {
+      "nav-bar": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-sm}",
+        "padding": "{spacing.md} {spacing.xl}"
+      },
+      "nav-link": {
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-sm}"
+      },
+      "button-primary": {
+        "backgroundColor": "{colors.primary}",
+        "textColor": "{colors.on-primary}",
+        "borderColor": "{colors.primary}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.pill}",
+        "padding": "{spacing.xs} {spacing.md}"
+      },
+      "button-outline-on-dark": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "borderColor": "{colors.hairline}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.pill}",
+        "padding": "{spacing.sm} {spacing.lg}"
+      },
+      "button-outline-sm": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "borderColor": "{colors.hairline}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.pill}",
+        "padding": "{spacing.xs} {spacing.md}"
+      },
+      "text-input": {
+        "backgroundColor": "{colors.canvas-soft}",
+        "textColor": "{colors.ink}",
+        "borderColor": "{colors.hairline}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.sm}",
+        "padding": "{spacing.md} {spacing.lg}"
+      },
+      "card-content": {
+        "backgroundColor": "{colors.canvas-card}",
+        "textColor": "{colors.ink}",
+        "borderColor": "{colors.hairline}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.sm}",
+        "padding": "{spacing.xl}"
+      },
+      "card-feature-product": {
+        "backgroundColor": "{colors.canvas-card}",
+        "textColor": "{colors.ink}",
+        "borderColor": "{colors.hairline}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.sm}",
+        "padding": "{spacing.xl}"
+      },
+      "hero-band": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.display-xl}",
+        "padding": "{spacing.4xl} {spacing.xl}"
+      },
+      "content-band": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.display-md}",
+        "padding": "{spacing.4xl} {spacing.xl}"
+      },
+      "eyebrow-mono": {
+        "textColor": "{colors.ink}",
+        "typography": "{typography.caption-mono}"
+      },
+      "divider-hairline": {
+        "borderColor": "{colors.hairline}"
+      },
+      "footer": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.body}",
+        "typography": "{typography.body-sm}",
+        "padding": "{spacing.3xl} {spacing.xl}"
+      },
+      "ex-pricing-tier": {
+        "description": "Default Pricing tier card. Re-uses feature-card chrome with brand canvas-soft surface.",
+        "backgroundColor": "{colors.canvas-soft}",
+        "textColor": "{colors.ink}",
+        "borderColor": "{colors.hairline}",
+        "rounded": "{rounded.sm}",
+        "padding": "{spacing.xl}"
+      },
+      "ex-pricing-tier-featured": {
+        "description": "Featured/highlighted tier — polarity-flipped surface (dark fill + light text in light mode, light fill + dark text in dark mode).",
+        "backgroundColor": "{colors.ink}",
+        "textColor": "{colors.on-primary}",
+        "rounded": "{rounded.sm}",
+        "padding": "{spacing.xl}"
+      },
+      "ex-product-selector": {
+        "description": "What's Included summary card — re-purposed for SaaS / B2B verticals (NOT a literal product gallery).",
+        "backgroundColor": "{colors.canvas-soft}",
+        "rounded": "{rounded.sm}",
+        "padding": "{spacing.xl}"
+      },
+      "ex-cart-drawer": {
+        "description": "Subscription summary — re-purposed for SaaS / B2B (line items per add-on, not literal cart).",
+        "backgroundColor": "{colors.canvas}",
+        "rounded": "{rounded.sm}",
+        "padding": "{spacing.xl}",
+        "item-divider": "{colors.hairline}"
+      },
+      "ex-app-shell-row": {
+        "description": "Sidebar nav row inside the App Shell example. Active state uses brand primary as the indicator.",
+        "backgroundColor": "{colors.canvas}",
+        "activeIndicator": "{colors.primary}",
+        "rounded": "{rounded.sm}",
+        "padding": "{spacing.md} {spacing.lg}"
+      },
+      "ex-data-table-cell": {
+        "description": "Default data-table th + td chrome. Header uses mono-caps eyebrow typography; body uses body-sm.",
+        "headerBackground": "{colors.canvas-soft}",
+        "headerTypography": "{typography.caption-mono}",
+        "bodyTypography": "{typography.body-sm}",
+        "cellPadding": "{spacing.md} {spacing.lg}",
+        "rowBorder": "{colors.hairline}"
+      },
+      "ex-auth-form-card": {
+        "description": "Sign-in / sign-up card. Re-uses feature-card chrome with text-input primitives inside.",
+        "backgroundColor": "{colors.canvas-soft}",
+        "rounded": "{rounded.sm}",
+        "padding": "{spacing.xl}"
+      },
+      "ex-modal-card": {
+        "description": "Modal dialog surface — same chrome as feature-card with elevated shadow.",
+        "backgroundColor": "{colors.canvas}",
+        "rounded": "{rounded.sm}",
+        "padding": "{spacing.xl}"
+      },
+      "ex-empty-state-card": {
+        "description": "Empty-state illustration frame.",
+        "backgroundColor": "{colors.canvas-soft}",
+        "rounded": "{rounded.sm}",
+        "padding": "{spacing.3xl}",
+        "captionTypography": "{typography.body-md}"
+      },
+      "ex-toast": {
+        "description": "Toast notification surface — feature-card shape + medium shadow.",
+        "backgroundColor": "{colors.canvas}",
+        "rounded": "{rounded.sm}",
+        "padding": "{spacing.md} {spacing.lg}",
+        "typography": "{typography.body-sm}"
+      }
+    }
+  },
+  "normalizationRepairs": [],
+  "sections": [
+    {
+      "heading": "Overview",
+      "level": 2,
+      "text": "xAI is Elon Musk's frontier-AI lab and the website wears that posture with engineered restraint: a near-black canvas `{colors.canvas}` (`#0a0a0a`) edge-to-edge, white outline pills as every interactive element, and a single proprietary geometric sans `Universal Sans` carrying every display headline at weight 400. There is no gradient hero, no atmospheric backdrop, no product screenshot. The brand reads as confidently sparse — a research lab announcing its work rather than a SaaS marketing site.\n\nType is the second decisive voice. `Universal Sans` carries every display at weight 400 (regular) with aggressive negative tracking (`-2.4 px` at 96 px, scaling down through the display ladder). For technical labels, eyebrows, and metric counters, the brand pairs `Geist Mono` (uppercase, 1.4 px positive tracking) — every section eyebrow reads as a code comment more than a marketing label.\n\nEvery interactive element is a pill (`{rounded.pill}` 9999 px) with 1 px white-translucent border `rgba(255, 255, 255, 0.25)`. The button shape never varies — the same translucent-white pill carries \"Try Grok\", \"Read announcement\", \"Custom Voices\", \"Sign up now\", and every \"Read\" anchor. The pill is the entire shape system.\n\n**Key Characteristics:**\n- A single near-black canvas (`{colors.canvas}` `#0a0a0a`) with white outline pills as the entire interactive vocabulary.\n- Universal Sans weight 400 for display, Geist Mono uppercase tracked for labels — the two-face contrast IS the brand voice.\n- Every button is a `{rounded.pill}` outline with translucent-white border. The brand never uses filled CTAs except for one variant (white-filled pill on Sign Up).\n- Cards are tight `{rounded.sm}` 8 px rectangles in a slightly-lighter `{colors.canvas-card}` (`#191919`) fill with hairline border. No shadows.\n- A muted accent palette of sunset-orange / dusk-purple / twilight-violet / breeze-blue lives in the design tokens but appears rarely on the main marketing surface — reserved for product illustrations / icons.\n- Massive negative letter-spacing on display headlines (`-2.4 px` at 96 px) gives the typography a precise, gathered look.",
+      "line": 242
+    },
+    {
+      "heading": "Colors",
+      "level": 2,
+      "text": "",
+      "line": 258
+    },
+    {
+      "heading": "Brand & Accent",
+      "level": 3,
+      "text": "- **White** (`{colors.primary}` — `#ffffff`): The brand's primary \"color\" — used as button outline, button-primary fill, all display text. The brand's signature is white-on-near-black.\n- **Sunset Orange** (`{colors.accent-sunset}` — `#ff7a17`): A warm orange used inside product illustrations and accent moments.\n- **Sunset Soft** (`{colors.accent-sunset-soft}` — `#ffc285`): The lighter variant of the sunset accent.\n- **Dusk Purple** (`{colors.accent-dusk}` — `#7c3aed`): Deep purple used inside product illustrations.\n- **Twilight** (`{colors.accent-twilight}` — `#c4b5fd`): Soft violet — illustrative accent.\n- **Breeze Blue** (`{colors.accent-breeze}` — `#a0c3ec`): Soft blue — illustrative accent.\n- **Midnight** (`{colors.accent-midnight}` — `#0d1726`): Deep blue-black for illustrative backgrounds.",
+      "line": 260
+    },
+    {
+      "heading": "Surface",
+      "level": 3,
+      "text": "- **Canvas** (`{colors.canvas}` — `#0a0a0a`): The default near-black page background. The brand's only true surface.\n- **Canvas Soft** (`{colors.canvas-soft}` — `#1a1c20`): A slightly lighter dark fill used for hovered nav items and tooltips.\n- **Canvas Card** (`{colors.canvas-card}` — `#191919`): The charcoal card fill used inside product-feature cards.\n- **Canvas Mid** (`{colors.canvas-mid}` — `#363a3f`): A mid-dark used for nested surfaces and code mockup backgrounds.\n- **Hairline** (`{colors.hairline}` — `#212327`): 1 px solid dividers on dark surfaces.",
+      "line": 269
+    },
+    {
+      "heading": "Text",
+      "level": 3,
+      "text": "- **Ink** (`{colors.ink}` — `#ffffff`): Default text on canvas — pure white.\n- **Ink Hover** (`{colors.ink-hover}` — `#fafaf7`): Slightly off-white used for hover states (filtered out per no-hover policy in component specs).\n- **Body** (`{colors.body}` — `#dadbdf`): Secondary body text — supporting copy in lighter weight.\n- **Body Mid / Mute** (`{colors.body-mid}` — `#7d8187`): Mid-emphasis body and mute text — captions, fine print.",
+      "line": 276
+    },
+    {
+      "heading": "Semantic",
+      "level": 3,
+      "text": "The brand doesn't surface a separate semantic palette on the marketing site. Validation cues use the white-on-canvas hierarchy.",
+      "line": 282
+    },
+    {
+      "heading": "Typography",
+      "level": 2,
+      "text": "",
+      "line": 285
+    },
+    {
+      "heading": "Font Family",
+      "level": 3,
+      "text": "Two faces ladder the system:\n1. **universalSans** — proprietary geometric sans used for every display, body, button, and link role. Weight 400 only on the marketing surface (the brand's restraint is part of the voice). Negative letter-spacing at display sizes is the visual signature.\n2. **GeistMono** — used for uppercase section eyebrows, label captions, and metric counters. Positive tracking (1.2 – 1.4 px) at 12 – 14 px.",
+      "line": 287
+    },
+    {
+      "heading": "Hierarchy",
+      "level": 3,
+      "text": "| Token | Size | Weight | Line Height | Letter Spacing | Use |\n|---|---|---|---|---|---|\n| `{typography.display-xl}` | 96px | 400 | 96px | -2.4px | Maximum hero scale. |\n| `{typography.display-lg}` | 72px | 400 | 72px | -1.8px | Sub-hero displays. |\n| `{typography.display-md}` | 48px | 400 | 48px | -1.2px | Section headlines. |\n| `{typography.display-sm}` | 32px | 400 | 36px | -0.6px | Card-cluster headings. |\n| `{typography.display-xs}` | 20px | 400 | 28px | 0 | Inline displays. |\n| `{typography.body-lg}` | 18px | 400 | 28px | 0 | Lead paragraphs. |\n| `{typography.body-md}` | 16px | 400 | 24px | 0 | Default body. |\n| `{typography.body-sm}` | 14px | 400 | 20px | 0 | Secondary body. |\n| `{typography.caption-mono}` | 14px | 400 | 20px | 1.4px | Section eyebrow (GeistMono uppercase). |\n| `{typography.caption-mono-sm}` | 12px | 400 | 16px | 1.2px | Small mono labels. |\n| `{typography.button-md}` | 14px | 400 | 20px | 0 | Button label. |",
+      "line": 292
+    },
+    {
+      "heading": "Principles",
+      "level": 3,
+      "text": "- **Weight 400 for everything.** The brand never bolds. Negative tracking + size hierarchy do the emphasis work.\n- **Tight negative tracking on display sizes.** Reverting to neutral tracking loses the precision feel.\n- **GeistMono uppercase for eyebrows.** Tracked positively (1.4 px) to make the mono read as a code comment.",
+      "line": 308
+    },
+    {
+      "heading": "Note on Font Substitutes",
+      "level": 3,
+      "text": "universalSans is proprietary. Open-source substitutes:\n- **Display + body** — *Inter* weight 400 with `-0.04em` to `-0.02em` letter-spacing at display sizes comes closest. *Geist* is the second-best option.\n- **Mono** — *Geist Mono* is the documented brand companion; *JetBrains Mono* or *IBM Plex Mono* are alternates.",
+      "line": 313
+    },
+    {
+      "heading": "Layout",
+      "level": 2,
+      "text": "",
+      "line": 318
+    },
+    {
+      "heading": "Spacing System",
+      "level": 3,
+      "text": "- **Base unit**: 4 px.\n- **Tokens**: `{spacing.xxs}` 2 px · `{spacing.xs}` 4 px · `{spacing.sm}` 8 px · `{spacing.md}` 12 px · `{spacing.lg}` 16 px · `{spacing.xl}` 24 px · `{spacing.2xl}` 32 px · `{spacing.3xl}` 48 px · `{spacing.4xl}` 64 px.\n- **Section padding**: hero / content bands at `{spacing.4xl}` 64 px on desktop.\n- **Card interior padding**: `{spacing.xl}` 24 px.",
+      "line": 320
+    },
+    {
+      "heading": "Grid & Container",
+      "level": 3,
+      "text": "- Marketing content centres at ~1200 px.\n- Product / announcement card grid: 2-up at desktop, 1-up at mobile.",
+      "line": 326
+    },
+    {
+      "heading": "Responsive Strategy",
+      "level": 3,
+      "text": "",
+      "line": 330
+    },
+    {
+      "heading": "Breakpoints",
+      "level": 4,
+      "text": "| Name | Width | Key Changes |\n|---|---|---|\n| Mobile | < 768px | Hero scales 96 → 48 px; grids 1-up; hamburger nav. |\n| Desktop | ≥ 768px | Full hero + 2-up grids. |",
+      "line": 332
+    },
+    {
+      "heading": "Touch Targets",
+      "level": 4,
+      "text": "Buttons render ~32 – 40 px tall (8 vertical padding + 20 line). Mobile inflates touch area to meet WCAG 44 × 44 px.",
+      "line": 339
+    },
+    {
+      "heading": "Image Behavior",
+      "level": 4,
+      "text": "The brand uses sparse SVG illustrations for product moments (Grok, Voice, API). No photography on the marketing surface.",
+      "line": 342
+    },
+    {
+      "heading": "Elevation & Depth",
+      "level": 2,
+      "text": "| Level | Treatment | Use |\n|---|---|---|\n| Level 0 — Flat | No shadow, no border. | Default. |\n| Level 1 — Hairline | 1 px solid `{colors.hairline}` border. | Card chrome, button outlines (with translucent white). |\n\nThe brand uses no shadows. Hairline borders carry all elevation cues.",
+      "line": 345
+    },
+    {
+      "heading": "Shapes",
+      "level": 2,
+      "text": "",
+      "line": 354
+    },
+    {
+      "heading": "Border Radius Scale",
+      "level": 3,
+      "text": "| Token | Value | Use |\n|---|---|---|\n| `{rounded.none}` | 0px | Full-bleed bands. |\n| `{rounded.sm}` | 8px | Card chrome (the brand's `--radius` value). |\n| `{rounded.pill}` | 9999px | Every button — the brand's universal interactive shape. |\n| `{rounded.full}` | 9999px | Circular icon containers. |",
+      "line": 356
+    },
+    {
+      "heading": "Components",
+      "level": 2,
+      "text": "",
+      "line": 365
+    },
+    {
+      "heading": "Buttons",
+      "level": 3,
+      "text": "**`button-primary`** — the rare white-filled pill (used on a single Sign Up CTA).\n- Background `{colors.primary}` white, text `{colors.on-primary}` near-black, 1 px solid white border, label `{typography.button-md}`, padding `{spacing.xs} {spacing.md}`, shape `{rounded.pill}` 9999 px.\n\n**`button-outline-on-dark`** — the canonical white-outline pill, used for every non-primary CTA.\n- Background `{colors.canvas}` (transparent in practice — `rgba(0,0,0,0)`), text `{colors.ink}` white, 1 px solid `{colors.hairline}` border (translucent white at runtime), same typography / padding scale / shape.\n\n**`button-outline-sm`** — the smaller outline pill used in card-cluster CTAs.\n- Same as `button-outline-on-dark` with tighter padding `{spacing.xs} {spacing.md}`.",
+      "line": 367
+    },
+    {
+      "heading": "Cards & Containers",
+      "level": 3,
+      "text": "**`card-content`** — the default content card.\n- Background `{colors.canvas-card}` (`#191919`), text `{colors.ink}`, 1 px solid `{colors.hairline}` border, padding `{spacing.xl}`, shape `{rounded.sm}` 8 px.\n\n**`card-feature-product`** — the product-feature card (Grok / Voice / API).\n- Same chrome as `card-content`. Hosts an SVG illustration + headline + body + outline pill CTA.",
+      "line": 378
+    },
+    {
+      "heading": "Inputs & Forms",
+      "level": 3,
+      "text": "**`text-input`** — the standard text input on dark.\n- Background `{colors.canvas-soft}`, text `{colors.ink}`, 1 px solid `{colors.hairline}`, body in `{typography.body-md}`, padding `{spacing.md} {spacing.lg}`, shape `{rounded.sm}` 8 px.",
+      "line": 386
+    },
+    {
+      "heading": "Navigation",
+      "level": 3,
+      "text": "**`nav-bar`** — the sticky top nav.\n- Background `{colors.canvas}`, text `{colors.ink}`, padding `{spacing.md} {spacing.xl}`.\n\n**`nav-link`** — link items inside nav.\n- Text `{colors.ink}`, set in `{typography.body-sm}`.\n\n**`footer`** — the footer band.\n- Background `{colors.canvas}`, text `{colors.body}`, padding `{spacing.3xl} {spacing.xl}`. Body in `{typography.body-sm}`.",
+      "line": 391
+    },
+    {
+      "heading": "Signature Components",
+      "level": 3,
+      "text": "**`hero-band`** — the dark hero with massive display headline.\n- Background `{colors.canvas}`, text `{colors.ink}`, padding `{spacing.4xl} {spacing.xl}`. Headline in `{typography.display-xl}` (96 px weight 400 with `-2.4 px` tracking).\n\n**`content-band`** — the standard content section.\n- Background `{colors.canvas}`, text `{colors.ink}`, padding `{spacing.4xl} {spacing.xl}`. Section headline in `{typography.display-md}` preceded by a `{typography.caption-mono}` UPPERCASE GeistMono eyebrow.\n\n**`eyebrow-mono`** — the uppercase tracked GeistMono label above every section headline.\n- Text `{colors.ink}`, set in `{typography.caption-mono}`. The brand's signature label style.\n\n**`divider-hairline`** — the 1 px line between section bands.\n- 1 px solid `{colors.hairline}`.",
+      "line": 402
+    },
+    {
+      "heading": "Examples (illustrative)",
+      "level": 3,
+      "text": "> Auto-derived kit-mirror demonstration surfaces (`scripts/derive-examples-block.mjs`). Each `ex-*` entry references brand-native primitives so downstream consumers (`/preview-design`, `/generate-kit`) re-skin the same 10 surfaces consistently. `TO_FILL` markers indicate missing primitives — resolve in the LLM judgment pass.\n\n**`ex-pricing-tier`** — Default Pricing tier card. Re-uses feature-card chrome with brand canvas-soft surface.\n- Properties: `backgroundColor`, `textColor`, `borderColor`, `rounded`, `padding`\n\n**`ex-pricing-tier-featured`** — Featured/highlighted tier — polarity-flipped surface (dark fill + light text in light mode, light fill + dark text in dark mode).\n- Properties: `backgroundColor`, `textColor`, `rounded`, `padding`\n\n**`ex-product-selector`** — What's Included summary card — re-purposed for SaaS / B2B verticals (NOT a literal product gallery).\n- Properties: `backgroundColor`, `rounded`, `padding`\n\n**`ex-cart-drawer`** — Subscription summary — re-purposed for SaaS / B2B (line items per add-on, not literal cart).\n- Properties: `backgroundColor`, `rounded`, `padding`, `item-divider`\n\n**`ex-app-shell-row`** — Sidebar nav row inside the App Shell example. Active state uses brand primary as the indicator.\n- Properties: `backgroundColor`, `activeIndicator`, `rounded`, `padding`\n\n**`ex-data-table-cell`** — Default data-table th + td chrome. Header uses mono-caps eyebrow typography; body uses body-sm.\n- Properties: `headerBackground`, `headerTypography`, `bodyTypography`, `cellPadding`, `rowBorder`\n\n**`ex-auth-form-card`** — Sign-in / sign-up card. Re-uses feature-card chrome with text-input primitives inside.\n- Properties: `backgroundColor`, `rounded`, `padding`\n\n**`ex-modal-card`** — Modal dialog surface — same chrome as feature-card with elevated shadow.\n- Properties: `backgroundColor`, `rounded`, `padding`\n\n**`ex-empty-state-card`** — Empty-state illustration frame.\n- Properties: `backgroundColor`, `rounded`, `padding`, `captionTypography`\n\n**`ex-toast`** — Toast notification surface — feature-card shape + medium shadow.\n- Properties: `backgroundColor`, `rounded`, `padding`, `typography`",
+      "line": 416
+    },
+    {
+      "heading": "Do's and Don'ts",
+      "level": 2,
+      "text": "",
+      "line": 451
+    },
+    {
+      "heading": "Do",
+      "level": 3,
+      "text": "- Reserve `{colors.canvas}` (`#0a0a0a`) as the only page surface. The brand is dark-canvas only.\n- Set hero headlines in `{typography.display-xl}` Universal Sans weight 400 with `-2.4 px` tracking. The precision IS the voice.\n- Use `{rounded.pill}` 9999 px on every interactive element. The pill is the brand.\n- Pair Universal Sans (sentence-case) with GeistMono UPPERCASE (eyebrows, labels, metric counters).\n- Use white-translucent borders for outline buttons — the brand never uses solid white borders on its outline pill.",
+      "line": 453
+    },
+    {
+      "heading": "Don't",
+      "level": 3,
+      "text": "- Don't introduce a light-mode counterpart. xAI is dark-canvas only.\n- Don't bold display headlines. Weight 400 is the entire scale.\n- Don't use filled buttons broadly. The brand uses outline pills almost exclusively; one Sign Up white-filled pill is the rare exception.\n- Don't drop a drop-shadow on cards. Hairline borders carry elevation.\n- Don't substitute Universal Sans with a generic geometric sans without adjusting letter-spacing. The negative tracking is part of the brand.",
+      "line": 460
+    }
+  ],
+  "tokens": [
+    {
+      "path": "colors.primary",
+      "sourcePath": "colors.primary",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 7,
+        "sourcePath": "colors.primary"
+      }
+    },
+    {
+      "path": "colors.onprimary",
+      "sourcePath": "colors.on-primary",
+      "type": "color",
+      "value": "#0a0a0a",
+      "status": "unverified",
+      "evidence": {
+        "line": 8,
+        "sourcePath": "colors.on-primary"
+      }
+    },
+    {
+      "path": "colors.ink",
+      "sourcePath": "colors.ink",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 9,
+        "sourcePath": "colors.ink"
+      }
+    },
+    {
+      "path": "colors.inkhover",
+      "sourcePath": "colors.ink-hover",
+      "type": "color",
+      "value": "#fafaf7",
+      "status": "unverified",
+      "evidence": {
+        "line": 10,
+        "sourcePath": "colors.ink-hover"
+      }
+    },
+    {
+      "path": "colors.body",
+      "sourcePath": "colors.body",
+      "type": "color",
+      "value": "#dadbdf",
+      "status": "unverified",
+      "evidence": {
+        "line": 11,
+        "sourcePath": "colors.body"
+      }
+    },
+    {
+      "path": "colors.bodymid",
+      "sourcePath": "colors.body-mid",
+      "type": "color",
+      "value": "#7d8187",
+      "status": "unverified",
+      "evidence": {
+        "line": 12,
+        "sourcePath": "colors.body-mid"
+      }
+    },
+    {
+      "path": "colors.mute",
+      "sourcePath": "colors.mute",
+      "type": "color",
+      "value": "#7d8187",
+      "status": "unverified",
+      "evidence": {
+        "line": 13,
+        "sourcePath": "colors.mute"
+      }
+    },
+    {
+      "path": "colors.hairline",
+      "sourcePath": "colors.hairline",
+      "type": "color",
+      "value": "#212327",
+      "status": "unverified",
+      "evidence": {
+        "line": 14,
+        "sourcePath": "colors.hairline"
+      }
+    },
+    {
+      "path": "colors.canvas",
+      "sourcePath": "colors.canvas",
+      "type": "color",
+      "value": "#0a0a0a",
+      "status": "unverified",
+      "evidence": {
+        "line": 15,
+        "sourcePath": "colors.canvas"
+      }
+    },
+    {
+      "path": "colors.canvassoft",
+      "sourcePath": "colors.canvas-soft",
+      "type": "color",
+      "value": "#1a1c20",
+      "status": "unverified",
+      "evidence": {
+        "line": 16,
+        "sourcePath": "colors.canvas-soft"
+      }
+    },
+    {
+      "path": "colors.canvascard",
+      "sourcePath": "colors.canvas-card",
+      "type": "color",
+      "value": "#191919",
+      "status": "unverified",
+      "evidence": {
+        "line": 17,
+        "sourcePath": "colors.canvas-card"
+      }
+    },
+    {
+      "path": "colors.canvasmid",
+      "sourcePath": "colors.canvas-mid",
+      "type": "color",
+      "value": "#363a3f",
+      "status": "unverified",
+      "evidence": {
+        "line": 18,
+        "sourcePath": "colors.canvas-mid"
+      }
+    },
+    {
+      "path": "colors.accentsunset",
+      "sourcePath": "colors.accent-sunset",
+      "type": "color",
+      "value": "#ff7a17",
+      "status": "unverified",
+      "evidence": {
+        "line": 19,
+        "sourcePath": "colors.accent-sunset"
+      }
+    },
+    {
+      "path": "colors.accentsunsetsoft",
+      "sourcePath": "colors.accent-sunset-soft",
+      "type": "color",
+      "value": "#ffc285",
+      "status": "unverified",
+      "evidence": {
+        "line": 20,
+        "sourcePath": "colors.accent-sunset-soft"
+      }
+    },
+    {
+      "path": "colors.accentdusk",
+      "sourcePath": "colors.accent-dusk",
+      "type": "color",
+      "value": "#7c3aed",
+      "status": "unverified",
+      "evidence": {
+        "line": 21,
+        "sourcePath": "colors.accent-dusk"
+      }
+    },
+    {
+      "path": "colors.accenttwilight",
+      "sourcePath": "colors.accent-twilight",
+      "type": "color",
+      "value": "#c4b5fd",
+      "status": "unverified",
+      "evidence": {
+        "line": 22,
+        "sourcePath": "colors.accent-twilight"
+      }
+    },
+    {
+      "path": "colors.accentbreeze",
+      "sourcePath": "colors.accent-breeze",
+      "type": "color",
+      "value": "#a0c3ec",
+      "status": "unverified",
+      "evidence": {
+        "line": 23,
+        "sourcePath": "colors.accent-breeze"
+      }
+    },
+    {
+      "path": "colors.accentmidnight",
+      "sourcePath": "colors.accent-midnight",
+      "type": "color",
+      "value": "#0d1726",
+      "status": "unverified",
+      "evidence": {
+        "line": 24,
+        "sourcePath": "colors.accent-midnight"
+      }
+    },
+    {
+      "path": "typography.displayxl.fontfamily",
+      "sourcePath": "typography.display-xl.fontFamily",
+      "type": "fontFamily",
+      "value": "universalSans, Inter, system-ui, -apple-system, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 28,
+        "sourcePath": "typography.display-xl.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displayxl.fontsize",
+      "sourcePath": "typography.display-xl.fontSize",
+      "type": "dimension",
+      "value": "96px",
+      "status": "unverified",
+      "evidence": {
+        "line": 29,
+        "sourcePath": "typography.display-xl.fontSize"
+      }
+    },
+    {
+      "path": "typography.displayxl.fontweight",
+      "sourcePath": "typography.display-xl.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 30,
+        "sourcePath": "typography.display-xl.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displayxl.lineheight",
+      "sourcePath": "typography.display-xl.lineHeight",
+      "type": "dimension",
+      "value": "96px",
+      "status": "unverified",
+      "evidence": {
+        "line": 31,
+        "sourcePath": "typography.display-xl.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displayxl.letterspacing",
+      "sourcePath": "typography.display-xl.letterSpacing",
+      "type": "dimension",
+      "value": "-2.4px",
+      "status": "unverified",
+      "evidence": {
+        "line": 32,
+        "sourcePath": "typography.display-xl.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.displaylg.fontfamily",
+      "sourcePath": "typography.display-lg.fontFamily",
+      "type": "fontFamily",
+      "value": "universalSans, Inter, system-ui, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 34,
+        "sourcePath": "typography.display-lg.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displaylg.fontsize",
+      "sourcePath": "typography.display-lg.fontSize",
+      "type": "dimension",
+      "value": "72px",
+      "status": "unverified",
+      "evidence": {
+        "line": 35,
+        "sourcePath": "typography.display-lg.fontSize"
+      }
+    },
+    {
+      "path": "typography.displaylg.fontweight",
+      "sourcePath": "typography.display-lg.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 36,
+        "sourcePath": "typography.display-lg.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displaylg.lineheight",
+      "sourcePath": "typography.display-lg.lineHeight",
+      "type": "dimension",
+      "value": "72px",
+      "status": "unverified",
+      "evidence": {
+        "line": 37,
+        "sourcePath": "typography.display-lg.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displaylg.letterspacing",
+      "sourcePath": "typography.display-lg.letterSpacing",
+      "type": "dimension",
+      "value": "-1.8px",
+      "status": "unverified",
+      "evidence": {
+        "line": 38,
+        "sourcePath": "typography.display-lg.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.displaymd.fontfamily",
+      "sourcePath": "typography.display-md.fontFamily",
+      "type": "fontFamily",
+      "value": "universalSans, Inter, system-ui, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 40,
+        "sourcePath": "typography.display-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displaymd.fontsize",
+      "sourcePath": "typography.display-md.fontSize",
+      "type": "dimension",
+      "value": "48px",
+      "status": "unverified",
+      "evidence": {
+        "line": 41,
+        "sourcePath": "typography.display-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.displaymd.fontweight",
+      "sourcePath": "typography.display-md.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 42,
+        "sourcePath": "typography.display-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displaymd.lineheight",
+      "sourcePath": "typography.display-md.lineHeight",
+      "type": "dimension",
+      "value": "48px",
+      "status": "unverified",
+      "evidence": {
+        "line": 43,
+        "sourcePath": "typography.display-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displaymd.letterspacing",
+      "sourcePath": "typography.display-md.letterSpacing",
+      "type": "dimension",
+      "value": "-1.2px",
+      "status": "unverified",
+      "evidence": {
+        "line": 44,
+        "sourcePath": "typography.display-md.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.displaysm.fontfamily",
+      "sourcePath": "typography.display-sm.fontFamily",
+      "type": "fontFamily",
+      "value": "universalSans, Inter, system-ui, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 46,
+        "sourcePath": "typography.display-sm.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displaysm.fontsize",
+      "sourcePath": "typography.display-sm.fontSize",
+      "type": "dimension",
+      "value": "32px",
+      "status": "unverified",
+      "evidence": {
+        "line": 47,
+        "sourcePath": "typography.display-sm.fontSize"
+      }
+    },
+    {
+      "path": "typography.displaysm.fontweight",
+      "sourcePath": "typography.display-sm.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 48,
+        "sourcePath": "typography.display-sm.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displaysm.lineheight",
+      "sourcePath": "typography.display-sm.lineHeight",
+      "type": "dimension",
+      "value": "36px",
+      "status": "unverified",
+      "evidence": {
+        "line": 49,
+        "sourcePath": "typography.display-sm.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displaysm.letterspacing",
+      "sourcePath": "typography.display-sm.letterSpacing",
+      "type": "dimension",
+      "value": "-0.6px",
+      "status": "unverified",
+      "evidence": {
+        "line": 50,
+        "sourcePath": "typography.display-sm.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.displayxs.fontfamily",
+      "sourcePath": "typography.display-xs.fontFamily",
+      "type": "fontFamily",
+      "value": "universalSans, Inter, system-ui, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 52,
+        "sourcePath": "typography.display-xs.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displayxs.fontsize",
+      "sourcePath": "typography.display-xs.fontSize",
+      "type": "dimension",
+      "value": "20px",
+      "status": "unverified",
+      "evidence": {
+        "line": 53,
+        "sourcePath": "typography.display-xs.fontSize"
+      }
+    },
+    {
+      "path": "typography.displayxs.fontweight",
+      "sourcePath": "typography.display-xs.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 54,
+        "sourcePath": "typography.display-xs.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displayxs.lineheight",
+      "sourcePath": "typography.display-xs.lineHeight",
+      "type": "dimension",
+      "value": "28px",
+      "status": "unverified",
+      "evidence": {
+        "line": 55,
+        "sourcePath": "typography.display-xs.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodylg.fontfamily",
+      "sourcePath": "typography.body-lg.fontFamily",
+      "type": "fontFamily",
+      "value": "universalSans, Inter, system-ui, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 57,
+        "sourcePath": "typography.body-lg.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodylg.fontsize",
+      "sourcePath": "typography.body-lg.fontSize",
+      "type": "dimension",
+      "value": "18px",
+      "status": "unverified",
+      "evidence": {
+        "line": 58,
+        "sourcePath": "typography.body-lg.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodylg.fontweight",
+      "sourcePath": "typography.body-lg.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 59,
+        "sourcePath": "typography.body-lg.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodylg.lineheight",
+      "sourcePath": "typography.body-lg.lineHeight",
+      "type": "dimension",
+      "value": "28px",
+      "status": "unverified",
+      "evidence": {
+        "line": 60,
+        "sourcePath": "typography.body-lg.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodymd.fontfamily",
+      "sourcePath": "typography.body-md.fontFamily",
+      "type": "fontFamily",
+      "value": "universalSans, Inter, system-ui, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 62,
+        "sourcePath": "typography.body-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodymd.fontsize",
+      "sourcePath": "typography.body-md.fontSize",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 63,
+        "sourcePath": "typography.body-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodymd.fontweight",
+      "sourcePath": "typography.body-md.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 64,
+        "sourcePath": "typography.body-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodymd.lineheight",
+      "sourcePath": "typography.body-md.lineHeight",
+      "type": "dimension",
+      "value": "24px",
+      "status": "unverified",
+      "evidence": {
+        "line": 65,
+        "sourcePath": "typography.body-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodysm.fontfamily",
+      "sourcePath": "typography.body-sm.fontFamily",
+      "type": "fontFamily",
+      "value": "universalSans, Inter, system-ui, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 67,
+        "sourcePath": "typography.body-sm.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodysm.fontsize",
+      "sourcePath": "typography.body-sm.fontSize",
+      "type": "dimension",
+      "value": "14px",
+      "status": "unverified",
+      "evidence": {
+        "line": 68,
+        "sourcePath": "typography.body-sm.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodysm.fontweight",
+      "sourcePath": "typography.body-sm.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 69,
+        "sourcePath": "typography.body-sm.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodysm.lineheight",
+      "sourcePath": "typography.body-sm.lineHeight",
+      "type": "dimension",
+      "value": "20px",
+      "status": "unverified",
+      "evidence": {
+        "line": 70,
+        "sourcePath": "typography.body-sm.lineHeight"
+      }
+    },
+    {
+      "path": "typography.captionmono.fontfamily",
+      "sourcePath": "typography.caption-mono.fontFamily",
+      "type": "fontFamily",
+      "value": "GeistMono, ui-monospace, SFMono-Regular, Menlo, Monaco, monospace",
+      "status": "unverified",
+      "evidence": {
+        "line": 72,
+        "sourcePath": "typography.caption-mono.fontFamily"
+      }
+    },
+    {
+      "path": "typography.captionmono.fontsize",
+      "sourcePath": "typography.caption-mono.fontSize",
+      "type": "dimension",
+      "value": "14px",
+      "status": "unverified",
+      "evidence": {
+        "line": 73,
+        "sourcePath": "typography.caption-mono.fontSize"
+      }
+    },
+    {
+      "path": "typography.captionmono.fontweight",
+      "sourcePath": "typography.caption-mono.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 74,
+        "sourcePath": "typography.caption-mono.fontWeight"
+      }
+    },
+    {
+      "path": "typography.captionmono.lineheight",
+      "sourcePath": "typography.caption-mono.lineHeight",
+      "type": "dimension",
+      "value": "20px",
+      "status": "unverified",
+      "evidence": {
+        "line": 75,
+        "sourcePath": "typography.caption-mono.lineHeight"
+      }
+    },
+    {
+      "path": "typography.captionmono.letterspacing",
+      "sourcePath": "typography.caption-mono.letterSpacing",
+      "type": "dimension",
+      "value": "1.4px",
+      "status": "unverified",
+      "evidence": {
+        "line": 76,
+        "sourcePath": "typography.caption-mono.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.captionmonosm.fontfamily",
+      "sourcePath": "typography.caption-mono-sm.fontFamily",
+      "type": "fontFamily",
+      "value": "GeistMono, ui-monospace, SFMono-Regular, Menlo, monospace",
+      "status": "unverified",
+      "evidence": {
+        "line": 78,
+        "sourcePath": "typography.caption-mono-sm.fontFamily"
+      }
+    },
+    {
+      "path": "typography.captionmonosm.fontsize",
+      "sourcePath": "typography.caption-mono-sm.fontSize",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 79,
+        "sourcePath": "typography.caption-mono-sm.fontSize"
+      }
+    },
+    {
+      "path": "typography.captionmonosm.fontweight",
+      "sourcePath": "typography.caption-mono-sm.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 80,
+        "sourcePath": "typography.caption-mono-sm.fontWeight"
+      }
+    },
+    {
+      "path": "typography.captionmonosm.lineheight",
+      "sourcePath": "typography.caption-mono-sm.lineHeight",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 81,
+        "sourcePath": "typography.caption-mono-sm.lineHeight"
+      }
+    },
+    {
+      "path": "typography.captionmonosm.letterspacing",
+      "sourcePath": "typography.caption-mono-sm.letterSpacing",
+      "type": "dimension",
+      "value": "1.2px",
+      "status": "unverified",
+      "evidence": {
+        "line": 82,
+        "sourcePath": "typography.caption-mono-sm.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.buttonmd.fontfamily",
+      "sourcePath": "typography.button-md.fontFamily",
+      "type": "fontFamily",
+      "value": "universalSans, Inter, system-ui, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 84,
+        "sourcePath": "typography.button-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.buttonmd.fontsize",
+      "sourcePath": "typography.button-md.fontSize",
+      "type": "dimension",
+      "value": "14px",
+      "status": "unverified",
+      "evidence": {
+        "line": 85,
+        "sourcePath": "typography.button-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.buttonmd.fontweight",
+      "sourcePath": "typography.button-md.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 86,
+        "sourcePath": "typography.button-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.buttonmd.lineheight",
+      "sourcePath": "typography.button-md.lineHeight",
+      "type": "dimension",
+      "value": "20px",
+      "status": "unverified",
+      "evidence": {
+        "line": 87,
+        "sourcePath": "typography.button-md.lineHeight"
+      }
+    },
+    {
+      "path": "rounded.none",
+      "sourcePath": "rounded.none",
+      "type": "dimension",
+      "value": "0px",
+      "status": "unverified",
+      "evidence": {
+        "line": 90,
+        "sourcePath": "rounded.none"
+      }
+    },
+    {
+      "path": "rounded.sm",
+      "sourcePath": "rounded.sm",
+      "type": "dimension",
+      "value": "8px",
+      "status": "unverified",
+      "evidence": {
+        "line": 91,
+        "sourcePath": "rounded.sm"
+      }
+    },
+    {
+      "path": "rounded.pill",
+      "sourcePath": "rounded.pill",
+      "type": "dimension",
+      "value": "9999px",
+      "status": "unverified",
+      "evidence": {
+        "line": 92,
+        "sourcePath": "rounded.pill"
+      }
+    },
+    {
+      "path": "rounded.full",
+      "sourcePath": "rounded.full",
+      "type": "dimension",
+      "value": "9999px",
+      "status": "unverified",
+      "evidence": {
+        "line": 93,
+        "sourcePath": "rounded.full"
+      }
+    },
+    {
+      "path": "spacing.xxs",
+      "sourcePath": "spacing.xxs",
+      "type": "dimension",
+      "value": "2px",
+      "status": "unverified",
+      "evidence": {
+        "line": 96,
+        "sourcePath": "spacing.xxs"
+      }
+    },
+    {
+      "path": "spacing.xs",
+      "sourcePath": "spacing.xs",
+      "type": "dimension",
+      "value": "4px",
+      "status": "unverified",
+      "evidence": {
+        "line": 97,
+        "sourcePath": "spacing.xs"
+      }
+    },
+    {
+      "path": "spacing.sm",
+      "sourcePath": "spacing.sm",
+      "type": "dimension",
+      "value": "8px",
+      "status": "unverified",
+      "evidence": {
+        "line": 98,
+        "sourcePath": "spacing.sm"
+      }
+    },
+    {
+      "path": "spacing.md",
+      "sourcePath": "spacing.md",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 99,
+        "sourcePath": "spacing.md"
+      }
+    },
+    {
+      "path": "spacing.lg",
+      "sourcePath": "spacing.lg",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 100,
+        "sourcePath": "spacing.lg"
+      }
+    },
+    {
+      "path": "spacing.xl",
+      "sourcePath": "spacing.xl",
+      "type": "dimension",
+      "value": "24px",
+      "status": "unverified",
+      "evidence": {
+        "line": 101,
+        "sourcePath": "spacing.xl"
+      }
+    },
+    {
+      "path": "spacing.v2xl",
+      "sourcePath": "spacing.2xl",
+      "type": "dimension",
+      "value": "32px",
+      "status": "unverified",
+      "evidence": {
+        "line": 102,
+        "sourcePath": "spacing.2xl"
+      }
+    },
+    {
+      "path": "spacing.v3xl",
+      "sourcePath": "spacing.3xl",
+      "type": "dimension",
+      "value": "48px",
+      "status": "unverified",
+      "evidence": {
+        "line": 103,
+        "sourcePath": "spacing.3xl"
+      }
+    },
+    {
+      "path": "spacing.v4xl",
+      "sourcePath": "spacing.4xl",
+      "type": "dimension",
+      "value": "64px",
+      "status": "unverified",
+      "evidence": {
+        "line": 104,
+        "sourcePath": "spacing.4xl"
+      }
+    }
+  ],
+  "rejectedTokens": [],
+  "homepage": {
+    "status": "missing",
+    "candidates": [],
+    "verification": {
+      "status": "verified",
+      "url": "https://x.ai/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://x.ai/",
+          "title": "SpaceXSI",
+          "note": "Public homepage read requested https://x.ai; final URL https://x.ai/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity. Observed current page title is SpaceXSI; Grok product links and console.x.ai/documentation links establish continuity with the x.ai domain, not unchanged branding."
+    }
+  },
+  "completeness": {
+    "presentFields": [
+      "colors",
+      "typography",
+      "rounded",
+      "spacing",
+      "components"
+    ],
+    "missingFields": [],
+    "tokenRoles": "incomplete",
+    "note": "Missing fields are not reconstructed. Prose-only colors have no inferred semantic role."
+  },
+  "provenance": {
+    "status": "independent-analysis",
+    "sources": [
+      {
+        "title": "VoltAgent awesome-design-md independent analysis",
+        "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/x.ai/DESIGN.md"
+      }
+    ],
+    "verification": "unverified-secondary-analysis"
+  },
+  "limitations": [
+    "Independent secondary analysis, not an official brand system; all reported values are unverified.",
+    "No brand assets, logos, font binaries or screenshots copied. Font names are documentary, not font licenses.",
+    "Safe CSS literals are extracted without claiming complete roles, state coverage or visual fidelity.",
+    "Markdown is retained as inert evidence, never executed or rendered as raw HTML."
+  ]
+}

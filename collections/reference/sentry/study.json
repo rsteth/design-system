@@ -1,0 +1,1875 @@
+{
+  "schemaVersion": 1,
+  "id": "reference-sentry",
+  "title": "Sentry",
+  "classification": "independent-unverified-analysis",
+  "source": {
+    "repository": "https://github.com/VoltAgent/awesome-design-md",
+    "fork": "https://github.com/rsteth/awesome-design-md-p",
+    "revision": "fcc70284932276d085f01ef9f83edde90b1258cb",
+    "path": "design-md/sentry/DESIGN.md",
+    "sha256": "655c91d7d23b5e869a966b7f1b63ae650567ad5d69003cfc64b0ee62c8e02c1f",
+    "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/sentry/DESIGN.md"
+  },
+  "sourceName": "Sentri-Inspired-design-analysis",
+  "titleProvenance": {
+    "status": "inferred",
+    "basis": "Source directory label, normalized for navigation; original source name is retained without correction.",
+    "sourceValue": "sentry",
+    "originalName": "Sentri-Inspired-design-analysis"
+  },
+  "description": "An inspired interpretation of Sentri's design language — a developer-tools brand built on a deep purple-violet midnight canvas, electric lime accents, and a slightly subversive illustrated personality. The system pairs a custom display sans (chunky, playful, near-condensed) with the open Rubik family for UI copy and Monaco for code, then leans on dark-on-light pricing surfaces, sticker-style mascots, and a single-color CTA hierarchy where black-violet buttons read as the primary action against either polarity.",
+  "analysis": {
+    "version": "alpha",
+    "name": "Sentri-Inspired-design-analysis",
+    "description": "An inspired interpretation of Sentri's design language — a developer-tools brand built on a deep purple-violet midnight canvas, electric lime accents, and a slightly subversive illustrated personality. The system pairs a custom display sans (chunky, playful, near-condensed) with the open Rubik family for UI copy and Monaco for code, then leans on dark-on-light pricing surfaces, sticker-style mascots, and a single-color CTA hierarchy where black-violet buttons read as the primary action against either polarity.",
+    "colors": {
+      "primary": "#150f23",
+      "ink-deep": "#1f1633",
+      "on-primary": "#ffffff",
+      "accent-lime": "#c2ef4e",
+      "accent-pink": "#fa7faa",
+      "accent-violet": "#6a5fc1",
+      "accent-violet-deep": "#422082",
+      "accent-violet-mid": "#79628c",
+      "surface-canvas-dark": "#1f1633",
+      "surface-canvas-light": "#ffffff",
+      "surface-night": "#150f23",
+      "surface-press-light": "#f0f0f0",
+      "surface-press-stronger": "#efefef",
+      "hairline-violet": "#362d59",
+      "hairline-cool": "#cfcfdb",
+      "hairline-cloud": "#e5e7eb",
+      "ink": "#1f1633",
+      "ink-press": "#1a1a1a",
+      "on-dark-muted": "#bdb8c0",
+      "on-dark-faint": "#3f3849",
+      "ring-focus": "#9dc1f5"
+    },
+    "typography": {
+      "display-hero": {
+        "fontFamily": "Sentri Display, Rubik, system-ui, sans-serif",
+        "fontSize": "88px",
+        "fontWeight": 700,
+        "lineHeight": 1.2,
+        "letterSpacing": 0
+      },
+      "display-large": {
+        "fontFamily": "Sentri Display, Rubik, system-ui, sans-serif",
+        "fontSize": "60px",
+        "fontWeight": 500,
+        "lineHeight": 1.1,
+        "letterSpacing": 0
+      },
+      "heading-xl": {
+        "fontFamily": "Rubik, -apple-system, system-ui, Segoe UI, Helvetica, Arial, sans-serif",
+        "fontSize": "30px",
+        "fontWeight": 500,
+        "lineHeight": 1.2,
+        "letterSpacing": 0
+      },
+      "heading-lg": {
+        "fontFamily": "Rubik, -apple-system, system-ui, sans-serif",
+        "fontSize": "27px",
+        "fontWeight": 500,
+        "lineHeight": 1.25,
+        "letterSpacing": 0
+      },
+      "heading-md": {
+        "fontFamily": "Rubik, -apple-system, system-ui, sans-serif",
+        "fontSize": "24px",
+        "fontWeight": 500,
+        "lineHeight": 1.25,
+        "letterSpacing": 0
+      },
+      "heading-sm": {
+        "fontFamily": "Rubik, -apple-system, system-ui, sans-serif",
+        "fontSize": "20px",
+        "fontWeight": 600,
+        "lineHeight": 1.25,
+        "letterSpacing": 0
+      },
+      "body-lg": {
+        "fontFamily": "Rubik, -apple-system, system-ui, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": 400,
+        "lineHeight": 2,
+        "letterSpacing": 0
+      },
+      "body-strong": {
+        "fontFamily": "Rubik, -apple-system, system-ui, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": 600,
+        "lineHeight": 1.5,
+        "letterSpacing": 0
+      },
+      "body-md": {
+        "fontFamily": "Rubik, -apple-system, system-ui, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": 500,
+        "lineHeight": 1.5,
+        "letterSpacing": 0
+      },
+      "eyebrow": {
+        "fontFamily": "Rubik, -apple-system, system-ui, sans-serif",
+        "fontSize": "15px",
+        "fontWeight": 500,
+        "lineHeight": 1.4,
+        "letterSpacing": 0
+      },
+      "button-cap": {
+        "fontFamily": "Rubik, -apple-system, system-ui, sans-serif",
+        "fontSize": "14px",
+        "fontWeight": 700,
+        "lineHeight": 1.14,
+        "letterSpacing": "0.2px"
+      },
+      "button-cap-light": {
+        "fontFamily": "Rubik, -apple-system, system-ui, sans-serif",
+        "fontSize": "14px",
+        "fontWeight": 500,
+        "lineHeight": 1.29,
+        "letterSpacing": "0.2px"
+      },
+      "caption": {
+        "fontFamily": "Rubik, -apple-system, system-ui, sans-serif",
+        "fontSize": "14px",
+        "fontWeight": 400,
+        "lineHeight": 1.43,
+        "letterSpacing": 0
+      },
+      "micro-cap": {
+        "fontFamily": "Rubik, -apple-system, system-ui, sans-serif",
+        "fontSize": "10px",
+        "fontWeight": 600,
+        "lineHeight": 1.8,
+        "letterSpacing": "0.25px"
+      },
+      "code": {
+        "fontFamily": "Monaco, Menlo, Ubuntu Mono, monospace",
+        "fontSize": "16px",
+        "fontWeight": 400,
+        "lineHeight": 1.5,
+        "letterSpacing": 0
+      },
+      "code-strong": {
+        "fontFamily": "Monaco, Menlo, Ubuntu Mono, monospace",
+        "fontSize": "16px",
+        "fontWeight": 700,
+        "lineHeight": 1.5,
+        "letterSpacing": 0
+      }
+    },
+    "rounded": {
+      "xs": "4px",
+      "sm": "6px",
+      "md": "8px",
+      "lg": "10px",
+      "xl": "12px",
+      "xxl": "18px",
+      "full": "9999px"
+    },
+    "spacing": {
+      "xxs": "2px",
+      "xs": "4px",
+      "sm": "8px",
+      "md": "12px",
+      "lg": "16px",
+      "xl": "24px",
+      "xxl": "32px",
+      "section": "96px"
+    },
+    "components": {
+      "button-primary": {
+        "backgroundColor": "{colors.primary}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.button-cap}",
+        "rounded": "{rounded.md}",
+        "padding": "12px 16px"
+      },
+      "button-primary-pressed": {
+        "backgroundColor": "{colors.surface-press-stronger}",
+        "textColor": "{colors.ink-press}",
+        "typography": "{typography.button-cap}",
+        "rounded": "{rounded.md}",
+        "padding": "12px 16px"
+      },
+      "button-inverted": {
+        "backgroundColor": "{colors.on-primary}",
+        "textColor": "{colors.ink-deep}",
+        "typography": "{typography.button-cap}",
+        "rounded": "{rounded.md}",
+        "padding": "12px 16px"
+      },
+      "button-inverted-pressed": {
+        "backgroundColor": "{colors.surface-press-light}",
+        "textColor": "{colors.ink-press}",
+        "typography": "{typography.button-cap}",
+        "rounded": "{rounded.md}",
+        "padding": "12px 16px"
+      },
+      "button-ghost-on-dark": {
+        "backgroundColor": "{colors.on-dark-faint}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.button-cap}",
+        "rounded": "{rounded.xl}",
+        "padding": "8px"
+      },
+      "button-violet-token": {
+        "backgroundColor": "{colors.accent-violet-mid}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.button-cap-light}",
+        "rounded": "{rounded.xl}",
+        "padding": "8px 16px"
+      },
+      "button-disabled": {
+        "backgroundColor": "{colors.hairline-cloud}",
+        "textColor": "{colors.on-dark-muted}",
+        "typography": "{typography.button-cap}",
+        "rounded": "{rounded.md}",
+        "padding": "12px 16px"
+      },
+      "pill-neutral-dark": {
+        "backgroundColor": "{colors.surface-night}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.caption}",
+        "rounded": "{rounded.xs}",
+        "padding": "4px 8px"
+      },
+      "chip-lime-keyword": {
+        "backgroundColor": "{colors.accent-lime}",
+        "textColor": "{colors.ink-deep}",
+        "typography": "{typography.display-hero}",
+        "rounded": "{rounded.xs}",
+        "padding": "0 12px"
+      },
+      "text-input": {
+        "backgroundColor": "{colors.surface-canvas-light}",
+        "textColor": "{colors.ink-deep}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.sm}",
+        "padding": "8px 12px"
+      },
+      "text-input-focused": {
+        "backgroundColor": "{colors.surface-canvas-light}",
+        "textColor": "{colors.ink-deep}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.sm}",
+        "padding": "8px 12px"
+      },
+      "select-violet": {
+        "backgroundColor": "{colors.accent-violet-deep}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.md}",
+        "padding": "8px 16px"
+      },
+      "card-pricing": {
+        "backgroundColor": "{colors.surface-canvas-light}",
+        "textColor": "{colors.ink-deep}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.xl}",
+        "padding": "32px"
+      },
+      "card-pricing-featured": {
+        "backgroundColor": "{colors.surface-night}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.xl}",
+        "padding": "32px"
+      },
+      "card-feature-dark": {
+        "backgroundColor": "{colors.ink-deep}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.body-lg}",
+        "rounded": "{rounded.xxl}",
+        "padding": "32px"
+      },
+      "card-spotlight-violet": {
+        "backgroundColor": "{colors.accent-violet-deep}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.body-lg}",
+        "rounded": "{rounded.xxl}",
+        "padding": "32px"
+      },
+      "code-block": {
+        "backgroundColor": "{colors.surface-night}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.code}",
+        "rounded": "{rounded.md}",
+        "padding": "16px"
+      },
+      "link-on-dark": {
+        "backgroundColor": "{colors.surface-canvas-dark}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.xs}",
+        "padding": "0px"
+      },
+      "link-on-light": {
+        "backgroundColor": "{colors.surface-canvas-light}",
+        "textColor": "{colors.ink-deep}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.xs}",
+        "padding": "0px"
+      },
+      "nav-bar-light": {
+        "backgroundColor": "{colors.surface-canvas-light}",
+        "textColor": "{colors.ink-deep}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.xs}",
+        "padding": "16px 24px"
+      },
+      "footer-light": {
+        "backgroundColor": "{colors.surface-canvas-light}",
+        "textColor": "{colors.ink-deep}",
+        "typography": "{typography.caption}",
+        "rounded": "{rounded.xs}",
+        "padding": "32px 24px"
+      }
+    }
+  },
+  "normalizationRepairs": [],
+  "sections": [
+    {
+      "heading": "Overview",
+      "level": 2,
+      "text": "Sentri's design language reads like a debugging console wearing a leather jacket. The home and product surfaces sit on a near-black violet midnight (`{colors.surface-canvas-dark}` / `{colors.surface-night}`), strewn with starfield textures and floating sticker-style mascots — astronauts, monsters, traffic cones — that puncture the seriousness of an observability product. Headlines run in a chunky proprietary display sans where the most important keywords are wrapped in lime-green highlight chips (`{colors.accent-lime}`), as if the copy itself has been marked up by a developer redlining their own console output.\n\nThe palette is deliberately narrow: deep midnight as the dominant canvas, electric lime as the primary attention-grabber, hot pink (`{colors.accent-pink}`) as a secondary punctuation, and a violet-mid (`{colors.accent-violet-mid}`) for tag chips and hairline strokes. White appears in two roles — as text on dark, and as the canvas for pricing, contact, and content-heavy pages where developers need to scan dense tables. The \"single primary CTA\" is visually inverted depending on context: filled black-violet (`{colors.primary}`) with white type on light surfaces, or filled white with dark type on dark surfaces. The button always reads as the strongest UI affordance regardless of polarity.\n\nTypography splits cleanly between three families: a custom display sans for hero and section openers (chunky, near-condensed, slightly playful), Rubik for every UI text role (body, captions, eyebrow caps, button labels), and Monaco for code. Buttons and eyebrows almost always run in uppercase with a 0.2px tracking lift to give them the snap of console output.\n\n**Key Characteristics:**\n- Two-polarity canvas system: deep violet midnight (`{colors.surface-canvas-dark}`) for marketing hero and product feature pages, white (`{colors.surface-canvas-light}`) for pricing, contact, and dense reference content — the system never tries to blur the two.\n- Lime keyword highlight (`{colors.accent-lime}`) treated as a typographic device, not a color swatch — it wraps single words inside the display headline to act as a syntax highlight on the reading flow.\n- Sticker illustration system: floating mascot characters with hand-drawn outlines, appearing at section junctions, never inside cards — they create rhythm and personality between dense info blocks.\n- Uppercase eyebrow + button caps in `{typography.button-cap}` and `{typography.eyebrow}`, with a consistent 0.2px tracking lift, give the brand its \"developer console\" cadence.\n- Single-primary CTA hierarchy: every page has one filled button reading either `{colors.primary}` on light or `{colors.on-primary}` on dark; outlined and ghost variants are downgraded.\n- Card surfaces follow the canvas: dark sections nest dark cards (`{colors.ink-deep}` with subtle hairline) and light sections nest white cards with `{colors.hairline-cloud}` borders — chrome stays consistent, only the polarity flips.\n- A pricing-page color rhythm of cream-white tiers with one dark inverted \"featured\" tier (`{colors.surface-night}`), avoiding the typical accent-bordered featured pattern.",
+      "line": 275
+    },
+    {
+      "heading": "Colors",
+      "level": 2,
+      "text": "> **Source pages:** home (`/welcome/`), product/error-monitoring, contact/enterprise, pricing.",
+      "line": 292
+    },
+    {
+      "heading": "Brand & Accent",
+      "level": 3,
+      "text": "- **Midnight Violet** (`{colors.primary}` — `#150f23`): The system's primary action color and the deepest surface tone. Used for filled primary buttons on light surfaces, code-block backgrounds, and the strongest dark cards.\n- **Ink Violet** (`{colors.ink-deep}` — `#1f1633`): Slightly lifted from primary, this is the marketing hero canvas and the default body-text color on light surfaces — a single token doing double duty as background and ink.\n- **Electric Lime** (`{colors.accent-lime}` — `#c2ef4e`): The signature highlight color. Wrapped around individual headline keywords as a syntax-highlight chip (`{rounded.xs}` corner, no padding-y, 12px padding-x). Also used as the squiggly footer divider stroke. Never a button background.\n- **Hot Pink** (`{colors.accent-pink}` — `#fa7faa`): Secondary punctuation color used for sticker outlines, chart points, and supporting accents — never on buttons, never on type at body size.\n- **Violet Link** (`{colors.accent-violet}` — `#6a5fc1`): Inline link color when emphasis is needed beyond underline.\n- **Deep Violet** (`{colors.accent-violet-deep}` — `#422082`): The select-dropdown fill on contact forms; also used on spotlight cards inside dark sections.\n- **Mid Violet** (`{colors.accent-violet-mid}` — `#79628c`): Tag-chip fill and faint accent on dark surfaces.",
+      "line": 296
+    },
+    {
+      "heading": "Surface",
+      "level": 3,
+      "text": "- **Dark Canvas** (`{colors.surface-canvas-dark}` — `#1f1633`): Hero, product, and feature-page background. Carries the deepest atmospheric weight.\n- **Night** (`{colors.surface-night}` — `#150f23`): Cards on dark canvas, code blocks, and the \"featured\" pricing tier.\n- **Light Canvas** (`{colors.surface-canvas-light}` — `#ffffff`): Pricing, contact, and dense-reference page background.\n- **Surface Press Light** (`{colors.surface-press-light}` — `#f0f0f0`) and **Press Stronger** (`{colors.surface-press-stronger}` — `#efefef`): The pressed/active fill of inverted buttons on dark surfaces.\n- **Hairline Violet** (`{colors.hairline-violet}` — `#362d59`): 1px borders on dark cards.\n- **Hairline Cool** (`{colors.hairline-cool}` — `#cfcfdb`): 1px borders on text inputs and form fields.\n- **Hairline Cloud** (`{colors.hairline-cloud}` — `#e5e7eb`): Pricing-table dividers and pricing-card borders on light canvas.",
+      "line": 305
+    },
+    {
+      "heading": "Text",
+      "level": 3,
+      "text": "- **On Primary** (`{colors.on-primary}` — `#ffffff`): All text on dark canvas, all CTA labels on filled dark buttons.\n- **Ink** (`{colors.ink}` — `#1f1633`): Body text on light canvas; identical hex to the dark canvas, repurposed as type.\n- **Ink Press** (`{colors.ink-press}` — `#1a1a1a`): Reserved for the pressed/active state of inverted buttons.\n- **On Dark Muted** (`{colors.on-dark-muted}` — `rgba(255,255,255,0.72)`): Secondary text, captions, and table cell values on dark canvas.\n- **On Dark Faint** (`{colors.on-dark-faint}` — `rgba(255,255,255,0.18)`): Translucent surface-on-dark — used for ghost button fills and dimmed nav items.",
+      "line": 314
+    },
+    {
+      "heading": "Semantic",
+      "level": 3,
+      "text": "- **Focus Ring** (`{colors.ring-focus}` — `rgba(59,130,246,0.5)`): Translucent blue focus ring — the only blue in the system, reserved for keyboard focus on form fields.",
+      "line": 321
+    },
+    {
+      "heading": "Typography",
+      "level": 2,
+      "text": "",
+      "line": 324
+    },
+    {
+      "heading": "Font Family",
+      "level": 3,
+      "text": "The display tier is a proprietary geometric sans with chunky, near-condensed proportions and a slightly subversive personality (closing apertures, optical-stress letterforms). When unavailable, fall back to **Rubik** at heavier weights for visual continuity.\n\nThe UI tier is **Rubik** — an open-source Hebrew/Latin sans on Google Fonts — with system fallbacks (`-apple-system, system-ui, Segoe UI, Helvetica, Arial`). Rubik handles every body, caption, button, and eyebrow role.\n\nThe code tier is **Monaco** with Menlo and Ubuntu Mono fallbacks — used in code blocks, install snippets, and inline tokens.",
+      "line": 326
+    },
+    {
+      "heading": "Hierarchy",
+      "level": 3,
+      "text": "| Token | Size | Weight | Line Height | Letter Spacing | Use |\n|---|---|---|---|---|---|\n| `{typography.display-hero}` | 88px | 700 | 1.2 | 0 | Marketing hero headline (single line of attention) |\n| `{typography.display-large}` | 60px | 500 | 1.1 | 0 | Section openers on dark surfaces |\n| `{typography.heading-xl}` | 30px | 500 | 1.2 | 0 | Page titles on light surfaces (e.g., \"Pricing plans for dev teams of all sizes\") |\n| `{typography.heading-lg}` | 27px | 500 | 1.25 | 0 | Sub-section headings, large card titles |\n| `{typography.heading-md}` | 24px | 500 | 1.25 | 0 | Card titles, in-page section headings |\n| `{typography.heading-sm}` | 20px | 600 | 1.25 | 0 | Compact card title, list-group title |\n| `{typography.body-lg}` | 16px | 400 | 2.0 | 0 | Marketing-paragraph body — the airy, two-line-leading variant used in hero subtext |\n| `{typography.body-strong}` | 16px | 600 | 1.5 | 0 | Emphasized body run, lead sentence |\n| `{typography.body-md}` | 16px | 500 | 1.5 | 0 | Default UI body, table cells, form labels |\n| `{typography.eyebrow}` | 15px | 500 | 1.4 | 0 | Section eyebrow above large headings, all-caps |\n| `{typography.button-cap}` | 14px | 700 | 1.14 | 0.2px | Filled button labels (uppercase) |\n| `{typography.button-cap-light}` | 14px | 500 | 1.29 | 0.2px | Ghost / outline button labels (uppercase) |\n| `{typography.caption}` | 14px | 400 | 1.43 | 0 | Footer text, fine print, helper copy |\n| `{typography.micro-cap}` | 10px | 600 | 1.8 | 0.25px | Status labels, badge text, micro-eyebrow |\n| `{typography.code}` | 16px | 400 | 1.5 | 0 | Code block content |\n| `{typography.code-strong}` | 16px | 700 | 1.5 | 0 | Highlighted code keyword |",
+      "line": 334
+    },
+    {
+      "heading": "Principles",
+      "level": 3,
+      "text": "- **Two leading worlds.** Marketing copy uses 2.0 line-height on `{typography.body-lg}` — extremely airy, generous breathing room. Functional UI copy uses 1.5 line-height on `{typography.body-md}` — denser, closer to console output. The choice is deliberate: marketing reads like prose, the product reads like a log.\n- **Caps with tracking.** All button labels and eyebrows are uppercase with 0.2px tracking. This is the brand's typographic signature — a console-prompt cadence applied to UI affordances.\n- **Headlines as syntax.** The hero display is structured so a single keyword can be wrapped in a `{colors.accent-lime}` highlight chip without disrupting the reading order. Treat the lime chip as a glyph-level decoration, not a separate component.",
+      "line": 355
+    },
+    {
+      "heading": "Note on Font Substitutes",
+      "level": 3,
+      "text": "Rubik is open-source on Google Fonts and is the safe default for everything except the hero display. For the proprietary display sans, suitable open substitutes are **Space Grotesk** (heavier weights), **Archivo** (semi-condensed weights), or **Hubot Sans** with optical-size axis at heavier ends — all carry the same chunky, near-condensed silhouette. Adjust line-height down by 0.05 when substituting, since the proprietary face has tighter leading at large sizes.",
+      "line": 360
+    },
+    {
+      "heading": "Layout",
+      "level": 2,
+      "text": "",
+      "line": 363
+    },
+    {
+      "heading": "Spacing System",
+      "level": 3,
+      "text": "- **Base unit**: 8px\n- **Tokens**: `{spacing.xxs}` 2px · `{spacing.xs}` 4px · `{spacing.sm}` 8px · `{spacing.md}` 12px · `{spacing.lg}` 16px · `{spacing.xl}` 24px · `{spacing.xxl}` 32px · `{spacing.section}` 96px\n- **Section padding**: `{spacing.section}` 96px between major page bands on desktop, collapsing to `{spacing.xxl}` 32px–48px on mobile.\n- **Card internal padding**: `{spacing.xxl}` 32px on pricing cards and large feature cards; `{spacing.lg}` 16px on compact tag/badge groups.\n- **Form field padding**: `{spacing.sm}` 8px vertical, `{spacing.md}` 12px horizontal — matches the text-input token directly.",
+      "line": 365
+    },
+    {
+      "heading": "Grid & Container",
+      "level": 3,
+      "text": "- Marketing pages use a wide centered container with generous outer gutters; max width sits around 1152px (one of the extracted breakpoints), with content inside flexing across 12 conceptual columns.\n- Pricing splits into a 4-tier card row at desktop, collapsing to 2-up at mid widths and 1-up on mobile.\n- The contact form uses a 2-column field layout (first/last name side-by-side) inside a single light-canvas panel.\n- Breakpoints stair-step at 1440 → 1152 → 992 → 768 → 640 → 576 — see Responsive Behavior.",
+      "line": 372
+    },
+    {
+      "heading": "Whitespace Philosophy",
+      "level": 3,
+      "text": "The dark canvas absorbs whitespace differently from light. On dark surfaces the brand stretches `{spacing.section}` generously between bands so floating mascots and starfield textures have room to breathe. On light surfaces (pricing, contact) the whitespace tightens — content density takes priority because users are scanning, comparing, and acting. Rule of thumb: hero and feature surfaces are spacious, transactional surfaces are dense.",
+      "line": 378
+    },
+    {
+      "heading": "Elevation & Depth",
+      "level": 2,
+      "text": "| Level | Treatment | Use |\n|---|---|---|\n| 0 | Flat on canvas, no shadow | Default surface, dark or light |\n| 1 | `box-shadow: rgba(0,0,0,0.08) 0 2px 8px 0` | Inverted buttons on dark canvas (light fill lifting off dark surface) |\n| 2 | `box-shadow: rgba(0,0,0,0.1) 0 10px 15px -3px, rgba(0,0,0,0.1) 0 4px 6px -4px` | Floating cards on light canvas, modals |\n| 3 | `box-shadow: rgb(21,15,35) 0 0 8px 6px` | Glow halo around primary CTA on dark hero — the dark color itself becomes the shadow, creating a vignette of canvas around the button |\n| 4 | `box-shadow: rgba(0,0,0,0.18) 0 0.5rem 1.5rem` | Pressed inverted button on dark canvas |",
+      "line": 381
+    },
+    {
+      "heading": "Decorative Depth",
+      "level": 3,
+      "text": "Sentri's depth doesn't come from drop shadows — it comes from the **starfield texture** on the hero canvas (subtle white-on-violet pinpricks at low opacity), the **floating sticker mascots** (drawn with hand-rendered outlines and saturated fills, layered above the canvas with no shadow), and the **lime squiggly divider** above the footer. These illustrative elements do the work that shadow stacks do in flatter design systems — they tell the eye where one section ends and another begins.",
+      "line": 391
+    },
+    {
+      "heading": "Shapes",
+      "level": 2,
+      "text": "",
+      "line": 394
+    },
+    {
+      "heading": "Border Radius Scale",
+      "level": 3,
+      "text": "| Token | Value | Use |\n|---|---|---|\n| `{rounded.xs}` | 4px | Badges, status pills, lime keyword highlight chips |\n| `{rounded.sm}` | 6px | Text inputs, search boxes |\n| `{rounded.md}` | 8px | Primary and inverted buttons, code blocks, select dropdowns |\n| `{rounded.lg}` | 10px | Generic divs, container blocks |\n| `{rounded.xl}` | 12px | Pricing cards, feature cards, navigation pill chrome |\n| `{rounded.xxl}` | 18px | Image containers, large hero illustrations |\n| `{rounded.full}` | 9999px | Avatars, circular icon buttons |",
+      "line": 396
+    },
+    {
+      "heading": "Photography Geometry",
+      "level": 3,
+      "text": "The site doesn't use traditional photography — it uses **illustrated stickers and product UI screenshots** in roughly equivalent geometric roles. Product UI mocks sit inside `{rounded.xxl}` 18px containers, often tilted slightly off-axis, against the dark canvas with no border. Sticker mascots have no container at all — they are layered directly on canvas, often overlapping section boundaries to break the grid. Avatar treatments (in customer-logo strips) are simple greyscale wordmarks, not photos.",
+      "line": 408
+    },
+    {
+      "heading": "Components",
+      "level": 2,
+      "text": "> **No hover states documented.** Every spec below shows only Default and Pressed/Active states. Variants are formal entries in the front-matter `components:` block.",
+      "line": 411
+    },
+    {
+      "heading": "Buttons",
+      "level": 3,
+      "text": "**`button-primary`** — the dominant CTA across light surfaces.\n- Background `{colors.primary}`, text `{colors.on-primary}`, type `{typography.button-cap}` (uppercase, 14px / 700, 0.2px tracking), padding `{spacing.md} {spacing.lg}` (12px 16px), rounded `{rounded.md}`. On dark hero surfaces, add the level-3 glow halo for emphasis.\n- Pressed state lives in `button-primary-pressed`: background flips to `{colors.surface-press-stronger}`, text to `{colors.ink-press}`. The button effectively swaps polarities on press.\n\n**`button-inverted`** — the dominant CTA on dark canvas; visually identical hierarchy, polarity-flipped.\n- Background `{colors.on-primary}` (white), text `{colors.ink-deep}`, same `{typography.button-cap}`, rounded `{rounded.md}`.\n- Pressed in `button-inverted-pressed`: background drops to `{colors.surface-press-light}`, text to `{colors.ink-press}`.\n\n**`button-ghost-on-dark`** — secondary CTA on dark canvas (e.g., \"Get Demo\" beside \"Get Started\").\n- Translucent fill `{colors.on-dark-faint}`, text `{colors.on-primary}`, type `{typography.button-cap}`, padding `{spacing.sm}` (8px), rounded `{rounded.xl}`. The translucent fill lets the canvas texture show through.\n\n**`button-violet-token`** — pill-shaped tag/category button used inline in product navs.\n- Background `{colors.accent-violet-mid}`, text `{colors.on-primary}`, type `{typography.button-cap-light}`, padding `{spacing.sm} {spacing.lg}` (8px 16px), rounded `{rounded.xl}`, 1px hairline border in a slightly deeper violet.\n\n**`button-disabled`**\n- Background `{colors.hairline-cloud}`, text `{colors.on-dark-muted}`, otherwise identical to `button-primary`.",
+      "line": 415
+    },
+    {
+      "heading": "Cards & Containers",
+      "level": 3,
+      "text": "**`card-pricing`** — the standard tier card on the pricing page.\n- Background `{colors.surface-canvas-light}`, text `{colors.ink-deep}`, padding `{spacing.xxl}` 32px, rounded `{rounded.xl}` 12px, 1px `{colors.hairline-cloud}` border. Headline at top in `{typography.heading-md}`, price in `{typography.display-large}`, feature list in `{typography.body-md}`, primary CTA pinned to the bottom of the card.\n\n**`card-pricing-featured`** — the dark inverted \"featured\" tier (Sentri uses the Business tier as the featured one).\n- Background `{colors.surface-night}`, text `{colors.on-primary}`, otherwise identical structure to `card-pricing`. The inversion (rather than an accent-bordered light card) is the brand's distinctive choice — the featured tier reads as the brand's voice, not as a marketing decoration.\n\n**`card-feature-dark`** — large feature-band card on dark surfaces, used to anchor product feature explanations.\n- Background `{colors.ink-deep}`, text `{colors.on-primary}`, padding `{spacing.xxl}` 32px, rounded `{rounded.xxl}` 18px. Often holds a UI mock plus a 27px headline plus 16px body.\n\n**`card-spotlight-violet`** — accent feature card with deeper violet fill, used for \"Sentry-only\" capability bands.\n- Background `{colors.accent-violet-deep}`, text `{colors.on-primary}`, padding `{spacing.xxl}`, rounded `{rounded.xxl}`. The deep violet reads as a feature highlight without breaking out of the brand's purple family.\n\n**`code-block`** — code/install snippets.\n- Background `{colors.surface-night}`, text `{colors.on-primary}` rendered in `{typography.code}`. Padding `{spacing.lg}` 16px, rounded `{rounded.md}`. On dark canvas the code block is barely lifted from canvas — only the slightly deeper fill differentiates it.",
+      "line": 434
+    },
+    {
+      "heading": "Inputs & Forms",
+      "level": 3,
+      "text": "**`text-input`** — the contact-form first/last/email/etc. fields.\n- Background `{colors.surface-canvas-light}`, text `{colors.ink-deep}`, type `{typography.body-md}`, padding `{spacing.sm} {spacing.md}` (8px 12px), rounded `{rounded.sm}` 6px, 1px `{colors.hairline-cool}` border.\n- Focus state in `text-input-focused`: same fill, but adds an inset shadow `rgba(0,0,0,0.15) 0 2px 10px inset` to suggest depth pressed inward.\n\n**`select-violet`** — the dropdown variant used inside dark contact panels.\n- Background `{colors.accent-violet-deep}`, text `{colors.on-primary}`, type `{typography.body-md}`, padding `{spacing.sm} {spacing.lg}`, rounded `{rounded.md}`. Distinctive because it doesn't mimic a plain text input — it reads as a deliberate brand surface.",
+      "line": 451
+    },
+    {
+      "heading": "Navigation",
+      "level": 3,
+      "text": "**`nav-bar-light`** — the standard top nav across light pages (pricing, contact, docs).\n- Background `{colors.surface-canvas-light}`, text `{colors.ink-deep}`, type `{typography.body-md}`. Logo wordmark on the left at ~145×32px, primary nav items mid-bar with dropdown carets, and a `Get Demo` ghost + `Get Started` filled `button-primary` pair on the right. Padding `{spacing.lg} {spacing.xl}` (16px 24px).\n\n**Top Nav (dark variant)** — used on the home page; same structure but inverted polarity, sitting on `{colors.surface-canvas-dark}`. The right-side button becomes `button-inverted`.\n\n**Mobile nav** — collapses to a hamburger toggle below the 768px breakpoint; dropdown carets become full-width accordion items.",
+      "line": 460
+    },
+    {
+      "heading": "Pills, Badges, and Highlight Chips",
+      "level": 3,
+      "text": "**`pill-neutral-dark`** — small status / category pill on dark surfaces.\n- Background `{colors.surface-night}`, text `{colors.on-primary}`, type `{typography.caption}` 12px, padding `{spacing.xs} {spacing.sm}` (4px 8px), rounded `{rounded.xs}` 4px.\n\n**`chip-lime-keyword`** — the signature inline highlight wrapping single words inside the hero display headline.\n- Background `{colors.accent-lime}`, text `{colors.ink-deep}`, type matches the surrounding `{typography.display-hero}`, rounded `{rounded.xs}` 4px, padding `0 {spacing.md}` (12px horizontal, 0 vertical so the chip hugs the cap-height).",
+      "line": 469
+    },
+    {
+      "heading": "Signature Components",
+      "level": 3,
+      "text": "**Sticker Mascot Layer** — illustrated characters (astronauts, cartoon monsters, traffic cones, debugging avatars) drawn with hand-rendered outlines and saturated `{colors.accent-pink}` / `{colors.accent-lime}` fills. Mascots are placed at section junctions, often overlapping section boundaries by 30–40% of their height, with no container or shadow. They function as decorative section markers and brand personality carriers — never inside cards, never as buttons.\n\n**Lime Squiggly Footer Divider** — a hand-drawn `{colors.accent-lime}` squiggle line, ~3px stroke, sitting above the footer at full container width. Replaces what would otherwise be a 1px hairline divider with a personality-laden flourish.\n\n**Starfield Hero Texture** — a faint white-on-violet pinprick pattern overlaid on the hero canvas at very low opacity. Adds atmospheric depth to the dark canvas without visible decoration. Implemented as a background image, not as repeating CSS.\n\n**Window-Chrome UI Mock** — product UI screenshots framed in `{rounded.xxl}` containers, often tilted ±2–3 degrees off axis, positioned overlapping section boundaries on the dark feature pages. The chrome itself is just a rounded image with a subtle hairline; the content is the actual product UI.\n\n**`link-on-dark`** — inline links in body copy on dark surfaces. Default text is `{colors.on-primary}` rendered in `{typography.body-md}` with a persistent underline; the underline is the entire affordance, no color change. Sits flush in copy with no padding, no rounded corners beyond the inherited `{rounded.xs}`.\n\n**`link-on-light`** — inline links in body copy on light surfaces. Same shape contract as `link-on-dark`, but text is `{colors.ink-deep}`. Used across pricing, contact, and docs surfaces.\n\n**`footer-light`** — site-wide footer on the light-canvas template (pricing, contact, docs).\n- Background `{colors.surface-canvas-light}`, text `{colors.ink-deep}`, type `{typography.caption}`, padding `{spacing.xxl} {spacing.xl}` (32px 24px). Topped by the lime squiggly divider — see Signature Components. Holds three to four columns of link groups, social icons in a horizontal strip at the bottom right, and a small legal/copyright row at the very bottom in `{typography.caption}`.",
+      "line": 477
+    },
+    {
+      "heading": "Do's and Don'ts",
+      "level": 2,
+      "text": "",
+      "line": 494
+    },
+    {
+      "heading": "Do",
+      "level": 3,
+      "text": "- Reserve `{colors.accent-lime}` for keyword-highlight chips inside display headlines and the footer squiggle divider — never use it as a button background, never as body text.\n- Pair every `button-primary` with `{typography.button-cap}` in uppercase with 0.2px tracking — the cadence is part of the brand, not a stylistic option.\n- Treat the dark canvas (`{colors.surface-canvas-dark}`) and light canvas (`{colors.surface-canvas-light}`) as two complete worlds — let one own marketing/feature pages and the other own transactional pages, with no half-measures.\n- Use sticker mascots to break section boundaries — let them overlap, tilt, and float; constraining them inside cards drains their personality.\n- Use `card-pricing-featured` (dark inverted tier) instead of an accent-bordered light tier for the featured pricing column.\n- Default body line-height to 1.5 on functional UI surfaces and 2.0 on marketing surfaces — the difference is intentional.",
+      "line": 496
+    },
+    {
+      "heading": "Don't",
+      "level": 3,
+      "text": "- Don't introduce additional accent colors beyond `{colors.accent-lime}` and `{colors.accent-pink}` — adding teal, orange, or yellow dilutes the violet-and-lime signature.\n- Don't apply drop shadows to cards on dark canvas — depth comes from texture and illustration, not from light-on-dark shadows that would muddy the violet.\n- Don't use `{typography.display-hero}` (88px) for anything except the marketing hero — even sub-pages cap at `{typography.display-large}` (60px).\n- Don't put body text in `{colors.accent-lime}` — it's a chip color, not a type color, and breaks contrast at body sizes.\n- Don't soften the `{colors.primary}` button to a brand-violet — the near-black is the point; it reads as the most authoritative action regardless of canvas polarity.\n- Don't put illustrated mascots inside cards or constrained containers — their job is to break grid, not occupy it.",
+      "line": 504
+    },
+    {
+      "heading": "Responsive Behavior",
+      "level": 2,
+      "text": "",
+      "line": 512
+    },
+    {
+      "heading": "Breakpoints",
+      "level": 3,
+      "text": "| Name | Width | Key Changes |\n|---|---|---|\n| 4K / Wide | ≥ 1440px | Full 4-tier pricing row, hero illustration sits beside headline at full scale |\n| Desktop | 1152–1440px | Default content max-width sits at 1152px, all 4-tier patterns hold |\n| Laptop | 992–1151px | Pricing collapses to 2-up rows, nav remains horizontal |\n| Tablet | 768–991px | 2-column feature grids collapse to 1-up; nav still horizontal but compresses |\n| Mobile Large | 640–767px | Hamburger nav appears; hero display drops from 88px to ~56px |\n| Mobile | 576–639px | Single-column everything; section padding collapses from 96px to 32–48px |\n| Small Mobile | 1–575px | Compact mode; sticker mascots drop in size or hide entirely to preserve content priority |",
+      "line": 514
+    },
+    {
+      "heading": "Touch Targets",
+      "level": 3,
+      "text": "- Primary buttons hit a minimum 44×44px on mobile (12px vertical padding × 16px font + line-height = ~44px). Maintains WCAG AAA touch-target spec.\n- Pill tags and badges in nav and feature surfaces stay above 32×32px even at small mobile breakpoints; they enlarge if necessary rather than shrink.\n- Form fields stay at the 44px minimum height on mobile contact pages.",
+      "line": 526
+    },
+    {
+      "heading": "Collapsing Strategy",
+      "level": 3,
+      "text": "- **Hero display headline** drops from 88px → 60px → 48px across the breakpoint stair; the lime keyword chip preserves padding and corner radius at every step.\n- **Pricing tiers** stair-step from 4-up → 2-up → 1-up. The featured dark tier always remains visually distinguished — it never loses its inversion at any breakpoint.\n- **Sticker mascots** are progressively de-emphasized: at desktop they overlap section boundaries; at tablet they shift to inline within section padding; at small mobile most are hidden via `display: none` to keep the content scan-able.\n- **Top nav** collapses to a hamburger below 768px; the dropdown menu uses the same canvas polarity as the page (dark on hero, light on pricing).\n- **Code blocks** preserve 16px Monaco at every breakpoint — they never scale down — but switch to horizontal scroll on overflow rather than wrap.",
+      "line": 531
+    },
+    {
+      "heading": "Image Behavior",
+      "level": 3,
+      "text": "- Product UI mocks scale proportionally; on small mobile they often anchor to one edge with horizontal overflow rather than shrink to illegibility.\n- Sticker mascots scale by 50–70% at mobile breakpoints, preserving their personality but ceding screen space to content.\n- The lime footer squiggle scales the SVG to container width while keeping stroke width visually consistent.",
+      "line": 538
+    },
+    {
+      "heading": "Iteration Guide",
+      "level": 2,
+      "text": "1. Focus on ONE component at a time. Don't rebuild the system — extend it.\n2. Reference component names and tokens directly (`{colors.accent-lime}`, `{button-primary}-pressed`, `{rounded.xxl}`) — do not paraphrase.\n3. Run `npx @google/design.md lint DESIGN.md` after edits — `broken-ref`, `contrast-ratio`, and `orphaned-tokens` warnings flag issues automatically.\n4. Add new variants as separate component entries (`-pressed`, `-disabled`, `-focused`) — do not bury them inside prose.\n5. Default to `{typography.body-md}` for product UI body and `{typography.body-lg}` for marketing prose — the leading difference is intentional and load-bearing.\n6. Keep `{colors.accent-lime}` scarce — one lime element per viewport. The signature only works because it's rare.\n7. When polarizing a new surface, choose one canvas (`{colors.surface-canvas-dark}` or `{colors.surface-canvas-light}`) and commit to it; don't blend the two on a single page band.",
+      "line": 543
+    }
+  ],
+  "tokens": [
+    {
+      "path": "colors.primary",
+      "sourcePath": "colors.primary",
+      "type": "color",
+      "value": "#150f23",
+      "status": "unverified",
+      "evidence": {
+        "line": 7,
+        "sourcePath": "colors.primary"
+      }
+    },
+    {
+      "path": "colors.inkdeep",
+      "sourcePath": "colors.ink-deep",
+      "type": "color",
+      "value": "#1f1633",
+      "status": "unverified",
+      "evidence": {
+        "line": 8,
+        "sourcePath": "colors.ink-deep"
+      }
+    },
+    {
+      "path": "colors.onprimary",
+      "sourcePath": "colors.on-primary",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 9,
+        "sourcePath": "colors.on-primary"
+      }
+    },
+    {
+      "path": "colors.accentlime",
+      "sourcePath": "colors.accent-lime",
+      "type": "color",
+      "value": "#c2ef4e",
+      "status": "unverified",
+      "evidence": {
+        "line": 10,
+        "sourcePath": "colors.accent-lime"
+      }
+    },
+    {
+      "path": "colors.accentpink",
+      "sourcePath": "colors.accent-pink",
+      "type": "color",
+      "value": "#fa7faa",
+      "status": "unverified",
+      "evidence": {
+        "line": 11,
+        "sourcePath": "colors.accent-pink"
+      }
+    },
+    {
+      "path": "colors.accentviolet",
+      "sourcePath": "colors.accent-violet",
+      "type": "color",
+      "value": "#6a5fc1",
+      "status": "unverified",
+      "evidence": {
+        "line": 12,
+        "sourcePath": "colors.accent-violet"
+      }
+    },
+    {
+      "path": "colors.accentvioletdeep",
+      "sourcePath": "colors.accent-violet-deep",
+      "type": "color",
+      "value": "#422082",
+      "status": "unverified",
+      "evidence": {
+        "line": 13,
+        "sourcePath": "colors.accent-violet-deep"
+      }
+    },
+    {
+      "path": "colors.accentvioletmid",
+      "sourcePath": "colors.accent-violet-mid",
+      "type": "color",
+      "value": "#79628c",
+      "status": "unverified",
+      "evidence": {
+        "line": 14,
+        "sourcePath": "colors.accent-violet-mid"
+      }
+    },
+    {
+      "path": "colors.surfacecanvasdark",
+      "sourcePath": "colors.surface-canvas-dark",
+      "type": "color",
+      "value": "#1f1633",
+      "status": "unverified",
+      "evidence": {
+        "line": 15,
+        "sourcePath": "colors.surface-canvas-dark"
+      }
+    },
+    {
+      "path": "colors.surfacecanvaslight",
+      "sourcePath": "colors.surface-canvas-light",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 16,
+        "sourcePath": "colors.surface-canvas-light"
+      }
+    },
+    {
+      "path": "colors.surfacenight",
+      "sourcePath": "colors.surface-night",
+      "type": "color",
+      "value": "#150f23",
+      "status": "unverified",
+      "evidence": {
+        "line": 17,
+        "sourcePath": "colors.surface-night"
+      }
+    },
+    {
+      "path": "colors.surfacepresslight",
+      "sourcePath": "colors.surface-press-light",
+      "type": "color",
+      "value": "#f0f0f0",
+      "status": "unverified",
+      "evidence": {
+        "line": 18,
+        "sourcePath": "colors.surface-press-light"
+      }
+    },
+    {
+      "path": "colors.surfacepressstronger",
+      "sourcePath": "colors.surface-press-stronger",
+      "type": "color",
+      "value": "#efefef",
+      "status": "unverified",
+      "evidence": {
+        "line": 19,
+        "sourcePath": "colors.surface-press-stronger"
+      }
+    },
+    {
+      "path": "colors.hairlineviolet",
+      "sourcePath": "colors.hairline-violet",
+      "type": "color",
+      "value": "#362d59",
+      "status": "unverified",
+      "evidence": {
+        "line": 20,
+        "sourcePath": "colors.hairline-violet"
+      }
+    },
+    {
+      "path": "colors.hairlinecool",
+      "sourcePath": "colors.hairline-cool",
+      "type": "color",
+      "value": "#cfcfdb",
+      "status": "unverified",
+      "evidence": {
+        "line": 21,
+        "sourcePath": "colors.hairline-cool"
+      }
+    },
+    {
+      "path": "colors.hairlinecloud",
+      "sourcePath": "colors.hairline-cloud",
+      "type": "color",
+      "value": "#e5e7eb",
+      "status": "unverified",
+      "evidence": {
+        "line": 22,
+        "sourcePath": "colors.hairline-cloud"
+      }
+    },
+    {
+      "path": "colors.ink",
+      "sourcePath": "colors.ink",
+      "type": "color",
+      "value": "#1f1633",
+      "status": "unverified",
+      "evidence": {
+        "line": 23,
+        "sourcePath": "colors.ink"
+      }
+    },
+    {
+      "path": "colors.inkpress",
+      "sourcePath": "colors.ink-press",
+      "type": "color",
+      "value": "#1a1a1a",
+      "status": "unverified",
+      "evidence": {
+        "line": 24,
+        "sourcePath": "colors.ink-press"
+      }
+    },
+    {
+      "path": "colors.ondarkmuted",
+      "sourcePath": "colors.on-dark-muted",
+      "type": "color",
+      "value": "#bdb8c0",
+      "status": "unverified",
+      "evidence": {
+        "line": 25,
+        "sourcePath": "colors.on-dark-muted"
+      }
+    },
+    {
+      "path": "colors.ondarkfaint",
+      "sourcePath": "colors.on-dark-faint",
+      "type": "color",
+      "value": "#3f3849",
+      "status": "unverified",
+      "evidence": {
+        "line": 26,
+        "sourcePath": "colors.on-dark-faint"
+      }
+    },
+    {
+      "path": "colors.ringfocus",
+      "sourcePath": "colors.ring-focus",
+      "type": "color",
+      "value": "#9dc1f5",
+      "status": "unverified",
+      "evidence": {
+        "line": 27,
+        "sourcePath": "colors.ring-focus"
+      }
+    },
+    {
+      "path": "typography.displayhero.fontfamily",
+      "sourcePath": "typography.display-hero.fontFamily",
+      "type": "fontFamily",
+      "value": "Sentri Display, Rubik, system-ui, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 31,
+        "sourcePath": "typography.display-hero.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displayhero.fontsize",
+      "sourcePath": "typography.display-hero.fontSize",
+      "type": "dimension",
+      "value": "88px",
+      "status": "unverified",
+      "evidence": {
+        "line": 32,
+        "sourcePath": "typography.display-hero.fontSize"
+      }
+    },
+    {
+      "path": "typography.displayhero.fontweight",
+      "sourcePath": "typography.display-hero.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 33,
+        "sourcePath": "typography.display-hero.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displayhero.lineheight",
+      "sourcePath": "typography.display-hero.lineHeight",
+      "type": "number",
+      "value": 1.2,
+      "status": "unverified",
+      "evidence": {
+        "line": 34,
+        "sourcePath": "typography.display-hero.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displayhero.letterspacing",
+      "sourcePath": "typography.display-hero.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 35,
+        "sourcePath": "typography.display-hero.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.displaylarge.fontfamily",
+      "sourcePath": "typography.display-large.fontFamily",
+      "type": "fontFamily",
+      "value": "Sentri Display, Rubik, system-ui, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 37,
+        "sourcePath": "typography.display-large.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displaylarge.fontsize",
+      "sourcePath": "typography.display-large.fontSize",
+      "type": "dimension",
+      "value": "60px",
+      "status": "unverified",
+      "evidence": {
+        "line": 38,
+        "sourcePath": "typography.display-large.fontSize"
+      }
+    },
+    {
+      "path": "typography.displaylarge.fontweight",
+      "sourcePath": "typography.display-large.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 39,
+        "sourcePath": "typography.display-large.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displaylarge.lineheight",
+      "sourcePath": "typography.display-large.lineHeight",
+      "type": "number",
+      "value": 1.1,
+      "status": "unverified",
+      "evidence": {
+        "line": 40,
+        "sourcePath": "typography.display-large.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displaylarge.letterspacing",
+      "sourcePath": "typography.display-large.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 41,
+        "sourcePath": "typography.display-large.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.headingxl.fontfamily",
+      "sourcePath": "typography.heading-xl.fontFamily",
+      "type": "fontFamily",
+      "value": "Rubik, -apple-system, system-ui, Segoe UI, Helvetica, Arial, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 43,
+        "sourcePath": "typography.heading-xl.fontFamily"
+      }
+    },
+    {
+      "path": "typography.headingxl.fontsize",
+      "sourcePath": "typography.heading-xl.fontSize",
+      "type": "dimension",
+      "value": "30px",
+      "status": "unverified",
+      "evidence": {
+        "line": 44,
+        "sourcePath": "typography.heading-xl.fontSize"
+      }
+    },
+    {
+      "path": "typography.headingxl.fontweight",
+      "sourcePath": "typography.heading-xl.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 45,
+        "sourcePath": "typography.heading-xl.fontWeight"
+      }
+    },
+    {
+      "path": "typography.headingxl.lineheight",
+      "sourcePath": "typography.heading-xl.lineHeight",
+      "type": "number",
+      "value": 1.2,
+      "status": "unverified",
+      "evidence": {
+        "line": 46,
+        "sourcePath": "typography.heading-xl.lineHeight"
+      }
+    },
+    {
+      "path": "typography.headingxl.letterspacing",
+      "sourcePath": "typography.heading-xl.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 47,
+        "sourcePath": "typography.heading-xl.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.headinglg.fontfamily",
+      "sourcePath": "typography.heading-lg.fontFamily",
+      "type": "fontFamily",
+      "value": "Rubik, -apple-system, system-ui, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 49,
+        "sourcePath": "typography.heading-lg.fontFamily"
+      }
+    },
+    {
+      "path": "typography.headinglg.fontsize",
+      "sourcePath": "typography.heading-lg.fontSize",
+      "type": "dimension",
+      "value": "27px",
+      "status": "unverified",
+      "evidence": {
+        "line": 50,
+        "sourcePath": "typography.heading-lg.fontSize"
+      }
+    },
+    {
+      "path": "typography.headinglg.fontweight",
+      "sourcePath": "typography.heading-lg.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 51,
+        "sourcePath": "typography.heading-lg.fontWeight"
+      }
+    },
+    {
+      "path": "typography.headinglg.lineheight",
+      "sourcePath": "typography.heading-lg.lineHeight",
+      "type": "number",
+      "value": 1.25,
+      "status": "unverified",
+      "evidence": {
+        "line": 52,
+        "sourcePath": "typography.heading-lg.lineHeight"
+      }
+    },
+    {
+      "path": "typography.headinglg.letterspacing",
+      "sourcePath": "typography.heading-lg.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 53,
+        "sourcePath": "typography.heading-lg.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.headingmd.fontfamily",
+      "sourcePath": "typography.heading-md.fontFamily",
+      "type": "fontFamily",
+      "value": "Rubik, -apple-system, system-ui, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 55,
+        "sourcePath": "typography.heading-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.headingmd.fontsize",
+      "sourcePath": "typography.heading-md.fontSize",
+      "type": "dimension",
+      "value": "24px",
+      "status": "unverified",
+      "evidence": {
+        "line": 56,
+        "sourcePath": "typography.heading-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.headingmd.fontweight",
+      "sourcePath": "typography.heading-md.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 57,
+        "sourcePath": "typography.heading-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.headingmd.lineheight",
+      "sourcePath": "typography.heading-md.lineHeight",
+      "type": "number",
+      "value": 1.25,
+      "status": "unverified",
+      "evidence": {
+        "line": 58,
+        "sourcePath": "typography.heading-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.headingmd.letterspacing",
+      "sourcePath": "typography.heading-md.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 59,
+        "sourcePath": "typography.heading-md.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.headingsm.fontfamily",
+      "sourcePath": "typography.heading-sm.fontFamily",
+      "type": "fontFamily",
+      "value": "Rubik, -apple-system, system-ui, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 61,
+        "sourcePath": "typography.heading-sm.fontFamily"
+      }
+    },
+    {
+      "path": "typography.headingsm.fontsize",
+      "sourcePath": "typography.heading-sm.fontSize",
+      "type": "dimension",
+      "value": "20px",
+      "status": "unverified",
+      "evidence": {
+        "line": 62,
+        "sourcePath": "typography.heading-sm.fontSize"
+      }
+    },
+    {
+      "path": "typography.headingsm.fontweight",
+      "sourcePath": "typography.heading-sm.fontWeight",
+      "type": "number",
+      "value": 600,
+      "status": "unverified",
+      "evidence": {
+        "line": 63,
+        "sourcePath": "typography.heading-sm.fontWeight"
+      }
+    },
+    {
+      "path": "typography.headingsm.lineheight",
+      "sourcePath": "typography.heading-sm.lineHeight",
+      "type": "number",
+      "value": 1.25,
+      "status": "unverified",
+      "evidence": {
+        "line": 64,
+        "sourcePath": "typography.heading-sm.lineHeight"
+      }
+    },
+    {
+      "path": "typography.headingsm.letterspacing",
+      "sourcePath": "typography.heading-sm.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 65,
+        "sourcePath": "typography.heading-sm.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.bodylg.fontfamily",
+      "sourcePath": "typography.body-lg.fontFamily",
+      "type": "fontFamily",
+      "value": "Rubik, -apple-system, system-ui, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 67,
+        "sourcePath": "typography.body-lg.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodylg.fontsize",
+      "sourcePath": "typography.body-lg.fontSize",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 68,
+        "sourcePath": "typography.body-lg.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodylg.fontweight",
+      "sourcePath": "typography.body-lg.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 69,
+        "sourcePath": "typography.body-lg.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodylg.lineheight",
+      "sourcePath": "typography.body-lg.lineHeight",
+      "type": "number",
+      "value": 2,
+      "status": "unverified",
+      "evidence": {
+        "line": 70,
+        "sourcePath": "typography.body-lg.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodylg.letterspacing",
+      "sourcePath": "typography.body-lg.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 71,
+        "sourcePath": "typography.body-lg.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.bodystrong.fontfamily",
+      "sourcePath": "typography.body-strong.fontFamily",
+      "type": "fontFamily",
+      "value": "Rubik, -apple-system, system-ui, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 73,
+        "sourcePath": "typography.body-strong.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodystrong.fontsize",
+      "sourcePath": "typography.body-strong.fontSize",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 74,
+        "sourcePath": "typography.body-strong.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodystrong.fontweight",
+      "sourcePath": "typography.body-strong.fontWeight",
+      "type": "number",
+      "value": 600,
+      "status": "unverified",
+      "evidence": {
+        "line": 75,
+        "sourcePath": "typography.body-strong.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodystrong.lineheight",
+      "sourcePath": "typography.body-strong.lineHeight",
+      "type": "number",
+      "value": 1.5,
+      "status": "unverified",
+      "evidence": {
+        "line": 76,
+        "sourcePath": "typography.body-strong.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodystrong.letterspacing",
+      "sourcePath": "typography.body-strong.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 77,
+        "sourcePath": "typography.body-strong.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.bodymd.fontfamily",
+      "sourcePath": "typography.body-md.fontFamily",
+      "type": "fontFamily",
+      "value": "Rubik, -apple-system, system-ui, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 79,
+        "sourcePath": "typography.body-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodymd.fontsize",
+      "sourcePath": "typography.body-md.fontSize",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 80,
+        "sourcePath": "typography.body-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodymd.fontweight",
+      "sourcePath": "typography.body-md.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 81,
+        "sourcePath": "typography.body-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodymd.lineheight",
+      "sourcePath": "typography.body-md.lineHeight",
+      "type": "number",
+      "value": 1.5,
+      "status": "unverified",
+      "evidence": {
+        "line": 82,
+        "sourcePath": "typography.body-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodymd.letterspacing",
+      "sourcePath": "typography.body-md.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 83,
+        "sourcePath": "typography.body-md.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.eyebrow.fontfamily",
+      "sourcePath": "typography.eyebrow.fontFamily",
+      "type": "fontFamily",
+      "value": "Rubik, -apple-system, system-ui, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 85,
+        "sourcePath": "typography.eyebrow.fontFamily"
+      }
+    },
+    {
+      "path": "typography.eyebrow.fontsize",
+      "sourcePath": "typography.eyebrow.fontSize",
+      "type": "dimension",
+      "value": "15px",
+      "status": "unverified",
+      "evidence": {
+        "line": 86,
+        "sourcePath": "typography.eyebrow.fontSize"
+      }
+    },
+    {
+      "path": "typography.eyebrow.fontweight",
+      "sourcePath": "typography.eyebrow.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 87,
+        "sourcePath": "typography.eyebrow.fontWeight"
+      }
+    },
+    {
+      "path": "typography.eyebrow.lineheight",
+      "sourcePath": "typography.eyebrow.lineHeight",
+      "type": "number",
+      "value": 1.4,
+      "status": "unverified",
+      "evidence": {
+        "line": 88,
+        "sourcePath": "typography.eyebrow.lineHeight"
+      }
+    },
+    {
+      "path": "typography.eyebrow.letterspacing",
+      "sourcePath": "typography.eyebrow.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 89,
+        "sourcePath": "typography.eyebrow.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.buttoncap.fontfamily",
+      "sourcePath": "typography.button-cap.fontFamily",
+      "type": "fontFamily",
+      "value": "Rubik, -apple-system, system-ui, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 91,
+        "sourcePath": "typography.button-cap.fontFamily"
+      }
+    },
+    {
+      "path": "typography.buttoncap.fontsize",
+      "sourcePath": "typography.button-cap.fontSize",
+      "type": "dimension",
+      "value": "14px",
+      "status": "unverified",
+      "evidence": {
+        "line": 92,
+        "sourcePath": "typography.button-cap.fontSize"
+      }
+    },
+    {
+      "path": "typography.buttoncap.fontweight",
+      "sourcePath": "typography.button-cap.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 93,
+        "sourcePath": "typography.button-cap.fontWeight"
+      }
+    },
+    {
+      "path": "typography.buttoncap.lineheight",
+      "sourcePath": "typography.button-cap.lineHeight",
+      "type": "number",
+      "value": 1.14,
+      "status": "unverified",
+      "evidence": {
+        "line": 94,
+        "sourcePath": "typography.button-cap.lineHeight"
+      }
+    },
+    {
+      "path": "typography.buttoncap.letterspacing",
+      "sourcePath": "typography.button-cap.letterSpacing",
+      "type": "dimension",
+      "value": "0.2px",
+      "status": "unverified",
+      "evidence": {
+        "line": 95,
+        "sourcePath": "typography.button-cap.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.buttoncaplight.fontfamily",
+      "sourcePath": "typography.button-cap-light.fontFamily",
+      "type": "fontFamily",
+      "value": "Rubik, -apple-system, system-ui, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 97,
+        "sourcePath": "typography.button-cap-light.fontFamily"
+      }
+    },
+    {
+      "path": "typography.buttoncaplight.fontsize",
+      "sourcePath": "typography.button-cap-light.fontSize",
+      "type": "dimension",
+      "value": "14px",
+      "status": "unverified",
+      "evidence": {
+        "line": 98,
+        "sourcePath": "typography.button-cap-light.fontSize"
+      }
+    },
+    {
+      "path": "typography.buttoncaplight.fontweight",
+      "sourcePath": "typography.button-cap-light.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 99,
+        "sourcePath": "typography.button-cap-light.fontWeight"
+      }
+    },
+    {
+      "path": "typography.buttoncaplight.lineheight",
+      "sourcePath": "typography.button-cap-light.lineHeight",
+      "type": "number",
+      "value": 1.29,
+      "status": "unverified",
+      "evidence": {
+        "line": 100,
+        "sourcePath": "typography.button-cap-light.lineHeight"
+      }
+    },
+    {
+      "path": "typography.buttoncaplight.letterspacing",
+      "sourcePath": "typography.button-cap-light.letterSpacing",
+      "type": "dimension",
+      "value": "0.2px",
+      "status": "unverified",
+      "evidence": {
+        "line": 101,
+        "sourcePath": "typography.button-cap-light.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.caption.fontfamily",
+      "sourcePath": "typography.caption.fontFamily",
+      "type": "fontFamily",
+      "value": "Rubik, -apple-system, system-ui, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 103,
+        "sourcePath": "typography.caption.fontFamily"
+      }
+    },
+    {
+      "path": "typography.caption.fontsize",
+      "sourcePath": "typography.caption.fontSize",
+      "type": "dimension",
+      "value": "14px",
+      "status": "unverified",
+      "evidence": {
+        "line": 104,
+        "sourcePath": "typography.caption.fontSize"
+      }
+    },
+    {
+      "path": "typography.caption.fontweight",
+      "sourcePath": "typography.caption.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 105,
+        "sourcePath": "typography.caption.fontWeight"
+      }
+    },
+    {
+      "path": "typography.caption.lineheight",
+      "sourcePath": "typography.caption.lineHeight",
+      "type": "number",
+      "value": 1.43,
+      "status": "unverified",
+      "evidence": {
+        "line": 106,
+        "sourcePath": "typography.caption.lineHeight"
+      }
+    },
+    {
+      "path": "typography.caption.letterspacing",
+      "sourcePath": "typography.caption.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 107,
+        "sourcePath": "typography.caption.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.microcap.fontfamily",
+      "sourcePath": "typography.micro-cap.fontFamily",
+      "type": "fontFamily",
+      "value": "Rubik, -apple-system, system-ui, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 109,
+        "sourcePath": "typography.micro-cap.fontFamily"
+      }
+    },
+    {
+      "path": "typography.microcap.fontsize",
+      "sourcePath": "typography.micro-cap.fontSize",
+      "type": "dimension",
+      "value": "10px",
+      "status": "unverified",
+      "evidence": {
+        "line": 110,
+        "sourcePath": "typography.micro-cap.fontSize"
+      }
+    },
+    {
+      "path": "typography.microcap.fontweight",
+      "sourcePath": "typography.micro-cap.fontWeight",
+      "type": "number",
+      "value": 600,
+      "status": "unverified",
+      "evidence": {
+        "line": 111,
+        "sourcePath": "typography.micro-cap.fontWeight"
+      }
+    },
+    {
+      "path": "typography.microcap.lineheight",
+      "sourcePath": "typography.micro-cap.lineHeight",
+      "type": "number",
+      "value": 1.8,
+      "status": "unverified",
+      "evidence": {
+        "line": 112,
+        "sourcePath": "typography.micro-cap.lineHeight"
+      }
+    },
+    {
+      "path": "typography.microcap.letterspacing",
+      "sourcePath": "typography.micro-cap.letterSpacing",
+      "type": "dimension",
+      "value": "0.25px",
+      "status": "unverified",
+      "evidence": {
+        "line": 113,
+        "sourcePath": "typography.micro-cap.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.code.fontfamily",
+      "sourcePath": "typography.code.fontFamily",
+      "type": "fontFamily",
+      "value": "Monaco, Menlo, Ubuntu Mono, monospace",
+      "status": "unverified",
+      "evidence": {
+        "line": 115,
+        "sourcePath": "typography.code.fontFamily"
+      }
+    },
+    {
+      "path": "typography.code.fontsize",
+      "sourcePath": "typography.code.fontSize",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 116,
+        "sourcePath": "typography.code.fontSize"
+      }
+    },
+    {
+      "path": "typography.code.fontweight",
+      "sourcePath": "typography.code.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 117,
+        "sourcePath": "typography.code.fontWeight"
+      }
+    },
+    {
+      "path": "typography.code.lineheight",
+      "sourcePath": "typography.code.lineHeight",
+      "type": "number",
+      "value": 1.5,
+      "status": "unverified",
+      "evidence": {
+        "line": 118,
+        "sourcePath": "typography.code.lineHeight"
+      }
+    },
+    {
+      "path": "typography.code.letterspacing",
+      "sourcePath": "typography.code.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 119,
+        "sourcePath": "typography.code.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.codestrong.fontfamily",
+      "sourcePath": "typography.code-strong.fontFamily",
+      "type": "fontFamily",
+      "value": "Monaco, Menlo, Ubuntu Mono, monospace",
+      "status": "unverified",
+      "evidence": {
+        "line": 121,
+        "sourcePath": "typography.code-strong.fontFamily"
+      }
+    },
+    {
+      "path": "typography.codestrong.fontsize",
+      "sourcePath": "typography.code-strong.fontSize",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 122,
+        "sourcePath": "typography.code-strong.fontSize"
+      }
+    },
+    {
+      "path": "typography.codestrong.fontweight",
+      "sourcePath": "typography.code-strong.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 123,
+        "sourcePath": "typography.code-strong.fontWeight"
+      }
+    },
+    {
+      "path": "typography.codestrong.lineheight",
+      "sourcePath": "typography.code-strong.lineHeight",
+      "type": "number",
+      "value": 1.5,
+      "status": "unverified",
+      "evidence": {
+        "line": 124,
+        "sourcePath": "typography.code-strong.lineHeight"
+      }
+    },
+    {
+      "path": "typography.codestrong.letterspacing",
+      "sourcePath": "typography.code-strong.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 125,
+        "sourcePath": "typography.code-strong.letterSpacing"
+      }
+    },
+    {
+      "path": "rounded.xs",
+      "sourcePath": "rounded.xs",
+      "type": "dimension",
+      "value": "4px",
+      "status": "unverified",
+      "evidence": {
+        "line": 128,
+        "sourcePath": "rounded.xs"
+      }
+    },
+    {
+      "path": "rounded.sm",
+      "sourcePath": "rounded.sm",
+      "type": "dimension",
+      "value": "6px",
+      "status": "unverified",
+      "evidence": {
+        "line": 129,
+        "sourcePath": "rounded.sm"
+      }
+    },
+    {
+      "path": "rounded.md",
+      "sourcePath": "rounded.md",
+      "type": "dimension",
+      "value": "8px",
+      "status": "unverified",
+      "evidence": {
+        "line": 130,
+        "sourcePath": "rounded.md"
+      }
+    },
+    {
+      "path": "rounded.lg",
+      "sourcePath": "rounded.lg",
+      "type": "dimension",
+      "value": "10px",
+      "status": "unverified",
+      "evidence": {
+        "line": 131,
+        "sourcePath": "rounded.lg"
+      }
+    },
+    {
+      "path": "rounded.xl",
+      "sourcePath": "rounded.xl",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 132,
+        "sourcePath": "rounded.xl"
+      }
+    },
+    {
+      "path": "rounded.xxl",
+      "sourcePath": "rounded.xxl",
+      "type": "dimension",
+      "value": "18px",
+      "status": "unverified",
+      "evidence": {
+        "line": 133,
+        "sourcePath": "rounded.xxl"
+      }
+    },
+    {
+      "path": "rounded.full",
+      "sourcePath": "rounded.full",
+      "type": "dimension",
+      "value": "9999px",
+      "status": "unverified",
+      "evidence": {
+        "line": 134,
+        "sourcePath": "rounded.full"
+      }
+    },
+    {
+      "path": "spacing.xxs",
+      "sourcePath": "spacing.xxs",
+      "type": "dimension",
+      "value": "2px",
+      "status": "unverified",
+      "evidence": {
+        "line": 137,
+        "sourcePath": "spacing.xxs"
+      }
+    },
+    {
+      "path": "spacing.xs",
+      "sourcePath": "spacing.xs",
+      "type": "dimension",
+      "value": "4px",
+      "status": "unverified",
+      "evidence": {
+        "line": 138,
+        "sourcePath": "spacing.xs"
+      }
+    },
+    {
+      "path": "spacing.sm",
+      "sourcePath": "spacing.sm",
+      "type": "dimension",
+      "value": "8px",
+      "status": "unverified",
+      "evidence": {
+        "line": 139,
+        "sourcePath": "spacing.sm"
+      }
+    },
+    {
+      "path": "spacing.md",
+      "sourcePath": "spacing.md",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 140,
+        "sourcePath": "spacing.md"
+      }
+    },
+    {
+      "path": "spacing.lg",
+      "sourcePath": "spacing.lg",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 141,
+        "sourcePath": "spacing.lg"
+      }
+    },
+    {
+      "path": "spacing.xl",
+      "sourcePath": "spacing.xl",
+      "type": "dimension",
+      "value": "24px",
+      "status": "unverified",
+      "evidence": {
+        "line": 142,
+        "sourcePath": "spacing.xl"
+      }
+    },
+    {
+      "path": "spacing.xxl",
+      "sourcePath": "spacing.xxl",
+      "type": "dimension",
+      "value": "32px",
+      "status": "unverified",
+      "evidence": {
+        "line": 143,
+        "sourcePath": "spacing.xxl"
+      }
+    },
+    {
+      "path": "spacing.section",
+      "sourcePath": "spacing.section",
+      "type": "dimension",
+      "value": "96px",
+      "status": "unverified",
+      "evidence": {
+        "line": 144,
+        "sourcePath": "spacing.section"
+      }
+    }
+  ],
+  "rejectedTokens": [],
+  "homepage": {
+    "status": "missing",
+    "candidates": [],
+    "verification": {
+      "status": "blocked",
+      "url": "https://sentry.io/",
+      "label": "Candidate homepage (read blocked)",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://sentry.io/",
+          "note": "Failed to fetch https://sentry.io/: (400) Unsupported content-type: text/markdown"
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Public text read did not establish homepage content. Candidate is not verified; no access controls were bypassed."
+    }
+  },
+  "completeness": {
+    "presentFields": [
+      "colors",
+      "typography",
+      "rounded",
+      "spacing",
+      "components"
+    ],
+    "missingFields": [],
+    "tokenRoles": "incomplete",
+    "note": "Missing fields are not reconstructed. Prose-only colors have no inferred semantic role."
+  },
+  "provenance": {
+    "status": "independent-analysis",
+    "sources": [
+      {
+        "title": "VoltAgent awesome-design-md independent analysis",
+        "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/sentry/DESIGN.md"
+      }
+    ],
+    "verification": "unverified-secondary-analysis"
+  },
+  "limitations": [
+    "Independent secondary analysis, not an official brand system; all reported values are unverified.",
+    "No brand assets, logos, font binaries or screenshots copied. Font names are documentary, not font licenses.",
+    "Safe CSS literals are extracted without claiming complete roles, state coverage or visual fidelity.",
+    "Markdown is retained as inert evidence, never executed or rendered as raw HTML."
+  ]
+}

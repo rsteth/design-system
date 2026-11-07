@@ -1,0 +1,72 @@
+[
+  {
+    "id": "react@19.2.3",
+    "license": "MIT",
+    "files": [
+      "licenses/react@19.2.3/LICENSE"
+    ]
+  },
+  {
+    "id": "react-dom@19.2.3",
+    "license": "MIT",
+    "files": [
+      "licenses/react-dom@19.2.3/LICENSE"
+    ]
+  },
+  {
+    "id": "scheduler@0.27.0",
+    "license": "MIT",
+    "files": [
+      "licenses/scheduler@0.27.0/LICENSE"
+    ]
+  },
+  {
+    "id": "idb-keyval@6.2.2",
+    "license": "Apache-2.0",
+    "files": [
+      "licenses/idb-keyval@6.2.2/LICENCE"
+    ]
+  },
+  {
+    "id": "lucide-react@0.562.0",
+    "license": "ISC",
+    "files": [
+      "licenses/lucide-react@0.562.0/LICENSE"
+    ]
+  },
+  {
+    "id": "tailwindcss@4.1.18",
+    "license": "MIT",
+    "files": [
+      "licenses/tailwindcss@4.1.18/LICENSE"
+    ]
+  },
+  {
+    "id": "react@19.3.1",
+    "license": "MIT",
+    "files": [
+      "licenses/react@19.3.1/LICENSE"
+    ]
+  },
+  {
+    "id": "react-dom@19.3.1",
+    "license": "MIT",
+    "files": [
+      "licenses/react-dom@19.3.1/LICENSE"
+    ]
+  },
+  {
+    "id": "leaflet@1.9.4",
+    "license": "BSD-2-Clause",
+    "files": [
+      "licenses/leaflet@1.9.4/LICENSE"
+    ]
+  },
+  {
+    "id": "scheduler@0.28.0",
+    "license": "MIT",
+    "files": [
+      "licenses/scheduler@0.28.0/LICENSE"
+    ]
+  }
+]
