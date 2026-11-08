@@ -1,66 +1,163 @@
 const manifestURL = new URL('../../collections/material/lacouture-1890/manifest.json', import.meta.url);
 let materialPromise;
+const svgCache = new Map();
 export function loadMaterial() {
   return materialPromise ??= fetch(manifestURL).then(response => { if (!response.ok) throw Error('Material images are unavailable'); return response.json(); }).catch(error => { materialPromise = undefined; throw error; });
 }
 const element = (tag, attrs = {}, ...children) => {
   const node = document.createElement(tag);
   for (const [key, value] of Object.entries(attrs)) node.setAttribute(key, String(value));
-  node.append(...children);
-  return node;
+  node.append(...children); return node;
 };
 const link = (label, href) => element('a', { href, target: '_blank', rel: 'noopener noreferrer' }, label);
-export function mountMaterial(root, material) {
-  let current = material.items.findIndex(item => item.id === new URL(location.href).searchParams.get('panel'));
-  if (current < 0) current = 0;
-  let view = new URL(location.href).searchParams.get('view') === 'translation' ? 'translation' : 'panels';
-  const main = element('main', { class: 'material-shell' });
-  const intro = element('header', { class: 'material-intro' }, element('p', { class: 'material-eyebrow' }, 'COLOR STUDIES / 1890'), element('h1', {}, material.title), element('p', { class: 'material-author' }, material.author), element('p', {}, '29 chromatic plates and 10 supplementary pages, alongside our web translation.'));
-  const tabs = element('div', { class: 'material-tabs', role: 'group', 'aria-label': 'Material view' });
-  const content = element('section', { class: 'material-content', 'aria-label': 'Selected material' });
-  const credit = element('aside', { class: 'material-credit' }, element('p', {}, material.credit), link('Getty scan collection ↗', material.sourceURL), document.createTextNode(' · '), link('Public-domain record ↗', material.rightsURL), element('p', {}, material.note));
-  const buttons = new Map();
-  for (const [id, label] of [['panels', 'Original panels'], ['translation', 'Web translation']]) {
-    const button = element('button', { type: 'button' }, label);
-    button.addEventListener('click', () => { view = id; updateURL(true); render(); });
-    tabs.append(button); buttons.set(id, button);
-  }
-  function updateURL(push = false) {
-    const url = new URL(location.href); url.searchParams.set('library', 'material');
-    url.searchParams.set('panel', material.items[current].id);
-    if(view === 'translation') url.searchParams.set('view', view); else url.searchParams.delete('view');
-    history[push ? 'pushState' : 'replaceState'](null, '', url);
-  }
-  function render() {
-    for (const [id, button] of buttons) button.setAttribute('aria-pressed', String(view === id));
-    content.replaceChildren();
-    if (view === 'translation') {
-      content.append(element('article', { class: 'material-translation' }, element('p', { class: 'material-eyebrow' }, 'DIGITAL INTERPRETATION'), element('h2', {}, 'An atlas for the web'), element('p', {}, 'Explore the existing interactive atlas: original scans paired with editable reconstructions of all 29 plates.'), link('Open web translation ↗', material.translationURL), element('p', { class: 'material-access' }, 'Private to Robin. Opens separately and may require sign-in. Its sharing settings are unchanged.'), element('p', {}, 'The reconstruction is an authored interpretation, not a color-calibrated facsimile or a Getty publication.')));
-      return;
+const assetURL = path => new URL(path, manifestURL).href;
+export const materialView = value => ['translation', 'compare'].includes(value) ? value : 'original';
+export function materialSelection(material, href) {
+  const params = new URL(href).searchParams;
+  const index = material.items.findIndex(item => item.id === params.get('panel'));
+  return { index: Math.max(0, index), view: materialView(params.get('view')) };
+}
+// The distributed assets are hash-checked in tests. Keep imported SVG inert and
+// scoped as defense in depth: no document styles, active content, URLs or images.
+export function parseMaterialSVG(text, id) {
+  const doc = new DOMParser().parseFromString(text, 'image/svg+xml');
+  const svg = doc.documentElement;
+  if (doc.querySelector('parsererror') || svg.localName !== 'svg') throw Error('The translation file could not be read.');
+  const tags = new Set(['svg','g','path','polygon','rect','circle','text','tspan','title','desc']);
+  const attrs = new Set(['x','y','cx','cy','r','d','points','width','height','viewBox','fill','stroke','stroke-width','stroke-linecap','stroke-linejoin','transform','text-anchor','font-size','font-weight','font-family','letter-spacing','baseline-shift','class','data-color','data-label','id','aria-labelledby']);
+  for (const node of [svg, ...svg.querySelectorAll('*')]) {
+    if (!tags.has(node.localName)) { node.remove(); continue; }
+    for (const attr of [...node.attributes]) {
+      if (attr.name === 'style' && attr.value === 'font-family:Arial,Helvetica,sans-serif') node.setAttribute('font-family', 'Arial,Helvetica,sans-serif');
+      if (!attrs.has(attr.name) || /url\s*\(|javascript:|https?:|data:/i.test(attr.value)) node.removeAttribute(attr.name);
     }
-    const item = material.items[current];
+  }
+  const ids = new Map();
+  for (const node of svg.querySelectorAll('[id]')) { const old = node.id; node.id = `material-${id}-${old}`; ids.set(old, node.id); }
+  for (const node of [svg, ...svg.querySelectorAll('[aria-labelledby]')]) {
+    if (node.hasAttribute('aria-labelledby')) node.setAttribute('aria-labelledby', node.getAttribute('aria-labelledby').split(/\s+/).map(key => ids.get(key) || '').filter(Boolean).join(' '));
+  }
+  svg.removeAttribute('width'); svg.removeAttribute('height');
+  svg.setAttribute('role', 'group'); svg.setAttribute('aria-label', 'Web translation. Select a color swatch to inspect its approximate HEX value.');
+  return svg;
+}
+async function fetchSVG(item) {
+  if (!svgCache.has(item.svg)) svgCache.set(item.svg, fetch(assetURL(item.svg)).then(async response => { if (!response.ok) throw Error('The web translation could not load.'); return response.text(); }).catch(error => { svgCache.delete(item.svg); throw error; }));
+  try { return parseMaterialSVG(await svgCache.get(item.svg), item.id); }
+  catch (error) { svgCache.delete(item.svg); throw error; }
+}
+export function mountMaterial(root, material) {
+  const initial = materialSelection(material, location.href);
+  let current = initial.index, preferredView = initial.view, zoom = 1, sequence = 0, destroyed = false, observer;
+  const main = element('main', { class: 'material-shell' });
+  const intro = element('header', { class: 'material-intro' }, element('p', { class: 'material-eyebrow' }, 'MATERIAL / COLOR STUDIES / 1890'), element('h1', {}, material.title), element('p', { class: 'material-author' }, material.author), element('p', {}, '29 chromatic plates, translated into SVG and flat color. Explore the original scans and their web interpretation in the same arrangement.'));
+  const content = element('section', { class: 'material-content', 'aria-label': 'Selected material' });
+  const credit = element('aside', { class: 'material-credit' }, element('p', {}, material.credit), link('Getty / Internet Archive source ↗', material.sourceURL), document.createTextNode(' · '), link('Source page images · JP2 archive ↗', 'https://archive.org/download/gri_33125012875395/gri_33125012875395_jp2.zip'), element('p', {}, 'Original work by Charles Lacouture, with chromolithographs by G. Severeyns. The SVG reconstruction and this interface are a web interpretation, not the original artwork or a Getty publication. Internet Archive records the source as NOT_IN_COPYRIGHT; no CC0 license is asserted here.'), element('p', {}, 'Flat colors are scan-derived digital approximations, not calibrated measurements of the original inks. Geometry is regularized, typography is substituted, and paper texture, wear and fine ink hatching remain visible only in the scans.'));
+  function updateURL() {
+    const url = new URL(location.href); url.searchParams.set('library', 'material'); url.searchParams.set('panel', material.items[current].id);
+    if (preferredView === 'original') url.searchParams.delete('view'); else url.searchParams.set('view', preferredView);
+    if (url.href !== location.href) history.pushState(null, '', url);
+  }
+  function render(focusSelector) {
+    const version = ++sequence; observer?.disconnect();
+    const item = material.items[current], hasSVG = Boolean(item.svg), view = hasSVG ? preferredView : 'original';
+    content.replaceChildren();
     const picker = element('select', { id: 'material-panel-picker' });
-    for (const [group, name] of [['plate','Plates · 29'], ['supplement','Supplementary pages · 10']]) {
-      const options = element('optgroup', { label: name });
-      for (const [index, entry] of material.items.entries()) if (entry.group === group) options.append(element('option', { value: index }, `${entry.group === 'plate' ? entry.number + ' · ' : ''}${entry.title}`));
-      picker.append(options);
+    const groups = new Map();
+    for (const [index, entry] of material.items.entries()) {
+      const group = entry.group === 'supplement' ? 'Supplementary pages · 10' : `${entry.sectionTitle || 'Plates'}${entry.section ? ' · Section ' + entry.section : ''}`;
+      if (!groups.has(group)) { const optgroup = element('optgroup', { label: group }); groups.set(group, optgroup); picker.append(optgroup); }
+      groups.get(group).append(element('option', { value: index }, `${entry.group === 'plate' ? entry.number + ' · ' : ''}${entry.title}`));
     }
     picker.value = String(current);
     const previous = element('button', { type: 'button', 'aria-label': 'Previous panel' }, '←');
     const next = element('button', { type: 'button', 'aria-label': 'Next panel' }, '→');
     previous.disabled = current === 0; next.disabled = current === material.items.length - 1;
-    function select(index, focus) { current = index; updateURL(); render(); if(focus) content.querySelector(focus)?.focus(); }
+    function select(index, focus) { current = index; updateURL(); render(focus); }
     picker.addEventListener('change', () => select(Number(picker.value), '#material-panel-picker'));
     previous.addEventListener('click', () => select(current - 1, current === 1 ? '[aria-label="Next panel"]' : '[aria-label="Previous panel"]'));
     next.addEventListener('click', () => select(current + 1, current === material.items.length - 2 ? '[aria-label="Previous panel"]' : '[aria-label="Next panel"]'));
     const toolbar = element('div', { class: 'material-toolbar' }, element('label', { for: 'material-panel-picker' }, 'Panel'), picker, previous, next, element('span', { class: 'material-count', 'aria-live': 'polite' }, `${current + 1} / ${material.items.length}`));
-    const src = new URL(item.file, manifestURL).href;
-    const image = element('img', { src, alt: `${item.group === 'plate' ? 'Plate ' + item.number + ': ' : ''}${item.title}. Original scanned page from Charles Lacouture’s Répertoire chromatique, 1890.`, width: item.width, height: item.height, decoding: 'async' });
-    const imageStatus = element('p', { class: 'material-image-status', 'aria-live': 'polite' }, 'Loading scan…');
-    image.addEventListener('load', () => imageStatus.remove());
-    image.addEventListener('error', () => { imageStatus.textContent = 'This scan could not load. Use the source scan link below.'; imageStatus.setAttribute('role','alert'); });
-    content.append(toolbar, element('figure', { class: 'material-figure' }, imageStatus, image, element('figcaption', {}, element('span', {}, `${item.group === 'plate' ? item.number + ' · ' : ''}${item.title}`), link('Full-resolution JPEG ↗', src), link('Source scan ↗', item.sourceURL))));
+    const modes = element('div', { class: 'material-tabs', role: 'group', 'aria-label': 'Material view' });
+    for (const [id, label] of [['original','Original'],['translation','Web translation'],['compare','Compare']]) {
+      const button = element('button', { type: 'button', 'data-material-view': id, 'aria-pressed': view === id }, label);
+      button.disabled = !hasSVG && id !== 'original';
+      button.addEventListener('click', () => { preferredView = id; updateURL(); render(`[data-material-view="${id}"]`); }); modes.append(button);
+    }
+    const zoomPicker = element('select', { id: 'material-zoom' }, ...[[1,'Fit'],[1.5,'150%'],[2,'200%'],[3,'300%']].map(([value,label]) => element('option', { value }, label)));
+    zoomPicker.value = String(zoom);
+    const zoomControl = element('div', { class: 'material-zoom-control' }, element('label', { for: 'material-zoom' }, 'Zoom'), zoomPicker);
+    const controls = element('div', { class: 'material-controls' }, modes, zoomControl);
+    const stage = element('div', { class: 'material-stage', tabindex: '0', 'aria-label': 'Plate viewer. Scroll to pan when zoomed.' });
+    const sheets = element('div', { class: 'material-sheets', 'data-compare': view === 'compare' }); stage.append(sheets);
+    const inspectorText = element('span', { class: 'material-inspector-value', 'aria-live': 'polite' }, hasSVG && view !== 'original' ? 'Select a swatch to inspect its approximate HEX value.' : 'Switch to Web translation to inspect colors.');
+    const chip = element('span', { class: 'material-chip', 'aria-hidden': 'true' });
+    const copy = element('button', { type: 'button' }, 'Copy HEX'); copy.disabled = true;
+    const copyStatus = element('span', { class: 'material-copy-status', role: 'status' });
+    let selectedColor;
+    copy.addEventListener('click', async () => {
+      const color = selectedColor;
+      try { await navigator.clipboard.writeText(color); if (version === sequence && !destroyed) copyStatus.textContent = `Copied ${color}`; }
+      catch { if (version === sequence && !destroyed) copyStatus.textContent = `Copy unavailable. Select and copy ${color} above.`; }
+    });
+    const inspector = element('div', { class: 'material-inspector', 'aria-label': 'Color inspector' }, chip, inspectorText, copy, copyStatus);
+    if (!hasSVG) inspector.hidden = true;
+    else if (view === 'original') { chip.hidden = true; copy.hidden = true; }
+    const downloads = element('div', { class: 'material-downloads' }, link('Source scan ↗', item.sourceURL), element('a', { href: assetURL(item.file), download: `${item.id}.jpg` }, 'Download original JPEG'));
+    if (hasSVG) downloads.append(element('a', { href: assetURL(item.svg), download: `${item.id}.svg` }, 'Download SVG'));
+    const caption = element('div', { class: 'material-caption' }, element('h2', { lang: 'fr' }, `${item.group === 'plate' ? 'Plate ' + item.number + ' · ' : ''}${item.title}`), downloads);
+    content.append(toolbar, controls);
+    if (!hasSVG) content.append(element('p', { class: 'material-mode-note', role: 'status' }, 'Supplementary page · original scan only. Web translation is available for the 29 numbered plates.'));
+    if (view === 'compare') content.append(element('p', { class: 'material-mode-note' }, 'On narrow screens, the translation sits below the original. Scroll inside the viewer to compare both pages.'));
+    content.append(stage, inspector, caption);
+    function fit() {
+      const compare = view === 'compare', stacked = stage.clientWidth < 660;
+      sheets.dataset.stacked = String(stacked);
+      const count = compare && !stacked ? 2 : 1;
+      const availableWidth = (stage.clientWidth - 32 - (count - 1) * 20) / count;
+      const fitWidth = Math.max(90, Math.min(availableWidth, (stage.clientHeight - 60) * item.width / item.height));
+      sheets.style.setProperty('--sheet-width', `${Math.floor(fitWidth * zoom)}px`);
+      for (const image of sheets.querySelectorAll('img')) image.sizes = `${Math.ceil(fitWidth * zoom)}px`;
+    }
+    zoomPicker.addEventListener('change', () => { zoom = Number(zoomPicker.value); fit(); if (zoom === 1) stage.scrollTo(0,0); });
+    const requestedViews = view === 'compare' ? ['original','translation'] : [view];
+    for (const mode of requestedViews) {
+      const slot = element('figure', { class: 'material-sheet-slot', 'data-mode': mode }, element('figcaption', {}, mode === 'original' ? 'Original scan' : 'Web translation · approximate flat colors'));
+      const sheet = element('div', { class: 'material-sheet', style: `aspect-ratio:${item.width}/${item.height}` }); slot.append(sheet); sheets.append(slot);
+      const status = element('p', { class: 'material-image-status', role: 'status' }, mode === 'original' ? 'Loading scan…' : 'Loading web translation…'); sheet.append(status);
+      const fail = message => { status.textContent = message; status.setAttribute('role','alert'); const retry = element('button', { type: 'button' }, 'Retry'); retry.addEventListener('click', () => render()); status.append(document.createElement('br'), retry); };
+      if (mode === 'original') {
+        const previews = item.previews || [];
+        const src = assetURL(previews.at(-1)?.file || item.file);
+        const image = element('img', { src, alt: `${item.group === 'plate' ? 'Plate ' + item.number + ': ' : ''}${item.title}. Original full-page Getty scan of Charles Lacouture’s Répertoire chromatique, 1890.`, width: item.width, height: item.height, decoding: 'async' });
+        if (previews.length) { image.srcset = [...previews.map(p => `${assetURL(p.file)} ${p.width}w`), `${assetURL(item.file)} ${item.width}w`].join(', '); image.sizes = view === 'compare' ? '(max-width: 700px) 90vw, 40vw' : '(max-width: 700px) 90vw, 60vw'; }
+        image.addEventListener('load', () => status.remove());
+        image.addEventListener('error', () => fail('This scan could not load. Retry or use the source scan link below.'));
+        sheet.append(image);
+      } else {
+        fetchSVG(item).then(svg => {
+          if (destroyed || version !== sequence) return;
+          const swatches = [...svg.querySelectorAll('.swatch')].filter(node => /^#[0-9a-f]{6}$/i.test(node.dataset.color || node.getAttribute('fill') || ''));
+          const selectSwatch = (node, focus = false) => {
+            for (const swatch of swatches) { swatch.classList.toggle('is-selected', swatch === node); swatch.setAttribute('tabindex', swatch === node ? '0' : '-1'); swatch.setAttribute('aria-pressed', String(swatch === node)); }
+            selectedColor = (node.dataset.color || node.getAttribute('fill')).toUpperCase();
+            chip.style.background = selectedColor; inspectorText.textContent = `${node.dataset.label || 'Selected swatch'} · ${selectedColor} · approximate sRGB`; copy.disabled = false; copyStatus.textContent = ''; if (focus) node.focus();
+          };
+          swatches.forEach((node, index) => {
+            node.setAttribute('tabindex', index === 0 ? '0' : '-1'); node.setAttribute('role','button'); node.setAttribute('aria-pressed','false'); node.setAttribute('aria-label', `${node.dataset.label || 'Swatch ' + (index + 1)}, ${node.dataset.color || node.getAttribute('fill')}, inspect approximate color`);
+            node.addEventListener('click', () => selectSwatch(node));
+            node.addEventListener('keydown', event => {
+              if (['Enter',' '].includes(event.key)) { event.preventDefault(); selectSwatch(node); }
+              else if (['ArrowRight','ArrowDown','ArrowLeft','ArrowUp','Home','End'].includes(event.key)) { event.preventDefault(); const next = event.key === 'Home' ? 0 : event.key === 'End' ? swatches.length - 1 : (index + (['ArrowRight','ArrowDown'].includes(event.key) ? 1 : -1) + swatches.length) % swatches.length; selectSwatch(swatches[next], true); }
+            });
+          });
+          status.remove(); sheet.append(svg);
+        }).catch(error => { if (!destroyed && version === sequence) fail(`${error.message} Retry or use Original.`); });
+      }
+    }
+    observer = new ResizeObserver(fit); observer.observe(stage); fit();
+    if (focusSelector) content.querySelector(focusSelector)?.focus();
   }
-  main.append(intro, tabs, content, credit); root.replaceChildren(main); render();
-  return { destroy() { main.remove(); } };
+  main.append(intro, content, credit); root.replaceChildren(main); render();
+  return { destroy() { destroyed = true; sequence++; observer?.disconnect(); main.remove(); } };
 }

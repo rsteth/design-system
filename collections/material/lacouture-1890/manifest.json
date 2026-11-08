@@ -4,12 +4,10 @@
   "title": "Répertoire chromatique",
   "author": "Charles Lacouture",
   "year": 1890,
-  "credit": "Charles Lacouture, Répertoire chromatique (1890). Chromolithographs by G. Severeyns. Digitized by the Getty Research Institute, via Internet Archive.",
+  "credit": "Charles Lacouture, Répertoire chromatique (1890). Chromolithographs by G. Severeyns. Source scans: Getty Research Institute, Los Angeles, via Internet Archive.",
   "sourceURL": "https://archive.org/details/gri_33125012875395",
   "rightsURL": "https://commons.wikimedia.org/wiki/File:Getty_Research_Institute_(IA_gri_33125012875395).pdf",
-  "rights": "Public domain; Internet Archive records NOT_IN_COPYRIGHT.",
-  "translationURL": "https://lacouture-repertoire-1890.rsteth.chatgpt.site",
-  "translationAccess": "Private to Robin",
+  "rights": "Internet Archive records the historical source as NOT_IN_COPYRIGHT. This is a copyright-status statement, not a CC0 dedication.",
   "note": "Uncorrected 3000px-high JPEG derivatives of the processed JP2 scans. Paper, margins and printed marks are preserved. Scan colors are not calibrated measurements of the original inks.",
   "items": [
     {
@@ -21,7 +19,30 @@
       "width": 2198,
       "height": 3000,
       "sourceURL": "https://archive.org/details/gri_33125012875395/page/n164/mode/1up",
-      "sha256": "22537f287b348a6388c58b4f878b33392fdc724d4dc8fa3ecd3c0b46b6109907"
+      "sha256": "22537f287b348a6388c58b4f878b33392fdc724d4dc8fa3ecd3c0b46b6109907",
+      "section": 1,
+      "sectionTitle": "Frontispices",
+      "kind": "rose",
+      "swatchCount": 84,
+      "svg": "translation/plates/plate-i.svg",
+      "svgSha256": "25323cfd94bea53b2de05c10f0256395b9cfede5701926b99d0fb2bc78c990b2",
+      "svgBytes": 54798,
+      "previews": [
+        {
+          "file": "previews/750/plate-i.jpg",
+          "sha256": "7df0def04a0eb975505b137d20140274e055c251ed5162da0d7b1b22a117a7f0",
+          "bytes": 72545,
+          "width": 549,
+          "height": 750
+        },
+        {
+          "file": "previews/1500/plate-i.jpg",
+          "sha256": "557fb75e7f55afd18aa6e6d85e925e8d8f9c1b9941fbfb98e1094535c19081ad",
+          "bytes": 300397,
+          "width": 1099,
+          "height": 1500
+        }
+      ]
     },
     {
       "id": "plate-i-bis",
@@ -32,7 +53,30 @@
       "width": 2199,
       "height": 3000,
       "sourceURL": "https://archive.org/details/gri_33125012875395/page/n166/mode/1up",
-      "sha256": "970cc3c75c5534f5c2568f56fb711cec3065ad4532007ab124a558a47127af90"
+      "sha256": "970cc3c75c5534f5c2568f56fb711cec3065ad4532007ab124a558a47127af90",
+      "section": 1,
+      "sectionTitle": "Frontispices",
+      "kind": "trilobe",
+      "swatchCount": 186,
+      "svg": "translation/plates/plate-i-bis.svg",
+      "svgSha256": "762b3bd3b7fad8596f44e9593076827d2386a6cccc8ca95856cff96f780101e7",
+      "svgBytes": 313036,
+      "previews": [
+        {
+          "file": "previews/750/plate-i-bis.jpg",
+          "sha256": "375d07f23c4a334dbf4e650dc1d7f9c4b7e5e496e34bc611544c8b892f5bfe13",
+          "bytes": 109082,
+          "width": 549,
+          "height": 750
+        },
+        {
+          "file": "previews/1500/plate-i-bis.jpg",
+          "sha256": "91489791ac24994e947dfe66e60e33e4634e6c1a6c128abe6906f8730c40101e",
+          "bytes": 412312,
+          "width": 1099,
+          "height": 1500
+        }
+      ]
     },
     {
       "id": "plate-ii",
@@ -43,7 +87,33 @@
       "width": 2207,
       "height": 3000,
       "sourceURL": "https://archive.org/details/gri_33125012875395/page/n168/mode/1up",
-      "sha256": "8066efa9ca7a984152c345aea97af53e0bd8acb42dad6bfc4b44c34a5fd74da6"
+      "sha256": "8066efa9ca7a984152c345aea97af53e0bd8acb42dad6bfc4b44c34a5fd74da6",
+      "section": 2,
+      "sectionTitle": "Gammes lavées, rabattues et grisées",
+      "kind": "square",
+      "swatchCount": 49,
+      "svg": "translation/plates/plate-ii.svg",
+      "svgSha256": "818317939108b535055e94d78673aee13a703213267c2398646f3d2c5f5547e4",
+      "svgBytes": 17916,
+      "data": "translation/data/plate-ii.json",
+      "dataSha256": "22f131279f937d1940840e9330fa61bb7ceed7a12da3402ee4a7c54ac35d80fc",
+      "dataBytes": 17745,
+      "previews": [
+        {
+          "file": "previews/750/plate-ii.jpg",
+          "sha256": "a7b70789e14495b5b3f27509ec266039fa8bbf586ddca1a782d6899f94c5dab7",
+          "bytes": 68209,
+          "width": 551,
+          "height": 750
+        },
+        {
+          "file": "previews/1500/plate-ii.jpg",
+          "sha256": "403089350adbc3704db90bac4006cc0331d0fca090c613edc00f53c5d8ed5065",
+          "bytes": 281544,
+          "width": 1103,
+          "height": 1500
+        }
+      ]
     },
     {
       "id": "plate-iii",
@@ -54,7 +124,33 @@
       "width": 2230,
       "height": 3000,
       "sourceURL": "https://archive.org/details/gri_33125012875395/page/n170/mode/1up",
-      "sha256": "2f6b6042c5c12fb5b57f6de4f308601441f14b98af5a105537c8aeda51572add"
+      "sha256": "2f6b6042c5c12fb5b57f6de4f308601441f14b98af5a105537c8aeda51572add",
+      "section": 2,
+      "sectionTitle": "Gammes lavées, rabattues et grisées",
+      "kind": "square",
+      "swatchCount": 49,
+      "svg": "translation/plates/plate-iii.svg",
+      "svgSha256": "46c0a7ddb0ae2097accd891e3e0cbdf2479c2ef9889bef7f933a879bf3399cd7",
+      "svgBytes": 18429,
+      "data": "translation/data/plate-iii.json",
+      "dataSha256": "e3aba3c3347bad8ef5fd2e40d843fd41f1f6487bfe7c622aa73af13e0c1c1d5d",
+      "dataBytes": 17753,
+      "previews": [
+        {
+          "file": "previews/750/plate-iii.jpg",
+          "sha256": "50f5d123b8980eb6a4f50267ff14c8db1933a3634bf7c12ffb4b8e68be890374",
+          "bytes": 69874,
+          "width": 557,
+          "height": 750
+        },
+        {
+          "file": "previews/1500/plate-iii.jpg",
+          "sha256": "0a7a8e76ba4dbd9ed857a5ff156dbe04a383357e0b20fc4d0fa09b12e34dcfac",
+          "bytes": 296750,
+          "width": 1115,
+          "height": 1500
+        }
+      ]
     },
     {
       "id": "plate-iv",
@@ -65,7 +161,33 @@
       "width": 2230,
       "height": 3000,
       "sourceURL": "https://archive.org/details/gri_33125012875395/page/n172/mode/1up",
-      "sha256": "7b7d1ba931d46e069c398dfdebcb6b0defe0cd1d90b8f0489eacd3594ef9a3dd"
+      "sha256": "7b7d1ba931d46e069c398dfdebcb6b0defe0cd1d90b8f0489eacd3594ef9a3dd",
+      "section": 2,
+      "sectionTitle": "Gammes lavées, rabattues et grisées",
+      "kind": "square",
+      "swatchCount": 49,
+      "svg": "translation/plates/plate-iv.svg",
+      "svgSha256": "ea4261ee66880d09e9d33aa77a075db6c08a7a308519ac0b309da54758ba9d57",
+      "svgBytes": 17922,
+      "data": "translation/data/plate-iv.json",
+      "dataSha256": "5633be66aa4d56a74663c20052e8f44ef324b43107868222992938c8750e5d0d",
+      "dataBytes": 17745,
+      "previews": [
+        {
+          "file": "previews/750/plate-iv.jpg",
+          "sha256": "10b83c4d0cef2940892fa402c1b591f06343bbe4e6ca200ce589ae4631ff2823",
+          "bytes": 70439,
+          "width": 557,
+          "height": 750
+        },
+        {
+          "file": "previews/1500/plate-iv.jpg",
+          "sha256": "2334432437d7d8ad74c3ecee975d98d0ba999b0e0fbc70b9a424855426689b16",
+          "bytes": 298131,
+          "width": 1115,
+          "height": 1500
+        }
+      ]
     },
     {
       "id": "plate-v",
@@ -76,7 +198,33 @@
       "width": 2230,
       "height": 3000,
       "sourceURL": "https://archive.org/details/gri_33125012875395/page/n174/mode/1up",
-      "sha256": "413ca13f448656ed4a56078d30ea4bfb237e8d620d460e9a99c3dbc8c35cc7f4"
+      "sha256": "413ca13f448656ed4a56078d30ea4bfb237e8d620d460e9a99c3dbc8c35cc7f4",
+      "section": 2,
+      "sectionTitle": "Gammes lavées, rabattues et grisées",
+      "kind": "square",
+      "swatchCount": 49,
+      "svg": "translation/plates/plate-v.svg",
+      "svgSha256": "7b595e01c0c444743b0c64645b8eb6d57ce624185825022bb93d95a1996a6b59",
+      "svgBytes": 18131,
+      "data": "translation/data/plate-v.json",
+      "dataSha256": "a6583580729c3f999c60587f8b892439e6849eb77feec65fd77a84a0fe1e7d00",
+      "dataBytes": 17681,
+      "previews": [
+        {
+          "file": "previews/750/plate-v.jpg",
+          "sha256": "70bfa171522533428a210502a8e576ec9a0bade788bfcb5b611ff78af2993524",
+          "bytes": 67516,
+          "width": 557,
+          "height": 750
+        },
+        {
+          "file": "previews/1500/plate-v.jpg",
+          "sha256": "bdb1eb3ebfda430713cdb9e351fd62cc6593c74d7f3f1d25077358a4814b1788",
+          "bytes": 287964,
+          "width": 1115,
+          "height": 1500
+        }
+      ]
     },
     {
       "id": "plate-vi",
@@ -87,7 +235,33 @@
       "width": 2230,
       "height": 3000,
       "sourceURL": "https://archive.org/details/gri_33125012875395/page/n176/mode/1up",
-      "sha256": "74bdf1002f2b76f58f2499cc915ff3c77b77405e4fbb42e9331611b14c1ed73d"
+      "sha256": "74bdf1002f2b76f58f2499cc915ff3c77b77405e4fbb42e9331611b14c1ed73d",
+      "section": 2,
+      "sectionTitle": "Gammes lavées, rabattues et grisées",
+      "kind": "square",
+      "swatchCount": 49,
+      "svg": "translation/plates/plate-vi.svg",
+      "svgSha256": "9e0f1118386d54d09cb319336b8a1a1afe2bfbd8e42818444981dd020efc9a82",
+      "svgBytes": 17930,
+      "data": "translation/data/plate-vi.json",
+      "dataSha256": "1a47762c81a359f4644bd82d79aa0d1c468c35268e3a6d05ea2cd3dc1536cdde",
+      "dataBytes": 17759,
+      "previews": [
+        {
+          "file": "previews/750/plate-vi.jpg",
+          "sha256": "62d72b7df6b028addef0e921676da113d49644542683eaa70472f16faf88fbd2",
+          "bytes": 67966,
+          "width": 557,
+          "height": 750
+        },
+        {
+          "file": "previews/1500/plate-vi.jpg",
+          "sha256": "f56f5eedc1115d4512365c487bcd957533b85dea7ca677eb027e3ebdf3399187",
+          "bytes": 293741,
+          "width": 1115,
+          "height": 1500
+        }
+      ]
     },
     {
       "id": "plate-vii",
@@ -98,7 +272,33 @@
       "width": 2230,
       "height": 3000,
       "sourceURL": "https://archive.org/details/gri_33125012875395/page/n178/mode/1up",
-      "sha256": "43a04f9752fbd70fe6e2374d9329eb7183511b728df1c88900bbc4f045903066"
+      "sha256": "43a04f9752fbd70fe6e2374d9329eb7183511b728df1c88900bbc4f045903066",
+      "section": 2,
+      "sectionTitle": "Gammes lavées, rabattues et grisées",
+      "kind": "square",
+      "swatchCount": 49,
+      "svg": "translation/plates/plate-vii.svg",
+      "svgSha256": "a08be58d680440f53e9120ded029ff1d910b39333dca944e3012140df8247057",
+      "svgBytes": 18507,
+      "data": "translation/data/plate-vii.json",
+      "dataSha256": "c7f64279579e8dea2897cd7d71f8f2b63f5cba70688ac553762a24d79d19cb55",
+      "dataBytes": 17795,
+      "previews": [
+        {
+          "file": "previews/750/plate-vii.jpg",
+          "sha256": "a4a45be9ec54bc6122817328eb5fc83ab828fec6d84732734925a4613c5fedbe",
+          "bytes": 68718,
+          "width": 557,
+          "height": 750
+        },
+        {
+          "file": "previews/1500/plate-vii.jpg",
+          "sha256": "204a2e04a5d1b184eb3c51040af2530a3a901230925cd8c9cc8f533f94ea0bb7",
+          "bytes": 297943,
+          "width": 1115,
+          "height": 1500
+        }
+      ]
     },
     {
       "id": "plate-viii",
@@ -109,7 +309,33 @@
       "width": 2230,
       "height": 3000,
       "sourceURL": "https://archive.org/details/gri_33125012875395/page/n180/mode/1up",
-      "sha256": "d4f546754b4c40690431976463f89ef4fe259eb021ec2ae012f1cd2945c9a260"
+      "sha256": "d4f546754b4c40690431976463f89ef4fe259eb021ec2ae012f1cd2945c9a260",
+      "section": 2,
+      "sectionTitle": "Gammes lavées, rabattues et grisées",
+      "kind": "square",
+      "swatchCount": 49,
+      "svg": "translation/plates/plate-viii.svg",
+      "svgSha256": "bbd790fd5a029d56226397dabf20f4be9030e26f1cfd6ca99fabe503a47db158",
+      "svgBytes": 18300,
+      "data": "translation/data/plate-viii.json",
+      "dataSha256": "2a0fe8835fff4f61bb4dba51b1d598423e222be71cb214d8fe57429c730d6988",
+      "dataBytes": 17803,
+      "previews": [
+        {
+          "file": "previews/750/plate-viii.jpg",
+          "sha256": "5e6e759660c14ed0f3c27f036ea26caa22620b606f6712a8026da629a461fe52",
+          "bytes": 66519,
+          "width": 557,
+          "height": 750
+        },
+        {
+          "file": "previews/1500/plate-viii.jpg",
+          "sha256": "38edd74107a3a4b25677437644d545413e303195acbed0a5f5e9cb94044ee3da",
+          "bytes": 287176,
+          "width": 1115,
+          "height": 1500
+        }
+      ]
     },
     {
       "id": "plate-ix",
@@ -120,7 +346,33 @@
       "width": 2230,
       "height": 3000,
       "sourceURL": "https://archive.org/details/gri_33125012875395/page/n182/mode/1up",
-      "sha256": "a978b566f7314f3b646aec3bae8924d4a40898f358b0885c4e8120f3a61cf44a"
+      "sha256": "a978b566f7314f3b646aec3bae8924d4a40898f358b0885c4e8120f3a61cf44a",
+      "section": 2,
+      "sectionTitle": "Gammes lavées, rabattues et grisées",
+      "kind": "square",
+      "swatchCount": 49,
+      "svg": "translation/plates/plate-ix.svg",
+      "svgSha256": "7ca11541201781e6ac29cd06c43bf2badbdaddc4cfd37752b996949371efa40e",
+      "svgBytes": 18360,
+      "data": "translation/data/plate-ix.json",
+      "dataSha256": "53eea1ca147cc8552a215c5b0b91f10b7d802b10216f9d9710954fac2fdbf16b",
+      "dataBytes": 17717,
+      "previews": [
+        {
+          "file": "previews/750/plate-ix.jpg",
+          "sha256": "5ccf36a7140d95bdfc8313677f9a4bd068b64f9b33b1995e0192106edc2042ba",
+          "bytes": 70782,
+          "width": 557,
+          "height": 750
+        },
+        {
+          "file": "previews/1500/plate-ix.jpg",
+          "sha256": "42f9fd15ee0723c76da7c93e442bfce792f72ba072af5b44da28ef3e006f01b9",
+          "bytes": 302682,
+          "width": 1115,
+          "height": 1500
+        }
+      ]
     },
     {
       "id": "plate-x",
@@ -131,7 +383,33 @@
       "width": 2230,
       "height": 3000,
       "sourceURL": "https://archive.org/details/gri_33125012875395/page/n184/mode/1up",
-      "sha256": "edbd5a9024c393caf00da210dffbd8a718512b2f4f7047eb050b398e822f9edf"
+      "sha256": "edbd5a9024c393caf00da210dffbd8a718512b2f4f7047eb050b398e822f9edf",
+      "section": 2,
+      "sectionTitle": "Gammes lavées, rabattues et grisées",
+      "kind": "square",
+      "swatchCount": 49,
+      "svg": "translation/plates/plate-x.svg",
+      "svgSha256": "242e3de55aa046bd1e5d0fc09052509f7a390a9766f9fdb42bfdd6ffaed9ed0b",
+      "svgBytes": 17753,
+      "data": "translation/data/plate-x.json",
+      "dataSha256": "b019077e17c61a4e23053a5b72741bdd9e8dd090d27c5e1cae25623e8abb9164",
+      "dataBytes": 17681,
+      "previews": [
+        {
+          "file": "previews/750/plate-x.jpg",
+          "sha256": "6bd1da43e5d3adb65d6b3dd2c0e5624313b18da6c035a1c95e7ce8e99c2eacef",
+          "bytes": 71876,
+          "width": 557,
+          "height": 750
+        },
+        {
+          "file": "previews/1500/plate-x.jpg",
+          "sha256": "1253a7ce0dc7826dd2dddbedf8b4d84784a8e5fe7cdac0b2ab9df937c8cfe920",
+          "bytes": 310667,
+          "width": 1115,
+          "height": 1500
+        }
+      ]
     },
     {
       "id": "plate-xi",
@@ -142,7 +420,33 @@
       "width": 2176,
       "height": 3000,
       "sourceURL": "https://archive.org/details/gri_33125012875395/page/n186/mode/1up",
-      "sha256": "e9743813e6a3ddf13a8343259749a7474444e0eb6ac14565efbbb81e3204215c"
+      "sha256": "e9743813e6a3ddf13a8343259749a7474444e0eb6ac14565efbbb81e3204215c",
+      "section": 2,
+      "sectionTitle": "Gammes lavées, rabattues et grisées",
+      "kind": "square",
+      "swatchCount": 49,
+      "svg": "translation/plates/plate-xi.svg",
+      "svgSha256": "4a31c0e85adcb30f32ab7e7f938ca183ebfa74134bdadc30076a15cbbad856d4",
+      "svgBytes": 18335,
+      "data": "translation/data/plate-xi.json",
+      "dataSha256": "b74c3a8ebf8e295db16492a8c8fe9c772a803dcc939eb40ad2861dc1a17d9f5d",
+      "dataBytes": 17717,
+      "previews": [
+        {
+          "file": "previews/750/plate-xi.jpg",
+          "sha256": "0aa0773a849addc55ba0666da44d03914398868bd9ee025dc4f3bbafb1c59c0d",
+          "bytes": 78952,
+          "width": 544,
+          "height": 750
+        },
+        {
+          "file": "previews/1500/plate-xi.jpg",
+          "sha256": "a1f8fdc31eb3460bff46d521a5398e6154a49d6f89e5239466118a0942be6a38",
+          "bytes": 316813,
+          "width": 1088,
+          "height": 1500
+        }
+      ]
     },
     {
       "id": "plate-xii",
@@ -153,7 +457,33 @@
       "width": 2165,
       "height": 3000,
       "sourceURL": "https://archive.org/details/gri_33125012875395/page/n188/mode/1up",
-      "sha256": "4fd91bece9995f40c29ca4dda7d7fb1ca76d99597c6bf8ef73e3c79bd3668235"
+      "sha256": "4fd91bece9995f40c29ca4dda7d7fb1ca76d99597c6bf8ef73e3c79bd3668235",
+      "section": 2,
+      "sectionTitle": "Gammes lavées, rabattues et grisées",
+      "kind": "square",
+      "swatchCount": 49,
+      "svg": "translation/plates/plate-xii.svg",
+      "svgSha256": "6817d0c4594d1f1f80943ddcb86416d844be27b99e0b5ce34d0754376f148124",
+      "svgBytes": 18142,
+      "data": "translation/data/plate-xii.json",
+      "dataSha256": "3f808237d1558d8235f79d90dc76932c1fd4bb9c51a6cb9d4be4b2a3654c80ad",
+      "dataBytes": 17795,
+      "previews": [
+        {
+          "file": "previews/750/plate-xii.jpg",
+          "sha256": "f357bac572ca80afac3b750085d80b1c6177e4dd0e0f353184c94d3eeaa3a044",
+          "bytes": 75050,
+          "width": 541,
+          "height": 750
+        },
+        {
+          "file": "previews/1500/plate-xii.jpg",
+          "sha256": "2aa627e0293a9ab4d8b67720eb76a26cecfbb50a4e9d411164f71f7d6f107424",
+          "bytes": 278303,
+          "width": 1082,
+          "height": 1500
+        }
+      ]
     },
     {
       "id": "plate-xiii",
@@ -164,7 +494,33 @@
       "width": 2179,
       "height": 3000,
       "sourceURL": "https://archive.org/details/gri_33125012875395/page/n190/mode/1up",
-      "sha256": "5453dd9d5e1f7db67c88762e37450aaa81c0752c0f7760a6e89f97f1179d6cef"
+      "sha256": "5453dd9d5e1f7db67c88762e37450aaa81c0752c0f7760a6e89f97f1179d6cef",
+      "section": 2,
+      "sectionTitle": "Gammes lavées, rabattues et grisées",
+      "kind": "square",
+      "swatchCount": 49,
+      "svg": "translation/plates/plate-xiii.svg",
+      "svgSha256": "e964cce9c3897a13f6832162a5b6ebe4523d9336a6ba6f3cc5889b3bbfb80bf6",
+      "svgBytes": 18633,
+      "data": "translation/data/plate-xiii.json",
+      "dataSha256": "7b1c9d645bd358c7a844f06ed50a54198ab24400fd0e1c993782812e99c7b157",
+      "dataBytes": 17817,
+      "previews": [
+        {
+          "file": "previews/750/plate-xiii.jpg",
+          "sha256": "7775e6e55c1e925a0d4be7852aa05f5de41d347b4ad9dde8f7482826c73e7ae2",
+          "bytes": 68048,
+          "width": 544,
+          "height": 750
+        },
+        {
+          "file": "previews/1500/plate-xiii.jpg",
+          "sha256": "cecfc917d84cf6e71fca261ca3a10613d27ee06ecab0ee34559b69866c1e9652",
+          "bytes": 277173,
+          "width": 1089,
+          "height": 1500
+        }
+      ]
     },
     {
       "id": "plate-xiv",
@@ -175,7 +531,33 @@
       "width": 2185,
       "height": 3000,
       "sourceURL": "https://archive.org/details/gri_33125012875395/page/n192/mode/1up",
-      "sha256": "da6e2db61f7455226c50b83ede222229609f2b26ccf6fdecf2f88fd2b680e8f2"
+      "sha256": "da6e2db61f7455226c50b83ede222229609f2b26ccf6fdecf2f88fd2b680e8f2",
+      "section": 3,
+      "sectionTitle": "Gammes de nuances",
+      "kind": "diamond",
+      "swatchCount": 49,
+      "svg": "translation/plates/plate-xiv.svg",
+      "svgSha256": "f3c2b2cda1b05ac53c95e2cce54f5d2b42d0f4aa0593c2097110e58000bb0a18",
+      "svgBytes": 18059,
+      "data": "translation/data/plate-xiv.json",
+      "dataSha256": "7e3efb85aac5e7743202742a3a2c9aa0bd9dd8b7a70146f544b10bcaed719c77",
+      "dataBytes": 17737,
+      "previews": [
+        {
+          "file": "previews/750/plate-xiv.jpg",
+          "sha256": "90f56c243713d5bb351228b28b35cc5757c1739c97673b8133a1da49e98202ea",
+          "bytes": 86744,
+          "width": 546,
+          "height": 750
+        },
+        {
+          "file": "previews/1500/plate-xiv.jpg",
+          "sha256": "1387fc5785544c7b3a8b76594f24884d208721b1e9fd624b51e79f27d175f2cb",
+          "bytes": 305936,
+          "width": 1092,
+          "height": 1500
+        }
+      ]
     },
     {
       "id": "plate-xv",
@@ -186,7 +568,33 @@
       "width": 2200,
       "height": 3000,
       "sourceURL": "https://archive.org/details/gri_33125012875395/page/n194/mode/1up",
-      "sha256": "2697206957af8c7b752fa279409d1d101f17511b0ba1044e54171fa1313bd633"
+      "sha256": "2697206957af8c7b752fa279409d1d101f17511b0ba1044e54171fa1313bd633",
+      "section": 3,
+      "sectionTitle": "Gammes de nuances",
+      "kind": "diamond",
+      "swatchCount": 49,
+      "svg": "translation/plates/plate-xv.svg",
+      "svgSha256": "d89a60630f09989814b2abbb0d6873789636beae9b2d995103ddbd7234ded671",
+      "svgBytes": 17925,
+      "data": "translation/data/plate-xv.json",
+      "dataSha256": "936f0bbe1a8527fb61cd30041b5e07deccfe1fd61c8992800b111bb4cacf3c47",
+      "dataBytes": 17725,
+      "previews": [
+        {
+          "file": "previews/750/plate-xv.jpg",
+          "sha256": "0ed37f811004627cb32864473665b1ebc53012c76032cddcb5354cc98e6267e3",
+          "bytes": 83034,
+          "width": 550,
+          "height": 750
+        },
+        {
+          "file": "previews/1500/plate-xv.jpg",
+          "sha256": "2b1167efe07c801085a595658676be4da25aa078ea089b13e8144535cf18da72",
+          "bytes": 311109,
+          "width": 1100,
+          "height": 1500
+        }
+      ]
     },
     {
       "id": "plate-xvi",
@@ -197,7 +605,33 @@
       "width": 2185,
       "height": 3000,
       "sourceURL": "https://archive.org/details/gri_33125012875395/page/n196/mode/1up",
-      "sha256": "31c764965fb583cf64890d170d2b0f76853e6f5ace568438d273e44acc9cf56c"
+      "sha256": "31c764965fb583cf64890d170d2b0f76853e6f5ace568438d273e44acc9cf56c",
+      "section": 3,
+      "sectionTitle": "Gammes de nuances",
+      "kind": "diamond",
+      "swatchCount": 49,
+      "svg": "translation/plates/plate-xvi.svg",
+      "svgSha256": "8893e89bcd3afb6772b4f8b62d57d116ab56d88dbfca028c6a6842e326966084",
+      "svgBytes": 18160,
+      "data": "translation/data/plate-xvi.json",
+      "dataSha256": "9cda55899646a3072ac2800c2ecb0135218ee508c83eeebd2c1b2de2f7a99126",
+      "dataBytes": 17777,
+      "previews": [
+        {
+          "file": "previews/750/plate-xvi.jpg",
+          "sha256": "10a774a1cdb1a9b3749744b779f6edd1314b97461d48f68dce69e97b20b0cfaf",
+          "bytes": 76923,
+          "width": 546,
+          "height": 750
+        },
+        {
+          "file": "previews/1500/plate-xvi.jpg",
+          "sha256": "245e979b817a0f4cedde0ef8dd7c8356b6510bd965087c66628306631c450d00",
+          "bytes": 271848,
+          "width": 1092,
+          "height": 1500
+        }
+      ]
     },
     {
       "id": "plate-xvii",
@@ -208,7 +642,33 @@
       "width": 2175,
       "height": 3000,
       "sourceURL": "https://archive.org/details/gri_33125012875395/page/n198/mode/1up",
-      "sha256": "f177cbe07059159d265799ff08de927e98ab1bd6f5b28bc842bd982611f74a87"
+      "sha256": "f177cbe07059159d265799ff08de927e98ab1bd6f5b28bc842bd982611f74a87",
+      "section": 3,
+      "sectionTitle": "Gammes de nuances",
+      "kind": "diamond",
+      "swatchCount": 49,
+      "svg": "translation/plates/plate-xvii.svg",
+      "svgSha256": "b4c4ded315e279d70cca8a0cc7b649eed7cabf82242199b999b58ef2341ccd72",
+      "svgBytes": 18307,
+      "data": "translation/data/plate-xvii.json",
+      "dataSha256": "4b2e0c127f848092afe0d2f73b7d487ce7dca25254b72b75e03153a5288647d6",
+      "dataBytes": 17813,
+      "previews": [
+        {
+          "file": "previews/750/plate-xvii.jpg",
+          "sha256": "5eb350464bf1b0f94ceea1345fdef8915d5e3c292fcb6374d3b6348a615bb3d8",
+          "bytes": 75808,
+          "width": 543,
+          "height": 750
+        },
+        {
+          "file": "previews/1500/plate-xvii.jpg",
+          "sha256": "720744e625a93872f6859e6a64564a11eb05f5f1a2c0391d7946374414656183",
+          "bytes": 309587,
+          "width": 1087,
+          "height": 1500
+        }
+      ]
     },
     {
       "id": "plate-xviii",
@@ -219,7 +679,33 @@
       "width": 2170,
       "height": 3000,
       "sourceURL": "https://archive.org/details/gri_33125012875395/page/n200/mode/1up",
-      "sha256": "8ed72e337c4051b2de0d5776dea008bb6a7aeaba562f05c93a7d1e8e5fb8cb9b"
+      "sha256": "8ed72e337c4051b2de0d5776dea008bb6a7aeaba562f05c93a7d1e8e5fb8cb9b",
+      "section": 3,
+      "sectionTitle": "Gammes de nuances",
+      "kind": "diamond",
+      "swatchCount": 49,
+      "svg": "translation/plates/plate-xviii.svg",
+      "svgSha256": "0db15ddb9f59998106cff0c7739adb5176ed65c46b78ce760e221f7a655b20e1",
+      "svgBytes": 18424,
+      "data": "translation/data/plate-xviii.json",
+      "dataSha256": "f096e4f30ec50e95efbfb693d61c2bd008b0a0b8248eeeb1a9d74b016466b65f",
+      "dataBytes": 17830,
+      "previews": [
+        {
+          "file": "previews/750/plate-xviii.jpg",
+          "sha256": "09b1e929d5a8614cdef60becebab708e3093333545fd2e7c7f9783e36f99a8bb",
+          "bytes": 76374,
+          "width": 542,
+          "height": 750
+        },
+        {
+          "file": "previews/1500/plate-xviii.jpg",
+          "sha256": "f18043fbc1d54b6682e2655114b1deea4bb817e5a654ffd28639a5e94b8b31c6",
+          "bytes": 315254,
+          "width": 1085,
+          "height": 1500
+        }
+      ]
     },
     {
       "id": "plate-xix",
@@ -230,7 +716,33 @@
       "width": 2171,
       "height": 3000,
       "sourceURL": "https://archive.org/details/gri_33125012875395/page/n202/mode/1up",
-      "sha256": "19b6f83ebe2e9194c32e156149908429760b8886f33fa0f687435bcdfddf10e9"
+      "sha256": "19b6f83ebe2e9194c32e156149908429760b8886f33fa0f687435bcdfddf10e9",
+      "section": 3,
+      "sectionTitle": "Gammes de nuances",
+      "kind": "diamond",
+      "swatchCount": 49,
+      "svg": "translation/plates/plate-xix.svg",
+      "svgSha256": "32ab8728478973a8f73b8f1b7ccea79b076cb8599dbfae7d1762dd5886e47c43",
+      "svgBytes": 18128,
+      "data": "translation/data/plate-xix.json",
+      "dataSha256": "97d94dbdabc82c00d751ef4354d4cfcd45a055f29ceea4dc6a3b06e04596612a",
+      "dataBytes": 17734,
+      "previews": [
+        {
+          "file": "previews/750/plate-xix.jpg",
+          "sha256": "6c29f94cf7614ca982a446b087b0b1da4f0d69ac6ae891da4eed6c796b60c750",
+          "bytes": 79451,
+          "width": 542,
+          "height": 750
+        },
+        {
+          "file": "previews/1500/plate-xix.jpg",
+          "sha256": "f0ec3afe72b4c74af304c6f86425845010a88abf92dd505c1d462b06ffd359c3",
+          "bytes": 314187,
+          "width": 1085,
+          "height": 1500
+        }
+      ]
     },
     {
       "id": "plate-xx",
@@ -241,7 +753,33 @@
       "width": 2180,
       "height": 3000,
       "sourceURL": "https://archive.org/details/gri_33125012875395/page/n204/mode/1up",
-      "sha256": "1182427f98b937f70cc3f16db7dca5f5a6d11fd1250adf0a9087e7debb2c6895"
+      "sha256": "1182427f98b937f70cc3f16db7dca5f5a6d11fd1250adf0a9087e7debb2c6895",
+      "section": 4,
+      "sectionTitle": "Gammes de nuances composées",
+      "kind": "diamond",
+      "swatchCount": 49,
+      "svg": "translation/plates/plate-xx.svg",
+      "svgSha256": "2e9478fb3b2956248c538369e2dd4ada8770037ab19b40f0bc7a85dd1b3d5fab",
+      "svgBytes": 17890,
+      "data": "translation/data/plate-xx.json",
+      "dataSha256": "d5975b9c3219b2df81422e11f22e6f78c931b7a521646792b7bfd1714bbc171d",
+      "dataBytes": 17691,
+      "previews": [
+        {
+          "file": "previews/750/plate-xx.jpg",
+          "sha256": "4bae7357a63fd879843a0f7ddaef0574efc53b5864292f4f73fe3c06fe57d283",
+          "bytes": 81771,
+          "width": 545,
+          "height": 750
+        },
+        {
+          "file": "previews/1500/plate-xx.jpg",
+          "sha256": "eb2120a2d4f8d538a6929234d41dc494a5b261a45bf9062fa42abd1e45968d0a",
+          "bytes": 312180,
+          "width": 1090,
+          "height": 1500
+        }
+      ]
     },
     {
       "id": "plate-xxi",
@@ -252,7 +790,33 @@
       "width": 2175,
       "height": 3000,
       "sourceURL": "https://archive.org/details/gri_33125012875395/page/n206/mode/1up",
-      "sha256": "49ff5f4356a04835623733b3e6bece23134713fb50c6fbbf1821b4af35bf8e73"
+      "sha256": "49ff5f4356a04835623733b3e6bece23134713fb50c6fbbf1821b4af35bf8e73",
+      "section": 4,
+      "sectionTitle": "Gammes de nuances composées",
+      "kind": "diamond",
+      "swatchCount": 49,
+      "svg": "translation/plates/plate-xxi.svg",
+      "svgSha256": "a779980c7291608dc96375ca4012ff897cfc6c765a7695cd97faf83749fc943b",
+      "svgBytes": 18020,
+      "data": "translation/data/plate-xxi.json",
+      "dataSha256": "23dc8cf99434d2270deeb7732f5f661c9d4af3879300aa45a3621c83166dd32b",
+      "dataBytes": 17733,
+      "previews": [
+        {
+          "file": "previews/750/plate-xxi.jpg",
+          "sha256": "2df7a1a1f3d126d0698504de73f44b9c4f571269e2f4e9cf218bdaad0f742b1f",
+          "bytes": 75179,
+          "width": 543,
+          "height": 750
+        },
+        {
+          "file": "previews/1500/plate-xxi.jpg",
+          "sha256": "1e713302287b9364df0c1e37454084795010b6d5c26bfe4b6f6a4073f9d5e4cb",
+          "bytes": 306739,
+          "width": 1087,
+          "height": 1500
+        }
+      ]
     },
     {
       "id": "plate-xxii",
@@ -263,7 +827,33 @@
       "width": 2173,
       "height": 3000,
       "sourceURL": "https://archive.org/details/gri_33125012875395/page/n208/mode/1up",
-      "sha256": "b60d10d14da7769bee8b0989c8a5d440a16586d44ab342f0502255bd8b19a23b"
+      "sha256": "b60d10d14da7769bee8b0989c8a5d440a16586d44ab342f0502255bd8b19a23b",
+      "section": 4,
+      "sectionTitle": "Gammes de nuances composées",
+      "kind": "diamond",
+      "swatchCount": 49,
+      "svg": "translation/plates/plate-xxii.svg",
+      "svgSha256": "fa2663cee9c160324f136105ebb647e32461ef463319207849f22187283b751f",
+      "svgBytes": 18183,
+      "data": "translation/data/plate-xxii.json",
+      "dataSha256": "29e637c3cf7c4d0d34ca892fb0c13318260e0de6b2f61600809c0280eb20170b",
+      "dataBytes": 17784,
+      "previews": [
+        {
+          "file": "previews/750/plate-xxii.jpg",
+          "sha256": "1e04cedbd4995d833ef44374f568c546370ae9a6e6f9835c41fe05c97655ffd4",
+          "bytes": 88659,
+          "width": 543,
+          "height": 750
+        },
+        {
+          "file": "previews/1500/plate-xxii.jpg",
+          "sha256": "31b7006c1e8cb7747bbfef6d8cc8eacc99535f8e7dc25f539a025fc1269eff84",
+          "bytes": 320885,
+          "width": 1086,
+          "height": 1500
+        }
+      ]
     },
     {
       "id": "plate-xxiii",
@@ -274,7 +864,30 @@
       "width": 2173,
       "height": 3000,
       "sourceURL": "https://archive.org/details/gri_33125012875395/page/n210/mode/1up",
-      "sha256": "40eba57f2e43f6396f4e3f4fce5998e24fa8191af26373674ba6f7b9b8dad7d7"
+      "sha256": "40eba57f2e43f6396f4e3f4fce5998e24fa8191af26373674ba6f7b9b8dad7d7",
+      "section": 5,
+      "sectionTitle": "Nuances combinées avec le noir",
+      "kind": "triangle",
+      "swatchCount": 66,
+      "svg": "translation/plates/plate-xxiii.svg",
+      "svgSha256": "78fb22cb8e744137217f25700800abff041ab8fdbb6e774263ebf907c35f7e32",
+      "svgBytes": 119658,
+      "previews": [
+        {
+          "file": "previews/750/plate-xxiii.jpg",
+          "sha256": "bdb8ed0d06672cb52da928355e109bdc70464eb7f37f7b3d3be9f5dd6e791d13",
+          "bytes": 72338,
+          "width": 543,
+          "height": 750
+        },
+        {
+          "file": "previews/1500/plate-xxiii.jpg",
+          "sha256": "738dc69eb3ac6ae009a093022f69c719d31f4fe51219c275a4b00ebcd1c8f2d8",
+          "bytes": 254317,
+          "width": 1086,
+          "height": 1500
+        }
+      ]
     },
     {
       "id": "plate-xxiv",
@@ -285,7 +898,30 @@
       "width": 2173,
       "height": 3000,
       "sourceURL": "https://archive.org/details/gri_33125012875395/page/n212/mode/1up",
-      "sha256": "8c38d84b8651241ff8cf3f3ef11e1af3c6f23cc4a6acd8485e485e3c4934ba64"
+      "sha256": "8c38d84b8651241ff8cf3f3ef11e1af3c6f23cc4a6acd8485e485e3c4934ba64",
+      "section": 5,
+      "sectionTitle": "Nuances combinées avec le noir",
+      "kind": "triangle",
+      "swatchCount": 66,
+      "svg": "translation/plates/plate-xxiv.svg",
+      "svgSha256": "ccbb29a45de0710aaf423671f1848b034e7cb93677c89812a95e25d211385a3f",
+      "svgBytes": 120093,
+      "previews": [
+        {
+          "file": "previews/750/plate-xxiv.jpg",
+          "sha256": "9c734d21ed714d89985d3baff6fac79dda66aad07b59aaa599638598b18903ff",
+          "bytes": 75303,
+          "width": 543,
+          "height": 750
+        },
+        {
+          "file": "previews/1500/plate-xxiv.jpg",
+          "sha256": "1d3ced0b9e8fdfa25306630861b5876bcc52f89ee1c08c669b4dbe2fe38e9b08",
+          "bytes": 274884,
+          "width": 1086,
+          "height": 1500
+        }
+      ]
     },
     {
       "id": "plate-xxv",
@@ -296,7 +932,30 @@
       "width": 2173,
       "height": 3000,
       "sourceURL": "https://archive.org/details/gri_33125012875395/page/n214/mode/1up",
-      "sha256": "b6e009e1d73f18a440138ca3a5505e00411e4cc2da4039f112750c1171fcb0f5"
+      "sha256": "b6e009e1d73f18a440138ca3a5505e00411e4cc2da4039f112750c1171fcb0f5",
+      "section": 5,
+      "sectionTitle": "Nuances combinées avec le noir",
+      "kind": "triangle",
+      "swatchCount": 66,
+      "svg": "translation/plates/plate-xxv.svg",
+      "svgSha256": "3a3b1640b1669cc414e587dcc1f257d316963b3bd3ec503d74e090e182ac1ec0",
+      "svgBytes": 120022,
+      "previews": [
+        {
+          "file": "previews/750/plate-xxv.jpg",
+          "sha256": "e3233d1b55afd6fee2903ea41ffe49551409803439ba0b517d28592b5a2b91b0",
+          "bytes": 70718,
+          "width": 543,
+          "height": 750
+        },
+        {
+          "file": "previews/1500/plate-xxv.jpg",
+          "sha256": "611445966d38a6ad45231b42c2c53d7c16a656b8d604cf6a364267697d54c364",
+          "bytes": 260406,
+          "width": 1086,
+          "height": 1500
+        }
+      ]
     },
     {
       "id": "plate-xxvi",
@@ -307,7 +966,30 @@
       "width": 2173,
       "height": 3000,
       "sourceURL": "https://archive.org/details/gri_33125012875395/page/n216/mode/1up",
-      "sha256": "2ea6549c3eca3669d0a7d0cc2455a387847cf2b78f2b4919c37ba7342bed1fa5"
+      "sha256": "2ea6549c3eca3669d0a7d0cc2455a387847cf2b78f2b4919c37ba7342bed1fa5",
+      "section": 5,
+      "sectionTitle": "Nuances combinées avec le noir",
+      "kind": "triangle",
+      "swatchCount": 66,
+      "svg": "translation/plates/plate-xxvi.svg",
+      "svgSha256": "93257324cbba21ecade1c556dd475778666ef025120b0732eb0fa395effbd938",
+      "svgBytes": 120038,
+      "previews": [
+        {
+          "file": "previews/750/plate-xxvi.jpg",
+          "sha256": "8c606e127a3ec5b6b32c42d1dc98cc792df6018e9d45eee11cbab5640fc67d36",
+          "bytes": 74120,
+          "width": 543,
+          "height": 750
+        },
+        {
+          "file": "previews/1500/plate-xxvi.jpg",
+          "sha256": "3ec32a93bc2d806889f32220db907d4177a43e0a1fe40cfd00bd0a6cfcec02fd",
+          "bytes": 271196,
+          "width": 1086,
+          "height": 1500
+        }
+      ]
     },
     {
       "id": "plate-xxvii",
@@ -318,7 +1000,30 @@
       "width": 2173,
       "height": 3000,
       "sourceURL": "https://archive.org/details/gri_33125012875395/page/n218/mode/1up",
-      "sha256": "e54689e4be287293d202060d9d96346acf4793e185cad4d04ef59ae3a9f350d1"
+      "sha256": "e54689e4be287293d202060d9d96346acf4793e185cad4d04ef59ae3a9f350d1",
+      "section": 5,
+      "sectionTitle": "Nuances combinées avec le noir",
+      "kind": "triangle",
+      "swatchCount": 66,
+      "svg": "translation/plates/plate-xxvii.svg",
+      "svgSha256": "72d38da8a6630f1e6d6530b1a68363f1285aef5aff19954f9b757a69f74fce16",
+      "svgBytes": 120289,
+      "previews": [
+        {
+          "file": "previews/750/plate-xxvii.jpg",
+          "sha256": "3595ce01b18fd7f0f0c3881bab50e9626c3e5d81fa9c9b3da4c545d9b6d3ec17",
+          "bytes": 75676,
+          "width": 543,
+          "height": 750
+        },
+        {
+          "file": "previews/1500/plate-xxvii.jpg",
+          "sha256": "afe7be58d199cab57cca5bb04db5ffecbee6a89cfefaa0c6811fa52f90ccd3dd",
+          "bytes": 276589,
+          "width": 1086,
+          "height": 1500
+        }
+      ]
     },
     {
       "id": "plate-xxviii",
@@ -329,7 +1034,30 @@
       "width": 2173,
       "height": 3000,
       "sourceURL": "https://archive.org/details/gri_33125012875395/page/n220/mode/1up",
-      "sha256": "5a397b9a417ad8159dd98d0bcbcb134142fbb6a005053795456cbc988b479ee0"
+      "sha256": "5a397b9a417ad8159dd98d0bcbcb134142fbb6a005053795456cbc988b479ee0",
+      "section": 5,
+      "sectionTitle": "Nuances combinées avec le noir",
+      "kind": "triangle",
+      "swatchCount": 66,
+      "svg": "translation/plates/plate-xxviii.svg",
+      "svgSha256": "1e790172bdee9c5a3dfac7897eaa74419f7313f919fae4301c9b9e2accaaa9b1",
+      "svgBytes": 120983,
+      "previews": [
+        {
+          "file": "previews/750/plate-xxviii.jpg",
+          "sha256": "9b898649b3f6bb7213861ce5d92cf88935a86fdde46827333de56c53c4bd7753",
+          "bytes": 77492,
+          "width": 543,
+          "height": 750
+        },
+        {
+          "file": "previews/1500/plate-xxviii.jpg",
+          "sha256": "e3b2d7dcaafa7a804a0a8c7bd94716482f69589ff33402ba5684cbee8a33058a",
+          "bytes": 279874,
+          "width": 1086,
+          "height": 1500
+        }
+      ]
     },
     {
       "id": "front-cover",
@@ -340,7 +1068,24 @@
       "width": 2349,
       "height": 3000,
       "sourceURL": "https://archive.org/details/gri_33125012875395/page/n0/mode/1up",
-      "sha256": "3059d401e378cf8c25072b372bb422acee7ee5a1a333444b047216761ecd31b4"
+      "sha256": "3059d401e378cf8c25072b372bb422acee7ee5a1a333444b047216761ecd31b4",
+      "kind": "supplement",
+      "previews": [
+        {
+          "file": "previews/750/front-cover.jpg",
+          "sha256": "52d234d14d96b1c4ce6f75db3d80c0d26a5eda7c8bde1427f8e0164a959bc2b8",
+          "bytes": 115244,
+          "width": 587,
+          "height": 750
+        },
+        {
+          "file": "previews/1500/front-cover.jpg",
+          "sha256": "bff132a2cb91de68cb5c3f6ad13617c27fb68e774e18a3832fb33a8c6beb952e",
+          "bytes": 424571,
+          "width": 1174,
+          "height": 1500
+        }
+      ]
     },
     {
       "id": "frontispiece",
@@ -351,7 +1096,24 @@
       "width": 2182,
       "height": 3000,
       "sourceURL": "https://archive.org/details/gri_33125012875395/page/n5/mode/1up",
-      "sha256": "4501fac865f993afaaf91e4c865d6ec2b720e2dbba091bb7182d893dd42f3158"
+      "sha256": "4501fac865f993afaaf91e4c865d6ec2b720e2dbba091bb7182d893dd42f3158",
+      "kind": "supplement",
+      "previews": [
+        {
+          "file": "previews/750/frontispiece.jpg",
+          "sha256": "e963d404d52195d5f1d44cdc23ac4f309a6ebc392432f47f1ea7751878931230",
+          "bytes": 64371,
+          "width": 545,
+          "height": 750
+        },
+        {
+          "file": "previews/1500/frontispiece.jpg",
+          "sha256": "a8e52b96e90a73aebae2329eb509e612adfb1b6b7000b466f63dd2d665532bef",
+          "bytes": 263219,
+          "width": 1091,
+          "height": 1500
+        }
+      ]
     },
     {
       "id": "rose-guide",
@@ -362,7 +1124,24 @@
       "width": 2161,
       "height": 3000,
       "sourceURL": "https://archive.org/details/gri_33125012875395/page/n6/mode/1up",
-      "sha256": "bfa7f67161747ce83d4008433d53706d3cd256ae8abdc5f533aa215dc05b0f4f"
+      "sha256": "bfa7f67161747ce83d4008433d53706d3cd256ae8abdc5f533aa215dc05b0f4f",
+      "kind": "supplement",
+      "previews": [
+        {
+          "file": "previews/750/rose-guide.jpg",
+          "sha256": "f3ddf8d0bd9686386323edcd4beb68919e9430a0787bf05db4d65089b1ea857f",
+          "bytes": 83057,
+          "width": 540,
+          "height": 750
+        },
+        {
+          "file": "previews/1500/rose-guide.jpg",
+          "sha256": "850a94c44b4892baaa57a3d595f5e01dfc471340fc42b9eb5ca3b0db2d5b83e9",
+          "bytes": 283569,
+          "width": 1080,
+          "height": 1500
+        }
+      ]
     },
     {
       "id": "rose-guide-verso",
@@ -373,7 +1152,24 @@
       "width": 2182,
       "height": 3000,
       "sourceURL": "https://archive.org/details/gri_33125012875395/page/n7/mode/1up",
-      "sha256": "0e1684e252a3cb9a1d6b607baee566e0cc0474170410521566208999c4268ecf"
+      "sha256": "0e1684e252a3cb9a1d6b607baee566e0cc0474170410521566208999c4268ecf",
+      "kind": "supplement",
+      "previews": [
+        {
+          "file": "previews/750/rose-guide-verso.jpg",
+          "sha256": "bd5d6ef4931735bf92601f31b6d4019982d9affe0b83b15b66ba13b456c170b1",
+          "bytes": 65907,
+          "width": 545,
+          "height": 750
+        },
+        {
+          "file": "previews/1500/rose-guide-verso.jpg",
+          "sha256": "212b1e97dc212a79096821da1773098ca53fff24bb92aeb3c3a4d92a9990e5da",
+          "bytes": 250560,
+          "width": 1091,
+          "height": 1500
+        }
+      ]
     },
     {
       "id": "title-page",
@@ -384,7 +1180,24 @@
       "width": 2161,
       "height": 3000,
       "sourceURL": "https://archive.org/details/gri_33125012875395/page/n8/mode/1up",
-      "sha256": "55aeb2696f64fed5d110bf6a89333f0f41aa451f3f3663579fe74a99e64bce2e"
+      "sha256": "55aeb2696f64fed5d110bf6a89333f0f41aa451f3f3663579fe74a99e64bce2e",
+      "kind": "supplement",
+      "previews": [
+        {
+          "file": "previews/750/title-page.jpg",
+          "sha256": "ef2b5c5ceb5f12977cabb369cbba07cc8867b0559e9fe57f9cf9fe5dc6d5c425",
+          "bytes": 71731,
+          "width": 540,
+          "height": 750
+        },
+        {
+          "file": "previews/1500/title-page.jpg",
+          "sha256": "1b8222e958a0cdbe1b2b6b2b4be2d02115b2ebea33c7d6e2543fba7f819a3e24",
+          "bytes": 257320,
+          "width": 1080,
+          "height": 1500
+        }
+      ]
     },
     {
       "id": "atlas-title",
@@ -395,7 +1208,24 @@
       "width": 2192,
       "height": 3000,
       "sourceURL": "https://archive.org/details/gri_33125012875395/page/n160/mode/1up",
-      "sha256": "769ff017772146532d0deb0c8051ddd6277067f60d59a5147b08a836afced9af"
+      "sha256": "769ff017772146532d0deb0c8051ddd6277067f60d59a5147b08a836afced9af",
+      "kind": "supplement",
+      "previews": [
+        {
+          "file": "previews/750/atlas-title.jpg",
+          "sha256": "4278bd9ff7d1ab83d85c5b905ef7e7c3aaa8416775d4ddae54b7180d90069ee4",
+          "bytes": 56410,
+          "width": 548,
+          "height": 750
+        },
+        {
+          "file": "previews/1500/atlas-title.jpg",
+          "sha256": "1b321ab80d7e5ce5b2ce0b25a36ef8b1344a3b35d65344d9a43216baff0a8cbf",
+          "bytes": 194732,
+          "width": 1096,
+          "height": 1500
+        }
+      ]
     },
     {
       "id": "atlas-contents",
@@ -406,7 +1236,24 @@
       "width": 2191,
       "height": 3000,
       "sourceURL": "https://archive.org/details/gri_33125012875395/page/n162/mode/1up",
-      "sha256": "40e99359a1fdbcf9110d09965d5016dc63c65570508b87bd97ea440dedb652df"
+      "sha256": "40e99359a1fdbcf9110d09965d5016dc63c65570508b87bd97ea440dedb652df",
+      "kind": "supplement",
+      "previews": [
+        {
+          "file": "previews/750/atlas-contents.jpg",
+          "sha256": "c8da63200f116adc7a17c019f8abfd89eb1d8dd3f4126f8ccd8389b0ebdae304",
+          "bytes": 54854,
+          "width": 547,
+          "height": 750
+        },
+        {
+          "file": "previews/1500/atlas-contents.jpg",
+          "sha256": "e46b191764ebf416cc51365bbbad9e24a0c518fd54c9c784c1c7de3e465d122f",
+          "bytes": 193461,
+          "width": 1095,
+          "height": 1500
+        }
+      ]
     },
     {
       "id": "atlas-contents-2",
@@ -417,7 +1264,24 @@
       "width": 2218,
       "height": 3000,
       "sourceURL": "https://archive.org/details/gri_33125012875395/page/n163/mode/1up",
-      "sha256": "ecc6998a307fec8dd22d9324b5491e4002f76a331f500204cd1b3afe466fd8b7"
+      "sha256": "ecc6998a307fec8dd22d9324b5491e4002f76a331f500204cd1b3afe466fd8b7",
+      "kind": "supplement",
+      "previews": [
+        {
+          "file": "previews/750/atlas-contents-2.jpg",
+          "sha256": "4f80cdb4a15b666226b1866185ee9f237a1f0afc427a146b3cadcd1f3de634ab",
+          "bytes": 50372,
+          "width": 554,
+          "height": 750
+        },
+        {
+          "file": "previews/1500/atlas-contents-2.jpg",
+          "sha256": "0507c4f7969d61effa1ba57ae57e14f66ac10b0e49188611e484e7ec6d72e9c2",
+          "bytes": 186091,
+          "width": 1109,
+          "height": 1500
+        }
+      ]
     },
     {
       "id": "back-cover",
@@ -428,7 +1292,24 @@
       "width": 2347,
       "height": 3000,
       "sourceURL": "https://archive.org/details/gri_33125012875395/page/n223/mode/1up",
-      "sha256": "1f6c235f2931d620bf6787674503d8018ad92b6193251b6340b46f7f6cf258ad"
+      "sha256": "1f6c235f2931d620bf6787674503d8018ad92b6193251b6340b46f7f6cf258ad",
+      "kind": "supplement",
+      "previews": [
+        {
+          "file": "previews/750/back-cover.jpg",
+          "sha256": "cfb82cb5fa0b18d0c4899b6c0344b41c265b9a354fa8064703e60f9365549523",
+          "bytes": 145612,
+          "width": 586,
+          "height": 750
+        },
+        {
+          "file": "previews/1500/back-cover.jpg",
+          "sha256": "28bd0b4ac3b710edd32f936440edb25b3b270ea5107e3ca3b388757a4126d9e8",
+          "bytes": 609791,
+          "width": 1173,
+          "height": 1500
+        }
+      ]
     },
     {
       "id": "viewing-screen",
@@ -439,7 +1320,308 @@
       "width": 2514,
       "height": 3000,
       "sourceURL": "https://archive.org/details/gri_33125012875395/page/n225/mode/1up",
-      "sha256": "a018ab0a6704d9811d30866a40442a348818d35675623c8a2a46e8af46feba4f"
+      "sha256": "a018ab0a6704d9811d30866a40442a348818d35675623c8a2a46e8af46feba4f",
+      "kind": "supplement",
+      "previews": [
+        {
+          "file": "previews/750/viewing-screen.jpg",
+          "sha256": "a4ca8a740053e38741bef997be59c9bc179c586d1da68b681996f1510a660e4b",
+          "bytes": 88067,
+          "width": 628,
+          "height": 750
+        },
+        {
+          "file": "previews/1500/viewing-screen.jpg",
+          "sha256": "924a7a3fb76c1c231b9174c6274c150a5f178517789f59e13f68d1d37f065b40",
+          "bytes": 364694,
+          "width": 1257,
+          "height": 1500
+        }
+      ]
     }
-  ]
+  ],
+  "previewGeneration": {
+    "tool": "macOS sips",
+    "heights": [
+      750,
+      1500
+    ],
+    "jpegQuality": 80,
+    "method": "Proportional full-page resize from the unchanged 3000px JPEG scans; no crop or color correction."
+  },
+  "translation": {
+    "label": "SVG and flat-color translation",
+    "credit": "Charles Lacouture, Répertoire chromatique (1890). Chromolithographs by G. Severeyns. Digitized by the Getty Research Institute, via Internet Archive.",
+    "provenance": "Exact SVG and JSON assets from the prior Lacouture web translation export; adapted into this viewer without importing the original application or hosting configuration.",
+    "approximation": "Scan-derived screen sRGB approximations, not calibrated measurements of the original inks. Paper, aging and scanning influence the colors. SVG geometry and typography are a reconstruction; paper wear and fine lithographic texture are omitted.",
+    "rights": "The historical work is recorded NOT_IN_COPYRIGHT by the source catalog. This translation is distinct from Lacouture’s original and the Getty digitization; no additional license is asserted here.",
+    "sourceManifest": "translation/data/manifest.json",
+    "sourceManifestSha256": "10702a58de3e1ff382f73eb481581c714c3b641f9f4dc1940d9b42aa78daf6f2",
+    "swatches": "translation/data/swatches.json",
+    "swatchesSha256": "6063ee1a0d0bd577ecd93707fc3cb215f39656469494ea7ff59000b3f02e1eed",
+    "assets": [
+      {
+        "file": "translation/plates/plate-i-bis.svg",
+        "sha256": "762b3bd3b7fad8596f44e9593076827d2386a6cccc8ca95856cff96f780101e7",
+        "bytes": 313036
+      },
+      {
+        "file": "translation/plates/plate-i.svg",
+        "sha256": "25323cfd94bea53b2de05c10f0256395b9cfede5701926b99d0fb2bc78c990b2",
+        "bytes": 54798
+      },
+      {
+        "file": "translation/plates/plate-ii.svg",
+        "sha256": "818317939108b535055e94d78673aee13a703213267c2398646f3d2c5f5547e4",
+        "bytes": 17916
+      },
+      {
+        "file": "translation/plates/plate-iii.svg",
+        "sha256": "46c0a7ddb0ae2097accd891e3e0cbdf2479c2ef9889bef7f933a879bf3399cd7",
+        "bytes": 18429
+      },
+      {
+        "file": "translation/plates/plate-iv.svg",
+        "sha256": "ea4261ee66880d09e9d33aa77a075db6c08a7a308519ac0b309da54758ba9d57",
+        "bytes": 17922
+      },
+      {
+        "file": "translation/plates/plate-ix.svg",
+        "sha256": "7ca11541201781e6ac29cd06c43bf2badbdaddc4cfd37752b996949371efa40e",
+        "bytes": 18360
+      },
+      {
+        "file": "translation/plates/plate-v.svg",
+        "sha256": "7b595e01c0c444743b0c64645b8eb6d57ce624185825022bb93d95a1996a6b59",
+        "bytes": 18131
+      },
+      {
+        "file": "translation/plates/plate-vi.svg",
+        "sha256": "9e0f1118386d54d09cb319336b8a1a1afe2bfbd8e42818444981dd020efc9a82",
+        "bytes": 17930
+      },
+      {
+        "file": "translation/plates/plate-vii.svg",
+        "sha256": "a08be58d680440f53e9120ded029ff1d910b39333dca944e3012140df8247057",
+        "bytes": 18507
+      },
+      {
+        "file": "translation/plates/plate-viii.svg",
+        "sha256": "bbd790fd5a029d56226397dabf20f4be9030e26f1cfd6ca99fabe503a47db158",
+        "bytes": 18300
+      },
+      {
+        "file": "translation/plates/plate-x.svg",
+        "sha256": "242e3de55aa046bd1e5d0fc09052509f7a390a9766f9fdb42bfdd6ffaed9ed0b",
+        "bytes": 17753
+      },
+      {
+        "file": "translation/plates/plate-xi.svg",
+        "sha256": "4a31c0e85adcb30f32ab7e7f938ca183ebfa74134bdadc30076a15cbbad856d4",
+        "bytes": 18335
+      },
+      {
+        "file": "translation/plates/plate-xii.svg",
+        "sha256": "6817d0c4594d1f1f80943ddcb86416d844be27b99e0b5ce34d0754376f148124",
+        "bytes": 18142
+      },
+      {
+        "file": "translation/plates/plate-xiii.svg",
+        "sha256": "e964cce9c3897a13f6832162a5b6ebe4523d9336a6ba6f3cc5889b3bbfb80bf6",
+        "bytes": 18633
+      },
+      {
+        "file": "translation/plates/plate-xiv.svg",
+        "sha256": "f3c2b2cda1b05ac53c95e2cce54f5d2b42d0f4aa0593c2097110e58000bb0a18",
+        "bytes": 18059
+      },
+      {
+        "file": "translation/plates/plate-xix.svg",
+        "sha256": "32ab8728478973a8f73b8f1b7ccea79b076cb8599dbfae7d1762dd5886e47c43",
+        "bytes": 18128
+      },
+      {
+        "file": "translation/plates/plate-xv.svg",
+        "sha256": "d89a60630f09989814b2abbb0d6873789636beae9b2d995103ddbd7234ded671",
+        "bytes": 17925
+      },
+      {
+        "file": "translation/plates/plate-xvi.svg",
+        "sha256": "8893e89bcd3afb6772b4f8b62d57d116ab56d88dbfca028c6a6842e326966084",
+        "bytes": 18160
+      },
+      {
+        "file": "translation/plates/plate-xvii.svg",
+        "sha256": "b4c4ded315e279d70cca8a0cc7b649eed7cabf82242199b999b58ef2341ccd72",
+        "bytes": 18307
+      },
+      {
+        "file": "translation/plates/plate-xviii.svg",
+        "sha256": "0db15ddb9f59998106cff0c7739adb5176ed65c46b78ce760e221f7a655b20e1",
+        "bytes": 18424
+      },
+      {
+        "file": "translation/plates/plate-xx.svg",
+        "sha256": "2e9478fb3b2956248c538369e2dd4ada8770037ab19b40f0bc7a85dd1b3d5fab",
+        "bytes": 17890
+      },
+      {
+        "file": "translation/plates/plate-xxi.svg",
+        "sha256": "a779980c7291608dc96375ca4012ff897cfc6c765a7695cd97faf83749fc943b",
+        "bytes": 18020
+      },
+      {
+        "file": "translation/plates/plate-xxii.svg",
+        "sha256": "fa2663cee9c160324f136105ebb647e32461ef463319207849f22187283b751f",
+        "bytes": 18183
+      },
+      {
+        "file": "translation/plates/plate-xxiii.svg",
+        "sha256": "78fb22cb8e744137217f25700800abff041ab8fdbb6e774263ebf907c35f7e32",
+        "bytes": 119658
+      },
+      {
+        "file": "translation/plates/plate-xxiv.svg",
+        "sha256": "ccbb29a45de0710aaf423671f1848b034e7cb93677c89812a95e25d211385a3f",
+        "bytes": 120093
+      },
+      {
+        "file": "translation/plates/plate-xxv.svg",
+        "sha256": "3a3b1640b1669cc414e587dcc1f257d316963b3bd3ec503d74e090e182ac1ec0",
+        "bytes": 120022
+      },
+      {
+        "file": "translation/plates/plate-xxvi.svg",
+        "sha256": "93257324cbba21ecade1c556dd475778666ef025120b0732eb0fa395effbd938",
+        "bytes": 120038
+      },
+      {
+        "file": "translation/plates/plate-xxvii.svg",
+        "sha256": "72d38da8a6630f1e6d6530b1a68363f1285aef5aff19954f9b757a69f74fce16",
+        "bytes": 120289
+      },
+      {
+        "file": "translation/plates/plate-xxviii.svg",
+        "sha256": "1e790172bdee9c5a3dfac7897eaa74419f7313f919fae4301c9b9e2accaaa9b1",
+        "bytes": 120983
+      },
+      {
+        "file": "translation/data/manifest.json",
+        "sha256": "10702a58de3e1ff382f73eb481581c714c3b641f9f4dc1940d9b42aa78daf6f2",
+        "bytes": 16736
+      },
+      {
+        "file": "translation/data/swatches.json",
+        "sha256": "6063ee1a0d0bd577ecd93707fc3cb215f39656469494ea7ff59000b3f02e1eed",
+        "bytes": 420352
+      },
+      {
+        "file": "translation/data/plate-ii.json",
+        "sha256": "22f131279f937d1940840e9330fa61bb7ceed7a12da3402ee4a7c54ac35d80fc",
+        "bytes": 17745
+      },
+      {
+        "file": "translation/data/plate-iii.json",
+        "sha256": "e3aba3c3347bad8ef5fd2e40d843fd41f1f6487bfe7c622aa73af13e0c1c1d5d",
+        "bytes": 17753
+      },
+      {
+        "file": "translation/data/plate-iv.json",
+        "sha256": "5633be66aa4d56a74663c20052e8f44ef324b43107868222992938c8750e5d0d",
+        "bytes": 17745
+      },
+      {
+        "file": "translation/data/plate-ix.json",
+        "sha256": "53eea1ca147cc8552a215c5b0b91f10b7d802b10216f9d9710954fac2fdbf16b",
+        "bytes": 17717
+      },
+      {
+        "file": "translation/data/plate-v.json",
+        "sha256": "a6583580729c3f999c60587f8b892439e6849eb77feec65fd77a84a0fe1e7d00",
+        "bytes": 17681
+      },
+      {
+        "file": "translation/data/plate-vi.json",
+        "sha256": "1a47762c81a359f4644bd82d79aa0d1c468c35268e3a6d05ea2cd3dc1536cdde",
+        "bytes": 17759
+      },
+      {
+        "file": "translation/data/plate-vii.json",
+        "sha256": "c7f64279579e8dea2897cd7d71f8f2b63f5cba70688ac553762a24d79d19cb55",
+        "bytes": 17795
+      },
+      {
+        "file": "translation/data/plate-viii.json",
+        "sha256": "2a0fe8835fff4f61bb4dba51b1d598423e222be71cb214d8fe57429c730d6988",
+        "bytes": 17803
+      },
+      {
+        "file": "translation/data/plate-x.json",
+        "sha256": "b019077e17c61a4e23053a5b72741bdd9e8dd090d27c5e1cae25623e8abb9164",
+        "bytes": 17681
+      },
+      {
+        "file": "translation/data/plate-xi.json",
+        "sha256": "b74c3a8ebf8e295db16492a8c8fe9c772a803dcc939eb40ad2861dc1a17d9f5d",
+        "bytes": 17717
+      },
+      {
+        "file": "translation/data/plate-xii.json",
+        "sha256": "3f808237d1558d8235f79d90dc76932c1fd4bb9c51a6cb9d4be4b2a3654c80ad",
+        "bytes": 17795
+      },
+      {
+        "file": "translation/data/plate-xiii.json",
+        "sha256": "7b1c9d645bd358c7a844f06ed50a54198ab24400fd0e1c993782812e99c7b157",
+        "bytes": 17817
+      },
+      {
+        "file": "translation/data/plate-xiv.json",
+        "sha256": "7e3efb85aac5e7743202742a3a2c9aa0bd9dd8b7a70146f544b10bcaed719c77",
+        "bytes": 17737
+      },
+      {
+        "file": "translation/data/plate-xix.json",
+        "sha256": "97d94dbdabc82c00d751ef4354d4cfcd45a055f29ceea4dc6a3b06e04596612a",
+        "bytes": 17734
+      },
+      {
+        "file": "translation/data/plate-xv.json",
+        "sha256": "936f0bbe1a8527fb61cd30041b5e07deccfe1fd61c8992800b111bb4cacf3c47",
+        "bytes": 17725
+      },
+      {
+        "file": "translation/data/plate-xvi.json",
+        "sha256": "9cda55899646a3072ac2800c2ecb0135218ee508c83eeebd2c1b2de2f7a99126",
+        "bytes": 17777
+      },
+      {
+        "file": "translation/data/plate-xvii.json",
+        "sha256": "4b2e0c127f848092afe0d2f73b7d487ce7dca25254b72b75e03153a5288647d6",
+        "bytes": 17813
+      },
+      {
+        "file": "translation/data/plate-xviii.json",
+        "sha256": "f096e4f30ec50e95efbfb693d61c2bd008b0a0b8248eeeb1a9d74b016466b65f",
+        "bytes": 17830
+      },
+      {
+        "file": "translation/data/plate-xx.json",
+        "sha256": "d5975b9c3219b2df81422e11f22e6f78c931b7a521646792b7bfd1714bbc171d",
+        "bytes": 17691
+      },
+      {
+        "file": "translation/data/plate-xxi.json",
+        "sha256": "23dc8cf99434d2270deeb7732f5f661c9d4af3879300aa45a3621c83166dd32b",
+        "bytes": 17733
+      },
+      {
+        "file": "translation/data/plate-xxii.json",
+        "sha256": "29e637c3cf7c4d0d34ca892fb0c13318260e0de6b2f61600809c0280eb20170b",
+        "bytes": 17784
+      }
+    ],
+    "svgInspection": "All 29 SVGs checked: no scripts, event handlers, external resource references, embedded rasters or foreign objects.",
+    "exportSha256": "7034a1f9b77d9a8d47dff68c893272389c7a699b5b329002a9eeb588ec7b7843"
+  }
 }

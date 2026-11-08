@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "createdAt": "2026-11-08T20:43:22.185Z",
+  "createdAt": "2026-11-08T21:20:51.798Z",
   "status": "approved-static-release-artifact",
   "licenseGaps": [],
   "focusEpub": "fixture-only",
@@ -69,8 +69,8 @@
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
-      "bytes": 3929,
-      "sha256": "da6009282a355cc6e66ce99566f890e950bea6049c2f9b9504222f2f6e0bfc55"
+      "bytes": 4812,
+      "sha256": "42ae575e660b7bb0d7c841ee263bfb18b3988c2f04d26c8e713ead6742a3960a"
     },
     {
       "path": "_headers",
@@ -79,8 +79,8 @@
     },
     {
       "path": "apps/studio/attribution.html",
-      "bytes": 2382,
-      "sha256": "6cf7d84cac7512cda34bf9003218025a509ab986d40790f2f2f9cb4157c8a0af"
+      "bytes": 2606,
+      "sha256": "ef942cedd0833b37c31e93e840d676dd6c4ea7b4db9da65530b8a16ccceea9b7"
     },
     {
       "path": "apps/studio/capture-studio.css",
@@ -104,13 +104,13 @@
     },
     {
       "path": "apps/studio/material.css",
-      "bytes": 2852,
-      "sha256": "e62956ce4d0ea35f3fd6a6da95eb4b354c01dcbd1688a3e60be14ba62234e318"
+      "bytes": 4871,
+      "sha256": "1ac2c3c911e781cde0be099a1efe9f9588c99e83ef5d3ddcbc9a1d500dd1228a"
     },
     {
       "path": "apps/studio/material.mjs",
-      "bytes": 6208,
-      "sha256": "26b34e18117e267049748ce31107c879557885a6f353c2c3d672378fe0d7f08a"
+      "bytes": 15914,
+      "sha256": "8142c71f01cc659d37610b62f4c38f28a172f8e9c569df41c6ec341039288bfb"
     },
     {
       "path": "apps/studio/public-sources.mjs",
@@ -134,8 +134,398 @@
     },
     {
       "path": "collections/material/lacouture-1890/manifest.json",
-      "bytes": 15624,
-      "sha256": "b7c45a4fc511a1318ff7510ba2f277b871f3c00482781a883bbc5c45163dd2bf"
+      "bytes": 57850,
+      "sha256": "426fb0a94d407e385ba137c272666dea12dbf8807348ca8d03975584d70c9c45"
+    },
+    {
+      "path": "collections/material/lacouture-1890/previews/1500/atlas-contents-2.jpg",
+      "bytes": 186091,
+      "sha256": "0507c4f7969d61effa1ba57ae57e14f66ac10b0e49188611e484e7ec6d72e9c2"
+    },
+    {
+      "path": "collections/material/lacouture-1890/previews/1500/atlas-contents.jpg",
+      "bytes": 193461,
+      "sha256": "e46b191764ebf416cc51365bbbad9e24a0c518fd54c9c784c1c7de3e465d122f"
+    },
+    {
+      "path": "collections/material/lacouture-1890/previews/1500/atlas-title.jpg",
+      "bytes": 194732,
+      "sha256": "1b321ab80d7e5ce5b2ce0b25a36ef8b1344a3b35d65344d9a43216baff0a8cbf"
+    },
+    {
+      "path": "collections/material/lacouture-1890/previews/1500/back-cover.jpg",
+      "bytes": 609791,
+      "sha256": "28bd0b4ac3b710edd32f936440edb25b3b270ea5107e3ca3b388757a4126d9e8"
+    },
+    {
+      "path": "collections/material/lacouture-1890/previews/1500/front-cover.jpg",
+      "bytes": 424571,
+      "sha256": "bff132a2cb91de68cb5c3f6ad13617c27fb68e774e18a3832fb33a8c6beb952e"
+    },
+    {
+      "path": "collections/material/lacouture-1890/previews/1500/frontispiece.jpg",
+      "bytes": 263219,
+      "sha256": "a8e52b96e90a73aebae2329eb509e612adfb1b6b7000b466f63dd2d665532bef"
+    },
+    {
+      "path": "collections/material/lacouture-1890/previews/1500/plate-i-bis.jpg",
+      "bytes": 412312,
+      "sha256": "91489791ac24994e947dfe66e60e33e4634e6c1a6c128abe6906f8730c40101e"
+    },
+    {
+      "path": "collections/material/lacouture-1890/previews/1500/plate-i.jpg",
+      "bytes": 300397,
+      "sha256": "557fb75e7f55afd18aa6e6d85e925e8d8f9c1b9941fbfb98e1094535c19081ad"
+    },
+    {
+      "path": "collections/material/lacouture-1890/previews/1500/plate-ii.jpg",
+      "bytes": 281544,
+      "sha256": "403089350adbc3704db90bac4006cc0331d0fca090c613edc00f53c5d8ed5065"
+    },
+    {
+      "path": "collections/material/lacouture-1890/previews/1500/plate-iii.jpg",
+      "bytes": 296750,
+      "sha256": "0a7a8e76ba4dbd9ed857a5ff156dbe04a383357e0b20fc4d0fa09b12e34dcfac"
+    },
+    {
+      "path": "collections/material/lacouture-1890/previews/1500/plate-iv.jpg",
+      "bytes": 298131,
+      "sha256": "2334432437d7d8ad74c3ecee975d98d0ba999b0e0fbc70b9a424855426689b16"
+    },
+    {
+      "path": "collections/material/lacouture-1890/previews/1500/plate-ix.jpg",
+      "bytes": 302682,
+      "sha256": "42f9fd15ee0723c76da7c93e442bfce792f72ba072af5b44da28ef3e006f01b9"
+    },
+    {
+      "path": "collections/material/lacouture-1890/previews/1500/plate-v.jpg",
+      "bytes": 287964,
+      "sha256": "bdb1eb3ebfda430713cdb9e351fd62cc6593c74d7f3f1d25077358a4814b1788"
+    },
+    {
+      "path": "collections/material/lacouture-1890/previews/1500/plate-vi.jpg",
+      "bytes": 293741,
+      "sha256": "f56f5eedc1115d4512365c487bcd957533b85dea7ca677eb027e3ebdf3399187"
+    },
+    {
+      "path": "collections/material/lacouture-1890/previews/1500/plate-vii.jpg",
+      "bytes": 297943,
+      "sha256": "204a2e04a5d1b184eb3c51040af2530a3a901230925cd8c9cc8f533f94ea0bb7"
+    },
+    {
+      "path": "collections/material/lacouture-1890/previews/1500/plate-viii.jpg",
+      "bytes": 287176,
+      "sha256": "38edd74107a3a4b25677437644d545413e303195acbed0a5f5e9cb94044ee3da"
+    },
+    {
+      "path": "collections/material/lacouture-1890/previews/1500/plate-x.jpg",
+      "bytes": 310667,
+      "sha256": "1253a7ce0dc7826dd2dddbedf8b4d84784a8e5fe7cdac0b2ab9df937c8cfe920"
+    },
+    {
+      "path": "collections/material/lacouture-1890/previews/1500/plate-xi.jpg",
+      "bytes": 316813,
+      "sha256": "a1f8fdc31eb3460bff46d521a5398e6154a49d6f89e5239466118a0942be6a38"
+    },
+    {
+      "path": "collections/material/lacouture-1890/previews/1500/plate-xii.jpg",
+      "bytes": 278303,
+      "sha256": "2aa627e0293a9ab4d8b67720eb76a26cecfbb50a4e9d411164f71f7d6f107424"
+    },
+    {
+      "path": "collections/material/lacouture-1890/previews/1500/plate-xiii.jpg",
+      "bytes": 277173,
+      "sha256": "cecfc917d84cf6e71fca261ca3a10613d27ee06ecab0ee34559b69866c1e9652"
+    },
+    {
+      "path": "collections/material/lacouture-1890/previews/1500/plate-xiv.jpg",
+      "bytes": 305936,
+      "sha256": "1387fc5785544c7b3a8b76594f24884d208721b1e9fd624b51e79f27d175f2cb"
+    },
+    {
+      "path": "collections/material/lacouture-1890/previews/1500/plate-xix.jpg",
+      "bytes": 314187,
+      "sha256": "f0ec3afe72b4c74af304c6f86425845010a88abf92dd505c1d462b06ffd359c3"
+    },
+    {
+      "path": "collections/material/lacouture-1890/previews/1500/plate-xv.jpg",
+      "bytes": 311109,
+      "sha256": "2b1167efe07c801085a595658676be4da25aa078ea089b13e8144535cf18da72"
+    },
+    {
+      "path": "collections/material/lacouture-1890/previews/1500/plate-xvi.jpg",
+      "bytes": 271848,
+      "sha256": "245e979b817a0f4cedde0ef8dd7c8356b6510bd965087c66628306631c450d00"
+    },
+    {
+      "path": "collections/material/lacouture-1890/previews/1500/plate-xvii.jpg",
+      "bytes": 309587,
+      "sha256": "720744e625a93872f6859e6a64564a11eb05f5f1a2c0391d7946374414656183"
+    },
+    {
+      "path": "collections/material/lacouture-1890/previews/1500/plate-xviii.jpg",
+      "bytes": 315254,
+      "sha256": "f18043fbc1d54b6682e2655114b1deea4bb817e5a654ffd28639a5e94b8b31c6"
+    },
+    {
+      "path": "collections/material/lacouture-1890/previews/1500/plate-xx.jpg",
+      "bytes": 312180,
+      "sha256": "eb2120a2d4f8d538a6929234d41dc494a5b261a45bf9062fa42abd1e45968d0a"
+    },
+    {
+      "path": "collections/material/lacouture-1890/previews/1500/plate-xxi.jpg",
+      "bytes": 306739,
+      "sha256": "1e713302287b9364df0c1e37454084795010b6d5c26bfe4b6f6a4073f9d5e4cb"
+    },
+    {
+      "path": "collections/material/lacouture-1890/previews/1500/plate-xxii.jpg",
+      "bytes": 320885,
+      "sha256": "31b7006c1e8cb7747bbfef6d8cc8eacc99535f8e7dc25f539a025fc1269eff84"
+    },
+    {
+      "path": "collections/material/lacouture-1890/previews/1500/plate-xxiii.jpg",
+      "bytes": 254317,
+      "sha256": "738dc69eb3ac6ae009a093022f69c719d31f4fe51219c275a4b00ebcd1c8f2d8"
+    },
+    {
+      "path": "collections/material/lacouture-1890/previews/1500/plate-xxiv.jpg",
+      "bytes": 274884,
+      "sha256": "1d3ced0b9e8fdfa25306630861b5876bcc52f89ee1c08c669b4dbe2fe38e9b08"
+    },
+    {
+      "path": "collections/material/lacouture-1890/previews/1500/plate-xxv.jpg",
+      "bytes": 260406,
+      "sha256": "611445966d38a6ad45231b42c2c53d7c16a656b8d604cf6a364267697d54c364"
+    },
+    {
+      "path": "collections/material/lacouture-1890/previews/1500/plate-xxvi.jpg",
+      "bytes": 271196,
+      "sha256": "3ec32a93bc2d806889f32220db907d4177a43e0a1fe40cfd00bd0a6cfcec02fd"
+    },
+    {
+      "path": "collections/material/lacouture-1890/previews/1500/plate-xxvii.jpg",
+      "bytes": 276589,
+      "sha256": "afe7be58d199cab57cca5bb04db5ffecbee6a89cfefaa0c6811fa52f90ccd3dd"
+    },
+    {
+      "path": "collections/material/lacouture-1890/previews/1500/plate-xxviii.jpg",
+      "bytes": 279874,
+      "sha256": "e3b2d7dcaafa7a804a0a8c7bd94716482f69589ff33402ba5684cbee8a33058a"
+    },
+    {
+      "path": "collections/material/lacouture-1890/previews/1500/rose-guide-verso.jpg",
+      "bytes": 250560,
+      "sha256": "212b1e97dc212a79096821da1773098ca53fff24bb92aeb3c3a4d92a9990e5da"
+    },
+    {
+      "path": "collections/material/lacouture-1890/previews/1500/rose-guide.jpg",
+      "bytes": 283569,
+      "sha256": "850a94c44b4892baaa57a3d595f5e01dfc471340fc42b9eb5ca3b0db2d5b83e9"
+    },
+    {
+      "path": "collections/material/lacouture-1890/previews/1500/title-page.jpg",
+      "bytes": 257320,
+      "sha256": "1b8222e958a0cdbe1b2b6b2b4be2d02115b2ebea33c7d6e2543fba7f819a3e24"
+    },
+    {
+      "path": "collections/material/lacouture-1890/previews/1500/viewing-screen.jpg",
+      "bytes": 364694,
+      "sha256": "924a7a3fb76c1c231b9174c6274c150a5f178517789f59e13f68d1d37f065b40"
+    },
+    {
+      "path": "collections/material/lacouture-1890/previews/750/atlas-contents-2.jpg",
+      "bytes": 50372,
+      "sha256": "4f80cdb4a15b666226b1866185ee9f237a1f0afc427a146b3cadcd1f3de634ab"
+    },
+    {
+      "path": "collections/material/lacouture-1890/previews/750/atlas-contents.jpg",
+      "bytes": 54854,
+      "sha256": "c8da63200f116adc7a17c019f8abfd89eb1d8dd3f4126f8ccd8389b0ebdae304"
+    },
+    {
+      "path": "collections/material/lacouture-1890/previews/750/atlas-title.jpg",
+      "bytes": 56410,
+      "sha256": "4278bd9ff7d1ab83d85c5b905ef7e7c3aaa8416775d4ddae54b7180d90069ee4"
+    },
+    {
+      "path": "collections/material/lacouture-1890/previews/750/back-cover.jpg",
+      "bytes": 145612,
+      "sha256": "cfb82cb5fa0b18d0c4899b6c0344b41c265b9a354fa8064703e60f9365549523"
+    },
+    {
+      "path": "collections/material/lacouture-1890/previews/750/front-cover.jpg",
+      "bytes": 115244,
+      "sha256": "52d234d14d96b1c4ce6f75db3d80c0d26a5eda7c8bde1427f8e0164a959bc2b8"
+    },
+    {
+      "path": "collections/material/lacouture-1890/previews/750/frontispiece.jpg",
+      "bytes": 64371,
+      "sha256": "e963d404d52195d5f1d44cdc23ac4f309a6ebc392432f47f1ea7751878931230"
+    },
+    {
+      "path": "collections/material/lacouture-1890/previews/750/plate-i-bis.jpg",
+      "bytes": 109082,
+      "sha256": "375d07f23c4a334dbf4e650dc1d7f9c4b7e5e496e34bc611544c8b892f5bfe13"
+    },
+    {
+      "path": "collections/material/lacouture-1890/previews/750/plate-i.jpg",
+      "bytes": 72545,
+      "sha256": "7df0def04a0eb975505b137d20140274e055c251ed5162da0d7b1b22a117a7f0"
+    },
+    {
+      "path": "collections/material/lacouture-1890/previews/750/plate-ii.jpg",
+      "bytes": 68209,
+      "sha256": "a7b70789e14495b5b3f27509ec266039fa8bbf586ddca1a782d6899f94c5dab7"
+    },
+    {
+      "path": "collections/material/lacouture-1890/previews/750/plate-iii.jpg",
+      "bytes": 69874,
+      "sha256": "50f5d123b8980eb6a4f50267ff14c8db1933a3634bf7c12ffb4b8e68be890374"
+    },
+    {
+      "path": "collections/material/lacouture-1890/previews/750/plate-iv.jpg",
+      "bytes": 70439,
+      "sha256": "10b83c4d0cef2940892fa402c1b591f06343bbe4e6ca200ce589ae4631ff2823"
+    },
+    {
+      "path": "collections/material/lacouture-1890/previews/750/plate-ix.jpg",
+      "bytes": 70782,
+      "sha256": "5ccf36a7140d95bdfc8313677f9a4bd068b64f9b33b1995e0192106edc2042ba"
+    },
+    {
+      "path": "collections/material/lacouture-1890/previews/750/plate-v.jpg",
+      "bytes": 67516,
+      "sha256": "70bfa171522533428a210502a8e576ec9a0bade788bfcb5b611ff78af2993524"
+    },
+    {
+      "path": "collections/material/lacouture-1890/previews/750/plate-vi.jpg",
+      "bytes": 67966,
+      "sha256": "62d72b7df6b028addef0e921676da113d49644542683eaa70472f16faf88fbd2"
+    },
+    {
+      "path": "collections/material/lacouture-1890/previews/750/plate-vii.jpg",
+      "bytes": 68718,
+      "sha256": "a4a45be9ec54bc6122817328eb5fc83ab828fec6d84732734925a4613c5fedbe"
+    },
+    {
+      "path": "collections/material/lacouture-1890/previews/750/plate-viii.jpg",
+      "bytes": 66519,
+      "sha256": "5e6e759660c14ed0f3c27f036ea26caa22620b606f6712a8026da629a461fe52"
+    },
+    {
+      "path": "collections/material/lacouture-1890/previews/750/plate-x.jpg",
+      "bytes": 71876,
+      "sha256": "6bd1da43e5d3adb65d6b3dd2c0e5624313b18da6c035a1c95e7ce8e99c2eacef"
+    },
+    {
+      "path": "collections/material/lacouture-1890/previews/750/plate-xi.jpg",
+      "bytes": 78952,
+      "sha256": "0aa0773a849addc55ba0666da44d03914398868bd9ee025dc4f3bbafb1c59c0d"
+    },
+    {
+      "path": "collections/material/lacouture-1890/previews/750/plate-xii.jpg",
+      "bytes": 75050,
+      "sha256": "f357bac572ca80afac3b750085d80b1c6177e4dd0e0f353184c94d3eeaa3a044"
+    },
+    {
+      "path": "collections/material/lacouture-1890/previews/750/plate-xiii.jpg",
+      "bytes": 68048,
+      "sha256": "7775e6e55c1e925a0d4be7852aa05f5de41d347b4ad9dde8f7482826c73e7ae2"
+    },
+    {
+      "path": "collections/material/lacouture-1890/previews/750/plate-xiv.jpg",
+      "bytes": 86744,
+      "sha256": "90f56c243713d5bb351228b28b35cc5757c1739c97673b8133a1da49e98202ea"
+    },
+    {
+      "path": "collections/material/lacouture-1890/previews/750/plate-xix.jpg",
+      "bytes": 79451,
+      "sha256": "6c29f94cf7614ca982a446b087b0b1da4f0d69ac6ae891da4eed6c796b60c750"
+    },
+    {
+      "path": "collections/material/lacouture-1890/previews/750/plate-xv.jpg",
+      "bytes": 83034,
+      "sha256": "0ed37f811004627cb32864473665b1ebc53012c76032cddcb5354cc98e6267e3"
+    },
+    {
+      "path": "collections/material/lacouture-1890/previews/750/plate-xvi.jpg",
+      "bytes": 76923,
+      "sha256": "10a774a1cdb1a9b3749744b779f6edd1314b97461d48f68dce69e97b20b0cfaf"
+    },
+    {
+      "path": "collections/material/lacouture-1890/previews/750/plate-xvii.jpg",
+      "bytes": 75808,
+      "sha256": "5eb350464bf1b0f94ceea1345fdef8915d5e3c292fcb6374d3b6348a615bb3d8"
+    },
+    {
+      "path": "collections/material/lacouture-1890/previews/750/plate-xviii.jpg",
+      "bytes": 76374,
+      "sha256": "09b1e929d5a8614cdef60becebab708e3093333545fd2e7c7f9783e36f99a8bb"
+    },
+    {
+      "path": "collections/material/lacouture-1890/previews/750/plate-xx.jpg",
+      "bytes": 81771,
+      "sha256": "4bae7357a63fd879843a0f7ddaef0574efc53b5864292f4f73fe3c06fe57d283"
+    },
+    {
+      "path": "collections/material/lacouture-1890/previews/750/plate-xxi.jpg",
+      "bytes": 75179,
+      "sha256": "2df7a1a1f3d126d0698504de73f44b9c4f571269e2f4e9cf218bdaad0f742b1f"
+    },
+    {
+      "path": "collections/material/lacouture-1890/previews/750/plate-xxii.jpg",
+      "bytes": 88659,
+      "sha256": "1e04cedbd4995d833ef44374f568c546370ae9a6e6f9835c41fe05c97655ffd4"
+    },
+    {
+      "path": "collections/material/lacouture-1890/previews/750/plate-xxiii.jpg",
+      "bytes": 72338,
+      "sha256": "bdb8ed0d06672cb52da928355e109bdc70464eb7f37f7b3d3be9f5dd6e791d13"
+    },
+    {
+      "path": "collections/material/lacouture-1890/previews/750/plate-xxiv.jpg",
+      "bytes": 75303,
+      "sha256": "9c734d21ed714d89985d3baff6fac79dda66aad07b59aaa599638598b18903ff"
+    },
+    {
+      "path": "collections/material/lacouture-1890/previews/750/plate-xxv.jpg",
+      "bytes": 70718,
+      "sha256": "e3233d1b55afd6fee2903ea41ffe49551409803439ba0b517d28592b5a2b91b0"
+    },
+    {
+      "path": "collections/material/lacouture-1890/previews/750/plate-xxvi.jpg",
+      "bytes": 74120,
+      "sha256": "8c606e127a3ec5b6b32c42d1dc98cc792df6018e9d45eee11cbab5640fc67d36"
+    },
+    {
+      "path": "collections/material/lacouture-1890/previews/750/plate-xxvii.jpg",
+      "bytes": 75676,
+      "sha256": "3595ce01b18fd7f0f0c3881bab50e9626c3e5d81fa9c9b3da4c545d9b6d3ec17"
+    },
+    {
+      "path": "collections/material/lacouture-1890/previews/750/plate-xxviii.jpg",
+      "bytes": 77492,
+      "sha256": "9b898649b3f6bb7213861ce5d92cf88935a86fdde46827333de56c53c4bd7753"
+    },
+    {
+      "path": "collections/material/lacouture-1890/previews/750/rose-guide-verso.jpg",
+      "bytes": 65907,
+      "sha256": "bd5d6ef4931735bf92601f31b6d4019982d9affe0b83b15b66ba13b456c170b1"
+    },
+    {
+      "path": "collections/material/lacouture-1890/previews/750/rose-guide.jpg",
+      "bytes": 83057,
+      "sha256": "f3ddf8d0bd9686386323edcd4beb68919e9430a0787bf05db4d65089b1ea857f"
+    },
+    {
+      "path": "collections/material/lacouture-1890/previews/750/title-page.jpg",
+      "bytes": 71731,
+      "sha256": "ef2b5c5ceb5f12977cabb369cbba07cc8867b0559e9fe57f9cf9fe5dc6d5c425"
+    },
+    {
+      "path": "collections/material/lacouture-1890/previews/750/viewing-screen.jpg",
+      "bytes": 88067,
+      "sha256": "a4ca8a740053e38741bef997be59c9bc179c586d1da68b681996f1510a660e4b"
     },
     {
       "path": "collections/material/lacouture-1890/scans/atlas-contents-2.jpg",
@@ -331,6 +721,266 @@
       "path": "collections/material/lacouture-1890/scans/viewing-screen.jpg",
       "bytes": 1622158,
       "sha256": "a018ab0a6704d9811d30866a40442a348818d35675623c8a2a46e8af46feba4f"
+    },
+    {
+      "path": "collections/material/lacouture-1890/translation/data/manifest.json",
+      "bytes": 16736,
+      "sha256": "10702a58de3e1ff382f73eb481581c714c3b641f9f4dc1940d9b42aa78daf6f2"
+    },
+    {
+      "path": "collections/material/lacouture-1890/translation/data/plate-ii.json",
+      "bytes": 17745,
+      "sha256": "22f131279f937d1940840e9330fa61bb7ceed7a12da3402ee4a7c54ac35d80fc"
+    },
+    {
+      "path": "collections/material/lacouture-1890/translation/data/plate-iii.json",
+      "bytes": 17753,
+      "sha256": "e3aba3c3347bad8ef5fd2e40d843fd41f1f6487bfe7c622aa73af13e0c1c1d5d"
+    },
+    {
+      "path": "collections/material/lacouture-1890/translation/data/plate-iv.json",
+      "bytes": 17745,
+      "sha256": "5633be66aa4d56a74663c20052e8f44ef324b43107868222992938c8750e5d0d"
+    },
+    {
+      "path": "collections/material/lacouture-1890/translation/data/plate-ix.json",
+      "bytes": 17717,
+      "sha256": "53eea1ca147cc8552a215c5b0b91f10b7d802b10216f9d9710954fac2fdbf16b"
+    },
+    {
+      "path": "collections/material/lacouture-1890/translation/data/plate-v.json",
+      "bytes": 17681,
+      "sha256": "a6583580729c3f999c60587f8b892439e6849eb77feec65fd77a84a0fe1e7d00"
+    },
+    {
+      "path": "collections/material/lacouture-1890/translation/data/plate-vi.json",
+      "bytes": 17759,
+      "sha256": "1a47762c81a359f4644bd82d79aa0d1c468c35268e3a6d05ea2cd3dc1536cdde"
+    },
+    {
+      "path": "collections/material/lacouture-1890/translation/data/plate-vii.json",
+      "bytes": 17795,
+      "sha256": "c7f64279579e8dea2897cd7d71f8f2b63f5cba70688ac553762a24d79d19cb55"
+    },
+    {
+      "path": "collections/material/lacouture-1890/translation/data/plate-viii.json",
+      "bytes": 17803,
+      "sha256": "2a0fe8835fff4f61bb4dba51b1d598423e222be71cb214d8fe57429c730d6988"
+    },
+    {
+      "path": "collections/material/lacouture-1890/translation/data/plate-x.json",
+      "bytes": 17681,
+      "sha256": "b019077e17c61a4e23053a5b72741bdd9e8dd090d27c5e1cae25623e8abb9164"
+    },
+    {
+      "path": "collections/material/lacouture-1890/translation/data/plate-xi.json",
+      "bytes": 17717,
+      "sha256": "b74c3a8ebf8e295db16492a8c8fe9c772a803dcc939eb40ad2861dc1a17d9f5d"
+    },
+    {
+      "path": "collections/material/lacouture-1890/translation/data/plate-xii.json",
+      "bytes": 17795,
+      "sha256": "3f808237d1558d8235f79d90dc76932c1fd4bb9c51a6cb9d4be4b2a3654c80ad"
+    },
+    {
+      "path": "collections/material/lacouture-1890/translation/data/plate-xiii.json",
+      "bytes": 17817,
+      "sha256": "7b1c9d645bd358c7a844f06ed50a54198ab24400fd0e1c993782812e99c7b157"
+    },
+    {
+      "path": "collections/material/lacouture-1890/translation/data/plate-xiv.json",
+      "bytes": 17737,
+      "sha256": "7e3efb85aac5e7743202742a3a2c9aa0bd9dd8b7a70146f544b10bcaed719c77"
+    },
+    {
+      "path": "collections/material/lacouture-1890/translation/data/plate-xix.json",
+      "bytes": 17734,
+      "sha256": "97d94dbdabc82c00d751ef4354d4cfcd45a055f29ceea4dc6a3b06e04596612a"
+    },
+    {
+      "path": "collections/material/lacouture-1890/translation/data/plate-xv.json",
+      "bytes": 17725,
+      "sha256": "936f0bbe1a8527fb61cd30041b5e07deccfe1fd61c8992800b111bb4cacf3c47"
+    },
+    {
+      "path": "collections/material/lacouture-1890/translation/data/plate-xvi.json",
+      "bytes": 17777,
+      "sha256": "9cda55899646a3072ac2800c2ecb0135218ee508c83eeebd2c1b2de2f7a99126"
+    },
+    {
+      "path": "collections/material/lacouture-1890/translation/data/plate-xvii.json",
+      "bytes": 17813,
+      "sha256": "4b2e0c127f848092afe0d2f73b7d487ce7dca25254b72b75e03153a5288647d6"
+    },
+    {
+      "path": "collections/material/lacouture-1890/translation/data/plate-xviii.json",
+      "bytes": 17830,
+      "sha256": "f096e4f30ec50e95efbfb693d61c2bd008b0a0b8248eeeb1a9d74b016466b65f"
+    },
+    {
+      "path": "collections/material/lacouture-1890/translation/data/plate-xx.json",
+      "bytes": 17691,
+      "sha256": "d5975b9c3219b2df81422e11f22e6f78c931b7a521646792b7bfd1714bbc171d"
+    },
+    {
+      "path": "collections/material/lacouture-1890/translation/data/plate-xxi.json",
+      "bytes": 17733,
+      "sha256": "23dc8cf99434d2270deeb7732f5f661c9d4af3879300aa45a3621c83166dd32b"
+    },
+    {
+      "path": "collections/material/lacouture-1890/translation/data/plate-xxii.json",
+      "bytes": 17784,
+      "sha256": "29e637c3cf7c4d0d34ca892fb0c13318260e0de6b2f61600809c0280eb20170b"
+    },
+    {
+      "path": "collections/material/lacouture-1890/translation/data/swatches.json",
+      "bytes": 420352,
+      "sha256": "6063ee1a0d0bd577ecd93707fc3cb215f39656469494ea7ff59000b3f02e1eed"
+    },
+    {
+      "path": "collections/material/lacouture-1890/translation/plates/plate-i-bis.svg",
+      "bytes": 313036,
+      "sha256": "762b3bd3b7fad8596f44e9593076827d2386a6cccc8ca95856cff96f780101e7"
+    },
+    {
+      "path": "collections/material/lacouture-1890/translation/plates/plate-i.svg",
+      "bytes": 54798,
+      "sha256": "25323cfd94bea53b2de05c10f0256395b9cfede5701926b99d0fb2bc78c990b2"
+    },
+    {
+      "path": "collections/material/lacouture-1890/translation/plates/plate-ii.svg",
+      "bytes": 17916,
+      "sha256": "818317939108b535055e94d78673aee13a703213267c2398646f3d2c5f5547e4"
+    },
+    {
+      "path": "collections/material/lacouture-1890/translation/plates/plate-iii.svg",
+      "bytes": 18429,
+      "sha256": "46c0a7ddb0ae2097accd891e3e0cbdf2479c2ef9889bef7f933a879bf3399cd7"
+    },
+    {
+      "path": "collections/material/lacouture-1890/translation/plates/plate-iv.svg",
+      "bytes": 17922,
+      "sha256": "ea4261ee66880d09e9d33aa77a075db6c08a7a308519ac0b309da54758ba9d57"
+    },
+    {
+      "path": "collections/material/lacouture-1890/translation/plates/plate-ix.svg",
+      "bytes": 18360,
+      "sha256": "7ca11541201781e6ac29cd06c43bf2badbdaddc4cfd37752b996949371efa40e"
+    },
+    {
+      "path": "collections/material/lacouture-1890/translation/plates/plate-v.svg",
+      "bytes": 18131,
+      "sha256": "7b595e01c0c444743b0c64645b8eb6d57ce624185825022bb93d95a1996a6b59"
+    },
+    {
+      "path": "collections/material/lacouture-1890/translation/plates/plate-vi.svg",
+      "bytes": 17930,
+      "sha256": "9e0f1118386d54d09cb319336b8a1a1afe2bfbd8e42818444981dd020efc9a82"
+    },
+    {
+      "path": "collections/material/lacouture-1890/translation/plates/plate-vii.svg",
+      "bytes": 18507,
+      "sha256": "a08be58d680440f53e9120ded029ff1d910b39333dca944e3012140df8247057"
+    },
+    {
+      "path": "collections/material/lacouture-1890/translation/plates/plate-viii.svg",
+      "bytes": 18300,
+      "sha256": "bbd790fd5a029d56226397dabf20f4be9030e26f1cfd6ca99fabe503a47db158"
+    },
+    {
+      "path": "collections/material/lacouture-1890/translation/plates/plate-x.svg",
+      "bytes": 17753,
+      "sha256": "242e3de55aa046bd1e5d0fc09052509f7a390a9766f9fdb42bfdd6ffaed9ed0b"
+    },
+    {
+      "path": "collections/material/lacouture-1890/translation/plates/plate-xi.svg",
+      "bytes": 18335,
+      "sha256": "4a31c0e85adcb30f32ab7e7f938ca183ebfa74134bdadc30076a15cbbad856d4"
+    },
+    {
+      "path": "collections/material/lacouture-1890/translation/plates/plate-xii.svg",
+      "bytes": 18142,
+      "sha256": "6817d0c4594d1f1f80943ddcb86416d844be27b99e0b5ce34d0754376f148124"
+    },
+    {
+      "path": "collections/material/lacouture-1890/translation/plates/plate-xiii.svg",
+      "bytes": 18633,
+      "sha256": "e964cce9c3897a13f6832162a5b6ebe4523d9336a6ba6f3cc5889b3bbfb80bf6"
+    },
+    {
+      "path": "collections/material/lacouture-1890/translation/plates/plate-xiv.svg",
+      "bytes": 18059,
+      "sha256": "f3c2b2cda1b05ac53c95e2cce54f5d2b42d0f4aa0593c2097110e58000bb0a18"
+    },
+    {
+      "path": "collections/material/lacouture-1890/translation/plates/plate-xix.svg",
+      "bytes": 18128,
+      "sha256": "32ab8728478973a8f73b8f1b7ccea79b076cb8599dbfae7d1762dd5886e47c43"
+    },
+    {
+      "path": "collections/material/lacouture-1890/translation/plates/plate-xv.svg",
+      "bytes": 17925,
+      "sha256": "d89a60630f09989814b2abbb0d6873789636beae9b2d995103ddbd7234ded671"
+    },
+    {
+      "path": "collections/material/lacouture-1890/translation/plates/plate-xvi.svg",
+      "bytes": 18160,
+      "sha256": "8893e89bcd3afb6772b4f8b62d57d116ab56d88dbfca028c6a6842e326966084"
+    },
+    {
+      "path": "collections/material/lacouture-1890/translation/plates/plate-xvii.svg",
+      "bytes": 18307,
+      "sha256": "b4c4ded315e279d70cca8a0cc7b649eed7cabf82242199b999b58ef2341ccd72"
+    },
+    {
+      "path": "collections/material/lacouture-1890/translation/plates/plate-xviii.svg",
+      "bytes": 18424,
+      "sha256": "0db15ddb9f59998106cff0c7739adb5176ed65c46b78ce760e221f7a655b20e1"
+    },
+    {
+      "path": "collections/material/lacouture-1890/translation/plates/plate-xx.svg",
+      "bytes": 17890,
+      "sha256": "2e9478fb3b2956248c538369e2dd4ada8770037ab19b40f0bc7a85dd1b3d5fab"
+    },
+    {
+      "path": "collections/material/lacouture-1890/translation/plates/plate-xxi.svg",
+      "bytes": 18020,
+      "sha256": "a779980c7291608dc96375ca4012ff897cfc6c765a7695cd97faf83749fc943b"
+    },
+    {
+      "path": "collections/material/lacouture-1890/translation/plates/plate-xxii.svg",
+      "bytes": 18183,
+      "sha256": "fa2663cee9c160324f136105ebb647e32461ef463319207849f22187283b751f"
+    },
+    {
+      "path": "collections/material/lacouture-1890/translation/plates/plate-xxiii.svg",
+      "bytes": 119658,
+      "sha256": "78fb22cb8e744137217f25700800abff041ab8fdbb6e774263ebf907c35f7e32"
+    },
+    {
+      "path": "collections/material/lacouture-1890/translation/plates/plate-xxiv.svg",
+      "bytes": 120093,
+      "sha256": "ccbb29a45de0710aaf423671f1848b034e7cb93677c89812a95e25d211385a3f"
+    },
+    {
+      "path": "collections/material/lacouture-1890/translation/plates/plate-xxv.svg",
+      "bytes": 120022,
+      "sha256": "3a3b1640b1669cc414e587dcc1f257d316963b3bd3ec503d74e090e182ac1ec0"
+    },
+    {
+      "path": "collections/material/lacouture-1890/translation/plates/plate-xxvi.svg",
+      "bytes": 120038,
+      "sha256": "93257324cbba21ecade1c556dd475778666ef025120b0732eb0fa395effbd938"
+    },
+    {
+      "path": "collections/material/lacouture-1890/translation/plates/plate-xxvii.svg",
+      "bytes": 120289,
+      "sha256": "72d38da8a6630f1e6d6530b1a68363f1285aef5aff19954f9b757a69f74fce16"
+    },
+    {
+      "path": "collections/material/lacouture-1890/translation/plates/plate-xxviii.svg",
+      "bytes": 120983,
+      "sha256": "1e790172bdee9c5a3dfac7897eaa74419f7313f919fae4301c9b9e2accaaa9b1"
     },
     {
       "path": "collections/original/workbench/collection.json",

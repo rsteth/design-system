@@ -1,0 +1,602 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2173" height="3000" viewBox="0 0 2173 3000" role="img" aria-labelledby="plate-title plate-description">
+<title id="plate-title">Le BLEU-VIOLET — planche XXVII, Répertoire chromatique (1890)</title>
+<desc id="plate-description">Editable geometric reconstruction of Charles Lacouture's original plate, based on the Getty Research Institute scan, leaf 218. Native vector cells preserve the original arrangement; solid colours are approximate spatial averages of the scanned ink screens, not calibrated pigment measurements. Paper wear and fine lithographic texture are omitted.</desc>
+<metadata>{&quot;source&quot;: &quot;https://archive.org/details/gri_33125012875395&quot;, &quot;sourceLeaf&quot;: 218, &quot;reconstruction&quot;: &quot;native SVG paths, editable text; approximate scan-derived colours&quot;}</metadata>
+<rect width="100%" height="100%" fill="#f2eedf"/>
+<style>text{font-family:"Times New Roman",Times,serif;fill:#34342e}.swatch{cursor:pointer;outline:none}.swatch:focus{stroke:#14140f!important;stroke-width:5!important}.plate-grid{pointer-events:none}</style>
+<text x="147.76" y="336" text-anchor="start" font-size="40" font-weight="bold" >RÉPERTOIRE CHROMATIQUE</text>
+<text x="1303.8" y="345" text-anchor="start" font-size="40" font-weight="normal" >5<tspan font-size="25" baseline-shift="super">me</tspan> section&#160; PLANCHE XXVII</text>
+<text x="986.54" y="606" text-anchor="middle" font-size="82" font-weight="normal" >Le BLEU-VIOLET</text>
+<text x="986.54" y="738" text-anchor="middle" font-size="38" font-weight="normal" >ses diverses nuances combinées avec le noir</text>
+<text x="386.79" y="2343" text-anchor="start" font-size="36" font-weight="normal" ><tspan font-weight="bold">N. B.</tspan> Fermer l’atlas pour soustraire ces planches à la lumière aussitôt qu’on</text>
+<text x="351.79" y="2392" text-anchor="start" font-size="36" font-weight="normal" >n’a plus besoin d’en faire usage.</text>
+<text x="1051.73" y="2598" text-anchor="middle" font-size="18" font-weight="normal" fill="#79796d">Chromolith. G. Severeyns.</text>
+<g id="colours">
+<path id="cell-1" class="swatch" d="M1062.15 1103.37 L1024.23 1075.86 L987 1052.01 L962.44 1066.58 L936.26 1083.5 L892.73 1115.09 L901.71 1127.09 L911.84 1137.5 L924.11 1147.16 L936.57 1154.53 L949.85 1160.23 L964.83 1164.39 L980.22 1166.44 L994.63 1166.4 L1013.26 1163.56 L1031.15 1157.61 L1048.75 1148.12 L1063.62 1136.4 L1072.12 1127.54 L1079.88 1117.45 L1062.15 1103.37 Z" fill="#0f0944" data-color="#0f0944" data-label="Plate XXVII · cell 1 · bands 1,7,7" tabindex="0" role="button" aria-label="Plate XXVII · cell 1 · bands 1,7,7, #0f0944"><title>Plate XXVII · cell 1 · bands 1,7,7: #0f0944</title></path>
+<path id="cell-2" class="swatch" d="M898.23 1262.74 L919.03 1270.59 L940.48 1276.33 L962.39 1279.91 L984.53 1281.29 L1006.69 1280.47 L1028.66 1277.44 L1050.24 1272.25 L1071.62 1264.76 L1049.68 1242.7 L1029.97 1224.51 L1009.58 1207.11 L985.53 1188.3 L961.08 1206.5 L940.32 1223.37 L915.31 1245.61 L898.23 1262.74 Z" fill="#21194b" data-color="#21194b" data-label="Plate XXVII · cell 2 · bands 2,6,6" tabindex="0" role="button" aria-label="Plate XXVII · cell 2 · bands 2,6,6, #21194b"><title>Plate XXVII · cell 2 · bands 2,6,6: #21194b</title></path>
+<path id="cell-3" class="swatch" d="M881.28 1124.18 L838.69 1161.21 L807.9 1191.6 L827 1213.72 L848.62 1233.09 L872.49 1249.53 L897.81 1262.56 L920.22 1241.06 L940.32 1223.37 L961.08 1206.5 L985.53 1188.3 L961.34 1171.02 L938.93 1156.4 L892.51 1129.88 L881.28 1124.18 Z" fill="#120f41" data-color="#120f41" data-label="Plate XXVII · cell 3 · bands 2,6,7" tabindex="0" role="button" aria-label="Plate XXVII · cell 3 · bands 2,6,7, #120f41"><title>Plate XXVII · cell 3 · bands 2,6,7: #120f41</title></path>
+<path id="cell-4" class="swatch" d="M1163.03 1196.09 L1121.62 1154.09 L1091.13 1126.83 L1061.94 1141.31 L1038.57 1154.22 L1010.09 1171.64 L985.53 1188.3 L1009.58 1207.11 L1029.97 1224.51 L1049.68 1242.7 L1071.62 1264.76 L1093.32 1254.52 L1114.19 1241.74 L1133.59 1226.76 L1151.28 1209.74 L1163.03 1196.09 Z" fill="#150d3f" data-color="#150d3f" data-label="Plate XXVII · cell 4 · bands 2,7,6" tabindex="0" role="button" aria-label="Plate XXVII · cell 4 · bands 2,7,6, #150d3f"><title>Plate XXVII · cell 4 · bands 2,7,6: #150d3f</title></path>
+<path id="cell-5" class="swatch" d="M1091.13 1126.83 L1079.88 1117.45 L1069.9 1130.05 L1058.59 1140.82 L1045.94 1149.92 L1032.17 1157.17 L1021.8 1161.14 L1011.09 1164.05 L999.05 1166.02 L987.98 1166.65 L974.69 1165.95 L960.49 1163.42 L946.73 1159.06 L933.62 1152.97 L922.28 1145.89 L911.01 1136.75 L900.99 1126.23 L892.73 1115.09 L881.28 1124.18 L910.15 1139.39 L933.24 1152.88 L961.34 1171.02 L985.53 1188.3 L1010.09 1171.64 L1038.57 1154.22 L1061.94 1141.31 L1091.13 1126.83 Z" fill="#444773" data-color="#444773" data-label="Plate XXVII · cell 5 · bands 2,7,7" tabindex="0" role="button" aria-label="Plate XXVII · cell 5 · bands 2,7,7, #444773"><title>Plate XXVII · cell 5 · bands 2,7,7: #444773</title></path>
+<path id="cell-6" class="swatch" d="M934.9 1391.79 L960.02 1394.83 L983.29 1395.94 L1006.58 1395.42 L1031.75 1393.02 L1010.45 1366.57 L983.92 1337.64 L968.14 1353.58 L949.39 1374.29 L934.9 1391.79 Z" fill="#332c52" data-color="#332c52" data-label="Plate XXVII · cell 6 · bands 3,5,5" tabindex="0" role="button" aria-label="Plate XXVII · cell 6 · bands 3,5,5, #332c52"><title>Plate XXVII · cell 6 · bands 3,5,5: #332c52</title></path>
+<path id="cell-7" class="swatch" d="M822.44 1352.47 L850.79 1366.77 L878.71 1377.78 L907.48 1386.25 L934.9 1391.79 L956.77 1365.89 L983.92 1337.64 L963.93 1318.25 L942.95 1299.82 L921.1 1282.45 L895.91 1264.47 L873.12 1288.67 L851.35 1314.18 L822.44 1352.47 Z" fill="#282349" data-color="#282349" data-label="Plate XXVII · cell 7 · bands 3,5,6" tabindex="0" role="button" aria-label="Plate XXVII · cell 7 · bands 3,5,6, #282349"><title>Plate XXVII · cell 7 · bands 3,5,6: #282349</title></path>
+<path id="cell-8" class="swatch" d="M791.57 1209.14 L759.18 1247.31 L734.06 1280.64 L754.16 1301.65 L774.21 1319.45 L798.33 1337.49 L822.44 1352.47 L855.61 1308.99 L873.12 1288.67 L895.91 1264.47 L875.03 1251.07 L850.92 1237.14 L826.16 1224.42 L800.82 1212.95 L791.57 1209.14 Z" fill="#16183f" data-color="#16183f" data-label="Plate XXVII · cell 8 · bands 3,5,7" tabindex="0" role="button" aria-label="Plate XXVII · cell 8 · bands 3,5,7, #16183f"><title>Plate XXVII · cell 8 · bands 3,5,7: #16183f</title></path>
+<path id="cell-9" class="swatch" d="M983.99 1337.71 L1010.45 1366.57 L1031.75 1393.02 L1062.53 1387.43 L1091.4 1379.41 L1119.45 1368.83 L1145.03 1356.55 L1112.81 1312.24 L1095.74 1291.49 L1073.48 1266.72 L1047.91 1284.05 L1025.69 1300.86 L1004.32 1318.76 L983.99 1337.71 Z" fill="#241c44" data-color="#241c44" data-label="Plate XXVII · cell 9 · bands 3,6,5" tabindex="0" role="button" aria-label="Plate XXVII · cell 9 · bands 3,6,5, #241c44"><title>Plate XXVII · cell 9 · bands 3,6,5: #241c44</title></path>
+<path id="cell-10" class="swatch" d="M1071.62 1264.76 L1050.24 1272.25 L1028.66 1277.44 L1008.9 1280.26 L986.74 1281.31 L966.8 1280.36 L947.02 1277.63 L921.15 1271.26 L897.81 1262.56 L895.91 1264.47 L921.1 1282.45 L942.95 1299.82 L963.93 1318.25 L983.92 1337.64 L1004.32 1318.76 L1025.69 1300.86 L1047.91 1284.05 L1073.48 1266.72 L1071.62 1264.76 Z" fill="#2e274d" data-color="#2e274d" data-label="Plate XXVII · cell 10 · bands 3,6,6" tabindex="0" role="button" aria-label="Plate XXVII · cell 10 · bands 3,6,6, #2e274d"><title>Plate XXVII · cell 10 · bands 3,6,6: #2e274d</title></path>
+<path id="cell-11" class="swatch" d="M897.81 1262.56 L870.59 1248.37 L846.88 1231.7 L825.44 1212.11 L807.9 1191.6 L791.57 1209.14 L821.14 1222.02 L846.02 1234.49 L870.26 1248.19 L895.91 1264.47 L897.81 1262.56 Z" fill="#182955" data-color="#182955" data-label="Plate XXVII · cell 11 · bands 3,6,7" tabindex="0" role="button" aria-label="Plate XXVII · cell 11 · bands 3,6,7, #182955"><title>Plate XXVII · cell 11 · bands 3,6,7: #182955</title></path>
+<path id="cell-12" class="swatch" d="M1234.93 1286.97 L1200.95 1240.62 L1178.99 1214.03 L1149.15 1226.17 L1124.01 1238.01 L1099.47 1251.08 L1073.48 1266.72 L1095.74 1291.49 L1112.81 1312.24 L1145.03 1356.55 L1169.46 1342.18 L1191.31 1326.8 L1214.39 1307.47 L1233.42 1288.61 L1234.93 1286.97 Z" fill="#19103a" data-color="#19103a" data-label="Plate XXVII · cell 12 · bands 3,7,5" tabindex="0" role="button" aria-label="Plate XXVII · cell 12 · bands 3,7,5, #19103a"><title>Plate XXVII · cell 12 · bands 3,7,5: #19103a</title></path>
+<path id="cell-13" class="swatch" d="M1178.99 1214.03 L1163.03 1196.09 L1143.46 1217.72 L1121.43 1236.54 L1097.21 1252.37 L1071.62 1264.76 L1073.48 1266.72 L1099.47 1251.08 L1124.01 1238.01 L1149.15 1226.17 L1178.99 1214.03 Z" fill="#2e143f" data-color="#2e143f" data-label="Plate XXVII · cell 13 · bands 3,7,6" tabindex="0" role="button" aria-label="Plate XXVII · cell 13 · bands 3,7,6, #2e143f"><title>Plate XXVII · cell 13 · bands 3,7,6: #2e143f</title></path>
+<path id="cell-14" class="swatch" d="M869.69 1494.72 L898.31 1501.57 L924.56 1506.12 L951.02 1509.11 L973.8 1510.4 L960.13 1488.21 L944.72 1466.17 L928.06 1445.07 L910.32 1425.15 L893.56 1451.18 L879.63 1475.48 L869.69 1494.72 Z" fill="#35314b" data-color="#35314b" data-label="Plate XXVII · cell 14 · bands 4,4,5" tabindex="0" role="button" aria-label="Plate XXVII · cell 14 · bands 4,4,5, #35314b"><title>Plate XXVII · cell 14 · bands 4,4,5: #35314b</title></path>
+<path id="cell-15" class="swatch" d="M764.84 1451.06 L793.27 1466.06 L817.65 1476.95 L842.62 1486.37 L869.69 1494.72 L887.85 1460.82 L910.32 1425.15 L891.21 1406.05 L867.72 1385.41 L846.51 1369.05 L822.31 1352.67 L804.36 1379.58 L787.07 1408.41 L768.21 1444.09 L764.84 1451.06 Z" fill="#26243f" data-color="#26243f" data-label="Plate XXVII · cell 15 · bands 4,4,6" tabindex="0" role="button" aria-label="Plate XXVII · cell 15 · bands 4,4,6, #26243f"><title>Plate XXVII · cell 15 · bands 4,4,6: #26243f</title></path>
+<path id="cell-16" class="swatch" d="M717.88 1304.17 L692.99 1344.34 L672.86 1381.28 L693.04 1399.95 L717.32 1419.64 L739.14 1435.14 L764.84 1451.06 L790.42 1402.58 L804.36 1379.58 L822.31 1352.67 L785.71 1331.89 L765.62 1322.31 L745.09 1313.74 L717.88 1304.17 Z" fill="#161938" data-color="#161938" data-label="Plate XXVII · cell 16 · bands 4,4,7" tabindex="0" role="button" aria-label="Plate XXVII · cell 16 · bands 4,4,7, #161938"><title>Plate XXVII · cell 16 · bands 4,4,7: #161938</title></path>
+<path id="cell-17" class="swatch" d="M990.3 1510.61 L1017.53 1509.62 L1044.03 1507.04 L1070.33 1502.88 L1094.73 1497.56 L1077.3 1463.21 L1055.6 1426.98 L1037.45 1446.46 L1020.33 1467.12 L1001.93 1492.47 L990.3 1510.61 Z" fill="#322a45" data-color="#322a45" data-label="Plate XXVII · cell 17 · bands 4,5,4" tabindex="0" role="button" aria-label="Plate XXVII · cell 17 · bands 4,5,4, #322a45"><title>Plate XXVII · cell 17 · bands 4,5,4: #322a45</title></path>
+<path id="cell-18" class="swatch" d="M1031.75 1393.02 L1003.25 1395.59 L979.96 1395.88 L956.7 1394.54 L934.9 1391.79 L910.32 1425.15 L928.06 1445.07 L944.72 1466.17 L960.13 1488.21 L973.8 1510.4 L990.3 1510.61 L1004.45 1488.78 L1020.33 1467.12 L1037.45 1446.46 L1055.6 1426.98 L1031.75 1393.02 Z" fill="#26203c" data-color="#26203c" data-label="Plate XXVII · cell 18 · bands 4,5,5" tabindex="0" role="button" aria-label="Plate XXVII · cell 18 · bands 4,5,5, #26203c"><title>Plate XXVII · cell 18 · bands 4,5,5: #26203c</title></path>
+<path id="cell-19" class="swatch" d="M934.9 1391.79 L904.25 1385.43 L875.56 1376.68 L850.79 1366.77 L822.31 1352.67 L846.51 1369.05 L867.72 1385.41 L891.21 1406.05 L910.32 1425.15 L934.9 1391.79 Z" fill="#36344d" data-color="#36344d" data-label="Plate XXVII · cell 19 · bands 4,5,6" tabindex="0" role="button" aria-label="Plate XXVII · cell 19 · bands 4,5,6, #36344d"><title>Plate XXVII · cell 19 · bands 4,5,6: #36344d</title></path>
+<path id="cell-20" class="swatch" d="M822.44 1352.47 L798.33 1337.49 L774.21 1319.45 L754.16 1301.65 L734.06 1280.64 L717.88 1304.17 L745.09 1313.74 L769.67 1324.14 L793.61 1336 L822.31 1352.67 L822.44 1352.47 Z" fill="#171f3f" data-color="#171f3f" data-label="Plate XXVII · cell 20 · bands 4,5,7" tabindex="0" role="button" aria-label="Plate XXVII · cell 20 · bands 4,5,7, #171f3f"><title>Plate XXVII · cell 20 · bands 4,5,7: #171f3f</title></path>
+<path id="cell-21" class="swatch" d="M1055.6 1426.98 L1077.3 1463.21 L1094.73 1497.56 L1121.97 1489.9 L1147.13 1481.12 L1175.78 1469 L1200.49 1456.57 L1175.96 1407.45 L1162.52 1384.11 L1145.16 1356.75 L1116.96 1375.06 L1088.63 1396.72 L1071.82 1411.37 L1055.6 1426.98 Z" fill="#251d39" data-color="#251d39" data-label="Plate XXVII · cell 21 · bands 4,6,4" tabindex="0" role="button" aria-label="Plate XXVII · cell 21 · bands 4,6,4, #251d39"><title>Plate XXVII · cell 21 · bands 4,6,4: #251d39</title></path>
+<path id="cell-22" class="swatch" d="M1145.16 1356.75 L1116.38 1370.13 L1088.23 1380.43 L1059.28 1388.16 L1031.75 1393.02 L1055.6 1426.98 L1075.12 1408.38 L1099.06 1388.33 L1120.61 1372.51 L1145.16 1356.75 Z" fill="#382f49" data-color="#382f49" data-label="Plate XXVII · cell 22 · bands 4,6,5" tabindex="0" role="button" aria-label="Plate XXVII · cell 22 · bands 4,6,5, #382f49"><title>Plate XXVII · cell 22 · bands 4,6,5: #382f49</title></path>
+<path id="cell-23" class="swatch" d="M1293.95 1389.13 L1266.92 1338 L1250.6 1310.91 L1223.2 1319.79 L1198.4 1329.56 L1170.24 1342.82 L1145.16 1356.75 L1162.52 1384.11 L1175.96 1407.45 L1200.49 1456.57 L1226.52 1441.31 L1248.68 1426.36 L1273.37 1407.28 L1293.95 1389.13 Z" fill="#1c1131" data-color="#1c1131" data-label="Plate XXVII · cell 23 · bands 4,7,4" tabindex="0" role="button" aria-label="Plate XXVII · cell 23 · bands 4,7,4, #1c1131"><title>Plate XXVII · cell 23 · bands 4,7,4: #1c1131</title></path>
+<path id="cell-24" class="swatch" d="M1250.6 1310.91 L1234.93 1286.97 L1214.39 1307.47 L1193.96 1324.75 L1169.46 1342.18 L1145.03 1356.55 L1174.21 1340.81 L1198.4 1329.56 L1223.2 1319.79 L1250.6 1310.91 Z" fill="#231130" data-color="#231130" data-label="Plate XXVII · cell 24 · bands 4,7,5" tabindex="0" role="button" aria-label="Plate XXVII · cell 24 · bands 4,7,5, #231130"><title>Plate XXVII · cell 24 · bands 4,7,5: #231130</title></path>
+<path id="cell-25" class="swatch" d="M829.37 1602.26 L865.28 1611.62 L900.16 1618.32 L890.63 1595.76 L879.98 1574.73 L867.93 1554.48 L852.66 1532.62 L841.36 1562.75 L831.35 1594.93 L829.37 1602.26 Z" fill="#333145" data-color="#333145" data-label="Plate XXVII · cell 25 · bands 5,3,5" tabindex="0" role="button" aria-label="Plate XXVII · cell 25 · bands 5,3,5, #333145"><title>Plate XXVII · cell 25 · bands 5,3,5: #333145</title></path>
+<path id="cell-26" class="swatch" d="M723.93 1558.94 L749.86 1571.98 L775.31 1583.19 L801.27 1593.13 L829.37 1602.26 L839.56 1568.07 L852.66 1532.62 L833.21 1509.19 L811.96 1487.75 L788.92 1468.3 L764.74 1451.27 L751.45 1480.84 L739.13 1512.19 L726.38 1550.57 L723.93 1558.94 Z" fill="#232437" data-color="#232437" data-label="Plate XXVII · cell 26 · bands 5,3,6" tabindex="0" role="button" aria-label="Plate XXVII · cell 26 · bands 5,3,6, #232437"><title>Plate XXVII · cell 26 · bands 5,3,6: #232437</title></path>
+<path id="cell-27" class="swatch" d="M660.27 1406.97 L638.69 1457.51 L626.06 1492.5 L649.9 1511.55 L672.55 1527.81 L695.97 1542.93 L723.93 1558.94 L732.48 1531.28 L741.48 1505.87 L751.45 1480.84 L764.74 1451.27 L744.15 1439.08 L720.21 1427.23 L695.44 1417.32 L669.97 1409.41 L660.27 1406.97 Z" fill="#151a30" data-color="#151a30" data-label="Plate XXVII · cell 27 · bands 5,3,7" tabindex="0" role="button" aria-label="Plate XXVII · cell 27 · bands 5,3,7, #151a30"><title>Plate XXVII · cell 27 · bands 5,3,7: #151a30</title></path>
+<path id="cell-28" class="swatch" d="M940.95 1623.29 L980.81 1625.23 L1020.71 1624.3 L1012.67 1597.15 L1003.49 1571.79 L992.85 1547.01 L981.9 1525 L968.51 1550.77 L957.58 1575.38 L945.25 1609.13 L940.95 1623.29 Z" fill="#312b3f" data-color="#312b3f" data-label="Plate XXVII · cell 28 · bands 5,4,4" tabindex="0" role="button" aria-label="Plate XXVII · cell 28 · bands 5,4,4, #312b3f"><title>Plate XXVII · cell 28 · bands 5,4,4: #312b3f</title></path>
+<path id="cell-29" class="swatch" d="M973.8 1510.4 L946.6 1508.72 L920.17 1505.47 L893.97 1500.65 L869.69 1494.72 L852.66 1532.62 L867.93 1554.48 L879.98 1574.73 L890.63 1595.76 L900.16 1618.32 L940.95 1623.29 L949.57 1596.36 L959.3 1571.23 L970.47 1546.73 L981.9 1525 L973.8 1510.4 Z" fill="#242134" data-color="#242134" data-label="Plate XXVII · cell 29 · bands 5,4,5" tabindex="0" role="button" aria-label="Plate XXVII · cell 29 · bands 5,4,5, #242134"><title>Plate XXVII · cell 29 · bands 5,4,5: #242134</title></path>
+<path id="cell-30" class="swatch" d="M869.69 1494.72 L842.62 1486.37 L817.65 1476.95 L793.27 1466.06 L764.74 1451.27 L788.92 1468.3 L811.96 1487.75 L833.21 1509.19 L852.66 1532.62 L869.69 1494.72 Z" fill="#2a293a" data-color="#2a293a" data-label="Plate XXVII · cell 30 · bands 5,4,6" tabindex="0" role="button" aria-label="Plate XXVII · cell 30 · bands 5,4,6, #2a293a"><title>Plate XXVII · cell 30 · bands 5,4,6: #2a293a</title></path>
+<path id="cell-31" class="swatch" d="M764.74 1451.27 L739.14 1435.14 L713.77 1416.93 L693.04 1399.95 L672.86 1381.28 L660.27 1406.97 L685.96 1414.12 L711.01 1423.28 L738.25 1435.94 L764.74 1451.27 Z" fill="#11172c" data-color="#11172c" data-label="Plate XXVII · cell 31 · bands 5,4,7" tabindex="0" role="button" aria-label="Plate XXVII · cell 31 · bands 5,4,7, #11172c"><title>Plate XXVII · cell 31 · bands 5,4,7: #11172c</title></path>
+<path id="cell-32" class="swatch" d="M1061.6 1620.36 L1096.61 1614.55 L1132.72 1606.1 L1123.26 1571.66 L1110.94 1535.88 L1093.33 1560.15 L1079.39 1583.14 L1070.13 1601.07 L1061.6 1620.36 Z" fill="#32293f" data-color="#32293f" data-label="Plate XXVII · cell 32 · bands 5,5,3" tabindex="0" role="button" aria-label="Plate XXVII · cell 32 · bands 5,5,3, #32293f"><title>Plate XXVII · cell 32 · bands 5,5,3: #32293f</title></path>
+<path id="cell-33" class="swatch" d="M1094.73 1497.56 L1065.96 1503.69 L1039.62 1507.58 L1013.1 1509.89 L990.3 1510.61 L981.9 1525 L992.85 1547.01 L1003.49 1571.79 L1012.67 1597.15 L1020.71 1624.3 L1061.6 1620.36 L1071.61 1598.05 L1082.71 1577.29 L1095.19 1557.36 L1110.94 1535.88 L1094.73 1497.56 Z" fill="#211c2f" data-color="#211c2f" data-label="Plate XXVII · cell 33 · bands 5,5,4" tabindex="0" role="button" aria-label="Plate XXVII · cell 33 · bands 5,5,4, #211c2f"><title>Plate XXVII · cell 33 · bands 5,5,4: #211c2f</title></path>
+<path id="cell-34" class="swatch" d="M990.3 1510.61 L973.8 1510.4 L981.9 1525 L990.3 1510.61 Z" fill="#6c6a73" data-color="#6c6a73" data-label="Plate XXVII · cell 34 · bands 5,5,5" tabindex="0" role="button" aria-label="Plate XXVII · cell 34 · bands 5,5,5, #6c6a73"><title>Plate XXVII · cell 34 · bands 5,5,5: #6c6a73</title></path>
+<path id="cell-35" class="swatch" d="M1111.08 1535.71 L1123.26 1571.66 L1132.72 1606.1 L1161 1597.68 L1187.17 1588.4 L1212.85 1577.83 L1239.06 1565.45 L1231.11 1537.59 L1222.66 1511.96 L1213.23 1486.68 L1200.59 1456.78 L1170.69 1477.2 L1145.15 1498.8 L1128.58 1515.39 L1111.08 1535.71 Z" fill="#241a2f" data-color="#241a2f" data-label="Plate XXVII · cell 35 · bands 5,6,3" tabindex="0" role="button" aria-label="Plate XXVII · cell 35 · bands 5,6,3, #241a2f"><title>Plate XXVII · cell 35 · bands 5,6,3: #241a2f</title></path>
+<path id="cell-36" class="swatch" d="M1200.49 1456.57 L1171.74 1470.85 L1147.13 1481.12 L1121.97 1489.9 L1094.73 1497.56 L1110.94 1535.88 L1130.88 1512.95 L1152.59 1492.06 L1176.04 1473.2 L1200.49 1456.57 Z" fill="#2f2838" data-color="#2f2838" data-label="Plate XXVII · cell 36 · bands 5,6,4" tabindex="0" role="button" aria-label="Plate XXVII · cell 36 · bands 5,6,4, #2f2838"><title>Plate XXVII · cell 36 · bands 5,6,4: #2f2838</title></path>
+<path id="cell-37" class="swatch" d="M1338.33 1501.51 L1320.96 1451.46 L1305.98 1415.14 L1280.15 1421.63 L1251.79 1431.37 L1224.4 1443.61 L1200.59 1456.78 L1213.23 1486.68 L1222.66 1511.96 L1231.11 1537.59 L1239.06 1565.45 L1267.36 1550.15 L1291.09 1535.63 L1314.09 1519.95 L1338.33 1501.51 Z" fill="#1a1125" data-color="#1a1125" data-label="Plate XXVII · cell 37 · bands 5,7,3" tabindex="0" role="button" aria-label="Plate XXVII · cell 37 · bands 5,7,3, #1a1125"><title>Plate XXVII · cell 37 · bands 5,7,3: #1a1125</title></path>
+<path id="cell-38" class="swatch" d="M1305.97 1415.1 L1293.95 1389.13 L1273.37 1407.28 L1248.68 1426.36 L1226.52 1441.31 L1200.49 1456.57 L1227.39 1442.12 L1251.79 1431.37 L1276.95 1422.59 L1305.97 1415.1 Z" fill="#1c1128" data-color="#1c1128" data-label="Plate XXVII · cell 38 · bands 5,7,4" tabindex="0" role="button" aria-label="Plate XXVII · cell 38 · bands 5,7,4, #1c1128"><title>Plate XXVII · cell 38 · bands 5,7,4: #1c1128</title></path>
+<path id="cell-39" class="swatch" d="M701.07 1675.32 L751.6 1696.77 L776.74 1705.69 L808.44 1715.37 L804.82 1693.45 L799.03 1671.72 L791.17 1650.66 L781.32 1630.48 L769.57 1611.38 L756.03 1593.54 L740.83 1577.12 L723.19 1561.55 L714.34 1596.21 L707.65 1629.28 L701.07 1675.32 Z" fill="#1c1e2d" data-color="#1c1e2d" data-label="Plate XXVII · cell 39 · bands 6,2,6" tabindex="0" role="button" aria-label="Plate XXVII · cell 39 · bands 6,2,6, #1c1e2d"><title>Plate XXVII · cell 39 · bands 6,2,6: #1c1e2d</title></path>
+<path id="cell-40" class="swatch" d="M618.74 1515.47 L604.23 1570.25 L595.68 1613.18 L620.8 1630.4 L649.24 1647.98 L672.58 1661.01 L701.07 1675.32 L705.43 1642.59 L710.14 1616.01 L715.87 1589.64 L723.19 1561.55 L707.93 1550.43 L690.77 1540.05 L672.77 1531.26 L656.19 1524.81 L637.01 1519.17 L618.74 1515.47 Z" fill="#101425" data-color="#101425" data-label="Plate XXVII · cell 40 · bands 6,2,7" tabindex="0" role="button" aria-label="Plate XXVII · cell 40 · bands 6,2,7, #101425"><title>Plate XXVII · cell 40 · bands 6,2,7: #101425</title></path>
+<path id="cell-41" class="swatch" d="M900.16 1618.32 L859.87 1610.38 L829.37 1602.26 L822.06 1633.16 L817.02 1660.82 L813.33 1688.71 L811.03 1716.07 L840.94 1723.55 L867.05 1728.89 L893.34 1733.19 L922.97 1736.74 L922.01 1715.92 L919.88 1695.77 L916.58 1675.79 L912.13 1656.03 L906.55 1636.57 L900.16 1618.32 Z" fill="#1d1b2a" data-color="#1d1b2a" data-label="Plate XXVII · cell 41 · bands 6,3,5" tabindex="0" role="button" aria-label="Plate XXVII · cell 41 · bands 6,3,5, #1d1b2a"><title>Plate XXVII · cell 41 · bands 6,3,5: #1d1b2a</title></path>
+<path id="cell-42" class="swatch" d="M829.37 1602.26 L801.27 1593.13 L775.31 1583.19 L749.86 1571.98 L723.93 1558.94 L723.19 1561.55 L742.42 1578.7 L758.87 1597 L770.83 1613.24 L781.32 1630.48 L789.36 1646.55 L796.89 1665.32 L803.83 1689.06 L808.44 1715.37 L811.03 1716.07 L816.18 1666.39 L822.06 1633.16 L829.37 1602.26 Z" fill="#1e1e2d" data-color="#1e1e2d" data-label="Plate XXVII · cell 42 · bands 6,3,6" tabindex="0" role="button" aria-label="Plate XXVII · cell 42 · bands 6,3,6, #1e1e2d"><title>Plate XXVII · cell 42 · bands 6,3,6: #1e1e2d</title></path>
+<path id="cell-43" class="swatch" d="M723.93 1558.94 L695.97 1542.93 L672.55 1527.81 L649.9 1511.55 L626.06 1492.5 L618.74 1515.47 L643.46 1520.86 L668.67 1529.52 L696.59 1543.34 L709.78 1551.67 L723.19 1561.55 L723.93 1558.94 Z" fill="#151d34" data-color="#151d34" data-label="Plate XXVII · cell 43 · bands 6,3,7" tabindex="0" role="button" aria-label="Plate XXVII · cell 43 · bands 6,3,7, #151d34"><title>Plate XXVII · cell 43 · bands 6,3,7: #151d34</title></path>
+<path id="cell-44" class="swatch" d="M1020.71 1624.3 L975.27 1625.13 L940.95 1623.29 L933.59 1652.53 L928.62 1679.06 L925.2 1705.84 L923.2 1736.77 L952.96 1739 L979.58 1739.87 L1006.2 1739.68 L1036 1738.19 L1033.45 1693.77 L1027.44 1653.72 L1020.71 1624.3 Z" fill="#1f1b29" data-color="#1f1b29" data-label="Plate XXVII · cell 44 · bands 6,4,4" tabindex="0" role="button" aria-label="Plate XXVII · cell 44 · bands 6,4,4, #1f1b29"><title>Plate XXVII · cell 44 · bands 6,4,4: #1f1b29</title></path>
+<path id="cell-45" class="swatch" d="M940.95 1623.29 L900.16 1618.32 L909.48 1646.26 L916.58 1675.79 L921.09 1705.83 L922.97 1736.74 L925.2 1705.84 L928.62 1679.06 L933.59 1652.53 L940.95 1623.29 Z" fill="#23202e" data-color="#23202e" data-label="Plate XXVII · cell 45 · bands 6,4,5" tabindex="0" role="button" aria-label="Plate XXVII · cell 45 · bands 6,4,5, #23202e"><title>Plate XXVII · cell 45 · bands 6,4,5: #23202e</title></path>
+<path id="cell-46" class="swatch" d="M1132.72 1606.1 L1091.16 1615.61 L1061.6 1620.36 L1051.67 1648.06 L1043.94 1677.4 L1038.79 1707.32 L1036.24 1738.18 L1065.93 1735.37 L1092.31 1731.74 L1118.53 1727.06 L1148.59 1720.34 L1146.89 1692.92 L1143.79 1664.96 L1134.83 1615.13 L1132.72 1606.1 Z" fill="#201a27" data-color="#201a27" data-label="Plate XXVII · cell 46 · bands 6,5,3" tabindex="0" role="button" aria-label="Plate XXVII · cell 46 · bands 6,5,3, #201a27"><title>Plate XXVII · cell 46 · bands 6,5,3: #201a27</title></path>
+<path id="cell-47" class="swatch" d="M1061.6 1620.36 L1020.71 1624.3 L1027.44 1653.72 L1031.83 1680.36 L1034.67 1707.23 L1036 1738.19 L1038.37 1710.67 L1041.93 1687.32 L1049.74 1654.52 L1061.6 1620.36 Z" fill="#282230" data-color="#282230" data-label="Plate XXVII · cell 47 · bands 6,5,4" tabindex="0" role="button" aria-label="Plate XXVII · cell 47 · bands 6,5,4, #282230"><title>Plate XXVII · cell 47 · bands 6,5,4: #282230</title></path>
+<path id="cell-48" class="swatch" d="M1151.19 1719.7 L1208.42 1702.55 L1233.41 1693.27 L1259.4 1682.38 L1255.75 1649.55 L1251.62 1622.86 L1246.45 1596.35 L1239.75 1568.08 L1221.77 1583.2 L1204.76 1600.92 L1189.72 1620.39 L1177.93 1639.43 L1165.45 1665.77 L1156.37 1693.52 L1151.19 1719.7 Z" fill="#221b28" data-color="#221b28" data-label="Plate XXVII · cell 48 · bands 6,6,2" tabindex="0" role="button" aria-label="Plate XXVII · cell 48 · bands 6,6,2, #221b28"><title>Plate XXVII · cell 48 · bands 6,6,2: #221b28</title></path>
+<path id="cell-49" class="swatch" d="M1239.06 1565.45 L1207.76 1580.05 L1181.97 1590.36 L1155.71 1599.38 L1132.72 1606.1 L1139.35 1637.17 L1143.79 1664.96 L1146.89 1692.92 L1148.59 1720.34 L1151.19 1719.7 L1155.82 1695.69 L1163.04 1672.06 L1169.85 1655.45 L1177.93 1639.43 L1188.46 1622.24 L1201.87 1604.33 L1220.15 1584.73 L1239.75 1568.08 L1239.06 1565.45 Z" fill="#241d2c" data-color="#241d2c" data-label="Plate XXVII · cell 49 · bands 6,6,3" tabindex="0" role="button" aria-label="Plate XXVII · cell 49 · bands 6,6,3, #241d2c"><title>Plate XXVII · cell 49 · bands 6,6,3: #241d2c</title></path>
+<path id="cell-50" class="swatch" d="M1366.1 1622.92 L1355.17 1564.38 L1345.16 1524.66 L1316.04 1530.54 L1288.74 1539.92 L1262.86 1552.74 L1239.75 1568.08 L1246.45 1596.35 L1251.62 1622.86 L1255.75 1649.55 L1259.4 1682.38 L1288.19 1668.79 L1311.81 1656.35 L1340.62 1639.5 L1366.1 1622.92 Z" fill="#1d1322" data-color="#1d1322" data-label="Plate XXVII · cell 50 · bands 6,7,2" tabindex="0" role="button" aria-label="Plate XXVII · cell 50 · bands 6,7,2, #1d1322"><title>Plate XXVII · cell 50 · bands 6,7,2: #1d1322</title></path>
+<path id="cell-51" class="swatch" d="M1345.16 1524.66 L1338.33 1501.51 L1314.09 1519.95 L1291.09 1535.63 L1267.36 1550.15 L1239.06 1565.45 L1239.75 1568.08 L1262.86 1552.74 L1288.74 1539.92 L1316.04 1530.54 L1345.16 1524.66 Z" fill="#23142c" data-color="#23142c" data-label="Plate XXVII · cell 51 · bands 6,7,3" tabindex="0" role="button" aria-label="Plate XXVII · cell 51 · bands 6,7,3, #23142c"><title>Plate XXVII · cell 51 · bands 6,7,3: #23142c</title></path>
+<path id="cell-52" class="swatch" d="M606.49 1755.04 L647.98 1776.61 L685.11 1793.36 L691.09 1778.79 L695.22 1762.45 L696.95 1745.68 L696.36 1729.94 L692.8 1711.17 L685.73 1692.24 L676.15 1675.77 L663.21 1660.35 L647.81 1647.47 L631.43 1638 L612.66 1631.14 L593.31 1627.75 L586.46 1686.92 L584 1741.99 L606.49 1755.04 Z" fill="#080912" data-color="#080912" data-label="Plate XXVII · cell 52 · bands 7,1,7" tabindex="0" role="button" aria-label="Plate XXVII · cell 52 · bands 7,1,7, #080912"><title>Plate XXVII · cell 52 · bands 7,1,7: #080912</title></path>
+<path id="cell-53" class="swatch" d="M698.61 1798.9 L749.1 1817.06 L792.94 1829.75 L802.05 1802.66 L807.85 1774.02 L810 1744.86 L808.44 1715.37 L776.74 1705.69 L751.6 1696.77 L726.82 1686.86 L701.07 1675.32 L697.51 1723.18 L697.23 1770.44 L698.61 1798.9 Z" fill="#0d0d15" data-color="#0d0d15" data-label="Plate XXVII · cell 53 · bands 7,2,6" tabindex="0" role="button" aria-label="Plate XXVII · cell 53 · bands 7,2,6, #0d0d15"><title>Plate XXVII · cell 53 · bands 7,2,6: #0d0d15</title></path>
+<path id="cell-54" class="swatch" d="M685.11 1793.36 L698.61 1798.9 L697.08 1763.69 L697.28 1729.92 L701.07 1675.32 L672.58 1661.01 L649.24 1647.98 L620.8 1630.4 L595.68 1613.18 L593.31 1627.75 L607.26 1629.84 L620.1 1633.41 L633.43 1638.97 L645.03 1645.6 L656.64 1654.28 L666.31 1663.57 L674.84 1673.94 L682.66 1686.24 L688.45 1698.4 L693.09 1712.26 L695.96 1726.59 L696.99 1740.05 L696.45 1753.54 L694.11 1767.96 L690.36 1780.91 L685.11 1793.36 Z" fill="#1c1e26" data-color="#1c1e26" data-label="Plate XXVII · cell 54 · bands 7,2,7" tabindex="0" role="button" aria-label="Plate XXVII · cell 54 · bands 7,2,7, #1c1e26"><title>Plate XXVII · cell 54 · bands 7,2,7: #1c1e26</title></path>
+<path id="cell-55" class="swatch" d="M816.6 1835.47 L862.37 1844.36 L905.96 1850.22 L913.56 1823.18 L919.29 1793.37 L922.19 1766.53 L922.97 1736.74 L893.34 1733.19 L867.05 1728.89 L840.94 1723.55 L811.03 1716.07 L810 1744.86 L810.62 1778.62 L813.19 1812.28 L816.6 1835.47 Z" fill="#0e0e14" data-color="#0e0e14" data-label="Plate XXVII · cell 55 · bands 7,3,5" tabindex="0" role="button" aria-label="Plate XXVII · cell 55 · bands 7,3,5, #0e0e14"><title>Plate XXVII · cell 55 · bands 7,3,5: #0e0e14</title></path>
+<path id="cell-56" class="swatch" d="M792.94 1829.75 L816.1 1835.36 L811.26 1789.85 L810 1744.86 L808.67 1767.32 L805.62 1787.33 L800.21 1809.14 L792.94 1829.75 Z" fill="#3a393b" data-color="#3a393b" data-label="Plate XXVII · cell 56 · bands 7,3,6" tabindex="0" role="button" aria-label="Plate XXVII · cell 56 · bands 7,3,6, #3a393b"><title>Plate XXVII · cell 56 · bands 7,3,6: #3a393b</title></path>
+<path id="cell-57" class="swatch" d="M808.63 1715.42 L809.75 1731.35 L810 1744.86 L811.03 1716.07 L808.63 1715.42 Z" fill="#4f4d51" data-color="#4f4d51" data-label="Plate XXVII · cell 57 · bands 7,3,6" tabindex="0" role="button" aria-label="Plate XXVII · cell 57 · bands 7,3,6, #4f4d51"><title>Plate XXVII · cell 57 · bands 7,3,6: #4f4d51</title></path>
+<path id="cell-58" class="swatch" d="M934.16 1852.7 L978.34 1854.52 L1022.55 1853.81 L1028.9 1823.82 L1032.83 1797.11 L1035.46 1765.71 L1036 1738.19 L1006.2 1739.68 L979.58 1739.87 L952.96 1739 L923.2 1736.77 L923.73 1777.79 L927.79 1818.09 L934.16 1852.7 Z" fill="#0f0e15" data-color="#0f0e15" data-label="Plate XXVII · cell 58 · bands 7,4,4" tabindex="0" role="button" aria-label="Plate XXVII · cell 58 · bands 7,4,4, #0f0e15"><title>Plate XXVII · cell 58 · bands 7,4,4: #0f0e15</title></path>
+<path id="cell-59" class="swatch" d="M905.96 1850.22 L934.16 1852.7 L928.46 1822.55 L925.1 1795.75 L923.3 1768.79 L923.2 1736.77 L922.97 1736.74 L922.19 1766.53 L919.29 1793.37 L913.56 1823.18 L905.96 1850.22 Z" fill="#2d2c2f" data-color="#2d2c2f" data-label="Plate XXVII · cell 59 · bands 7,4,5" tabindex="0" role="button" aria-label="Plate XXVII · cell 59 · bands 7,4,5, #2d2c2f"><title>Plate XXVII · cell 59 · bands 7,4,5: #2d2c2f</title></path>
+<path id="cell-60" class="swatch" d="M1050.79 1852.05 L1102.19 1846.2 L1140.95 1839.47 L1145.04 1810.88 L1147.66 1782.88 L1149 1749.14 L1148.59 1720.34 L1118.53 1727.06 L1092.31 1731.74 L1065.93 1735.37 L1036.24 1738.18 L1036.75 1774.71 L1041.19 1811.57 L1045.26 1831.41 L1050.79 1852.05 Z" fill="#110f15" data-color="#110f15" data-label="Plate XXVII · cell 60 · bands 7,5,3" tabindex="0" role="button" aria-label="Plate XXVII · cell 60 · bands 7,5,3, #110f15"><title>Plate XXVII · cell 60 · bands 7,5,3: #110f15</title></path>
+<path id="cell-61" class="swatch" d="M1022.55 1853.81 L1050.79 1852.05 L1044.5 1828.12 L1039.59 1801.57 L1036.75 1774.71 L1036 1747.71 L1034.92 1774.7 L1032.29 1801.58 L1028.09 1828.24 L1022.55 1853.81 Z" fill="#2d2b2f" data-color="#2d2b2f" data-label="Plate XXVII · cell 61 · bands 7,5,4" tabindex="0" role="button" aria-label="Plate XXVII · cell 61 · bands 7,5,4, #2d2b2f"><title>Plate XXVII · cell 61 · bands 7,5,4: #2d2b2f</title></path>
+<path id="cell-62" class="swatch" d="M1164.23 1834.44 L1215.77 1820.63 L1259.19 1805.98 L1261.19 1777.57 L1262.04 1743.82 L1261.26 1710.06 L1259.4 1682.38 L1233.41 1693.27 L1208.42 1702.55 L1183.09 1710.83 L1151.19 1719.7 L1149.39 1737.9 L1149.03 1755.9 L1150.05 1773.87 L1152.46 1791.71 L1157.4 1813.66 L1164.23 1834.44 Z" fill="#141117" data-color="#141117" data-label="Plate XXVII · cell 62 · bands 7,6,2" tabindex="0" role="button" aria-label="Plate XXVII · cell 62 · bands 7,6,2, #141117"><title>Plate XXVII · cell 62 · bands 7,6,2: #141117</title></path>
+<path id="cell-63" class="swatch" d="M1140.95 1839.47 L1164.23 1834.44 L1157.4 1813.66 L1152.46 1791.71 L1149.66 1769.39 L1149 1749.14 L1146.77 1794.1 L1140.95 1839.47 Z" fill="#3d3b3d" data-color="#3d3b3d" data-label="Plate XXVII · cell 63 · bands 7,6,3" tabindex="0" role="button" aria-label="Plate XXVII · cell 63 · bands 7,6,3, #3d3b3d"><title>Plate XXVII · cell 63 · bands 7,6,3: #3d3b3d</title></path>
+<path id="cell-64" class="swatch" d="M1151.01 1719.75 L1148.59 1720.34 L1149 1749.14 L1149.54 1735.65 L1151.01 1719.75 Z" fill="#454345" data-color="#454345" data-label="Plate XXVII · cell 64 · bands 7,6,3" tabindex="0" role="button" aria-label="Plate XXVII · cell 64 · bands 7,6,3, #454345"><title>Plate XXVII · cell 64 · bands 7,6,3: #454345</title></path>
+<path id="cell-65" class="swatch" d="M1272.81 1800.79 L1324.41 1778.43 L1375 1751.99 L1373.73 1696.87 L1368.15 1637.55 L1354.17 1639.28 L1341.26 1642.52 L1327.8 1647.75 L1316.06 1654.08 L1304.27 1662.47 L1294.4 1671.51 L1285.65 1681.67 L1277.57 1693.76 L1271.52 1705.78 L1266.58 1719.51 L1263.4 1733.76 L1262.05 1748.32 L1262.52 1762.94 L1265.09 1778.47 L1271.41 1797.67 L1272.81 1800.79 Z" fill="#181319" data-color="#181319" data-label="Plate XXVII · cell 65 · bands 7,7,1" tabindex="0" role="button" aria-label="Plate XXVII · cell 65 · bands 7,7,1, #181319"><title>Plate XXVII · cell 65 · bands 7,7,1: #181319</title></path>
+<path id="cell-66" class="swatch" d="M1259.19 1805.98 L1272.81 1800.79 L1267.48 1787.14 L1263.73 1771.86 L1262.12 1757.32 L1262.45 1741.58 L1264.19 1729.33 L1266.9 1718.43 L1271.08 1706.81 L1276.46 1695.71 L1284.31 1683.46 L1292.86 1673.13 L1303.41 1663.18 L1315.12 1654.67 L1327.8 1647.75 L1340.2 1642.86 L1354.17 1639.28 L1368.15 1637.55 L1366.1 1622.92 L1340.62 1639.5 L1311.81 1656.35 L1288.19 1668.79 L1259.4 1682.38 L1261.26 1710.06 L1262.04 1743.82 L1261.19 1777.57 L1259.19 1805.98 Z" fill="#29242b" data-color="#29242b" data-label="Plate XXVII · cell 66 · bands 7,7,2" tabindex="0" role="button" aria-label="Plate XXVII · cell 66 · bands 7,7,2, #29242b"><title>Plate XXVII · cell 66 · bands 7,7,2: #29242b</title></path>
+</g>
+<g class="plate-grid" fill="none" stroke-linecap="butt" stroke-linejoin="round">
+<path d="M894.07 1117.09 L898.81 1123.55 L903.99 1129.67 L909.59 1135.41" stroke="#1f497b" stroke-width="6.8"/>
+<path d="M909.59 1135.41 L915.58 1140.74 L921.93 1145.64 L928.61 1150.08" stroke="#214e89" stroke-width="6.8"/>
+<path d="M928.61 1150.08 L935.59 1154.03 L942.84 1157.47 L950.31 1160.38" stroke="#26518e" stroke-width="6.8"/>
+<path d="M950.31 1160.38 L957.96 1162.76 L965.77 1164.58 L973.69 1165.84" stroke="#243d7a" stroke-width="6.8"/>
+<path d="M973.69 1165.84 L981.68 1166.52 L989.7 1166.62 L997.71 1166.15" stroke="#2a3971" stroke-width="6.8"/>
+<path d="M997.71 1166.15 L1005.66 1165.11 L1013.51 1163.49 L1021.23 1161.32" stroke="#38245f" stroke-width="6.8"/>
+<path d="M1021.23 1161.32 L1028.77 1158.6 L1036.1 1155.34 L1043.18 1151.57" stroke="#3f2562" stroke-width="6.8"/>
+<path d="M1043.18 1151.57 L1049.97 1147.3 L1056.44 1142.56 L1062.55 1137.38" stroke="#432460" stroke-width="6.8"/>
+<path d="M1062.55 1137.38 L1068.29 1131.77 L1073.61 1125.77 L1078.5 1119.42" stroke="#49255f" stroke-width="6.8"/>
+<path d="M809.38 1193.52 L814.07 1199.37 L818.95 1205.07 L824.01 1210.61" stroke="#1e3462" stroke-width="6.8"/>
+<path d="M824.01 1210.61 L829.25 1215.97 L834.67 1221.16 L840.25 1226.17" stroke="#1b3b70" stroke-width="6.8"/>
+<path d="M840.25 1226.17 L846 1230.99 L851.9 1235.62 L857.95 1240.05" stroke="#23548e" stroke-width="6.8"/>
+<path d="M857.95 1240.05 L864.15 1244.28 L870.48 1248.31 L876.94 1252.11" stroke="#28568f" stroke-width="6.8"/>
+<path d="M876.94 1252.11 L883.53 1255.7 L890.23 1259.08 L897.04 1262.22" stroke="#6a7aa0" stroke-width="6.8"/>
+<path d="M897.04 1262.22 L903.95 1265.14 L910.96 1267.82 L918.05 1270.27" stroke="#516892" stroke-width="6.8"/>
+<path d="M918.05 1270.27 L925.22 1272.48 L932.46 1274.44 L939.76 1276.17" stroke="#3f496d" stroke-width="6.8"/>
+<path d="M939.76 1276.17 L947.11 1277.65 L954.51 1278.87 L961.95 1279.85" stroke="#2b294e" stroke-width="6.8"/>
+<path d="M961.95 1279.85 L969.41 1280.58 L976.9 1281.06 L984.4 1281.29" stroke="#2c235d" stroke-width="6.8"/>
+<path d="M984.4 1281.29 L991.9 1281.26 L999.39 1280.98 L1006.88 1280.45" stroke="#2e245d" stroke-width="6.8"/>
+<path d="M1006.88 1280.45 L1014.34 1279.66 L1021.77 1278.63 L1029.16 1277.35" stroke="#2c255f" stroke-width="6.8"/>
+<path d="M1029.16 1277.35 L1036.5 1275.81 L1043.79 1274.04 L1051.01 1272.01" stroke="#47325a" stroke-width="6.8"/>
+<path d="M1051.01 1272.01 L1058.16 1269.75 L1065.24 1267.25 L1072.22 1264.51" stroke="#674d7c" stroke-width="6.8"/>
+<path d="M1072.22 1264.51 L1079.11 1261.54 L1085.89 1258.34 L1092.57 1254.92" stroke="#6d5078" stroke-width="6.8"/>
+<path d="M1092.57 1254.92 L1099.12 1251.27 L1105.55 1247.41 L1111.85 1243.33" stroke="#502962" stroke-width="6.8"/>
+<path d="M1111.85 1243.33 L1118.01 1239.05 L1124.02 1234.57 L1129.89 1229.89" stroke="#4f2660" stroke-width="6.8"/>
+<path d="M1129.89 1229.89 L1135.59 1225.01 L1141.13 1219.95 L1146.5 1214.71" stroke="#401f50" stroke-width="6.8"/>
+<path d="M1146.5 1214.71 L1151.69 1209.3 L1156.7 1203.71 L1161.52 1197.97" stroke="#351c48" stroke-width="6.8"/>
+<path d="M735.69 1282.47 L740.72 1288 L745.87 1293.41 L751.14 1298.71" stroke="#212f51" stroke-width="6.8"/>
+<path d="M751.14 1298.71 L756.52 1303.89 L762.01 1308.95 L767.62 1313.89" stroke="#1c294a" stroke-width="6.8"/>
+<path d="M767.62 1313.89 L773.33 1318.71 L779.14 1323.41 L785.06 1327.97" stroke="#21467a" stroke-width="6.8"/>
+<path d="M785.06 1327.97 L791.07 1332.4 L797.18 1336.7 L803.39 1340.86" stroke="#2a5990" stroke-width="6.8"/>
+<path d="M803.39 1340.86 L809.68 1344.89 L816.06 1348.77 L822.53 1352.52" stroke="#7385a7" stroke-width="6.8"/>
+<path d="M822.53 1352.52 L829.07 1356.12 L835.7 1359.57 L842.4 1362.88" stroke="#6774a0" stroke-width="6.8"/>
+<path d="M842.4 1362.88 L849.17 1366.04 L856.01 1369.04 L862.91 1371.9" stroke="#5a668a" stroke-width="6.8"/>
+<path d="M862.91 1371.9 L869.88 1374.6 L876.9 1377.15 L883.98 1379.54" stroke="#41455b" stroke-width="6.8"/>
+<path d="M883.98 1379.54 L891.11 1381.77 L898.29 1383.84 L905.51 1385.75" stroke="#3a3366" stroke-width="6.8"/>
+<path d="M905.51 1385.75 L912.78 1387.5 L920.08 1389.09 L927.41 1390.51" stroke="#40396e" stroke-width="6.8"/>
+<path d="M927.41 1390.51 L934.77 1391.77 L942.17 1392.87 L949.58 1393.8" stroke="#584d75" stroke-width="6.8"/>
+<path d="M949.58 1393.8 L957.01 1394.57 L964.46 1395.16 L971.92 1395.59" stroke="#493f6d" stroke-width="6.8"/>
+<path d="M971.92 1395.59 L979.38 1395.86 L986.85 1395.96 L994.32 1395.89" stroke="#443b6b" stroke-width="6.8"/>
+<path d="M994.32 1395.89 L1001.79 1395.65 L1009.25 1395.25 L1016.7 1394.68" stroke="#46426f" stroke-width="6.8"/>
+<path d="M1016.7 1394.68 L1024.14 1393.95 L1031.55 1393.04 L1038.95 1391.98" stroke="#525075" stroke-width="6.8"/>
+<path d="M1038.95 1391.98 L1046.32 1390.75 L1053.66 1389.35 L1060.96 1387.79" stroke="#362c63" stroke-width="6.8"/>
+<path d="M1060.96 1387.79 L1068.23 1386.06 L1075.46 1384.18 L1082.65 1382.13" stroke="#352b61" stroke-width="6.8"/>
+<path d="M1082.65 1382.13 L1089.79 1379.93 L1096.87 1377.56 L1103.91 1375.04" stroke="#382d63" stroke-width="6.8"/>
+<path d="M1103.91 1375.04 L1110.88 1372.36 L1117.79 1369.53 L1124.64 1366.54" stroke="#573c6e" stroke-width="6.8"/>
+<path d="M1124.64 1366.54 L1131.43 1363.41 L1138.13 1360.12 L1144.77 1356.68" stroke="#76587b" stroke-width="6.8"/>
+<path d="M1144.77 1356.68 L1151.33 1353.1 L1157.8 1349.38 L1164.19 1345.51" stroke="#72547c" stroke-width="6.8"/>
+<path d="M1164.19 1345.51 L1170.5 1341.5 L1176.71 1337.35 L1182.83 1333.07" stroke="#522764" stroke-width="6.8"/>
+<path d="M1182.83 1333.07 L1188.86 1328.65 L1194.78 1324.1 L1200.61 1319.42" stroke="#47245e" stroke-width="6.8"/>
+<path d="M1200.61 1319.42 L1206.33 1314.62 L1211.94 1309.69 L1217.44 1304.63" stroke="#2c1838" stroke-width="6.8"/>
+<path d="M1217.44 1304.63 L1222.83 1299.46 L1228.11 1294.17 L1233.27 1288.76" stroke="#2b1737" stroke-width="6.8"/>
+<path d="M674.64 1383.02 L680.12 1388.25 L685.68 1393.39 L691.32 1398.44" stroke="#232a62" stroke-width="6.8"/>
+<path d="M691.32 1398.44 L697.05 1403.39 L702.86 1408.25 L708.75 1413" stroke="#212a63" stroke-width="6.8"/>
+<path d="M708.75 1413 L714.72 1417.66 L720.77 1422.22 L726.89 1426.68" stroke="#234179" stroke-width="6.8"/>
+<path d="M726.89 1426.68 L733.09 1431.03 L739.35 1435.28 L745.69 1439.42" stroke="#2c5a8e" stroke-width="6.8"/>
+<path d="M745.69 1439.42 L752.1 1443.46 L758.57 1447.39 L765.1 1451.21" stroke="#6981a6" stroke-width="6.8"/>
+<path d="M765.1 1451.21 L771.71 1454.92 L778.37 1458.52 L785.09 1462.01" stroke="#6476a1" stroke-width="6.8"/>
+<path d="M785.09 1462.01 L791.87 1465.38 L798.7 1468.64 L805.59 1471.78" stroke="#5c6383" stroke-width="6.8"/>
+<path d="M805.59 1471.78 L812.53 1474.81 L819.52 1477.72 L826.56 1480.51" stroke="#434172" stroke-width="6.8"/>
+<path d="M826.56 1480.51 L833.65 1483.18 L840.78 1485.73 L847.95 1488.16" stroke="#474471" stroke-width="6.8"/>
+<path d="M847.95 1488.16 L855.16 1490.47 L862.41 1492.66 L869.69 1494.72" stroke="#5e5a75" stroke-width="6.8"/>
+<path d="M869.69 1494.72 L877.01 1496.66 L884.36 1498.48 L891.75 1500.17" stroke="#5a557b" stroke-width="6.8"/>
+<path d="M891.75 1500.17 L899.15 1501.73 L906.59 1503.18 L914.04 1504.49" stroke="#59547d" stroke-width="6.8"/>
+<path d="M914.04 1504.49 L921.52 1505.67 L929.02 1506.74 L936.53 1507.67" stroke="#5d587c" stroke-width="6.8"/>
+<path d="M936.53 1507.67 L944.06 1508.47 L951.61 1509.15 L959.16 1509.7" stroke="#5c567b" stroke-width="6.8"/>
+<path d="M959.16 1509.7 L966.72 1510.12 L974.28 1510.41 L981.85 1510.58" stroke="#786580" stroke-width="6.8"/>
+<path d="M981.85 1510.58 L989.43 1510.61 L997 1510.51 L1004.57 1510.3" stroke="#645676" stroke-width="6.8"/>
+<path d="M1004.57 1510.3 L1012.13 1509.94 L1019.69 1509.46 L1027.23 1508.85" stroke="#514570" stroke-width="6.8"/>
+<path d="M1027.23 1508.85 L1034.77 1508.12 L1042.29 1507.25 L1049.8 1506.26" stroke="#544973" stroke-width="6.8"/>
+<path d="M1049.8 1506.26 L1057.29 1505.15 L1064.76 1503.89 L1072.2 1502.52" stroke="#564973" stroke-width="6.8"/>
+<path d="M1072.2 1502.52 L1079.63 1501.02 L1087.02 1499.4 L1094.39 1497.65" stroke="#5c5175" stroke-width="6.8"/>
+<path d="M1094.39 1497.65 L1101.72 1495.77 L1109.03 1493.78 L1116.29 1491.65" stroke="#4d416f" stroke-width="6.8"/>
+<path d="M1116.29 1491.65 L1123.53 1489.4 L1130.72 1487.04 L1137.87 1484.55" stroke="#423166" stroke-width="6.8"/>
+<path d="M1137.87 1484.55 L1144.98 1481.93 L1152.04 1479.2 L1159.06 1476.36" stroke="#413468" stroke-width="6.8"/>
+<path d="M1159.06 1476.36 L1166.02 1473.39 L1172.94 1470.3 L1179.8 1467.1" stroke="#684773" stroke-width="6.8"/>
+<path d="M1179.8 1467.1 L1186.6 1463.78 L1193.35 1460.35 L1200.05 1456.81" stroke="#74517c" stroke-width="6.8"/>
+<path d="M1200.05 1456.81 L1206.68 1453.15 L1213.24 1449.38 L1219.75 1445.5" stroke="#694475" stroke-width="6.8"/>
+<path d="M1219.75 1445.5 L1226.18 1441.52 L1232.55 1437.42 L1238.85 1433.22" stroke="#50255f" stroke-width="6.8"/>
+<path d="M1238.85 1433.22 L1245.08 1428.91 L1251.23 1424.5 L1257.31 1419.99" stroke="#422354" stroke-width="6.8"/>
+<path d="M1257.31 1419.99 L1263.32 1415.37 L1269.24 1410.66 L1275.09 1405.84" stroke="#2b1c55" stroke-width="6.8"/>
+<path d="M1275.09 1405.84 L1280.85 1400.93 L1286.53 1395.93 L1292.13 1390.83" stroke="#301e5a" stroke-width="6.8"/>
+<path d="M628.02 1494.15 L633.82 1498.93 L639.69 1503.64 L645.61 1508.28" stroke="#263b74" stroke-width="6.8"/>
+<path d="M645.61 1508.28 L651.6 1512.83 L657.65 1517.3 L663.75 1521.69" stroke="#253c77" stroke-width="6.8"/>
+<path d="M663.75 1521.69 L669.92 1526 L676.14 1530.23 L682.41 1534.38" stroke="#27578e" stroke-width="6.8"/>
+<path d="M682.41 1534.38 L688.75 1538.43 L695.13 1542.41 L701.56 1546.3" stroke="#28598f" stroke-width="6.8"/>
+<path d="M701.56 1546.3 L708.05 1550.11 L714.59 1553.83 L721.18 1557.46" stroke="#336596" stroke-width="6.8"/>
+<path d="M721.18 1557.46 L727.81 1561 L734.49 1564.45 L741.22 1567.81" stroke="#5d6e93" stroke-width="6.8"/>
+<path d="M741.22 1567.81 L748 1571.09 L754.81 1574.27 L761.67 1577.36" stroke="#525e87" stroke-width="6.8"/>
+<path d="M761.67 1577.36 L768.56 1580.36 L775.5 1583.27 L782.48 1586.08" stroke="#525c89" stroke-width="6.8"/>
+<path d="M782.48 1586.08 L789.49 1588.8 L796.54 1591.42 L803.62 1593.95" stroke="#505d87" stroke-width="6.8"/>
+<path d="M803.62 1593.95 L810.74 1596.39 L817.88 1598.73 L825.06 1600.97" stroke="#57628c" stroke-width="6.8"/>
+<path d="M825.06 1600.97 L832.27 1603.12 L839.51 1605.16 L846.77 1607.11" stroke="#71718d" stroke-width="6.8"/>
+<path d="M846.77 1607.11 L854.06 1608.97 L861.38 1610.72 L868.71 1612.38" stroke="#6a6a8d" stroke-width="6.8"/>
+<path d="M868.71 1612.38 L876.07 1613.94 L883.45 1615.4 L890.85 1616.76" stroke="#6d6f90" stroke-width="6.8"/>
+<path d="M890.85 1616.76 L898.26 1618.02 L905.69 1619.17 L913.14 1620.23" stroke="#6b6a8f" stroke-width="6.8"/>
+<path d="M913.14 1620.23 L920.6 1621.19 L928.07 1622.05 L935.56 1622.81" stroke="#5b587c" stroke-width="6.8"/>
+<path d="M935.56 1622.81 L943.05 1623.46 L950.55 1624.01 L958.06 1624.47" stroke="#746d82" stroke-width="6.8"/>
+<path d="M958.06 1624.47 L965.57 1624.82 L973.09 1625.07 L980.61 1625.22" stroke="#6f6780" stroke-width="6.8"/>
+<path d="M980.61 1625.22 L988.13 1625.26 L995.65 1625.21 L1003.17 1625.06" stroke="#6e6884" stroke-width="6.8"/>
+<path d="M1003.17 1625.06 L1010.69 1624.8 L1018.2 1624.44 L1025.71 1623.98" stroke="#6f6885" stroke-width="6.8"/>
+<path d="M1025.71 1623.98 L1033.21 1623.41 L1040.7 1622.75 L1048.18 1621.99" stroke="#5c5173" stroke-width="6.8"/>
+<path d="M1048.18 1621.99 L1055.65 1621.12 L1063.11 1620.16 L1070.56 1619.09" stroke="#6e5e81" stroke-width="6.8"/>
+<path d="M1070.56 1619.09 L1077.99 1617.92 L1085.4 1616.66 L1092.79 1615.29" stroke="#68597d" stroke-width="6.8"/>
+<path d="M1092.79 1615.29 L1100.17 1613.82 L1107.53 1612.26 L1114.86 1610.59" stroke="#655979" stroke-width="6.8"/>
+<path d="M1114.86 1610.59 L1122.17 1608.83 L1129.46 1606.97 L1136.72 1605" stroke="#655a78" stroke-width="6.8"/>
+<path d="M1136.72 1605 L1143.96 1602.94 L1151.16 1600.79 L1158.34 1598.53" stroke="#523c6e" stroke-width="6.8"/>
+<path d="M1158.34 1598.53 L1165.48 1596.19 L1172.6 1593.74 L1179.67 1591.2" stroke="#513d70" stroke-width="6.8"/>
+<path d="M1179.67 1591.2 L1186.72 1588.57 L1193.73 1585.83 L1200.7 1583.01" stroke="#4f3a71" stroke-width="6.8"/>
+<path d="M1200.7 1583.01 L1207.63 1580.1 L1214.52 1577.08 L1221.37 1573.98" stroke="#51376b" stroke-width="6.8"/>
+<path d="M1221.37 1573.98 L1228.19 1570.79 L1234.95 1567.5 L1241.67 1564.12" stroke="#664471" stroke-width="6.8"/>
+<path d="M1241.67 1564.12 L1248.35 1560.66 L1254.97 1557.1 L1261.55 1553.46" stroke="#5a3b66" stroke-width="6.8"/>
+<path d="M1261.55 1553.46 L1268.09 1549.73 L1274.56 1545.91 L1280.99 1542.01" stroke="#4f2461" stroke-width="6.8"/>
+<path d="M1280.99 1542.01 L1287.37 1538.01 L1293.69 1533.94 L1299.96 1529.78" stroke="#502460" stroke-width="6.8"/>
+<path d="M1299.96 1529.78 L1306.17 1525.54 L1312.32 1521.21 L1318.42 1516.81" stroke="#46245f" stroke-width="6.8"/>
+<path d="M1318.42 1516.81 L1324.45 1512.32 L1330.43 1507.75 L1336.34 1503.11" stroke="#3d205b" stroke-width="6.8"/>
+<path d="M597.82 1614.72 L603.83 1618.96 L609.88 1623.12 L615.98 1627.22" stroke="#295188" stroke-width="6.8"/>
+<path d="M615.98 1627.22 L622.12 1631.25 L628.3 1635.22 L634.53 1639.12" stroke="#265286" stroke-width="6.8"/>
+<path d="M634.53 1639.12 L640.8 1642.95 L647.11 1646.72 L653.46 1650.41" stroke="#2a5688" stroke-width="6.8"/>
+<path d="M653.46 1650.41 L659.85 1654.04 L666.27 1657.6 L672.74 1661.09" stroke="#2a5588" stroke-width="6.8"/>
+<path d="M672.74 1661.09 L679.24 1664.5 L685.79 1667.85 L692.36 1671.12" stroke="#295084" stroke-width="6.8"/>
+<path d="M692.36 1671.12 L698.98 1674.32 L705.62 1677.45 L712.31 1680.51" stroke="#606c8e" stroke-width="6.8"/>
+<path d="M712.31 1680.51 L719.02 1683.5 L725.76 1686.41 L732.54 1689.25" stroke="#5c678e" stroke-width="6.8"/>
+<path d="M732.54 1689.25 L739.35 1692.01 L746.18 1694.7 L753.05 1697.31" stroke="#656f8f" stroke-width="6.8"/>
+<path d="M753.05 1697.31 L759.95 1699.85 L766.87 1702.31 L773.82 1704.7" stroke="#616d90" stroke-width="6.8"/>
+<path d="M773.82 1704.7 L780.79 1707.01 L787.79 1709.25 L794.81 1711.41" stroke="#636d8f" stroke-width="6.8"/>
+<path d="M794.81 1711.41 L801.86 1713.5 L808.93 1715.5 L816.02 1717.43" stroke="#57688d" stroke-width="6.8"/>
+<path d="M816.02 1717.43 L823.13 1719.27 L830.26 1721.04 L837.41 1722.73" stroke="#696885" stroke-width="6.8"/>
+<path d="M837.41 1722.73 L844.57 1724.35 L851.76 1725.89 L858.96 1727.34" stroke="#6e6b84" stroke-width="6.8"/>
+<path d="M858.96 1727.34 L866.18 1728.72 L873.41 1730.03 L880.65 1731.24" stroke="#74728a" stroke-width="6.8"/>
+<path d="M880.65 1731.24 L887.91 1732.38 L895.18 1733.44 L902.46 1734.42" stroke="#7e7d8d" stroke-width="6.8"/>
+<path d="M902.46 1734.42 L909.76 1735.32 L917.06 1736.14 L924.37 1736.88" stroke="#818290" stroke-width="6.8"/>
+<path d="M924.37 1736.88 L931.68 1737.54 L939.01 1738.12 L946.34 1738.62" stroke="#787283" stroke-width="6.8"/>
+<path d="M946.34 1738.62 L953.67 1739.04 L961.01 1739.37 L968.36 1739.63" stroke="#716c81" stroke-width="6.8"/>
+<path d="M968.36 1739.63 L975.7 1739.8 L983.05 1739.9 L990.39 1739.91" stroke="#6e6980" stroke-width="6.8"/>
+<path d="M990.39 1739.91 L997.74 1739.85 L1005.09 1739.7 L1012.43 1739.48" stroke="#6d687c" stroke-width="6.8"/>
+<path d="M1012.43 1739.48 L1019.77 1739.17 L1027.11 1738.78 L1034.44 1738.3" stroke="#746d80" stroke-width="6.8"/>
+<path d="M1034.44 1738.3 L1041.77 1737.75 L1049.09 1737.12 L1056.4 1736.41" stroke="#776c7c" stroke-width="6.8"/>
+<path d="M1056.4 1736.41 L1063.7 1735.62 L1071 1734.75 L1078.28 1733.8" stroke="#746a7b" stroke-width="6.8"/>
+<path d="M1078.28 1733.8 L1085.56 1732.77 L1092.82 1731.65 L1100.07 1730.46" stroke="#74697c" stroke-width="6.8"/>
+<path d="M1100.07 1730.46 L1107.31 1729.19 L1114.53 1727.83 L1121.74 1726.4" stroke="#675c77" stroke-width="6.8"/>
+<path d="M1121.74 1726.4 L1128.93 1724.89 L1136.1 1723.31 L1143.26 1721.64" stroke="#695e79" stroke-width="6.8"/>
+<path d="M1143.26 1721.64 L1150.39 1719.9 L1157.51 1718.08 L1164.61 1716.17" stroke="#5b4974" stroke-width="6.8"/>
+<path d="M1164.61 1716.17 L1171.68 1714.19 L1178.73 1712.13 L1185.76 1710" stroke="#59436f" stroke-width="6.8"/>
+<path d="M1185.76 1710 L1192.77 1707.79 L1199.75 1705.5 L1206.71 1703.14" stroke="#69547a" stroke-width="6.8"/>
+<path d="M1206.71 1703.14 L1213.64 1700.7 L1220.54 1698.19 L1227.42 1695.59" stroke="#644b71" stroke-width="6.8"/>
+<path d="M1227.42 1695.59 L1234.26 1692.93 L1241.08 1690.18 L1247.87 1687.36" stroke="#5e4873" stroke-width="6.8"/>
+<path d="M1247.87 1687.36 L1254.62 1684.47 L1261.34 1681.51 L1268.03 1678.47" stroke="#634c76" stroke-width="6.8"/>
+<path d="M1268.03 1678.47 L1274.69 1675.37 L1281.31 1672.18 L1287.9 1668.93" stroke="#4e2a61" stroke-width="6.8"/>
+<path d="M1287.9 1668.93 L1294.45 1665.61 L1300.97 1662.21 L1307.44 1658.74" stroke="#542960" stroke-width="6.8"/>
+<path d="M1307.44 1658.74 L1313.88 1655.2 L1320.28 1651.59 L1326.64 1647.91" stroke="#53285e" stroke-width="6.8"/>
+<path d="M1326.64 1647.91 L1332.96 1644.16 L1339.24 1640.35 L1345.48 1636.46" stroke="#54255e" stroke-width="6.8"/>
+<path d="M1345.48 1636.46 L1351.67 1632.51 L1357.82 1628.49 L1363.93 1624.41" stroke="#562860" stroke-width="6.8"/>
+<path d="M697 1743.43 L696.81 1735.41 L696.07 1727.43 L694.78 1719.51" stroke="#232329" stroke-width="6.8"/>
+<path d="M694.78 1719.51 L692.94 1711.7 L690.58 1704.04 L687.68 1696.56" stroke="#1f2027" stroke-width="6.8"/>
+<path d="M687.68 1696.56 L684.28 1689.3 L680.38 1682.29 L676.01 1675.57" stroke="#1b1e23" stroke-width="6.8"/>
+<path d="M676.01 1675.57 L671.17 1669.17 L665.9 1663.13 L660.22 1657.47" stroke="#243f6a" stroke-width="6.8"/>
+<path d="M660.22 1657.47 L654.15 1652.22 L647.73 1647.42 L640.99 1643.08" stroke="#2a5081" stroke-width="6.8"/>
+<path d="M640.99 1643.08 L633.95 1639.23 L626.66 1635.9 L619.15 1633.09" stroke="#255486" stroke-width="6.8"/>
+<path d="M619.15 1633.09 L611.46 1630.82 L603.62 1629.12 L595.68 1627.98" stroke="#254c4f" stroke-width="6.8"/>
+<path d="M686.15 1791.19 L689.36 1783.62 L692.02 1775.84 L694.13 1767.89" stroke="#1b1b21" stroke-width="6.8"/>
+<path d="M694.13 1767.89 L695.66 1759.81 L696.62 1751.64 L697 1743.43" stroke="#1c1c21" stroke-width="6.8"/>
+<path d="M810 1744.86 L809.95 1737.17 L809.66 1729.48 L809.1 1721.81" stroke="#26242a" stroke-width="6.8"/>
+<path d="M809.1 1721.81 L808.3 1714.16 L807.24 1706.55 L805.93 1698.97" stroke="#3c3c46" stroke-width="6.8"/>
+<path d="M805.93 1698.97 L804.37 1691.44 L802.57 1683.96 L800.51 1676.55" stroke="#3a3942" stroke-width="6.8"/>
+<path d="M800.51 1676.55 L798.21 1669.21 L795.67 1661.95 L792.9 1654.78" stroke="#272631" stroke-width="6.8"/>
+<path d="M792.9 1654.78 L789.88 1647.71 L786.63 1640.74 L783.15 1633.88" stroke="#242737" stroke-width="6.8"/>
+<path d="M783.15 1633.88 L779.44 1627.14 L775.52 1620.53 L771.37 1614.05" stroke="#27293a" stroke-width="6.8"/>
+<path d="M771.37 1614.05 L767.01 1607.72 L762.43 1601.54 L757.66 1595.51" stroke="#252a3a" stroke-width="6.8"/>
+<path d="M757.66 1595.51 L752.68 1589.64 L747.51 1583.95 L742.16 1578.43" stroke="#323655" stroke-width="6.8"/>
+<path d="M742.16 1578.43 L736.61 1573.1 L730.9 1567.96 L725.01 1563.01" stroke="#586588" stroke-width="6.8"/>
+<path d="M725.01 1563.01 L718.96 1558.27 L712.75 1553.73 L706.39 1549.41" stroke="#5d6f95" stroke-width="6.8"/>
+<path d="M706.39 1549.41 L699.88 1545.31 L693.24 1541.43 L686.47 1537.77" stroke="#245a92" stroke-width="6.8"/>
+<path d="M686.47 1537.77 L679.58 1534.36 L672.58 1531.18 L665.48 1528.24" stroke="#2c5890" stroke-width="6.8"/>
+<path d="M665.48 1528.24 L658.27 1525.54 L650.98 1523.1 L643.61 1520.9" stroke="#234275" stroke-width="6.8"/>
+<path d="M643.61 1520.9 L636.17 1518.97 L628.66 1517.28 L621.11 1515.86" stroke="#23376f" stroke-width="6.8"/>
+<path d="M793.84 1827.5 L797.11 1818.68 L800.03 1809.74 L802.57 1800.68" stroke="#17161d" stroke-width="6.8"/>
+<path d="M802.57 1800.68 L804.75 1791.53 L806.55 1782.29 L807.98 1772.99" stroke="#19181e" stroke-width="6.8"/>
+<path d="M807.98 1772.99 L809.03 1763.64 L809.71 1754.26 L810 1744.86" stroke="#242228" stroke-width="6.8"/>
+<path d="M923 1746.29 L923 1738.6 L922.82 1730.92 L922.49 1723.24" stroke="#434249" stroke-width="6.8"/>
+<path d="M922.49 1723.24 L921.98 1715.58 L921.3 1707.92 L920.45 1700.28" stroke="#514d55" stroke-width="6.8"/>
+<path d="M920.45 1700.28 L919.44 1692.67 L918.26 1685.07 L916.91 1677.51" stroke="#423d49" stroke-width="6.8"/>
+<path d="M916.91 1677.51 L915.39 1669.98 L913.72 1662.48 L911.87 1655.02" stroke="#302f3e" stroke-width="6.8"/>
+<path d="M911.87 1655.02 L909.86 1647.6 L907.69 1640.23 L905.35 1632.91" stroke="#30303f" stroke-width="6.8"/>
+<path d="M905.35 1632.91 L902.86 1625.64 L900.2 1618.43 L897.39 1611.28" stroke="#56576f" stroke-width="6.8"/>
+<path d="M897.39 1611.28 L894.41 1604.2 L891.29 1597.18 L888 1590.23" stroke="#434757" stroke-width="6.8"/>
+<path d="M888 1590.23 L884.57 1583.36 L880.98 1576.56 L877.24 1569.85" stroke="#3f4155" stroke-width="6.8"/>
+<path d="M877.24 1569.85 L873.36 1563.22 L869.33 1556.68 L865.15 1550.23" stroke="#434352" stroke-width="6.8"/>
+<path d="M865.15 1550.23 L860.83 1543.87 L856.37 1537.61 L851.77 1531.46" stroke="#474754" stroke-width="6.8"/>
+<path d="M851.77 1531.46 L847.04 1525.41 L842.17 1519.46 L837.17 1513.63" stroke="#484854" stroke-width="6.8"/>
+<path d="M837.17 1513.63 L832.04 1507.91 L826.78 1502.3 L821.4 1496.82" stroke="#353b4c" stroke-width="6.8"/>
+<path d="M821.4 1496.82 L815.9 1491.45 L810.28 1486.22 L804.54 1481.1" stroke="#313648" stroke-width="6.8"/>
+<path d="M804.54 1481.1 L798.69 1476.13 L792.72 1471.28 L786.65 1466.57" stroke="#474f77" stroke-width="6.8"/>
+<path d="M786.65 1466.57 L780.48 1461.99 L774.2 1457.56 L767.82 1453.28" stroke="#67749c" stroke-width="6.8"/>
+<path d="M767.82 1453.28 L761.35 1449.13 L754.79 1445.14 L748.13 1441.29" stroke="#617ca4" stroke-width="6.8"/>
+<path d="M748.13 1441.29 L741.4 1437.6 L734.58 1434.06 L727.68 1430.68" stroke="#285c91" stroke-width="6.8"/>
+<path d="M727.68 1430.68 L720.7 1427.45 L713.66 1424.39 L706.54 1421.49" stroke="#24447c" stroke-width="6.8"/>
+<path d="M706.54 1421.49 L699.36 1418.74 L692.12 1416.17 L684.83 1413.76" stroke="#19253c" stroke-width="6.8"/>
+<path d="M684.83 1413.76 L677.48 1411.52 L670.08 1409.44 L662.63 1407.54" stroke="#212639" stroke-width="6.8"/>
+<path d="M906.71 1847.88 L909.22 1839.65 L911.51 1831.35 L913.6 1823.01" stroke="#121117" stroke-width="6.8"/>
+<path d="M913.6 1823.01 L915.48 1814.61 L917.16 1806.17 L918.63 1797.69" stroke="#17161c" stroke-width="6.8"/>
+<path d="M918.63 1797.69 L919.88 1789.18 L920.93 1780.63 L921.76 1772.07" stroke="#1f1e24" stroke-width="6.8"/>
+<path d="M921.76 1772.07 L922.39 1763.49 L922.8 1754.89 L923 1746.29" stroke="#242329" stroke-width="6.8"/>
+<path d="M1036 1747.71 L1036.02 1740.25 L1035.92 1732.79 L1035.7 1725.33" stroke="#4e4b4d" stroke-width="6.8"/>
+<path d="M1035.7 1725.33 L1035.36 1717.88 L1034.9 1710.43 L1034.33 1702.99" stroke="#47454d" stroke-width="6.8"/>
+<path d="M1034.33 1702.99 L1033.63 1695.56 L1032.81 1688.14 L1031.88 1680.73" stroke="#3a3945" stroke-width="6.8"/>
+<path d="M1031.88 1680.73 L1030.83 1673.35 L1029.66 1665.98 L1028.37 1658.63" stroke="#3c3b48" stroke-width="6.8"/>
+<path d="M1028.37 1658.63 L1026.96 1651.3 L1025.43 1643.99 L1023.79 1636.71" stroke="#403e4a" stroke-width="6.8"/>
+<path d="M1023.79 1636.71 L1022.03 1629.46 L1020.16 1622.24 L1018.17 1615.04" stroke="#5a5c66" stroke-width="6.8"/>
+<path d="M1018.17 1615.04 L1016.06 1607.88 L1013.84 1600.76 L1011.51 1593.67" stroke="#555764" stroke-width="6.8"/>
+<path d="M1011.51 1593.67 L1009.06 1586.62 L1006.5 1579.61 L1003.82 1572.65" stroke="#51505c" stroke-width="6.8"/>
+<path d="M1003.82 1572.65 L1001.03 1565.72 L998.14 1558.84 L995.13 1552.02" stroke="#4f4e5c" stroke-width="6.8"/>
+<path d="M995.13 1552.02 L992.01 1545.24 L988.79 1538.51 L985.45 1531.83" stroke="#53545e" stroke-width="6.8"/>
+<path d="M985.45 1531.83 L982.01 1525.21 L978.46 1518.64 L974.8 1512.14" stroke="#6e6c73" stroke-width="6.8"/>
+<path d="M974.8 1512.14 L971.04 1505.69 L967.18 1499.31 L963.21 1492.99" stroke="#686e7a" stroke-width="6.8"/>
+<path d="M963.21 1492.99 L959.15 1486.73 L954.98 1480.54 L950.71 1474.42" stroke="#585971" stroke-width="6.8"/>
+<path d="M950.71 1474.42 L946.34 1468.37 L941.88 1462.39 L937.31 1456.48" stroke="#57596e" stroke-width="6.8"/>
+<path d="M937.31 1456.48 L932.65 1450.65 L927.9 1444.9 L923.06 1439.22" stroke="#56596d" stroke-width="6.8"/>
+<path d="M923.06 1439.22 L918.12 1433.63 L913.09 1428.11 L907.97 1422.68" stroke="#52566b" stroke-width="6.8"/>
+<path d="M907.97 1422.68 L902.77 1417.33 L897.48 1412.07 L892.1 1406.9" stroke="#4b546e" stroke-width="6.8"/>
+<path d="M892.1 1406.9 L886.64 1401.81 L881.1 1396.81 L875.47 1391.91" stroke="#484c65" stroke-width="6.8"/>
+<path d="M875.47 1391.91 L869.76 1387.1 L863.98 1382.38 L858.12 1377.76" stroke="#475267" stroke-width="6.8"/>
+<path d="M858.12 1377.76 L852.19 1373.24 L846.18 1368.81 L840.1 1364.49" stroke="#586787" stroke-width="6.8"/>
+<path d="M840.1 1364.49 L833.95 1360.26 L827.73 1356.14 L821.44 1352.12" stroke="#6777a2" stroke-width="6.8"/>
+<path d="M821.44 1352.12 L815.09 1348.2 L808.67 1344.39 L802.19 1340.69" stroke="#6f84a4" stroke-width="6.8"/>
+<path d="M802.19 1340.69 L795.65 1337.09 L789.05 1333.6 L782.4 1330.23" stroke="#265890" stroke-width="6.8"/>
+<path d="M782.4 1330.23 L775.69 1326.96 L768.93 1323.81 L762.11 1320.76" stroke="#234574" stroke-width="6.8"/>
+<path d="M762.11 1320.76 L755.25 1317.84 L748.34 1315.02 L741.38 1312.32" stroke="#202f55" stroke-width="6.8"/>
+<path d="M741.38 1312.32 L734.38 1309.74 L727.33 1307.27 L720.25 1304.92" stroke="#253053" stroke-width="6.8"/>
+<path d="M1023.14 1851.38 L1025.1 1842.88 L1026.9 1834.34 L1028.54 1825.78" stroke="#18161a" stroke-width="6.8"/>
+<path d="M1028.54 1825.78 L1030.02 1817.18 L1031.34 1808.56 L1032.49 1799.91" stroke="#16151b" stroke-width="6.8"/>
+<path d="M1032.49 1799.91 L1033.48 1791.24 L1034.31 1782.56 L1034.98 1773.86" stroke="#1d1c22" stroke-width="6.8"/>
+<path d="M1034.98 1773.86 L1035.48 1765.15 L1035.82 1756.44 L1036 1747.71" stroke="#242329" stroke-width="6.8"/>
+<path d="M1149 1749.14 L1149.03 1741.77 L1148.97 1734.4 L1148.82 1727.03" stroke="#2a282d" stroke-width="6.8"/>
+<path d="M1148.82 1727.03 L1148.57 1719.67 L1148.22 1712.31 L1147.79 1704.95" stroke="#514f55" stroke-width="6.8"/>
+<path d="M1147.79 1704.95 L1147.27 1697.6 L1146.64 1690.25 L1145.93 1682.92" stroke="#494651" stroke-width="6.8"/>
+<path d="M1145.93 1682.92 L1145.13 1675.59 L1144.22 1668.28 L1143.23 1660.97" stroke="#44424c" stroke-width="6.8"/>
+<path d="M1143.23 1660.97 L1142.16 1653.68 L1140.97 1646.41 L1139.7 1639.15" stroke="#47474f" stroke-width="6.8"/>
+<path d="M1139.7 1639.15 L1138.35 1631.9 L1136.89 1624.68 L1135.35 1617.47" stroke="#494752" stroke-width="6.8"/>
+<path d="M1135.35 1617.47 L1133.72 1610.28 L1131.99 1603.12 L1130.17 1595.97" stroke="#696772" stroke-width="6.8"/>
+<path d="M1130.17 1595.97 L1128.27 1588.85 L1126.27 1581.76 L1124.18 1574.69" stroke="#696873" stroke-width="6.8"/>
+<path d="M1124.18 1574.69 L1122 1567.65 L1119.74 1560.64 L1117.38 1553.65" stroke="#5c5a65" stroke-width="6.8"/>
+<path d="M1117.38 1553.65 L1114.94 1546.7 L1112.41 1539.78 L1109.78 1532.89" stroke="#5e5e6a" stroke-width="6.8"/>
+<path d="M1109.78 1532.89 L1107.08 1526.03 L1104.29 1519.21 L1101.4 1512.43" stroke="#575760" stroke-width="6.8"/>
+<path d="M1101.4 1512.43 L1098.43 1505.68 L1095.38 1498.97 L1092.24 1492.31" stroke="#555362" stroke-width="6.8"/>
+<path d="M1092.24 1492.31 L1089.02 1485.68 L1085.71 1479.09 L1082.32 1472.55" stroke="#6c6a79" stroke-width="6.8"/>
+<path d="M1082.32 1472.55 L1078.85 1466.05 L1075.29 1459.59 L1071.65 1453.18" stroke="#646374" stroke-width="6.8"/>
+<path d="M1071.65 1453.18 L1067.93 1446.82 L1064.13 1440.51 L1060.25 1434.24" stroke="#636271" stroke-width="6.8"/>
+<path d="M1060.25 1434.24 L1056.28 1428.03 L1052.24 1421.87 L1048.12 1415.75" stroke="#666875" stroke-width="6.8"/>
+<path d="M1048.12 1415.75 L1043.92 1409.7 L1039.64 1403.7 L1035.29 1397.75" stroke="#626475" stroke-width="6.8"/>
+<path d="M1035.29 1397.75 L1030.86 1391.85 L1026.36 1386.02 L1021.78 1380.24" stroke="#676b84" stroke-width="6.8"/>
+<path d="M1021.78 1380.24 L1017.13 1374.53 L1012.4 1368.87 L1007.6 1363.28" stroke="#676983" stroke-width="6.8"/>
+<path d="M1007.6 1363.28 L1002.74 1357.74 L997.79 1352.28 L992.78 1346.87" stroke="#696d85" stroke-width="6.8"/>
+<path d="M992.78 1346.87 L987.71 1341.53 L982.55 1336.26 L977.34 1331.05" stroke="#75798a" stroke-width="6.8"/>
+<path d="M977.34 1331.05 L972.06 1325.91 L966.7 1320.84 L961.29 1315.84" stroke="#535f81" stroke-width="6.8"/>
+<path d="M961.29 1315.84 L955.81 1310.91 L950.27 1306.05 L944.66 1301.27" stroke="#4d577a" stroke-width="6.8"/>
+<path d="M944.66 1301.27 L939 1296.55 L933.27 1291.91 L927.48 1287.35" stroke="#4e587b" stroke-width="6.8"/>
+<path d="M927.48 1287.35 L921.64 1282.86 L915.74 1278.45 L909.78 1274.11" stroke="#4d5b82" stroke-width="6.8"/>
+<path d="M909.78 1274.11 L903.76 1269.85 L897.69 1265.68 L891.56 1261.58" stroke="#576b96" stroke-width="6.8"/>
+<path d="M891.56 1261.58 L885.39 1257.56 L879.16 1253.62 L872.87 1249.76" stroke="#385b90" stroke-width="6.8"/>
+<path d="M872.87 1249.76 L866.54 1245.99 L860.17 1242.3 L853.74 1238.69" stroke="#275490" stroke-width="6.8"/>
+<path d="M853.74 1238.69 L847.26 1235.17 L840.75 1231.73 L834.18 1228.38" stroke="#27528c" stroke-width="6.8"/>
+<path d="M834.18 1228.38 L827.57 1225.11 L820.93 1221.93 L814.23 1218.84" stroke="#203567" stroke-width="6.8"/>
+<path d="M814.23 1218.84 L807.5 1215.83 L800.74 1212.91 L793.93 1210.09" stroke="#1e3565" stroke-width="6.8"/>
+<path d="M1141.37 1836.92 L1142.51 1829.66 L1143.57 1822.39 L1144.52 1815.1" stroke="#5a5655" stroke-width="6.8"/>
+<path d="M1144.52 1815.1 L1145.39 1807.8 L1146.17 1800.5 L1146.85 1793.18" stroke="#19171c" stroke-width="6.8"/>
+<path d="M1146.85 1793.18 L1147.44 1785.85 L1147.94 1778.52 L1148.34 1771.18" stroke="#222127" stroke-width="6.8"/>
+<path d="M1148.34 1771.18 L1148.65 1763.84 L1148.87 1756.49 L1149 1749.14" stroke="#252329" stroke-width="6.8"/>
+<path d="M1262 1750.57 L1262.04 1743.24 L1262 1735.9 L1261.88 1728.57" stroke="#28252c" stroke-width="6.8"/>
+<path d="M1261.88 1728.57 L1261.69 1721.24 L1261.42 1713.91 L1261.08 1706.58" stroke="#2a272d" stroke-width="6.8"/>
+<path d="M1261.08 1706.58 L1260.66 1699.26 L1260.16 1691.94 L1259.59 1684.63" stroke="#29272c" stroke-width="6.8"/>
+<path d="M1259.59 1684.63 L1258.94 1677.32 L1258.21 1670.03 L1257.4 1662.74" stroke="#48444e" stroke-width="6.8"/>
+<path d="M1257.4 1662.74 L1256.52 1655.46 L1255.56 1648.18 L1254.52 1640.92" stroke="#4d4953" stroke-width="6.8"/>
+<path d="M1254.52 1640.92 L1253.41 1633.67 L1252.22 1626.44 L1250.96 1619.21" stroke="#4c4854" stroke-width="6.8"/>
+<path d="M1250.96 1619.21 L1249.62 1612 L1248.21 1604.8 L1246.72 1597.62" stroke="#53505c" stroke-width="6.8"/>
+<path d="M1246.72 1597.62 L1245.15 1590.46 L1243.52 1583.31 L1241.8 1576.18" stroke="#5a585e" stroke-width="6.8"/>
+<path d="M1241.8 1576.18 L1240 1569.06 L1238.14 1561.97 L1236.19 1554.9" stroke="#757078" stroke-width="6.8"/>
+<path d="M1236.19 1554.9 L1234.18 1547.85 L1232.09 1540.82 L1229.93 1533.81" stroke="#6c6771" stroke-width="6.8"/>
+<path d="M1229.93 1533.81 L1227.69 1526.82 L1225.38 1519.86 L1223 1512.93" stroke="#4a485b" stroke-width="6.8"/>
+<path d="M1223 1512.93 L1220.54 1506.01 L1218.01 1499.13 L1215.41 1492.27" stroke="#46465b" stroke-width="6.8"/>
+<path d="M1215.41 1492.27 L1212.73 1485.44 L1209.99 1478.64 L1207.17 1471.87" stroke="#4d5362" stroke-width="6.8"/>
+<path d="M1207.17 1471.87 L1204.28 1465.13 L1201.32 1458.42 L1198.29 1451.74" stroke="#525664" stroke-width="6.8"/>
+<path d="M1198.29 1451.74 L1195.19 1445.09 L1192.02 1438.48 L1188.78 1431.9" stroke="#575b71" stroke-width="6.8"/>
+<path d="M1188.78 1431.9 L1185.47 1425.35 L1182.09 1418.85 L1178.64 1412.37" stroke="#585e74" stroke-width="6.8"/>
+<path d="M1178.64 1412.37 L1175.12 1405.94 L1171.53 1399.54 L1167.88 1393.18" stroke="#5c5e73" stroke-width="6.8"/>
+<path d="M1167.88 1393.18 L1164.16 1386.86 L1160.37 1380.58 L1156.52 1374.34" stroke="#5c5f75" stroke-width="6.8"/>
+<path d="M1156.52 1374.34 L1152.6 1368.14 L1148.62 1361.98 L1144.57 1355.86" stroke="#696e7e" stroke-width="6.8"/>
+<path d="M1144.57 1355.86 L1140.46 1349.79 L1136.28 1343.76 L1132.03 1337.78" stroke="#525f80" stroke-width="6.8"/>
+<path d="M1132.03 1337.78 L1127.73 1331.85 L1123.36 1325.96 L1118.92 1320.11" stroke="#43537d" stroke-width="6.8"/>
+<path d="M1118.92 1320.11 L1114.43 1314.32 L1109.88 1308.57 L1105.26 1302.87" stroke="#696e89" stroke-width="6.8"/>
+<path d="M1105.26 1302.87 L1100.58 1297.22 L1095.85 1291.61 L1091.05 1286.07" stroke="#757587" stroke-width="6.8"/>
+<path d="M1091.05 1286.07 L1086.2 1280.57 L1081.28 1275.13 L1076.31 1269.74" stroke="#7c7a8e" stroke-width="6.8"/>
+<path d="M1076.31 1269.74 L1071.28 1264.4 L1066.19 1259.11 L1061.05 1253.89" stroke="#74738b" stroke-width="6.8"/>
+<path d="M1061.05 1253.89 L1055.85 1248.71 L1050.6 1243.59 L1045.29 1238.53" stroke="#5d6089" stroke-width="6.8"/>
+<path d="M1045.29 1238.53 L1039.93 1233.52 L1034.51 1228.58 L1029.04 1223.69" stroke="#5e688c" stroke-width="6.8"/>
+<path d="M1029.04 1223.69 L1023.52 1218.86 L1017.95 1214.1 L1012.33 1209.39" stroke="#566286" stroke-width="6.8"/>
+<path d="M1012.33 1209.39 L1006.65 1204.74 L1000.93 1200.15 L995.16 1195.63" stroke="#506086" stroke-width="6.8"/>
+<path d="M995.16 1195.63 L989.34 1191.16 L983.47 1186.76 L977.56 1182.42" stroke="#485e8b" stroke-width="6.8"/>
+<path d="M977.56 1182.42 L971.59 1178.15 L965.59 1173.95 L959.53 1169.81" stroke="#264884" stroke-width="6.8"/>
+<path d="M959.53 1169.81 L953.43 1165.73 L947.29 1161.72 L941.11 1157.78" stroke="#254e89" stroke-width="6.8"/>
+<path d="M941.11 1157.78 L934.88 1153.9 L928.62 1150.09 L922.31 1146.35" stroke="#2a528d" stroke-width="6.8"/>
+<path d="M922.31 1146.35 L915.96 1142.67 L909.57 1139.07 L903.14 1135.54" stroke="#21518e" stroke-width="6.8"/>
+<path d="M903.14 1135.54 L896.68 1132.08 L890.18 1128.68 L883.64 1125.36" stroke="#214e86" stroke-width="6.8"/>
+<path d="M1259.43 1803.33 L1260.13 1794.56 L1260.73 1785.77 L1261.21 1776.98" stroke="#2b282a" stroke-width="6.8"/>
+<path d="M1261.21 1776.98 L1261.58 1768.18 L1261.84 1759.38 L1262 1750.57" stroke="#252228" stroke-width="6.8"/>
+<path d="M1365.78 1637.72 L1357.78 1638.66 L1349.87 1640.18 L1342.08 1642.27" stroke="#52265c" stroke-width="6.8"/>
+<path d="M1342.08 1642.27 L1334.47 1644.91 L1327.07 1648.1 L1319.91 1651.81" stroke="#512458" stroke-width="6.8"/>
+<path d="M1319.91 1651.81 L1313.04 1656.02 L1306.49 1660.71 L1300.29 1665.86" stroke="#53285d" stroke-width="6.8"/>
+<path d="M1300.29 1665.86 L1294.47 1671.44 L1289.07 1677.41 L1284.09 1683.75" stroke="#452453" stroke-width="6.8"/>
+<path d="M1284.09 1683.75 L1279.58 1690.43 L1275.55 1697.4 L1272.01 1704.65" stroke="#232027" stroke-width="6.8"/>
+<path d="M1272.01 1704.65 L1268.99 1712.12 L1266.5 1719.78 L1264.55 1727.6" stroke="#272328" stroke-width="6.8"/>
+<path d="M1264.55 1727.6 L1263.14 1735.54 L1262.29 1743.55 L1261.99 1751.6" stroke="#28252c" stroke-width="6.8"/>
+<path d="M1261.99 1751.6 L1262.26 1759.66 L1263.08 1767.67 L1264.45 1775.61" stroke="#252228" stroke-width="6.8"/>
+<path d="M1264.45 1775.61 L1266.37 1783.44 L1268.83 1791.11 L1271.82 1798.6" stroke="#1f1d23" stroke-width="6.8"/>
+<path d="M1342.78 1524.99 L1335.34 1526.19 L1327.94 1527.65 L1320.59 1529.35" stroke="#3c1d54" stroke-width="6.8"/>
+<path d="M1320.59 1529.35 L1313.3 1531.31 L1306.09 1533.51 L1298.95 1535.95" stroke="#472358" stroke-width="6.8"/>
+<path d="M1298.95 1535.95 L1291.9 1538.63 L1284.94 1541.54 L1278.09 1544.69" stroke="#51235d" stroke-width="6.8"/>
+<path d="M1278.09 1544.69 L1271.35 1548.07 L1264.72 1551.67 L1258.22 1555.5" stroke="#4e2361" stroke-width="6.8"/>
+<path d="M1258.22 1555.5 L1251.85 1559.54 L1245.62 1563.79 L1239.53 1568.24" stroke="#674673" stroke-width="6.8"/>
+<path d="M1239.53 1568.24 L1233.6 1572.9 L1227.82 1577.75 L1222.21 1582.79" stroke="#6b4b76" stroke-width="6.8"/>
+<path d="M1222.21 1582.79 L1216.77 1588.02 L1211.51 1593.42 L1206.43 1599" stroke="#362547" stroke-width="6.8"/>
+<path d="M1206.43 1599 L1201.54 1604.74 L1196.84 1610.64 L1192.33 1616.69" stroke="#2d2332" stroke-width="6.8"/>
+<path d="M1192.33 1616.69 L1188.03 1622.88 L1183.94 1629.22 L1180.05 1635.68" stroke="#2a1f2f" stroke-width="6.8"/>
+<path d="M1180.05 1635.68 L1176.38 1642.27 L1172.93 1648.98 L1169.7 1655.8" stroke="#29212e" stroke-width="6.8"/>
+<path d="M1169.7 1655.8 L1166.69 1662.71 L1163.91 1669.73 L1161.37 1676.83" stroke="#2b2130" stroke-width="6.8"/>
+<path d="M1161.37 1676.83 L1159.05 1684.01 L1156.97 1691.26 L1155.13 1698.57" stroke="#413f47" stroke-width="6.8"/>
+<path d="M1155.13 1698.57 L1153.53 1705.94 L1152.16 1713.36 L1151.04 1720.82" stroke="#514e52" stroke-width="6.8"/>
+<path d="M1151.04 1720.82 L1150.16 1728.31 L1149.53 1735.83 L1149.14 1743.36" stroke="#29272c" stroke-width="6.8"/>
+<path d="M1149.14 1743.36 L1148.99 1750.9 L1149.09 1758.44 L1149.43 1765.98" stroke="#26242a" stroke-width="6.8"/>
+<path d="M1149.43 1765.98 L1150.02 1773.5 L1150.85 1780.99 L1151.92 1788.46" stroke="#211f25" stroke-width="6.8"/>
+<path d="M1151.92 1788.46 L1153.23 1795.89 L1154.79 1803.27 L1156.58 1810.6" stroke="#19171d" stroke-width="6.8"/>
+<path d="M1156.58 1810.6 L1158.61 1817.86 L1160.87 1825.06 L1163.37 1832.17" stroke="#1b191d" stroke-width="6.8"/>
+<path d="M1303.61 1415.65 L1296.28 1417.32 L1288.99 1419.16 L1281.75 1421.17" stroke="#221828" stroke-width="6.8"/>
+<path d="M1281.75 1421.17 L1274.55 1423.33 L1267.4 1425.66 L1260.31 1428.15" stroke="#231441" stroke-width="6.8"/>
+<path d="M1260.31 1428.15 L1253.27 1430.79 L1246.3 1433.59 L1239.38 1436.55" stroke="#432450" stroke-width="6.8"/>
+<path d="M1239.38 1436.55 L1232.54 1439.66 L1225.77 1442.93 L1219.07 1446.34" stroke="#50255e" stroke-width="6.8"/>
+<path d="M1219.07 1446.34 L1212.45 1449.9 L1205.92 1453.61 L1199.46 1457.47" stroke="#694376" stroke-width="6.8"/>
+<path d="M1199.46 1457.47 L1193.1 1461.47 L1186.82 1465.6 L1180.64 1469.88" stroke="#76537c" stroke-width="6.8"/>
+<path d="M1180.64 1469.88 L1174.56 1474.29 L1168.57 1478.84 L1162.69 1483.52" stroke="#624470" stroke-width="6.8"/>
+<path d="M1162.69 1483.52 L1156.91 1488.33 L1151.24 1493.26 L1145.68 1498.32" stroke="#322548" stroke-width="6.8"/>
+<path d="M1145.68 1498.32 L1140.23 1503.5 L1134.9 1508.8 L1129.69 1514.22" stroke="#302237" stroke-width="6.8"/>
+<path d="M1129.69 1514.22 L1124.6 1519.74 L1119.62 1525.38 L1114.78 1531.13" stroke="#2f2936" stroke-width="6.8"/>
+<path d="M1114.78 1531.13 L1110.07 1536.99 L1105.48 1542.94 L1101.02 1548.99" stroke="#3a3344" stroke-width="6.8"/>
+<path d="M1101.02 1548.99 L1096.7 1555.15 L1092.52 1561.39 L1088.47 1567.72" stroke="#382d3e" stroke-width="6.8"/>
+<path d="M1088.47 1567.72 L1084.56 1574.14 L1080.79 1580.65 L1077.17 1587.23" stroke="#382f40" stroke-width="6.8"/>
+<path d="M1077.17 1587.23 L1073.69 1593.9 L1070.35 1600.63 L1067.16 1607.44" stroke="#413647" stroke-width="6.8"/>
+<path d="M1067.16 1607.44 L1064.12 1614.32 L1061.24 1621.26 L1058.5 1628.26" stroke="#3f3345" stroke-width="6.8"/>
+<path d="M1058.5 1628.26 L1055.91 1635.31 L1053.48 1642.43 L1051.21 1649.59" stroke="#322635" stroke-width="6.8"/>
+<path d="M1051.21 1649.59 L1049.08 1656.8 L1047.12 1664.06 L1045.31 1671.35" stroke="#302835" stroke-width="6.8"/>
+<path d="M1045.31 1671.35 L1043.66 1678.69 L1042.17 1686.06 L1040.84 1693.45" stroke="#363440" stroke-width="6.8"/>
+<path d="M1040.84 1693.45 L1039.67 1700.88 L1038.66 1708.33 L1037.81 1715.8" stroke="#413f45" stroke-width="6.8"/>
+<path d="M1037.81 1715.8 L1037.12 1723.28 L1036.59 1730.78 L1036.23 1738.29" stroke="#535053" stroke-width="6.8"/>
+<path d="M1036.23 1738.29 L1036.03 1745.8 L1035.99 1753.32 L1036.11 1760.84" stroke="#25242a" stroke-width="6.8"/>
+<path d="M1036.11 1760.84 L1036.39 1768.35 L1036.84 1775.85 L1037.44 1783.34" stroke="#201f25" stroke-width="6.8"/>
+<path d="M1037.44 1783.34 L1038.21 1790.82 L1039.13 1798.28 L1040.22 1805.72" stroke="#1b1a20" stroke-width="6.8"/>
+<path d="M1040.22 1805.72 L1041.47 1813.13 L1042.88 1820.51 L1044.44 1827.87" stroke="#16151b" stroke-width="6.8"/>
+<path d="M1044.44 1827.87 L1046.17 1835.18 L1048.05 1842.46 L1050.09 1849.7" stroke="#211f22" stroke-width="6.8"/>
+<path d="M1248.22 1311.6 L1241.16 1313.75 L1234.14 1316.01 L1227.16 1318.38" stroke="#2e1737" stroke-width="6.8"/>
+<path d="M1227.16 1318.38 L1220.21 1320.88 L1213.31 1323.48 L1206.45 1326.2" stroke="#2d1a38" stroke-width="6.8"/>
+<path d="M1206.45 1326.2 L1199.64 1329.03 L1192.88 1331.98 L1186.16 1335.03" stroke="#45235b" stroke-width="6.8"/>
+<path d="M1186.16 1335.03 L1179.5 1338.2 L1172.89 1341.47 L1166.34 1344.85" stroke="#532662" stroke-width="6.8"/>
+<path d="M1166.34 1344.85 L1159.84 1348.35 L1153.4 1351.94 L1147.01 1355.64" stroke="#614270" stroke-width="6.8"/>
+<path d="M1147.01 1355.64 L1140.7 1359.45 L1134.44 1363.36 L1128.25 1367.37" stroke="#75567b" stroke-width="6.8"/>
+<path d="M1128.25 1367.37 L1122.13 1371.48 L1116.07 1375.69 L1110.08 1380" stroke="#5a3e71" stroke-width="6.8"/>
+<path d="M1110.08 1380 L1104.17 1384.41 L1098.32 1388.91 L1092.55 1393.51" stroke="#3e2d4b" stroke-width="6.8"/>
+<path d="M1092.55 1393.51 L1086.86 1398.2 L1081.24 1402.98 L1075.71 1407.86" stroke="#3a2b49" stroke-width="6.8"/>
+<path d="M1075.71 1407.86 L1070.25 1412.82 L1064.87 1417.87 L1059.58 1423.01" stroke="#3b2d4a" stroke-width="6.8"/>
+<path d="M1059.58 1423.01 L1054.38 1428.24 L1049.25 1433.54 L1044.22 1438.93" stroke="#564156" stroke-width="6.8"/>
+<path d="M1044.22 1438.93 L1039.27 1444.4 L1034.41 1449.95 L1029.64 1455.58" stroke="#4e3f53" stroke-width="6.8"/>
+<path d="M1029.64 1455.58 L1024.96 1461.29 L1020.38 1467.07 L1015.89 1472.92" stroke="#4b3b53" stroke-width="6.8"/>
+<path d="M1015.89 1472.92 L1011.5 1478.85 L1007.19 1484.84 L1003 1490.9" stroke="#493d56" stroke-width="6.8"/>
+<path d="M1003 1490.9 L998.89 1497.03 L994.89 1503.23 L990.99 1509.49" stroke="#514258" stroke-width="6.8"/>
+<path d="M990.99 1509.49 L987.18 1515.81 L983.48 1522.19 L979.88 1528.63" stroke="#736879" stroke-width="6.8"/>
+<path d="M979.88 1528.63 L976.39 1535.13 L973 1541.68 L969.72 1548.29" stroke="#4a4151" stroke-width="6.8"/>
+<path d="M969.72 1548.29 L966.54 1554.94 L963.47 1561.65 L960.51 1568.41" stroke="#433b4c" stroke-width="6.8"/>
+<path d="M960.51 1568.41 L957.65 1575.21 L954.91 1582.05 L952.27 1588.94" stroke="#44384b" stroke-width="6.8"/>
+<path d="M952.27 1588.94 L949.74 1595.87 L947.33 1602.85 L945.03 1609.85" stroke="#4d4153" stroke-width="6.8"/>
+<path d="M945.03 1609.85 L942.83 1616.9 L940.76 1623.98 L938.79 1631.08" stroke="#544859" stroke-width="6.8"/>
+<path d="M938.79 1631.08 L936.94 1638.23 L935.2 1645.4 L933.57 1652.59" stroke="#3a343f" stroke-width="6.8"/>
+<path d="M933.57 1652.59 L932.07 1659.81 L930.67 1667.06 L929.39 1674.32" stroke="#38313f" stroke-width="6.8"/>
+<path d="M929.39 1674.32 L928.23 1681.6 L927.18 1688.91 L926.25 1696.22" stroke="#3e3744" stroke-width="6.8"/>
+<path d="M926.25 1696.22 L925.44 1703.56 L924.73 1710.9 L924.15 1718.25" stroke="#47424c" stroke-width="6.8"/>
+<path d="M924.15 1718.25 L923.69 1725.62 L923.33 1732.98 L923.11 1740.36" stroke="#4e4b55" stroke-width="6.8"/>
+<path d="M923.11 1740.36 L922.99 1747.73 L922.99 1755.11 L923.11 1762.49" stroke="#27262d" stroke-width="6.8"/>
+<path d="M923.11 1762.49 L923.35 1769.86 L923.7 1777.23 L924.17 1784.59" stroke="#222127" stroke-width="6.8"/>
+<path d="M924.17 1784.59 L924.75 1791.94 L925.46 1799.29 L926.28 1806.62" stroke="#18171d" stroke-width="6.8"/>
+<path d="M926.28 1806.62 L927.21 1813.93 L928.26 1821.23 L929.43 1828.52" stroke="#19181e" stroke-width="6.8"/>
+<path d="M929.43 1828.52 L930.71 1835.78 L932.11 1843.03 L933.62 1850.25" stroke="#2a292b" stroke-width="6.8"/>
+<path d="M1176.61 1214.93 L1169.74 1217.58 L1162.91 1220.33 L1156.12 1223.16" stroke="#371745" stroke-width="6.8"/>
+<path d="M1156.12 1223.16 L1149.36 1226.08 L1142.65 1229.09 L1135.98 1232.19" stroke="#361f4c" stroke-width="6.8"/>
+<path d="M1135.98 1232.19 L1129.34 1235.37 L1122.75 1238.65 L1116.2 1242.01" stroke="#502562" stroke-width="6.8"/>
+<path d="M1116.2 1242.01 L1109.7 1245.45 L1103.24 1248.98 L1096.83 1252.6" stroke="#522861" stroke-width="6.8"/>
+<path d="M1096.83 1252.6 L1090.46 1256.29 L1084.15 1260.07 L1077.89 1263.94" stroke="#542b66" stroke-width="6.8"/>
+<path d="M1077.89 1263.94 L1071.67 1267.88 L1065.51 1271.9 L1059.4 1276.01" stroke="#6b4e7f" stroke-width="6.8"/>
+<path d="M1059.4 1276.01 L1053.35 1280.19 L1047.35 1284.46 L1041.41 1288.8" stroke="#4f3961" stroke-width="6.8"/>
+<path d="M1041.41 1288.8 L1035.52 1293.22 L1029.69 1297.71 L1023.93 1302.28" stroke="#4d375b" stroke-width="6.8"/>
+<path d="M1023.93 1302.28 L1018.22 1306.93 L1012.57 1311.64 L1006.99 1316.44" stroke="#523958" stroke-width="6.8"/>
+<path d="M1006.99 1316.44 L1001.46 1321.3 L996 1326.24 L990.61 1331.25" stroke="#553b5e" stroke-width="6.8"/>
+<path d="M990.61 1331.25 L985.28 1336.32 L980.02 1341.46 L974.82 1346.68" stroke="#706175" stroke-width="6.8"/>
+<path d="M974.82 1346.68 L969.7 1351.96 L964.63 1357.3 L959.65 1362.71" stroke="#68536f" stroke-width="6.8"/>
+<path d="M959.65 1362.71 L954.73 1368.19 L949.88 1373.72 L945.1 1379.32" stroke="#65526c" stroke-width="6.8"/>
+<path d="M945.1 1379.32 L940.4 1384.99 L935.77 1390.7 L931.22 1396.48" stroke="#685572" stroke-width="6.8"/>
+<path d="M931.22 1396.48 L926.74 1402.33 L922.33 1408.22 L918 1414.17" stroke="#5d5a64" stroke-width="6.8"/>
+<path d="M918 1414.17 L913.75 1420.18 L909.58 1426.24 L905.48 1432.35" stroke="#5e5964" stroke-width="6.8"/>
+<path d="M905.48 1432.35 L901.47 1438.52 L897.53 1444.74 L893.67 1451" stroke="#5b5562" stroke-width="6.8"/>
+<path d="M893.67 1451 L889.9 1457.32 L886.2 1463.69 L882.59 1470.1" stroke="#594f61" stroke-width="6.8"/>
+<path d="M882.59 1470.1 L879.06 1476.56 L875.61 1483.06 L872.24 1489.6" stroke="#5e5768" stroke-width="6.8"/>
+<path d="M872.24 1489.6 L868.96 1496.19 L865.77 1502.82 L862.66 1509.49" stroke="#4f4450" stroke-width="6.8"/>
+<path d="M862.66 1509.49 L859.63 1516.2 L856.69 1522.95 L853.84 1529.73" stroke="#48434d" stroke-width="6.8"/>
+<path d="M853.84 1529.73 L851.07 1536.55 L848.39 1543.41 L845.8 1550.29" stroke="#544e59" stroke-width="6.8"/>
+<path d="M845.8 1550.29 L843.29 1557.21 L840.88 1564.17 L838.56 1571.15" stroke="#544e59" stroke-width="6.8"/>
+<path d="M838.56 1571.15 L836.32 1578.16 L834.17 1585.2 L832.11 1592.26" stroke="#605964" stroke-width="6.8"/>
+<path d="M832.11 1592.26 L830.14 1599.35 L828.26 1606.47 L826.48 1613.61" stroke="#585261" stroke-width="6.8"/>
+<path d="M826.48 1613.61 L824.78 1620.77 L823.17 1627.95 L821.66 1635.16" stroke="#413a45" stroke-width="6.8"/>
+<path d="M821.66 1635.16 L820.24 1642.38 L818.9 1649.61 L817.66 1656.87" stroke="#403a45" stroke-width="6.8"/>
+<path d="M817.66 1656.87 L816.52 1664.14 L815.46 1671.42 L814.5 1678.72" stroke="#3d3942" stroke-width="6.8"/>
+<path d="M814.5 1678.72 L813.63 1686.02 L812.85 1693.34 L812.16 1700.67" stroke="#3c3b44" stroke-width="6.8"/>
+<path d="M812.16 1700.67 L811.57 1708.01 L811.07 1715.35 L810.66 1722.7" stroke="#3d3e47" stroke-width="6.8"/>
+<path d="M810.66 1722.7 L810.35 1730.05 L810.13 1737.41 L810 1744.76" stroke="#27252a" stroke-width="6.8"/>
+<path d="M810 1744.76 L809.97 1752.12 L810.03 1759.48 L810.18 1766.84" stroke="#252329" stroke-width="6.8"/>
+<path d="M810.18 1766.84 L810.43 1774.2 L810.77 1781.55 L811.2 1788.89" stroke="#1e1d23" stroke-width="6.8"/>
+<path d="M811.2 1788.89 L811.72 1796.24 L812.34 1803.57 L813.05 1810.89" stroke="#18171d" stroke-width="6.8"/>
+<path d="M813.05 1810.89 L813.85 1818.21 L814.75 1825.51 L815.73 1832.81" stroke="#484546" stroke-width="6.8"/>
+<path d="M1088.75 1127.96 L1082.07 1131.15 L1075.42 1134.41 L1068.81 1137.75" stroke="#46205c" stroke-width="6.8"/>
+<path d="M1068.81 1137.75 L1062.24 1141.16 L1055.7 1144.64 L1049.21 1148.19" stroke="#422261" stroke-width="6.8"/>
+<path d="M1049.21 1148.19 L1042.75 1151.82 L1036.34 1155.52 L1029.96 1159.29" stroke="#442563" stroke-width="6.8"/>
+<path d="M1029.96 1159.29 L1023.63 1163.12 L1017.34 1167.03 L1011.09 1171" stroke="#3f2562" stroke-width="6.8"/>
+<path d="M1011.09 1171 L1004.88 1175.04 L998.72 1179.15 L992.61 1183.33" stroke="#3d265e" stroke-width="6.8"/>
+<path d="M992.61 1183.33 L986.55 1187.58 L980.53 1191.89 L974.55 1196.26" stroke="#55436a" stroke-width="6.8"/>
+<path d="M974.55 1196.26 L968.63 1200.7 L962.75 1205.21 L956.92 1209.78" stroke="#543f6d" stroke-width="6.8"/>
+<path d="M956.92 1209.78 L951.14 1214.41 L945.42 1219.1 L939.75 1223.86" stroke="#5a466c" stroke-width="6.8"/>
+<path d="M939.75 1223.86 L934.12 1228.68 L928.56 1233.56 L923.04 1238.51" stroke="#50416a" stroke-width="6.8"/>
+<path d="M923.04 1238.51 L917.58 1243.51 L912.17 1248.57 L906.82 1253.68" stroke="#57486e" stroke-width="6.8"/>
+<path d="M906.82 1253.68 L901.53 1258.86 L896.29 1264.09 L891.1 1269.38" stroke="#625c70" stroke-width="6.8"/>
+<path d="M891.1 1269.38 L885.98 1274.73 L880.92 1280.13 L875.91 1285.59" stroke="#605e6d" stroke-width="6.8"/>
+<path d="M875.91 1285.59 L870.97 1291.1 L866.08 1296.66 L861.25 1302.28" stroke="#615b6b" stroke-width="6.8"/>
+<path d="M861.25 1302.28 L856.49 1307.94 L851.78 1313.66 L847.14 1319.43" stroke="#5e5a6b" stroke-width="6.8"/>
+<path d="M847.14 1319.43 L842.56 1325.25 L838.05 1331.12 L833.6 1337.04" stroke="#5e5d6c" stroke-width="6.8"/>
+<path d="M833.6 1337.04 L829.21 1343 L824.89 1349.01 L820.63 1355.07" stroke="#6f7078" stroke-width="6.8"/>
+<path d="M820.63 1355.07 L816.44 1361.18 L812.31 1367.32 L808.25 1373.51" stroke="#75767c" stroke-width="6.8"/>
+<path d="M808.25 1373.51 L804.25 1379.75 L800.33 1386.03 L796.47 1392.35" stroke="#717178" stroke-width="6.8"/>
+<path d="M796.47 1392.35 L792.68 1398.71 L788.96 1405.12 L785.31 1411.56" stroke="#74757c" stroke-width="6.8"/>
+<path d="M785.31 1411.56 L781.73 1418.04 L778.22 1424.56 L774.77 1431.11" stroke="#78777e" stroke-width="6.8"/>
+<path d="M774.77 1431.11 L771.4 1437.7 L768.1 1444.33 L764.87 1450.99" stroke="#7b7c84" stroke-width="6.8"/>
+<path d="M764.87 1450.99 L761.71 1457.69 L758.63 1464.42 L755.61 1471.19" stroke="#65656b" stroke-width="6.8"/>
+<path d="M755.61 1471.19 L752.67 1477.98 L749.8 1484.81 L747.01 1491.67" stroke="#636469" stroke-width="6.8"/>
+<path d="M747.01 1491.67 L744.28 1498.55 L741.63 1505.47 L739.06 1512.41" stroke="#67666b" stroke-width="6.8"/>
+<path d="M739.06 1512.41 L736.56 1519.38 L734.14 1526.38 L731.79 1533.4" stroke="#66676d" stroke-width="6.8"/>
+<path d="M731.79 1533.4 L729.51 1540.45 L727.31 1547.52 L725.19 1554.61" stroke="#5f6169" stroke-width="6.8"/>
+<path d="M725.19 1554.61 L723.14 1561.72 L721.16 1568.86 L719.26 1576.02" stroke="#4e4f53" stroke-width="6.8"/>
+<path d="M719.26 1576.02 L717.44 1583.19 L715.7 1590.39 L714.03 1597.61" stroke="#494851" stroke-width="6.8"/>
+<path d="M714.03 1597.61 L712.44 1604.84 L710.93 1612.09 L709.5 1619.35" stroke="#484850" stroke-width="6.8"/>
+<path d="M709.5 1619.35 L708.14 1626.63 L706.85 1633.92 L705.65 1641.23" stroke="#494952" stroke-width="6.8"/>
+<path d="M705.65 1641.23 L704.52 1648.55 L703.47 1655.88 L702.5 1663.22" stroke="#4f5057" stroke-width="6.8"/>
+<path d="M702.5 1663.22 L701.61 1670.57 L700.8 1677.93 L700.06 1685.3" stroke="#46454b" stroke-width="6.8"/>
+<path d="M700.06 1685.3 L699.41 1692.67 L698.83 1700.06 L698.32 1707.44" stroke="#232329" stroke-width="6.8"/>
+<path d="M698.32 1707.44 L697.9 1714.84 L697.55 1722.23 L697.29 1729.63" stroke="#232329" stroke-width="6.8"/>
+<path d="M697.29 1729.63 L697.1 1737.04 L696.99 1744.44 L696.97 1751.84" stroke="#232328" stroke-width="6.8"/>
+<path d="M696.97 1751.84 L697.02 1759.25 L697.14 1766.65 L697.35 1774.05" stroke="#1d1d22" stroke-width="6.8"/>
+<path d="M697.35 1774.05 L697.63 1781.45 L698 1788.85 L698.43 1796.24" stroke="#63605e" stroke-width="6.8"/>
+</g>
+<path class="plate-grid" d="M583 1748.85 L583.05 1748.88 L589.77 1752.85 L589.82 1752.88 L596.57 1756.79 L596.63 1756.82 L603.42 1760.65 L603.47 1760.68 L610.3 1764.45 L610.35 1764.48 L617.22 1768.18 L617.27 1768.21 L624.17 1771.84 L624.22 1771.87 L631.16 1775.43 L631.21 1775.45 L638.18 1778.95 L638.23 1778.97 L645.24 1782.4 L645.29 1782.42 L652.32 1785.78 L652.38 1785.8 L659.45 1789.09 L659.5 1789.11 L666.6 1792.32 L666.66 1792.35 L673.78 1795.49 L673.84 1795.52 L681 1798.59 L681.05 1798.61 L688.24 1801.61 L688.3 1801.63 L695.51 1804.56 L695.57 1804.58 L702.81 1807.44 L702.87 1807.46 L710.14 1810.24 L710.2 1810.26 L717.49 1812.98 L717.55 1813 L724.87 1815.63 L724.93 1815.66 L732.28 1818.22 L732.34 1818.24 L739.71 1820.73 L739.77 1820.75 L747.16 1823.17 L747.22 1823.19 L754.64 1825.53 L754.7 1825.55 L762.14 1827.82 L762.2 1827.84 L769.66 1830.03 L769.72 1830.05 L777.2 1832.17 L777.26 1832.19 L784.77 1834.24 L784.83 1834.25 L792.35 1836.23 L792.41 1836.24 L799.95 1838.14 L800.01 1838.15 L807.57 1839.97 L807.63 1839.99 L815.2 1841.74 L815.26 1841.75 L822.86 1843.42 L822.92 1843.43 L830.53 1845.03 L830.59 1845.04 L838.21 1846.56 L838.27 1846.57 L845.91 1848.02 L845.97 1848.03 L853.62 1849.4 L853.68 1849.41 L861.34 1850.7 L861.4 1850.71 L869.08 1851.92 L869.14 1851.93 L876.83 1853.07 L876.89 1853.08 L884.58 1854.14 L884.65 1854.15 L892.35 1855.13 L892.41 1855.14 L900.13 1856.05 L900.19 1856.06 L907.92 1856.89 L907.98 1856.89 L915.71 1857.65 L915.77 1857.66 L923.51 1858.33 L923.57 1858.34 L931.32 1858.94 L931.38 1858.94 L939.13 1859.47 L939.19 1859.47 L946.94 1859.92 L947.01 1859.92 L954.76 1860.29 L954.83 1860.29 L962.59 1860.58 L962.65 1860.58 L970.41 1860.8 L970.47 1860.8 L978.24 1860.94 L978.3 1860.94 L986.07 1861 L986.13 1861 L993.9 1860.98 L993.96 1860.98 L1001.72 1860.88 L1001.79 1860.88 L1009.55 1860.71 L1009.61 1860.71 L1017.37 1860.46 L1017.44 1860.46 L1025.19 1860.13 L1025.26 1860.13 L1033.01 1859.72 L1033.07 1859.72 L1040.82 1859.24 L1040.89 1859.23 L1048.63 1858.67 L1048.69 1858.67 L1056.43 1858.03 L1056.5 1858.03 L1064.23 1857.31 L1064.29 1857.31 L1072.02 1856.52 L1072.08 1856.51 L1079.8 1855.64 L1079.86 1855.64 L1087.57 1854.69 L1087.63 1854.69 L1095.33 1853.66 L1095.39 1853.66 L1103.08 1852.56 L1103.14 1852.55 L1110.82 1851.38 L1110.88 1851.37 L1118.54 1850.12 L1118.6 1850.11 L1126.26 1848.78 L1126.32 1848.77 L1133.96 1847.37 L1134.02 1847.35 L1141.65 1845.88 L1141.71 1845.86 L1149.32 1844.31 L1149.38 1844.3 L1156.97 1842.67 L1157.03 1842.65 L1164.61 1840.95 L1164.67 1840.93 L1172.24 1839.15 L1172.3 1839.14 L1179.84 1837.28 L1179.9 1837.26 L1187.43 1835.33 L1187.49 1835.32 L1195 1833.31 L1195.06 1833.29 L1202.54 1831.21 L1202.6 1831.2 L1210.07 1829.04 L1210.13 1829.02 L1217.57 1826.79 L1217.63 1826.77 L1225.06 1824.47 L1225.12 1824.45 L1232.52 1822.07 L1232.57 1822.05 L1239.95 1819.6 L1240.01 1819.58 L1247.36 1817.06 L1247.42 1817.04 L1254.75 1814.44 L1254.81 1814.42 L1262.11 1811.74 L1262.17 1811.72 L1269.44 1808.98 L1269.5 1808.96 L1276.75 1806.14 L1276.81 1806.12 L1284.03 1803.23 L1284.09 1803.21 L1291.28 1800.25 L1291.34 1800.22 L1298.5 1797.19 L1298.56 1797.17 L1305.69 1794.06 L1305.75 1794.04 L1312.85 1790.86 L1312.91 1790.84 L1319.98 1787.59 L1320.04 1787.57 L1327.08 1784.25 L1327.13 1784.23 L1334.14 1780.84 L1334.2 1780.81 L1341.17 1777.36 L1341.23 1777.33 L1348.17 1773.81 L1348.23 1773.78 L1355.13 1770.18 L1355.19 1770.16 L1362.06 1766.49 L1362.11 1766.46 L1368.95 1762.73 L1369 1762.7 L1375.8 1758.91 L1375.86 1758.88 L1378.11 1757.58 L1378.62 1757.26 L1379.1 1756.89 L1379.54 1756.47 L1379.94 1756.01 L1380.3 1755.51 L1380.6 1754.98 L1380.86 1754.43 L1381.06 1753.85 L1381.21 1753.26 L1381.3 1752.65 L1381.33 1752.04 L1381.38 1744.17 L1381.38 1744.11 L1381.35 1736.23 L1381.35 1736.16 L1381.24 1728.29 L1381.24 1728.22 L1381.06 1720.35 L1381.06 1720.28 L1380.8 1712.41 L1380.79 1712.34 L1380.46 1704.47 L1380.46 1704.41 L1380.05 1696.54 L1380.04 1696.48 L1379.56 1688.61 L1379.55 1688.55 L1378.99 1680.69 L1378.99 1680.63 L1378.35 1672.77 L1378.34 1672.71 L1377.63 1664.86 L1377.62 1664.8 L1376.83 1656.96 L1376.82 1656.9 L1375.96 1649.07 L1375.95 1649 L1375.01 1641.18 L1375 1641.12 L1373.98 1633.31 L1373.97 1633.24 L1372.88 1625.44 L1372.87 1625.38 L1371.7 1617.59 L1371.69 1617.53 L1370.45 1609.75 L1370.44 1609.68 L1369.12 1601.92 L1369.11 1601.85 L1367.72 1594.1 L1367.7 1594.04 L1366.24 1586.3 L1366.22 1586.24 L1364.68 1578.51 L1364.67 1578.45 L1363.05 1570.74 L1363.04 1570.68 L1361.34 1562.99 L1361.33 1562.93 L1359.56 1555.25 L1359.55 1555.19 L1357.71 1547.53 L1357.69 1547.47 L1355.77 1539.83 L1355.76 1539.77 L1353.77 1532.15 L1353.75 1532.09 L1351.69 1524.49 L1351.67 1524.43 L1349.54 1516.85 L1349.52 1516.79 L1347.31 1509.24 L1347.29 1509.18 L1345.01 1501.64 L1344.99 1501.58 L1342.64 1494.07 L1342.62 1494.01 L1340.19 1486.52 L1340.17 1486.46 L1337.67 1479 L1337.65 1478.94 L1335.08 1471.5 L1335.06 1471.44 L1332.41 1464.03 L1332.39 1463.97 L1329.68 1456.58 L1329.65 1456.52 L1326.87 1449.16 L1326.84 1449.11 L1323.99 1441.78 L1323.96 1441.72 L1321.04 1434.41 L1321.01 1434.36 L1318.01 1427.08 L1317.99 1427.03 L1314.92 1419.78 L1314.89 1419.73 L1311.76 1412.51 L1311.73 1412.46 L1308.52 1405.28 L1308.5 1405.22 L1305.22 1398.07 L1305.19 1398.01 L1301.84 1390.9 L1301.82 1390.84 L1298.4 1383.76 L1298.37 1383.7 L1294.89 1376.66 L1294.86 1376.6 L1291.31 1369.59 L1291.28 1369.53 L1287.66 1362.55 L1287.63 1362.5 L1283.95 1355.56 L1283.92 1355.5 L1280.16 1348.6 L1280.13 1348.54 L1276.31 1341.68 L1276.28 1341.62 L1272.39 1334.8 L1272.36 1334.74 L1268.41 1327.95 L1268.38 1327.9 L1264.36 1321.15 L1264.33 1321.1 L1260.25 1314.39 L1260.21 1314.33 L1256.07 1307.67 L1256.03 1307.61 L1251.82 1300.99 L1251.79 1300.93 L1247.51 1294.35 L1247.48 1294.3 L1243.14 1287.76 L1243.1 1287.7 L1238.7 1281.21 L1238.67 1281.15 L1234.2 1274.7 L1234.16 1274.65 L1229.64 1268.24 L1229.6 1268.19 L1225.01 1261.82 L1224.98 1261.77 L1220.33 1255.45 L1220.29 1255.4 L1215.58 1249.13 L1215.54 1249.08 L1210.77 1242.86 L1210.73 1242.81 L1205.9 1236.63 L1205.86 1236.58 L1200.97 1230.45 L1200.93 1230.41 L1195.98 1224.33 L1195.94 1224.28 L1190.93 1218.25 L1190.89 1218.2 L1185.83 1212.22 L1185.79 1212.17 L1180.66 1206.24 L1180.62 1206.2 L1175.44 1200.32 L1175.4 1200.27 L1170.16 1194.45 L1170.12 1194.4 L1164.83 1188.63 L1164.79 1188.58 L1159.44 1182.86 L1159.39 1182.81 L1153.99 1177.15 L1153.95 1177.1 L1148.49 1171.49 L1148.44 1171.44 L1142.93 1165.88 L1142.89 1165.84 L1137.32 1160.34 L1137.28 1160.29 L1131.66 1154.84 L1131.61 1154.8 L1125.94 1149.41 L1125.9 1149.37 L1120.18 1144.03 L1120.13 1143.99 L1114.36 1138.71 L1114.31 1138.67 L1108.48 1133.45 L1108.44 1133.41 L1102.56 1128.24 L1102.52 1128.2 L1096.59 1123.1 L1096.54 1123.06 L1090.57 1118.01 L1090.52 1117.97 L1084.5 1112.99 L1084.45 1112.95 L1078.38 1108.02 L1078.33 1107.99 L1072.22 1103.12 L1072.17 1103.08 L1066 1098.28 L1065.95 1098.24 L1059.74 1093.5 L1059.7 1093.46 L1053.44 1088.78 L1053.39 1088.75 L1047.09 1084.13 L1047.04 1084.09 L1040.69 1079.54 L1040.64 1079.5 L1034.26 1075.01 L1034.2 1074.98 L1027.77 1070.55 L1027.72 1070.51 L1021.25 1066.15 L1021.2 1066.12 L1014.68 1061.82 L1014.63 1061.78 L1008.07 1057.55 L1008.02 1057.52 L1001.42 1053.35 L1001.37 1053.32 L994.73 1049.22 L994.68 1049.18 L990.23 1046.5 L989.7 1046.21 L989.14 1045.97 L988.56 1045.79 L987.97 1045.67 L987.37 1045.6 L986.77 1045.59 L986.17 1045.64 L985.57 1045.75 L984.99 1045.92 L984.43 1046.14 L983.89 1046.42 L979.38 1048.99 L979.33 1049.02 L972.61 1052.95 L972.55 1052.99 L965.87 1056.98 L965.81 1057.02 L959.17 1061.08 L959.11 1061.12 L952.51 1065.25 L952.46 1065.28 L945.89 1069.48 L945.84 1069.51 L939.31 1073.78 L939.26 1073.81 L932.78 1078.14 L932.73 1078.17 L926.28 1082.57 L926.23 1082.6 L919.84 1087.06 L919.78 1087.09 L913.43 1091.61 L913.38 1091.65 L907.07 1096.23 L907.02 1096.27 L900.75 1100.92 L900.7 1100.95 L894.48 1105.66 L894.43 1105.7 L888.26 1110.47 L888.21 1110.51 L882.08 1115.34 L882.03 1115.38 L875.95 1120.27 L875.9 1120.31 L869.87 1125.26 L869.82 1125.3 L863.84 1130.31 L863.79 1130.35 L857.86 1135.43 L857.81 1135.47 L851.92 1140.6 L851.87 1140.64 L846.04 1145.83 L845.99 1145.87 L840.21 1151.12 L840.16 1151.16 L834.43 1156.46 L834.38 1156.51 L828.7 1161.87 L828.65 1161.91 L823.02 1167.33 L822.98 1167.37 L817.4 1172.85 L817.35 1172.89 L811.83 1178.42 L811.79 1178.46 L806.32 1184.05 L806.27 1184.09 L800.86 1189.73 L800.81 1189.78 L795.45 1195.47 L795.41 1195.51 L790.1 1201.26 L790.06 1201.31 L784.81 1207.1 L784.77 1207.15 L779.57 1213 L779.53 1213.05 L774.4 1218.95 L774.36 1219 L769.28 1224.95 L769.24 1225 L764.22 1231 L764.18 1231.05 L759.21 1237.1 L759.17 1237.15 L754.27 1243.25 L754.23 1243.3 L749.39 1249.45 L749.35 1249.5 L744.56 1255.7 L744.52 1255.75 L739.8 1262 L739.76 1262.05 L735.1 1268.34 L735.06 1268.39 L730.46 1274.73 L730.42 1274.78 L725.88 1281.16 L725.84 1281.22 L721.37 1287.65 L721.33 1287.7 L716.91 1294.17 L716.88 1294.22 L712.52 1300.74 L712.49 1300.79 L708.2 1307.36 L708.17 1307.41 L703.94 1314.01 L703.91 1314.06 L699.74 1320.71 L699.71 1320.76 L695.61 1327.45 L695.58 1327.5 L691.55 1334.23 L691.52 1334.29 L687.55 1341.05 L687.52 1341.11 L683.62 1347.91 L683.58 1347.97 L679.75 1354.81 L679.72 1354.87 L675.95 1361.75 L675.92 1361.81 L672.22 1368.73 L672.19 1368.78 L668.55 1375.74 L668.52 1375.8 L664.96 1382.79 L664.93 1382.85 L661.43 1389.87 L661.4 1389.93 L657.97 1396.99 L657.94 1397.05 L654.58 1404.15 L654.55 1404.21 L651.26 1411.34 L651.23 1411.39 L648.01 1418.56 L647.98 1418.61 L644.83 1425.81 L644.8 1425.87 L641.72 1433.09 L641.69 1433.15 L638.68 1440.41 L638.65 1440.46 L635.71 1447.75 L635.69 1447.81 L632.81 1455.12 L632.79 1455.18 L629.99 1462.53 L629.96 1462.59 L627.23 1469.96 L627.21 1470.02 L624.55 1477.41 L624.53 1477.47 L621.94 1484.9 L621.92 1484.96 L619.4 1492.41 L619.38 1492.47 L616.94 1499.94 L616.92 1500 L614.55 1507.5 L614.53 1507.56 L612.23 1515.08 L612.21 1515.14 L609.99 1522.69 L609.97 1522.75 L607.82 1530.32 L607.8 1530.38 L605.72 1537.97 L605.7 1538.03 L603.7 1545.64 L603.68 1545.7 L601.75 1553.33 L601.73 1553.39 L599.87 1561.03 L599.86 1561.1 L598.08 1568.76 L598.06 1568.82 L596.35 1576.51 L596.34 1576.57 L594.7 1584.27 L594.69 1584.33 L593.13 1592.04 L593.12 1592.11 L591.63 1599.84 L591.62 1599.9 L590.21 1607.65 L590.2 1607.71 L588.86 1615.47 L588.85 1615.53 L587.59 1623.3 L587.58 1623.36 L586.39 1631.15 L586.38 1631.21 L585.27 1639.01 L585.26 1639.07 L584.23 1646.88 L584.22 1646.94 L583.26 1654.76 L583.25 1654.82 L582.37 1662.65 L582.36 1662.71 L581.56 1670.55 L581.55 1670.61 L580.82 1678.45 L580.81 1678.51 L580.16 1686.36 L580.15 1686.43 L579.57 1694.28 L579.57 1694.35 L579.06 1702.21 L579.06 1702.27 L578.63 1710.14 L578.63 1710.2 L578.28 1718.07 L578.27 1718.13 L578 1726.01 L578 1726.07 L577.8 1733.95 L577.8 1734.01 L577.67 1741.88 L577.69 1742.49 L577.77 1743.1 L577.9 1743.7 L578.09 1744.28 L578.33 1744.84 L578.63 1745.38 L578.97 1745.88 L579.36 1746.35 L579.79 1746.78 L580.26 1747.17 L580.77 1747.5 L583 1748.85 Z" fill="none" stroke="#6b6d62" stroke-width="2"/>
+<g transform="translate(881.53 1082.69)" aria-label="Vdot"><g transform="translate(0 0) scale(1.16216)"><path d="M 2,-26 L 12,0 L 24,-26" fill="none" stroke="#34342e" stroke-width="3.5" stroke-linejoin="round"/><circle cx="24" cy="-33" r="2.6" fill="#34342e"/></g></g>
+<g transform="translate(1148.23 1158.06)" aria-label="N 1"><text x="0" y="0" text-anchor="start" font-size="43" font-weight="normal" style="font-family:Arial,Helvetica,sans-serif">N</text><text x="30.96" y="10.75" text-anchor="start" font-size="30.959999999999997" font-weight="normal" style="font-family:Arial,Helvetica,sans-serif">1</text></g>
+<g transform="translate(613.11 1818.92)" aria-label="B"><text x="0" y="0" text-anchor="start" font-size="43" font-weight="normal" style="font-family:Arial,Helvetica,sans-serif">B</text></g>
+<g transform="translate(771.19 1155.31)" aria-label="Vdot 5"><g transform="translate(0 0) scale(1.16216)"><path d="M 2,-26 L 12,0 L 24,-26" fill="none" stroke="#34342e" stroke-width="3.5" stroke-linejoin="round"/><circle cx="24" cy="-33" r="2.6" fill="#34342e"/></g><text x="30.96" y="10.75" text-anchor="start" font-size="30.959999999999997" font-weight="normal" style="font-family:Arial,Helvetica,sans-serif">5</text></g>
+<g transform="translate(1229.5 1245.29)" aria-label="N 2"><text x="0" y="0" text-anchor="start" font-size="43" font-weight="normal" style="font-family:Arial,Helvetica,sans-serif">N</text><text x="30.96" y="10.75" text-anchor="start" font-size="30.959999999999997" font-weight="normal" style="font-family:Arial,Helvetica,sans-serif">2</text></g>
+<g transform="translate(714.05 1865.3)" aria-label="B 5"><text x="0" y="0" text-anchor="start" font-size="43" font-weight="normal" style="font-family:Arial,Helvetica,sans-serif">B</text><text x="30.96" y="10.75" text-anchor="start" font-size="30.959999999999997" font-weight="normal" style="font-family:Arial,Helvetica,sans-serif">5</text></g>
+<g transform="translate(688.94 1241.34)" aria-label="Vdot 4"><g transform="translate(0 0) scale(1.16216)"><path d="M 2,-26 L 12,0 L 24,-26" fill="none" stroke="#34342e" stroke-width="3.5" stroke-linejoin="round"/><circle cx="24" cy="-33" r="2.6" fill="#34342e"/></g><text x="30.96" y="10.75" text-anchor="start" font-size="30.959999999999997" font-weight="normal" style="font-family:Arial,Helvetica,sans-serif">4</text></g>
+<g transform="translate(1297.08 1343.83)" aria-label="N 3"><text x="0" y="0" text-anchor="start" font-size="43" font-weight="normal" style="font-family:Arial,Helvetica,sans-serif">N</text><text x="30.96" y="10.75" text-anchor="start" font-size="30.959999999999997" font-weight="normal" style="font-family:Arial,Helvetica,sans-serif">3</text></g>
+<g transform="translate(828.72 1894.66)" aria-label="B 4"><text x="0" y="0" text-anchor="start" font-size="43" font-weight="normal" style="font-family:Arial,Helvetica,sans-serif">B</text><text x="30.96" y="10.75" text-anchor="start" font-size="30.959999999999997" font-weight="normal" style="font-family:Arial,Helvetica,sans-serif">4</text></g>
+<g transform="translate(620.26 1338.88)" aria-label="Vdot 3"><g transform="translate(0 0) scale(1.16216)"><path d="M 2,-26 L 12,0 L 24,-26" fill="none" stroke="#34342e" stroke-width="3.5" stroke-linejoin="round"/><circle cx="24" cy="-33" r="2.6" fill="#34342e"/></g><text x="30.96" y="10.75" text-anchor="start" font-size="30.959999999999997" font-weight="normal" style="font-family:Arial,Helvetica,sans-serif">3</text></g>
+<g transform="translate(1349.44 1451.46)" aria-label="N 4"><text x="0" y="0" text-anchor="start" font-size="43" font-weight="normal" style="font-family:Arial,Helvetica,sans-serif">N</text><text x="30.96" y="10.75" text-anchor="start" font-size="30.959999999999997" font-weight="normal" style="font-family:Arial,Helvetica,sans-serif">4</text></g>
+<g transform="translate(946.41 1906.37)" aria-label="B 3"><text x="0" y="0" text-anchor="start" font-size="43" font-weight="normal" style="font-family:Arial,Helvetica,sans-serif">B</text><text x="30.96" y="10.75" text-anchor="start" font-size="30.959999999999997" font-weight="normal" style="font-family:Arial,Helvetica,sans-serif">3</text></g>
+<g transform="translate(566.69 1445.73)" aria-label="Vdot 2"><g transform="translate(0 0) scale(1.16216)"><path d="M 2,-26 L 12,0 L 24,-26" fill="none" stroke="#34342e" stroke-width="3.5" stroke-linejoin="round"/><circle cx="24" cy="-33" r="2.6" fill="#34342e"/></g><text x="30.96" y="10.75" text-anchor="start" font-size="30.959999999999997" font-weight="normal" style="font-family:Arial,Helvetica,sans-serif">2</text></g>
+<g transform="translate(1385.42 1565.78)" aria-label="N 5"><text x="0" y="0" text-anchor="start" font-size="43" font-weight="normal" style="font-family:Arial,Helvetica,sans-serif">N</text><text x="30.96" y="10.75" text-anchor="start" font-size="30.959999999999997" font-weight="normal" style="font-family:Arial,Helvetica,sans-serif">5</text></g>
+<g transform="translate(1064.47 1900.15)" aria-label="B 2"><text x="0" y="0" text-anchor="start" font-size="43" font-weight="normal" style="font-family:Arial,Helvetica,sans-serif">B</text><text x="30.96" y="10.75" text-anchor="start" font-size="30.959999999999997" font-weight="normal" style="font-family:Arial,Helvetica,sans-serif">2</text></g>
+<g transform="translate(529.43 1559.51)" aria-label="Vdot 1"><g transform="translate(0 0) scale(1.16216)"><path d="M 2,-26 L 12,0 L 24,-26" fill="none" stroke="#34342e" stroke-width="3.5" stroke-linejoin="round"/><circle cx="24" cy="-33" r="2.6" fill="#34342e"/></g><text x="30.96" y="10.75" text-anchor="start" font-size="30.959999999999997" font-weight="normal" style="font-family:Arial,Helvetica,sans-serif">1</text></g>
+<g transform="translate(1404.21 1684.24)" aria-label="N"><text x="0" y="0" text-anchor="start" font-size="43" font-weight="normal" style="font-family:Arial,Helvetica,sans-serif">N</text></g>
+<g transform="translate(1180.27 1876.15)" aria-label="B 1"><text x="0" y="0" text-anchor="start" font-size="43" font-weight="normal" style="font-family:Arial,Helvetica,sans-serif">B</text><text x="30.96" y="10.75" text-anchor="start" font-size="30.959999999999997" font-weight="normal" style="font-family:Arial,Helvetica,sans-serif">1</text></g>
+<path d="M987 1052L912.33 1006.91" stroke="#6f7167" stroke-width="1.8" fill="none"/>
+<path d="M584 1742L579.05 1834.24" stroke="#6f7167" stroke-width="1.8" fill="none"/>
+<path d="M1375 1752L1458.66 1696.87" stroke="#6f7167" stroke-width="1.8" fill="none"/>
+<path d="M874.02 1054.09 L874.04 1055.07 L874.08 1056.2 L874.12 1057.32 L874.18 1058.45 L874.25 1059.57 L874.33 1060.69 L874.42 1061.82 L874.52 1062.94 L874.64 1064.06 L874.76 1065.18 L874.9 1066.29 L875.04 1067.41 L875.2 1068.52 L875.36 1069.64 L875.54 1070.75 L875.73 1071.86 L875.93 1072.97 L876.14 1074.07 L876.36 1075.17 L876.59 1076.28 L876.83 1077.37 L877.09 1078.47 L877.35 1079.56 L877.62 1080.66 L877.91 1081.74 L878.2 1082.83 L878.51 1083.91 L878.82 1084.99 L879.15 1086.07 L879.48 1087.14 L879.83 1088.21 L880.19 1089.28 L880.56 1090.34 L880.93 1091.4 L881.32 1092.45 L881.72 1093.51 L882.13 1094.55 L882.55 1095.6 L882.97 1096.64 L883.41 1097.67 L883.86 1098.7 L884.32 1099.73 L884.79 1100.75 L885.27 1101.76 L885.75 1102.77 L886.25 1103.78 L886.76 1104.78 L887.28 1105.78 L887.8 1106.77 L888.34 1107.76 L888.58 1108.2" fill="none" stroke="#77786d" stroke-width="1.4"/>
+<path d="M1084.18 1110.67 L1084.43 1110.24 L1084.99 1109.26 L1085.54 1108.29 L1086.07 1107.3 L1086.6 1106.31 L1087.12 1105.32 L1087.63 1104.32 L1088.13 1103.32 L1088.62 1102.31 L1089.1 1101.29 L1089.57 1100.28 L1090.03 1099.25 L1090.48 1098.22 L1090.92 1097.19 L1091.36 1096.16 L1091.78 1095.12 L1092.19 1094.07 L1092.59 1093.02 L1092.98 1091.97 L1093.36 1090.91 L1093.73 1089.85 L1094.09 1088.79 L1094.44 1087.72 L1094.78 1086.65 L1095.1 1085.57 L1095.42 1084.49 L1095.73 1083.41 L1096.03 1082.33 L1096.31 1081.24 L1096.59 1080.15 L1096.85 1079.06 L1097.11 1077.96 L1097.35 1076.87 L1097.59 1075.77 L1097.81 1074.67 L1098.02 1073.56 L1098.22 1072.45 L1098.42 1071.35 L1098.6 1070.24 L1098.76 1069.12 L1098.92 1068.01 L1099.07 1066.89 L1099.21 1065.78 L1099.33 1064.66 L1099.45 1063.54 L1099.55 1062.42 L1099.65 1061.3 L1099.73 1060.18 L1099.8 1059.05 L1099.86 1057.93 L1099.91 1056.95" fill="none" stroke="#77786d" stroke-width="1.4"/>
+<path d="M777.35 1137.34 L778.09 1139.19 L778.95 1141.27 L779.83 1143.34 L780.72 1145.4 L781.64 1147.45 L782.58 1149.49 L783.53 1151.53 L784.51 1153.55 L785.5 1155.56 L786.52 1157.57 L787.55 1159.56 L788.61 1161.54 L789.68 1163.52 L790.77 1165.48 L791.88 1167.43 L793.01 1169.37 L794.16 1171.3 L795.32 1173.21 L796.51 1175.12 L797.71 1177.01 L798.93 1178.89 L800.17 1180.76 L801.43 1182.62 L802.71 1184.46 L803.13 1185.06" fill="none" stroke="#77786d" stroke-width="1.4"/>
+<path d="M1167.95 1189.67 L1168.38 1189.09 L1169.7 1187.27 L1171 1185.45 L1172.28 1183.61 L1173.54 1181.76 L1174.78 1179.9 L1176.01 1178.03 L1177.21 1176.14 L1178.4 1174.24 L1179.57 1172.33 L1180.73 1170.41 L1181.86 1168.47 L1182.98 1166.53 L1184.07 1164.57 L1185.15 1162.61 L1186.21 1160.63 L1187.24 1158.64 L1188.26 1156.64 L1189.26 1154.64 L1190.24 1152.62 L1191.2 1150.59 L1192.15 1148.55 L1193.07 1146.51 L1193.97 1144.45 L1194.75 1142.62" fill="none" stroke="#77786d" stroke-width="1.4"/>
+<path d="M697.16 1229.98 L697.74 1230.94 L699.49 1233.82 L701.26 1236.68 L703.07 1239.52 L704.9 1242.34 L706.76 1245.14 L708.65 1247.93 L710.56 1250.69 L712.5 1253.44 L714.47 1256.17 L716.46 1258.88 L718.48 1261.56 L720.52 1264.23 L722.59 1266.88 L724.69 1269.5 L726.81 1272.11 L728.73 1274.42" fill="none" stroke="#77786d" stroke-width="1.4"/>
+<path d="M1240.4 1280.88 L1242.37 1278.63 L1244.54 1276.08 L1246.7 1273.5 L1248.82 1270.91 L1250.92 1268.29 L1253 1265.66 L1255.05 1263 L1257.08 1260.32 L1259.08 1257.63 L1261.05 1254.91 L1262.99 1252.17 L1264.91 1249.42 L1266.81 1246.64 L1268.67 1243.85 L1270.51 1241.04 L1272.32 1238.21 L1272.92 1237.26" fill="none" stroke="#77786d" stroke-width="1.4"/>
+<path d="M630.68 1333.64 L631.7 1334.97 L634.46 1338.5 L637.25 1342.01 L640.08 1345.48 L642.94 1348.93 L645.84 1352.34 L648.77 1355.73 L651.73 1359.09 L654.72 1362.42 L657.74 1365.72 L660.8 1368.99 L663.89 1372.23 L666.96 1375.38" fill="none" stroke="#77786d" stroke-width="1.4"/>
+<path d="M1299.98 1383.38 L1303.11 1380.31 L1306.27 1377.15 L1309.4 1373.96 L1312.49 1370.73 L1315.55 1367.48 L1318.59 1364.2 L1321.59 1360.89 L1324.55 1357.54 L1327.49 1354.17 L1330.39 1350.77 L1333.26 1347.34 L1336.1 1343.88 L1337.15 1342.57" fill="none" stroke="#77786d" stroke-width="1.4"/>
+<path d="M578.81 1447.76 L579.25 1448.23 L583.11 1452.28 L587.01 1456.29 L590.95 1460.26 L594.92 1464.19 L598.94 1468.08 L602.99 1471.94 L607.07 1475.75 L611.2 1479.52 L615.36 1483.25 L619.55 1486.93 L619.57 1486.95" fill="none" stroke="#77786d" stroke-width="1.4"/>
+<path d="M1344.94 1496.12 L1344.96 1496.1 L1349.23 1492.52 L1353.47 1488.9 L1357.68 1485.24 L1361.85 1481.53 L1365.98 1477.78 L1370.08 1473.99 L1374.14 1470.16 L1378.16 1466.29 L1382.14 1462.38 L1386.09 1458.43 L1386.54 1457.97" fill="none" stroke="#77786d" stroke-width="1.4"/>
+<path d="M543.2 1571.4 L546.07 1573.92 L551.14 1578.29 L556.26 1582.62 L561.42 1586.89 L566.63 1591.11 L571.87 1595.28 L577.15 1599.4 L582.48 1603.46 L587.84 1607.47 L588.54 1607.99" fill="none" stroke="#77786d" stroke-width="1.4"/>
+<path d="M1373.35 1617.91 L1374.07 1617.41 L1379.51 1613.54 L1384.92 1609.61 L1390.29 1605.63 L1395.62 1601.59 L1400.92 1597.5 L1406.17 1593.36 L1411.38 1589.17 L1416.55 1584.92 L1419.47 1582.48" fill="none" stroke="#77786d" stroke-width="1.4"/>
+<path d="M585.37 1627.36 L585.24 1627.35 L584.13 1627.35 L583.02 1627.35 L581.91 1627.36 L580.8 1627.39 L579.69 1627.42 L578.58 1627.47 L577.47 1627.53 L576.37 1627.6 L575.26 1627.68 L574.16 1627.77 L573.05 1627.87 L571.95 1627.98 L570.84 1628.11 L569.74 1628.24 L568.64 1628.39 L567.54 1628.54 L566.45 1628.71 L565.35 1628.89 L564.26 1629.08 L563.17 1629.28 L562.08 1629.49 L560.99 1629.71 L559.91 1629.95 L558.82 1630.19 L557.74 1630.44 L556.67 1630.71 L555.59 1630.98 L554.52 1631.27 L553.45 1631.57 L552.38 1631.88 L551.32 1632.2 L550.26 1632.52 L549.2 1632.86 L548.15 1633.21 L547.1 1633.58 L546.05 1633.95 L545.01 1634.33 L543.97 1634.72 L542.93 1635.12 L541.9 1635.53 L540.87 1635.96 L539.85 1636.39 L538.83 1636.83 L537.81 1637.29 L536.8 1637.75 L535.8 1638.22 L534.8 1638.71 L533.8 1639.2 L532.81 1639.71 L531.82 1640.22 L531.61 1640.33" fill="none" stroke="#77786d" stroke-width="1.4"/>
+<path d="M642.42 1840.23 L642.94 1839.92 L643.88 1839.33 L644.82 1838.73 L645.75 1838.12 L646.68 1837.5 L647.6 1836.87 L648.51 1836.24 L649.42 1835.59 L650.32 1834.93 L651.22 1834.27 L652.1 1833.6 L652.99 1832.92 L653.86 1832.23 L654.73 1831.53 L655.59 1830.82 L656.45 1830.1 L657.29 1829.38 L658.14 1828.65 L658.97 1827.91 L659.8 1827.16 L660.62 1826.4 L661.43 1825.63 L662.23 1824.86 L663.03 1824.08 L663.82 1823.29 L664.6 1822.49 L665.37 1821.68 L666.14 1820.87 L666.9 1820.05 L667.65 1819.22 L668.39 1818.39 L669.12 1817.54 L669.85 1816.69 L670.57 1815.83 L671.27 1814.97 L671.97 1814.1 L672.67 1813.22 L673.35 1812.33 L674.03 1811.44 L674.69 1810.54 L675.35 1809.64 L676 1808.72 L676.64 1807.81 L677.27 1806.88 L677.89 1805.95 L678.5 1805.01 L679.11 1804.07 L679.7 1803.12 L680.29 1802.16 L680.86 1801.2 L681.31 1800.45" fill="none" stroke="#77786d" stroke-width="1.4"/>
+<path d="M610.8 1514.35 L608.61 1514.09 L606.41 1513.86 L604.2 1513.64 L601.99 1513.45 L599.77 1513.28 L597.56 1513.13 L595.35 1513 L593.13 1512.89 L590.91 1512.81 L588.69 1512.75 L586.47 1512.71 L584.26 1512.69 L582.04 1512.7 L579.82 1512.72 L577.6 1512.77 L575.38 1512.85 L573.17 1512.94 L570.95 1513.05 L568.73 1513.19 L566.52 1513.35 L564.31 1513.53 L562.1 1513.74 L559.89 1513.96 L557.69 1514.21 L557.19 1514.27" fill="none" stroke="#77786d" stroke-width="1.4"/>
+<path d="M761.94 1883.66 L762.7 1882.67 L764.05 1880.88 L765.38 1879.09 L766.7 1877.27 L768 1875.45 L769.28 1873.61 L770.54 1871.76 L771.78 1869.9 L773.01 1868.03 L774.21 1866.14 L775.4 1864.24 L776.57 1862.33 L777.73 1860.41 L778.86 1858.47 L779.98 1856.53 L781.07 1854.57 L782.15 1852.61 L783.21 1850.63 L784.24 1848.64 L785.26 1846.64 L786.26 1844.64 L787.24 1842.62 L788.2 1840.59 L789.15 1838.55 L789.75 1837.2" fill="none" stroke="#77786d" stroke-width="1.4"/>
+<path d="M652.34 1405.21 L650.52 1404.83 L647.25 1404.17 L643.98 1403.56 L640.7 1402.97 L637.41 1402.42 L634.12 1401.89 L630.83 1401.41 L627.53 1400.95 L624.23 1400.53 L620.92 1400.14 L617.61 1399.78 L614.3 1399.46 L610.98 1399.17 L607.66 1398.91 L604.34 1398.69 L601.02 1398.5 L598.81 1398.39" fill="none" stroke="#77786d" stroke-width="1.4"/>
+<path d="M881.23 1907.9 L882.81 1904.94 L884.37 1901.96 L885.9 1898.97 L887.39 1895.95 L888.87 1892.93 L890.31 1889.88 L891.72 1886.83 L893.1 1883.76 L894.45 1880.67 L895.77 1877.58 L897.07 1874.47 L898.33 1871.35 L899.56 1868.21 L900.76 1865.06 L901.93 1861.9 L903.07 1858.73 L903.33 1858.01" fill="none" stroke="#77786d" stroke-width="1.4"/>
+<path d="M709.97 1301.75 L707.19 1300.93 L702.91 1299.72 L698.63 1298.55 L694.33 1297.42 L690.02 1296.34 L685.7 1295.3 L681.37 1294.3 L677.03 1293.35 L672.69 1292.43 L668.33 1291.57 L663.97 1290.74 L659.6 1289.96 L656.49 1289.44" fill="none" stroke="#77786d" stroke-width="1.4"/>
+<path d="M1003.03 1914.64 L1003.11 1914.46 L1004.75 1910.28 L1006.35 1906.08 L1007.91 1901.87 L1009.43 1897.64 L1010.91 1893.4 L1012.35 1889.14 L1013.75 1884.87 L1015.1 1880.59 L1016.41 1876.29 L1017.69 1871.98 L1018.92 1867.65 L1020.11 1863.32 L1020.47 1861.93" fill="none" stroke="#77786d" stroke-width="1.4"/>
+<path d="M783.64 1206.02 L780.17 1204.69 L774.96 1202.75 L769.73 1200.87 L764.48 1199.04 L759.21 1197.26 L753.93 1195.53 L748.63 1193.86 L743.32 1192.23 L737.99 1190.67 L732.64 1189.15 L730.23 1188.49" fill="none" stroke="#77786d" stroke-width="1.4"/>
+<path d="M1126.44 1903.3 L1127.65 1899.07 L1129.13 1893.65 L1130.56 1888.21 L1131.94 1882.76 L1133.27 1877.3 L1134.55 1871.82 L1135.77 1866.34 L1136.94 1860.84 L1138.05 1855.33 L1139.11 1849.8 L1139.45 1847.94" fill="none" stroke="#77786d" stroke-width="1.4"/>
+<path d="M873.37 1120.32 L868.56 1118.03 L862.51 1115.22 L856.43 1112.46 L850.32 1109.77 L844.18 1107.14 L838.02 1104.57 L831.84 1102.06 L825.63 1099.61 L820.02 1097.46" fill="none" stroke="#77786d" stroke-width="1.4"/>
+<path d="M1249.84 1872.93 L1250.14 1871.36 L1251.35 1864.72 L1252.49 1858.07 L1253.57 1851.41 L1254.59 1844.74 L1255.54 1838.05 L1256.43 1831.36 L1257.25 1824.66 L1258.01 1817.95 L1258.33 1814.83" fill="none" stroke="#77786d" stroke-width="1.4"/>
+<path d="M1429.57 1651.68 L1429.36 1651.57 L1428.38 1651.03 L1427.4 1650.5 L1426.42 1649.98 L1425.43 1649.47 L1424.43 1648.97 L1423.43 1648.48 L1422.43 1648 L1421.42 1647.54 L1420.4 1647.08 L1419.39 1646.63 L1418.36 1646.19 L1417.34 1645.76 L1416.31 1645.34 L1415.27 1644.94 L1414.23 1644.54 L1413.19 1644.15 L1412.15 1643.77 L1411.1 1643.41 L1410.04 1643.05 L1408.99 1642.71 L1407.93 1642.37 L1406.86 1642.05 L1405.8 1641.73 L1404.73 1641.43 L1403.66 1641.14 L1402.58 1640.86 L1401.51 1640.58 L1400.43 1640.32 L1399.34 1640.08 L1398.26 1639.84 L1397.17 1639.61 L1396.08 1639.39 L1394.99 1639.19 L1393.9 1638.99 L1392.8 1638.81 L1391.71 1638.63 L1390.61 1638.47 L1389.51 1638.32 L1388.41 1638.18 L1387.31 1638.05 L1386.2 1637.93 L1385.1 1637.82 L1383.99 1637.72 L1382.89 1637.64 L1381.78 1637.56 L1380.67 1637.5 L1379.56 1637.45 L1378.46 1637.4 L1377.35 1637.37 L1376.24 1637.35 L1376.11 1637.35" fill="none" stroke="#77786d" stroke-width="1.4"/>
+<path d="M1276.46 1807.97 L1276.89 1808.74 L1277.44 1809.71 L1278.01 1810.68 L1278.58 1811.65 L1279.16 1812.61 L1279.75 1813.56 L1280.36 1814.51 L1280.97 1815.45 L1281.59 1816.38 L1282.22 1817.31 L1282.85 1818.23 L1283.5 1819.15 L1284.16 1820.06 L1284.82 1820.96 L1285.49 1821.85 L1286.17 1822.74 L1286.86 1823.63 L1287.56 1824.5 L1288.27 1825.37 L1288.99 1826.23 L1289.71 1827.09 L1290.44 1827.93 L1291.18 1828.77 L1291.93 1829.6 L1292.69 1830.43 L1293.45 1831.25 L1294.22 1832.06 L1295 1832.86 L1295.79 1833.65 L1296.58 1834.44 L1297.39 1835.22 L1298.2 1835.99 L1299.01 1836.75 L1299.84 1837.5 L1300.67 1838.25 L1301.51 1838.99 L1302.36 1839.72 L1303.21 1840.44 L1304.07 1841.15 L1304.94 1841.85 L1305.81 1842.55 L1306.69 1843.23 L1307.58 1843.91 L1308.47 1844.58 L1309.37 1845.24 L1310.28 1845.89 L1311.19 1846.53 L1312.11 1847.16 L1313.04 1847.79 L1313.97 1848.4 L1314.47 1848.73" fill="none" stroke="#77786d" stroke-width="1.4"/>
+<path d="M1406.71 1525.01 L1406.22 1524.94 L1404.02 1524.63 L1401.82 1524.35 L1399.61 1524.09 L1397.41 1523.86 L1395.2 1523.64 L1392.99 1523.45 L1390.77 1523.28 L1388.56 1523.13 L1386.35 1523 L1384.13 1522.89 L1381.91 1522.81 L1379.69 1522.75 L1377.47 1522.71 L1375.26 1522.69 L1373.04 1522.7 L1370.82 1522.72 L1368.6 1522.77 L1366.38 1522.85 L1364.17 1522.94 L1361.95 1523.05 L1359.73 1523.19 L1357.52 1523.35 L1355.31 1523.53 L1353.12 1523.74" fill="none" stroke="#77786d" stroke-width="1.4"/>
+<path d="M1167.25 1841.97 L1167.83 1843.34 L1168.72 1845.4 L1169.64 1847.45 L1170.58 1849.49 L1171.53 1851.53 L1172.51 1853.55 L1173.5 1855.56 L1174.52 1857.57 L1175.55 1859.56 L1176.61 1861.54 L1177.68 1863.52 L1178.77 1865.48 L1179.88 1867.43 L1181.01 1869.37 L1182.16 1871.3 L1183.32 1873.21 L1184.51 1875.12 L1185.71 1877.01 L1186.93 1878.89 L1188.17 1880.76 L1189.43 1882.62 L1190.71 1884.46 L1192 1886.29 L1193.31 1888.11 L1194.05 1889.12" fill="none" stroke="#77786d" stroke-width="1.4"/>
+<path d="M1367.61 1408.11 L1365.4 1408.16 L1362.07 1408.27 L1358.75 1408.41 L1355.42 1408.58 L1352.1 1408.79 L1348.78 1409.03 L1345.47 1409.3 L1342.15 1409.61 L1338.84 1409.94 L1335.53 1410.32 L1332.23 1410.72 L1328.93 1411.16 L1325.63 1411.63 L1322.34 1412.13 L1319.06 1412.67 L1315.78 1413.24 L1313.94 1413.57" fill="none" stroke="#77786d" stroke-width="1.4"/>
+<path d="M1053.26 1859.9 L1053.49 1860.63 L1054.57 1863.83 L1055.67 1867.02 L1056.8 1870.2 L1057.97 1873.36 L1059.16 1876.52 L1060.38 1879.66 L1061.64 1882.79 L1062.92 1885.91 L1064.24 1889.01 L1065.59 1892.1 L1066.96 1895.18 L1068.37 1898.24 L1069.8 1901.29 L1071.26 1904.32 L1072.76 1907.35 L1074.27 1910.34" fill="none" stroke="#77786d" stroke-width="1.4"/>
+<path d="M1312.29 1297.73 L1309.18 1298.17 L1304.79 1298.84 L1300.41 1299.56 L1296.04 1300.31 L1291.67 1301.12 L1287.32 1301.96 L1282.97 1302.85 L1278.63 1303.78 L1274.29 1304.76 L1269.97 1305.77 L1265.66 1306.83 L1261.36 1307.94 L1258.57 1308.68" fill="none" stroke="#77786d" stroke-width="1.4"/>
+<path d="M936.06 1860.87 L936.4 1862.26 L937.49 1866.62 L938.63 1870.98 L939.81 1875.32 L941.03 1879.65 L942.29 1883.97 L943.59 1888.27 L944.94 1892.57 L946.33 1896.85 L947.75 1901.11 L949.22 1905.36 L950.74 1909.6 L952.29 1913.82 L952.36 1914" fill="none" stroke="#77786d" stroke-width="1.4"/>
+<path d="M1240.75 1194.95 L1238.33 1195.54 L1232.95 1196.92 L1227.59 1198.36 L1222.24 1199.84 L1216.91 1201.38 L1211.59 1202.98 L1206.29 1204.62 L1201 1206.32 L1195.73 1208.07 L1190.48 1209.88 L1186.98 1211.12" fill="none" stroke="#77786d" stroke-width="1.4"/>
+<path d="M817.41 1843.86 L817.71 1845.74 L818.65 1851.29 L819.65 1856.83 L820.7 1862.35 L821.8 1867.87 L822.96 1873.38 L824.17 1878.87 L825.43 1884.35 L826.74 1889.82 L828.11 1895.28 L829.23 1899.55" fill="none" stroke="#77786d" stroke-width="1.4"/>
+<path d="M1152.96 1101.67 L1147.3 1103.68 L1141.04 1105.97 L1134.8 1108.32 L1128.59 1110.73 L1122.4 1113.21 L1116.23 1115.75 L1110.09 1118.35 L1103.98 1121.01 L1099.12 1123.17" fill="none" stroke="#77786d" stroke-width="1.4"/>
+<path d="M699.28 1807.77 L699.54 1810.89 L700.15 1817.62 L700.83 1824.34 L701.57 1831.05 L702.38 1837.76 L703.25 1844.45 L704.19 1851.14 L705.19 1857.82 L706.25 1864.49 L706.52 1866.06" fill="none" stroke="#77786d" stroke-width="1.4"/>
+</svg>
