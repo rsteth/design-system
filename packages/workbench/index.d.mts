@@ -30,7 +30,7 @@ export interface WorkbenchCollection {
   inventory?: string;
   inventoryData?: Inventory;
   themes: string[];
-  source: {repository: string; revision: string; path: string};
+  source: {repository: string; revision: string | null; path: string; publicVersion?: string; withheldRevisions?: string[]};
   provenance: {
     status: 'author-owned' | 'independent-analysis' | 'adapted';
     sources: Array<string | {title?: string; url: string}>;
@@ -39,6 +39,7 @@ export interface WorkbenchCollection {
   fixtures: CollectionFixture[];
   tokensData?: WorkbenchTokenDocument;
   manifestURL?: string;
+  publicRelease?: {status?: string};
 }
 export interface WorkbenchOptions { searchCollections?: boolean; onCollectionChange?: (id: string) => void; collections?: WorkbenchCollection[]; title?: string; skin?: string; initialCollection?: string; initialSection?: WorkbenchSection; }
 export interface WorkbenchHandle { setSkin(skin: string): void; destroy(): void; setCollections(collections: WorkbenchCollection[]): void; }
@@ -54,7 +55,8 @@ export function mountWorkbench(container: Element, options?: WorkbenchOptions): 
 export interface Inventory {
  schemaVersion: 1;
  application: string;
- reviewedRevision: string;
+ reviewedRevision: string | null;
+ withheldRevisions?: string[];
  items: Array<{id: string; title: string; kind: 'component'|'pattern'|'screen'|'domain'|'external'; source: string[]; fixtures: string[]; states: string[]; coverage: 'covered'|'partial'|'excluded'|'blocked'; notes: string}>;
  checks: Array<{id: string; label: string; command: string; status: 'passed'|'failed'|'not-run'; scope: string; evidence?: string}>;
 }

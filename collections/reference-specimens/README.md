@@ -6,4 +6,4 @@ Each study exposes components, an interactive filtering pattern, and a screen vi
 
 `manifest.json` is the importer's registration contract. `provenance.evidence` names unverified source claims; `provenance.inferred` identifies original decisions. Exact source colors are preserved where selected, not silently replaced with a universal palette. Source asset references are deliberately excluded.
 
-Source: VoltAgent/awesome-design-md, MIT analysis text at fcc70284932276d085f01ef9f83edde90b1258cb. See imported collection source notices for retained attribution. Original specimen code remains under the design-system repository's existing licensing posture, not an inferred license grant from a brand.
+Source: VoltAgent/awesome-design-md, MIT analysis text at fcc70284932276d085f01ef9f83edde90b1258cb. See imported collection source notices for retained attribution. Robin Stethem's original neutral specimen code is covered by the root [MIT License](../../LICENSE) and [license scope](../../LICENSING.md). This is not a license grant from a brand, and does not relicense upstream analyses or third-party assets.

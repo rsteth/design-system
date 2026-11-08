@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "application": "stethem",
-  "reviewedRevision": "8c1df30677eb880f7226c704226d988f19b30a9c",
+  "reviewedRevision": null,
   "items": [
     {
       "id": "portfolio",
@@ -588,5 +588,8 @@
       "scope": "Original noscript copy and disabled controls for both studies and archive at both widths",
       "evidence": "design/evidence/nojs.json"
     }
+  ],
+  "withheldRevisions": [
+    "reviewedRevision"
   ]
 }

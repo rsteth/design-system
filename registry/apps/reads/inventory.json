@@ -1,0 +1,294 @@
+{
+  "schemaVersion": 1,
+  "application": "reads",
+  "reviewedRevision": null,
+  "items": [
+    {
+      "id": "landing",
+      "title": "Landing and waiting-list availability",
+      "kind": "screen",
+      "source": [
+        "public/index.html",
+        "public/style.css",
+        "public/app.js",
+        "design/fixtures.mjs",
+        "design/fixture-entry.mjs"
+      ],
+      "fixtures": [
+        "landing"
+      ],
+      "states": [
+        "signed out",
+        "scroll header",
+        "disclosure"
+      ],
+      "coverage": "covered",
+      "notes": "Real production UI with synthetic transport, not live account/provider acceptance."
+    },
+    {
+      "id": "waitlist",
+      "title": "Waiting-list dialog",
+      "kind": "pattern",
+      "source": [
+        "public/index.html",
+        "public/style.css",
+        "public/app.js",
+        "design/fixtures.mjs",
+        "design/fixture-entry.mjs"
+      ],
+      "fixtures": [
+        "waitlist"
+      ],
+      "states": [
+        "open",
+        "close",
+        "validation",
+        "synthetic submit"
+      ],
+      "coverage": "covered",
+      "notes": "Real production UI with synthetic transport, not live account/provider acceptance."
+    },
+    {
+      "id": "studio-empty",
+      "title": "Empty studio",
+      "kind": "screen",
+      "source": [
+        "public/index.html",
+        "public/style.css",
+        "public/app.js",
+        "design/fixtures.mjs",
+        "design/fixture-entry.mjs"
+      ],
+      "fixtures": [
+        "studio-empty"
+      ],
+      "states": [
+        "empty",
+        "example",
+        "preflight"
+      ],
+      "coverage": "covered",
+      "notes": "Real production UI with synthetic transport, not live account/provider acceptance."
+    },
+    {
+      "id": "studio-ready",
+      "title": "Saved listen",
+      "kind": "screen",
+      "source": [
+        "public/index.html",
+        "public/style.css",
+        "public/app.js",
+        "design/fixtures.mjs",
+        "design/fixture-entry.mjs"
+      ],
+      "fixtures": [
+        "studio-ready"
+      ],
+      "states": [
+        "completed",
+        "playback",
+        "download",
+        "delete"
+      ],
+      "coverage": "covered",
+      "notes": "Real production UI with synthetic transport, not live account/provider acceptance."
+    },
+    {
+      "id": "studio-progress",
+      "title": "Read in progress",
+      "kind": "screen",
+      "source": [
+        "public/index.html",
+        "public/style.css",
+        "public/app.js",
+        "design/fixtures.mjs",
+        "design/fixture-entry.mjs"
+      ],
+      "fixtures": [
+        "studio-progress"
+      ],
+      "states": [
+        "running",
+        "cancel",
+        "retry"
+      ],
+      "coverage": "covered",
+      "notes": "Real production UI with synthetic transport, not live account/provider acceptance."
+    },
+    {
+      "id": "studio-failed",
+      "title": "Recoverable failed read",
+      "kind": "screen",
+      "source": [
+        "public/index.html",
+        "public/style.css",
+        "public/app.js",
+        "design/fixtures.mjs",
+        "design/fixture-entry.mjs"
+      ],
+      "fixtures": [
+        "studio-failed"
+      ],
+      "states": [
+        "failed",
+        "retry"
+      ],
+      "coverage": "covered",
+      "notes": "Real production UI with synthetic transport, not live account/provider acceptance."
+    },
+    {
+      "id": "studio-draining",
+      "title": "Draining studio",
+      "kind": "screen",
+      "source": [
+        "public/index.html",
+        "public/style.css",
+        "public/app.js",
+        "design/fixtures.mjs",
+        "design/fixture-entry.mjs"
+      ],
+      "fixtures": [
+        "studio-draining"
+      ],
+      "states": [
+        "disabled admission",
+        "saved work"
+      ],
+      "coverage": "covered",
+      "notes": "Real production UI with synthetic transport, not live account/provider acceptance."
+    },
+    {
+      "id": "studio-disconnected",
+      "title": "Login-only studio",
+      "kind": "screen",
+      "source": [
+        "public/index.html",
+        "public/style.css",
+        "public/app.js",
+        "design/fixtures.mjs",
+        "design/fixture-entry.mjs"
+      ],
+      "fixtures": [
+        "studio-disconnected"
+      ],
+      "states": [
+        "provider disconnected",
+        "disabled controls"
+      ],
+      "coverage": "covered",
+      "notes": "Real production UI with synthetic transport, not live account/provider acceptance."
+    },
+    {
+      "id": "voice-sample",
+      "title": "Saved voice recording",
+      "kind": "pattern",
+      "source": [
+        "public/index.html",
+        "public/style.css",
+        "public/app.js",
+        "design/fixtures.mjs",
+        "design/fixture-entry.mjs"
+      ],
+      "fixtures": [
+        "voice-sample"
+      ],
+      "states": [
+        "sample saved",
+        "disclosure",
+        "form controls"
+      ],
+      "coverage": "partial",
+      "notes": "Saved profile, original synthetic audio and disclosure/form rendering are covered. Creating/deleting a profile is not modeled by this fixture."
+    },
+    {
+      "id": "hosted-consent",
+      "title": "Hosted narration consent",
+      "kind": "pattern",
+      "source": [
+        "public/index.html",
+        "public/style.css",
+        "public/app.js",
+        "design/fixtures.mjs",
+        "design/fixture-entry.mjs"
+      ],
+      "fixtures": [
+        "hosted-consent"
+      ],
+      "states": [
+        "explicit consent",
+        "estimate",
+        "required consent"
+      ],
+      "coverage": "covered",
+      "notes": "Real production UI with synthetic transport, not live account/provider acceptance."
+    },
+    {
+      "id": "hosted-review",
+      "title": "Uncertain hosted outcome",
+      "kind": "screen",
+      "source": [
+        "public/index.html",
+        "public/style.css",
+        "public/app.js",
+        "design/fixtures.mjs",
+        "design/fixture-entry.mjs"
+      ],
+      "fixtures": [
+        "hosted-review"
+      ],
+      "states": [
+        "needs review",
+        "no automatic retry"
+      ],
+      "coverage": "covered",
+      "notes": "Real production UI with synthetic transport, not live account/provider acceptance."
+    },
+    {
+      "id": "live-services",
+      "title": "Live identity and voice providers",
+      "kind": "external",
+      "source": [
+        "src/auth.js",
+        "src/providers.js",
+        "src/server.js"
+      ],
+      "fixtures": [],
+      "states": [],
+      "coverage": "excluded",
+      "notes": "No live identity, waitlist storage, provider calls, deployment or credentials are used by design fixtures."
+    }
+  ],
+  "checks": [
+    {
+      "id": "syntax",
+      "label": "Application syntax/build",
+      "command": "npm run build",
+      "scope": "Recorded November 7, 2026: existing JavaScript syntax gate; not TypeScript compilation.",
+      "status": "passed"
+    },
+    {
+      "id": "unit",
+      "label": "Full application tests",
+      "command": "npm test",
+      "scope": "Recorded November 7, 2026: 184 tests passed, including four design fixture isolation tests.",
+      "status": "passed"
+    },
+    {
+      "id": "design-browser",
+      "label": "Design fixture browser coverage",
+      "command": "npm run test:design-browser",
+      "scope": "Recorded November 7, 2026: eleven fixtures at 1440, 390 and 320 pixels, sandboxed frames, repeated/interrupted flows; synthetic only.",
+      "status": "passed"
+    },
+    {
+      "id": "runtime-browser",
+      "label": "Existing runtime browser journey",
+      "command": "npm run test:browser",
+      "scope": "Recorded November 7, 2026: three viewport journeys with synthetic OIDC, fake tones, recording upload, download, logout and offline state.",
+      "status": "passed"
+    }
+  ],
+  "withheldRevisions": [
+    "reviewedRevision"
+  ]
+}

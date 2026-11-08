@@ -1,0 +1,33 @@
+{
+  "retrieved": "2026-10-25",
+  "stylesheet": "https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Space+Grotesk:wght@300..700&family=Space+Mono&display=swap",
+  "fonts": [
+    {
+      "family": "Inter",
+      "file": "inter-latin.woff2",
+      "source": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2",
+      "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/inter/OFL.txt",
+      "font_weight": "100 900",
+      "sha256": "3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62",
+      "bytes": 48256
+    },
+    {
+      "family": "Space Grotesk",
+      "file": "space-grotesk-latin.woff2",
+      "source": "https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2",
+      "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/spacegrotesk/OFL.txt",
+      "font_weight": "300 700",
+      "sha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d",
+      "bytes": 22288
+    },
+    {
+      "family": "Space Mono",
+      "file": "space-mono-latin.woff2",
+      "source": "https://fonts.gstatic.com/s/spacemono/v17/i7dPIFZifjKcF5UAWdDRYEF8RQ.woff2",
+      "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/spacemono/OFL.txt",
+      "font_weight": "400",
+      "sha256": "fb4a81a2d0a893e5c38c394a7e716a1cef0b24610a0af49c96f6d529bd66bf2b",
+      "bytes": 16520
+    }
+  ]
+}

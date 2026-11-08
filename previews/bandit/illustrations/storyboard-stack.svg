@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="150" viewBox="0 0 120 75" shape-rendering="crispEdges">
+  <!-- Decorative storyboard cards, not generated media or production status. -->
+  <defs>
+    <pattern id="grain" width="4" height="4" patternUnits="userSpaceOnUse">
+      <path d="M0 0h1v1H0zM2 2h1v1H2z" fill="#302e28" opacity=".12"/>
+    </pattern>
+    <g id="card">
+      <path d="M14 36 60 13 106 36 60 59Z" fill="#c0c7ac"/>
+      <path d="M14 36 60 59V65L14 42Z" fill="#7f8b6e"/>
+      <path d="M60 59 106 36V42L60 65Z" fill="#66745f"/>
+      <path d="M14 36 60 13 106 36 60 59Z" fill="url(#grain)"/>
+      <path d="m36 36 24-12 24 12-24 12Z" fill="#f6f3eb"/>
+      <path d="m48 36 12-6 12 6-12 6Z" fill="#db9672"/>
+    </g>
+  </defs>
+  <path d="m12 53 48-24 48 24-48 24Z" fill="url(#grain)"/>
+  <use href="#card" transform="translate(0 6)"/>
+  <use href="#card" transform="translate(0 -4)"/>
+  <use href="#card" transform="translate(0 -14)"/>
+</svg>

@@ -12,8 +12,12 @@
   ],
   "source": {
     "repository": "https://github.com/rsteth/focus-speed-reader",
-    "revision": "eaa95bf1316f5e5fcd8a7e9600eafaa2e52665f0",
-    "path": "."
+    "revision": null,
+    "path": ".",
+    "withheldRevisions": [
+      "revision"
+    ],
+    "publicVersion": "0.0.0"
   },
   "provenance": {
     "status": "author-owned",
@@ -261,18 +265,22 @@
   "inventory": "inventory.json",
   "registrySnapshot": {
     "authority": "App-owned design collection, tokens and optional inventory",
-    "baseRevision": "eaa95bf1316f5e5fcd8a7e9600eafaa2e52665f0",
-    "inventorySha256": "385a3ecbe5a05edb8a6bdd21decc611bf10492b7b6b34fe385d7146ac7c4cca9",
+    "baseRevision": null,
+    "inventorySha256": "50f154c7f4811fa74cf39b9883c3e59ad285902b73482afa34ddc82d14205e79",
     "tokenSha256": "242f96e6bf0a13aaed72ccb45add9889cfb9cd989217112e6f9574b4df0de73e",
     "integrationStatus": "unpublished-local-feature-commit",
-    "integrationRevision": "e0027eed7a6c1d7860559a8fd5eeb126ea7fc34e"
+    "integrationRevision": null,
+    "withheldRevisions": [
+      "baseRevision",
+      "integrationRevision"
+    ]
   },
   "publicRelease": {
     "status": "static-app-owned-fixtures",
     "source": {
-      "revision": "e0027eed7a6c1d7860559a8fd5eeb126ea7fc34e",
-      "dirty": true,
-      "sourceTreeSha256": "d7286779fdff7c16bffe8def168c36dba9cd27f82bd23422163d31847b40773e"
+      "repository": "https://github.com/rsteth/focus-speed-reader.git",
+      "version": "0.0.0",
+      "status": "synthetic-preview"
     },
     "epubMode": "fixture-only",
     "limitation": "Public fixture preview: EPUB states use authored sample text. Real EPUB parsing is not included; uploaded files are not parsed by this preview.",

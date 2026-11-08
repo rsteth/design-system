@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "application": "focus",
-  "reviewedRevision": "ded1c6a3c8fa6fb10d61e66af83ff81cd770cf56",
+  "reviewedRevision": null,
   "items": [
     {
       "id": "app",
@@ -459,5 +459,8 @@
       "scope": "Real parser, IndexedDB, backup, restore, delete, progress",
       "evidence": "review/workbench/production-library.json"
     }
+  ],
+  "withheldRevisions": [
+    "reviewedRevision"
   ]
 }

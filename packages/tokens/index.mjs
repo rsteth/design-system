@@ -83,7 +83,7 @@ export function validateInventory(input, collection) {
   if (input.schemaVersion !== 1) errors.push('Inventory schemaVersion must be 1.');
   if (!idPattern.test(input.application ?? '')) errors.push('Invalid inventory application.');
   if (collection && input.application !== collection.id) errors.push('Inventory application must match collection id.');
-  if (!/^[a-f0-9]{40}$/.test(input.reviewedRevision ?? '')) errors.push('Inventory reviewedRevision must be a full commit SHA.');
+  if (!(/^[a-f0-9]{40}$/.test(input.reviewedRevision ?? '') || (input.reviewedRevision === null && Array.isArray(input.withheldRevisions) && input.withheldRevisions.includes('reviewedRevision')))) errors.push('Inventory reviewedRevision must be a full commit SHA, or explicitly withheld in a public snapshot.');
   const fixtures = new Set((collection?.fixtures ?? []).map(item => item.id));
   for (const group of ['items','checks']) {
     if (!Array.isArray(input[group])) { errors.push(`Inventory ${group} must be an array.`); continue; }

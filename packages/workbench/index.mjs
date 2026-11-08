@@ -164,7 +164,7 @@ export function mountWorkbench(container, options = {}) {
   }
   function sources(collection) {
     const data = element('dl', { class: 'wb-metadata' });
-    for (const [name, value] of Object.entries({ Kind: collection.kind, Renderer: collection.renderer, Revision: collection.source?.revision, Path: collection.source?.path, Provenance: collection.provenance?.status, License: collection.license?.spdx })) data.append(element('dt', {}, name), element('dd', {}, String(value ?? 'Not recorded')));
+    for (const [name, value] of Object.entries({ Kind: collection.kind, Renderer: collection.renderer, ...(collection.source?.publicVersion ? {Version: collection.source.publicVersion} : {Revision: collection.source?.revision ?? (collection.source?.withheldRevisions?.includes('revision') ? 'Not publicly verified (withheld)' : undefined)}), Path: collection.source?.path, Provenance: collection.provenance?.status, ...(collection.publicRelease?.status ? {Preview: collection.publicRelease.status} : {}), License: collection.license?.spdx })) data.append(element('dt', {}, name), element('dd', {}, String(value ?? 'Not recorded')));
     return element('article', { class: 'wb-panel' }, element('h2', {}, 'Source & provenance'), note('The source app remains the authority for its UI. Reference collections must not imply authorship or redistribution rights.'), data,
       collection.source?.repository ? sourceLink('Source repository ↗', collection.source.repository) : note('No source repository recorded.'),
       note(collection.license?.note ?? 'No license note recorded.'), element('h3', {}, 'Reference sources'), ...(collection.provenance?.sources ?? []).map(source => typeof source === 'string' ? sourceLink(source, source) : sourceLink(source.title ?? source.url ?? 'Source', source.url)),
@@ -202,7 +202,7 @@ export function mountWorkbench(container, options = {}) {
     panel.append(note('Authored coverage and recorded evidence only. This view does not run checks or certify completeness, accessibility, visual fidelity, or live success.'));
     if (!inventory) { panel.append(note('No inventory recorded. Coverage is unknown.')); return panel; }
     const items = inventory.items ?? [];
-    panel.append(note(`Reviewed revision: ${inventory.reviewedRevision ?? 'Not recorded'}`));
+    panel.append(note(collection.source?.publicVersion ? `Preview version: ${collection.source.publicVersion}` : `Reviewed revision: ${inventory.reviewedRevision ?? (inventory.withheldRevisions?.includes('reviewedRevision') ? 'Not publicly verified (withheld)' : 'Not recorded')}`));
     panel.append(note(items.length ? `${items.length} recorded items · ${['covered','partial','excluded','blocked'].map(status => `${items.filter(item => item.coverage === status).length} ${status}`).join(' · ')}` : 'Empty inventory. Coverage is unknown, not complete.'));
     function table(headers, rows) {
       return element('div', { class: 'wb-table-scroll' }, element('table', { class: 'wb-tokens' }, element('thead', {}, element('tr', {}, ...headers.map(label => element('th', { scope: 'col' }, label)))), element('tbody', {}, ...rows.map(row => element('tr', {}, ...row.map(text => element('td', {}, String(text ?? 'Not recorded'))))))));
@@ -214,7 +214,7 @@ export function mountWorkbench(container, options = {}) {
     return panel;
   }
   function checks(collection) {
-    const checks = [ ['Schema version', collection.schemaVersion === 1], ['Source revision recorded', Boolean(collection.source?.revision)], ['License recorded', Boolean(collection.license?.spdx)], ['Provenance recorded', Boolean(collection.provenance?.status)], ['Tokens loaded', Boolean(collection.tokensData)], ['Fixture URLs use HTTP(S)', (collection.fixtures ?? []).every(fixture => { try { safeURL(fixture.url); return true; } catch { return false; } })] ];
+    const checks = [ ['Schema version', collection.schemaVersion === 1], [collection.source?.publicVersion ? 'Source version recorded' : 'Source revision recorded', Boolean(collection.source?.publicVersion ?? collection.source?.revision)], ['License recorded', Boolean(collection.license?.spdx)], ['Provenance recorded', Boolean(collection.provenance?.status)], ['Tokens loaded', Boolean(collection.tokensData)], ['Fixture URLs use HTTP(S)', (collection.fixtures ?? []).every(fixture => { try { safeURL(fixture.url); return true; } catch { return false; } })] ];
     return element('article', { class: 'wb-panel' }, element('h2', {}, 'Collection checks'), note('Metadata checks only. These do not certify accessibility, visual fidelity, licensing, or whether a remote fixture is reachable.'), element('ul', { class: 'wb-checks' }, ...checks.map(([label, pass]) => element('li', {}, element('span', { class: pass ? 'wb-pass' : 'wb-warning' }, pass ? 'Recorded' : 'Needs attention'), label))), inventoryPanel(collection));
   }
   function render() {

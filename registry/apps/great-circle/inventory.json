@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "application": "great-circle",
-  "reviewedRevision": "1926e65152e26f5d380bf472a10d6352491ec543",
+  "reviewedRevision": null,
   "items": [
     {
       "id": "appearance",
@@ -395,5 +395,8 @@
       "status": "passed",
       "scope": "Local Lambda ZIP build only; no upload or deploy."
     }
+  ],
+  "withheldRevisions": [
+    "reviewedRevision"
   ]
 }

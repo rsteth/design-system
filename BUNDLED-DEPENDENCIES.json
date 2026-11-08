@@ -1,5 +1,47 @@
 [
   {
+    "id": "react-dom@19.3.0",
+    "license": "MIT",
+    "files": [
+      "licenses/react-dom@19.3.0/LICENSE"
+    ]
+  },
+  {
+    "id": "react@19.3.0",
+    "license": "MIT",
+    "files": [
+      "licenses/react@19.3.0/LICENSE"
+    ]
+  },
+  {
+    "id": "scheduler@0.28.0",
+    "license": "MIT",
+    "files": [
+      "licenses/scheduler@0.28.0/LICENSE"
+    ]
+  },
+  {
+    "id": "Inter font",
+    "license": "OFL-1.1",
+    "files": [
+      "previews/bandit/fonts/inter-OFL.txt"
+    ]
+  },
+  {
+    "id": "Space Grotesk font",
+    "license": "OFL-1.1",
+    "files": [
+      "previews/bandit/fonts/space-grotesk-OFL.txt"
+    ]
+  },
+  {
+    "id": "Space Mono font",
+    "license": "OFL-1.1",
+    "files": [
+      "previews/bandit/fonts/space-mono-OFL.txt"
+    ]
+  },
+  {
     "id": "react@19.2.3",
     "license": "MIT",
     "files": [
@@ -60,13 +102,6 @@
     "license": "BSD-2-Clause",
     "files": [
       "licenses/leaflet@1.9.4/LICENSE"
-    ]
-  },
-  {
-    "id": "scheduler@0.28.0",
-    "license": "MIT",
-    "files": [
-      "licenses/scheduler@0.28.0/LICENSE"
     ]
   }
 ]

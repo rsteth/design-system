@@ -11,8 +11,12 @@
   ],
   "source": {
     "repository": "https://github.com/rsteth/rsteth.github.io",
-    "revision": "3ea81c22d0101f2fc537e7e4338010bc981479d5",
-    "path": "."
+    "revision": null,
+    "path": ".",
+    "withheldRevisions": [
+      "revision"
+    ],
+    "publicVersion": "0.0.0"
   },
   "provenance": {
     "status": "author-owned",
@@ -742,18 +746,22 @@
   "inventory": "inventory.json",
   "registrySnapshot": {
     "authority": "App-owned design collection, tokens and optional inventory",
-    "baseRevision": "3ea81c22d0101f2fc537e7e4338010bc981479d5",
-    "inventorySha256": "9970bd1ae0644d629f703feb83d6181c842f3dee99be747dc32d8549a2738cd7",
+    "baseRevision": null,
+    "inventorySha256": "fc35e11d7607216f68a9d36f184fccb735cd45e8a11287f2219d1f80814a3450",
     "tokenSha256": "27ab783e82cd1dd46fc6b4f566ff778b70d421496cb79d32928577353914bbea",
     "integrationStatus": "unpublished-local-feature-commit",
-    "integrationRevision": "49b2e1de8f18afbf10d12de3bc099a55b0cf6eef"
+    "integrationRevision": null,
+    "withheldRevisions": [
+      "baseRevision",
+      "integrationRevision"
+    ]
   },
   "publicRelease": {
     "status": "static-app-owned-fixtures",
     "source": {
-      "revision": "49b2e1de8f18afbf10d12de3bc099a55b0cf6eef",
-      "dirty": false,
-      "sourceTreeSha256": "199dd9f3c356617578800dce1e9eaf28e8605a975c1ab1f5210c5e979fd769aa"
+      "repository": "https://github.com/rsteth/rsteth.github.io.git",
+      "version": "0.0.0",
+      "status": "synthetic-preview"
     },
     "adapter": "Original HTML plus deterministic workbench setup. No-JS variants remain labeled simulations."
   }

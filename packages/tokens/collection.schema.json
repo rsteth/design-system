@@ -75,6 +75,14 @@
         },
         "path": {
           "type": "string"
+        },
+        "withheldRevisions": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "const": "revision"
+          },
+          "description": "Public source revision deliberately withheld; local provenance remains unchanged."
         }
       }
     },

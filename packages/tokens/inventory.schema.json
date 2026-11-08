@@ -18,7 +18,10 @@
       "pattern": "^[a-z][a-z0-9-]*$"
     },
     "reviewedRevision": {
-      "type": "string",
+      "type": [
+        "string",
+        "null"
+      ],
       "pattern": "^[a-f0-9]{40}$"
     },
     "items": {
@@ -177,7 +180,38 @@
           }
         }
       }
+    },
+    "withheldRevisions": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string"
+      },
+      "description": "Revision fields deliberately withheld from a public snapshot; authoritative local provenance is unchanged."
     }
   },
-  "$comment": "Use validateInventory with collection for duplicate IDs and fixture referential integrity; CLI additionally verifies source/evidence files."
+  "$comment": "Use validateInventory with collection for duplicate IDs and fixture referential integrity; CLI additionally verifies source/evidence files.",
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "reviewedRevision": {
+            "type": "null"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "withheldRevisions"
+        ],
+        "properties": {
+          "withheldRevisions": {
+            "contains": {
+              "const": "reviewedRevision"
+            }
+          }
+        }
+      }
+    }
+  ]
 }

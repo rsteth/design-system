@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "application": "bandit",
+  "reviewedRevision": null,
+  "items": [
+    {
+      "id": "landing",
+      "title": "Public landing and waitlist unavailable state",
+      "kind": "screen",
+      "coverage": "covered",
+      "source": [
+        "apps/web/app/river-landing.tsx",
+        "apps/web/app/river-landing.module.css",
+        "apps/web/app/waitlist-dialog.tsx"
+      ],
+      "states": [
+        "default",
+        "waiting-list-unavailable",
+        "closed"
+      ],
+      "fixtures": [
+        "landing"
+      ],
+      "notes": "Uses the production components. Local waitlist responds unavailable and never accepts personal data."
+    },
+    {
+      "id": "overview",
+      "title": "Production overview",
+      "kind": "screen",
+      "coverage": "partial",
+      "source": [
+        "apps/web/app/page.tsx",
+        "apps/web/app/studio-overview.tsx"
+      ],
+      "states": [
+        "sample-productions",
+        "empty",
+        "read-only"
+      ],
+      "fixtures": [
+        "overview",
+        "empty"
+      ],
+      "notes": "Actual production overview content with synthetic data. Authenticated shell and API flows are deliberately excluded."
+    },
+    {
+      "id": "controls",
+      "title": "Studio controls and feedback",
+      "kind": "component",
+      "coverage": "covered",
+      "source": [
+        "apps/web/app/globals.css",
+        "apps/web/app/design-tokens.css"
+      ],
+      "states": [
+        "default",
+        "disabled",
+        "focus",
+        "error",
+        "validation",
+        "approved"
+      ],
+      "fixtures": [
+        "controls",
+        "status"
+      ],
+      "notes": "Native elements using the exact production stylesheet; no duplicate theme."
+    },
+    {
+      "id": "backend",
+      "title": "Authenticated workflows and generation",
+      "kind": "external",
+      "coverage": "excluded",
+      "source": [
+        "apps/web/app/studio-context.tsx"
+      ],
+      "states": [],
+      "fixtures": [],
+      "notes": "Owned by the backend/release workstream. This integration does not change authentication, API state, generation or deployment."
+    }
+  ],
+  "checks": [
+    {
+      "id": "design-contract",
+      "label": "Design contract and drift",
+      "command": "npm run design:check",
+      "scope": "App tokens, snapshots, source ownership and decorative glyphs",
+      "status": "passed"
+    },
+    {
+      "id": "design-browser",
+      "label": "Fixture and workbench browser checks",
+      "command": "npm run design:test",
+      "scope": "Desktop/mobile fixtures, dialog reset, read-only navigation and workbench reset",
+      "status": "passed"
+    }
+  ],
+  "withheldRevisions": [
+    "reviewedRevision"
+  ]
+}

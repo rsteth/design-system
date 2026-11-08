@@ -11,16 +11,20 @@
   ],
   "source": {
     "repository": "https://github.com/rsteth/design-system",
-    "revision": "a2b8d727b85cb1824a8615c48057ab6c8b742289",
-    "path": "packages/workbench"
+    "revision": null,
+    "path": "packages/workbench",
+    "withheldRevisions": [
+      "revision"
+    ],
+    "publicVersion": "0.4.0"
   },
   "provenance": {
     "status": "author-owned",
     "sources": []
   },
   "license": {
-    "spdx": "UNLICENSED",
-    "note": "Author-owned workbench. No new redistribution license selected. Dark monochrome shell is separate from application appearance."
+    "spdx": "MIT",
+    "note": "Copyright (c) 2026 Robin Stethem. Original workbench code and documentation are MIT licensed; see LICENSE and LICENSING.md. Application fixtures and third-party material retain their own terms. Dark monochrome shell is separate from application appearance."
   },
   "fixtures": [
     {
