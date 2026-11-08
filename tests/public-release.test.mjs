@@ -1,0 +1,11 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+import {publicBase,buildPublicRelease,isPrivatePath,focusEpubMode,EPUB_FIXTURE_ONLY_SOURCE,EPUB_FIXTURE_NOTICE} from '../tooling/public-release.mjs';
+test('public release bases are explicit safe root or subpaths',()=>{for(const value of ['/','/design-system/','/portfolio/design_system/'])assert.equal(publicBase(value),value);for(const value of ['', 'design-system','//','/../','/a/../../','/x?y/','https://example.com/','/with space/','/a\\b/'])assert.throws(()=>publicBase(value));});
+test('release requires explicit sources and keeps output inside ignored review',async()=>{await assert.rejects(buildPublicRelease({}),/Explicit/);await assert.rejects(buildPublicRelease({output:'/tmp/public-release',focusRoot:'/tmp',greatCircleRoot:'/tmp',stethemRoot:'/tmp'}),/review/);});
+test('builder keeps local capture and app manifests untouched',async()=>{const source=await readFile(new URL('../tooling/public-release.mjs',import.meta.url),'utf8');assert.match(source,/envDir:false/);assert.match(source,/configFile:false/);assert.match(source,/sourcemap:false/);assert.match(source,/mkdir\(output,\{recursive:false\}\)/);assert.doesNotMatch(source,/\brm\(/);assert.match(source,/Source changed during release/);assert.match(source,/licenseGaps/);assert.match(source,/local-candidate-license-review-required/);});
+
+test('release excludes all env variants and credential containers',()=>{for(const value of ['.env','.env.local','public/.env.production','public/token.key','private.p12','.credentials','public/tests/private.json','node_modules/pkg/index.js'])assert.equal(isPrivatePath(value),true,value);for(const value of ['tokens.json','style.css','index.mjs','inter-OFL.txt'])assert.equal(isPrivatePath(value),false,value);});
+
+test('fixture-only EPUB adapter is opt-in and fails closed',async()=>{assert.equal(focusEpubMode(),'full');assert.equal(focusEpubMode('fixture-only'),'fixture-only');assert.throws(()=>focusEpubMode('ignore-license'));assert.doesNotMatch(EPUB_FIXTURE_ONLY_SOURCE,/\bimport\b|\brequire\b/);const adapter=await import('data:text/javascript,'+encodeURIComponent(EPUB_FIXTURE_ONLY_SOURCE));await assert.rejects(adapter.extractTextFromEpub(new ArrayBuffer(8)),error=>error.message===EPUB_FIXTURE_NOTICE);});

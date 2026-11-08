@@ -1,0 +1,64 @@
+{
+  "name": "@rsteth/design-system",
+  "version": "0.4.0",
+  "private": true,
+  "type": "module",
+  "description": "Framework-neutral design contracts, appearance behavior and isolated workbenches.",
+  "license": "MIT",
+  "exports": {
+    "./tokens": {
+      "types": "./packages/tokens/index.d.mts",
+      "default": "./packages/tokens/index.mjs"
+    },
+    "./appearance": {
+      "types": "./packages/appearance/index.d.mts",
+      "default": "./packages/appearance/index.mjs"
+    },
+    "./react": {
+      "types": "./packages/react/index.d.mts",
+      "default": "./packages/react/index.mjs"
+    },
+    "./workbench": {
+      "types": "./packages/workbench/index.d.mts",
+      "default": "./packages/workbench/index.mjs"
+    },
+    "./workbench/theme-adapter": {
+      "types": "./packages/workbench/theme-adapter.d.mts",
+      "default": "./packages/workbench/theme-adapter.mjs"
+    }
+  },
+  "peerDependencies": {
+    "react": ">=18 <20"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    }
+  },
+  "scripts": {
+    "dev": "node tooling/serve.mjs . 4310",
+    "workbench": "node tooling/serve.mjs . 4310",
+    "build": "npm run check:design && node tooling/build.mjs",
+    "typecheck": "node tooling/check.mjs",
+    "lint": "node tooling/check.mjs",
+    "test": "node --test tests/*.test.mjs tests/workbench/*.test.mjs",
+    "check:design": "node tooling/check.mjs && node tooling/workbench-skin.mjs check && npm run references:check",
+    "check": "npm run check:design && npm test && npm run build",
+    "skin:build": "node tooling/workbench-skin.mjs build",
+    "references:import": "node tooling/import-references.mjs",
+    "references:check": "node tooling/import-references.mjs --check",
+    "capture": "node tooling/capture.mjs",
+    "capture:help": "node tooling/capture.mjs --help",
+    "test:capture:browser": "node tests/capture/studio.browser.mjs",
+    "capture:list": "node tooling/capture.mjs --list",
+    "capture:plan": "node tooling/capture.mjs --scene all --profile all --theme both --plan",
+    "test:capture:profiles": "node tests/capture/profile-ui.browser.mjs",
+    "test:capture:runner": "node tests/capture/runner.browser.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "yaml": "2.9.1"
+  }
+}

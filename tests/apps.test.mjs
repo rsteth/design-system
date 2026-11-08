@@ -1,0 +1,22 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+import {createHash} from 'node:crypto';
+import {validateCollection,validateTokens,validateInventory} from '../packages/tokens/index.mjs';
+const shared=['color.background','color.surface','color.text','color.text.muted','color.accent'];
+for(const id of ['focus','great-circle','stethem'])test(`${id} implements the shared semantic contract with a pinned app-owned snapshot`,async()=>{
+ const base=new URL(`../registry/apps/${id}/`,import.meta.url);
+ const collection=JSON.parse(await readFile(new URL('collection.json',base),'utf8'));
+ const bytes=await readFile(new URL('tokens.json',base));const tokens=JSON.parse(bytes);
+ assert.deepEqual(validateCollection(collection),[]);assert.deepEqual(validateTokens(tokens),[]);
+ assert.equal(collection.kind,'app');assert.equal(tokens.namespace,id);
+ const root=tokens.modes.find(mode=>mode.selector===':root');assert.ok(root,'base :root mode');
+ for(const name of shared)assert.equal(root.tokens[name]?.type,'color',`shared ${name}`);
+ assert.equal(collection.registrySnapshot.tokenSha256,createHash('sha256').update(bytes).digest('hex'));
+ const inventoryBytes=await readFile(new URL(collection.inventory,base));const inventory=JSON.parse(inventoryBytes);
+ assert.deepEqual(validateInventory(inventory,collection),[]);
+ assert.equal(collection.registrySnapshot.inventorySha256,createHash('sha256').update(inventoryBytes).digest('hex'));
+ const mapped=new Set(inventory.items.flatMap(item=>item.fixtures));
+ for(const fixture of collection.fixtures)assert.ok(mapped.has(fixture.id),`Unmapped production fixture: ${fixture.id}`);
+ if(collection.registrySnapshot.integrationRevision===null){assert.ok(collection.registrySnapshot.withheldRevisions?.includes('integrationRevision'),'Public snapshot explicitly records withheld integration provenance');}else assert.match(collection.registrySnapshot.integrationRevision,/^[a-f0-9]{40}$/);
+});

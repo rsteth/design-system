@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "id": "bandit",
+  "kind": "app",
+  "renderer": "react",
+  "title": "Bandit",
+  "summary": "A human-directed video studio. Glacier artwork, blue and copper accents, and app-owned production controls.",
+  "tokens": "tokens.json",
+  "inventory": "inventory.json",
+  "themes": [
+    "light"
+  ],
+  "source": {
+    "repository": "https://github.com/rsteth/shortform-bandit",
+    "revision": null,
+    "withheldRevisions": [
+      "revision"
+    ],
+    "publicVersion": "0.0.1"
+  },
+  "provenance": {
+    "status": "author-owned",
+    "sources": []
+  },
+  "license": {
+    "spdx": "UNLICENSED",
+    "note": "Private author-owned application. No redistribution license is granted."
+  },
+  "fixtures": [
+    {
+      "id": "landing",
+      "title": "Public landing",
+      "section": "screens",
+      "url": "http://127.0.0.1:4318/landing",
+      "states": [
+        "default",
+        "waiting-list-unavailable",
+        "dialog-closed"
+      ],
+      "description": "Isolated local preview using synthetic data. No backend, account, generation or publishing operations."
+    },
+    {
+      "id": "overview",
+      "title": "Production overview",
+      "section": "screens",
+      "url": "http://127.0.0.1:4318/overview",
+      "states": [
+        "sample-productions",
+        "planning",
+        "plan-approved"
+      ],
+      "description": "Isolated local preview using synthetic data. No backend, account, generation or publishing operations."
+    },
+    {
+      "id": "empty",
+      "title": "Empty production overview",
+      "section": "screens",
+      "url": "http://127.0.0.1:4318/empty",
+      "states": [
+        "empty",
+        "read-only"
+      ],
+      "description": "Isolated local preview using synthetic data. No backend, account, generation or publishing operations."
+    },
+    {
+      "id": "controls",
+      "title": "Studio controls",
+      "section": "components",
+      "url": "http://127.0.0.1:4318/controls",
+      "states": [
+        "default",
+        "disabled",
+        "focus",
+        "selected"
+      ],
+      "description": "Isolated local preview using synthetic data. No backend, account, generation or publishing operations."
+    },
+    {
+      "id": "status",
+      "title": "Studio feedback",
+      "section": "patterns",
+      "url": "http://127.0.0.1:4318/status",
+      "states": [
+        "empty",
+        "error",
+        "validation",
+        "approved"
+      ],
+      "description": "Isolated local preview using synthetic data. No backend, account, generation or publishing operations."
+    }
+  ],
+  "registrySnapshot": {
+    "authority": "App-owned design collection, tokens and optional inventory",
+    "baseRevision": null,
+    "inventorySha256": "a78ea70790e4a954f88e7fb9f569033fdea4da75dfbd8aef632bc2b15d44ea00",
+    "tokenSha256": "ec96447be6eb0331d5cc007b32e9df42d18773b556c06ee0edb51bc4fb8efe18",
+    "integrationStatus": "unpublished-local-snapshot",
+    "integrationRevision": null,
+    "withheldRevisions": [
+      "baseRevision"
+    ]
+  }
+}

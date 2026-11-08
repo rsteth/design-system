@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "reference-playstation",
+  "title": "Playstation",
+  "kind": "reference",
+  "renderer": "dom",
+  "summary": "Independent unverified reference",
+  "tokens": "tokens.json",
+  "study": "study.json",
+  "themes": [
+    "analysis"
+  ],
+  "source": {
+    "repository": "https://github.com/VoltAgent/awesome-design-md",
+    "fork": "https://github.com/rsteth/awesome-design-md-p",
+    "revision": "fcc70284932276d085f01ef9f83edde90b1258cb",
+    "path": "design-md/playstation/DESIGN.md",
+    "sha256": "2a56c109af6cb847fa091b768f719b498ac56b582d010860e73ea5fb72a1590d",
+    "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/playstation/DESIGN.md"
+  },
+  "provenance": {
+    "status": "independent-analysis",
+    "sources": [
+      {
+        "title": "VoltAgent awesome-design-md independent analysis",
+        "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/playstation/DESIGN.md"
+      }
+    ],
+    "verification": "unverified-secondary-analysis"
+  },
+  "license": {
+    "spdx": "MIT",
+    "file": "LICENSE",
+    "note": "Upstream analysis copyright (c) 2026 VoltAgent, MIT. Brand names belong to their respective owners; no affiliation or asset/font license is implied."
+  },
+  "fixtures": [
+    {
+      "id": "reference-playstation-standard-patterns",
+      "title": "Standard patterns · original compositions",
+      "section": "patterns",
+      "url": "../../reference-sheets/playstation/patterns.html",
+      "description": "Three original illustrative patterns composed from the study tokens: overview, search and selection, and editable preferences. Not official or copied site UI.",
+      "states": [
+        "default",
+        "completed",
+        "filtered",
+        "empty",
+        "selected",
+        "invalid",
+        "saved locally",
+        "canceled"
+      ]
+    },
+    {
+      "id": "reference-playstation-recipe-sheet",
+      "title": "Source-linked recipe sheet · authored interpretation",
+      "section": "components",
+      "url": "../../reference-sheets/playstation/index.html",
+      "description": "Generated visual foundations and component interpretations. Unofficial; neutral authored structure and system fonts, not original product components."
+    }
+  ],
+  "verification": {
+    "status": "unverified-secondary-analysis",
+    "note": "Source values have not been verified against the brand website."
+  }
+}

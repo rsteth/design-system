@@ -1,0 +1,189 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/rsteth/design-system/schemas/collection.schema.json",
+  "title": "Workbench collection v1",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "id",
+    "title",
+    "kind",
+    "renderer",
+    "summary",
+    "tokens",
+    "themes",
+    "source",
+    "provenance",
+    "license",
+    "fixtures"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9-]*$"
+    },
+    "title": {
+      "type": "string"
+    },
+    "kind": {
+      "enum": [
+        "app",
+        "original",
+        "reference"
+      ]
+    },
+    "renderer": {
+      "enum": [
+        "dom",
+        "react"
+      ]
+    },
+    "summary": {
+      "type": "string"
+    },
+    "tokens": {
+      "type": "string"
+    },
+    "themes": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "source": {
+      "type": "object",
+      "required": [
+        "repository",
+        "revision",
+        "path"
+      ],
+      "properties": {
+        "repository": {
+          "type": "string",
+          "format": "uri"
+        },
+        "revision": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[a-f0-9]{40}$"
+        },
+        "path": {
+          "type": "string"
+        },
+        "withheldRevisions": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "const": "revision"
+          },
+          "description": "Public source revision deliberately withheld; local provenance remains unchanged."
+        }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "required": [
+        "status",
+        "sources"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "author-owned",
+            "independent-analysis",
+            "adapted"
+          ]
+        },
+        "sources": {
+          "type": "array"
+        }
+      }
+    },
+    "license": {
+      "type": "object",
+      "required": [
+        "spdx",
+        "note"
+      ],
+      "properties": {
+        "spdx": {
+          "type": "string"
+        },
+        "note": {
+          "type": "string"
+        }
+      }
+    },
+    "fixtures": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "title",
+          "section",
+          "url"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "section": {
+            "enum": [
+              "components",
+              "patterns",
+              "screens"
+            ]
+          },
+          "url": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "states": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
+      }
+    },
+    "inventory": {
+      "type": "string",
+      "pattern": "^(?!.*(?:^|/)\\.{1,2}(?:/|$))[^/\\\\:%?#\\u0000-\\u0020]+(?:/[^/\\\\:%?#\\u0000-\\u001f]+)*$"
+    },
+    "study": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Optional adjacent independent study document, for reference collections only. Local relative path without traversal."
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "required": [
+          "study"
+        ]
+      },
+      "then": {
+        "properties": {
+          "kind": {
+            "const": "reference"
+          }
+        }
+      }
+    }
+  ]
+}

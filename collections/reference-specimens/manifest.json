@@ -1,0 +1,92 @@
+{
+  "version": 1,
+  "studies": [
+    {
+      "sourceSlug": "stripe",
+      "theme": "analysis",
+      "fixtures": [
+        {
+          "id": "stripe-components",
+          "title": "Atmosphere & precision components",
+          "kind": "components",
+          "route": "/collections/reference-specimens/stripe/index.html?view=components"
+        },
+        {
+          "id": "stripe-patterns",
+          "title": "Atmosphere & precision interaction pattern",
+          "kind": "patterns",
+          "route": "/collections/reference-specimens/stripe/index.html?view=patterns"
+        },
+        {
+          "id": "stripe-screens",
+          "title": "Tally Garden overview",
+          "kind": "screens",
+          "route": "/collections/reference-specimens/stripe/index.html?view=screens"
+        }
+      ],
+      "provenance": {
+        "sourceCommit": "fcc70284932276d085f01ef9f83edde90b1258cb",
+        "evidence": "Indigo #533afd, ink #0d253d, cream #f5e9d4 and cool white #f6f9fc; thin negative-tracked headings, pill buttons, tabular numerals, 12px cards and an upper-page color atmosphere.",
+        "inferred": "The community-budget scenario, CSS gradient geometry (not the source mesh), chart data, responsive composition and draft interaction are original. System fonts replace proprietary type. Only the light marketing track is studied."
+      }
+    },
+    {
+      "sourceSlug": "linear.app",
+      "theme": "analysis",
+      "fixtures": [
+        {
+          "id": "linear-app-components",
+          "title": "Quiet technical depth components",
+          "kind": "components",
+          "route": "/collections/reference-specimens/linear.app/index.html?view=components"
+        },
+        {
+          "id": "linear-app-patterns",
+          "title": "Quiet technical depth interaction pattern",
+          "kind": "patterns",
+          "route": "/collections/reference-specimens/linear.app/index.html?view=patterns"
+        },
+        {
+          "id": "linear-app-screens",
+          "title": "Fieldnote overview",
+          "kind": "screens",
+          "route": "/collections/reference-specimens/linear.app/index.html?view=screens"
+        }
+      ],
+      "provenance": {
+        "sourceCommit": "fcc70284932276d085f01ef9f83edde90b1258cb",
+        "evidence": "Near-black #010102, charcoal #0f1011 and #141516, light ink #f7f8f8, lavender #5e6ad2, hairline #23252a; a surface ladder without shadows, negative-tracked display and compact product panels.",
+        "inferred": "The field research workflow, task names, filter behavior and draft form are original. System fonts replace custom type. This is a dark marketing study, not a complete application theme."
+      }
+    },
+    {
+      "sourceSlug": "dell-1996",
+      "theme": "analysis",
+      "fixtures": [
+        {
+          "id": "dell-1996-components",
+          "title": "The framed catalog components",
+          "kind": "components",
+          "route": "/collections/reference-specimens/dell-1996/index.html?view=components"
+        },
+        {
+          "id": "dell-1996-patterns",
+          "title": "The framed catalog interaction pattern",
+          "kind": "patterns",
+          "route": "/collections/reference-specimens/dell-1996/index.html?view=patterns"
+        },
+        {
+          "id": "dell-1996-screens",
+          "title": "Meadow Supply overview",
+          "kind": "screens",
+          "route": "/collections/reference-specimens/dell-1996/index.html?view=screens"
+        }
+      ],
+      "provenance": {
+        "sourceCommit": "fcc70284932276d085f01ef9f83edde90b1258cb",
+        "evidence": "Black frame, white canvas, yellow #fcc20f, ribbon tints sage #b3bd95, salmon #d77a7a and sky #9ab6c8; square corners, Times body, heavy sans headings and a centered roughly 760px catalog.",
+        "inferred": "The garden tool catalog, CSS tool silhouettes, filter behavior and draft dialog are original. Modern semantic HTML, focus outlines, 44px controls and responsive stacking replace historical table layout. No photographs, logos, phone sales block or historical claims are reproduced."
+      }
+    }
+  ]
+}

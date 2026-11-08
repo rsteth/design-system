@@ -1,0 +1,1802 @@
+{
+  "schemaVersion": 1,
+  "id": "reference-ferrari",
+  "title": "Ferrari",
+  "classification": "independent-unverified-analysis",
+  "source": {
+    "repository": "https://github.com/VoltAgent/awesome-design-md",
+    "fork": "https://github.com/rsteth/awesome-design-md-p",
+    "revision": "fcc70284932276d085f01ef9f83edde90b1258cb",
+    "path": "design-md/ferrari/DESIGN.md",
+    "sha256": "1199e2832641cac7e384aaf3b1f3db87f992240cea5d3d1eee04d9dc00acb17c",
+    "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/ferrari/DESIGN.md"
+  },
+  "sourceName": "Ferrari-design-analysis",
+  "titleProvenance": {
+    "status": "inferred",
+    "basis": "Source directory label, normalized for navigation; original source name is retained without correction.",
+    "sourceValue": "ferrari",
+    "originalName": "Ferrari-design-analysis"
+  },
+  "description": "A luxury-automotive brand whose marketing surfaces read as cinematic editorial. The base canvas is **near-black** (`#181818`) holding pure white display type; white-canvas bands appear only inside specific editorial contexts (preowned listings, pricing tables). The single brand voltage is **Rosso Corsa** (`#da291c`) — the iconic Ferrari racing red — used scarcely on primary CTAs, the Cavallino mark, and Formula 1 race-position highlights. Type runs **FerrariSans** at modest weights (display 500, body 400) — never bombastic. Spacing follows an explicit 8px token ladder (`xxxs` 4px through `super` 128px); generous editorial pacing throughout. The brand's strongest visual signature is the **full-bleed cinematic hero photograph** that fills the viewport top with car photography, model details, or trackside livery — followed by a tighter editorial body layout below.",
+  "analysis": {
+    "version": "alpha",
+    "name": "Ferrari-design-analysis",
+    "description": "A luxury-automotive brand whose marketing surfaces read as cinematic editorial. The base canvas is **near-black** (`#181818`) holding pure white display type; white-canvas bands appear only inside specific editorial contexts (preowned listings, pricing tables). The single brand voltage is **Rosso Corsa** (`#da291c`) — the iconic Ferrari racing red — used scarcely on primary CTAs, the Cavallino mark, and Formula 1 race-position highlights. Type runs **FerrariSans** at modest weights (display 500, body 400) — never bombastic. Spacing follows an explicit 8px token ladder (`xxxs` 4px through `super` 128px); generous editorial pacing throughout. The brand's strongest visual signature is the **full-bleed cinematic hero photograph** that fills the viewport top with car photography, model details, or trackside livery — followed by a tighter editorial body layout below.",
+    "colors": {
+      "primary": "#da291c",
+      "primary-active": "#b01e0a",
+      "primary-hover": "#9d2211",
+      "ink": "#ffffff",
+      "body": "#969696",
+      "body-strong": "#ffffff",
+      "body-on-light": "#181818",
+      "muted": "#666666",
+      "muted-soft": "#8f8f8f",
+      "hairline": "#303030",
+      "hairline-on-light": "#d2d2d2",
+      "hairline-soft": "#ebebeb",
+      "canvas": "#181818",
+      "canvas-elevated": "#303030",
+      "canvas-light": "#ffffff",
+      "surface-card": "#303030",
+      "surface-soft-light": "#f7f7f7",
+      "surface-strong-light": "#ebebeb",
+      "on-primary": "#ffffff",
+      "on-dark": "#ffffff",
+      "on-light": "#181818",
+      "accent-yellow-hypersail": "#fff200",
+      "accent-yellow": "#f6e500",
+      "semantic-info": "#4c98b9",
+      "semantic-success": "#03904a",
+      "semantic-warning": "#f13a2c"
+    },
+    "typography": {
+      "display-mega": {
+        "fontFamily": "'FerrariSans', -apple-system, system-ui, sans-serif",
+        "fontSize": "80px",
+        "fontWeight": 500,
+        "lineHeight": 1.05,
+        "letterSpacing": "-1.6px"
+      },
+      "display-xl": {
+        "fontFamily": "'FerrariSans', sans-serif",
+        "fontSize": "56px",
+        "fontWeight": 500,
+        "lineHeight": 1.1,
+        "letterSpacing": "-1.12px"
+      },
+      "display-lg": {
+        "fontFamily": "'FerrariSans', sans-serif",
+        "fontSize": "36px",
+        "fontWeight": 500,
+        "lineHeight": 1.2,
+        "letterSpacing": "-0.36px"
+      },
+      "display-md": {
+        "fontFamily": "'FerrariSans', sans-serif",
+        "fontSize": "26px",
+        "fontWeight": 500,
+        "lineHeight": 1.5,
+        "letterSpacing": "0.195px"
+      },
+      "title-md": {
+        "fontFamily": "'FerrariSans', sans-serif",
+        "fontSize": "18px",
+        "fontWeight": 700,
+        "lineHeight": 1.2,
+        "letterSpacing": 0
+      },
+      "title-sm": {
+        "fontFamily": "'FerrariSans', sans-serif",
+        "fontSize": "16px",
+        "fontWeight": 500,
+        "lineHeight": 1.4,
+        "letterSpacing": "0.08px"
+      },
+      "body-md": {
+        "fontFamily": "'FerrariSans', sans-serif",
+        "fontSize": "14px",
+        "fontWeight": 400,
+        "lineHeight": 1.5,
+        "letterSpacing": 0
+      },
+      "body-sm": {
+        "fontFamily": "'FerrariSans', sans-serif",
+        "fontSize": "13px",
+        "fontWeight": 400,
+        "lineHeight": 1.5,
+        "letterSpacing": 0
+      },
+      "caption": {
+        "fontFamily": "'FerrariSans', sans-serif",
+        "fontSize": "12px",
+        "fontWeight": 400,
+        "lineHeight": 1.4,
+        "letterSpacing": 0
+      },
+      "caption-uppercase": {
+        "fontFamily": "'FerrariSans', sans-serif",
+        "fontSize": "11px",
+        "fontWeight": 600,
+        "lineHeight": 1.4,
+        "letterSpacing": "1.1px",
+        "textTransform": "uppercase"
+      },
+      "button": {
+        "fontFamily": "'FerrariSans', sans-serif",
+        "fontSize": "14px",
+        "fontWeight": 700,
+        "lineHeight": 1,
+        "letterSpacing": "1.4px",
+        "textTransform": "uppercase"
+      },
+      "nav-link": {
+        "fontFamily": "'FerrariSans', sans-serif",
+        "fontSize": "13px",
+        "fontWeight": 600,
+        "lineHeight": 1.4,
+        "letterSpacing": "0.65px",
+        "textTransform": "uppercase"
+      },
+      "number-display": {
+        "fontFamily": "'FerrariSans', sans-serif",
+        "fontSize": "80px",
+        "fontWeight": 700,
+        "lineHeight": 1,
+        "letterSpacing": "-1.6px"
+      }
+    },
+    "rounded": {
+      "none": "0px",
+      "xs": "2px",
+      "sm": "4px",
+      "md": "6px",
+      "lg": "8px",
+      "xl": "12px",
+      "full": "9999px"
+    },
+    "spacing": {
+      "xxxs": "4px",
+      "xxs": "8px",
+      "xs": "16px",
+      "sm": "24px",
+      "md": "32px",
+      "lg": "48px",
+      "xl": "64px",
+      "xxl": "96px",
+      "super": "128px"
+    },
+    "components": {
+      "top-nav-on-dark": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.nav-link}",
+        "height": "64px"
+      },
+      "top-nav-on-light": {
+        "backgroundColor": "{colors.canvas-light}",
+        "textColor": "{colors.body-on-light}",
+        "typography": "{typography.nav-link}",
+        "height": "64px"
+      },
+      "button-primary": {
+        "backgroundColor": "{colors.primary}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.button}",
+        "rounded": "{rounded.none}",
+        "padding": "14px 32px",
+        "height": "48px"
+      },
+      "button-primary-active": {
+        "backgroundColor": "{colors.primary-active}",
+        "textColor": "{colors.on-primary}",
+        "rounded": "{rounded.none}"
+      },
+      "button-outline-on-dark": {
+        "backgroundColor": "transparent",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.button}",
+        "rounded": "{rounded.none}",
+        "padding": "13px 31px",
+        "height": "48px"
+      },
+      "button-outline-on-light": {
+        "backgroundColor": "transparent",
+        "textColor": "{colors.body-on-light}",
+        "typography": "{typography.button}",
+        "rounded": "{rounded.none}",
+        "padding": "13px 31px",
+        "height": "48px"
+      },
+      "button-tertiary-text": {
+        "backgroundColor": "transparent",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.button}"
+      },
+      "hero-band-cinema": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.display-mega}",
+        "padding": 0
+      },
+      "hero-band-light": {
+        "backgroundColor": "{colors.canvas-light}",
+        "textColor": "{colors.body-on-light}",
+        "typography": "{typography.display-xl}",
+        "padding": "96px"
+      },
+      "feature-card-photo": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.title-md}",
+        "rounded": "{rounded.none}",
+        "padding": 0
+      },
+      "feature-card-light": {
+        "backgroundColor": "{colors.canvas-light}",
+        "textColor": "{colors.body-on-light}",
+        "typography": "{typography.title-md}",
+        "rounded": "{rounded.none}",
+        "padding": "32px"
+      },
+      "livery-band": {
+        "backgroundColor": "{colors.primary}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.display-lg}",
+        "padding": "96px"
+      },
+      "preowned-listing-card": {
+        "backgroundColor": "{colors.canvas-light}",
+        "textColor": "{colors.body-on-light}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.none}",
+        "padding": "24px"
+      },
+      "spec-cell": {
+        "backgroundColor": "transparent",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.number-display}",
+        "padding": "24px 0"
+      },
+      "race-position-cell": {
+        "backgroundColor": "transparent",
+        "textColor": "{colors.primary}",
+        "typography": "{typography.number-display}"
+      },
+      "race-calendar-row": {
+        "backgroundColor": "transparent",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-md}",
+        "padding": "16px 0"
+      },
+      "driver-card": {
+        "backgroundColor": "{colors.canvas-elevated}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.title-md}",
+        "rounded": "{rounded.none}",
+        "padding": "24px"
+      },
+      "text-input-on-dark": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.sm}",
+        "padding": "14px 16px",
+        "height": "48px"
+      },
+      "text-input-on-light": {
+        "backgroundColor": "{colors.canvas-light}",
+        "textColor": "{colors.body-on-light}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.sm}",
+        "padding": "14px 16px",
+        "height": "48px"
+      },
+      "badge-pill": {
+        "backgroundColor": "{colors.canvas-elevated}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.caption-uppercase}",
+        "rounded": "{rounded.full}",
+        "padding": "4px 12px"
+      },
+      "cta-band-dark": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.display-lg}",
+        "padding": "96px"
+      },
+      "newsletter-input-band": {
+        "backgroundColor": "{colors.canvas-elevated}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.sm}",
+        "padding": "32px"
+      },
+      "footer-dark": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.body}",
+        "typography": "{typography.body-sm}",
+        "padding": "64px 48px"
+      },
+      "footer-link": {
+        "backgroundColor": "transparent",
+        "textColor": "{colors.body}",
+        "typography": "{typography.body-sm}"
+      }
+    }
+  },
+  "normalizationRepairs": [],
+  "sections": [
+    {
+      "heading": "Overview",
+      "level": 2,
+      "text": "Ferrari's marketing site reads as cinematic editorial — closer to a luxury-magazine spread than a typical car-OEM site. The base canvas is **near-black** (`{colors.canvas}` — #181818) holding pure white display type; white-canvas bands appear only inside specific editorial contexts (preowned listings, pricing tables, dealer surfaces). The single brand voltage is **Rosso Corsa** (`{colors.primary}` — #da291c), the iconic Ferrari racing red, used scarcely on primary CTAs, the Cavallino mark, and Formula 1 race-position highlights.\n\nType runs **FerrariSans** as the single sans family at modest weights — display 500, body 400. CTA labels render in uppercase with generous tracking (1.1-1.4px). The brand never uses bold display copy.\n\nThe brand's strongest visual signature is the **full-bleed cinematic hero photograph** — top-of-page imagery shows car photography, model details, or trackside livery without any chrome competing with it. Headlines float over the bottom of the photo or sit in a tight band beneath. Spacing follows the explicit 8px token ladder: `xxxs` 4 / `xxs` 8 / `xs` 16 / `sm` 24 / `md` 32 / `lg` 48 / `xl` 64 / `xxl` 96 / `super` 128.\n\n**Key Characteristics:**\n- Single accent: `{colors.primary}` (Rosso Corsa #da291c) for primary CTAs, the Cavallino, F1 race-position highlights. Used scarcely.\n- Near-black canvas (#181818) — never pure black. White-canvas bands only inside editorial contexts.\n- Single sans family: FerrariSans across every text role.\n- Display weight stays at 500 — never bold.\n- CTA labels render uppercase with 1.4px tracking.\n- Sharp `{rounded.none}` (0px) corners on every CTA, card, and band — luxury-automotive precision.\n- Full-bleed cinematic hero photography is the page chrome.\n- Explicit 8px spacing token ladder with named scale (xxxs through super).\n- Hairlines + photographic depth — no drop shadow tiers.",
+      "line": 272
+    },
+    {
+      "heading": "Colors",
+      "level": 2,
+      "text": "",
+      "line": 291
+    },
+    {
+      "heading": "Brand & Accent",
+      "level": 3,
+      "text": "- **Rosso Corsa** (`{colors.primary}` — #da291c): The iconic Ferrari racing red. Primary CTA fill, Cavallino mark, F1 driver-position highlights. Used scarcely.\n- **Rosso Corsa Active** (`{colors.primary-active}` — #b01e0a): Press state.\n- **Rosso Corsa Hover-darker** (`{colors.primary-hover}` — #9d2211): Documented for completeness; per the no-hover policy this is not used in preview HTML.\n- **Hypersail Yellow** (`{colors.accent-yellow-hypersail}` — #fff200) + **Yellow** (`{colors.accent-yellow}` — #f6e500): Sub-brand accents reserved for the Hypersail sailing program and the global focus-ring color. Not part of the main automotive palette.",
+      "line": 293
+    },
+    {
+      "heading": "Surface",
+      "level": 3,
+      "text": "- **Canvas** (`{colors.canvas}` — #181818): Near-black page floor — never pure black, slight warmth.\n- **Canvas Elevated** (`{colors.canvas-elevated}` — #303030): Cards and panels on dark canvas.\n- **Canvas Light** (`{colors.canvas-light}` — #ffffff): White editorial bands (preowned listings, pricing).\n- **Surface Card** (`{colors.surface-card}` — #303030): Same as canvas-elevated — driver cards, livery photo plates.\n- **Surface Soft Light** (`{colors.surface-soft-light}` — #f7f7f7): Light editorial alternating band.\n- **Surface Strong Light** (`{colors.surface-strong-light}` — #ebebeb): Light-canvas dividers, badges.",
+      "line": 299
+    },
+    {
+      "heading": "Hairlines",
+      "level": 3,
+      "text": "- **Hairline** (`{colors.hairline}` — #303030): 1px divider on dark — same hex as `{colors.canvas-elevated}`.\n- **Hairline On Light** (`{colors.hairline-on-light}` — #d2d2d2): 1px divider on light bands.\n- **Hairline Soft** (`{colors.hairline-soft}` — #ebebeb): Lighter divider.",
+      "line": 307
+    },
+    {
+      "heading": "Text",
+      "level": 3,
+      "text": "- **Ink** (`{colors.ink}` — #ffffff): Display, body emphasis on dark.\n- **Body** (`{colors.body}` — #969696): Default running-text on dark.\n- **Body Strong** (`{colors.body-strong}` — #ffffff): Same as ink.\n- **Body On Light** (`{colors.body-on-light}` — #181818): Default text on light bands.\n- **Muted** (`{colors.muted}` — #666666): Sub-titles, captions on dark.\n- **Muted Soft** (`{colors.muted-soft}` — #8f8f8f): Disabled link text.\n- **On Primary** (`{colors.on-primary}` — #ffffff): White text on Rosso Corsa.",
+      "line": 312
+    },
+    {
+      "heading": "Semantic",
+      "level": 3,
+      "text": "- **Info** (`{colors.semantic-info}` — #4c98b9): Info badges, callout backgrounds.\n- **Success** (`{colors.semantic-success}` — #03904a): Confirmation.\n- **Warning** (`{colors.semantic-warning}` — #f13a2c): Validation warnings.",
+      "line": 321
+    },
+    {
+      "heading": "Typography",
+      "level": 2,
+      "text": "",
+      "line": 326
+    },
+    {
+      "heading": "Font Family",
+      "level": 3,
+      "text": "**FerrariSans** is the licensed single sans family across every text role. Fallback: `-apple-system, system-ui, sans-serif`. No display/body family split.",
+      "line": 328
+    },
+    {
+      "heading": "Hierarchy",
+      "level": 3,
+      "text": "| Token | Size | Weight | Line Height | Letter Spacing | Use |\n|---|---|---|---|---|---|\n| `{typography.display-mega}` | 80px | 500 | 1.05 | -1.6px | Homepage hero h1 |\n| `{typography.display-xl}` | 56px | 500 | 1.1 | -1.12px | Subsidiary heroes |\n| `{typography.display-lg}` | 36px | 500 | 1.2 | -0.36px | Section heads, livery band |\n| `{typography.display-md}` | 26px | 500 | 1.5 | 0.195px | Sub-section heads |\n| `{typography.title-md}` | 18px | 700 | 1.2 | 0 | Component titles |\n| `{typography.title-sm}` | 16px | 500 | 1.4 | 0.08px | List labels |\n| `{typography.body-md}` | 14px | 400 | 1.5 | 0 | Default body |\n| `{typography.body-sm}` | 13px | 400 | 1.5 | 0 | Footer body |\n| `{typography.caption}` | 12px | 400 | 1.4 | 0 | Photo captions |\n| `{typography.caption-uppercase}` | 11px | 600 | 1.4 | 1.1px | Section labels, badges |\n| `{typography.button}` | 14px | 700 | 1.0 | 1.4px (uppercase) | CTA pill labels |\n| `{typography.nav-link}` | 13px | 600 | 1.4 | 0.65px (uppercase) | Top-nav menu items |\n| `{typography.number-display}` | 80px | 700 | 1.0 | -1.6px | Race position highlights, spec values |",
+      "line": 331
+    },
+    {
+      "heading": "Principles",
+      "level": 3,
+      "text": "- **Display weight stays at 500.** Editorial confidence, not bombastic. The cinematic photography is doing the visual heavy-lifting — type doesn't need to compete.\n- **CTA labels are uppercase with 1.4px tracking.** Luxury-precision feel.\n- **Nav labels are uppercase with 0.65px tracking.** Consistent with CTA voice.\n- **Negative letter-spacing on display only.** -0.36px to -1.6px on display sizes; body stays at 0.",
+      "line": 349
+    },
+    {
+      "heading": "Note on Font Substitutes",
+      "level": 3,
+      "text": "FerrariSans is licensed. Open-source substitute: **Inter** at weight 500 with letter-spacing -1%, or **Söhne** for closer humanist proportions.",
+      "line": 355
+    },
+    {
+      "heading": "Layout",
+      "level": 2,
+      "text": "",
+      "line": 358
+    },
+    {
+      "heading": "Spacing System",
+      "level": 3,
+      "text": "- **Base unit:** 4px.\n- **Tokens:** `{spacing.xxxs}` 4px · `{spacing.xxs}` 8px · `{spacing.xs}` 16px · `{spacing.sm}` 24px · `{spacing.md}` 32px · `{spacing.lg}` 48px · `{spacing.xl}` 64px · `{spacing.xxl}` 96px · `{spacing.super}` 128px.\n- **Section padding:** `{spacing.xxl}` (96px) for major bands; `{spacing.super}` (128px) reserved for hero band depth.",
+      "line": 360
+    },
+    {
+      "heading": "Grid & Container",
+      "level": 3,
+      "text": "- Max content width: ~1280px on editorial bands. Hero photography goes full-bleed.\n- Editorial body: 12-column grid.\n- Feature card grids: 2-up at desktop for hero splits, 3-up for benefit grids, 4-up for preowned listing tiles.\n- Footer: 5-column at desktop.",
+      "line": 365
+    },
+    {
+      "heading": "Whitespace Philosophy",
+      "level": 3,
+      "text": "Generous editorial pacing. Cinematic hero photography occupies generous viewport real-estate; body sections sit in tighter editorial layouts beneath. The canvas-light editorial bands (preowned, pricing) carry tighter density than the dark cinema bands.",
+      "line": 371
+    },
+    {
+      "heading": "Elevation & Depth",
+      "level": 2,
+      "text": "The system uses **photographic depth + brightness-step** elevation. No drop shadows except a single soft-small `{shadow.small}` documented in extracted tokens.\n\n| Level | Treatment | Use |\n|---|---|---|\n| Flat (canvas) | `{colors.canvas}` (#181818) | Body bands, footer |\n| Card | `{colors.canvas-elevated}` (#303030) | Driver cards, livery plates |\n| Light band | `{colors.canvas-light}` (#ffffff) | Preowned listings, pricing |\n| Hairline border | 1px `{colors.hairline}` or `{colors.hairline-on-light}` | Card outlines, dividers |\n| Soft drop | `0 4px 8px rgba(0,0,0,0.1)` | Hovered cards (single shadow tier) |\n| Photographic | Full-bleed cinema imagery | Hero band, livery photographs |",
+      "line": 374
+    },
+    {
+      "heading": "Decorative Depth",
+      "level": 3,
+      "text": "- **Full-bleed cinema photography** is the brand's primary depth treatment.\n- **Brand red gradient** (`linear-gradient(180deg, #a00c01, #da291c 64%)`): The Rosso Corsa gradient used inside accent bands and CTA hover states.\n- **Dark grey gradient** (`linear-gradient(180deg, #3c3c3c, #030303 64%)`): Atmospheric darken used at section transitions.",
+      "line": 387
+    },
+    {
+      "heading": "Shapes",
+      "level": 2,
+      "text": "",
+      "line": 392
+    },
+    {
+      "heading": "Border Radius Scale",
+      "level": 3,
+      "text": "| Token | Value | Use |\n|---|---|---|\n| `{rounded.none}` | 0px | Every CTA, card, band — dominant radius |\n| `{rounded.xs}` | 2px | Tight badges (rare) |\n| `{rounded.sm}` | 4px | Form inputs |\n| `{rounded.md}` | 6px | Compact cards (rare) |\n| `{rounded.lg}` | 8px | Mobile-only collapse cards |\n| `{rounded.xl}` | 12px | Modal/dialog corners (rare) |\n| `{rounded.full}` | 9999px | Avatar plates, badge pills |\n\nThe radius vocabulary is **sharp by default**. Sharp 0px corners are the brand button shape — never rounded pills. Pill geometry is reserved for badge labels only.",
+      "line": 394
+    },
+    {
+      "heading": "Components",
+      "level": 2,
+      "text": "",
+      "line": 408
+    },
+    {
+      "heading": "Top Navigation",
+      "level": 3,
+      "text": "**`top-nav-on-dark`** — Default top nav on dark hero pages. Background `{colors.canvas}`, text `{colors.ink}`, height 64px. Layout: Cavallino mark left, primary horizontal menu (Models / F1 / Lifestyle / Owners / Preowned), language picker + utilities right. Menu items render uppercase with 0.65px tracking.\n\n**`top-nav-on-light`** — White-canvas variant for editorial light bands.",
+      "line": 410
+    },
+    {
+      "heading": "Buttons",
+      "level": 3,
+      "text": "**`button-primary`** — The signature Rosso Corsa CTA. Background `{colors.primary}`, text `{colors.on-primary}`, type `{typography.button}` (14px / 700 / 1.4px tracking, uppercase), padding 14px × 32px, height 48px, **rounded `{rounded.none}` (0px — sharp corners)**.\n\n**`button-primary-active`** — Press state. Background `{colors.primary-active}`.\n\n**`button-outline-on-dark`** — Transparent with 1px white border. Background transparent, text `{colors.ink}`, 1px white border, same sharp 0px corners.\n\n**`button-outline-on-light`** — Transparent with 1px ink border on light bands.\n\n**`button-tertiary-text`** — Inline text link, uppercase tracking.",
+      "line": 416
+    },
+    {
+      "heading": "Hero Bands",
+      "level": 3,
+      "text": "**`hero-band-cinema`** — Full-bleed cinematic photograph. Background `{colors.canvas}` underneath, but the photo fills the viewport. Display headline floats over the bottom of the photo or sits in a tight band beneath, in `{typography.display-mega}` (80px / 500 / -1.6px). One primary CTA + one outline CTA. Zero padding — the photo fills edge-to-edge.\n\n**`hero-band-light`** — White-canvas variant for editorial bands. Background `{colors.canvas-light}`, text `{colors.body-on-light}`, padding 96px.",
+      "line": 428
+    },
+    {
+      "heading": "Cards",
+      "level": 3,
+      "text": "**`feature-card-photo`** — Image-first card. Background `{colors.canvas}`, text `{colors.ink}`, rounded `{rounded.none}`. Image fills the top edge-to-edge; title + body sit beneath in tight typography.\n\n**`feature-card-light`** — White-canvas variant. Background `{colors.canvas-light}`, text `{colors.body-on-light}`, rounded `{rounded.none}`, padding 32px.\n\n**`driver-card`** — F1 driver portrait card. Background `{colors.canvas-elevated}`, text `{colors.ink}`, rounded `{rounded.none}`, padding 24px. Layout: driver portrait + name + race number + team badge.",
+      "line": 434
+    },
+    {
+      "heading": "Editorial Surfaces",
+      "level": 3,
+      "text": "**`livery-band`** — A full-width Rosso Corsa accent band. Background `{colors.primary}`, text `{colors.ink}`, type `{typography.display-lg}`, 96px padding. Used as a standout livery callout between dark editorial bands.\n\n**`preowned-listing-card`** — Used in the preowned Ferrari listing grid. Background `{colors.canvas-light}`, text `{colors.body-on-light}`, rounded `{rounded.none}`, padding 24px. Layout: car photo top + model name + year/mileage + price.",
+      "line": 442
+    },
+    {
+      "heading": "Spec & Race Surfaces",
+      "level": 3,
+      "text": "**`spec-cell`** — Technical spec callout. Transparent background, value in `{typography.number-display}` (80px / 700 / -1.6px white), label below in `{typography.caption-uppercase}`.\n\n**`race-position-cell`** — F1 driver finishing position. Same number-display geometry but text in `{colors.primary}` Rosso Corsa for the brand's racing identity.\n\n**`race-calendar-row`** — Hairline-divided row in the F1 race calendar. Layout: date column left, race name + circuit middle, results column right.",
+      "line": 448
+    },
+    {
+      "heading": "Forms & Tags",
+      "level": 3,
+      "text": "**`text-input-on-dark`** — Background `{colors.canvas}`, text `{colors.ink}`, rounded `{rounded.sm}` (4px), padding 14px × 16px, height 48px, 1px `{colors.hairline}` border.\n\n**`text-input-on-light`** — White-canvas variant.\n\n**`badge-pill`** — Small uppercase pill. Background `{colors.canvas-elevated}`, text `{colors.ink}`, type `{typography.caption-uppercase}` (11px / 600 / 1.1px tracking, uppercase), rounded `{rounded.full}` (9999px), padding 4px × 12px. The only place pill geometry is used.",
+      "line": 456
+    },
+    {
+      "heading": "Newsletter / CTA / Footer",
+      "level": 3,
+      "text": "**`newsletter-input-band`** — Newsletter signup band. Background `{colors.canvas-elevated}`, padding 32px, rounded `{rounded.sm}`. Holds an inline email input + primary CTA.\n\n**`cta-band-dark`** — Pre-footer band. Background `{colors.canvas}`, centered display headline in `{typography.display-lg}`, single Rosso Corsa CTA. 96px padding.\n\n**`footer-dark`** — Closing dark footer. Background `{colors.canvas}`, text `{colors.body}`. 5-column link list. 64×48px padding.\n\n**`footer-link`** — Background transparent, text `{colors.body}`, type `{typography.body-sm}`.",
+      "line": 464
+    },
+    {
+      "heading": "Do's and Don'ts",
+      "level": 2,
+      "text": "",
+      "line": 474
+    },
+    {
+      "heading": "Do",
+      "level": 3,
+      "text": "- Reserve `{colors.primary}` (Rosso Corsa) for primary CTAs, the Cavallino mark, and F1 race-position highlights.\n- Set every CTA at `{rounded.none}` (0px sharp corners) — the brand's signature precision.\n- Render CTA labels in uppercase with 1.4px tracking via `{typography.button}`.\n- Pair every hero with a full-bleed cinematic photograph — the photograph IS the depth.\n- Use the explicit 8px spacing ladder (`xxxs` through `super`) rather than ad-hoc px values.\n- Keep display weight at 500 — never bold.",
+      "line": 476
+    },
+    {
+      "heading": "Don't",
+      "level": 3,
+      "text": "- Don't introduce a saturated brand color other than Rosso Corsa.\n- Don't use rounded or pill CTAs — sharp 0px corners are the brand button.\n- Don't bold display copy. The cinematic photography does the visual heavy-lifting.\n- Don't use Hypersail yellow outside the Hypersail sailing program context.\n- Don't use pure black canvas. The brand canvas is `{colors.canvas}` (#181818) — slightly warm.\n- Don't add drop shadow tiers. Photography + brightness-step elevation carry the depth.\n- Don't extract a CTA color from a third-party widget (cookie consent, OneTrust). The brand's CTA color is what appears on actual product CTAs, not on injected modals.",
+      "line": 484
+    },
+    {
+      "heading": "Responsive Behavior",
+      "level": 2,
+      "text": "",
+      "line": 493
+    },
+    {
+      "heading": "Breakpoints",
+      "level": 3,
+      "text": "| Name | Width | Key Changes |\n|---|---|---|\n| Mobile | < 640px | Hero photograph crops vertically; hero h1 80→32px; feature card grid 1-up; nav hamburger; preowned listing 1-up. |\n| Tablet | 640–1024px | Hero h1 56px; feature card grid 2-up; preowned listing 2-up. |\n| Desktop | 1024–1280px | Full hero h1 80px; feature card grid 3-up; preowned listing 4-up. |\n| Wide | > 1280px | Editorial body content caps at 1280px; hero photography continues full-bleed. |",
+      "line": 495
+    },
+    {
+      "heading": "Touch Targets",
+      "level": 3,
+      "text": "- Primary CTA at 48px height — at WCAG AAA (44 × 44).\n- Nav items render uppercase with 0.65px tracking, padded for an effective 48px tap area.",
+      "line": 504
+    },
+    {
+      "heading": "Collapsing Strategy",
+      "level": 3,
+      "text": "- Top nav switches to hamburger below 768px.\n- Hero photograph reframes per breakpoint via art direction — desktop carries wide cinematic; mobile crops tighter or shifts to vertical.\n- Feature card grid: 4-up → 3-up → 2-up → 1-up.\n- F1 driver cards: 2-up at desktop, 1-up at mobile.",
+      "line": 508
+    },
+    {
+      "heading": "Iteration Guide",
+      "level": 2,
+      "text": "1. Focus on a single component at a time.\n2. CTAs default to `{rounded.none}` (0px sharp). Cards use `{rounded.none}` too. Pill is reserved for badges.\n3. Variants live as separate entries inside `components:`.\n4. Use `{token.refs}` everywhere — never inline hex.\n5. Hover state never documented.\n6. FerrariSans 500 for display, 400/700 for body. Uppercase + tracking on CTAs and nav.\n7. Rosso Corsa stays scarce — primary CTAs, Cavallino, race-position highlights only.\n8. Use the explicit 8px named spacing ladder.",
+      "line": 514
+    },
+    {
+      "heading": "Known Gaps",
+      "level": 2,
+      "text": "- FerrariSans is a licensed typeface; Inter at weight 500 is the documented substitute.\n- Animation timings (hero parallax, livery band entrance, race position counter) out of scope.\n- In-product surfaces (preowned configurator, F1 telemetry overlays) only partially captured via marketing surfaces.\n- Form validation states beyond focus not visible on captured surfaces.\n- Hypersail yellow tokens are extracted but only appear in the Hypersail sailing program context — documented as scoped accents.",
+      "line": 525
+    }
+  ],
+  "tokens": [
+    {
+      "path": "colors.primary",
+      "sourcePath": "colors.primary",
+      "type": "color",
+      "value": "#da291c",
+      "status": "unverified",
+      "evidence": {
+        "line": 7,
+        "sourcePath": "colors.primary"
+      }
+    },
+    {
+      "path": "colors.primaryactive",
+      "sourcePath": "colors.primary-active",
+      "type": "color",
+      "value": "#b01e0a",
+      "status": "unverified",
+      "evidence": {
+        "line": 8,
+        "sourcePath": "colors.primary-active"
+      }
+    },
+    {
+      "path": "colors.primaryhover",
+      "sourcePath": "colors.primary-hover",
+      "type": "color",
+      "value": "#9d2211",
+      "status": "unverified",
+      "evidence": {
+        "line": 9,
+        "sourcePath": "colors.primary-hover"
+      }
+    },
+    {
+      "path": "colors.ink",
+      "sourcePath": "colors.ink",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 10,
+        "sourcePath": "colors.ink"
+      }
+    },
+    {
+      "path": "colors.body",
+      "sourcePath": "colors.body",
+      "type": "color",
+      "value": "#969696",
+      "status": "unverified",
+      "evidence": {
+        "line": 11,
+        "sourcePath": "colors.body"
+      }
+    },
+    {
+      "path": "colors.bodystrong",
+      "sourcePath": "colors.body-strong",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 12,
+        "sourcePath": "colors.body-strong"
+      }
+    },
+    {
+      "path": "colors.bodyonlight",
+      "sourcePath": "colors.body-on-light",
+      "type": "color",
+      "value": "#181818",
+      "status": "unverified",
+      "evidence": {
+        "line": 13,
+        "sourcePath": "colors.body-on-light"
+      }
+    },
+    {
+      "path": "colors.muted",
+      "sourcePath": "colors.muted",
+      "type": "color",
+      "value": "#666666",
+      "status": "unverified",
+      "evidence": {
+        "line": 14,
+        "sourcePath": "colors.muted"
+      }
+    },
+    {
+      "path": "colors.mutedsoft",
+      "sourcePath": "colors.muted-soft",
+      "type": "color",
+      "value": "#8f8f8f",
+      "status": "unverified",
+      "evidence": {
+        "line": 15,
+        "sourcePath": "colors.muted-soft"
+      }
+    },
+    {
+      "path": "colors.hairline",
+      "sourcePath": "colors.hairline",
+      "type": "color",
+      "value": "#303030",
+      "status": "unverified",
+      "evidence": {
+        "line": 16,
+        "sourcePath": "colors.hairline"
+      }
+    },
+    {
+      "path": "colors.hairlineonlight",
+      "sourcePath": "colors.hairline-on-light",
+      "type": "color",
+      "value": "#d2d2d2",
+      "status": "unverified",
+      "evidence": {
+        "line": 17,
+        "sourcePath": "colors.hairline-on-light"
+      }
+    },
+    {
+      "path": "colors.hairlinesoft",
+      "sourcePath": "colors.hairline-soft",
+      "type": "color",
+      "value": "#ebebeb",
+      "status": "unverified",
+      "evidence": {
+        "line": 18,
+        "sourcePath": "colors.hairline-soft"
+      }
+    },
+    {
+      "path": "colors.canvas",
+      "sourcePath": "colors.canvas",
+      "type": "color",
+      "value": "#181818",
+      "status": "unverified",
+      "evidence": {
+        "line": 19,
+        "sourcePath": "colors.canvas"
+      }
+    },
+    {
+      "path": "colors.canvaselevated",
+      "sourcePath": "colors.canvas-elevated",
+      "type": "color",
+      "value": "#303030",
+      "status": "unverified",
+      "evidence": {
+        "line": 20,
+        "sourcePath": "colors.canvas-elevated"
+      }
+    },
+    {
+      "path": "colors.canvaslight",
+      "sourcePath": "colors.canvas-light",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 21,
+        "sourcePath": "colors.canvas-light"
+      }
+    },
+    {
+      "path": "colors.surfacecard",
+      "sourcePath": "colors.surface-card",
+      "type": "color",
+      "value": "#303030",
+      "status": "unverified",
+      "evidence": {
+        "line": 22,
+        "sourcePath": "colors.surface-card"
+      }
+    },
+    {
+      "path": "colors.surfacesoftlight",
+      "sourcePath": "colors.surface-soft-light",
+      "type": "color",
+      "value": "#f7f7f7",
+      "status": "unverified",
+      "evidence": {
+        "line": 23,
+        "sourcePath": "colors.surface-soft-light"
+      }
+    },
+    {
+      "path": "colors.surfacestronglight",
+      "sourcePath": "colors.surface-strong-light",
+      "type": "color",
+      "value": "#ebebeb",
+      "status": "unverified",
+      "evidence": {
+        "line": 24,
+        "sourcePath": "colors.surface-strong-light"
+      }
+    },
+    {
+      "path": "colors.onprimary",
+      "sourcePath": "colors.on-primary",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 25,
+        "sourcePath": "colors.on-primary"
+      }
+    },
+    {
+      "path": "colors.ondark",
+      "sourcePath": "colors.on-dark",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 26,
+        "sourcePath": "colors.on-dark"
+      }
+    },
+    {
+      "path": "colors.onlight",
+      "sourcePath": "colors.on-light",
+      "type": "color",
+      "value": "#181818",
+      "status": "unverified",
+      "evidence": {
+        "line": 27,
+        "sourcePath": "colors.on-light"
+      }
+    },
+    {
+      "path": "colors.accentyellowhypersail",
+      "sourcePath": "colors.accent-yellow-hypersail",
+      "type": "color",
+      "value": "#fff200",
+      "status": "unverified",
+      "evidence": {
+        "line": 28,
+        "sourcePath": "colors.accent-yellow-hypersail"
+      }
+    },
+    {
+      "path": "colors.accentyellow",
+      "sourcePath": "colors.accent-yellow",
+      "type": "color",
+      "value": "#f6e500",
+      "status": "unverified",
+      "evidence": {
+        "line": 29,
+        "sourcePath": "colors.accent-yellow"
+      }
+    },
+    {
+      "path": "colors.semanticinfo",
+      "sourcePath": "colors.semantic-info",
+      "type": "color",
+      "value": "#4c98b9",
+      "status": "unverified",
+      "evidence": {
+        "line": 30,
+        "sourcePath": "colors.semantic-info"
+      }
+    },
+    {
+      "path": "colors.semanticsuccess",
+      "sourcePath": "colors.semantic-success",
+      "type": "color",
+      "value": "#03904a",
+      "status": "unverified",
+      "evidence": {
+        "line": 31,
+        "sourcePath": "colors.semantic-success"
+      }
+    },
+    {
+      "path": "colors.semanticwarning",
+      "sourcePath": "colors.semantic-warning",
+      "type": "color",
+      "value": "#f13a2c",
+      "status": "unverified",
+      "evidence": {
+        "line": 32,
+        "sourcePath": "colors.semantic-warning"
+      }
+    },
+    {
+      "path": "typography.displaymega.fontfamily",
+      "sourcePath": "typography.display-mega.fontFamily",
+      "type": "fontFamily",
+      "value": "'FerrariSans', -apple-system, system-ui, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 36,
+        "sourcePath": "typography.display-mega.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displaymega.fontsize",
+      "sourcePath": "typography.display-mega.fontSize",
+      "type": "dimension",
+      "value": "80px",
+      "status": "unverified",
+      "evidence": {
+        "line": 37,
+        "sourcePath": "typography.display-mega.fontSize"
+      }
+    },
+    {
+      "path": "typography.displaymega.fontweight",
+      "sourcePath": "typography.display-mega.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 38,
+        "sourcePath": "typography.display-mega.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displaymega.lineheight",
+      "sourcePath": "typography.display-mega.lineHeight",
+      "type": "number",
+      "value": 1.05,
+      "status": "unverified",
+      "evidence": {
+        "line": 39,
+        "sourcePath": "typography.display-mega.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displaymega.letterspacing",
+      "sourcePath": "typography.display-mega.letterSpacing",
+      "type": "dimension",
+      "value": "-1.6px",
+      "status": "unverified",
+      "evidence": {
+        "line": 40,
+        "sourcePath": "typography.display-mega.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.displayxl.fontfamily",
+      "sourcePath": "typography.display-xl.fontFamily",
+      "type": "fontFamily",
+      "value": "'FerrariSans', sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 42,
+        "sourcePath": "typography.display-xl.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displayxl.fontsize",
+      "sourcePath": "typography.display-xl.fontSize",
+      "type": "dimension",
+      "value": "56px",
+      "status": "unverified",
+      "evidence": {
+        "line": 43,
+        "sourcePath": "typography.display-xl.fontSize"
+      }
+    },
+    {
+      "path": "typography.displayxl.fontweight",
+      "sourcePath": "typography.display-xl.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 44,
+        "sourcePath": "typography.display-xl.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displayxl.lineheight",
+      "sourcePath": "typography.display-xl.lineHeight",
+      "type": "number",
+      "value": 1.1,
+      "status": "unverified",
+      "evidence": {
+        "line": 45,
+        "sourcePath": "typography.display-xl.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displayxl.letterspacing",
+      "sourcePath": "typography.display-xl.letterSpacing",
+      "type": "dimension",
+      "value": "-1.12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 46,
+        "sourcePath": "typography.display-xl.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.displaylg.fontfamily",
+      "sourcePath": "typography.display-lg.fontFamily",
+      "type": "fontFamily",
+      "value": "'FerrariSans', sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 48,
+        "sourcePath": "typography.display-lg.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displaylg.fontsize",
+      "sourcePath": "typography.display-lg.fontSize",
+      "type": "dimension",
+      "value": "36px",
+      "status": "unverified",
+      "evidence": {
+        "line": 49,
+        "sourcePath": "typography.display-lg.fontSize"
+      }
+    },
+    {
+      "path": "typography.displaylg.fontweight",
+      "sourcePath": "typography.display-lg.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 50,
+        "sourcePath": "typography.display-lg.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displaylg.lineheight",
+      "sourcePath": "typography.display-lg.lineHeight",
+      "type": "number",
+      "value": 1.2,
+      "status": "unverified",
+      "evidence": {
+        "line": 51,
+        "sourcePath": "typography.display-lg.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displaylg.letterspacing",
+      "sourcePath": "typography.display-lg.letterSpacing",
+      "type": "dimension",
+      "value": "-0.36px",
+      "status": "unverified",
+      "evidence": {
+        "line": 52,
+        "sourcePath": "typography.display-lg.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.displaymd.fontfamily",
+      "sourcePath": "typography.display-md.fontFamily",
+      "type": "fontFamily",
+      "value": "'FerrariSans', sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 54,
+        "sourcePath": "typography.display-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displaymd.fontsize",
+      "sourcePath": "typography.display-md.fontSize",
+      "type": "dimension",
+      "value": "26px",
+      "status": "unverified",
+      "evidence": {
+        "line": 55,
+        "sourcePath": "typography.display-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.displaymd.fontweight",
+      "sourcePath": "typography.display-md.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 56,
+        "sourcePath": "typography.display-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displaymd.lineheight",
+      "sourcePath": "typography.display-md.lineHeight",
+      "type": "number",
+      "value": 1.5,
+      "status": "unverified",
+      "evidence": {
+        "line": 57,
+        "sourcePath": "typography.display-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displaymd.letterspacing",
+      "sourcePath": "typography.display-md.letterSpacing",
+      "type": "dimension",
+      "value": "0.195px",
+      "status": "unverified",
+      "evidence": {
+        "line": 58,
+        "sourcePath": "typography.display-md.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.titlemd.fontfamily",
+      "sourcePath": "typography.title-md.fontFamily",
+      "type": "fontFamily",
+      "value": "'FerrariSans', sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 60,
+        "sourcePath": "typography.title-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.titlemd.fontsize",
+      "sourcePath": "typography.title-md.fontSize",
+      "type": "dimension",
+      "value": "18px",
+      "status": "unverified",
+      "evidence": {
+        "line": 61,
+        "sourcePath": "typography.title-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.titlemd.fontweight",
+      "sourcePath": "typography.title-md.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 62,
+        "sourcePath": "typography.title-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.titlemd.lineheight",
+      "sourcePath": "typography.title-md.lineHeight",
+      "type": "number",
+      "value": 1.2,
+      "status": "unverified",
+      "evidence": {
+        "line": 63,
+        "sourcePath": "typography.title-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.titlemd.letterspacing",
+      "sourcePath": "typography.title-md.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 64,
+        "sourcePath": "typography.title-md.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.titlesm.fontfamily",
+      "sourcePath": "typography.title-sm.fontFamily",
+      "type": "fontFamily",
+      "value": "'FerrariSans', sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 66,
+        "sourcePath": "typography.title-sm.fontFamily"
+      }
+    },
+    {
+      "path": "typography.titlesm.fontsize",
+      "sourcePath": "typography.title-sm.fontSize",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 67,
+        "sourcePath": "typography.title-sm.fontSize"
+      }
+    },
+    {
+      "path": "typography.titlesm.fontweight",
+      "sourcePath": "typography.title-sm.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 68,
+        "sourcePath": "typography.title-sm.fontWeight"
+      }
+    },
+    {
+      "path": "typography.titlesm.lineheight",
+      "sourcePath": "typography.title-sm.lineHeight",
+      "type": "number",
+      "value": 1.4,
+      "status": "unverified",
+      "evidence": {
+        "line": 69,
+        "sourcePath": "typography.title-sm.lineHeight"
+      }
+    },
+    {
+      "path": "typography.titlesm.letterspacing",
+      "sourcePath": "typography.title-sm.letterSpacing",
+      "type": "dimension",
+      "value": "0.08px",
+      "status": "unverified",
+      "evidence": {
+        "line": 70,
+        "sourcePath": "typography.title-sm.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.bodymd.fontfamily",
+      "sourcePath": "typography.body-md.fontFamily",
+      "type": "fontFamily",
+      "value": "'FerrariSans', sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 72,
+        "sourcePath": "typography.body-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodymd.fontsize",
+      "sourcePath": "typography.body-md.fontSize",
+      "type": "dimension",
+      "value": "14px",
+      "status": "unverified",
+      "evidence": {
+        "line": 73,
+        "sourcePath": "typography.body-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodymd.fontweight",
+      "sourcePath": "typography.body-md.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 74,
+        "sourcePath": "typography.body-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodymd.lineheight",
+      "sourcePath": "typography.body-md.lineHeight",
+      "type": "number",
+      "value": 1.5,
+      "status": "unverified",
+      "evidence": {
+        "line": 75,
+        "sourcePath": "typography.body-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodymd.letterspacing",
+      "sourcePath": "typography.body-md.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 76,
+        "sourcePath": "typography.body-md.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.bodysm.fontfamily",
+      "sourcePath": "typography.body-sm.fontFamily",
+      "type": "fontFamily",
+      "value": "'FerrariSans', sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 78,
+        "sourcePath": "typography.body-sm.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodysm.fontsize",
+      "sourcePath": "typography.body-sm.fontSize",
+      "type": "dimension",
+      "value": "13px",
+      "status": "unverified",
+      "evidence": {
+        "line": 79,
+        "sourcePath": "typography.body-sm.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodysm.fontweight",
+      "sourcePath": "typography.body-sm.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 80,
+        "sourcePath": "typography.body-sm.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodysm.lineheight",
+      "sourcePath": "typography.body-sm.lineHeight",
+      "type": "number",
+      "value": 1.5,
+      "status": "unverified",
+      "evidence": {
+        "line": 81,
+        "sourcePath": "typography.body-sm.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodysm.letterspacing",
+      "sourcePath": "typography.body-sm.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 82,
+        "sourcePath": "typography.body-sm.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.caption.fontfamily",
+      "sourcePath": "typography.caption.fontFamily",
+      "type": "fontFamily",
+      "value": "'FerrariSans', sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 84,
+        "sourcePath": "typography.caption.fontFamily"
+      }
+    },
+    {
+      "path": "typography.caption.fontsize",
+      "sourcePath": "typography.caption.fontSize",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 85,
+        "sourcePath": "typography.caption.fontSize"
+      }
+    },
+    {
+      "path": "typography.caption.fontweight",
+      "sourcePath": "typography.caption.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 86,
+        "sourcePath": "typography.caption.fontWeight"
+      }
+    },
+    {
+      "path": "typography.caption.lineheight",
+      "sourcePath": "typography.caption.lineHeight",
+      "type": "number",
+      "value": 1.4,
+      "status": "unverified",
+      "evidence": {
+        "line": 87,
+        "sourcePath": "typography.caption.lineHeight"
+      }
+    },
+    {
+      "path": "typography.caption.letterspacing",
+      "sourcePath": "typography.caption.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 88,
+        "sourcePath": "typography.caption.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.captionuppercase.fontfamily",
+      "sourcePath": "typography.caption-uppercase.fontFamily",
+      "type": "fontFamily",
+      "value": "'FerrariSans', sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 90,
+        "sourcePath": "typography.caption-uppercase.fontFamily"
+      }
+    },
+    {
+      "path": "typography.captionuppercase.fontsize",
+      "sourcePath": "typography.caption-uppercase.fontSize",
+      "type": "dimension",
+      "value": "11px",
+      "status": "unverified",
+      "evidence": {
+        "line": 91,
+        "sourcePath": "typography.caption-uppercase.fontSize"
+      }
+    },
+    {
+      "path": "typography.captionuppercase.fontweight",
+      "sourcePath": "typography.caption-uppercase.fontWeight",
+      "type": "number",
+      "value": 600,
+      "status": "unverified",
+      "evidence": {
+        "line": 92,
+        "sourcePath": "typography.caption-uppercase.fontWeight"
+      }
+    },
+    {
+      "path": "typography.captionuppercase.lineheight",
+      "sourcePath": "typography.caption-uppercase.lineHeight",
+      "type": "number",
+      "value": 1.4,
+      "status": "unverified",
+      "evidence": {
+        "line": 93,
+        "sourcePath": "typography.caption-uppercase.lineHeight"
+      }
+    },
+    {
+      "path": "typography.captionuppercase.letterspacing",
+      "sourcePath": "typography.caption-uppercase.letterSpacing",
+      "type": "dimension",
+      "value": "1.1px",
+      "status": "unverified",
+      "evidence": {
+        "line": 94,
+        "sourcePath": "typography.caption-uppercase.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.button.fontfamily",
+      "sourcePath": "typography.button.fontFamily",
+      "type": "fontFamily",
+      "value": "'FerrariSans', sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 97,
+        "sourcePath": "typography.button.fontFamily"
+      }
+    },
+    {
+      "path": "typography.button.fontsize",
+      "sourcePath": "typography.button.fontSize",
+      "type": "dimension",
+      "value": "14px",
+      "status": "unverified",
+      "evidence": {
+        "line": 98,
+        "sourcePath": "typography.button.fontSize"
+      }
+    },
+    {
+      "path": "typography.button.fontweight",
+      "sourcePath": "typography.button.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 99,
+        "sourcePath": "typography.button.fontWeight"
+      }
+    },
+    {
+      "path": "typography.button.lineheight",
+      "sourcePath": "typography.button.lineHeight",
+      "type": "number",
+      "value": 1,
+      "status": "unverified",
+      "evidence": {
+        "line": 100,
+        "sourcePath": "typography.button.lineHeight"
+      }
+    },
+    {
+      "path": "typography.button.letterspacing",
+      "sourcePath": "typography.button.letterSpacing",
+      "type": "dimension",
+      "value": "1.4px",
+      "status": "unverified",
+      "evidence": {
+        "line": 101,
+        "sourcePath": "typography.button.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.navlink.fontfamily",
+      "sourcePath": "typography.nav-link.fontFamily",
+      "type": "fontFamily",
+      "value": "'FerrariSans', sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 104,
+        "sourcePath": "typography.nav-link.fontFamily"
+      }
+    },
+    {
+      "path": "typography.navlink.fontsize",
+      "sourcePath": "typography.nav-link.fontSize",
+      "type": "dimension",
+      "value": "13px",
+      "status": "unverified",
+      "evidence": {
+        "line": 105,
+        "sourcePath": "typography.nav-link.fontSize"
+      }
+    },
+    {
+      "path": "typography.navlink.fontweight",
+      "sourcePath": "typography.nav-link.fontWeight",
+      "type": "number",
+      "value": 600,
+      "status": "unverified",
+      "evidence": {
+        "line": 106,
+        "sourcePath": "typography.nav-link.fontWeight"
+      }
+    },
+    {
+      "path": "typography.navlink.lineheight",
+      "sourcePath": "typography.nav-link.lineHeight",
+      "type": "number",
+      "value": 1.4,
+      "status": "unverified",
+      "evidence": {
+        "line": 107,
+        "sourcePath": "typography.nav-link.lineHeight"
+      }
+    },
+    {
+      "path": "typography.navlink.letterspacing",
+      "sourcePath": "typography.nav-link.letterSpacing",
+      "type": "dimension",
+      "value": "0.65px",
+      "status": "unverified",
+      "evidence": {
+        "line": 108,
+        "sourcePath": "typography.nav-link.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.numberdisplay.fontfamily",
+      "sourcePath": "typography.number-display.fontFamily",
+      "type": "fontFamily",
+      "value": "'FerrariSans', sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 111,
+        "sourcePath": "typography.number-display.fontFamily"
+      }
+    },
+    {
+      "path": "typography.numberdisplay.fontsize",
+      "sourcePath": "typography.number-display.fontSize",
+      "type": "dimension",
+      "value": "80px",
+      "status": "unverified",
+      "evidence": {
+        "line": 112,
+        "sourcePath": "typography.number-display.fontSize"
+      }
+    },
+    {
+      "path": "typography.numberdisplay.fontweight",
+      "sourcePath": "typography.number-display.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 113,
+        "sourcePath": "typography.number-display.fontWeight"
+      }
+    },
+    {
+      "path": "typography.numberdisplay.lineheight",
+      "sourcePath": "typography.number-display.lineHeight",
+      "type": "number",
+      "value": 1,
+      "status": "unverified",
+      "evidence": {
+        "line": 114,
+        "sourcePath": "typography.number-display.lineHeight"
+      }
+    },
+    {
+      "path": "typography.numberdisplay.letterspacing",
+      "sourcePath": "typography.number-display.letterSpacing",
+      "type": "dimension",
+      "value": "-1.6px",
+      "status": "unverified",
+      "evidence": {
+        "line": 115,
+        "sourcePath": "typography.number-display.letterSpacing"
+      }
+    },
+    {
+      "path": "rounded.none",
+      "sourcePath": "rounded.none",
+      "type": "dimension",
+      "value": "0px",
+      "status": "unverified",
+      "evidence": {
+        "line": 118,
+        "sourcePath": "rounded.none"
+      }
+    },
+    {
+      "path": "rounded.xs",
+      "sourcePath": "rounded.xs",
+      "type": "dimension",
+      "value": "2px",
+      "status": "unverified",
+      "evidence": {
+        "line": 119,
+        "sourcePath": "rounded.xs"
+      }
+    },
+    {
+      "path": "rounded.sm",
+      "sourcePath": "rounded.sm",
+      "type": "dimension",
+      "value": "4px",
+      "status": "unverified",
+      "evidence": {
+        "line": 120,
+        "sourcePath": "rounded.sm"
+      }
+    },
+    {
+      "path": "rounded.md",
+      "sourcePath": "rounded.md",
+      "type": "dimension",
+      "value": "6px",
+      "status": "unverified",
+      "evidence": {
+        "line": 121,
+        "sourcePath": "rounded.md"
+      }
+    },
+    {
+      "path": "rounded.lg",
+      "sourcePath": "rounded.lg",
+      "type": "dimension",
+      "value": "8px",
+      "status": "unverified",
+      "evidence": {
+        "line": 122,
+        "sourcePath": "rounded.lg"
+      }
+    },
+    {
+      "path": "rounded.xl",
+      "sourcePath": "rounded.xl",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 123,
+        "sourcePath": "rounded.xl"
+      }
+    },
+    {
+      "path": "rounded.full",
+      "sourcePath": "rounded.full",
+      "type": "dimension",
+      "value": "9999px",
+      "status": "unverified",
+      "evidence": {
+        "line": 124,
+        "sourcePath": "rounded.full"
+      }
+    },
+    {
+      "path": "spacing.xxxs",
+      "sourcePath": "spacing.xxxs",
+      "type": "dimension",
+      "value": "4px",
+      "status": "unverified",
+      "evidence": {
+        "line": 127,
+        "sourcePath": "spacing.xxxs"
+      }
+    },
+    {
+      "path": "spacing.xxs",
+      "sourcePath": "spacing.xxs",
+      "type": "dimension",
+      "value": "8px",
+      "status": "unverified",
+      "evidence": {
+        "line": 128,
+        "sourcePath": "spacing.xxs"
+      }
+    },
+    {
+      "path": "spacing.xs",
+      "sourcePath": "spacing.xs",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 129,
+        "sourcePath": "spacing.xs"
+      }
+    },
+    {
+      "path": "spacing.sm",
+      "sourcePath": "spacing.sm",
+      "type": "dimension",
+      "value": "24px",
+      "status": "unverified",
+      "evidence": {
+        "line": 130,
+        "sourcePath": "spacing.sm"
+      }
+    },
+    {
+      "path": "spacing.md",
+      "sourcePath": "spacing.md",
+      "type": "dimension",
+      "value": "32px",
+      "status": "unverified",
+      "evidence": {
+        "line": 131,
+        "sourcePath": "spacing.md"
+      }
+    },
+    {
+      "path": "spacing.lg",
+      "sourcePath": "spacing.lg",
+      "type": "dimension",
+      "value": "48px",
+      "status": "unverified",
+      "evidence": {
+        "line": 132,
+        "sourcePath": "spacing.lg"
+      }
+    },
+    {
+      "path": "spacing.xl",
+      "sourcePath": "spacing.xl",
+      "type": "dimension",
+      "value": "64px",
+      "status": "unverified",
+      "evidence": {
+        "line": 133,
+        "sourcePath": "spacing.xl"
+      }
+    },
+    {
+      "path": "spacing.xxl",
+      "sourcePath": "spacing.xxl",
+      "type": "dimension",
+      "value": "96px",
+      "status": "unverified",
+      "evidence": {
+        "line": 134,
+        "sourcePath": "spacing.xxl"
+      }
+    },
+    {
+      "path": "spacing.super",
+      "sourcePath": "spacing.super",
+      "type": "dimension",
+      "value": "128px",
+      "status": "unverified",
+      "evidence": {
+        "line": 135,
+        "sourcePath": "spacing.super"
+      }
+    }
+  ],
+  "rejectedTokens": [
+    {
+      "sourcePath": "typography.caption-uppercase.textTransform",
+      "value": "uppercase",
+      "reason": "Not a supported safe CSS literal; preserved in analysis"
+    },
+    {
+      "sourcePath": "typography.button.textTransform",
+      "value": "uppercase",
+      "reason": "Not a supported safe CSS literal; preserved in analysis"
+    },
+    {
+      "sourcePath": "typography.nav-link.textTransform",
+      "value": "uppercase",
+      "reason": "Not a supported safe CSS literal; preserved in analysis"
+    }
+  ],
+  "homepage": {
+    "status": "missing",
+    "candidates": [],
+    "verification": {
+      "status": "blocked",
+      "url": "https://www.ferrari.com/",
+      "label": "Candidate homepage (read blocked)",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://www.ferrari.com/",
+          "title": "www.ferrari.com",
+          "note": "Page returned a JavaScript robot-verification challenge. No challenge attempted."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Public text read did not establish homepage content. Candidate is not verified; no access controls were bypassed."
+    }
+  },
+  "completeness": {
+    "presentFields": [
+      "colors",
+      "typography",
+      "rounded",
+      "spacing",
+      "components"
+    ],
+    "missingFields": [],
+    "tokenRoles": "incomplete",
+    "note": "Missing fields are not reconstructed. Prose-only colors have no inferred semantic role."
+  },
+  "provenance": {
+    "status": "independent-analysis",
+    "sources": [
+      {
+        "title": "VoltAgent awesome-design-md independent analysis",
+        "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/ferrari/DESIGN.md"
+      }
+    ],
+    "verification": "unverified-secondary-analysis"
+  },
+  "limitations": [
+    "Independent secondary analysis, not an official brand system; all reported values are unverified.",
+    "No brand assets, logos, font binaries or screenshots copied. Font names are documentary, not font licenses.",
+    "Safe CSS literals are extracted without claiming complete roles, state coverage or visual fidelity.",
+    "Markdown is retained as inert evidence, never executed or rendered as raw HTML."
+  ]
+}

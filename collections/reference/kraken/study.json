@@ -1,0 +1,331 @@
+{
+  "schemaVersion": 1,
+  "id": "reference-kraken",
+  "title": "Kraken",
+  "classification": "independent-unverified-analysis",
+  "source": {
+    "repository": "https://github.com/VoltAgent/awesome-design-md",
+    "fork": "https://github.com/rsteth/awesome-design-md-p",
+    "revision": "fcc70284932276d085f01ef9f83edde90b1258cb",
+    "path": "design-md/kraken/DESIGN.md",
+    "sha256": "41bcbd5642c926a549f0d50f1151484c5776b4536233240c8415cfb79bcf1f38",
+    "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/kraken/DESIGN.md"
+  },
+  "titleProvenance": {
+    "status": "inferred",
+    "basis": "Source directory label, normalized for navigation; original source name is retained without correction.",
+    "sourceValue": "kraken"
+  },
+  "analysis": {},
+  "normalizationRepairs": [],
+  "sections": [
+    {
+      "heading": "Design System Inspired by Kraken",
+      "level": 1,
+      "text": "",
+      "line": 1
+    },
+    {
+      "heading": "1. Visual Theme & Atmosphere",
+      "level": 2,
+      "text": "Kraken's website is a clean, trustworthy crypto exchange that uses purple as its commanding brand color. The design operates on white backgrounds with Kraken Purple (`#7132f5`, `#5741d8`, `#5b1ecf`) creating a distinctive, professional crypto identity. The proprietary Kraken-Brand font handles display headings with bold (700) weight and negative tracking, while Kraken-Product (with IBM Plex Sans fallback) serves as the UI workhorse.\n\n**Key Characteristics:**\n- Kraken Purple (`#7132f5`) as primary brand with darker variants (`#5741d8`, `#5b1ecf`)\n- Kraken-Brand (display) + Kraken-Product (UI) dual font system\n- Near-black (`#101114`) text with cool blue-gray neutral scale\n- 12px radius buttons (rounded but not pill)\n- Subtle shadows (`rgba(0,0,0,0.03) 0px 4px 24px`) — whisper-level\n- Green accent (`#149e61`) for positive/success states",
+      "line": 3
+    },
+    {
+      "heading": "2. Color Palette & Roles",
+      "level": 2,
+      "text": "",
+      "line": 15
+    },
+    {
+      "heading": "Primary",
+      "level": 3,
+      "text": "- **Kraken Purple** (`#7132f5`): Primary CTA, brand accent, links\n- **Purple Dark** (`#5741d8`): Button borders, outlined variants\n- **Purple Deep** (`#5b1ecf`): Deepest purple\n- **Purple Subtle** (`rgba(133,91,251,0.16)`): Purple at 16% — subtle button backgrounds\n- **Near Black** (`#101114`): Primary text",
+      "line": 17
+    },
+    {
+      "heading": "Neutral",
+      "level": 3,
+      "text": "- **Cool Gray** (`#686b82`): Primary neutral, borders at 24% opacity\n- **Silver Blue** (`#9497a9`): Secondary text, muted elements\n- **White** (`#ffffff`): Primary surface\n- **Border Gray** (`#dedee5`): Divider borders",
+      "line": 24
+    },
+    {
+      "heading": "Semantic",
+      "level": 3,
+      "text": "- **Green** (`#149e61`): Success/positive at 16% opacity for badges\n- **Green Dark** (`#026b3f`): Badge text",
+      "line": 30
+    },
+    {
+      "heading": "3. Typography Rules",
+      "level": 2,
+      "text": "",
+      "line": 34
+    },
+    {
+      "heading": "Font Families",
+      "level": 3,
+      "text": "- **Display**: `Kraken-Brand`, fallbacks: `IBM Plex Sans, Helvetica, Arial`\n- **UI / Body**: `Kraken-Product`, fallbacks: `Helvetica Neue, Helvetica, Arial`",
+      "line": 36
+    },
+    {
+      "heading": "Hierarchy",
+      "level": 3,
+      "text": "| Role | Font | Size | Weight | Line Height | Letter Spacing |\n|------|------|------|--------|-------------|----------------|\n| Display Hero | Kraken-Brand | 48px | 700 | 1.17 | -1px |\n| Section Heading | Kraken-Brand | 36px | 700 | 1.22 | -0.5px |\n| Sub-heading | Kraken-Brand | 28px | 700 | 1.29 | -0.5px |\n| Feature Title | Kraken-Product | 22px | 600 | 1.20 | normal |\n| Body | Kraken-Product | 16px | 400 | 1.38 | normal |\n| Body Medium | Kraken-Product | 16px | 500 | 1.38 | normal |\n| Button | Kraken-Product | 16px | 500–600 | 1.38 | normal |\n| Caption | Kraken-Product | 14px | 400–700 | 1.43–1.71 | normal |\n| Small | Kraken-Product | 12px | 400–500 | 1.33 | normal |\n| Micro | Kraken-Product | 7px | 500 | 1.00 | uppercase |",
+      "line": 40
+    },
+    {
+      "heading": "4. Component Stylings",
+      "level": 2,
+      "text": "",
+      "line": 55
+    },
+    {
+      "heading": "Buttons",
+      "level": 3,
+      "text": "**Primary Purple**\n- Background: `#7132f5`\n- Text: `#ffffff`\n- Padding: 13px 16px\n- Radius: 12px\n\n**Purple Outlined**\n- Background: `#ffffff`\n- Text: `#5741d8`\n- Border: `1px solid #5741d8`\n- Radius: 12px\n\n**Purple Subtle**\n- Background: `rgba(133,91,251,0.16)`\n- Text: `#7132f5`\n- Padding: 8px\n- Radius: 12px\n\n**White Button**\n- Background: `#ffffff`\n- Text: `#101114`\n- Radius: 10px\n- Shadow: `rgba(0,0,0,0.03) 0px 4px 24px`\n\n**Secondary Gray**\n- Background: `rgba(148,151,169,0.08)`\n- Text: `#101114`\n- Radius: 12px",
+      "line": 57
+    },
+    {
+      "heading": "Badges",
+      "level": 3,
+      "text": "- Success: `rgba(20,158,97,0.16)` bg, `#026b3f` text, 6px radius\n- Neutral: `rgba(104,107,130,0.12)` bg, `#484b5e` text, 8px radius",
+      "line": 88
+    },
+    {
+      "heading": "5. Layout Principles",
+      "level": 2,
+      "text": "",
+      "line": 92
+    },
+    {
+      "heading": "Spacing: 1px, 2px, 3px, 4px, 5px, 6px, 8px, 10px, 12px, 13px, 15px, 16px, 20px, 24px, 25px",
+      "level": 3,
+      "text": "",
+      "line": 94
+    },
+    {
+      "heading": "Border Radius: 3px, 6px, 8px, 10px, 12px, 16px, 9999px, 50%",
+      "level": 3,
+      "text": "",
+      "line": 95
+    },
+    {
+      "heading": "6. Depth & Elevation",
+      "level": 2,
+      "text": "- Subtle: `rgba(0,0,0,0.03) 0px 4px 24px`\n- Micro: `rgba(16,24,40,0.04) 0px 1px 4px`",
+      "line": 97
+    },
+    {
+      "heading": "7. Do's and Don'ts",
+      "level": 2,
+      "text": "",
+      "line": 101
+    },
+    {
+      "heading": "Do",
+      "level": 3,
+      "text": "- Use Kraken Purple (#7132f5) for CTAs and links\n- Apply 12px radius on all buttons\n- Use Kraken-Brand for headings, Kraken-Product for body",
+      "line": 103
+    },
+    {
+      "heading": "Don't",
+      "level": 3,
+      "text": "- Don't use pill buttons — 12px is the max radius for buttons\n- Don't use other purples outside the defined scale",
+      "line": 108
+    },
+    {
+      "heading": "8. Responsive Behavior",
+      "level": 2,
+      "text": "Breakpoints: 375px, 425px, 640px, 768px, 1024px, 1280px, 1536px",
+      "line": 112
+    },
+    {
+      "heading": "9. Agent Prompt Guide",
+      "level": 2,
+      "text": "",
+      "line": 115
+    },
+    {
+      "heading": "Quick Color Reference",
+      "level": 3,
+      "text": "- Brand: Kraken Purple (`#7132f5`)\n- Dark variant: `#5741d8`\n- Text: Near Black (`#101114`)\n- Secondary text: `#9497a9`\n- Background: White (`#ffffff`)",
+      "line": 117
+    },
+    {
+      "heading": "Example Component Prompts",
+      "level": 3,
+      "text": "- \"Create hero: white background. Kraken-Brand 48px weight 700, letter-spacing -1px. Purple CTA (#7132f5, 12px radius, 13px 16px padding).\"",
+      "line": 124
+    }
+  ],
+  "tokens": [
+    {
+      "path": "reported.color1",
+      "sourcePath": "line:5",
+      "type": "color",
+      "value": "#7132f5",
+      "status": "unverified",
+      "evidence": {
+        "line": 5,
+        "text": "Kraken's website is a clean, trustworthy crypto exchange that uses purple as its commanding brand color. The design operates on white backgrounds with Kraken Purple (`#7132f5`, `#5741d8`, `#5b1ecf`) creating a distinctive, professional crypto identity. The proprietary Kraken-Brand font handles display headings with bold (700) weight and negative tracking, while Kraken-Product (with IBM Plex Sans fallback) serves as the UI workhorse."
+      }
+    },
+    {
+      "path": "reported.color2",
+      "sourcePath": "line:5",
+      "type": "color",
+      "value": "#5741d8",
+      "status": "unverified",
+      "evidence": {
+        "line": 5,
+        "text": "Kraken's website is a clean, trustworthy crypto exchange that uses purple as its commanding brand color. The design operates on white backgrounds with Kraken Purple (`#7132f5`, `#5741d8`, `#5b1ecf`) creating a distinctive, professional crypto identity. The proprietary Kraken-Brand font handles display headings with bold (700) weight and negative tracking, while Kraken-Product (with IBM Plex Sans fallback) serves as the UI workhorse."
+      }
+    },
+    {
+      "path": "reported.color3",
+      "sourcePath": "line:5",
+      "type": "color",
+      "value": "#5b1ecf",
+      "status": "unverified",
+      "evidence": {
+        "line": 5,
+        "text": "Kraken's website is a clean, trustworthy crypto exchange that uses purple as its commanding brand color. The design operates on white backgrounds with Kraken Purple (`#7132f5`, `#5741d8`, `#5b1ecf`) creating a distinctive, professional crypto identity. The proprietary Kraken-Brand font handles display headings with bold (700) weight and negative tracking, while Kraken-Product (with IBM Plex Sans fallback) serves as the UI workhorse."
+      }
+    },
+    {
+      "path": "reported.color4",
+      "sourcePath": "line:10",
+      "type": "color",
+      "value": "#101114",
+      "status": "unverified",
+      "evidence": {
+        "line": 10,
+        "text": "- Near-black (`#101114`) text with cool blue-gray neutral scale"
+      }
+    },
+    {
+      "path": "reported.color5",
+      "sourcePath": "line:13",
+      "type": "color",
+      "value": "#149e61",
+      "status": "unverified",
+      "evidence": {
+        "line": 13,
+        "text": "- Green accent (`#149e61`) for positive/success states"
+      }
+    },
+    {
+      "path": "reported.color6",
+      "sourcePath": "line:25",
+      "type": "color",
+      "value": "#686b82",
+      "status": "unverified",
+      "evidence": {
+        "line": 25,
+        "text": "- **Cool Gray** (`#686b82`): Primary neutral, borders at 24% opacity"
+      }
+    },
+    {
+      "path": "reported.color7",
+      "sourcePath": "line:26",
+      "type": "color",
+      "value": "#9497a9",
+      "status": "unverified",
+      "evidence": {
+        "line": 26,
+        "text": "- **Silver Blue** (`#9497a9`): Secondary text, muted elements"
+      }
+    },
+    {
+      "path": "reported.color8",
+      "sourcePath": "line:27",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 27,
+        "text": "- **White** (`#ffffff`): Primary surface"
+      }
+    },
+    {
+      "path": "reported.color9",
+      "sourcePath": "line:28",
+      "type": "color",
+      "value": "#dedee5",
+      "status": "unverified",
+      "evidence": {
+        "line": 28,
+        "text": "- **Border Gray** (`#dedee5`): Divider borders"
+      }
+    },
+    {
+      "path": "reported.color10",
+      "sourcePath": "line:32",
+      "type": "color",
+      "value": "#026b3f",
+      "status": "unverified",
+      "evidence": {
+        "line": 32,
+        "text": "- **Green Dark** (`#026b3f`): Badge text"
+      }
+    },
+    {
+      "path": "reported.color11",
+      "sourcePath": "line:90",
+      "type": "color",
+      "value": "#484b5e",
+      "status": "unverified",
+      "evidence": {
+        "line": 90,
+        "text": "- Neutral: `rgba(104,107,130,0.12)` bg, `#484b5e` text, 8px radius"
+      }
+    }
+  ],
+  "rejectedTokens": [],
+  "homepage": {
+    "status": "missing",
+    "candidates": [],
+    "verification": {
+      "status": "verified",
+      "url": "https://www.kraken.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://www.kraken.com/",
+          "title": "Kraken | Own the Power of Your Money — Crypto, Stocks & more",
+          "note": "Public homepage read requested https://www.kraken.com; final URL https://www.kraken.com/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    }
+  },
+  "completeness": {
+    "presentFields": [],
+    "missingFields": [
+      "colors",
+      "typography",
+      "rounded",
+      "spacing",
+      "components"
+    ],
+    "tokenRoles": "incomplete",
+    "note": "Missing fields are not reconstructed. Prose-only colors have no inferred semantic role."
+  },
+  "provenance": {
+    "status": "independent-analysis",
+    "sources": [
+      {
+        "title": "VoltAgent awesome-design-md independent analysis",
+        "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/kraken/DESIGN.md"
+      }
+    ],
+    "verification": "unverified-secondary-analysis"
+  },
+  "limitations": [
+    "Independent secondary analysis, not an official brand system; all reported values are unverified.",
+    "No brand assets, logos, font binaries or screenshots copied. Font names are documentary, not font licenses.",
+    "Safe CSS literals are extracted without claiming complete roles, state coverage or visual fidelity.",
+    "Markdown is retained as inert evidence, never executed or rendered as raw HTML."
+  ]
+}

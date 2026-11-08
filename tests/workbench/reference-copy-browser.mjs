@@ -1,0 +1,30 @@
+/** Visible-copy regression while exact provenance remains inspectable. */
+import assert from 'node:assert/strict';
+import http from 'node:http';
+import {readFile,mkdir,writeFile} from 'node:fs/promises';
+import {resolve,extname,sep} from 'node:path';
+import {fileURLToPath} from 'node:url';
+const root=resolve(fileURLToPath(new URL('../../',import.meta.url))),out=resolve(root,'tests/workbench/artifacts/reference-copy');
+const {chromium}=await import(process.env.PLAYWRIGHT_MODULE??'playwright');
+const report=JSON.parse(await readFile(resolve(root,'collections/reference-sheets/report.json'),'utf8'));
+const packageVersion=JSON.parse(await readFile(resolve(root,'package.json'),'utf8')).version;
+const server=http.createServer(async(req,res)=>{const pathname=new URL(req.url,'http://localhost').pathname,path=resolve(root,'.'+pathname+(pathname.endsWith('/')?'index.html':''));if(!path.startsWith(root+sep)){res.writeHead(403).end();return;}try{res.setHeader('Content-Type',({'.mjs':'text/javascript','.css':'text/css','.json':'application/json','.html':'text/html'})[extname(path)]??'text/plain');res.setHeader('Access-Control-Allow-Origin','*');res.end(await readFile(path));}catch{res.writeHead(404).end();}});
+await new Promise(r=>server.listen(0,'127.0.0.1',r));const base=`http://127.0.0.1:${server.address().port}`;let browser;const errors=[],external=[],runs=[];
+try{
+ await mkdir(out,{recursive:true});browser=await chromium.launch({headless:true,...(process.env.PLAYWRIGHT_CHANNEL?{channel:process.env.PLAYWRIGHT_CHANNEL}:{})});const page=await browser.newPage();page.on('pageerror',e=>errors.push(e.message));page.on('request',r=>{if(new URL(r.url()).origin!==base)external.push(r.url());});
+ for(const [viewport,width]of [['desktop',1440],['mobile',390]]){
+  await page.setViewportSize({width,height:1000});await page.goto(base+'/apps/studio/?library=references&section=components');await page.getByLabel('Collection',{exact:true}).waitFor();
+  for(const study of report.studies){
+   await page.getByLabel('Collection',{exact:true}).selectOption(study.id);const frame=page.frameLocator('iframe');await frame.locator('html[data-workbench-ready=true]').waitFor();await page.getByText('Theme adapter confirmed: analysis.',{exact:true}).waitFor();
+   assert.equal(await page.locator('.studio-identity').innerText(),'Design system '+packageVersion);assert.equal(await page.locator('[data-library=own]').innerText(),'Robin');assert.equal(await page.locator('.wb-brand small').count(),0);assert.equal(await page.locator('.wb-reference-notice strong').innerText(),'Independent reference study');assert.equal(await page.locator('.wb-reference-notice .wb-note').count(),0);assert.equal(await page.locator('.wb-header .wb-note').innerText(),'Independent unverified reference');assert.equal(await page.locator('#library-status').innerText(),'');assert.equal(await page.locator('.wb-nav-index,.wb-sidebar-note,.studio-symbol,.wb-mark,.wb-empty-symbol').count(),0);assert.equal(await page.locator('[data-library=capture]').innerText(),'Capture studio');assert.deepEqual(await page.locator('[aria-label="Workbench sections"] button').allTextContents(),['Foundations','Components','Patterns','Screens','Checks','Sources']);
+   assert.ok(await frame.locator('template.source-evidence[data-source-line]').count()>0);assert.equal(await frame.locator('a[href*="#L"]').count(),0);await frame.locator('.method').evaluate(n=>n.open=true);await frame.locator('.evidence').first().evaluate(n=>n.open=true);const visible=await frame.locator('body').innerText();assert.doesNotMatch(await frame.locator('.section-title').allTextContents().then(x=>x.join('\n')),/\b0[1-5] \//);assert.doesNotMatch(visible,/(?:Source analysis|Evidence|Supporting prose)\s*·\s*L\d+|source line \d+/i);await frame.locator('.method').evaluate(n=>n.open=false);
+   assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true);const child=page.frames().find(f=>f.parentFrame()===page.mainFrame());assert.equal(await child.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true);
+   if(['reference-raycast','reference-warp','reference-stripe'].includes(study.id)){await child.evaluate(()=>scrollTo(0,0));await page.locator('iframe').scrollIntoViewIfNeeded();await child.evaluate(()=>new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r))));await page.screenshot({path:resolve(out,study.id+'-'+viewport+'.png'),fullPage:true});}
+   runs.push({study:study.id,viewport,status:'passed'});
+  }
+  await page.getByLabel('Collection',{exact:true}).selectOption('reference-raycast');assert.equal(await page.locator('.wb-reference-notice a').getAttribute('href'),'https://www.raycast.com/');assert.equal(await page.locator('.wb-reference-notice a').getAttribute('target'),'_blank');
+  await page.getByRole('button',{name:'Patterns',exact:true}).click();const pattern=page.frameLocator('iframe');await pattern.locator('html[data-workbench-ready=true]').waitFor();await pattern.locator('details').evaluate(n=>n.open=true);assert.equal(await pattern.locator('a[href*="#L"]').count(),0);assert.ok(await pattern.locator('template.source-evidence[data-source-line]').count()>0);
+  await page.getByRole('button',{name:'Foundations',exact:true}).click();assert.deepEqual(await page.locator('.wb-tokens th').allTextContents(),['Token','Type','Value','Mode']);assert.ok(await page.locator('.wb-tokens tr[data-source-line]').count()>0);assert.doesNotMatch(await page.locator('.wb-study summary').allTextContents().then(x=>x.join('\n')),/source line \d+/i);
+ }
+ assert.deepEqual(errors,[]);assert.deepEqual(external,[]);await writeFile(resolve(out,'results.json'),JSON.stringify({timestamp:new Date().toISOString(),runs,errors,externalRequests:external,scope:'All 84 recipe sheets desktop/mobile, concise chrome, hidden exact citations, retained report/source metadata, original-site action and foundation/pattern provenance.'},null,2)+'\n');console.log(`PASS: ${runs.length} copy/provenance mounts; no overflow, errors, external requests or visible line citations.`);
+}finally{await browser?.close();await new Promise(r=>server.close(r));}

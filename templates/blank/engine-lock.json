@@ -1,0 +1,7 @@
+{
+  "engine": "workbench",
+  "version": "0.4.0",
+  "distribution": "vendored",
+  "entry": "vendor/workbench/index.mjs",
+  "skin": "workbench"
+}

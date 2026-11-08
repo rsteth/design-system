@@ -1,0 +1,1989 @@
+{
+  "schemaVersion": 1,
+  "id": "reference-minimax",
+  "title": "Minimax",
+  "classification": "independent-unverified-analysis",
+  "source": {
+    "repository": "https://github.com/VoltAgent/awesome-design-md",
+    "fork": "https://github.com/rsteth/awesome-design-md-p",
+    "revision": "fcc70284932276d085f01ef9f83edde90b1258cb",
+    "path": "design-md/minimax/DESIGN.md",
+    "sha256": "2658b96488bb629749259b152c5ba2912a0e8feb6a03477e265879abd9264c50",
+    "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/minimax/DESIGN.md"
+  },
+  "sourceName": "MiniMax-design-analysis",
+  "titleProvenance": {
+    "status": "inferred",
+    "basis": "Source directory label, normalized for navigation; original source name is retained without correction.",
+    "sourceValue": "minimax",
+    "originalName": "MiniMax-design-analysis"
+  },
+  "description": "MiniMax presents itself as a premium AI infrastructure brand through a striking duality — bold black-pill CTAs and stark white canvas for marketing, paired with vibrant gradient product cards (orange-red, magenta-pink, purple, blue) that turn each model release into a distinctive visual identity. The system uses DM Sans across all surfaces, employs an oversized 80px hero display, anchors major actions in deep near-black pills, and layers content density via a 3-column documentation grid with sidebar nav, prose body, and TOC. Coverage spans the marketing homepage, model showcase pages, developer documentation, and platform pricing surfaces.",
+  "analysis": {
+    "version": "alpha",
+    "name": "MiniMax-design-analysis",
+    "description": "MiniMax presents itself as a premium AI infrastructure brand through a striking duality — bold black-pill CTAs and stark white canvas for marketing, paired with vibrant gradient product cards (orange-red, magenta-pink, purple, blue) that turn each model release into a distinctive visual identity. The system uses DM Sans across all surfaces, employs an oversized 80px hero display, anchors major actions in deep near-black pills, and layers content density via a 3-column documentation grid with sidebar nav, prose body, and TOC. Coverage spans the marketing homepage, model showcase pages, developer documentation, and platform pricing surfaces.",
+    "colors": {
+      "primary": "#0a0a0a",
+      "on-primary": "#ffffff",
+      "primary-soft": "#181e25",
+      "brand-coral": "#ff5530",
+      "brand-magenta": "#ea5ec1",
+      "brand-blue": "#1456f0",
+      "brand-blue-mid": "#3b82f6",
+      "brand-blue-deep": "#1d4ed8",
+      "brand-blue-700": "#17437d",
+      "brand-cyan": "#3daeff",
+      "brand-blue-200": "#bfdbfe",
+      "brand-purple": "#a855f7",
+      "canvas": "#ffffff",
+      "surface": "#f7f8fa",
+      "surface-soft": "#f2f3f5",
+      "hairline": "#e5e7eb",
+      "hairline-soft": "#eaecf0",
+      "ink": "#0a0a0a",
+      "ink-strong": "#000000",
+      "charcoal": "#222222",
+      "slate": "#45515e",
+      "steel": "#5f5f5f",
+      "stone": "#8e8e93",
+      "muted": "#a8aab2",
+      "success-bg": "#e8ffea",
+      "success-text": "#1ba673",
+      "on-dark": "#ffffff",
+      "footer-bg": "#0a0a0a"
+    },
+    "typography": {
+      "hero-display": {
+        "fontFamily": "DM Sans",
+        "fontSize": "80px",
+        "fontWeight": 600,
+        "lineHeight": 1.1,
+        "letterSpacing": "-2px"
+      },
+      "display-lg": {
+        "fontFamily": "DM Sans",
+        "fontSize": "56px",
+        "fontWeight": 600,
+        "lineHeight": 1.1,
+        "letterSpacing": "-1.5px"
+      },
+      "heading-lg": {
+        "fontFamily": "DM Sans",
+        "fontSize": "40px",
+        "fontWeight": 600,
+        "lineHeight": 1.2,
+        "letterSpacing": "-1px"
+      },
+      "heading-md": {
+        "fontFamily": "DM Sans",
+        "fontSize": "32px",
+        "fontWeight": 600,
+        "lineHeight": 1.25,
+        "letterSpacing": "-0.5px"
+      },
+      "heading-sm": {
+        "fontFamily": "DM Sans",
+        "fontSize": "24px",
+        "fontWeight": 600,
+        "lineHeight": 1.3
+      },
+      "card-title": {
+        "fontFamily": "DM Sans",
+        "fontSize": "20px",
+        "fontWeight": 600,
+        "lineHeight": 1.4
+      },
+      "subtitle": {
+        "fontFamily": "DM Sans",
+        "fontSize": "18px",
+        "fontWeight": 500,
+        "lineHeight": 1.5
+      },
+      "body-md": {
+        "fontFamily": "DM Sans",
+        "fontSize": "16px",
+        "fontWeight": 400,
+        "lineHeight": 1.5
+      },
+      "body-md-bold": {
+        "fontFamily": "DM Sans",
+        "fontSize": "16px",
+        "fontWeight": 700,
+        "lineHeight": 1.5
+      },
+      "body-sm": {
+        "fontFamily": "DM Sans",
+        "fontSize": "14px",
+        "fontWeight": 400,
+        "lineHeight": 1.5
+      },
+      "body-sm-medium": {
+        "fontFamily": "DM Sans",
+        "fontSize": "14px",
+        "fontWeight": 500,
+        "lineHeight": 1.5
+      },
+      "caption": {
+        "fontFamily": "DM Sans",
+        "fontSize": "13px",
+        "fontWeight": 400,
+        "lineHeight": 1.7
+      },
+      "caption-bold": {
+        "fontFamily": "DM Sans",
+        "fontSize": "13px",
+        "fontWeight": 600,
+        "lineHeight": 1.5
+      },
+      "micro": {
+        "fontFamily": "DM Sans",
+        "fontSize": "12px",
+        "fontWeight": 400,
+        "lineHeight": 1.5
+      },
+      "button-md": {
+        "fontFamily": "DM Sans",
+        "fontSize": "14px",
+        "fontWeight": 600,
+        "lineHeight": 1.4
+      }
+    },
+    "rounded": {
+      "xs": "4px",
+      "sm": "6px",
+      "md": "8px",
+      "lg": "12px",
+      "xl": "16px",
+      "xxl": "20px",
+      "xxxl": "24px",
+      "hero": "32px",
+      "full": "9999px"
+    },
+    "spacing": {
+      "xxs": "4px",
+      "xs": "8px",
+      "sm": "12px",
+      "md": "16px",
+      "lg": "20px",
+      "xl": "24px",
+      "xxl": "32px",
+      "xxxl": "40px",
+      "section-sm": "48px",
+      "section": "64px",
+      "section-lg": "80px",
+      "hero": "96px"
+    },
+    "components": {
+      "button-primary": {
+        "backgroundColor": "{colors.primary}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.full}",
+        "padding": "11px 24px"
+      },
+      "button-primary-pressed": {
+        "backgroundColor": "{colors.charcoal}",
+        "textColor": "{colors.on-primary}"
+      },
+      "button-primary-disabled": {
+        "backgroundColor": "{colors.hairline}",
+        "textColor": "{colors.muted}"
+      },
+      "button-secondary": {
+        "backgroundColor": "transparent",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.full}",
+        "padding": "11px 24px",
+        "border": "1px solid {colors.ink}"
+      },
+      "button-tertiary": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.full}",
+        "padding": "11px 24px",
+        "border": "1px solid {colors.hairline}"
+      },
+      "button-link": {
+        "backgroundColor": "transparent",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-sm-medium}",
+        "padding": "8px 0"
+      },
+      "button-icon-circular": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "rounded": "{rounded.full}",
+        "size": "36px",
+        "border": "1px solid {colors.hairline}"
+      },
+      "product-card-coral": {
+        "backgroundColor": "{colors.brand-coral}",
+        "textColor": "{colors.on-dark}",
+        "rounded": "{rounded.hero}",
+        "padding": "{spacing.xxl}"
+      },
+      "product-card-magenta": {
+        "backgroundColor": "{colors.brand-magenta}",
+        "textColor": "{colors.on-dark}",
+        "rounded": "{rounded.hero}",
+        "padding": "{spacing.xxl}"
+      },
+      "product-card-blue": {
+        "backgroundColor": "{colors.brand-blue}",
+        "textColor": "{colors.on-dark}",
+        "rounded": "{rounded.hero}",
+        "padding": "{spacing.xxl}"
+      },
+      "product-card-purple": {
+        "backgroundColor": "{colors.brand-purple}",
+        "textColor": "{colors.on-dark}",
+        "rounded": "{rounded.hero}",
+        "padding": "{spacing.xxl}"
+      },
+      "product-card-photo": {
+        "backgroundColor": "{colors.primary}",
+        "textColor": "{colors.on-dark}",
+        "rounded": "{rounded.hero}",
+        "padding": "{spacing.xxl}"
+      },
+      "card-base": {
+        "backgroundColor": "{colors.canvas}",
+        "rounded": "{rounded.xl}",
+        "padding": "{spacing.xl}",
+        "border": "1px solid {colors.hairline}"
+      },
+      "card-feature": {
+        "backgroundColor": "{colors.surface}",
+        "rounded": "{rounded.xl}",
+        "padding": "{spacing.xxl}"
+      },
+      "card-recommendation": {
+        "backgroundColor": "{colors.canvas}",
+        "rounded": "{rounded.lg}",
+        "padding": "{spacing.lg}",
+        "border": "1px solid {colors.hairline}"
+      },
+      "promo-cta-card": {
+        "backgroundColor": "{colors.brand-coral}",
+        "textColor": "{colors.on-dark}",
+        "rounded": "{rounded.hero}",
+        "padding": "{spacing.section}"
+      },
+      "text-input": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.md}",
+        "padding": "{spacing.sm} {spacing.md}",
+        "border": "1px solid {colors.hairline}",
+        "height": "40px"
+      },
+      "text-input-focused": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "border": "2px solid {colors.brand-blue-deep}"
+      },
+      "text-input-error": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "border": "1px solid #d45656"
+      },
+      "search-pill": {
+        "backgroundColor": "{colors.surface}",
+        "textColor": "{colors.steel}",
+        "typography": "{typography.body-sm}",
+        "rounded": "{rounded.md}",
+        "padding": "{spacing.xs} {spacing.md}",
+        "height": "36px",
+        "border": "1px solid {colors.hairline}"
+      },
+      "segmented-tab": {
+        "backgroundColor": "transparent",
+        "textColor": "{colors.steel}",
+        "typography": "{typography.button-md}",
+        "rounded": "0",
+        "padding": "{spacing.md} {spacing.lg}",
+        "border": "0 0 2px transparent solid"
+      },
+      "segmented-tab-active": {
+        "backgroundColor": "transparent",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.button-md}",
+        "border": "0 0 2px {colors.ink} solid"
+      },
+      "pill-tab": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.steel}",
+        "typography": "{typography.body-sm-medium}",
+        "rounded": "{rounded.full}",
+        "padding": "{spacing.xs} {spacing.md}",
+        "border": "1px solid {colors.hairline}"
+      },
+      "pill-tab-active": {
+        "backgroundColor": "{colors.primary}",
+        "textColor": "{colors.on-primary}",
+        "rounded": "{rounded.full}",
+        "border": "1px solid {colors.primary}"
+      },
+      "badge-success": {
+        "backgroundColor": "{colors.success-bg}",
+        "textColor": "{colors.success-text}",
+        "typography": "{typography.caption-bold}",
+        "rounded": "{rounded.full}",
+        "padding": "4px 10px"
+      },
+      "badge-new": {
+        "backgroundColor": "{colors.brand-coral}",
+        "textColor": "{colors.on-dark}",
+        "typography": "{typography.caption-bold}",
+        "rounded": "{rounded.full}",
+        "padding": "4px 10px"
+      },
+      "badge-beta": {
+        "backgroundColor": "{colors.brand-blue-200}",
+        "textColor": "{colors.brand-blue-deep}",
+        "typography": "{typography.caption-bold}",
+        "rounded": "{rounded.full}",
+        "padding": "4px 10px"
+      },
+      "badge-code": {
+        "backgroundColor": "{colors.brand-blue-200}",
+        "textColor": "{colors.brand-blue-deep}",
+        "typography": "{typography.caption-bold}",
+        "rounded": "{rounded.sm}",
+        "padding": "2px 6px"
+      },
+      "promo-banner": {
+        "backgroundColor": "{colors.primary}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.body-sm-medium}",
+        "padding": "{spacing.sm} {spacing.lg}"
+      },
+      "data-table": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-sm}",
+        "rounded": "{rounded.md}",
+        "border": "1px solid {colors.hairline}"
+      },
+      "data-table-header": {
+        "backgroundColor": "{colors.surface}",
+        "textColor": "{colors.steel}",
+        "typography": "{typography.caption-bold}",
+        "padding": "{spacing.sm} {spacing.md}"
+      },
+      "data-table-row": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-sm}",
+        "padding": "{spacing.md}",
+        "border": "0 0 1px {colors.hairline-soft} solid"
+      },
+      "sidebar-nav-item": {
+        "backgroundColor": "transparent",
+        "textColor": "{colors.charcoal}",
+        "typography": "{typography.body-sm}",
+        "rounded": "{rounded.sm}",
+        "padding": "{spacing.xs} {spacing.md}"
+      },
+      "sidebar-nav-item-active": {
+        "backgroundColor": "{colors.surface}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-sm-medium}"
+      },
+      "doc-toc-item": {
+        "backgroundColor": "transparent",
+        "textColor": "{colors.steel}",
+        "typography": "{typography.body-sm}",
+        "padding": "{spacing.xs} 0"
+      },
+      "ai-product-tile": {
+        "backgroundColor": "{colors.canvas}",
+        "rounded": "{rounded.xxxl}",
+        "padding": "{spacing.xl}",
+        "border": "1px solid {colors.hairline}"
+      },
+      "footer-region": {
+        "backgroundColor": "{colors.footer-bg}",
+        "textColor": "{colors.on-dark}",
+        "typography": "{typography.body-sm}",
+        "padding": "{spacing.section} {spacing.xxl}"
+      },
+      "footer-link": {
+        "backgroundColor": "transparent",
+        "textColor": "{colors.muted}",
+        "typography": "{typography.body-sm}",
+        "padding": "{spacing.xxs} 0"
+      },
+      "hero-band-marketing": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.hero-display}",
+        "rounded": "{rounded.lg}",
+        "padding": "{spacing.hero}"
+      },
+      "product-matrix-grid": {
+        "backgroundColor": "{colors.canvas}",
+        "rounded": "{rounded.hero}",
+        "padding": "{spacing.xxl}"
+      },
+      "ai-product-matrix": {
+        "backgroundColor": "{colors.canvas}",
+        "rounded": "{rounded.xxxl}",
+        "padding": "{spacing.xl}",
+        "border": "1px solid {colors.hairline}"
+      },
+      "docs-prose-block": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.charcoal}",
+        "typography": "{typography.body-md}",
+        "padding": "{spacing.xxl}"
+      },
+      "models-comparison-table": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-sm}",
+        "rounded": "{rounded.md}",
+        "border": "1px solid {colors.hairline}"
+      },
+      "testimonial-stat-row": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.heading-lg}",
+        "padding": "{spacing.xl}"
+      }
+    }
+  },
+  "normalizationRepairs": [],
+  "sections": [
+    {
+      "heading": "Overview",
+      "level": 2,
+      "text": "MiniMax stages itself as a Chinese AI infrastructure brand with a sophisticated dual identity. Marketing surfaces and platform pages anchor in stark white canvas with deep-black typographic emphasis — the brand voice is confident, technical, almost editorial. But each model release gets its own vibrant gradient identity card: M2.7 in volcanic coral-red, Music 2.6 in magenta-pink, Hailuo in deep blue, Speech 2.8 in saturated orange-purple. Together these vibrant tiles read like album covers laid out on the homepage — each one declaring its own product personality.\n\nDM Sans anchors every surface from oversized 80px hero displays down to 12px micro labels. The geometric, slightly humanist character of the face suits both the dense documentation surfaces (where 14px body type carries 1.5 line-height for long-form prose) and the high-impact marketing displays (where -2px letter-spacing tightens 80px headlines). Buttons are universally pill-shaped (`rounded-full`) with a sharp two-tier system: black-pill primary (the dominant CTA) and outline-pill secondary. Cards split into two distinct families: vibrant gradient product showcases (32px corner softening) and quiet white documentation cards (16px corner softening).\n\n**Key Characteristics:**\n- Stark monochrome palette — black ({colors.primary}) and white ({colors.canvas}) — broken open by saturated brand-color gradient cards\n- Distinct product-color encoding: each model line has its own vibrant brand color (coral M2.7, magenta Music 2.6, blue Hailuo, orange Speech 2.8)\n- DM Sans across the entire system; Inter as fallback\n- Pill-shaped buttons ({rounded.full}) and pill-shaped tabs everywhere; rectangular forms only inside data tables and dense docs\n- Hero typography uses tight 1.10 line-height with -2px letter-spacing for impact\n- Documentation surfaces use a 3-column layout: left sidebar nav, center prose body, right table-of-contents\n- Black promo banners ({colors.primary}) above the nav for time-bound brand moments",
+      "line": 381
+    },
+    {
+      "heading": "Colors",
+      "level": 2,
+      "text": "> Source pages: minimax.io/ (homepage), /models/text/m27 (product showcase), platform.minimax.io/docs/guides/models-intro (documentation), /subscribe/token-plan (pricing). Token coverage was identical across all four pages.",
+      "line": 396
+    },
+    {
+      "heading": "Brand & Accent",
+      "level": 3,
+      "text": "- **Brand Coral** ({colors.brand-coral}): Signature high-impact accent. Used on M2.7 product card, \"Token Plan\" hero band, promo CTA strips, and \"NEW\" badges. Carries the brand's most attention-grabbing energy.\n- **Brand Magenta** ({colors.brand-magenta}): Secondary product-card identity (Music 2.6); used for music/audio product encoding.\n- **Brand Blue** ({colors.brand-blue}): Hailuo video product identity; primary blue accent across the system.\n- **Brand Blue Deep** ({colors.brand-blue-deep}): Form-control activation, link emphasis.\n- **Brand Blue 700** ({colors.brand-blue-700}): Documentation tag and reference text color.\n- **Brand Cyan** ({colors.brand-cyan}): Atmospheric blue for product gradients and decorative wash.\n- **Brand Blue 200** ({colors.brand-blue-200}): Code badges, info-tag backgrounds.\n- **Brand Purple** ({colors.brand-purple}): Speech 2.8 and minor purple-product identity; gradient mate for magenta cards.",
+      "line": 400
+    },
+    {
+      "heading": "Surface",
+      "level": 3,
+      "text": "- **Canvas White** ({colors.canvas}): Primary page background and card surface.\n- **Surface** ({colors.surface}): Subtle section backgrounds, search-pill rest, sidebar-nav active state.\n- **Surface Soft** ({colors.surface-soft}): Quieter section divisions.\n- **Hairline** ({colors.hairline}): 1px input border and primary divider.\n- **Hairline Soft** ({colors.hairline-soft}): Quieter table-row divider and secondary section break.",
+      "line": 410
+    },
+    {
+      "heading": "Text",
+      "level": 3,
+      "text": "- **Ink** ({colors.ink}): Primary headline and CTA text — the brand's near-black anchor.\n- **Ink Strong** ({colors.ink-strong}): Pure black used in promo banners and hero displays for maximum contrast.\n- **Charcoal** ({colors.charcoal}): Body text on light surfaces.\n- **Slate** ({colors.slate}): Secondary text, metadata.\n- **Steel** ({colors.steel}): Tertiary text, table headers, sidebar inactive items.\n- **Stone** ({colors.stone}): Muted captions and tab inactive labels.\n- **Muted** ({colors.muted}): Footer link text and de-emphasized labels.",
+      "line": 417
+    },
+    {
+      "heading": "Semantic",
+      "level": 3,
+      "text": "- **Success Background** ({colors.success-bg}): Pale-green wash for success badges and confirmations.\n- **Success Text** ({colors.success-text}): Deep-green ink for success badge labels.\n- Error tones derive from a `#d45656` red used in input border error states (not extracted as a top-level system token).",
+      "line": 426
+    },
+    {
+      "heading": "Typography",
+      "level": 2,
+      "text": "",
+      "line": 431
+    },
+    {
+      "heading": "Font Family",
+      "level": 3,
+      "text": "**DM Sans** (primary): Geometric variable sans-serif. Used across every surface, every role. Fallbacks: Inter, Helvetica Neue, Helvetica, Arial.\n\nDM Sans was chosen for its dual fluency: it scales cleanly from 80px hero displays (where -2px letter-spacing creates magazine-grade tightness) down to 12px micro labels (where the slightly humanist counters maintain legibility). The face has no italic variant in the brand's deployment — emphasis comes from weight (500/600/700) instead.",
+      "line": 433
+    },
+    {
+      "heading": "Hierarchy",
+      "level": 3,
+      "text": "| Token | Size | Weight | Line Height | Letter Spacing | Use |\n|---|---|---|---|---|---|\n| `{typography.hero-display}` | 80px | 600 | 1.10 | -2px | Homepage hero (\"MiniMax Music 2.6\") |\n| `{typography.display-lg}` | 56px | 600 | 1.10 | -1.5px | Section openers, major page heroes |\n| `{typography.heading-lg}` | 40px | 600 | 1.20 | -1px | Sub-page headlines (\"Token Plan\", \"Models Overview\") |\n| `{typography.heading-md}` | 32px | 600 | 1.25 | -0.5px | Subsection headers (\"Full-Stack Model Matrix\") |\n| `{typography.heading-sm}` | 24px | 600 | 1.30 | 0 | Card titles, feature headers |\n| `{typography.card-title}` | 20px | 600 | 1.40 | 0 | Product-card titles, feature-tile headers |\n| `{typography.subtitle}` | 18px | 500 | 1.50 | 0 | Section subtitles, lead body |\n| `{typography.body-md}` | 16px | 400 | 1.50 | 0 | Primary body text |\n| `{typography.body-md-bold}` | 16px | 700 | 1.50 | 0 | Body emphasis |\n| `{typography.body-sm}` | 14px | 400 | 1.50 | 0 | Secondary body, table cells, navigation |\n| `{typography.body-sm-medium}` | 14px | 500 | 1.50 | 0 | Active sidebar nav, button labels |\n| `{typography.caption}` | 13px | 400 | 1.70 | 0 | Documentation captions, fine print |\n| `{typography.caption-bold}` | 13px | 600 | 1.50 | 0 | Badge labels, table-header text |\n| `{typography.micro}` | 12px | 400 | 1.50 | 0 | Footer microcopy, chip labels |\n| `{typography.button-md}` | 14px | 600 | 1.40 | 0 | Pill button labels |",
+      "line": 438
+    },
+    {
+      "heading": "Principles",
+      "level": 3,
+      "text": "- **Tight hero leading** (1.10) and aggressive negative letter-spacing on display sizes create a magazine-quality typographic display unique to MiniMax.\n- **Generous body leading** (1.50) keeps long-form documentation comfortable; captions push to 1.70 for scientific-paper-grade clarity.\n- **Weight discipline:** 400 (body), 500 (medium emphasis), 600 (headings/buttons), 700 (strong inline emphasis). Heavier weights are not used.\n- **Single typeface** strategy — never mix DM Sans with another sans-serif. Code samples (when shown) use a system monospace fallback, but no second typeface enters the brand canvas.",
+      "line": 458
+    },
+    {
+      "heading": "Layout",
+      "level": 2,
+      "text": "",
+      "line": 464
+    },
+    {
+      "heading": "Spacing System",
+      "level": 3,
+      "text": "- **Base unit**: 4px (8px primary increment).\n- **Tokens**: `{spacing.xxs}` (4px) · `{spacing.xs}` (8px) · `{spacing.sm}` (12px) · `{spacing.md}` (16px) · `{spacing.lg}` (20px) · `{spacing.xl}` (24px) · `{spacing.xxl}` (32px) · `{spacing.xxxl}` (40px) · `{spacing.section-sm}` (48px) · `{spacing.section}` (64px) · `{spacing.section-lg}` (80px) · `{spacing.hero}` (96px).\n- **Section rhythm**: Marketing pages separate at `{spacing.hero}` (96px) above-fold, then `{spacing.section-lg}` (80px) below; documentation tightens to `{spacing.section}` (64px); table rows compress to `{spacing.md}` (16px).\n- **Card internal padding**: Vibrant product cards use `{spacing.xxl}` (32px); documentation cards use `{spacing.lg}–{spacing.xl}` (20–24px); promo strips expand to `{spacing.section}` (64px).",
+      "line": 466
+    },
+    {
+      "heading": "Grid & Container",
+      "level": 3,
+      "text": "- Marketing pages use a 1280px max-width with 32px gutters.\n- Homepage product matrix renders as a 4-column row of 32px-rounded gradient cards, each ~280–320px wide.\n- AI Product Matrix below uses a 4-column grid with 16px-rounded white cards.\n- Documentation surfaces use a 3-column layout: left sidebar nav (~220px), center prose body (~720px max-width), right TOC (~180px). Sidebar persists on desktop; collapses to drawer below 1024px.\n- Token Plan / pricing pages use 2-column tabs above a 3-column tier card grid.",
+      "line": 472
+    },
+    {
+      "heading": "Whitespace Philosophy",
+      "level": 3,
+      "text": "Marketing pages give product photography and color cards generous breathing room — `{spacing.hero}` (96px) above-the-fold creates visual oxygen for the 80px hero display. Inside documentation, whitespace tightens dramatically: section gaps drop to `{spacing.xxl}` (32px), table rows pack down to `{spacing.md}` (16px), and the sidebar nav uses `{spacing.xs}` (8px) vertical rhythm.",
+      "line": 479
+    },
+    {
+      "heading": "Elevation & Depth",
+      "level": 2,
+      "text": "The system runs predominantly flat. Elevation is reserved for sticky panels, dropdowns, and the rare floating CTA.\n\n| Level | Treatment | Use |\n|---|---|---|\n| 0 (flat) | No shadow; `{colors.hairline}` border | Default cards, table rows, form inputs |\n| 1 (subtle) | `rgba(0, 0, 0, 0.04) 0px 1px 2px 0px` | Card-recommendation, hover-elevated tiles |\n| 2 (card) | `rgba(0, 0, 0, 0.08) 0px 4px 6px 0px` | Standard feature cards, dropdowns |\n| 3 (atmospheric) | `rgba(0, 0, 0, 0.08) 0px 0px 22px 0px` | Diffuse glow on featured product cards |\n| 4 (modal) | `rgba(36, 36, 36, 0.08) 0px 12px 16px -4px` | Modals, confirmation dialogs, sticky panels |",
+      "line": 482
+    },
+    {
+      "heading": "Decorative Depth",
+      "level": 3,
+      "text": "- The vibrant gradient product cards carry their own atmospheric depth via internal radial gradients and silhouette imagery — no shadow needed; the color does the work.\n- Brand-tinted shadows (`rgba(44, 30, 116, 0.16) 0px 0px 15px`) appear under purple-themed cards for subtle ambient lift.\n- Dotted/grain textures occasionally appear inside product cards as photographic-content decoration; these are not formalized as system tokens.",
+      "line": 494
+    },
+    {
+      "heading": "Shapes",
+      "level": 2,
+      "text": "",
+      "line": 499
+    },
+    {
+      "heading": "Border Radius Scale",
+      "level": 3,
+      "text": "| Token | Value | Use |\n|---|---|---|\n| `{rounded.xs}` | 4px | Code chips, micro-controls |\n| `{rounded.sm}` | 6px | Compact controls, table cells |\n| `{rounded.md}` | 8px | Inputs, secondary buttons, search pill |\n| `{rounded.lg}` | 12px | Documentation cards, recommendation tiles |\n| `{rounded.xl}` | 16px | Standard feature cards, AI product tiles |\n| `{rounded.xxl}` | 20px | Larger feature panels |\n| `{rounded.xxxl}` | 24px | AI product tile feature variants |\n| `{rounded.hero}` | 32px | Vibrant gradient product cards, promo CTA strip |\n| `{rounded.full}` | 9999px | All buttons, all pill tabs, badges |",
+      "line": 501
+    },
+    {
+      "heading": "Photography Geometry",
+      "level": 3,
+      "text": "- Vibrant product cards use 32px corner softening — distinct from the 16px used on quiet white cards. The doubled radius is the visual signature of \"this is a featured product moment.\"\n- Product imagery inside cards is treated as photographic content (silhouettes, dark portrait studio lighting) without rounded internal frames.\n- Avatar circles (rare, in testimonials) are `{rounded.full}` — perfect circles.",
+      "line": 515
+    },
+    {
+      "heading": "Components",
+      "level": 2,
+      "text": "> Per the no-hover policy, hover states are NOT documented. Default and pressed/active states only.",
+      "line": 520
+    },
+    {
+      "heading": "Buttons",
+      "level": 3,
+      "text": "**`button-primary`** — Black pill primary CTA, the dominant action across all surfaces.\n- Background `{colors.primary}`, text `{colors.on-primary}`, typography `{typography.button-md}`, padding `11px 24px`, rounded `{rounded.full}`.\n- Pressed state `button-primary-pressed` lifts to `{colors.charcoal}`.\n- Disabled state `button-primary-disabled` uses `{colors.hairline}` background and `{colors.muted}` text.\n\n**`button-secondary`** — Outlined pill secondary action, paired with primary in dual-CTA hero patterns.\n- Background transparent, text `{colors.ink}`, border `1px solid {colors.ink}`, typography `{typography.button-md}`, padding `11px 24px`, rounded `{rounded.full}`.\n\n**`button-tertiary`** — White-fill quieter pill, used for tertiary nav and informational CTAs.\n- Background `{colors.canvas}`, text `{colors.ink}`, border `1px solid {colors.hairline}`, typography `{typography.button-md}`, padding `11px 24px`, rounded `{rounded.full}`.\n\n**`button-link`** — Inline text link styled as a subtle button.\n- Background transparent, text `{colors.ink}`, typography `{typography.body-sm-medium}`, padding `8px 0`. Underline appears on activation.\n\n**`button-icon-circular`** — 36×36px circular utility button (carousel arrows, share, copy).\n- Background `{colors.canvas}`, text `{colors.ink}`, border `1px solid {colors.hairline}`, rounded `{rounded.full}`.",
+      "line": 524
+    },
+    {
+      "heading": "Vibrant Product Cards",
+      "level": 3,
+      "text": "**`product-card-coral`** — M2.7 / Token Plan signature card.\n- Background `{colors.brand-coral}`, text `{colors.on-dark}`, rounded `{rounded.hero}` (32px), padding `{spacing.xxl}`.\n- Hosts the M2.7 wordmark in massive `{typography.display-lg}` with white tagline.\n\n**`product-card-magenta`** — Music 2.6 product showcase.\n- Background `{colors.brand-magenta}`, text `{colors.on-dark}`, rounded `{rounded.hero}`, padding `{spacing.xxl}`.\n\n**`product-card-blue`** — Hailuo Video product showcase.\n- Background `{colors.brand-blue}`, text `{colors.on-dark}`, rounded `{rounded.hero}`, padding `{spacing.xxl}`.\n\n**`product-card-purple`** — Speech 2.8 / variant product showcase.\n- Background `{colors.brand-purple}`, text `{colors.on-dark}`, rounded `{rounded.hero}`, padding `{spacing.xxl}`.\n\n**`product-card-photo`** — Dark portrait product card (homepage S2 placement, video-emotion product).\n- Background `{colors.primary}` (black with overlaid product photo), text `{colors.on-dark}`, rounded `{rounded.hero}`, padding `{spacing.xxl}`.",
+      "line": 543
+    },
+    {
+      "heading": "Cards & Containers",
+      "level": 3,
+      "text": "**`card-base`** — Standard documentation/feature card.\n- Background `{colors.canvas}`, rounded `{rounded.xl}`, padding `{spacing.xl}`, border `1px solid {colors.hairline}`.\n\n**`card-feature`** — Quieter feature panel on light gray.\n- Background `{colors.surface}`, rounded `{rounded.xl}`, padding `{spacing.xxl}`.\n\n**`card-recommendation`** — \"Recommended Reading\" tile in documentation footer.\n- Background `{colors.canvas}`, rounded `{rounded.lg}`, padding `{spacing.lg}`, border `1px solid {colors.hairline}`.\n\n**`promo-cta-card`** — Bright orange \"Refunds of 10%...\" promo strip with embedded CTA pill.\n- Background `{colors.brand-coral}`, text `{colors.on-dark}`, rounded `{rounded.hero}`, padding `{spacing.section}`. Embedded button uses `button-tertiary` (white pill on coral) for the \"Join Now\" action.\n\n**`ai-product-tile`** — White card in the AI Product Matrix grid (Agent, Hailuo Video, MiniMax Audio).\n- Background `{colors.canvas}`, rounded `{rounded.xxxl}`, padding `{spacing.xl}`, border `1px solid {colors.hairline}`. Carries an icon/illustration top, title `{typography.card-title}`, description `{typography.body-sm}`.",
+      "line": 561
+    },
+    {
+      "heading": "Inputs & Forms",
+      "level": 3,
+      "text": "**`text-input`** — Standard text field.\n- Background `{colors.canvas}`, text `{colors.ink}`, border `1px solid {colors.hairline}`, rounded `{rounded.md}`, padding `{spacing.sm} {spacing.md}`, height 40px.\n\n**`text-input-focused`** — Activated state.\n- Border switches to `2px solid {colors.brand-blue-deep}`.\n\n**`text-input-error`** — Validation error state.\n- Border switches to `1px solid #d45656`; error label below in matching red `{typography.body-sm}`.\n\n**`search-pill`** — Documentation top-bar search field.\n- Background `{colors.surface}`, text `{colors.steel}`, typography `{typography.body-sm}`, rounded `{rounded.md}`, height 36px, border `1px solid {colors.hairline}`.",
+      "line": 578
+    },
+    {
+      "heading": "Tabs",
+      "level": 3,
+      "text": "**`segmented-tab`** + **`segmented-tab-active`** — Underline-style tab navigation (Benchmark / Self-Evaluation / Multi-Agent Collaboration on the M2.7 page).\n- Inactive: text `{colors.steel}`, transparent background, padding `{spacing.md} {spacing.lg}`. Active: text shifts to `{colors.ink}`, 2px bottom border in `{colors.ink}`.\n\n**`pill-tab`** + **`pill-tab-active`** — Pricing-page tab nav (Token Plan / Audio Subscription / Video Package).\n- Inactive: background `{colors.canvas}`, text `{colors.steel}`, border `1px solid {colors.hairline}`, padding `{spacing.xs} {spacing.md}`, rounded `{rounded.full}`.\n- Active: background `{colors.primary}`, text `{colors.on-primary}`, no border (or matching black border).",
+      "line": 592
+    },
+    {
+      "heading": "Badges & Status",
+      "level": 3,
+      "text": "**`badge-success`** — Pale-green confirmation badge (\"Available\", \"Active\").\n- Background `{colors.success-bg}`, text `{colors.success-text}`, typography `{typography.caption-bold}`, rounded `{rounded.full}`, padding `4px 10px`.\n\n**`badge-new`** — Coral \"NEW\" / \"Live\" pill for fresh releases.\n- Background `{colors.brand-coral}`, text `{colors.on-dark}`, typography `{typography.caption-bold}`, rounded `{rounded.full}`, padding `4px 10px`.\n\n**`badge-beta`** — Pale-blue \"BETA\" / informational pill.\n- Background `{colors.brand-blue-200}`, text `{colors.brand-blue-deep}`, typography `{typography.caption-bold}`, rounded `{rounded.full}`, padding `4px 10px`.\n\n**`badge-code`** — Inline code-style chip (\"Code\", \"API\").\n- Background `{colors.brand-blue-200}`, text `{colors.brand-blue-deep}`, typography `{typography.caption-bold}`, rounded `{rounded.sm}`, padding `2px 6px`.\n\n**`promo-banner`** — Sticky black promotional strip ABOVE the top nav (\"Invite & Earn — Rewards for Both!\").\n- Background `{colors.primary}`, text `{colors.on-primary}`, typography `{typography.body-sm-medium}`, padding `{spacing.sm} {spacing.lg}`. Carries one-line copy with optional inline link.",
+      "line": 601
+    },
+    {
+      "heading": "Data Tables",
+      "level": 3,
+      "text": "**`data-table`** — Documentation models comparison table.\n- Background `{colors.canvas}`, text `{colors.ink}`, typography `{typography.body-sm}`, rounded `{rounded.md}`, border `1px solid {colors.hairline}`.\n\n**`data-table-header`** — Top header row of the data table.\n- Background `{colors.surface}`, text `{colors.steel}`, typography `{typography.caption-bold}`, padding `{spacing.sm} {spacing.md}`.\n\n**`data-table-row`** — Body rows.\n- Background `{colors.canvas}`, text `{colors.ink}`, typography `{typography.body-sm}`, padding `{spacing.md}`, bottom border `1px solid {colors.hairline-soft}`.",
+      "line": 618
+    },
+    {
+      "heading": "Navigation",
+      "level": 3,
+      "text": "**Top Navigation (Marketing)** — Sticky white bar with logo, link list, and right-side CTAs.\n- Background `{colors.canvas}`, height ~64px, bottom border `1px solid {colors.hairline-soft}`.\n- Left: MiniMax wordmark + horizontal link list (Models, Product, API, Company).\n- Right: black-pill \"Contact Us\" + outlined-pill \"Login\".\n\n**Top Navigation (Documentation/Platform)** — Compressed nav with center search-pill and right-side account/upgrade CTAs.\n- Background `{colors.canvas}`, height ~56px, with search-pill at center and \"Documentation / Account / Subscribe\" links + black-pill \"Sign Up\" right.\n\n**`sidebar-nav-item`** + **`sidebar-nav-item-active`** — Documentation left rail link entries.\n- Inactive: background transparent, text `{colors.charcoal}`, typography `{typography.body-sm}`, rounded `{rounded.sm}`, padding `{spacing.xs} {spacing.md}`.\n- Active: background `{colors.surface}`, text `{colors.ink}`, typography `{typography.body-sm-medium}`.\n\n**`doc-toc-item`** — Right-rail table-of-contents links.\n- Background transparent, text `{colors.steel}`, typography `{typography.body-sm}`, padding `{spacing.xs} 0`. Active item color shifts to `{colors.ink}`.",
+      "line": 629
+    },
+    {
+      "heading": "Signature Components",
+      "level": 3,
+      "text": "**`hero-band-marketing`** — Centered hero with massive 80px display + dual-CTA pair.\n- Layout: centered headline in `{typography.hero-display}` ({colors.ink}), centered subtitle in `{typography.subtitle}` ({colors.steel}), centered button row (`button-primary` + `button-secondary`).\n\n**`product-matrix-grid`** — 4-column horizontal scroll of vibrant gradient product cards (homepage \"Full-Stack Model Matrix\").\n- Each tile uses one of the `product-card-*` variants (coral, magenta, blue, purple, photo).\n- Card title in `{typography.display-lg}` (M2.7 wordmark) or `{typography.heading-lg}` (Music 2.6).\n- Below the wordmark: thin tagline in `{typography.body-sm}` 80% white opacity.\n- Optional badge top-right: `badge-new`.\n- Card heights are uniform (~360–400px); the row scrolls horizontally on mobile.\n\n**`ai-product-matrix`** — 4-column grid of white product tiles below the vibrant matrix (Agent / Hailuo Video / Audio / Video).\n- Each tile is `ai-product-tile` chrome.\n- Top: 100px-tall illustration zone (often line-art icon or 3D mark).\n- Below: title in `{typography.card-title}`, description in `{typography.body-sm}` `{colors.steel}`.\n\n**`docs-prose-block`** — Documentation main content area.\n- Max-width ~720px, centered. Body in `{typography.body-md}` `{colors.charcoal}` line-height 1.6.\n- Inline code in `{typography.body-md}` monospace fallback with `{colors.surface}` background and `{rounded.xs}` corners.\n\n**`models-comparison-table`** — Documentation table comparing model sizes and features.\n- Uses `data-table` chrome. Each row carries a model name (linkified, in `{colors.ink}` body-sm-medium), a description column (`{colors.charcoal}`), and a features bullet list column.\n\n**`testimonial-stat-row`** — Stats strip (\"214,000+ Enterprise Clients & Developers\", \"0+ Countries Served\").\n- Horizontal row of 4 stat cells, each cell with a large number in `{typography.heading-lg}` `{colors.ink}` and a label below in `{typography.body-sm}` `{colors.steel}`.\n\n**`footer-region`** — Dense black-canvas multi-column footer.\n- Background `{colors.footer-bg}`, padding `{spacing.section} {spacing.xxl}`.\n- Top row: MiniMax wordmark (\"intelligence with everyone\" tagline) and social icons (X, Twitter, GitHub, etc.).\n- Body: 4-column link grid (Research / Product / API / Company / News).\n- Section headers in `{typography.body-sm-medium}` `{colors.on-dark}`.\n\n**`footer-link`** — Individual link entry inside the footer column.\n- Background transparent, text `{colors.muted}`, typography `{typography.body-sm}`, padding `{spacing.xxs} 0`. Active/visited states do not change color — only opacity shifts on activation.",
+      "line": 646
+    },
+    {
+      "heading": "Do's and Don'ts",
+      "level": 2,
+      "text": "",
+      "line": 682
+    },
+    {
+      "heading": "Do",
+      "level": 3,
+      "text": "- Use `{colors.primary}` (black) as the dominant CTA — it's the brand's most recognizable interactive element.\n- Reserve product brand colors (`{colors.brand-coral}`, `{colors.brand-magenta}`, `{colors.brand-blue}`, `{colors.brand-purple}`) ONLY for product-identity moments — never for general buttons or text.\n- Pair `{rounded.hero}` (32px) gradient cards with `{rounded.xl}` (16px) white cards in the same viewport — the radius contrast is the visual signature.\n- Apply `{rounded.full}` to every button, every pill tab, every badge.\n- Use `{typography.hero-display}` (80px) with -2px letter-spacing for hero displays — never compromise the leading or letter-spacing.\n- Treat each model/product line as a distinct color identity. M2.7 is coral, Music is magenta, Hailuo is blue. These are brand assignments, not free choices.",
+      "line": 684
+    },
+    {
+      "heading": "Don't",
+      "level": 3,
+      "text": "- Don't use brand-coral or brand-magenta on body text or large surfaces — they lose meaning when overused.\n- Don't soften corners on buttons (anything less than `{rounded.full}`); the pill is a brand signature.\n- Don't introduce a second display typeface; DM Sans handles every role.\n- Don't reduce hero leading below 1.10 — the brand needs that breathing room on the 80px display.\n- Don't apply heavy shadows on white cards; flat-with-borders is the documentation default.\n- Don't put gradient backgrounds on standard buttons; gradients are reserved for product-card identity moments.",
+      "line": 692
+    },
+    {
+      "heading": "Responsive Behavior",
+      "level": 2,
+      "text": "",
+      "line": 700
+    },
+    {
+      "heading": "Breakpoints",
+      "level": 3,
+      "text": "| Name | Width | Key Changes |\n|---|---|---|\n| Mobile (small) | < 480px | Single column. Hero drops to 40px. Pill nav collapses to hamburger. Product matrix horizontal-scroll. Footer 1-column accordion. |\n| Mobile (large) | 480 – 767px | Same as small but AI product matrix renders 2-up. |\n| Tablet | 768 – 1023px | 2-column AI product matrix. Pill-tab nav returns. Documentation sidebar collapses to drawer. |\n| Desktop | 1024 – 1279px | Full 4-column product matrix; 3-column docs grid (sidebar / body / TOC). |\n| Wide Desktop | ≥ 1280px | Wider hero gutters, larger product photography, fixed 220px sidebar. |",
+      "line": 702
+    },
+    {
+      "heading": "Touch Targets",
+      "level": 3,
+      "text": "- Pill buttons render at 38–40px effective height — bumps to 44px on mobile via padding override.\n- Circular icon buttons: 36×36px desktop → 44×44px on mobile.\n- Form inputs render at 40px height; bumps to 44px on mobile.\n- Sidebar nav items render at ~32px tall — bumps to 44px on mobile drawers.",
+      "line": 711
+    },
+    {
+      "heading": "Collapsing Strategy",
+      "level": 3,
+      "text": "- **Promo banner** stays full-width; collapses to single line at < 480px with truncation.\n- **Top nav** below 1024px collapses to hamburger; horizontal links move into drawer.\n- **Documentation grid**: 3-column desktop → sidebar-drawer at < 1024px → single-column with collapsible sidebar at < 768px.\n- **Product matrix**: 4-column desktop → horizontal-scroll at < 1024px (carousel-style with snap points).\n- **AI Product Matrix**: 4-column → 2-column at tablet → 1-column at mobile.\n- **Hero typography**: `{typography.hero-display}` (80px) → 56px at < 1024px → 40px at < 768px → 32px at < 480px.\n- **Stats strip**: 4-column → 2×2 at < 768px → 1-column at < 480px.",
+      "line": 717
+    },
+    {
+      "heading": "Image Behavior",
+      "level": 3,
+      "text": "- Product card imagery uses photographic content with internal gradient overlays; lazy-loaded below the fold.\n- AI product tile illustrations are SVG-based; remain crisp at all breakpoints.\n- Avatar imagery in testimonials uses 1:1 aspect ratio with `{rounded.full}` masking.",
+      "line": 726
+    },
+    {
+      "heading": "Iteration Guide",
+      "level": 2,
+      "text": "1. Focus on ONE component at a time. The system has high internal consistency.\n2. Reference component names and tokens directly (`{colors.primary}`, `{component-name}-pressed`, `{rounded.full}`) — do not paraphrase.\n3. Run `npx @google/design.md lint DESIGN.md` after edits to catch broken refs and contrast issues.\n4. Add new variants as separate `components:` entries (`-pressed`, `-disabled`, `-active`).\n5. Default to `{typography.body-md}` for body and `{typography.subtitle}` for emphasis. Headlines step down `hero-display → display-lg → heading-lg → heading-md → heading-sm`.\n6. Keep brand colors (coral, magenta, blue, purple) confined to product-card identity. If a brand color appears on a standard button or generic surface, ask whether it earned that surface.\n7. Pill-shaped buttons (`{rounded.full}`) always; squared buttons signal \"third-party widget\" in this language.",
+      "line": 731
+    },
+    {
+      "heading": "Known Gaps",
+      "level": 2,
+      "text": "- Specific dark-mode token values (canvas, surface, ink, hairline) are not surfaced on these pages; the brand has not yet shipped a published dark-mode palette.\n- Animation/transition timings are not extracted; recommend 150–200ms ease for hover/focus state transitions.\n- Form validation success state is not explicitly captured beyond defaults — implement following standard green-border + success badge patterns.\n- Code syntax highlighting palette inside docs is not formalized; documentation samples appear with system-default monospace and minimal coloring.",
+      "line": 741
+    }
+  ],
+  "tokens": [
+    {
+      "path": "colors.primary",
+      "sourcePath": "colors.primary",
+      "type": "color",
+      "value": "#0a0a0a",
+      "status": "unverified",
+      "evidence": {
+        "line": 7,
+        "sourcePath": "colors.primary"
+      }
+    },
+    {
+      "path": "colors.onprimary",
+      "sourcePath": "colors.on-primary",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 8,
+        "sourcePath": "colors.on-primary"
+      }
+    },
+    {
+      "path": "colors.primarysoft",
+      "sourcePath": "colors.primary-soft",
+      "type": "color",
+      "value": "#181e25",
+      "status": "unverified",
+      "evidence": {
+        "line": 9,
+        "sourcePath": "colors.primary-soft"
+      }
+    },
+    {
+      "path": "colors.brandcoral",
+      "sourcePath": "colors.brand-coral",
+      "type": "color",
+      "value": "#ff5530",
+      "status": "unverified",
+      "evidence": {
+        "line": 10,
+        "sourcePath": "colors.brand-coral"
+      }
+    },
+    {
+      "path": "colors.brandmagenta",
+      "sourcePath": "colors.brand-magenta",
+      "type": "color",
+      "value": "#ea5ec1",
+      "status": "unverified",
+      "evidence": {
+        "line": 11,
+        "sourcePath": "colors.brand-magenta"
+      }
+    },
+    {
+      "path": "colors.brandblue",
+      "sourcePath": "colors.brand-blue",
+      "type": "color",
+      "value": "#1456f0",
+      "status": "unverified",
+      "evidence": {
+        "line": 12,
+        "sourcePath": "colors.brand-blue"
+      }
+    },
+    {
+      "path": "colors.brandbluemid",
+      "sourcePath": "colors.brand-blue-mid",
+      "type": "color",
+      "value": "#3b82f6",
+      "status": "unverified",
+      "evidence": {
+        "line": 13,
+        "sourcePath": "colors.brand-blue-mid"
+      }
+    },
+    {
+      "path": "colors.brandbluedeep",
+      "sourcePath": "colors.brand-blue-deep",
+      "type": "color",
+      "value": "#1d4ed8",
+      "status": "unverified",
+      "evidence": {
+        "line": 14,
+        "sourcePath": "colors.brand-blue-deep"
+      }
+    },
+    {
+      "path": "colors.brandblue700",
+      "sourcePath": "colors.brand-blue-700",
+      "type": "color",
+      "value": "#17437d",
+      "status": "unverified",
+      "evidence": {
+        "line": 15,
+        "sourcePath": "colors.brand-blue-700"
+      }
+    },
+    {
+      "path": "colors.brandcyan",
+      "sourcePath": "colors.brand-cyan",
+      "type": "color",
+      "value": "#3daeff",
+      "status": "unverified",
+      "evidence": {
+        "line": 16,
+        "sourcePath": "colors.brand-cyan"
+      }
+    },
+    {
+      "path": "colors.brandblue200",
+      "sourcePath": "colors.brand-blue-200",
+      "type": "color",
+      "value": "#bfdbfe",
+      "status": "unverified",
+      "evidence": {
+        "line": 17,
+        "sourcePath": "colors.brand-blue-200"
+      }
+    },
+    {
+      "path": "colors.brandpurple",
+      "sourcePath": "colors.brand-purple",
+      "type": "color",
+      "value": "#a855f7",
+      "status": "unverified",
+      "evidence": {
+        "line": 18,
+        "sourcePath": "colors.brand-purple"
+      }
+    },
+    {
+      "path": "colors.canvas",
+      "sourcePath": "colors.canvas",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 19,
+        "sourcePath": "colors.canvas"
+      }
+    },
+    {
+      "path": "colors.surface",
+      "sourcePath": "colors.surface",
+      "type": "color",
+      "value": "#f7f8fa",
+      "status": "unverified",
+      "evidence": {
+        "line": 20,
+        "sourcePath": "colors.surface"
+      }
+    },
+    {
+      "path": "colors.surfacesoft",
+      "sourcePath": "colors.surface-soft",
+      "type": "color",
+      "value": "#f2f3f5",
+      "status": "unverified",
+      "evidence": {
+        "line": 21,
+        "sourcePath": "colors.surface-soft"
+      }
+    },
+    {
+      "path": "colors.hairline",
+      "sourcePath": "colors.hairline",
+      "type": "color",
+      "value": "#e5e7eb",
+      "status": "unverified",
+      "evidence": {
+        "line": 22,
+        "sourcePath": "colors.hairline"
+      }
+    },
+    {
+      "path": "colors.hairlinesoft",
+      "sourcePath": "colors.hairline-soft",
+      "type": "color",
+      "value": "#eaecf0",
+      "status": "unverified",
+      "evidence": {
+        "line": 23,
+        "sourcePath": "colors.hairline-soft"
+      }
+    },
+    {
+      "path": "colors.ink",
+      "sourcePath": "colors.ink",
+      "type": "color",
+      "value": "#0a0a0a",
+      "status": "unverified",
+      "evidence": {
+        "line": 24,
+        "sourcePath": "colors.ink"
+      }
+    },
+    {
+      "path": "colors.inkstrong",
+      "sourcePath": "colors.ink-strong",
+      "type": "color",
+      "value": "#000000",
+      "status": "unverified",
+      "evidence": {
+        "line": 25,
+        "sourcePath": "colors.ink-strong"
+      }
+    },
+    {
+      "path": "colors.charcoal",
+      "sourcePath": "colors.charcoal",
+      "type": "color",
+      "value": "#222222",
+      "status": "unverified",
+      "evidence": {
+        "line": 26,
+        "sourcePath": "colors.charcoal"
+      }
+    },
+    {
+      "path": "colors.slate",
+      "sourcePath": "colors.slate",
+      "type": "color",
+      "value": "#45515e",
+      "status": "unverified",
+      "evidence": {
+        "line": 27,
+        "sourcePath": "colors.slate"
+      }
+    },
+    {
+      "path": "colors.steel",
+      "sourcePath": "colors.steel",
+      "type": "color",
+      "value": "#5f5f5f",
+      "status": "unverified",
+      "evidence": {
+        "line": 28,
+        "sourcePath": "colors.steel"
+      }
+    },
+    {
+      "path": "colors.stone",
+      "sourcePath": "colors.stone",
+      "type": "color",
+      "value": "#8e8e93",
+      "status": "unverified",
+      "evidence": {
+        "line": 29,
+        "sourcePath": "colors.stone"
+      }
+    },
+    {
+      "path": "colors.muted",
+      "sourcePath": "colors.muted",
+      "type": "color",
+      "value": "#a8aab2",
+      "status": "unverified",
+      "evidence": {
+        "line": 30,
+        "sourcePath": "colors.muted"
+      }
+    },
+    {
+      "path": "colors.successbg",
+      "sourcePath": "colors.success-bg",
+      "type": "color",
+      "value": "#e8ffea",
+      "status": "unverified",
+      "evidence": {
+        "line": 31,
+        "sourcePath": "colors.success-bg"
+      }
+    },
+    {
+      "path": "colors.successtext",
+      "sourcePath": "colors.success-text",
+      "type": "color",
+      "value": "#1ba673",
+      "status": "unverified",
+      "evidence": {
+        "line": 32,
+        "sourcePath": "colors.success-text"
+      }
+    },
+    {
+      "path": "colors.ondark",
+      "sourcePath": "colors.on-dark",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 33,
+        "sourcePath": "colors.on-dark"
+      }
+    },
+    {
+      "path": "colors.footerbg",
+      "sourcePath": "colors.footer-bg",
+      "type": "color",
+      "value": "#0a0a0a",
+      "status": "unverified",
+      "evidence": {
+        "line": 34,
+        "sourcePath": "colors.footer-bg"
+      }
+    },
+    {
+      "path": "typography.herodisplay.fontfamily",
+      "sourcePath": "typography.hero-display.fontFamily",
+      "type": "fontFamily",
+      "value": "DM Sans",
+      "status": "unverified",
+      "evidence": {
+        "line": 38,
+        "sourcePath": "typography.hero-display.fontFamily"
+      }
+    },
+    {
+      "path": "typography.herodisplay.fontsize",
+      "sourcePath": "typography.hero-display.fontSize",
+      "type": "dimension",
+      "value": "80px",
+      "status": "unverified",
+      "evidence": {
+        "line": 39,
+        "sourcePath": "typography.hero-display.fontSize"
+      }
+    },
+    {
+      "path": "typography.herodisplay.fontweight",
+      "sourcePath": "typography.hero-display.fontWeight",
+      "type": "number",
+      "value": 600,
+      "status": "unverified",
+      "evidence": {
+        "line": 40,
+        "sourcePath": "typography.hero-display.fontWeight"
+      }
+    },
+    {
+      "path": "typography.herodisplay.lineheight",
+      "sourcePath": "typography.hero-display.lineHeight",
+      "type": "number",
+      "value": 1.1,
+      "status": "unverified",
+      "evidence": {
+        "line": 41,
+        "sourcePath": "typography.hero-display.lineHeight"
+      }
+    },
+    {
+      "path": "typography.herodisplay.letterspacing",
+      "sourcePath": "typography.hero-display.letterSpacing",
+      "type": "dimension",
+      "value": "-2px",
+      "status": "unverified",
+      "evidence": {
+        "line": 42,
+        "sourcePath": "typography.hero-display.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.displaylg.fontfamily",
+      "sourcePath": "typography.display-lg.fontFamily",
+      "type": "fontFamily",
+      "value": "DM Sans",
+      "status": "unverified",
+      "evidence": {
+        "line": 44,
+        "sourcePath": "typography.display-lg.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displaylg.fontsize",
+      "sourcePath": "typography.display-lg.fontSize",
+      "type": "dimension",
+      "value": "56px",
+      "status": "unverified",
+      "evidence": {
+        "line": 45,
+        "sourcePath": "typography.display-lg.fontSize"
+      }
+    },
+    {
+      "path": "typography.displaylg.fontweight",
+      "sourcePath": "typography.display-lg.fontWeight",
+      "type": "number",
+      "value": 600,
+      "status": "unverified",
+      "evidence": {
+        "line": 46,
+        "sourcePath": "typography.display-lg.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displaylg.lineheight",
+      "sourcePath": "typography.display-lg.lineHeight",
+      "type": "number",
+      "value": 1.1,
+      "status": "unverified",
+      "evidence": {
+        "line": 47,
+        "sourcePath": "typography.display-lg.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displaylg.letterspacing",
+      "sourcePath": "typography.display-lg.letterSpacing",
+      "type": "dimension",
+      "value": "-1.5px",
+      "status": "unverified",
+      "evidence": {
+        "line": 48,
+        "sourcePath": "typography.display-lg.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.headinglg.fontfamily",
+      "sourcePath": "typography.heading-lg.fontFamily",
+      "type": "fontFamily",
+      "value": "DM Sans",
+      "status": "unverified",
+      "evidence": {
+        "line": 50,
+        "sourcePath": "typography.heading-lg.fontFamily"
+      }
+    },
+    {
+      "path": "typography.headinglg.fontsize",
+      "sourcePath": "typography.heading-lg.fontSize",
+      "type": "dimension",
+      "value": "40px",
+      "status": "unverified",
+      "evidence": {
+        "line": 51,
+        "sourcePath": "typography.heading-lg.fontSize"
+      }
+    },
+    {
+      "path": "typography.headinglg.fontweight",
+      "sourcePath": "typography.heading-lg.fontWeight",
+      "type": "number",
+      "value": 600,
+      "status": "unverified",
+      "evidence": {
+        "line": 52,
+        "sourcePath": "typography.heading-lg.fontWeight"
+      }
+    },
+    {
+      "path": "typography.headinglg.lineheight",
+      "sourcePath": "typography.heading-lg.lineHeight",
+      "type": "number",
+      "value": 1.2,
+      "status": "unverified",
+      "evidence": {
+        "line": 53,
+        "sourcePath": "typography.heading-lg.lineHeight"
+      }
+    },
+    {
+      "path": "typography.headinglg.letterspacing",
+      "sourcePath": "typography.heading-lg.letterSpacing",
+      "type": "dimension",
+      "value": "-1px",
+      "status": "unverified",
+      "evidence": {
+        "line": 54,
+        "sourcePath": "typography.heading-lg.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.headingmd.fontfamily",
+      "sourcePath": "typography.heading-md.fontFamily",
+      "type": "fontFamily",
+      "value": "DM Sans",
+      "status": "unverified",
+      "evidence": {
+        "line": 56,
+        "sourcePath": "typography.heading-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.headingmd.fontsize",
+      "sourcePath": "typography.heading-md.fontSize",
+      "type": "dimension",
+      "value": "32px",
+      "status": "unverified",
+      "evidence": {
+        "line": 57,
+        "sourcePath": "typography.heading-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.headingmd.fontweight",
+      "sourcePath": "typography.heading-md.fontWeight",
+      "type": "number",
+      "value": 600,
+      "status": "unverified",
+      "evidence": {
+        "line": 58,
+        "sourcePath": "typography.heading-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.headingmd.lineheight",
+      "sourcePath": "typography.heading-md.lineHeight",
+      "type": "number",
+      "value": 1.25,
+      "status": "unverified",
+      "evidence": {
+        "line": 59,
+        "sourcePath": "typography.heading-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.headingmd.letterspacing",
+      "sourcePath": "typography.heading-md.letterSpacing",
+      "type": "dimension",
+      "value": "-0.5px",
+      "status": "unverified",
+      "evidence": {
+        "line": 60,
+        "sourcePath": "typography.heading-md.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.headingsm.fontfamily",
+      "sourcePath": "typography.heading-sm.fontFamily",
+      "type": "fontFamily",
+      "value": "DM Sans",
+      "status": "unverified",
+      "evidence": {
+        "line": 62,
+        "sourcePath": "typography.heading-sm.fontFamily"
+      }
+    },
+    {
+      "path": "typography.headingsm.fontsize",
+      "sourcePath": "typography.heading-sm.fontSize",
+      "type": "dimension",
+      "value": "24px",
+      "status": "unverified",
+      "evidence": {
+        "line": 63,
+        "sourcePath": "typography.heading-sm.fontSize"
+      }
+    },
+    {
+      "path": "typography.headingsm.fontweight",
+      "sourcePath": "typography.heading-sm.fontWeight",
+      "type": "number",
+      "value": 600,
+      "status": "unverified",
+      "evidence": {
+        "line": 64,
+        "sourcePath": "typography.heading-sm.fontWeight"
+      }
+    },
+    {
+      "path": "typography.headingsm.lineheight",
+      "sourcePath": "typography.heading-sm.lineHeight",
+      "type": "number",
+      "value": 1.3,
+      "status": "unverified",
+      "evidence": {
+        "line": 65,
+        "sourcePath": "typography.heading-sm.lineHeight"
+      }
+    },
+    {
+      "path": "typography.cardtitle.fontfamily",
+      "sourcePath": "typography.card-title.fontFamily",
+      "type": "fontFamily",
+      "value": "DM Sans",
+      "status": "unverified",
+      "evidence": {
+        "line": 67,
+        "sourcePath": "typography.card-title.fontFamily"
+      }
+    },
+    {
+      "path": "typography.cardtitle.fontsize",
+      "sourcePath": "typography.card-title.fontSize",
+      "type": "dimension",
+      "value": "20px",
+      "status": "unverified",
+      "evidence": {
+        "line": 68,
+        "sourcePath": "typography.card-title.fontSize"
+      }
+    },
+    {
+      "path": "typography.cardtitle.fontweight",
+      "sourcePath": "typography.card-title.fontWeight",
+      "type": "number",
+      "value": 600,
+      "status": "unverified",
+      "evidence": {
+        "line": 69,
+        "sourcePath": "typography.card-title.fontWeight"
+      }
+    },
+    {
+      "path": "typography.cardtitle.lineheight",
+      "sourcePath": "typography.card-title.lineHeight",
+      "type": "number",
+      "value": 1.4,
+      "status": "unverified",
+      "evidence": {
+        "line": 70,
+        "sourcePath": "typography.card-title.lineHeight"
+      }
+    },
+    {
+      "path": "typography.subtitle.fontfamily",
+      "sourcePath": "typography.subtitle.fontFamily",
+      "type": "fontFamily",
+      "value": "DM Sans",
+      "status": "unverified",
+      "evidence": {
+        "line": 72,
+        "sourcePath": "typography.subtitle.fontFamily"
+      }
+    },
+    {
+      "path": "typography.subtitle.fontsize",
+      "sourcePath": "typography.subtitle.fontSize",
+      "type": "dimension",
+      "value": "18px",
+      "status": "unverified",
+      "evidence": {
+        "line": 73,
+        "sourcePath": "typography.subtitle.fontSize"
+      }
+    },
+    {
+      "path": "typography.subtitle.fontweight",
+      "sourcePath": "typography.subtitle.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 74,
+        "sourcePath": "typography.subtitle.fontWeight"
+      }
+    },
+    {
+      "path": "typography.subtitle.lineheight",
+      "sourcePath": "typography.subtitle.lineHeight",
+      "type": "number",
+      "value": 1.5,
+      "status": "unverified",
+      "evidence": {
+        "line": 75,
+        "sourcePath": "typography.subtitle.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodymd.fontfamily",
+      "sourcePath": "typography.body-md.fontFamily",
+      "type": "fontFamily",
+      "value": "DM Sans",
+      "status": "unverified",
+      "evidence": {
+        "line": 77,
+        "sourcePath": "typography.body-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodymd.fontsize",
+      "sourcePath": "typography.body-md.fontSize",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 78,
+        "sourcePath": "typography.body-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodymd.fontweight",
+      "sourcePath": "typography.body-md.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 79,
+        "sourcePath": "typography.body-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodymd.lineheight",
+      "sourcePath": "typography.body-md.lineHeight",
+      "type": "number",
+      "value": 1.5,
+      "status": "unverified",
+      "evidence": {
+        "line": 80,
+        "sourcePath": "typography.body-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodymdbold.fontfamily",
+      "sourcePath": "typography.body-md-bold.fontFamily",
+      "type": "fontFamily",
+      "value": "DM Sans",
+      "status": "unverified",
+      "evidence": {
+        "line": 82,
+        "sourcePath": "typography.body-md-bold.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodymdbold.fontsize",
+      "sourcePath": "typography.body-md-bold.fontSize",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 83,
+        "sourcePath": "typography.body-md-bold.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodymdbold.fontweight",
+      "sourcePath": "typography.body-md-bold.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 84,
+        "sourcePath": "typography.body-md-bold.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodymdbold.lineheight",
+      "sourcePath": "typography.body-md-bold.lineHeight",
+      "type": "number",
+      "value": 1.5,
+      "status": "unverified",
+      "evidence": {
+        "line": 85,
+        "sourcePath": "typography.body-md-bold.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodysm.fontfamily",
+      "sourcePath": "typography.body-sm.fontFamily",
+      "type": "fontFamily",
+      "value": "DM Sans",
+      "status": "unverified",
+      "evidence": {
+        "line": 87,
+        "sourcePath": "typography.body-sm.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodysm.fontsize",
+      "sourcePath": "typography.body-sm.fontSize",
+      "type": "dimension",
+      "value": "14px",
+      "status": "unverified",
+      "evidence": {
+        "line": 88,
+        "sourcePath": "typography.body-sm.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodysm.fontweight",
+      "sourcePath": "typography.body-sm.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 89,
+        "sourcePath": "typography.body-sm.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodysm.lineheight",
+      "sourcePath": "typography.body-sm.lineHeight",
+      "type": "number",
+      "value": 1.5,
+      "status": "unverified",
+      "evidence": {
+        "line": 90,
+        "sourcePath": "typography.body-sm.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodysmmedium.fontfamily",
+      "sourcePath": "typography.body-sm-medium.fontFamily",
+      "type": "fontFamily",
+      "value": "DM Sans",
+      "status": "unverified",
+      "evidence": {
+        "line": 92,
+        "sourcePath": "typography.body-sm-medium.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodysmmedium.fontsize",
+      "sourcePath": "typography.body-sm-medium.fontSize",
+      "type": "dimension",
+      "value": "14px",
+      "status": "unverified",
+      "evidence": {
+        "line": 93,
+        "sourcePath": "typography.body-sm-medium.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodysmmedium.fontweight",
+      "sourcePath": "typography.body-sm-medium.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 94,
+        "sourcePath": "typography.body-sm-medium.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodysmmedium.lineheight",
+      "sourcePath": "typography.body-sm-medium.lineHeight",
+      "type": "number",
+      "value": 1.5,
+      "status": "unverified",
+      "evidence": {
+        "line": 95,
+        "sourcePath": "typography.body-sm-medium.lineHeight"
+      }
+    },
+    {
+      "path": "typography.caption.fontfamily",
+      "sourcePath": "typography.caption.fontFamily",
+      "type": "fontFamily",
+      "value": "DM Sans",
+      "status": "unverified",
+      "evidence": {
+        "line": 97,
+        "sourcePath": "typography.caption.fontFamily"
+      }
+    },
+    {
+      "path": "typography.caption.fontsize",
+      "sourcePath": "typography.caption.fontSize",
+      "type": "dimension",
+      "value": "13px",
+      "status": "unverified",
+      "evidence": {
+        "line": 98,
+        "sourcePath": "typography.caption.fontSize"
+      }
+    },
+    {
+      "path": "typography.caption.fontweight",
+      "sourcePath": "typography.caption.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 99,
+        "sourcePath": "typography.caption.fontWeight"
+      }
+    },
+    {
+      "path": "typography.caption.lineheight",
+      "sourcePath": "typography.caption.lineHeight",
+      "type": "number",
+      "value": 1.7,
+      "status": "unverified",
+      "evidence": {
+        "line": 100,
+        "sourcePath": "typography.caption.lineHeight"
+      }
+    },
+    {
+      "path": "typography.captionbold.fontfamily",
+      "sourcePath": "typography.caption-bold.fontFamily",
+      "type": "fontFamily",
+      "value": "DM Sans",
+      "status": "unverified",
+      "evidence": {
+        "line": 102,
+        "sourcePath": "typography.caption-bold.fontFamily"
+      }
+    },
+    {
+      "path": "typography.captionbold.fontsize",
+      "sourcePath": "typography.caption-bold.fontSize",
+      "type": "dimension",
+      "value": "13px",
+      "status": "unverified",
+      "evidence": {
+        "line": 103,
+        "sourcePath": "typography.caption-bold.fontSize"
+      }
+    },
+    {
+      "path": "typography.captionbold.fontweight",
+      "sourcePath": "typography.caption-bold.fontWeight",
+      "type": "number",
+      "value": 600,
+      "status": "unverified",
+      "evidence": {
+        "line": 104,
+        "sourcePath": "typography.caption-bold.fontWeight"
+      }
+    },
+    {
+      "path": "typography.captionbold.lineheight",
+      "sourcePath": "typography.caption-bold.lineHeight",
+      "type": "number",
+      "value": 1.5,
+      "status": "unverified",
+      "evidence": {
+        "line": 105,
+        "sourcePath": "typography.caption-bold.lineHeight"
+      }
+    },
+    {
+      "path": "typography.micro.fontfamily",
+      "sourcePath": "typography.micro.fontFamily",
+      "type": "fontFamily",
+      "value": "DM Sans",
+      "status": "unverified",
+      "evidence": {
+        "line": 107,
+        "sourcePath": "typography.micro.fontFamily"
+      }
+    },
+    {
+      "path": "typography.micro.fontsize",
+      "sourcePath": "typography.micro.fontSize",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 108,
+        "sourcePath": "typography.micro.fontSize"
+      }
+    },
+    {
+      "path": "typography.micro.fontweight",
+      "sourcePath": "typography.micro.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 109,
+        "sourcePath": "typography.micro.fontWeight"
+      }
+    },
+    {
+      "path": "typography.micro.lineheight",
+      "sourcePath": "typography.micro.lineHeight",
+      "type": "number",
+      "value": 1.5,
+      "status": "unverified",
+      "evidence": {
+        "line": 110,
+        "sourcePath": "typography.micro.lineHeight"
+      }
+    },
+    {
+      "path": "typography.buttonmd.fontfamily",
+      "sourcePath": "typography.button-md.fontFamily",
+      "type": "fontFamily",
+      "value": "DM Sans",
+      "status": "unverified",
+      "evidence": {
+        "line": 112,
+        "sourcePath": "typography.button-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.buttonmd.fontsize",
+      "sourcePath": "typography.button-md.fontSize",
+      "type": "dimension",
+      "value": "14px",
+      "status": "unverified",
+      "evidence": {
+        "line": 113,
+        "sourcePath": "typography.button-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.buttonmd.fontweight",
+      "sourcePath": "typography.button-md.fontWeight",
+      "type": "number",
+      "value": 600,
+      "status": "unverified",
+      "evidence": {
+        "line": 114,
+        "sourcePath": "typography.button-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.buttonmd.lineheight",
+      "sourcePath": "typography.button-md.lineHeight",
+      "type": "number",
+      "value": 1.4,
+      "status": "unverified",
+      "evidence": {
+        "line": 115,
+        "sourcePath": "typography.button-md.lineHeight"
+      }
+    },
+    {
+      "path": "rounded.xs",
+      "sourcePath": "rounded.xs",
+      "type": "dimension",
+      "value": "4px",
+      "status": "unverified",
+      "evidence": {
+        "line": 118,
+        "sourcePath": "rounded.xs"
+      }
+    },
+    {
+      "path": "rounded.sm",
+      "sourcePath": "rounded.sm",
+      "type": "dimension",
+      "value": "6px",
+      "status": "unverified",
+      "evidence": {
+        "line": 119,
+        "sourcePath": "rounded.sm"
+      }
+    },
+    {
+      "path": "rounded.md",
+      "sourcePath": "rounded.md",
+      "type": "dimension",
+      "value": "8px",
+      "status": "unverified",
+      "evidence": {
+        "line": 120,
+        "sourcePath": "rounded.md"
+      }
+    },
+    {
+      "path": "rounded.lg",
+      "sourcePath": "rounded.lg",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 121,
+        "sourcePath": "rounded.lg"
+      }
+    },
+    {
+      "path": "rounded.xl",
+      "sourcePath": "rounded.xl",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 122,
+        "sourcePath": "rounded.xl"
+      }
+    },
+    {
+      "path": "rounded.xxl",
+      "sourcePath": "rounded.xxl",
+      "type": "dimension",
+      "value": "20px",
+      "status": "unverified",
+      "evidence": {
+        "line": 123,
+        "sourcePath": "rounded.xxl"
+      }
+    },
+    {
+      "path": "rounded.xxxl",
+      "sourcePath": "rounded.xxxl",
+      "type": "dimension",
+      "value": "24px",
+      "status": "unverified",
+      "evidence": {
+        "line": 124,
+        "sourcePath": "rounded.xxxl"
+      }
+    },
+    {
+      "path": "rounded.hero",
+      "sourcePath": "rounded.hero",
+      "type": "dimension",
+      "value": "32px",
+      "status": "unverified",
+      "evidence": {
+        "line": 125,
+        "sourcePath": "rounded.hero"
+      }
+    },
+    {
+      "path": "rounded.full",
+      "sourcePath": "rounded.full",
+      "type": "dimension",
+      "value": "9999px",
+      "status": "unverified",
+      "evidence": {
+        "line": 126,
+        "sourcePath": "rounded.full"
+      }
+    },
+    {
+      "path": "spacing.xxs",
+      "sourcePath": "spacing.xxs",
+      "type": "dimension",
+      "value": "4px",
+      "status": "unverified",
+      "evidence": {
+        "line": 129,
+        "sourcePath": "spacing.xxs"
+      }
+    },
+    {
+      "path": "spacing.xs",
+      "sourcePath": "spacing.xs",
+      "type": "dimension",
+      "value": "8px",
+      "status": "unverified",
+      "evidence": {
+        "line": 130,
+        "sourcePath": "spacing.xs"
+      }
+    },
+    {
+      "path": "spacing.sm",
+      "sourcePath": "spacing.sm",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 131,
+        "sourcePath": "spacing.sm"
+      }
+    },
+    {
+      "path": "spacing.md",
+      "sourcePath": "spacing.md",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 132,
+        "sourcePath": "spacing.md"
+      }
+    },
+    {
+      "path": "spacing.lg",
+      "sourcePath": "spacing.lg",
+      "type": "dimension",
+      "value": "20px",
+      "status": "unverified",
+      "evidence": {
+        "line": 133,
+        "sourcePath": "spacing.lg"
+      }
+    },
+    {
+      "path": "spacing.xl",
+      "sourcePath": "spacing.xl",
+      "type": "dimension",
+      "value": "24px",
+      "status": "unverified",
+      "evidence": {
+        "line": 134,
+        "sourcePath": "spacing.xl"
+      }
+    },
+    {
+      "path": "spacing.xxl",
+      "sourcePath": "spacing.xxl",
+      "type": "dimension",
+      "value": "32px",
+      "status": "unverified",
+      "evidence": {
+        "line": 135,
+        "sourcePath": "spacing.xxl"
+      }
+    },
+    {
+      "path": "spacing.xxxl",
+      "sourcePath": "spacing.xxxl",
+      "type": "dimension",
+      "value": "40px",
+      "status": "unverified",
+      "evidence": {
+        "line": 136,
+        "sourcePath": "spacing.xxxl"
+      }
+    },
+    {
+      "path": "spacing.sectionsm",
+      "sourcePath": "spacing.section-sm",
+      "type": "dimension",
+      "value": "48px",
+      "status": "unverified",
+      "evidence": {
+        "line": 137,
+        "sourcePath": "spacing.section-sm"
+      }
+    },
+    {
+      "path": "spacing.section",
+      "sourcePath": "spacing.section",
+      "type": "dimension",
+      "value": "64px",
+      "status": "unverified",
+      "evidence": {
+        "line": 138,
+        "sourcePath": "spacing.section"
+      }
+    },
+    {
+      "path": "spacing.sectionlg",
+      "sourcePath": "spacing.section-lg",
+      "type": "dimension",
+      "value": "80px",
+      "status": "unverified",
+      "evidence": {
+        "line": 139,
+        "sourcePath": "spacing.section-lg"
+      }
+    },
+    {
+      "path": "spacing.hero",
+      "sourcePath": "spacing.hero",
+      "type": "dimension",
+      "value": "96px",
+      "status": "unverified",
+      "evidence": {
+        "line": 140,
+        "sourcePath": "spacing.hero"
+      }
+    }
+  ],
+  "rejectedTokens": [],
+  "homepage": {
+    "status": "missing",
+    "candidates": [],
+    "verification": {
+      "status": "verified",
+      "url": "https://www.minimax.io/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://www.minimax.io/",
+          "title": "MiniMax",
+          "note": "Public homepage read requested https://www.minimax.io; final URL https://www.minimax.io/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    }
+  },
+  "completeness": {
+    "presentFields": [
+      "colors",
+      "typography",
+      "rounded",
+      "spacing",
+      "components"
+    ],
+    "missingFields": [],
+    "tokenRoles": "incomplete",
+    "note": "Missing fields are not reconstructed. Prose-only colors have no inferred semantic role."
+  },
+  "provenance": {
+    "status": "independent-analysis",
+    "sources": [
+      {
+        "title": "VoltAgent awesome-design-md independent analysis",
+        "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/minimax/DESIGN.md"
+      }
+    ],
+    "verification": "unverified-secondary-analysis"
+  },
+  "limitations": [
+    "Independent secondary analysis, not an official brand system; all reported values are unverified.",
+    "No brand assets, logos, font binaries or screenshots copied. Font names are documentary, not font licenses.",
+    "Safe CSS literals are extracted without claiming complete roles, state coverage or visual fidelity.",
+    "Markdown is retained as inert evidence, never executed or rendered as raw HTML."
+  ]
+}

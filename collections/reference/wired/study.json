@@ -1,0 +1,1516 @@
+{
+  "schemaVersion": 1,
+  "id": "reference-wired",
+  "title": "Wired",
+  "classification": "independent-unverified-analysis",
+  "source": {
+    "repository": "https://github.com/VoltAgent/awesome-design-md",
+    "fork": "https://github.com/rsteth/awesome-design-md-p",
+    "revision": "fcc70284932276d085f01ef9f83edde90b1258cb",
+    "path": "design-md/wired/DESIGN.md",
+    "sha256": "eb439dcc573401dc30583f40e7eef8a60b769232da59e524de6dce56d5c3593e",
+    "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/wired/DESIGN.md"
+  },
+  "sourceName": "Wired-Inspired-design-analysis",
+  "titleProvenance": {
+    "status": "inferred",
+    "basis": "Source directory label, normalized for navigation; original source name is retained without correction.",
+    "sourceValue": "wired",
+    "originalName": "Wired-Inspired-design-analysis"
+  },
+  "description": "An inspired interpretation of Wired's design language — a flagship technology-magazine brand whose surface is a strict editorial duet of stark black wordmark on white canvas, anchored by a tall narrow custom display serif for hero headlines, a humanist serif body face for long-form reading, and a clean sans face for metadata; layout reads like a printed magazine ported to the web with very little marketing chrome.",
+  "analysis": {
+    "version": "alpha",
+    "name": "Wired-Inspired-design-analysis",
+    "description": "An inspired interpretation of Wired's design language — a flagship technology-magazine brand whose surface is a strict editorial duet of stark black wordmark on white canvas, anchored by a tall narrow custom display serif for hero headlines, a humanist serif body face for long-form reading, and a clean sans face for metadata; layout reads like a printed magazine ported to the web with very little marketing chrome.",
+    "colors": {
+      "primary": "#000000",
+      "on-primary": "#ffffff",
+      "ink": "#000000",
+      "ink-soft": "#1a1a1a",
+      "body": "#757575",
+      "hairline": "#e0e0e0",
+      "canvas": "#ffffff",
+      "canvas-soft": "#f5f5f5",
+      "link": "#057dbc"
+    },
+    "typography": {
+      "display-hero": {
+        "fontFamily": "WiredDisplay, \"Times New Roman\", Georgia, serif",
+        "fontSize": "64px",
+        "fontWeight": 400,
+        "lineHeight": "59.52px",
+        "letterSpacing": "-0.5px"
+      },
+      "display-lg": {
+        "fontFamily": "WiredDisplay, \"Times New Roman\", Georgia, serif",
+        "fontSize": "48px",
+        "fontWeight": 400,
+        "lineHeight": "50.4px",
+        "letterSpacing": "-0.4px"
+      },
+      "display-md": {
+        "fontFamily": "WiredDisplay, \"Times New Roman\", Georgia, serif",
+        "fontSize": "32px",
+        "fontWeight": 400,
+        "lineHeight": "35.2px",
+        "letterSpacing": "-0.3px"
+      },
+      "display-sm": {
+        "fontFamily": "WiredDisplay, \"Times New Roman\", Georgia, serif",
+        "fontSize": "26px",
+        "fontWeight": 400,
+        "lineHeight": "28.08px"
+      },
+      "display-xs": {
+        "fontFamily": "Apercu, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+        "fontSize": "20px",
+        "fontWeight": 700,
+        "lineHeight": "24px",
+        "letterSpacing": "-0.28px"
+      },
+      "body-serif-lg": {
+        "fontFamily": "BreveText, Georgia, \"Times New Roman\", serif",
+        "fontSize": "19px",
+        "fontWeight": 400,
+        "lineHeight": "27.93px",
+        "letterSpacing": "0.108px"
+      },
+      "body-serif-md": {
+        "fontFamily": "BreveText, Georgia, \"Times New Roman\", serif",
+        "fontSize": "16px",
+        "fontWeight": 400,
+        "lineHeight": "24px",
+        "letterSpacing": "0.09px"
+      },
+      "body-md": {
+        "fontFamily": "Apercu, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+        "fontSize": "17px",
+        "fontWeight": 400,
+        "lineHeight": "20px"
+      },
+      "body-md-strong": {
+        "fontFamily": "Apercu, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+        "fontSize": "17px",
+        "fontWeight": 700,
+        "lineHeight": "22px",
+        "letterSpacing": "-0.144px"
+      },
+      "body-sm": {
+        "fontFamily": "Apercu, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "fontWeight": 400,
+        "lineHeight": "18px",
+        "letterSpacing": "0.4px"
+      },
+      "body-sm-strong": {
+        "fontFamily": "Apercu, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "fontWeight": 700,
+        "lineHeight": "18px",
+        "letterSpacing": "0.4px"
+      },
+      "byline": {
+        "fontFamily": "BreveText, Georgia, \"Times New Roman\", serif",
+        "fontSize": "12.73px",
+        "fontWeight": 700,
+        "lineHeight": "28px",
+        "letterSpacing": "0.108px"
+      },
+      "caption": {
+        "fontFamily": "Apercu, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+        "fontSize": "12px",
+        "fontWeight": 400,
+        "lineHeight": "16px"
+      },
+      "button-md": {
+        "fontFamily": "Apercu, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": 700,
+        "lineHeight": "20px",
+        "letterSpacing": "0.3px"
+      }
+    },
+    "rounded": {
+      "none": "0px",
+      "full": "9999px"
+    },
+    "spacing": {
+      "xxs": "2px",
+      "xs": "4px",
+      "sm": "8px",
+      "md": "12px",
+      "lg": "16px",
+      "xl": "20px",
+      "2xl": "24px",
+      "3xl": "32px",
+      "4xl": "48px"
+    },
+    "components": {
+      "nav-bar": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-sm-strong}",
+        "padding": "{spacing.md} {spacing.xl}"
+      },
+      "nav-link": {
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-sm-strong}"
+      },
+      "button-primary": {
+        "backgroundColor": "{colors.primary}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.none}",
+        "padding": "{spacing.md} {spacing.xl}"
+      },
+      "button-outline": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "borderColor": "{colors.ink}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.none}",
+        "padding": "{spacing.md} {spacing.xl}"
+      },
+      "button-icon-circular": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "rounded": "{rounded.full}",
+        "padding": "{spacing.sm}"
+      },
+      "text-input": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "borderColor": "{colors.ink}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.none}",
+        "padding": "{spacing.md} {spacing.lg}"
+      },
+      "story-card-large": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.display-md}",
+        "padding": "{spacing.lg}"
+      },
+      "story-card": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.display-xs}",
+        "padding": "{spacing.md}"
+      },
+      "story-row": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "borderColor": "{colors.hairline}",
+        "typography": "{typography.body-md-strong}",
+        "padding": "{spacing.lg} 0"
+      },
+      "category-eyebrow": {
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-sm-strong}"
+      },
+      "byline-row": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.body}",
+        "typography": "{typography.byline}"
+      },
+      "hero-band": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.display-hero}",
+        "padding": "{spacing.4xl} {spacing.xl}"
+      },
+      "masthead-band": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-md-strong}",
+        "padding": "{spacing.md} {spacing.xl}"
+      },
+      "hairline-divider": {
+        "borderColor": "{colors.hairline}"
+      },
+      "footer": {
+        "backgroundColor": "{colors.primary}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.body-sm}",
+        "padding": "{spacing.4xl} {spacing.xl}"
+      },
+      "ex-pricing-tier": {
+        "description": "Default Pricing tier card. Re-uses feature-card chrome with brand canvas-soft surface.",
+        "backgroundColor": "{colors.canvas-soft}",
+        "textColor": "{colors.ink}",
+        "borderColor": "{colors.hairline}",
+        "rounded": "{rounded.none}",
+        "padding": "{spacing.lg}"
+      },
+      "ex-pricing-tier-featured": {
+        "description": "Featured/highlighted tier — polarity-flipped surface (dark fill + light text in light mode, light fill + dark text in dark mode).",
+        "backgroundColor": "{colors.ink}",
+        "textColor": "{colors.on-primary}",
+        "rounded": "{rounded.none}",
+        "padding": "{spacing.lg}"
+      },
+      "ex-product-selector": {
+        "description": "What's Included summary card — re-purposed for SaaS / B2B verticals (NOT a literal product gallery).",
+        "backgroundColor": "{colors.canvas-soft}",
+        "rounded": "{rounded.none}",
+        "padding": "{spacing.lg}"
+      },
+      "ex-cart-drawer": {
+        "description": "Subscription summary — re-purposed for SaaS / B2B (line items per add-on, not literal cart).",
+        "backgroundColor": "{colors.canvas}",
+        "rounded": "{rounded.none}",
+        "padding": "{spacing.lg}",
+        "item-divider": "{colors.hairline}"
+      },
+      "ex-app-shell-row": {
+        "description": "Sidebar nav row inside the App Shell example. Active state uses brand primary as the indicator.",
+        "backgroundColor": "{colors.canvas}",
+        "activeIndicator": "{colors.primary}",
+        "rounded": "{rounded.none}",
+        "padding": "{spacing.md} {spacing.lg}"
+      },
+      "ex-data-table-cell": {
+        "description": "Default data-table th + td chrome. Header uses mono-caps eyebrow typography; body uses body-sm.",
+        "headerBackground": "{colors.canvas-soft}",
+        "headerTypography": "{typography.caption}",
+        "bodyTypography": "{typography.body-sm}",
+        "cellPadding": "{spacing.md} {spacing.lg}",
+        "rowBorder": "{colors.hairline}"
+      },
+      "ex-auth-form-card": {
+        "description": "Sign-in / sign-up card. Re-uses feature-card chrome with text-input primitives inside.",
+        "backgroundColor": "{colors.canvas-soft}",
+        "rounded": "{rounded.none}",
+        "padding": "{spacing.lg}"
+      },
+      "ex-modal-card": {
+        "description": "Modal dialog surface — same chrome as feature-card with elevated shadow.",
+        "backgroundColor": "{colors.canvas}",
+        "rounded": "{rounded.none}",
+        "padding": "{spacing.lg}"
+      },
+      "ex-empty-state-card": {
+        "description": "Empty-state illustration frame.",
+        "backgroundColor": "{colors.canvas-soft}",
+        "rounded": "{rounded.none}",
+        "padding": "{spacing.3xl}",
+        "captionTypography": "{typography.body-md}"
+      },
+      "ex-toast": {
+        "description": "Toast notification surface — feature-card shape + medium shadow.",
+        "backgroundColor": "{colors.canvas}",
+        "rounded": "{rounded.none}",
+        "padding": "{spacing.md} {spacing.lg}",
+        "typography": "{typography.body-sm}"
+      }
+    }
+  },
+  "normalizationRepairs": [],
+  "sections": [
+    {
+      "heading": "Overview",
+      "level": 2,
+      "text": "Wired is the flagship technology-magazine brand under Condé Nast — and the web surface refuses to dress itself as a SaaS marketing site. The page is unmistakably an editorial product: a white canvas, a strict black wordmark in the brand's proprietary `WiredDisplay` (a tall, narrow, high-contrast serif used at 64 px), and stacked story cards that read as a printed magazine grid ported to the screen. There is no atmospheric gradient, no decorative chrome, no chromatic accent — the brand's only colour beyond the black-and-white duet is the small `{colors.link}` (`#057dbc`) used for inline body links inside long-form articles.\n\nType carries the entire identity. Three families ladder the system: `WiredDisplay` (the proprietary high-contrast serif) for hero / section headlines; `BreveText` (a humanist serif) for long-form body and bylines; and `Apercu` (a humanist sans) for metadata, captions, eyebrow tags, and buttons. The pairing is editorial-grade: serifs for narrative, sans for navigation and structural labels.\n\nButtons are square. The brand uses `{rounded.none}` 0 px corners across the entire UI — newsletter sign-ups, login forms, \"Read more\" CTAs all render as sharp rectangles. The only circular shape is the `button-icon-circular` used for social-share affordances. There are no soft drop-shadows; the brand uses hairline borders for elevation when needed.\n\n**Key Characteristics:**\n- A strict black-and-white duet with no chromatic accent except the inline link blue `{colors.link}`. The brand reads as a printed magazine.\n- Three-face typographic system — `WiredDisplay` serif for display, `BreveText` serif for body, `Apercu` sans for metadata and buttons.\n- Square buttons (`{rounded.none}`) — the brand never softens corners on interactive elements.\n- A magazine-style story grid: large feature card at top, two-up secondary, then a vertical stack of bylined story rows separated by `{colors.hairline}` 1 px dividers.\n- The brand's only signature decorative move is the **masthead band** — a thin black strip with the wordmark centred, no other decoration.\n- A near-black `{colors.ink}` (`#000000`) footer band, no graphics, just text columns and the wordmark repeating.",
+      "line": 254
+    },
+    {
+      "heading": "Colors",
+      "level": 2,
+      "text": "",
+      "line": 270
+    },
+    {
+      "heading": "Brand & Accent",
+      "level": 3,
+      "text": "- **Ink Black** (`{colors.primary}` — `#000000`): The brand's only \"accent.\" Used for wordmark, headlines, CTAs, footer fill. Pure black, never softened.",
+      "line": 272
+    },
+    {
+      "heading": "Surface",
+      "level": 3,
+      "text": "- **Canvas** (`{colors.canvas}` — `#ffffff`): The default page background.\n- **Canvas Soft** (`{colors.canvas-soft}` — `#f5f5f5`): Rare tint used for the comment-section background and search-result row hover states (not in the main page rhythm).\n- **Hairline** (`{colors.hairline}` — `#e0e0e0`): 1 px dividers between story rows. The brand's only \"line.\"",
+      "line": 275
+    },
+    {
+      "heading": "Text",
+      "level": 3,
+      "text": "- **Ink** (`{colors.ink}` — `#000000`): Every headline, every body paragraph in BreveText.\n- **Ink Soft** (`{colors.ink-soft}` — `#1a1a1a`): A near-black variant used for caption-strong / footer link emphasis.\n- **Body** (`{colors.body}` — `#757575`): Secondary metadata — bylines, timestamps, supporting body lines.",
+      "line": 280
+    },
+    {
+      "heading": "Semantic",
+      "level": 3,
+      "text": "The brand operates with one inline link colour and no separate error / success / warning palette in its marketing surface. Validation cues on form pages use the ink black + body grey hierarchy.\n\n- **Link** (`{colors.link}` — `#057dbc`): The inline body-link blue. Used only inside long-form article body copy, never on UI buttons or navigation.",
+      "line": 285
+    },
+    {
+      "heading": "Typography",
+      "level": 2,
+      "text": "",
+      "line": 290
+    },
+    {
+      "heading": "Font Family",
+      "level": 3,
+      "text": "Three families ladder the system:\n1. **WiredDisplay** — the proprietary tall-narrow high-contrast serif used exclusively for display headlines (64 px hero, scaling down to 26 px sub-display). The brand's most-recognisable typographic signature.\n2. **BreveText** — the proprietary humanist serif used for long-form body, bylines, and editorial captions. Used at 16 – 19 px line-height 1.45 – 1.50 for comfortable reading density.\n3. **Apercu** — a humanist sans used for nav, button labels, category eyebrows, metadata, and captions. Weights 400 / 700.\n\nInter is loaded as a fourth fallback face for embedded utility surfaces (the comment section, account pages) but does not appear on the main marketing / article surface.",
+      "line": 292
+    },
+    {
+      "heading": "Hierarchy",
+      "level": 3,
+      "text": "| Token | Size | Weight | Line Height | Letter Spacing | Use |\n|---|---|---|---|---|---|\n| `{typography.display-hero}` | 64px | 400 | 59.5px | -0.5px | Cover-story headline. |\n| `{typography.display-lg}` | 48px | 400 | 50.4px | -0.4px | Major section / feature headlines. |\n| `{typography.display-md}` | 32px | 400 | 35.2px | -0.3px | Story-card large variant. |\n| `{typography.display-sm}` | 26px | 400 | 28px | 0 | Sub-display headings inside long-form articles. |\n| `{typography.display-xs}` | 20px | 700 | 24px | -0.28px | Sans (Apercu) display micro-headings for category callouts. |\n| `{typography.body-serif-lg}` | 19px | 400 | 27.93px | 0.108px | Lead paragraph of an article (BreveText). |\n| `{typography.body-serif-md}` | 16px | 400 | 24px | 0.09px | Default article body (BreveText). |\n| `{typography.body-md}` | 17px | 400 | 20px | 0 | Sans body (Apercu) for nav / metadata. |\n| `{typography.body-md-strong}` | 17px | 700 | 22px | -0.144px | Bold sans body. |\n| `{typography.body-sm}` | 14px | 400 | 18px | 0.4px | Secondary sans body. |\n| `{typography.body-sm-strong}` | 14px | 700 | 18px | 0.4px | Bold caption / nav-link. |\n| `{typography.byline}` | 12.73px | 700 | 28px | 0.108px | Article byline (BreveText). |\n| `{typography.caption}` | 12px | 400 | 16px | 0 | Fine print, image captions. |\n| `{typography.button-md}` | 16px | 700 | 20px | 0.3px | Button label. |",
+      "line": 300
+    },
+    {
+      "heading": "Principles",
+      "level": 3,
+      "text": "- **Serif for narrative, sans for structure.** The serif faces never carry button labels or nav text; the sans face never carries article body.\n- **Display weight 400** — the proprietary WiredDisplay reads as elegant by virtue of its thin-tall-narrow design at default weight, not via weight 700+.\n- **Bylines use BreveText weight 700 with relaxed line-height 2.2.** The vertical breathing is part of the editorial signature.",
+      "line": 319
+    },
+    {
+      "heading": "Note on Font Substitutes",
+      "level": 3,
+      "text": "The three proprietary faces have no exact substitutes. Best open-source approximations:\n- **WiredDisplay** — *Playfair Display* weight 400 at large display sizes captures the high-contrast didone feel, though wider than the brand's tall-narrow proportions.\n- **BreveText** — *Lora* or *Source Serif Pro* at 16 – 19 px.\n- **Apercu** — *Inter* or *Manrope* weights 400 / 700.",
+      "line": 324
+    },
+    {
+      "heading": "Layout",
+      "level": 2,
+      "text": "",
+      "line": 330
+    },
+    {
+      "heading": "Spacing System",
+      "level": 3,
+      "text": "- **Base unit**: 4 px.\n- **Tokens**: `{spacing.xxs}` 2 px · `{spacing.xs}` 4 px · `{spacing.sm}` 8 px · `{spacing.md}` 12 px · `{spacing.lg}` 16 px · `{spacing.xl}` 20 px · `{spacing.2xl}` 24 px · `{spacing.3xl}` 32 px · `{spacing.4xl}` 48 px.\n- **Section padding**: hero / story grid use `{spacing.4xl}` 48 px top/bottom on desktop.\n- **Story row padding**: `{spacing.lg}` 16 px vertical between bylined story rows.",
+      "line": 332
+    },
+    {
+      "heading": "Grid & Container",
+      "level": 3,
+      "text": "- Marketing content uses a wide container (~1400 px max).\n- Cover-story grid: 1 large hero + 2-up secondary stories + vertical stack.\n- Story-row stack: full-width single column with hairline dividers.",
+      "line": 338
+    },
+    {
+      "heading": "Responsive Strategy",
+      "level": 3,
+      "text": "",
+      "line": 343
+    },
+    {
+      "heading": "Breakpoints",
+      "level": 4,
+      "text": "| Name | Width | Key Changes |\n|---|---|---|\n| Mobile | < 768px | Cover hero 64→40 px; all grids 1-up; hamburger nav. |\n| Tablet | 768–1023px | 2-up secondary story grid. |\n| Desktop | ≥ 1024px | Full magazine grid. |",
+      "line": 345
+    },
+    {
+      "heading": "Touch Targets",
+      "level": 4,
+      "text": "Button-primary renders ~44 px tall (12 vertical padding + 20 line). WCAG AAA at all widths.",
+      "line": 353
+    },
+    {
+      "heading": "Collapsing Strategy",
+      "level": 4,
+      "text": "- Nav: full link row + Subscribe CTA at desktop. Hamburger at mobile.\n- Magazine grid: hero stays full-width; 2-up secondary drops to 1-up at mobile.\n- Story rows: stay single-column at all viewports.",
+      "line": 356
+    },
+    {
+      "heading": "Image Behavior",
+      "level": 4,
+      "text": "- Cover images: full-bleed 16:9 hero / 4:3 secondary.\n- Article body images: full-width inside the article column.\n- Author avatars: small inline circular crops next to bylines.",
+      "line": 361
+    },
+    {
+      "heading": "Elevation & Depth",
+      "level": 2,
+      "text": "| Level | Treatment | Use |\n|---|---|---|\n| Level 0 — Flat | No shadow, no border. | Default — almost every surface lives at this level. |\n| Level 1 — Hairline | 1 px solid `{colors.hairline}` border. | Story-row dividers, input borders. |\n| Level 2 — Heavy Black Border | 2 px solid `{colors.ink}` border. | Subscribe CTA on certain campaign moments. |\n\nThe brand uses no drop-shadows. Surface contrast and hairline borders carry all visual hierarchy.",
+      "line": 366
+    },
+    {
+      "heading": "Shapes",
+      "level": 2,
+      "text": "",
+      "line": 376
+    },
+    {
+      "heading": "Border Radius Scale",
+      "level": 3,
+      "text": "| Token | Value | Use |\n|---|---|---|\n| `{rounded.none}` | 0px | Every interactive shape — buttons, inputs, cards. The brand's signature square geometry. |\n| `{rounded.full}` | 9999px | Circular icon containers only (social-share, account avatar). |",
+      "line": 378
+    },
+    {
+      "heading": "Photography Geometry",
+      "level": 3,
+      "text": "- Cover stories: 16:9 hero, edge-to-edge.\n- Secondary story cards: 4:3 thumbnails.\n- Article body images: native aspect, full column width.\n- Bylines / avatars: circular `{rounded.full}` 28 px crops.",
+      "line": 385
+    },
+    {
+      "heading": "Components",
+      "level": 2,
+      "text": "",
+      "line": 391
+    },
+    {
+      "heading": "Buttons",
+      "level": 3,
+      "text": "**`button-primary`** — the square black CTA.\n- Background `{colors.primary}`, text `{colors.on-primary}`, label `{typography.button-md}` (Apercu 16 px / 700 / 0.3 px tracking), padding `{spacing.md} {spacing.xl}`, shape `{rounded.none}` 0 px.\n\n**`button-outline`** — the white outline CTA.\n- Background `{colors.canvas}`, text `{colors.ink}`, 1 px solid `{colors.ink}` border, same typography / padding / shape.\n\n**`button-icon-circular`** — the circular share-icon button.\n- Background `{colors.canvas}`, ink icon, shape `{rounded.full}`.",
+      "line": 393
+    },
+    {
+      "heading": "Cards & Containers",
+      "level": 3,
+      "text": "**`story-card-large`** — the cover-story card with `{typography.display-md}` headline.\n- Background `{colors.canvas}`, text `{colors.ink}`, padding `{spacing.lg}`. No border — the card lives on the canvas with the photo doing the work.\n\n**`story-card`** — the secondary story card.\n- Background `{colors.canvas}`, text `{colors.ink}`, padding `{spacing.md}`. Photo at top, sans display heading + body lead below.\n\n**`story-row`** — the bylined story list row.\n- Background `{colors.canvas}`, text `{colors.ink}`, 1 px solid `{colors.hairline}` bottom border, body in `{typography.body-md-strong}`, padding `{spacing.lg}` 0.",
+      "line": 404
+    },
+    {
+      "heading": "Inputs & Forms",
+      "level": 3,
+      "text": "**`text-input`** — the standard text input.\n- Background `{colors.canvas}`, text `{colors.ink}`, 1 px solid `{colors.ink}` border, body in `{typography.body-md}`, padding `{spacing.md} {spacing.lg}`, shape `{rounded.none}`.",
+      "line": 415
+    },
+    {
+      "heading": "Navigation",
+      "level": 3,
+      "text": "**`nav-bar`** — the top nav, light by default.\n- Background `{colors.canvas}`, text `{colors.ink}`, padding `{spacing.md} {spacing.xl}`. Layout: hamburger left, masthead centre, Subscribe right.\n\n**`nav-link`** — link items inside nav.\n- Text `{colors.ink}`, set in `{typography.body-sm-strong}` (Apercu 14 / 700).\n\n**`footer`** — the black footer band.\n- Background `{colors.primary}`, text `{colors.on-primary}`, padding `{spacing.4xl} {spacing.xl}`. Body in `{typography.body-sm}` (Apercu 14 / 400). Footer column eyebrows in `{typography.body-sm-strong}`.",
+      "line": 420
+    },
+    {
+      "heading": "Signature Components",
+      "level": 3,
+      "text": "**`hero-band`** — the white hero band hosting the cover-story.\n- Background `{colors.canvas}`, text `{colors.ink}`, padding `{spacing.4xl} {spacing.xl}`. Cover headline in `{typography.display-hero}` (WiredDisplay 64 px).\n\n**`masthead-band`** — the thin top band with the wordmark.\n- Background `{colors.canvas}`, text `{colors.ink}`, padding `{spacing.md} {spacing.xl}`. The wordmark sits centred; flanked by section nav.\n\n**`category-eyebrow`** — the small uppercase category label above story headlines.\n- Text `{colors.ink}`, set in `{typography.body-sm-strong}` (Apercu 14 / 700 — though some campaigns use ALL CAPS via CSS).\n\n**`byline-row`** — the article byline strip.\n- Background `{colors.canvas}`, text `{colors.body}`, body in `{typography.byline}` (BreveText 12.73 / 700 / line-height 2.2). Includes an author avatar + name + date.\n\n**`hairline-divider`** — the 1 px line between story rows.\n- 1 px solid `{colors.hairline}`.",
+      "line": 431
+    },
+    {
+      "heading": "Examples (illustrative)",
+      "level": 3,
+      "text": "> Auto-derived kit-mirror demonstration surfaces (`scripts/derive-examples-block.mjs`). Each `ex-*` entry references brand-native primitives so downstream consumers (`/preview-design`, `/generate-kit`) re-skin the same 10 surfaces consistently. `TO_FILL` markers indicate missing primitives — resolve in the LLM judgment pass.\n\n**`ex-pricing-tier`** — Default Pricing tier card. Re-uses feature-card chrome with brand canvas-soft surface.\n- Properties: `backgroundColor`, `textColor`, `borderColor`, `rounded`, `padding`\n\n**`ex-pricing-tier-featured`** — Featured/highlighted tier — polarity-flipped surface (dark fill + light text in light mode, light fill + dark text in dark mode).\n- Properties: `backgroundColor`, `textColor`, `rounded`, `padding`\n\n**`ex-product-selector`** — What's Included summary card — re-purposed for SaaS / B2B verticals (NOT a literal product gallery).\n- Properties: `backgroundColor`, `rounded`, `padding`\n\n**`ex-cart-drawer`** — Subscription summary — re-purposed for SaaS / B2B (line items per add-on, not literal cart).\n- Properties: `backgroundColor`, `rounded`, `padding`, `item-divider`\n\n**`ex-app-shell-row`** — Sidebar nav row inside the App Shell example. Active state uses brand primary as the indicator.\n- Properties: `backgroundColor`, `activeIndicator`, `rounded`, `padding`\n\n**`ex-data-table-cell`** — Default data-table th + td chrome. Header uses mono-caps eyebrow typography; body uses body-sm.\n- Properties: `headerBackground`, `headerTypography`, `bodyTypography`, `cellPadding`, `rowBorder`\n\n**`ex-auth-form-card`** — Sign-in / sign-up card. Re-uses feature-card chrome with text-input primitives inside.\n- Properties: `backgroundColor`, `rounded`, `padding`\n\n**`ex-modal-card`** — Modal dialog surface — same chrome as feature-card with elevated shadow.\n- Properties: `backgroundColor`, `rounded`, `padding`\n\n**`ex-empty-state-card`** — Empty-state illustration frame.\n- Properties: `backgroundColor`, `rounded`, `padding`, `captionTypography`\n\n**`ex-toast`** — Toast notification surface — feature-card shape + medium shadow.\n- Properties: `backgroundColor`, `rounded`, `padding`, `typography`",
+      "line": 448
+    },
+    {
+      "heading": "Do's and Don'ts",
+      "level": 2,
+      "text": "",
+      "line": 483
+    },
+    {
+      "heading": "Do",
+      "level": 3,
+      "text": "- Reserve `{colors.primary}` black for the wordmark, every CTA, and the footer fill. The brand IS the strict black-on-white duet.\n- Set hero headlines in `{typography.display-hero}` (WiredDisplay 64 px weight 400). The proprietary serif IS the brand's typographic signature.\n- Use `{rounded.none}` 0 px on every button and form input. The brand reads as a printed magazine — square corners are non-negotiable.\n- Pair WiredDisplay (serif display) with BreveText (serif body) and Apercu (sans labels). Three faces, three roles.\n- Render story rows with `{colors.hairline}` 1 px dividers — the brand's only elevation cue.",
+      "line": 485
+    },
+    {
+      "heading": "Don't",
+      "level": 3,
+      "text": "- Don't introduce a chromatic brand accent. The link blue is reserved for inline body links inside articles only.\n- Don't round button corners. The brand never softens its rectangular geometry.\n- Don't drop a soft drop-shadow on cards. Surface contrast and hairlines carry elevation.\n- Don't substitute the proprietary serif faces with a generic sans for display. The serif voice is the brand.\n- Don't promote display weight beyond 400. The brand's elegance is in the typeface design, not bold weight.",
+      "line": 492
+    }
+  ],
+  "tokens": [
+    {
+      "path": "colors.primary",
+      "sourcePath": "colors.primary",
+      "type": "color",
+      "value": "#000000",
+      "status": "unverified",
+      "evidence": {
+        "line": 7,
+        "sourcePath": "colors.primary"
+      }
+    },
+    {
+      "path": "colors.onprimary",
+      "sourcePath": "colors.on-primary",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 8,
+        "sourcePath": "colors.on-primary"
+      }
+    },
+    {
+      "path": "colors.ink",
+      "sourcePath": "colors.ink",
+      "type": "color",
+      "value": "#000000",
+      "status": "unverified",
+      "evidence": {
+        "line": 9,
+        "sourcePath": "colors.ink"
+      }
+    },
+    {
+      "path": "colors.inksoft",
+      "sourcePath": "colors.ink-soft",
+      "type": "color",
+      "value": "#1a1a1a",
+      "status": "unverified",
+      "evidence": {
+        "line": 10,
+        "sourcePath": "colors.ink-soft"
+      }
+    },
+    {
+      "path": "colors.body",
+      "sourcePath": "colors.body",
+      "type": "color",
+      "value": "#757575",
+      "status": "unverified",
+      "evidence": {
+        "line": 11,
+        "sourcePath": "colors.body"
+      }
+    },
+    {
+      "path": "colors.hairline",
+      "sourcePath": "colors.hairline",
+      "type": "color",
+      "value": "#e0e0e0",
+      "status": "unverified",
+      "evidence": {
+        "line": 12,
+        "sourcePath": "colors.hairline"
+      }
+    },
+    {
+      "path": "colors.canvas",
+      "sourcePath": "colors.canvas",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 13,
+        "sourcePath": "colors.canvas"
+      }
+    },
+    {
+      "path": "colors.canvassoft",
+      "sourcePath": "colors.canvas-soft",
+      "type": "color",
+      "value": "#f5f5f5",
+      "status": "unverified",
+      "evidence": {
+        "line": 14,
+        "sourcePath": "colors.canvas-soft"
+      }
+    },
+    {
+      "path": "colors.link",
+      "sourcePath": "colors.link",
+      "type": "color",
+      "value": "#057dbc",
+      "status": "unverified",
+      "evidence": {
+        "line": 15,
+        "sourcePath": "colors.link"
+      }
+    },
+    {
+      "path": "typography.displayhero.fontfamily",
+      "sourcePath": "typography.display-hero.fontFamily",
+      "type": "fontFamily",
+      "value": "WiredDisplay, \"Times New Roman\", Georgia, serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 19,
+        "sourcePath": "typography.display-hero.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displayhero.fontsize",
+      "sourcePath": "typography.display-hero.fontSize",
+      "type": "dimension",
+      "value": "64px",
+      "status": "unverified",
+      "evidence": {
+        "line": 20,
+        "sourcePath": "typography.display-hero.fontSize"
+      }
+    },
+    {
+      "path": "typography.displayhero.fontweight",
+      "sourcePath": "typography.display-hero.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 21,
+        "sourcePath": "typography.display-hero.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displayhero.lineheight",
+      "sourcePath": "typography.display-hero.lineHeight",
+      "type": "dimension",
+      "value": "59.52px",
+      "status": "unverified",
+      "evidence": {
+        "line": 22,
+        "sourcePath": "typography.display-hero.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displayhero.letterspacing",
+      "sourcePath": "typography.display-hero.letterSpacing",
+      "type": "dimension",
+      "value": "-0.5px",
+      "status": "unverified",
+      "evidence": {
+        "line": 23,
+        "sourcePath": "typography.display-hero.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.displaylg.fontfamily",
+      "sourcePath": "typography.display-lg.fontFamily",
+      "type": "fontFamily",
+      "value": "WiredDisplay, \"Times New Roman\", Georgia, serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 25,
+        "sourcePath": "typography.display-lg.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displaylg.fontsize",
+      "sourcePath": "typography.display-lg.fontSize",
+      "type": "dimension",
+      "value": "48px",
+      "status": "unverified",
+      "evidence": {
+        "line": 26,
+        "sourcePath": "typography.display-lg.fontSize"
+      }
+    },
+    {
+      "path": "typography.displaylg.fontweight",
+      "sourcePath": "typography.display-lg.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 27,
+        "sourcePath": "typography.display-lg.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displaylg.lineheight",
+      "sourcePath": "typography.display-lg.lineHeight",
+      "type": "dimension",
+      "value": "50.4px",
+      "status": "unverified",
+      "evidence": {
+        "line": 28,
+        "sourcePath": "typography.display-lg.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displaylg.letterspacing",
+      "sourcePath": "typography.display-lg.letterSpacing",
+      "type": "dimension",
+      "value": "-0.4px",
+      "status": "unverified",
+      "evidence": {
+        "line": 29,
+        "sourcePath": "typography.display-lg.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.displaymd.fontfamily",
+      "sourcePath": "typography.display-md.fontFamily",
+      "type": "fontFamily",
+      "value": "WiredDisplay, \"Times New Roman\", Georgia, serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 31,
+        "sourcePath": "typography.display-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displaymd.fontsize",
+      "sourcePath": "typography.display-md.fontSize",
+      "type": "dimension",
+      "value": "32px",
+      "status": "unverified",
+      "evidence": {
+        "line": 32,
+        "sourcePath": "typography.display-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.displaymd.fontweight",
+      "sourcePath": "typography.display-md.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 33,
+        "sourcePath": "typography.display-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displaymd.lineheight",
+      "sourcePath": "typography.display-md.lineHeight",
+      "type": "dimension",
+      "value": "35.2px",
+      "status": "unverified",
+      "evidence": {
+        "line": 34,
+        "sourcePath": "typography.display-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displaymd.letterspacing",
+      "sourcePath": "typography.display-md.letterSpacing",
+      "type": "dimension",
+      "value": "-0.3px",
+      "status": "unverified",
+      "evidence": {
+        "line": 35,
+        "sourcePath": "typography.display-md.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.displaysm.fontfamily",
+      "sourcePath": "typography.display-sm.fontFamily",
+      "type": "fontFamily",
+      "value": "WiredDisplay, \"Times New Roman\", Georgia, serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 37,
+        "sourcePath": "typography.display-sm.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displaysm.fontsize",
+      "sourcePath": "typography.display-sm.fontSize",
+      "type": "dimension",
+      "value": "26px",
+      "status": "unverified",
+      "evidence": {
+        "line": 38,
+        "sourcePath": "typography.display-sm.fontSize"
+      }
+    },
+    {
+      "path": "typography.displaysm.fontweight",
+      "sourcePath": "typography.display-sm.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 39,
+        "sourcePath": "typography.display-sm.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displaysm.lineheight",
+      "sourcePath": "typography.display-sm.lineHeight",
+      "type": "dimension",
+      "value": "28.08px",
+      "status": "unverified",
+      "evidence": {
+        "line": 40,
+        "sourcePath": "typography.display-sm.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displayxs.fontfamily",
+      "sourcePath": "typography.display-xs.fontFamily",
+      "type": "fontFamily",
+      "value": "Apercu, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 42,
+        "sourcePath": "typography.display-xs.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displayxs.fontsize",
+      "sourcePath": "typography.display-xs.fontSize",
+      "type": "dimension",
+      "value": "20px",
+      "status": "unverified",
+      "evidence": {
+        "line": 43,
+        "sourcePath": "typography.display-xs.fontSize"
+      }
+    },
+    {
+      "path": "typography.displayxs.fontweight",
+      "sourcePath": "typography.display-xs.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 44,
+        "sourcePath": "typography.display-xs.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displayxs.lineheight",
+      "sourcePath": "typography.display-xs.lineHeight",
+      "type": "dimension",
+      "value": "24px",
+      "status": "unverified",
+      "evidence": {
+        "line": 45,
+        "sourcePath": "typography.display-xs.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displayxs.letterspacing",
+      "sourcePath": "typography.display-xs.letterSpacing",
+      "type": "dimension",
+      "value": "-0.28px",
+      "status": "unverified",
+      "evidence": {
+        "line": 46,
+        "sourcePath": "typography.display-xs.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.bodyseriflg.fontfamily",
+      "sourcePath": "typography.body-serif-lg.fontFamily",
+      "type": "fontFamily",
+      "value": "BreveText, Georgia, \"Times New Roman\", serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 48,
+        "sourcePath": "typography.body-serif-lg.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodyseriflg.fontsize",
+      "sourcePath": "typography.body-serif-lg.fontSize",
+      "type": "dimension",
+      "value": "19px",
+      "status": "unverified",
+      "evidence": {
+        "line": 49,
+        "sourcePath": "typography.body-serif-lg.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodyseriflg.fontweight",
+      "sourcePath": "typography.body-serif-lg.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 50,
+        "sourcePath": "typography.body-serif-lg.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodyseriflg.lineheight",
+      "sourcePath": "typography.body-serif-lg.lineHeight",
+      "type": "dimension",
+      "value": "27.93px",
+      "status": "unverified",
+      "evidence": {
+        "line": 51,
+        "sourcePath": "typography.body-serif-lg.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodyseriflg.letterspacing",
+      "sourcePath": "typography.body-serif-lg.letterSpacing",
+      "type": "dimension",
+      "value": "0.108px",
+      "status": "unverified",
+      "evidence": {
+        "line": 52,
+        "sourcePath": "typography.body-serif-lg.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.bodyserifmd.fontfamily",
+      "sourcePath": "typography.body-serif-md.fontFamily",
+      "type": "fontFamily",
+      "value": "BreveText, Georgia, \"Times New Roman\", serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 54,
+        "sourcePath": "typography.body-serif-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodyserifmd.fontsize",
+      "sourcePath": "typography.body-serif-md.fontSize",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 55,
+        "sourcePath": "typography.body-serif-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodyserifmd.fontweight",
+      "sourcePath": "typography.body-serif-md.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 56,
+        "sourcePath": "typography.body-serif-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodyserifmd.lineheight",
+      "sourcePath": "typography.body-serif-md.lineHeight",
+      "type": "dimension",
+      "value": "24px",
+      "status": "unverified",
+      "evidence": {
+        "line": 57,
+        "sourcePath": "typography.body-serif-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodyserifmd.letterspacing",
+      "sourcePath": "typography.body-serif-md.letterSpacing",
+      "type": "dimension",
+      "value": "0.09px",
+      "status": "unverified",
+      "evidence": {
+        "line": 58,
+        "sourcePath": "typography.body-serif-md.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.bodymd.fontfamily",
+      "sourcePath": "typography.body-md.fontFamily",
+      "type": "fontFamily",
+      "value": "Apercu, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 60,
+        "sourcePath": "typography.body-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodymd.fontsize",
+      "sourcePath": "typography.body-md.fontSize",
+      "type": "dimension",
+      "value": "17px",
+      "status": "unverified",
+      "evidence": {
+        "line": 61,
+        "sourcePath": "typography.body-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodymd.fontweight",
+      "sourcePath": "typography.body-md.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 62,
+        "sourcePath": "typography.body-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodymd.lineheight",
+      "sourcePath": "typography.body-md.lineHeight",
+      "type": "dimension",
+      "value": "20px",
+      "status": "unverified",
+      "evidence": {
+        "line": 63,
+        "sourcePath": "typography.body-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodymdstrong.fontfamily",
+      "sourcePath": "typography.body-md-strong.fontFamily",
+      "type": "fontFamily",
+      "value": "Apercu, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 65,
+        "sourcePath": "typography.body-md-strong.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodymdstrong.fontsize",
+      "sourcePath": "typography.body-md-strong.fontSize",
+      "type": "dimension",
+      "value": "17px",
+      "status": "unverified",
+      "evidence": {
+        "line": 66,
+        "sourcePath": "typography.body-md-strong.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodymdstrong.fontweight",
+      "sourcePath": "typography.body-md-strong.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 67,
+        "sourcePath": "typography.body-md-strong.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodymdstrong.lineheight",
+      "sourcePath": "typography.body-md-strong.lineHeight",
+      "type": "dimension",
+      "value": "22px",
+      "status": "unverified",
+      "evidence": {
+        "line": 68,
+        "sourcePath": "typography.body-md-strong.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodymdstrong.letterspacing",
+      "sourcePath": "typography.body-md-strong.letterSpacing",
+      "type": "dimension",
+      "value": "-0.144px",
+      "status": "unverified",
+      "evidence": {
+        "line": 69,
+        "sourcePath": "typography.body-md-strong.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.bodysm.fontfamily",
+      "sourcePath": "typography.body-sm.fontFamily",
+      "type": "fontFamily",
+      "value": "Apercu, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 71,
+        "sourcePath": "typography.body-sm.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodysm.fontsize",
+      "sourcePath": "typography.body-sm.fontSize",
+      "type": "dimension",
+      "value": "14px",
+      "status": "unverified",
+      "evidence": {
+        "line": 72,
+        "sourcePath": "typography.body-sm.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodysm.fontweight",
+      "sourcePath": "typography.body-sm.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 73,
+        "sourcePath": "typography.body-sm.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodysm.lineheight",
+      "sourcePath": "typography.body-sm.lineHeight",
+      "type": "dimension",
+      "value": "18px",
+      "status": "unverified",
+      "evidence": {
+        "line": 74,
+        "sourcePath": "typography.body-sm.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodysm.letterspacing",
+      "sourcePath": "typography.body-sm.letterSpacing",
+      "type": "dimension",
+      "value": "0.4px",
+      "status": "unverified",
+      "evidence": {
+        "line": 75,
+        "sourcePath": "typography.body-sm.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.bodysmstrong.fontfamily",
+      "sourcePath": "typography.body-sm-strong.fontFamily",
+      "type": "fontFamily",
+      "value": "Apercu, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 77,
+        "sourcePath": "typography.body-sm-strong.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodysmstrong.fontsize",
+      "sourcePath": "typography.body-sm-strong.fontSize",
+      "type": "dimension",
+      "value": "14px",
+      "status": "unverified",
+      "evidence": {
+        "line": 78,
+        "sourcePath": "typography.body-sm-strong.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodysmstrong.fontweight",
+      "sourcePath": "typography.body-sm-strong.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 79,
+        "sourcePath": "typography.body-sm-strong.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodysmstrong.lineheight",
+      "sourcePath": "typography.body-sm-strong.lineHeight",
+      "type": "dimension",
+      "value": "18px",
+      "status": "unverified",
+      "evidence": {
+        "line": 80,
+        "sourcePath": "typography.body-sm-strong.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodysmstrong.letterspacing",
+      "sourcePath": "typography.body-sm-strong.letterSpacing",
+      "type": "dimension",
+      "value": "0.4px",
+      "status": "unverified",
+      "evidence": {
+        "line": 81,
+        "sourcePath": "typography.body-sm-strong.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.byline.fontfamily",
+      "sourcePath": "typography.byline.fontFamily",
+      "type": "fontFamily",
+      "value": "BreveText, Georgia, \"Times New Roman\", serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 83,
+        "sourcePath": "typography.byline.fontFamily"
+      }
+    },
+    {
+      "path": "typography.byline.fontsize",
+      "sourcePath": "typography.byline.fontSize",
+      "type": "dimension",
+      "value": "12.73px",
+      "status": "unverified",
+      "evidence": {
+        "line": 84,
+        "sourcePath": "typography.byline.fontSize"
+      }
+    },
+    {
+      "path": "typography.byline.fontweight",
+      "sourcePath": "typography.byline.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 85,
+        "sourcePath": "typography.byline.fontWeight"
+      }
+    },
+    {
+      "path": "typography.byline.lineheight",
+      "sourcePath": "typography.byline.lineHeight",
+      "type": "dimension",
+      "value": "28px",
+      "status": "unverified",
+      "evidence": {
+        "line": 86,
+        "sourcePath": "typography.byline.lineHeight"
+      }
+    },
+    {
+      "path": "typography.byline.letterspacing",
+      "sourcePath": "typography.byline.letterSpacing",
+      "type": "dimension",
+      "value": "0.108px",
+      "status": "unverified",
+      "evidence": {
+        "line": 87,
+        "sourcePath": "typography.byline.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.caption.fontfamily",
+      "sourcePath": "typography.caption.fontFamily",
+      "type": "fontFamily",
+      "value": "Apercu, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 89,
+        "sourcePath": "typography.caption.fontFamily"
+      }
+    },
+    {
+      "path": "typography.caption.fontsize",
+      "sourcePath": "typography.caption.fontSize",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 90,
+        "sourcePath": "typography.caption.fontSize"
+      }
+    },
+    {
+      "path": "typography.caption.fontweight",
+      "sourcePath": "typography.caption.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 91,
+        "sourcePath": "typography.caption.fontWeight"
+      }
+    },
+    {
+      "path": "typography.caption.lineheight",
+      "sourcePath": "typography.caption.lineHeight",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 92,
+        "sourcePath": "typography.caption.lineHeight"
+      }
+    },
+    {
+      "path": "typography.buttonmd.fontfamily",
+      "sourcePath": "typography.button-md.fontFamily",
+      "type": "fontFamily",
+      "value": "Apercu, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 94,
+        "sourcePath": "typography.button-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.buttonmd.fontsize",
+      "sourcePath": "typography.button-md.fontSize",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 95,
+        "sourcePath": "typography.button-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.buttonmd.fontweight",
+      "sourcePath": "typography.button-md.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 96,
+        "sourcePath": "typography.button-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.buttonmd.lineheight",
+      "sourcePath": "typography.button-md.lineHeight",
+      "type": "dimension",
+      "value": "20px",
+      "status": "unverified",
+      "evidence": {
+        "line": 97,
+        "sourcePath": "typography.button-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.buttonmd.letterspacing",
+      "sourcePath": "typography.button-md.letterSpacing",
+      "type": "dimension",
+      "value": "0.3px",
+      "status": "unverified",
+      "evidence": {
+        "line": 98,
+        "sourcePath": "typography.button-md.letterSpacing"
+      }
+    },
+    {
+      "path": "rounded.none",
+      "sourcePath": "rounded.none",
+      "type": "dimension",
+      "value": "0px",
+      "status": "unverified",
+      "evidence": {
+        "line": 101,
+        "sourcePath": "rounded.none"
+      }
+    },
+    {
+      "path": "rounded.full",
+      "sourcePath": "rounded.full",
+      "type": "dimension",
+      "value": "9999px",
+      "status": "unverified",
+      "evidence": {
+        "line": 102,
+        "sourcePath": "rounded.full"
+      }
+    },
+    {
+      "path": "spacing.xxs",
+      "sourcePath": "spacing.xxs",
+      "type": "dimension",
+      "value": "2px",
+      "status": "unverified",
+      "evidence": {
+        "line": 105,
+        "sourcePath": "spacing.xxs"
+      }
+    },
+    {
+      "path": "spacing.xs",
+      "sourcePath": "spacing.xs",
+      "type": "dimension",
+      "value": "4px",
+      "status": "unverified",
+      "evidence": {
+        "line": 106,
+        "sourcePath": "spacing.xs"
+      }
+    },
+    {
+      "path": "spacing.sm",
+      "sourcePath": "spacing.sm",
+      "type": "dimension",
+      "value": "8px",
+      "status": "unverified",
+      "evidence": {
+        "line": 107,
+        "sourcePath": "spacing.sm"
+      }
+    },
+    {
+      "path": "spacing.md",
+      "sourcePath": "spacing.md",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 108,
+        "sourcePath": "spacing.md"
+      }
+    },
+    {
+      "path": "spacing.lg",
+      "sourcePath": "spacing.lg",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 109,
+        "sourcePath": "spacing.lg"
+      }
+    },
+    {
+      "path": "spacing.xl",
+      "sourcePath": "spacing.xl",
+      "type": "dimension",
+      "value": "20px",
+      "status": "unverified",
+      "evidence": {
+        "line": 110,
+        "sourcePath": "spacing.xl"
+      }
+    },
+    {
+      "path": "spacing.v2xl",
+      "sourcePath": "spacing.2xl",
+      "type": "dimension",
+      "value": "24px",
+      "status": "unverified",
+      "evidence": {
+        "line": 111,
+        "sourcePath": "spacing.2xl"
+      }
+    },
+    {
+      "path": "spacing.v3xl",
+      "sourcePath": "spacing.3xl",
+      "type": "dimension",
+      "value": "32px",
+      "status": "unverified",
+      "evidence": {
+        "line": 112,
+        "sourcePath": "spacing.3xl"
+      }
+    },
+    {
+      "path": "spacing.v4xl",
+      "sourcePath": "spacing.4xl",
+      "type": "dimension",
+      "value": "48px",
+      "status": "unverified",
+      "evidence": {
+        "line": 113,
+        "sourcePath": "spacing.4xl"
+      }
+    }
+  ],
+  "rejectedTokens": [],
+  "homepage": {
+    "status": "missing",
+    "candidates": [],
+    "verification": {
+      "status": "verified",
+      "url": "https://www.wired.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://www.wired.com/",
+          "title": "WIRED - The Latest in Technology, Science, Culture and Business | WIRED",
+          "note": "Public homepage read requested https://www.wired.com; final URL https://www.wired.com/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    }
+  },
+  "completeness": {
+    "presentFields": [
+      "colors",
+      "typography",
+      "rounded",
+      "spacing",
+      "components"
+    ],
+    "missingFields": [],
+    "tokenRoles": "incomplete",
+    "note": "Missing fields are not reconstructed. Prose-only colors have no inferred semantic role."
+  },
+  "provenance": {
+    "status": "independent-analysis",
+    "sources": [
+      {
+        "title": "VoltAgent awesome-design-md independent analysis",
+        "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/wired/DESIGN.md"
+      }
+    ],
+    "verification": "unverified-secondary-analysis"
+  },
+  "limitations": [
+    "Independent secondary analysis, not an official brand system; all reported values are unverified.",
+    "No brand assets, logos, font binaries or screenshots copied. Font names are documentary, not font licenses.",
+    "Safe CSS literals are extracted without claiming complete roles, state coverage or visual fidelity.",
+    "Markdown is retained as inert evidence, never executed or rendered as raw HTML."
+  ]
+}

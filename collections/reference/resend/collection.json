@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "reference-resend",
+  "title": "Resend",
+  "kind": "reference",
+  "renderer": "dom",
+  "summary": "Independent unverified reference",
+  "tokens": "tokens.json",
+  "study": "study.json",
+  "themes": [
+    "analysis"
+  ],
+  "source": {
+    "repository": "https://github.com/VoltAgent/awesome-design-md",
+    "fork": "https://github.com/rsteth/awesome-design-md-p",
+    "revision": "fcc70284932276d085f01ef9f83edde90b1258cb",
+    "path": "design-md/resend/DESIGN.md",
+    "sha256": "99536f1b2380511a539f7f3466d46d351e4bf35a5af0c0df395bdc20af05c9be",
+    "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/resend/DESIGN.md"
+  },
+  "provenance": {
+    "status": "independent-analysis",
+    "sources": [
+      {
+        "title": "VoltAgent awesome-design-md independent analysis",
+        "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/resend/DESIGN.md"
+      }
+    ],
+    "verification": "unverified-secondary-analysis"
+  },
+  "license": {
+    "spdx": "MIT",
+    "file": "LICENSE",
+    "note": "Upstream analysis copyright (c) 2026 VoltAgent, MIT. Brand names belong to their respective owners; no affiliation or asset/font license is implied."
+  },
+  "fixtures": [
+    {
+      "id": "reference-resend-standard-patterns",
+      "title": "Standard patterns · original compositions",
+      "section": "patterns",
+      "url": "../../reference-sheets/resend/patterns.html",
+      "description": "Three original illustrative patterns composed from the study tokens: overview, search and selection, and editable preferences. Not official or copied site UI.",
+      "states": [
+        "default",
+        "completed",
+        "filtered",
+        "empty",
+        "selected",
+        "invalid",
+        "saved locally",
+        "canceled"
+      ]
+    },
+    {
+      "id": "reference-resend-recipe-sheet",
+      "title": "Source-linked recipe sheet · authored interpretation",
+      "section": "components",
+      "url": "../../reference-sheets/resend/index.html",
+      "description": "Generated visual foundations and component interpretations. Unofficial; neutral authored structure and system fonts, not original product components."
+    }
+  ],
+  "verification": {
+    "status": "unverified-secondary-analysis",
+    "note": "Source values have not been verified against the brand website."
+  }
+}

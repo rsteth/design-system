@@ -1,0 +1,173 @@
+{
+  "schemaVersion": 1,
+  "id": "reads",
+  "title": "Reads",
+  "kind": "app",
+  "renderer": "dom",
+  "summary": "Real Reads landing and studio UI, rendered with deterministic in-memory fixtures. Warm dark surfaces, soft blue accents and rounded controls remain app-owned.",
+  "tokens": "tokens.json",
+  "themes": [
+    "dark"
+  ],
+  "source": {
+    "repository": "https://github.com/rsteth/vocai",
+    "revision": null,
+    "path": ".",
+    "withheldRevisions": [
+      "revision"
+    ],
+    "publicVersion": "0.1.0"
+  },
+  "provenance": {
+    "status": "author-owned",
+    "sources": []
+  },
+  "license": {
+    "spdx": "UNLICENSED",
+    "note": "Existing repository terms apply. No new redistribution grant."
+  },
+  "fixtures": [
+    {
+      "id": "landing",
+      "title": "Landing and waiting-list availability",
+      "section": "screens",
+      "url": "http://127.0.0.1:3148/fixture?fixture=landing",
+      "states": [
+        "signed out",
+        "scroll header",
+        "disclosure"
+      ],
+      "description": "Production public/index.html, style.css and app.js with a synthetic transport. No account, disk data or provider access."
+    },
+    {
+      "id": "waitlist",
+      "title": "Waiting-list dialog",
+      "section": "patterns",
+      "url": "http://127.0.0.1:3148/fixture?fixture=waitlist",
+      "states": [
+        "open",
+        "close",
+        "validation",
+        "synthetic submit"
+      ],
+      "description": "Production public/index.html, style.css and app.js with a synthetic transport. No account, disk data or provider access."
+    },
+    {
+      "id": "studio-empty",
+      "title": "Empty studio",
+      "section": "screens",
+      "url": "http://127.0.0.1:3148/fixture?fixture=studio-empty",
+      "states": [
+        "empty",
+        "example",
+        "preflight"
+      ],
+      "description": "Production public/index.html, style.css and app.js with a synthetic transport. No account, disk data or provider access."
+    },
+    {
+      "id": "studio-ready",
+      "title": "Saved listen",
+      "section": "screens",
+      "url": "http://127.0.0.1:3148/fixture?fixture=studio-ready",
+      "states": [
+        "completed",
+        "playback",
+        "download",
+        "delete"
+      ],
+      "description": "Production public/index.html, style.css and app.js with a synthetic transport. No account, disk data or provider access."
+    },
+    {
+      "id": "studio-progress",
+      "title": "Read in progress",
+      "section": "screens",
+      "url": "http://127.0.0.1:3148/fixture?fixture=studio-progress",
+      "states": [
+        "running",
+        "cancel",
+        "retry"
+      ],
+      "description": "Production public/index.html, style.css and app.js with a synthetic transport. No account, disk data or provider access."
+    },
+    {
+      "id": "studio-failed",
+      "title": "Recoverable failed read",
+      "section": "screens",
+      "url": "http://127.0.0.1:3148/fixture?fixture=studio-failed",
+      "states": [
+        "failed",
+        "retry"
+      ],
+      "description": "Production public/index.html, style.css and app.js with a synthetic transport. No account, disk data or provider access."
+    },
+    {
+      "id": "studio-draining",
+      "title": "Draining studio",
+      "section": "screens",
+      "url": "http://127.0.0.1:3148/fixture?fixture=studio-draining",
+      "states": [
+        "disabled admission",
+        "saved work"
+      ],
+      "description": "Production public/index.html, style.css and app.js with a synthetic transport. No account, disk data or provider access."
+    },
+    {
+      "id": "studio-disconnected",
+      "title": "Login-only studio",
+      "section": "screens",
+      "url": "http://127.0.0.1:3148/fixture?fixture=studio-disconnected",
+      "states": [
+        "provider disconnected",
+        "disabled controls"
+      ],
+      "description": "Production public/index.html, style.css and app.js with a synthetic transport. No account, disk data or provider access."
+    },
+    {
+      "id": "voice-sample",
+      "title": "Saved voice recording",
+      "section": "patterns",
+      "url": "http://127.0.0.1:3148/fixture?fixture=voice-sample",
+      "states": [
+        "sample saved",
+        "disclosure",
+        "form controls"
+      ],
+      "description": "Production public/index.html, style.css and app.js with a synthetic transport. No account, disk data or provider access."
+    },
+    {
+      "id": "hosted-consent",
+      "title": "Hosted narration consent",
+      "section": "patterns",
+      "url": "http://127.0.0.1:3148/fixture?fixture=hosted-consent",
+      "states": [
+        "explicit consent",
+        "estimate",
+        "required consent"
+      ],
+      "description": "Production public/index.html, style.css and app.js with a synthetic transport. No account, disk data or provider access."
+    },
+    {
+      "id": "hosted-review",
+      "title": "Uncertain hosted outcome",
+      "section": "screens",
+      "url": "http://127.0.0.1:3148/fixture?fixture=hosted-review",
+      "states": [
+        "needs review",
+        "no automatic retry"
+      ],
+      "description": "Production public/index.html, style.css and app.js with a synthetic transport. No account, disk data or provider access."
+    }
+  ],
+  "inventory": "inventory.json",
+  "registrySnapshot": {
+    "authority": "App-owned design collection, tokens and optional inventory",
+    "baseRevision": null,
+    "inventorySha256": "b642a959f5008ff38982e940d715504e253cd806cda10ef90719fd6406677200",
+    "tokenSha256": "e558c986a09eb8aeba82feaa30fda5fac8b0ab38aa8193d9a7a26d63f85819b3",
+    "integrationStatus": "unpublished-local-snapshot",
+    "integrationRevision": null,
+    "withheldRevisions": [
+      "baseRevision"
+    ]
+  }
+}

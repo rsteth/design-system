@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "namespace": "workbench",
+  "modes": [
+    {
+      "id": "stethem",
+      "selector": ".wb-shell[data-wb-skin=\"stethem\"]",
+      "tokens": {
+        "color.background": {
+          "type": "color",
+          "value": "#fff"
+        },
+        "color.surface": {
+          "type": "color",
+          "value": "#f3f1ed"
+        },
+        "color.text": {
+          "type": "color",
+          "value": "#24211f"
+        },
+        "color.text.muted": {
+          "type": "color",
+          "value": "#6b625d"
+        },
+        "color.accent": {
+          "type": "color",
+          "value": "#9c4635"
+        },
+        "color.accent.hover": {
+          "type": "color",
+          "value": "#783326"
+        },
+        "color.border": {
+          "type": "color",
+          "value": "#ddd"
+        },
+        "color.selection.background": {
+          "type": "color",
+          "value": "#f3f1ed"
+        },
+        "color.selection.text": {
+          "type": "color",
+          "value": "#783326"
+        },
+        "color.focus": {
+          "type": "color",
+          "value": "#9c4635"
+        },
+        "color.divider": {
+          "type": "color",
+          "value": "#f3f1ed"
+        },
+        "color.empty.background": {
+          "type": "color",
+          "value": "#fff"
+        },
+        "color.stage": {
+          "type": "color",
+          "value": "#f3f1ed"
+        },
+        "color.status": {
+          "type": "color",
+          "value": "#6b625d"
+        },
+        "color.warning": {
+          "type": "color",
+          "value": "#783326"
+        },
+        "color.error": {
+          "type": "color",
+          "value": "#9c4635"
+        }
+      }
+    }
+  ],
+  "aliases": {
+    "--wb-paper": "color.background",
+    "--wb-wash": "color.surface",
+    "--wb-ink": "color.text",
+    "--wb-muted": "color.text.muted",
+    "--wb-accent": "color.accent",
+    "--wb-accent-hover": "color.accent.hover",
+    "--wb-line": "color.border",
+    "--wb-selection": "color.selection.background",
+    "--wb-selection-ink": "color.selection.text",
+    "--wb-focus": "color.focus",
+    "--wb-divider": "color.divider",
+    "--wb-empty": "color.empty.background",
+    "--wb-stage": "color.stage",
+    "--wb-status": "color.status",
+    "--wb-warning": "color.warning",
+    "--wb-error": "color.error"
+  }
+}

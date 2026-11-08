@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "namespace": "workbench",
+  "modes": [
+    {
+      "id": "workbench",
+      "selector": ".wb-shell, .wb-shell[data-wb-skin=\"workbench\"]",
+      "tokens": {
+        "color.background": {
+          "type": "color",
+          "value": "#101011"
+        },
+        "color.surface": {
+          "type": "color",
+          "value": "#161617"
+        },
+        "color.text": {
+          "type": "color",
+          "value": "#f1f1f2"
+        },
+        "color.text.muted": {
+          "type": "color",
+          "value": "#a1a1a6"
+        },
+        "color.accent": {
+          "type": "color",
+          "value": "#f1f1f2"
+        },
+        "color.accent.hover": {
+          "type": "color",
+          "value": "#ffffff"
+        },
+        "color.border": {
+          "type": "color",
+          "value": "#303034"
+        },
+        "color.selection.background": {
+          "type": "color",
+          "value": "#262629"
+        },
+        "color.selection.text": {
+          "type": "color",
+          "value": "#ffffff"
+        },
+        "color.focus": {
+          "type": "color",
+          "value": "#ffffff"
+        },
+        "color.divider": {
+          "type": "color",
+          "value": "#252528"
+        },
+        "color.empty.background": {
+          "type": "color",
+          "value": "#101011"
+        },
+        "color.stage": {
+          "type": "color",
+          "value": "#09090a"
+        },
+        "color.status": {
+          "type": "color",
+          "value": "#a1a1a6"
+        },
+        "color.warning": {
+          "type": "color",
+          "value": "#d1d1d5"
+        },
+        "color.error": {
+          "type": "color",
+          "value": "#f1f1f2"
+        },
+        "color.panel": {
+          "type": "color",
+          "value": "#1b1b1d"
+        },
+        "color.action": {
+          "type": "color",
+          "value": "#e9e7e1"
+        },
+        "color.action.text": {
+          "type": "color",
+          "value": "#171717"
+        }
+      }
+    }
+  ],
+  "aliases": {
+    "--wb-paper": "color.background",
+    "--wb-wash": "color.surface",
+    "--wb-ink": "color.text",
+    "--wb-muted": "color.text.muted",
+    "--wb-accent": "color.accent",
+    "--wb-accent-hover": "color.accent.hover",
+    "--wb-line": "color.border",
+    "--wb-selection": "color.selection.background",
+    "--wb-selection-ink": "color.selection.text",
+    "--wb-focus": "color.focus",
+    "--wb-divider": "color.divider",
+    "--wb-empty": "color.empty.background",
+    "--wb-stage": "color.stage",
+    "--wb-status": "color.status",
+    "--wb-warning": "color.warning",
+    "--wb-error": "color.error",
+    "--wb-panel": "color.panel",
+    "--wb-action": "color.action",
+    "--wb-action-ink": "color.action.text"
+  }
+}

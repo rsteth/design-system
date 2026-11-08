@@ -1,0 +1,1961 @@
+{
+  "schemaVersion": 1,
+  "id": "reference-nerdwallet",
+  "title": "Nerdwallet",
+  "classification": "independent-unverified-analysis",
+  "source": {
+    "repository": "https://github.com/VoltAgent/awesome-design-md",
+    "fork": "https://github.com/rsteth/awesome-design-md-p",
+    "revision": "fcc70284932276d085f01ef9f83edde90b1258cb",
+    "path": "design-md/nerdwallet/DESIGN.md",
+    "sha256": "478475273beb642f0661fb1aef7107bac5cde69250794bc148b28ee2c61960c7",
+    "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/nerdwallet/DESIGN.md"
+  },
+  "sourceName": "NerdWallet Analysis",
+  "titleProvenance": {
+    "status": "inferred",
+    "basis": "Source directory label, normalized for navigation; original source name is retained without correction.",
+    "sourceValue": "nerdwallet",
+    "originalName": "NerdWallet Analysis"
+  },
+  "description": "An analysis of NerdWallet's design language — a personal-finance comparison platform built almost entirely from one deep green and a ladder of mints beneath it. Editorial pages open on a green gradient band, then drop to near-white where dense comparison tables do the real work. Corners are almost square, shadows are nearly absent, and the whole system separates content with hairlines and pale mint washes rather than elevation.",
+  "analysis": {
+    "version": "alpha",
+    "name": "NerdWallet Analysis",
+    "description": "An analysis of NerdWallet's design language — a personal-finance comparison platform built almost entirely from one deep green and a ladder of mints beneath it. Editorial pages open on a green gradient band, then drop to near-white where dense comparison tables do the real work. Corners are almost square, shadows are nearly absent, and the whole system separates content with hairlines and pale mint washes rather than elevation.",
+    "colors": {
+      "primary": "#008254",
+      "primary-deep": "#006642",
+      "forest": "#00482f",
+      "on-primary": "#ffffff",
+      "lime-hero": "#9ae600",
+      "lime-panel": "#e8fdac",
+      "lime-accent": "#ddfa88",
+      "lime-ribbon": "#a8ea4c",
+      "logo-lime": "#8dc63f",
+      "canvas": "#ffffff",
+      "canvas-soft": "#f7f7f7",
+      "mint-50": "#effcf8",
+      "mint-100": "#e3faf2",
+      "mint-200": "#b7ecda",
+      "hairline": "#ebebec",
+      "hairline-strong": "#d8d9da",
+      "ink": "#000000",
+      "body": "#3d4045",
+      "muted": "#64666a",
+      "faint": "#b1b3b5",
+      "link": "#005fb9",
+      "info": "#4b99e6",
+      "error": "#de2828"
+    },
+    "typography": {
+      "display-xl": {
+        "fontFamily": "Gotham",
+        "fontSize": "52px",
+        "fontWeight": 700,
+        "lineHeight": 1.15,
+        "letterSpacing": 0
+      },
+      "display-lg": {
+        "fontFamily": "GothamDisplay",
+        "fontSize": "40px",
+        "fontWeight": 700,
+        "lineHeight": 1.2,
+        "letterSpacing": 0
+      },
+      "heading-1": {
+        "fontFamily": "GothamDisplay",
+        "fontSize": "36px",
+        "fontWeight": 700,
+        "lineHeight": 1.2,
+        "letterSpacing": 0
+      },
+      "heading-2": {
+        "fontFamily": "Gotham",
+        "fontSize": "28px",
+        "fontWeight": 700,
+        "lineHeight": 1.25,
+        "letterSpacing": 0
+      },
+      "heading-3": {
+        "fontFamily": "GothamDisplay",
+        "fontSize": "20px",
+        "fontWeight": 700,
+        "lineHeight": 1.3,
+        "letterSpacing": 0
+      },
+      "heading-4": {
+        "fontFamily": "Gotham",
+        "fontSize": "20px",
+        "fontWeight": 500,
+        "lineHeight": 1.3,
+        "letterSpacing": 0
+      },
+      "stat-value": {
+        "fontFamily": "Gotham",
+        "fontSize": "24px",
+        "fontWeight": 700,
+        "lineHeight": 1.2,
+        "letterSpacing": 0
+      },
+      "body-lg": {
+        "fontFamily": "Gotham",
+        "fontSize": "18px",
+        "fontWeight": 300,
+        "lineHeight": 1.5,
+        "letterSpacing": 0
+      },
+      "body-md": {
+        "fontFamily": "Gotham",
+        "fontSize": "16px",
+        "fontWeight": 300,
+        "lineHeight": 1.5,
+        "letterSpacing": 0
+      },
+      "body-sm": {
+        "fontFamily": "Gotham",
+        "fontSize": "14px",
+        "fontWeight": 300,
+        "lineHeight": 1.5,
+        "letterSpacing": 0
+      },
+      "ui-label": {
+        "fontFamily": "Gotham",
+        "fontSize": "14px",
+        "fontWeight": 700,
+        "lineHeight": 1.2,
+        "letterSpacing": 0
+      },
+      "ui-sm": {
+        "fontFamily": "Gotham",
+        "fontSize": "13px",
+        "fontWeight": 500,
+        "lineHeight": 1.3,
+        "letterSpacing": 0
+      },
+      "caption": {
+        "fontFamily": "Gotham",
+        "fontSize": "12px",
+        "fontWeight": 500,
+        "lineHeight": 1.4,
+        "letterSpacing": 0
+      },
+      "eyebrow": {
+        "fontFamily": "Gotham",
+        "fontSize": "12px",
+        "fontWeight": 700,
+        "lineHeight": 1.2,
+        "letterSpacing": 0
+      },
+      "micro": {
+        "fontFamily": "Gotham",
+        "fontSize": "11px",
+        "fontWeight": 500,
+        "lineHeight": 1.4,
+        "letterSpacing": 0
+      }
+    },
+    "rounded": {
+      "none": "0px",
+      "xxs": "1px",
+      "xs": "2px",
+      "sm": "4px",
+      "md": "6px",
+      "lg": "8px",
+      "xl": "10px",
+      "xxl": "12px",
+      "xxxl": "16px",
+      "tooltip": "20px",
+      "full": "9999px"
+    },
+    "spacing": {
+      "xxs": "4px",
+      "xs": "8px",
+      "sm": "12px",
+      "md": "16px",
+      "lg": "20px",
+      "xl": "24px",
+      "xxl": "32px",
+      "section": "40px"
+    },
+    "components": {
+      "nav-bar": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.ui-label}"
+      },
+      "logo-wordmark": {
+        "textColor": "{colors.primary}",
+        "typography": "{typography.heading-4}"
+      },
+      "button-primary": {
+        "backgroundColor": "{colors.primary}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.ui-label}",
+        "rounded": "{rounded.xs}",
+        "padding": "{spacing.md}"
+      },
+      "button-secondary": {
+        "backgroundColor": "{colors.canvas-soft}",
+        "textColor": "{colors.primary}",
+        "typography": "{typography.ui-label}",
+        "rounded": "{rounded.xs}",
+        "padding": "{spacing.md}"
+      },
+      "button-outline": {
+        "textColor": "{colors.primary}",
+        "typography": "{typography.ui-label}",
+        "rounded": "{rounded.lg}",
+        "padding": "8px 16px",
+        "borderColor": "{colors.hairline-strong}"
+      },
+      "text-input": {
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.none}"
+      },
+      "hero-band": {
+        "backgroundColor": "{colors.primary}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.body-md}"
+      },
+      "breadcrumb": {
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.caption}"
+      },
+      "editorial-badge": {
+        "textColor": "{colors.lime-panel}",
+        "typography": "{typography.micro}"
+      },
+      "expert-tip-panel": {
+        "backgroundColor": "{colors.lime-panel}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.lg}"
+      },
+      "stat-block-dark": {
+        "backgroundColor": "{colors.primary-deep}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.stat-value}",
+        "rounded": "{rounded.lg}"
+      },
+      "stat-chip-light": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.muted}",
+        "typography": "{typography.caption}",
+        "rounded": "{rounded.lg}"
+      },
+      "product-card": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.lg}",
+        "borderColor": "{colors.hairline-strong}"
+      },
+      "category-tile": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-sm}",
+        "rounded": "{rounded.xxl}"
+      },
+      "section-panel-mint": {
+        "backgroundColor": "{colors.mint-50}",
+        "textColor": "{colors.ink}",
+        "rounded": "{rounded.xxxl}"
+      },
+      "media-frame-mint": {
+        "backgroundColor": "{colors.mint-100}",
+        "rounded": "{rounded.xxxl}"
+      },
+      "award-ribbon-pill": {
+        "backgroundColor": "{colors.mint-100}",
+        "textColor": "{colors.primary}",
+        "typography": "{typography.eyebrow}",
+        "rounded": "{rounded.none}"
+      },
+      "icon-circle-active": {
+        "backgroundColor": "{colors.primary}",
+        "textColor": "{colors.on-primary}",
+        "rounded": "{rounded.full}"
+      },
+      "icon-circle-inactive": {
+        "backgroundColor": "{colors.mint-50}",
+        "textColor": "{colors.primary}",
+        "rounded": "{rounded.full}"
+      },
+      "comparison-row": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-sm}"
+      },
+      "spec-cell": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.body}",
+        "typography": "{typography.caption}"
+      },
+      "accordion-row": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.ui-label}",
+        "rounded": "{rounded.lg}"
+      },
+      "link-inline": {
+        "textColor": "{colors.link}",
+        "typography": "{typography.body-sm}"
+      },
+      "link-green": {
+        "textColor": "{colors.primary}",
+        "typography": "{typography.body-sm}"
+      },
+      "eyebrow-label": {
+        "textColor": "{colors.muted}",
+        "typography": "{typography.eyebrow}"
+      },
+      "footer": {
+        "backgroundColor": "{colors.canvas-soft}",
+        "textColor": "{colors.body}",
+        "typography": "{typography.body-sm}"
+      },
+      "rate-card": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-sm}",
+        "rounded": "{rounded.xxl}"
+      },
+      "badge-compare": {
+        "backgroundColor": "{colors.lime-panel}",
+        "textColor": "{colors.primary}",
+        "typography": "{typography.eyebrow}",
+        "rounded": "{rounded.xl}"
+      },
+      "carousel-control": {
+        "backgroundColor": "{colors.mint-50}",
+        "textColor": "{colors.primary}",
+        "rounded": "{rounded.full}"
+      },
+      "marquee-ribbon": {
+        "backgroundColor": "{colors.lime-ribbon}",
+        "textColor": "{colors.primary}",
+        "typography": "{typography.ui-label}"
+      },
+      "ex-pricing-tier": {
+        "description": "Default Pricing tier card. Re-uses feature-card chrome with brand canvas-soft surface.",
+        "backgroundColor": "{colors.canvas-soft}",
+        "textColor": "{colors.ink}",
+        "borderColor": "{colors.hairline}",
+        "rounded": "{rounded.lg}",
+        "padding": "{spacing.xl}"
+      },
+      "ex-pricing-tier-featured": {
+        "description": "Featured/highlighted tier — polarity-flipped surface (dark fill + light text in light mode, light fill + dark text in dark mode).",
+        "backgroundColor": "{colors.primary}",
+        "textColor": "{colors.on-primary}",
+        "rounded": "{rounded.lg}",
+        "padding": "{spacing.xl}"
+      },
+      "ex-product-selector": {
+        "description": "What's Included summary card — re-purposed for SaaS / B2B verticals (NOT a literal product gallery).",
+        "backgroundColor": "{colors.canvas-soft}",
+        "rounded": "{rounded.lg}",
+        "padding": "{spacing.lg}"
+      },
+      "ex-cart-drawer": {
+        "description": "Subscription summary — re-purposed for SaaS / B2B (line items per add-on, not literal cart).",
+        "backgroundColor": "{colors.canvas}",
+        "rounded": "{rounded.lg}",
+        "padding": "{spacing.lg}",
+        "item-divider": "{colors.hairline}"
+      },
+      "ex-app-shell-row": {
+        "description": "Sidebar nav row inside the App Shell example. Active state uses brand primary as the indicator.",
+        "backgroundColor": "{colors.canvas}",
+        "activeIndicator": "{colors.primary}",
+        "rounded": "{rounded.sm}",
+        "padding": "{spacing.sm} {spacing.md}"
+      },
+      "ex-data-table-cell": {
+        "description": "Default data-table th + td chrome. Header uses mono-caps eyebrow typography; body uses body-sm.",
+        "headerBackground": "{colors.canvas-soft}",
+        "headerTypography": "{typography.eyebrow}",
+        "bodyTypography": "{typography.body-sm}",
+        "cellPadding": "{spacing.sm} {spacing.md}",
+        "rowBorder": "{colors.hairline}"
+      },
+      "ex-auth-form-card": {
+        "description": "Sign-in / sign-up card. Re-uses feature-card chrome with text-input primitives inside.",
+        "backgroundColor": "{colors.canvas-soft}",
+        "rounded": "{rounded.lg}",
+        "padding": "{spacing.xl}"
+      },
+      "ex-modal-card": {
+        "description": "Modal dialog surface — same chrome as feature-card with elevated shadow.",
+        "backgroundColor": "{colors.canvas}",
+        "rounded": "{rounded.lg}",
+        "padding": "{spacing.xl}"
+      },
+      "ex-empty-state-card": {
+        "description": "Empty-state illustration frame.",
+        "backgroundColor": "{colors.canvas-soft}",
+        "rounded": "{rounded.lg}",
+        "padding": "{spacing.xxl}",
+        "captionTypography": "{typography.body-md}"
+      },
+      "ex-toast": {
+        "description": "Toast notification surface — feature-card shape + medium shadow.",
+        "backgroundColor": "{colors.canvas}",
+        "rounded": "{rounded.lg}",
+        "padding": "{spacing.sm} {spacing.lg}",
+        "typography": "{typography.body-sm}"
+      }
+    }
+  },
+  "normalizationRepairs": [],
+  "sections": [
+    {
+      "heading": "Overview",
+      "level": 2,
+      "text": "NerdWallet is a comparison engine wearing an editorial coat, and the design reflects both halves. Article pages open on a wide `{colors.primary}` gradient band carrying a white headline, a byline row and a set of trust badges — the only place the brand raises its voice. Everything below that band drops to `{colors.canvas}` and `{colors.canvas-soft}`, where dense rate tables and product cards do the actual work. The transition is abrupt by design: one saturated green rectangle, then a very long, very quiet document.\n\nThe palette is almost monochromatic in hue. `{colors.primary}` is a deep spruce green that fills every button, every active tab and every rating star, and beneath it sits a full ladder of mints — `{colors.mint-50}`, `{colors.mint-100}`, `{colors.mint-200}` — that wash section panels, icon tiles and photo frames. Those mints carry enormous surface area, far more than any accent, which is what keeps a page of financial tables from reading as a spreadsheet. The only colours outside the green family are `{colors.link}` for inline links and a lime family used for emphasis.\n\nThe shape language is the surprise. For a consumer product this heavily illustrated, the corners are nearly square: the primary button sits at `{rounded.xs}` — two pixels — and cards rarely exceed `{rounded.lg}`. There is essentially no elevation; the single shadow in the system is a very wide, very faint double-layer stack. Separation is done with `{colors.hairline}` rules and mint fills instead. The result reads as trustworthy and utilitarian rather than soft.\n\n**Key Characteristics:**\n- One deep green, `{colors.primary}`, fills every action and every active state across all page types.\n- A three-step mint ladder (`{colors.mint-50}` → `{colors.mint-100}` → `{colors.mint-200}`) carries the largest surfaces in the system.\n- Buttons are nearly square at `{rounded.xs}`; the shape language stays tight even where illustration is playful.\n- Almost shadowless — `{colors.hairline}` rules and mint washes replace elevation.\n- Editorial pages follow a fixed rhythm: green gradient band → white body → mint callout → white comparison table.\n- A lime family (`{colors.lime-hero}`, `{colors.lime-panel}`, `{colors.lime-accent}`) supplies emphasis that green cannot, since green is spent on controls.\n- Headings sit in pure `{colors.ink}` black, not a softened near-black.",
+      "line": 370
+    },
+    {
+      "heading": "Colors",
+      "level": 2,
+      "text": "Source pages: the homepage, the high-yield savings comparison page, and the best-credit-cards page.",
+      "line": 387
+    },
+    {
+      "heading": "Brand & Accent",
+      "level": 3,
+      "text": "- **Spruce** (`{colors.primary}` — #008254): the brand. It fills `{button-primary}`, `{icon-circle-active}`, rating stars and every in-body green link, and it is the base of the editorial hero gradient. By pixel volume it is the single most-used non-neutral in the system.\n- **Deep Spruce** (`{colors.primary-deep}` — #006642): the fill of `{stat-block-dark}`, the dark statistic panel that sits inside the mint expert-tip callout.\n- **Forest** (`{colors.forest}` — #00482f): the deepest green, used where the hero gradient lands darkest and on dense editorial chrome.\n- **Logo Lime** (`{colors.logo-lime}` — #8dc63f): the lime inside the wordmark's leading mark. It appears at small scale on every page and nowhere else.\n- **Hero Lime** (`{colors.lime-hero}` — #9ae600): the vivid lime that sets the brand name inside the homepage hero headline — one word, once per page.\n- **Panel Lime** (`{colors.lime-panel}` — #e8fdac): the fill of `{expert-tip-panel}` and the colour of `{editorial-badge}` text on the green band.\n- **Accent Lime** (`{colors.lime-accent}` — #ddfa88): a brighter lime used for highlight marks on the comparison pages.\n- **Ribbon Lime** (`{colors.lime-ribbon}` — #a8ea4c): the lime end of the `{marquee-ribbon}` gradient — the only place the lime family covers a large surface.",
+      "line": 391
+    },
+    {
+      "heading": "Surface",
+      "level": 3,
+      "text": "- **Canvas** (`{colors.canvas}` — #ffffff): the page, the nav bar and every card.\n- **Soft Canvas** (`{colors.canvas-soft}` — #f7f7f7): the page tint behind long comparison pages and the fill of `{button-secondary}`. It carries more area than any other surface on the savings page.\n- **Mint 50** (`{colors.mint-50}` — #effcf8): the palest wash, used for `{section-panel-mint}` and `{icon-circle-inactive}`.\n- **Mint 100** (`{colors.mint-100}` — #e3faf2): one step up, used for `{media-frame-mint}` and `{award-ribbon-pill}`.\n- **Mint 200** (`{colors.mint-200}` — #b7ecda): the most saturated mint, reserved for small emphasis fills.\n- **Hairline** (`{colors.hairline}` — #ebebec): rules between table rows and inside cards.\n- **Strong Hairline** (`{colors.hairline-strong}` — #d8d9da): the visible border on `{product-card}` and `{button-outline}`.",
+      "line": 402
+    },
+    {
+      "heading": "Text",
+      "level": 3,
+      "text": "- **Ink** (`{colors.ink}` — #000000): every heading and product name. Pure black, not softened.\n- **Body** (`{colors.body}` — #3d4045): running copy and `{spec-cell}` labels.\n- **Muted** (`{colors.muted}` — #64666a): captions, disclosure lines and `{eyebrow-label}`.\n- **Faint** (`{colors.faint}` — #b1b3b5): the quietest tier, used for de-emphasised metadata.",
+      "line": 412
+    },
+    {
+      "heading": "Semantic",
+      "level": 3,
+      "text": "- **Link** (`{colors.link}` — #005fb9): inline links inside tables and cards, always underlined.\n- **Info** (`{colors.info}` — #4b99e6): a lighter blue used for supporting informational marks.\n- **Error** (`{colors.error}` — #de2828): the system's validation and destructive red, reserved for form errors and removal actions.",
+      "line": 419
+    },
+    {
+      "heading": "Typography",
+      "level": 2,
+      "text": "",
+      "line": 425
+    },
+    {
+      "heading": "Font Family",
+      "level": 3,
+      "text": "**Gotham** and **GothamDisplay** carry the entire system. Gotham handles body copy, UI labels, captions and the largest homepage headline; GothamDisplay — the tighter-fitting display cut — takes most editorial headings between 14 and 40px. The pairing is unusual in that the display cut is used at *smaller* sizes than the text cut's maximum, so the two overlap through the middle of the scale rather than splitting cleanly at a size boundary.\n\nThe weight range is wide and genuinely used: 300 for body copy, 500 and 600 for interface text, 700 for headings and labels, and 900 available at the top. Body copy at weight 300 against 700 headings is what gives the long editorial pages their airy feel despite very tight corner radii. A serif, **Chronicle Display**, appears on the long-form editorial pages as a secondary face.",
+      "line": 427
+    },
+    {
+      "heading": "Hierarchy",
+      "level": 3,
+      "text": "| Token | Size | Weight | Line Height | Letter Spacing | Use |\n|---|---|---|---|---|---|\n| `{typography.display-xl}` | 52px | 700 | 1.15 | 0 | Homepage hero headline |\n| `{typography.display-lg}` | 40px | 700 | 1.2 | 0 | Editorial page headline |\n| `{typography.heading-1}` | 36px | 700 | 1.2 | 0 | Section headline |\n| `{typography.heading-2}` | 28px | 700 | 1.25 | 0 | Sub-section headline |\n| `{typography.stat-value}` | 24px | 700 | 1.2 | 0 | Statistic figure |\n| `{typography.heading-3}` | 20px | 700 | 1.3 | 0 | Card title |\n| `{typography.heading-4}` | 20px | 500 | 1.3 | 0 | Light sub-heading |\n| `{typography.body-lg}` | 18px | 300 | 1.5 | 0 | Lead paragraph |\n| `{typography.body-md}` | 16px | 300 | 1.5 | 0 | Body copy |\n| `{typography.body-sm}` | 14px | 300 | 1.5 | 0 | Table copy, captions |\n| `{typography.ui-label}` | 14px | 700 | 1.2 | 0 | Button and nav labels |\n| `{typography.ui-sm}` | 13px | 500 | 1.3 | 0 | Dense interface text |\n| `{typography.caption}` | 12px | 500 | 1.4 | 0 | Field labels, disclosures |\n| `{typography.eyebrow}` | 12px | 700 | 1.2 | 0 | Uppercase section labels |\n| `{typography.micro}` | 11px | 500 | 1.4 | 0 | Trust badges, fine print |",
+      "line": 433
+    },
+    {
+      "heading": "Principles",
+      "level": 3,
+      "text": "Hierarchy is carried by weight contrast more than by size. The gap between weight-300 body and weight-700 headings is wide enough that adjacent sizes (20px heading against 18px lead) still read as distinct levels. Uppercase is reserved for two roles — `{typography.eyebrow}` section labels and button text — and never used for headings.",
+      "line": 453
+    },
+    {
+      "heading": "Note on Font Substitutes",
+      "level": 3,
+      "text": "Gotham and GothamDisplay are licensed faces. **Montserrat** is the closest widely-available geometric substitute for Gotham, though it runs slightly wider and needs a small negative tracking at display sizes; **Proxima Nova** or **Jost** are nearer in proportion if available. Keep the 300 weight for body copy — dropping to 400 collapses the weight contrast the hierarchy depends on. Substitute the editorial serif with **Playfair Display** or **Source Serif 4**.",
+      "line": 457
+    },
+    {
+      "heading": "Layout",
+      "level": 2,
+      "text": "",
+      "line": 461
+    },
+    {
+      "heading": "Spacing System",
+      "level": 3,
+      "text": "- **Base unit**: 8px.\n- **Tokens**: `{spacing.xxs}` 4px · `{spacing.xs}` 8px · `{spacing.sm}` 12px · `{spacing.md}` 16px · `{spacing.lg}` 20px · `{spacing.xl}` 24px · `{spacing.xxl}` 32px · `{spacing.section}` 40px.\n- `{spacing.md}` is the universal control padding — both `{button-primary}` and `{button-secondary}` use a flat 16px on all sides, which is what gives the buttons their square, chunky proportion.\n- `{button-outline}` breaks that pattern with `8px 16px`, making it visibly shorter than the filled buttons beside it.",
+      "line": 463
+    },
+    {
+      "heading": "Grid & Container",
+      "level": 3,
+      "text": "Content centres in a container of roughly 1200px inside the 1280px viewport. The homepage runs a 5-up category tile grid that steps down to 4-up and 2-up. Editorial pages use a single wide column for the hero band and then a full-width comparison table with five semantic columns — institution, rating, headline rate, bonus, and action. Product cards on the credit-cards page are full-width blocks stacked vertically, each subdivided into a spec grid of three to four cells.",
+      "line": 470
+    },
+    {
+      "heading": "Whitespace Philosophy",
+      "level": 3,
+      "text": "Whitespace is tight inside components and generous between them. Table rows sit close together with only a hairline separating them, but the gap between one comparison block and the next is large. The mint panels act as breathing room that still carries content — rather than leaving empty space, the system drops in a pale `{colors.mint-50}` band and lets the density fall instead.",
+      "line": 474
+    },
+    {
+      "heading": "Responsive Strategy",
+      "level": 3,
+      "text": "",
+      "line": 478
+    },
+    {
+      "heading": "Breakpoints",
+      "level": 4,
+      "text": "| Name | Width | Key Changes |\n|---|---|---|\n| Small mobile | < 425px | Single column; comparison tables become stacked cards; nav reduces to logo plus menu |\n| Mobile | 425–599px | Single column; spec grids collapse to one-per-row |\n| Large mobile | 600–767px | Two-up category tiles; table columns begin to drop |\n| Tablet | 768–1023px | Category rail scrolls horizontally; product cards keep their action column |\n| Laptop | 1024–1279px | Full table layout with tightened gutters |\n| Desktop | ≥ 1280px | Full layout at container width |",
+      "line": 480
+    },
+    {
+      "heading": "Touch Targets",
+      "level": 4,
+      "text": "`{button-primary}` and `{button-secondary}` clear 44×44 comfortably at their flat `{spacing.md}` padding. `{button-outline}` at `8px 16px` sits close to the minimum and needs its hit area extended on touch widths. `{icon-circle-active}` and `{icon-circle-inactive}` render near 44px in the category rail.",
+      "line": 491
+    },
+    {
+      "heading": "Collapsing Strategy",
+      "level": 4,
+      "text": "The nav keeps the wordmark, search and both account controls as long as possible, dropping the category links first. The horizontal category rail on comparison pages becomes a scrolling strip rather than wrapping. Comparison tables are the main responsive event: below the tablet breakpoint each row reflows into a stacked card where the institution logo, rating and rate become vertical fields and the action button goes full-width. `{expert-tip-panel}` keeps its mint fill but drops `{stat-block-dark}` beneath the copy instead of beside it.",
+      "line": 495
+    },
+    {
+      "heading": "Image Behavior",
+      "level": 4,
+      "text": "Institution logos are supplied as fixed-height greyscale-friendly marks and never crop. Editorial illustration sits inside `{media-frame-mint}` at `{rounded.xxxl}`. Product art — credit-card faces — renders at a fixed small aspect inside `{product-card}` and is never full-bleed. Author avatars are circular at `{rounded.full}` in a small overlapping stack.",
+      "line": 499
+    },
+    {
+      "heading": "Elevation & Depth",
+      "level": 2,
+      "text": "| Level | Treatment | Use |\n|---|---|---|\n| 0 | Flat on `{colors.canvas}` | Body copy, table rows, headings |\n| 1 | 1px `{colors.hairline}` rule | Row dividers, spec-cell separators |\n| 2 | 1px `{colors.hairline-strong}` border | `{product-card}`, `{button-outline}`, `{accordion-row}` |\n| 3 | `rgba(100,102,106,0.05) 0 4px 16px` plus `rgba(100,102,104,0.05) 0 16px 40px` | `{button-primary}` and the few floating surfaces |\n| 4 | `oklab(0 0 0 / 0.04) 0 20px 25px -5px` plus `0 8px 10px -6px` | Overlay surfaces |\n\nThe system is deliberately flat. Both shadow definitions sit at 4–5% opacity and spread very wide, so they register as a faint settling rather than a lift. On a page of financial data this reads as precision: nothing floats, everything is ruled.",
+      "line": 503
+    },
+    {
+      "heading": "Decorative Depth",
+      "level": 3,
+      "text": "Depth comes from colour blocking and illustration, not from shadow. The green hero band is the only saturated plane; beneath it the mint ladder creates shallow steps between sections. Illustration is flat-vector — coin stacks, piggy banks, houses — sitting directly on white or mint with no drop shadow. The one genuinely dimensional element is the arrow motif inside `{stat-block-dark}`, which reads as a chart line breaking out of its container.",
+      "line": 515
+    },
+    {
+      "heading": "Shapes",
+      "level": 2,
+      "text": "",
+      "line": 519
+    },
+    {
+      "heading": "Border Radius Scale",
+      "level": 3,
+      "text": "| Token | Value | Use |\n|---|---|---|\n| `{rounded.none}` | 0px | `{text-input}`, `{award-ribbon-pill}`, table edges |\n| `{rounded.xxs}` | 1px | Inline marks |\n| `{rounded.xs}` | 2px | `{button-primary}`, `{button-secondary}`, search field |\n| `{rounded.sm}` | 4px | Small containers and inline blocks |\n| `{rounded.md}` | 6px | App-store badges |\n| `{rounded.lg}` | 8px | `{product-card}`, `{button-outline}`, `{accordion-row}`, `{expert-tip-panel}`, `{stat-block-dark}` |\n| `{rounded.xl}` | 10px | Labels and small spans |\n| `{rounded.xxl}` | 12px | `{category-tile}` |\n| `{rounded.xxxl}` | 16px | `{section-panel-mint}`, `{media-frame-mint}` |\n| `{rounded.tooltip}` | 20px | Tooltip surfaces |\n| `{rounded.full}` | 9999px | Avatars, `{icon-circle-active}`, `{icon-circle-inactive}` |\n\nThe scale is broad but the weight of usage sits at the small end. Controls live at `{rounded.xs}`, cards at `{rounded.lg}`, and only decorative surfaces — mint panels and photo frames — reach `{rounded.xxxl}`. Several components use asymmetric radii, rounding only their top or leading corners where they butt against an adjacent block.",
+      "line": 521
+    },
+    {
+      "heading": "Photography Geometry",
+      "level": 3,
+      "text": "Editorial photography sits inside `{media-frame-mint}` at `{rounded.xxxl}`, typically at a portrait or square crop. Author avatars are `{rounded.full}` at roughly 32px, overlapped in threes. Institution logos are placed on white at their native aspect with generous padding so competing brand marks never touch. Illustration is used at roughly 64px square inside `{category-tile}`.",
+      "line": 539
+    },
+    {
+      "heading": "Components",
+      "level": 2,
+      "text": "> Every spec below documents Default and, where extracted, Active states only.",
+      "line": 543
+    },
+    {
+      "heading": "Buttons",
+      "level": 3,
+      "text": "**`button-primary`** — the green action (\"SIGN UP\", \"APPLY NOW\", \"LEARN MORE\")\n- Background `{colors.primary}`, text `{colors.on-primary}`, type `{typography.ui-label}`, rounded `{rounded.xs}`, padding `{spacing.md}`, Elevation Level 3.\n- Uppercase label. The flat 16px padding on all four sides is what gives it its blocky proportion, and the 2px radius keeps it reading as a rectangle rather than a pill.\n\n**`button-secondary`** — the quiet companion (\"SIGN IN\")\n- Background `{colors.canvas-soft}`, text `{colors.primary}`, type `{typography.ui-label}`, rounded `{rounded.xs}`, padding `{spacing.md}`.\n- Same geometry as `{button-primary}` with the fill and text roles swapped, so the pair reads as one control with two weights.\n\n**`button-outline`** — the compact utility control\n- Text `{colors.primary}`, type `{typography.ui-label}`, rounded `{rounded.lg}`, padding `8px 16px`, 1px `{colors.hairline-strong}` border, no fill.\n- The only button that departs from both the square radius and the flat padding — noticeably shorter and softer than the filled pair.",
+      "line": 547
+    },
+    {
+      "heading": "Cards & Containers",
+      "level": 3,
+      "text": "**`product-card`**\n- Background `{colors.canvas}`, text `{colors.ink}`, type `{typography.body-md}`, rounded `{rounded.lg}`, 1px `{colors.hairline-strong}` border, Elevation Level 2.\n- The workhorse of the comparison pages: product name, star rating, a `{button-primary}` action column on the right, then a spec grid of `{spec-cell}` blocks and a stack of `{accordion-row}` disclosures.\n\n**`category-tile`**\n- Background `{colors.canvas}`, text `{colors.ink}`, type `{typography.body-sm}`, rounded `{rounded.xxl}`.\n- Flat illustration on top, bold title, two lines of `{colors.muted}` description, with a small diagonal arrow pinned to the upper-right corner.\n\n**`section-panel-mint`**\n- Background `{colors.mint-50}`, text `{colors.ink}`, rounded `{rounded.xxxl}`.\n- The pale wash that holds the homepage category grid, providing separation without a border or shadow.\n\n**`media-frame-mint`**\n- Background `{colors.mint-100}`, rounded `{rounded.xxxl}`. Holds editorial photography with the mint visible as a border-like margin around the image.\n\n**`expert-tip-panel`**\n- Background `{colors.lime-panel}`, text `{colors.ink}`, type `{typography.body-md}`, rounded `{rounded.lg}`.\n- A signature editorial component: a wide pale-lime band opened by a bold arrow-prefixed label, carrying advisory copy and hosting `{stat-block-dark}` and `{stat-chip-light}` inside it.\n\n**`stat-block-dark`**\n- Background `{colors.primary-deep}`, text `{colors.on-primary}`, type `{typography.stat-value}`, rounded `{rounded.lg}`.\n- Sits inside `{expert-tip-panel}`, stacking a multiplier and a rate with small `{typography.caption}` labels beneath each, over an outline arrow motif.\n\n**`stat-chip-light`**\n- Background `{colors.canvas}`, label `{colors.muted}` at `{typography.caption}`, rounded `{rounded.lg}`.\n- The white counterpart that carries the comparison figure beside `{stat-block-dark}`.\n\n**`accordion-row`**\n- Background `{colors.canvas}`, text `{colors.ink}`, type `{typography.ui-label}`, rounded `{rounded.lg}`.\n- A leading glyph, a label and a trailing chevron, separated from its neighbours by a `{colors.hairline}` rule.",
+      "line": 561
+    },
+    {
+      "heading": "Inputs & Forms",
+      "level": 3,
+      "text": "**`text-input`**\n- Text `{colors.ink}`, type `{typography.body-md}`, rounded `{rounded.none}`.\n- Square-cornered. The system gives inputs no fill and no border of their own — they sit inside a bordered container that supplies the chrome, which is why the input itself carries almost no styling.",
+      "line": 594
+    },
+    {
+      "heading": "Navigation",
+      "level": 3,
+      "text": "**`nav-bar`** (Desktop)\n- Background `{colors.canvas}`, text `{colors.ink}`, type `{typography.ui-label}`.\n- Wordmark left, eight category links centre, then search, `{button-secondary}` and `{button-primary}` right. White on every page regardless of the band beneath it.\n\n**`nav-bar`** (Mobile)\n- Retains wordmark, search and both account controls; category links move behind a menu.\n\n**`icon-circle-active`** / **`icon-circle-inactive`**\n- Active fills `{colors.primary}` with an `{colors.on-primary}` glyph; inactive fills `{colors.mint-50}` with a `{colors.primary}` glyph. Both `{rounded.full}`.\n- Form the horizontal category rail above comparison pages, each with a label beneath and an underline marking the active item.\n\n**`breadcrumb`**\n- Text `{colors.on-primary}` at `{typography.caption}`, set on the green hero band with chevron separators.\n\n**`footer`**\n- Background `{colors.canvas-soft}`, text `{colors.body}`, type `{typography.body-sm}`.",
+      "line": 600
+    },
+    {
+      "heading": "Signature Components",
+      "level": 3,
+      "text": "**`hero-band`**\n- Background `{colors.primary}` running as a horizontal gradient toward a lighter green, text `{colors.on-primary}`, type `{typography.body-md}`.\n- Opens every editorial page. Carries `{breadcrumb}`, the `{typography.display-lg}` headline, a byline row with circular avatars, `{editorial-badge}` trust marks and a lead paragraph. Full-bleed, square-cornered, and the only saturated plane on the page.\n\n**`editorial-badge`**\n- Text `{colors.lime-panel}` at `{typography.micro}`, uppercase, with a leading verification glyph. Sits on the green band and is the reason a lime tier exists — green-on-green would vanish.\n\n**`award-ribbon-pill`**\n- Background `{colors.mint-100}`, text `{colors.primary}`, type `{typography.eyebrow}`, rounded `{rounded.none}`.\n- A square-ended mint banner introduced by a folded green flag mark, pinned to the top-left of a winning `{product-card}`.\n\n**`comparison-row`**\n- Background `{colors.canvas}`, text `{colors.ink}`, type `{typography.body-sm}`.\n- Five columns — institution, rating, rate, bonus, action — separated from adjacent rows by a `{colors.hairline}` rule with no vertical dividers.\n\n**`spec-cell`**\n- Background `{colors.canvas}`, label `{colors.body}` at `{typography.caption}`, value `{colors.ink}`.\n- The label-above-value block that tiles inside `{product-card}`, ruled on its leading edge by `{colors.hairline}`.\n\n**`link-inline`** / **`link-green`**\n- `{link-inline}` uses `{colors.link}` with an underline for supporting references; `{link-green}` uses `{colors.primary}` with a heavier underline for in-body navigation. The two coexist on the same card and carry different intent.\n\n**`eyebrow-label`**\n- Text `{colors.muted}` at `{typography.eyebrow}`, uppercase, opening partner and resource sections.\n\n**`logo-wordmark`**\n- Text `{colors.primary}` at `{typography.heading-4}`, preceded by a mark carrying `{colors.logo-lime}`.\n\n**`rate-card`**\n- Background `{colors.canvas}`, text `{colors.ink}`, type `{typography.body-sm}`, rounded `{rounded.xxl}`.\n- A clickable comparison tile inside the mint rates panel: product name, a `{colors.primary}` circular arrow pinned right, then two rate rows pairing a `{colors.muted}` label with a large `{colors.primary}` figure and a trend glyph.\n\n**`badge-compare`**\n- Background `{colors.lime-panel}`, text `{colors.primary}`, type `{typography.eyebrow}`, rounded `{rounded.xl}`.\n- A pale-lime pill pinned to the top-left corner of the leading `{rate-card}`, marking the recommended comparison.\n\n**`carousel-control`**\n- Background `{colors.mint-50}`, glyph `{colors.primary}`, rounded `{rounded.full}`.\n- Paired previous/next circles flanking a dot pagination strip whose active dot fills `{colors.primary}`.\n\n**`marquee-ribbon`**\n- Background `{colors.lime-ribbon}` running as a gradient into `{colors.primary}`, text `{colors.primary}`, type `{typography.ui-label}`.\n- A full-bleed diagonal band of repeated uppercase slogans separated by small sparkle glyphs, tilted a few degrees off horizontal and bleeding past both viewport edges. It is the loudest element in the system and the only place the lime family fills a large surface.",
+      "line": 619
+    },
+    {
+      "heading": "Examples (illustrative)",
+      "level": 3,
+      "text": "> Kit-mirror demonstration surfaces. These are not extracted from NerdWallet — they are the standard SaaS UI patterns re-skinned with NerdWallet's primitives, so every consumer of this document shapes the same ten surfaces against the brand rather than against a template default.\n\n**`ex-pricing-tier`** — Default Pricing tier card. Re-uses feature-card chrome with brand canvas-soft surface.\n- Properties: `backgroundColor`, `textColor`, `borderColor`, `rounded`, `padding`\n\n**`ex-pricing-tier-featured`** — Featured/highlighted tier — polarity-flipped surface (dark fill + light text in light mode, light fill + dark text in dark mode).\n- Properties: `backgroundColor`, `textColor`, `rounded`, `padding`\n\n**`ex-product-selector`** — What's Included summary card — re-purposed for SaaS / B2B verticals (NOT a literal product gallery).\n- Properties: `backgroundColor`, `rounded`, `padding`\n\n**`ex-cart-drawer`** — Subscription summary — re-purposed for SaaS / B2B (line items per add-on, not literal cart).\n- Properties: `backgroundColor`, `rounded`, `padding`, `item-divider`\n\n**`ex-app-shell-row`** — Sidebar nav row inside the App Shell example. Active state uses brand primary as the indicator.\n- Properties: `backgroundColor`, `activeIndicator`, `rounded`, `padding`\n\n**`ex-data-table-cell`** — Default data-table th + td chrome. Header uses mono-caps eyebrow typography; body uses body-sm.\n- Properties: `headerBackground`, `headerTypography`, `bodyTypography`, `cellPadding`, `rowBorder`\n\n**`ex-auth-form-card`** — Sign-in / sign-up card. Re-uses feature-card chrome with text-input primitives inside.\n- Properties: `backgroundColor`, `rounded`, `padding`\n\n**`ex-modal-card`** — Modal dialog surface — same chrome as feature-card with elevated shadow.\n- Properties: `backgroundColor`, `rounded`, `padding`\n\n**`ex-empty-state-card`** — Empty-state illustration frame.\n- Properties: `backgroundColor`, `rounded`, `padding`, `captionTypography`\n\n**`ex-toast`** — Toast notification surface — feature-card shape + medium shadow.\n- Properties: `backgroundColor`, `rounded`, `padding`, `typography`",
+      "line": 665
+    },
+    {
+      "heading": "Do's and Don'ts",
+      "level": 2,
+      "text": "",
+      "line": 700
+    },
+    {
+      "heading": "Do",
+      "level": 3,
+      "text": "- Spend `{colors.primary}` on actions and active states only — buttons, rating stars, active tabs, in-body links.\n- Reach for the mint ladder (`{colors.mint-50}` → `{colors.mint-200}`) when a section needs separation; it is the system's substitute for elevation.\n- Keep controls at `{rounded.xs}` and cards at `{rounded.lg}`; save `{rounded.xxxl}` for decorative panels and photo frames.\n- Separate table rows with a single `{colors.hairline}` rule and no vertical dividers.\n- Use the lime family for emphasis that has to survive on a green ground, where `{colors.primary}` would disappear.\n- Set headings in `{colors.ink}` pure black and body copy at weight 300 — the weight gap is the hierarchy.\n- Give every comparison figure a `{typography.caption}` label above it in `{colors.body}`, never inline.\n- Open editorial pages with `{hero-band}` and then drop immediately to a light canvas; do not carry the green further down.",
+      "line": 702
+    },
+    {
+      "heading": "Don't",
+      "level": 3,
+      "text": "- Don't round the filled buttons. `{rounded.xs}` is a deliberate choice against the softness of the illustration style.\n- Don't add drop shadows to cards — use the `{colors.hairline-strong}` border instead. The system's only shadows sit at 4–5% opacity.\n- Don't use `{colors.link}` blue and `{colors.primary}` green interchangeably; blue is a supporting reference, green is navigation the reader is meant to follow.\n- Don't extend `{hero-band}` green into body sections or use it as a card fill.\n- Don't introduce a warm accent. The palette runs green through mint with blue as the only outside hue.\n- Don't set body copy above weight 300 or headings below 700 — collapsing the gap flattens the hierarchy.\n- Don't place `{colors.lime-panel}` on white as a text colour; the lime tier only works as a fill on white or as type on green.\n- Don't give `{text-input}` a radius or a border of its own; the containing chrome supplies both.",
+      "line": 713
+    }
+  ],
+  "tokens": [
+    {
+      "path": "colors.primary",
+      "sourcePath": "colors.primary",
+      "type": "color",
+      "value": "#008254",
+      "status": "unverified",
+      "evidence": {
+        "line": 7,
+        "sourcePath": "colors.primary"
+      }
+    },
+    {
+      "path": "colors.primarydeep",
+      "sourcePath": "colors.primary-deep",
+      "type": "color",
+      "value": "#006642",
+      "status": "unverified",
+      "evidence": {
+        "line": 8,
+        "sourcePath": "colors.primary-deep"
+      }
+    },
+    {
+      "path": "colors.forest",
+      "sourcePath": "colors.forest",
+      "type": "color",
+      "value": "#00482f",
+      "status": "unverified",
+      "evidence": {
+        "line": 9,
+        "sourcePath": "colors.forest"
+      }
+    },
+    {
+      "path": "colors.onprimary",
+      "sourcePath": "colors.on-primary",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 10,
+        "sourcePath": "colors.on-primary"
+      }
+    },
+    {
+      "path": "colors.limehero",
+      "sourcePath": "colors.lime-hero",
+      "type": "color",
+      "value": "#9ae600",
+      "status": "unverified",
+      "evidence": {
+        "line": 11,
+        "sourcePath": "colors.lime-hero"
+      }
+    },
+    {
+      "path": "colors.limepanel",
+      "sourcePath": "colors.lime-panel",
+      "type": "color",
+      "value": "#e8fdac",
+      "status": "unverified",
+      "evidence": {
+        "line": 12,
+        "sourcePath": "colors.lime-panel"
+      }
+    },
+    {
+      "path": "colors.limeaccent",
+      "sourcePath": "colors.lime-accent",
+      "type": "color",
+      "value": "#ddfa88",
+      "status": "unverified",
+      "evidence": {
+        "line": 13,
+        "sourcePath": "colors.lime-accent"
+      }
+    },
+    {
+      "path": "colors.limeribbon",
+      "sourcePath": "colors.lime-ribbon",
+      "type": "color",
+      "value": "#a8ea4c",
+      "status": "unverified",
+      "evidence": {
+        "line": 14,
+        "sourcePath": "colors.lime-ribbon"
+      }
+    },
+    {
+      "path": "colors.logolime",
+      "sourcePath": "colors.logo-lime",
+      "type": "color",
+      "value": "#8dc63f",
+      "status": "unverified",
+      "evidence": {
+        "line": 15,
+        "sourcePath": "colors.logo-lime"
+      }
+    },
+    {
+      "path": "colors.canvas",
+      "sourcePath": "colors.canvas",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 16,
+        "sourcePath": "colors.canvas"
+      }
+    },
+    {
+      "path": "colors.canvassoft",
+      "sourcePath": "colors.canvas-soft",
+      "type": "color",
+      "value": "#f7f7f7",
+      "status": "unverified",
+      "evidence": {
+        "line": 17,
+        "sourcePath": "colors.canvas-soft"
+      }
+    },
+    {
+      "path": "colors.mint50",
+      "sourcePath": "colors.mint-50",
+      "type": "color",
+      "value": "#effcf8",
+      "status": "unverified",
+      "evidence": {
+        "line": 18,
+        "sourcePath": "colors.mint-50"
+      }
+    },
+    {
+      "path": "colors.mint100",
+      "sourcePath": "colors.mint-100",
+      "type": "color",
+      "value": "#e3faf2",
+      "status": "unverified",
+      "evidence": {
+        "line": 19,
+        "sourcePath": "colors.mint-100"
+      }
+    },
+    {
+      "path": "colors.mint200",
+      "sourcePath": "colors.mint-200",
+      "type": "color",
+      "value": "#b7ecda",
+      "status": "unverified",
+      "evidence": {
+        "line": 20,
+        "sourcePath": "colors.mint-200"
+      }
+    },
+    {
+      "path": "colors.hairline",
+      "sourcePath": "colors.hairline",
+      "type": "color",
+      "value": "#ebebec",
+      "status": "unverified",
+      "evidence": {
+        "line": 21,
+        "sourcePath": "colors.hairline"
+      }
+    },
+    {
+      "path": "colors.hairlinestrong",
+      "sourcePath": "colors.hairline-strong",
+      "type": "color",
+      "value": "#d8d9da",
+      "status": "unverified",
+      "evidence": {
+        "line": 22,
+        "sourcePath": "colors.hairline-strong"
+      }
+    },
+    {
+      "path": "colors.ink",
+      "sourcePath": "colors.ink",
+      "type": "color",
+      "value": "#000000",
+      "status": "unverified",
+      "evidence": {
+        "line": 23,
+        "sourcePath": "colors.ink"
+      }
+    },
+    {
+      "path": "colors.body",
+      "sourcePath": "colors.body",
+      "type": "color",
+      "value": "#3d4045",
+      "status": "unverified",
+      "evidence": {
+        "line": 24,
+        "sourcePath": "colors.body"
+      }
+    },
+    {
+      "path": "colors.muted",
+      "sourcePath": "colors.muted",
+      "type": "color",
+      "value": "#64666a",
+      "status": "unverified",
+      "evidence": {
+        "line": 25,
+        "sourcePath": "colors.muted"
+      }
+    },
+    {
+      "path": "colors.faint",
+      "sourcePath": "colors.faint",
+      "type": "color",
+      "value": "#b1b3b5",
+      "status": "unverified",
+      "evidence": {
+        "line": 26,
+        "sourcePath": "colors.faint"
+      }
+    },
+    {
+      "path": "colors.link",
+      "sourcePath": "colors.link",
+      "type": "color",
+      "value": "#005fb9",
+      "status": "unverified",
+      "evidence": {
+        "line": 27,
+        "sourcePath": "colors.link"
+      }
+    },
+    {
+      "path": "colors.info",
+      "sourcePath": "colors.info",
+      "type": "color",
+      "value": "#4b99e6",
+      "status": "unverified",
+      "evidence": {
+        "line": 28,
+        "sourcePath": "colors.info"
+      }
+    },
+    {
+      "path": "colors.error",
+      "sourcePath": "colors.error",
+      "type": "color",
+      "value": "#de2828",
+      "status": "unverified",
+      "evidence": {
+        "line": 29,
+        "sourcePath": "colors.error"
+      }
+    },
+    {
+      "path": "typography.displayxl.fontfamily",
+      "sourcePath": "typography.display-xl.fontFamily",
+      "type": "fontFamily",
+      "value": "Gotham",
+      "status": "unverified",
+      "evidence": {
+        "line": 33,
+        "sourcePath": "typography.display-xl.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displayxl.fontsize",
+      "sourcePath": "typography.display-xl.fontSize",
+      "type": "dimension",
+      "value": "52px",
+      "status": "unverified",
+      "evidence": {
+        "line": 34,
+        "sourcePath": "typography.display-xl.fontSize"
+      }
+    },
+    {
+      "path": "typography.displayxl.fontweight",
+      "sourcePath": "typography.display-xl.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 35,
+        "sourcePath": "typography.display-xl.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displayxl.lineheight",
+      "sourcePath": "typography.display-xl.lineHeight",
+      "type": "number",
+      "value": 1.15,
+      "status": "unverified",
+      "evidence": {
+        "line": 36,
+        "sourcePath": "typography.display-xl.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displayxl.letterspacing",
+      "sourcePath": "typography.display-xl.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 37,
+        "sourcePath": "typography.display-xl.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.displaylg.fontfamily",
+      "sourcePath": "typography.display-lg.fontFamily",
+      "type": "fontFamily",
+      "value": "GothamDisplay",
+      "status": "unverified",
+      "evidence": {
+        "line": 39,
+        "sourcePath": "typography.display-lg.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displaylg.fontsize",
+      "sourcePath": "typography.display-lg.fontSize",
+      "type": "dimension",
+      "value": "40px",
+      "status": "unverified",
+      "evidence": {
+        "line": 40,
+        "sourcePath": "typography.display-lg.fontSize"
+      }
+    },
+    {
+      "path": "typography.displaylg.fontweight",
+      "sourcePath": "typography.display-lg.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 41,
+        "sourcePath": "typography.display-lg.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displaylg.lineheight",
+      "sourcePath": "typography.display-lg.lineHeight",
+      "type": "number",
+      "value": 1.2,
+      "status": "unverified",
+      "evidence": {
+        "line": 42,
+        "sourcePath": "typography.display-lg.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displaylg.letterspacing",
+      "sourcePath": "typography.display-lg.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 43,
+        "sourcePath": "typography.display-lg.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.heading1.fontfamily",
+      "sourcePath": "typography.heading-1.fontFamily",
+      "type": "fontFamily",
+      "value": "GothamDisplay",
+      "status": "unverified",
+      "evidence": {
+        "line": 45,
+        "sourcePath": "typography.heading-1.fontFamily"
+      }
+    },
+    {
+      "path": "typography.heading1.fontsize",
+      "sourcePath": "typography.heading-1.fontSize",
+      "type": "dimension",
+      "value": "36px",
+      "status": "unverified",
+      "evidence": {
+        "line": 46,
+        "sourcePath": "typography.heading-1.fontSize"
+      }
+    },
+    {
+      "path": "typography.heading1.fontweight",
+      "sourcePath": "typography.heading-1.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 47,
+        "sourcePath": "typography.heading-1.fontWeight"
+      }
+    },
+    {
+      "path": "typography.heading1.lineheight",
+      "sourcePath": "typography.heading-1.lineHeight",
+      "type": "number",
+      "value": 1.2,
+      "status": "unverified",
+      "evidence": {
+        "line": 48,
+        "sourcePath": "typography.heading-1.lineHeight"
+      }
+    },
+    {
+      "path": "typography.heading1.letterspacing",
+      "sourcePath": "typography.heading-1.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 49,
+        "sourcePath": "typography.heading-1.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.heading2.fontfamily",
+      "sourcePath": "typography.heading-2.fontFamily",
+      "type": "fontFamily",
+      "value": "Gotham",
+      "status": "unverified",
+      "evidence": {
+        "line": 51,
+        "sourcePath": "typography.heading-2.fontFamily"
+      }
+    },
+    {
+      "path": "typography.heading2.fontsize",
+      "sourcePath": "typography.heading-2.fontSize",
+      "type": "dimension",
+      "value": "28px",
+      "status": "unverified",
+      "evidence": {
+        "line": 52,
+        "sourcePath": "typography.heading-2.fontSize"
+      }
+    },
+    {
+      "path": "typography.heading2.fontweight",
+      "sourcePath": "typography.heading-2.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 53,
+        "sourcePath": "typography.heading-2.fontWeight"
+      }
+    },
+    {
+      "path": "typography.heading2.lineheight",
+      "sourcePath": "typography.heading-2.lineHeight",
+      "type": "number",
+      "value": 1.25,
+      "status": "unverified",
+      "evidence": {
+        "line": 54,
+        "sourcePath": "typography.heading-2.lineHeight"
+      }
+    },
+    {
+      "path": "typography.heading2.letterspacing",
+      "sourcePath": "typography.heading-2.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 55,
+        "sourcePath": "typography.heading-2.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.heading3.fontfamily",
+      "sourcePath": "typography.heading-3.fontFamily",
+      "type": "fontFamily",
+      "value": "GothamDisplay",
+      "status": "unverified",
+      "evidence": {
+        "line": 57,
+        "sourcePath": "typography.heading-3.fontFamily"
+      }
+    },
+    {
+      "path": "typography.heading3.fontsize",
+      "sourcePath": "typography.heading-3.fontSize",
+      "type": "dimension",
+      "value": "20px",
+      "status": "unverified",
+      "evidence": {
+        "line": 58,
+        "sourcePath": "typography.heading-3.fontSize"
+      }
+    },
+    {
+      "path": "typography.heading3.fontweight",
+      "sourcePath": "typography.heading-3.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 59,
+        "sourcePath": "typography.heading-3.fontWeight"
+      }
+    },
+    {
+      "path": "typography.heading3.lineheight",
+      "sourcePath": "typography.heading-3.lineHeight",
+      "type": "number",
+      "value": 1.3,
+      "status": "unverified",
+      "evidence": {
+        "line": 60,
+        "sourcePath": "typography.heading-3.lineHeight"
+      }
+    },
+    {
+      "path": "typography.heading3.letterspacing",
+      "sourcePath": "typography.heading-3.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 61,
+        "sourcePath": "typography.heading-3.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.heading4.fontfamily",
+      "sourcePath": "typography.heading-4.fontFamily",
+      "type": "fontFamily",
+      "value": "Gotham",
+      "status": "unverified",
+      "evidence": {
+        "line": 63,
+        "sourcePath": "typography.heading-4.fontFamily"
+      }
+    },
+    {
+      "path": "typography.heading4.fontsize",
+      "sourcePath": "typography.heading-4.fontSize",
+      "type": "dimension",
+      "value": "20px",
+      "status": "unverified",
+      "evidence": {
+        "line": 64,
+        "sourcePath": "typography.heading-4.fontSize"
+      }
+    },
+    {
+      "path": "typography.heading4.fontweight",
+      "sourcePath": "typography.heading-4.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 65,
+        "sourcePath": "typography.heading-4.fontWeight"
+      }
+    },
+    {
+      "path": "typography.heading4.lineheight",
+      "sourcePath": "typography.heading-4.lineHeight",
+      "type": "number",
+      "value": 1.3,
+      "status": "unverified",
+      "evidence": {
+        "line": 66,
+        "sourcePath": "typography.heading-4.lineHeight"
+      }
+    },
+    {
+      "path": "typography.heading4.letterspacing",
+      "sourcePath": "typography.heading-4.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 67,
+        "sourcePath": "typography.heading-4.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.statvalue.fontfamily",
+      "sourcePath": "typography.stat-value.fontFamily",
+      "type": "fontFamily",
+      "value": "Gotham",
+      "status": "unverified",
+      "evidence": {
+        "line": 69,
+        "sourcePath": "typography.stat-value.fontFamily"
+      }
+    },
+    {
+      "path": "typography.statvalue.fontsize",
+      "sourcePath": "typography.stat-value.fontSize",
+      "type": "dimension",
+      "value": "24px",
+      "status": "unverified",
+      "evidence": {
+        "line": 70,
+        "sourcePath": "typography.stat-value.fontSize"
+      }
+    },
+    {
+      "path": "typography.statvalue.fontweight",
+      "sourcePath": "typography.stat-value.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 71,
+        "sourcePath": "typography.stat-value.fontWeight"
+      }
+    },
+    {
+      "path": "typography.statvalue.lineheight",
+      "sourcePath": "typography.stat-value.lineHeight",
+      "type": "number",
+      "value": 1.2,
+      "status": "unverified",
+      "evidence": {
+        "line": 72,
+        "sourcePath": "typography.stat-value.lineHeight"
+      }
+    },
+    {
+      "path": "typography.statvalue.letterspacing",
+      "sourcePath": "typography.stat-value.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 73,
+        "sourcePath": "typography.stat-value.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.bodylg.fontfamily",
+      "sourcePath": "typography.body-lg.fontFamily",
+      "type": "fontFamily",
+      "value": "Gotham",
+      "status": "unverified",
+      "evidence": {
+        "line": 75,
+        "sourcePath": "typography.body-lg.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodylg.fontsize",
+      "sourcePath": "typography.body-lg.fontSize",
+      "type": "dimension",
+      "value": "18px",
+      "status": "unverified",
+      "evidence": {
+        "line": 76,
+        "sourcePath": "typography.body-lg.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodylg.fontweight",
+      "sourcePath": "typography.body-lg.fontWeight",
+      "type": "number",
+      "value": 300,
+      "status": "unverified",
+      "evidence": {
+        "line": 77,
+        "sourcePath": "typography.body-lg.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodylg.lineheight",
+      "sourcePath": "typography.body-lg.lineHeight",
+      "type": "number",
+      "value": 1.5,
+      "status": "unverified",
+      "evidence": {
+        "line": 78,
+        "sourcePath": "typography.body-lg.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodylg.letterspacing",
+      "sourcePath": "typography.body-lg.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 79,
+        "sourcePath": "typography.body-lg.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.bodymd.fontfamily",
+      "sourcePath": "typography.body-md.fontFamily",
+      "type": "fontFamily",
+      "value": "Gotham",
+      "status": "unverified",
+      "evidence": {
+        "line": 81,
+        "sourcePath": "typography.body-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodymd.fontsize",
+      "sourcePath": "typography.body-md.fontSize",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 82,
+        "sourcePath": "typography.body-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodymd.fontweight",
+      "sourcePath": "typography.body-md.fontWeight",
+      "type": "number",
+      "value": 300,
+      "status": "unverified",
+      "evidence": {
+        "line": 83,
+        "sourcePath": "typography.body-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodymd.lineheight",
+      "sourcePath": "typography.body-md.lineHeight",
+      "type": "number",
+      "value": 1.5,
+      "status": "unverified",
+      "evidence": {
+        "line": 84,
+        "sourcePath": "typography.body-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodymd.letterspacing",
+      "sourcePath": "typography.body-md.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 85,
+        "sourcePath": "typography.body-md.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.bodysm.fontfamily",
+      "sourcePath": "typography.body-sm.fontFamily",
+      "type": "fontFamily",
+      "value": "Gotham",
+      "status": "unverified",
+      "evidence": {
+        "line": 87,
+        "sourcePath": "typography.body-sm.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodysm.fontsize",
+      "sourcePath": "typography.body-sm.fontSize",
+      "type": "dimension",
+      "value": "14px",
+      "status": "unverified",
+      "evidence": {
+        "line": 88,
+        "sourcePath": "typography.body-sm.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodysm.fontweight",
+      "sourcePath": "typography.body-sm.fontWeight",
+      "type": "number",
+      "value": 300,
+      "status": "unverified",
+      "evidence": {
+        "line": 89,
+        "sourcePath": "typography.body-sm.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodysm.lineheight",
+      "sourcePath": "typography.body-sm.lineHeight",
+      "type": "number",
+      "value": 1.5,
+      "status": "unverified",
+      "evidence": {
+        "line": 90,
+        "sourcePath": "typography.body-sm.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodysm.letterspacing",
+      "sourcePath": "typography.body-sm.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 91,
+        "sourcePath": "typography.body-sm.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.uilabel.fontfamily",
+      "sourcePath": "typography.ui-label.fontFamily",
+      "type": "fontFamily",
+      "value": "Gotham",
+      "status": "unverified",
+      "evidence": {
+        "line": 93,
+        "sourcePath": "typography.ui-label.fontFamily"
+      }
+    },
+    {
+      "path": "typography.uilabel.fontsize",
+      "sourcePath": "typography.ui-label.fontSize",
+      "type": "dimension",
+      "value": "14px",
+      "status": "unverified",
+      "evidence": {
+        "line": 94,
+        "sourcePath": "typography.ui-label.fontSize"
+      }
+    },
+    {
+      "path": "typography.uilabel.fontweight",
+      "sourcePath": "typography.ui-label.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 95,
+        "sourcePath": "typography.ui-label.fontWeight"
+      }
+    },
+    {
+      "path": "typography.uilabel.lineheight",
+      "sourcePath": "typography.ui-label.lineHeight",
+      "type": "number",
+      "value": 1.2,
+      "status": "unverified",
+      "evidence": {
+        "line": 96,
+        "sourcePath": "typography.ui-label.lineHeight"
+      }
+    },
+    {
+      "path": "typography.uilabel.letterspacing",
+      "sourcePath": "typography.ui-label.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 97,
+        "sourcePath": "typography.ui-label.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.uism.fontfamily",
+      "sourcePath": "typography.ui-sm.fontFamily",
+      "type": "fontFamily",
+      "value": "Gotham",
+      "status": "unverified",
+      "evidence": {
+        "line": 99,
+        "sourcePath": "typography.ui-sm.fontFamily"
+      }
+    },
+    {
+      "path": "typography.uism.fontsize",
+      "sourcePath": "typography.ui-sm.fontSize",
+      "type": "dimension",
+      "value": "13px",
+      "status": "unverified",
+      "evidence": {
+        "line": 100,
+        "sourcePath": "typography.ui-sm.fontSize"
+      }
+    },
+    {
+      "path": "typography.uism.fontweight",
+      "sourcePath": "typography.ui-sm.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 101,
+        "sourcePath": "typography.ui-sm.fontWeight"
+      }
+    },
+    {
+      "path": "typography.uism.lineheight",
+      "sourcePath": "typography.ui-sm.lineHeight",
+      "type": "number",
+      "value": 1.3,
+      "status": "unverified",
+      "evidence": {
+        "line": 102,
+        "sourcePath": "typography.ui-sm.lineHeight"
+      }
+    },
+    {
+      "path": "typography.uism.letterspacing",
+      "sourcePath": "typography.ui-sm.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 103,
+        "sourcePath": "typography.ui-sm.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.caption.fontfamily",
+      "sourcePath": "typography.caption.fontFamily",
+      "type": "fontFamily",
+      "value": "Gotham",
+      "status": "unverified",
+      "evidence": {
+        "line": 105,
+        "sourcePath": "typography.caption.fontFamily"
+      }
+    },
+    {
+      "path": "typography.caption.fontsize",
+      "sourcePath": "typography.caption.fontSize",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 106,
+        "sourcePath": "typography.caption.fontSize"
+      }
+    },
+    {
+      "path": "typography.caption.fontweight",
+      "sourcePath": "typography.caption.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 107,
+        "sourcePath": "typography.caption.fontWeight"
+      }
+    },
+    {
+      "path": "typography.caption.lineheight",
+      "sourcePath": "typography.caption.lineHeight",
+      "type": "number",
+      "value": 1.4,
+      "status": "unverified",
+      "evidence": {
+        "line": 108,
+        "sourcePath": "typography.caption.lineHeight"
+      }
+    },
+    {
+      "path": "typography.caption.letterspacing",
+      "sourcePath": "typography.caption.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 109,
+        "sourcePath": "typography.caption.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.eyebrow.fontfamily",
+      "sourcePath": "typography.eyebrow.fontFamily",
+      "type": "fontFamily",
+      "value": "Gotham",
+      "status": "unverified",
+      "evidence": {
+        "line": 111,
+        "sourcePath": "typography.eyebrow.fontFamily"
+      }
+    },
+    {
+      "path": "typography.eyebrow.fontsize",
+      "sourcePath": "typography.eyebrow.fontSize",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 112,
+        "sourcePath": "typography.eyebrow.fontSize"
+      }
+    },
+    {
+      "path": "typography.eyebrow.fontweight",
+      "sourcePath": "typography.eyebrow.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 113,
+        "sourcePath": "typography.eyebrow.fontWeight"
+      }
+    },
+    {
+      "path": "typography.eyebrow.lineheight",
+      "sourcePath": "typography.eyebrow.lineHeight",
+      "type": "number",
+      "value": 1.2,
+      "status": "unverified",
+      "evidence": {
+        "line": 114,
+        "sourcePath": "typography.eyebrow.lineHeight"
+      }
+    },
+    {
+      "path": "typography.eyebrow.letterspacing",
+      "sourcePath": "typography.eyebrow.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 115,
+        "sourcePath": "typography.eyebrow.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.micro.fontfamily",
+      "sourcePath": "typography.micro.fontFamily",
+      "type": "fontFamily",
+      "value": "Gotham",
+      "status": "unverified",
+      "evidence": {
+        "line": 117,
+        "sourcePath": "typography.micro.fontFamily"
+      }
+    },
+    {
+      "path": "typography.micro.fontsize",
+      "sourcePath": "typography.micro.fontSize",
+      "type": "dimension",
+      "value": "11px",
+      "status": "unverified",
+      "evidence": {
+        "line": 118,
+        "sourcePath": "typography.micro.fontSize"
+      }
+    },
+    {
+      "path": "typography.micro.fontweight",
+      "sourcePath": "typography.micro.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 119,
+        "sourcePath": "typography.micro.fontWeight"
+      }
+    },
+    {
+      "path": "typography.micro.lineheight",
+      "sourcePath": "typography.micro.lineHeight",
+      "type": "number",
+      "value": 1.4,
+      "status": "unverified",
+      "evidence": {
+        "line": 120,
+        "sourcePath": "typography.micro.lineHeight"
+      }
+    },
+    {
+      "path": "typography.micro.letterspacing",
+      "sourcePath": "typography.micro.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 121,
+        "sourcePath": "typography.micro.letterSpacing"
+      }
+    },
+    {
+      "path": "rounded.none",
+      "sourcePath": "rounded.none",
+      "type": "dimension",
+      "value": "0px",
+      "status": "unverified",
+      "evidence": {
+        "line": 124,
+        "sourcePath": "rounded.none"
+      }
+    },
+    {
+      "path": "rounded.xxs",
+      "sourcePath": "rounded.xxs",
+      "type": "dimension",
+      "value": "1px",
+      "status": "unverified",
+      "evidence": {
+        "line": 125,
+        "sourcePath": "rounded.xxs"
+      }
+    },
+    {
+      "path": "rounded.xs",
+      "sourcePath": "rounded.xs",
+      "type": "dimension",
+      "value": "2px",
+      "status": "unverified",
+      "evidence": {
+        "line": 126,
+        "sourcePath": "rounded.xs"
+      }
+    },
+    {
+      "path": "rounded.sm",
+      "sourcePath": "rounded.sm",
+      "type": "dimension",
+      "value": "4px",
+      "status": "unverified",
+      "evidence": {
+        "line": 127,
+        "sourcePath": "rounded.sm"
+      }
+    },
+    {
+      "path": "rounded.md",
+      "sourcePath": "rounded.md",
+      "type": "dimension",
+      "value": "6px",
+      "status": "unverified",
+      "evidence": {
+        "line": 128,
+        "sourcePath": "rounded.md"
+      }
+    },
+    {
+      "path": "rounded.lg",
+      "sourcePath": "rounded.lg",
+      "type": "dimension",
+      "value": "8px",
+      "status": "unverified",
+      "evidence": {
+        "line": 129,
+        "sourcePath": "rounded.lg"
+      }
+    },
+    {
+      "path": "rounded.xl",
+      "sourcePath": "rounded.xl",
+      "type": "dimension",
+      "value": "10px",
+      "status": "unverified",
+      "evidence": {
+        "line": 130,
+        "sourcePath": "rounded.xl"
+      }
+    },
+    {
+      "path": "rounded.xxl",
+      "sourcePath": "rounded.xxl",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 131,
+        "sourcePath": "rounded.xxl"
+      }
+    },
+    {
+      "path": "rounded.xxxl",
+      "sourcePath": "rounded.xxxl",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 132,
+        "sourcePath": "rounded.xxxl"
+      }
+    },
+    {
+      "path": "rounded.tooltip",
+      "sourcePath": "rounded.tooltip",
+      "type": "dimension",
+      "value": "20px",
+      "status": "unverified",
+      "evidence": {
+        "line": 133,
+        "sourcePath": "rounded.tooltip"
+      }
+    },
+    {
+      "path": "rounded.full",
+      "sourcePath": "rounded.full",
+      "type": "dimension",
+      "value": "9999px",
+      "status": "unverified",
+      "evidence": {
+        "line": 134,
+        "sourcePath": "rounded.full"
+      }
+    },
+    {
+      "path": "spacing.xxs",
+      "sourcePath": "spacing.xxs",
+      "type": "dimension",
+      "value": "4px",
+      "status": "unverified",
+      "evidence": {
+        "line": 137,
+        "sourcePath": "spacing.xxs"
+      }
+    },
+    {
+      "path": "spacing.xs",
+      "sourcePath": "spacing.xs",
+      "type": "dimension",
+      "value": "8px",
+      "status": "unverified",
+      "evidence": {
+        "line": 138,
+        "sourcePath": "spacing.xs"
+      }
+    },
+    {
+      "path": "spacing.sm",
+      "sourcePath": "spacing.sm",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 139,
+        "sourcePath": "spacing.sm"
+      }
+    },
+    {
+      "path": "spacing.md",
+      "sourcePath": "spacing.md",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 140,
+        "sourcePath": "spacing.md"
+      }
+    },
+    {
+      "path": "spacing.lg",
+      "sourcePath": "spacing.lg",
+      "type": "dimension",
+      "value": "20px",
+      "status": "unverified",
+      "evidence": {
+        "line": 141,
+        "sourcePath": "spacing.lg"
+      }
+    },
+    {
+      "path": "spacing.xl",
+      "sourcePath": "spacing.xl",
+      "type": "dimension",
+      "value": "24px",
+      "status": "unverified",
+      "evidence": {
+        "line": 142,
+        "sourcePath": "spacing.xl"
+      }
+    },
+    {
+      "path": "spacing.xxl",
+      "sourcePath": "spacing.xxl",
+      "type": "dimension",
+      "value": "32px",
+      "status": "unverified",
+      "evidence": {
+        "line": 143,
+        "sourcePath": "spacing.xxl"
+      }
+    },
+    {
+      "path": "spacing.section",
+      "sourcePath": "spacing.section",
+      "type": "dimension",
+      "value": "40px",
+      "status": "unverified",
+      "evidence": {
+        "line": 144,
+        "sourcePath": "spacing.section"
+      }
+    }
+  ],
+  "rejectedTokens": [],
+  "homepage": {
+    "status": "missing",
+    "candidates": [],
+    "verification": {
+      "status": "verified",
+      "url": "https://www.nerdwallet.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://www.nerdwallet.com/",
+          "title": "NerdWallet: Finance smarter",
+          "note": "Public homepage read requested https://www.nerdwallet.com; final URL https://www.nerdwallet.com/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    }
+  },
+  "completeness": {
+    "presentFields": [
+      "colors",
+      "typography",
+      "rounded",
+      "spacing",
+      "components"
+    ],
+    "missingFields": [],
+    "tokenRoles": "incomplete",
+    "note": "Missing fields are not reconstructed. Prose-only colors have no inferred semantic role."
+  },
+  "provenance": {
+    "status": "independent-analysis",
+    "sources": [
+      {
+        "title": "VoltAgent awesome-design-md independent analysis",
+        "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/nerdwallet/DESIGN.md"
+      }
+    ],
+    "verification": "unverified-secondary-analysis"
+  },
+  "limitations": [
+    "Independent secondary analysis, not an official brand system; all reported values are unverified.",
+    "No brand assets, logos, font binaries or screenshots copied. Font names are documentary, not font licenses.",
+    "Safe CSS literals are extracted without claiming complete roles, state coverage or visual fidelity.",
+    "Markdown is retained as inert evidence, never executed or rendered as raw HTML."
+  ]
+}

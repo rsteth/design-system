@@ -1,0 +1,1680 @@
+{
+  "schemaVersion": 1,
+  "id": "reference-ollama",
+  "title": "Ollama",
+  "classification": "independent-unverified-analysis",
+  "source": {
+    "repository": "https://github.com/VoltAgent/awesome-design-md",
+    "fork": "https://github.com/rsteth/awesome-design-md-p",
+    "revision": "fcc70284932276d085f01ef9f83edde90b1258cb",
+    "path": "design-md/ollama/DESIGN.md",
+    "sha256": "3f36f897e5aad870344dd97e282c8f125ad208dc99449bb08dd38b9259d2f451",
+    "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/ollama/DESIGN.md"
+  },
+  "sourceName": "Ollama-design-analysis",
+  "titleProvenance": {
+    "status": "inferred",
+    "basis": "Source directory label, normalized for navigation; original source name is retained without correction.",
+    "sourceValue": "ollama",
+    "originalName": "Ollama-design-analysis"
+  },
+  "description": "An almost defiantly minimal documentation-first system that treats the home page like a Markdown README — paper-white canvas, 36px center-aligned heading, a single black pill CTA, an inline terminal install snippet, and a hand-drawn llama mascot as the only ornamental element. No gradient, no hero photography, no marketing pyrotechnics. The chrome is a tiny utility palette of pure black, pure white, and three neutral grays; every interactive element is fully rounded into a pill (`{rounded.full}`); typography is SF Pro Rounded for headings paired with system sans for body and ui-monospace for code. Pricing tiers, FAQs, and \"your data stays yours\" guarantees all sit on the same flat canvas inside thin-border cards — the system is the documentation, and the documentation is the system.\n",
+  "analysis": {
+    "version": "alpha",
+    "name": "Ollama-design-analysis",
+    "description": "An almost defiantly minimal documentation-first system that treats the home page like a Markdown README — paper-white canvas, 36px center-aligned heading, a single black pill CTA, an inline terminal install snippet, and a hand-drawn llama mascot as the only ornamental element. No gradient, no hero photography, no marketing pyrotechnics. The chrome is a tiny utility palette of pure black, pure white, and three neutral grays; every interactive element is fully rounded into a pill (`{rounded.full}`); typography is SF Pro Rounded for headings paired with system sans for body and ui-monospace for code. Pricing tiers, FAQs, and \"your data stays yours\" guarantees all sit on the same flat canvas inside thin-border cards — the system is the documentation, and the documentation is the system.\n",
+    "colors": {
+      "primary": "#000000",
+      "on-primary": "#ffffff",
+      "ink": "#000000",
+      "ink-deep": "#090909",
+      "charcoal": "#525252",
+      "body": "#737373",
+      "mute": "#a3a3a3",
+      "canvas": "#ffffff",
+      "surface-soft": "#fafafa",
+      "surface-card": "#ffffff",
+      "hairline": "#e5e5e5",
+      "hairline-strong": "#d4d4d4",
+      "on-dark": "#ffffff",
+      "on-dark-mute": "rgba(255,255,255,0.7)",
+      "surface-dark": "#171717",
+      "focus-ring": "rgba(59,130,246,0.5)",
+      "link": "#000000",
+      "link-mute": "#737373",
+      "terminal-red": "#ff5f56",
+      "terminal-yellow": "#ffbd2e",
+      "terminal-green": "#27c93f"
+    },
+    "typography": {
+      "display-xl": {
+        "fontFamily": "SF Pro Rounded",
+        "fontSize": "36px",
+        "fontWeight": 500,
+        "lineHeight": 1.11,
+        "letterSpacing": 0
+      },
+      "display-lg": {
+        "fontFamily": "SF Pro Rounded",
+        "fontSize": "30px",
+        "fontWeight": 500,
+        "lineHeight": 1.2,
+        "letterSpacing": 0
+      },
+      "heading-lg": {
+        "fontFamily": "SF Pro Rounded",
+        "fontSize": "24px",
+        "fontWeight": 600,
+        "lineHeight": 1.33,
+        "letterSpacing": 0
+      },
+      "heading-md": {
+        "fontFamily": "ui-sans-serif",
+        "fontSize": "20px",
+        "fontWeight": 500,
+        "lineHeight": 1.4,
+        "letterSpacing": 0
+      },
+      "heading-sm": {
+        "fontFamily": "ui-sans-serif",
+        "fontSize": "18px",
+        "fontWeight": 500,
+        "lineHeight": 1.56,
+        "letterSpacing": 0
+      },
+      "body-md": {
+        "fontFamily": "ui-sans-serif",
+        "fontSize": "16px",
+        "fontWeight": 400,
+        "lineHeight": 1.5,
+        "letterSpacing": 0
+      },
+      "body-strong": {
+        "fontFamily": "ui-sans-serif",
+        "fontSize": "16px",
+        "fontWeight": 500,
+        "lineHeight": 1.5,
+        "letterSpacing": 0
+      },
+      "body-sm": {
+        "fontFamily": "ui-sans-serif",
+        "fontSize": "14px",
+        "fontWeight": 400,
+        "lineHeight": 1.43,
+        "letterSpacing": 0
+      },
+      "body-sm-strong": {
+        "fontFamily": "ui-sans-serif",
+        "fontSize": "14px",
+        "fontWeight": 500,
+        "lineHeight": 1.43,
+        "letterSpacing": 0
+      },
+      "caption-sm": {
+        "fontFamily": "ui-sans-serif",
+        "fontSize": "12px",
+        "fontWeight": 400,
+        "lineHeight": 1.33,
+        "letterSpacing": 0
+      },
+      "code-md": {
+        "fontFamily": "ui-monospace",
+        "fontSize": "16px",
+        "fontWeight": 400,
+        "lineHeight": 1.5,
+        "letterSpacing": 0
+      },
+      "code-sm": {
+        "fontFamily": "ui-monospace",
+        "fontSize": "14px",
+        "fontWeight": 400,
+        "lineHeight": 1.43,
+        "letterSpacing": 0
+      },
+      "button-md": {
+        "fontFamily": "ui-sans-serif",
+        "fontSize": "14px",
+        "fontWeight": 500,
+        "lineHeight": 1,
+        "letterSpacing": 0
+      }
+    },
+    "rounded": {
+      "none": "0px",
+      "sm": "6px",
+      "md": "8px",
+      "lg": "12px",
+      "full": "9999px"
+    },
+    "spacing": {
+      "xxs": "2px",
+      "xs": "4px",
+      "sm": "8px",
+      "md": "12px",
+      "lg": "16px",
+      "xl": "24px",
+      "xxl": "32px",
+      "section": "88px"
+    },
+    "components": {
+      "button-primary": {
+        "backgroundColor": "{colors.primary}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.full}",
+        "padding": "8px 20px",
+        "height": "36px"
+      },
+      "button-primary-active": {
+        "backgroundColor": "{colors.ink-deep}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.full}"
+      },
+      "button-secondary": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.full}",
+        "padding": "8px 20px",
+        "height": "36px"
+      },
+      "button-pill-on-dark": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.full}",
+        "padding": "8px 20px"
+      },
+      "button-disabled": {
+        "backgroundColor": "{colors.surface-soft}",
+        "textColor": "{colors.mute}",
+        "rounded": "{rounded.full}"
+      },
+      "search-pill": {
+        "backgroundColor": "{colors.surface-soft}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-sm}",
+        "rounded": "{rounded.full}",
+        "padding": "8px 16px",
+        "height": "36px"
+      },
+      "search-pill-focused": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "rounded": "{rounded.full}"
+      },
+      "text-input": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.full}",
+        "padding": "8px 16px",
+        "height": "40px"
+      },
+      "text-input-focused": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "rounded": "{rounded.full}"
+      },
+      "install-snippet": {
+        "backgroundColor": "{colors.surface-soft}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.code-md}",
+        "rounded": "{rounded.full}",
+        "padding": "12px 20px",
+        "height": "48px"
+      },
+      "command-tag": {
+        "backgroundColor": "{colors.surface-soft}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.code-sm}",
+        "rounded": "{rounded.full}",
+        "padding": "6px 12px"
+      },
+      "terminal-card": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.code-sm}",
+        "rounded": "{rounded.lg}",
+        "padding": "16px"
+      },
+      "terminal-traffic-lights": {
+        "rounded": "{rounded.full}",
+        "size": "12px"
+      },
+      "pricing-card": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.lg}",
+        "padding": "32px"
+      },
+      "pricing-card-dark": {
+        "backgroundColor": "{colors.surface-dark}",
+        "textColor": "{colors.on-dark}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.lg}",
+        "padding": "32px"
+      },
+      "feature-bullet": {
+        "textColor": "{colors.charcoal}",
+        "typography": "{typography.body-sm}"
+      },
+      "faq-row": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.none}",
+        "padding": "16px 0px"
+      },
+      "link-inline": {
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-md}"
+      },
+      "link-mute": {
+        "textColor": "{colors.body}",
+        "typography": "{typography.body-sm}"
+      },
+      "primary-nav": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-sm-strong}",
+        "rounded": "{rounded.none}",
+        "height": "56px"
+      },
+      "footer-section": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.body}",
+        "typography": "{typography.caption-sm}",
+        "rounded": "{rounded.none}",
+        "padding": "32px 24px"
+      },
+      "cta-strip-dark": {
+        "backgroundColor": "{colors.surface-dark}",
+        "textColor": "{colors.on-dark}",
+        "typography": "{typography.heading-lg}",
+        "rounded": "{rounded.lg}",
+        "padding": "24px 32px"
+      }
+    }
+  },
+  "normalizationRepairs": [],
+  "sections": [
+    {
+      "heading": "Overview",
+      "level": 2,
+      "text": "Ollama's site is the most aggressively under-designed marketing surface in the AI tooling space, and that is the entire point. The home page reads like a Markdown README rendered with care: a 36px center-aligned heading sits above an inline `curl` install snippet inside a soft-gray pill, a single black \"Download\" CTA, and a hand-drawn llama mascot as the only ornament. Everything else — automate-your-work block, \"Start local. Scale cloud.\" pricing pair, \"Your data stays yours\" guarantee strip, FAQ wall on `/pricing` — sits on the same paper-white canvas (`{colors.canvas}`) with quiet `{colors.body}` neutrals carrying the prose. The system is the documentation, and the documentation is the system.\n\nThe design philosophy is geometric: every interactive element collapses to `{rounded.full}` (9999px) — buttons, search pills, install-snippet pills, text inputs, and the terminal-traffic-light dots. There are no decorative drop shadows, no gradients, no hero illustrations beyond the llama. Cards (the rare ones, on `/pricing`) use a soft `{rounded.lg}` (12px) and a 1px hairline. The single inverted moment in the entire system is the dark \"Max\" pricing tier — `{colors.surface-dark}` with white text — which acts as the only attention-grabbing surface in an otherwise studiously flat layout.\n\nTypography pairs SF Pro Rounded (display headings, weight 500–600) with the operating system's default sans (`ui-sans-serif`) for body and `ui-monospace` for code. The roundness of the heading face is the only \"personality\" the chrome carries — it gently echoes the `{rounded.full}` button geometry without being decorative about it.\n\n**Key Characteristics:**\n- Paper-white `{colors.canvas}` end-to-end with no surface alternation — the whole page is one continuous sheet\n- Center-aligned hero with `{typography.display-xl}` SF Pro Rounded headline, no eyebrow, no subhead beyond a small \"Power OpenClaw with Ollama\" line under the llama\n- Pill geometry everywhere: every button and pill input is `{rounded.full}`; cards use `{rounded.lg}`; nothing is sharp-cornered except section dividers\n- Single-color CTA system: pure black `{colors.primary}` pills carry every action; \"Get Pro\" / \"Get Max\" inside pricing cards are the only variations\n- Inline `curl` install snippet rendered as a pill with `{typography.code-md}` — the most signature element, sitting directly under the hero headline\n- Terminal-mockup card with macOS traffic-light dots and inline `ollama launch openclaw` example — the home page's only \"product preview\"\n- Inverted dark `{component.pricing-card-dark}` for the highest-tier \"Max\" plan, breaking the flat-white rhythm exactly once per page",
+      "line": 248
+    },
+    {
+      "heading": "Colors",
+      "level": 2,
+      "text": "> **Source pages:** `/` (home) and `/pricing`. The chrome palette is identical across both — only content changes.",
+      "line": 265
+    },
+    {
+      "heading": "Brand & Accent",
+      "level": 3,
+      "text": "- **Pure Black** (`{colors.primary}` — `#000000`): the brand. Every primary CTA, every black pill, every link in the nav, and every solid icon. There is no other \"brand color.\"\n- **Ink Deep** (`{colors.ink-deep}` — `#090909`): pressed-state black for the primary pill — a single notch below pure.",
+      "line": 269
+    },
+    {
+      "heading": "Surface",
+      "level": 3,
+      "text": "- **Canvas** (`{colors.canvas}` — `#ffffff`): the page itself. Nearly every surface in the system.\n- **Soft Surface** (`{colors.surface-soft}` — `#fafafa`): install-snippet pill background, search pill, secondary chip backgrounds, alternating row fill where one is needed.\n- **Surface Dark** (`{colors.surface-dark}` — `#171717`): the dark \"Max\" pricing card and dark CTA strips. The single inverted surface in the system.\n- **Hairline** (`{colors.hairline}` — `#e5e5e5`): 1px card border, divider line above footer, divider between FAQ rows.\n- **Hairline Strong** (`{colors.hairline-strong}` — `#d4d4d4`): rare slightly stronger divider where extra separation is needed (e.g., between unrelated FAQ groups).",
+      "line": 273
+    },
+    {
+      "heading": "Text",
+      "level": 3,
+      "text": "- **Ink** (`{colors.ink}` — `#000000`): all headlines, primary nav links, button text on light surfaces, prices on pricing cards.\n- **Charcoal** (`{colors.charcoal}` — `#525252`): list-item text and disabled-state secondary copy.\n- **Body** (`{colors.body}` — `#737373`): default body color for paragraph copy, FAQ answers, footer link text — the system's most-used text color after pure black.\n- **Mute** (`{colors.mute}` — `#a3a3a3`): caption text, command-line \"comment\" gray inside terminal mockups, lowest-emphasis utility text.\n- **On Dark** (`{colors.on-dark}` — `#ffffff`): primary text on `{colors.surface-dark}`.\n- **On Dark Mute** (`{colors.on-dark-mute}` — `rgba(255,255,255,0.7)`): secondary copy inside the dark \"Max\" pricing card.",
+      "line": 280
+    },
+    {
+      "heading": "Semantic",
+      "level": 3,
+      "text": "The system has effectively no error/success/warning palette in its public marketing surfaces — there are no validation states, no destructive flows, no banners. The only \"semantic\" colors are the macOS terminal traffic lights inside the terminal mockup:\n\n- **Terminal Red** (`{colors.terminal-red}` — `#ff5f56`): close-window dot.\n- **Terminal Yellow** (`{colors.terminal-yellow}` — `#ffbd2e`): minimize dot.\n- **Terminal Green** (`{colors.terminal-green}` — `#27c93f`): zoom dot.\n\nThese appear only inside `{component.terminal-card}` and have no other use.",
+      "line": 288
+    },
+    {
+      "heading": "Focus",
+      "level": 3,
+      "text": "- **Focus Ring** (`{colors.focus-ring}` — `rgba(59,130,246,0.5)`): translucent blue browser-default focus ring around interactive elements. The only blue in the system.",
+      "line": 297
+    },
+    {
+      "heading": "Typography",
+      "level": 2,
+      "text": "",
+      "line": 300
+    },
+    {
+      "heading": "Font Family",
+      "level": 3,
+      "text": "- **SF Pro Rounded** (display headings) — Apple's rounded geometric sans, used at weights 500 and 600 for headlines from `{typography.display-xl}` (36px) down to `{typography.heading-lg}` (24px). Falls back to `system-ui` → `-apple-system`.\n- **ui-sans-serif** (body, links, buttons, captions) — the operating system's default sans-serif. Carries every non-display text role at 12–20px. Falls back through `system-ui` and platform emoji families.\n- **ui-monospace** (code, install snippet, command tags) — the OS default monospace. Used inside the terminal mockup, the inline `curl` install pill, and any inline `<code>` formatting. Falls back to SFMono-Regular → Menlo → Monaco → Consolas.\n\nThe pairing of SF Pro Rounded display + system sans body + system mono code is intentionally \"stock Apple\" — the design decision is to not have a typography decision. Branded display faces would compete with the system's documentation feel.",
+      "line": 302
+    },
+    {
+      "heading": "Hierarchy",
+      "level": 3,
+      "text": "| Token | Size | Weight | Line Height | Letter Spacing | Use |\n|---|---|---|---|---|---|\n| `{typography.display-xl}` | 36px | 500 | 1.11 | 0 | Hero headline (\"The easiest way to build with open models\") |\n| `{typography.display-lg}` | 30px | 500 | 1.2 | 0 | Major section headlines (\"Pricing\", \"Frequently asked questions\") |\n| `{typography.heading-lg}` | 24px | 600 | 1.33 | 0 | Section subheading inside body (\"Automate your work\", \"Start local. Scale cloud.\") |\n| `{typography.heading-md}` | 20px | 500 | 1.4 | 0 | Pricing tier name (\"Free\", \"Pro\", \"Max\"), card title |\n| `{typography.heading-sm}` | 18px | 500 | 1.56 | 0 | FAQ question label, in-card subtitle |\n| `{typography.body-md}` | 16px | 400 | 1.5 | 0 | Default body, FAQ answers, paragraph copy |\n| `{typography.body-strong}` | 16px | 500 | 1.5 | 0 | Inline emphasis, primary-nav link |\n| `{typography.body-sm}` | 14px | 400 | 1.43 | 0 | Feature bullet (\"Access larger models on data-center-grade hardware\"), footer link |\n| `{typography.body-sm-strong}` | 14px | 500 | 1.43 | 0 | Button label, pricing-card eyebrow (\"Solve harder tasks, faster\") |\n| `{typography.caption-sm}` | 12px | 400 | 1.33 | 0 | Footer copyright row, smallest meta text |\n| `{typography.code-md}` | 16px | 400 | 1.5 | 0 | Install-snippet `curl` line, in-terminal command |\n| `{typography.code-sm}` | 14px | 400 | 1.43 | 0 | Terminal output line, inline `<code>` chips |\n| `{typography.button-md}` | 14px | 500 | 1 | 0 | Every button label across the system |",
+      "line": 309
+    },
+    {
+      "heading": "Principles",
+      "level": 3,
+      "text": "The typography is built for legibility at small sizes on a flat-white canvas. SF Pro Rounded's softened terminals on the heading face do almost all of the brand expression; everything below 20px collapses into the operating system's default sans, which renders identically to the way docs.ollama.com and the Ollama CLI's own help text would appear in a terminal. There is almost no letter-spacing variation, no display-only weights, no italic, and the heading-to-body ratio compresses tightly (36 → 30 → 24 → 20 → 16) so the page reads as a single readable column rather than a marketing pyramid.",
+      "line": 327
+    },
+    {
+      "heading": "Note on Font Substitutes",
+      "level": 3,
+      "text": "SF Pro Rounded is Apple-licensed and ships only on macOS/iOS. On other systems it falls back to `system-ui` (Segoe UI / Roboto / DejaVu Sans depending on platform) — Ollama explicitly accepts that the heading face will look slightly different on Windows/Linux. The closest open-source substitute is **Nunito** (rounded geometric sans, weights 500/600). For the body face, **Inter** is a near-perfect match for `system-ui` rendered metrics. For code, **JetBrains Mono** or **Fira Code** are the canonical open-source substitutes for `ui-monospace`.",
+      "line": 330
+    },
+    {
+      "heading": "Layout",
+      "level": 2,
+      "text": "",
+      "line": 333
+    },
+    {
+      "heading": "Spacing System",
+      "level": 3,
+      "text": "- **Base unit:** 8px (with finer 2/4/6px steps available for tight inline gaps)\n- **Tokens (front matter):** `{spacing.xxs}` (2px) · `{spacing.xs}` (4px) · `{spacing.sm}` (8px) · `{spacing.md}` (12px) · `{spacing.lg}` (16px) · `{spacing.xl}` (24px) · `{spacing.xxl}` (32px) · `{spacing.section}` (88px)\n- **Universal section rhythm:** every page uses `{spacing.section}` (88px) as the vertical gap between major content blocks (hero → automate → start local/scale cloud → your data stays yours → get-started footer call). This is the single largest spacing token in the system and it is used liberally.\n- **Card internal padding:** pricing cards sit at `{spacing.xxl}` (32px) all around; FAQ rows use `{spacing.lg}` (16px) vertical with no horizontal padding.",
+      "line": 335
+    },
+    {
+      "heading": "Grid & Container",
+      "level": 3,
+      "text": "- **Max width:** ~720px content column on the home page (the whole page is laid out as a single narrow reading column with optional 2-column splits inside specific sections).\n- **Pricing grid:** 3-up cards at desktop with a max content width of ~960px; collapses to 1-up below 768px.\n- **Automate-your-work split:** desktop 50/50 left-text/right-terminal-mockup; mobile stacks vertical with the terminal below the text.\n- **FAQ:** single-column stacked rows, full-width within the 720px content column.\n- **Footer:** single-row of small body-sm links, center-aligned at desktop, wrapping to two rows on narrow screens.",
+      "line": 341
+    },
+    {
+      "heading": "Whitespace Philosophy",
+      "level": 3,
+      "text": "Whitespace is the entire layout. Sections are separated by 88px of plain white air, never by decorative dividers, never by colored bands. Inside a section, content sits in a tight reading column with no decorative columns, callout boxes, or lifted cards. The site treats the page as a long-form Markdown document, and the air between sections is the equivalent of a blank line in Markdown source.",
+      "line": 348
+    },
+    {
+      "heading": "Elevation & Depth",
+      "level": 2,
+      "text": "| Level | Treatment | Use |\n|---|---|---|\n| 0 — Flat | No border, no shadow | Hero, automate-your-work, your-data-stays-yours, footer — the dominant treatment across the page |\n| 1 — Hairline border | 1px solid `{colors.hairline}` | Pricing cards, FAQ row dividers, terminal mockup card |\n| 2 — Inverted dark | `{colors.surface-dark}` fill | Dark \"Max\" pricing card and dark CTA strip — the system's only \"elevated\" surfaces use color, not shadow |\n\nThe system has no drop-shadow elevation at all. Nothing lifts, nothing floats, nothing layers. The only depth cue beyond hairline borders is the single dark surface used on the highest-tier pricing card to draw attention to it.",
+      "line": 351
+    },
+    {
+      "heading": "Decorative Depth",
+      "level": 3,
+      "text": "The site has effectively zero decorative depth in the traditional sense. The \"depth\" comes entirely from two recurring devices:\n- **The hand-drawn llama mascot** — appearing once at the top of the hero, once at the top of each pricing card, and once next to the lock icon in the \"Your data stays yours\" section. It is the only illustration in the system.\n- **A single line-drawn lock icon** — used in the data-privacy section. Stroke-only, no fill, drawn in `{colors.ink}`.",
+      "line": 361
+    },
+    {
+      "heading": "Shapes",
+      "level": 2,
+      "text": "",
+      "line": 366
+    },
+    {
+      "heading": "Border Radius Scale",
+      "level": 3,
+      "text": "| Token | Value | Use |\n|---|---|---|\n| `{rounded.none}` | 0px | Nav, footer, FAQ row dividers — flat structural lines |\n| `{rounded.sm}` | 6px | Inline code chips, command tags |\n| `{rounded.md}` | 8px | Rare medium-radius surfaces (e.g., dropdown panels) |\n| `{rounded.lg}` | 12px | Pricing cards, terminal mockup card |\n| `{rounded.full}` | 9999px | Every button, every pill input, install-snippet pill, search pill, traffic-light dots |\n\nThe dominant shape vocabulary is just two values: pills (`{rounded.full}`) for everything interactive and 12px (`{rounded.lg}`) for the few cards in the system. There are no medium-radius \"soft cards\" — surfaces are either pills or rectangles with corners large enough to read as deliberately soft.",
+      "line": 368
+    },
+    {
+      "heading": "Photography Geometry",
+      "level": 3,
+      "text": "There is no photography. The only image-like elements are:\n- **The llama mascot** — a hand-drawn line illustration, ~80–120px on the hero, ~32–48px when it appears as a pricing-card eyebrow icon.\n- **The lock icon** — single stroke line drawing in the privacy section.\n- **macOS traffic-light dots** — three filled circles at 12px (`{rounded.full}`) inside the terminal mockup card.",
+      "line": 380
+    },
+    {
+      "heading": "Components",
+      "level": 2,
+      "text": "> **No hover states documented** per system policy. Each spec covers Default and Active/Pressed only.",
+      "line": 386
+    },
+    {
+      "heading": "Buttons",
+      "level": 3,
+      "text": "**`button-primary`** — the universal Ollama CTA\n- Background `{colors.primary}`, text `{colors.on-primary}`, type `{typography.button-md}`, padding `8px 20px`, height `36px`, rounded `{rounded.full}`.\n- Used for \"Download\" (top nav), \"Sign in\" (top nav, paired with Download), \"Create account\", \"Get Pro\", \"Get Max\" — every primary action in the system.\n- Pressed state lives in `button-primary-active` — background drops to `{colors.ink-deep}`.\n\n**`button-secondary`** — outline alternative on light canvas\n- Background `{colors.canvas}`, text `{colors.ink}`, 1px solid `{colors.hairline-strong}`, type `{typography.button-md}`, padding `8px 20px`, height `36px`, rounded `{rounded.full}`.\n- Used as a secondary affordance — e.g., the \"Sign in\" pill in the top nav when paired with the black \"Download\" pill, \"See more apps →\" arrow link in compact form.\n\n**`button-pill-on-dark`** — white pill on dark surface\n- Background `{colors.canvas}`, text `{colors.ink}`, type `{typography.button-md}`, rounded `{rounded.full}`.\n- Sits inside the dark \"Max\" pricing card as the \"Get Max\" CTA — inverts the standard primary so the dark card itself becomes the visual anchor and the white pill reads as the CTA.\n\n**`button-disabled`**\n- Background `{colors.surface-soft}`, text `{colors.mute}`, rounded `{rounded.full}` — flat soft gray.",
+      "line": 390
+    },
+    {
+      "heading": "Inputs & Forms",
+      "level": 3,
+      "text": "**`search-pill`** + **`search-pill-focused`**\n- Default: background `{colors.surface-soft}`, text `{colors.ink}`, type `{typography.body-sm}`, padding `8px 16px`, height `36px`, rounded `{rounded.full}`. Anchored in the center of the primary nav with a small magnifier icon prefix and \"Search models\" placeholder.\n- Focused: background flips to `{colors.canvas}` and the browser-default `{colors.focus-ring}` translucent blue ring appears.\n\n**`text-input`** + **`text-input-focused`**\n- Default: background `{colors.canvas}`, 1px solid `{colors.hairline}`, type `{typography.body-md}`, padding `8px 16px`, height `40px`, rounded `{rounded.full}`.\n- Focused: 1px ink border + browser-default focus ring.\n\n**`install-snippet`** — the signature install pill\n- Background `{colors.surface-soft}`, text `{colors.ink}` rendered in `{typography.code-md}`, padding `12px 20px`, height `48px`, rounded `{rounded.full}`.\n- Contains the literal `curl -fsSL https://ollama.com/install.sh | sh` install command with a small copy-icon at the right edge. Sits directly below the hero headline as the page's most prominent \"CTA.\"\n\n**`command-tag`** — small inline command chip\n- Background `{colors.surface-soft}`, text `{colors.ink}` in `{typography.code-sm}`, padding `6px 12px`, rounded `{rounded.full}`.\n- Used inside the \"Automate your work\" section for the `ollama launch openclaw` example chip and similar inline-command demos.",
+      "line": 408
+    },
+    {
+      "heading": "Cards & Containers",
+      "level": 3,
+      "text": "**`terminal-card`** — the home page's only \"product preview\"\n- Container: background `{colors.canvas}`, 1px solid `{colors.hairline}`, padding `{spacing.lg}` (16px), rounded `{rounded.lg}`.\n- Header: three `{component.terminal-traffic-lights}` dots (red/yellow/green at 12px) anchored to the top-left of the card.\n- Body: terminal output rendered in `{typography.code-sm}` with comments in `{colors.mute}` and active commands in `{colors.ink}`.\n\n**`terminal-traffic-lights`**\n- Three 12px filled circles at `{rounded.full}`: `{colors.terminal-red}`, `{colors.terminal-yellow}`, `{colors.terminal-green}`. Sits as a row of three with `{spacing.xs}` gaps between dots inside the terminal card header.\n\n**`pricing-card`** — Free / Pro tiers\n- Container: background `{colors.canvas}`, 1px solid `{colors.hairline}`, padding `{spacing.xxl}` (32px), rounded `{rounded.lg}`.\n- Layout: small llama mascot icon (~32px) at top, tier name in `{typography.heading-md}`, one-line tier description, large price in `{typography.display-lg}` (`$0` / `$20`), single `{component.button-primary}` CTA, divider, `{typography.body-sm-strong}` \"Everything in Free, plus:\" header, list of `{component.feature-bullet}` rows.\n\n**`pricing-card-dark`** — Max tier (inverted)\n- Identical layout to `pricing-card` but with `{colors.surface-dark}` background, `{colors.on-dark}` text, `{colors.on-dark-mute}` secondary text, and `{component.button-pill-on-dark}` CTA. The inversion is the system's single \"look here\" cue.\n\n**`feature-bullet`** — pricing card list item\n- Inline `✓` checkmark at `{colors.ink}` followed by `{typography.body-sm}` text in `{colors.charcoal}`. No background, no border, just stacked rows with `{spacing.sm}` between them.\n\n**`faq-row`** — `/pricing` FAQ entry\n- Container: background `{colors.canvas}`, padding `16px 0`, 1px bottom border `{colors.hairline}`.\n- Question: `{typography.heading-sm}` (18px / 500) in `{colors.ink}`.\n- Answer: `{typography.body-md}` (16px / 400) in `{colors.body}`, sitting directly below the question with `{spacing.xs}` gap. Always expanded — no accordion collapse.\n\n**`cta-strip-dark`** — rare dark CTA band\n- Background `{colors.surface-dark}`, text `{colors.on-dark}` in `{typography.heading-lg}`, padding `24px 32px`, rounded `{rounded.lg}`. Used sparingly between sections.",
+      "line": 426
+    },
+    {
+      "heading": "Inline",
+      "level": 3,
+      "text": "**`link-inline`** — body-prose anchor link\n- `{colors.ink}` text with underline. Default decoration is `text-decoration: underline`.\n\n**`link-mute`** — secondary anchor in long-form prose\n- `{colors.body}` text with underline appearing on default — used in FAQ answers (\"see [hello@ollama.com](mailto:)\") and footer.",
+      "line": 454
+    },
+    {
+      "heading": "Navigation",
+      "level": 3,
+      "text": "**`primary-nav`**\n- Background `{colors.canvas}`, text `{colors.ink}`, height 56px, type `{typography.body-sm-strong}`, rounded `{rounded.none}`.\n- Layout (desktop): llama icon (left) followed by \"Models · Docs · Pricing\" text links, centered `{component.search-pill}`, and a right cluster of \"Sign in\" + black `{component.button-primary}` \"Download\".\n\n**Top Nav (Mobile)**\n- Llama icon at left, hamburger drawer trigger at right. Search pill expands to full-width when triggered. The drawer lists \"Models · Docs · Pricing · Sign in · Download\" stacked vertically with `{spacing.lg}` row gaps.",
+      "line": 462
+    },
+    {
+      "heading": "Footer",
+      "level": 3,
+      "text": "**`footer-section`**\n- Background `{colors.canvas}`, 1px top border `{colors.hairline}`, padding `32px 24px`, type `{typography.caption-sm}` `{colors.body}`.\n- Single horizontal row of small links: \"Download · Blog · Docs · GitHub · Discord · X · Contact · Privacy · Terms\" + a \"© 2026 Ollama\" copyright at the right edge. Wraps to two rows on narrow screens.",
+      "line": 471
+    },
+    {
+      "heading": "Do's and Don'ts",
+      "level": 2,
+      "text": "",
+      "line": 477
+    },
+    {
+      "heading": "Do",
+      "level": 3,
+      "text": "- Treat the page like a Markdown document: single reading column, plenty of `{spacing.section}` air between sections, no decorative dividers.\n- Use `{component.button-primary}` (black pill) for every primary action. There is no green, no blue, no brand-tinted CTA.\n- Default to `{rounded.full}` for any interactive element. Cards get `{rounded.lg}` (12px) and that is the only exception.\n- Use `{typography.display-xl}` SF Pro Rounded for the hero headline and `{typography.body-md}` system sans for everything else. Avoid intermediate display sizes.\n- Reserve `{component.pricing-card-dark}` (the inverted dark surface) for exactly one \"look here\" moment per page — never use it twice.\n- Render install commands and CLI examples inside `{component.install-snippet}` or `{component.terminal-card}` with `{typography.code-md}` / `{typography.code-sm}`. Code is a first-class component.\n- Keep the llama mascot the only illustration in the system. It is the brand.",
+      "line": 479
+    },
+    {
+      "heading": "Don't",
+      "level": 3,
+      "text": "- Don't introduce gradients, drop shadows, or atmospheric backgrounds. The canvas is pure `{colors.canvas}`.\n- Don't add brand colors. The system is `{colors.primary}` (black) on `{colors.canvas}` (white) with `{colors.body}` (gray) text. That is it.\n- Don't soften pills or sharpen cards — pills stay `{rounded.full}`, cards stay `{rounded.lg}`. Don't introduce `{rounded.md}` for buttons or `{rounded.full}` for cards.\n- Don't lift cards with shadows. Use a 1px `{colors.hairline}` border or invert to `{colors.surface-dark}` — those are the only two card treatments.\n- Don't replace `ui-sans-serif` with a branded display body face. The system relies on `system-ui` rendering to feel native.\n- Don't fill long-form pages with marketing chrome. FAQ answers stay in `{colors.body}` body-md prose with no decorative containers.",
+      "line": 488
+    },
+    {
+      "heading": "Responsive Behavior",
+      "level": 2,
+      "text": "",
+      "line": 496
+    },
+    {
+      "heading": "Breakpoints",
+      "level": 3,
+      "text": "| Name | Width | Key Changes |\n|---|---|---|\n| desktop-large | 1280px+ | Default desktop — 720px content column, 3-up pricing grid |\n| desktop | 1024px | Same layout; nav remains horizontal |\n| tablet | 850px | Pricing collapses from 3-up to 2-up + 1; nav search pill compresses |\n| tablet-narrow | 768px | Pricing collapses to 1-up stacked; primary nav becomes hamburger |\n| mobile | 640px | Hero headline drops from `{typography.display-xl}` (36px) to ~28px; install-snippet wraps; section padding tightens |",
+      "line": 498
+    },
+    {
+      "heading": "Touch Targets",
+      "level": 3,
+      "text": "All interactive elements meet WCAG AA at the 36–40px height range. `{component.button-primary}` and `{component.button-secondary}` sit at 36px height with 20px horizontal padding, giving an effective tappable area of ~36×80px which exceeds the 44×44px AAA threshold via the inline padding. `{component.text-input}` sits at 40px. `{component.search-pill}` sits at 36px height with 16px padding. Footer links use `{typography.caption-sm}` (12px) but receive ~12px line-height + ~8px vertical padding for a tappable row of ~32–36px.",
+      "line": 508
+    },
+    {
+      "heading": "Collapsing Strategy",
+      "level": 3,
+      "text": "- **Primary nav:** desktop horizontal → tablet-narrow hamburger drawer at 768px. The black \"Download\" CTA stays visible at all widths; it never collapses into the menu.\n- **Search pill:** desktop fixed width ~360px → tablet compressed to ~240px → mobile collapses to icon-only with a full-width overlay on tap.\n- **Pricing grid:** 3-up → 2+1 → 1-up stacked at 850, 768, and below. The dark \"Max\" card stays in its inverted treatment at every breakpoint.\n- **Automate-your-work split:** desktop 50/50 → tablet stacks vertical with text above terminal mockup.\n- **Hero headline:** `{typography.display-xl}` (36px) at desktop, scaling to ~28px at mobile with line-height holding at ~1.15.\n- **Section spacing:** `{spacing.section}` (88px) desktop → 64px tablet → 48px mobile.\n- **Install-snippet pill:** wraps `curl` text to a second line on narrow screens rather than truncating; the copy-icon stays anchored to the right edge.",
+      "line": 511
+    },
+    {
+      "heading": "Image Behavior",
+      "level": 3,
+      "text": "The only image asset is the llama mascot (raster PNG at multiple resolutions: 16/32/48/64/180/192/512px). It is rendered at fixed pixel sizes on the hero and pricing cards rather than scaling responsively — the brand asset is treated like a logo, not a hero image.",
+      "line": 520
+    },
+    {
+      "heading": "Iteration Guide",
+      "level": 2,
+      "text": "1. Focus on ONE component at a time. Pull its YAML entry from the front matter and verify every property resolves.\n2. Reference component names and tokens directly (`{colors.primary}`, `{component.button-primary-active}`, `{rounded.full}`) — do not paraphrase.\n3. Run `npx @google/design.md lint DESIGN.md` after edits — `broken-ref`, `contrast-ratio`, and `orphaned-tokens` warnings flag issues automatically.\n4. Add new variants as separate component entries (`-active`, `-disabled`, `-focused`) — do not bury them inside prose.\n5. Default body to `{typography.body-md}`; reach for `{typography.body-sm}` for footer/utility text; reserve `{typography.display-xl}` strictly for the page-top headline.\n6. Keep `{colors.primary}` scarce per viewport — there should be at most one black pill per fold (counting nav, hero CTA, and pricing-card CTA together). The design's restraint is the design.\n7. When introducing a new component, ask whether it can be expressed with the existing pill + flat-card + terminal-mockup vocabulary before adding new tokens. The system's strength is that it almost never needs new ones.",
+      "line": 523
+    },
+    {
+      "heading": "Known Gaps",
+      "level": 2,
+      "text": "- **Mobile screenshots not captured** — responsive behavior synthesizes Ollama's known mobile pattern (hamburger drawer, 1-up pricing stack, install-snippet wrap) from desktop evidence and the extracted breakpoint stack.\n- **Hover states not documented** by system policy.\n- **Form field styling** beyond search and install-snippet is not present in the captured surfaces — there is no visible long-form form on the home or pricing pages.\n- **Authenticated chrome** (account dropdown, billing settings, model dashboard) not in the captured pages.\n- **Models / Docs pages** not in the captured set — those surfaces likely add a sidebar and a docs typography tier that this document does not describe.",
+      "line": 533
+    }
+  ],
+  "tokens": [
+    {
+      "path": "colors.primary",
+      "sourcePath": "colors.primary",
+      "type": "color",
+      "value": "#000000",
+      "status": "unverified",
+      "evidence": {
+        "line": 8,
+        "sourcePath": "colors.primary"
+      }
+    },
+    {
+      "path": "colors.onprimary",
+      "sourcePath": "colors.on-primary",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 9,
+        "sourcePath": "colors.on-primary"
+      }
+    },
+    {
+      "path": "colors.ink",
+      "sourcePath": "colors.ink",
+      "type": "color",
+      "value": "#000000",
+      "status": "unverified",
+      "evidence": {
+        "line": 10,
+        "sourcePath": "colors.ink"
+      }
+    },
+    {
+      "path": "colors.inkdeep",
+      "sourcePath": "colors.ink-deep",
+      "type": "color",
+      "value": "#090909",
+      "status": "unverified",
+      "evidence": {
+        "line": 11,
+        "sourcePath": "colors.ink-deep"
+      }
+    },
+    {
+      "path": "colors.charcoal",
+      "sourcePath": "colors.charcoal",
+      "type": "color",
+      "value": "#525252",
+      "status": "unverified",
+      "evidence": {
+        "line": 12,
+        "sourcePath": "colors.charcoal"
+      }
+    },
+    {
+      "path": "colors.body",
+      "sourcePath": "colors.body",
+      "type": "color",
+      "value": "#737373",
+      "status": "unverified",
+      "evidence": {
+        "line": 13,
+        "sourcePath": "colors.body"
+      }
+    },
+    {
+      "path": "colors.mute",
+      "sourcePath": "colors.mute",
+      "type": "color",
+      "value": "#a3a3a3",
+      "status": "unverified",
+      "evidence": {
+        "line": 14,
+        "sourcePath": "colors.mute"
+      }
+    },
+    {
+      "path": "colors.canvas",
+      "sourcePath": "colors.canvas",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 15,
+        "sourcePath": "colors.canvas"
+      }
+    },
+    {
+      "path": "colors.surfacesoft",
+      "sourcePath": "colors.surface-soft",
+      "type": "color",
+      "value": "#fafafa",
+      "status": "unverified",
+      "evidence": {
+        "line": 16,
+        "sourcePath": "colors.surface-soft"
+      }
+    },
+    {
+      "path": "colors.surfacecard",
+      "sourcePath": "colors.surface-card",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 17,
+        "sourcePath": "colors.surface-card"
+      }
+    },
+    {
+      "path": "colors.hairline",
+      "sourcePath": "colors.hairline",
+      "type": "color",
+      "value": "#e5e5e5",
+      "status": "unverified",
+      "evidence": {
+        "line": 18,
+        "sourcePath": "colors.hairline"
+      }
+    },
+    {
+      "path": "colors.hairlinestrong",
+      "sourcePath": "colors.hairline-strong",
+      "type": "color",
+      "value": "#d4d4d4",
+      "status": "unverified",
+      "evidence": {
+        "line": 19,
+        "sourcePath": "colors.hairline-strong"
+      }
+    },
+    {
+      "path": "colors.ondark",
+      "sourcePath": "colors.on-dark",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 20,
+        "sourcePath": "colors.on-dark"
+      }
+    },
+    {
+      "path": "colors.ondarkmute",
+      "sourcePath": "colors.on-dark-mute",
+      "type": "color",
+      "value": "rgba(255,255,255,0.7)",
+      "status": "unverified",
+      "evidence": {
+        "line": 21,
+        "sourcePath": "colors.on-dark-mute"
+      }
+    },
+    {
+      "path": "colors.surfacedark",
+      "sourcePath": "colors.surface-dark",
+      "type": "color",
+      "value": "#171717",
+      "status": "unverified",
+      "evidence": {
+        "line": 22,
+        "sourcePath": "colors.surface-dark"
+      }
+    },
+    {
+      "path": "colors.focusring",
+      "sourcePath": "colors.focus-ring",
+      "type": "color",
+      "value": "rgba(59,130,246,0.5)",
+      "status": "unverified",
+      "evidence": {
+        "line": 23,
+        "sourcePath": "colors.focus-ring"
+      }
+    },
+    {
+      "path": "colors.link",
+      "sourcePath": "colors.link",
+      "type": "color",
+      "value": "#000000",
+      "status": "unverified",
+      "evidence": {
+        "line": 24,
+        "sourcePath": "colors.link"
+      }
+    },
+    {
+      "path": "colors.linkmute",
+      "sourcePath": "colors.link-mute",
+      "type": "color",
+      "value": "#737373",
+      "status": "unverified",
+      "evidence": {
+        "line": 25,
+        "sourcePath": "colors.link-mute"
+      }
+    },
+    {
+      "path": "colors.terminalred",
+      "sourcePath": "colors.terminal-red",
+      "type": "color",
+      "value": "#ff5f56",
+      "status": "unverified",
+      "evidence": {
+        "line": 26,
+        "sourcePath": "colors.terminal-red"
+      }
+    },
+    {
+      "path": "colors.terminalyellow",
+      "sourcePath": "colors.terminal-yellow",
+      "type": "color",
+      "value": "#ffbd2e",
+      "status": "unverified",
+      "evidence": {
+        "line": 27,
+        "sourcePath": "colors.terminal-yellow"
+      }
+    },
+    {
+      "path": "colors.terminalgreen",
+      "sourcePath": "colors.terminal-green",
+      "type": "color",
+      "value": "#27c93f",
+      "status": "unverified",
+      "evidence": {
+        "line": 28,
+        "sourcePath": "colors.terminal-green"
+      }
+    },
+    {
+      "path": "typography.displayxl.fontfamily",
+      "sourcePath": "typography.display-xl.fontFamily",
+      "type": "fontFamily",
+      "value": "SF Pro Rounded",
+      "status": "unverified",
+      "evidence": {
+        "line": 32,
+        "sourcePath": "typography.display-xl.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displayxl.fontsize",
+      "sourcePath": "typography.display-xl.fontSize",
+      "type": "dimension",
+      "value": "36px",
+      "status": "unverified",
+      "evidence": {
+        "line": 33,
+        "sourcePath": "typography.display-xl.fontSize"
+      }
+    },
+    {
+      "path": "typography.displayxl.fontweight",
+      "sourcePath": "typography.display-xl.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 34,
+        "sourcePath": "typography.display-xl.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displayxl.lineheight",
+      "sourcePath": "typography.display-xl.lineHeight",
+      "type": "number",
+      "value": 1.11,
+      "status": "unverified",
+      "evidence": {
+        "line": 35,
+        "sourcePath": "typography.display-xl.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displayxl.letterspacing",
+      "sourcePath": "typography.display-xl.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 36,
+        "sourcePath": "typography.display-xl.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.displaylg.fontfamily",
+      "sourcePath": "typography.display-lg.fontFamily",
+      "type": "fontFamily",
+      "value": "SF Pro Rounded",
+      "status": "unverified",
+      "evidence": {
+        "line": 38,
+        "sourcePath": "typography.display-lg.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displaylg.fontsize",
+      "sourcePath": "typography.display-lg.fontSize",
+      "type": "dimension",
+      "value": "30px",
+      "status": "unverified",
+      "evidence": {
+        "line": 39,
+        "sourcePath": "typography.display-lg.fontSize"
+      }
+    },
+    {
+      "path": "typography.displaylg.fontweight",
+      "sourcePath": "typography.display-lg.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 40,
+        "sourcePath": "typography.display-lg.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displaylg.lineheight",
+      "sourcePath": "typography.display-lg.lineHeight",
+      "type": "number",
+      "value": 1.2,
+      "status": "unverified",
+      "evidence": {
+        "line": 41,
+        "sourcePath": "typography.display-lg.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displaylg.letterspacing",
+      "sourcePath": "typography.display-lg.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 42,
+        "sourcePath": "typography.display-lg.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.headinglg.fontfamily",
+      "sourcePath": "typography.heading-lg.fontFamily",
+      "type": "fontFamily",
+      "value": "SF Pro Rounded",
+      "status": "unverified",
+      "evidence": {
+        "line": 44,
+        "sourcePath": "typography.heading-lg.fontFamily"
+      }
+    },
+    {
+      "path": "typography.headinglg.fontsize",
+      "sourcePath": "typography.heading-lg.fontSize",
+      "type": "dimension",
+      "value": "24px",
+      "status": "unverified",
+      "evidence": {
+        "line": 45,
+        "sourcePath": "typography.heading-lg.fontSize"
+      }
+    },
+    {
+      "path": "typography.headinglg.fontweight",
+      "sourcePath": "typography.heading-lg.fontWeight",
+      "type": "number",
+      "value": 600,
+      "status": "unverified",
+      "evidence": {
+        "line": 46,
+        "sourcePath": "typography.heading-lg.fontWeight"
+      }
+    },
+    {
+      "path": "typography.headinglg.lineheight",
+      "sourcePath": "typography.heading-lg.lineHeight",
+      "type": "number",
+      "value": 1.33,
+      "status": "unverified",
+      "evidence": {
+        "line": 47,
+        "sourcePath": "typography.heading-lg.lineHeight"
+      }
+    },
+    {
+      "path": "typography.headinglg.letterspacing",
+      "sourcePath": "typography.heading-lg.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 48,
+        "sourcePath": "typography.heading-lg.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.headingmd.fontfamily",
+      "sourcePath": "typography.heading-md.fontFamily",
+      "type": "fontFamily",
+      "value": "ui-sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 50,
+        "sourcePath": "typography.heading-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.headingmd.fontsize",
+      "sourcePath": "typography.heading-md.fontSize",
+      "type": "dimension",
+      "value": "20px",
+      "status": "unverified",
+      "evidence": {
+        "line": 51,
+        "sourcePath": "typography.heading-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.headingmd.fontweight",
+      "sourcePath": "typography.heading-md.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 52,
+        "sourcePath": "typography.heading-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.headingmd.lineheight",
+      "sourcePath": "typography.heading-md.lineHeight",
+      "type": "number",
+      "value": 1.4,
+      "status": "unverified",
+      "evidence": {
+        "line": 53,
+        "sourcePath": "typography.heading-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.headingmd.letterspacing",
+      "sourcePath": "typography.heading-md.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 54,
+        "sourcePath": "typography.heading-md.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.headingsm.fontfamily",
+      "sourcePath": "typography.heading-sm.fontFamily",
+      "type": "fontFamily",
+      "value": "ui-sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 56,
+        "sourcePath": "typography.heading-sm.fontFamily"
+      }
+    },
+    {
+      "path": "typography.headingsm.fontsize",
+      "sourcePath": "typography.heading-sm.fontSize",
+      "type": "dimension",
+      "value": "18px",
+      "status": "unverified",
+      "evidence": {
+        "line": 57,
+        "sourcePath": "typography.heading-sm.fontSize"
+      }
+    },
+    {
+      "path": "typography.headingsm.fontweight",
+      "sourcePath": "typography.heading-sm.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 58,
+        "sourcePath": "typography.heading-sm.fontWeight"
+      }
+    },
+    {
+      "path": "typography.headingsm.lineheight",
+      "sourcePath": "typography.heading-sm.lineHeight",
+      "type": "number",
+      "value": 1.56,
+      "status": "unverified",
+      "evidence": {
+        "line": 59,
+        "sourcePath": "typography.heading-sm.lineHeight"
+      }
+    },
+    {
+      "path": "typography.headingsm.letterspacing",
+      "sourcePath": "typography.heading-sm.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 60,
+        "sourcePath": "typography.heading-sm.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.bodymd.fontfamily",
+      "sourcePath": "typography.body-md.fontFamily",
+      "type": "fontFamily",
+      "value": "ui-sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 62,
+        "sourcePath": "typography.body-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodymd.fontsize",
+      "sourcePath": "typography.body-md.fontSize",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 63,
+        "sourcePath": "typography.body-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodymd.fontweight",
+      "sourcePath": "typography.body-md.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 64,
+        "sourcePath": "typography.body-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodymd.lineheight",
+      "sourcePath": "typography.body-md.lineHeight",
+      "type": "number",
+      "value": 1.5,
+      "status": "unverified",
+      "evidence": {
+        "line": 65,
+        "sourcePath": "typography.body-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodymd.letterspacing",
+      "sourcePath": "typography.body-md.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 66,
+        "sourcePath": "typography.body-md.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.bodystrong.fontfamily",
+      "sourcePath": "typography.body-strong.fontFamily",
+      "type": "fontFamily",
+      "value": "ui-sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 68,
+        "sourcePath": "typography.body-strong.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodystrong.fontsize",
+      "sourcePath": "typography.body-strong.fontSize",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 69,
+        "sourcePath": "typography.body-strong.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodystrong.fontweight",
+      "sourcePath": "typography.body-strong.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 70,
+        "sourcePath": "typography.body-strong.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodystrong.lineheight",
+      "sourcePath": "typography.body-strong.lineHeight",
+      "type": "number",
+      "value": 1.5,
+      "status": "unverified",
+      "evidence": {
+        "line": 71,
+        "sourcePath": "typography.body-strong.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodystrong.letterspacing",
+      "sourcePath": "typography.body-strong.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 72,
+        "sourcePath": "typography.body-strong.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.bodysm.fontfamily",
+      "sourcePath": "typography.body-sm.fontFamily",
+      "type": "fontFamily",
+      "value": "ui-sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 74,
+        "sourcePath": "typography.body-sm.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodysm.fontsize",
+      "sourcePath": "typography.body-sm.fontSize",
+      "type": "dimension",
+      "value": "14px",
+      "status": "unverified",
+      "evidence": {
+        "line": 75,
+        "sourcePath": "typography.body-sm.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodysm.fontweight",
+      "sourcePath": "typography.body-sm.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 76,
+        "sourcePath": "typography.body-sm.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodysm.lineheight",
+      "sourcePath": "typography.body-sm.lineHeight",
+      "type": "number",
+      "value": 1.43,
+      "status": "unverified",
+      "evidence": {
+        "line": 77,
+        "sourcePath": "typography.body-sm.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodysm.letterspacing",
+      "sourcePath": "typography.body-sm.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 78,
+        "sourcePath": "typography.body-sm.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.bodysmstrong.fontfamily",
+      "sourcePath": "typography.body-sm-strong.fontFamily",
+      "type": "fontFamily",
+      "value": "ui-sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 80,
+        "sourcePath": "typography.body-sm-strong.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodysmstrong.fontsize",
+      "sourcePath": "typography.body-sm-strong.fontSize",
+      "type": "dimension",
+      "value": "14px",
+      "status": "unverified",
+      "evidence": {
+        "line": 81,
+        "sourcePath": "typography.body-sm-strong.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodysmstrong.fontweight",
+      "sourcePath": "typography.body-sm-strong.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 82,
+        "sourcePath": "typography.body-sm-strong.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodysmstrong.lineheight",
+      "sourcePath": "typography.body-sm-strong.lineHeight",
+      "type": "number",
+      "value": 1.43,
+      "status": "unverified",
+      "evidence": {
+        "line": 83,
+        "sourcePath": "typography.body-sm-strong.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodysmstrong.letterspacing",
+      "sourcePath": "typography.body-sm-strong.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 84,
+        "sourcePath": "typography.body-sm-strong.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.captionsm.fontfamily",
+      "sourcePath": "typography.caption-sm.fontFamily",
+      "type": "fontFamily",
+      "value": "ui-sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 86,
+        "sourcePath": "typography.caption-sm.fontFamily"
+      }
+    },
+    {
+      "path": "typography.captionsm.fontsize",
+      "sourcePath": "typography.caption-sm.fontSize",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 87,
+        "sourcePath": "typography.caption-sm.fontSize"
+      }
+    },
+    {
+      "path": "typography.captionsm.fontweight",
+      "sourcePath": "typography.caption-sm.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 88,
+        "sourcePath": "typography.caption-sm.fontWeight"
+      }
+    },
+    {
+      "path": "typography.captionsm.lineheight",
+      "sourcePath": "typography.caption-sm.lineHeight",
+      "type": "number",
+      "value": 1.33,
+      "status": "unverified",
+      "evidence": {
+        "line": 89,
+        "sourcePath": "typography.caption-sm.lineHeight"
+      }
+    },
+    {
+      "path": "typography.captionsm.letterspacing",
+      "sourcePath": "typography.caption-sm.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 90,
+        "sourcePath": "typography.caption-sm.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.codemd.fontfamily",
+      "sourcePath": "typography.code-md.fontFamily",
+      "type": "fontFamily",
+      "value": "ui-monospace",
+      "status": "unverified",
+      "evidence": {
+        "line": 92,
+        "sourcePath": "typography.code-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.codemd.fontsize",
+      "sourcePath": "typography.code-md.fontSize",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 93,
+        "sourcePath": "typography.code-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.codemd.fontweight",
+      "sourcePath": "typography.code-md.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 94,
+        "sourcePath": "typography.code-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.codemd.lineheight",
+      "sourcePath": "typography.code-md.lineHeight",
+      "type": "number",
+      "value": 1.5,
+      "status": "unverified",
+      "evidence": {
+        "line": 95,
+        "sourcePath": "typography.code-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.codemd.letterspacing",
+      "sourcePath": "typography.code-md.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 96,
+        "sourcePath": "typography.code-md.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.codesm.fontfamily",
+      "sourcePath": "typography.code-sm.fontFamily",
+      "type": "fontFamily",
+      "value": "ui-monospace",
+      "status": "unverified",
+      "evidence": {
+        "line": 98,
+        "sourcePath": "typography.code-sm.fontFamily"
+      }
+    },
+    {
+      "path": "typography.codesm.fontsize",
+      "sourcePath": "typography.code-sm.fontSize",
+      "type": "dimension",
+      "value": "14px",
+      "status": "unverified",
+      "evidence": {
+        "line": 99,
+        "sourcePath": "typography.code-sm.fontSize"
+      }
+    },
+    {
+      "path": "typography.codesm.fontweight",
+      "sourcePath": "typography.code-sm.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 100,
+        "sourcePath": "typography.code-sm.fontWeight"
+      }
+    },
+    {
+      "path": "typography.codesm.lineheight",
+      "sourcePath": "typography.code-sm.lineHeight",
+      "type": "number",
+      "value": 1.43,
+      "status": "unverified",
+      "evidence": {
+        "line": 101,
+        "sourcePath": "typography.code-sm.lineHeight"
+      }
+    },
+    {
+      "path": "typography.codesm.letterspacing",
+      "sourcePath": "typography.code-sm.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 102,
+        "sourcePath": "typography.code-sm.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.buttonmd.fontfamily",
+      "sourcePath": "typography.button-md.fontFamily",
+      "type": "fontFamily",
+      "value": "ui-sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 104,
+        "sourcePath": "typography.button-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.buttonmd.fontsize",
+      "sourcePath": "typography.button-md.fontSize",
+      "type": "dimension",
+      "value": "14px",
+      "status": "unverified",
+      "evidence": {
+        "line": 105,
+        "sourcePath": "typography.button-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.buttonmd.fontweight",
+      "sourcePath": "typography.button-md.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 106,
+        "sourcePath": "typography.button-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.buttonmd.lineheight",
+      "sourcePath": "typography.button-md.lineHeight",
+      "type": "number",
+      "value": 1,
+      "status": "unverified",
+      "evidence": {
+        "line": 107,
+        "sourcePath": "typography.button-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.buttonmd.letterspacing",
+      "sourcePath": "typography.button-md.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 108,
+        "sourcePath": "typography.button-md.letterSpacing"
+      }
+    },
+    {
+      "path": "rounded.none",
+      "sourcePath": "rounded.none",
+      "type": "dimension",
+      "value": "0px",
+      "status": "unverified",
+      "evidence": {
+        "line": 111,
+        "sourcePath": "rounded.none"
+      }
+    },
+    {
+      "path": "rounded.sm",
+      "sourcePath": "rounded.sm",
+      "type": "dimension",
+      "value": "6px",
+      "status": "unverified",
+      "evidence": {
+        "line": 112,
+        "sourcePath": "rounded.sm"
+      }
+    },
+    {
+      "path": "rounded.md",
+      "sourcePath": "rounded.md",
+      "type": "dimension",
+      "value": "8px",
+      "status": "unverified",
+      "evidence": {
+        "line": 113,
+        "sourcePath": "rounded.md"
+      }
+    },
+    {
+      "path": "rounded.lg",
+      "sourcePath": "rounded.lg",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 114,
+        "sourcePath": "rounded.lg"
+      }
+    },
+    {
+      "path": "rounded.full",
+      "sourcePath": "rounded.full",
+      "type": "dimension",
+      "value": "9999px",
+      "status": "unverified",
+      "evidence": {
+        "line": 115,
+        "sourcePath": "rounded.full"
+      }
+    },
+    {
+      "path": "spacing.xxs",
+      "sourcePath": "spacing.xxs",
+      "type": "dimension",
+      "value": "2px",
+      "status": "unverified",
+      "evidence": {
+        "line": 118,
+        "sourcePath": "spacing.xxs"
+      }
+    },
+    {
+      "path": "spacing.xs",
+      "sourcePath": "spacing.xs",
+      "type": "dimension",
+      "value": "4px",
+      "status": "unverified",
+      "evidence": {
+        "line": 119,
+        "sourcePath": "spacing.xs"
+      }
+    },
+    {
+      "path": "spacing.sm",
+      "sourcePath": "spacing.sm",
+      "type": "dimension",
+      "value": "8px",
+      "status": "unverified",
+      "evidence": {
+        "line": 120,
+        "sourcePath": "spacing.sm"
+      }
+    },
+    {
+      "path": "spacing.md",
+      "sourcePath": "spacing.md",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 121,
+        "sourcePath": "spacing.md"
+      }
+    },
+    {
+      "path": "spacing.lg",
+      "sourcePath": "spacing.lg",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 122,
+        "sourcePath": "spacing.lg"
+      }
+    },
+    {
+      "path": "spacing.xl",
+      "sourcePath": "spacing.xl",
+      "type": "dimension",
+      "value": "24px",
+      "status": "unverified",
+      "evidence": {
+        "line": 123,
+        "sourcePath": "spacing.xl"
+      }
+    },
+    {
+      "path": "spacing.xxl",
+      "sourcePath": "spacing.xxl",
+      "type": "dimension",
+      "value": "32px",
+      "status": "unverified",
+      "evidence": {
+        "line": 124,
+        "sourcePath": "spacing.xxl"
+      }
+    },
+    {
+      "path": "spacing.section",
+      "sourcePath": "spacing.section",
+      "type": "dimension",
+      "value": "88px",
+      "status": "unverified",
+      "evidence": {
+        "line": 125,
+        "sourcePath": "spacing.section"
+      }
+    }
+  ],
+  "rejectedTokens": [],
+  "homepage": {
+    "status": "unverified",
+    "candidates": [
+      {
+        "url": "https://ollama.com/install.sh",
+        "evidence": {
+          "line": 420,
+          "text": "- Contains the literal `curl -fsSL https://ollama.com/install.sh | sh` install command with a small copy-icon at the right edge. Sits directly below the hero headline as the page's most prominent \"CTA.\""
+        },
+        "status": "unverified-source-candidate"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "url": "https://ollama.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://ollama.com/",
+          "title": "Ollama · Run AI models locally and in the cloud",
+          "note": "Public homepage read requested https://ollama.com; final URL https://ollama.com/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    }
+  },
+  "completeness": {
+    "presentFields": [
+      "colors",
+      "typography",
+      "rounded",
+      "spacing",
+      "components"
+    ],
+    "missingFields": [],
+    "tokenRoles": "incomplete",
+    "note": "Missing fields are not reconstructed. Prose-only colors have no inferred semantic role."
+  },
+  "provenance": {
+    "status": "independent-analysis",
+    "sources": [
+      {
+        "title": "VoltAgent awesome-design-md independent analysis",
+        "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/ollama/DESIGN.md"
+      }
+    ],
+    "verification": "unverified-secondary-analysis"
+  },
+  "limitations": [
+    "Independent secondary analysis, not an official brand system; all reported values are unverified.",
+    "No brand assets, logos, font binaries or screenshots copied. Font names are documentary, not font licenses.",
+    "Safe CSS literals are extracted without claiming complete roles, state coverage or visual fidelity.",
+    "Markdown is retained as inert evidence, never executed or rendered as raw HTML."
+  ]
+}

@@ -1,0 +1,35 @@
+/* Generated from packages/workbench/skins/stethem.tokens.json. Do not edit. Contract v1; workbench. */
+.wb-shell[data-wb-skin="stethem"] {
+  --ds-color-background: #fff;
+  --ds-color-surface: #f3f1ed;
+  --ds-color-text: #24211f;
+  --ds-color-text-muted: #6b625d;
+  --ds-color-accent: #9c4635;
+  --ds-color-accent-hover: #783326;
+  --ds-color-border: #ddd;
+  --ds-color-selection-background: #f3f1ed;
+  --ds-color-selection-text: #783326;
+  --ds-color-focus: #9c4635;
+  --ds-color-divider: #f3f1ed;
+  --ds-color-empty-background: #fff;
+  --ds-color-stage: #f3f1ed;
+  --ds-color-status: #6b625d;
+  --ds-color-warning: #783326;
+  --ds-color-error: #9c4635;
+  --wb-paper: var(--ds-color-background);
+  --wb-wash: var(--ds-color-surface);
+  --wb-ink: var(--ds-color-text);
+  --wb-muted: var(--ds-color-text-muted);
+  --wb-accent: var(--ds-color-accent);
+  --wb-accent-hover: var(--ds-color-accent-hover);
+  --wb-line: var(--ds-color-border);
+  --wb-selection: var(--ds-color-selection-background);
+  --wb-selection-ink: var(--ds-color-selection-text);
+  --wb-focus: var(--ds-color-focus);
+  --wb-divider: var(--ds-color-divider);
+  --wb-empty: var(--ds-color-empty-background);
+  --wb-stage: var(--ds-color-stage);
+  --wb-status: var(--ds-color-status);
+  --wb-warning: var(--ds-color-warning);
+  --wb-error: var(--ds-color-error);
+}

@@ -1,0 +1,1559 @@
+{
+  "schemaVersion": 1,
+  "id": "reference-mercury",
+  "title": "Mercury",
+  "classification": "independent-unverified-analysis",
+  "source": {
+    "repository": "https://github.com/VoltAgent/awesome-design-md",
+    "fork": "https://github.com/rsteth/awesome-design-md-p",
+    "revision": "fcc70284932276d085f01ef9f83edde90b1258cb",
+    "path": "design-md/mercury/DESIGN.md",
+    "sha256": "dabb3683422a9841369b0db53ff13ed375b0b6f019157a5c90e9fca165cc111f",
+    "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/mercury/DESIGN.md"
+  },
+  "sourceName": "Mercury Analysis",
+  "titleProvenance": {
+    "status": "inferred",
+    "basis": "Source directory label, normalized for navigation; original source name is retained without correction.",
+    "sourceValue": "mercury",
+    "originalName": "Mercury Analysis"
+  },
+  "description": "An analysis of Mercury's design language — a fintech system that moves between a deep ink-violet night world on the homepage and a pale, near-white light world on its product and pricing pages, held together by one confident indigo action pill, soft translucent secondary pills, gently rounded cards and a quiet custom sans set at unusually light weights.",
+  "analysis": {
+    "version": "alpha",
+    "name": "Mercury Analysis",
+    "description": "An analysis of Mercury's design language — a fintech system that moves between a deep ink-violet night world on the homepage and a pale, near-white light world on its product and pricing pages, held together by one confident indigo action pill, soft translucent secondary pills, gently rounded cards and a quiet custom sans set at unusually light weights.",
+    "colors": {
+      "primary": "#5266eb",
+      "on-primary": "#ffffff",
+      "periwinkle": "#9cb4e8",
+      "canvas": "#fbfcfd",
+      "surface": "#ffffff",
+      "surface-tint": "#fbfbff",
+      "lavender": "#edecfb",
+      "night": "#171721",
+      "night-raised": "#1e1e2a",
+      "ink": "#28253b",
+      "ink-secondary": "#554e7b",
+      "on-dark": "#ededf3",
+      "fog": "#c3c3cc",
+      "slate": "#70707d"
+    },
+    "typography": {
+      "display": {
+        "fontFamily": "arcadiaDisplay",
+        "fontSize": "52px",
+        "fontWeight": 480,
+        "lineHeight": 1.1,
+        "letterSpacing": 0
+      },
+      "stat": {
+        "fontFamily": "arcadiaDisplay",
+        "fontSize": "60px",
+        "fontWeight": 480,
+        "lineHeight": 1.1,
+        "letterSpacing": 0
+      },
+      "heading-1": {
+        "fontFamily": "arcadiaDisplay",
+        "fontSize": "42px",
+        "fontWeight": 480,
+        "lineHeight": 1.15,
+        "letterSpacing": "0.42px"
+      },
+      "heading-2": {
+        "fontFamily": "arcadiaDisplay",
+        "fontSize": "28px",
+        "fontWeight": 480,
+        "lineHeight": 1.2,
+        "letterSpacing": "0.42px"
+      },
+      "lead": {
+        "fontFamily": "arcadiaDisplay",
+        "fontSize": "24px",
+        "fontWeight": 480,
+        "lineHeight": 1.2,
+        "letterSpacing": "0.48px"
+      },
+      "body-lg": {
+        "fontFamily": "arcadia",
+        "fontSize": "18px",
+        "fontWeight": 360,
+        "lineHeight": 1.35,
+        "letterSpacing": 0
+      },
+      "body": {
+        "fontFamily": "arcadia",
+        "fontSize": "16px",
+        "fontWeight": 400,
+        "lineHeight": 1.4,
+        "letterSpacing": 0
+      },
+      "ui": {
+        "fontFamily": "arcadia",
+        "fontSize": "16px",
+        "fontWeight": 420,
+        "lineHeight": 1,
+        "letterSpacing": 0
+      },
+      "ui-sm": {
+        "fontFamily": "arcadia",
+        "fontSize": "14px",
+        "fontWeight": 420,
+        "lineHeight": 1,
+        "letterSpacing": "0.07px"
+      },
+      "eyebrow": {
+        "fontFamily": "arcadia",
+        "fontSize": "14px",
+        "fontWeight": 500,
+        "lineHeight": 1,
+        "letterSpacing": "0.28px"
+      },
+      "legal": {
+        "fontFamily": "arcadia",
+        "fontSize": "12px",
+        "fontWeight": 400,
+        "lineHeight": 1.4,
+        "letterSpacing": "0.24px"
+      }
+    },
+    "rounded": {
+      "none": "0px",
+      "xs": "4px",
+      "sm": "8px",
+      "md": "12px",
+      "lg": "16px",
+      "xl": "32px",
+      "pill": "40px",
+      "full": "9999px"
+    },
+    "spacing": {
+      "xs": "8px",
+      "sm": "12px",
+      "md": "16px",
+      "lg": "20px",
+      "xl": "24px",
+      "xxl": "32px",
+      "huge": "40px",
+      "section": "80px",
+      "section-lg": "128px"
+    },
+    "components": {
+      "nav-bar": {
+        "backgroundColor": "{colors.night}",
+        "textColor": "{colors.on-dark}",
+        "typography": "{typography.ui}",
+        "rounded": "{rounded.none}",
+        "padding": "16px 32px",
+        "height": "72px"
+      },
+      "nav-link": {
+        "textColor": "{colors.on-dark}",
+        "typography": "{typography.ui}",
+        "rounded": "{rounded.pill}",
+        "padding": "0px 20px",
+        "height": "40px"
+      },
+      "button-primary": {
+        "backgroundColor": "{colors.primary}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.ui}",
+        "rounded": "{rounded.xl}",
+        "padding": "0px 20px",
+        "height": "40px"
+      },
+      "button-glass-dark": {
+        "backgroundColor": "rgba(175, 178, 206, 0.2)",
+        "textColor": "{colors.on-dark}",
+        "typography": "{typography.ui}",
+        "rounded": "{rounded.pill}",
+        "padding": "0px 20px",
+        "height": "40px"
+      },
+      "button-tint-dark": {
+        "backgroundColor": "rgba(156, 180, 232, 0.2)",
+        "textColor": "{colors.on-dark}",
+        "typography": "{typography.ui}",
+        "rounded": "{rounded.pill}",
+        "padding": "0px 20px",
+        "height": "40px"
+      },
+      "button-tint-light": {
+        "backgroundColor": "rgba(82, 102, 235, 0.1)",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.ui}",
+        "rounded": "{rounded.pill}",
+        "padding": "0px 20px",
+        "height": "40px"
+      },
+      "button-outline-light": {
+        "backgroundColor": "rgba(112, 115, 147, 0.1)",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.ui}",
+        "rounded": "{rounded.pill}",
+        "padding": "0px 20px",
+        "height": "40px"
+      },
+      "button-small": {
+        "backgroundColor": "rgba(82, 102, 235, 0.1)",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.ui-sm}",
+        "rounded": "{rounded.pill}",
+        "padding": "0px 16px",
+        "height": "32px"
+      },
+      "button-icon-round": {
+        "textColor": "{colors.on-dark}",
+        "rounded": "{rounded.full}"
+      },
+      "text-input": {
+        "textColor": "{colors.ink}",
+        "typography": "{typography.ui}",
+        "rounded": "{rounded.xl}",
+        "padding": "0px 0px 0px 20px",
+        "height": "46px"
+      },
+      "email-capture": {
+        "backgroundColor": "{colors.surface}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.ui}",
+        "rounded": "{rounded.full}"
+      },
+      "feature-card-dark": {
+        "backgroundColor": "{colors.night-raised}",
+        "textColor": "{colors.on-dark}",
+        "typography": "{typography.heading-2}",
+        "rounded": "{rounded.md}",
+        "padding": "{spacing.xxl}"
+      },
+      "feature-card-light": {
+        "backgroundColor": "{colors.lavender}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.heading-2}",
+        "rounded": "{rounded.md}",
+        "padding": "{spacing.xxl}"
+      },
+      "pricing-card": {
+        "backgroundColor": "{colors.surface-tint}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.heading-2}",
+        "rounded": "{rounded.md}"
+      },
+      "pricing-tier-column": {
+        "backgroundColor": "{colors.surface}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body}",
+        "rounded": "{rounded.none}"
+      },
+      "toggle-switch": {
+        "backgroundColor": "{colors.primary}",
+        "textColor": "{colors.ink-secondary}",
+        "typography": "{typography.ui}",
+        "rounded": "{rounded.full}"
+      },
+      "accordion-row": {
+        "textColor": "{colors.ink}",
+        "typography": "{typography.ui-sm}",
+        "rounded": "{rounded.none}",
+        "padding": "10px 0px"
+      },
+      "eyebrow-label": {
+        "textColor": "{colors.ink-secondary}",
+        "typography": "{typography.eyebrow}",
+        "rounded": "{rounded.none}"
+      },
+      "stat-block": {
+        "textColor": "{colors.on-dark}",
+        "typography": "{typography.stat}",
+        "rounded": "{rounded.none}"
+      },
+      "quote-block": {
+        "textColor": "{colors.ink}",
+        "typography": "{typography.lead}",
+        "rounded": "{rounded.none}"
+      },
+      "logo-strip": {
+        "textColor": "{colors.on-dark}",
+        "rounded": "{rounded.none}"
+      },
+      "site-footer": {
+        "backgroundColor": "{colors.night}",
+        "textColor": "{colors.on-dark}",
+        "typography": "{typography.legal}",
+        "rounded": "{rounded.none}"
+      },
+      "ex-pricing-tier": {
+        "description": "Default Pricing tier card. Re-uses feature-card chrome with brand canvas-soft surface.",
+        "backgroundColor": "{colors.surface}",
+        "textColor": "{colors.ink}",
+        "borderColor": "{colors.fog}",
+        "rounded": "{rounded.md}",
+        "padding": "{spacing.xxl}"
+      },
+      "ex-pricing-tier-featured": {
+        "description": "Featured/highlighted tier — polarity-flipped surface (dark fill + light text in light mode, light fill + dark text in dark mode).",
+        "backgroundColor": "{colors.ink}",
+        "textColor": "{colors.on-primary}",
+        "rounded": "{rounded.md}",
+        "padding": "{spacing.xxl}"
+      },
+      "ex-product-selector": {
+        "description": "What's Included summary card — re-purposed for SaaS / B2B verticals (NOT a literal product gallery).",
+        "backgroundColor": "{colors.surface}",
+        "rounded": "{rounded.md}",
+        "padding": "{spacing.xl}"
+      },
+      "ex-cart-drawer": {
+        "description": "Subscription summary — re-purposed for SaaS / B2B (line items per add-on, not literal cart).",
+        "backgroundColor": "{colors.surface}",
+        "rounded": "{rounded.md}",
+        "padding": "{spacing.xl}",
+        "item-divider": "{colors.fog}"
+      },
+      "ex-app-shell-row": {
+        "description": "Sidebar nav row inside the App Shell example. Active state uses brand primary as the indicator.",
+        "backgroundColor": "{colors.canvas}",
+        "activeIndicator": "{colors.primary}",
+        "rounded": "{rounded.sm}",
+        "padding": "{spacing.xs} {spacing.sm}"
+      },
+      "ex-data-table-cell": {
+        "description": "Default data-table th + td chrome. Header uses mono-caps eyebrow typography; body uses body-sm.",
+        "headerBackground": "{colors.surface}",
+        "headerTypography": "{typography.eyebrow}",
+        "bodyTypography": "{typography.body}",
+        "cellPadding": "{spacing.sm} {spacing.md}",
+        "rowBorder": "{colors.fog}"
+      },
+      "ex-auth-form-card": {
+        "description": "Sign-in / sign-up card. Re-uses feature-card chrome with text-input primitives inside.",
+        "backgroundColor": "{colors.surface}",
+        "rounded": "{rounded.md}",
+        "padding": "{spacing.xxl}"
+      },
+      "ex-modal-card": {
+        "description": "Modal dialog surface — same chrome as feature-card with elevated shadow.",
+        "backgroundColor": "{colors.surface}",
+        "rounded": "{rounded.md}",
+        "padding": "{spacing.xxl}"
+      },
+      "ex-empty-state-card": {
+        "description": "Empty-state illustration frame.",
+        "backgroundColor": "{colors.surface}",
+        "rounded": "{rounded.md}",
+        "padding": "{spacing.huge}",
+        "captionTypography": "{typography.body}"
+      },
+      "ex-toast": {
+        "description": "Toast notification surface — feature-card shape + medium shadow.",
+        "backgroundColor": "{colors.surface}",
+        "rounded": "{rounded.md}",
+        "padding": "{spacing.sm} {spacing.md}",
+        "typography": "{typography.body}"
+      }
+    }
+  },
+  "normalizationRepairs": [],
+  "sections": [
+    {
+      "heading": "Overview",
+      "level": 2,
+      "text": "Mercury feels like a private bank that happens to be a software company: quiet, precise and slightly nocturnal. The homepage lives in a deep ink-violet night (`{colors.night}` — #171721). Headlines are pale lavender-white (`{colors.on-dark}`), cards sit one shade lifted (`{colors.night-raised}`), and product imagery glows softly out of the dark. Move to the product and pricing pages and the whole system flips to day: a near-white canvas (`{colors.canvas}`), deep plum-ink text (`{colors.ink}`) and pale lavender feature cards (`{colors.lavender}`). The nav bar and footer stay in the night colour on every page, so each light page is bracketed in dark.\n\nOne colour carries the actions in both worlds: Mercury Indigo (`{colors.primary}` — #5266eb). It fills the \"Open account\" pill in the nav and hero, the annual-pricing toggle, and the brand accent in plan names. Everything else that is clickable is softer: translucent secondary pills tinted with lavender-grey, periwinkle or a 10% wash of the indigo, all with generous 40px capsule corners. The effect is calm and confident, with one saturated button and everything around it whispering.\n\nTypography is Mercury's own custom family: arcadiaDisplay for headlines and arcadia for text, set at unusually light variable weights (360 for body copy, 420 for UI, 480 for headlines). Nothing on the page is bold in the usual sense. Headlines get presence from size and a hair of extra tracking, not weight.\n\n**Key Characteristics:**\n- Two native surface worlds: a dark homepage (`{colors.night}` / `{colors.night-raised}`) and light product pages (`{colors.canvas}` / `{colors.lavender}`), both framed by the night nav and footer.\n- A single saturated action colour, `{colors.primary}`, on a `{rounded.xl}` pill.\n- Secondary actions as translucent capsules (`{rounded.pill}`) rather than outlines or grey buttons.\n- Custom arcadia / arcadiaDisplay type at light variable weights (360–480).\n- Softly rounded cards (`{rounded.md}`) with generous `{spacing.xxl}` padding and no shadows.\n- Page rhythm: night nav → dark or light hero → alternating card grids → centered quote → closing CTA → night footer.",
+      "line": 321
+    },
+    {
+      "heading": "Colors",
+      "level": 2,
+      "text": "> Source pages analysed: the homepage, the pricing page, and the business-banking product page.",
+      "line": 337
+    },
+    {
+      "heading": "Brand & Accent",
+      "level": 3,
+      "text": "- **Mercury Indigo** (`{colors.primary}` — #5266eb): \"Open account\" pills, the annual-pricing toggle, the brand accent in plan names (\"Plus\", \"Pro\"), and the 10% tint behind light-world secondary pills.\n- **On Primary** (`{colors.on-primary}` — #ffffff): labels on indigo.\n- **Periwinkle** (`{colors.periwinkle}` — #9cb4e8): used at 20% opacity as the fill of the \"Contact sales\" pill on dark sections.",
+      "line": 341
+    },
+    {
+      "heading": "Surface",
+      "level": 3,
+      "text": "- **Canvas** (`{colors.canvas}` — #fbfcfd): light page background for the product and pricing pages.\n- **Surface** (`{colors.surface}` — #ffffff): tier columns inside the pricing card, and the email-capture field.\n- **Surface Tint** (`{colors.surface-tint}` — #fbfbff): the pricing comparison card wrapper, a whisper cooler than white.\n- **Lavender** (`{colors.lavender}` — #edecfb): feature and product cards on light pages.\n- **Night** (`{colors.night}` — #171721): nav bar, homepage canvas, and footer on every page.\n- **Night Raised** (`{colors.night-raised}` — #1e1e2a): feature and spotlight cards on the dark homepage.",
+      "line": 346
+    },
+    {
+      "heading": "Text",
+      "level": 3,
+      "text": "- **Ink** (`{colors.ink}` — #28253b): headlines and body on light pages.\n- **Ink Secondary** (`{colors.ink-secondary}` — #554e7b): descriptions, captions and eyebrows on light pages.\n- **On Dark** (`{colors.on-dark}` — #ededf3): headlines and primary text on night surfaces.\n- **Fog** (`{colors.fog}` — #c3c3cc): secondary text on night surfaces, nav eyebrows, and 1px rules between accordion rows on light pages.\n- **Slate** (`{colors.slate}` — #70707d): 1px dividers between list rows on the dark homepage.",
+      "line": 354
+    },
+    {
+      "heading": "Typography",
+      "level": 2,
+      "text": "",
+      "line": 361
+    },
+    {
+      "heading": "Font Family",
+      "level": 3,
+      "text": "- **arcadiaDisplay**: Mercury's custom display face for headlines, stats and large quotes, at weight 480 with slight positive tracking at card sizes.\n- **arcadia**: the matching text face for body copy (360–400), UI labels and buttons (420), and small uppercase eyebrows (500).",
+      "line": 363
+    },
+    {
+      "heading": "Hierarchy",
+      "level": 3,
+      "text": "| Token | Family | Size | Weight | Line Height | Letter Spacing | Use |\n|---|---|---|---|---|---|---|\n| `{typography.stat}` | arcadiaDisplay | 60px | 480 | 1.1 | 0 | Large stat numerals (\"300K+\") |\n| `{typography.display}` | arcadiaDisplay | 52px | 480 | 1.1 | 0 | Hero headlines |\n| `{typography.heading-1}` | arcadiaDisplay | 42px | 480 | 1.15 | 0.42px | Section headlines |\n| `{typography.heading-2}` | arcadiaDisplay | 28px | 480 | 1.2 | 0.42px | Card titles, plan names |\n| `{typography.lead}` | arcadiaDisplay | 24px | 480 | 1.2 | 0.48px | Lead statements, pull quotes |\n| `{typography.body-lg}` | arcadia | 18px | 360 | 1.35 | 0 | Card descriptions, intro copy |\n| `{typography.body}` | arcadia | 16px | 400 | 1.4 | 0 | Default body copy |\n| `{typography.ui}` | arcadia | 16px | 420 | 1 | 0 | Buttons, nav, inputs |\n| `{typography.ui-sm}` | arcadia | 14px | 420 | 1 | 0.07px | Small pills, accordion labels |\n| `{typography.eyebrow}` | arcadia | 14px | 500 | 1 | 0.28px | Uppercase eyebrows (\"COMPARE PLANS\") |\n| `{typography.legal}` | arcadia | 12px | 400 | 1.4 | 0.24px | Disclaimers, footer fine print |",
+      "line": 367
+    },
+    {
+      "heading": "Principles",
+      "level": 3,
+      "text": "- Light weights everywhere: body at 360, UI at 420, headlines at 480. Hierarchy comes from size and colour.\n- Headlines get a touch of positive tracking at card sizes instead of the usual negative tightening.\n- Uppercase is reserved for small eyebrows.",
+      "line": 383
+    },
+    {
+      "heading": "Note on Font Substitutes",
+      "level": 3,
+      "text": "arcadia and arcadiaDisplay are proprietary. Inter (variable, used at 350–480) is the closest open-source match for both. Keep the light weights, and add about 0.01em of tracking at display sizes to match arcadiaDisplay's open fit.",
+      "line": 388
+    },
+    {
+      "heading": "Layout",
+      "level": 2,
+      "text": "",
+      "line": 391
+    },
+    {
+      "heading": "Spacing System",
+      "level": 3,
+      "text": "- **Base unit**: 8px.\n- **Tokens**: `{spacing.xs}` 8px · `{spacing.sm}` 12px · `{spacing.md}` 16px · `{spacing.lg}` 20px · `{spacing.xl}` 24px · `{spacing.xxl}` 32px · `{spacing.huge}` 40px · `{spacing.section}` 80px · `{spacing.section-lg}` 128px.\n- Cards pad `{spacing.xxl}` and pills pad 20px horizontally. Sections are separated by `{spacing.section}` to `{spacing.section-lg}` of vertical space on every page.",
+      "line": 393
+    },
+    {
+      "heading": "Grid & Container",
+      "level": 3,
+      "text": "- Content is centered in a column of roughly 1100–1200px. Headlines are narrower (~600px) and centered.\n- Feature cards run in 2- and 3-up grids. The pricing card is a 3-column comparison table about 900px wide.\n- Split sections pair a text column with a product mockup.",
+      "line": 398
+    },
+    {
+      "heading": "Whitespace Philosophy",
+      "level": 3,
+      "text": "Generous vertical space and centered headlines give every section a calm, gallery-like pace. Cards rely on fill colour rather than borders to separate from the canvas.",
+      "line": 403
+    },
+    {
+      "heading": "Responsive Strategy",
+      "level": 3,
+      "text": "",
+      "line": 406
+    },
+    {
+      "heading": "Breakpoints",
+      "level": 4,
+      "text": "| Name | Width | Key Changes |\n|---|---|---|\n| Desktop | ≥ 1200px | Full nav with dropdown pills; 3-up grids; split sections side by side |\n| Laptop | 1024–1199px | Narrower container; headlines scale down fluidly |\n| Tablet | 768–1023px | Grids go 2-up; split sections stack |\n| Mobile | < 768px | Nav collapses to a menu; single-column cards; the pricing table becomes stacked tiers |",
+      "line": 408
+    },
+    {
+      "heading": "Touch Targets",
+      "level": 4,
+      "text": "Pills are 40px tall and the email capture is 46px. On touch devices, pad hit areas to 44px.",
+      "line": 416
+    },
+    {
+      "heading": "Collapsing Strategy",
+      "level": 4,
+      "text": "- Nav dropdown pills collapse into a menu. The \"Open account\" pill stays visible.\n- Card grids reflow 3 → 2 → 1 columns.\n- Headline sizes are fluid and scale with the viewport.\n- The email capture stacks the field above the button on narrow screens.",
+      "line": 419
+    },
+    {
+      "heading": "Image Behavior",
+      "level": 4,
+      "text": "Product mockups and illustrations sit inside rounded cards (`{rounded.md}`) or float on the canvas. Hero photography on the homepage is full-bleed and fades into the night canvas.",
+      "line": 425
+    },
+    {
+      "heading": "Elevation & Depth",
+      "level": 2,
+      "text": "| Level | Treatment | Use |\n|---|---|---|\n| 0 — Flat | No shadow; separated by fill colour | Canvas, cards, pills |\n| 1 — Soft stack | Very faint layered shadow (≈2–9% ink) | Pricing card and product mockups on light pages |\n| 2 — Glow | Photography and luminous illustrations on `{colors.night}` | Homepage hero and feature art |\n\nDepth is almost entirely tonal: cards lift by one step of colour, not by shadow. The only shadows are hair-thin, low-opacity stacks under the pricing card and floating product mockups.",
+      "line": 428
+    },
+    {
+      "heading": "Decorative Depth",
+      "level": 3,
+      "text": "The dark homepage uses luminous, softly-lit 3D illustrations (glowing orbs, light trails, fingerprint patterns) that give the night canvas atmosphere without gradients in the UI chrome itself.",
+      "line": 438
+    },
+    {
+      "heading": "Shapes",
+      "level": 2,
+      "text": "",
+      "line": 441
+    },
+    {
+      "heading": "Border Radius Scale",
+      "level": 3,
+      "text": "| Token | Value | Use |\n|---|---|---|\n| `{rounded.none}` | 0px | Nav, footer, table columns |\n| `{rounded.xs}` | 4px | Small tags, checkboxes |\n| `{rounded.sm}` | 8px | Images, small controls, selects |\n| `{rounded.md}` | 12px | Feature cards, pricing card, regions |\n| `{rounded.lg}` | 16px | Larger panels and media frames |\n| `{rounded.xl}` | 32px | Primary \"Open account\" pill, input left edge |\n| `{rounded.pill}` | 40px | Secondary and nav pills |\n| `{rounded.full}` | 9999px | Round icon buttons, toggles, email capture |",
+      "line": 443
+    },
+    {
+      "heading": "Photography Geometry",
+      "level": 3,
+      "text": "Product screenshots and illustrations sit in `{rounded.md}` or `{rounded.lg}` frames. Hero photography is full-bleed. Customer logos appear as a flat monochrome strip.",
+      "line": 456
+    },
+    {
+      "heading": "Components",
+      "level": 2,
+      "text": "> Only Default states are documented. Variants live as separate `components:` entries.",
+      "line": 459
+    },
+    {
+      "heading": "Navigation",
+      "level": 3,
+      "text": "**`nav-bar`**: a 72px `{colors.night}` bar on every page, with 16px × 32px padding. It holds the wordmark on the left, dropdown `nav-link` pills in the centre, and \"Log in\" plus a `button-primary` on the right.\n\n**`nav-link`**: transparent 40px pills (`{rounded.pill}`, 0 × 20px padding) in `{colors.on-dark}` `{typography.ui}` with small chevrons.",
+      "line": 463
+    },
+    {
+      "heading": "Buttons",
+      "level": 3,
+      "text": "**`button-primary`**: a `{colors.primary}` pill with a `{colors.on-primary}` `{typography.ui}` label, `{rounded.xl}` corners, 0 × 20px padding and 40px height. Used for \"Open account\".\n\n**`button-glass-dark`**: a translucent lavender-grey pill (20% fill, with a 1px border at 36%) holding an `{colors.on-dark}` label. Used on the dark hero (\"Launch demo\").\n\n**`button-tint-dark`**: a periwinkle pill at 20% opacity with an `{colors.on-dark}` label. Used for \"Contact sales\" on dark sections.\n\n**`button-tint-light`**: an indigo pill at 10% opacity with an `{colors.ink}` label. Used for \"Explore demo\" and the in-card \"Open account\" on light pages.\n\n**`button-outline-light`**: a grey-violet pill at 10% opacity with a 1px border at 22% and an `{colors.ink}` label. Used for \"Contact sales\" on light heroes.\n\n**`button-small`**: a 32px-tall version of `button-tint-light` in `{typography.ui-sm}` with 0 × 16px padding (\"Expand all\").\n\n**`button-icon-round`**: circular icon controls (`{rounded.full}`) for play/pause and the \"+\" affordance on spotlight cards.",
+      "line": 469
+    },
+    {
+      "heading": "Inputs & Forms",
+      "level": 3,
+      "text": "**`text-input`**: an email field with `{typography.ui}` text, 20px left padding, 46px height, and `{rounded.xl}` on the left edge only, so it fuses to the button beside it.\n\n**`email-capture`**: the hero sign-up capsule, a `text-input` joined to a `button-primary` inside one rounded-full shell.\n\n**`toggle-switch`**: a `{colors.primary}` pill switch beside an `{colors.ink-secondary}` `{typography.ui}` label (\"Annual Pricing (15% off)\").",
+      "line": 485
+    },
+    {
+      "heading": "Cards & Containers",
+      "level": 3,
+      "text": "**`feature-card-dark`**: `{colors.night-raised}` fill, `{rounded.md}` corners, `{spacing.xxl}` padding, a `{typography.heading-2}` title in `{colors.on-dark}` and `{colors.fog}` body copy. Used for homepage spotlight and feature cards.\n\n**`feature-card-light`**: the same shape on `{colors.lavender}`, with `{colors.ink}` titles and `{colors.ink-secondary}` `{typography.body-lg}` descriptions. Used for product-platform cards.\n\n**`pricing-card`**: a `{colors.surface-tint}` wrapper with `{rounded.md}` corners and a very faint shadow. It holds a header row with a `eyebrow-label` and `toggle-switch`, then three `pricing-tier-column`s.\n\n**`pricing-tier-column`**: a white column with the plan name in `{typography.heading-2}` (the plan suffix in `{colors.primary}`), the price, a `{colors.ink-secondary}` description, a `button-tint-light` or `button-primary`, and an icon-led feature list.\n\n**`accordion-row`**: a full-width row with a leading icon, a `{typography.ui-sm}` label, a trailing chevron, 10px vertical padding and a 1px `{colors.fog}` rule between rows. Used for plan comparison and FAQs.",
+      "line": 493
+    },
+    {
+      "heading": "Signature Components",
+      "level": 3,
+      "text": "**`eyebrow-label`**: uppercase `{typography.eyebrow}` in `{colors.ink-secondary}` on light pages and `{colors.fog}` on dark (\"COMPARE PLANS\").\n\n**`stat-block`**: a `{typography.stat}` numeral in `{colors.on-dark}` over a small `{colors.fog}` caption, set in a row of four on the homepage.\n\n**`quote-block`**: a centered pull quote in `{typography.lead}` with attribution below in `{typography.body}`.\n\n**`logo-strip`**: a single row of monochrome customer wordmarks on the night canvas.\n\n**`site-footer`**: a `{colors.night}` band with multi-column link lists in `{colors.fog}`, column heads in `{colors.on-dark}`, and a long block of `{typography.legal}` disclaimers.",
+      "line": 505
+    },
+    {
+      "heading": "Examples (illustrative)",
+      "level": 3,
+      "text": "> Auto-derived kit-mirror demonstration surfaces (`scripts/derive-examples-block.mjs`). Each `ex-*` entry references brand-native primitives so downstream consumers (`/preview-design`, `/generate-kit`) re-skin the same 10 surfaces consistently.\n\n**`ex-pricing-tier`** — Default Pricing tier card. Re-uses feature-card chrome with brand canvas-soft surface.\n- Properties: `backgroundColor`, `textColor`, `borderColor`, `rounded`, `padding`\n\n**`ex-pricing-tier-featured`** — Featured/highlighted tier — polarity-flipped surface (dark fill + light text in light mode, light fill + dark text in dark mode).\n- Properties: `backgroundColor`, `textColor`, `rounded`, `padding`\n\n**`ex-product-selector`** — What's Included summary card — re-purposed for SaaS / B2B verticals (NOT a literal product gallery).\n- Properties: `backgroundColor`, `rounded`, `padding`\n\n**`ex-cart-drawer`** — Subscription summary — re-purposed for SaaS / B2B (line items per add-on, not literal cart).\n- Properties: `backgroundColor`, `rounded`, `padding`, `item-divider`\n\n**`ex-app-shell-row`** — Sidebar nav row inside the App Shell example. Active state uses brand primary as the indicator.\n- Properties: `backgroundColor`, `activeIndicator`, `rounded`, `padding`\n\n**`ex-data-table-cell`** — Default data-table th + td chrome. Header uses mono-caps eyebrow typography; body uses body-sm.\n- Properties: `headerBackground`, `headerTypography`, `bodyTypography`, `cellPadding`, `rowBorder`\n\n**`ex-auth-form-card`** — Sign-in / sign-up card. Re-uses feature-card chrome with text-input primitives inside.\n- Properties: `backgroundColor`, `rounded`, `padding`\n\n**`ex-modal-card`** — Modal dialog surface — same chrome as feature-card with elevated shadow.\n- Properties: `backgroundColor`, `rounded`, `padding`\n\n**`ex-empty-state-card`** — Empty-state illustration frame.\n- Properties: `backgroundColor`, `rounded`, `padding`, `captionTypography`\n\n**`ex-toast`** — Toast notification surface — feature-card shape + medium shadow.\n- Properties: `backgroundColor`, `rounded`, `padding`, `typography`",
+      "line": 517
+    },
+    {
+      "heading": "Do's and Don'ts",
+      "level": 2,
+      "text": "",
+      "line": 552
+    },
+    {
+      "heading": "Do",
+      "level": 3,
+      "text": "- Use `{colors.primary}` for the single most important action on a view, usually \"Open account\".\n- Make secondary actions translucent pills (`{rounded.pill}`): lavender-grey or periwinkle on dark, indigo or grey-violet tints on light.\n- Frame light pages with the `{colors.night}` nav and footer.\n- Keep type light: `{typography.body-lg}` at 360, UI at 420, headlines at 480.\n- Separate cards from the canvas with fill (`{colors.lavender}`, `{colors.night-raised}`) rather than borders or heavy shadows.\n- Center section headlines and give sections `{spacing.section}` or more of vertical space.",
+      "line": 554
+    },
+    {
+      "heading": "Don't",
+      "level": 3,
+      "text": "- Don't use more than one solid `{colors.primary}` button in a group. Everything else stays translucent.\n- Don't set text in heavy bold weights. The brand never goes above 500.\n- Don't use hard outlined buttons or square corners on actions.\n- Don't put light-world ink (`{colors.ink}`) on night surfaces or `{colors.on-dark}` on the light canvas.\n- Don't add strong drop shadows. Elevation is tonal.\n- Don't introduce status greens or oranges into the chrome. They belong to product mockups, not the interface.",
+      "line": 562
+    }
+  ],
+  "tokens": [
+    {
+      "path": "colors.primary",
+      "sourcePath": "colors.primary",
+      "type": "color",
+      "value": "#5266eb",
+      "status": "unverified",
+      "evidence": {
+        "line": 7,
+        "sourcePath": "colors.primary"
+      }
+    },
+    {
+      "path": "colors.onprimary",
+      "sourcePath": "colors.on-primary",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 8,
+        "sourcePath": "colors.on-primary"
+      }
+    },
+    {
+      "path": "colors.periwinkle",
+      "sourcePath": "colors.periwinkle",
+      "type": "color",
+      "value": "#9cb4e8",
+      "status": "unverified",
+      "evidence": {
+        "line": 9,
+        "sourcePath": "colors.periwinkle"
+      }
+    },
+    {
+      "path": "colors.canvas",
+      "sourcePath": "colors.canvas",
+      "type": "color",
+      "value": "#fbfcfd",
+      "status": "unverified",
+      "evidence": {
+        "line": 10,
+        "sourcePath": "colors.canvas"
+      }
+    },
+    {
+      "path": "colors.surface",
+      "sourcePath": "colors.surface",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 11,
+        "sourcePath": "colors.surface"
+      }
+    },
+    {
+      "path": "colors.surfacetint",
+      "sourcePath": "colors.surface-tint",
+      "type": "color",
+      "value": "#fbfbff",
+      "status": "unverified",
+      "evidence": {
+        "line": 12,
+        "sourcePath": "colors.surface-tint"
+      }
+    },
+    {
+      "path": "colors.lavender",
+      "sourcePath": "colors.lavender",
+      "type": "color",
+      "value": "#edecfb",
+      "status": "unverified",
+      "evidence": {
+        "line": 13,
+        "sourcePath": "colors.lavender"
+      }
+    },
+    {
+      "path": "colors.night",
+      "sourcePath": "colors.night",
+      "type": "color",
+      "value": "#171721",
+      "status": "unverified",
+      "evidence": {
+        "line": 14,
+        "sourcePath": "colors.night"
+      }
+    },
+    {
+      "path": "colors.nightraised",
+      "sourcePath": "colors.night-raised",
+      "type": "color",
+      "value": "#1e1e2a",
+      "status": "unverified",
+      "evidence": {
+        "line": 15,
+        "sourcePath": "colors.night-raised"
+      }
+    },
+    {
+      "path": "colors.ink",
+      "sourcePath": "colors.ink",
+      "type": "color",
+      "value": "#28253b",
+      "status": "unverified",
+      "evidence": {
+        "line": 16,
+        "sourcePath": "colors.ink"
+      }
+    },
+    {
+      "path": "colors.inksecondary",
+      "sourcePath": "colors.ink-secondary",
+      "type": "color",
+      "value": "#554e7b",
+      "status": "unverified",
+      "evidence": {
+        "line": 17,
+        "sourcePath": "colors.ink-secondary"
+      }
+    },
+    {
+      "path": "colors.ondark",
+      "sourcePath": "colors.on-dark",
+      "type": "color",
+      "value": "#ededf3",
+      "status": "unverified",
+      "evidence": {
+        "line": 18,
+        "sourcePath": "colors.on-dark"
+      }
+    },
+    {
+      "path": "colors.fog",
+      "sourcePath": "colors.fog",
+      "type": "color",
+      "value": "#c3c3cc",
+      "status": "unverified",
+      "evidence": {
+        "line": 19,
+        "sourcePath": "colors.fog"
+      }
+    },
+    {
+      "path": "colors.slate",
+      "sourcePath": "colors.slate",
+      "type": "color",
+      "value": "#70707d",
+      "status": "unverified",
+      "evidence": {
+        "line": 20,
+        "sourcePath": "colors.slate"
+      }
+    },
+    {
+      "path": "typography.display.fontfamily",
+      "sourcePath": "typography.display.fontFamily",
+      "type": "fontFamily",
+      "value": "arcadiaDisplay",
+      "status": "unverified",
+      "evidence": {
+        "line": 24,
+        "sourcePath": "typography.display.fontFamily"
+      }
+    },
+    {
+      "path": "typography.display.fontsize",
+      "sourcePath": "typography.display.fontSize",
+      "type": "dimension",
+      "value": "52px",
+      "status": "unverified",
+      "evidence": {
+        "line": 25,
+        "sourcePath": "typography.display.fontSize"
+      }
+    },
+    {
+      "path": "typography.display.fontweight",
+      "sourcePath": "typography.display.fontWeight",
+      "type": "number",
+      "value": 480,
+      "status": "unverified",
+      "evidence": {
+        "line": 26,
+        "sourcePath": "typography.display.fontWeight"
+      }
+    },
+    {
+      "path": "typography.display.lineheight",
+      "sourcePath": "typography.display.lineHeight",
+      "type": "number",
+      "value": 1.1,
+      "status": "unverified",
+      "evidence": {
+        "line": 27,
+        "sourcePath": "typography.display.lineHeight"
+      }
+    },
+    {
+      "path": "typography.display.letterspacing",
+      "sourcePath": "typography.display.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 28,
+        "sourcePath": "typography.display.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.stat.fontfamily",
+      "sourcePath": "typography.stat.fontFamily",
+      "type": "fontFamily",
+      "value": "arcadiaDisplay",
+      "status": "unverified",
+      "evidence": {
+        "line": 30,
+        "sourcePath": "typography.stat.fontFamily"
+      }
+    },
+    {
+      "path": "typography.stat.fontsize",
+      "sourcePath": "typography.stat.fontSize",
+      "type": "dimension",
+      "value": "60px",
+      "status": "unverified",
+      "evidence": {
+        "line": 31,
+        "sourcePath": "typography.stat.fontSize"
+      }
+    },
+    {
+      "path": "typography.stat.fontweight",
+      "sourcePath": "typography.stat.fontWeight",
+      "type": "number",
+      "value": 480,
+      "status": "unverified",
+      "evidence": {
+        "line": 32,
+        "sourcePath": "typography.stat.fontWeight"
+      }
+    },
+    {
+      "path": "typography.stat.lineheight",
+      "sourcePath": "typography.stat.lineHeight",
+      "type": "number",
+      "value": 1.1,
+      "status": "unverified",
+      "evidence": {
+        "line": 33,
+        "sourcePath": "typography.stat.lineHeight"
+      }
+    },
+    {
+      "path": "typography.stat.letterspacing",
+      "sourcePath": "typography.stat.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 34,
+        "sourcePath": "typography.stat.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.heading1.fontfamily",
+      "sourcePath": "typography.heading-1.fontFamily",
+      "type": "fontFamily",
+      "value": "arcadiaDisplay",
+      "status": "unverified",
+      "evidence": {
+        "line": 36,
+        "sourcePath": "typography.heading-1.fontFamily"
+      }
+    },
+    {
+      "path": "typography.heading1.fontsize",
+      "sourcePath": "typography.heading-1.fontSize",
+      "type": "dimension",
+      "value": "42px",
+      "status": "unverified",
+      "evidence": {
+        "line": 37,
+        "sourcePath": "typography.heading-1.fontSize"
+      }
+    },
+    {
+      "path": "typography.heading1.fontweight",
+      "sourcePath": "typography.heading-1.fontWeight",
+      "type": "number",
+      "value": 480,
+      "status": "unverified",
+      "evidence": {
+        "line": 38,
+        "sourcePath": "typography.heading-1.fontWeight"
+      }
+    },
+    {
+      "path": "typography.heading1.lineheight",
+      "sourcePath": "typography.heading-1.lineHeight",
+      "type": "number",
+      "value": 1.15,
+      "status": "unverified",
+      "evidence": {
+        "line": 39,
+        "sourcePath": "typography.heading-1.lineHeight"
+      }
+    },
+    {
+      "path": "typography.heading1.letterspacing",
+      "sourcePath": "typography.heading-1.letterSpacing",
+      "type": "dimension",
+      "value": "0.42px",
+      "status": "unverified",
+      "evidence": {
+        "line": 40,
+        "sourcePath": "typography.heading-1.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.heading2.fontfamily",
+      "sourcePath": "typography.heading-2.fontFamily",
+      "type": "fontFamily",
+      "value": "arcadiaDisplay",
+      "status": "unverified",
+      "evidence": {
+        "line": 42,
+        "sourcePath": "typography.heading-2.fontFamily"
+      }
+    },
+    {
+      "path": "typography.heading2.fontsize",
+      "sourcePath": "typography.heading-2.fontSize",
+      "type": "dimension",
+      "value": "28px",
+      "status": "unverified",
+      "evidence": {
+        "line": 43,
+        "sourcePath": "typography.heading-2.fontSize"
+      }
+    },
+    {
+      "path": "typography.heading2.fontweight",
+      "sourcePath": "typography.heading-2.fontWeight",
+      "type": "number",
+      "value": 480,
+      "status": "unverified",
+      "evidence": {
+        "line": 44,
+        "sourcePath": "typography.heading-2.fontWeight"
+      }
+    },
+    {
+      "path": "typography.heading2.lineheight",
+      "sourcePath": "typography.heading-2.lineHeight",
+      "type": "number",
+      "value": 1.2,
+      "status": "unverified",
+      "evidence": {
+        "line": 45,
+        "sourcePath": "typography.heading-2.lineHeight"
+      }
+    },
+    {
+      "path": "typography.heading2.letterspacing",
+      "sourcePath": "typography.heading-2.letterSpacing",
+      "type": "dimension",
+      "value": "0.42px",
+      "status": "unverified",
+      "evidence": {
+        "line": 46,
+        "sourcePath": "typography.heading-2.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.lead.fontfamily",
+      "sourcePath": "typography.lead.fontFamily",
+      "type": "fontFamily",
+      "value": "arcadiaDisplay",
+      "status": "unverified",
+      "evidence": {
+        "line": 48,
+        "sourcePath": "typography.lead.fontFamily"
+      }
+    },
+    {
+      "path": "typography.lead.fontsize",
+      "sourcePath": "typography.lead.fontSize",
+      "type": "dimension",
+      "value": "24px",
+      "status": "unverified",
+      "evidence": {
+        "line": 49,
+        "sourcePath": "typography.lead.fontSize"
+      }
+    },
+    {
+      "path": "typography.lead.fontweight",
+      "sourcePath": "typography.lead.fontWeight",
+      "type": "number",
+      "value": 480,
+      "status": "unverified",
+      "evidence": {
+        "line": 50,
+        "sourcePath": "typography.lead.fontWeight"
+      }
+    },
+    {
+      "path": "typography.lead.lineheight",
+      "sourcePath": "typography.lead.lineHeight",
+      "type": "number",
+      "value": 1.2,
+      "status": "unverified",
+      "evidence": {
+        "line": 51,
+        "sourcePath": "typography.lead.lineHeight"
+      }
+    },
+    {
+      "path": "typography.lead.letterspacing",
+      "sourcePath": "typography.lead.letterSpacing",
+      "type": "dimension",
+      "value": "0.48px",
+      "status": "unverified",
+      "evidence": {
+        "line": 52,
+        "sourcePath": "typography.lead.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.bodylg.fontfamily",
+      "sourcePath": "typography.body-lg.fontFamily",
+      "type": "fontFamily",
+      "value": "arcadia",
+      "status": "unverified",
+      "evidence": {
+        "line": 54,
+        "sourcePath": "typography.body-lg.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodylg.fontsize",
+      "sourcePath": "typography.body-lg.fontSize",
+      "type": "dimension",
+      "value": "18px",
+      "status": "unverified",
+      "evidence": {
+        "line": 55,
+        "sourcePath": "typography.body-lg.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodylg.fontweight",
+      "sourcePath": "typography.body-lg.fontWeight",
+      "type": "number",
+      "value": 360,
+      "status": "unverified",
+      "evidence": {
+        "line": 56,
+        "sourcePath": "typography.body-lg.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodylg.lineheight",
+      "sourcePath": "typography.body-lg.lineHeight",
+      "type": "number",
+      "value": 1.35,
+      "status": "unverified",
+      "evidence": {
+        "line": 57,
+        "sourcePath": "typography.body-lg.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodylg.letterspacing",
+      "sourcePath": "typography.body-lg.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 58,
+        "sourcePath": "typography.body-lg.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.body.fontfamily",
+      "sourcePath": "typography.body.fontFamily",
+      "type": "fontFamily",
+      "value": "arcadia",
+      "status": "unverified",
+      "evidence": {
+        "line": 60,
+        "sourcePath": "typography.body.fontFamily"
+      }
+    },
+    {
+      "path": "typography.body.fontsize",
+      "sourcePath": "typography.body.fontSize",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 61,
+        "sourcePath": "typography.body.fontSize"
+      }
+    },
+    {
+      "path": "typography.body.fontweight",
+      "sourcePath": "typography.body.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 62,
+        "sourcePath": "typography.body.fontWeight"
+      }
+    },
+    {
+      "path": "typography.body.lineheight",
+      "sourcePath": "typography.body.lineHeight",
+      "type": "number",
+      "value": 1.4,
+      "status": "unverified",
+      "evidence": {
+        "line": 63,
+        "sourcePath": "typography.body.lineHeight"
+      }
+    },
+    {
+      "path": "typography.body.letterspacing",
+      "sourcePath": "typography.body.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 64,
+        "sourcePath": "typography.body.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.ui.fontfamily",
+      "sourcePath": "typography.ui.fontFamily",
+      "type": "fontFamily",
+      "value": "arcadia",
+      "status": "unverified",
+      "evidence": {
+        "line": 66,
+        "sourcePath": "typography.ui.fontFamily"
+      }
+    },
+    {
+      "path": "typography.ui.fontsize",
+      "sourcePath": "typography.ui.fontSize",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 67,
+        "sourcePath": "typography.ui.fontSize"
+      }
+    },
+    {
+      "path": "typography.ui.fontweight",
+      "sourcePath": "typography.ui.fontWeight",
+      "type": "number",
+      "value": 420,
+      "status": "unverified",
+      "evidence": {
+        "line": 68,
+        "sourcePath": "typography.ui.fontWeight"
+      }
+    },
+    {
+      "path": "typography.ui.lineheight",
+      "sourcePath": "typography.ui.lineHeight",
+      "type": "number",
+      "value": 1,
+      "status": "unverified",
+      "evidence": {
+        "line": 69,
+        "sourcePath": "typography.ui.lineHeight"
+      }
+    },
+    {
+      "path": "typography.ui.letterspacing",
+      "sourcePath": "typography.ui.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 70,
+        "sourcePath": "typography.ui.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.uism.fontfamily",
+      "sourcePath": "typography.ui-sm.fontFamily",
+      "type": "fontFamily",
+      "value": "arcadia",
+      "status": "unverified",
+      "evidence": {
+        "line": 72,
+        "sourcePath": "typography.ui-sm.fontFamily"
+      }
+    },
+    {
+      "path": "typography.uism.fontsize",
+      "sourcePath": "typography.ui-sm.fontSize",
+      "type": "dimension",
+      "value": "14px",
+      "status": "unverified",
+      "evidence": {
+        "line": 73,
+        "sourcePath": "typography.ui-sm.fontSize"
+      }
+    },
+    {
+      "path": "typography.uism.fontweight",
+      "sourcePath": "typography.ui-sm.fontWeight",
+      "type": "number",
+      "value": 420,
+      "status": "unverified",
+      "evidence": {
+        "line": 74,
+        "sourcePath": "typography.ui-sm.fontWeight"
+      }
+    },
+    {
+      "path": "typography.uism.lineheight",
+      "sourcePath": "typography.ui-sm.lineHeight",
+      "type": "number",
+      "value": 1,
+      "status": "unverified",
+      "evidence": {
+        "line": 75,
+        "sourcePath": "typography.ui-sm.lineHeight"
+      }
+    },
+    {
+      "path": "typography.uism.letterspacing",
+      "sourcePath": "typography.ui-sm.letterSpacing",
+      "type": "dimension",
+      "value": "0.07px",
+      "status": "unverified",
+      "evidence": {
+        "line": 76,
+        "sourcePath": "typography.ui-sm.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.eyebrow.fontfamily",
+      "sourcePath": "typography.eyebrow.fontFamily",
+      "type": "fontFamily",
+      "value": "arcadia",
+      "status": "unverified",
+      "evidence": {
+        "line": 78,
+        "sourcePath": "typography.eyebrow.fontFamily"
+      }
+    },
+    {
+      "path": "typography.eyebrow.fontsize",
+      "sourcePath": "typography.eyebrow.fontSize",
+      "type": "dimension",
+      "value": "14px",
+      "status": "unverified",
+      "evidence": {
+        "line": 79,
+        "sourcePath": "typography.eyebrow.fontSize"
+      }
+    },
+    {
+      "path": "typography.eyebrow.fontweight",
+      "sourcePath": "typography.eyebrow.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 80,
+        "sourcePath": "typography.eyebrow.fontWeight"
+      }
+    },
+    {
+      "path": "typography.eyebrow.lineheight",
+      "sourcePath": "typography.eyebrow.lineHeight",
+      "type": "number",
+      "value": 1,
+      "status": "unverified",
+      "evidence": {
+        "line": 81,
+        "sourcePath": "typography.eyebrow.lineHeight"
+      }
+    },
+    {
+      "path": "typography.eyebrow.letterspacing",
+      "sourcePath": "typography.eyebrow.letterSpacing",
+      "type": "dimension",
+      "value": "0.28px",
+      "status": "unverified",
+      "evidence": {
+        "line": 82,
+        "sourcePath": "typography.eyebrow.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.legal.fontfamily",
+      "sourcePath": "typography.legal.fontFamily",
+      "type": "fontFamily",
+      "value": "arcadia",
+      "status": "unverified",
+      "evidence": {
+        "line": 84,
+        "sourcePath": "typography.legal.fontFamily"
+      }
+    },
+    {
+      "path": "typography.legal.fontsize",
+      "sourcePath": "typography.legal.fontSize",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 85,
+        "sourcePath": "typography.legal.fontSize"
+      }
+    },
+    {
+      "path": "typography.legal.fontweight",
+      "sourcePath": "typography.legal.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 86,
+        "sourcePath": "typography.legal.fontWeight"
+      }
+    },
+    {
+      "path": "typography.legal.lineheight",
+      "sourcePath": "typography.legal.lineHeight",
+      "type": "number",
+      "value": 1.4,
+      "status": "unverified",
+      "evidence": {
+        "line": 87,
+        "sourcePath": "typography.legal.lineHeight"
+      }
+    },
+    {
+      "path": "typography.legal.letterspacing",
+      "sourcePath": "typography.legal.letterSpacing",
+      "type": "dimension",
+      "value": "0.24px",
+      "status": "unverified",
+      "evidence": {
+        "line": 88,
+        "sourcePath": "typography.legal.letterSpacing"
+      }
+    },
+    {
+      "path": "rounded.none",
+      "sourcePath": "rounded.none",
+      "type": "dimension",
+      "value": "0px",
+      "status": "unverified",
+      "evidence": {
+        "line": 91,
+        "sourcePath": "rounded.none"
+      }
+    },
+    {
+      "path": "rounded.xs",
+      "sourcePath": "rounded.xs",
+      "type": "dimension",
+      "value": "4px",
+      "status": "unverified",
+      "evidence": {
+        "line": 92,
+        "sourcePath": "rounded.xs"
+      }
+    },
+    {
+      "path": "rounded.sm",
+      "sourcePath": "rounded.sm",
+      "type": "dimension",
+      "value": "8px",
+      "status": "unverified",
+      "evidence": {
+        "line": 93,
+        "sourcePath": "rounded.sm"
+      }
+    },
+    {
+      "path": "rounded.md",
+      "sourcePath": "rounded.md",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 94,
+        "sourcePath": "rounded.md"
+      }
+    },
+    {
+      "path": "rounded.lg",
+      "sourcePath": "rounded.lg",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 95,
+        "sourcePath": "rounded.lg"
+      }
+    },
+    {
+      "path": "rounded.xl",
+      "sourcePath": "rounded.xl",
+      "type": "dimension",
+      "value": "32px",
+      "status": "unverified",
+      "evidence": {
+        "line": 96,
+        "sourcePath": "rounded.xl"
+      }
+    },
+    {
+      "path": "rounded.pill",
+      "sourcePath": "rounded.pill",
+      "type": "dimension",
+      "value": "40px",
+      "status": "unverified",
+      "evidence": {
+        "line": 97,
+        "sourcePath": "rounded.pill"
+      }
+    },
+    {
+      "path": "rounded.full",
+      "sourcePath": "rounded.full",
+      "type": "dimension",
+      "value": "9999px",
+      "status": "unverified",
+      "evidence": {
+        "line": 98,
+        "sourcePath": "rounded.full"
+      }
+    },
+    {
+      "path": "spacing.xs",
+      "sourcePath": "spacing.xs",
+      "type": "dimension",
+      "value": "8px",
+      "status": "unverified",
+      "evidence": {
+        "line": 101,
+        "sourcePath": "spacing.xs"
+      }
+    },
+    {
+      "path": "spacing.sm",
+      "sourcePath": "spacing.sm",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 102,
+        "sourcePath": "spacing.sm"
+      }
+    },
+    {
+      "path": "spacing.md",
+      "sourcePath": "spacing.md",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 103,
+        "sourcePath": "spacing.md"
+      }
+    },
+    {
+      "path": "spacing.lg",
+      "sourcePath": "spacing.lg",
+      "type": "dimension",
+      "value": "20px",
+      "status": "unverified",
+      "evidence": {
+        "line": 104,
+        "sourcePath": "spacing.lg"
+      }
+    },
+    {
+      "path": "spacing.xl",
+      "sourcePath": "spacing.xl",
+      "type": "dimension",
+      "value": "24px",
+      "status": "unverified",
+      "evidence": {
+        "line": 105,
+        "sourcePath": "spacing.xl"
+      }
+    },
+    {
+      "path": "spacing.xxl",
+      "sourcePath": "spacing.xxl",
+      "type": "dimension",
+      "value": "32px",
+      "status": "unverified",
+      "evidence": {
+        "line": 106,
+        "sourcePath": "spacing.xxl"
+      }
+    },
+    {
+      "path": "spacing.huge",
+      "sourcePath": "spacing.huge",
+      "type": "dimension",
+      "value": "40px",
+      "status": "unverified",
+      "evidence": {
+        "line": 107,
+        "sourcePath": "spacing.huge"
+      }
+    },
+    {
+      "path": "spacing.section",
+      "sourcePath": "spacing.section",
+      "type": "dimension",
+      "value": "80px",
+      "status": "unverified",
+      "evidence": {
+        "line": 108,
+        "sourcePath": "spacing.section"
+      }
+    },
+    {
+      "path": "spacing.sectionlg",
+      "sourcePath": "spacing.section-lg",
+      "type": "dimension",
+      "value": "128px",
+      "status": "unverified",
+      "evidence": {
+        "line": 109,
+        "sourcePath": "spacing.section-lg"
+      }
+    }
+  ],
+  "rejectedTokens": [],
+  "homepage": {
+    "status": "missing",
+    "candidates": [],
+    "verification": {
+      "status": "verified",
+      "url": "https://mercury.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://mercury.com/",
+          "title": "Online Business Banking For Startups, Small Businesses & Scaling Companies",
+          "note": "Public homepage read requested https://mercury.com; final URL https://mercury.com/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    }
+  },
+  "completeness": {
+    "presentFields": [
+      "colors",
+      "typography",
+      "rounded",
+      "spacing",
+      "components"
+    ],
+    "missingFields": [],
+    "tokenRoles": "incomplete",
+    "note": "Missing fields are not reconstructed. Prose-only colors have no inferred semantic role."
+  },
+  "provenance": {
+    "status": "independent-analysis",
+    "sources": [
+      {
+        "title": "VoltAgent awesome-design-md independent analysis",
+        "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/mercury/DESIGN.md"
+      }
+    ],
+    "verification": "unverified-secondary-analysis"
+  },
+  "limitations": [
+    "Independent secondary analysis, not an official brand system; all reported values are unverified.",
+    "No brand assets, logos, font binaries or screenshots copied. Font names are documentary, not font licenses.",
+    "Safe CSS literals are extracted without claiming complete roles, state coverage or visual fidelity.",
+    "Markdown is retained as inert evidence, never executed or rendered as raw HTML."
+  ]
+}

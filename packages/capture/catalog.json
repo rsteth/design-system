@@ -1,0 +1,202 @@
+{
+  "schemaVersion": 2,
+  "runnerVersion": "1.1.0",
+  "entrypoint": "/apps/studio/?library=capture",
+  "documentation": "/docs/process/capture-studio.md",
+  "cli": "npm run capture -- --scene all --profile all --theme both",
+  "plan": "npm run capture -- --scene all --profile all --theme both --plan",
+  "scope": "Allowlisted local scenes only; static browser UI cannot execute captures. CLI requires this checkout and existing app dependencies/browser. No publication.",
+  "mcp": false,
+  "workflow": {
+    "task": "Grab new thumbs for app X on my personal site",
+    "steps": [
+      "Discover the app scene in this catalog",
+      "Plan and capture with --profile stethem-thumb",
+      "Inspect the 800 × 600 card and provenance",
+      "Export or stage in review/captures; report files, never silently replace site assets or publish"
+    ],
+    "command": "npm run capture -- --scene <scene-id> --profile stethem-thumb --theme both",
+    "missingScene": "Report the missing approved adapter; do not fabricate screenshots or use private data"
+  },
+  "defaultProfile": "stethem-thumb",
+  "scenes": [
+    {
+      "id": "focus-reader",
+      "title": "Focus",
+      "version": "1.1.0",
+      "repository": "https://github.com/rsteth/focus-speed-reader",
+      "path": "/focus-speed-reader/capture/",
+      "profiles": [
+        "stethem-thumb",
+        "desktop",
+        "mobile",
+        "app-store-iphone-6-3",
+        "app-store-iphone-6-9",
+        "app-store-ipad-13",
+        "app-store-mac"
+      ]
+    },
+    {
+      "id": "great-circle-route",
+      "title": "Great Circle",
+      "version": "1.1.0",
+      "repository": "https://github.com/rsteth/great_circle",
+      "path": "/capture/",
+      "profiles": [
+        "stethem-thumb",
+        "desktop",
+        "mobile",
+        "app-store-iphone-6-3",
+        "app-store-iphone-6-9",
+        "app-store-ipad-13",
+        "app-store-mac"
+      ]
+    }
+  ],
+  "profiles": [
+    {
+      "id": "stethem-thumb",
+      "title": "stethem.com thumbnail",
+      "group": "Website",
+      "viewport": {
+        "width": 1200,
+        "height": 900
+      },
+      "deviceScaleFactor": 1,
+      "output": {
+        "width": 1200,
+        "height": 900
+      },
+      "description": "Intentional 4:3 scene. Original plus 800 × 600 downsample, never cropped.",
+      "derivative": {
+        "width": 800,
+        "height": 600
+      }
+    },
+    {
+      "id": "desktop",
+      "title": "Desktop",
+      "group": "Web",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "deviceScaleFactor": 1,
+      "output": {
+        "width": 1440,
+        "height": 900
+      },
+      "description": "Responsive desktop app scene at 1440 × 900 CSS pixels."
+    },
+    {
+      "id": "mobile",
+      "title": "Mobile",
+      "group": "Web",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "deviceScaleFactor": 3,
+      "output": {
+        "width": 1170,
+        "height": 2532
+      },
+      "description": "Responsive mobile web scene at 390 × 844 CSS pixels, rendered at 3× density."
+    },
+    {
+      "id": "app-store-iphone-6-3",
+      "title": "iPhone · medium Dynamic Island",
+      "group": "App Store dimensions",
+      "viewport": {
+        "width": 402,
+        "height": 874
+      },
+      "deviceScaleFactor": 3,
+      "output": {
+        "width": 1206,
+        "height": 2622
+      },
+      "description": "1206 × 2622 portrait. Required iPhone display class in the verified Apple specification.",
+      "appStore": {
+        "platform": "iOS",
+        "deviceClass": "iPhone with Dynamic Island (medium display)",
+        "nativeCapture": false
+      }
+    },
+    {
+      "id": "app-store-iphone-6-9",
+      "title": "iPhone · large Dynamic Island",
+      "group": "App Store dimensions",
+      "viewport": {
+        "width": 440,
+        "height": 956
+      },
+      "deviceScaleFactor": 3,
+      "output": {
+        "width": 1320,
+        "height": 2868
+      },
+      "description": "1320 × 2868 portrait. Additional large-display iPhone coverage.",
+      "appStore": {
+        "platform": "iOS",
+        "deviceClass": "iPhone with Dynamic Island (large display)",
+        "nativeCapture": false
+      }
+    },
+    {
+      "id": "app-store-ipad-13",
+      "title": "iPad · 13-inch",
+      "group": "App Store dimensions",
+      "viewport": {
+        "width": 1032,
+        "height": 1376
+      },
+      "deviceScaleFactor": 2,
+      "output": {
+        "width": 2064,
+        "height": 2752
+      },
+      "description": "2064 × 2752 portrait. Required when the app supports iPadOS.",
+      "appStore": {
+        "platform": "iPadOS",
+        "deviceClass": "iPad 13-inch",
+        "nativeCapture": false
+      }
+    },
+    {
+      "id": "app-store-mac",
+      "title": "Mac · 16:10",
+      "group": "App Store dimensions",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "deviceScaleFactor": 2,
+      "output": {
+        "width": 2880,
+        "height": 1800
+      },
+      "description": "2880 × 1800 landscape. For Mac app metadata, not a native Mac app capture.",
+      "appStore": {
+        "platform": "macOS",
+        "deviceClass": "Mac",
+        "nativeCapture": false
+      }
+    }
+  ],
+  "appStore": {
+    "verifiedAt": "2026-11-07",
+    "specification": "https://developer.apple.com/help/app-store-connect/reference/app-information/screenshot-specifications",
+    "reviewGuidelines": "https://developer.apple.com/app-store/review/guidelines/#accurate-metadata",
+    "formats": [
+      "png",
+      "jpg",
+      "jpeg"
+    ],
+    "minImages": 1,
+    "maxImagesPerDeviceSize": 10,
+    "alphaAllowed": false,
+    "requirements": "Apple currently requires iPhone Dynamic Island medium and iPad 13-inch when iPadOS is supported. Additional device/localization requirements must be checked in the target App Store Connect listing.",
+    "limitation": "Dimension-matched web renders only. No native iOS, iPadOS or macOS binary or device/simulator capture is registered. Exact pixels do not establish App Store eligibility or App Review acceptance."
+  }
+}

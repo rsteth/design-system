@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "collections": [
+    "../collections/original/workbench/collection.json",
+    "apps/focus/collection.json",
+    "apps/great-circle/collection.json",
+    "apps/stethem/collection.json",
+    "apps/reads/collection.json",
+    "apps/bandit/collection.json"
+  ]
+}

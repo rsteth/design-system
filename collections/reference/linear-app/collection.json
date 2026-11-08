@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "id": "reference-linear-app",
+  "title": "Linear App",
+  "kind": "reference",
+  "renderer": "dom",
+  "summary": "Independent unverified reference",
+  "tokens": "tokens.json",
+  "study": "study.json",
+  "themes": [
+    "analysis"
+  ],
+  "source": {
+    "repository": "https://github.com/VoltAgent/awesome-design-md",
+    "fork": "https://github.com/rsteth/awesome-design-md-p",
+    "revision": "fcc70284932276d085f01ef9f83edde90b1258cb",
+    "path": "design-md/linear.app/DESIGN.md",
+    "sha256": "30bd30e72c48a16e4bdbd010f2d1c85fab657c6fae3cc85389399aab10f9cb5f",
+    "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/linear.app/DESIGN.md"
+  },
+  "provenance": {
+    "status": "independent-analysis",
+    "sources": [
+      {
+        "title": "VoltAgent awesome-design-md independent analysis",
+        "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/linear.app/DESIGN.md"
+      }
+    ],
+    "verification": "unverified-secondary-analysis"
+  },
+  "license": {
+    "spdx": "MIT",
+    "file": "LICENSE",
+    "note": "Upstream analysis copyright (c) 2026 VoltAgent, MIT. Brand names belong to their respective owners; no affiliation or asset/font license is implied."
+  },
+  "fixtures": [
+    {
+      "id": "reference-linear-app-standard-patterns",
+      "title": "Standard patterns · original compositions",
+      "section": "patterns",
+      "url": "../../reference-sheets/linear-app/patterns.html",
+      "description": "Three original illustrative patterns composed from the study tokens: overview, search and selection, and editable preferences. Not official or copied site UI.",
+      "states": [
+        "default",
+        "completed",
+        "filtered",
+        "empty",
+        "selected",
+        "invalid",
+        "saved locally",
+        "canceled"
+      ]
+    },
+    {
+      "id": "reference-linear-app-recipe-sheet",
+      "title": "Source-linked recipe sheet · authored interpretation",
+      "section": "components",
+      "url": "../../reference-sheets/linear-app/index.html",
+      "description": "Generated visual foundations and component interpretations. Unofficial; neutral authored structure and system fonts, not original product components."
+    },
+    {
+      "id": "linear-app-components",
+      "title": "Quiet technical depth components",
+      "section": "components",
+      "url": "../../reference-specimens/linear.app/index.html?view=components",
+      "description": "Original neutral specimen inferred from unverified secondary analysis; not a branded reproduction."
+    },
+    {
+      "id": "linear-app-patterns",
+      "title": "Quiet technical depth interaction pattern",
+      "section": "patterns",
+      "url": "../../reference-specimens/linear.app/index.html?view=patterns",
+      "description": "Original neutral specimen inferred from unverified secondary analysis; not a branded reproduction."
+    },
+    {
+      "id": "linear-app-screens",
+      "title": "Fieldnote overview",
+      "section": "screens",
+      "url": "../../reference-specimens/linear.app/index.html?view=screens",
+      "description": "Original neutral specimen inferred from unverified secondary analysis; not a branded reproduction."
+    }
+  ],
+  "verification": {
+    "status": "unverified-secondary-analysis",
+    "note": "Source values have not been verified against the brand website."
+  },
+  "specimenProvenance": {
+    "sourceCommit": "fcc70284932276d085f01ef9f83edde90b1258cb",
+    "evidence": "Near-black #010102, charcoal #0f1011 and #141516, light ink #f7f8f8, lavender #5e6ad2, hairline #23252a; a surface ladder without shadows, negative-tracked display and compact product panels.",
+    "inferred": "The field research workflow, task names, filter behavior and draft form are original. System fonts replace custom type. This is a dark marketing study, not a complete application theme."
+  }
+}

@@ -1,0 +1,1177 @@
+{
+  "schemaVersion": 1,
+  "id": "reference-spacex",
+  "title": "Spacex",
+  "classification": "independent-unverified-analysis",
+  "source": {
+    "repository": "https://github.com/VoltAgent/awesome-design-md",
+    "fork": "https://github.com/rsteth/awesome-design-md-p",
+    "revision": "fcc70284932276d085f01ef9f83edde90b1258cb",
+    "path": "design-md/spacex/DESIGN.md",
+    "sha256": "495450c79faab54d12d677649ca0a2c30a60f64f536a802e945ad54185c5baad",
+    "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/spacex/DESIGN.md"
+  },
+  "sourceName": "Spacex-Inspired-design-analysis",
+  "titleProvenance": {
+    "status": "inferred",
+    "basis": "Source directory label, normalized for navigation; original source name is retained without correction.",
+    "sourceValue": "spacex",
+    "originalName": "Spacex-Inspired-design-analysis"
+  },
+  "description": "An inspired interpretation of Spasex's design language — a mission-oriented aerospace brand built on pure black canvas, full-bleed photographic and video heroes of rockets and Mars landscapes, and uppercase D-DIN display type set in tight vertical leading. UI chrome is intentionally minimal a single ghost outlined pill button per band, all-caps eyebrow microtext, and a fixed top nav over photography. The system is unapologetically austere — black, white, and the imagery itself.",
+  "analysis": {
+    "version": "alpha",
+    "name": "Spacex-Inspired-design-analysis",
+    "description": "An inspired interpretation of Spasex's design language — a mission-oriented aerospace brand built on pure black canvas, full-bleed photographic and video heroes of rockets and Mars landscapes, and uppercase D-DIN display type set in tight vertical leading. UI chrome is intentionally minimal a single ghost outlined pill button per band, all-caps eyebrow microtext, and a fixed top nav over photography. The system is unapologetically austere — black, white, and the imagery itself.",
+    "colors": {
+      "primary": "#000000",
+      "ink": "#000000",
+      "on-primary": "#ffffff",
+      "on-primary-mute": "#f0f0fa",
+      "canvas-night": "#000000",
+      "canvas-night-soft": "#0a0a0a",
+      "canvas-light": "#ffffff",
+      "canvas-cool": "#f0f0fa",
+      "hairline-on-dark": "#3a3a3f",
+      "hairline-on-light": "#e0e0e8",
+      "link-on-dark": "#ffffff",
+      "link-blue-fallback": "#0000ee",
+      "ink-mute": "#5a5a5f"
+    },
+    "typography": {
+      "display-xxl": {
+        "fontFamily": "D-DIN-Bold, Arial Narrow, Arial, Verdana, sans-serif",
+        "fontSize": "80px",
+        "fontWeight": 700,
+        "lineHeight": 0.95,
+        "letterSpacing": "1.6px"
+      },
+      "display-xl": {
+        "fontFamily": "D-DIN-Bold, Arial Narrow, Arial, Verdana, sans-serif",
+        "fontSize": "60px",
+        "fontWeight": 700,
+        "lineHeight": 1.2,
+        "letterSpacing": "1.2px"
+      },
+      "display-lg": {
+        "fontFamily": "D-DIN-Bold, Arial Narrow, Arial, Verdana, sans-serif",
+        "fontSize": "48px",
+        "fontWeight": 700,
+        "lineHeight": 1.25,
+        "letterSpacing": "0.96px"
+      },
+      "body-lg": {
+        "fontFamily": "D-DIN, Arial, Verdana, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": 400,
+        "lineHeight": 1.7,
+        "letterSpacing": "0.32px"
+      },
+      "body-md": {
+        "fontFamily": "D-DIN, Arial, Verdana, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": 400,
+        "lineHeight": 1.5,
+        "letterSpacing": "0.32px"
+      },
+      "button-cap": {
+        "fontFamily": "D-DIN, Arial, Verdana, sans-serif",
+        "fontSize": "13.008px",
+        "fontWeight": 700,
+        "lineHeight": 0.94,
+        "letterSpacing": "1.17px"
+      },
+      "micro-cap": {
+        "fontFamily": "D-DIN, Arial, Verdana, sans-serif",
+        "fontSize": "12px",
+        "fontWeight": 400,
+        "lineHeight": 2,
+        "letterSpacing": "0.96px"
+      },
+      "caption": {
+        "fontFamily": "D-DIN, Arial, Verdana, sans-serif",
+        "fontSize": "13.008px",
+        "fontWeight": 400,
+        "lineHeight": 1.5,
+        "letterSpacing": 0
+      }
+    },
+    "rounded": {
+      "xs": "4px",
+      "sm": "8px",
+      "md": "16px",
+      "pill": "32px",
+      "full": "9999px"
+    },
+    "spacing": {
+      "xxs": "4px",
+      "xs": "8px",
+      "sm": "12px",
+      "md": "16px",
+      "lg": "18px",
+      "xl": "24px",
+      "xxl": "32px",
+      "huge": "48px"
+    },
+    "components": {
+      "button-ghost-on-dark": {
+        "backgroundColor": "{colors.canvas-night}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.button-cap}",
+        "rounded": "{rounded.pill}",
+        "padding": "18px 24px"
+      },
+      "button-ghost-on-light": {
+        "backgroundColor": "{colors.canvas-light}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.button-cap}",
+        "rounded": "{rounded.pill}",
+        "padding": "18px 24px"
+      },
+      "button-filled-cool": {
+        "backgroundColor": "{colors.canvas-cool}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.button-cap}",
+        "rounded": "{rounded.pill}",
+        "padding": "18px 24px"
+      },
+      "text-input": {
+        "backgroundColor": "{colors.canvas-light}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.xs}",
+        "padding": "12px 16px"
+      },
+      "card-photo-band": {
+        "backgroundColor": "{colors.canvas-night}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.xs}",
+        "padding": "0px"
+      },
+      "card-shop-product": {
+        "backgroundColor": "{colors.canvas-light}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.sm}",
+        "padding": "16px"
+      },
+      "nav-bar-overlay": {
+        "backgroundColor": "{colors.canvas-night}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.button-cap}",
+        "rounded": "{rounded.xs}",
+        "padding": "24px 32px"
+      },
+      "link-on-dark": {
+        "backgroundColor": "{colors.canvas-night}",
+        "textColor": "{colors.link-on-dark}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.xs}",
+        "padding": "0px"
+      },
+      "link-on-light": {
+        "backgroundColor": "{colors.canvas-light}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.xs}",
+        "padding": "0px"
+      },
+      "footer-dark": {
+        "backgroundColor": "{colors.canvas-night}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.caption}",
+        "rounded": "{rounded.xs}",
+        "padding": "32px 24px"
+      }
+    }
+  },
+  "normalizationRepairs": [],
+  "sections": [
+    {
+      "heading": "Overview",
+      "level": 2,
+      "text": "Spasex's design language is an exercise in negation: pure black canvas, white display type set in tight vertical leading and uppercase, full-bleed photography or autoplaying rocket-launch video as the only chrome. There is no brand color beyond black-and-white; there are no decorative shapes; there are no card grids or pricing tables on the marketing pages. Every band is a single full-viewport photograph or video paired with one all-caps headline at `{typography.display-xxl}` (80px D-DIN-Bold) and one ghost-outlined pill CTA. The composition is closer to a film title card than a SaaS landing page.\n\nThe brand's depth is photographic. Mars landscapes, rocket exhaust plumes, the F9 booster on a launchpad at sunset — these are the design system. Type sits over them at high opacity with no scrim, no gradient overlay; the photographs are graded so the type lands cleanly. When type does need a background, it sits on `{colors.canvas-night-soft}` (a barely-lifted near-black) with a 1px hairline in `{colors.hairline-on-dark}`.\n\nTypography splits between **D-DIN-Bold** for display tiers (uppercase, tight tracking, condensed feel) and **D-DIN** regular for body and button labels. There is no third family — even pricing on the shop site uses the same two cuts. The display sizes are unusually tight in vertical leading (0.95–1.25) and unusually loose in horizontal tracking (1.6px positive at 80px) — the brand feels engineered rather than designed.\n\n**Key Characteristics:**\n- Single canvas: pure `{colors.canvas-night}` (`#000000`) for marketing; `{colors.canvas-light}` only on the shop site.\n- Display tier in uppercase D-DIN-Bold with positive horizontal tracking (1.6px at 80px) — the brand's typographic signature.\n- Full-bleed photography or autoplaying video as the dominant decorative element; type sits directly on imagery with no scrim.\n- Single ghost-outlined pill CTA per band, at `{rounded.pill}` 32px radius — never filled, never accent-colored.\n- All-caps eyebrow microtext (`{typography.micro-cap}` and `{typography.button-cap}`) with positive 0.96–1.17px tracking — every chrome element shouts in caps.\n- Fixed top nav overlaid on photography — no opaque background, just white-on-image.\n- Tight 0.95 line-height on the 80px display — vertical compression is the engineering aesthetic.",
+      "line": 151
+    },
+    {
+      "heading": "Colors",
+      "level": 2,
+      "text": "> **Source pages:** home (`/`), `/shop`, `/vehicles/starship`, `/humanspaceflight/overview`, `/mission`.",
+      "line": 168
+    },
+    {
+      "heading": "Brand & Accent",
+      "level": 3,
+      "text": "The brand has no accent colors. Black and white do all the chromatic work; photography supplies every other hue.",
+      "line": 172
+    },
+    {
+      "heading": "Surface",
+      "level": 3,
+      "text": "- **Canvas Night** (`{colors.canvas-night}` — `#000000`): Default marketing canvas. Pure black, no tint.\n- **Canvas Night Soft** (`{colors.canvas-night-soft}` — `#0a0a0a`): Barely-lifted near-black for content sections that need a subtle separation from the pure-black hero.\n- **Canvas Light** (`{colors.canvas-light}` — `#ffffff`): The shop site's product surface.\n- **Canvas Cool** (`{colors.canvas-cool}` — `#f0f0fa`): A pale cool-blue-white used as the secondary surface on the shop site and as the hover-canvas of certain ghost buttons.\n- **Hairline on Dark** (`{colors.hairline-on-dark}` — `#3a3a3f`): 1px borders on dark surface chrome.\n- **Hairline on Light** (`{colors.hairline-on-light}` — `#e0e0e8`): Borders on shop-site cards.",
+      "line": 175
+    },
+    {
+      "heading": "Text",
+      "level": 3,
+      "text": "- **On Primary** (`{colors.on-primary}` — `#ffffff`): Default text on dark canvas; the dominant text color across the marketing site.\n- **On Primary Mute** (`{colors.on-primary-mute}` — `#f0f0fa`): Slightly cooled-white used for secondary text on dark surfaces — barely distinguishable from `{colors.on-primary}` but enough to suggest a hierarchy.\n- **Ink** (`{colors.ink}` — `#000000`): Default text on light surfaces (shop site).\n- **Ink Mute** (`{colors.ink-mute}` — `#5a5a5f`): Secondary text on light surfaces.",
+      "line": 183
+    },
+    {
+      "heading": "Link",
+      "level": 3,
+      "text": "- **Link on Dark** (`{colors.link-on-dark}` — `#ffffff`): Underlined inline link on dark canvas.\n- **Link Blue Fallback** (`{colors.link-blue-fallback}` — `#0000ee`): The browser default that appears in unstyled fallback contexts — documented for completeness, not used as a brand color.",
+      "line": 189
+    },
+    {
+      "heading": "Typography",
+      "level": 2,
+      "text": "",
+      "line": 193
+    },
+    {
+      "heading": "Font Family",
+      "level": 3,
+      "text": "The display tier is **D-DIN-Bold** — a condensed industrial sans inspired by the German DIN 1451 standard (used on autobahn road signage and engineering blueprints). When unavailable, fall back to **Arial Narrow**, then Arial, then Verdana — the fallback chain prioritizes width compression over ornament.\n\nThe UI tier is **D-DIN** (regular weight) — the same family at standard width — used for body, button labels, and captions.\n\nD-DIN is freely available from the **DIN Type Foundry** (and a free version under the same name is widely distributed). For maximum brand fidelity, use D-DIN directly; as a substitute, **Inter** at heavy weights (700+) with letter-spacing of 1.6px positive tracking approximates the rhythm. Avoid serif or humanist sans alternatives.",
+      "line": 195
+    },
+    {
+      "heading": "Hierarchy",
+      "level": 3,
+      "text": "| Token | Size | Weight | Line Height | Letter Spacing | Use |\n|---|---|---|---|---|---|\n| `{typography.display-xxl}` | 80px | 700 | 0.95 | 1.6px | Hero headline (uppercase) |\n| `{typography.display-xl}` | 60px | 700 | 1.2 | 1.2px | Section opener (uppercase) |\n| `{typography.display-lg}` | 48px | 700 | 1.25 | 0.96px | Sub-section heading (uppercase) |\n| `{typography.body-lg}` | 16px | 400 | 1.7 | 0.32px | Marketing body lead |\n| `{typography.body-md}` | 16px | 400 | 1.5 | 0.32px | Default UI body |\n| `{typography.button-cap}` | 13.008px | 700 | 0.94 | 1.17px | All-caps button label |\n| `{typography.micro-cap}` | 12px | 400 | 2.0 | 0.96px | All-caps eyebrow / nav item |\n| `{typography.caption}` | 13.008px | 400 | 1.5 | 0 | Helper / footer text |",
+      "line": 203
+    },
+    {
+      "heading": "Principles",
+      "level": 3,
+      "text": "- **Uppercase across display.** Every display tier renders in uppercase. The brand never uses sentence-case display headlines.\n- **Tight vertical leading on display.** 0.95 at 80px and 1.2 at 60px — the type stacks engineer-tight.\n- **Wide horizontal tracking.** Positive 0.96–1.6px tracking on display sizes; positive 0.96–1.17px on caps eyebrows. The wide tracking is the brand's signature optical air.\n- **No mono.** Code blocks are not part of the brand's typographic system.",
+      "line": 216
+    },
+    {
+      "heading": "Note on Font Substitutes",
+      "level": 3,
+      "text": "**D-DIN** is freely available (the original DIN-style face under that name is widely distributed). When unavailable, use **Inter** at 700 weight with `letter-spacing: 1.6px`, `text-transform: uppercase`, and `line-height: 0.95` for display sizes — this matches the rhythm. Avoid Helvetica or Arial at default weights — the brand needs the condensed industrial cut. Avoid serif fallbacks entirely.",
+      "line": 222
+    },
+    {
+      "heading": "Layout",
+      "level": 2,
+      "text": "",
+      "line": 225
+    },
+    {
+      "heading": "Spacing System",
+      "level": 3,
+      "text": "- **Base unit**: 8px (with denser sub-units 4 / 12 / 16 / 18 / 24).\n- **Tokens**: `{spacing.xxs}` 4px · `{spacing.xs}` 8px · `{spacing.sm}` 12px · `{spacing.md}` 16px · `{spacing.lg}` 18px · `{spacing.xl}` 24px · `{spacing.xxl}` 32px · `{spacing.huge}` 48px.\n- **Section padding**: full-viewport bands on marketing — no internal padding above/below; the photograph IS the section. On the shop site, sections use 48–64px vertical padding.",
+      "line": 227
+    },
+    {
+      "heading": "Grid & Container",
+      "level": 3,
+      "text": "- Marketing pages have no container — every band is full-viewport-width, full-viewport-height (or close to it) with photography filling the entire frame.\n- Shop product grid: 4-up at desktop, 2-up at tablet, 1-up at mobile.\n- Type sits inside an inner ~1200px reading column centered horizontally over the full-bleed photograph.",
+      "line": 232
+    },
+    {
+      "heading": "Whitespace Philosophy",
+      "level": 3,
+      "text": "The marketing pages have minimal traditional whitespace — the photograph occupies all space. \"Whitespace\" here means the dark sky in a rocket photograph or the empty stretch of Martian terrain. Negative space is photographic, not a UI choice. On the shop site whitespace returns to standard 32px grid gutters.",
+      "line": 237
+    },
+    {
+      "heading": "Elevation & Depth",
+      "level": 2,
+      "text": "| Level | Treatment | Use |\n|---|---|---|\n| 0 | Flat | Default — and the only level on marketing surfaces |\n| 1 | Photographic — full-bleed image or video | The primary depth medium; photographs do all the lifting |\n\nThe brand does not use drop shadows, blurs, glows, or gradient overlays. Depth is photographic: a rocket launching at twilight has natural atmospheric depth that no CSS shadow could simulate. When type needs separation from imagery, the image is graded darker rather than scrimmed.",
+      "line": 240
+    },
+    {
+      "heading": "Decorative Depth",
+      "level": 3,
+      "text": "Photography and autoplaying rocket-launch video are the only decorative depth. There are no illustrations, no icons beyond a few minimal SVG arrow chevrons in nav and CTA hover states.",
+      "line": 249
+    },
+    {
+      "heading": "Shapes",
+      "level": 2,
+      "text": "",
+      "line": 252
+    },
+    {
+      "heading": "Border Radius Scale",
+      "level": 3,
+      "text": "| Token | Value | Use |\n|---|---|---|\n| `{rounded.xs}` | 4px | Form inputs (shop site) |\n| `{rounded.sm}` | 8px | Shop product card chrome, video frames |\n| `{rounded.md}` | 16px | Larger surface chrome |\n| `{rounded.pill}` | 32px | Ghost outlined pill CTAs (the brand's signature button shape) |\n| `{rounded.full}` | 9999px | Circular play-button overlays on video frames |",
+      "line": 254
+    },
+    {
+      "heading": "Photography Geometry",
+      "level": 3,
+      "text": "Every photograph is full-viewport-bleed, edge-to-edge, never inset in a card on the marketing site. On the shop site, product photography sits inside `{rounded.sm}` 8px containers with no shadow. Aspect ratios on marketing photography vary with the source image — there is no enforced ratio; the photograph leads.",
+      "line": 264
+    },
+    {
+      "heading": "Components",
+      "level": 2,
+      "text": "",
+      "line": 267
+    },
+    {
+      "heading": "Buttons",
+      "level": 3,
+      "text": "**`button-ghost-on-dark`** — the universal CTA on marketing surfaces.\n- Background `{colors.canvas-night}` (transparent against the photographed canvas), 1px solid `{colors.on-primary}` border, text `{colors.on-primary}`, type `{typography.button-cap}` (uppercase, 13px / 700 / 1.17px tracking), padding `{spacing.lg} {spacing.xl}` (18px 24px), rounded `{rounded.pill}` 32px.\n\n**`button-ghost-on-light`** — the same button on shop / light pages.\n- Background `{colors.canvas-light}` (transparent against light canvas), 1px solid `{colors.ink}` border, text `{colors.ink}`, otherwise identical.\n\n**`button-filled-cool`** — fill variant on shop product cards.\n- Background `{colors.canvas-cool}`, text `{colors.ink}`, same pill geometry. Used as \"Add to cart\" or similar product CTAs.",
+      "line": 269
+    },
+    {
+      "heading": "Cards & Containers",
+      "level": 3,
+      "text": "**`card-photo-band`** — full-bleed photographic band on marketing pages.\n- Background `{colors.canvas-night}`, padding 0, rounded `{rounded.xs}`. The photograph fills the entire band; type and CTA sit overlaid.\n\n**`card-shop-product`** — product card on the shop site.\n- Background `{colors.canvas-light}`, padding `{spacing.md}` 16px, rounded `{rounded.sm}` 8px, 1px `{colors.hairline-on-light}` border. Product photo on top, name in `{typography.body-md}`, price in `{typography.body-md}` 700 weight, \"Add to cart\" button at the bottom.",
+      "line": 280
+    },
+    {
+      "heading": "Inputs & Forms",
+      "level": 3,
+      "text": "**`text-input`** — form input on the shop site.\n- Background `{colors.canvas-light}`, text `{colors.ink}`, type `{typography.body-md}`, padding `{spacing.sm} {spacing.md}` (12px 16px), rounded `{rounded.xs}` 4px, 1px `{colors.hairline-on-light}` border.",
+      "line": 288
+    },
+    {
+      "heading": "Navigation",
+      "level": 3,
+      "text": "**`nav-bar-overlay`** — top nav across the marketing site.\n- Background `{colors.canvas-night}` (transparent over the hero photo), text `{colors.on-primary}`, type `{typography.button-cap}` (uppercase). Logo wordmark on the left at ~147×19px, nav items horizontal in caps, padding `{spacing.xl} {spacing.xxl}` (24px 32px). The nav is fixed/sticky on scroll, retaining the overlay treatment.",
+      "line": 293
+    },
+    {
+      "heading": "Signature Components",
+      "level": 3,
+      "text": "**Full-Bleed Photo / Video Hero** — every marketing band is a full-viewport photograph or autoplaying rocket-launch video. Type and CTA sit overlaid on the photograph at high opacity with no scrim. The photograph is graded so type lands cleanly without an overlay layer.\n\n**Uppercase Display Headline** — the 80px D-DIN-Bold uppercase headline with 1.6px positive tracking is the brand's most recognizable typographic moment. Always uppercase, always bold-weight, always positively tracked.\n\n**`link-on-dark`** — inline links on dark canvas.\n- Text `{colors.link-on-dark}` (white) with persistent underline.\n\n**`link-on-light`** — inline links on light canvas.\n- Text `{colors.ink}` with persistent underline.\n\n**`footer-dark`** — site-wide footer.\n- Background `{colors.canvas-night}`, text `{colors.on-primary}`, type `{typography.caption}`, padding `{spacing.xxl} {spacing.xl}` (32px 24px). Holds nav columns in `{typography.micro-cap}` (uppercase), and a small legal/copyright row at the bottom.",
+      "line": 298
+    },
+    {
+      "heading": "Do's and Don'ts",
+      "level": 2,
+      "text": "",
+      "line": 313
+    },
+    {
+      "heading": "Do",
+      "level": 3,
+      "text": "- Use full-bleed photography or autoplaying video as the dominant decorative element on every marketing band.\n- Render display tiers in uppercase D-DIN-Bold with positive 0.96–1.6px letter-spacing — the wide tracking is the signature.\n- Use a single `{button-ghost-on-dark}` per band — the brand does NOT show two CTAs side by side on marketing surfaces.\n- Pair every photograph with type that respects the imagery — no scrims, no gradients, no overlays. Grade the photo, not the canvas.\n- Keep nav overlay-style (transparent, white-on-image) on marketing pages.",
+      "line": 315
+    },
+    {
+      "heading": "Don't",
+      "level": 3,
+      "text": "- Don't introduce brand accent colors — black, white, and photography are the entire palette.\n- Don't use drop shadows or gradient overlays on dark canvas — they fight the photography.\n- Don't render display tiers in sentence-case or title-case — uppercase is the brand.\n- Don't put filled buttons on marketing surfaces — the ghost outlined pill is the only marketing CTA.\n- Don't use serif or humanist sans alternatives — the condensed industrial DIN cut is non-negotiable.",
+      "line": 322
+    },
+    {
+      "heading": "Responsive Behavior",
+      "level": 2,
+      "text": "",
+      "line": 329
+    },
+    {
+      "heading": "Breakpoints",
+      "level": 3,
+      "text": "| Name | Width | Key Changes |\n|---|---|---|\n| Wide | ≥ 1500px | Full hero photograph; max-content type column at 1200px |\n| Desktop | 1280–1499px | Default desktop layout |\n| Laptop | 961–1279px | Type column tightens; photo crops adjust |\n| Tablet | 768–960px | Display drops 80 → 60px; nav compresses |\n| Mobile | 600–767px | Display drops to 48px; ghost button retains pill shape |\n| Small Mobile | < 600px | Display drops to 40px; nav becomes hamburger |",
+      "line": 331
+    },
+    {
+      "heading": "Touch Targets",
+      "level": 3,
+      "text": "- Ghost pill buttons hit ≥ 50×50px due to the 18px vertical padding × 13px line-height. WCAG AAA compliant.\n- Form fields stay at the 44px minimum height.",
+      "line": 342
+    },
+    {
+      "heading": "Collapsing Strategy",
+      "level": 3,
+      "text": "- Display sizes stair-step 80 → 60 → 48 → 40px through the breakpoints.\n- Photography re-crops to focal subject on smaller widths (rocket centered, Mars landscape centered).\n- Top nav collapses to hamburger below 768px; menu retains the dark overlay treatment.\n- Shop product grid stair-steps 4-up → 2-up → 1-up.",
+      "line": 346
+    },
+    {
+      "heading": "Image Behavior",
+      "level": 3,
+      "text": "Marketing photography uses `srcset` for desktop / tablet / mobile with art-direction crops at major breakpoints. Mobile crops favor the central focal subject; wide crops favor environmental context (full launch pad, full Martian horizon).",
+      "line": 352
+    },
+    {
+      "heading": "Iteration Guide",
+      "level": 2,
+      "text": "1. Focus on ONE component at a time.\n2. Reference component names and tokens directly (`{colors.canvas-night}`, `{button-ghost-on-dark}`, `{rounded.pill}`).\n3. Run `npx @google/design.md lint DESIGN.md` after edits.\n4. Add new variants as separate entries.\n5. Default body to `{typography.body-md}`; reserve `{typography.body-lg}` for marketing leads.\n6. The black-and-white-only rule is load-bearing — adding a brand accent color breaks the system.\n7. Ghost pill is the only marketing CTA; filled buttons live exclusively on the shop site.",
+      "line": 355
+    }
+  ],
+  "tokens": [
+    {
+      "path": "colors.primary",
+      "sourcePath": "colors.primary",
+      "type": "color",
+      "value": "#000000",
+      "status": "unverified",
+      "evidence": {
+        "line": 7,
+        "sourcePath": "colors.primary"
+      }
+    },
+    {
+      "path": "colors.ink",
+      "sourcePath": "colors.ink",
+      "type": "color",
+      "value": "#000000",
+      "status": "unverified",
+      "evidence": {
+        "line": 8,
+        "sourcePath": "colors.ink"
+      }
+    },
+    {
+      "path": "colors.onprimary",
+      "sourcePath": "colors.on-primary",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 9,
+        "sourcePath": "colors.on-primary"
+      }
+    },
+    {
+      "path": "colors.onprimarymute",
+      "sourcePath": "colors.on-primary-mute",
+      "type": "color",
+      "value": "#f0f0fa",
+      "status": "unverified",
+      "evidence": {
+        "line": 10,
+        "sourcePath": "colors.on-primary-mute"
+      }
+    },
+    {
+      "path": "colors.canvasnight",
+      "sourcePath": "colors.canvas-night",
+      "type": "color",
+      "value": "#000000",
+      "status": "unverified",
+      "evidence": {
+        "line": 11,
+        "sourcePath": "colors.canvas-night"
+      }
+    },
+    {
+      "path": "colors.canvasnightsoft",
+      "sourcePath": "colors.canvas-night-soft",
+      "type": "color",
+      "value": "#0a0a0a",
+      "status": "unverified",
+      "evidence": {
+        "line": 12,
+        "sourcePath": "colors.canvas-night-soft"
+      }
+    },
+    {
+      "path": "colors.canvaslight",
+      "sourcePath": "colors.canvas-light",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 13,
+        "sourcePath": "colors.canvas-light"
+      }
+    },
+    {
+      "path": "colors.canvascool",
+      "sourcePath": "colors.canvas-cool",
+      "type": "color",
+      "value": "#f0f0fa",
+      "status": "unverified",
+      "evidence": {
+        "line": 14,
+        "sourcePath": "colors.canvas-cool"
+      }
+    },
+    {
+      "path": "colors.hairlineondark",
+      "sourcePath": "colors.hairline-on-dark",
+      "type": "color",
+      "value": "#3a3a3f",
+      "status": "unverified",
+      "evidence": {
+        "line": 15,
+        "sourcePath": "colors.hairline-on-dark"
+      }
+    },
+    {
+      "path": "colors.hairlineonlight",
+      "sourcePath": "colors.hairline-on-light",
+      "type": "color",
+      "value": "#e0e0e8",
+      "status": "unverified",
+      "evidence": {
+        "line": 16,
+        "sourcePath": "colors.hairline-on-light"
+      }
+    },
+    {
+      "path": "colors.linkondark",
+      "sourcePath": "colors.link-on-dark",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 17,
+        "sourcePath": "colors.link-on-dark"
+      }
+    },
+    {
+      "path": "colors.linkbluefallback",
+      "sourcePath": "colors.link-blue-fallback",
+      "type": "color",
+      "value": "#0000ee",
+      "status": "unverified",
+      "evidence": {
+        "line": 18,
+        "sourcePath": "colors.link-blue-fallback"
+      }
+    },
+    {
+      "path": "colors.inkmute",
+      "sourcePath": "colors.ink-mute",
+      "type": "color",
+      "value": "#5a5a5f",
+      "status": "unverified",
+      "evidence": {
+        "line": 19,
+        "sourcePath": "colors.ink-mute"
+      }
+    },
+    {
+      "path": "typography.displayxxl.fontfamily",
+      "sourcePath": "typography.display-xxl.fontFamily",
+      "type": "fontFamily",
+      "value": "D-DIN-Bold, Arial Narrow, Arial, Verdana, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 23,
+        "sourcePath": "typography.display-xxl.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displayxxl.fontsize",
+      "sourcePath": "typography.display-xxl.fontSize",
+      "type": "dimension",
+      "value": "80px",
+      "status": "unverified",
+      "evidence": {
+        "line": 24,
+        "sourcePath": "typography.display-xxl.fontSize"
+      }
+    },
+    {
+      "path": "typography.displayxxl.fontweight",
+      "sourcePath": "typography.display-xxl.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 25,
+        "sourcePath": "typography.display-xxl.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displayxxl.lineheight",
+      "sourcePath": "typography.display-xxl.lineHeight",
+      "type": "number",
+      "value": 0.95,
+      "status": "unverified",
+      "evidence": {
+        "line": 26,
+        "sourcePath": "typography.display-xxl.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displayxxl.letterspacing",
+      "sourcePath": "typography.display-xxl.letterSpacing",
+      "type": "dimension",
+      "value": "1.6px",
+      "status": "unverified",
+      "evidence": {
+        "line": 27,
+        "sourcePath": "typography.display-xxl.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.displayxl.fontfamily",
+      "sourcePath": "typography.display-xl.fontFamily",
+      "type": "fontFamily",
+      "value": "D-DIN-Bold, Arial Narrow, Arial, Verdana, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 29,
+        "sourcePath": "typography.display-xl.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displayxl.fontsize",
+      "sourcePath": "typography.display-xl.fontSize",
+      "type": "dimension",
+      "value": "60px",
+      "status": "unverified",
+      "evidence": {
+        "line": 30,
+        "sourcePath": "typography.display-xl.fontSize"
+      }
+    },
+    {
+      "path": "typography.displayxl.fontweight",
+      "sourcePath": "typography.display-xl.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 31,
+        "sourcePath": "typography.display-xl.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displayxl.lineheight",
+      "sourcePath": "typography.display-xl.lineHeight",
+      "type": "number",
+      "value": 1.2,
+      "status": "unverified",
+      "evidence": {
+        "line": 32,
+        "sourcePath": "typography.display-xl.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displayxl.letterspacing",
+      "sourcePath": "typography.display-xl.letterSpacing",
+      "type": "dimension",
+      "value": "1.2px",
+      "status": "unverified",
+      "evidence": {
+        "line": 33,
+        "sourcePath": "typography.display-xl.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.displaylg.fontfamily",
+      "sourcePath": "typography.display-lg.fontFamily",
+      "type": "fontFamily",
+      "value": "D-DIN-Bold, Arial Narrow, Arial, Verdana, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 35,
+        "sourcePath": "typography.display-lg.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displaylg.fontsize",
+      "sourcePath": "typography.display-lg.fontSize",
+      "type": "dimension",
+      "value": "48px",
+      "status": "unverified",
+      "evidence": {
+        "line": 36,
+        "sourcePath": "typography.display-lg.fontSize"
+      }
+    },
+    {
+      "path": "typography.displaylg.fontweight",
+      "sourcePath": "typography.display-lg.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 37,
+        "sourcePath": "typography.display-lg.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displaylg.lineheight",
+      "sourcePath": "typography.display-lg.lineHeight",
+      "type": "number",
+      "value": 1.25,
+      "status": "unverified",
+      "evidence": {
+        "line": 38,
+        "sourcePath": "typography.display-lg.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displaylg.letterspacing",
+      "sourcePath": "typography.display-lg.letterSpacing",
+      "type": "dimension",
+      "value": "0.96px",
+      "status": "unverified",
+      "evidence": {
+        "line": 39,
+        "sourcePath": "typography.display-lg.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.bodylg.fontfamily",
+      "sourcePath": "typography.body-lg.fontFamily",
+      "type": "fontFamily",
+      "value": "D-DIN, Arial, Verdana, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 41,
+        "sourcePath": "typography.body-lg.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodylg.fontsize",
+      "sourcePath": "typography.body-lg.fontSize",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 42,
+        "sourcePath": "typography.body-lg.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodylg.fontweight",
+      "sourcePath": "typography.body-lg.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 43,
+        "sourcePath": "typography.body-lg.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodylg.lineheight",
+      "sourcePath": "typography.body-lg.lineHeight",
+      "type": "number",
+      "value": 1.7,
+      "status": "unverified",
+      "evidence": {
+        "line": 44,
+        "sourcePath": "typography.body-lg.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodylg.letterspacing",
+      "sourcePath": "typography.body-lg.letterSpacing",
+      "type": "dimension",
+      "value": "0.32px",
+      "status": "unverified",
+      "evidence": {
+        "line": 45,
+        "sourcePath": "typography.body-lg.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.bodymd.fontfamily",
+      "sourcePath": "typography.body-md.fontFamily",
+      "type": "fontFamily",
+      "value": "D-DIN, Arial, Verdana, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 47,
+        "sourcePath": "typography.body-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodymd.fontsize",
+      "sourcePath": "typography.body-md.fontSize",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 48,
+        "sourcePath": "typography.body-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodymd.fontweight",
+      "sourcePath": "typography.body-md.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 49,
+        "sourcePath": "typography.body-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodymd.lineheight",
+      "sourcePath": "typography.body-md.lineHeight",
+      "type": "number",
+      "value": 1.5,
+      "status": "unverified",
+      "evidence": {
+        "line": 50,
+        "sourcePath": "typography.body-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodymd.letterspacing",
+      "sourcePath": "typography.body-md.letterSpacing",
+      "type": "dimension",
+      "value": "0.32px",
+      "status": "unverified",
+      "evidence": {
+        "line": 51,
+        "sourcePath": "typography.body-md.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.buttoncap.fontfamily",
+      "sourcePath": "typography.button-cap.fontFamily",
+      "type": "fontFamily",
+      "value": "D-DIN, Arial, Verdana, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 53,
+        "sourcePath": "typography.button-cap.fontFamily"
+      }
+    },
+    {
+      "path": "typography.buttoncap.fontsize",
+      "sourcePath": "typography.button-cap.fontSize",
+      "type": "dimension",
+      "value": "13.008px",
+      "status": "unverified",
+      "evidence": {
+        "line": 54,
+        "sourcePath": "typography.button-cap.fontSize"
+      }
+    },
+    {
+      "path": "typography.buttoncap.fontweight",
+      "sourcePath": "typography.button-cap.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 55,
+        "sourcePath": "typography.button-cap.fontWeight"
+      }
+    },
+    {
+      "path": "typography.buttoncap.lineheight",
+      "sourcePath": "typography.button-cap.lineHeight",
+      "type": "number",
+      "value": 0.94,
+      "status": "unverified",
+      "evidence": {
+        "line": 56,
+        "sourcePath": "typography.button-cap.lineHeight"
+      }
+    },
+    {
+      "path": "typography.buttoncap.letterspacing",
+      "sourcePath": "typography.button-cap.letterSpacing",
+      "type": "dimension",
+      "value": "1.17px",
+      "status": "unverified",
+      "evidence": {
+        "line": 57,
+        "sourcePath": "typography.button-cap.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.microcap.fontfamily",
+      "sourcePath": "typography.micro-cap.fontFamily",
+      "type": "fontFamily",
+      "value": "D-DIN, Arial, Verdana, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 59,
+        "sourcePath": "typography.micro-cap.fontFamily"
+      }
+    },
+    {
+      "path": "typography.microcap.fontsize",
+      "sourcePath": "typography.micro-cap.fontSize",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 60,
+        "sourcePath": "typography.micro-cap.fontSize"
+      }
+    },
+    {
+      "path": "typography.microcap.fontweight",
+      "sourcePath": "typography.micro-cap.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 61,
+        "sourcePath": "typography.micro-cap.fontWeight"
+      }
+    },
+    {
+      "path": "typography.microcap.lineheight",
+      "sourcePath": "typography.micro-cap.lineHeight",
+      "type": "number",
+      "value": 2,
+      "status": "unverified",
+      "evidence": {
+        "line": 62,
+        "sourcePath": "typography.micro-cap.lineHeight"
+      }
+    },
+    {
+      "path": "typography.microcap.letterspacing",
+      "sourcePath": "typography.micro-cap.letterSpacing",
+      "type": "dimension",
+      "value": "0.96px",
+      "status": "unverified",
+      "evidence": {
+        "line": 63,
+        "sourcePath": "typography.micro-cap.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.caption.fontfamily",
+      "sourcePath": "typography.caption.fontFamily",
+      "type": "fontFamily",
+      "value": "D-DIN, Arial, Verdana, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 65,
+        "sourcePath": "typography.caption.fontFamily"
+      }
+    },
+    {
+      "path": "typography.caption.fontsize",
+      "sourcePath": "typography.caption.fontSize",
+      "type": "dimension",
+      "value": "13.008px",
+      "status": "unverified",
+      "evidence": {
+        "line": 66,
+        "sourcePath": "typography.caption.fontSize"
+      }
+    },
+    {
+      "path": "typography.caption.fontweight",
+      "sourcePath": "typography.caption.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 67,
+        "sourcePath": "typography.caption.fontWeight"
+      }
+    },
+    {
+      "path": "typography.caption.lineheight",
+      "sourcePath": "typography.caption.lineHeight",
+      "type": "number",
+      "value": 1.5,
+      "status": "unverified",
+      "evidence": {
+        "line": 68,
+        "sourcePath": "typography.caption.lineHeight"
+      }
+    },
+    {
+      "path": "typography.caption.letterspacing",
+      "sourcePath": "typography.caption.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 69,
+        "sourcePath": "typography.caption.letterSpacing"
+      }
+    },
+    {
+      "path": "rounded.xs",
+      "sourcePath": "rounded.xs",
+      "type": "dimension",
+      "value": "4px",
+      "status": "unverified",
+      "evidence": {
+        "line": 72,
+        "sourcePath": "rounded.xs"
+      }
+    },
+    {
+      "path": "rounded.sm",
+      "sourcePath": "rounded.sm",
+      "type": "dimension",
+      "value": "8px",
+      "status": "unverified",
+      "evidence": {
+        "line": 73,
+        "sourcePath": "rounded.sm"
+      }
+    },
+    {
+      "path": "rounded.md",
+      "sourcePath": "rounded.md",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 74,
+        "sourcePath": "rounded.md"
+      }
+    },
+    {
+      "path": "rounded.pill",
+      "sourcePath": "rounded.pill",
+      "type": "dimension",
+      "value": "32px",
+      "status": "unverified",
+      "evidence": {
+        "line": 75,
+        "sourcePath": "rounded.pill"
+      }
+    },
+    {
+      "path": "rounded.full",
+      "sourcePath": "rounded.full",
+      "type": "dimension",
+      "value": "9999px",
+      "status": "unverified",
+      "evidence": {
+        "line": 76,
+        "sourcePath": "rounded.full"
+      }
+    },
+    {
+      "path": "spacing.xxs",
+      "sourcePath": "spacing.xxs",
+      "type": "dimension",
+      "value": "4px",
+      "status": "unverified",
+      "evidence": {
+        "line": 79,
+        "sourcePath": "spacing.xxs"
+      }
+    },
+    {
+      "path": "spacing.xs",
+      "sourcePath": "spacing.xs",
+      "type": "dimension",
+      "value": "8px",
+      "status": "unverified",
+      "evidence": {
+        "line": 80,
+        "sourcePath": "spacing.xs"
+      }
+    },
+    {
+      "path": "spacing.sm",
+      "sourcePath": "spacing.sm",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 81,
+        "sourcePath": "spacing.sm"
+      }
+    },
+    {
+      "path": "spacing.md",
+      "sourcePath": "spacing.md",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 82,
+        "sourcePath": "spacing.md"
+      }
+    },
+    {
+      "path": "spacing.lg",
+      "sourcePath": "spacing.lg",
+      "type": "dimension",
+      "value": "18px",
+      "status": "unverified",
+      "evidence": {
+        "line": 83,
+        "sourcePath": "spacing.lg"
+      }
+    },
+    {
+      "path": "spacing.xl",
+      "sourcePath": "spacing.xl",
+      "type": "dimension",
+      "value": "24px",
+      "status": "unverified",
+      "evidence": {
+        "line": 84,
+        "sourcePath": "spacing.xl"
+      }
+    },
+    {
+      "path": "spacing.xxl",
+      "sourcePath": "spacing.xxl",
+      "type": "dimension",
+      "value": "32px",
+      "status": "unverified",
+      "evidence": {
+        "line": 85,
+        "sourcePath": "spacing.xxl"
+      }
+    },
+    {
+      "path": "spacing.huge",
+      "sourcePath": "spacing.huge",
+      "type": "dimension",
+      "value": "48px",
+      "status": "unverified",
+      "evidence": {
+        "line": 86,
+        "sourcePath": "spacing.huge"
+      }
+    }
+  ],
+  "rejectedTokens": [],
+  "homepage": {
+    "status": "missing",
+    "candidates": [],
+    "verification": {
+      "status": "unverified",
+      "url": "https://www.spacex.com/",
+      "label": "Candidate homepage (insufficient readable evidence)",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://www.spacex.com/",
+          "title": "SpaceX",
+          "note": "Public read requested https://www.spacex.com; final URL https://www.spacex.com/. Returned 0 readable lines; insufficient homepage content to confirm beyond title."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Title-only or sparse shell response is not sufficient for verified status."
+    }
+  },
+  "completeness": {
+    "presentFields": [
+      "colors",
+      "typography",
+      "rounded",
+      "spacing",
+      "components"
+    ],
+    "missingFields": [],
+    "tokenRoles": "incomplete",
+    "note": "Missing fields are not reconstructed. Prose-only colors have no inferred semantic role."
+  },
+  "provenance": {
+    "status": "independent-analysis",
+    "sources": [
+      {
+        "title": "VoltAgent awesome-design-md independent analysis",
+        "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/spacex/DESIGN.md"
+      }
+    ],
+    "verification": "unverified-secondary-analysis"
+  },
+  "limitations": [
+    "Independent secondary analysis, not an official brand system; all reported values are unverified.",
+    "No brand assets, logos, font binaries or screenshots copied. Font names are documentary, not font licenses.",
+    "Safe CSS literals are extracted without claiming complete roles, state coverage or visual fidelity.",
+    "Markdown is retained as inert evidence, never executed or rendered as raw HTML."
+  ]
+}

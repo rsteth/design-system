@@ -1,0 +1,1686 @@
+{
+  "schemaVersion": 1,
+  "id": "reference-framer",
+  "title": "Framer",
+  "classification": "independent-unverified-analysis",
+  "source": {
+    "repository": "https://github.com/VoltAgent/awesome-design-md",
+    "fork": "https://github.com/rsteth/awesome-design-md-p",
+    "revision": "fcc70284932276d085f01ef9f83edde90b1258cb",
+    "path": "design-md/framer/DESIGN.md",
+    "sha256": "a5d47dddacf5a04577cec0be6fe0fc53b7402254c7686874af3e59bcc7588cb4",
+    "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/framer/DESIGN.md"
+  },
+  "sourceName": "Framer-design-analysis",
+  "titleProvenance": {
+    "status": "inferred",
+    "basis": "Source directory label, normalized for navigation; original source name is retained without correction.",
+    "sourceValue": "framer",
+    "originalName": "Framer-design-analysis"
+  },
+  "description": "A confident dark-canvas builder marketing site that treats the page like a working artboard — pure black surfaces, white display type set in GT Walsheim Medium with aggressive negative tracking, and a single confident blue (#0099ff) reserved for hyperlinks and selection states. The page rhythm is broken by oversized vibrant gradient atmosphere panels — magenta, violet, orange spotlights — that act as living showcase tiles, not decoration. Every CTA is a white pill on dark; every card is a translucent or charcoal surface; every section title pulls letter-spacing tight enough to feel like a poster.",
+  "analysis": {
+    "version": "alpha",
+    "name": "Framer-design-analysis",
+    "description": "A confident dark-canvas builder marketing site that treats the page like a working artboard — pure black surfaces, white display type set in GT Walsheim Medium with aggressive negative tracking, and a single confident blue (#0099ff) reserved for hyperlinks and selection states. The page rhythm is broken by oversized vibrant gradient atmosphere panels — magenta, violet, orange spotlights — that act as living showcase tiles, not decoration. Every CTA is a white pill on dark; every card is a translucent or charcoal surface; every section title pulls letter-spacing tight enough to feel like a poster.",
+    "colors": {
+      "primary": "#ffffff",
+      "on-primary": "#000000",
+      "accent-blue": "#0099ff",
+      "ink": "#ffffff",
+      "ink-muted": "#999999",
+      "canvas": "#090909",
+      "surface-1": "#141414",
+      "surface-2": "#1c1c1c",
+      "hairline": "#262626",
+      "hairline-soft": "#1a1a1a",
+      "inverse-canvas": "#ffffff",
+      "inverse-ink": "#000000",
+      "gradient-magenta": "#d44df0",
+      "gradient-violet": "#6a4cf5",
+      "gradient-orange": "#ff7a3d",
+      "gradient-coral": "#ff5577",
+      "semantic-success": "#22c55e"
+    },
+    "typography": {
+      "display-xxl": {
+        "fontFamily": "GT Walsheim Framer Medium",
+        "fontSize": "110px",
+        "fontWeight": 500,
+        "lineHeight": 0.85,
+        "letterSpacing": "-5.5px"
+      },
+      "display-xl": {
+        "fontFamily": "GT Walsheim Medium",
+        "fontSize": "85px",
+        "fontWeight": 500,
+        "lineHeight": 0.95,
+        "letterSpacing": "-4.25px",
+        "fontFeature": "ss02"
+      },
+      "display-lg": {
+        "fontFamily": "GT Walsheim Medium",
+        "fontSize": "62px",
+        "fontWeight": 500,
+        "lineHeight": 1,
+        "letterSpacing": "-3.1px",
+        "fontFeature": "ss02"
+      },
+      "display-md": {
+        "fontFamily": "GT Walsheim Medium",
+        "fontSize": "32px",
+        "fontWeight": 500,
+        "lineHeight": 1.13,
+        "letterSpacing": "-1.0px"
+      },
+      "headline": {
+        "fontFamily": "Inter",
+        "fontSize": "22px",
+        "fontWeight": 700,
+        "lineHeight": 1.2,
+        "letterSpacing": "-0.8px",
+        "fontFeature": "cv05"
+      },
+      "subhead": {
+        "fontFamily": "Inter Variable",
+        "fontSize": "24px",
+        "fontWeight": 400,
+        "lineHeight": 1.3,
+        "letterSpacing": "-0.01px",
+        "fontFeature": "cv11"
+      },
+      "body-lg": {
+        "fontFamily": "Inter Variable",
+        "fontSize": "18px",
+        "fontWeight": 400,
+        "lineHeight": 1.3,
+        "letterSpacing": "-0.18px",
+        "fontFeature": "cv11"
+      },
+      "body": {
+        "fontFamily": "Inter Variable",
+        "fontSize": "15px",
+        "fontWeight": 400,
+        "lineHeight": 1.3,
+        "letterSpacing": "-0.15px",
+        "fontFeature": "cv11"
+      },
+      "body-sm": {
+        "fontFamily": "Inter Variable",
+        "fontSize": "14px",
+        "fontWeight": 500,
+        "lineHeight": 1.4,
+        "letterSpacing": "-0.14px",
+        "fontFeature": "cv11"
+      },
+      "caption": {
+        "fontFamily": "Inter Variable",
+        "fontSize": "13px",
+        "fontWeight": 500,
+        "lineHeight": 1.2,
+        "letterSpacing": "-0.13px",
+        "fontFeature": "cv11"
+      },
+      "micro": {
+        "fontFamily": "Inter Variable",
+        "fontSize": "12px",
+        "fontWeight": 400,
+        "lineHeight": 1.2,
+        "letterSpacing": "-0.12px",
+        "fontFeature": "cv11"
+      },
+      "button": {
+        "fontFamily": "Inter Variable",
+        "fontSize": "14px",
+        "fontWeight": 500,
+        "lineHeight": 1,
+        "letterSpacing": "-0.14px",
+        "fontFeature": "cv11"
+      }
+    },
+    "rounded": {
+      "xs": "4px",
+      "sm": "6px",
+      "md": "10px",
+      "lg": "15px",
+      "xl": "20px",
+      "xxl": "30px",
+      "pill": "100px",
+      "full": "9999px"
+    },
+    "spacing": {
+      "hair": "1px",
+      "xxs": "4px",
+      "xs": "8px",
+      "sm": "12px",
+      "md": "15px",
+      "lg": "20px",
+      "xl": "30px",
+      "xxl": "40px",
+      "section": "96px"
+    },
+    "components": {
+      "button-primary": {
+        "backgroundColor": "{colors.primary}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.button}",
+        "rounded": "{rounded.pill}",
+        "padding": "10px 15px"
+      },
+      "button-primary-pressed": {
+        "backgroundColor": "{colors.primary}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.button}",
+        "rounded": "{rounded.pill}"
+      },
+      "button-secondary": {
+        "backgroundColor": "{colors.surface-1}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.button}",
+        "rounded": "{rounded.pill}",
+        "padding": "10px 15px"
+      },
+      "button-translucent": {
+        "backgroundColor": "{colors.surface-2}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.button}",
+        "rounded": "{rounded.xxl}",
+        "padding": "8px 14px"
+      },
+      "button-icon-circular": {
+        "backgroundColor": "{colors.surface-1}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.button}",
+        "rounded": "{rounded.full}",
+        "size": "40px"
+      },
+      "pricing-tab-default": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink-muted}",
+        "typography": "{typography.button}",
+        "rounded": "{rounded.pill}",
+        "padding": "8px 14px"
+      },
+      "pricing-tab-selected": {
+        "backgroundColor": "{colors.surface-2}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.button}",
+        "rounded": "{rounded.pill}",
+        "padding": "8px 14px"
+      },
+      "text-input": {
+        "backgroundColor": "{colors.surface-1}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body}",
+        "rounded": "{rounded.md}",
+        "padding": "10px 14px"
+      },
+      "text-input-focused": {
+        "backgroundColor": "{colors.surface-1}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body}",
+        "rounded": "{rounded.md}",
+        "padding": "10px 14px"
+      },
+      "pricing-card": {
+        "backgroundColor": "{colors.surface-1}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body}",
+        "rounded": "{rounded.xl}",
+        "padding": "24px"
+      },
+      "pricing-card-featured": {
+        "backgroundColor": "{colors.surface-2}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body}",
+        "rounded": "{rounded.xl}",
+        "padding": "24px"
+      },
+      "template-card": {
+        "backgroundColor": "{colors.surface-1}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-sm}",
+        "rounded": "{rounded.lg}",
+        "padding": "12px"
+      },
+      "gradient-spotlight-card": {
+        "backgroundColor": "{colors.gradient-violet}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.subhead}",
+        "rounded": "{rounded.xl}",
+        "padding": "32px"
+      },
+      "gradient-spotlight-card-magenta": {
+        "backgroundColor": "{colors.gradient-magenta}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.subhead}",
+        "rounded": "{rounded.xl}",
+        "padding": "32px"
+      },
+      "gradient-spotlight-card-orange": {
+        "backgroundColor": "{colors.gradient-orange}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.subhead}",
+        "rounded": "{rounded.xl}",
+        "padding": "32px"
+      },
+      "product-mockup-tile": {
+        "backgroundColor": "{colors.surface-1}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-sm}",
+        "rounded": "{rounded.xl}",
+        "padding": "16px"
+      },
+      "feature-row": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body}",
+        "rounded": "{rounded.xs}"
+      },
+      "comparison-row": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink-muted}",
+        "typography": "{typography.body-sm}",
+        "rounded": "{rounded.xs}"
+      },
+      "top-nav": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-sm}",
+        "rounded": "{rounded.xs}",
+        "height": "56px"
+      },
+      "faq-row": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body}",
+        "rounded": "{rounded.md}",
+        "padding": "24px"
+      },
+      "footer": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink-muted}",
+        "typography": "{typography.caption}",
+        "rounded": "{rounded.xs}",
+        "padding": "64px 32px"
+      }
+    }
+  },
+  "normalizationRepairs": [],
+  "sections": [
+    {
+      "heading": "Overview",
+      "level": 2,
+      "text": "Framer's marketing canvas is a near-pure black artboard. The dominant surface is `{colors.canvas}` — almost pure black with a faint warmth — and on top of it sits oversized white display type set in **GT Walsheim Medium** with letter-spacing pulled to extreme negative values (-5.5px on the 110px display, -4.25px on the 85px hero). The page reads like a poster: one assertive statement per band, generous breathing room above and below.\n\nThe single accent is `{colors.accent-blue}` — used scarcely, mostly for hyperlinks, selection halos, and a subtle blue-tinted shadow ring on focused inputs. The brand chrome itself is monochrome: white pill buttons, charcoal cards, gray secondary text. What makes Framer distinctive is the rhythm break — every few sections the page drops in a **vibrant gradient atmosphere card**: a magenta-violet spotlight, a sunset-orange wash, a coral-pink panel. These aren't section backgrounds; they're individual cards arranged in a card grid, each one a small living poster that shows what Framer can produce.\n\nBody type is **Inter Variable**, with Framer leaning hard into Inter's character variants (`cv01`, `cv05`, `cv09`, `cv11`, `ss03`, `ss07`, `dlig`) — the result is a body voice that feels custom-tuned, with single-storey \"a\", straight-leg \"l\", and tabular figures. There's no light mode on the marketing site; the brand IS dark.\n\n**Key Characteristics:**\n- Black-canvas marketing system: `{colors.canvas}` is the surface for hero, body, pricing, FAQ, and footer alike — no light interludes.\n- Massive negative letter-spacing on display sizes (-5.5px / -4.25px / -3.1px) creates a poster-grade headline cadence.\n- White pill (`{components.button-primary}`) is the only primary CTA shape across the site; secondary actions live as charcoal pills (`{components.button-secondary}`) or text links.\n- Oversized **gradient spotlight cards** (violet, magenta, orange, coral) act as showcase tiles inside the dark grid; they are individual cards, not section backgrounds.\n- Inter Variable with bespoke OpenType character variants (`cv01/05/09/11`, `ss03/ss07`, `dlig`) used everywhere body type appears — the typographic voice is unmistakable.\n- Border radius scale runs from 4px utility chips up to 100px pills and full circles, with 15–20px the default for cards and 30px for atmospheric gradient cards.\n- A single chromatic accent `{colors.accent-blue}` reserved for hyperlinks, focus, and selection — never decorative.",
+      "line": 256
+    },
+    {
+      "heading": "Colors",
+      "level": 2,
+      "text": "> Source pages: framer.com (home), /ai/, /startups/, /marketplace/templates/nudge/, /gallery/a16z-speedrun-×-tonik, /pricing.",
+      "line": 273
+    },
+    {
+      "heading": "Brand & Accent",
+      "level": 3,
+      "text": "- **Pure White** ({colors.primary}): The brand primary surface. Every primary CTA pill, every display headline, every body line on canvas.\n- **Sky Blue** ({colors.accent-blue}): The single chromatic accent. Hyperlinks, focused-input rings, and a few selection states. Never used for backgrounds or as a brand fill.",
+      "line": 277
+    },
+    {
+      "heading": "Surface",
+      "level": 3,
+      "text": "- **Canvas** ({colors.canvas}): Default page background — near-black with a faint warmth. Footer, pricing, hero, and FAQ all sit on it.\n- **Surface 1** ({colors.surface-1}): One step above canvas — pricing cards, secondary buttons, mockup tiles.\n- **Surface 2** ({colors.surface-2}): Two steps above — featured pricing card, hero pill backdrop, selected pricing tab.\n- **Hairline** ({colors.hairline}): 1px borders on input groups, comparison-table dividers.\n- **Hairline Soft** ({colors.hairline-soft}): Subtler dividers — between FAQ rows and footer column rules.\n- **Inverse Canvas** ({colors.inverse-canvas}): Pure white — used as the surface of light-on-dark pill CTAs and a small set of light-mode template thumbnails embedded in the showcase grid.",
+      "line": 281
+    },
+    {
+      "heading": "Text",
+      "level": 3,
+      "text": "- **Ink** ({colors.ink}): All headline and emphasized body type — pure white.\n- **Ink Muted** ({colors.ink-muted}): Secondary type — gray (#999999) used for meta info, footer columns, comparison-row labels, deselected pricing tabs. Hierarchy on the dark canvas is carried by ink → ink-muted contrast, not by weight changes.",
+      "line": 289
+    },
+    {
+      "heading": "Semantic",
+      "level": 3,
+      "text": "- **Success Green** ({colors.semantic-success}): Pricing comparison-table checkmarks. Glyph fill, not surface.",
+      "line": 293
+    },
+    {
+      "heading": "Brand Gradient (signature)",
+      "level": 3,
+      "text": "- **Gradient Magenta** ({colors.gradient-magenta}): Spotlight card variant.\n- **Gradient Violet** ({colors.gradient-violet}): Spotlight card variant — most common.\n- **Gradient Orange** ({colors.gradient-orange}): Spotlight card variant — sunset wash.\n- **Gradient Coral** ({colors.gradient-coral}): Spotlight card variant — coral/pink.\n\nThese four sit as oversized atmospheric tiles inside otherwise monochrome card grids — a dark canvas with one or two glowing spotlight cards is a recurring page signature.",
+      "line": 296
+    },
+    {
+      "heading": "Typography",
+      "level": 2,
+      "text": "",
+      "line": 304
+    },
+    {
+      "heading": "Font Family",
+      "level": 3,
+      "text": "- **GT Walsheim Framer Medium** / **GT Walsheim Medium** — Framer's display typeface. Geometric, slightly humanist, very confident at large sizes with extreme negative tracking. Fallbacks: `GT Walsheim Medium Placeholder` system font.\n- **Inter Variable** — System body typeface. Used with extensive OpenType character variants: `cv01` (alternate \"1\"), `cv05` (alternate \"g\"), `cv09` (alternate \"i\" / \"l\"), `cv11` (alternate \"0\"), `ss03` / `ss07` stylistic sets, `dlig` discretionary ligatures, and `tnum` for numerics in tabular contexts. The result is a body voice that feels bespoke without commissioning a custom face.\n- **Inter** — Used selectively for `{typography.headline}` (the 22px / 20px tier). The non-variable cut catches small tracking targets that the variable file rounds.",
+      "line": 306
+    },
+    {
+      "heading": "Hierarchy",
+      "level": 3,
+      "text": "| Token | Size | Weight | Line Height | Letter Spacing | Use |\n|---|---|---|---|---|---|\n| `{typography.display-xxl}` | 110px | 500 | 0.85 | -5.5px | Largest hero headline (home, AI page) |\n| `{typography.display-xl}` | 85px | 500 | 0.95 | -4.25px | Section opener headlines |\n| `{typography.display-lg}` | 62px | 500 | 1.00 | -3.1px | Sub-section openers |\n| `{typography.display-md}` | 32px | 500 | 1.13 | -1.0px | Card titles, smaller display |\n| `{typography.headline}` | 22px | 700 | 1.20 | -0.8px | Pricing tier headlines, FAQ category titles |\n| `{typography.subhead}` | 24px | 400 | 1.30 | -0.01px | Lead body next to display headlines |\n| `{typography.body-lg}` | 18px | 400 | 1.30 | -0.18px | Hero subhead, lead paragraphs |\n| `{typography.body}` | 15px | 400 | 1.30 | -0.15px | Default body, card descriptions |\n| `{typography.body-sm}` | 14px | 500 | 1.40 | -0.14px | Pricing comparison rows, dense data |\n| `{typography.caption}` | 13px | 500 | 1.20 | -0.13px | Eyebrows, footer columns, meta |\n| `{typography.micro}` | 12px | 400 | 1.20 | -0.12px | Disclaimer, footnote |\n| `{typography.button}` | 14px | 500 | 1.0 | -0.14px | Pill buttons |",
+      "line": 312
+    },
+    {
+      "heading": "Principles",
+      "level": 3,
+      "text": "- **Letter-spacing scales with size, hard.** Display-xxl pulls -5.5px (5% of size); body sticks to about -1% (-0.15px on 15px). The result: posters at the top, comfortable reading at body.\n- **OpenType character variants are the brand voice.** Switching off `cv11`, `ss03`, etc. visibly changes the body voice — the brand depends on them.\n- **Weight stays in a narrow band.** Display sits at 500, body at 400, body-sm/caption at 500. Hierarchy is carried by size + tracking, not by 700/900 ramps.\n- **Tight line-heights everywhere.** Even body runs at 1.30 — Framer's editorial tone is denser than typical SaaS marketing.",
+      "line": 329
+    },
+    {
+      "heading": "Note on Font Substitutes",
+      "level": 3,
+      "text": "If implementing without GT Walsheim Medium, suitable open-source substitutes include **Mona Sans**, **Geist**, or **Inter** at weight 600–700 with manually tightened tracking. Mona Sans's hairline weights at 100–300 are particularly close to Framer's cleaner section openers. Inter Variable is open-source — keep it as-is and preserve the documented OpenType variants.",
+      "line": 336
+    },
+    {
+      "heading": "Layout",
+      "level": 2,
+      "text": "",
+      "line": 340
+    },
+    {
+      "heading": "Spacing System",
+      "level": 3,
+      "text": "- **Base unit**: 5px (Framer uses non-standard 5/10/15/20/30 increments rather than the more common 4/8/16/24).\n- **Tokens (front matter)**: `{spacing.hair}` 1px · `{spacing.xxs}` 4px · `{spacing.xs}` 8px · `{spacing.sm}` 12px · `{spacing.md}` 15px · `{spacing.lg}` 20px · `{spacing.xl}` 30px · `{spacing.xxl}` 40px · `{spacing.section}` 96px.\n- Card interior padding: `{spacing.lg}` 20px on pricing cards; `{spacing.xl}` 30px on gradient spotlight cards.\n- Pill button padding: 10px vertical · 15px horizontal — `{components.button-primary}`.\n- Section padding (vertical): roughly `{spacing.section}` 96px on home; tighter (~64px) on pricing comparison.",
+      "line": 342
+    },
+    {
+      "heading": "Grid & Container",
+      "level": 3,
+      "text": "- Max content width sits around the 1199px breakpoint, with side gutters that scale toward `{spacing.xl}` on desktop.\n- Card grids on the home gallery use 2-up at desktop, collapsing to 1-up below 810px.\n- Pricing tier grid is 4-up across the documented breakpoints; comparison table beneath it uses fixed-width left column with horizontally scrolling tier columns at narrow widths.",
+      "line": 350
+    },
+    {
+      "heading": "Whitespace Philosophy",
+      "level": 3,
+      "text": "The dark canvas IS the whitespace. Where lighter brands lean on white air to separate sections, Framer leans on long stretches of black with a single oversized statement floating in the middle. Sections separate by mode change: a band of charcoal cards, then a band of black with a gradient spotlight, then back to charcoal — like cuts in a dark film.",
+      "line": 356
+    },
+    {
+      "heading": "Elevation & Depth",
+      "level": 2,
+      "text": "| Level | Treatment | Use |\n|---|---|---|\n| 0 (flat) | No shadow, no border | Default for canvas-mounted display type, FAQ rows, footer |\n| 1 (charcoal) | `{colors.surface-1}` lift on canvas | Pricing cards, mockup tiles, secondary buttons |\n| 2 (light-edge) | `rgba(255,255,255,0.10)` 0.5px top edge + `rgba(0,0,0,0.25)` 0px 10px 30px drop | Floating product cards, modal cards |\n| 3 (selected) | `rgba(0,153,255,0.15)` 0px 0px 0px 1px ring | Focused inputs, selected option |\n\nFour shadow signatures recur across the homepage: a 1px subtle drop, a translucent blue ring, a thick near-black 2px outline (used as the active-element marker on sub-nav), and the layered light-edge + drop-shadow used for floating cards.",
+      "line": 360
+    },
+    {
+      "heading": "Decorative Depth",
+      "level": 3,
+      "text": "- **Gradient spotlight cards** are the dominant depth device — color saturation against black canvas substitutes for shadow-driven elevation.\n- **Layered product mockups** (browser frames containing live Framer-built sites) sit inside `{colors.surface-1}` cards with the level-2 light-edge treatment.\n- **Subtle blue ring (focus / selected)** is the only chromatic depth signal — used to mark the active state of input groups and pricing tier toggles without changing the underlying surface.",
+      "line": 371
+    },
+    {
+      "heading": "Shapes",
+      "level": 2,
+      "text": "",
+      "line": 377
+    },
+    {
+      "heading": "Border Radius Scale",
+      "level": 3,
+      "text": "Framer's extracted radius set is unusually granular (1px, 4px, 5px, 6px, 8px, 10px, 12px, 15px, 20px, 30px, 40px, 100px). The named scale below picks the levels the marketing surface actually consumes.\n\n| Token | Value | Use |\n|---|---|---|\n| `{rounded.xs}` | 4px | Small chip / utility radius |\n| `{rounded.sm}` | 6px | Inline tag, badge |\n| `{rounded.md}` | 10px | Form input, list item |\n| `{rounded.lg}` | 15px | Template card thumbnails |\n| `{rounded.xl}` | 20px | Pricing cards, mockup tiles |\n| `{rounded.xxl}` | 30px | Gradient spotlight cards, oversized panels |\n| `{rounded.pill}` | 100px | All primary text CTAs |\n| `{rounded.full}` | 9999px | Circular icon buttons, avatar circles |",
+      "line": 379
+    },
+    {
+      "heading": "Photography & Illustration Geometry",
+      "level": 3,
+      "text": "- Embedded site mockups (browser-chromed previews of Framer-built sites) sit in `{rounded.xl}` 20px tiles with `{spacing.md}` 15px interior padding.\n- Gradient spotlight cards use `{rounded.xxl}` 30px corners — softer than the 20px content cards by design, to make them feel like atmospheric panels rather than tighter UI.\n- Icon glyphs and sub-nav glyphs render in `{rounded.full}` circles at 32–40px sizes.",
+      "line": 394
+    },
+    {
+      "heading": "Components",
+      "level": 2,
+      "text": "",
+      "line": 400
+    },
+    {
+      "heading": "Buttons",
+      "level": 3,
+      "text": "**`button-primary`** — White pill on dark canvas. The primary CTA across home, pricing, AI, and gallery pages.\n- Background `{colors.primary}`, text `{colors.on-primary}`, type `{typography.button}`, padding 10px 15px, rounded `{rounded.pill}`.\n- Pressed state lives in `button-primary-pressed` (the live site uses a transform-scale shrink rather than a darkened fill).\n\n**`button-secondary`** — Charcoal pill. Used for secondary navigation actions (\"Sign in\", \"Talk to sales\") and as the visual counterpart to the primary pill.\n- Background `{colors.surface-1}`, text `{colors.ink}`, type `{typography.button}`, padding 10px 15px, rounded `{rounded.pill}`.\n\n**`button-translucent`** — Translucent / lifted secondary used on top of busy backgrounds (gallery hero, gradient cards).\n- Background `{colors.surface-2}`, text `{colors.ink}`, type `{typography.button}`, rounded `{rounded.xxl}`, padding 8px 14px.\n\n**`button-icon-circular`** — 40px circle for inline icon actions (carousel arrows, social links).\n- Background `{colors.surface-1}`, text `{colors.ink}`, rounded `{rounded.full}`, size 40px.",
+      "line": 402
+    },
+    {
+      "heading": "Pricing Tabs",
+      "level": 3,
+      "text": "**`pricing-tab-default`** + **`pricing-tab-selected`** — The pill-toggle that switches between Basic / Pro / Business / Enterprise on `/pricing`.\n- Default: `{colors.canvas}` background, `{colors.ink-muted}` text, rounded `{rounded.pill}`.\n- Selected: `{colors.surface-2}` background, `{colors.ink}` text — selected = lift, not color. Surface depth communicates \"active\" without needing a chromatic fill.",
+      "line": 417
+    },
+    {
+      "heading": "Inputs & Forms",
+      "level": 3,
+      "text": "**`text-input`** + **`text-input-focused`** — Form fields on `/pricing` (seat-count, currency switcher) and the in-product preview surfaces.\n- Background `{colors.surface-1}`, text `{colors.ink}`, type `{typography.body}`, rounded `{rounded.md}`, padding 10px 14px.\n- Focused state retains the same surface; the focus ring is the level-3 blue-tinted shadow `rgba(0,153,255,0.15)` 0 0 0 1px.",
+      "line": 423
+    },
+    {
+      "heading": "Cards & Containers",
+      "level": 3,
+      "text": "**`pricing-card`** — Each tier on `/pricing`.\n- Background `{colors.surface-1}`, text `{colors.ink}`, type `{typography.body}`, rounded `{rounded.xl}`, padding 24px.\n\n**`pricing-card-featured`** — The Pro tier (visually emphasized).\n- Background `{colors.surface-2}`, otherwise identical structure. The lift is one surface step up — no chromatic outline.\n\n**`template-card`** — Thumbnail tile in the home \"Built with Framer\" gallery and `/marketplace`.\n- Background `{colors.surface-1}`, text `{colors.ink}`, type `{typography.body-sm}`, rounded `{rounded.lg}`, padding 12px.\n\n**`product-mockup-tile`** — Larger tile that frames a live product UI mock (Framer canvas, Workshop video, AI translate panel).\n- Background `{colors.surface-1}`, text `{colors.ink}`, type `{typography.body-sm}`, rounded `{rounded.xl}`, padding 16px.",
+      "line": 429
+    },
+    {
+      "heading": "Gradient Spotlight Cards (signature)",
+      "level": 3,
+      "text": "The defining decorative surface of Framer's marketing — oversized atmospheric tiles dropped into otherwise monochrome card grids. Variants:\n\n**`gradient-spotlight-card`** — violet ground (most common).\n- Background `{colors.gradient-violet}`, text `{colors.ink}`, type `{typography.subhead}`, rounded `{rounded.xl}`, padding 32px. (The on-site card often pushes to `{rounded.xxl}` 30px when it spans a wider tile.)\n\n**`gradient-spotlight-card-magenta`** — magenta-pink ground.\n- Background `{colors.gradient-magenta}`, otherwise identical.\n\n**`gradient-spotlight-card-orange`** — sunset-orange wash.\n- Background `{colors.gradient-orange}`, otherwise identical.\n\n(Coral pink follows the same shape with `{colors.gradient-coral}`.)",
+      "line": 443
+    },
+    {
+      "heading": "Comparison & FAQ",
+      "level": 3,
+      "text": "**`feature-row`** + **`comparison-row`** — Single rows inside the pricing comparison table.\n- `feature-row`: `{colors.canvas}` background, `{colors.ink}` text. Header rows.\n- `comparison-row`: `{colors.canvas}` background, `{colors.ink-muted}` text. Data rows with `{typography.body-sm}` and 1px `{colors.hairline-soft}` underlines.\n\n**`faq-row`** — Each accordion line in the pricing-page FAQ.\n- Background `{colors.canvas}`, text `{colors.ink}`, type `{typography.body}`, rounded `{rounded.md}`, padding 24px.",
+      "line": 458
+    },
+    {
+      "heading": "Navigation",
+      "level": 3,
+      "text": "**`top-nav`** — Sticky bar on `{colors.canvas}` with the Framer wordmark left, primary nav links centered, and a `button-secondary` (\"Sign in\") + `button-primary` (\"Get started for free\") pair right.\n- Background `{colors.canvas}`, text `{colors.ink}`, type `{typography.body-sm}`, height 56px.\n- Mobile: collapses primary links into a hamburger; the two pill CTAs collapse into a single primary pill on the bar.",
+      "line": 467
+    },
+    {
+      "heading": "Footer",
+      "level": 3,
+      "text": "**`footer`** — Dense link grid on `{colors.canvas}` with the Framer wordmark left and 5–6 columns of caption-sized links.\n- Background `{colors.canvas}`, text `{colors.ink-muted}`, type `{typography.caption}`, padding 64px 32px.",
+      "line": 473
+    },
+    {
+      "heading": "Do's and Don'ts",
+      "level": 2,
+      "text": "",
+      "line": 478
+    },
+    {
+      "heading": "Do",
+      "level": 3,
+      "text": "- Reserve `{colors.primary}` (white) and `{colors.canvas}` (near-black) as the system's two anchor surfaces. Every band of the page chooses one or the other.\n- Push display-size letter-spacing aggressively negative — `{typography.display-xxl}` at -5.5px is the brand signature, not a stylistic accident.\n- Use `{colors.accent-blue}` only for hyperlinks, focus rings, and selected indicators. Never as a background or button fill.\n- Drop one or two `gradient-spotlight-card` variants into a card grid; they are the brand's atmosphere device. Don't overdo it — three or more in the same viewport reads as a moodboard, not a system.\n- Compose every CTA as a pill (`{rounded.pill}`); secondary actions live as charcoal pills, never as bordered ghost buttons.\n- Keep body type Inter Variable with character variants `cv01`, `cv05`, `cv09`, `cv11`, `ss03`, `ss07` enabled — the brand voice depends on them.\n- Use surface lift (canvas → surface-1 → surface-2) to mark hierarchy on dark, not opacity changes on white type.",
+      "line": 480
+    },
+    {
+      "heading": "Don't",
+      "level": 3,
+      "text": "- Don't ship a light-mode marketing page. Framer's identity is dark.\n- Don't introduce mid-tone gray text outside `{colors.ink-muted}`. The hierarchy is binary: `ink` or `ink-muted`.\n- Don't use `{colors.accent-blue}` as a brand fill (e.g., a blue CTA pill). The blue is a signal color, not a surface.\n- Don't square off CTAs. Pill (`{rounded.pill}`) or full circle is the brand vocabulary.\n- Don't reduce the negative letter-spacing on display sizes \"for accessibility\". The compression is intrinsic to the brand voice; reduce the SIZE if needed, but keep the percentage.\n- Don't apply gradient backgrounds to whole sections. Gradients are CARDS, not section grounds.\n- Don't combine more than one chromatic accent. The palette is monochrome plus one blue plus the gradient family — not \"blue, green, and red\".",
+      "line": 490
+    },
+    {
+      "heading": "Responsive Behavior",
+      "level": 2,
+      "text": "",
+      "line": 500
+    },
+    {
+      "heading": "Breakpoints",
+      "level": 3,
+      "text": "| Name | Width | Key Changes |\n|---|---|---|\n| Desktop | 1199px | Default desktop layout |\n| Tablet | 810px | Card grids collapse 4-up → 2-up; nav becomes hamburger |\n| Mobile-Lg | 809px | Pricing comparison table becomes per-tier accordion |\n| Mobile-XS | 98px | Smallest documented breakpoint — single-column everything |",
+      "line": 502
+    },
+    {
+      "heading": "Touch Targets",
+      "level": 3,
+      "text": "- Pill buttons (`button-primary`, `button-secondary`) maintain a minimum 44px tap height across all viewports — combine `{typography.button}` 14px line-height with the documented 10px vertical padding.\n- Circular icon buttons (`button-icon-circular`) are 40px on desktop and grow to 44px on touch viewports.\n- Pricing-tab pills hold ≥40px tap height; below 810px they may collapse into a horizontal-scroll row instead of stacking.",
+      "line": 511
+    },
+    {
+      "heading": "Collapsing Strategy",
+      "level": 3,
+      "text": "- **Nav**: horizontal nav with a centered link group + right-anchored pill pair collapses to a hamburger overlay below 810px. The `button-primary` stays visible on the bar.\n- **Card grids**: the gallery and template-card grids go 2-up on desktop → 1-up on mobile. Gradient spotlight cards retain `{rounded.xxl}` corners at every viewport — they don't bleed.\n- **Pricing comparison table**: collapses into per-tier accordions below 810px to avoid horizontal scroll.\n- **Display type**: `{typography.display-xxl}` 110px scales down toward `{typography.display-lg}` 62px on tablet and `{typography.display-md}` 32px on mobile, preserving the percentage-negative letter-spacing.",
+      "line": 517
+    },
+    {
+      "heading": "Image Behavior",
+      "level": 3,
+      "text": "- Embedded product mockups (browser frames containing live Framer-built sites) maintain their aspect ratio and never crop.\n- Gradient spotlight cards keep their gradient orientations across breakpoints — the gradient direction is part of the brand spec.",
+      "line": 524
+    },
+    {
+      "heading": "Iteration Guide",
+      "level": 2,
+      "text": "1. Focus on ONE component at a time and reference it by its `components:` token name (e.g., `{components.button-primary}`, `{components.gradient-spotlight-card}`).\n2. When introducing a new section on the dark canvas, decide first which surface lift it lives on — `{colors.canvas}` for hero/FAQ, `{colors.surface-1}` for cards, `{colors.surface-2}` for featured cards. The depth choice is the most consequential decision.\n3. Default body to `{typography.body}` with all the documented OpenType variants; reach for `{typography.subhead}` only inside spotlight cards.\n4. Run `npx @google/design.md lint DESIGN.md` after edits — `broken-ref`, `contrast-ratio`, and `orphaned-tokens` warnings flag issues automatically.\n5. Add new variants as separate component entries (`-pressed`, `-featured`, `-selected`) — do not bury them in prose.\n6. Treat `{colors.accent-blue}` as a single-shot signal color: hyperlinks, focus, and selection — that's it. If you find yourself reaching for a second blue, the brand is drifting.\n7. Gradient spotlight cards are scarce by design. One or two per long page is the spec; three is a moodboard.",
+      "line": 529
+    },
+    {
+      "heading": "Known Gaps",
+      "level": 2,
+      "text": "- The exact gradient stops for the spotlight cards are derived from screenshot pixels rather than from CSS variables — the production gradients are likely defined as `linear-gradient` strings on individual elements rather than as design tokens. Treat the documented `{colors.gradient-*}` hex values as base anchors, not as exact gradient specs.\n- Form-field validation / error styling is not visible on the inspected pages because no error states render in the static screenshots.\n- Dark mode is the only mode — no light-mode adaptation is documented because the marketing site does not ship one.\n- The marketplace template detail page returned sparser CSS variable data than the other pages; surface tokens for that page were inferred from the matching home / gallery treatment rather than extracted directly.",
+      "line": 539
+    }
+  ],
+  "tokens": [
+    {
+      "path": "colors.primary",
+      "sourcePath": "colors.primary",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 7,
+        "sourcePath": "colors.primary"
+      }
+    },
+    {
+      "path": "colors.onprimary",
+      "sourcePath": "colors.on-primary",
+      "type": "color",
+      "value": "#000000",
+      "status": "unverified",
+      "evidence": {
+        "line": 8,
+        "sourcePath": "colors.on-primary"
+      }
+    },
+    {
+      "path": "colors.accentblue",
+      "sourcePath": "colors.accent-blue",
+      "type": "color",
+      "value": "#0099ff",
+      "status": "unverified",
+      "evidence": {
+        "line": 9,
+        "sourcePath": "colors.accent-blue"
+      }
+    },
+    {
+      "path": "colors.ink",
+      "sourcePath": "colors.ink",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 10,
+        "sourcePath": "colors.ink"
+      }
+    },
+    {
+      "path": "colors.inkmuted",
+      "sourcePath": "colors.ink-muted",
+      "type": "color",
+      "value": "#999999",
+      "status": "unverified",
+      "evidence": {
+        "line": 11,
+        "sourcePath": "colors.ink-muted"
+      }
+    },
+    {
+      "path": "colors.canvas",
+      "sourcePath": "colors.canvas",
+      "type": "color",
+      "value": "#090909",
+      "status": "unverified",
+      "evidence": {
+        "line": 12,
+        "sourcePath": "colors.canvas"
+      }
+    },
+    {
+      "path": "colors.surface1",
+      "sourcePath": "colors.surface-1",
+      "type": "color",
+      "value": "#141414",
+      "status": "unverified",
+      "evidence": {
+        "line": 13,
+        "sourcePath": "colors.surface-1"
+      }
+    },
+    {
+      "path": "colors.surface2",
+      "sourcePath": "colors.surface-2",
+      "type": "color",
+      "value": "#1c1c1c",
+      "status": "unverified",
+      "evidence": {
+        "line": 14,
+        "sourcePath": "colors.surface-2"
+      }
+    },
+    {
+      "path": "colors.hairline",
+      "sourcePath": "colors.hairline",
+      "type": "color",
+      "value": "#262626",
+      "status": "unverified",
+      "evidence": {
+        "line": 15,
+        "sourcePath": "colors.hairline"
+      }
+    },
+    {
+      "path": "colors.hairlinesoft",
+      "sourcePath": "colors.hairline-soft",
+      "type": "color",
+      "value": "#1a1a1a",
+      "status": "unverified",
+      "evidence": {
+        "line": 16,
+        "sourcePath": "colors.hairline-soft"
+      }
+    },
+    {
+      "path": "colors.inversecanvas",
+      "sourcePath": "colors.inverse-canvas",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 17,
+        "sourcePath": "colors.inverse-canvas"
+      }
+    },
+    {
+      "path": "colors.inverseink",
+      "sourcePath": "colors.inverse-ink",
+      "type": "color",
+      "value": "#000000",
+      "status": "unverified",
+      "evidence": {
+        "line": 18,
+        "sourcePath": "colors.inverse-ink"
+      }
+    },
+    {
+      "path": "colors.gradientmagenta",
+      "sourcePath": "colors.gradient-magenta",
+      "type": "color",
+      "value": "#d44df0",
+      "status": "unverified",
+      "evidence": {
+        "line": 19,
+        "sourcePath": "colors.gradient-magenta"
+      }
+    },
+    {
+      "path": "colors.gradientviolet",
+      "sourcePath": "colors.gradient-violet",
+      "type": "color",
+      "value": "#6a4cf5",
+      "status": "unverified",
+      "evidence": {
+        "line": 20,
+        "sourcePath": "colors.gradient-violet"
+      }
+    },
+    {
+      "path": "colors.gradientorange",
+      "sourcePath": "colors.gradient-orange",
+      "type": "color",
+      "value": "#ff7a3d",
+      "status": "unverified",
+      "evidence": {
+        "line": 21,
+        "sourcePath": "colors.gradient-orange"
+      }
+    },
+    {
+      "path": "colors.gradientcoral",
+      "sourcePath": "colors.gradient-coral",
+      "type": "color",
+      "value": "#ff5577",
+      "status": "unverified",
+      "evidence": {
+        "line": 22,
+        "sourcePath": "colors.gradient-coral"
+      }
+    },
+    {
+      "path": "colors.semanticsuccess",
+      "sourcePath": "colors.semantic-success",
+      "type": "color",
+      "value": "#22c55e",
+      "status": "unverified",
+      "evidence": {
+        "line": 23,
+        "sourcePath": "colors.semantic-success"
+      }
+    },
+    {
+      "path": "typography.displayxxl.fontfamily",
+      "sourcePath": "typography.display-xxl.fontFamily",
+      "type": "fontFamily",
+      "value": "GT Walsheim Framer Medium",
+      "status": "unverified",
+      "evidence": {
+        "line": 27,
+        "sourcePath": "typography.display-xxl.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displayxxl.fontsize",
+      "sourcePath": "typography.display-xxl.fontSize",
+      "type": "dimension",
+      "value": "110px",
+      "status": "unverified",
+      "evidence": {
+        "line": 28,
+        "sourcePath": "typography.display-xxl.fontSize"
+      }
+    },
+    {
+      "path": "typography.displayxxl.fontweight",
+      "sourcePath": "typography.display-xxl.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 29,
+        "sourcePath": "typography.display-xxl.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displayxxl.lineheight",
+      "sourcePath": "typography.display-xxl.lineHeight",
+      "type": "number",
+      "value": 0.85,
+      "status": "unverified",
+      "evidence": {
+        "line": 30,
+        "sourcePath": "typography.display-xxl.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displayxxl.letterspacing",
+      "sourcePath": "typography.display-xxl.letterSpacing",
+      "type": "dimension",
+      "value": "-5.5px",
+      "status": "unverified",
+      "evidence": {
+        "line": 31,
+        "sourcePath": "typography.display-xxl.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.displayxl.fontfamily",
+      "sourcePath": "typography.display-xl.fontFamily",
+      "type": "fontFamily",
+      "value": "GT Walsheim Medium",
+      "status": "unverified",
+      "evidence": {
+        "line": 33,
+        "sourcePath": "typography.display-xl.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displayxl.fontsize",
+      "sourcePath": "typography.display-xl.fontSize",
+      "type": "dimension",
+      "value": "85px",
+      "status": "unverified",
+      "evidence": {
+        "line": 34,
+        "sourcePath": "typography.display-xl.fontSize"
+      }
+    },
+    {
+      "path": "typography.displayxl.fontweight",
+      "sourcePath": "typography.display-xl.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 35,
+        "sourcePath": "typography.display-xl.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displayxl.lineheight",
+      "sourcePath": "typography.display-xl.lineHeight",
+      "type": "number",
+      "value": 0.95,
+      "status": "unverified",
+      "evidence": {
+        "line": 36,
+        "sourcePath": "typography.display-xl.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displayxl.letterspacing",
+      "sourcePath": "typography.display-xl.letterSpacing",
+      "type": "dimension",
+      "value": "-4.25px",
+      "status": "unverified",
+      "evidence": {
+        "line": 37,
+        "sourcePath": "typography.display-xl.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.displaylg.fontfamily",
+      "sourcePath": "typography.display-lg.fontFamily",
+      "type": "fontFamily",
+      "value": "GT Walsheim Medium",
+      "status": "unverified",
+      "evidence": {
+        "line": 40,
+        "sourcePath": "typography.display-lg.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displaylg.fontsize",
+      "sourcePath": "typography.display-lg.fontSize",
+      "type": "dimension",
+      "value": "62px",
+      "status": "unverified",
+      "evidence": {
+        "line": 41,
+        "sourcePath": "typography.display-lg.fontSize"
+      }
+    },
+    {
+      "path": "typography.displaylg.fontweight",
+      "sourcePath": "typography.display-lg.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 42,
+        "sourcePath": "typography.display-lg.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displaylg.lineheight",
+      "sourcePath": "typography.display-lg.lineHeight",
+      "type": "number",
+      "value": 1,
+      "status": "unverified",
+      "evidence": {
+        "line": 43,
+        "sourcePath": "typography.display-lg.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displaylg.letterspacing",
+      "sourcePath": "typography.display-lg.letterSpacing",
+      "type": "dimension",
+      "value": "-3.1px",
+      "status": "unverified",
+      "evidence": {
+        "line": 44,
+        "sourcePath": "typography.display-lg.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.displaymd.fontfamily",
+      "sourcePath": "typography.display-md.fontFamily",
+      "type": "fontFamily",
+      "value": "GT Walsheim Medium",
+      "status": "unverified",
+      "evidence": {
+        "line": 47,
+        "sourcePath": "typography.display-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displaymd.fontsize",
+      "sourcePath": "typography.display-md.fontSize",
+      "type": "dimension",
+      "value": "32px",
+      "status": "unverified",
+      "evidence": {
+        "line": 48,
+        "sourcePath": "typography.display-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.displaymd.fontweight",
+      "sourcePath": "typography.display-md.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 49,
+        "sourcePath": "typography.display-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displaymd.lineheight",
+      "sourcePath": "typography.display-md.lineHeight",
+      "type": "number",
+      "value": 1.13,
+      "status": "unverified",
+      "evidence": {
+        "line": 50,
+        "sourcePath": "typography.display-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displaymd.letterspacing",
+      "sourcePath": "typography.display-md.letterSpacing",
+      "type": "dimension",
+      "value": "-1.0px",
+      "status": "unverified",
+      "evidence": {
+        "line": 51,
+        "sourcePath": "typography.display-md.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.headline.fontfamily",
+      "sourcePath": "typography.headline.fontFamily",
+      "type": "fontFamily",
+      "value": "Inter",
+      "status": "unverified",
+      "evidence": {
+        "line": 53,
+        "sourcePath": "typography.headline.fontFamily"
+      }
+    },
+    {
+      "path": "typography.headline.fontsize",
+      "sourcePath": "typography.headline.fontSize",
+      "type": "dimension",
+      "value": "22px",
+      "status": "unverified",
+      "evidence": {
+        "line": 54,
+        "sourcePath": "typography.headline.fontSize"
+      }
+    },
+    {
+      "path": "typography.headline.fontweight",
+      "sourcePath": "typography.headline.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 55,
+        "sourcePath": "typography.headline.fontWeight"
+      }
+    },
+    {
+      "path": "typography.headline.lineheight",
+      "sourcePath": "typography.headline.lineHeight",
+      "type": "number",
+      "value": 1.2,
+      "status": "unverified",
+      "evidence": {
+        "line": 56,
+        "sourcePath": "typography.headline.lineHeight"
+      }
+    },
+    {
+      "path": "typography.headline.letterspacing",
+      "sourcePath": "typography.headline.letterSpacing",
+      "type": "dimension",
+      "value": "-0.8px",
+      "status": "unverified",
+      "evidence": {
+        "line": 57,
+        "sourcePath": "typography.headline.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.subhead.fontfamily",
+      "sourcePath": "typography.subhead.fontFamily",
+      "type": "fontFamily",
+      "value": "Inter Variable",
+      "status": "unverified",
+      "evidence": {
+        "line": 60,
+        "sourcePath": "typography.subhead.fontFamily"
+      }
+    },
+    {
+      "path": "typography.subhead.fontsize",
+      "sourcePath": "typography.subhead.fontSize",
+      "type": "dimension",
+      "value": "24px",
+      "status": "unverified",
+      "evidence": {
+        "line": 61,
+        "sourcePath": "typography.subhead.fontSize"
+      }
+    },
+    {
+      "path": "typography.subhead.fontweight",
+      "sourcePath": "typography.subhead.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 62,
+        "sourcePath": "typography.subhead.fontWeight"
+      }
+    },
+    {
+      "path": "typography.subhead.lineheight",
+      "sourcePath": "typography.subhead.lineHeight",
+      "type": "number",
+      "value": 1.3,
+      "status": "unverified",
+      "evidence": {
+        "line": 63,
+        "sourcePath": "typography.subhead.lineHeight"
+      }
+    },
+    {
+      "path": "typography.subhead.letterspacing",
+      "sourcePath": "typography.subhead.letterSpacing",
+      "type": "dimension",
+      "value": "-0.01px",
+      "status": "unverified",
+      "evidence": {
+        "line": 64,
+        "sourcePath": "typography.subhead.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.bodylg.fontfamily",
+      "sourcePath": "typography.body-lg.fontFamily",
+      "type": "fontFamily",
+      "value": "Inter Variable",
+      "status": "unverified",
+      "evidence": {
+        "line": 67,
+        "sourcePath": "typography.body-lg.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodylg.fontsize",
+      "sourcePath": "typography.body-lg.fontSize",
+      "type": "dimension",
+      "value": "18px",
+      "status": "unverified",
+      "evidence": {
+        "line": 68,
+        "sourcePath": "typography.body-lg.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodylg.fontweight",
+      "sourcePath": "typography.body-lg.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 69,
+        "sourcePath": "typography.body-lg.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodylg.lineheight",
+      "sourcePath": "typography.body-lg.lineHeight",
+      "type": "number",
+      "value": 1.3,
+      "status": "unverified",
+      "evidence": {
+        "line": 70,
+        "sourcePath": "typography.body-lg.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodylg.letterspacing",
+      "sourcePath": "typography.body-lg.letterSpacing",
+      "type": "dimension",
+      "value": "-0.18px",
+      "status": "unverified",
+      "evidence": {
+        "line": 71,
+        "sourcePath": "typography.body-lg.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.body.fontfamily",
+      "sourcePath": "typography.body.fontFamily",
+      "type": "fontFamily",
+      "value": "Inter Variable",
+      "status": "unverified",
+      "evidence": {
+        "line": 74,
+        "sourcePath": "typography.body.fontFamily"
+      }
+    },
+    {
+      "path": "typography.body.fontsize",
+      "sourcePath": "typography.body.fontSize",
+      "type": "dimension",
+      "value": "15px",
+      "status": "unverified",
+      "evidence": {
+        "line": 75,
+        "sourcePath": "typography.body.fontSize"
+      }
+    },
+    {
+      "path": "typography.body.fontweight",
+      "sourcePath": "typography.body.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 76,
+        "sourcePath": "typography.body.fontWeight"
+      }
+    },
+    {
+      "path": "typography.body.lineheight",
+      "sourcePath": "typography.body.lineHeight",
+      "type": "number",
+      "value": 1.3,
+      "status": "unverified",
+      "evidence": {
+        "line": 77,
+        "sourcePath": "typography.body.lineHeight"
+      }
+    },
+    {
+      "path": "typography.body.letterspacing",
+      "sourcePath": "typography.body.letterSpacing",
+      "type": "dimension",
+      "value": "-0.15px",
+      "status": "unverified",
+      "evidence": {
+        "line": 78,
+        "sourcePath": "typography.body.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.bodysm.fontfamily",
+      "sourcePath": "typography.body-sm.fontFamily",
+      "type": "fontFamily",
+      "value": "Inter Variable",
+      "status": "unverified",
+      "evidence": {
+        "line": 81,
+        "sourcePath": "typography.body-sm.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodysm.fontsize",
+      "sourcePath": "typography.body-sm.fontSize",
+      "type": "dimension",
+      "value": "14px",
+      "status": "unverified",
+      "evidence": {
+        "line": 82,
+        "sourcePath": "typography.body-sm.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodysm.fontweight",
+      "sourcePath": "typography.body-sm.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 83,
+        "sourcePath": "typography.body-sm.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodysm.lineheight",
+      "sourcePath": "typography.body-sm.lineHeight",
+      "type": "number",
+      "value": 1.4,
+      "status": "unverified",
+      "evidence": {
+        "line": 84,
+        "sourcePath": "typography.body-sm.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodysm.letterspacing",
+      "sourcePath": "typography.body-sm.letterSpacing",
+      "type": "dimension",
+      "value": "-0.14px",
+      "status": "unverified",
+      "evidence": {
+        "line": 85,
+        "sourcePath": "typography.body-sm.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.caption.fontfamily",
+      "sourcePath": "typography.caption.fontFamily",
+      "type": "fontFamily",
+      "value": "Inter Variable",
+      "status": "unverified",
+      "evidence": {
+        "line": 88,
+        "sourcePath": "typography.caption.fontFamily"
+      }
+    },
+    {
+      "path": "typography.caption.fontsize",
+      "sourcePath": "typography.caption.fontSize",
+      "type": "dimension",
+      "value": "13px",
+      "status": "unverified",
+      "evidence": {
+        "line": 89,
+        "sourcePath": "typography.caption.fontSize"
+      }
+    },
+    {
+      "path": "typography.caption.fontweight",
+      "sourcePath": "typography.caption.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 90,
+        "sourcePath": "typography.caption.fontWeight"
+      }
+    },
+    {
+      "path": "typography.caption.lineheight",
+      "sourcePath": "typography.caption.lineHeight",
+      "type": "number",
+      "value": 1.2,
+      "status": "unverified",
+      "evidence": {
+        "line": 91,
+        "sourcePath": "typography.caption.lineHeight"
+      }
+    },
+    {
+      "path": "typography.caption.letterspacing",
+      "sourcePath": "typography.caption.letterSpacing",
+      "type": "dimension",
+      "value": "-0.13px",
+      "status": "unverified",
+      "evidence": {
+        "line": 92,
+        "sourcePath": "typography.caption.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.micro.fontfamily",
+      "sourcePath": "typography.micro.fontFamily",
+      "type": "fontFamily",
+      "value": "Inter Variable",
+      "status": "unverified",
+      "evidence": {
+        "line": 95,
+        "sourcePath": "typography.micro.fontFamily"
+      }
+    },
+    {
+      "path": "typography.micro.fontsize",
+      "sourcePath": "typography.micro.fontSize",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 96,
+        "sourcePath": "typography.micro.fontSize"
+      }
+    },
+    {
+      "path": "typography.micro.fontweight",
+      "sourcePath": "typography.micro.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 97,
+        "sourcePath": "typography.micro.fontWeight"
+      }
+    },
+    {
+      "path": "typography.micro.lineheight",
+      "sourcePath": "typography.micro.lineHeight",
+      "type": "number",
+      "value": 1.2,
+      "status": "unverified",
+      "evidence": {
+        "line": 98,
+        "sourcePath": "typography.micro.lineHeight"
+      }
+    },
+    {
+      "path": "typography.micro.letterspacing",
+      "sourcePath": "typography.micro.letterSpacing",
+      "type": "dimension",
+      "value": "-0.12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 99,
+        "sourcePath": "typography.micro.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.button.fontfamily",
+      "sourcePath": "typography.button.fontFamily",
+      "type": "fontFamily",
+      "value": "Inter Variable",
+      "status": "unverified",
+      "evidence": {
+        "line": 102,
+        "sourcePath": "typography.button.fontFamily"
+      }
+    },
+    {
+      "path": "typography.button.fontsize",
+      "sourcePath": "typography.button.fontSize",
+      "type": "dimension",
+      "value": "14px",
+      "status": "unverified",
+      "evidence": {
+        "line": 103,
+        "sourcePath": "typography.button.fontSize"
+      }
+    },
+    {
+      "path": "typography.button.fontweight",
+      "sourcePath": "typography.button.fontWeight",
+      "type": "number",
+      "value": 500,
+      "status": "unverified",
+      "evidence": {
+        "line": 104,
+        "sourcePath": "typography.button.fontWeight"
+      }
+    },
+    {
+      "path": "typography.button.lineheight",
+      "sourcePath": "typography.button.lineHeight",
+      "type": "number",
+      "value": 1,
+      "status": "unverified",
+      "evidence": {
+        "line": 105,
+        "sourcePath": "typography.button.lineHeight"
+      }
+    },
+    {
+      "path": "typography.button.letterspacing",
+      "sourcePath": "typography.button.letterSpacing",
+      "type": "dimension",
+      "value": "-0.14px",
+      "status": "unverified",
+      "evidence": {
+        "line": 106,
+        "sourcePath": "typography.button.letterSpacing"
+      }
+    },
+    {
+      "path": "rounded.xs",
+      "sourcePath": "rounded.xs",
+      "type": "dimension",
+      "value": "4px",
+      "status": "unverified",
+      "evidence": {
+        "line": 110,
+        "sourcePath": "rounded.xs"
+      }
+    },
+    {
+      "path": "rounded.sm",
+      "sourcePath": "rounded.sm",
+      "type": "dimension",
+      "value": "6px",
+      "status": "unverified",
+      "evidence": {
+        "line": 111,
+        "sourcePath": "rounded.sm"
+      }
+    },
+    {
+      "path": "rounded.md",
+      "sourcePath": "rounded.md",
+      "type": "dimension",
+      "value": "10px",
+      "status": "unverified",
+      "evidence": {
+        "line": 112,
+        "sourcePath": "rounded.md"
+      }
+    },
+    {
+      "path": "rounded.lg",
+      "sourcePath": "rounded.lg",
+      "type": "dimension",
+      "value": "15px",
+      "status": "unverified",
+      "evidence": {
+        "line": 113,
+        "sourcePath": "rounded.lg"
+      }
+    },
+    {
+      "path": "rounded.xl",
+      "sourcePath": "rounded.xl",
+      "type": "dimension",
+      "value": "20px",
+      "status": "unverified",
+      "evidence": {
+        "line": 114,
+        "sourcePath": "rounded.xl"
+      }
+    },
+    {
+      "path": "rounded.xxl",
+      "sourcePath": "rounded.xxl",
+      "type": "dimension",
+      "value": "30px",
+      "status": "unverified",
+      "evidence": {
+        "line": 115,
+        "sourcePath": "rounded.xxl"
+      }
+    },
+    {
+      "path": "rounded.pill",
+      "sourcePath": "rounded.pill",
+      "type": "dimension",
+      "value": "100px",
+      "status": "unverified",
+      "evidence": {
+        "line": 116,
+        "sourcePath": "rounded.pill"
+      }
+    },
+    {
+      "path": "rounded.full",
+      "sourcePath": "rounded.full",
+      "type": "dimension",
+      "value": "9999px",
+      "status": "unverified",
+      "evidence": {
+        "line": 117,
+        "sourcePath": "rounded.full"
+      }
+    },
+    {
+      "path": "spacing.hair",
+      "sourcePath": "spacing.hair",
+      "type": "dimension",
+      "value": "1px",
+      "status": "unverified",
+      "evidence": {
+        "line": 120,
+        "sourcePath": "spacing.hair"
+      }
+    },
+    {
+      "path": "spacing.xxs",
+      "sourcePath": "spacing.xxs",
+      "type": "dimension",
+      "value": "4px",
+      "status": "unverified",
+      "evidence": {
+        "line": 121,
+        "sourcePath": "spacing.xxs"
+      }
+    },
+    {
+      "path": "spacing.xs",
+      "sourcePath": "spacing.xs",
+      "type": "dimension",
+      "value": "8px",
+      "status": "unverified",
+      "evidence": {
+        "line": 122,
+        "sourcePath": "spacing.xs"
+      }
+    },
+    {
+      "path": "spacing.sm",
+      "sourcePath": "spacing.sm",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 123,
+        "sourcePath": "spacing.sm"
+      }
+    },
+    {
+      "path": "spacing.md",
+      "sourcePath": "spacing.md",
+      "type": "dimension",
+      "value": "15px",
+      "status": "unverified",
+      "evidence": {
+        "line": 124,
+        "sourcePath": "spacing.md"
+      }
+    },
+    {
+      "path": "spacing.lg",
+      "sourcePath": "spacing.lg",
+      "type": "dimension",
+      "value": "20px",
+      "status": "unverified",
+      "evidence": {
+        "line": 125,
+        "sourcePath": "spacing.lg"
+      }
+    },
+    {
+      "path": "spacing.xl",
+      "sourcePath": "spacing.xl",
+      "type": "dimension",
+      "value": "30px",
+      "status": "unverified",
+      "evidence": {
+        "line": 126,
+        "sourcePath": "spacing.xl"
+      }
+    },
+    {
+      "path": "spacing.xxl",
+      "sourcePath": "spacing.xxl",
+      "type": "dimension",
+      "value": "40px",
+      "status": "unverified",
+      "evidence": {
+        "line": 127,
+        "sourcePath": "spacing.xxl"
+      }
+    },
+    {
+      "path": "spacing.section",
+      "sourcePath": "spacing.section",
+      "type": "dimension",
+      "value": "96px",
+      "status": "unverified",
+      "evidence": {
+        "line": 128,
+        "sourcePath": "spacing.section"
+      }
+    }
+  ],
+  "rejectedTokens": [
+    {
+      "sourcePath": "typography.display-xl.fontFeature",
+      "value": "ss02",
+      "reason": "Not a supported safe CSS literal; preserved in analysis"
+    },
+    {
+      "sourcePath": "typography.display-lg.fontFeature",
+      "value": "ss02",
+      "reason": "Not a supported safe CSS literal; preserved in analysis"
+    },
+    {
+      "sourcePath": "typography.headline.fontFeature",
+      "value": "cv05",
+      "reason": "Not a supported safe CSS literal; preserved in analysis"
+    },
+    {
+      "sourcePath": "typography.subhead.fontFeature",
+      "value": "cv11",
+      "reason": "Not a supported safe CSS literal; preserved in analysis"
+    },
+    {
+      "sourcePath": "typography.body-lg.fontFeature",
+      "value": "cv11",
+      "reason": "Not a supported safe CSS literal; preserved in analysis"
+    },
+    {
+      "sourcePath": "typography.body.fontFeature",
+      "value": "cv11",
+      "reason": "Not a supported safe CSS literal; preserved in analysis"
+    },
+    {
+      "sourcePath": "typography.body-sm.fontFeature",
+      "value": "cv11",
+      "reason": "Not a supported safe CSS literal; preserved in analysis"
+    },
+    {
+      "sourcePath": "typography.caption.fontFeature",
+      "value": "cv11",
+      "reason": "Not a supported safe CSS literal; preserved in analysis"
+    },
+    {
+      "sourcePath": "typography.micro.fontFeature",
+      "value": "cv11",
+      "reason": "Not a supported safe CSS literal; preserved in analysis"
+    },
+    {
+      "sourcePath": "typography.button.fontFeature",
+      "value": "cv11",
+      "reason": "Not a supported safe CSS literal; preserved in analysis"
+    }
+  ],
+  "homepage": {
+    "status": "missing",
+    "candidates": [],
+    "verification": {
+      "status": "verified",
+      "url": "https://www.framer.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://www.framer.com/",
+          "title": "Framer: Free website builder and AI design agent",
+          "note": "Public homepage read requested https://www.framer.com; final URL https://www.framer.com/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    }
+  },
+  "completeness": {
+    "presentFields": [
+      "colors",
+      "typography",
+      "rounded",
+      "spacing",
+      "components"
+    ],
+    "missingFields": [],
+    "tokenRoles": "incomplete",
+    "note": "Missing fields are not reconstructed. Prose-only colors have no inferred semantic role."
+  },
+  "provenance": {
+    "status": "independent-analysis",
+    "sources": [
+      {
+        "title": "VoltAgent awesome-design-md independent analysis",
+        "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/framer/DESIGN.md"
+      }
+    ],
+    "verification": "unverified-secondary-analysis"
+  },
+  "limitations": [
+    "Independent secondary analysis, not an official brand system; all reported values are unverified.",
+    "No brand assets, logos, font binaries or screenshots copied. Font names are documentary, not font licenses.",
+    "Safe CSS literals are extracted without claiming complete roles, state coverage or visual fidelity.",
+    "Markdown is retained as inert evidence, never executed or rendered as raw HTML."
+  ]
+}

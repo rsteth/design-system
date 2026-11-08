@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "version": "0.4.0",
+  "scope": "Clean public source tree. Git history, local review artifacts and private revision identifiers are excluded. Application snapshots retain their source terms.",
+  "withheldRevisionMetadata": true,
+  "excluded": [
+    "Git history",
+    "Local review artifacts",
+    "Private revision identifiers"
+  ],
+  "sanitizedFiles": [
+    "collections/original/workbench/collection.json",
+    "docs/process/capture-studio.md",
+    "docs/process/catalog-expansion-review.md",
+    "docs/process/phase-1-2-review.md",
+    "docs/process/public-release.md",
+    "docs/process/reads-bandit-integration.md",
+    "registry/apps/bandit/collection.json",
+    "registry/apps/bandit/inventory.json",
+    "registry/apps/focus/collection.json",
+    "registry/apps/focus/inventory.json",
+    "registry/apps/great-circle/collection.json",
+    "registry/apps/great-circle/inventory.json",
+    "registry/apps/reads/collection.json",
+    "registry/apps/reads/inventory.json",
+    "registry/apps/stethem/collection.json",
+    "registry/apps/stethem/inventory.json"
+  ]
+}

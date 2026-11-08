@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "id": "reference-stripe",
+  "title": "Stripe",
+  "kind": "reference",
+  "renderer": "dom",
+  "summary": "Independent unverified reference",
+  "tokens": "tokens.json",
+  "study": "study.json",
+  "themes": [
+    "analysis"
+  ],
+  "source": {
+    "repository": "https://github.com/VoltAgent/awesome-design-md",
+    "fork": "https://github.com/rsteth/awesome-design-md-p",
+    "revision": "fcc70284932276d085f01ef9f83edde90b1258cb",
+    "path": "design-md/stripe/DESIGN.md",
+    "sha256": "5c8806b7dd3e0c2554ccba9d1e2a7c78e7c6e50e44fcf6ff5daea6026f8a9ed9",
+    "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/stripe/DESIGN.md"
+  },
+  "provenance": {
+    "status": "independent-analysis",
+    "sources": [
+      {
+        "title": "VoltAgent awesome-design-md independent analysis",
+        "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/stripe/DESIGN.md"
+      }
+    ],
+    "verification": "unverified-secondary-analysis"
+  },
+  "license": {
+    "spdx": "MIT",
+    "file": "LICENSE",
+    "note": "Upstream analysis copyright (c) 2026 VoltAgent, MIT. Brand names belong to their respective owners; no affiliation or asset/font license is implied."
+  },
+  "fixtures": [
+    {
+      "id": "reference-stripe-standard-patterns",
+      "title": "Standard patterns · original compositions",
+      "section": "patterns",
+      "url": "../../reference-sheets/stripe/patterns.html",
+      "description": "Three original illustrative patterns composed from the study tokens: overview, search and selection, and editable preferences. Not official or copied site UI.",
+      "states": [
+        "default",
+        "completed",
+        "filtered",
+        "empty",
+        "selected",
+        "invalid",
+        "saved locally",
+        "canceled"
+      ]
+    },
+    {
+      "id": "reference-stripe-recipe-sheet",
+      "title": "Source-linked recipe sheet · authored interpretation",
+      "section": "components",
+      "url": "../../reference-sheets/stripe/index.html",
+      "description": "Generated visual foundations and component interpretations. Unofficial; neutral authored structure and system fonts, not original product components."
+    },
+    {
+      "id": "stripe-components",
+      "title": "Atmosphere & precision components",
+      "section": "components",
+      "url": "../../reference-specimens/stripe/index.html?view=components",
+      "description": "Original neutral specimen inferred from unverified secondary analysis; not a branded reproduction."
+    },
+    {
+      "id": "stripe-patterns",
+      "title": "Atmosphere & precision interaction pattern",
+      "section": "patterns",
+      "url": "../../reference-specimens/stripe/index.html?view=patterns",
+      "description": "Original neutral specimen inferred from unverified secondary analysis; not a branded reproduction."
+    },
+    {
+      "id": "stripe-screens",
+      "title": "Tally Garden overview",
+      "section": "screens",
+      "url": "../../reference-specimens/stripe/index.html?view=screens",
+      "description": "Original neutral specimen inferred from unverified secondary analysis; not a branded reproduction."
+    }
+  ],
+  "verification": {
+    "status": "unverified-secondary-analysis",
+    "note": "Source values have not been verified against the brand website."
+  },
+  "specimenProvenance": {
+    "sourceCommit": "fcc70284932276d085f01ef9f83edde90b1258cb",
+    "evidence": "Indigo #533afd, ink #0d253d, cream #f5e9d4 and cool white #f6f9fc; thin negative-tracked headings, pill buttons, tabular numerals, 12px cards and an upper-page color atmosphere.",
+    "inferred": "The community-budget scenario, CSS gradient geometry (not the source mesh), chart data, responsive composition and draft interaction are original. System fonts replace proprietary type. Only the light marketing track is studied."
+  }
+}

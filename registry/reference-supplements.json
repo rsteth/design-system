@@ -1,0 +1,409 @@
+{
+  "schemaVersion": 1,
+  "description": "Separately dated supplemental sources. Imported documents, analysis data and source hashes remain authoritative only for their original snapshot.",
+  "studies": {
+    "runwayml": {
+      "sourceSha256": "b0e69bf643f89bb57ac0b82a3bf025e59ff1478c244cb0528ad1e38b3f80dac9",
+      "summary": "A dated contemporary Runway track adds one measured desktop CTA alongside the older partial analysis. Official brand guidance is recorded separately and does not grant asset rights.",
+      "sources": [
+        {
+          "id": "runway-brand",
+          "url": "https://runway.com/brand-guidelines",
+          "title": "Runway brand guidelines",
+          "category": "official-documentation",
+          "observedAt": "2026-11-07T18:24:36Z",
+          "method": "Public-page text via web connector; not rendered measurement",
+          "scope": "Brand-name and logo usage guidance, not component tokens.",
+          "findings": [
+            "The page provides logo size, legibility and clear-space guidance.",
+            "Logo-pack download accepts additional guidelines and terms; no download was performed."
+          ],
+          "limitations": [
+            "No asset redistribution permission is inferred. No component colors, dimensions or type metrics were measured."
+          ]
+        },
+        {
+          "id": "runway-page",
+          "url": "https://runway.com/",
+          "title": "Runway current homepage text",
+          "category": "live-page-text",
+          "observedAt": "2026-11-07T18:24:36Z",
+          "method": "Public-page extracted text; no rendered browser measurement",
+          "scope": "Current homepage navigation and action structure.",
+          "findings": [
+            "Extracted navigation and a primary trial action are present."
+          ],
+          "limitations": [
+            "Desktop/mobile layout, colors, typography, hover/focus and animation remain unknown."
+          ]
+        },
+        {
+          "id": "runwayml-desktop-observation",
+          "url": "https://runway.com/",
+          "title": "Runway desktop CTA and heading observation",
+          "category": "live-observation",
+          "observedAt": "2026-11-07T18:35:11Z",
+          "method": "Read-only DOM getComputedStyle and getBoundingClientRect in a dedicated cloud Chromium browser. Timestamp recorded immediately after measurements.",
+          "scope": "Link with exact accessible name \u201cTry Runway for free\u201d. Default desktop state only, not official design tokens.",
+          "viewport": {
+            "width": 1180,
+            "height": 757
+          },
+          "state": "Default; hover/focus not deliberately activated",
+          "theme": "Default page presentation; light CTA and white heading",
+          "findings": [
+            "Computed CTA properties: {\"backgroundColor\": \"rgb(247, 247, 247)\", \"textColor\": \"rgb(12, 12, 12)\", \"fontSize\": \"16px\", \"fontWeight\": \"600\", \"lineHeight\": \"24px\", \"padding\": \"8px 12px\", \"rounded\": \"8px\", \"border\": \"0px solid rgb(229, 231, 235)\", \"height\": \"40px\"}.",
+            "Computed font-family abcNormal, \"abcNormal Fallback\" is documentary only, not proof of font loading.",
+            "Measured text-dependent width 183.46875px is recorded but not copied as a universal control width.",
+            "Hero heading computed text color rgb(255, 255, 255), size 51.0478px, weight 400 and line-height 56.1526px at this viewport. Its background/assets are not reproduced."
+          ],
+          "limitations": [
+            "No mobile, hover, focus, pressed or disabled observations.",
+            "Source release/version not shown. Different pages/templates/variants can explain differences from the pinned analysis; neither silently replaces the other.",
+            "No logo, imagery or font binaries copied."
+          ]
+        }
+      ],
+      "specimens": [
+        {
+          "id": "observed-runwayml-desktop-cta",
+          "title": "Observed desktop CTA \u00b7 default state",
+          "kind": "button",
+          "state": "default",
+          "properties": {
+            "backgroundColor": "rgb(247, 247, 247)",
+            "textColor": "rgb(12, 12, 12)",
+            "fontSize": "16px",
+            "fontWeight": "600",
+            "lineHeight": "24px",
+            "padding": "8px 12px",
+            "rounded": "8px",
+            "border": "0px solid rgb(229, 231, 235)",
+            "height": "40px"
+          },
+          "evidence": [
+            "runwayml-desktop-observation"
+          ],
+          "authored": "The listed visual properties come from the dated 1180\u00d7757 desktop observation. Text, system-font substitution, semantic button markup, local click feedback, focus treatment and mobile arrangement are authored. Intrinsic source width is intentionally omitted. This is not the original component."
+        }
+      ],
+      "gaps": [
+        "Only a default desktop CTA and heading were measured. Mobile layouts and interactive states remain unknown.",
+        "The original four partial recipes are unchanged; the new observation is not silently merged into the earlier snapshot.",
+        "Protected assets and fonts remain withheld."
+      ]
+    },
+    "sap": {
+      "sourceSha256": "f14c951d6112efce488f56d189b9bcdf58f5b9f87ae1e2ee68f062e6a6967d97",
+      "summary": "Public-web documentation and a dated desktop CTA observation are now separate tracks. The seven recovered pixel heights still come from the pinned secondary source, not official verification.",
+      "sources": [
+        {
+          "id": "sap-digital",
+          "url": "https://www.sap.com/design-system/digital",
+          "title": "SAP Digital Design System",
+          "category": "official-documentation",
+          "observedAt": "2026-11-07T18:24:36Z",
+          "method": "Public-page text via web connector; not rendered measurement",
+          "scope": "Public-facing websites and digital experiences, distinct from the Fiori product systems.",
+          "findings": [
+            "The public-web documentation organizes guidance into foundations, components and patterns.",
+            "No component dimensions were verified in this pass."
+          ],
+          "version": "Landing page advertises Figma UI Kit v2.2.21; this is not a verified sap.com implementation version.",
+          "limitations": [
+            "Foundations/components subpages returned restricted-fetch errors in the earlier text pass and were not revisited."
+          ]
+        },
+        {
+          "id": "sap-page",
+          "url": "https://www.sap.com/index.html",
+          "title": "SAP current homepage text",
+          "category": "live-page-text",
+          "observedAt": "2026-11-07T18:24:36Z",
+          "method": "Public-page extracted text; no rendered browser measurement",
+          "scope": "Current homepage text only.",
+          "findings": [
+            "Extracted navigation, Ask Joule action and footer are present.",
+            "The extraction warns that JavaScript is needed for correct display."
+          ],
+          "limitations": [
+            "No current visual measurements or interaction behavior verified."
+          ]
+        },
+        {
+          "id": "sap-desktop-observation",
+          "url": "https://www.sap.com/index.html",
+          "title": "SAP desktop CTA and heading observation",
+          "category": "live-observation",
+          "observedAt": "2026-11-07T18:35:11Z",
+          "method": "Read-only DOM getComputedStyle and getBoundingClientRect in a dedicated cloud Chromium browser. Timestamp recorded immediately after measurements.",
+          "scope": "Link with exact accessible name \u201cExplore Joule Studio\u201d. Default desktop state only, not official design tokens.",
+          "viewport": {
+            "width": 1180,
+            "height": 757
+          },
+          "state": "Default; hover/focus not deliberately activated",
+          "theme": "Default US presentation after rejecting optional cookies",
+          "findings": [
+            "Computed CTA properties: {\"backgroundColor\": \"rgb(255, 255, 255)\", \"textColor\": \"rgb(0, 64, 176)\", \"fontSize\": \"16px\", \"fontWeight\": \"500\", \"lineHeight\": \"18px\", \"padding\": \"11px 13px\", \"rounded\": \"8px\", \"border\": \"1px solid rgb(71, 94, 117)\", \"height\": \"42px\"}.",
+            "Computed font-family \"72 Brand\", \"72 Brand Variable\", Arial, Helvetica, sans-serif is documentary only, not proof of font loading.",
+            "Measured text-dependent width 182.25px is recorded but not copied as a universal control width.",
+            "Hero heading computed text color rgb(255, 255, 255), size 36px, weight 500 and line-height 39.6px at this viewport. Its imagery is not reproduced."
+          ],
+          "limitations": [
+            "No mobile, hover, focus, pressed or disabled observations.",
+            "Source release/version not shown. Different pages/templates/variants can explain differences from the pinned analysis; neither silently replaces the other.",
+            "No logo, imagery or font binaries copied."
+          ]
+        }
+      ],
+      "specimens": [
+        {
+          "id": "observed-sap-desktop-cta",
+          "title": "Observed desktop CTA \u00b7 default state",
+          "kind": "button",
+          "state": "default",
+          "properties": {
+            "backgroundColor": "rgb(255, 255, 255)",
+            "textColor": "rgb(0, 64, 176)",
+            "fontSize": "16px",
+            "fontWeight": "500",
+            "lineHeight": "18px",
+            "padding": "11px 13px",
+            "rounded": "8px",
+            "border": "1px solid rgb(71, 94, 117)",
+            "height": "42px"
+          },
+          "evidence": [
+            "sap-desktop-observation"
+          ],
+          "authored": "The listed visual properties come from the dated 1180\u00d7757 desktop observation. Text, system-font substitution, semantic button markup, local click feedback, focus treatment and mobile arrangement are authored. Intrinsic source width is intentionally omitted. This is not the original component."
+        }
+      ],
+      "gaps": [
+        "Five original numeric heights still lack explicit units; no global number-to-pixel rule is applied.",
+        "The observed homepage CTA is 42px high. The older source\u2019s 44px primary-button example may describe a different variant or template; no equivalence is claimed.",
+        "Mobile and hover/focus states remain unmeasured. Do not substitute Fiori product-component values for the web study."
+      ]
+    },
+    "ibm": {
+      "sourceSha256": "46f6fd65b5e7524fed1133b9b3c0dd619f9a0f145fbb2b87f3675c701a88f3bd",
+      "summary": "A separate official-documentation track now demonstrates Carbon Core input sizing and state semantics. These are original neutral samples, not evidence that the IBM marketing site uses the same components.",
+      "sources": [
+        {
+          "id": "carbon-input",
+          "url": "https://www.carbondesignsystem.com/building-blocks/core/components/text-input/guidelines",
+          "title": "Carbon Core text-input guidelines",
+          "category": "official-documentation",
+          "observedAt": "2026-11-07T18:24:36Z",
+          "method": "Public-page text via web connector; not rendered measurement",
+          "scope": "Official product-component guidance. It does not establish the version or styling of the imported ibm.com marketing snapshot.",
+          "findings": [
+            "Default input sizes are 24px (xs), 32px (sm), 40px (md/default), and 48px (lg).",
+            "Default inputs place labels outside and helper text below the field.",
+            "Documented states include enabled, active, focus, error, warning, disabled, skeleton and read-only.",
+            "Invalid state uses a red border, an error icon and an error message; this source does not specify the hex color.",
+            "Text-area minimum height is documented as 40px."
+          ],
+          "updatedAt": "2026-09-30",
+          "version": "Carbon Core, Stable, React; exact release version not identified.",
+          "limitations": [
+            "Full visual tokens and rendered states were not measured. Local samples use original neutral styling and system fonts."
+          ]
+        },
+        {
+          "id": "ibm-web-scope",
+          "url": "https://www.ibm.com/standards/carbon/",
+          "title": "Carbon for IBM.com",
+          "category": "official-documentation",
+          "observedAt": "2026-11-07",
+          "method": "Public-page text via web connector; no exact retrieval clock retained",
+          "scope": "Website components and styling, distinct from Carbon Core product guidance.",
+          "updatedAt": "2024-09-23",
+          "findings": [
+            "The site defines a website-specific component and layout track."
+          ],
+          "limitations": [
+            "Documentation update date is historical, not a current site implementation version."
+          ]
+        },
+        {
+          "id": "ibm-tabs",
+          "url": "https://www.ibm.com/standards/carbon/components/tabs-extended/",
+          "title": "Carbon for IBM.com extended tabs",
+          "category": "official-documentation",
+          "observedAt": "2026-11-07",
+          "method": "Earlier public-page text pass; latest connector attempt unavailable",
+          "scope": "Website tab guidance with explicit version distinction.",
+          "updatedAt": "2024-09-23",
+          "version": "v1 separate extended-tabs component; v2 base Carbon tabs with editorial styling.",
+          "findings": [
+            "Documentation describes auto-width labels and overflow buttons when needed at any breakpoint."
+          ],
+          "limitations": [
+            "No current rendered state or exact package version verified. No tab visual metrics are copied into the snapshot."
+          ]
+        },
+        {
+          "id": "ibm-page",
+          "url": "https://www.ibm.com/us-en",
+          "title": "IBM current homepage text",
+          "category": "live-page-text",
+          "observedAt": "2026-11-07T18:24:36Z",
+          "method": "Public-page extracted text; no rendered browser measurement",
+          "scope": "Current homepage text only.",
+          "findings": [
+            "Extracted hero has two action links followed by recommendation sections."
+          ],
+          "limitations": [
+            "Not a visual or responsive-layout measurement."
+          ]
+        },
+        {
+          "id": "ibm-availability",
+          "url": "https://www.ibm.com/",
+          "title": "IBM homepage availability response",
+          "category": "availability-response",
+          "observedAt": "2026-11-07T18:35:11Z",
+          "method": "Rendered page read in the dedicated cloud Chromium browser; reporting timestamp after attempt",
+          "scope": "Availability response only, not IBM website design evidence.",
+          "viewport": {
+            "width": 1180,
+            "height": 757
+          },
+          "state": "Site-unavailable error response",
+          "findings": [
+            "The response title was \u201cSite Unavailable\u201d and its message was \u201cUnable to access this site.\u201d"
+          ],
+          "limitations": [
+            "Cause unverified; not labeled bot detection. No alternate access route was tried.",
+            "No IBM homepage design measurements obtained."
+          ]
+        }
+      ],
+      "specimens": [
+        {
+          "id": "documented-input-xs",
+          "title": "Documented input height \u00b7 xs / 24px",
+          "kind": "field",
+          "state": "default",
+          "properties": {
+            "height": "24px"
+          },
+          "evidence": [
+            "carbon-input"
+          ],
+          "authored": "Only the field height and outside-label/helper placement are source-backed. Border, width, type, color, text and focus styling are original neutral decisions."
+        },
+        {
+          "id": "documented-input-sm",
+          "title": "Documented input height \u00b7 sm / 32px",
+          "kind": "field",
+          "state": "default",
+          "properties": {
+            "height": "32px"
+          },
+          "evidence": [
+            "carbon-input"
+          ],
+          "authored": "Only the field height and outside-label/helper placement are source-backed. Border, width, type, color, text and focus styling are original neutral decisions."
+        },
+        {
+          "id": "documented-input-md",
+          "title": "Documented input height \u00b7 md / 40px",
+          "kind": "field",
+          "state": "default",
+          "properties": {
+            "height": "40px"
+          },
+          "evidence": [
+            "carbon-input"
+          ],
+          "authored": "Only the field height and outside-label/helper placement are source-backed. Border, width, type, color, text and focus styling are original neutral decisions."
+        },
+        {
+          "id": "documented-input-lg",
+          "title": "Documented input height \u00b7 lg / 48px",
+          "kind": "field",
+          "state": "default",
+          "properties": {
+            "height": "48px"
+          },
+          "evidence": [
+            "carbon-input"
+          ],
+          "authored": "Only the field height and outside-label/helper placement are source-backed. Border, width, type, color, text and focus styling are original neutral decisions."
+        },
+        {
+          "id": "documented-input-error",
+          "title": "Documented input state \u00b7 error",
+          "kind": "field",
+          "state": "error",
+          "properties": {
+            "height": "40px"
+          },
+          "evidence": [
+            "carbon-input"
+          ],
+          "authored": "State semantics and medium height follow official guidance. Exact colors, glyph, wording, type, width and focus appearance are independently authored. This is a static state specimen, not live validation."
+        },
+        {
+          "id": "documented-input-warning",
+          "title": "Documented input state \u00b7 warning",
+          "kind": "field",
+          "state": "warning",
+          "properties": {
+            "height": "40px"
+          },
+          "evidence": [
+            "carbon-input"
+          ],
+          "authored": "State semantics and medium height follow official guidance. Exact colors, glyph, wording, type, width and focus appearance are independently authored. This is a static state specimen, not live validation."
+        },
+        {
+          "id": "documented-input-disabled",
+          "title": "Documented input state \u00b7 disabled",
+          "kind": "field",
+          "state": "disabled",
+          "properties": {
+            "height": "40px"
+          },
+          "evidence": [
+            "carbon-input"
+          ],
+          "authored": "State semantics and medium height follow official guidance. Exact colors, glyph, wording, type, width and focus appearance are independently authored. This is a static state specimen, not live validation."
+        },
+        {
+          "id": "documented-input-read-only",
+          "title": "Documented input state \u00b7 read-only",
+          "kind": "field",
+          "state": "read-only",
+          "properties": {
+            "height": "40px"
+          },
+          "evidence": [
+            "carbon-input"
+          ],
+          "authored": "State semantics and medium height follow official guidance. Exact colors, glyph, wording, type, width and focus appearance are independently authored. This is a static state specimen, not live validation."
+        },
+        {
+          "id": "documented-textarea",
+          "title": "Documented textarea minimum \u00b7 40px",
+          "kind": "textarea",
+          "properties": {
+            "minHeight": "40px"
+          },
+          "evidence": [
+            "carbon-input"
+          ],
+          "authored": "Only minimum height and persistent labeling/helper placement are source-backed. Current height, styling and content are authored. No original component code is copied."
+        }
+      ],
+      "gaps": [
+        "The imported IBM study still does not establish original validation behavior or exact component/package version.",
+        "The homepage returned a site-unavailable response. Site-specific tabs and responsive compositions still need accessible rendered evidence and version matching.",
+        "System fonts and original neutral styling replace protected or unverified visual assets."
+      ]
+    }
+  }
+}

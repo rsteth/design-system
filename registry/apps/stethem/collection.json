@@ -1,0 +1,754 @@
+{
+  "schemaVersion": 1,
+  "id": "stethem",
+  "title": "stethem",
+  "kind": "app",
+  "renderer": "dom",
+  "summary": "Author-owned static portfolio and interactive teaching studies. Existing visual language, no React adapter.",
+  "tokens": "tokens.json",
+  "themes": [
+    "light"
+  ],
+  "source": {
+    "repository": "https://github.com/rsteth/rsteth.github.io",
+    "revision": "3ea81c22d0101f2fc537e7e4338010bc981479d5",
+    "path": "."
+  },
+  "provenance": {
+    "status": "author-owned",
+    "sources": []
+  },
+  "license": {
+    "spdx": "UNLICENSED",
+    "note": "Existing repository terms apply."
+  },
+  "fixtures": [
+    {
+      "id": "portfolio",
+      "title": "Portfolio",
+      "section": "screens",
+      "url": "http://127.0.0.1:8776/?fixture=portfolio",
+      "scenario": {
+        "page": "/",
+        "state": "default",
+        "setup": "portfolio",
+        "network": "fixture"
+      },
+      "description": "Actual production DOM and production modules; deterministic local preview."
+    },
+    {
+      "id": "not-found",
+      "title": "404 and recovery links",
+      "section": "screens",
+      "url": "http://127.0.0.1:8776/404.html?fixture=not-found",
+      "scenario": {
+        "page": "/404.html",
+        "state": "default",
+        "setup": "not-found",
+        "network": "blocked"
+      },
+      "description": "Actual production DOM and production modules; deterministic local preview."
+    },
+    {
+      "id": "mysterious-modular-device",
+      "title": "Mysterious Modular Device",
+      "section": "screens",
+      "url": "http://127.0.0.1:8776/objects/mysterious-modular-device/?fixture=mysterious-modular-device",
+      "scenario": {
+        "page": "/objects/mysterious-modular-device/",
+        "state": "default",
+        "setup": "mysterious-modular-device",
+        "network": "blocked"
+      },
+      "description": "Actual production DOM and production modules; deterministic local preview."
+    },
+    {
+      "id": "fischer-price-revolutionary-device",
+      "title": "Fischer Price Revolutionary Device",
+      "section": "screens",
+      "url": "http://127.0.0.1:8776/objects/fischer-price-revolutionary-device/?fixture=fischer-price-revolutionary-device",
+      "scenario": {
+        "page": "/objects/fischer-price-revolutionary-device/",
+        "state": "default",
+        "setup": "fischer-price-revolutionary-device",
+        "network": "blocked"
+      },
+      "description": "Actual production DOM and production modules; deterministic local preview."
+    },
+    {
+      "id": "the-spoon-app",
+      "title": "The Spoon App",
+      "section": "screens",
+      "url": "http://127.0.0.1:8776/objects/the-spoon-app/?fixture=the-spoon-app",
+      "scenario": {
+        "page": "/objects/the-spoon-app/",
+        "state": "default",
+        "setup": "the-spoon-app",
+        "network": "blocked"
+      },
+      "description": "Actual production DOM and production modules; deterministic local preview."
+    },
+    {
+      "id": "learning-index",
+      "title": "Learning Machines collection",
+      "section": "screens",
+      "url": "http://127.0.0.1:8776/learning-machines/?fixture=learning-index",
+      "scenario": {
+        "page": "/learning-machines/",
+        "state": "default",
+        "setup": "learning-index",
+        "network": "blocked"
+      },
+      "description": "Actual production DOM and production modules; deterministic local preview."
+    },
+    {
+      "id": "token-study-default",
+      "title": "Token study · default",
+      "section": "screens",
+      "url": "http://127.0.0.1:8776/learning-machines/tokens/?fixture=token-study-default",
+      "scenario": {
+        "page": "/learning-machines/tokens/",
+        "state": "default",
+        "setup": "token-study",
+        "network": "blocked"
+      },
+      "description": "Actual production DOM and production modules; deterministic local preview."
+    },
+    {
+      "id": "token-study-no-js",
+      "title": "Token study · no-js",
+      "section": "screens",
+      "url": "http://127.0.0.1:8776/learning-machines/tokens/?fixture=token-study-no-js",
+      "scenario": {
+        "page": "/learning-machines/tokens/",
+        "state": "no-js",
+        "setup": "token-study",
+        "network": "blocked"
+      },
+      "description": "Fallback simulation: original static DOM, disabled controls and noscript content; verified against browser JavaScript disabled."
+    },
+    {
+      "id": "token-study-no-canvas",
+      "title": "Token study · no-canvas",
+      "section": "screens",
+      "url": "http://127.0.0.1:8776/learning-machines/tokens/?fixture=token-study-no-canvas",
+      "scenario": {
+        "page": "/learning-machines/tokens/",
+        "state": "no-canvas",
+        "setup": "token-study",
+        "network": "blocked"
+      },
+      "description": "Actual production DOM and production modules; deterministic local preview."
+    },
+    {
+      "id": "attention-study-default",
+      "title": "Attention and memory · default",
+      "section": "screens",
+      "url": "http://127.0.0.1:8776/learning-machines/attention-and-memory/?fixture=attention-study-default",
+      "scenario": {
+        "page": "/learning-machines/attention-and-memory/",
+        "state": "default",
+        "setup": "attention-study",
+        "network": "blocked"
+      },
+      "description": "Actual production DOM and production modules; deterministic local preview."
+    },
+    {
+      "id": "attention-study-no-js",
+      "title": "Attention and memory · no-js",
+      "section": "screens",
+      "url": "http://127.0.0.1:8776/learning-machines/attention-and-memory/?fixture=attention-study-no-js",
+      "scenario": {
+        "page": "/learning-machines/attention-and-memory/",
+        "state": "no-js",
+        "setup": "attention-study",
+        "network": "blocked"
+      },
+      "description": "Fallback simulation: original static DOM, disabled controls and noscript content; verified against browser JavaScript disabled."
+    },
+    {
+      "id": "attention-study-no-canvas",
+      "title": "Attention and memory · no-canvas",
+      "section": "screens",
+      "url": "http://127.0.0.1:8776/learning-machines/attention-and-memory/?fixture=attention-study-no-canvas",
+      "scenario": {
+        "page": "/learning-machines/attention-and-memory/",
+        "state": "no-canvas",
+        "setup": "attention-study",
+        "network": "blocked"
+      },
+      "description": "Actual production DOM and production modules; deterministic local preview."
+    },
+    {
+      "id": "market-archive-populated",
+      "title": "Market River archive · populated",
+      "section": "screens",
+      "url": "http://127.0.0.1:8776/market-river/?fixture=market-archive-populated",
+      "scenario": {
+        "page": "/market-river/",
+        "state": "populated",
+        "setup": "market-archive",
+        "network": "fixture"
+      },
+      "description": "Actual production DOM and production modules; deterministic local preview."
+    },
+    {
+      "id": "market-archive-loading",
+      "title": "Market River archive · loading",
+      "section": "screens",
+      "url": "http://127.0.0.1:8776/market-river/?fixture=market-archive-loading",
+      "scenario": {
+        "page": "/market-river/",
+        "state": "loading",
+        "setup": "market-archive",
+        "network": "fixture"
+      },
+      "description": "Actual production DOM and production modules; deterministic local preview."
+    },
+    {
+      "id": "market-archive-empty",
+      "title": "Market River archive · empty",
+      "section": "screens",
+      "url": "http://127.0.0.1:8776/market-river/?fixture=market-archive-empty",
+      "scenario": {
+        "page": "/market-river/",
+        "state": "empty",
+        "setup": "market-archive",
+        "network": "fixture"
+      },
+      "description": "Actual production DOM and production modules; deterministic local preview."
+    },
+    {
+      "id": "market-archive-error",
+      "title": "Market River archive · error",
+      "section": "screens",
+      "url": "http://127.0.0.1:8776/market-river/?fixture=market-archive-error",
+      "scenario": {
+        "page": "/market-river/",
+        "state": "error",
+        "setup": "market-archive",
+        "network": "fixture"
+      },
+      "description": "Actual production DOM and production modules; deterministic local preview."
+    },
+    {
+      "id": "market-archive-history-fallback",
+      "title": "Market River archive · history-fallback",
+      "section": "screens",
+      "url": "http://127.0.0.1:8776/market-river/?fixture=market-archive-history-fallback",
+      "scenario": {
+        "page": "/market-river/",
+        "state": "history-fallback",
+        "setup": "market-archive",
+        "network": "fixture"
+      },
+      "description": "Actual production DOM and production modules; deterministic local preview."
+    },
+    {
+      "id": "market-archive-image-error",
+      "title": "Market River archive · image-error",
+      "section": "screens",
+      "url": "http://127.0.0.1:8776/market-river/?fixture=market-archive-image-error",
+      "scenario": {
+        "page": "/market-river/",
+        "state": "image-error",
+        "setup": "market-archive",
+        "network": "fixture"
+      },
+      "description": "Actual production DOM and production modules; deterministic local preview."
+    },
+    {
+      "id": "typography",
+      "title": "Typography, links and inline SVG arrows",
+      "section": "components",
+      "url": "http://127.0.0.1:8776/404.html?fixture=typography",
+      "scenario": {
+        "page": "/404.html",
+        "state": "default",
+        "setup": "typography",
+        "network": "blocked"
+      },
+      "description": "Actual production DOM and production modules; deterministic local preview."
+    },
+    {
+      "id": "project-cards",
+      "title": "Project grid, thumbnails and metadata",
+      "section": "patterns",
+      "url": "http://127.0.0.1:8776/?fixture=project-cards",
+      "scenario": {
+        "page": "/",
+        "state": "populated",
+        "setup": "project-cards",
+        "network": "blocked"
+      },
+      "description": "Actual production DOM and production modules; deterministic local preview."
+    },
+    {
+      "id": "museum-video-paused",
+      "title": "Museum video controls and poster · paused",
+      "section": "components",
+      "url": "http://127.0.0.1:8776/?fixture=museum-video-paused",
+      "scenario": {
+        "page": "/",
+        "state": "paused",
+        "setup": "museum-video",
+        "network": "blocked"
+      },
+      "description": "Actual production DOM and production modules; deterministic local preview."
+    },
+    {
+      "id": "museum-video-playing",
+      "title": "Museum video controls and poster · playing",
+      "section": "components",
+      "url": "http://127.0.0.1:8776/?fixture=museum-video-playing",
+      "scenario": {
+        "page": "/",
+        "state": "playing",
+        "setup": "museum-video",
+        "network": "blocked"
+      },
+      "description": "Actual production DOM and production modules; deterministic local preview."
+    },
+    {
+      "id": "museum-video-error",
+      "title": "Museum video controls and poster · error",
+      "section": "components",
+      "url": "http://127.0.0.1:8776/?fixture=museum-video-error",
+      "scenario": {
+        "page": "/",
+        "state": "error",
+        "setup": "museum-video",
+        "network": "blocked"
+      },
+      "description": "Actual production DOM and production modules; deterministic local preview."
+    },
+    {
+      "id": "essay-structure",
+      "title": "Back link, essay and photo sequence",
+      "section": "patterns",
+      "url": "http://127.0.0.1:8776/objects/the-spoon-app/?fixture=essay-structure",
+      "scenario": {
+        "page": "/objects/the-spoon-app/",
+        "state": "default",
+        "setup": "essay-structure",
+        "network": "blocked"
+      },
+      "description": "Actual production DOM and production modules; deterministic local preview."
+    },
+    {
+      "id": "study-structure",
+      "title": "Study headings, caveats and provenance",
+      "section": "patterns",
+      "url": "http://127.0.0.1:8776/learning-machines/tokens/?fixture=study-structure#experiment-source",
+      "scenario": {
+        "page": "/learning-machines/tokens/",
+        "state": "default",
+        "setup": "study-structure",
+        "network": "blocked"
+      },
+      "description": "Actual production DOM and production modules; deterministic local preview."
+    },
+    {
+      "id": "token-stage-pieces",
+      "title": "Five-stage token story · pieces",
+      "section": "patterns",
+      "url": "http://127.0.0.1:8776/learning-machines/tokens/?fixture=token-stage-pieces",
+      "scenario": {
+        "page": "/learning-machines/tokens/",
+        "state": "pieces",
+        "setup": "token-stage",
+        "network": "blocked"
+      },
+      "description": "Actual production DOM and production modules; deterministic local preview."
+    },
+    {
+      "id": "token-stage-rows",
+      "title": "Five-stage token story · rows",
+      "section": "patterns",
+      "url": "http://127.0.0.1:8776/learning-machines/tokens/?fixture=token-stage-rows",
+      "scenario": {
+        "page": "/learning-machines/tokens/",
+        "state": "rows",
+        "setup": "token-stage",
+        "network": "blocked"
+      },
+      "description": "Actual production DOM and production modules; deterministic local preview."
+    },
+    {
+      "id": "token-stage-context",
+      "title": "Five-stage token story · context",
+      "section": "patterns",
+      "url": "http://127.0.0.1:8776/learning-machines/tokens/?fixture=token-stage-context",
+      "scenario": {
+        "page": "/learning-machines/tokens/",
+        "state": "context",
+        "setup": "token-stage",
+        "network": "blocked"
+      },
+      "description": "Actual production DOM and production modules; deterministic local preview."
+    },
+    {
+      "id": "token-stage-scores",
+      "title": "Five-stage token story · scores",
+      "section": "patterns",
+      "url": "http://127.0.0.1:8776/learning-machines/tokens/?fixture=token-stage-scores",
+      "scenario": {
+        "page": "/learning-machines/tokens/",
+        "state": "scores",
+        "setup": "token-stage",
+        "network": "blocked"
+      },
+      "description": "Actual production DOM and production modules; deterministic local preview."
+    },
+    {
+      "id": "token-stage-append",
+      "title": "Five-stage token story · append",
+      "section": "patterns",
+      "url": "http://127.0.0.1:8776/learning-machines/tokens/?fixture=token-stage-append",
+      "scenario": {
+        "page": "/learning-machines/tokens/",
+        "state": "append",
+        "setup": "token-stage",
+        "network": "blocked"
+      },
+      "description": "Actual production DOM and production modules; deterministic local preview."
+    },
+    {
+      "id": "token-stage-stop",
+      "title": "Five-stage token story · stop",
+      "section": "patterns",
+      "url": "http://127.0.0.1:8776/learning-machines/tokens/?fixture=token-stage-stop",
+      "scenario": {
+        "page": "/learning-machines/tokens/",
+        "state": "stop",
+        "setup": "token-stage",
+        "network": "blocked"
+      },
+      "description": "Actual production DOM and production modules; deterministic local preview."
+    },
+    {
+      "id": "token-selection-selected",
+      "title": "Piece selection and word splits · selected",
+      "section": "components",
+      "url": "http://127.0.0.1:8776/learning-machines/tokens/?fixture=token-selection-selected#stage-tokens",
+      "scenario": {
+        "page": "/learning-machines/tokens/",
+        "state": "selected",
+        "setup": "token-selection",
+        "network": "blocked"
+      },
+      "description": "Actual production DOM and production modules; deterministic local preview."
+    },
+    {
+      "id": "token-selection-word",
+      "title": "Piece selection and word splits · word",
+      "section": "components",
+      "url": "http://127.0.0.1:8776/learning-machines/tokens/?fixture=token-selection-word#stage-tokens",
+      "scenario": {
+        "page": "/learning-machines/tokens/",
+        "state": "word",
+        "setup": "token-selection",
+        "network": "blocked"
+      },
+      "description": "Actual production DOM and production modules; deterministic local preview."
+    },
+    {
+      "id": "token-config-sample",
+      "title": "Sampling choice and seed validation · sample",
+      "section": "components",
+      "url": "http://127.0.0.1:8776/learning-machines/tokens/?fixture=token-config-sample#experiment-controls",
+      "scenario": {
+        "page": "/learning-machines/tokens/",
+        "state": "sample",
+        "setup": "token-config",
+        "network": "blocked"
+      },
+      "description": "Actual production DOM and production modules; deterministic local preview."
+    },
+    {
+      "id": "token-config-invalid",
+      "title": "Sampling choice and seed validation · invalid",
+      "section": "components",
+      "url": "http://127.0.0.1:8776/learning-machines/tokens/?fixture=token-config-invalid#experiment-controls",
+      "scenario": {
+        "page": "/learning-machines/tokens/",
+        "state": "invalid",
+        "setup": "token-config",
+        "network": "blocked"
+      },
+      "description": "Actual production DOM and production modules; deterministic local preview."
+    },
+    {
+      "id": "token-playground-empty",
+      "title": "Seeded histogram playground · empty",
+      "section": "patterns",
+      "url": "http://127.0.0.1:8776/learning-machines/tokens/?fixture=token-playground-empty#playground",
+      "scenario": {
+        "page": "/learning-machines/tokens/",
+        "state": "empty",
+        "setup": "token-playground",
+        "network": "blocked"
+      },
+      "description": "Actual production DOM and production modules; deterministic local preview."
+    },
+    {
+      "id": "token-playground-populated",
+      "title": "Seeded histogram playground · populated",
+      "section": "patterns",
+      "url": "http://127.0.0.1:8776/learning-machines/tokens/?fixture=token-playground-populated#playground",
+      "scenario": {
+        "page": "/learning-machines/tokens/",
+        "state": "populated",
+        "setup": "token-playground",
+        "network": "blocked"
+      },
+      "description": "Actual production DOM and production modules; deterministic local preview."
+    },
+    {
+      "id": "token-trace-hover",
+      "title": "Component trace and worked disclosures · hover",
+      "section": "patterns",
+      "url": "http://127.0.0.1:8776/learning-machines/tokens/?fixture=token-trace-hover#stage-embedding",
+      "scenario": {
+        "page": "/learning-machines/tokens/",
+        "state": "hover",
+        "setup": "token-trace",
+        "network": "blocked"
+      },
+      "description": "Actual production DOM and production modules; deterministic local preview."
+    },
+    {
+      "id": "token-trace-pinned",
+      "title": "Component trace and worked disclosures · pinned",
+      "section": "patterns",
+      "url": "http://127.0.0.1:8776/learning-machines/tokens/?fixture=token-trace-pinned#stage-embedding",
+      "scenario": {
+        "page": "/learning-machines/tokens/",
+        "state": "pinned",
+        "setup": "token-trace",
+        "network": "blocked"
+      },
+      "description": "Actual production DOM and production modules; deterministic local preview."
+    },
+    {
+      "id": "token-trace-expanded",
+      "title": "Component trace and worked disclosures · expanded",
+      "section": "patterns",
+      "url": "http://127.0.0.1:8776/learning-machines/tokens/?fixture=token-trace-expanded#stage-embedding",
+      "scenario": {
+        "page": "/learning-machines/tokens/",
+        "state": "expanded",
+        "setup": "token-trace",
+        "network": "blocked"
+      },
+      "description": "Actual production DOM and production modules; deterministic local preview."
+    },
+    {
+      "id": "token-art",
+      "title": "Generated teaching artwork",
+      "section": "components",
+      "url": "http://127.0.0.1:8776/learning-machines/tokens/?fixture=token-art#static-output",
+      "scenario": {
+        "page": "/learning-machines/tokens/",
+        "state": "default",
+        "setup": "token-art",
+        "network": "blocked"
+      },
+      "description": "Actual production DOM and production modules; deterministic local preview."
+    },
+    {
+      "id": "attention-growth-minimum",
+      "title": "Context range and countable growth tiles · minimum",
+      "section": "components",
+      "url": "http://127.0.0.1:8776/learning-machines/attention-and-memory/?fixture=attention-growth-minimum#growth-heading",
+      "scenario": {
+        "page": "/learning-machines/attention-and-memory/",
+        "state": "minimum",
+        "setup": "attention-growth",
+        "network": "blocked"
+      },
+      "description": "Actual production DOM and production modules; deterministic local preview."
+    },
+    {
+      "id": "attention-growth-maximum",
+      "title": "Context range and countable growth tiles · maximum",
+      "section": "components",
+      "url": "http://127.0.0.1:8776/learning-machines/attention-and-memory/?fixture=attention-growth-maximum#growth-heading",
+      "scenario": {
+        "page": "/learning-machines/attention-and-memory/",
+        "state": "maximum",
+        "setup": "attention-growth",
+        "network": "blocked"
+      },
+      "description": "Actual production DOM and production modules; deterministic local preview."
+    },
+    {
+      "id": "attention-growth-tile",
+      "title": "Context range and countable growth tiles · tile",
+      "section": "components",
+      "url": "http://127.0.0.1:8776/learning-machines/attention-and-memory/?fixture=attention-growth-tile#growth-heading",
+      "scenario": {
+        "page": "/learning-machines/attention-and-memory/",
+        "state": "tile",
+        "setup": "attention-growth",
+        "network": "blocked"
+      },
+      "description": "Actual production DOM and production modules; deterministic local preview."
+    },
+    {
+      "id": "attention-layers-hybrid",
+      "title": "Architecture choice and layer selection · hybrid",
+      "section": "patterns",
+      "url": "http://127.0.0.1:8776/learning-machines/attention-and-memory/?fixture=attention-layers-hybrid#layers-heading",
+      "scenario": {
+        "page": "/learning-machines/attention-and-memory/",
+        "state": "hybrid",
+        "setup": "attention-layers",
+        "network": "blocked"
+      },
+      "description": "Actual production DOM and production modules; deterministic local preview."
+    },
+    {
+      "id": "attention-layers-converted",
+      "title": "Architecture choice and layer selection · converted",
+      "section": "patterns",
+      "url": "http://127.0.0.1:8776/learning-machines/attention-and-memory/?fixture=attention-layers-converted#layers-heading",
+      "scenario": {
+        "page": "/learning-machines/attention-and-memory/",
+        "state": "converted",
+        "setup": "attention-layers",
+        "network": "blocked"
+      },
+      "description": "Actual production DOM and production modules; deterministic local preview."
+    },
+    {
+      "id": "attention-layers-last",
+      "title": "Architecture choice and layer selection · last",
+      "section": "patterns",
+      "url": "http://127.0.0.1:8776/learning-machines/attention-and-memory/?fixture=attention-layers-last#layers-heading",
+      "scenario": {
+        "page": "/learning-machines/attention-and-memory/",
+        "state": "last",
+        "setup": "attention-layers",
+        "network": "blocked"
+      },
+      "description": "Actual production DOM and production modules; deterministic local preview."
+    },
+    {
+      "id": "attention-recall-empty",
+      "title": "Event stepper and lossy recall · empty",
+      "section": "patterns",
+      "url": "http://127.0.0.1:8776/learning-machines/attention-and-memory/?fixture=attention-recall-empty#toy-heading",
+      "scenario": {
+        "page": "/learning-machines/attention-and-memory/",
+        "state": "empty",
+        "setup": "attention-recall",
+        "network": "blocked"
+      },
+      "description": "Actual production DOM and production modules; deterministic local preview."
+    },
+    {
+      "id": "attention-recall-populated",
+      "title": "Event stepper and lossy recall · populated",
+      "section": "patterns",
+      "url": "http://127.0.0.1:8776/learning-machines/attention-and-memory/?fixture=attention-recall-populated#toy-heading",
+      "scenario": {
+        "page": "/learning-machines/attention-and-memory/",
+        "state": "populated",
+        "setup": "attention-recall",
+        "network": "blocked"
+      },
+      "description": "Actual production DOM and production modules; deterministic local preview."
+    },
+    {
+      "id": "attention-recall-complete",
+      "title": "Event stepper and lossy recall · complete",
+      "section": "patterns",
+      "url": "http://127.0.0.1:8776/learning-machines/attention-and-memory/?fixture=attention-recall-complete#toy-heading",
+      "scenario": {
+        "page": "/learning-machines/attention-and-memory/",
+        "state": "complete",
+        "setup": "attention-recall",
+        "network": "blocked"
+      },
+      "description": "Actual production DOM and production modules; deterministic local preview."
+    },
+    {
+      "id": "market-carousel-populated",
+      "title": "Snapshot carousel and focused card · populated",
+      "section": "patterns",
+      "url": "http://127.0.0.1:8776/market-river/?fixture=market-carousel-populated",
+      "scenario": {
+        "page": "/market-river/",
+        "state": "populated",
+        "setup": "market-carousel",
+        "network": "fixture"
+      },
+      "description": "Actual production DOM and production modules; deterministic local preview."
+    },
+    {
+      "id": "market-carousel-focused",
+      "title": "Snapshot carousel and focused card · focused",
+      "section": "patterns",
+      "url": "http://127.0.0.1:8776/market-river/?fixture=market-carousel-focused",
+      "scenario": {
+        "page": "/market-river/",
+        "state": "focused",
+        "setup": "market-carousel",
+        "network": "fixture"
+      },
+      "description": "Actual production DOM and production modules; deterministic local preview."
+    },
+    {
+      "id": "market-domain",
+      "title": "Manifest grouping, ordering, weather selection",
+      "section": "patterns",
+      "url": "http://127.0.0.1:8776/market-river/?fixture=market-domain",
+      "scenario": {
+        "page": "/market-river/",
+        "state": "populated",
+        "setup": "market-domain",
+        "network": "fixture"
+      },
+      "description": "Production pure domain functions additionally exercised by deterministic regression tests. Live remote feed and geolocation are not tested."
+    },
+    {
+      "id": "mechanics",
+      "title": "Pinned educational models",
+      "section": "patterns",
+      "url": "http://127.0.0.1:8776/learning-machines/tokens/?fixture=mechanics",
+      "scenario": {
+        "page": "/learning-machines/tokens/",
+        "state": "default",
+        "setup": "mechanics",
+        "network": "blocked"
+      },
+      "description": "Pinned files and licenses unchanged; native module and generated-artifact regressions verify provenance."
+    },
+    {
+      "id": "market-archive-no-js",
+      "title": "Market River archive · no-js",
+      "section": "screens",
+      "url": "http://127.0.0.1:8776/market-river/?fixture=market-archive-no-js",
+      "scenario": {
+        "page": "/market-river/",
+        "state": "no-js",
+        "setup": "market-archive",
+        "network": "fixture"
+      },
+      "description": "Fallback simulation: original static DOM, disabled controls and noscript content; verified against browser JavaScript disabled."
+    }
+  ],
+  "inventory": "inventory.json",
+  "registrySnapshot": {
+    "authority": "App-owned design collection, tokens and optional inventory",
+    "baseRevision": "3ea81c22d0101f2fc537e7e4338010bc981479d5",
+    "inventorySha256": "fc35e11d7607216f68a9d36f184fccb735cd45e8a11287f2219d1f80814a3450",
+    "tokenSha256": "27ab783e82cd1dd46fc6b4f566ff778b70d421496cb79d32928577353914bbea",
+    "integrationStatus": "unpublished-local-feature-commit",
+    "integrationRevision": null,
+    "withheldRevisions": [
+      "integrationRevision"
+    ]
+  }
+}

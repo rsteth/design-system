@@ -1,0 +1,1503 @@
+{
+  "schemaVersion": 1,
+  "id": "reference-superhuman",
+  "title": "Superhuman",
+  "classification": "independent-unverified-analysis",
+  "source": {
+    "repository": "https://github.com/VoltAgent/awesome-design-md",
+    "fork": "https://github.com/rsteth/awesome-design-md-p",
+    "revision": "fcc70284932276d085f01ef9f83edde90b1258cb",
+    "path": "design-md/superhuman/DESIGN.md",
+    "sha256": "3640298bd2957aee80ce88eb465a7541ba835ec105cba364a6a621d885c7f34f",
+    "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/superhuman/DESIGN.md"
+  },
+  "sourceName": "Superhumon-Inspired-design-analysis",
+  "titleProvenance": {
+    "status": "inferred",
+    "basis": "Source directory label, normalized for navigation; original source name is retained without correction.",
+    "sourceValue": "superhuman",
+    "originalName": "Superhumon-Inspired-design-analysis"
+  },
+  "description": "An inspired interpretation of Superhumon's design language — a fast-email productivity brand split between an editorial dark hero (deep indigo navy with violet-sky atmospheric backdrop and a portrait subject) and a quiet white content body with off-warm-grey ink. The system uses a single proprietary variable display sans, heavy weight 460–540 with tight tracking, and a deep-teal closing CTA band that breaks the indigo/white rhythm with a warm dark interlude. Buttons are tight rounded rectangles, pricing is sober and dense, and the brand reads more like a high-end newsletter than a SaaS app.",
+  "analysis": {
+    "version": "alpha",
+    "name": "Superhumon-Inspired-design-analysis",
+    "description": "An inspired interpretation of Superhumon's design language — a fast-email productivity brand split between an editorial dark hero (deep indigo navy with violet-sky atmospheric backdrop and a portrait subject) and a quiet white content body with off-warm-grey ink. The system uses a single proprietary variable display sans, heavy weight 460–540 with tight tracking, and a deep-teal closing CTA band that breaks the indigo/white rhythm with a warm dark interlude. Buttons are tight rounded rectangles, pricing is sober and dense, and the brand reads more like a high-end newsletter than a SaaS app.",
+    "colors": {
+      "primary": "#1b1938",
+      "primary-deep": "#0e0c1f",
+      "on-primary": "#ffffff",
+      "ink": "#292827",
+      "ink-mute": "#73706d",
+      "ink-faint": "#9a9794",
+      "canvas": "#ffffff",
+      "canvas-soft": "#fafaf8",
+      "surface-violet-soft": "#c9b4fa",
+      "surface-teal-deep": "#0e3030",
+      "surface-teal-mid": "#155555",
+      "hairline": "#e8e4dd",
+      "hairline-dark": "#3f3a52",
+      "on-dark-mute": "#bcbac9",
+      "on-dark-faint": "#5a5772"
+    },
+    "typography": {
+      "display-xxl": {
+        "fontFamily": "'Super Sans VF', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",
+        "fontSize": "64px",
+        "fontWeight": 540,
+        "lineHeight": 0.96,
+        "letterSpacing": 0
+      },
+      "display-xl": {
+        "fontFamily": "'Super Sans VF', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",
+        "fontSize": "48px",
+        "fontWeight": 460,
+        "lineHeight": 0.96,
+        "letterSpacing": "-1.32px"
+      },
+      "display-lg": {
+        "fontFamily": "'Super Sans VF', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",
+        "fontSize": "28px",
+        "fontWeight": 540,
+        "lineHeight": 1.14,
+        "letterSpacing": "-0.63px"
+      },
+      "display-md": {
+        "fontFamily": "'Super Sans VF', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",
+        "fontSize": "22px",
+        "fontWeight": 460,
+        "lineHeight": 1.1,
+        "letterSpacing": "-0.315px"
+      },
+      "heading-lg": {
+        "fontFamily": "'Super Sans VF', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",
+        "fontSize": "20px",
+        "fontWeight": 460,
+        "lineHeight": 1.2,
+        "letterSpacing": "-0.4px"
+      },
+      "body-lg": {
+        "fontFamily": "'Super Sans VF', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",
+        "fontSize": "18px",
+        "fontWeight": 540,
+        "lineHeight": 1.5,
+        "letterSpacing": "-0.135px"
+      },
+      "body-md": {
+        "fontFamily": "'Super Sans VF', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": 460,
+        "lineHeight": 1.5,
+        "letterSpacing": 0
+      },
+      "body-strong": {
+        "fontFamily": "'Super Sans VF', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",
+        "fontSize": "18.72px",
+        "fontWeight": 700,
+        "lineHeight": 1.5,
+        "letterSpacing": 0
+      },
+      "button-md": {
+        "fontFamily": "'Super Sans VF', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": 700,
+        "lineHeight": 1,
+        "letterSpacing": 0
+      },
+      "button-cap": {
+        "fontFamily": "'Super Sans VF', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",
+        "fontSize": "14px",
+        "fontWeight": 600,
+        "lineHeight": 1,
+        "letterSpacing": 0
+      },
+      "caption": {
+        "fontFamily": "'Super Sans VF', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",
+        "fontSize": "14px",
+        "fontWeight": 460,
+        "lineHeight": 1.4,
+        "letterSpacing": 0
+      },
+      "micro": {
+        "fontFamily": "'Super Sans VF', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",
+        "fontSize": "12px",
+        "fontWeight": 540,
+        "lineHeight": 1.4,
+        "letterSpacing": 0
+      }
+    },
+    "rounded": {
+      "xs": "4px",
+      "sm": "6px",
+      "md": "8px",
+      "lg": "12px",
+      "xl": "16px",
+      "full": "9999px"
+    },
+    "spacing": {
+      "xxs": "2px",
+      "xs": "4px",
+      "sm": "8px",
+      "md": "12px",
+      "lg": "16px",
+      "xl": "24px",
+      "xxl": "32px",
+      "huge": "64px"
+    },
+    "components": {
+      "button-primary-dark": {
+        "backgroundColor": "{colors.primary}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.md}",
+        "padding": "12px 20px"
+      },
+      "button-primary-dark-pressed": {
+        "backgroundColor": "{colors.primary-deep}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.md}",
+        "padding": "12px 20px"
+      },
+      "button-on-dark-pill": {
+        "backgroundColor": "{colors.surface-violet-soft}",
+        "textColor": "{colors.primary}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.full}",
+        "padding": "12px 20px"
+      },
+      "button-secondary-outline": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.md}",
+        "padding": "12px 20px"
+      },
+      "button-on-teal": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.surface-teal-deep}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.md}",
+        "padding": "12px 20px"
+      },
+      "text-input": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.sm}",
+        "padding": "10px 12px"
+      },
+      "card-feature-light": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.lg}",
+        "padding": "32px"
+      },
+      "card-pricing": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.lg}",
+        "padding": "32px"
+      },
+      "card-pricing-featured": {
+        "backgroundColor": "{colors.primary}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.lg}",
+        "padding": "32px"
+      },
+      "card-teal-band": {
+        "backgroundColor": "{colors.surface-teal-deep}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.body-lg}",
+        "rounded": "{rounded.lg}",
+        "padding": "64px"
+      },
+      "card-feature-row": {
+        "backgroundColor": "{colors.canvas-soft}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.md}",
+        "padding": "24px"
+      },
+      "pill-tab-light": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.button-cap}",
+        "rounded": "{rounded.full}",
+        "padding": "8px 16px"
+      },
+      "nav-bar-dark": {
+        "backgroundColor": "{colors.primary}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.xs}",
+        "padding": "16px 24px"
+      },
+      "nav-bar-light": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.xs}",
+        "padding": "16px 24px"
+      },
+      "link-on-light": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.xs}",
+        "padding": "0px"
+      },
+      "footer-light": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink-mute}",
+        "typography": "{typography.caption}",
+        "rounded": "{rounded.xs}",
+        "padding": "64px 24px"
+      }
+    }
+  },
+  "normalizationRepairs": [],
+  "sections": [
+    {
+      "heading": "Overview",
+      "level": 2,
+      "text": "Superhumon's marketing pages open in an editorial dark register: a deep indigo navy `{colors.primary}` (`#1b1938`) canvas overlaid with a soft violet-and-sky atmospheric backdrop and a half-bleed portrait subject (often a person looking off-frame, photographed at twilight). Headlines render in `{typography.display-xxl}` (Super Sans VF at 64px / weight 540) with negative tracking, set in white over the indigo. A single rounded-rectangle CTA button anchors each band — never two, never three.\n\nThe body of every page flips to white. `{colors.canvas}` (`#ffffff`) takes over below the hero, with body type in `{colors.ink}` (`#292827` — a slightly warm dark grey, never pure black) and feature rows alternating between white and `{colors.canvas-soft}` (a barely-tinted off-white). Pricing tiers sit on this white surface; the featured tier inverts to the indigo navy, completing the brand's binary polarity.\n\nEvery page closes with a **deep-teal CTA band** (`{colors.surface-teal-deep}` — `#0e3030`). The teal is a single chromatic interlude: rich, almost-black green-blue, that breaks up what would otherwise be an indigo/white-only page. The teal band always contains the closing CTA in `{typography.display-lg}` paired with a single white-pill button.\n\nTypography runs **Super Sans VF** — a proprietary variable display sans — at unusual mid-weights (460, 540, 600). The variable axes let the brand pick precise sub-default weights that read as warmer and more human than typical 400/500/700 SaaS scales. Display sizes use negative letter-spacing of -1.32px to -0.315px depending on size; line-heights are unusually tight (0.96 on 48px display).\n\n**Key Characteristics:**\n- Three-canvas system: indigo navy (`{colors.primary}`) for hero, white (`{colors.canvas}`) for body, deep teal (`{colors.surface-teal-deep}`) for closing CTA.\n- Half-bleed portrait subject in the hero with violet-sky atmospheric backdrop — the brand uses a person looking off-frame as a recurring visual.\n- Single CTA per band; the marketing pages never crowd actions.\n- Super Sans VF at sub-default weights (460, 540, 600) — the brand's typographic warmth signature.\n- Tight line-heights (0.96) on display sizes — vertical compression as editorial density.\n- Off-warm-grey body ink (`#292827`) — never pure black; the brand's quiet warmth.\n- Pill-shaped on-hero CTA in pale violet (`{colors.surface-violet-soft}`); rounded-rectangle CTAs everywhere else.",
+      "line": 214
+    },
+    {
+      "heading": "Colors",
+      "level": 2,
+      "text": "> **Source pages:** home (`/`), `/products/go-ai-assistant`, `/contact-sales`, `/plans`.",
+      "line": 233
+    },
+    {
+      "heading": "Brand & Accent",
+      "level": 3,
+      "text": "- **Primary Indigo Navy** (`{colors.primary}` — `#1b1938`): The brand's primary surface and CTA color. Hero canvas, filled rounded-rectangle button, featured pricing tier.\n- **Indigo Deep** (`{colors.primary-deep}` — `#0e0c1f`): Pressed-state lift / deeper navy used in hero gradient stops.\n- **Surface Violet Soft** (`{colors.surface-violet-soft}` — `#c9b4fa`): The hero pill-button fill — pale violet over the indigo canvas. Also appears in atmospheric backdrops.\n- **Surface Teal Deep** (`{colors.surface-teal-deep}` — `#0e3030`): The signature closing-CTA band color. Rich green-blue, almost black.\n- **Surface Teal Mid** (`{colors.surface-teal-mid}` — `#155555`): Slightly lifted teal for nested chrome inside the band.",
+      "line": 237
+    },
+    {
+      "heading": "Surface",
+      "level": 3,
+      "text": "- **Canvas** (`{colors.canvas}` — `#ffffff`): Default body background.\n- **Canvas Soft** (`{colors.canvas-soft}` — `#fafaf8`): Barely-warm off-white for alternating feature-row bands.\n- **Hairline** (`{colors.hairline}` — `#e8e4dd`): 1px borders, slightly warm grey.\n- **Hairline Dark** (`{colors.hairline-dark}` — `#3f3a52`): 1px borders on dark surfaces.",
+      "line": 244
+    },
+    {
+      "heading": "Text",
+      "level": 3,
+      "text": "- **Ink** (`{colors.ink}` — `#292827`): Default body text. Warm dark grey, never pure black.\n- **Ink Mute** (`{colors.ink-mute}` — `#73706d`): Secondary text, captions.\n- **Ink Faint** (`{colors.ink-faint}` — `#9a9794`): Tertiary / disabled text.\n- **On Primary** (`{colors.on-primary}` — `#ffffff`): Text on dark navy / teal surfaces.\n- **On Dark Mute** (`{colors.on-dark-mute}` — translucent white): Secondary text on dark.\n- **On Dark Faint** (`{colors.on-dark-faint}` — translucent white): Tertiary text on dark.",
+      "line": 250
+    },
+    {
+      "heading": "Typography",
+      "level": 2,
+      "text": "",
+      "line": 258
+    },
+    {
+      "heading": "Font Family",
+      "level": 3,
+      "text": "The display and UI tier is **Super Sans VF** — a proprietary variable sans (variable axes for weight, with the brand using sub-default 460 / 540 / 600 weights). Fallback chain is the system font stack.\n\nFor substitution use **Inter Variable** (open-source) at weight 460 / 540 / 600 — Inter's variable axes match Super Sans VF's behavior closely. Avoid fixed-weight Inter at 400 / 500 / 600 — the brand specifically picks the in-between weights.",
+      "line": 260
+    },
+    {
+      "heading": "Hierarchy",
+      "level": 3,
+      "text": "| Token | Size | Weight | Line Height | Letter Spacing | Use |\n|---|---|---|---|---|---|\n| `{typography.display-xxl}` | 64px | 540 | 0.96 | 0 | Hero headline |\n| `{typography.display-xl}` | 48px | 460 | 0.96 | -1.32px | Section opener on light surfaces |\n| `{typography.display-lg}` | 28px | 540 | 1.14 | -0.63px | Sub-section / feature title |\n| `{typography.display-md}` | 22px | 460 | 1.1 | -0.315px | Card title |\n| `{typography.heading-lg}` | 20px | 460 | 1.2 | -0.4px | Compact card title |\n| `{typography.body-lg}` | 18px | 540 | 1.5 | -0.135px | Marketing body lead |\n| `{typography.body-md}` | 16px | 460 | 1.5 | 0 | Default UI body |\n| `{typography.body-strong}` | 18.72px | 700 | 1.5 | 0 | Emphasized body |\n| `{typography.button-md}` | 16px | 700 | 1.0 | 0 | Rounded-rectangle button label |\n| `{typography.button-cap}` | 14px | 600 | 1.0 | 0 | Compact button label |\n| `{typography.caption}` | 14px | 460 | 1.4 | 0 | Helper, footnote |\n| `{typography.micro}` | 12px | 540 | 1.4 | 0 | Pill label, fine print |",
+      "line": 266
+    },
+    {
+      "heading": "Principles",
+      "level": 3,
+      "text": "- **Sub-default weights.** The brand picks 460 / 540 / 600 instead of 400 / 500 / 700 — a quiet warmth in the typography that distinguishes it from default SaaS systems.\n- **Tight display leading.** 0.96 on 48–64px display — the type stacks unusually compact.\n- **Negative tracking on display sizes.** -1.32px at 48px scaling proportionally — tightens the variable letterforms into editorial density.",
+      "line": 283
+    },
+    {
+      "heading": "Note on Font Substitutes",
+      "level": 3,
+      "text": "**Inter Variable** (open-source via Google Fonts) is the recommended substitute. Set `font-variation-settings: \"wght\" 540` for display, 460 for body — Inter's variable axes match. Avoid fixed-weight Inter; the in-between weights are the brand's signature.",
+      "line": 288
+    },
+    {
+      "heading": "Layout",
+      "level": 2,
+      "text": "",
+      "line": 291
+    },
+    {
+      "heading": "Spacing System",
+      "level": 3,
+      "text": "- **Base unit**: 8px (with 2 / 4 / 12 sub-tokens for fine work).\n- **Tokens**: `{spacing.xxs}` 2px · `{spacing.xs}` 4px · `{spacing.sm}` 8px · `{spacing.md}` 12px · `{spacing.lg}` 16px · `{spacing.xl}` 24px · `{spacing.xxl}` 32px · `{spacing.huge}` 64px.\n- **Section padding**: 64–96px on most sections; closing teal band uses 96–128px for editorial weight.\n- **Card internal padding**: 32px on pricing cards; 24px on alternating feature rows.",
+      "line": 293
+    },
+    {
+      "heading": "Grid & Container",
+      "level": 3,
+      "text": "- Hero spans full viewport width with the violet-sky backdrop edge-to-edge; content centers in a ~960px column.\n- Body content centers in ~960–1100px.\n- Pricing collapses 3-up → 2-up → 1-up at 1024 / 768 breakpoints.",
+      "line": 299
+    },
+    {
+      "heading": "Whitespace Philosophy",
+      "level": 3,
+      "text": "The brand uses generous editorial whitespace on both polarities — dark hero and white body. Section gaps tend toward 96px; the teal closing band gets up to 128px of vertical air. The whitespace itself is part of the brand's \"considered, slow-tempo\" feel.",
+      "line": 304
+    },
+    {
+      "heading": "Elevation & Depth",
+      "level": 2,
+      "text": "| Level | Treatment | Use |\n|---|---|---|\n| 0 | Flat | Default surface |\n| 1 | `box-shadow: 0 1px 3px rgba(0,0,0,0.08)` | Subtle card lift |\n| 2 | `box-shadow: 0 8px 24px rgba(0,0,0,0.12)` | Floating panels, modals |\n| 3 | Atmospheric backdrop (violet-sky over indigo) | The hero's depth medium |",
+      "line": 307
+    },
+    {
+      "heading": "Decorative Depth",
+      "level": 3,
+      "text": "The hero's depth is the **violet-sky atmospheric backdrop** — a soft indigo-to-violet-to-sky-blue radial wash that sits behind the portrait subject. Implemented as a CSS radial gradient or large background image. Below the hero, depth is minimal — the white canvas is flat.",
+      "line": 316
+    },
+    {
+      "heading": "Shapes",
+      "level": 2,
+      "text": "",
+      "line": 319
+    },
+    {
+      "heading": "Border Radius Scale",
+      "level": 3,
+      "text": "| Token | Value | Use |\n|---|---|---|\n| `{rounded.xs}` | 4px | Hairline tags |\n| `{rounded.sm}` | 6px | Form inputs |\n| `{rounded.md}` | 8px | Buttons (the brand's signature button shape — rounded rectangle, never pill) |\n| `{rounded.lg}` | 12px | Pricing cards, feature cards |\n| `{rounded.xl}` | 16px | Modal dialogs, large feature cards |\n| `{rounded.full}` | 9999px | Pill tabs in feature row, hero CTA |",
+      "line": 321
+    },
+    {
+      "heading": "Photography Geometry",
+      "level": 3,
+      "text": "The hero uses **half-bleed portrait subjects** — a person photographed at twilight, looking off-frame, occupying the right half of the hero. The portrait extends edge-to-edge vertically and stops mid-canvas horizontally; type sits on the left side. Other photography is rare; product UI mockups handle most other illustrative needs.",
+      "line": 332
+    },
+    {
+      "heading": "Components",
+      "level": 2,
+      "text": "",
+      "line": 335
+    },
+    {
+      "heading": "Buttons",
+      "level": 3,
+      "text": "**`button-primary-dark`** — the dominant rounded-rectangle CTA on white surfaces.\n- Background `{colors.primary}`, text `{colors.on-primary}`, type `{typography.button-md}`, padding `{spacing.md} {spacing.xl}` (12px 20px), rounded `{rounded.md}` 8px.\n- Pressed state `button-primary-dark-pressed` shifts to `{colors.primary-deep}`.\n\n**`button-on-dark-pill`** — the hero CTA in pale violet pill shape.\n- Background `{colors.surface-violet-soft}`, text `{colors.primary}`, same typography, padding 12px 20px, rounded `{rounded.full}`. The pill shape only appears on the hero — body CTAs use the rounded rectangle.\n\n**`button-secondary-outline`** — outline alternative on white.\n- Background `{colors.canvas}`, text `{colors.ink}`, 1px solid `{colors.hairline-dark}` border, same shape as `button-primary-dark`.\n\n**`button-on-teal`** — CTA inside the closing teal band.\n- Background `{colors.canvas}`, text `{colors.surface-teal-deep}`, rounded-rectangle, same typography.",
+      "line": 337
+    },
+    {
+      "heading": "Cards & Containers",
+      "level": 3,
+      "text": "**`card-feature-light`** — feature card on white.\n- Background `{colors.canvas}`, padding `{spacing.xxl}`, rounded `{rounded.lg}`, 1px `{colors.hairline}` border.\n\n**`card-pricing`** — standard pricing tier card.\n- Background `{colors.canvas}`, padding `{spacing.xxl}`, rounded `{rounded.lg}`, 1px `{colors.hairline}` border.\n\n**`card-pricing-featured`** — inverted indigo featured tier.\n- Background `{colors.primary}`, text `{colors.on-primary}`, otherwise identical to `card-pricing`.\n\n**`card-teal-band`** — the closing CTA band on every page.\n- Background `{colors.surface-teal-deep}`, text `{colors.on-primary}`, padding `{spacing.huge}` 64px, rounded `{rounded.lg}` 12px (often radius-less in practice when full-bleed). Holds a single closing headline in `{typography.display-lg}` and a `button-on-teal`.\n\n**`card-feature-row`** — alternating feature-row card on the body.\n- Background `{colors.canvas-soft}`, text `{colors.ink}`, padding `{spacing.xl}` 24px, rounded `{rounded.md}` 8px. Used in pairs/triplets to explain features below the hero.",
+      "line": 352
+    },
+    {
+      "heading": "Inputs & Forms",
+      "level": 3,
+      "text": "**`text-input`** — standard form input.\n- Background `{colors.canvas}`, text `{colors.ink}`, type `{typography.body-md}`, padding `{spacing.sm}+ {spacing.md}` (10px 12px), rounded `{rounded.sm}` 6px, 1px `{colors.hairline}` border.",
+      "line": 369
+    },
+    {
+      "heading": "Navigation",
+      "level": 3,
+      "text": "**`nav-bar-dark`** — top nav over the indigo hero.\n- Background `{colors.primary}`, text `{colors.on-primary}`, padding `{spacing.lg} {spacing.xl}`. Logo on the left, nav center, \"Get Started\" `button-on-dark-pill` on the right.\n\n**`nav-bar-light`** — top nav on body / pricing pages.\n- Background `{colors.canvas}`, text `{colors.ink}`, otherwise same structure with `button-primary-dark` on the right.",
+      "line": 374
+    },
+    {
+      "heading": "Pills, Tags, and Chips",
+      "level": 3,
+      "text": "**`pill-tab-light`** — feature-row tab selector.\n- Background `{colors.canvas}`, text `{colors.ink}`, type `{typography.button-cap}`, padding `{spacing.sm} {spacing.lg}`, rounded `{rounded.full}`. Used in the feature category picker (Mail / Channels / Code / AI / Calendar etc.) below the hero.",
+      "line": 382
+    },
+    {
+      "heading": "Signature Components",
+      "level": 3,
+      "text": "**Half-Bleed Portrait Hero** — a person photographed at twilight, occupying the right half of the indigo hero with violet-sky atmospheric backdrop behind. Type and CTA sit on the left side. The portrait is the brand's recurring visual signature.\n\n**Closing Teal Band** — every page closes with a `card-teal-band` containing a `{typography.display-lg}` closing headline and a single `button-on-teal`. The teal is the page's resolving chord.\n\n**`link-on-light`** — inline links on body.\n- Text `{colors.ink}` rendered in `{typography.body-md}` with persistent underline.\n\n**`footer-light`** — site-wide footer.\n- Background `{colors.canvas}`, text `{colors.ink-mute}`, type `{typography.caption}`, padding `{spacing.huge} {spacing.xl}` (64px 24px). Holds 4 columns of link groups, social icons, and a small legal/copyright row.",
+      "line": 387
+    },
+    {
+      "heading": "Do's and Don'ts",
+      "level": 2,
+      "text": "",
+      "line": 399
+    },
+    {
+      "heading": "Do",
+      "level": 3,
+      "text": "- Pair every hero with the violet-sky atmospheric backdrop and a half-bleed portrait subject when possible.\n- Render display tiers at sub-default weights (460 / 540) — the warmth is the typographic signature.\n- Use rounded-rectangle CTAs at 8px radius everywhere except the hero (where pill-shaped is the rule).\n- Close every marketing page with a deep-teal CTA band.\n- Use warm dark grey `{colors.ink}` for body text — never pure black.\n- Apply tight 0.96 line-height on display sizes; the editorial compression is the brand.",
+      "line": 401
+    },
+    {
+      "heading": "Don't",
+      "level": 3,
+      "text": "- Don't use pill-shaped buttons in the body of the page; the pill is hero-only.\n- Don't bump display weight above 540 unless using `body-strong` (700) for emphasized inline body.\n- Don't render body text in pure black — the warm grey `#292827` is part of the brand.\n- Don't omit the closing teal band — every marketing page closes with it.\n- Don't introduce additional accent colors beyond indigo, violet-soft, teal, and the off-warm-greys.",
+      "line": 409
+    },
+    {
+      "heading": "Responsive Behavior",
+      "level": 2,
+      "text": "",
+      "line": 416
+    },
+    {
+      "heading": "Breakpoints",
+      "level": 3,
+      "text": "| Name | Width | Key Changes |\n|---|---|---|\n| Wide | ≥ 1440px | Half-bleed portrait at full scale; teal band 128px tall |\n| Desktop | 1024–1440px | Default content max-width; pricing 3-up |\n| Tablet | 768–1023px | Pricing 2-up; portrait crops tighter |\n| Mobile | < 768px | Pricing 1-up; hamburger nav; display drops 64 → 36px |",
+      "line": 418
+    },
+    {
+      "heading": "Touch Targets",
+      "level": 3,
+      "text": "- Buttons hit ≥ 44×44px on mobile via 12px vertical padding × 16px line-height. WCAG AAA.\n- Form fields stay at the 44px minimum height.",
+      "line": 427
+    },
+    {
+      "heading": "Collapsing Strategy",
+      "level": 3,
+      "text": "- Display tiers stair-step 64 → 48 → 36 → 28 → 22px.\n- Half-bleed portrait crops to head-and-shoulders on mobile; atmospheric backdrop simplifies.\n- Pricing tiers stair-step 3-up → 2-up → 1-up.\n- Top nav collapses to hamburger below 768px.\n- Closing teal band reduces vertical padding from 128 → 64px on mobile.",
+      "line": 431
+    },
+    {
+      "heading": "Image Behavior",
+      "level": 3,
+      "text": "Hero portrait uses `srcset` with desktop / mobile crops — desktop favors the full half-bleed composition; mobile crops to head-and-shoulders.",
+      "line": 438
+    },
+    {
+      "heading": "Iteration Guide",
+      "level": 2,
+      "text": "1. Focus on ONE component at a time.\n2. Reference component names and tokens directly.\n3. Run `npx @google/design.md lint DESIGN.md` after edits.\n4. Default body to `{typography.body-md}`; reserve `{typography.body-lg}` for marketing leads.\n5. Keep the three-canvas rhythm (indigo / white / teal) — adding a fourth canvas color breaks the system.\n6. The closing teal band is non-negotiable — every marketing page resolves there.",
+      "line": 441
+    }
+  ],
+  "tokens": [
+    {
+      "path": "colors.primary",
+      "sourcePath": "colors.primary",
+      "type": "color",
+      "value": "#1b1938",
+      "status": "unverified",
+      "evidence": {
+        "line": 7,
+        "sourcePath": "colors.primary"
+      }
+    },
+    {
+      "path": "colors.primarydeep",
+      "sourcePath": "colors.primary-deep",
+      "type": "color",
+      "value": "#0e0c1f",
+      "status": "unverified",
+      "evidence": {
+        "line": 8,
+        "sourcePath": "colors.primary-deep"
+      }
+    },
+    {
+      "path": "colors.onprimary",
+      "sourcePath": "colors.on-primary",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 9,
+        "sourcePath": "colors.on-primary"
+      }
+    },
+    {
+      "path": "colors.ink",
+      "sourcePath": "colors.ink",
+      "type": "color",
+      "value": "#292827",
+      "status": "unverified",
+      "evidence": {
+        "line": 10,
+        "sourcePath": "colors.ink"
+      }
+    },
+    {
+      "path": "colors.inkmute",
+      "sourcePath": "colors.ink-mute",
+      "type": "color",
+      "value": "#73706d",
+      "status": "unverified",
+      "evidence": {
+        "line": 11,
+        "sourcePath": "colors.ink-mute"
+      }
+    },
+    {
+      "path": "colors.inkfaint",
+      "sourcePath": "colors.ink-faint",
+      "type": "color",
+      "value": "#9a9794",
+      "status": "unverified",
+      "evidence": {
+        "line": 12,
+        "sourcePath": "colors.ink-faint"
+      }
+    },
+    {
+      "path": "colors.canvas",
+      "sourcePath": "colors.canvas",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 13,
+        "sourcePath": "colors.canvas"
+      }
+    },
+    {
+      "path": "colors.canvassoft",
+      "sourcePath": "colors.canvas-soft",
+      "type": "color",
+      "value": "#fafaf8",
+      "status": "unverified",
+      "evidence": {
+        "line": 14,
+        "sourcePath": "colors.canvas-soft"
+      }
+    },
+    {
+      "path": "colors.surfacevioletsoft",
+      "sourcePath": "colors.surface-violet-soft",
+      "type": "color",
+      "value": "#c9b4fa",
+      "status": "unverified",
+      "evidence": {
+        "line": 15,
+        "sourcePath": "colors.surface-violet-soft"
+      }
+    },
+    {
+      "path": "colors.surfacetealdeep",
+      "sourcePath": "colors.surface-teal-deep",
+      "type": "color",
+      "value": "#0e3030",
+      "status": "unverified",
+      "evidence": {
+        "line": 16,
+        "sourcePath": "colors.surface-teal-deep"
+      }
+    },
+    {
+      "path": "colors.surfacetealmid",
+      "sourcePath": "colors.surface-teal-mid",
+      "type": "color",
+      "value": "#155555",
+      "status": "unverified",
+      "evidence": {
+        "line": 17,
+        "sourcePath": "colors.surface-teal-mid"
+      }
+    },
+    {
+      "path": "colors.hairline",
+      "sourcePath": "colors.hairline",
+      "type": "color",
+      "value": "#e8e4dd",
+      "status": "unverified",
+      "evidence": {
+        "line": 18,
+        "sourcePath": "colors.hairline"
+      }
+    },
+    {
+      "path": "colors.hairlinedark",
+      "sourcePath": "colors.hairline-dark",
+      "type": "color",
+      "value": "#3f3a52",
+      "status": "unverified",
+      "evidence": {
+        "line": 19,
+        "sourcePath": "colors.hairline-dark"
+      }
+    },
+    {
+      "path": "colors.ondarkmute",
+      "sourcePath": "colors.on-dark-mute",
+      "type": "color",
+      "value": "#bcbac9",
+      "status": "unverified",
+      "evidence": {
+        "line": 20,
+        "sourcePath": "colors.on-dark-mute"
+      }
+    },
+    {
+      "path": "colors.ondarkfaint",
+      "sourcePath": "colors.on-dark-faint",
+      "type": "color",
+      "value": "#5a5772",
+      "status": "unverified",
+      "evidence": {
+        "line": 21,
+        "sourcePath": "colors.on-dark-faint"
+      }
+    },
+    {
+      "path": "typography.displayxxl.fontfamily",
+      "sourcePath": "typography.display-xxl.fontFamily",
+      "type": "fontFamily",
+      "value": "'Super Sans VF', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 25,
+        "sourcePath": "typography.display-xxl.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displayxxl.fontsize",
+      "sourcePath": "typography.display-xxl.fontSize",
+      "type": "dimension",
+      "value": "64px",
+      "status": "unverified",
+      "evidence": {
+        "line": 26,
+        "sourcePath": "typography.display-xxl.fontSize"
+      }
+    },
+    {
+      "path": "typography.displayxxl.fontweight",
+      "sourcePath": "typography.display-xxl.fontWeight",
+      "type": "number",
+      "value": 540,
+      "status": "unverified",
+      "evidence": {
+        "line": 27,
+        "sourcePath": "typography.display-xxl.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displayxxl.lineheight",
+      "sourcePath": "typography.display-xxl.lineHeight",
+      "type": "number",
+      "value": 0.96,
+      "status": "unverified",
+      "evidence": {
+        "line": 28,
+        "sourcePath": "typography.display-xxl.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displayxxl.letterspacing",
+      "sourcePath": "typography.display-xxl.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 29,
+        "sourcePath": "typography.display-xxl.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.displayxl.fontfamily",
+      "sourcePath": "typography.display-xl.fontFamily",
+      "type": "fontFamily",
+      "value": "'Super Sans VF', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 31,
+        "sourcePath": "typography.display-xl.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displayxl.fontsize",
+      "sourcePath": "typography.display-xl.fontSize",
+      "type": "dimension",
+      "value": "48px",
+      "status": "unverified",
+      "evidence": {
+        "line": 32,
+        "sourcePath": "typography.display-xl.fontSize"
+      }
+    },
+    {
+      "path": "typography.displayxl.fontweight",
+      "sourcePath": "typography.display-xl.fontWeight",
+      "type": "number",
+      "value": 460,
+      "status": "unverified",
+      "evidence": {
+        "line": 33,
+        "sourcePath": "typography.display-xl.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displayxl.lineheight",
+      "sourcePath": "typography.display-xl.lineHeight",
+      "type": "number",
+      "value": 0.96,
+      "status": "unverified",
+      "evidence": {
+        "line": 34,
+        "sourcePath": "typography.display-xl.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displayxl.letterspacing",
+      "sourcePath": "typography.display-xl.letterSpacing",
+      "type": "dimension",
+      "value": "-1.32px",
+      "status": "unverified",
+      "evidence": {
+        "line": 35,
+        "sourcePath": "typography.display-xl.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.displaylg.fontfamily",
+      "sourcePath": "typography.display-lg.fontFamily",
+      "type": "fontFamily",
+      "value": "'Super Sans VF', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 37,
+        "sourcePath": "typography.display-lg.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displaylg.fontsize",
+      "sourcePath": "typography.display-lg.fontSize",
+      "type": "dimension",
+      "value": "28px",
+      "status": "unverified",
+      "evidence": {
+        "line": 38,
+        "sourcePath": "typography.display-lg.fontSize"
+      }
+    },
+    {
+      "path": "typography.displaylg.fontweight",
+      "sourcePath": "typography.display-lg.fontWeight",
+      "type": "number",
+      "value": 540,
+      "status": "unverified",
+      "evidence": {
+        "line": 39,
+        "sourcePath": "typography.display-lg.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displaylg.lineheight",
+      "sourcePath": "typography.display-lg.lineHeight",
+      "type": "number",
+      "value": 1.14,
+      "status": "unverified",
+      "evidence": {
+        "line": 40,
+        "sourcePath": "typography.display-lg.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displaylg.letterspacing",
+      "sourcePath": "typography.display-lg.letterSpacing",
+      "type": "dimension",
+      "value": "-0.63px",
+      "status": "unverified",
+      "evidence": {
+        "line": 41,
+        "sourcePath": "typography.display-lg.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.displaymd.fontfamily",
+      "sourcePath": "typography.display-md.fontFamily",
+      "type": "fontFamily",
+      "value": "'Super Sans VF', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 43,
+        "sourcePath": "typography.display-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displaymd.fontsize",
+      "sourcePath": "typography.display-md.fontSize",
+      "type": "dimension",
+      "value": "22px",
+      "status": "unverified",
+      "evidence": {
+        "line": 44,
+        "sourcePath": "typography.display-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.displaymd.fontweight",
+      "sourcePath": "typography.display-md.fontWeight",
+      "type": "number",
+      "value": 460,
+      "status": "unverified",
+      "evidence": {
+        "line": 45,
+        "sourcePath": "typography.display-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displaymd.lineheight",
+      "sourcePath": "typography.display-md.lineHeight",
+      "type": "number",
+      "value": 1.1,
+      "status": "unverified",
+      "evidence": {
+        "line": 46,
+        "sourcePath": "typography.display-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displaymd.letterspacing",
+      "sourcePath": "typography.display-md.letterSpacing",
+      "type": "dimension",
+      "value": "-0.315px",
+      "status": "unverified",
+      "evidence": {
+        "line": 47,
+        "sourcePath": "typography.display-md.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.headinglg.fontfamily",
+      "sourcePath": "typography.heading-lg.fontFamily",
+      "type": "fontFamily",
+      "value": "'Super Sans VF', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 49,
+        "sourcePath": "typography.heading-lg.fontFamily"
+      }
+    },
+    {
+      "path": "typography.headinglg.fontsize",
+      "sourcePath": "typography.heading-lg.fontSize",
+      "type": "dimension",
+      "value": "20px",
+      "status": "unverified",
+      "evidence": {
+        "line": 50,
+        "sourcePath": "typography.heading-lg.fontSize"
+      }
+    },
+    {
+      "path": "typography.headinglg.fontweight",
+      "sourcePath": "typography.heading-lg.fontWeight",
+      "type": "number",
+      "value": 460,
+      "status": "unverified",
+      "evidence": {
+        "line": 51,
+        "sourcePath": "typography.heading-lg.fontWeight"
+      }
+    },
+    {
+      "path": "typography.headinglg.lineheight",
+      "sourcePath": "typography.heading-lg.lineHeight",
+      "type": "number",
+      "value": 1.2,
+      "status": "unverified",
+      "evidence": {
+        "line": 52,
+        "sourcePath": "typography.heading-lg.lineHeight"
+      }
+    },
+    {
+      "path": "typography.headinglg.letterspacing",
+      "sourcePath": "typography.heading-lg.letterSpacing",
+      "type": "dimension",
+      "value": "-0.4px",
+      "status": "unverified",
+      "evidence": {
+        "line": 53,
+        "sourcePath": "typography.heading-lg.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.bodylg.fontfamily",
+      "sourcePath": "typography.body-lg.fontFamily",
+      "type": "fontFamily",
+      "value": "'Super Sans VF', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 55,
+        "sourcePath": "typography.body-lg.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodylg.fontsize",
+      "sourcePath": "typography.body-lg.fontSize",
+      "type": "dimension",
+      "value": "18px",
+      "status": "unverified",
+      "evidence": {
+        "line": 56,
+        "sourcePath": "typography.body-lg.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodylg.fontweight",
+      "sourcePath": "typography.body-lg.fontWeight",
+      "type": "number",
+      "value": 540,
+      "status": "unverified",
+      "evidence": {
+        "line": 57,
+        "sourcePath": "typography.body-lg.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodylg.lineheight",
+      "sourcePath": "typography.body-lg.lineHeight",
+      "type": "number",
+      "value": 1.5,
+      "status": "unverified",
+      "evidence": {
+        "line": 58,
+        "sourcePath": "typography.body-lg.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodylg.letterspacing",
+      "sourcePath": "typography.body-lg.letterSpacing",
+      "type": "dimension",
+      "value": "-0.135px",
+      "status": "unverified",
+      "evidence": {
+        "line": 59,
+        "sourcePath": "typography.body-lg.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.bodymd.fontfamily",
+      "sourcePath": "typography.body-md.fontFamily",
+      "type": "fontFamily",
+      "value": "'Super Sans VF', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 61,
+        "sourcePath": "typography.body-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodymd.fontsize",
+      "sourcePath": "typography.body-md.fontSize",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 62,
+        "sourcePath": "typography.body-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodymd.fontweight",
+      "sourcePath": "typography.body-md.fontWeight",
+      "type": "number",
+      "value": 460,
+      "status": "unverified",
+      "evidence": {
+        "line": 63,
+        "sourcePath": "typography.body-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodymd.lineheight",
+      "sourcePath": "typography.body-md.lineHeight",
+      "type": "number",
+      "value": 1.5,
+      "status": "unverified",
+      "evidence": {
+        "line": 64,
+        "sourcePath": "typography.body-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodymd.letterspacing",
+      "sourcePath": "typography.body-md.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 65,
+        "sourcePath": "typography.body-md.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.bodystrong.fontfamily",
+      "sourcePath": "typography.body-strong.fontFamily",
+      "type": "fontFamily",
+      "value": "'Super Sans VF', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 67,
+        "sourcePath": "typography.body-strong.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodystrong.fontsize",
+      "sourcePath": "typography.body-strong.fontSize",
+      "type": "dimension",
+      "value": "18.72px",
+      "status": "unverified",
+      "evidence": {
+        "line": 68,
+        "sourcePath": "typography.body-strong.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodystrong.fontweight",
+      "sourcePath": "typography.body-strong.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 69,
+        "sourcePath": "typography.body-strong.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodystrong.lineheight",
+      "sourcePath": "typography.body-strong.lineHeight",
+      "type": "number",
+      "value": 1.5,
+      "status": "unverified",
+      "evidence": {
+        "line": 70,
+        "sourcePath": "typography.body-strong.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodystrong.letterspacing",
+      "sourcePath": "typography.body-strong.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 71,
+        "sourcePath": "typography.body-strong.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.buttonmd.fontfamily",
+      "sourcePath": "typography.button-md.fontFamily",
+      "type": "fontFamily",
+      "value": "'Super Sans VF', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 73,
+        "sourcePath": "typography.button-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.buttonmd.fontsize",
+      "sourcePath": "typography.button-md.fontSize",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 74,
+        "sourcePath": "typography.button-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.buttonmd.fontweight",
+      "sourcePath": "typography.button-md.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 75,
+        "sourcePath": "typography.button-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.buttonmd.lineheight",
+      "sourcePath": "typography.button-md.lineHeight",
+      "type": "number",
+      "value": 1,
+      "status": "unverified",
+      "evidence": {
+        "line": 76,
+        "sourcePath": "typography.button-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.buttonmd.letterspacing",
+      "sourcePath": "typography.button-md.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 77,
+        "sourcePath": "typography.button-md.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.buttoncap.fontfamily",
+      "sourcePath": "typography.button-cap.fontFamily",
+      "type": "fontFamily",
+      "value": "'Super Sans VF', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 79,
+        "sourcePath": "typography.button-cap.fontFamily"
+      }
+    },
+    {
+      "path": "typography.buttoncap.fontsize",
+      "sourcePath": "typography.button-cap.fontSize",
+      "type": "dimension",
+      "value": "14px",
+      "status": "unverified",
+      "evidence": {
+        "line": 80,
+        "sourcePath": "typography.button-cap.fontSize"
+      }
+    },
+    {
+      "path": "typography.buttoncap.fontweight",
+      "sourcePath": "typography.button-cap.fontWeight",
+      "type": "number",
+      "value": 600,
+      "status": "unverified",
+      "evidence": {
+        "line": 81,
+        "sourcePath": "typography.button-cap.fontWeight"
+      }
+    },
+    {
+      "path": "typography.buttoncap.lineheight",
+      "sourcePath": "typography.button-cap.lineHeight",
+      "type": "number",
+      "value": 1,
+      "status": "unverified",
+      "evidence": {
+        "line": 82,
+        "sourcePath": "typography.button-cap.lineHeight"
+      }
+    },
+    {
+      "path": "typography.buttoncap.letterspacing",
+      "sourcePath": "typography.button-cap.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 83,
+        "sourcePath": "typography.button-cap.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.caption.fontfamily",
+      "sourcePath": "typography.caption.fontFamily",
+      "type": "fontFamily",
+      "value": "'Super Sans VF', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 85,
+        "sourcePath": "typography.caption.fontFamily"
+      }
+    },
+    {
+      "path": "typography.caption.fontsize",
+      "sourcePath": "typography.caption.fontSize",
+      "type": "dimension",
+      "value": "14px",
+      "status": "unverified",
+      "evidence": {
+        "line": 86,
+        "sourcePath": "typography.caption.fontSize"
+      }
+    },
+    {
+      "path": "typography.caption.fontweight",
+      "sourcePath": "typography.caption.fontWeight",
+      "type": "number",
+      "value": 460,
+      "status": "unverified",
+      "evidence": {
+        "line": 87,
+        "sourcePath": "typography.caption.fontWeight"
+      }
+    },
+    {
+      "path": "typography.caption.lineheight",
+      "sourcePath": "typography.caption.lineHeight",
+      "type": "number",
+      "value": 1.4,
+      "status": "unverified",
+      "evidence": {
+        "line": 88,
+        "sourcePath": "typography.caption.lineHeight"
+      }
+    },
+    {
+      "path": "typography.caption.letterspacing",
+      "sourcePath": "typography.caption.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 89,
+        "sourcePath": "typography.caption.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.micro.fontfamily",
+      "sourcePath": "typography.micro.fontFamily",
+      "type": "fontFamily",
+      "value": "'Super Sans VF', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 91,
+        "sourcePath": "typography.micro.fontFamily"
+      }
+    },
+    {
+      "path": "typography.micro.fontsize",
+      "sourcePath": "typography.micro.fontSize",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 92,
+        "sourcePath": "typography.micro.fontSize"
+      }
+    },
+    {
+      "path": "typography.micro.fontweight",
+      "sourcePath": "typography.micro.fontWeight",
+      "type": "number",
+      "value": 540,
+      "status": "unverified",
+      "evidence": {
+        "line": 93,
+        "sourcePath": "typography.micro.fontWeight"
+      }
+    },
+    {
+      "path": "typography.micro.lineheight",
+      "sourcePath": "typography.micro.lineHeight",
+      "type": "number",
+      "value": 1.4,
+      "status": "unverified",
+      "evidence": {
+        "line": 94,
+        "sourcePath": "typography.micro.lineHeight"
+      }
+    },
+    {
+      "path": "typography.micro.letterspacing",
+      "sourcePath": "typography.micro.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 95,
+        "sourcePath": "typography.micro.letterSpacing"
+      }
+    },
+    {
+      "path": "rounded.xs",
+      "sourcePath": "rounded.xs",
+      "type": "dimension",
+      "value": "4px",
+      "status": "unverified",
+      "evidence": {
+        "line": 98,
+        "sourcePath": "rounded.xs"
+      }
+    },
+    {
+      "path": "rounded.sm",
+      "sourcePath": "rounded.sm",
+      "type": "dimension",
+      "value": "6px",
+      "status": "unverified",
+      "evidence": {
+        "line": 99,
+        "sourcePath": "rounded.sm"
+      }
+    },
+    {
+      "path": "rounded.md",
+      "sourcePath": "rounded.md",
+      "type": "dimension",
+      "value": "8px",
+      "status": "unverified",
+      "evidence": {
+        "line": 100,
+        "sourcePath": "rounded.md"
+      }
+    },
+    {
+      "path": "rounded.lg",
+      "sourcePath": "rounded.lg",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 101,
+        "sourcePath": "rounded.lg"
+      }
+    },
+    {
+      "path": "rounded.xl",
+      "sourcePath": "rounded.xl",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 102,
+        "sourcePath": "rounded.xl"
+      }
+    },
+    {
+      "path": "rounded.full",
+      "sourcePath": "rounded.full",
+      "type": "dimension",
+      "value": "9999px",
+      "status": "unverified",
+      "evidence": {
+        "line": 103,
+        "sourcePath": "rounded.full"
+      }
+    },
+    {
+      "path": "spacing.xxs",
+      "sourcePath": "spacing.xxs",
+      "type": "dimension",
+      "value": "2px",
+      "status": "unverified",
+      "evidence": {
+        "line": 106,
+        "sourcePath": "spacing.xxs"
+      }
+    },
+    {
+      "path": "spacing.xs",
+      "sourcePath": "spacing.xs",
+      "type": "dimension",
+      "value": "4px",
+      "status": "unverified",
+      "evidence": {
+        "line": 107,
+        "sourcePath": "spacing.xs"
+      }
+    },
+    {
+      "path": "spacing.sm",
+      "sourcePath": "spacing.sm",
+      "type": "dimension",
+      "value": "8px",
+      "status": "unverified",
+      "evidence": {
+        "line": 108,
+        "sourcePath": "spacing.sm"
+      }
+    },
+    {
+      "path": "spacing.md",
+      "sourcePath": "spacing.md",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 109,
+        "sourcePath": "spacing.md"
+      }
+    },
+    {
+      "path": "spacing.lg",
+      "sourcePath": "spacing.lg",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 110,
+        "sourcePath": "spacing.lg"
+      }
+    },
+    {
+      "path": "spacing.xl",
+      "sourcePath": "spacing.xl",
+      "type": "dimension",
+      "value": "24px",
+      "status": "unverified",
+      "evidence": {
+        "line": 111,
+        "sourcePath": "spacing.xl"
+      }
+    },
+    {
+      "path": "spacing.xxl",
+      "sourcePath": "spacing.xxl",
+      "type": "dimension",
+      "value": "32px",
+      "status": "unverified",
+      "evidence": {
+        "line": 112,
+        "sourcePath": "spacing.xxl"
+      }
+    },
+    {
+      "path": "spacing.huge",
+      "sourcePath": "spacing.huge",
+      "type": "dimension",
+      "value": "64px",
+      "status": "unverified",
+      "evidence": {
+        "line": 113,
+        "sourcePath": "spacing.huge"
+      }
+    }
+  ],
+  "rejectedTokens": [],
+  "homepage": {
+    "status": "missing",
+    "candidates": [],
+    "verification": {
+      "status": "verified",
+      "url": "https://superhuman.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://superhuman.com/",
+          "title": "Superhuman: Docs, Mail, and AI That Work Everywhere",
+          "note": "Public homepage read requested https://superhuman.com; final URL https://superhuman.com/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    }
+  },
+  "completeness": {
+    "presentFields": [
+      "colors",
+      "typography",
+      "rounded",
+      "spacing",
+      "components"
+    ],
+    "missingFields": [],
+    "tokenRoles": "incomplete",
+    "note": "Missing fields are not reconstructed. Prose-only colors have no inferred semantic role."
+  },
+  "provenance": {
+    "status": "independent-analysis",
+    "sources": [
+      {
+        "title": "VoltAgent awesome-design-md independent analysis",
+        "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/superhuman/DESIGN.md"
+      }
+    ],
+    "verification": "unverified-secondary-analysis"
+  },
+  "limitations": [
+    "Independent secondary analysis, not an official brand system; all reported values are unverified.",
+    "No brand assets, logos, font binaries or screenshots copied. Font names are documentary, not font licenses.",
+    "Safe CSS literals are extracted without claiming complete roles, state coverage or visual fidelity.",
+    "Markdown is retained as inert evidence, never executed or rendered as raw HTML."
+  ]
+}

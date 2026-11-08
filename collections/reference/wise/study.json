@@ -1,0 +1,1650 @@
+{
+  "schemaVersion": 1,
+  "id": "reference-wise",
+  "title": "Wise",
+  "classification": "independent-unverified-analysis",
+  "source": {
+    "repository": "https://github.com/VoltAgent/awesome-design-md",
+    "fork": "https://github.com/rsteth/awesome-design-md-p",
+    "revision": "fcc70284932276d085f01ef9f83edde90b1258cb",
+    "path": "design-md/wise/DESIGN.md",
+    "sha256": "442df0ad7380efd8712f5574bdca34a73cfb41a2a43454ff459863a6258af547",
+    "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/wise/DESIGN.md"
+  },
+  "sourceName": "Wise-Inspired-design-analysis",
+  "titleProvenance": {
+    "status": "inferred",
+    "basis": "Source directory label, normalized for navigation; original source name is retained without correction.",
+    "sourceValue": "wise",
+    "originalName": "Wise-Inspired-design-analysis"
+  },
+  "description": "An inspired interpretation of Wise's design language — a global money-transfer brand whose surface combines an unusually heavy near-black display sans (weight 900 at 64–126 px) with a vivid lime-green brand accent, sage-tinted surface neutrals, and rounded white cards on a pale green-tinted canvas; the whole system reads more like a Scandinavian fintech magazine than a bank.",
+  "analysis": {
+    "version": "alpha",
+    "name": "Wise-Inspired-design-analysis",
+    "description": "An inspired interpretation of Wise's design language — a global money-transfer brand whose surface combines an unusually heavy near-black display sans (weight 900 at 64–126 px) with a vivid lime-green brand accent, sage-tinted surface neutrals, and rounded white cards on a pale green-tinted canvas; the whole system reads more like a Scandinavian fintech magazine than a bank.",
+    "colors": {
+      "primary": "#9fe870",
+      "on-primary": "#0e0f0c",
+      "primary-active": "#cdffad",
+      "primary-neutral": "#c5edab",
+      "primary-pale": "#e2f6d5",
+      "ink": "#0e0f0c",
+      "ink-deep": "#163300",
+      "body": "#454745",
+      "mute": "#868685",
+      "canvas": "#ffffff",
+      "canvas-soft": "#e8ebe6",
+      "positive": "#2ead4b",
+      "positive-deep": "#054d28",
+      "warning": "#ffd11a",
+      "warning-deep": "#b86700",
+      "warning-content": "#4a3b1c",
+      "negative": "#d03238",
+      "negative-deep": "#a72027",
+      "negative-darkest": "#a7000d",
+      "negative-bg": "#320707",
+      "accent-orange": "#ffc091",
+      "accent-cyan": "#38c8ff"
+    },
+    "typography": {
+      "display-mega": {
+        "fontFamily": "Wise Sans, Inter, system-ui, -apple-system, sans-serif",
+        "fontSize": "126px",
+        "fontWeight": 900,
+        "lineHeight": "107.1px"
+      },
+      "display-xxl": {
+        "fontFamily": "Wise Sans, Inter, system-ui, sans-serif",
+        "fontSize": "96px",
+        "fontWeight": 900,
+        "lineHeight": "81.6px"
+      },
+      "display-xl": {
+        "fontFamily": "Wise Sans, Inter, system-ui, sans-serif",
+        "fontSize": "64px",
+        "fontWeight": 900,
+        "lineHeight": "54.4px"
+      },
+      "display-lg": {
+        "fontFamily": "Wise Sans, Inter, system-ui, sans-serif",
+        "fontSize": "47px",
+        "fontWeight": 400,
+        "lineHeight": "70.5px",
+        "letterSpacing": "-0.108px"
+      },
+      "display-md": {
+        "fontFamily": "Wise Sans, Inter, system-ui, sans-serif",
+        "fontSize": "40px",
+        "fontWeight": 900,
+        "lineHeight": "34px"
+      },
+      "display-sm": {
+        "fontFamily": "Inter, system-ui, sans-serif",
+        "fontSize": "32px",
+        "fontWeight": 600,
+        "lineHeight": "38.4px",
+        "letterSpacing": "-0.96px"
+      },
+      "display-xs": {
+        "fontFamily": "Inter, system-ui, sans-serif",
+        "fontSize": "24px",
+        "fontWeight": 600,
+        "lineHeight": "31.2px",
+        "letterSpacing": "-0.48px"
+      },
+      "body-lg": {
+        "fontFamily": "Inter, system-ui, sans-serif",
+        "fontSize": "20px",
+        "fontWeight": 400,
+        "lineHeight": "30px"
+      },
+      "body-md": {
+        "fontFamily": "Inter, system-ui, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": 400,
+        "lineHeight": "24px"
+      },
+      "body-md-strong": {
+        "fontFamily": "Inter, system-ui, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": 600,
+        "lineHeight": "24px"
+      },
+      "body-sm": {
+        "fontFamily": "Inter, system-ui, sans-serif",
+        "fontSize": "14px",
+        "fontWeight": 400,
+        "lineHeight": "20px"
+      },
+      "body-sm-strong": {
+        "fontFamily": "Inter, system-ui, sans-serif",
+        "fontSize": "14px",
+        "fontWeight": 600,
+        "lineHeight": "20px"
+      },
+      "caption": {
+        "fontFamily": "Inter, system-ui, sans-serif",
+        "fontSize": "12px",
+        "fontWeight": 400,
+        "lineHeight": "16px"
+      },
+      "button-md": {
+        "fontFamily": "Inter, system-ui, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": 600,
+        "lineHeight": "24px"
+      }
+    },
+    "rounded": {
+      "none": "0px",
+      "sm": "8px",
+      "md": "12px",
+      "lg": "16px",
+      "xl": "24px",
+      "pill": "9999px",
+      "full": "9999px"
+    },
+    "spacing": {
+      "xxs": "2px",
+      "xs": "4px",
+      "sm": "8px",
+      "md": "12px",
+      "lg": "16px",
+      "xl": "24px",
+      "2xl": "32px",
+      "3xl": "48px"
+    },
+    "components": {
+      "nav-bar": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-sm-strong}",
+        "padding": "{spacing.md} {spacing.xl}"
+      },
+      "nav-link": {
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-sm-strong}"
+      },
+      "button-primary": {
+        "backgroundColor": "{colors.primary}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.xl}",
+        "padding": "{spacing.md} {spacing.xl}"
+      },
+      "button-secondary": {
+        "backgroundColor": "{colors.canvas-soft}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.xl}",
+        "padding": "{spacing.md} {spacing.xl}"
+      },
+      "button-tertiary": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "borderColor": "{colors.ink}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.xl}",
+        "padding": "{spacing.md} {spacing.xl}"
+      },
+      "button-icon-circular": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "rounded": "{rounded.full}",
+        "padding": "{spacing.sm}"
+      },
+      "text-input": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "borderColor": "{colors.ink}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.md}",
+        "padding": "{spacing.md} {spacing.lg}"
+      },
+      "card-content": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.xl}",
+        "padding": "{spacing.xl}"
+      },
+      "card-feature-sage": {
+        "backgroundColor": "{colors.canvas-soft}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.xl}",
+        "padding": "{spacing.xl}"
+      },
+      "card-feature-green": {
+        "backgroundColor": "{colors.primary-pale}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.xl}",
+        "padding": "{spacing.xl}"
+      },
+      "card-feature-dark": {
+        "backgroundColor": "{colors.ink}",
+        "textColor": "{colors.primary}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.xl}",
+        "padding": "{spacing.xl}"
+      },
+      "hero-band": {
+        "backgroundColor": "{colors.canvas-soft}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.display-mega}",
+        "padding": "{spacing.3xl} {spacing.xl}"
+      },
+      "hero-band-dark": {
+        "backgroundColor": "{colors.ink}",
+        "textColor": "{colors.primary}",
+        "typography": "{typography.display-mega}",
+        "padding": "{spacing.3xl} {spacing.xl}"
+      },
+      "content-band": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.display-md}",
+        "padding": "{spacing.3xl} {spacing.xl}"
+      },
+      "currency-converter-card": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "borderColor": "{colors.ink}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.xl}",
+        "padding": "{spacing.xl}"
+      },
+      "badge-positive": {
+        "backgroundColor": "{colors.primary-pale}",
+        "textColor": "{colors.positive-deep}",
+        "typography": "{typography.body-sm-strong}",
+        "rounded": "{rounded.pill}",
+        "padding": "{spacing.xs} {spacing.md}"
+      },
+      "badge-negative": {
+        "backgroundColor": "{colors.negative-bg}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.body-sm-strong}",
+        "rounded": "{rounded.pill}",
+        "padding": "{spacing.xs} {spacing.md}"
+      },
+      "footer": {
+        "backgroundColor": "{colors.ink}",
+        "textColor": "{colors.canvas-soft}",
+        "typography": "{typography.body-sm}",
+        "padding": "{spacing.3xl} {spacing.xl}"
+      },
+      "ex-pricing-tier": {
+        "description": "Default Pricing tier card. Re-uses feature-card chrome with brand canvas-soft surface.",
+        "backgroundColor": "{colors.canvas-soft}",
+        "textColor": "{colors.ink}",
+        "borderColor": "{colors.mute}",
+        "rounded": "{rounded.xl}",
+        "padding": "{spacing.xl}"
+      },
+      "ex-pricing-tier-featured": {
+        "description": "Featured/highlighted tier — polarity-flipped surface (dark fill + light text in light mode, light fill + dark text in dark mode).",
+        "backgroundColor": "{colors.ink}",
+        "textColor": "{colors.on-primary}",
+        "rounded": "{rounded.xl}",
+        "padding": "{spacing.xl}"
+      },
+      "ex-product-selector": {
+        "description": "What's Included summary card — re-purposed for SaaS / B2B verticals (NOT a literal product gallery).",
+        "backgroundColor": "{colors.canvas-soft}",
+        "rounded": "{rounded.xl}",
+        "padding": "{spacing.xl}"
+      },
+      "ex-cart-drawer": {
+        "description": "Subscription summary — re-purposed for SaaS / B2B (line items per add-on, not literal cart).",
+        "backgroundColor": "{colors.canvas}",
+        "rounded": "{rounded.xl}",
+        "padding": "{spacing.xl}",
+        "item-divider": "{colors.canvas-soft}"
+      },
+      "ex-app-shell-row": {
+        "description": "Sidebar nav row inside the App Shell example. Active state uses brand primary as the indicator.",
+        "backgroundColor": "{colors.canvas}",
+        "activeIndicator": "{colors.primary}",
+        "rounded": "{rounded.sm}",
+        "padding": "{spacing.md} {spacing.lg}"
+      },
+      "ex-data-table-cell": {
+        "description": "Default data-table th + td chrome. Header uses mono-caps eyebrow typography; body uses body-sm.",
+        "headerBackground": "{colors.canvas-soft}",
+        "headerTypography": "{typography.caption}",
+        "bodyTypography": "{typography.body-sm}",
+        "cellPadding": "{spacing.md} {spacing.lg}",
+        "rowBorder": "{colors.canvas-soft}"
+      },
+      "ex-auth-form-card": {
+        "description": "Sign-in / sign-up card. Re-uses feature-card chrome with text-input primitives inside.",
+        "backgroundColor": "{colors.canvas-soft}",
+        "rounded": "{rounded.xl}",
+        "padding": "{spacing.xl}"
+      },
+      "ex-modal-card": {
+        "description": "Modal dialog surface — same chrome as feature-card with elevated shadow.",
+        "backgroundColor": "{colors.canvas}",
+        "rounded": "{rounded.xl}",
+        "padding": "{spacing.xl}"
+      },
+      "ex-empty-state-card": {
+        "description": "Empty-state illustration frame.",
+        "backgroundColor": "{colors.canvas-soft}",
+        "rounded": "{rounded.xl}",
+        "padding": "{spacing.3xl}",
+        "captionTypography": "{typography.body-md}"
+      },
+      "ex-toast": {
+        "description": "Toast notification surface — feature-card shape + medium shadow.",
+        "backgroundColor": "{colors.canvas}",
+        "rounded": "{rounded.xl}",
+        "padding": "{spacing.md} {spacing.lg}",
+        "typography": "{typography.body-sm}"
+      }
+    }
+  },
+  "normalizationRepairs": [],
+  "sections": [
+    {
+      "heading": "Overview",
+      "level": 2,
+      "text": "Wise — the global money-transfer brand — wears its identity in a single signature pairing: a vivid lime-green `{colors.primary}` (`#9fe870`) used as the CTA pill and brand accent, set against a pale sage-tinted canvas `{colors.canvas-soft}` (`#e8ebe6`) that runs across the hero band, and a near-black ink `{colors.ink}` (`#0e0f0c`) with a hint of warmth from the brand's underlying olive cast. The brand reads more like a calm Scandinavian magazine than a bank — generous whitespace, large rounded cards, and an unusually heavy display sans set at weight 900 carrying every hero headline.\n\nDisplay typography is the second decisive voice. The proprietary `Wise Sans` family carries hero displays at weight 900 in scales from 64 px up to 126 px on the largest hero. The brand pairs Wise Sans 900 with Inter at weight 600 for sub-displays — the contrast between the chunky proprietary face and Inter's neutrality creates a particular hierarchy: Wise Sans for the brand moment, Inter for everything else.\n\nCards are universally pill-rounded — `{rounded.xl}` 24 px is the brand's signature card radius. Buttons take the same 24 px pill-rectangle shape. The brand never uses sharp corners on UI elements; the visual softness is part of the friendly fintech voice.\n\n**Key Characteristics:**\n- A single lime-green CTA accent `{colors.primary}` (`#9fe870`) — the brand's universal primary action color. No second accent.\n- Two-face display typography — Wise Sans (proprietary, weight 900, hero scale) + Inter (weight 600, sub-display scale). The contrast is the brand's typographic story.\n- `{rounded.xl}` 24 px is the canonical card and button radius. Generous, friendly.\n- Sage-tinted canvas `{colors.canvas-soft}` (`#e8ebe6`) is the brand's hero surface; white `{colors.canvas}` is reserved for cards within the sage band.\n- A full semantic palette: positive green family, warning yellow family, negative red family — each documented with content / hover / active variants for in-product use.\n- Currency-converter card on the hero — the brand's signature interactive component, hosting from/to amount inputs.",
+      "line": 292
+    },
+    {
+      "heading": "Colors",
+      "level": 2,
+      "text": "",
+      "line": 308
+    },
+    {
+      "heading": "Brand & Accent",
+      "level": 3,
+      "text": "- **Wise Green** (`{colors.primary}` — `#9fe870`): The brand's universal CTA color. Every primary button, every \"Send money\" pill, the brand's logo accent.\n- **Wise Green Hover** (`{colors.primary-active}` — `#cdffad`): The lighter green for active state.\n- **Wise Green Neutral** (`{colors.primary-neutral}` — `#c5edab`): A mid-saturation green used as a neutral active fill.\n- **Wise Green Pale** (`{colors.primary-pale}` — `#e2f6d5`): The lightest green for soft surface tints / badge backgrounds.",
+      "line": 310
+    },
+    {
+      "heading": "Surface",
+      "level": 3,
+      "text": "- **Canvas** (`{colors.canvas}` — `#ffffff`): Pure white for card interiors.\n- **Canvas Soft** (`{colors.canvas-soft}` — `#e8ebe6`): The sage-tinted page background. Defining mood of the brand.",
+      "line": 316
+    },
+    {
+      "heading": "Text",
+      "level": 3,
+      "text": "- **Ink** (`{colors.ink}` — `#0e0f0c`): Near-black with a hint of olive warmth — the brand's default text and headings color.\n- **Ink Deep** (`{colors.ink-deep}` — `#163300`): A deep forest-green ink used on positive-state surfaces.\n- **Body** (`{colors.body}` — `#454745`): Secondary body text.\n- **Mute** (`{colors.mute}` — `#868685`): Lowest-priority text — captions, placeholder, fine print.",
+      "line": 320
+    },
+    {
+      "heading": "Semantic",
+      "level": 3,
+      "text": "- **Positive** (`{colors.positive}` — `#2ead4b`): Success indicator.\n- **Positive Deep** (`{colors.positive-deep}` — `#054d28`): Pressed positive state.\n- **Warning** (`{colors.warning}` — `#ffd11a`): Caution indicator.\n- **Warning Deep** (`{colors.warning-deep}` — `#b86700`): Pressed warning.\n- **Warning Content** (`{colors.warning-content}` — `#4a3b1c`): Text on warning surfaces.\n- **Negative** (`{colors.negative}` — `#d03238`): Destructive / error red.\n- **Negative Deep** (`{colors.negative-deep}` — `#a72027`): Pressed destructive.\n- **Negative Darkest** (`{colors.negative-darkest}` — `#a7000d`): Highest-emphasis destructive text.\n- **Negative Bg** (`{colors.negative-bg}` — `#320707`): Dark maroon for destructive callout backgrounds.",
+      "line": 326
+    },
+    {
+      "heading": "Brand Accent — Tertiary",
+      "level": 3,
+      "text": "- **Accent Orange** (`{colors.accent-orange}` — `#ffc091`): Bright peach used inside illustrative content / pricing cards.\n- **Accent Cyan** (`{colors.accent-cyan}` — `#38c8ff`): Bright sky-blue used as a tertiary illustration accent.",
+      "line": 337
+    },
+    {
+      "heading": "Typography",
+      "level": 2,
+      "text": "",
+      "line": 341
+    },
+    {
+      "heading": "Font Family",
+      "level": 3,
+      "text": "Two faces ladder the system:\n1. **Wise Sans** — proprietary geometric sans with an unusually heavy weight 900 used for all hero displays. The face is the brand's typographic signature. Always at weight 900, never lighter on the marketing surface.\n2. **Inter** — used for sub-displays (weight 600), all body, and form labels. Loaded with `font-feature-settings: \"calt\"` for contextual alternates.",
+      "line": 343
+    },
+    {
+      "heading": "Hierarchy",
+      "level": 3,
+      "text": "| Token | Size | Weight | Line Height | Letter Spacing | Use |\n|---|---|---|---|---|---|\n| `{typography.display-mega}` | 126px | 900 | 107.1px | 0 | Hero stencil at maximum scale. |\n| `{typography.display-xxl}` | 96px | 900 | 81.6px | 0 | Sub-hero scale. |\n| `{typography.display-xl}` | 64px | 900 | 54.4px | 0 | Standard hero headline. |\n| `{typography.display-lg}` | 47px | 400 | 70.5px | -0.108px | Lighter sub-display. |\n| `{typography.display-md}` | 40px | 900 | 34px | 0 | Section / card headlines. |\n| `{typography.display-sm}` | 32px | 600 | 38.4px | -0.96px | Inter-rendered section headings. |\n| `{typography.display-xs}` | 24px | 600 | 31.2px | -0.48px | Sub-section displays. |\n| `{typography.body-lg}` | 20px | 400 | 30px | 0 | Lead paragraphs. |\n| `{typography.body-md}` | 16px | 400 | 24px | 0 | Default body. |\n| `{typography.body-md-strong}` | 16px | 600 | 24px | 0 | Bold inline body. |\n| `{typography.body-sm}` | 14px | 400 | 20px | 0 | Secondary body. |\n| `{typography.body-sm-strong}` | 14px | 600 | 20px | 0 | Bold caption / nav-link. |\n| `{typography.caption}` | 12px | 400 | 16px | 0 | Fine print. |\n| `{typography.button-md}` | 16px | 600 | 24px | 0 | Button label. |",
+      "line": 348
+    },
+    {
+      "heading": "Principles",
+      "level": 3,
+      "text": "- **Weight 900 for hero, weight 600 for everything else.** The brand's display ceiling is full-black weight; everything below is semibold.\n- **Wise Sans for the brand voice, Inter for utility.** Strict role separation.",
+      "line": 367
+    },
+    {
+      "heading": "Note on Font Substitutes",
+      "level": 3,
+      "text": "Wise Sans is proprietary. Open-source substitutes:\n- **Display** — *Inter* at weight 900 or *Manrope* at weight 800 / 900 captures the geometric heaviness. *Geist* weight 800 is a passable second choice.\n- **Sub-display + body** — *Inter* is the brand's actual second face.",
+      "line": 371
+    },
+    {
+      "heading": "Layout",
+      "level": 2,
+      "text": "",
+      "line": 376
+    },
+    {
+      "heading": "Spacing System",
+      "level": 3,
+      "text": "- **Base unit**: 4 px.\n- **Tokens**: `{spacing.xxs}` 2 px · `{spacing.xs}` 4 px · `{spacing.sm}` 8 px · `{spacing.md}` 12 px · `{spacing.lg}` 16 px · `{spacing.xl}` 24 px · `{spacing.2xl}` 32 px · `{spacing.3xl}` 48 px.\n- **Section padding**: bands use `{spacing.3xl}` 48 px top/bottom on desktop.\n- **Card interior**: cards at `{spacing.xl}` 24 px.",
+      "line": 378
+    },
+    {
+      "heading": "Grid & Container",
+      "level": 3,
+      "text": "- Marketing container centres at ~1200 px.\n- Hero: split layout (headline left, currency-converter card right) at desktop; stacked at mobile.\n- Feature grids: 2-up / 3-up at desktop.",
+      "line": 384
+    },
+    {
+      "heading": "Responsive Strategy",
+      "level": 3,
+      "text": "",
+      "line": 389
+    },
+    {
+      "heading": "Breakpoints",
+      "level": 4,
+      "text": "| Name | Width | Key Changes |\n|---|---|---|\n| Mobile | < 768px | Hero stacks; converter card full-width below headline; grids 1-up. |\n| Tablet | 768–1023px | Grids 2-up. |\n| Desktop | ≥ 1024px | Hero split; full grids. |",
+      "line": 391
+    },
+    {
+      "heading": "Touch Targets",
+      "level": 4,
+      "text": "Buttons render ~48 px tall (12 vertical padding + 24 line). WCAG AAA at all widths.",
+      "line": 399
+    },
+    {
+      "heading": "Image Behavior",
+      "level": 4,
+      "text": "Photography is sparse; the brand prefers illustrative SVGs and product mockups inside cards. Country flag thumbnails appear inside currency rows.",
+      "line": 402
+    },
+    {
+      "heading": "Elevation & Depth",
+      "level": 2,
+      "text": "| Level | Treatment | Use |\n|---|---|---|\n| Level 0 — Flat | No shadow, no border. | Default. |\n| Level 1 — Hairline on Dark | 1 px solid `{colors.ink}` border. | Tertiary outline buttons, form inputs. |\n| Level 2 — Soft Card | Implicit Level 0 white card sitting on sage canvas — the surface contrast IS the elevation. | Cards on the sage hero band. |\n\nThe brand uses surface contrast (`{colors.canvas-soft}` background vs `{colors.canvas}` cards) as the primary elevation cue.",
+      "line": 405
+    },
+    {
+      "heading": "Shapes",
+      "level": 2,
+      "text": "",
+      "line": 415
+    },
+    {
+      "heading": "Border Radius Scale",
+      "level": 3,
+      "text": "| Token | Value | Use |\n|---|---|---|\n| `{rounded.none}` | 0px | Full-bleed bands. |\n| `{rounded.sm}` | 8px | Inline pills, small badges. |\n| `{rounded.md}` | 12px | Form inputs, smaller chrome. |\n| `{rounded.lg}` | 16px | Mid-size cards. |\n| `{rounded.xl}` | 24px | The brand's canonical button + card radius. |\n| `{rounded.pill}` | 9999px | Status pills and full-radius accents. |\n| `{rounded.full}` | 9999px | Circular icon containers. |",
+      "line": 417
+    },
+    {
+      "heading": "Components",
+      "level": 2,
+      "text": "",
+      "line": 429
+    },
+    {
+      "heading": "Buttons",
+      "level": 3,
+      "text": "**`button-primary`** — the lime-green CTA pill.\n- Background `{colors.primary}`, text `{colors.on-primary}`, label `{typography.button-md}`, padding `{spacing.md} {spacing.xl}`, shape `{rounded.xl}` 24 px.\n\n**`button-secondary`** — the sage-tinted secondary.\n- Background `{colors.canvas-soft}`, text `{colors.ink}`, same typography / padding / shape.\n\n**`button-tertiary`** — the white outline tertiary.\n- Background `{colors.canvas}`, text `{colors.ink}`, 1 px solid `{colors.ink}` border, same typography / padding / shape.\n\n**`button-icon-circular`** — the circular icon button.\n- Background `{colors.canvas}`, ink icon, shape `{rounded.full}`.",
+      "line": 431
+    },
+    {
+      "heading": "Cards & Containers",
+      "level": 3,
+      "text": "**`card-content`** — the default white card.\n- Background `{colors.canvas}`, text `{colors.ink}`, padding `{spacing.xl}`, shape `{rounded.xl}`. No border, sits on sage canvas.\n\n**`card-feature-sage`** — the sage-tinted feature card.\n- Background `{colors.canvas-soft}`, text `{colors.ink}`, padding `{spacing.xl}`, shape `{rounded.xl}`.\n\n**`card-feature-green`** — the soft-green feature card.\n- Background `{colors.primary-pale}`, text `{colors.ink}`, padding `{spacing.xl}`, shape `{rounded.xl}`.\n\n**`card-feature-dark`** — the polarity-flipped dark card with green text.\n- Background `{colors.ink}`, text `{colors.primary}` (Wise green!), padding `{spacing.xl}`, shape `{rounded.xl}`. Used for promotional moments.\n\n**`currency-converter-card`** — the brand's signature interactive widget.\n- Background `{colors.canvas}`, text `{colors.ink}`, 1 px solid `{colors.ink}` border, padding `{spacing.xl}`, shape `{rounded.xl}`. Hosts from/to amount inputs + currency selectors.",
+      "line": 445
+    },
+    {
+      "heading": "Inputs & Forms",
+      "level": 3,
+      "text": "**`text-input`** — the canonical text input.\n- Background `{colors.canvas}`, text `{colors.ink}`, 1 px solid `{colors.ink}` border, body in `{typography.body-md}`, padding `{spacing.md} {spacing.lg}`, shape `{rounded.md}`.",
+      "line": 462
+    },
+    {
+      "heading": "Navigation",
+      "level": 3,
+      "text": "**`nav-bar`** — the sticky top nav.\n- Background `{colors.canvas}`, text `{colors.ink}`, padding `{spacing.md} {spacing.xl}`.\n\n**`nav-link`** — link items inside nav.\n- Text `{colors.ink}`, set in `{typography.body-sm-strong}`.\n\n**`footer`** — the dark footer band.\n- Background `{colors.ink}`, text `{colors.canvas-soft}`, padding `{spacing.3xl} {spacing.xl}`. Body in `{typography.body-sm}`.",
+      "line": 467
+    },
+    {
+      "heading": "Signature Components",
+      "level": 3,
+      "text": "**`hero-band`** — the sage-canvas hero band.\n- Background `{colors.canvas-soft}`, text `{colors.ink}`, padding `{spacing.3xl} {spacing.xl}`. Headline in `{typography.display-mega}` (Wise Sans weight 900).\n\n**`hero-band-dark`** — the polarity-flipped dark hero.\n- Background `{colors.ink}`, text `{colors.primary}` (Wise green headline on near-black!), same padding / scale.\n\n**`content-band`** — the white content band that follows hero.\n- Background `{colors.canvas}`, text `{colors.ink}`, padding `{spacing.3xl} {spacing.xl}`. Section headline in `{typography.display-md}`.\n\n**`badge-positive`** — the positive status pill.\n- Background `{colors.primary-pale}`, text `{colors.positive-deep}`, body in `{typography.body-sm-strong}`, padding `{spacing.xs} {spacing.md}`, shape `{rounded.pill}`.\n\n**`badge-negative`** — the negative status pill.\n- Background `{colors.negative-bg}`, text white, body in `{typography.body-sm-strong}`, padding `{spacing.xs} {spacing.md}`, shape `{rounded.pill}`.",
+      "line": 478
+    },
+    {
+      "heading": "Examples (illustrative)",
+      "level": 3,
+      "text": "> Auto-derived kit-mirror demonstration surfaces (`scripts/derive-examples-block.mjs`). Each `ex-*` entry references brand-native primitives so downstream consumers (`/preview-design`, `/generate-kit`) re-skin the same 10 surfaces consistently. `TO_FILL` markers indicate missing primitives — resolve in the LLM judgment pass.\n\n**`ex-pricing-tier`** — Default Pricing tier card. Re-uses feature-card chrome with brand canvas-soft surface.\n- Properties: `backgroundColor`, `textColor`, `borderColor`, `rounded`, `padding`\n\n**`ex-pricing-tier-featured`** — Featured/highlighted tier — polarity-flipped surface (dark fill + light text in light mode, light fill + dark text in dark mode).\n- Properties: `backgroundColor`, `textColor`, `rounded`, `padding`\n\n**`ex-product-selector`** — What's Included summary card — re-purposed for SaaS / B2B verticals (NOT a literal product gallery).\n- Properties: `backgroundColor`, `rounded`, `padding`\n\n**`ex-cart-drawer`** — Subscription summary — re-purposed for SaaS / B2B (line items per add-on, not literal cart).\n- Properties: `backgroundColor`, `rounded`, `padding`, `item-divider`\n\n**`ex-app-shell-row`** — Sidebar nav row inside the App Shell example. Active state uses brand primary as the indicator.\n- Properties: `backgroundColor`, `activeIndicator`, `rounded`, `padding`\n\n**`ex-data-table-cell`** — Default data-table th + td chrome. Header uses mono-caps eyebrow typography; body uses body-sm.\n- Properties: `headerBackground`, `headerTypography`, `bodyTypography`, `cellPadding`, `rowBorder`\n\n**`ex-auth-form-card`** — Sign-in / sign-up card. Re-uses feature-card chrome with text-input primitives inside.\n- Properties: `backgroundColor`, `rounded`, `padding`\n\n**`ex-modal-card`** — Modal dialog surface — same chrome as feature-card with elevated shadow.\n- Properties: `backgroundColor`, `rounded`, `padding`\n\n**`ex-empty-state-card`** — Empty-state illustration frame.\n- Properties: `backgroundColor`, `rounded`, `padding`, `captionTypography`\n\n**`ex-toast`** — Toast notification surface — feature-card shape + medium shadow.\n- Properties: `backgroundColor`, `rounded`, `padding`, `typography`",
+      "line": 495
+    },
+    {
+      "heading": "Do's and Don'ts",
+      "level": 2,
+      "text": "",
+      "line": 530
+    },
+    {
+      "heading": "Do",
+      "level": 3,
+      "text": "- Reserve `{colors.primary}` Wise green for every primary CTA. The lime-green pill IS the brand's conversion signature.\n- Set hero headlines in `{typography.display-mega}` / `{typography.display-xl}` Wise Sans weight 900. Never lighter.\n- Use `{rounded.xl}` 24 px for buttons and cards. The generous radius is the brand's friendliness signature.\n- Cycle page surfaces in `{colors.canvas-soft}` sage canvas → `{colors.canvas}` white cards. Surface contrast carries elevation.\n- Use the full semantic palette (positive / warning / negative) for in-product status — never repurpose Wise green as success indicator since it IS the brand CTA.",
+      "line": 532
+    },
+    {
+      "heading": "Don't",
+      "level": 3,
+      "text": "- Don't introduce a second brand accent. Wise green is the sole identity colour.\n- Don't render the hero in weight 700 or lighter. The brand's display weight is 900.\n- Don't render CTAs as sharp rectangles. The 24 px pill geometry is non-negotiable.\n- Don't pair the green CTA with a green background. The brand always sits Wise green on neutral surfaces (sage / white / ink).\n- Don't replace Wise Sans with a generic geometric sans for hero typography — the proprietary face IS the brand's voice.",
+      "line": 539
+    }
+  ],
+  "tokens": [
+    {
+      "path": "colors.primary",
+      "sourcePath": "colors.primary",
+      "type": "color",
+      "value": "#9fe870",
+      "status": "unverified",
+      "evidence": {
+        "line": 7,
+        "sourcePath": "colors.primary"
+      }
+    },
+    {
+      "path": "colors.onprimary",
+      "sourcePath": "colors.on-primary",
+      "type": "color",
+      "value": "#0e0f0c",
+      "status": "unverified",
+      "evidence": {
+        "line": 8,
+        "sourcePath": "colors.on-primary"
+      }
+    },
+    {
+      "path": "colors.primaryactive",
+      "sourcePath": "colors.primary-active",
+      "type": "color",
+      "value": "#cdffad",
+      "status": "unverified",
+      "evidence": {
+        "line": 9,
+        "sourcePath": "colors.primary-active"
+      }
+    },
+    {
+      "path": "colors.primaryneutral",
+      "sourcePath": "colors.primary-neutral",
+      "type": "color",
+      "value": "#c5edab",
+      "status": "unverified",
+      "evidence": {
+        "line": 10,
+        "sourcePath": "colors.primary-neutral"
+      }
+    },
+    {
+      "path": "colors.primarypale",
+      "sourcePath": "colors.primary-pale",
+      "type": "color",
+      "value": "#e2f6d5",
+      "status": "unverified",
+      "evidence": {
+        "line": 11,
+        "sourcePath": "colors.primary-pale"
+      }
+    },
+    {
+      "path": "colors.ink",
+      "sourcePath": "colors.ink",
+      "type": "color",
+      "value": "#0e0f0c",
+      "status": "unverified",
+      "evidence": {
+        "line": 12,
+        "sourcePath": "colors.ink"
+      }
+    },
+    {
+      "path": "colors.inkdeep",
+      "sourcePath": "colors.ink-deep",
+      "type": "color",
+      "value": "#163300",
+      "status": "unverified",
+      "evidence": {
+        "line": 13,
+        "sourcePath": "colors.ink-deep"
+      }
+    },
+    {
+      "path": "colors.body",
+      "sourcePath": "colors.body",
+      "type": "color",
+      "value": "#454745",
+      "status": "unverified",
+      "evidence": {
+        "line": 14,
+        "sourcePath": "colors.body"
+      }
+    },
+    {
+      "path": "colors.mute",
+      "sourcePath": "colors.mute",
+      "type": "color",
+      "value": "#868685",
+      "status": "unverified",
+      "evidence": {
+        "line": 15,
+        "sourcePath": "colors.mute"
+      }
+    },
+    {
+      "path": "colors.canvas",
+      "sourcePath": "colors.canvas",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 16,
+        "sourcePath": "colors.canvas"
+      }
+    },
+    {
+      "path": "colors.canvassoft",
+      "sourcePath": "colors.canvas-soft",
+      "type": "color",
+      "value": "#e8ebe6",
+      "status": "unverified",
+      "evidence": {
+        "line": 17,
+        "sourcePath": "colors.canvas-soft"
+      }
+    },
+    {
+      "path": "colors.positive",
+      "sourcePath": "colors.positive",
+      "type": "color",
+      "value": "#2ead4b",
+      "status": "unverified",
+      "evidence": {
+        "line": 18,
+        "sourcePath": "colors.positive"
+      }
+    },
+    {
+      "path": "colors.positivedeep",
+      "sourcePath": "colors.positive-deep",
+      "type": "color",
+      "value": "#054d28",
+      "status": "unverified",
+      "evidence": {
+        "line": 19,
+        "sourcePath": "colors.positive-deep"
+      }
+    },
+    {
+      "path": "colors.warning",
+      "sourcePath": "colors.warning",
+      "type": "color",
+      "value": "#ffd11a",
+      "status": "unverified",
+      "evidence": {
+        "line": 20,
+        "sourcePath": "colors.warning"
+      }
+    },
+    {
+      "path": "colors.warningdeep",
+      "sourcePath": "colors.warning-deep",
+      "type": "color",
+      "value": "#b86700",
+      "status": "unverified",
+      "evidence": {
+        "line": 21,
+        "sourcePath": "colors.warning-deep"
+      }
+    },
+    {
+      "path": "colors.warningcontent",
+      "sourcePath": "colors.warning-content",
+      "type": "color",
+      "value": "#4a3b1c",
+      "status": "unverified",
+      "evidence": {
+        "line": 22,
+        "sourcePath": "colors.warning-content"
+      }
+    },
+    {
+      "path": "colors.negative",
+      "sourcePath": "colors.negative",
+      "type": "color",
+      "value": "#d03238",
+      "status": "unverified",
+      "evidence": {
+        "line": 23,
+        "sourcePath": "colors.negative"
+      }
+    },
+    {
+      "path": "colors.negativedeep",
+      "sourcePath": "colors.negative-deep",
+      "type": "color",
+      "value": "#a72027",
+      "status": "unverified",
+      "evidence": {
+        "line": 24,
+        "sourcePath": "colors.negative-deep"
+      }
+    },
+    {
+      "path": "colors.negativedarkest",
+      "sourcePath": "colors.negative-darkest",
+      "type": "color",
+      "value": "#a7000d",
+      "status": "unverified",
+      "evidence": {
+        "line": 25,
+        "sourcePath": "colors.negative-darkest"
+      }
+    },
+    {
+      "path": "colors.negativebg",
+      "sourcePath": "colors.negative-bg",
+      "type": "color",
+      "value": "#320707",
+      "status": "unverified",
+      "evidence": {
+        "line": 26,
+        "sourcePath": "colors.negative-bg"
+      }
+    },
+    {
+      "path": "colors.accentorange",
+      "sourcePath": "colors.accent-orange",
+      "type": "color",
+      "value": "#ffc091",
+      "status": "unverified",
+      "evidence": {
+        "line": 27,
+        "sourcePath": "colors.accent-orange"
+      }
+    },
+    {
+      "path": "colors.accentcyan",
+      "sourcePath": "colors.accent-cyan",
+      "type": "color",
+      "value": "#38c8ff",
+      "status": "unverified",
+      "evidence": {
+        "line": 28,
+        "sourcePath": "colors.accent-cyan"
+      }
+    },
+    {
+      "path": "typography.displaymega.fontfamily",
+      "sourcePath": "typography.display-mega.fontFamily",
+      "type": "fontFamily",
+      "value": "Wise Sans, Inter, system-ui, -apple-system, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 32,
+        "sourcePath": "typography.display-mega.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displaymega.fontsize",
+      "sourcePath": "typography.display-mega.fontSize",
+      "type": "dimension",
+      "value": "126px",
+      "status": "unverified",
+      "evidence": {
+        "line": 33,
+        "sourcePath": "typography.display-mega.fontSize"
+      }
+    },
+    {
+      "path": "typography.displaymega.fontweight",
+      "sourcePath": "typography.display-mega.fontWeight",
+      "type": "number",
+      "value": 900,
+      "status": "unverified",
+      "evidence": {
+        "line": 34,
+        "sourcePath": "typography.display-mega.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displaymega.lineheight",
+      "sourcePath": "typography.display-mega.lineHeight",
+      "type": "dimension",
+      "value": "107.1px",
+      "status": "unverified",
+      "evidence": {
+        "line": 35,
+        "sourcePath": "typography.display-mega.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displayxxl.fontfamily",
+      "sourcePath": "typography.display-xxl.fontFamily",
+      "type": "fontFamily",
+      "value": "Wise Sans, Inter, system-ui, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 37,
+        "sourcePath": "typography.display-xxl.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displayxxl.fontsize",
+      "sourcePath": "typography.display-xxl.fontSize",
+      "type": "dimension",
+      "value": "96px",
+      "status": "unverified",
+      "evidence": {
+        "line": 38,
+        "sourcePath": "typography.display-xxl.fontSize"
+      }
+    },
+    {
+      "path": "typography.displayxxl.fontweight",
+      "sourcePath": "typography.display-xxl.fontWeight",
+      "type": "number",
+      "value": 900,
+      "status": "unverified",
+      "evidence": {
+        "line": 39,
+        "sourcePath": "typography.display-xxl.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displayxxl.lineheight",
+      "sourcePath": "typography.display-xxl.lineHeight",
+      "type": "dimension",
+      "value": "81.6px",
+      "status": "unverified",
+      "evidence": {
+        "line": 40,
+        "sourcePath": "typography.display-xxl.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displayxl.fontfamily",
+      "sourcePath": "typography.display-xl.fontFamily",
+      "type": "fontFamily",
+      "value": "Wise Sans, Inter, system-ui, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 42,
+        "sourcePath": "typography.display-xl.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displayxl.fontsize",
+      "sourcePath": "typography.display-xl.fontSize",
+      "type": "dimension",
+      "value": "64px",
+      "status": "unverified",
+      "evidence": {
+        "line": 43,
+        "sourcePath": "typography.display-xl.fontSize"
+      }
+    },
+    {
+      "path": "typography.displayxl.fontweight",
+      "sourcePath": "typography.display-xl.fontWeight",
+      "type": "number",
+      "value": 900,
+      "status": "unverified",
+      "evidence": {
+        "line": 44,
+        "sourcePath": "typography.display-xl.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displayxl.lineheight",
+      "sourcePath": "typography.display-xl.lineHeight",
+      "type": "dimension",
+      "value": "54.4px",
+      "status": "unverified",
+      "evidence": {
+        "line": 45,
+        "sourcePath": "typography.display-xl.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displaylg.fontfamily",
+      "sourcePath": "typography.display-lg.fontFamily",
+      "type": "fontFamily",
+      "value": "Wise Sans, Inter, system-ui, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 47,
+        "sourcePath": "typography.display-lg.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displaylg.fontsize",
+      "sourcePath": "typography.display-lg.fontSize",
+      "type": "dimension",
+      "value": "47px",
+      "status": "unverified",
+      "evidence": {
+        "line": 48,
+        "sourcePath": "typography.display-lg.fontSize"
+      }
+    },
+    {
+      "path": "typography.displaylg.fontweight",
+      "sourcePath": "typography.display-lg.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 49,
+        "sourcePath": "typography.display-lg.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displaylg.lineheight",
+      "sourcePath": "typography.display-lg.lineHeight",
+      "type": "dimension",
+      "value": "70.5px",
+      "status": "unverified",
+      "evidence": {
+        "line": 50,
+        "sourcePath": "typography.display-lg.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displaylg.letterspacing",
+      "sourcePath": "typography.display-lg.letterSpacing",
+      "type": "dimension",
+      "value": "-0.108px",
+      "status": "unverified",
+      "evidence": {
+        "line": 51,
+        "sourcePath": "typography.display-lg.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.displaymd.fontfamily",
+      "sourcePath": "typography.display-md.fontFamily",
+      "type": "fontFamily",
+      "value": "Wise Sans, Inter, system-ui, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 53,
+        "sourcePath": "typography.display-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displaymd.fontsize",
+      "sourcePath": "typography.display-md.fontSize",
+      "type": "dimension",
+      "value": "40px",
+      "status": "unverified",
+      "evidence": {
+        "line": 54,
+        "sourcePath": "typography.display-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.displaymd.fontweight",
+      "sourcePath": "typography.display-md.fontWeight",
+      "type": "number",
+      "value": 900,
+      "status": "unverified",
+      "evidence": {
+        "line": 55,
+        "sourcePath": "typography.display-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displaymd.lineheight",
+      "sourcePath": "typography.display-md.lineHeight",
+      "type": "dimension",
+      "value": "34px",
+      "status": "unverified",
+      "evidence": {
+        "line": 56,
+        "sourcePath": "typography.display-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displaysm.fontfamily",
+      "sourcePath": "typography.display-sm.fontFamily",
+      "type": "fontFamily",
+      "value": "Inter, system-ui, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 58,
+        "sourcePath": "typography.display-sm.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displaysm.fontsize",
+      "sourcePath": "typography.display-sm.fontSize",
+      "type": "dimension",
+      "value": "32px",
+      "status": "unverified",
+      "evidence": {
+        "line": 59,
+        "sourcePath": "typography.display-sm.fontSize"
+      }
+    },
+    {
+      "path": "typography.displaysm.fontweight",
+      "sourcePath": "typography.display-sm.fontWeight",
+      "type": "number",
+      "value": 600,
+      "status": "unverified",
+      "evidence": {
+        "line": 60,
+        "sourcePath": "typography.display-sm.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displaysm.lineheight",
+      "sourcePath": "typography.display-sm.lineHeight",
+      "type": "dimension",
+      "value": "38.4px",
+      "status": "unverified",
+      "evidence": {
+        "line": 61,
+        "sourcePath": "typography.display-sm.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displaysm.letterspacing",
+      "sourcePath": "typography.display-sm.letterSpacing",
+      "type": "dimension",
+      "value": "-0.96px",
+      "status": "unverified",
+      "evidence": {
+        "line": 62,
+        "sourcePath": "typography.display-sm.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.displayxs.fontfamily",
+      "sourcePath": "typography.display-xs.fontFamily",
+      "type": "fontFamily",
+      "value": "Inter, system-ui, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 64,
+        "sourcePath": "typography.display-xs.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displayxs.fontsize",
+      "sourcePath": "typography.display-xs.fontSize",
+      "type": "dimension",
+      "value": "24px",
+      "status": "unverified",
+      "evidence": {
+        "line": 65,
+        "sourcePath": "typography.display-xs.fontSize"
+      }
+    },
+    {
+      "path": "typography.displayxs.fontweight",
+      "sourcePath": "typography.display-xs.fontWeight",
+      "type": "number",
+      "value": 600,
+      "status": "unverified",
+      "evidence": {
+        "line": 66,
+        "sourcePath": "typography.display-xs.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displayxs.lineheight",
+      "sourcePath": "typography.display-xs.lineHeight",
+      "type": "dimension",
+      "value": "31.2px",
+      "status": "unverified",
+      "evidence": {
+        "line": 67,
+        "sourcePath": "typography.display-xs.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displayxs.letterspacing",
+      "sourcePath": "typography.display-xs.letterSpacing",
+      "type": "dimension",
+      "value": "-0.48px",
+      "status": "unverified",
+      "evidence": {
+        "line": 68,
+        "sourcePath": "typography.display-xs.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.bodylg.fontfamily",
+      "sourcePath": "typography.body-lg.fontFamily",
+      "type": "fontFamily",
+      "value": "Inter, system-ui, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 70,
+        "sourcePath": "typography.body-lg.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodylg.fontsize",
+      "sourcePath": "typography.body-lg.fontSize",
+      "type": "dimension",
+      "value": "20px",
+      "status": "unverified",
+      "evidence": {
+        "line": 71,
+        "sourcePath": "typography.body-lg.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodylg.fontweight",
+      "sourcePath": "typography.body-lg.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 72,
+        "sourcePath": "typography.body-lg.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodylg.lineheight",
+      "sourcePath": "typography.body-lg.lineHeight",
+      "type": "dimension",
+      "value": "30px",
+      "status": "unverified",
+      "evidence": {
+        "line": 73,
+        "sourcePath": "typography.body-lg.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodymd.fontfamily",
+      "sourcePath": "typography.body-md.fontFamily",
+      "type": "fontFamily",
+      "value": "Inter, system-ui, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 75,
+        "sourcePath": "typography.body-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodymd.fontsize",
+      "sourcePath": "typography.body-md.fontSize",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 76,
+        "sourcePath": "typography.body-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodymd.fontweight",
+      "sourcePath": "typography.body-md.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 77,
+        "sourcePath": "typography.body-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodymd.lineheight",
+      "sourcePath": "typography.body-md.lineHeight",
+      "type": "dimension",
+      "value": "24px",
+      "status": "unverified",
+      "evidence": {
+        "line": 78,
+        "sourcePath": "typography.body-md.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodymdstrong.fontfamily",
+      "sourcePath": "typography.body-md-strong.fontFamily",
+      "type": "fontFamily",
+      "value": "Inter, system-ui, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 80,
+        "sourcePath": "typography.body-md-strong.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodymdstrong.fontsize",
+      "sourcePath": "typography.body-md-strong.fontSize",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 81,
+        "sourcePath": "typography.body-md-strong.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodymdstrong.fontweight",
+      "sourcePath": "typography.body-md-strong.fontWeight",
+      "type": "number",
+      "value": 600,
+      "status": "unverified",
+      "evidence": {
+        "line": 82,
+        "sourcePath": "typography.body-md-strong.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodymdstrong.lineheight",
+      "sourcePath": "typography.body-md-strong.lineHeight",
+      "type": "dimension",
+      "value": "24px",
+      "status": "unverified",
+      "evidence": {
+        "line": 83,
+        "sourcePath": "typography.body-md-strong.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodysm.fontfamily",
+      "sourcePath": "typography.body-sm.fontFamily",
+      "type": "fontFamily",
+      "value": "Inter, system-ui, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 85,
+        "sourcePath": "typography.body-sm.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodysm.fontsize",
+      "sourcePath": "typography.body-sm.fontSize",
+      "type": "dimension",
+      "value": "14px",
+      "status": "unverified",
+      "evidence": {
+        "line": 86,
+        "sourcePath": "typography.body-sm.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodysm.fontweight",
+      "sourcePath": "typography.body-sm.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 87,
+        "sourcePath": "typography.body-sm.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodysm.lineheight",
+      "sourcePath": "typography.body-sm.lineHeight",
+      "type": "dimension",
+      "value": "20px",
+      "status": "unverified",
+      "evidence": {
+        "line": 88,
+        "sourcePath": "typography.body-sm.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodysmstrong.fontfamily",
+      "sourcePath": "typography.body-sm-strong.fontFamily",
+      "type": "fontFamily",
+      "value": "Inter, system-ui, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 90,
+        "sourcePath": "typography.body-sm-strong.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodysmstrong.fontsize",
+      "sourcePath": "typography.body-sm-strong.fontSize",
+      "type": "dimension",
+      "value": "14px",
+      "status": "unverified",
+      "evidence": {
+        "line": 91,
+        "sourcePath": "typography.body-sm-strong.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodysmstrong.fontweight",
+      "sourcePath": "typography.body-sm-strong.fontWeight",
+      "type": "number",
+      "value": 600,
+      "status": "unverified",
+      "evidence": {
+        "line": 92,
+        "sourcePath": "typography.body-sm-strong.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodysmstrong.lineheight",
+      "sourcePath": "typography.body-sm-strong.lineHeight",
+      "type": "dimension",
+      "value": "20px",
+      "status": "unverified",
+      "evidence": {
+        "line": 93,
+        "sourcePath": "typography.body-sm-strong.lineHeight"
+      }
+    },
+    {
+      "path": "typography.caption.fontfamily",
+      "sourcePath": "typography.caption.fontFamily",
+      "type": "fontFamily",
+      "value": "Inter, system-ui, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 95,
+        "sourcePath": "typography.caption.fontFamily"
+      }
+    },
+    {
+      "path": "typography.caption.fontsize",
+      "sourcePath": "typography.caption.fontSize",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 96,
+        "sourcePath": "typography.caption.fontSize"
+      }
+    },
+    {
+      "path": "typography.caption.fontweight",
+      "sourcePath": "typography.caption.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 97,
+        "sourcePath": "typography.caption.fontWeight"
+      }
+    },
+    {
+      "path": "typography.caption.lineheight",
+      "sourcePath": "typography.caption.lineHeight",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 98,
+        "sourcePath": "typography.caption.lineHeight"
+      }
+    },
+    {
+      "path": "typography.buttonmd.fontfamily",
+      "sourcePath": "typography.button-md.fontFamily",
+      "type": "fontFamily",
+      "value": "Inter, system-ui, sans-serif",
+      "status": "unverified",
+      "evidence": {
+        "line": 100,
+        "sourcePath": "typography.button-md.fontFamily"
+      }
+    },
+    {
+      "path": "typography.buttonmd.fontsize",
+      "sourcePath": "typography.button-md.fontSize",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 101,
+        "sourcePath": "typography.button-md.fontSize"
+      }
+    },
+    {
+      "path": "typography.buttonmd.fontweight",
+      "sourcePath": "typography.button-md.fontWeight",
+      "type": "number",
+      "value": 600,
+      "status": "unverified",
+      "evidence": {
+        "line": 102,
+        "sourcePath": "typography.button-md.fontWeight"
+      }
+    },
+    {
+      "path": "typography.buttonmd.lineheight",
+      "sourcePath": "typography.button-md.lineHeight",
+      "type": "dimension",
+      "value": "24px",
+      "status": "unverified",
+      "evidence": {
+        "line": 103,
+        "sourcePath": "typography.button-md.lineHeight"
+      }
+    },
+    {
+      "path": "rounded.none",
+      "sourcePath": "rounded.none",
+      "type": "dimension",
+      "value": "0px",
+      "status": "unverified",
+      "evidence": {
+        "line": 106,
+        "sourcePath": "rounded.none"
+      }
+    },
+    {
+      "path": "rounded.sm",
+      "sourcePath": "rounded.sm",
+      "type": "dimension",
+      "value": "8px",
+      "status": "unverified",
+      "evidence": {
+        "line": 107,
+        "sourcePath": "rounded.sm"
+      }
+    },
+    {
+      "path": "rounded.md",
+      "sourcePath": "rounded.md",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 108,
+        "sourcePath": "rounded.md"
+      }
+    },
+    {
+      "path": "rounded.lg",
+      "sourcePath": "rounded.lg",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 109,
+        "sourcePath": "rounded.lg"
+      }
+    },
+    {
+      "path": "rounded.xl",
+      "sourcePath": "rounded.xl",
+      "type": "dimension",
+      "value": "24px",
+      "status": "unverified",
+      "evidence": {
+        "line": 110,
+        "sourcePath": "rounded.xl"
+      }
+    },
+    {
+      "path": "rounded.pill",
+      "sourcePath": "rounded.pill",
+      "type": "dimension",
+      "value": "9999px",
+      "status": "unverified",
+      "evidence": {
+        "line": 111,
+        "sourcePath": "rounded.pill"
+      }
+    },
+    {
+      "path": "rounded.full",
+      "sourcePath": "rounded.full",
+      "type": "dimension",
+      "value": "9999px",
+      "status": "unverified",
+      "evidence": {
+        "line": 112,
+        "sourcePath": "rounded.full"
+      }
+    },
+    {
+      "path": "spacing.xxs",
+      "sourcePath": "spacing.xxs",
+      "type": "dimension",
+      "value": "2px",
+      "status": "unverified",
+      "evidence": {
+        "line": 115,
+        "sourcePath": "spacing.xxs"
+      }
+    },
+    {
+      "path": "spacing.xs",
+      "sourcePath": "spacing.xs",
+      "type": "dimension",
+      "value": "4px",
+      "status": "unverified",
+      "evidence": {
+        "line": 116,
+        "sourcePath": "spacing.xs"
+      }
+    },
+    {
+      "path": "spacing.sm",
+      "sourcePath": "spacing.sm",
+      "type": "dimension",
+      "value": "8px",
+      "status": "unverified",
+      "evidence": {
+        "line": 117,
+        "sourcePath": "spacing.sm"
+      }
+    },
+    {
+      "path": "spacing.md",
+      "sourcePath": "spacing.md",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 118,
+        "sourcePath": "spacing.md"
+      }
+    },
+    {
+      "path": "spacing.lg",
+      "sourcePath": "spacing.lg",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 119,
+        "sourcePath": "spacing.lg"
+      }
+    },
+    {
+      "path": "spacing.xl",
+      "sourcePath": "spacing.xl",
+      "type": "dimension",
+      "value": "24px",
+      "status": "unverified",
+      "evidence": {
+        "line": 120,
+        "sourcePath": "spacing.xl"
+      }
+    },
+    {
+      "path": "spacing.v2xl",
+      "sourcePath": "spacing.2xl",
+      "type": "dimension",
+      "value": "32px",
+      "status": "unverified",
+      "evidence": {
+        "line": 121,
+        "sourcePath": "spacing.2xl"
+      }
+    },
+    {
+      "path": "spacing.v3xl",
+      "sourcePath": "spacing.3xl",
+      "type": "dimension",
+      "value": "48px",
+      "status": "unverified",
+      "evidence": {
+        "line": 122,
+        "sourcePath": "spacing.3xl"
+      }
+    }
+  ],
+  "rejectedTokens": [],
+  "homepage": {
+    "status": "missing",
+    "candidates": [],
+    "verification": {
+      "status": "verified",
+      "url": "https://wise.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://wise.com/",
+          "title": "Wise: The international account | Money without borders | Wise United Kingdom",
+          "note": "Public homepage read requested https://wise.com; final URL https://wise.com/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    }
+  },
+  "completeness": {
+    "presentFields": [
+      "colors",
+      "typography",
+      "rounded",
+      "spacing",
+      "components"
+    ],
+    "missingFields": [],
+    "tokenRoles": "incomplete",
+    "note": "Missing fields are not reconstructed. Prose-only colors have no inferred semantic role."
+  },
+  "provenance": {
+    "status": "independent-analysis",
+    "sources": [
+      {
+        "title": "VoltAgent awesome-design-md independent analysis",
+        "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/wise/DESIGN.md"
+      }
+    ],
+    "verification": "unverified-secondary-analysis"
+  },
+  "limitations": [
+    "Independent secondary analysis, not an official brand system; all reported values are unverified.",
+    "No brand assets, logos, font binaries or screenshots copied. Font names are documentary, not font licenses.",
+    "Safe CSS literals are extracted without claiming complete roles, state coverage or visual fidelity.",
+    "Markdown is retained as inert evidence, never executed or rendered as raw HTML."
+  ]
+}

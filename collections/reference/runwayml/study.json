@@ -1,0 +1,469 @@
+{
+  "schemaVersion": 1,
+  "id": "reference-runwayml",
+  "title": "Runwayml",
+  "classification": "independent-unverified-analysis",
+  "source": {
+    "repository": "https://github.com/VoltAgent/awesome-design-md",
+    "fork": "https://github.com/rsteth/awesome-design-md-p",
+    "revision": "fcc70284932276d085f01ef9f83edde90b1258cb",
+    "path": "design-md/runwayml/DESIGN.md",
+    "sha256": "b0e69bf643f89bb57ac0b82a3bf025e59ff1478c244cb0528ad1e38b3f80dac9",
+    "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/runwayml/DESIGN.md"
+  },
+  "titleProvenance": {
+    "status": "inferred",
+    "basis": "Source directory label, normalized for navigation; original source name is retained without correction.",
+    "sourceValue": "runwayml"
+  },
+  "analysis": {},
+  "normalizationRepairs": [],
+  "sections": [
+    {
+      "heading": "Design System Inspired by Runway",
+      "level": 1,
+      "text": "",
+      "line": 1
+    },
+    {
+      "heading": "1. Visual Theme & Atmosphere",
+      "level": 2,
+      "text": "Runway's interface is a cinematic reel brought to life as a website — a dark, editorial, film-production-grade design where full-bleed photography and video ARE the primary UI elements. This is not a typical tech product page; it's a visual manifesto for AI-powered creativity. Every section feels like a frame from a film: dramatic lighting, sweeping landscapes, and intimate human moments captured in high-quality imagery that dominates the viewport.\n\nThe design language is built on a single typeface — abcNormal — a clean, geometric sans-serif that handles everything from 48px display headlines to 11px uppercase labels. This single-font commitment creates an extreme typographic uniformity that lets the visual content speak louder than the text. Headlines use tight line-heights (1.0) with negative letter-spacing (-0.9px to -1.2px), creating compressed text blocks that feel like film titles rather than marketing copy.\n\nWhat makes Runway distinctive is its complete commitment to visual content as design. Rather than illustrating features with icons or diagrams, Runway shows actual AI-generated and AI-enhanced imagery — cars driving through cinematic landscapes, artistic portraits, architectural renders. The interface itself retreats into near-invisibility: minimal borders, zero shadows, subtle cool-gray text, and a dark palette that puts maximum focus on the photography.\n\n**Key Characteristics:**\n- Cinematic full-bleed photography and video as primary UI elements\n- Single typeface system: abcNormal for everything from display to micro labels\n- Dark-dominant palette with cool-toned neutrals (#767d88, #7d848e)\n- Zero shadows, minimal borders — the interface is intentionally invisible\n- Tight display typography (line-height 1.0) with negative tracking (-0.9px to -1.2px)\n- Uppercase labels with positive letter-spacing for navigational structure\n- Weight 450 (unusual intermediate) for small uppercase text — precision craft\n- Editorial magazine layout with mixed-size image grids",
+      "line": 3
+    },
+    {
+      "heading": "2. Color Palette & Roles",
+      "level": 2,
+      "text": "",
+      "line": 21
+    },
+    {
+      "heading": "Primary",
+      "level": 3,
+      "text": "- **Runway Black** (`#000000`): The primary page background and maximum-emphasis text.\n- **Deep Black** (`#030303`): A near-imperceptible variant for layered dark surfaces.\n- **Dark Surface** (`#1a1a1a`): Card backgrounds and elevated dark containers.\n- **Pure White** (`#ffffff`): Primary text on dark surfaces and light-section backgrounds.",
+      "line": 23
+    },
+    {
+      "heading": "Surface & Background",
+      "level": 3,
+      "text": "- **Near White** (`#fefefe`): The lightest surface — barely distinguishable from pure white.\n- **Cool Cloud** (`#e9ecf2`): Light section backgrounds with a cool blue-gray tint.\n- **Border Dark** (`#27272a`): The single dark-mode border color — barely visible containment.",
+      "line": 29
+    },
+    {
+      "heading": "Neutrals & Text",
+      "level": 3,
+      "text": "- **Charcoal** (`#404040`): Primary body text on light surfaces and secondary text.\n- **Near Charcoal** (`#3f3f3f`): Slightly lighter variant for dark-section secondary text.\n- **Cool Slate** (`#767d88`): Secondary body text — a distinctly blue-gray cool neutral.\n- **Mid Slate** (`#7d848e`): Tertiary text, metadata descriptions.\n- **Muted Gray** (`#a7a7a7`): De-emphasized content, timestamps.\n- **Cool Silver** (`#c9ccd1`): Light borders and dividers.\n- **Light Silver** (`#d0d4d4`): The lightest border/divider variant.\n- **Tailwind Gray** (`#6b7280`): Standard Tailwind neutral for supplementary text.\n- **Dark Link** (`#0c0c0c`): Darkest link text — nearly black.\n- **Footer Gray** (`#999999`): Footer links and deeply muted content.",
+      "line": 34
+    },
+    {
+      "heading": "Gradient System",
+      "level": 3,
+      "text": "- **None in the interface.** Visual richness comes entirely from photographic content — AI-generated and enhanced imagery provides all the color and gradient the design needs. The interface itself is intentionally colorless.",
+      "line": 46
+    },
+    {
+      "heading": "3. Typography Rules",
+      "level": 2,
+      "text": "",
+      "line": 49
+    },
+    {
+      "heading": "Font Family",
+      "level": 3,
+      "text": "- **Universal**: `abcNormal`, with fallback: `abcNormal Fallback`\n\n*Note: abcNormal is a custom geometric sans-serif. For external implementations, Inter or DM Sans serve as close substitutes.*",
+      "line": 51
+    },
+    {
+      "heading": "Hierarchy",
+      "level": 3,
+      "text": "| Role | Font | Size | Weight | Line Height | Letter Spacing | Notes |\n|------|------|------|--------|-------------|----------------|-------|\n| Display / Hero | abcNormal | 48px (3rem) | 400 | 1.00 (tight) | -1.2px | Maximum size, film-title presence |\n| Section Heading | abcNormal | 40px (2.5rem) | 400 | 1.00–1.10 | -1px to 0px | Feature section titles |\n| Sub-heading | abcNormal | 36px (2.25rem) | 400 | 1.00 (tight) | -0.9px | Secondary section markers |\n| Card Title | abcNormal | 24px (1.5rem) | 400 | 1.00 (tight) | normal | Article and card headings |\n| Feature Title | abcNormal | 20px (1.25rem) | 400 | 1.00 (tight) | normal | Small headings |\n| Body / Button | abcNormal | 16px (1rem) | 400–600 | 1.30–1.50 | -0.16px to normal | Standard body, nav links |\n| Caption / Label | abcNormal | 14px (0.88rem) | 500–600 | 1.25–1.43 | 0.35px (uppercase) | Metadata, section labels |\n| Small | abcNormal | 13px (0.81rem) | 400 | 1.30 (tight) | -0.16px to -0.26px | Compact descriptions |\n| Micro / Tag | abcNormal | 11px (0.69rem) | 450 | 1.30 (tight) | normal | Uppercase tags, tiny labels |",
+      "line": 56
+    },
+    {
+      "heading": "Principles",
+      "level": 3,
+      "text": "- **One typeface, complete expression**: abcNormal handles every text role. The design achieves variety through size, weight, case, and letter-spacing rather than font-family switching.\n- **Tight everywhere**: Nearly every size uses line-height 1.0–1.30 — even body text is relatively compressed. This creates a dense, editorial feel.\n- **Weight 450 — the precision detail**: Some small uppercase labels use weight 450, an uncommon intermediate between regular (400) and medium (500). This micro-craft signals typographic sophistication.\n- **Negative tracking as default**: Even body text uses -0.16px to -0.26px letter-spacing, keeping everything slightly tighter than default.\n- **Uppercase as structure**: Labels at 14px and 11px use `text-transform: uppercase` with positive letter-spacing (0.35px) to create navigational signposts that contrast with the tight lowercase text.",
+      "line": 70
+    },
+    {
+      "heading": "4. Component Stylings",
+      "level": 2,
+      "text": "",
+      "line": 77
+    },
+    {
+      "heading": "Buttons",
+      "level": 3,
+      "text": "- Text: weight 600 at 14px abcNormal\n- Background: likely transparent or dark, with minimal border\n- Radius: small (4px) for button-like links\n- The button design is extremely restrained — no heavy fills or borders detected\n- Interactive elements blend into the editorial flow",
+      "line": 79
+    },
+    {
+      "heading": "Cards & Containers",
+      "level": 3,
+      "text": "- Background: transparent or Dark Surface (`#1a1a1a`)\n- Border: `1px solid #27272a` (dark mode) — barely visible containment\n- Radius: small (4–8px) for functional elements; 16px for alert-style containers\n- Shadow: zero — no shadows on any element\n- Cards are primarily photographic — the image IS the card",
+      "line": 86
+    },
+    {
+      "heading": "Navigation",
+      "level": 3,
+      "text": "- Minimal horizontal nav — transparent over hero content\n- Logo: Runway wordmark in white/black\n- Links: abcNormal at 16px, weight 400–600\n- Hover: text shifts to white or higher opacity\n- Extremely subtle — designed to not compete with visual content",
+      "line": 93
+    },
+    {
+      "heading": "Image Treatment",
+      "level": 3,
+      "text": "- Full-bleed cinematic photography and video dominate\n- AI-generated content shown at large scale as primary visual elements\n- Mixed-size image grids creating editorial magazine layouts\n- Dark overlays on hero images for text readability\n- Product screenshots with subtle rounded corners (8px)",
+      "line": 100
+    },
+    {
+      "heading": "Distinctive Components",
+      "level": 3,
+      "text": "**Cinematic Hero**\n- Full-viewport image or video with text overlay\n- Headline in 48px abcNormal, white on dark imagery\n- The image is always cinematic quality — film-grade composition\n\n**Research Article Cards**\n- Photographic thumbnails with article titles\n- Mixed-size grid layout (large feature + smaller supporting)\n- Clean text overlay or below-image caption style\n\n**Trust Bar**\n- Company logos (leading organizations across industries)\n- Clean, monochrome treatment\n- Horizontal layout with generous spacing\n\n**Mission Statement**\n- \"We are building AI to simulate the world through imagination, art and aesthetics\"\n- On a dark background with white text\n- The emotional close — artistic and philosophical",
+      "line": 107
+    },
+    {
+      "heading": "5. Layout Principles",
+      "level": 2,
+      "text": "",
+      "line": 129
+    },
+    {
+      "heading": "Spacing System",
+      "level": 3,
+      "text": "- Base unit: 8px\n- Scale: 4px, 6px, 8px, 12px, 16px, 20px, 24px, 28px, 32px, 48px, 64px, 78px\n- Section vertical spacing: generous (48–78px)\n- Component gaps: 16–24px",
+      "line": 131
+    },
+    {
+      "heading": "Grid & Container",
+      "level": 3,
+      "text": "- Max container width: up to 1600px (cinema-wide)\n- Hero: full-viewport, edge-to-edge\n- Content sections: centered with generous margins\n- Image grids: asymmetric, magazine-style mixed sizes\n- Footer: full-width dark section",
+      "line": 137
+    },
+    {
+      "heading": "Whitespace Philosophy",
+      "level": 3,
+      "text": "- **Cinema-grade breathing**: Large vertical gaps between sections create a scrolling experience that feels like watching scenes change.\n- **Images replace whitespace**: Where other sites use empty space, Runway fills it with photography. The visual content IS the breathing room.\n- **Editorial grid asymmetry**: The image grid uses intentionally varied sizes — large hero images paired with smaller supporting images, creating visual rhythm.",
+      "line": 144
+    },
+    {
+      "heading": "Border Radius Scale",
+      "level": 3,
+      "text": "- Sharp (4px): Buttons, small interactive elements\n- Subtle (6px): Links, small containers\n- Comfortable (8px): Standard containers, image cards\n- Generous (16px): Alert-style containers, featured elements",
+      "line": 149
+    },
+    {
+      "heading": "6. Depth & Elevation",
+      "level": 2,
+      "text": "| Level | Treatment | Use |\n|-------|-----------|-----|\n| Flat (Level 0) | No shadow, no border | Everything — the dominant state |\n| Bordered (Level 1) | `1px solid #27272a` | Alert containers only |\n| Dark Section (Level 2) | Dark bg (#000000 / #1a1a1a) with light text | Hero, features, footer |\n| Light Section (Level 3) | White/Cool Cloud bg with dark text | Content sections, research |\n\n**Shadow Philosophy**: Runway uses **zero shadows**. This is a film-production design decision — in cinema, depth comes from lighting, focus, and composition, not drop shadows. The interface mirrors this philosophy: depth is communicated through dark/light section alternation, photographic depth-of-field, and overlay transparency — never through CSS box-shadow.",
+      "line": 155
+    },
+    {
+      "heading": "7. Do's and Don'ts",
+      "level": 2,
+      "text": "",
+      "line": 166
+    },
+    {
+      "heading": "Do",
+      "level": 3,
+      "text": "- Use full-bleed cinematic photography as the primary visual element\n- Use abcNormal for all text — maintain the single-typeface commitment\n- Keep display line-heights at 1.0 with negative letter-spacing for film-title density\n- Use the cool-gray neutral palette (#767d88, #7d848e) for secondary text\n- Maintain zero shadows — depth comes from photography and section backgrounds\n- Use uppercase with letter-spacing for navigational labels (14px, 0.35px spacing)\n- Apply small border-radius (4–8px) — the design is NOT pill-shaped\n- Let visual content (photos, videos) dominate — the UI should be invisible\n- Use weight 450 for micro labels — the precision matters",
+      "line": 168
+    },
+    {
+      "heading": "Don't",
+      "level": 3,
+      "text": "- Don't add decorative colors to the interface — the only color comes from photography\n- Don't use heavy borders or shadows — the interface must be nearly invisible\n- Don't use pill-shaped radius — Runway's geometry is subtly rounded, not circular\n- Don't use bold (700+) weight — 400–600 is the full range, with 450 as a precision tool\n- Don't compete with the visual content — text overlays should be minimal and restrained\n- Don't use gradient backgrounds in the interface — gradients exist only in photography\n- Don't use more than one typeface — abcNormal handles everything\n- Don't use body line-height above 1.50 — the tight, editorial feel is core\n- Don't reduce image quality — cinematic photography IS the design",
+      "line": 179
+    },
+    {
+      "heading": "8. Responsive Behavior",
+      "level": 2,
+      "text": "",
+      "line": 190
+    },
+    {
+      "heading": "Breakpoints",
+      "level": 3,
+      "text": "| Name | Width | Key Changes |\n|------|-------|-------------|\n| Mobile | <640px | Single column, stacked images, reduced hero text |\n| Tablet | 640–768px | 2-column image grids begin |\n| Small Desktop | 768–1024px | Standard layout |\n| Desktop | 1024–1280px | Full layout, expanded hero |\n| Large Desktop | 1280–1600px | Maximum cinema-width container |",
+      "line": 192
+    },
+    {
+      "heading": "Touch Targets",
+      "level": 3,
+      "text": "- Navigation links at comfortable 16px\n- Article cards serve as large touch targets\n- Buttons at 14px weight 600 with adequate padding",
+      "line": 201
+    },
+    {
+      "heading": "Collapsing Strategy",
+      "level": 3,
+      "text": "- **Navigation**: Collapses to hamburger on mobile\n- **Hero**: Full-bleed maintained, text scales down\n- **Image grids**: Multi-column → 2-column → single column\n- **Research articles**: Feature-size cards → stacked full-width\n- **Trust logos**: Horizontal scroll or reduced grid",
+      "line": 206
+    },
+    {
+      "heading": "Image Behavior",
+      "level": 3,
+      "text": "- Cinematic images scale proportionally\n- Full-bleed hero maintained across all sizes\n- Image grids reflow to fewer columns\n- Video content maintains aspect ratio",
+      "line": 213
+    },
+    {
+      "heading": "9. Agent Prompt Guide",
+      "level": 2,
+      "text": "",
+      "line": 219
+    },
+    {
+      "heading": "Quick Color Reference",
+      "level": 3,
+      "text": "- Background Dark: \"Runway Black (#000000)\"\n- Background Light: \"Pure White (#ffffff)\"\n- Primary Text Dark: \"Charcoal (#404040)\"\n- Secondary Text: \"Cool Slate (#767d88)\"\n- Muted Text: \"Muted Gray (#a7a7a7)\"\n- Light Border: \"Cool Silver (#c9ccd1)\"\n- Dark Border: \"Border Dark (#27272a)\"\n- Card Surface: \"Dark Surface (#1a1a1a)\"",
+      "line": 221
+    },
+    {
+      "heading": "Example Component Prompts",
+      "level": 3,
+      "text": "- \"Create a cinematic hero section: full-bleed dark background with a cinematic image overlay. Headline at 48px abcNormal weight 400, line-height 1.0, letter-spacing -1.2px in white. Minimal text below in Cool Slate (#767d88) at 16px.\"\n- \"Design a research article grid: one large card (50% width) with a cinematic image and 24px title, next to two smaller cards stacked. All images with 8px border-radius. Titles in white (dark bg) or Charcoal (#404040, light bg).\"\n- \"Build a section label: 14px abcNormal weight 500, uppercase, letter-spacing 0.35px in Cool Slate (#767d88). No border, no background.\"\n- \"Create a trust bar: company logos in monochrome, horizontal layout with generous spacing. On dark background with white/gray logo treatments.\"\n- \"Design a mission statement section: Runway Black background, white text at 36px abcNormal, line-height 1.0, letter-spacing -0.9px. Centered, with generous vertical padding.\"",
+      "line": 231
+    },
+    {
+      "heading": "Iteration Guide",
+      "level": 3,
+      "text": "1. Visual content first — always include cinematic photography\n2. Use abcNormal for everything — specify size and weight, never change the font\n3. Keep the interface invisible — no heavy borders, no shadows, no bright colors\n4. Use the cool slate grays (#767d88, #7d848e) for secondary text — not warm grays\n5. Uppercase labels need letter-spacing (0.35px) — never tight uppercase\n6. Dark sections should be truly dark (#000000 or #1a1a1a) — no medium grays as surfaces",
+      "line": 238
+    }
+  ],
+  "tokens": [
+    {
+      "path": "reported.color1",
+      "sourcePath": "line:14",
+      "type": "color",
+      "value": "#767d88",
+      "status": "unverified",
+      "evidence": {
+        "line": 14,
+        "text": "- Dark-dominant palette with cool-toned neutrals (#767d88, #7d848e)"
+      }
+    },
+    {
+      "path": "reported.color2",
+      "sourcePath": "line:14",
+      "type": "color",
+      "value": "#7d848e",
+      "status": "unverified",
+      "evidence": {
+        "line": 14,
+        "text": "- Dark-dominant palette with cool-toned neutrals (#767d88, #7d848e)"
+      }
+    },
+    {
+      "path": "reported.color3",
+      "sourcePath": "line:24",
+      "type": "color",
+      "value": "#000000",
+      "status": "unverified",
+      "evidence": {
+        "line": 24,
+        "text": "- **Runway Black** (`#000000`): The primary page background and maximum-emphasis text."
+      }
+    },
+    {
+      "path": "reported.color4",
+      "sourcePath": "line:25",
+      "type": "color",
+      "value": "#030303",
+      "status": "unverified",
+      "evidence": {
+        "line": 25,
+        "text": "- **Deep Black** (`#030303`): A near-imperceptible variant for layered dark surfaces."
+      }
+    },
+    {
+      "path": "reported.color5",
+      "sourcePath": "line:26",
+      "type": "color",
+      "value": "#1a1a1a",
+      "status": "unverified",
+      "evidence": {
+        "line": 26,
+        "text": "- **Dark Surface** (`#1a1a1a`): Card backgrounds and elevated dark containers."
+      }
+    },
+    {
+      "path": "reported.color6",
+      "sourcePath": "line:27",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 27,
+        "text": "- **Pure White** (`#ffffff`): Primary text on dark surfaces and light-section backgrounds."
+      }
+    },
+    {
+      "path": "reported.color7",
+      "sourcePath": "line:30",
+      "type": "color",
+      "value": "#fefefe",
+      "status": "unverified",
+      "evidence": {
+        "line": 30,
+        "text": "- **Near White** (`#fefefe`): The lightest surface — barely distinguishable from pure white."
+      }
+    },
+    {
+      "path": "reported.color8",
+      "sourcePath": "line:31",
+      "type": "color",
+      "value": "#e9ecf2",
+      "status": "unverified",
+      "evidence": {
+        "line": 31,
+        "text": "- **Cool Cloud** (`#e9ecf2`): Light section backgrounds with a cool blue-gray tint."
+      }
+    },
+    {
+      "path": "reported.color9",
+      "sourcePath": "line:32",
+      "type": "color",
+      "value": "#27272a",
+      "status": "unverified",
+      "evidence": {
+        "line": 32,
+        "text": "- **Border Dark** (`#27272a`): The single dark-mode border color — barely visible containment."
+      }
+    },
+    {
+      "path": "reported.color10",
+      "sourcePath": "line:35",
+      "type": "color",
+      "value": "#404040",
+      "status": "unverified",
+      "evidence": {
+        "line": 35,
+        "text": "- **Charcoal** (`#404040`): Primary body text on light surfaces and secondary text."
+      }
+    },
+    {
+      "path": "reported.color11",
+      "sourcePath": "line:36",
+      "type": "color",
+      "value": "#3f3f3f",
+      "status": "unverified",
+      "evidence": {
+        "line": 36,
+        "text": "- **Near Charcoal** (`#3f3f3f`): Slightly lighter variant for dark-section secondary text."
+      }
+    },
+    {
+      "path": "reported.color12",
+      "sourcePath": "line:39",
+      "type": "color",
+      "value": "#a7a7a7",
+      "status": "unverified",
+      "evidence": {
+        "line": 39,
+        "text": "- **Muted Gray** (`#a7a7a7`): De-emphasized content, timestamps."
+      }
+    },
+    {
+      "path": "reported.color13",
+      "sourcePath": "line:40",
+      "type": "color",
+      "value": "#c9ccd1",
+      "status": "unverified",
+      "evidence": {
+        "line": 40,
+        "text": "- **Cool Silver** (`#c9ccd1`): Light borders and dividers."
+      }
+    },
+    {
+      "path": "reported.color14",
+      "sourcePath": "line:41",
+      "type": "color",
+      "value": "#d0d4d4",
+      "status": "unverified",
+      "evidence": {
+        "line": 41,
+        "text": "- **Light Silver** (`#d0d4d4`): The lightest border/divider variant."
+      }
+    },
+    {
+      "path": "reported.color15",
+      "sourcePath": "line:42",
+      "type": "color",
+      "value": "#6b7280",
+      "status": "unverified",
+      "evidence": {
+        "line": 42,
+        "text": "- **Tailwind Gray** (`#6b7280`): Standard Tailwind neutral for supplementary text."
+      }
+    },
+    {
+      "path": "reported.color16",
+      "sourcePath": "line:43",
+      "type": "color",
+      "value": "#0c0c0c",
+      "status": "unverified",
+      "evidence": {
+        "line": 43,
+        "text": "- **Dark Link** (`#0c0c0c`): Darkest link text — nearly black."
+      }
+    },
+    {
+      "path": "reported.color17",
+      "sourcePath": "line:44",
+      "type": "color",
+      "value": "#999999",
+      "status": "unverified",
+      "evidence": {
+        "line": 44,
+        "text": "- **Footer Gray** (`#999999`): Footer links and deeply muted content."
+      }
+    }
+  ],
+  "rejectedTokens": [],
+  "homepage": {
+    "status": "missing",
+    "candidates": [],
+    "verification": {
+      "status": "verified",
+      "url": "https://runwayml.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://runway.com/",
+          "title": "Runway | Intelligent tools for scaling content and teams.",
+          "note": "Public homepage read requested https://runwayml.com; final URL https://runway.com/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    }
+  },
+  "completeness": {
+    "presentFields": [],
+    "missingFields": [
+      "colors",
+      "typography",
+      "rounded",
+      "spacing",
+      "components"
+    ],
+    "tokenRoles": "incomplete",
+    "note": "Missing fields are not reconstructed. Prose-only colors have no inferred semantic role."
+  },
+  "provenance": {
+    "status": "independent-analysis",
+    "sources": [
+      {
+        "title": "VoltAgent awesome-design-md independent analysis",
+        "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/runwayml/DESIGN.md"
+      }
+    ],
+    "verification": "unverified-secondary-analysis"
+  },
+  "limitations": [
+    "Independent secondary analysis, not an official brand system; all reported values are unverified.",
+    "No brand assets, logos, font binaries or screenshots copied. Font names are documentary, not font licenses.",
+    "Safe CSS literals are extracted without claiming complete roles, state coverage or visual fidelity.",
+    "Markdown is retained as inert evidence, never executed or rendered as raw HTML."
+  ]
+}

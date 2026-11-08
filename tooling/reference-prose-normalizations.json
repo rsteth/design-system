@@ -1,0 +1,3530 @@
+{
+  "schemaVersion": 1,
+  "studies": {
+    "kraken": {
+      "sourceSha256": "41bcbd5642c926a549f0d50f1151484c5776b4536233240c8415cfb79bcf1f38",
+      "note": "Manual partial normalization of independent, unverified source analysis. Exact selected literals only; ranges, estimates, ambiguous alternatives, motion, assets, logos and unsupported effects are not normalized. Font-family names record source claims only; no fonts are installed or fetched. Component-specific radii and padding are named by role, not inferred as a universal scale. Missing properties remain unspecified.",
+      "analysis": {
+        "colors": {
+          "primary": "#7132f5",
+          "primary-dark": "#5741d8",
+          "ink": "#101114",
+          "muted": "#9497a9",
+          "canvas": "#ffffff",
+          "border": "#dedee5",
+          "success": "#149e61"
+        },
+        "typography": {
+          "display": {
+            "fontFamily": "\"Kraken-Brand\"",
+            "fontSize": "48px",
+            "fontWeight": 700,
+            "lineHeight": 1.17,
+            "letterSpacing": "-1px"
+          },
+          "heading": {
+            "fontFamily": "\"Kraken-Brand\"",
+            "fontSize": "36px",
+            "fontWeight": 700,
+            "lineHeight": 1.22,
+            "letterSpacing": "-0.5px"
+          },
+          "body": {
+            "fontFamily": "\"Kraken-Product\"",
+            "fontSize": "16px",
+            "fontWeight": 400,
+            "lineHeight": 1.38,
+            "letterSpacing": "normal"
+          }
+        },
+        "rounded": {
+          "primary-button-radius": "12px",
+          "outlined-button-radius": "12px",
+          "subtle-button-radius": "12px",
+          "white-button-radius": "10px",
+          "success-badge-radius": "6px"
+        },
+        "spacing": {
+          "primary-button-padding": "13px 16px",
+          "subtle-button-padding": "8px"
+        },
+        "components": {
+          "primary-button": {
+            "backgroundColor": "#7132f5",
+            "textColor": "#ffffff",
+            "padding": "13px 16px",
+            "rounded": "12px"
+          },
+          "outlined-button": {
+            "backgroundColor": "#ffffff",
+            "textColor": "#5741d8",
+            "borderColor": "#5741d8",
+            "borderWidth": "1px",
+            "borderStyle": "solid",
+            "rounded": "12px"
+          },
+          "subtle-button": {
+            "backgroundColor": "rgba(133,91,251,0.16)",
+            "textColor": "#7132f5",
+            "padding": "8px",
+            "rounded": "12px"
+          },
+          "white-button": {
+            "backgroundColor": "#ffffff",
+            "textColor": "#101114",
+            "rounded": "10px"
+          },
+          "success-badge": {
+            "backgroundColor": "rgba(20,158,97,0.16)",
+            "textColor": "#026b3f",
+            "rounded": "6px"
+          }
+        }
+      },
+      "evidence": {
+        "colors.primary": {
+          "line": 18,
+          "sourcePath": "line:18"
+        },
+        "colors.primary-dark": {
+          "line": 19,
+          "sourcePath": "line:19"
+        },
+        "colors.ink": {
+          "line": 22,
+          "sourcePath": "line:22"
+        },
+        "colors.muted": {
+          "line": 26,
+          "sourcePath": "line:26"
+        },
+        "colors.canvas": {
+          "line": 27,
+          "sourcePath": "line:27"
+        },
+        "colors.border": {
+          "line": 28,
+          "sourcePath": "line:28"
+        },
+        "colors.success": {
+          "line": 31,
+          "sourcePath": "line:31"
+        },
+        "typography.display": {
+          "line": 44,
+          "sourcePath": "line:44"
+        },
+        "typography.display.fontFamily": {
+          "line": 44,
+          "sourcePath": "line:44"
+        },
+        "typography.display.fontSize": {
+          "line": 44,
+          "sourcePath": "line:44"
+        },
+        "typography.display.fontWeight": {
+          "line": 44,
+          "sourcePath": "line:44"
+        },
+        "typography.display.lineHeight": {
+          "line": 44,
+          "sourcePath": "line:44"
+        },
+        "typography.display.letterSpacing": {
+          "line": 44,
+          "sourcePath": "line:44"
+        },
+        "typography.heading": {
+          "line": 45,
+          "sourcePath": "line:45"
+        },
+        "typography.heading.fontFamily": {
+          "line": 45,
+          "sourcePath": "line:45"
+        },
+        "typography.heading.fontSize": {
+          "line": 45,
+          "sourcePath": "line:45"
+        },
+        "typography.heading.fontWeight": {
+          "line": 45,
+          "sourcePath": "line:45"
+        },
+        "typography.heading.lineHeight": {
+          "line": 45,
+          "sourcePath": "line:45"
+        },
+        "typography.heading.letterSpacing": {
+          "line": 45,
+          "sourcePath": "line:45"
+        },
+        "typography.body": {
+          "line": 48,
+          "sourcePath": "line:48"
+        },
+        "typography.body.fontFamily": {
+          "line": 48,
+          "sourcePath": "line:48"
+        },
+        "typography.body.fontSize": {
+          "line": 48,
+          "sourcePath": "line:48"
+        },
+        "typography.body.fontWeight": {
+          "line": 48,
+          "sourcePath": "line:48"
+        },
+        "typography.body.lineHeight": {
+          "line": 48,
+          "sourcePath": "line:48"
+        },
+        "typography.body.letterSpacing": {
+          "line": 48,
+          "sourcePath": "line:48"
+        },
+        "components.primary-button": {
+          "line": 59,
+          "sourcePath": "line:59"
+        },
+        "components.primary-button.backgroundColor": {
+          "line": 60,
+          "sourcePath": "line:60"
+        },
+        "components.primary-button.textColor": {
+          "line": 61,
+          "sourcePath": "line:61"
+        },
+        "components.primary-button.padding": {
+          "line": 62,
+          "sourcePath": "line:62"
+        },
+        "components.primary-button.rounded": {
+          "line": 63,
+          "sourcePath": "line:63"
+        },
+        "rounded.primary-button-radius": {
+          "line": 63,
+          "sourcePath": "line:63"
+        },
+        "spacing.primary-button-padding": {
+          "line": 62,
+          "sourcePath": "line:62"
+        },
+        "components.outlined-button": {
+          "line": 65,
+          "sourcePath": "line:65"
+        },
+        "components.outlined-button.backgroundColor": {
+          "line": 66,
+          "sourcePath": "line:66"
+        },
+        "components.outlined-button.textColor": {
+          "line": 67,
+          "sourcePath": "line:67"
+        },
+        "components.outlined-button.borderColor": {
+          "line": 68,
+          "sourcePath": "line:68"
+        },
+        "components.outlined-button.borderWidth": {
+          "line": 68,
+          "sourcePath": "line:68"
+        },
+        "components.outlined-button.borderStyle": {
+          "line": 68,
+          "sourcePath": "line:68"
+        },
+        "components.outlined-button.rounded": {
+          "line": 69,
+          "sourcePath": "line:69"
+        },
+        "rounded.outlined-button-radius": {
+          "line": 69,
+          "sourcePath": "line:69"
+        },
+        "components.subtle-button": {
+          "line": 71,
+          "sourcePath": "line:71"
+        },
+        "components.subtle-button.backgroundColor": {
+          "line": 72,
+          "sourcePath": "line:72"
+        },
+        "components.subtle-button.textColor": {
+          "line": 73,
+          "sourcePath": "line:73"
+        },
+        "components.subtle-button.padding": {
+          "line": 74,
+          "sourcePath": "line:74"
+        },
+        "components.subtle-button.rounded": {
+          "line": 75,
+          "sourcePath": "line:75"
+        },
+        "rounded.subtle-button-radius": {
+          "line": 75,
+          "sourcePath": "line:75"
+        },
+        "spacing.subtle-button-padding": {
+          "line": 74,
+          "sourcePath": "line:74"
+        },
+        "components.white-button": {
+          "line": 77,
+          "sourcePath": "line:77"
+        },
+        "components.white-button.backgroundColor": {
+          "line": 78,
+          "sourcePath": "line:78"
+        },
+        "components.white-button.textColor": {
+          "line": 79,
+          "sourcePath": "line:79"
+        },
+        "components.white-button.rounded": {
+          "line": 80,
+          "sourcePath": "line:80"
+        },
+        "rounded.white-button-radius": {
+          "line": 80,
+          "sourcePath": "line:80"
+        },
+        "components.success-badge": {
+          "line": 89,
+          "sourcePath": "line:89"
+        },
+        "components.success-badge.backgroundColor": {
+          "line": 89,
+          "sourcePath": "line:89"
+        },
+        "components.success-badge.textColor": {
+          "line": 89,
+          "sourcePath": "line:89"
+        },
+        "components.success-badge.rounded": {
+          "line": 89,
+          "sourcePath": "line:89"
+        },
+        "rounded.success-badge-radius": {
+          "line": 89,
+          "sourcePath": "line:89"
+        }
+      }
+    },
+    "lamborghini": {
+      "sourceSha256": "9aa68c53b481a0befdf72859db5625f85454122294509989aa58414aaee04b34",
+      "note": "Manual partial normalization of independent, unverified source analysis. Exact selected literals only; ranges, estimates, ambiguous alternatives, motion, assets, logos and unsupported effects are not normalized. Font-family names record source claims only; no fonts are installed or fetched. Component-specific radii and padding are named by role, not inferred as a universal scale. Missing properties remain unspecified.",
+      "analysis": {
+        "colors": {
+          "primary": "#FFC000",
+          "text": "#FFFFFF",
+          "primary-hover": "#917300",
+          "canvas": "#000000",
+          "surface": "#202020",
+          "muted": "#7D7D7D"
+        },
+        "typography": {
+          "display": {
+            "fontFamily": "\"LamboType\"",
+            "fontSize": "120px",
+            "fontWeight": 400,
+            "lineHeight": 0.92,
+            "letterSpacing": "normal"
+          },
+          "heading": {
+            "fontFamily": "\"LamboType\"",
+            "fontSize": "54px",
+            "fontWeight": 400,
+            "lineHeight": 1.19,
+            "letterSpacing": "normal"
+          },
+          "body-large": {
+            "fontFamily": "\"LamboType\"",
+            "fontSize": "18px",
+            "fontWeight": 400,
+            "lineHeight": 1.56,
+            "letterSpacing": "normal"
+          }
+        },
+        "rounded": {
+          "primary-button-radius": "0px",
+          "ghost-button-radius": "0px",
+          "white-button-radius": "0px",
+          "neutral-button-radius": "0px",
+          "badge-radius": "2px"
+        },
+        "spacing": {
+          "primary-button-padding": "24px",
+          "ghost-button-padding": "16px",
+          "badge-padding": "8px"
+        },
+        "components": {
+          "primary-button": {
+            "backgroundColor": "#FFC000",
+            "textColor": "#000000",
+            "padding": "24px",
+            "fontSize": "16px",
+            "fontWeight": 400,
+            "rounded": "0px",
+            "borderStyle": "none"
+          },
+          "ghost-button": {
+            "backgroundColor": "transparent",
+            "textColor": "#FFFFFF",
+            "borderColor": "#FFFFFF",
+            "borderWidth": "1px",
+            "borderStyle": "solid",
+            "padding": "16px",
+            "opacity": 0.5,
+            "rounded": "0px"
+          },
+          "white-button": {
+            "backgroundColor": "#FFFFFF",
+            "textColor": "#202020",
+            "borderStyle": "none",
+            "rounded": "0px"
+          },
+          "neutral-button": {
+            "backgroundColor": "#969696",
+            "textColor": "#202020",
+            "rounded": "0px"
+          },
+          "badge": {
+            "backgroundColor": "#969696",
+            "textColor": "white",
+            "padding": "8px",
+            "fontSize": "10px",
+            "rounded": "2px"
+          }
+        }
+      },
+      "evidence": {
+        "colors.primary": {
+          "line": 25,
+          "sourcePath": "line:25"
+        },
+        "colors.text": {
+          "line": 26,
+          "sourcePath": "line:26"
+        },
+        "colors.primary-hover": {
+          "line": 29,
+          "sourcePath": "line:29"
+        },
+        "colors.canvas": {
+          "line": 35,
+          "sourcePath": "line:35"
+        },
+        "colors.surface": {
+          "line": 36,
+          "sourcePath": "line:36"
+        },
+        "colors.muted": {
+          "line": 46,
+          "sourcePath": "line:46"
+        },
+        "typography.display": {
+          "line": 73,
+          "sourcePath": "line:73"
+        },
+        "typography.display.fontFamily": {
+          "line": 73,
+          "sourcePath": "line:73"
+        },
+        "typography.display.fontSize": {
+          "line": 73,
+          "sourcePath": "line:73"
+        },
+        "typography.display.fontWeight": {
+          "line": 73,
+          "sourcePath": "line:73"
+        },
+        "typography.display.lineHeight": {
+          "line": 73,
+          "sourcePath": "line:73"
+        },
+        "typography.display.letterSpacing": {
+          "line": 73,
+          "sourcePath": "line:73"
+        },
+        "typography.heading": {
+          "line": 75,
+          "sourcePath": "line:75"
+        },
+        "typography.heading.fontFamily": {
+          "line": 75,
+          "sourcePath": "line:75"
+        },
+        "typography.heading.fontSize": {
+          "line": 75,
+          "sourcePath": "line:75"
+        },
+        "typography.heading.fontWeight": {
+          "line": 75,
+          "sourcePath": "line:75"
+        },
+        "typography.heading.lineHeight": {
+          "line": 75,
+          "sourcePath": "line:75"
+        },
+        "typography.heading.letterSpacing": {
+          "line": 75,
+          "sourcePath": "line:75"
+        },
+        "typography.body-large": {
+          "line": 79,
+          "sourcePath": "line:79"
+        },
+        "typography.body-large.fontFamily": {
+          "line": 79,
+          "sourcePath": "line:79"
+        },
+        "typography.body-large.fontSize": {
+          "line": 79,
+          "sourcePath": "line:79"
+        },
+        "typography.body-large.fontWeight": {
+          "line": 79,
+          "sourcePath": "line:79"
+        },
+        "typography.body-large.lineHeight": {
+          "line": 79,
+          "sourcePath": "line:79"
+        },
+        "typography.body-large.letterSpacing": {
+          "line": 79,
+          "sourcePath": "line:79"
+        },
+        "components.primary-button": {
+          "line": 102,
+          "sourcePath": "line:102"
+        },
+        "components.primary-button.backgroundColor": {
+          "line": 103,
+          "sourcePath": "line:103"
+        },
+        "components.primary-button.textColor": {
+          "line": 103,
+          "sourcePath": "line:103"
+        },
+        "components.primary-button.padding": {
+          "line": 103,
+          "sourcePath": "line:103"
+        },
+        "components.primary-button.fontSize": {
+          "line": 103,
+          "sourcePath": "line:103"
+        },
+        "components.primary-button.fontWeight": {
+          "line": 103,
+          "sourcePath": "line:103"
+        },
+        "components.primary-button.rounded": {
+          "line": 103,
+          "sourcePath": "line:103"
+        },
+        "components.primary-button.borderStyle": {
+          "line": 103,
+          "sourcePath": "line:103"
+        },
+        "rounded.primary-button-radius": {
+          "line": 103,
+          "sourcePath": "line:103"
+        },
+        "spacing.primary-button-padding": {
+          "line": 103,
+          "sourcePath": "line:103"
+        },
+        "components.ghost-button": {
+          "line": 108,
+          "sourcePath": "line:108"
+        },
+        "components.ghost-button.backgroundColor": {
+          "line": 109,
+          "sourcePath": "line:109"
+        },
+        "components.ghost-button.textColor": {
+          "line": 109,
+          "sourcePath": "line:109"
+        },
+        "components.ghost-button.borderColor": {
+          "line": 109,
+          "sourcePath": "line:109"
+        },
+        "components.ghost-button.borderWidth": {
+          "line": 109,
+          "sourcePath": "line:109"
+        },
+        "components.ghost-button.borderStyle": {
+          "line": 109,
+          "sourcePath": "line:109"
+        },
+        "components.ghost-button.padding": {
+          "line": 109,
+          "sourcePath": "line:109"
+        },
+        "components.ghost-button.opacity": {
+          "line": 109,
+          "sourcePath": "line:109"
+        },
+        "components.ghost-button.rounded": {
+          "line": 100,
+          "sourcePath": "line:100"
+        },
+        "rounded.ghost-button-radius": {
+          "line": 100,
+          "sourcePath": "line:100"
+        },
+        "spacing.ghost-button-padding": {
+          "line": 109,
+          "sourcePath": "line:109"
+        },
+        "components.white-button": {
+          "line": 114,
+          "sourcePath": "line:114"
+        },
+        "components.white-button.backgroundColor": {
+          "line": 115,
+          "sourcePath": "line:115"
+        },
+        "components.white-button.textColor": {
+          "line": 115,
+          "sourcePath": "line:115"
+        },
+        "components.white-button.borderStyle": {
+          "line": 115,
+          "sourcePath": "line:115"
+        },
+        "components.white-button.rounded": {
+          "line": 100,
+          "sourcePath": "line:100"
+        },
+        "rounded.white-button-radius": {
+          "line": 100,
+          "sourcePath": "line:100"
+        },
+        "components.neutral-button": {
+          "line": 122,
+          "sourcePath": "line:122"
+        },
+        "components.neutral-button.backgroundColor": {
+          "line": 123,
+          "sourcePath": "line:123"
+        },
+        "components.neutral-button.textColor": {
+          "line": 123,
+          "sourcePath": "line:123"
+        },
+        "components.neutral-button.rounded": {
+          "line": 100,
+          "sourcePath": "line:100"
+        },
+        "rounded.neutral-button-radius": {
+          "line": 100,
+          "sourcePath": "line:100"
+        },
+        "components.badge": {
+          "line": 156,
+          "sourcePath": "line:156"
+        },
+        "components.badge.backgroundColor": {
+          "line": 156,
+          "sourcePath": "line:156"
+        },
+        "components.badge.textColor": {
+          "line": 156,
+          "sourcePath": "line:156"
+        },
+        "components.badge.padding": {
+          "line": 156,
+          "sourcePath": "line:156"
+        },
+        "components.badge.fontSize": {
+          "line": 156,
+          "sourcePath": "line:156"
+        },
+        "components.badge.rounded": {
+          "line": 156,
+          "sourcePath": "line:156"
+        },
+        "rounded.badge-radius": {
+          "line": 156,
+          "sourcePath": "line:156"
+        },
+        "spacing.badge-padding": {
+          "line": 156,
+          "sourcePath": "line:156"
+        }
+      }
+    },
+    "lovable": {
+      "sourceSha256": "92790895c833104072643929ba56ebbf42c8f88ffb7bff1926462545d0ace6c7",
+      "note": "Manual partial normalization of independent, unverified source analysis. Exact selected literals only; ranges, estimates, ambiguous alternatives, motion, assets, logos and unsupported effects are not normalized. Font-family names record source claims only; no fonts are installed or fetched. Component-specific radii and padding are named by role, not inferred as a universal scale. Missing properties remain unspecified.",
+      "analysis": {
+        "colors": {
+          "canvas": "#f7f4ed",
+          "ink": "#1c1c1c",
+          "on-primary": "#fcfbf8",
+          "muted": "#5f5f5d",
+          "border": "#eceae4"
+        },
+        "typography": {
+          "display-alt": {
+            "fontFamily": "\"Camera Plain Variable\"",
+            "fontSize": "60px",
+            "fontWeight": 480,
+            "lineHeight": 1,
+            "letterSpacing": "normal"
+          },
+          "heading": {
+            "fontFamily": "\"Camera Plain Variable\"",
+            "fontSize": "48px",
+            "fontWeight": 600,
+            "lineHeight": 1,
+            "letterSpacing": "-1.2px"
+          },
+          "body": {
+            "fontFamily": "\"Camera Plain Variable\"",
+            "fontSize": "16px",
+            "fontWeight": 400,
+            "lineHeight": 1.5,
+            "letterSpacing": "normal"
+          }
+        },
+        "rounded": {
+          "primary-button-radius": "6px",
+          "outlined-button-radius": "6px",
+          "surface-button-radius": "6px",
+          "standard-card-radius": "12px",
+          "text-input-radius": "6px"
+        },
+        "spacing": {
+          "primary-button-padding": "8px 16px",
+          "outlined-button-padding": "8px 16px",
+          "surface-button-padding": "8px 16px"
+        },
+        "components": {
+          "primary-button": {
+            "backgroundColor": "#1c1c1c",
+            "textColor": "#fcfbf8",
+            "padding": "8px 16px",
+            "rounded": "6px"
+          },
+          "outlined-button": {
+            "backgroundColor": "transparent",
+            "textColor": "#1c1c1c",
+            "padding": "8px 16px",
+            "rounded": "6px",
+            "borderColor": "rgba(28,28,28,0.4)",
+            "borderWidth": "1px",
+            "borderStyle": "solid"
+          },
+          "surface-button": {
+            "backgroundColor": "#f7f4ed",
+            "textColor": "#1c1c1c",
+            "padding": "8px 16px",
+            "rounded": "6px",
+            "borderStyle": "none"
+          },
+          "standard-card": {
+            "backgroundColor": "#f7f4ed",
+            "borderColor": "#eceae4",
+            "borderWidth": "1px",
+            "borderStyle": "solid",
+            "rounded": "12px"
+          },
+          "text-input": {
+            "backgroundColor": "#f7f4ed",
+            "textColor": "#1c1c1c",
+            "borderColor": "#eceae4",
+            "borderWidth": "1px",
+            "borderStyle": "solid",
+            "rounded": "6px"
+          }
+        }
+      },
+      "evidence": {
+        "colors.canvas": {
+          "line": 24,
+          "sourcePath": "line:24"
+        },
+        "colors.ink": {
+          "line": 25,
+          "sourcePath": "line:25"
+        },
+        "colors.on-primary": {
+          "line": 26,
+          "sourcePath": "line:26"
+        },
+        "colors.muted": {
+          "line": 32,
+          "sourcePath": "line:32"
+        },
+        "colors.border": {
+          "line": 38,
+          "sourcePath": "line:38"
+        },
+        "typography.display-alt": {
+          "line": 60,
+          "sourcePath": "line:60"
+        },
+        "typography.display-alt.fontFamily": {
+          "line": 60,
+          "sourcePath": "line:60"
+        },
+        "typography.display-alt.fontSize": {
+          "line": 60,
+          "sourcePath": "line:60"
+        },
+        "typography.display-alt.fontWeight": {
+          "line": 60,
+          "sourcePath": "line:60"
+        },
+        "typography.display-alt.lineHeight": {
+          "line": 60,
+          "sourcePath": "line:60"
+        },
+        "typography.display-alt.letterSpacing": {
+          "line": 60,
+          "sourcePath": "line:60"
+        },
+        "typography.heading": {
+          "line": 61,
+          "sourcePath": "line:61"
+        },
+        "typography.heading.fontFamily": {
+          "line": 61,
+          "sourcePath": "line:61"
+        },
+        "typography.heading.fontSize": {
+          "line": 61,
+          "sourcePath": "line:61"
+        },
+        "typography.heading.fontWeight": {
+          "line": 61,
+          "sourcePath": "line:61"
+        },
+        "typography.heading.lineHeight": {
+          "line": 61,
+          "sourcePath": "line:61"
+        },
+        "typography.heading.letterSpacing": {
+          "line": 61,
+          "sourcePath": "line:61"
+        },
+        "typography.body": {
+          "line": 65,
+          "sourcePath": "line:65"
+        },
+        "typography.body.fontFamily": {
+          "line": 65,
+          "sourcePath": "line:65"
+        },
+        "typography.body.fontSize": {
+          "line": 65,
+          "sourcePath": "line:65"
+        },
+        "typography.body.fontWeight": {
+          "line": 65,
+          "sourcePath": "line:65"
+        },
+        "typography.body.lineHeight": {
+          "line": 65,
+          "sourcePath": "line:65"
+        },
+        "typography.body.letterSpacing": {
+          "line": 65,
+          "sourcePath": "line:65"
+        },
+        "components.primary-button": {
+          "line": 82,
+          "sourcePath": "line:82"
+        },
+        "components.primary-button.backgroundColor": {
+          "line": 83,
+          "sourcePath": "line:83"
+        },
+        "components.primary-button.textColor": {
+          "line": 84,
+          "sourcePath": "line:84"
+        },
+        "components.primary-button.padding": {
+          "line": 85,
+          "sourcePath": "line:85"
+        },
+        "components.primary-button.rounded": {
+          "line": 86,
+          "sourcePath": "line:86"
+        },
+        "rounded.primary-button-radius": {
+          "line": 86,
+          "sourcePath": "line:86"
+        },
+        "spacing.primary-button-padding": {
+          "line": 85,
+          "sourcePath": "line:85"
+        },
+        "components.outlined-button": {
+          "line": 92,
+          "sourcePath": "line:92"
+        },
+        "components.outlined-button.backgroundColor": {
+          "line": 93,
+          "sourcePath": "line:93"
+        },
+        "components.outlined-button.textColor": {
+          "line": 94,
+          "sourcePath": "line:94"
+        },
+        "components.outlined-button.padding": {
+          "line": 95,
+          "sourcePath": "line:95"
+        },
+        "components.outlined-button.rounded": {
+          "line": 96,
+          "sourcePath": "line:96"
+        },
+        "components.outlined-button.borderColor": {
+          "line": 97,
+          "sourcePath": "line:97"
+        },
+        "components.outlined-button.borderWidth": {
+          "line": 97,
+          "sourcePath": "line:97"
+        },
+        "components.outlined-button.borderStyle": {
+          "line": 97,
+          "sourcePath": "line:97"
+        },
+        "rounded.outlined-button-radius": {
+          "line": 96,
+          "sourcePath": "line:96"
+        },
+        "spacing.outlined-button-padding": {
+          "line": 95,
+          "sourcePath": "line:95"
+        },
+        "components.surface-button": {
+          "line": 102,
+          "sourcePath": "line:102"
+        },
+        "components.surface-button.backgroundColor": {
+          "line": 103,
+          "sourcePath": "line:103"
+        },
+        "components.surface-button.textColor": {
+          "line": 104,
+          "sourcePath": "line:104"
+        },
+        "components.surface-button.padding": {
+          "line": 105,
+          "sourcePath": "line:105"
+        },
+        "components.surface-button.rounded": {
+          "line": 106,
+          "sourcePath": "line:106"
+        },
+        "components.surface-button.borderStyle": {
+          "line": 107,
+          "sourcePath": "line:107"
+        },
+        "rounded.surface-button-radius": {
+          "line": 106,
+          "sourcePath": "line:106"
+        },
+        "spacing.surface-button-padding": {
+          "line": 105,
+          "sourcePath": "line:105"
+        },
+        "components.standard-card": {
+          "line": 119,
+          "sourcePath": "line:119"
+        },
+        "components.standard-card.backgroundColor": {
+          "line": 120,
+          "sourcePath": "line:120"
+        },
+        "components.standard-card.borderColor": {
+          "line": 121,
+          "sourcePath": "line:121"
+        },
+        "components.standard-card.borderWidth": {
+          "line": 121,
+          "sourcePath": "line:121"
+        },
+        "components.standard-card.borderStyle": {
+          "line": 121,
+          "sourcePath": "line:121"
+        },
+        "components.standard-card.rounded": {
+          "line": 122,
+          "sourcePath": "line:122"
+        },
+        "rounded.standard-card-radius": {
+          "line": 122,
+          "sourcePath": "line:122"
+        },
+        "components.text-input": {
+          "line": 126,
+          "sourcePath": "line:126"
+        },
+        "components.text-input.backgroundColor": {
+          "line": 127,
+          "sourcePath": "line:127"
+        },
+        "components.text-input.textColor": {
+          "line": 128,
+          "sourcePath": "line:128"
+        },
+        "components.text-input.borderColor": {
+          "line": 129,
+          "sourcePath": "line:129"
+        },
+        "components.text-input.borderWidth": {
+          "line": 129,
+          "sourcePath": "line:129"
+        },
+        "components.text-input.borderStyle": {
+          "line": 129,
+          "sourcePath": "line:129"
+        },
+        "components.text-input.rounded": {
+          "line": 130,
+          "sourcePath": "line:130"
+        },
+        "rounded.text-input-radius": {
+          "line": 130,
+          "sourcePath": "line:130"
+        }
+      }
+    },
+    "mastercard": {
+      "sourceSha256": "e76ceaa187f43bd24b8338d2b2314e71e9225b36492e40f32a55782281a10437",
+      "note": "Manual partial normalization of independent, unverified source analysis. Exact selected literals only; ranges, estimates, ambiguous alternatives, motion, assets, logos and unsupported effects are not normalized. Font-family names record source claims only; no fonts are installed or fetched. Component-specific radii and padding are named by role, not inferred as a universal scale. Missing properties remain unspecified. Logo-only red/yellow are deliberately excluded from the UI palette. Orange is retained only for the consent recipe, not as a marketing CTA.",
+      "analysis": {
+        "colors": {
+          "ink": "#141413",
+          "consent": "#CF4500",
+          "accent": "#F37338",
+          "canvas": "#F3F0EE",
+          "surface": "#FCFBFA",
+          "white": "#FFFFFF",
+          "muted": "#696969"
+        },
+        "typography": {
+          "display": {
+            "fontFamily": "\"MarkForMC\"",
+            "fontSize": "64px",
+            "fontWeight": 500,
+            "lineHeight": "64px",
+            "letterSpacing": "-1.28px"
+          },
+          "heading": {
+            "fontFamily": "\"MarkForMC\"",
+            "fontSize": "36px",
+            "fontWeight": 500,
+            "lineHeight": "44px",
+            "letterSpacing": "-0.72px"
+          },
+          "body": {
+            "fontFamily": "\"MarkForMC\"",
+            "fontSize": "16px",
+            "fontWeight": 450,
+            "lineHeight": "22.4px",
+            "letterSpacing": "normal"
+          }
+        },
+        "rounded": {
+          "primary-button-radius": "20px",
+          "outlined-button-radius": "20px",
+          "consent-button-radius": "24px",
+          "satellite-control-radius": "50%",
+          "footer-selector-radius": "999px"
+        },
+        "spacing": {
+          "primary-button-padding": "6px 24px",
+          "outlined-button-padding": "6px 24px",
+          "consent-button-padding": "1px 30px"
+        },
+        "components": {
+          "primary-button": {
+            "backgroundColor": "#141413",
+            "textColor": "#F3F0EE",
+            "borderColor": "#141413",
+            "borderWidth": "1.5px",
+            "borderStyle": "solid",
+            "rounded": "20px",
+            "padding": "6px 24px",
+            "fontSize": "16px",
+            "fontWeight": 500,
+            "letterSpacing": "-0.32px"
+          },
+          "outlined-button": {
+            "backgroundColor": "#FFFFFF",
+            "textColor": "#141413",
+            "borderColor": "#141413",
+            "borderWidth": "1.5px",
+            "borderStyle": "solid",
+            "rounded": "20px",
+            "padding": "6px 24px",
+            "fontWeight": 450,
+            "lineHeight": "20.8px"
+          },
+          "consent-button": {
+            "backgroundColor": "#CF4500",
+            "textColor": "#FFFFFF",
+            "borderWidth": "0px",
+            "rounded": "24px",
+            "padding": "1px 30px",
+            "fontSize": "13px",
+            "fontWeight": 400,
+            "letterSpacing": "0.13px"
+          },
+          "satellite-control": {
+            "backgroundColor": "#FFFFFF",
+            "borderStyle": "none",
+            "rounded": "50%"
+          },
+          "footer-selector": {
+            "backgroundColor": "#141413",
+            "textColor": "white",
+            "borderColor": "rgba(255,255,255,0.4)",
+            "borderWidth": "1px",
+            "borderStyle": "solid",
+            "rounded": "999px"
+          }
+        }
+      },
+      "evidence": {
+        "colors.ink": {
+          "line": 26,
+          "sourcePath": "line:26"
+        },
+        "colors.consent": {
+          "line": 29,
+          "sourcePath": "line:29"
+        },
+        "colors.accent": {
+          "line": 30,
+          "sourcePath": "line:30"
+        },
+        "colors.canvas": {
+          "line": 34,
+          "sourcePath": "line:34"
+        },
+        "colors.surface": {
+          "line": 35,
+          "sourcePath": "line:35"
+        },
+        "colors.white": {
+          "line": 36,
+          "sourcePath": "line:36"
+        },
+        "colors.muted": {
+          "line": 42,
+          "sourcePath": "line:42"
+        },
+        "typography.display": {
+          "line": 66,
+          "sourcePath": "line:66"
+        },
+        "typography.display.fontFamily": {
+          "line": 58,
+          "sourcePath": "line:58"
+        },
+        "typography.display.fontSize": {
+          "line": 66,
+          "sourcePath": "line:66"
+        },
+        "typography.display.fontWeight": {
+          "line": 66,
+          "sourcePath": "line:66"
+        },
+        "typography.display.lineHeight": {
+          "line": 66,
+          "sourcePath": "line:66"
+        },
+        "typography.display.letterSpacing": {
+          "line": 66,
+          "sourcePath": "line:66"
+        },
+        "typography.heading": {
+          "line": 67,
+          "sourcePath": "line:67"
+        },
+        "typography.heading.fontFamily": {
+          "line": 58,
+          "sourcePath": "line:58"
+        },
+        "typography.heading.fontSize": {
+          "line": 67,
+          "sourcePath": "line:67"
+        },
+        "typography.heading.fontWeight": {
+          "line": 67,
+          "sourcePath": "line:67"
+        },
+        "typography.heading.lineHeight": {
+          "line": 67,
+          "sourcePath": "line:67"
+        },
+        "typography.heading.letterSpacing": {
+          "line": 67,
+          "sourcePath": "line:67"
+        },
+        "typography.body": {
+          "line": 71,
+          "sourcePath": "line:71"
+        },
+        "typography.body.fontFamily": {
+          "line": 58,
+          "sourcePath": "line:58"
+        },
+        "typography.body.fontSize": {
+          "line": 71,
+          "sourcePath": "line:71"
+        },
+        "typography.body.fontWeight": {
+          "line": 71,
+          "sourcePath": "line:71"
+        },
+        "typography.body.lineHeight": {
+          "line": 71,
+          "sourcePath": "line:71"
+        },
+        "typography.body.letterSpacing": {
+          "line": 71,
+          "sourcePath": "line:71"
+        },
+        "components.primary-button": {
+          "line": 94,
+          "sourcePath": "line:94"
+        },
+        "components.primary-button.backgroundColor": {
+          "line": 95,
+          "sourcePath": "line:95"
+        },
+        "components.primary-button.textColor": {
+          "line": 96,
+          "sourcePath": "line:96"
+        },
+        "components.primary-button.borderColor": {
+          "line": 97,
+          "sourcePath": "line:97"
+        },
+        "components.primary-button.borderWidth": {
+          "line": 97,
+          "sourcePath": "line:97"
+        },
+        "components.primary-button.borderStyle": {
+          "line": 97,
+          "sourcePath": "line:97"
+        },
+        "components.primary-button.rounded": {
+          "line": 98,
+          "sourcePath": "line:98"
+        },
+        "components.primary-button.padding": {
+          "line": 99,
+          "sourcePath": "line:99"
+        },
+        "components.primary-button.fontSize": {
+          "line": 100,
+          "sourcePath": "line:100"
+        },
+        "components.primary-button.fontWeight": {
+          "line": 100,
+          "sourcePath": "line:100"
+        },
+        "components.primary-button.letterSpacing": {
+          "line": 100,
+          "sourcePath": "line:100"
+        },
+        "rounded.primary-button-radius": {
+          "line": 98,
+          "sourcePath": "line:98"
+        },
+        "spacing.primary-button-padding": {
+          "line": 99,
+          "sourcePath": "line:99"
+        },
+        "components.outlined-button": {
+          "line": 105,
+          "sourcePath": "line:105"
+        },
+        "components.outlined-button.backgroundColor": {
+          "line": 106,
+          "sourcePath": "line:106"
+        },
+        "components.outlined-button.textColor": {
+          "line": 107,
+          "sourcePath": "line:107"
+        },
+        "components.outlined-button.borderColor": {
+          "line": 108,
+          "sourcePath": "line:108"
+        },
+        "components.outlined-button.borderWidth": {
+          "line": 108,
+          "sourcePath": "line:108"
+        },
+        "components.outlined-button.borderStyle": {
+          "line": 108,
+          "sourcePath": "line:108"
+        },
+        "components.outlined-button.rounded": {
+          "line": 109,
+          "sourcePath": "line:109"
+        },
+        "components.outlined-button.padding": {
+          "line": 110,
+          "sourcePath": "line:110"
+        },
+        "components.outlined-button.fontWeight": {
+          "line": 111,
+          "sourcePath": "line:111"
+        },
+        "components.outlined-button.lineHeight": {
+          "line": 111,
+          "sourcePath": "line:111"
+        },
+        "rounded.outlined-button-radius": {
+          "line": 109,
+          "sourcePath": "line:109"
+        },
+        "spacing.outlined-button-padding": {
+          "line": 110,
+          "sourcePath": "line:110"
+        },
+        "components.consent-button": {
+          "line": 116,
+          "sourcePath": "line:116"
+        },
+        "components.consent-button.backgroundColor": {
+          "line": 117,
+          "sourcePath": "line:117"
+        },
+        "components.consent-button.textColor": {
+          "line": 118,
+          "sourcePath": "line:118"
+        },
+        "components.consent-button.borderWidth": {
+          "line": 119,
+          "sourcePath": "line:119"
+        },
+        "components.consent-button.rounded": {
+          "line": 120,
+          "sourcePath": "line:120"
+        },
+        "components.consent-button.padding": {
+          "line": 121,
+          "sourcePath": "line:121"
+        },
+        "components.consent-button.fontSize": {
+          "line": 122,
+          "sourcePath": "line:122"
+        },
+        "components.consent-button.fontWeight": {
+          "line": 122,
+          "sourcePath": "line:122"
+        },
+        "components.consent-button.letterSpacing": {
+          "line": 122,
+          "sourcePath": "line:122"
+        },
+        "rounded.consent-button-radius": {
+          "line": 120,
+          "sourcePath": "line:120"
+        },
+        "spacing.consent-button-padding": {
+          "line": 121,
+          "sourcePath": "line:121"
+        },
+        "components.satellite-control": {
+          "line": 126,
+          "sourcePath": "line:126"
+        },
+        "components.satellite-control.backgroundColor": {
+          "line": 127,
+          "sourcePath": "line:127"
+        },
+        "components.satellite-control.borderStyle": {
+          "line": 129,
+          "sourcePath": "line:129"
+        },
+        "components.satellite-control.rounded": {
+          "line": 130,
+          "sourcePath": "line:130"
+        },
+        "rounded.satellite-control-radius": {
+          "line": 130,
+          "sourcePath": "line:130"
+        },
+        "components.footer-selector": {
+          "line": 182,
+          "sourcePath": "line:182"
+        },
+        "components.footer-selector.backgroundColor": {
+          "line": 183,
+          "sourcePath": "line:183"
+        },
+        "components.footer-selector.textColor": {
+          "line": 184,
+          "sourcePath": "line:184"
+        },
+        "components.footer-selector.borderColor": {
+          "line": 185,
+          "sourcePath": "line:185"
+        },
+        "components.footer-selector.borderWidth": {
+          "line": 185,
+          "sourcePath": "line:185"
+        },
+        "components.footer-selector.borderStyle": {
+          "line": 185,
+          "sourcePath": "line:185"
+        },
+        "components.footer-selector.rounded": {
+          "line": 186,
+          "sourcePath": "line:186"
+        },
+        "rounded.footer-selector-radius": {
+          "line": 186,
+          "sourcePath": "line:186"
+        }
+      }
+    },
+    "runwayml": {
+      "sourceSha256": "b0e69bf643f89bb57ac0b82a3bf025e59ff1478c244cb0528ad1e38b3f80dac9",
+      "note": "Manual partial normalization of independent, unverified source analysis. Exact selected literals only; ranges, estimates, ambiguous alternatives, motion, assets, logos and unsupported effects are not normalized. Font-family names record source claims only; no fonts are installed or fetched. Component-specific radii and padding are named by role, not inferred as a universal scale. Missing properties remain unspecified. Runway recipes are intentionally partial: likely/alternative backgrounds, 4\u20138px radii, 400\u2013600 weights, 48\u201378px section spacing and 16\u201324px gaps are not exact tokens. The explicitly stated 8px spacing base is retained.",
+      "analysis": {
+        "colors": {
+          "canvas": "#000000",
+          "surface": "#1a1a1a",
+          "text": "#ffffff",
+          "light-surface": "#e9ecf2",
+          "border": "#27272a",
+          "muted": "#767d88"
+        },
+        "typography": {
+          "display": {
+            "fontFamily": "\"abcNormal\"",
+            "fontSize": "48px",
+            "fontWeight": 400,
+            "lineHeight": 1,
+            "letterSpacing": "-1.2px"
+          },
+          "heading": {
+            "fontFamily": "\"abcNormal\"",
+            "fontSize": "36px",
+            "fontWeight": 400,
+            "lineHeight": 1,
+            "letterSpacing": "-0.9px"
+          },
+          "card-title": {
+            "fontFamily": "\"abcNormal\"",
+            "fontSize": "24px",
+            "fontWeight": 400,
+            "lineHeight": 1,
+            "letterSpacing": "normal"
+          }
+        },
+        "rounded": {
+          "button-link-radius": "4px"
+        },
+        "spacing": {
+          "base": "8px"
+        },
+        "components": {
+          "button-link": {
+            "fontSize": "14px",
+            "fontWeight": 600,
+            "rounded": "4px"
+          },
+          "dark-container": {
+            "borderColor": "#27272a",
+            "borderWidth": "1px",
+            "borderStyle": "solid"
+          },
+          "hero-heading": {
+            "fontSize": "48px",
+            "textColor": "white"
+          },
+          "navigation": {
+            "backgroundColor": "transparent",
+            "fontSize": "16px"
+          }
+        }
+      },
+      "evidence": {
+        "colors.canvas": {
+          "line": 24,
+          "sourcePath": "line:24"
+        },
+        "colors.surface": {
+          "line": 26,
+          "sourcePath": "line:26"
+        },
+        "colors.text": {
+          "line": 27,
+          "sourcePath": "line:27"
+        },
+        "colors.light-surface": {
+          "line": 31,
+          "sourcePath": "line:31"
+        },
+        "colors.border": {
+          "line": 32,
+          "sourcePath": "line:32"
+        },
+        "colors.muted": {
+          "line": 37,
+          "sourcePath": "line:37"
+        },
+        "typography.display": {
+          "line": 60,
+          "sourcePath": "line:60"
+        },
+        "typography.display.fontFamily": {
+          "line": 60,
+          "sourcePath": "line:60"
+        },
+        "typography.display.fontSize": {
+          "line": 60,
+          "sourcePath": "line:60"
+        },
+        "typography.display.fontWeight": {
+          "line": 60,
+          "sourcePath": "line:60"
+        },
+        "typography.display.lineHeight": {
+          "line": 60,
+          "sourcePath": "line:60"
+        },
+        "typography.display.letterSpacing": {
+          "line": 60,
+          "sourcePath": "line:60"
+        },
+        "typography.heading": {
+          "line": 62,
+          "sourcePath": "line:62"
+        },
+        "typography.heading.fontFamily": {
+          "line": 62,
+          "sourcePath": "line:62"
+        },
+        "typography.heading.fontSize": {
+          "line": 62,
+          "sourcePath": "line:62"
+        },
+        "typography.heading.fontWeight": {
+          "line": 62,
+          "sourcePath": "line:62"
+        },
+        "typography.heading.lineHeight": {
+          "line": 62,
+          "sourcePath": "line:62"
+        },
+        "typography.heading.letterSpacing": {
+          "line": 62,
+          "sourcePath": "line:62"
+        },
+        "typography.card-title": {
+          "line": 63,
+          "sourcePath": "line:63"
+        },
+        "typography.card-title.fontFamily": {
+          "line": 63,
+          "sourcePath": "line:63"
+        },
+        "typography.card-title.fontSize": {
+          "line": 63,
+          "sourcePath": "line:63"
+        },
+        "typography.card-title.fontWeight": {
+          "line": 63,
+          "sourcePath": "line:63"
+        },
+        "typography.card-title.lineHeight": {
+          "line": 63,
+          "sourcePath": "line:63"
+        },
+        "typography.card-title.letterSpacing": {
+          "line": 63,
+          "sourcePath": "line:63"
+        },
+        "components.button-link": {
+          "line": 79,
+          "sourcePath": "line:79"
+        },
+        "components.button-link.fontSize": {
+          "line": 80,
+          "sourcePath": "line:80"
+        },
+        "components.button-link.fontWeight": {
+          "line": 80,
+          "sourcePath": "line:80"
+        },
+        "components.button-link.rounded": {
+          "line": 82,
+          "sourcePath": "line:82"
+        },
+        "rounded.button-link-radius": {
+          "line": 82,
+          "sourcePath": "line:82"
+        },
+        "components.dark-container": {
+          "line": 86,
+          "sourcePath": "line:86"
+        },
+        "components.dark-container.borderColor": {
+          "line": 88,
+          "sourcePath": "line:88"
+        },
+        "components.dark-container.borderWidth": {
+          "line": 88,
+          "sourcePath": "line:88"
+        },
+        "components.dark-container.borderStyle": {
+          "line": 88,
+          "sourcePath": "line:88"
+        },
+        "components.hero-heading": {
+          "line": 109,
+          "sourcePath": "line:109"
+        },
+        "components.hero-heading.fontSize": {
+          "line": 111,
+          "sourcePath": "line:111"
+        },
+        "components.hero-heading.textColor": {
+          "line": 111,
+          "sourcePath": "line:111"
+        },
+        "components.navigation": {
+          "line": 93,
+          "sourcePath": "line:93"
+        },
+        "components.navigation.backgroundColor": {
+          "line": 94,
+          "sourcePath": "line:94"
+        },
+        "components.navigation.fontSize": {
+          "line": 96,
+          "sourcePath": "line:96"
+        },
+        "spacing.base": {
+          "line": 132,
+          "sourcePath": "line:132"
+        }
+      }
+    },
+    "sanity": {
+      "sourceSha256": "ea1c442de2b23443f79af46524a81f33951606c8ff043ea9c25ba886264fbdd8",
+      "note": "Manual partial normalization of independent, unverified source analysis. Exact selected literals only; ranges, estimates, ambiguous alternatives, motion, assets, logos and unsupported effects are not normalized. Font-family names record source claims only; no fonts are installed or fetched. Component-specific radii and padding are named by role, not inferred as a universal scale. Missing properties remain unspecified.",
+      "analysis": {
+        "colors": {
+          "canvas": "#0b0b0b",
+          "primary": "#f36458",
+          "interactive": "#0052ef",
+          "surface": "#212121",
+          "border": "#353535",
+          "text": "#ffffff",
+          "muted": "#b9b9b9"
+        },
+        "typography": {
+          "display": {
+            "fontFamily": "\"waldenburgNormal\"",
+            "fontSize": "112px",
+            "fontWeight": 400,
+            "lineHeight": 1,
+            "letterSpacing": "-4.48px"
+          },
+          "heading": {
+            "fontFamily": "\"waldenburgNormal\"",
+            "fontSize": "48px",
+            "fontWeight": 400,
+            "lineHeight": 1.08,
+            "letterSpacing": "-1.68px"
+          },
+          "body": {
+            "fontFamily": "\"waldenburgNormal\"",
+            "fontSize": "16px",
+            "fontWeight": 400,
+            "lineHeight": 1.5,
+            "letterSpacing": "normal"
+          }
+        },
+        "rounded": {
+          "primary-button-radius": "99999px",
+          "secondary-button-radius": "99999px",
+          "outlined-button-radius": "99999px",
+          "subtle-button-radius": "5px",
+          "text-input-radius": "3px"
+        },
+        "spacing": {
+          "primary-button-padding": "8px 16px",
+          "secondary-button-padding": "8px 12px",
+          "outlined-button-padding": "8px",
+          "subtle-button-padding": "0px 12px",
+          "text-input-padding": "8px 12px"
+        },
+        "components": {
+          "primary-button": {
+            "backgroundColor": "#f36458",
+            "textColor": "#ffffff",
+            "padding": "8px 16px",
+            "rounded": "99999px",
+            "borderStyle": "none",
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "secondary-button": {
+            "backgroundColor": "#0b0b0b",
+            "textColor": "#b9b9b9",
+            "padding": "8px 12px",
+            "rounded": "99999px",
+            "borderStyle": "none"
+          },
+          "outlined-button": {
+            "backgroundColor": "#ffffff",
+            "textColor": "#0b0b0b",
+            "padding": "8px",
+            "rounded": "99999px",
+            "borderColor": "#0b0b0b",
+            "borderWidth": "1px",
+            "borderStyle": "solid"
+          },
+          "subtle-button": {
+            "backgroundColor": "#212121",
+            "textColor": "#b9b9b9",
+            "padding": "0px 12px",
+            "rounded": "5px",
+            "borderColor": "#212121",
+            "borderWidth": "1px",
+            "borderStyle": "solid"
+          },
+          "text-input": {
+            "backgroundColor": "#0b0b0b",
+            "textColor": "#b9b9b9",
+            "borderColor": "#212121",
+            "borderWidth": "1px",
+            "borderStyle": "solid",
+            "padding": "8px 12px",
+            "rounded": "3px"
+          }
+        }
+      },
+      "evidence": {
+        "colors.canvas": {
+          "line": 24,
+          "sourcePath": "line:24"
+        },
+        "colors.primary": {
+          "line": 26,
+          "sourcePath": "line:26"
+        },
+        "colors.interactive": {
+          "line": 29,
+          "sourcePath": "line:29"
+        },
+        "colors.surface": {
+          "line": 36,
+          "sourcePath": "line:36"
+        },
+        "colors.border": {
+          "line": 37,
+          "sourcePath": "line:37"
+        },
+        "colors.text": {
+          "line": 42,
+          "sourcePath": "line:42"
+        },
+        "colors.muted": {
+          "line": 43,
+          "sourcePath": "line:43"
+        },
+        "typography.display": {
+          "line": 74,
+          "sourcePath": "line:74"
+        },
+        "typography.display.fontFamily": {
+          "line": 74,
+          "sourcePath": "line:74"
+        },
+        "typography.display.fontSize": {
+          "line": 74,
+          "sourcePath": "line:74"
+        },
+        "typography.display.fontWeight": {
+          "line": 74,
+          "sourcePath": "line:74"
+        },
+        "typography.display.lineHeight": {
+          "line": 74,
+          "sourcePath": "line:74"
+        },
+        "typography.display.letterSpacing": {
+          "line": 74,
+          "sourcePath": "line:74"
+        },
+        "typography.heading": {
+          "line": 76,
+          "sourcePath": "line:76"
+        },
+        "typography.heading.fontFamily": {
+          "line": 76,
+          "sourcePath": "line:76"
+        },
+        "typography.heading.fontSize": {
+          "line": 76,
+          "sourcePath": "line:76"
+        },
+        "typography.heading.fontWeight": {
+          "line": 76,
+          "sourcePath": "line:76"
+        },
+        "typography.heading.lineHeight": {
+          "line": 76,
+          "sourcePath": "line:76"
+        },
+        "typography.heading.letterSpacing": {
+          "line": 76,
+          "sourcePath": "line:76"
+        },
+        "typography.body": {
+          "line": 82,
+          "sourcePath": "line:82"
+        },
+        "typography.body.fontFamily": {
+          "line": 82,
+          "sourcePath": "line:82"
+        },
+        "typography.body.fontSize": {
+          "line": 82,
+          "sourcePath": "line:82"
+        },
+        "typography.body.fontWeight": {
+          "line": 82,
+          "sourcePath": "line:82"
+        },
+        "typography.body.lineHeight": {
+          "line": 82,
+          "sourcePath": "line:82"
+        },
+        "typography.body.letterSpacing": {
+          "line": 82,
+          "sourcePath": "line:82"
+        },
+        "components.primary-button": {
+          "line": 102,
+          "sourcePath": "line:102"
+        },
+        "components.primary-button.backgroundColor": {
+          "line": 103,
+          "sourcePath": "line:103"
+        },
+        "components.primary-button.textColor": {
+          "line": 104,
+          "sourcePath": "line:104"
+        },
+        "components.primary-button.padding": {
+          "line": 105,
+          "sourcePath": "line:105"
+        },
+        "components.primary-button.rounded": {
+          "line": 106,
+          "sourcePath": "line:106"
+        },
+        "components.primary-button.borderStyle": {
+          "line": 107,
+          "sourcePath": "line:107"
+        },
+        "components.primary-button.fontSize": {
+          "line": 109,
+          "sourcePath": "line:109"
+        },
+        "components.primary-button.fontWeight": {
+          "line": 109,
+          "sourcePath": "line:109"
+        },
+        "rounded.primary-button-radius": {
+          "line": 106,
+          "sourcePath": "line:106"
+        },
+        "spacing.primary-button-padding": {
+          "line": 105,
+          "sourcePath": "line:105"
+        },
+        "components.secondary-button": {
+          "line": 111,
+          "sourcePath": "line:111"
+        },
+        "components.secondary-button.backgroundColor": {
+          "line": 112,
+          "sourcePath": "line:112"
+        },
+        "components.secondary-button.textColor": {
+          "line": 113,
+          "sourcePath": "line:113"
+        },
+        "components.secondary-button.padding": {
+          "line": 114,
+          "sourcePath": "line:114"
+        },
+        "components.secondary-button.rounded": {
+          "line": 115,
+          "sourcePath": "line:115"
+        },
+        "components.secondary-button.borderStyle": {
+          "line": 116,
+          "sourcePath": "line:116"
+        },
+        "rounded.secondary-button-radius": {
+          "line": 115,
+          "sourcePath": "line:115"
+        },
+        "spacing.secondary-button-padding": {
+          "line": 114,
+          "sourcePath": "line:114"
+        },
+        "components.outlined-button": {
+          "line": 119,
+          "sourcePath": "line:119"
+        },
+        "components.outlined-button.backgroundColor": {
+          "line": 120,
+          "sourcePath": "line:120"
+        },
+        "components.outlined-button.textColor": {
+          "line": 121,
+          "sourcePath": "line:121"
+        },
+        "components.outlined-button.padding": {
+          "line": 122,
+          "sourcePath": "line:122"
+        },
+        "components.outlined-button.rounded": {
+          "line": 123,
+          "sourcePath": "line:123"
+        },
+        "components.outlined-button.borderColor": {
+          "line": 124,
+          "sourcePath": "line:124"
+        },
+        "components.outlined-button.borderWidth": {
+          "line": 124,
+          "sourcePath": "line:124"
+        },
+        "components.outlined-button.borderStyle": {
+          "line": 124,
+          "sourcePath": "line:124"
+        },
+        "rounded.outlined-button-radius": {
+          "line": 123,
+          "sourcePath": "line:123"
+        },
+        "spacing.outlined-button-padding": {
+          "line": 122,
+          "sourcePath": "line:122"
+        },
+        "components.subtle-button": {
+          "line": 127,
+          "sourcePath": "line:127"
+        },
+        "components.subtle-button.backgroundColor": {
+          "line": 128,
+          "sourcePath": "line:128"
+        },
+        "components.subtle-button.textColor": {
+          "line": 129,
+          "sourcePath": "line:129"
+        },
+        "components.subtle-button.padding": {
+          "line": 130,
+          "sourcePath": "line:130"
+        },
+        "components.subtle-button.rounded": {
+          "line": 131,
+          "sourcePath": "line:131"
+        },
+        "components.subtle-button.borderColor": {
+          "line": 132,
+          "sourcePath": "line:132"
+        },
+        "components.subtle-button.borderWidth": {
+          "line": 132,
+          "sourcePath": "line:132"
+        },
+        "components.subtle-button.borderStyle": {
+          "line": 132,
+          "sourcePath": "line:132"
+        },
+        "rounded.subtle-button-radius": {
+          "line": 131,
+          "sourcePath": "line:131"
+        },
+        "spacing.subtle-button-padding": {
+          "line": 130,
+          "sourcePath": "line:130"
+        },
+        "components.text-input": {
+          "line": 161,
+          "sourcePath": "line:161"
+        },
+        "components.text-input.backgroundColor": {
+          "line": 162,
+          "sourcePath": "line:162"
+        },
+        "components.text-input.textColor": {
+          "line": 163,
+          "sourcePath": "line:163"
+        },
+        "components.text-input.borderColor": {
+          "line": 164,
+          "sourcePath": "line:164"
+        },
+        "components.text-input.borderWidth": {
+          "line": 164,
+          "sourcePath": "line:164"
+        },
+        "components.text-input.borderStyle": {
+          "line": 164,
+          "sourcePath": "line:164"
+        },
+        "components.text-input.padding": {
+          "line": 165,
+          "sourcePath": "line:165"
+        },
+        "components.text-input.rounded": {
+          "line": 166,
+          "sourcePath": "line:166"
+        },
+        "rounded.text-input-radius": {
+          "line": 166,
+          "sourcePath": "line:166"
+        },
+        "spacing.text-input-padding": {
+          "line": 165,
+          "sourcePath": "line:165"
+        }
+      }
+    },
+    "spotify": {
+      "sourceSha256": "72e964a6cf551d0603f9854f2f42ee08e97ad4d9e17e037f50f6233508288295",
+      "note": "Manual partial normalization of independent, unverified source analysis. Exact selected literals only; ranges, estimates, ambiguous alternatives, motion, assets, logos and unsupported effects are not normalized. Font-family names record source claims only; no fonts are installed or fetched. Component-specific radii and padding are named by role, not inferred as a universal scale. Missing properties remain unspecified.",
+      "analysis": {
+        "colors": {
+          "primary": "#1ed760",
+          "canvas": "#121212",
+          "surface": "#181818",
+          "interactive-surface": "#1f1f1f",
+          "text": "#ffffff",
+          "muted": "#b3b3b3",
+          "border": "#7c7c7c"
+        },
+        "typography": {
+          "heading": {
+            "fontFamily": "\"SpotifyMixUITitle\"",
+            "fontSize": "24px",
+            "fontWeight": 700,
+            "lineHeight": "normal",
+            "letterSpacing": "normal"
+          },
+          "body": {
+            "fontFamily": "\"SpotifyMixUI\"",
+            "fontSize": "16px",
+            "fontWeight": 400,
+            "lineHeight": "normal",
+            "letterSpacing": "normal"
+          },
+          "button": {
+            "fontFamily": "\"SpotifyMixUI\"",
+            "fontSize": "14px",
+            "fontWeight": 700,
+            "lineHeight": "normal",
+            "letterSpacing": "0.14px"
+          }
+        },
+        "rounded": {
+          "dark-large-button-radius": "500px",
+          "light-button-radius": "500px",
+          "outlined-button-radius": "9999px",
+          "circular-control-radius": "50%",
+          "search-input-radius": "500px"
+        },
+        "spacing": {
+          "dark-large-button-padding": "0px 43px",
+          "outlined-button-padding": "4px 16px 4px 36px",
+          "circular-control-padding": "12px",
+          "search-input-padding": "12px 96px 12px 48px"
+        },
+        "components": {
+          "dark-large-button": {
+            "backgroundColor": "#181818",
+            "textColor": "#ffffff",
+            "padding": "0px 43px",
+            "rounded": "500px"
+          },
+          "light-button": {
+            "backgroundColor": "#eeeeee",
+            "textColor": "#181818",
+            "rounded": "500px"
+          },
+          "outlined-button": {
+            "backgroundColor": "transparent",
+            "textColor": "#ffffff",
+            "borderColor": "#7c7c7c",
+            "borderWidth": "1px",
+            "borderStyle": "solid",
+            "padding": "4px 16px 4px 36px",
+            "rounded": "9999px"
+          },
+          "circular-control": {
+            "backgroundColor": "#1f1f1f",
+            "textColor": "#ffffff",
+            "padding": "12px",
+            "rounded": "50%"
+          },
+          "search-input": {
+            "backgroundColor": "#1f1f1f",
+            "textColor": "#ffffff",
+            "rounded": "500px",
+            "padding": "12px 96px 12px 48px"
+          }
+        }
+      },
+      "evidence": {
+        "colors.primary": {
+          "line": 24,
+          "sourcePath": "line:24"
+        },
+        "colors.canvas": {
+          "line": 25,
+          "sourcePath": "line:25"
+        },
+        "colors.surface": {
+          "line": 26,
+          "sourcePath": "line:26"
+        },
+        "colors.interactive-surface": {
+          "line": 27,
+          "sourcePath": "line:27"
+        },
+        "colors.text": {
+          "line": 30,
+          "sourcePath": "line:30"
+        },
+        "colors.muted": {
+          "line": 31,
+          "sourcePath": "line:31"
+        },
+        "colors.border": {
+          "line": 44,
+          "sourcePath": "line:44"
+        },
+        "typography.heading": {
+          "line": 64,
+          "sourcePath": "line:64"
+        },
+        "typography.heading.fontFamily": {
+          "line": 64,
+          "sourcePath": "line:64"
+        },
+        "typography.heading.fontSize": {
+          "line": 64,
+          "sourcePath": "line:64"
+        },
+        "typography.heading.fontWeight": {
+          "line": 64,
+          "sourcePath": "line:64"
+        },
+        "typography.heading.lineHeight": {
+          "line": 64,
+          "sourcePath": "line:64"
+        },
+        "typography.heading.letterSpacing": {
+          "line": 64,
+          "sourcePath": "line:64"
+        },
+        "typography.body": {
+          "line": 67,
+          "sourcePath": "line:67"
+        },
+        "typography.body.fontFamily": {
+          "line": 67,
+          "sourcePath": "line:67"
+        },
+        "typography.body.fontSize": {
+          "line": 67,
+          "sourcePath": "line:67"
+        },
+        "typography.body.fontWeight": {
+          "line": 67,
+          "sourcePath": "line:67"
+        },
+        "typography.body.lineHeight": {
+          "line": 67,
+          "sourcePath": "line:67"
+        },
+        "typography.body.letterSpacing": {
+          "line": 67,
+          "sourcePath": "line:67"
+        },
+        "typography.button": {
+          "line": 69,
+          "sourcePath": "line:69"
+        },
+        "typography.button.fontFamily": {
+          "line": 69,
+          "sourcePath": "line:69"
+        },
+        "typography.button.fontSize": {
+          "line": 69,
+          "sourcePath": "line:69"
+        },
+        "typography.button.fontWeight": {
+          "line": 69,
+          "sourcePath": "line:69"
+        },
+        "typography.button.lineHeight": {
+          "line": 69,
+          "sourcePath": "line:69"
+        },
+        "typography.button.letterSpacing": {
+          "line": 69,
+          "sourcePath": "line:69"
+        },
+        "components.dark-large-button": {
+          "line": 96,
+          "sourcePath": "line:96"
+        },
+        "components.dark-large-button.backgroundColor": {
+          "line": 97,
+          "sourcePath": "line:97"
+        },
+        "components.dark-large-button.textColor": {
+          "line": 98,
+          "sourcePath": "line:98"
+        },
+        "components.dark-large-button.padding": {
+          "line": 99,
+          "sourcePath": "line:99"
+        },
+        "components.dark-large-button.rounded": {
+          "line": 100,
+          "sourcePath": "line:100"
+        },
+        "rounded.dark-large-button-radius": {
+          "line": 100,
+          "sourcePath": "line:100"
+        },
+        "spacing.dark-large-button-padding": {
+          "line": 99,
+          "sourcePath": "line:99"
+        },
+        "components.light-button": {
+          "line": 103,
+          "sourcePath": "line:103"
+        },
+        "components.light-button.backgroundColor": {
+          "line": 104,
+          "sourcePath": "line:104"
+        },
+        "components.light-button.textColor": {
+          "line": 105,
+          "sourcePath": "line:105"
+        },
+        "components.light-button.rounded": {
+          "line": 106,
+          "sourcePath": "line:106"
+        },
+        "rounded.light-button-radius": {
+          "line": 106,
+          "sourcePath": "line:106"
+        },
+        "components.outlined-button": {
+          "line": 109,
+          "sourcePath": "line:109"
+        },
+        "components.outlined-button.backgroundColor": {
+          "line": 110,
+          "sourcePath": "line:110"
+        },
+        "components.outlined-button.textColor": {
+          "line": 111,
+          "sourcePath": "line:111"
+        },
+        "components.outlined-button.borderColor": {
+          "line": 112,
+          "sourcePath": "line:112"
+        },
+        "components.outlined-button.borderWidth": {
+          "line": 112,
+          "sourcePath": "line:112"
+        },
+        "components.outlined-button.borderStyle": {
+          "line": 112,
+          "sourcePath": "line:112"
+        },
+        "components.outlined-button.padding": {
+          "line": 113,
+          "sourcePath": "line:113"
+        },
+        "components.outlined-button.rounded": {
+          "line": 114,
+          "sourcePath": "line:114"
+        },
+        "rounded.outlined-button-radius": {
+          "line": 114,
+          "sourcePath": "line:114"
+        },
+        "spacing.outlined-button-padding": {
+          "line": 113,
+          "sourcePath": "line:113"
+        },
+        "components.circular-control": {
+          "line": 117,
+          "sourcePath": "line:117"
+        },
+        "components.circular-control.backgroundColor": {
+          "line": 118,
+          "sourcePath": "line:118"
+        },
+        "components.circular-control.textColor": {
+          "line": 119,
+          "sourcePath": "line:119"
+        },
+        "components.circular-control.padding": {
+          "line": 120,
+          "sourcePath": "line:120"
+        },
+        "components.circular-control.rounded": {
+          "line": 121,
+          "sourcePath": "line:121"
+        },
+        "rounded.circular-control-radius": {
+          "line": 121,
+          "sourcePath": "line:121"
+        },
+        "spacing.circular-control-padding": {
+          "line": 120,
+          "sourcePath": "line:120"
+        },
+        "components.search-input": {
+          "line": 131,
+          "sourcePath": "line:131"
+        },
+        "components.search-input.backgroundColor": {
+          "line": 132,
+          "sourcePath": "line:132"
+        },
+        "components.search-input.textColor": {
+          "line": 132,
+          "sourcePath": "line:132"
+        },
+        "components.search-input.rounded": {
+          "line": 133,
+          "sourcePath": "line:133"
+        },
+        "components.search-input.padding": {
+          "line": 134,
+          "sourcePath": "line:134"
+        },
+        "rounded.search-input-radius": {
+          "line": 133,
+          "sourcePath": "line:133"
+        },
+        "spacing.search-input-padding": {
+          "line": 134,
+          "sourcePath": "line:134"
+        }
+      }
+    },
+    "starbucks": {
+      "sourceSha256": "e20338ee10226c63cf2588207288c08e12d60754a53f681657adaf364dfe8fa7",
+      "note": "Manual partial normalization of independent, unverified source analysis. Exact selected literals only; ranges, estimates, ambiguous alternatives, motion, assets, logos and unsupported effects are not normalized. Font-family names record source claims only; no fonts are installed or fetched. Component-specific radii and padding are named by role, not inferred as a universal scale. Missing properties remain unspecified. Body uses the explicitly supplied 16px equivalent instead of assuming the source 10px rem root in this workbench.",
+      "analysis": {
+        "colors": {
+          "brand": "#006241",
+          "primary": "#00754A",
+          "dark-surface": "#1E3932",
+          "reward": "#cba258",
+          "surface": "#ffffff",
+          "canvas": "#f2f0eb",
+          "text": "rgba(0, 0, 0, 0.87)",
+          "muted": "rgba(0, 0, 0, 0.58)"
+        },
+        "typography": {
+          "heading": {
+            "fontFamily": "\"SoDoSans\"",
+            "fontSize": "24px",
+            "fontWeight": 600,
+            "lineHeight": "36px",
+            "letterSpacing": "-0.16px"
+          },
+          "section": {
+            "fontFamily": "\"SoDoSans\"",
+            "fontSize": "24px",
+            "fontWeight": 400,
+            "lineHeight": "36px",
+            "letterSpacing": "-0.16px"
+          },
+          "body": {
+            "fontFamily": "\"SoDoSans\"",
+            "fontSize": "16px",
+            "fontWeight": 400,
+            "lineHeight": 1.5,
+            "letterSpacing": "-0.01em"
+          }
+        },
+        "rounded": {
+          "primary-button-radius": "50px",
+          "black-button-radius": "50px",
+          "dark-outlined-button-radius": "50px",
+          "feedback-tab-radius": "12px 12px 0px 0px",
+          "reward-pill-radius": "50px"
+        },
+        "spacing": {
+          "primary-button-padding": "7px 16px",
+          "black-button-padding": "7px 16px",
+          "dark-outlined-button-padding": "7px 16px",
+          "feedback-tab-padding": "8px 16px",
+          "reward-pill-padding": "4px 12px"
+        },
+        "components": {
+          "primary-button": {
+            "backgroundColor": "#00754A",
+            "textColor": "#ffffff",
+            "borderColor": "#00754A",
+            "borderWidth": "1px",
+            "borderStyle": "solid",
+            "rounded": "50px",
+            "padding": "7px 16px",
+            "fontSize": "16px",
+            "fontWeight": 600,
+            "letterSpacing": "-0.01em"
+          },
+          "black-button": {
+            "backgroundColor": "#000000",
+            "textColor": "#ffffff",
+            "borderColor": "#000000",
+            "borderWidth": "1px",
+            "borderStyle": "solid",
+            "rounded": "50px",
+            "padding": "7px 16px",
+            "fontSize": "14px",
+            "fontWeight": 600
+          },
+          "dark-outlined-button": {
+            "backgroundColor": "transparent",
+            "textColor": "rgba(0,0,0,0.87)",
+            "borderColor": "rgba(0,0,0,0.87)",
+            "borderWidth": "1px",
+            "borderStyle": "solid",
+            "rounded": "50px",
+            "padding": "7px 16px",
+            "fontSize": "14px",
+            "fontWeight": 600
+          },
+          "feedback-tab": {
+            "backgroundColor": "#00754A",
+            "textColor": "#ffffff",
+            "rounded": "12px 12px 0px 0px",
+            "padding": "8px 16px",
+            "fontSize": "14px",
+            "fontWeight": 400
+          },
+          "reward-pill": {
+            "backgroundColor": "transparent",
+            "borderColor": "#cba258",
+            "borderWidth": "1px",
+            "borderStyle": "solid",
+            "textColor": "#cba258",
+            "rounded": "50px",
+            "padding": "4px 12px",
+            "fontSize": "13px",
+            "fontWeight": 700,
+            "letterSpacing": "0.5px"
+          }
+        }
+      },
+      "evidence": {
+        "colors.brand": {
+          "line": 31,
+          "sourcePath": "line:31"
+        },
+        "colors.primary": {
+          "line": 32,
+          "sourcePath": "line:32"
+        },
+        "colors.dark-surface": {
+          "line": 33,
+          "sourcePath": "line:33"
+        },
+        "colors.reward": {
+          "line": 39,
+          "sourcePath": "line:39"
+        },
+        "colors.surface": {
+          "line": 45,
+          "sourcePath": "line:45"
+        },
+        "colors.canvas": {
+          "line": 47,
+          "sourcePath": "line:47"
+        },
+        "colors.text": {
+          "line": 53,
+          "sourcePath": "line:53"
+        },
+        "colors.muted": {
+          "line": 54,
+          "sourcePath": "line:54"
+        },
+        "typography.heading": {
+          "line": 94,
+          "sourcePath": "line:94"
+        },
+        "typography.heading.fontFamily": {
+          "line": 80,
+          "sourcePath": "line:80"
+        },
+        "typography.heading.fontSize": {
+          "line": 94,
+          "sourcePath": "line:94"
+        },
+        "typography.heading.fontWeight": {
+          "line": 94,
+          "sourcePath": "line:94"
+        },
+        "typography.heading.lineHeight": {
+          "line": 94,
+          "sourcePath": "line:94"
+        },
+        "typography.heading.letterSpacing": {
+          "line": 94,
+          "sourcePath": "line:94"
+        },
+        "typography.section": {
+          "line": 95,
+          "sourcePath": "line:95"
+        },
+        "typography.section.fontFamily": {
+          "line": 80,
+          "sourcePath": "line:80"
+        },
+        "typography.section.fontSize": {
+          "line": 95,
+          "sourcePath": "line:95"
+        },
+        "typography.section.fontWeight": {
+          "line": 95,
+          "sourcePath": "line:95"
+        },
+        "typography.section.lineHeight": {
+          "line": 95,
+          "sourcePath": "line:95"
+        },
+        "typography.section.letterSpacing": {
+          "line": 95,
+          "sourcePath": "line:95"
+        },
+        "typography.body": {
+          "line": 97,
+          "sourcePath": "line:97"
+        },
+        "typography.body.fontFamily": {
+          "line": 80,
+          "sourcePath": "line:80"
+        },
+        "typography.body.fontSize": {
+          "line": 97,
+          "sourcePath": "line:97"
+        },
+        "typography.body.fontWeight": {
+          "line": 97,
+          "sourcePath": "line:97"
+        },
+        "typography.body.lineHeight": {
+          "line": 97,
+          "sourcePath": "line:97"
+        },
+        "typography.body.letterSpacing": {
+          "line": 97,
+          "sourcePath": "line:97"
+        },
+        "components.primary-button": {
+          "line": 134,
+          "sourcePath": "line:134"
+        },
+        "components.primary-button.backgroundColor": {
+          "line": 135,
+          "sourcePath": "line:135"
+        },
+        "components.primary-button.textColor": {
+          "line": 136,
+          "sourcePath": "line:136"
+        },
+        "components.primary-button.borderColor": {
+          "line": 137,
+          "sourcePath": "line:137"
+        },
+        "components.primary-button.borderWidth": {
+          "line": 137,
+          "sourcePath": "line:137"
+        },
+        "components.primary-button.borderStyle": {
+          "line": 137,
+          "sourcePath": "line:137"
+        },
+        "components.primary-button.rounded": {
+          "line": 138,
+          "sourcePath": "line:138"
+        },
+        "components.primary-button.padding": {
+          "line": 139,
+          "sourcePath": "line:139"
+        },
+        "components.primary-button.fontSize": {
+          "line": 140,
+          "sourcePath": "line:140"
+        },
+        "components.primary-button.fontWeight": {
+          "line": 140,
+          "sourcePath": "line:140"
+        },
+        "components.primary-button.letterSpacing": {
+          "line": 140,
+          "sourcePath": "line:140"
+        },
+        "rounded.primary-button-radius": {
+          "line": 138,
+          "sourcePath": "line:138"
+        },
+        "spacing.primary-button-padding": {
+          "line": 139,
+          "sourcePath": "line:139"
+        },
+        "components.black-button": {
+          "line": 150,
+          "sourcePath": "line:150"
+        },
+        "components.black-button.backgroundColor": {
+          "line": 151,
+          "sourcePath": "line:151"
+        },
+        "components.black-button.textColor": {
+          "line": 152,
+          "sourcePath": "line:152"
+        },
+        "components.black-button.borderColor": {
+          "line": 153,
+          "sourcePath": "line:153"
+        },
+        "components.black-button.borderWidth": {
+          "line": 153,
+          "sourcePath": "line:153"
+        },
+        "components.black-button.borderStyle": {
+          "line": 153,
+          "sourcePath": "line:153"
+        },
+        "components.black-button.rounded": {
+          "line": 154,
+          "sourcePath": "line:154"
+        },
+        "components.black-button.padding": {
+          "line": 154,
+          "sourcePath": "line:154"
+        },
+        "components.black-button.fontSize": {
+          "line": 155,
+          "sourcePath": "line:155"
+        },
+        "components.black-button.fontWeight": {
+          "line": 155,
+          "sourcePath": "line:155"
+        },
+        "rounded.black-button-radius": {
+          "line": 154,
+          "sourcePath": "line:154"
+        },
+        "spacing.black-button-padding": {
+          "line": 154,
+          "sourcePath": "line:154"
+        },
+        "components.dark-outlined-button": {
+          "line": 158,
+          "sourcePath": "line:158"
+        },
+        "components.dark-outlined-button.backgroundColor": {
+          "line": 159,
+          "sourcePath": "line:159"
+        },
+        "components.dark-outlined-button.textColor": {
+          "line": 160,
+          "sourcePath": "line:160"
+        },
+        "components.dark-outlined-button.borderColor": {
+          "line": 161,
+          "sourcePath": "line:161"
+        },
+        "components.dark-outlined-button.borderWidth": {
+          "line": 161,
+          "sourcePath": "line:161"
+        },
+        "components.dark-outlined-button.borderStyle": {
+          "line": 161,
+          "sourcePath": "line:161"
+        },
+        "components.dark-outlined-button.rounded": {
+          "line": 162,
+          "sourcePath": "line:162"
+        },
+        "components.dark-outlined-button.padding": {
+          "line": 162,
+          "sourcePath": "line:162"
+        },
+        "components.dark-outlined-button.fontSize": {
+          "line": 163,
+          "sourcePath": "line:163"
+        },
+        "components.dark-outlined-button.fontWeight": {
+          "line": 163,
+          "sourcePath": "line:163"
+        },
+        "rounded.dark-outlined-button-radius": {
+          "line": 162,
+          "sourcePath": "line:162"
+        },
+        "spacing.dark-outlined-button-padding": {
+          "line": 162,
+          "sourcePath": "line:162"
+        },
+        "components.feedback-tab": {
+          "line": 193,
+          "sourcePath": "line:193"
+        },
+        "components.feedback-tab.backgroundColor": {
+          "line": 194,
+          "sourcePath": "line:194"
+        },
+        "components.feedback-tab.textColor": {
+          "line": 195,
+          "sourcePath": "line:195"
+        },
+        "components.feedback-tab.rounded": {
+          "line": 196,
+          "sourcePath": "line:196"
+        },
+        "components.feedback-tab.padding": {
+          "line": 197,
+          "sourcePath": "line:197"
+        },
+        "components.feedback-tab.fontSize": {
+          "line": 198,
+          "sourcePath": "line:198"
+        },
+        "components.feedback-tab.fontWeight": {
+          "line": 198,
+          "sourcePath": "line:198"
+        },
+        "rounded.feedback-tab-radius": {
+          "line": 196,
+          "sourcePath": "line:196"
+        },
+        "spacing.feedback-tab-padding": {
+          "line": 197,
+          "sourcePath": "line:197"
+        },
+        "components.reward-pill": {
+          "line": 346,
+          "sourcePath": "line:346"
+        },
+        "components.reward-pill.backgroundColor": {
+          "line": 347,
+          "sourcePath": "line:347"
+        },
+        "components.reward-pill.borderColor": {
+          "line": 348,
+          "sourcePath": "line:348"
+        },
+        "components.reward-pill.borderWidth": {
+          "line": 348,
+          "sourcePath": "line:348"
+        },
+        "components.reward-pill.borderStyle": {
+          "line": 348,
+          "sourcePath": "line:348"
+        },
+        "components.reward-pill.textColor": {
+          "line": 349,
+          "sourcePath": "line:349"
+        },
+        "components.reward-pill.rounded": {
+          "line": 350,
+          "sourcePath": "line:350"
+        },
+        "components.reward-pill.padding": {
+          "line": 351,
+          "sourcePath": "line:351"
+        },
+        "components.reward-pill.fontSize": {
+          "line": 353,
+          "sourcePath": "line:353"
+        },
+        "components.reward-pill.fontWeight": {
+          "line": 353,
+          "sourcePath": "line:353"
+        },
+        "components.reward-pill.letterSpacing": {
+          "line": 353,
+          "sourcePath": "line:353"
+        },
+        "rounded.reward-pill-radius": {
+          "line": 350,
+          "sourcePath": "line:350"
+        },
+        "spacing.reward-pill-padding": {
+          "line": 351,
+          "sourcePath": "line:351"
+        }
+      }
+    },
+    "tesla": {
+      "sourceSha256": "19f2f7e6073d708f46d2512e6bab3c7c417cf2b4d9f57ff6ec6f2e056ea942b0",
+      "note": "Manual partial normalization of independent, unverified source analysis. Exact selected literals only; ranges, estimates, ambiguous alternatives, motion, assets, logos and unsupported effects are not normalized. Font-family names record source claims only; no fonts are installed or fetched. Component-specific radii and padding are named by role, not inferred as a universal scale. Missing properties remain unspecified. The approximately 12px category-card radius and estimated category typography are omitted; the secondary button retains only its directly stated colors.",
+      "analysis": {
+        "colors": {
+          "primary": "#3E6AE1",
+          "canvas": "#FFFFFF",
+          "surface": "#F4F4F4",
+          "ink": "#171A20",
+          "body": "#393C41",
+          "muted": "#5C5E62",
+          "border": "#EEEEEE"
+        },
+        "typography": {
+          "display": {
+            "fontFamily": "\"Universal Sans Display\"",
+            "fontSize": "40px",
+            "fontWeight": 500,
+            "lineHeight": "48px",
+            "letterSpacing": "normal"
+          },
+          "body": {
+            "fontFamily": "\"Universal Sans Text\"",
+            "fontSize": "14px",
+            "fontWeight": 400,
+            "lineHeight": "20px",
+            "letterSpacing": "normal"
+          },
+          "button": {
+            "fontFamily": "\"Universal Sans Text\"",
+            "fontSize": "14px",
+            "fontWeight": 500,
+            "lineHeight": "16.8px",
+            "letterSpacing": "normal"
+          }
+        },
+        "rounded": {
+          "primary-button-radius": "4px",
+          "navigation-button-radius": "4px"
+        },
+        "spacing": {
+          "primary-button-padding": "4px",
+          "navigation-button-padding": "4px 16px"
+        },
+        "components": {
+          "primary-button": {
+            "backgroundColor": "#3E6AE1",
+            "textColor": "#FFFFFF",
+            "fontSize": "14px",
+            "fontWeight": 500,
+            "padding": "4px",
+            "rounded": "4px",
+            "minHeight": "40px",
+            "width": "200px",
+            "borderColor": "transparent",
+            "borderWidth": "3px",
+            "borderStyle": "solid"
+          },
+          "secondary-button": {
+            "backgroundColor": "#FFFFFF",
+            "textColor": "#393C41"
+          },
+          "navigation-button": {
+            "backgroundColor": "transparent",
+            "textColor": "#171A20",
+            "fontSize": "14px",
+            "fontWeight": 500,
+            "rounded": "4px",
+            "padding": "4px 16px",
+            "minHeight": "32px"
+          },
+          "text-link": {
+            "textColor": "#5C5E62",
+            "fontSize": "14px",
+            "fontWeight": 400,
+            "backgroundColor": "transparent",
+            "borderStyle": "none"
+          },
+          "text-input": {
+            "backgroundColor": "transparent",
+            "textColor": "#171A20",
+            "fontSize": "14px"
+          }
+        }
+      },
+      "evidence": {
+        "colors.primary": {
+          "line": 25,
+          "sourcePath": "line:25"
+        },
+        "colors.canvas": {
+          "line": 26,
+          "sourcePath": "line:26"
+        },
+        "colors.surface": {
+          "line": 34,
+          "sourcePath": "line:34"
+        },
+        "colors.ink": {
+          "line": 39,
+          "sourcePath": "line:39"
+        },
+        "colors.body": {
+          "line": 40,
+          "sourcePath": "line:40"
+        },
+        "colors.muted": {
+          "line": 41,
+          "sourcePath": "line:41"
+        },
+        "colors.border": {
+          "line": 43,
+          "sourcePath": "line:43"
+        },
+        "typography.display": {
+          "line": 67,
+          "sourcePath": "line:67"
+        },
+        "typography.display.fontFamily": {
+          "line": 67,
+          "sourcePath": "line:67"
+        },
+        "typography.display.fontSize": {
+          "line": 67,
+          "sourcePath": "line:67"
+        },
+        "typography.display.fontWeight": {
+          "line": 67,
+          "sourcePath": "line:67"
+        },
+        "typography.display.lineHeight": {
+          "line": 67,
+          "sourcePath": "line:67"
+        },
+        "typography.display.letterSpacing": {
+          "line": 67,
+          "sourcePath": "line:67"
+        },
+        "typography.body": {
+          "line": 70,
+          "sourcePath": "line:70"
+        },
+        "typography.body.fontFamily": {
+          "line": 70,
+          "sourcePath": "line:70"
+        },
+        "typography.body.fontSize": {
+          "line": 70,
+          "sourcePath": "line:70"
+        },
+        "typography.body.fontWeight": {
+          "line": 70,
+          "sourcePath": "line:70"
+        },
+        "typography.body.lineHeight": {
+          "line": 70,
+          "sourcePath": "line:70"
+        },
+        "typography.body.letterSpacing": {
+          "line": 70,
+          "sourcePath": "line:70"
+        },
+        "typography.button": {
+          "line": 71,
+          "sourcePath": "line:71"
+        },
+        "typography.button.fontFamily": {
+          "line": 71,
+          "sourcePath": "line:71"
+        },
+        "typography.button.fontSize": {
+          "line": 71,
+          "sourcePath": "line:71"
+        },
+        "typography.button.fontWeight": {
+          "line": 71,
+          "sourcePath": "line:71"
+        },
+        "typography.button.lineHeight": {
+          "line": 71,
+          "sourcePath": "line:71"
+        },
+        "typography.button.letterSpacing": {
+          "line": 71,
+          "sourcePath": "line:71"
+        },
+        "components.primary-button": {
+          "line": 88,
+          "sourcePath": "line:88"
+        },
+        "components.primary-button.backgroundColor": {
+          "line": 89,
+          "sourcePath": "line:89"
+        },
+        "components.primary-button.textColor": {
+          "line": 89,
+          "sourcePath": "line:89"
+        },
+        "components.primary-button.fontSize": {
+          "line": 89,
+          "sourcePath": "line:89"
+        },
+        "components.primary-button.fontWeight": {
+          "line": 89,
+          "sourcePath": "line:89"
+        },
+        "components.primary-button.padding": {
+          "line": 89,
+          "sourcePath": "line:89"
+        },
+        "components.primary-button.rounded": {
+          "line": 89,
+          "sourcePath": "line:89"
+        },
+        "components.primary-button.minHeight": {
+          "line": 89,
+          "sourcePath": "line:89"
+        },
+        "components.primary-button.width": {
+          "line": 89,
+          "sourcePath": "line:89"
+        },
+        "components.primary-button.borderColor": {
+          "line": 90,
+          "sourcePath": "line:90"
+        },
+        "components.primary-button.borderWidth": {
+          "line": 90,
+          "sourcePath": "line:90"
+        },
+        "components.primary-button.borderStyle": {
+          "line": 90,
+          "sourcePath": "line:90"
+        },
+        "rounded.primary-button-radius": {
+          "line": 89,
+          "sourcePath": "line:89"
+        },
+        "spacing.primary-button-padding": {
+          "line": 89,
+          "sourcePath": "line:89"
+        },
+        "components.secondary-button": {
+          "line": 96,
+          "sourcePath": "line:96"
+        },
+        "components.secondary-button.backgroundColor": {
+          "line": 97,
+          "sourcePath": "line:97"
+        },
+        "components.secondary-button.textColor": {
+          "line": 97,
+          "sourcePath": "line:97"
+        },
+        "components.navigation-button": {
+          "line": 101,
+          "sourcePath": "line:101"
+        },
+        "components.navigation-button.backgroundColor": {
+          "line": 102,
+          "sourcePath": "line:102"
+        },
+        "components.navigation-button.textColor": {
+          "line": 102,
+          "sourcePath": "line:102"
+        },
+        "components.navigation-button.fontSize": {
+          "line": 102,
+          "sourcePath": "line:102"
+        },
+        "components.navigation-button.fontWeight": {
+          "line": 102,
+          "sourcePath": "line:102"
+        },
+        "components.navigation-button.rounded": {
+          "line": 102,
+          "sourcePath": "line:102"
+        },
+        "components.navigation-button.padding": {
+          "line": 102,
+          "sourcePath": "line:102"
+        },
+        "components.navigation-button.minHeight": {
+          "line": 102,
+          "sourcePath": "line:102"
+        },
+        "rounded.navigation-button-radius": {
+          "line": 102,
+          "sourcePath": "line:102"
+        },
+        "spacing.navigation-button-padding": {
+          "line": 102,
+          "sourcePath": "line:102"
+        },
+        "components.text-link": {
+          "line": 107,
+          "sourcePath": "line:107"
+        },
+        "components.text-link.textColor": {
+          "line": 108,
+          "sourcePath": "line:108"
+        },
+        "components.text-link.fontSize": {
+          "line": 108,
+          "sourcePath": "line:108"
+        },
+        "components.text-link.fontWeight": {
+          "line": 108,
+          "sourcePath": "line:108"
+        },
+        "components.text-link.backgroundColor": {
+          "line": 108,
+          "sourcePath": "line:108"
+        },
+        "components.text-link.borderStyle": {
+          "line": 108,
+          "sourcePath": "line:108"
+        },
+        "components.text-input": {
+          "line": 131,
+          "sourcePath": "line:131"
+        },
+        "components.text-input.backgroundColor": {
+          "line": 132,
+          "sourcePath": "line:132"
+        },
+        "components.text-input.textColor": {
+          "line": 133,
+          "sourcePath": "line:133"
+        },
+        "components.text-input.fontSize": {
+          "line": 136,
+          "sourcePath": "line:136"
+        }
+      }
+    },
+    "theverge": {
+      "sourceSha256": "5da2c3116e6845826b043ac115a80896a399efda2cebc0188981fba2ef9bb526",
+      "note": "Manual partial normalization of independent, unverified source analysis. Exact selected literals only; ranges, estimates, ambiguous alternatives, motion, assets, logos and unsupported effects are not normalized. Font-family names record source claims only; no fonts are installed or fetched. Component-specific radii and padding are named by role, not inferred as a universal scale. Missing properties remain unspecified. Approximate outlined-button padding, 24\u201332px card interiors and alternative promotional text colors are omitted. Display metrics are source claims and may need separate fallback-font layout accommodation.",
+      "analysis": {
+        "colors": {
+          "primary": "#3cffd0",
+          "accent": "#5200ff",
+          "canvas": "#131313",
+          "surface": "#2d2d2d",
+          "text": "#ffffff",
+          "muted": "#949494",
+          "on-primary": "#000000"
+        },
+        "typography": {
+          "display": {
+            "fontFamily": "\"Manuka\"",
+            "fontSize": "107px",
+            "fontWeight": 900,
+            "lineHeight": 0.8,
+            "letterSpacing": "1.07px"
+          },
+          "heading": {
+            "fontFamily": "\"PolySans\"",
+            "fontSize": "32px",
+            "fontWeight": 400,
+            "lineHeight": 1.1,
+            "letterSpacing": "0.32px"
+          },
+          "body": {
+            "fontFamily": "\"PolySans\"",
+            "fontSize": "16px",
+            "fontWeight": 500,
+            "lineHeight": 1.6
+          },
+          "mono-button": {
+            "fontFamily": "\"PolySans Mono\"",
+            "fontSize": "12px",
+            "fontWeight": 600,
+            "lineHeight": 2,
+            "letterSpacing": "1.5px"
+          }
+        },
+        "rounded": {
+          "primary-button-radius": "24px",
+          "secondary-button-radius": "24px",
+          "outlined-button-radius": "40px",
+          "promotional-button-radius": "30px",
+          "text-input-radius": "2px"
+        },
+        "spacing": {
+          "primary-button-padding": "10px 24px",
+          "secondary-button-padding": "10px 24px"
+        },
+        "components": {
+          "primary-button": {
+            "backgroundColor": "#3cffd0",
+            "textColor": "#000000",
+            "borderStyle": "none",
+            "rounded": "24px",
+            "padding": "10px 24px"
+          },
+          "secondary-button": {
+            "backgroundColor": "#2d2d2d",
+            "textColor": "#e9e9e9",
+            "fontSize": "16px",
+            "fontWeight": 400,
+            "borderStyle": "none",
+            "rounded": "24px",
+            "padding": "10px 24px"
+          },
+          "outlined-button": {
+            "backgroundColor": "transparent",
+            "textColor": "#3cffd0",
+            "fontSize": "12px",
+            "fontWeight": 600,
+            "letterSpacing": "1.5px",
+            "borderColor": "#3cffd0",
+            "borderWidth": "1px",
+            "borderStyle": "solid",
+            "rounded": "40px"
+          },
+          "promotional-button": {
+            "backgroundColor": "transparent",
+            "borderColor": "#5200ff",
+            "borderWidth": "1px",
+            "borderStyle": "solid",
+            "rounded": "30px"
+          },
+          "text-input": {
+            "backgroundColor": "#131313",
+            "textColor": "#ffffff",
+            "borderWidth": "1px",
+            "borderStyle": "solid",
+            "rounded": "2px",
+            "fontSize": "15px"
+          }
+        }
+      },
+      "evidence": {
+        "colors.primary": {
+          "line": 23,
+          "sourcePath": "line:23"
+        },
+        "colors.accent": {
+          "line": 24,
+          "sourcePath": "line:24"
+        },
+        "colors.canvas": {
+          "line": 33,
+          "sourcePath": "line:33"
+        },
+        "colors.surface": {
+          "line": 34,
+          "sourcePath": "line:34"
+        },
+        "colors.text": {
+          "line": 40,
+          "sourcePath": "line:40"
+        },
+        "colors.muted": {
+          "line": 41,
+          "sourcePath": "line:41"
+        },
+        "colors.on-primary": {
+          "line": 37,
+          "sourcePath": "line:37"
+        },
+        "typography.display": {
+          "line": 66,
+          "sourcePath": "line:66"
+        },
+        "typography.display.fontFamily": {
+          "line": 66,
+          "sourcePath": "line:66"
+        },
+        "typography.display.fontSize": {
+          "line": 66,
+          "sourcePath": "line:66"
+        },
+        "typography.display.fontWeight": {
+          "line": 66,
+          "sourcePath": "line:66"
+        },
+        "typography.display.lineHeight": {
+          "line": 66,
+          "sourcePath": "line:66"
+        },
+        "typography.display.letterSpacing": {
+          "line": 66,
+          "sourcePath": "line:66"
+        },
+        "typography.heading": {
+          "line": 70,
+          "sourcePath": "line:70"
+        },
+        "typography.heading.fontFamily": {
+          "line": 70,
+          "sourcePath": "line:70"
+        },
+        "typography.heading.fontSize": {
+          "line": 70,
+          "sourcePath": "line:70"
+        },
+        "typography.heading.fontWeight": {
+          "line": 70,
+          "sourcePath": "line:70"
+        },
+        "typography.heading.lineHeight": {
+          "line": 70,
+          "sourcePath": "line:70"
+        },
+        "typography.heading.letterSpacing": {
+          "line": 70,
+          "sourcePath": "line:70"
+        },
+        "typography.body": {
+          "line": 76,
+          "sourcePath": "line:76"
+        },
+        "typography.body.fontFamily": {
+          "line": 76,
+          "sourcePath": "line:76"
+        },
+        "typography.body.fontSize": {
+          "line": 76,
+          "sourcePath": "line:76"
+        },
+        "typography.body.fontWeight": {
+          "line": 76,
+          "sourcePath": "line:76"
+        },
+        "typography.body.lineHeight": {
+          "line": 76,
+          "sourcePath": "line:76"
+        },
+        "typography.mono-button": {
+          "line": 83,
+          "sourcePath": "line:83"
+        },
+        "typography.mono-button.fontFamily": {
+          "line": 83,
+          "sourcePath": "line:83"
+        },
+        "typography.mono-button.fontSize": {
+          "line": 83,
+          "sourcePath": "line:83"
+        },
+        "typography.mono-button.fontWeight": {
+          "line": 83,
+          "sourcePath": "line:83"
+        },
+        "typography.mono-button.lineHeight": {
+          "line": 83,
+          "sourcePath": "line:83"
+        },
+        "typography.mono-button.letterSpacing": {
+          "line": 83,
+          "sourcePath": "line:83"
+        },
+        "components.primary-button": {
+          "line": 103,
+          "sourcePath": "line:103"
+        },
+        "components.primary-button.backgroundColor": {
+          "line": 104,
+          "sourcePath": "line:104"
+        },
+        "components.primary-button.textColor": {
+          "line": 105,
+          "sourcePath": "line:105"
+        },
+        "components.primary-button.borderStyle": {
+          "line": 106,
+          "sourcePath": "line:106"
+        },
+        "components.primary-button.rounded": {
+          "line": 107,
+          "sourcePath": "line:107"
+        },
+        "components.primary-button.padding": {
+          "line": 108,
+          "sourcePath": "line:108"
+        },
+        "rounded.primary-button-radius": {
+          "line": 107,
+          "sourcePath": "line:107"
+        },
+        "spacing.primary-button-padding": {
+          "line": 108,
+          "sourcePath": "line:108"
+        },
+        "components.secondary-button": {
+          "line": 115,
+          "sourcePath": "line:115"
+        },
+        "components.secondary-button.backgroundColor": {
+          "line": 116,
+          "sourcePath": "line:116"
+        },
+        "components.secondary-button.textColor": {
+          "line": 117,
+          "sourcePath": "line:117"
+        },
+        "components.secondary-button.fontSize": {
+          "line": 117,
+          "sourcePath": "line:117"
+        },
+        "components.secondary-button.fontWeight": {
+          "line": 117,
+          "sourcePath": "line:117"
+        },
+        "components.secondary-button.borderStyle": {
+          "line": 118,
+          "sourcePath": "line:118"
+        },
+        "components.secondary-button.rounded": {
+          "line": 119,
+          "sourcePath": "line:119"
+        },
+        "components.secondary-button.padding": {
+          "line": 120,
+          "sourcePath": "line:120"
+        },
+        "rounded.secondary-button-radius": {
+          "line": 119,
+          "sourcePath": "line:119"
+        },
+        "spacing.secondary-button-padding": {
+          "line": 120,
+          "sourcePath": "line:120"
+        },
+        "components.outlined-button": {
+          "line": 125,
+          "sourcePath": "line:125"
+        },
+        "components.outlined-button.backgroundColor": {
+          "line": 126,
+          "sourcePath": "line:126"
+        },
+        "components.outlined-button.textColor": {
+          "line": 127,
+          "sourcePath": "line:127"
+        },
+        "components.outlined-button.fontSize": {
+          "line": 127,
+          "sourcePath": "line:127"
+        },
+        "components.outlined-button.fontWeight": {
+          "line": 127,
+          "sourcePath": "line:127"
+        },
+        "components.outlined-button.letterSpacing": {
+          "line": 127,
+          "sourcePath": "line:127"
+        },
+        "components.outlined-button.borderColor": {
+          "line": 128,
+          "sourcePath": "line:128"
+        },
+        "components.outlined-button.borderWidth": {
+          "line": 128,
+          "sourcePath": "line:128"
+        },
+        "components.outlined-button.borderStyle": {
+          "line": 128,
+          "sourcePath": "line:128"
+        },
+        "components.outlined-button.rounded": {
+          "line": 129,
+          "sourcePath": "line:129"
+        },
+        "rounded.outlined-button-radius": {
+          "line": 129,
+          "sourcePath": "line:129"
+        },
+        "components.promotional-button": {
+          "line": 134,
+          "sourcePath": "line:134"
+        },
+        "components.promotional-button.backgroundColor": {
+          "line": 135,
+          "sourcePath": "line:135"
+        },
+        "components.promotional-button.borderColor": {
+          "line": 137,
+          "sourcePath": "line:137"
+        },
+        "components.promotional-button.borderWidth": {
+          "line": 137,
+          "sourcePath": "line:137"
+        },
+        "components.promotional-button.borderStyle": {
+          "line": 137,
+          "sourcePath": "line:137"
+        },
+        "components.promotional-button.rounded": {
+          "line": 138,
+          "sourcePath": "line:138"
+        },
+        "rounded.promotional-button-radius": {
+          "line": 138,
+          "sourcePath": "line:138"
+        },
+        "components.text-input": {
+          "line": 170,
+          "sourcePath": "line:170"
+        },
+        "components.text-input.backgroundColor": {
+          "line": 171,
+          "sourcePath": "line:171"
+        },
+        "components.text-input.textColor": {
+          "line": 171,
+          "sourcePath": "line:171"
+        },
+        "components.text-input.borderWidth": {
+          "line": 171,
+          "sourcePath": "line:171"
+        },
+        "components.text-input.borderStyle": {
+          "line": 171,
+          "sourcePath": "line:171"
+        },
+        "components.text-input.rounded": {
+          "line": 171,
+          "sourcePath": "line:171"
+        },
+        "components.text-input.fontSize": {
+          "line": 171,
+          "sourcePath": "line:171"
+        },
+        "rounded.text-input-radius": {
+          "line": 171,
+          "sourcePath": "line:171"
+        }
+      }
+    }
+  }
+}

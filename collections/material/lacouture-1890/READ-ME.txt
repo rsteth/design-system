@@ -1,0 +1,44 @@
+CHARLES LACOUTURE — REPERTOIRE CHROMATIQUE (PARIS, 1890)
+
+This collection includes all 29 distinct chromolithographed plates, numbered I,
+I bis, and II–XXVIII, plus 10 supplementary scanned pages. The opening rose
+frontispiece duplicates Plate I and is not a thirtieth distinct chart.
+
+Images are full-page 3000-pixel-high JPEG conversions of the processed JP2
+images supplied by the Getty Research Institute via Internet Archive. They
+preserve the photographed paper, printing, page edges, and photographic color.
+No color correction, white balance, or cropping has been applied.
+
+The full-size archive uses high-quality JPEG encoding. The compact website
+archive uses stronger JPEG compression at the same pixel dimensions. Both
+are derivatives, not lossless masters. The original JP2 and TIFF archives
+remain available at the primary source below.
+
+SUPPLEMENTARY MATERIAL
+Original front wrapper; opening rose; printed rose guide, recto and verso;
+title page; atlas title; both atlas contents pages; rear wrapper/publisher
+advertising; original viewing screen. An inserted modern English dealer
+description at scan index 224 is not included as original 1890 material.
+
+COMPLETENESS
+The companion full book PDF preserves all 226 scanned pages, including the
+French explanatory text and its line diagrams, blank versos, and inserts.
+The image inventory identifies each selected source leaf (zero based) and
+PDF page (one based).
+
+SOURCE AND CREDIT
+Charles Lacouture, Repertoire chromatique. Paris: Gauthier-Villars et fils, 1890.
+Chromolithographs by G. Severeyns.
+Digitized by the Getty Research Institute / Internet Archive.
+Source catalog marks the item NOT_IN_COPYRIGHT.
+https://archive.org/details/gri_33125012875395
+https://archive.org/download/gri_33125012875395/gri_33125012875395.pdf
+https://archive.org/download/gri_33125012875395/gri_33125012875395_jp2.zip
+https://archive.org/download/gri_33125012875395/gri_33125012875395_images.zip
+
+Independent digitized copy: ETH-Bibliothek Zurich, Rar 4867.
+https://doi.org/10.3931/e-rara-20620
+
+COLOR NOTE
+RGB values reflect this particular scan, paper aging, and photographic
+conditions. They are not calibrated measurements of the 1890 inks.

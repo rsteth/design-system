@@ -1,0 +1,1737 @@
+{
+  "schemaVersion": 1,
+  "id": "reference-figma",
+  "title": "Figma",
+  "classification": "independent-unverified-analysis",
+  "source": {
+    "repository": "https://github.com/VoltAgent/awesome-design-md",
+    "fork": "https://github.com/rsteth/awesome-design-md-p",
+    "revision": "fcc70284932276d085f01ef9f83edde90b1258cb",
+    "path": "design-md/figma/DESIGN.md",
+    "sha256": "716ce8431f47eb8b8135552710e3c4d538bccccf1202e4ceac5428c9aada9972",
+    "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/figma/DESIGN.md"
+  },
+  "sourceName": "Figma-design-analysis",
+  "titleProvenance": {
+    "status": "inferred",
+    "basis": "Source directory label, normalized for navigation; original source name is retained without correction.",
+    "sourceValue": "figma",
+    "originalName": "Figma-design-analysis"
+  },
+  "description": "A confident black-and-white editorial frame interrupted by oversized, hand-cut pastel color blocks. The marketing canvas is rigorously monochrome — figmaSans variable type, pure white surfaces, pure black ink, pill-shaped CTAs — while each story section drops the page into a saturated lime, lavender, cream, mint, or pink panel that reads like a sticky note placed on a clean desk. The result is a design system that feels both technical and joyful — a tool for serious work, made by people who like color.",
+  "analysis": {
+    "version": "alpha",
+    "name": "Figma-design-analysis",
+    "description": "A confident black-and-white editorial frame interrupted by oversized, hand-cut pastel color blocks. The marketing canvas is rigorously monochrome — figmaSans variable type, pure white surfaces, pure black ink, pill-shaped CTAs — while each story section drops the page into a saturated lime, lavender, cream, mint, or pink panel that reads like a sticky note placed on a clean desk. The result is a design system that feels both technical and joyful — a tool for serious work, made by people who like color.",
+    "colors": {
+      "primary": "#000000",
+      "on-primary": "#ffffff",
+      "ink": "#000000",
+      "canvas": "#ffffff",
+      "inverse-canvas": "#000000",
+      "inverse-ink": "#ffffff",
+      "on-inverse-soft": "#ffffff",
+      "hairline": "#e6e6e6",
+      "hairline-soft": "#f1f1f1",
+      "surface-soft": "#f7f7f5",
+      "block-lime": "#dceeb1",
+      "block-lilac": "#c5b0f4",
+      "block-cream": "#f4ecd6",
+      "block-pink": "#efd4d4",
+      "block-mint": "#c8e6cd",
+      "block-coral": "#f3c9b6",
+      "block-navy": "#1f1d3d",
+      "accent-magenta": "#ff3d8b",
+      "semantic-success": "#1ea64a",
+      "overlay-scrim": "#000000"
+    },
+    "typography": {
+      "display-xl": {
+        "fontFamily": "figmaSans",
+        "fontSize": "86px",
+        "fontWeight": 340,
+        "lineHeight": 1,
+        "letterSpacing": "-1.72px",
+        "fontFeature": "kern"
+      },
+      "display-lg": {
+        "fontFamily": "figmaSans",
+        "fontSize": "64px",
+        "fontWeight": 340,
+        "lineHeight": 1.1,
+        "letterSpacing": "-0.96px",
+        "fontFeature": "kern"
+      },
+      "headline": {
+        "fontFamily": "figmaSans",
+        "fontSize": "26px",
+        "fontWeight": 540,
+        "lineHeight": 1.35,
+        "letterSpacing": "-0.26px",
+        "fontFeature": "kern"
+      },
+      "subhead": {
+        "fontFamily": "figmaSans",
+        "fontSize": "26px",
+        "fontWeight": 340,
+        "lineHeight": 1.35,
+        "letterSpacing": "-0.26px",
+        "fontFeature": "kern"
+      },
+      "card-title": {
+        "fontFamily": "figmaSans",
+        "fontSize": "24px",
+        "fontWeight": 700,
+        "lineHeight": 1.45,
+        "letterSpacing": 0,
+        "fontFeature": "kern"
+      },
+      "body-lg": {
+        "fontFamily": "figmaSans",
+        "fontSize": "20px",
+        "fontWeight": 330,
+        "lineHeight": 1.4,
+        "letterSpacing": "-0.14px",
+        "fontFeature": "kern"
+      },
+      "body": {
+        "fontFamily": "figmaSans",
+        "fontSize": "18px",
+        "fontWeight": 320,
+        "lineHeight": 1.45,
+        "letterSpacing": "-0.26px",
+        "fontFeature": "kern"
+      },
+      "body-sm": {
+        "fontFamily": "figmaSans",
+        "fontSize": "16px",
+        "fontWeight": 330,
+        "lineHeight": 1.45,
+        "letterSpacing": "-0.14px",
+        "fontFeature": "kern"
+      },
+      "link": {
+        "fontFamily": "figmaSans",
+        "fontSize": "20px",
+        "fontWeight": 480,
+        "lineHeight": 1.4,
+        "letterSpacing": "-0.10px",
+        "fontFeature": "kern"
+      },
+      "button": {
+        "fontFamily": "figmaSans",
+        "fontSize": "20px",
+        "fontWeight": 480,
+        "lineHeight": 1.4,
+        "letterSpacing": "-0.10px",
+        "fontFeature": "kern"
+      },
+      "eyebrow": {
+        "fontFamily": "figmaMono",
+        "fontSize": "18px",
+        "fontWeight": 400,
+        "lineHeight": 1.3,
+        "letterSpacing": "0.54px",
+        "fontFeature": "kern"
+      },
+      "caption": {
+        "fontFamily": "figmaMono",
+        "fontSize": "12px",
+        "fontWeight": 400,
+        "lineHeight": 1,
+        "letterSpacing": "0.60px",
+        "fontFeature": "kern"
+      }
+    },
+    "rounded": {
+      "xs": "2px",
+      "sm": "6px",
+      "md": "8px",
+      "lg": "24px",
+      "xl": "32px",
+      "pill": "50px",
+      "full": "9999px"
+    },
+    "spacing": {
+      "hair": "1px",
+      "xxs": "4px",
+      "xs": "8px",
+      "sm": "12px",
+      "md": "16px",
+      "lg": "24px",
+      "xl": "32px",
+      "xxl": "48px",
+      "section": "96px"
+    },
+    "components": {
+      "button-primary": {
+        "backgroundColor": "{colors.primary}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.button}",
+        "rounded": "{rounded.pill}",
+        "padding": "10px 20px"
+      },
+      "button-primary-pressed": {
+        "backgroundColor": "{colors.primary}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.button}",
+        "rounded": "{rounded.pill}"
+      },
+      "button-secondary": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.button}",
+        "rounded": "{rounded.pill}",
+        "padding": "8px 18px 10px"
+      },
+      "button-tertiary-text": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.link}",
+        "rounded": "{rounded.full}",
+        "padding": "8px 12px"
+      },
+      "button-icon-circular": {
+        "backgroundColor": "{colors.surface-soft}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.button}",
+        "rounded": "{rounded.full}",
+        "size": "40px"
+      },
+      "button-icon-circular-inverse": {
+        "backgroundColor": "{colors.on-inverse-soft}",
+        "textColor": "{colors.inverse-ink}",
+        "typography": "{typography.button}",
+        "rounded": "{rounded.full}",
+        "size": "40px"
+      },
+      "button-magenta-promo": {
+        "backgroundColor": "{colors.accent-magenta}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.button}",
+        "rounded": "{rounded.pill}",
+        "padding": "10px 18px"
+      },
+      "pricing-tab-default": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.button}",
+        "rounded": "{rounded.pill}",
+        "padding": "8px 18px"
+      },
+      "pricing-tab-selected": {
+        "backgroundColor": "{colors.primary}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.button}",
+        "rounded": "{rounded.pill}",
+        "padding": "8px 18px"
+      },
+      "text-input": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body}",
+        "rounded": "{rounded.md}",
+        "padding": "12px 14px"
+      },
+      "text-input-focused": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body}",
+        "rounded": "{rounded.md}",
+        "padding": "12px 14px"
+      },
+      "pricing-card": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body}",
+        "rounded": "{rounded.lg}",
+        "padding": "24px"
+      },
+      "pricing-card-feature-row": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-sm}",
+        "rounded": "{rounded.xs}"
+      },
+      "color-block-section": {
+        "backgroundColor": "{colors.block-lime}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.subhead}",
+        "rounded": "{rounded.lg}",
+        "padding": "48px"
+      },
+      "color-block-section-lilac": {
+        "backgroundColor": "{colors.block-lilac}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.subhead}",
+        "rounded": "{rounded.lg}",
+        "padding": "48px"
+      },
+      "color-block-section-navy": {
+        "backgroundColor": "{colors.block-navy}",
+        "textColor": "{colors.inverse-ink}",
+        "typography": "{typography.subhead}",
+        "rounded": "{rounded.lg}",
+        "padding": "48px"
+      },
+      "promo-banner-lilac": {
+        "backgroundColor": "{colors.block-lilac}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-sm}",
+        "rounded": "{rounded.md}",
+        "padding": "16px 24px"
+      },
+      "template-card": {
+        "backgroundColor": "{colors.surface-soft}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-sm}",
+        "rounded": "{rounded.md}",
+        "padding": "16px"
+      },
+      "feature-illustration-tile": {
+        "backgroundColor": "{colors.surface-soft}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.eyebrow}",
+        "rounded": "{rounded.md}",
+        "padding": "24px"
+      },
+      "top-nav": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-sm}",
+        "rounded": "{rounded.xs}",
+        "height": "56px"
+      },
+      "marquee-strip": {
+        "backgroundColor": "{colors.inverse-canvas}",
+        "textColor": "{colors.inverse-ink}",
+        "typography": "{typography.body-sm}",
+        "rounded": "{rounded.xs}",
+        "height": "36px"
+      },
+      "comparison-checkmark": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.semantic-success}",
+        "typography": "{typography.body-sm}",
+        "rounded": "{rounded.full}",
+        "size": "16px"
+      },
+      "footer": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.caption}",
+        "rounded": "{rounded.xs}",
+        "padding": "64px 32px"
+      }
+    }
+  },
+  "normalizationRepairs": [],
+  "sections": [
+    {
+      "heading": "Overview",
+      "level": 2,
+      "text": "Figma's marketing canvas is, at the system level, an editor-clean black-and-white frame. The chrome — top nav, body type, footer, primary CTA — is monochrome. Headlines are oversized `{typography.display-xl}` set in `figmaSans` with aggressive negative tracking, body copy hovers around weight 320–340 of the same variable family, and small mono `{typography.eyebrow}` and `{typography.caption}` labels (figmaMono, all-caps, positive tracking) act as section markers. Every CTA is a pill — `{rounded.pill}` — and the primary action across the entire site is the same black `{components.button-primary}` paired with the same white `{components.button-secondary}`.\n\nWhat makes the design unique is what happens **between** those monochrome bookends: the page repeatedly drops into oversized pastel **color-block sections** — lime, lavender, cream, mint, pink, coral, and a deep navy — that span the full content width with `{rounded.lg}` corners and `{spacing.xxl}` interior padding. These blocks are where the storytelling lives. They aren't accents tucked into a card; they take over a whole viewport's worth of vertical space, like a designer arranging giant sticky notes on a clean wall. FigJam is the most pastel-saturated, the home page rotates through the full set, and the pricing page ends with a lime FAQ panel — same vocabulary, different rhythm per route.\n\nThis is a system built on contrast: the monochrome chrome makes the color blocks feel intentional rather than decorative, and the color blocks make the monochrome chrome feel like editorial paper rather than enterprise SaaS. Density is generous, line-heights are tight on display sizes, and the interface never reaches for shadows or gradients to do the work that color blocks and confident typography already do.\n\n**Key Characteristics:**\n- Monochrome system core: `{colors.primary}` (black) and `{colors.canvas}` (white) carry every CTA, every body line, every footer link.\n- Oversized pastel **color-block sections** (`{colors.block-lime}`, `{colors.block-lilac}`, `{colors.block-cream}`, `{colors.block-mint}`, `{colors.block-pink}`, `{colors.block-coral}`, `{colors.block-navy}`) define the narrative rhythm of every long-form page.\n- Pill is the only button shape — `{rounded.pill}` for text CTAs, `{rounded.full}` for icon buttons. No square buttons anywhere.\n- `figmaSans` variable typeface used at unusually fine weight increments (320, 330, 340, 450, 480, 540) — the type system reads as a single voice that flexes rather than a multi-weight family.\n- Tight negative letter-spacing on display sizes (-1.72px at 86px, -0.96px at 64px) creates a confident editorial cadence.\n- `figmaMono` reserved for category labels, eyebrows, and captions — always uppercase, positive tracking — to flag taxonomy without competing with display type.\n- Color-block page rhythm (home): white hero → marquee strip → white feature → lime systems block → navy ship-products block → coral developer block → white template grid → white footer.",
+      "line": 273
+    },
+    {
+      "heading": "Colors",
+      "level": 2,
+      "text": "> Source pages: figma.com (home), /design/, /figjam/brainstorming-tool/, /pricing/, /contact/.",
+      "line": 290
+    },
+    {
+      "heading": "Brand & Accent",
+      "level": 3,
+      "text": "- **Black** ({colors.primary}): The system primary. Every primary CTA, every headline, every body line, the marquee strip, the inverse canvas of dark sections.\n- **White** ({colors.on-primary}): Inverse text on black surfaces; also the canvas color used as the foreground of secondary pill buttons (`{components.button-secondary}`).\n- **Magenta Promo** ({colors.accent-magenta}): A single saturated CTA pink reserved for promotional inline buttons — appears, for example, on the lilac \"Save your spot\" Release Notes banner. Use scarcely; it is not a section color.",
+      "line": 294
+    },
+    {
+      "heading": "Surface",
+      "level": 3,
+      "text": "- **Canvas** ({colors.canvas}): Default page background and the body of every white card.\n- **Inverse Canvas** ({colors.inverse-canvas}): Footer, marquee strip, and a subset of \"ship products\"-style story sections.\n- **Surface Soft** ({colors.surface-soft}): Off-white tile background used for icon buttons, template cards, and feature illustration tiles when they sit on the white canvas.\n- **Hairline** ({colors.hairline}): 1px borders on form inputs, pricing cards, and table dividers.\n- **Hairline Soft** ({colors.hairline-soft}): Even subtler dividers — comparison-table row separators and footer column rules.\n- **Block Lime** ({colors.block-lime}): The signature **systems / FAQ / contact-form** color block. Recurs across home, pricing, contact.\n- **Block Lilac** ({colors.block-lilac}): Hero block on `/design/`; also the inline Release Notes promo banner.\n- **Block Cream** ({colors.block-cream}): Soft warm background — FigJam hero strip, template-grid section.\n- **Block Mint** ({colors.block-mint}): FigJam pastel section.\n- **Block Pink** ({colors.block-pink}): FigJam pastel section.\n- **Block Coral** ({colors.block-coral}): \"Ship products\" coral story block on home.\n- **Block Navy** ({colors.block-navy}): Deep indigo story block — only place dark surfaces appear above the footer.",
+      "line": 299
+    },
+    {
+      "heading": "Text",
+      "level": 3,
+      "text": "- **Ink** ({colors.ink}): All headline, body, and caption type on light surfaces. There is no softer mid-gray text role on marketing — body copy is always black at weight 320–340, and weight (not opacity) carries the hierarchy.\n- **Inverse Ink** ({colors.inverse-ink}): Type on inverse-canvas surfaces (footer, marquee strip, navy color block).\n- **On-Inverse Soft** ({colors.on-inverse-soft}): White used at ~16% opacity for circular icon-button surfaces against dark sections (token captures the base color; the translucency is applied at render time).",
+      "line": 313
+    },
+    {
+      "heading": "Semantic",
+      "level": 3,
+      "text": "- **Success Green** ({colors.semantic-success}): Comparison-table checkmarks on pricing. Used as a glyph fill, not a surface.\n- **Overlay Scrim** ({colors.overlay-scrim}): Black used at ~60% opacity behind modal / video-overlay surfaces (token captures the base; opacity applied at render time).",
+      "line": 318
+    },
+    {
+      "heading": "Typography",
+      "level": 2,
+      "text": "",
+      "line": 322
+    },
+    {
+      "heading": "Font Family",
+      "level": 3,
+      "text": "- **figmaSans** — Figma's proprietary variable typeface; fallback stack `figmaSans Fallback, SF Pro Display, system-ui, helvetica`. Variable weight axis is exercised at unusually fine increments (320, 330, 340, 450, 480, 540, 700) — the design system reads as a single voice modulating rather than a stepped weight family.\n- **figmaMono** — Proprietary monospace; fallback `figmaMono Fallback, SF Mono, menlo`. Used exclusively for eyebrow labels and captions, always uppercase with positive letter-spacing.\n\nOpenType `kern` is enabled across every role.",
+      "line": 324
+    },
+    {
+      "heading": "Hierarchy",
+      "level": 3,
+      "text": "| Token | Size | Weight | Line Height | Letter Spacing | Use |\n|---|---|---|---|---|---|\n| `{typography.display-xl}` | 86px | 340 | 1.00 | -1.72px | Hero headlines (home, FigJam) |\n| `{typography.display-lg}` | 64px | 340 | 1.10 | -0.96px | Section opener headlines |\n| `{typography.headline}` | 26px | 540 | 1.35 | -0.26px | Story-block titles inside color blocks |\n| `{typography.subhead}` | 26px | 340 | 1.35 | -0.26px | Long-form intro paragraphs that sit at near-headline scale |\n| `{typography.card-title}` | 24px | 700 | 1.45 | 0 | Pricing-tier titles, feature card titles |\n| `{typography.body-lg}` | 20px | 330 | 1.40 | -0.14px | Lead body copy on hero, contact form labels |\n| `{typography.body}` | 18px | 320 | 1.45 | -0.26px | Default body |\n| `{typography.body-sm}` | 16px | 330 | 1.45 | -0.14px | Card body, footer link list |\n| `{typography.link}` | 20px | 480 | 1.40 | -0.10px | Inline link emphasis |\n| `{typography.button}` | 20px | 480 | 1.40 | -0.10px | All pill buttons, primary and secondary |\n| `{typography.eyebrow}` | 18px | 400 | 1.30 | 0.54px | figmaMono uppercase section eyebrows |\n| `{typography.caption}` | 12px | 400 | 1.00 | 0.60px | figmaMono uppercase captions, footer column heads |",
+      "line": 331
+    },
+    {
+      "heading": "Principles",
+      "level": 3,
+      "text": "- **Weight, not size, carries hierarchy on body copy.** A 20px paragraph at weight 330 sits next to a 20px link at weight 480 — the eye reads emphasis without scale change.\n- **Negative letter-spacing scales with size.** Display-xl pulls -1.72px; subhead pulls only -0.26px. Body copy stays near-zero. The result is editorial-feeling display type without sacrificing readability at body size.\n- **Mono is taxonomy, not body.** figmaMono is reserved for eyebrows and captions — never used to set a paragraph.\n- **Tight line-heights on display, generous on body.** Display sizes run 1.00–1.10; body runs 1.40–1.45. The contrast reinforces that headlines are graphics and body copy is for reading.",
+      "line": 348
+    },
+    {
+      "heading": "Note on Font Substitutes",
+      "level": 3,
+      "text": "If implementing without access to figmaSans / figmaMono, suitable open-source substitutes are **Inter** (or **Geist**) for the sans, and **JetBrains Mono** (or **Geist Mono**) for the mono. Inter at variable weights closely matches the fine-grained weight axis figmaSans uses; expect to manually adjust line-heights down by ~0.02 to compensate for Inter's slightly taller x-height.",
+      "line": 355
+    },
+    {
+      "heading": "Layout",
+      "level": 2,
+      "text": "",
+      "line": 359
+    },
+    {
+      "heading": "Spacing System",
+      "level": 3,
+      "text": "- **Base unit**: 8px.\n- **Tokens (front matter)**: `{spacing.hair}` 1px · `{spacing.xxs}` 4px · `{spacing.xs}` 8px · `{spacing.sm}` 12px · `{spacing.md}` 16px · `{spacing.lg}` 24px · `{spacing.xl}` 32px · `{spacing.xxl}` 48px · `{spacing.section}` 96px.\n- Section interior padding: `{spacing.xxl}` (48px) on color-block sections.\n- Card interior padding: `{spacing.lg}` (24px) on pricing cards and template tiles.\n- Form input padding: `{spacing.sm}` 12px vertical · 14px horizontal.\n- Button padding: `{spacing.xs}` 8px vertical · `{spacing.lg}` 24px horizontal for pill buttons (the asymmetric `8px 18px 10px` extracted on `button-secondary` nudges the type optically inside the pill).\n- Universal rhythm constant: `{spacing.section}` (96px) — the vertical gap between major content sections holds across home, pricing, and FigJam pages.",
+      "line": 361
+    },
+    {
+      "heading": "Grid & Container",
+      "level": 3,
+      "text": "- Max content width sits around 1280px (one of the explicit breakpoints), with side gutters that scale from `{spacing.xxl}` on desktop down to `{spacing.lg}` on mobile.\n- Three- and four-column grids on the desktop pricing comparison and FigJam template galleries.\n- Color-block sections break the column grid — they span content width with full bleed inside the rounded `{rounded.lg}` corners, then place a single editorial column of headline + body inside.",
+      "line": 371
+    },
+    {
+      "heading": "Whitespace Philosophy",
+      "level": 3,
+      "text": "White space is used to make the color blocks feel deliberate. Between every colored panel and the next, the page returns to white canvas with `{spacing.section}` of breathing room. Inside a color block, the type itself is given generous side margins (often more than 1/4 of the block's width on each side) so the panel reads as a poster, not a wall of copy.",
+      "line": 377
+    },
+    {
+      "heading": "Elevation & Depth",
+      "level": 2,
+      "text": "| Level | Treatment | Use |\n|---|---|---|\n| 0 (flat) | No shadow, no border | Default for color-block sections, inverse-canvas footer, hero |\n| 1 (hairline) | 1px `{colors.hairline}` border on `{colors.canvas}` | Pricing cards, form inputs, comparison table cells |\n| 2 (soft elevation) | Subtle drop shadow approx 0 4px 16px rgba(0,0,0,0.06) | Floating template tiles, dropdown menus |\n| 3 (modal) | Stronger shadow + `{colors.overlay-scrim}` behind | Video / image lightbox overlays |\n\nFigma's marketing system is shadow-light by design — the color blocks substitute for traditional elevation. Where most SaaS sites use a shadowed white card to draw attention, Figma uses a saturated background panel. This makes the rare actual shadow (e.g., a floating template card hovering over a cream section) feel like an exception worth noticing.",
+      "line": 381
+    },
+    {
+      "heading": "Decorative Depth",
+      "level": 3,
+      "text": "- **Color-block sections** are the primary depth device. The change from white canvas to lime / lavender / cream is the section break.\n- **Sticky-note style component thumbnails** in FigJam — slightly off-axis pastel rectangles arranged like notes on a board — read as collage, not card-stack.\n- **Embedded product UI mocks** (Figma Design panels, FigJam canvas snippets) appear as flat compositions on color blocks; their internal shadows are subtle and stay within the mock.",
+      "line": 392
+    },
+    {
+      "heading": "Shapes",
+      "level": 2,
+      "text": "",
+      "line": 398
+    },
+    {
+      "heading": "Border Radius Scale",
+      "level": 3,
+      "text": "| Token | Value | Use |\n|---|---|---|\n| `{rounded.xs}` | 2px | Anchor / link decoration corners |\n| `{rounded.sm}` | 6px | Small chips, sub-nav tabs |\n| `{rounded.md}` | 8px | Form inputs, list items, image frames |\n| `{rounded.lg}` | 24px | Pricing cards, color-block sections, large image containers |\n| `{rounded.xl}` | 32px | Hero feature panels, oversized callouts |\n| `{rounded.pill}` | 50px | All text CTAs (primary, secondary, tab toggles) |\n| `{rounded.full}` | 9999px | Circular icon buttons, comparison-table checkmark glyphs |",
+      "line": 400
+    },
+    {
+      "heading": "Photography & Illustration Geometry",
+      "level": 3,
+      "text": "- Image frames use `{rounded.md}` (8px) — generous enough to feel friendly, conservative enough to read as editorial.\n- Template thumbnails on the home grid sit in `{rounded.md}` tiles with `{spacing.md}` interior padding around the embedded preview.\n- FigJam pastel sticky-note component thumbnails preserve a small `{rounded.sm}` corner that mimics actual sticky paper.\n- No avatar circles appear in marketing surfaces — Figma's marketing avoids personification.",
+      "line": 412
+    },
+    {
+      "heading": "Components",
+      "level": 2,
+      "text": "",
+      "line": 419
+    },
+    {
+      "heading": "Buttons",
+      "level": 3,
+      "text": "**`button-primary`** — The black \"Get started for free\" pill that appears in the top nav, every hero, and every closing CTA.\n- Background `{colors.primary}`, text `{colors.on-primary}`, type `{typography.button}`, padding 10px 20px, rounded `{rounded.pill}`.\n- Pressed state lives in `button-primary-pressed` (same surface; the live site relies on micro-scale rather than a darkened fill).\n\n**`button-secondary`** — White pill with black text. Used for tertiary navigation actions (\"Contact sales\") and as the visual counterpart to the primary pill.\n- Background `{colors.canvas}`, text `{colors.ink}`, type `{typography.button}`, padding 8px 18px 10px (asymmetric vertical to optically center the type), rounded `{rounded.pill}`. No border.\n\n**`button-tertiary-text`** — Plain text link styled as a button hit target inside top nav and footer.\n- Background `{colors.canvas}`, text `{colors.ink}`, type `{typography.link}`, rounded `{rounded.full}` (hit target only), padding `{spacing.xs}` `{spacing.sm}`.\n\n**`button-icon-circular`** — 40px circular icon button used for carousel controls, social links, and inline actions on light surfaces.\n- Background `{colors.surface-soft}`, text `{colors.ink}`, rounded `{rounded.full}`, size 40px.\n\n**`button-icon-circular-inverse`** — Same shape, used on inverse-canvas / dark color blocks.\n- Background `{colors.on-inverse-soft}` (translucent white), text `{colors.inverse-ink}`, rounded `{rounded.full}`, size 40px.\n\n**`button-magenta-promo`** — Saturated pink pill used only inside promotional surfaces such as the lilac \"Save your spot\" Release Notes banner. Reserved for moments where Figma's product team wants the CTA to pop against an already-colored panel.\n- Background `{colors.accent-magenta}`, text `{colors.on-primary}`, type `{typography.button}`, rounded `{rounded.pill}`, padding 10px 18px.",
+      "line": 421
+    },
+    {
+      "heading": "Pricing Tabs",
+      "level": 3,
+      "text": "**`pricing-tab-default`** + **`pricing-tab-selected`** — The pill-toggle that switches between Starter / Professional / Organization / Enterprise on `/pricing/`.\n- Default: `{colors.canvas}` background, `{colors.ink}` text, rounded `{rounded.pill}`.\n- Selected: `{colors.primary}` background, `{colors.on-primary}` text — exactly the same surface as `button-primary`, which makes the selected tab feel like an active CTA, not a passive state.",
+      "line": 442
+    },
+    {
+      "heading": "Inputs & Forms",
+      "level": 3,
+      "text": "**`text-input`** + **`text-input-focused`** — Form fields on `/contact/` and pricing seat-count steppers.\n- Background `{colors.canvas}`, text `{colors.ink}`, type `{typography.body}`, rounded `{rounded.md}`, padding 12px 14px.\n- Focused state retains the same surface — focus is communicated via ring, not via fill change.",
+      "line": 448
+    },
+    {
+      "heading": "Cards & Containers",
+      "level": 3,
+      "text": "**`pricing-card`** — Each tier on `/pricing/`.\n- Background `{colors.canvas}`, text `{colors.ink}`, type `{typography.body}`, rounded `{rounded.lg}`, padding `{spacing.lg}`. Stroked with `{colors.hairline}` rather than shadowed.\n\n**`pricing-card-feature-row`** — Single row inside the comparison table.\n- Background `{colors.canvas}`, text `{colors.ink}`, type `{typography.body-sm}`. Row separator is `{colors.hairline-soft}`.\n\n**`template-card`** — Thumbnail tile in the home \"Explore what people are making\" grid and the FigJam template gallery.\n- Background `{colors.surface-soft}`, text `{colors.ink}`, type `{typography.body-sm}`, rounded `{rounded.md}`, padding `{spacing.md}`.\n\n**`feature-illustration-tile`** — Larger composition tile that holds a product UI mock or pastel illustration.\n- Background `{colors.surface-soft}`, text `{colors.ink}`, type `{typography.eyebrow}`, rounded `{rounded.md}`, padding `{spacing.lg}`.",
+      "line": 454
+    },
+    {
+      "heading": "Color-Block Sections (signature)",
+      "level": 3,
+      "text": "The defining surface of Figma's marketing. Each is a full-content-width panel with `{rounded.lg}` corners and `{spacing.xxl}` interior padding. Variants:\n\n**`color-block-section`** — lime ground for \"systems\" stories (home), pricing FAQ, and the contact form.\n- Background `{colors.block-lime}`, text `{colors.ink}`, type `{typography.subhead}`, rounded `{rounded.lg}`, padding `{spacing.xxl}`.\n\n**`color-block-section-lilac`** — lavender ground for `/design/` hero and FigJam highlight sections.\n- Background `{colors.block-lilac}`, otherwise identical structure.\n\n**`color-block-section-navy`** — deep indigo ground for the home \"Ship products\" story block. The only inverse color-block surface above the footer.\n- Background `{colors.block-navy}`, text `{colors.inverse-ink}`, otherwise identical structure.\n\n(Cream, mint, pink, and coral block variants follow the same shape with their respective `{colors.block-*}` surface.)",
+      "line": 468
+    },
+    {
+      "heading": "Promo Banner",
+      "level": 3,
+      "text": "**`promo-banner-lilac`** — The Release Notes / \"Save your spot\" inline banner that floats above the contact form.\n- Background `{colors.block-lilac}`, text `{colors.ink}`, type `{typography.body-sm}`, rounded `{rounded.md}`, padding `{spacing.md}` `{spacing.lg}`. Carries a `button-magenta-promo` on the right edge.",
+      "line": 483
+    },
+    {
+      "heading": "Navigation",
+      "level": 3,
+      "text": "**`top-nav`** — Sticky white bar with logo, primary nav links, sign-in link, and the right-anchored `button-secondary` (\"Contact sales\") + `button-primary` (\"Get started for free\") pair.\n- Background `{colors.canvas}`, text `{colors.ink}`, type `{typography.body-sm}`, height 56px.\n- Mobile: collapses primary links into a hamburger that opens a full-canvas overlay; the two pill CTAs remain visible on the bar.\n\n**`marquee-strip`** — Thin black ribbon directly under the nav that scrolls through customer logos in white.\n- Background `{colors.inverse-canvas}`, text `{colors.inverse-ink}`, type `{typography.body-sm}`, height 36px.",
+      "line": 488
+    },
+    {
+      "heading": "Comparison Glyphs",
+      "level": 3,
+      "text": "**`comparison-checkmark`** — Green check used in the pricing comparison matrix.\n- Background `{colors.canvas}`, glyph color `{colors.semantic-success}`, rounded `{rounded.full}`, size 16px.",
+      "line": 497
+    },
+    {
+      "heading": "Footer",
+      "level": 3,
+      "text": "**`footer`** — Dense link grid on white canvas with the wordmark \"Figma\" set in display weight at the top-left.\n- Background `{colors.canvas}`, text `{colors.ink}`, type `{typography.caption}` for column headings and small links, padding `{spacing.section}` top/bottom · `{spacing.xl}` sides.",
+      "line": 502
+    },
+    {
+      "heading": "Do's and Don'ts",
+      "level": 2,
+      "text": "",
+      "line": 507
+    },
+    {
+      "heading": "Do",
+      "level": 3,
+      "text": "- Reserve `{colors.primary}` for genuine primary CTAs and selected states (e.g., `pricing-tab-selected`). Don't use it as a decorative accent.\n- When introducing a story section, choose **one** color block from the `{colors.block-*}` family and let it span full content width with `{rounded.lg}` corners and `{spacing.xxl}` interior padding.\n- Keep type in `figmaSans` at variable weights — pick from 320, 330, 340, 480, 540, 700 to express hierarchy. Avoid intermediate weights outside this set.\n- Use `figmaMono` only for eyebrows and captions, always uppercase, with the documented positive letter-spacing.\n- Compose every CTA as a pill (`{rounded.pill}`) and every icon button as a circle (`{rounded.full}`).\n- Allow the page to **return to white canvas** between every two color blocks so each block reads as deliberate.\n- Pair `button-primary` and `button-secondary` whenever a section needs both a primary action and a sales / secondary action — the black-and-white pair is the brand signature.",
+      "line": 509
+    },
+    {
+      "heading": "Don't",
+      "level": 3,
+      "text": "- Don't introduce mid-gray text. Body hierarchy comes from `figmaSans` weight, not from opacity.\n- Don't add drop shadows to color-block sections — the color is the depth device.\n- Don't introduce new accent colors outside the documented `{colors.block-*}` palette and `{colors.accent-magenta}`. Adding, e.g., a saturated brand orange would break the system.\n- Don't combine more than one color block visible inside a single viewport — Figma's pacing always lets the white canvas separate them.\n- Don't square off CTAs. Square buttons read as a different brand.\n- Don't put `figmaMono` in body copy — it's a taxonomy tool, not a reading typeface.\n- Don't replace the `pricing-tab-selected` black fill with a colored tab; the brand pattern is \"selected = primary surface\".",
+      "line": 519
+    },
+    {
+      "heading": "Responsive Behavior",
+      "level": 2,
+      "text": "",
+      "line": 529
+    },
+    {
+      "heading": "Breakpoints",
+      "level": 3,
+      "text": "| Name | Width | Key Changes |\n|---|---|---|\n| 4k | 1920px | Max content width holds at 1280px; gutters expand |\n| Desktop-XL | 1440px | Default desktop layout |\n| Desktop | 1400px | Comparison table column widths normalize |\n| Desktop-S | 1280px | Pricing 4-up tier grid maintained |\n| Tablet | 960px | Pricing collapses 4-up → 2-up; nav becomes hamburger |\n| Mobile-L | 768px | Color-block sections become full-bleed (no rounded corners on edges) |\n| Mobile | 560px | Display-xl reduces from 86px to ~48px; pill CTAs go full-width |\n| Mobile-XS | 559px | Two-column footer collapses to single column |",
+      "line": 531
+    },
+    {
+      "heading": "Touch Targets",
+      "level": 3,
+      "text": "- Pill buttons (`button-primary`, `button-secondary`) maintain a minimum 44px tap height across all viewports — achieved by combining `{typography.button}` 20px line-height with the documented vertical padding.\n- Circular icon buttons (`button-icon-circular`) are 40px on desktop and grow to 44px on touch viewports.\n- Form input minimum tap target on `/contact/` is 48px high.",
+      "line": 544
+    },
+    {
+      "heading": "Collapsing Strategy",
+      "level": 3,
+      "text": "- **Nav**: desktop horizontal nav with two right-anchored pills collapses to a hamburger overlay below 960px. The two pills (`Contact sales`, `Get started for free`) stay visible on the bar above 560px and stack in the overlay below.\n- **Pricing tier grid**: 4-up → 2-up at 960px → 1-up below 768px. The pill toggle stays horizontal and scrolls horizontally if needed below 560px.\n- **Color-block sections**: above 768px the section keeps `{spacing.xxl}` of canvas around it so the rounded corners read; below 768px the corners are removed and the block bleeds to viewport edge for a poster effect.\n- **Comparison table**: below 960px the matrix collapses into per-tier accordions to avoid horizontal scroll.",
+      "line": 550
+    },
+    {
+      "heading": "Image Behavior",
+      "level": 3,
+      "text": "- Product UI mocks inside color blocks scale proportionally and never crop. Below 768px they shrink rather than reflow.\n- Template thumbnails in the home grid use lazy loading and animate in on scroll.\n- Sticky-note style FigJam thumbnails maintain their slight off-axis rotation across breakpoints — the rotation is a brand signal, not a desktop-only flourish.",
+      "line": 557
+    },
+    {
+      "heading": "Iteration Guide",
+      "level": 2,
+      "text": "1. Focus on ONE component at a time and reference it by its `components:` token name (e.g., `{components.button-primary}`, `{components.color-block-section}`).\n2. When introducing a new section, decide **first** which `{colors.block-*}` token it sits on; the surface choice is the most consequential decision.\n3. Default body type to `{typography.body}`; reach for `{typography.subhead}` or `{typography.headline}` only inside a color block.\n4. Run `npx @google/design.md lint DESIGN.md` after edits — `broken-ref`, `contrast-ratio`, and `orphaned-tokens` warnings flag issues automatically.\n5. Add new variants as separate component entries (`-pressed`, `-selected`) — do not bury them in prose.\n6. Keep `{colors.primary}` scarce. If two `button-primary` instances appear in the same viewport, the section is doing too much — neutralize one to `button-secondary`.\n7. Treat `{colors.accent-magenta}` as a single-shot color: one promo CTA per page, never two.",
+      "line": 563
+    },
+    {
+      "heading": "Known Gaps",
+      "level": 2,
+      "text": "- The exact pastel hex values of `{colors.block-*}` are derived from screenshot pixels; the production source likely uses named tokens that aren't exposed via CSS variables. Treat the documented hex values as faithful approximations rather than exact brand specs.\n- Dark mode is not documented because the marketing site does not ship a dark theme — the closest analog is the navy color-block (`color-block-section-navy`) and the inverse-canvas footer.\n- Form-field error and validation styling is not visible on `/contact/` because no error states render in the static screenshot. Inputs have hairline borders and rounded `{rounded.md}` corners; error treatment is not documented.\n- The animated marquee-strip and color-block reveal animations are not documented (per the no-interaction policy).",
+      "line": 573
+    }
+  ],
+  "tokens": [
+    {
+      "path": "colors.primary",
+      "sourcePath": "colors.primary",
+      "type": "color",
+      "value": "#000000",
+      "status": "unverified",
+      "evidence": {
+        "line": 7,
+        "sourcePath": "colors.primary"
+      }
+    },
+    {
+      "path": "colors.onprimary",
+      "sourcePath": "colors.on-primary",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 8,
+        "sourcePath": "colors.on-primary"
+      }
+    },
+    {
+      "path": "colors.ink",
+      "sourcePath": "colors.ink",
+      "type": "color",
+      "value": "#000000",
+      "status": "unverified",
+      "evidence": {
+        "line": 9,
+        "sourcePath": "colors.ink"
+      }
+    },
+    {
+      "path": "colors.canvas",
+      "sourcePath": "colors.canvas",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 10,
+        "sourcePath": "colors.canvas"
+      }
+    },
+    {
+      "path": "colors.inversecanvas",
+      "sourcePath": "colors.inverse-canvas",
+      "type": "color",
+      "value": "#000000",
+      "status": "unverified",
+      "evidence": {
+        "line": 11,
+        "sourcePath": "colors.inverse-canvas"
+      }
+    },
+    {
+      "path": "colors.inverseink",
+      "sourcePath": "colors.inverse-ink",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 12,
+        "sourcePath": "colors.inverse-ink"
+      }
+    },
+    {
+      "path": "colors.oninversesoft",
+      "sourcePath": "colors.on-inverse-soft",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "unverified",
+      "evidence": {
+        "line": 13,
+        "sourcePath": "colors.on-inverse-soft"
+      }
+    },
+    {
+      "path": "colors.hairline",
+      "sourcePath": "colors.hairline",
+      "type": "color",
+      "value": "#e6e6e6",
+      "status": "unverified",
+      "evidence": {
+        "line": 14,
+        "sourcePath": "colors.hairline"
+      }
+    },
+    {
+      "path": "colors.hairlinesoft",
+      "sourcePath": "colors.hairline-soft",
+      "type": "color",
+      "value": "#f1f1f1",
+      "status": "unverified",
+      "evidence": {
+        "line": 15,
+        "sourcePath": "colors.hairline-soft"
+      }
+    },
+    {
+      "path": "colors.surfacesoft",
+      "sourcePath": "colors.surface-soft",
+      "type": "color",
+      "value": "#f7f7f5",
+      "status": "unverified",
+      "evidence": {
+        "line": 16,
+        "sourcePath": "colors.surface-soft"
+      }
+    },
+    {
+      "path": "colors.blocklime",
+      "sourcePath": "colors.block-lime",
+      "type": "color",
+      "value": "#dceeb1",
+      "status": "unverified",
+      "evidence": {
+        "line": 17,
+        "sourcePath": "colors.block-lime"
+      }
+    },
+    {
+      "path": "colors.blocklilac",
+      "sourcePath": "colors.block-lilac",
+      "type": "color",
+      "value": "#c5b0f4",
+      "status": "unverified",
+      "evidence": {
+        "line": 18,
+        "sourcePath": "colors.block-lilac"
+      }
+    },
+    {
+      "path": "colors.blockcream",
+      "sourcePath": "colors.block-cream",
+      "type": "color",
+      "value": "#f4ecd6",
+      "status": "unverified",
+      "evidence": {
+        "line": 19,
+        "sourcePath": "colors.block-cream"
+      }
+    },
+    {
+      "path": "colors.blockpink",
+      "sourcePath": "colors.block-pink",
+      "type": "color",
+      "value": "#efd4d4",
+      "status": "unverified",
+      "evidence": {
+        "line": 20,
+        "sourcePath": "colors.block-pink"
+      }
+    },
+    {
+      "path": "colors.blockmint",
+      "sourcePath": "colors.block-mint",
+      "type": "color",
+      "value": "#c8e6cd",
+      "status": "unverified",
+      "evidence": {
+        "line": 21,
+        "sourcePath": "colors.block-mint"
+      }
+    },
+    {
+      "path": "colors.blockcoral",
+      "sourcePath": "colors.block-coral",
+      "type": "color",
+      "value": "#f3c9b6",
+      "status": "unverified",
+      "evidence": {
+        "line": 22,
+        "sourcePath": "colors.block-coral"
+      }
+    },
+    {
+      "path": "colors.blocknavy",
+      "sourcePath": "colors.block-navy",
+      "type": "color",
+      "value": "#1f1d3d",
+      "status": "unverified",
+      "evidence": {
+        "line": 23,
+        "sourcePath": "colors.block-navy"
+      }
+    },
+    {
+      "path": "colors.accentmagenta",
+      "sourcePath": "colors.accent-magenta",
+      "type": "color",
+      "value": "#ff3d8b",
+      "status": "unverified",
+      "evidence": {
+        "line": 24,
+        "sourcePath": "colors.accent-magenta"
+      }
+    },
+    {
+      "path": "colors.semanticsuccess",
+      "sourcePath": "colors.semantic-success",
+      "type": "color",
+      "value": "#1ea64a",
+      "status": "unverified",
+      "evidence": {
+        "line": 25,
+        "sourcePath": "colors.semantic-success"
+      }
+    },
+    {
+      "path": "colors.overlayscrim",
+      "sourcePath": "colors.overlay-scrim",
+      "type": "color",
+      "value": "#000000",
+      "status": "unverified",
+      "evidence": {
+        "line": 26,
+        "sourcePath": "colors.overlay-scrim"
+      }
+    },
+    {
+      "path": "typography.displayxl.fontfamily",
+      "sourcePath": "typography.display-xl.fontFamily",
+      "type": "fontFamily",
+      "value": "figmaSans",
+      "status": "unverified",
+      "evidence": {
+        "line": 30,
+        "sourcePath": "typography.display-xl.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displayxl.fontsize",
+      "sourcePath": "typography.display-xl.fontSize",
+      "type": "dimension",
+      "value": "86px",
+      "status": "unverified",
+      "evidence": {
+        "line": 31,
+        "sourcePath": "typography.display-xl.fontSize"
+      }
+    },
+    {
+      "path": "typography.displayxl.fontweight",
+      "sourcePath": "typography.display-xl.fontWeight",
+      "type": "number",
+      "value": 340,
+      "status": "unverified",
+      "evidence": {
+        "line": 32,
+        "sourcePath": "typography.display-xl.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displayxl.lineheight",
+      "sourcePath": "typography.display-xl.lineHeight",
+      "type": "number",
+      "value": 1,
+      "status": "unverified",
+      "evidence": {
+        "line": 33,
+        "sourcePath": "typography.display-xl.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displayxl.letterspacing",
+      "sourcePath": "typography.display-xl.letterSpacing",
+      "type": "dimension",
+      "value": "-1.72px",
+      "status": "unverified",
+      "evidence": {
+        "line": 34,
+        "sourcePath": "typography.display-xl.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.displaylg.fontfamily",
+      "sourcePath": "typography.display-lg.fontFamily",
+      "type": "fontFamily",
+      "value": "figmaSans",
+      "status": "unverified",
+      "evidence": {
+        "line": 37,
+        "sourcePath": "typography.display-lg.fontFamily"
+      }
+    },
+    {
+      "path": "typography.displaylg.fontsize",
+      "sourcePath": "typography.display-lg.fontSize",
+      "type": "dimension",
+      "value": "64px",
+      "status": "unverified",
+      "evidence": {
+        "line": 38,
+        "sourcePath": "typography.display-lg.fontSize"
+      }
+    },
+    {
+      "path": "typography.displaylg.fontweight",
+      "sourcePath": "typography.display-lg.fontWeight",
+      "type": "number",
+      "value": 340,
+      "status": "unverified",
+      "evidence": {
+        "line": 39,
+        "sourcePath": "typography.display-lg.fontWeight"
+      }
+    },
+    {
+      "path": "typography.displaylg.lineheight",
+      "sourcePath": "typography.display-lg.lineHeight",
+      "type": "number",
+      "value": 1.1,
+      "status": "unverified",
+      "evidence": {
+        "line": 40,
+        "sourcePath": "typography.display-lg.lineHeight"
+      }
+    },
+    {
+      "path": "typography.displaylg.letterspacing",
+      "sourcePath": "typography.display-lg.letterSpacing",
+      "type": "dimension",
+      "value": "-0.96px",
+      "status": "unverified",
+      "evidence": {
+        "line": 41,
+        "sourcePath": "typography.display-lg.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.headline.fontfamily",
+      "sourcePath": "typography.headline.fontFamily",
+      "type": "fontFamily",
+      "value": "figmaSans",
+      "status": "unverified",
+      "evidence": {
+        "line": 44,
+        "sourcePath": "typography.headline.fontFamily"
+      }
+    },
+    {
+      "path": "typography.headline.fontsize",
+      "sourcePath": "typography.headline.fontSize",
+      "type": "dimension",
+      "value": "26px",
+      "status": "unverified",
+      "evidence": {
+        "line": 45,
+        "sourcePath": "typography.headline.fontSize"
+      }
+    },
+    {
+      "path": "typography.headline.fontweight",
+      "sourcePath": "typography.headline.fontWeight",
+      "type": "number",
+      "value": 540,
+      "status": "unverified",
+      "evidence": {
+        "line": 46,
+        "sourcePath": "typography.headline.fontWeight"
+      }
+    },
+    {
+      "path": "typography.headline.lineheight",
+      "sourcePath": "typography.headline.lineHeight",
+      "type": "number",
+      "value": 1.35,
+      "status": "unverified",
+      "evidence": {
+        "line": 47,
+        "sourcePath": "typography.headline.lineHeight"
+      }
+    },
+    {
+      "path": "typography.headline.letterspacing",
+      "sourcePath": "typography.headline.letterSpacing",
+      "type": "dimension",
+      "value": "-0.26px",
+      "status": "unverified",
+      "evidence": {
+        "line": 48,
+        "sourcePath": "typography.headline.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.subhead.fontfamily",
+      "sourcePath": "typography.subhead.fontFamily",
+      "type": "fontFamily",
+      "value": "figmaSans",
+      "status": "unverified",
+      "evidence": {
+        "line": 51,
+        "sourcePath": "typography.subhead.fontFamily"
+      }
+    },
+    {
+      "path": "typography.subhead.fontsize",
+      "sourcePath": "typography.subhead.fontSize",
+      "type": "dimension",
+      "value": "26px",
+      "status": "unverified",
+      "evidence": {
+        "line": 52,
+        "sourcePath": "typography.subhead.fontSize"
+      }
+    },
+    {
+      "path": "typography.subhead.fontweight",
+      "sourcePath": "typography.subhead.fontWeight",
+      "type": "number",
+      "value": 340,
+      "status": "unverified",
+      "evidence": {
+        "line": 53,
+        "sourcePath": "typography.subhead.fontWeight"
+      }
+    },
+    {
+      "path": "typography.subhead.lineheight",
+      "sourcePath": "typography.subhead.lineHeight",
+      "type": "number",
+      "value": 1.35,
+      "status": "unverified",
+      "evidence": {
+        "line": 54,
+        "sourcePath": "typography.subhead.lineHeight"
+      }
+    },
+    {
+      "path": "typography.subhead.letterspacing",
+      "sourcePath": "typography.subhead.letterSpacing",
+      "type": "dimension",
+      "value": "-0.26px",
+      "status": "unverified",
+      "evidence": {
+        "line": 55,
+        "sourcePath": "typography.subhead.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.cardtitle.fontfamily",
+      "sourcePath": "typography.card-title.fontFamily",
+      "type": "fontFamily",
+      "value": "figmaSans",
+      "status": "unverified",
+      "evidence": {
+        "line": 58,
+        "sourcePath": "typography.card-title.fontFamily"
+      }
+    },
+    {
+      "path": "typography.cardtitle.fontsize",
+      "sourcePath": "typography.card-title.fontSize",
+      "type": "dimension",
+      "value": "24px",
+      "status": "unverified",
+      "evidence": {
+        "line": 59,
+        "sourcePath": "typography.card-title.fontSize"
+      }
+    },
+    {
+      "path": "typography.cardtitle.fontweight",
+      "sourcePath": "typography.card-title.fontWeight",
+      "type": "number",
+      "value": 700,
+      "status": "unverified",
+      "evidence": {
+        "line": 60,
+        "sourcePath": "typography.card-title.fontWeight"
+      }
+    },
+    {
+      "path": "typography.cardtitle.lineheight",
+      "sourcePath": "typography.card-title.lineHeight",
+      "type": "number",
+      "value": 1.45,
+      "status": "unverified",
+      "evidence": {
+        "line": 61,
+        "sourcePath": "typography.card-title.lineHeight"
+      }
+    },
+    {
+      "path": "typography.cardtitle.letterspacing",
+      "sourcePath": "typography.card-title.letterSpacing",
+      "type": "number",
+      "value": 0,
+      "status": "unverified",
+      "evidence": {
+        "line": 62,
+        "sourcePath": "typography.card-title.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.bodylg.fontfamily",
+      "sourcePath": "typography.body-lg.fontFamily",
+      "type": "fontFamily",
+      "value": "figmaSans",
+      "status": "unverified",
+      "evidence": {
+        "line": 65,
+        "sourcePath": "typography.body-lg.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodylg.fontsize",
+      "sourcePath": "typography.body-lg.fontSize",
+      "type": "dimension",
+      "value": "20px",
+      "status": "unverified",
+      "evidence": {
+        "line": 66,
+        "sourcePath": "typography.body-lg.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodylg.fontweight",
+      "sourcePath": "typography.body-lg.fontWeight",
+      "type": "number",
+      "value": 330,
+      "status": "unverified",
+      "evidence": {
+        "line": 67,
+        "sourcePath": "typography.body-lg.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodylg.lineheight",
+      "sourcePath": "typography.body-lg.lineHeight",
+      "type": "number",
+      "value": 1.4,
+      "status": "unverified",
+      "evidence": {
+        "line": 68,
+        "sourcePath": "typography.body-lg.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodylg.letterspacing",
+      "sourcePath": "typography.body-lg.letterSpacing",
+      "type": "dimension",
+      "value": "-0.14px",
+      "status": "unverified",
+      "evidence": {
+        "line": 69,
+        "sourcePath": "typography.body-lg.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.body.fontfamily",
+      "sourcePath": "typography.body.fontFamily",
+      "type": "fontFamily",
+      "value": "figmaSans",
+      "status": "unverified",
+      "evidence": {
+        "line": 72,
+        "sourcePath": "typography.body.fontFamily"
+      }
+    },
+    {
+      "path": "typography.body.fontsize",
+      "sourcePath": "typography.body.fontSize",
+      "type": "dimension",
+      "value": "18px",
+      "status": "unverified",
+      "evidence": {
+        "line": 73,
+        "sourcePath": "typography.body.fontSize"
+      }
+    },
+    {
+      "path": "typography.body.fontweight",
+      "sourcePath": "typography.body.fontWeight",
+      "type": "number",
+      "value": 320,
+      "status": "unverified",
+      "evidence": {
+        "line": 74,
+        "sourcePath": "typography.body.fontWeight"
+      }
+    },
+    {
+      "path": "typography.body.lineheight",
+      "sourcePath": "typography.body.lineHeight",
+      "type": "number",
+      "value": 1.45,
+      "status": "unverified",
+      "evidence": {
+        "line": 75,
+        "sourcePath": "typography.body.lineHeight"
+      }
+    },
+    {
+      "path": "typography.body.letterspacing",
+      "sourcePath": "typography.body.letterSpacing",
+      "type": "dimension",
+      "value": "-0.26px",
+      "status": "unverified",
+      "evidence": {
+        "line": 76,
+        "sourcePath": "typography.body.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.bodysm.fontfamily",
+      "sourcePath": "typography.body-sm.fontFamily",
+      "type": "fontFamily",
+      "value": "figmaSans",
+      "status": "unverified",
+      "evidence": {
+        "line": 79,
+        "sourcePath": "typography.body-sm.fontFamily"
+      }
+    },
+    {
+      "path": "typography.bodysm.fontsize",
+      "sourcePath": "typography.body-sm.fontSize",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 80,
+        "sourcePath": "typography.body-sm.fontSize"
+      }
+    },
+    {
+      "path": "typography.bodysm.fontweight",
+      "sourcePath": "typography.body-sm.fontWeight",
+      "type": "number",
+      "value": 330,
+      "status": "unverified",
+      "evidence": {
+        "line": 81,
+        "sourcePath": "typography.body-sm.fontWeight"
+      }
+    },
+    {
+      "path": "typography.bodysm.lineheight",
+      "sourcePath": "typography.body-sm.lineHeight",
+      "type": "number",
+      "value": 1.45,
+      "status": "unverified",
+      "evidence": {
+        "line": 82,
+        "sourcePath": "typography.body-sm.lineHeight"
+      }
+    },
+    {
+      "path": "typography.bodysm.letterspacing",
+      "sourcePath": "typography.body-sm.letterSpacing",
+      "type": "dimension",
+      "value": "-0.14px",
+      "status": "unverified",
+      "evidence": {
+        "line": 83,
+        "sourcePath": "typography.body-sm.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.link.fontfamily",
+      "sourcePath": "typography.link.fontFamily",
+      "type": "fontFamily",
+      "value": "figmaSans",
+      "status": "unverified",
+      "evidence": {
+        "line": 86,
+        "sourcePath": "typography.link.fontFamily"
+      }
+    },
+    {
+      "path": "typography.link.fontsize",
+      "sourcePath": "typography.link.fontSize",
+      "type": "dimension",
+      "value": "20px",
+      "status": "unverified",
+      "evidence": {
+        "line": 87,
+        "sourcePath": "typography.link.fontSize"
+      }
+    },
+    {
+      "path": "typography.link.fontweight",
+      "sourcePath": "typography.link.fontWeight",
+      "type": "number",
+      "value": 480,
+      "status": "unverified",
+      "evidence": {
+        "line": 88,
+        "sourcePath": "typography.link.fontWeight"
+      }
+    },
+    {
+      "path": "typography.link.lineheight",
+      "sourcePath": "typography.link.lineHeight",
+      "type": "number",
+      "value": 1.4,
+      "status": "unverified",
+      "evidence": {
+        "line": 89,
+        "sourcePath": "typography.link.lineHeight"
+      }
+    },
+    {
+      "path": "typography.link.letterspacing",
+      "sourcePath": "typography.link.letterSpacing",
+      "type": "dimension",
+      "value": "-0.10px",
+      "status": "unverified",
+      "evidence": {
+        "line": 90,
+        "sourcePath": "typography.link.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.button.fontfamily",
+      "sourcePath": "typography.button.fontFamily",
+      "type": "fontFamily",
+      "value": "figmaSans",
+      "status": "unverified",
+      "evidence": {
+        "line": 93,
+        "sourcePath": "typography.button.fontFamily"
+      }
+    },
+    {
+      "path": "typography.button.fontsize",
+      "sourcePath": "typography.button.fontSize",
+      "type": "dimension",
+      "value": "20px",
+      "status": "unverified",
+      "evidence": {
+        "line": 94,
+        "sourcePath": "typography.button.fontSize"
+      }
+    },
+    {
+      "path": "typography.button.fontweight",
+      "sourcePath": "typography.button.fontWeight",
+      "type": "number",
+      "value": 480,
+      "status": "unverified",
+      "evidence": {
+        "line": 95,
+        "sourcePath": "typography.button.fontWeight"
+      }
+    },
+    {
+      "path": "typography.button.lineheight",
+      "sourcePath": "typography.button.lineHeight",
+      "type": "number",
+      "value": 1.4,
+      "status": "unverified",
+      "evidence": {
+        "line": 96,
+        "sourcePath": "typography.button.lineHeight"
+      }
+    },
+    {
+      "path": "typography.button.letterspacing",
+      "sourcePath": "typography.button.letterSpacing",
+      "type": "dimension",
+      "value": "-0.10px",
+      "status": "unverified",
+      "evidence": {
+        "line": 97,
+        "sourcePath": "typography.button.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.eyebrow.fontfamily",
+      "sourcePath": "typography.eyebrow.fontFamily",
+      "type": "fontFamily",
+      "value": "figmaMono",
+      "status": "unverified",
+      "evidence": {
+        "line": 100,
+        "sourcePath": "typography.eyebrow.fontFamily"
+      }
+    },
+    {
+      "path": "typography.eyebrow.fontsize",
+      "sourcePath": "typography.eyebrow.fontSize",
+      "type": "dimension",
+      "value": "18px",
+      "status": "unverified",
+      "evidence": {
+        "line": 101,
+        "sourcePath": "typography.eyebrow.fontSize"
+      }
+    },
+    {
+      "path": "typography.eyebrow.fontweight",
+      "sourcePath": "typography.eyebrow.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 102,
+        "sourcePath": "typography.eyebrow.fontWeight"
+      }
+    },
+    {
+      "path": "typography.eyebrow.lineheight",
+      "sourcePath": "typography.eyebrow.lineHeight",
+      "type": "number",
+      "value": 1.3,
+      "status": "unverified",
+      "evidence": {
+        "line": 103,
+        "sourcePath": "typography.eyebrow.lineHeight"
+      }
+    },
+    {
+      "path": "typography.eyebrow.letterspacing",
+      "sourcePath": "typography.eyebrow.letterSpacing",
+      "type": "dimension",
+      "value": "0.54px",
+      "status": "unverified",
+      "evidence": {
+        "line": 104,
+        "sourcePath": "typography.eyebrow.letterSpacing"
+      }
+    },
+    {
+      "path": "typography.caption.fontfamily",
+      "sourcePath": "typography.caption.fontFamily",
+      "type": "fontFamily",
+      "value": "figmaMono",
+      "status": "unverified",
+      "evidence": {
+        "line": 107,
+        "sourcePath": "typography.caption.fontFamily"
+      }
+    },
+    {
+      "path": "typography.caption.fontsize",
+      "sourcePath": "typography.caption.fontSize",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 108,
+        "sourcePath": "typography.caption.fontSize"
+      }
+    },
+    {
+      "path": "typography.caption.fontweight",
+      "sourcePath": "typography.caption.fontWeight",
+      "type": "number",
+      "value": 400,
+      "status": "unverified",
+      "evidence": {
+        "line": 109,
+        "sourcePath": "typography.caption.fontWeight"
+      }
+    },
+    {
+      "path": "typography.caption.lineheight",
+      "sourcePath": "typography.caption.lineHeight",
+      "type": "number",
+      "value": 1,
+      "status": "unverified",
+      "evidence": {
+        "line": 110,
+        "sourcePath": "typography.caption.lineHeight"
+      }
+    },
+    {
+      "path": "typography.caption.letterspacing",
+      "sourcePath": "typography.caption.letterSpacing",
+      "type": "dimension",
+      "value": "0.60px",
+      "status": "unverified",
+      "evidence": {
+        "line": 111,
+        "sourcePath": "typography.caption.letterSpacing"
+      }
+    },
+    {
+      "path": "rounded.xs",
+      "sourcePath": "rounded.xs",
+      "type": "dimension",
+      "value": "2px",
+      "status": "unverified",
+      "evidence": {
+        "line": 115,
+        "sourcePath": "rounded.xs"
+      }
+    },
+    {
+      "path": "rounded.sm",
+      "sourcePath": "rounded.sm",
+      "type": "dimension",
+      "value": "6px",
+      "status": "unverified",
+      "evidence": {
+        "line": 116,
+        "sourcePath": "rounded.sm"
+      }
+    },
+    {
+      "path": "rounded.md",
+      "sourcePath": "rounded.md",
+      "type": "dimension",
+      "value": "8px",
+      "status": "unverified",
+      "evidence": {
+        "line": 117,
+        "sourcePath": "rounded.md"
+      }
+    },
+    {
+      "path": "rounded.lg",
+      "sourcePath": "rounded.lg",
+      "type": "dimension",
+      "value": "24px",
+      "status": "unverified",
+      "evidence": {
+        "line": 118,
+        "sourcePath": "rounded.lg"
+      }
+    },
+    {
+      "path": "rounded.xl",
+      "sourcePath": "rounded.xl",
+      "type": "dimension",
+      "value": "32px",
+      "status": "unverified",
+      "evidence": {
+        "line": 119,
+        "sourcePath": "rounded.xl"
+      }
+    },
+    {
+      "path": "rounded.pill",
+      "sourcePath": "rounded.pill",
+      "type": "dimension",
+      "value": "50px",
+      "status": "unverified",
+      "evidence": {
+        "line": 120,
+        "sourcePath": "rounded.pill"
+      }
+    },
+    {
+      "path": "rounded.full",
+      "sourcePath": "rounded.full",
+      "type": "dimension",
+      "value": "9999px",
+      "status": "unverified",
+      "evidence": {
+        "line": 121,
+        "sourcePath": "rounded.full"
+      }
+    },
+    {
+      "path": "spacing.hair",
+      "sourcePath": "spacing.hair",
+      "type": "dimension",
+      "value": "1px",
+      "status": "unverified",
+      "evidence": {
+        "line": 124,
+        "sourcePath": "spacing.hair"
+      }
+    },
+    {
+      "path": "spacing.xxs",
+      "sourcePath": "spacing.xxs",
+      "type": "dimension",
+      "value": "4px",
+      "status": "unverified",
+      "evidence": {
+        "line": 125,
+        "sourcePath": "spacing.xxs"
+      }
+    },
+    {
+      "path": "spacing.xs",
+      "sourcePath": "spacing.xs",
+      "type": "dimension",
+      "value": "8px",
+      "status": "unverified",
+      "evidence": {
+        "line": 126,
+        "sourcePath": "spacing.xs"
+      }
+    },
+    {
+      "path": "spacing.sm",
+      "sourcePath": "spacing.sm",
+      "type": "dimension",
+      "value": "12px",
+      "status": "unverified",
+      "evidence": {
+        "line": 127,
+        "sourcePath": "spacing.sm"
+      }
+    },
+    {
+      "path": "spacing.md",
+      "sourcePath": "spacing.md",
+      "type": "dimension",
+      "value": "16px",
+      "status": "unverified",
+      "evidence": {
+        "line": 128,
+        "sourcePath": "spacing.md"
+      }
+    },
+    {
+      "path": "spacing.lg",
+      "sourcePath": "spacing.lg",
+      "type": "dimension",
+      "value": "24px",
+      "status": "unverified",
+      "evidence": {
+        "line": 129,
+        "sourcePath": "spacing.lg"
+      }
+    },
+    {
+      "path": "spacing.xl",
+      "sourcePath": "spacing.xl",
+      "type": "dimension",
+      "value": "32px",
+      "status": "unverified",
+      "evidence": {
+        "line": 130,
+        "sourcePath": "spacing.xl"
+      }
+    },
+    {
+      "path": "spacing.xxl",
+      "sourcePath": "spacing.xxl",
+      "type": "dimension",
+      "value": "48px",
+      "status": "unverified",
+      "evidence": {
+        "line": 131,
+        "sourcePath": "spacing.xxl"
+      }
+    },
+    {
+      "path": "spacing.section",
+      "sourcePath": "spacing.section",
+      "type": "dimension",
+      "value": "96px",
+      "status": "unverified",
+      "evidence": {
+        "line": 132,
+        "sourcePath": "spacing.section"
+      }
+    }
+  ],
+  "rejectedTokens": [
+    {
+      "sourcePath": "typography.display-xl.fontFeature",
+      "value": "kern",
+      "reason": "Not a supported safe CSS literal; preserved in analysis"
+    },
+    {
+      "sourcePath": "typography.display-lg.fontFeature",
+      "value": "kern",
+      "reason": "Not a supported safe CSS literal; preserved in analysis"
+    },
+    {
+      "sourcePath": "typography.headline.fontFeature",
+      "value": "kern",
+      "reason": "Not a supported safe CSS literal; preserved in analysis"
+    },
+    {
+      "sourcePath": "typography.subhead.fontFeature",
+      "value": "kern",
+      "reason": "Not a supported safe CSS literal; preserved in analysis"
+    },
+    {
+      "sourcePath": "typography.card-title.fontFeature",
+      "value": "kern",
+      "reason": "Not a supported safe CSS literal; preserved in analysis"
+    },
+    {
+      "sourcePath": "typography.body-lg.fontFeature",
+      "value": "kern",
+      "reason": "Not a supported safe CSS literal; preserved in analysis"
+    },
+    {
+      "sourcePath": "typography.body.fontFeature",
+      "value": "kern",
+      "reason": "Not a supported safe CSS literal; preserved in analysis"
+    },
+    {
+      "sourcePath": "typography.body-sm.fontFeature",
+      "value": "kern",
+      "reason": "Not a supported safe CSS literal; preserved in analysis"
+    },
+    {
+      "sourcePath": "typography.link.fontFeature",
+      "value": "kern",
+      "reason": "Not a supported safe CSS literal; preserved in analysis"
+    },
+    {
+      "sourcePath": "typography.button.fontFeature",
+      "value": "kern",
+      "reason": "Not a supported safe CSS literal; preserved in analysis"
+    },
+    {
+      "sourcePath": "typography.eyebrow.fontFeature",
+      "value": "kern",
+      "reason": "Not a supported safe CSS literal; preserved in analysis"
+    },
+    {
+      "sourcePath": "typography.caption.fontFeature",
+      "value": "kern",
+      "reason": "Not a supported safe CSS literal; preserved in analysis"
+    }
+  ],
+  "homepage": {
+    "status": "missing",
+    "candidates": [],
+    "verification": {
+      "status": "verified",
+      "url": "https://www.figma.com/",
+      "label": "Current official homepage",
+      "checkedAt": "2026-11-07T02:13:02Z",
+      "evidence": [
+        {
+          "url": "https://www.figma.com/",
+          "title": "Figma: The collaborative canvas for design, code, and AI",
+          "note": "Public homepage read requested https://www.figma.com; final URL https://www.figma.com/. Returned branded navigation and product/company content consistent with this study's named entity."
+        }
+      ],
+      "notes": "Manually researched candidate, not a homepage URL extracted from DESIGN.md. Verifies current brand identity and homepage only, not the analysis's original capture date or visual fidelity."
+    }
+  },
+  "completeness": {
+    "presentFields": [
+      "colors",
+      "typography",
+      "rounded",
+      "spacing",
+      "components"
+    ],
+    "missingFields": [],
+    "tokenRoles": "incomplete",
+    "note": "Missing fields are not reconstructed. Prose-only colors have no inferred semantic role."
+  },
+  "provenance": {
+    "status": "independent-analysis",
+    "sources": [
+      {
+        "title": "VoltAgent awesome-design-md independent analysis",
+        "url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/figma/DESIGN.md"
+      }
+    ],
+    "verification": "unverified-secondary-analysis"
+  },
+  "limitations": [
+    "Independent secondary analysis, not an official brand system; all reported values are unverified.",
+    "No brand assets, logos, font binaries or screenshots copied. Font names are documentary, not font licenses.",
+    "Safe CSS literals are extracted without claiming complete roles, state coverage or visual fidelity.",
+    "Markdown is retained as inert evidence, never executed or rendered as raw HTML."
+  ]
+}
