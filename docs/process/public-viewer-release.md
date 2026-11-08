@@ -1,6 +1,6 @@
 # Public viewer release
 
-The public viewer packages 113 app-owned synthetic fixtures: Focus 20, Great Circle 22, stethem 55, Reads 11 and Bandit 5. The separate reference library contains 84 attributed studies. Material contains Lacouture’s 29 plates and 10 supplementary pages. The linked web atlas keeps its existing access policy and is not bundled.
+The public viewer packages 113 app-owned synthetic fixtures: Focus 20, Great Circle 22, stethem 55, Reads 11 and Bandit 5. The separate reference library contains 84 attributed studies. Material contains Lacouture’s 29 plates and 10 supplementary pages. Material now includes the 29 existing SVG reconstructions and color/geometry data in its own viewer. The separate original Site keeps its existing access policy.
 
 ## Publication boundaries
 

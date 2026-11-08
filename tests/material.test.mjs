@@ -11,7 +11,7 @@ test('all 29 plates and 10 supplements retain exact acquired bytes and source pa
  assert.equal(new Set(manifest.items.map(item=>item.id)).size,39);
  for(const item of manifest.items){assert.match(item.file,/^scans\/[a-z0-9-]+\.jpg$/);const image=await readFile(new URL('../collections/material/lacouture-1890/'+item.file,import.meta.url));assert.equal(createHash('sha256').update(image).digest('hex'),item.sha256);assert.equal(item.height,3000);assert.match(item.sourceURL,/^https:\/\/archive\.org\/details\/gri_33125012875395\/page\/n\d+\/mode\/1up$/);}
  assert.match(manifest.credit,/Getty Research Institute/);assert.match(manifest.rights,/NOT_IN_COPYRIGHT/);
- assert.equal(manifest.translationAccess,'Private to Robin');
+ assert.equal(manifest.translationURL,undefined); assert.equal(manifest.translationAccess,undefined); assert.equal(manifest.items.filter(item=>item.svg).length,29);
 });
 test('Material is separate from app and reference registries with a native labelled dropdown',async()=>{
  const html=await read('apps/studio/index.html'), main=await read('apps/studio/main.mjs');
@@ -58,3 +58,25 @@ test('public version helper requires an explicit package version and withholds c
 });
 
 test('public metadata sanitizer preserves JSON schema property definitions',()=>{const schema={properties:{withheldRevisions:{type:'array',items:{type:'string'}}}};assert.deepEqual(publicSourceMetadata(schema),schema);assert.equal(publicMetadataJSON(JSON.stringify(schema)),JSON.stringify(schema));});
+
+test('responsive scan derivatives and all existing translation assets retain verified hashes',async()=>{
+ const manifest=JSON.parse(await read('collections/material/lacouture-1890/manifest.json'));
+ const bytes=async file=>readFile(new URL('../collections/material/lacouture-1890/'+file,import.meta.url));
+ const hash=buffer=>createHash('sha256').update(buffer).digest('hex');
+ for(const item of manifest.items){
+  assert.deepEqual(item.previews.map(p=>p.height),[750,1500]);
+  for(const p of item.previews){const b=await bytes(p.file);assert.equal(b.length,p.bytes);assert.equal(hash(b),p.sha256);assert.ok(Math.abs(p.width-item.width*p.height/item.height)<=1);}
+  if(item.group==='plate'){assert.equal(hash(await bytes(item.svg)),item.svgSha256);assert.ok(item.swatchCount>0);}else assert.equal(item.svg,undefined);
+ }
+ assert.equal(manifest.translation.assets.filter(a=>a.file.endsWith('.svg')).length,29);
+ for(const asset of manifest.translation.assets){const b=await bytes(asset.file);assert.equal(hash(b),asset.sha256);assert.equal(b.length,asset.bytes);if(asset.file.endsWith('.svg')){const svg=b.toString();assert.doesNotMatch(svg,/<(?:script|foreignObject|image|animate)\b|\son\w+=|@import|url\([^#]/i);assert.match(svg,/Getty Research Institute/);assert.match(svg,/approximate|not calibrated/i);}}
+ assert.equal(manifest.items.reduce((sum,item)=>sum+(item.swatchCount||0),0),1695);
+});
+
+test('Material deep links normalize old panel mode and invalid values without inventing translations',async()=>{
+ const {materialSelection,materialView}=await import('../apps/studio/material.mjs');
+ const m={items:[{id:'plate-i'},{id:'title-page'}]};
+ assert.deepEqual(materialSelection(m,'https://example.test/?panel=title-page&view=translation'),{index:1,view:'translation'});
+ assert.deepEqual(materialSelection(m,'https://example.test/?panel=missing&view=other'),{index:0,view:'original'});
+ assert.equal(materialView('panels'),'original');assert.equal(materialView('compare'),'compare');
+});
