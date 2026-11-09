@@ -7,6 +7,7 @@ import {createHash} from 'node:crypto';
 import {execFileSync} from 'node:child_process';
 import {redactUnverifiedRevisions,publicSourceMetadata,publicMetadataJSON,publicVersionMetadata} from '../apps/studio/public-sources.mjs';
 import {buildPublicAppPreviews} from './public-app-previews.mjs';
+import {assertRegistryFresh} from './registry-freshness.mjs';
 const ROOT=fileURLToPath(new URL('../',import.meta.url));
 const json=x=>JSON.stringify(x,null,2)+'\n';
 const hash=x=>createHash('sha256').update(x).digest('hex');
@@ -30,6 +31,7 @@ export async function buildPublicRelease({output,base='/',focusRoot,greatCircleR
  output=resolve(output);if(output===ROOT||!relative(ROOT,output).startsWith('review/'))throw Error('Output must be a new directory under this checkout’s ignored review/.');
  await assertOutputPath(output);
  const inputs=[['focus',await realpath(focusRoot)],['great-circle',await realpath(greatCircleRoot)],['stethem',await realpath(stethemRoot)]];
+ await assertRegistryFresh([...inputs.map(([,path])=>path),...(includeAppPreviews?[readsRoot,banditRoot]:[])]);
  let fixtureCount=0;for(const [id,path]of inputs){const actual=JSON.parse(await readFile(join(path,'design/collection.json'),'utf8')),snapshot=JSON.parse(await readFile(join(ROOT,`registry/apps/${id}/collection.json`),'utf8'));if(actual.id!==id||JSON.stringify(actual.fixtures)!==JSON.stringify(snapshot.fixtures))throw Error(`App snapshot mismatch: ${id}; refresh explicitly before packaging.`);fixtureCount+=snapshot.fixtures.length;}
  const before=new Map(await Promise.all(inputs.map(async([id,path])=>[id,await signature(path)])));
  await mkdir(output,{recursive:false});

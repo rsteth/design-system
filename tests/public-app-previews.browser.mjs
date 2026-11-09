@@ -25,7 +25,7 @@ const server=http.createServer(async(req,res)=>{
  }catch{res.writeHead(404).end('Not found');}
 });
 await new Promise((yes,no)=>{server.once('error',no);server.listen(0,'127.0.0.1',yes);});
-const origin=`http://127.0.0.1:${server.address().port}`,errors=[],external=[],operations=[],failures=[],results=[];
+const origin=`http://127.0.0.1:${server.address().port}`,errors=[],external=[],operations=[],failures=[],results=[],banditPresentation=[];
 let browser;
 await mkdir(evidence,{recursive:true});
 try{
@@ -63,14 +63,30 @@ try{
      if(fixture.id==='voice-sample')await expect(target.locator('#sample')).toBeDisabled();
     }else{
      if(fixture.id==='landing'){
-      for(const close of ['Close','Escape','Close']){await target.getByRole('button',{name:'Join waiting list',exact:true}).first().click();await expect(target.getByRole('heading',{name:"The waiting list isn't open yet."})).toBeVisible();if(close==='Escape')await page.keyboard.press('Escape');else await target.getByRole('button',{name:'Close',exact:true}).click();await expect(target.locator('dialog')).not.toBeVisible();}
+      const crops=await target.locator('img[class*="landscape"],img[class*="footerLandscape"]').evaluateAll(images=>images.map(image=>{const frame=image.parentElement,style=getComputedStyle(image),frameStyle=getComputedStyle(frame),a=image.getBoundingClientRect(),b=frame.getBoundingClientRect();return {footer:image.className.includes('footerLandscape'),fit:style.objectFit,position:style.objectPosition,ratio:a.height/b.height,frameRatio:b.width/b.height,mask:frameStyle.maskImage,overflow:frameStyle.overflow,top:a.top-b.top,bottom:a.bottom-b.bottom};}));
+      assert.equal(crops.length,2);
+      for(const crop of crops){assert.equal(crop.fit,'cover');assert.equal(crop.overflow,'hidden');assert.ok(Math.abs(crop.ratio-(crop.frameRatio>=2?3:2))<0.01,'half/third source crop follows frame ratio');assert.match(crop.mask,/linear-gradient/);if(crop.footer){assert.equal(crop.position,'50% 100%');assert.ok(Math.abs(crop.bottom)<1);assert.match(crop.mask,/28%/);}else{assert.equal(crop.position,viewport.width<=700?'65% 0%':'50% 0%');assert.ok(Math.abs(crop.top)<1);assert.match(crop.mask,/62%.*100%/);}}
+      let palette;
+      for(const close of ['Close','Escape','Close']){
+       await target.getByRole('button',{name:'Join waiting list',exact:true}).first().click();await expect(target.getByRole('heading',{name:"The waiting list isn't open yet."})).toBeVisible();
+       const dialog=target.locator('dialog'),google=dialog.getByRole('link',{name:'Sign in with Google',exact:true});
+       await page.mouse.move(0,0);await expect(google).toHaveCSS('background-color','rgb(49, 92, 122)');
+       palette=await dialog.evaluate(el=>({scrim:getComputedStyle(el,'::backdrop').backgroundColor,shadow:getComputedStyle(el).boxShadow,border:getComputedStyle(el).borderColor}));
+       assert.equal(palette.scrim,'rgba(21, 45, 62, 0.6)');assert.equal(palette.shadow,'rgba(21, 45, 62, 0.267) 0px 20px 70px 0px');assert.equal(palette.border,'rgb(201, 208, 209)');
+       await google.hover();await expect(google).toHaveCSS('background-color','rgb(36, 71, 97)');
+       assert.equal(await google.getAttribute('href'),'#preview-navigation');await google.click();await expect(target.getByRole('status')).toContainText('navigation are disabled');await expect(dialog).toBeVisible();await expect(dialog.locator('input')).toHaveCount(0);
+       if(close==='Escape')await page.keyboard.press('Escape');else await dialog.getByRole('button',{name:'Close',exact:true}).click();await expect(dialog).not.toBeVisible();await target.getByRole('button',{name:'Dismiss',exact:true}).click();
+      }
+      banditPresentation.push({width:viewport.width,sandbox:framed,cta:'rgb(49, 92, 122)',hover:'rgb(36, 71, 97)',...palette,crops});
+      await target.getByRole('button',{name:'Join waiting list',exact:true}).first().click();if(!framed)await page.screenshot({path:join(evidence,`bandit-dialog-${viewport.width}.png`)});await page.keyboard.press('Escape');
+      await target.locator('footer').scrollIntoViewIfNeeded();if(!framed)await page.screenshot({path:join(evidence,`bandit-footer-${viewport.width}.png`)});await target.locator('header').scrollIntoViewIfNeeded();
       await target.getByRole('link',{name:'Sign in',exact:true}).first().click();await expect(target.getByRole('status')).toContainText('navigation are disabled');await target.getByRole('button',{name:'Dismiss',exact:true}).click();
      }
      if(fixture.id==='overview'){await expect(target.locator('.production-card')).toHaveCount(2);await target.getByLabel('Grain intensity').fill('0');await expect(target.locator('.texture-value')).toHaveText('Off');await target.getByRole('link',{name:/New production/}).click();await expect(target.getByRole('status')).toBeVisible();await target.getByRole('button',{name:'Dismiss'}).click();}
      if(fixture.id==='empty')await expect(target.getByRole('link',{name:/New production/})).toHaveCount(0);
      if(fixture.id==='controls'){assert.ok((await target.getByRole('button',{name:'Primary action'}).boundingBox()).height>=44);await target.getByLabel('Production name').fill('A local synthetic edit');}
     }
-    if(!framed&&['landing','studio-ready','overview'].includes(fixture.id))await page.screenshot({path:join(evidence,`${fixture.app}-${fixture.id}-${viewport.width}.png`),fullPage:true});
+    if(!framed&&['landing','studio-ready','overview'].includes(fixture.id)){await target.locator('body').evaluate(()=>{document.activeElement?.blur();window.scrollTo(0,0);});await page.mouse.move(0,0);await page.screenshot({path:join(evidence,`${fixture.app}-${fixture.id}-${viewport.width}.png`),fullPage:true});}
     await page.reload({waitUntil:'domcontentloaded'});
     if(fixture.app==='reads'){await expect(target.locator('html')).toHaveAttribute('data-fixture-ready',fixture.id);if(fixture.id==='studio-empty')await expect(target.locator('.job')).toHaveCount(0);if(fixture.id==='studio-progress')await expect(target.locator('.badge')).toHaveText('running');}
     else{await expect(target.locator('html')).toHaveAttribute('data-preview-ready','true');if(fixture.id==='overview')await expect(target.getByLabel('Grain intensity')).toHaveValue('12');if(fixture.id==='controls')await expect(target.getByLabel('Production name')).toHaveValue('A quiet morning');}
@@ -80,6 +96,6 @@ try{
   await context.close();
  }
  assert.deepEqual(external,[]);assert.deepEqual(operations,[]);assert.deepEqual(failures,[]);assert.deepEqual(errors,[]);
- const report={status:'passed',cases:results.length,results,browser:browser.version(),runtimeErrors:errors,externalRequests:external,backendRequests:operations,failedResponses:failures,limits:['Synthetic-only interaction; production acceptance and live providers not tested.','Screenshots must be visually inspected separately.']};
+ const report={status:'passed',cases:results.length,results,banditPresentation,browser:browser.version(),runtimeErrors:errors,externalRequests:external,backendRequests:operations,failedResponses:failures,limits:['Synthetic-only interaction; production acceptance and live providers not tested.','Screenshots must be visually inspected separately.']};
  await writeFile(join(evidence,'result.json'),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report));
 }finally{await browser?.close();await new Promise(r=>server.close(r));}

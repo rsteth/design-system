@@ -5,6 +5,7 @@ import {fileURLToPath,pathToFileURL} from 'node:url';
 import {createHash} from 'node:crypto';
 import {createRequire} from 'node:module';
 import {execFileSync} from 'node:child_process';
+import {assertRegistryFresh} from './registry-freshness.mjs';
 const ROOT=fileURLToPath(new URL('../',import.meta.url));
 const hash=bytes=>createHash('sha256').update(bytes).digest('hex');
 const json=value=>JSON.stringify(value,null,2)+'\n';
@@ -137,8 +138,9 @@ export async function buildPublicAppPreviews({outputRoot,base='/design-system/',
  if(!relative(ROOT,outputRoot).startsWith('review/'))throw Error('Preview output must be inside the assembly checkout review/.');
  let current=ROOT;for(const segment of relative(ROOT,outputRoot).split('/')){current=join(current,segment);try{if((await lstat(current)).isSymbolicLink())throw Error('Preview output ancestors cannot be symlinks.');}catch(error){if(error.code!=='ENOENT')throw error;}}
  const roots={reads:await realpath(readsRoot),bandit:await realpath(banditRoot)},collections={},before={};
+ await assertRegistryFresh(Object.values(roots));
  const sources={reads:[...READS_SOURCES,'design/collection.json','package.json'],bandit:[...BANDIT_SOURCES,...BANDIT_ASSETS.map(p=>'apps/web/public/'+p),'design/collection.json','package.json']};
- for(const id of ['reads','bandit']){collections[id]=JSON.parse((await input(roots[id],'design/collection.json')).toString());if(collections[id].id!==id)throw Error('Incorrect app input.');for(const fixture of collections[id].fixtures)if(!/^[a-z0-9-]+$/.test(fixture.id))throw Error('Unsafe fixture identifier.');before[id]=await signature(roots[id],sources[id]);for(const path of [join(outputRoot,'previews'),join(outputRoot,'previews',id)]){try{if((await lstat(path)).isSymbolicLink())throw Error('Preview output cannot contain symlinks.');}catch(error){if(error.code!=='ENOENT')throw error;}}await mkdir(join(outputRoot,'previews',id),{recursive:true});if((await readdir(join(outputRoot,'previews',id))).length)throw Error('App preview output must be empty.');}
+ for(const id of ['reads','bandit']){collections[id]=JSON.parse((await input(roots[id],'design/collection.json')).toString());if(collections[id].id!==id)throw Error('Incorrect app input.');sources[id].push('design/'+collections[id].tokens,...(collections[id].inventory?['design/'+collections[id].inventory]:[]));for(const fixture of collections[id].fixtures)if(!/^[a-z0-9-]+$/.test(fixture.id))throw Error('Unsafe fixture identifier.');before[id]=await signature(roots[id],sources[id]);for(const path of [join(outputRoot,'previews'),join(outputRoot,'previews',id)]){try{if((await lstat(path)).isSymbolicLink())throw Error('Preview output cannot contain symlinks.');}catch(error){if(error.code!=='ENOENT')throw error;}}await mkdir(join(outputRoot,'previews',id),{recursive:true});if((await readdir(join(outputRoot,'previews',id))).length)throw Error('App preview output must be empty.');}
  const reads=await buildReads({root:roots.reads,out:join(outputRoot,'previews/reads'),base,collection:collections.reads});
  const bandit=await buildBandit({root:roots.bandit,out:join(outputRoot,'previews/bandit'),base,collection:collections.bandit,outputRoot});
  const apps={reads,bandit:bandit.app};
