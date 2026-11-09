@@ -20,6 +20,7 @@ try{
   await context.route('**/*',route=>{if(new URL(route.request().url()).origin!==origin){external.push(route.request().url());return route.abort();}return route.continue();});
   const page=await context.newPage();page.on('pageerror',e=>errors.push(e.message));
   await page.goto(url);await page.locator('.material-index-grid').waitFor();await overflow(page);
+  assert.equal(await page.locator('.material-supplements').evaluate(n=>n.open),false);
   assert.equal(await page.locator('.material-index-card').count(),29);assert.equal(await page.locator('.material-supplement-link').count(),10);
   assert.equal(await page.locator('.material-stage').count(),0);
   const links=await page.locator('.material-index-card').evaluateAll(nodes=>nodes.map(n=>({href:n.href,src:n.querySelector('img').src,name:n.getAttribute('aria-label')})));
@@ -48,8 +49,22 @@ try{
    assert.equal(new URL(page.url()).searchParams.get('panel'),item.id);assert.equal(await page.getByRole('button',{name:'Web translation',exact:true}).isDisabled(),true);
    await page.getByRole('link',{name:'← All plates',exact:true}).click();assert.equal(await card.evaluate(n=>n===document.activeElement),true);
   }
-  // Back restores the gallery position as well as its focused link.
-  const last=page.locator('#index-plate-xxviii');await last.scrollIntoViewIfNeeded();const savedY=await page.evaluate(()=>scrollY);await last.click();await page.locator('.material-sheet svg:not(.material-compare-icon)').waitFor();await page.goBack();await last.waitFor();await page.waitForTimeout(100);assert.ok(Math.abs(await page.evaluate(()=>scrollY)-savedY)<2);
+  // Back/Forward restores disclosure state, position and focus. A shorter footer
+  // must not clamp saved scroll because the previously open supplements closed.
+  const last=page.locator('#index-plate-xxviii'),supplements=page.locator('.material-supplements');
+  assert.equal(await supplements.evaluate(n=>n.open),true);
+  for(const open of [true,false]){
+   if(await supplements.evaluate(n=>n.open)!==open)await supplements.locator('summary').click();
+   await last.scrollIntoViewIfNeeded();const savedY=await page.evaluate(()=>scrollY);
+   await last.click();await page.locator('.material-sheet svg:not(.material-compare-icon)').waitFor();
+   for(let visit=0;visit<2;visit++){
+    await page.goBack();await last.waitFor();await page.waitForTimeout(100);
+    assert.equal(await supplements.evaluate(n=>n.open),open);
+    assert.equal(await last.evaluate(n=>n===document.activeElement),true);
+    assert.ok(Math.abs(await page.evaluate(()=>scrollY)-savedY)<2);
+    if(visit===0){await page.goForward();await page.locator('.material-sheet svg:not(.material-compare-icon)').waitFor();}
+   }
+  }
   // Keyboard activation, visible focus, reload, Back/Forward and native new-tab links.
   const card=page.locator('#index-plate-ii');await card.focus();await page.keyboard.press('Tab');await page.keyboard.press('Shift+Tab');
   assert.notEqual(await card.evaluate(n=>getComputedStyle(n).outlineStyle),'none');
@@ -83,5 +98,5 @@ try{
  // A late SVG load cannot repopulate the overview after return.
  await page.getByRole('link',{name:'← All plates',exact:true}).click();await page.waitForTimeout(450);assert.equal(await page.locator('.material-sheet').count(),0);assert.equal(await page.locator('.material-index-card').count(),29);
  await page.close();assert.deepEqual(errors,[]);assert.deepEqual(external,[]);
- const report={status:'passed',results,errors,external,flows:['all 29 exact SVG thumbnails and unique plate destinations','all 10 original-only supplementary links','keyboard, focus return, Back/Forward/reload and direct links','legacy view-only links','workspace return','thumbnail failure, viewer retry and rapid navigation']};await writeFile(join(output,'results.json'),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report));
+ const report={status:'passed',results,errors,external,flows:['all 29 exact SVG thumbnails and unique plate destinations','all 10 original-only supplementary links','keyboard, focus return, Back/Forward/reload and direct links','open/closed supplements and exact index scroll survive repeated Back/Forward','legacy view-only links','workspace return','thumbnail failure, viewer retry and rapid navigation']};await writeFile(join(output,'results.json'),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report));
 }finally{await browser.close();await new Promise(r=>server.close(r));}
