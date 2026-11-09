@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "createdAt": "2026-11-09T01:12:40.434Z",
+  "createdAt": "2026-11-09T01:30:04.395Z",
   "status": "approved-static-release-artifact",
   "licenseGaps": [],
   "focusEpub": "fixture-only",
@@ -101,6 +101,16 @@
       "path": "apps/studio/main.mjs",
       "bytes": 4750,
       "sha256": "c009cf33547b5d389e10b37aabec457ab408159db7cfd2a004d520081cded633"
+    },
+    {
+      "path": "apps/studio/material-framing.mjs",
+      "bytes": 3333,
+      "sha256": "abdf0f3f86d8b178dbccd536cbf8202633316865873f59496e8b403e22bf37c2"
+    },
+    {
+      "path": "apps/studio/material-registration.mjs",
+      "bytes": 7300,
+      "sha256": "d71b6d85914414e93d056d63a0b321bb22d4ed1f287df04c958bd237e760ee5b"
     },
     {
       "path": "apps/studio/material.css",
@@ -5038,24 +5048,24 @@
       "sha256": "8bb5c72e5edb47e6e584b54aa85b299801d979a92fccb4e5c1d8d2e73bc6483d"
     },
     {
-      "path": "previews/bandit/assets/index-C3PzHl6_.js",
-      "bytes": 242098,
-      "sha256": "0a25af1b2cab061e4e8bc76918786c24544a48bf35d851ee183851a161aad2ea"
+      "path": "previews/bandit/assets/index-BnvSFG8J.js",
+      "bytes": 242202,
+      "sha256": "24f0d739014e061feb3806ff749e9ba878793400fabab14291a7f804457f0801"
     },
     {
-      "path": "previews/bandit/assets/index-DMgMcl3V.css",
-      "bytes": 45537,
-      "sha256": "48f56c6d42d90d48da5f22388bd8af0e954459af1a298fe10d1a1fbe178fc6a6"
+      "path": "previews/bandit/assets/index-dltRrkl8.css",
+      "bytes": 46288,
+      "sha256": "475ab31074a7a9f0d55a5ba41a74f35f5a861b6f4f3886ee67cf2ee43ea95bbf"
     },
     {
       "path": "previews/bandit/controls/index.html",
       "bytes": 715,
-      "sha256": "97025eb75cad43d4b4744c3cf11a08a3e65a0edd92a76eb70ec51d961433fd8b"
+      "sha256": "e3788832b39ee40a2f02a9184259223805f214abc5ef655cfa57aa68b7664acb"
     },
     {
       "path": "previews/bandit/empty/index.html",
       "bytes": 715,
-      "sha256": "97025eb75cad43d4b4744c3cf11a08a3e65a0edd92a76eb70ec51d961433fd8b"
+      "sha256": "e3788832b39ee40a2f02a9184259223805f214abc5ef655cfa57aa68b7664acb"
     },
     {
       "path": "previews/bandit/fonts/README.md",
@@ -5120,17 +5130,17 @@
     {
       "path": "previews/bandit/landing/index.html",
       "bytes": 715,
-      "sha256": "97025eb75cad43d4b4744c3cf11a08a3e65a0edd92a76eb70ec51d961433fd8b"
+      "sha256": "e3788832b39ee40a2f02a9184259223805f214abc5ef655cfa57aa68b7664acb"
     },
     {
       "path": "previews/bandit/overview/index.html",
       "bytes": 715,
-      "sha256": "97025eb75cad43d4b4744c3cf11a08a3e65a0edd92a76eb70ec51d961433fd8b"
+      "sha256": "e3788832b39ee40a2f02a9184259223805f214abc5ef655cfa57aa68b7664acb"
     },
     {
       "path": "previews/bandit/status/index.html",
       "bytes": 715,
-      "sha256": "97025eb75cad43d4b4744c3cf11a08a3e65a0edd92a76eb70ec51d961433fd8b"
+      "sha256": "e3788832b39ee40a2f02a9184259223805f214abc5ef655cfa57aa68b7664acb"
     },
     {
       "path": "previews/focus/assets/workbench-C0dByoBP.js",
@@ -5910,7 +5920,7 @@
     {
       "path": "registry/apps/bandit/collection.json",
       "bytes": 3587,
-      "sha256": "007d5965af930da5ea4f28b060407593a557af62d013601a14cee0e0962e080f"
+      "sha256": "49540dbd92f8c9c3b34600e57c986cef931d42dc7a19e4c70a1d2210bc294b96"
     },
     {
       "path": "registry/apps/bandit/inventory.json",
@@ -5919,8 +5929,8 @@
     },
     {
       "path": "registry/apps/bandit/tokens.json",
-      "bytes": 3545,
-      "sha256": "ec96447be6eb0331d5cc007b32e9df42d18773b556c06ee0edb51bc4fb8efe18"
+      "bytes": 3835,
+      "sha256": "9d06d08c8348287383ba83004762a83715713a4f90b3252405a98b17dedc2cdd"
     },
     {
       "path": "registry/apps/focus/collection.json",
@@ -6001,16 +6011,6 @@
       "path": "registry/references.json",
       "bytes": 4878,
       "sha256": "3338e590d09c08be0b369288dada6fdf9f39e0654566a85f90531acf40c25819"
-    },
-    {
-      "path": "apps/studio/material-framing.mjs",
-      "bytes": 3333,
-      "sha256": "abdf0f3f86d8b178dbccd536cbf8202633316865873f59496e8b403e22bf37c2"
-    },
-    {
-      "path": "apps/studio/material-registration.mjs",
-      "bytes": 7300,
-      "sha256": "d71b6d85914414e93d056d63a0b321bb22d4ed1f287df04c958bd237e760ee5b"
     }
   ]
 }
