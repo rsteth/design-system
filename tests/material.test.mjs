@@ -80,3 +80,23 @@ test('Material deep links normalize old panel mode and invalid values without in
  assert.deepEqual(materialSelection(m,'https://example.test/?panel=missing&view=other'),{index:0,view:'original'});
  assert.equal(materialView('panels'),'original');assert.equal(materialView('compare'),'compare');
 });
+
+
+test('comparison coordinates use the current page rectangle and clamp at both edges', async()=>{
+ const {materialRevealPercent}=await import('../apps/studio/material.mjs');
+ assert.equal(materialRevealPercent(350,100,500),50);
+ assert.equal(materialRevealPercent(400,100,1000),30);
+ assert.equal(materialRevealPercent(-100,100,500),0);
+ assert.equal(materialRevealPercent(900,100,500),100);
+ assert.equal(materialRevealPercent(100,100,0),50);
+ assert.equal(materialRevealPercent(100,-200,600),50);
+});
+
+test('Compare uses aligned source and translation layers without modifying source assets',async()=>{
+ const code=await read('apps/studio/material.mjs'),css=await read('apps/studio/material.css');
+ assert.match(code,/\['translation','original'\]/);
+ assert.match(css,/clip-path:inset\(var\(--compare-y,50%\) 0 0 var\(--compare-x,50%\)\)/);
+ assert.match(code,/role: 'slider'/);assert.match(code,/'aria-orientation': orientation/);
+ assert.match(code,/pointercancel/);assert.match(code,/lostpointercapture/);
+ assert.doesNotMatch(code,/data-stacked|translation sits below/);
+});

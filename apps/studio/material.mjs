@@ -46,9 +46,75 @@ async function fetchSVG(item) {
   try { return parseMaterialSVG(await svgCache.get(item.svg), item.id); }
   catch (error) { svgCache.delete(item.svg); throw error; }
 }
+// Keep both cuts in page-relative percentages so pan, resize and zoom never
+// change the chosen reveal. Pointer coordinates are measured afresh per event.
+export const materialRevealPercent = (coordinate, start, length) => length > 0 ? Math.max(0, Math.min(100, Math.round((coordinate - start) / length * 100))) : 50;
+export function mountMaterialCompare(sheet, values, onChange = () => {}) {
+  const handles = new Map();
+  let active;
+  const refresh = () => {
+    sheet.style.setProperty('--compare-x', `${values.x}%`);
+    sheet.style.setProperty('--compare-y', `${values.y}%`);
+    // Keep each grip clear of the other divider's hit strip. Its own movement
+    // never moves its grip along the track during a drag.
+    sheet.style.setProperty('--compare-x-grip', values.y >= 50 ? '25%' : '75%');
+    sheet.style.setProperty('--compare-y-grip', values.x <= 50 ? '75%' : '25%');
+    sheet.dataset.allSource = String(values.x === 0 && values.y === 0);
+    for (const [axis, handle] of handles) {
+      handle.setAttribute('aria-valuenow', String(values[axis]));
+      handle.setAttribute('aria-valuetext', `${values[axis]}% from ${axis === 'x' ? 'left' : 'top'}. Source is below and to the right of both dividers.`);
+    }
+    onChange();
+  };
+  const set = (axis, value) => { values[axis] = Math.max(0, Math.min(100, value)); refresh(); };
+  const stop = () => {
+    const previous = active; active = undefined; delete sheet.dataset.activeAxis;
+    if (previous?.pointerId !== undefined && previous.handle.hasPointerCapture(previous.pointerId)) previous.handle.releasePointerCapture(previous.pointerId);
+  };
+  for (const [axis, label, orientation] of [['x', 'Vertical divider, move left or right', 'horizontal'], ['y', 'Horizontal divider, move up or down', 'vertical']]) {
+    const handle = element('div', { class: 'material-compare-handle', 'data-axis': axis, role: 'slider', tabindex: '0', 'aria-label': label, 'aria-orientation': orientation, 'aria-valuemin': '0', 'aria-valuemax': '100', 'aria-describedby': 'material-compare-help' }, element('span', { class: 'material-compare-grip', 'aria-hidden': 'true' }, axis === 'x' ? '↔' : '↕'));
+    handles.set(axis, handle); sheet.append(handle);
+    const move = event => {
+      const rect = sheet.getBoundingClientRect();
+      set(axis, materialRevealPercent(axis === 'x' ? event.clientX : event.clientY, axis === 'x' ? rect.left : rect.top, axis === 'x' ? rect.width : rect.height));
+    };
+    handle.addEventListener('pointerdown', event => {
+      if (active || !event.isPrimary || event.button !== 0) return;
+      event.preventDefault(); handle.focus({ preventScroll: true });
+      active = { axis, handle, pointerId: event.pointerId, start: values[axis] };
+      sheet.dataset.activeAxis = axis; handle.setPointerCapture(event.pointerId); move(event);
+    });
+    handle.addEventListener('pointermove', event => { if (active?.handle === handle && active.pointerId === event.pointerId) move(event); });
+    handle.addEventListener('pointerup', event => { if (active?.handle === handle && active.pointerId === event.pointerId) { move(event); stop(); } });
+    for (const type of ['pointercancel', 'lostpointercapture']) handle.addEventListener(type, event => { if (active?.handle === handle && active.pointerId === event.pointerId) stop(); });
+    handle.addEventListener('keydown', event => {
+      if (event.key === 'Escape' && active?.handle === handle) { event.preventDefault(); set(axis, active.start); stop(); return; }
+      const backward = axis === 'x' ? 'ArrowLeft' : 'ArrowUp', forward = axis === 'x' ? 'ArrowRight' : 'ArrowDown';
+      if (![backward, forward, 'Home', 'End', 'PageUp', 'PageDown'].includes(event.key) || active?.pointerId !== undefined) return;
+      event.preventDefault();
+      active ??= { axis, handle, start: values[axis] }; sheet.dataset.activeAxis = axis;
+      const step = event.shiftKey || ['PageUp','PageDown'].includes(event.key) ? 10 : 1;
+      set(axis, event.key === 'Home' ? 0 : event.key === 'End' ? 100 : values[axis] + ([backward,'PageUp'].includes(event.key) ? -step : step));
+    });
+    handle.addEventListener('keyup', () => { if (active?.handle === handle && active.pointerId === undefined) stop(); });
+    handle.addEventListener('blur', () => { if (active?.handle === handle) stop(); });
+  }
+  const visibility = () => { if (document.hidden) stop(); };
+  window.addEventListener('blur', stop); document.addEventListener('visibilitychange', visibility);
+  refresh();
+  return {
+    // Keyboard inspection must not leave the focused swatch hidden by the scan.
+    reveal(node) {
+      const target = node.getBoundingClientRect(), page = sheet.getBoundingClientRect();
+      if (target.right > page.left + page.width * values.x / 100 && target.bottom > page.top + page.height * values.y / 100) set('x', Math.min(100, Math.ceil((target.right - page.left) / page.width * 100) + 1));
+    },
+    destroy() { stop(); window.removeEventListener('blur', stop); document.removeEventListener('visibilitychange', visibility); }
+  };
+}
 export function mountMaterial(root, material) {
   const initial = materialSelection(material, location.href);
-  let current = initial.index, preferredView = initial.view, zoom = 1, sequence = 0, destroyed = false, observer;
+  let current = initial.index, preferredView = initial.view, zoom = 1, sequence = 0, destroyed = false, observer, comparison;
+  const reveal = { x: 50, y: 50 };
   const main = element('main', { class: 'material-shell' });
   const intro = element('header', { class: 'material-intro' }, element('p', { class: 'material-eyebrow' }, 'MATERIAL / COLOR STUDIES / 1890'), element('h1', {}, material.title), element('p', { class: 'material-author' }, material.author), element('p', {}, '29 chromatic plates, translated into SVG and flat color. Explore the original scans and their web interpretation in the same arrangement.'));
   const content = element('section', { class: 'material-content', 'aria-label': 'Selected material' });
@@ -59,7 +125,7 @@ export function mountMaterial(root, material) {
     if (url.href !== location.href) history.pushState(null, '', url);
   }
   function render(focusSelector) {
-    const version = ++sequence; observer?.disconnect();
+    const version = ++sequence; observer?.disconnect(); comparison?.destroy(); comparison = undefined;
     const item = material.items[current], hasSVG = Boolean(item.svg), view = hasSVG ? preferredView : 'original';
     content.replaceChildren();
     const picker = element('select', { id: 'material-panel-picker' });
@@ -108,29 +174,39 @@ export function mountMaterial(root, material) {
     const caption = element('div', { class: 'material-caption' }, element('h2', { lang: 'fr' }, `${item.group === 'plate' ? 'Plate ' + item.number + ' · ' : ''}${item.title}`), downloads);
     content.append(toolbar, controls);
     if (!hasSVG) content.append(element('p', { class: 'material-mode-note', role: 'status' }, 'Supplementary page · original scan only. Web translation is available for the 29 numbered plates.'));
-    if (view === 'compare') content.append(element('p', { class: 'material-mode-note' }, 'On narrow screens, the translation sits below the original. Scroll inside the viewer to compare both pages.'));
+    if (view === 'compare') content.append(element('p', { class: 'material-mode-note', id: 'material-compare-help' }, 'Drag either divider. Source appears below and to the right; Web fills the rest. Use arrow keys to adjust a focused divider, or Home / End for its edges. Keyboard color inspection reveals the focused swatch by moving the vertical divider when needed.'));
     content.append(stage, inspector, caption);
     function fit() {
-      const compare = view === 'compare', stacked = stage.clientWidth < 660;
-      sheets.dataset.stacked = String(stacked);
-      const count = compare && !stacked ? 2 : 1;
-      const availableWidth = (stage.clientWidth - 32 - (count - 1) * 20) / count;
-      const fitWidth = Math.max(90, Math.min(availableWidth, (stage.clientHeight - 60) * item.width / item.height));
+      const compare = view === 'compare';
+      const availableWidth = stage.clientWidth - (compare ? 48 : 32);
+      const fitWidth = Math.max(90, Math.min(availableWidth, (stage.clientHeight - (compare ? 72 : 60)) * item.width / item.height));
       sheets.style.setProperty('--sheet-width', `${Math.floor(fitWidth * zoom)}px`);
       for (const image of sheets.querySelectorAll('img')) image.sizes = `${Math.ceil(fitWidth * zoom)}px`;
     }
     zoomPicker.addEventListener('change', () => { zoom = Number(zoomPicker.value); fit(); if (zoom === 1) stage.scrollTo(0,0); });
-    const requestedViews = view === 'compare' ? ['original','translation'] : [view];
+    let compareSheet, compareSlot;
+    if (view === 'compare') {
+      compareSlot = element('figure', { class: 'material-sheet-slot', 'data-mode': 'compare' }, element('figcaption', {}, 'Web translation / Source scan'));
+      compareSheet = element('div', { class: 'material-sheet material-compare', style: `aspect-ratio:${item.width}/${item.height}` });
+      compareSlot.append(compareSheet); sheets.append(compareSlot);
+    }
+    const requestedViews = view === 'compare' ? ['translation','original'] : [view];
     for (const mode of requestedViews) {
-      const slot = element('figure', { class: 'material-sheet-slot', 'data-mode': mode }, element('figcaption', {}, mode === 'original' ? 'Original scan' : 'Web translation · approximate flat colors'));
-      const sheet = element('div', { class: 'material-sheet', style: `aspect-ratio:${item.width}/${item.height}` }); slot.append(sheet); sheets.append(slot);
-      const status = element('p', { class: 'material-image-status', role: 'status' }, mode === 'original' ? 'Loading scan…' : 'Loading web translation…'); sheet.append(status);
+      let sheet;
+      if (compareSheet) {
+        sheet = element('div', { class: 'material-compare-layer', 'data-mode': mode }); compareSheet.append(sheet);
+        if (mode === 'original') sheet.append(element('span', { class: 'material-compare-label material-compare-source', 'aria-hidden': 'true' }, 'Source'));
+      } else {
+        const slot = element('figure', { class: 'material-sheet-slot', 'data-mode': mode }, element('figcaption', {}, mode === 'original' ? 'Original scan' : 'Web translation · approximate flat colors'));
+        sheet = element('div', { class: 'material-sheet', style: `aspect-ratio:${item.width}/${item.height}` }); slot.append(sheet); sheets.append(slot);
+      }
+      const status = element('p', { class: 'material-image-status', role: 'status' }, mode === 'original' ? 'Loading scan…' : 'Loading web translation…'); (compareSlot || sheet).append(status);
       const fail = message => { status.textContent = message; status.setAttribute('role','alert'); const retry = element('button', { type: 'button' }, 'Retry'); retry.addEventListener('click', () => render()); status.append(document.createElement('br'), retry); };
       if (mode === 'original') {
         const previews = item.previews || [];
         const src = assetURL(previews.at(-1)?.file || item.file);
         const image = element('img', { src, alt: `${item.group === 'plate' ? 'Plate ' + item.number + ': ' : ''}${item.title}. Original full-page Getty scan of Charles Lacouture’s Répertoire chromatique, 1890.`, width: item.width, height: item.height, decoding: 'async' });
-        if (previews.length) { image.srcset = [...previews.map(p => `${assetURL(p.file)} ${p.width}w`), `${assetURL(item.file)} ${item.width}w`].join(', '); image.sizes = view === 'compare' ? '(max-width: 700px) 90vw, 40vw' : '(max-width: 700px) 90vw, 60vw'; }
+        if (previews.length) { image.srcset = [...previews.map(p => `${assetURL(p.file)} ${p.width}w`), `${assetURL(item.file)} ${item.width}w`].join(', '); image.sizes = '(max-width: 700px) 90vw, 60vw'; }
         image.addEventListener('load', () => status.remove());
         image.addEventListener('error', () => fail('This scan could not load. Retry or use the source scan link below.'));
         sheet.append(image);
@@ -146,6 +222,7 @@ export function mountMaterial(root, material) {
           swatches.forEach((node, index) => {
             node.setAttribute('tabindex', index === 0 ? '0' : '-1'); node.setAttribute('role','button'); node.setAttribute('aria-pressed','false'); node.setAttribute('aria-label', `${node.dataset.label || 'Swatch ' + (index + 1)}, ${node.dataset.color || node.getAttribute('fill')}, inspect approximate color`);
             node.addEventListener('click', () => selectSwatch(node));
+            node.addEventListener('focus', () => { if (!destroyed && version === sequence) comparison?.reveal(node); });
             node.addEventListener('keydown', event => {
               if (['Enter',' '].includes(event.key)) { event.preventDefault(); selectSwatch(node); }
               else if (['ArrowRight','ArrowDown','ArrowLeft','ArrowUp','Home','End'].includes(event.key)) { event.preventDefault(); const next = event.key === 'Home' ? 0 : event.key === 'End' ? swatches.length - 1 : (index + (['ArrowRight','ArrowDown'].includes(event.key) ? 1 : -1) + swatches.length) % swatches.length; selectSwatch(swatches[next], true); }
@@ -155,9 +232,13 @@ export function mountMaterial(root, material) {
         }).catch(error => { if (!destroyed && version === sequence) fail(`${error.message} Retry or use Original.`); });
       }
     }
+    if (compareSheet) {
+      compareSheet.append(element('span', { class: 'material-compare-label material-compare-web', 'aria-hidden': 'true' }, 'Web'));
+      comparison = mountMaterialCompare(compareSheet, reveal);
+    }
     observer = new ResizeObserver(fit); observer.observe(stage); fit();
     if (focusSelector) content.querySelector(focusSelector)?.focus();
   }
   main.append(intro, content, credit); root.replaceChildren(main); render();
-  return { destroy() { destroyed = true; sequence++; observer?.disconnect(); main.remove(); } };
+  return { destroy() { destroyed = true; sequence++; observer?.disconnect(); comparison?.destroy(); main.remove(); } };
 }
