@@ -133,3 +133,16 @@ test('reviewed chart registration improves all 21 pinned frame landmarks without
   assert.ok(after.reduce((a,b)=>a+b)<before.reduce((a,b)=>a+b)/3,item.id);assert.ok(Math.max(...after)<3.6,item.id);
  }
 });
+
+
+test('Material index has distinct routes without breaking legacy viewer links',async()=>{
+ const {materialIsIndex,materialPageURL}=await import('../apps/studio/material.mjs');
+ assert.equal(materialIsIndex('https://example.test/?library=material'),true);
+ assert.equal(materialIsIndex('https://example.test/?library=material&view=index'),true);
+ for(const query of ['panel=plate-i','panel=missing','view=compare','view=translation','view=panels','view=original'])assert.equal(materialIsIndex('https://example.test/?'+query),false);
+ const manifest=JSON.parse(await read('collections/material/lacouture-1890/manifest.json'));
+ const urls=manifest.items.map(item=>new URL(materialPageURL('https://example.test/?collection=old&section=sources&panel=old&view=compare',item)));
+ assert.equal(new Set(urls.map(url=>url.href)).size,39);
+ urls.forEach((url,index)=>{assert.equal(url.searchParams.get('panel'),manifest.items[index].id);assert.equal(url.searchParams.get('view'),manifest.items[index].svg?'translation':null);assert.equal(url.searchParams.has('collection'),false);assert.equal(url.searchParams.has('section'),false);});
+ assert.equal(materialPageURL('https://example.test/?panel=plate-i&view=compare'),'https://example.test/?library=material');
+});

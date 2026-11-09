@@ -103,7 +103,7 @@ try{
   const context=await browser.newContext({viewport:{width,height:width===1440?1000:844},reducedMotion:'reduce',hasTouch:width===390,isMobile:width===390});
   await context.route('**/*',route=>{if(new URL(route.request().url()).origin!==origin){external.push(route.request().url());return route.abort();}return route.continue();});
   const page=await context.newPage();page.on('pageerror',e=>errors.push(e.message));
-  await page.goto(url);await page.getByLabel('Panel',{exact:true}).waitFor();
+  await page.goto(url+'&panel=plate-i');await page.getByLabel('Panel',{exact:true}).waitFor();
   assert.equal(await page.getByRole('button',{name:'Previous panel',exact:true}).isDisabled(),true);
   for(const [index,item] of manifest.items.entries()){
    await page.getByLabel('Panel',{exact:true}).selectOption(String(index));
