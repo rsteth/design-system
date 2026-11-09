@@ -96,7 +96,9 @@ test('Compare uses aligned source and translation layers without modifying sourc
  const code=await read('apps/studio/material.mjs'),css=await read('apps/studio/material.css');
  assert.match(code,/\['translation','original'\]/);
  assert.match(css,/clip-path:inset\(var\(--compare-y,50%\) 0 0 var\(--compare-x,50%\)\)/);
- assert.match(code,/role: 'slider'/);assert.match(code,/'aria-orientation': orientation/);
+ assert.match(code,/role: 'button'/);assert.match(code,/two-axis comparison control/);
+ assert.match(code,/const reveal = \{ x: 0, y: 0 \}/);
+ assert.doesNotMatch(code,/Fit artwork shows the color study|Web geometry is approximate|material-compare-label/);
  assert.match(code,/pointercancel/);assert.match(code,/lostpointercapture/);
  assert.doesNotMatch(code,/data-stacked|translation sits below/);
 });

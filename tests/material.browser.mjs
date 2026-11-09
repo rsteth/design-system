@@ -14,89 +14,88 @@ const errors=[],external=[],results=[];await mkdir(output,{recursive:true});
 
 async function checkCompare(page,width,context){
  await page.goto(url+'&panel=plate-ii&view=compare');
- const sheet=page.locator('.material-compare'),x=page.getByRole('slider',{name:'Vertical divider, move left or right',exact:true}),y=page.getByRole('slider',{name:'Horizontal divider, move up or down',exact:true});
- await sheet.locator('svg').waitFor();await sheet.locator('img').evaluate(async img=>{await img.decode();});
- await page.getByLabel('Zoom',{exact:true}).selectOption('1');
- await sheet.scrollIntoViewIfNeeded();
- const values=async()=>[Number(await x.getAttribute('aria-valuenow')),Number(await y.getAttribute('aria-valuenow'))];
- assert.deepEqual(await values(),[50,50]);
- assert.match(await page.locator('#material-keyboard-help').textContent(),/Keyboard color inspection reveals the focused swatch/);
- assert.equal(await x.getAttribute('aria-orientation'),'horizontal');assert.equal(await y.getAttribute('aria-orientation'),'vertical');
- assert.match(await y.getAttribute('aria-valuetext'),/50% from top/);
- const geometry=await sheet.evaluate(n=>{
-  const r=n.getBoundingClientRect(),source=n.querySelector('[data-mode=original]'),image=source.querySelector('img'),svg=n.querySelector('svg');
-  return {clip:getComputedStyle(source).clipPath,source:[image.getBoundingClientRect().width,image.getBoundingClientRect().height],web:[svg.getBoundingClientRect().width,svg.getBoundingClientRect().height],quadrants:[[.2,.2],[.8,.2],[.2,.8],[.8,.8]].map(([x,y])=>document.elementFromPoint(r.left+r.width*x,r.top+r.height*y)?.closest('.material-compare-layer')?.dataset.mode)};
- });
- assert.equal(geometry.clip,'inset(50% 0px 0px 50%)');assert.deepEqual(geometry.source,geometry.web);assert.deepEqual(geometry.quadrants,['translation','translation','translation','original']);
+ const sheet=page.locator('.material-compare'),handle=page.locator('.material-compare-handle');
+ await sheet.locator('svg').waitFor();await sheet.locator('img').evaluate(n=>n.decode());
+ const values=()=>sheet.evaluate(n=>['x','y'].map(a=>parseFloat(n.style.getPropertyValue('--compare-'+a))));
+ const near=async(expected)=>{const actual=await values();actual.forEach((n,i)=>assert.ok(Math.abs(n-expected[i])<.05,`${actual} != ${expected}`));};
+ const reset=async()=>{await handle.focus();await page.keyboard.press('Enter');};
+ const reachable=async()=>{await page.locator('.material-stage').scrollIntoViewIfNeeded();await page.evaluate(()=>new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r))));const b=await handle.boundingBox();assert.equal(b.width,44);assert.equal(b.height,44);assert.equal(await handle.evaluate(n=>{const r=n.getBoundingClientRect();return document.elementFromPoint(r.x+22,r.y+22)===n;}),true);};
+ const start=async()=>{const b=await handle.boundingBox();const p={x:b.x+22,y:b.y+22};await page.mouse.move(p.x,p.y);await page.mouse.down();return p;};
+ const move=async(p,dx,dy)=>page.mouse.move(p.x+dx,p.y+dy);
+ await near([0,0]);await reachable();
+ assert.equal(await page.locator('#material-framing-help').isVisible(),false);
+ const initial=await start();await page.mouse.up();await near([0,0]);
+ const artwork=await sheet.boundingBox(),edge=await page.locator('.material-stage').evaluate(n=>{const r=n.getBoundingClientRect();return {x:r.x+n.clientLeft,y:r.y+n.clientTop};});
+ const visibleOrigin=[Math.max(0,(edge.x-artwork.x)/artwork.width*100),Math.max(0,(edge.y-artwork.y)/artwork.height*100)];
+ for(const [dx,dy] of [[40,40],[40,0],[0,40]]){
+  await handle.focus();await page.keyboard.press('Home');const initialGrip=await handle.boundingBox(),initialDrag=await start();await move(initialDrag,dx,dy);await page.mouse.up();
+  await near([dx?visibleOrigin[0]+dx/artwork.width*100:0,dy?visibleOrigin[1]+dy/artwork.height*100:0]);
+  const movedGrip=await handle.boundingBox();if(dx)assert.ok(movedGrip.x-initialGrip.x>15);if(dy)assert.ok(movedGrip.y-initialGrip.y>15);
+  if(dx&&dy)await page.screenshot({path:join(output,`compare-artwork-initial-drag-${width}.png`),fullPage:true});
+  const cut=await values();if(dx)assert.ok(artwork.x+artwork.width*cut[0]/100>=edge.x+39);if(dy)assert.ok(artwork.y+artwork.height*cut[1]/100>=edge.y+39);
+ }
+
+ await handle.focus();await page.keyboard.press('Home');
+ await page.getByLabel('Zoom',{exact:true}).selectOption('1');await sheet.scrollIntoViewIfNeeded();
+ await near([0,0]);assert.equal(await handle.count(),1);assert.equal(await page.locator('.material-compare-label').count(),0);await reachable();
+ assert.equal(await handle.getAttribute('role'),'button');assert.match(await handle.getAttribute('aria-label'),/0% from left, 0% from top/);
+ assert.doesNotMatch(await page.locator('.material-content').innerText(),/Fit artwork shows the color study|Web geometry is approximate/);
  await page.screenshot({path:join(output,`compare-default-${width}.png`),fullPage:true});
- const drag=async(axis,percent,{finish=true}={})=>{
-  const handle=axis==='x'?x:y,grip=await handle.locator('.material-compare-grip').boundingBox(),r=await sheet.boundingBox();
-  await page.mouse.move(grip.x+grip.width/2,grip.y+grip.height/2);await page.mouse.down();
-  await page.mouse.move(axis==='x'?r.x+r.width*percent/100:grip.x+grip.width/2,axis==='y'?r.y+r.height*percent/100:grip.y+grip.height/2,{steps:6});
-  if(finish)await page.mouse.up();
- };
- await drag('x',35,{finish:false});assert.deepEqual(await values(),[35,50]);assert.equal(await sheet.getAttribute('data-active-axis'),'x');assert.ok(Number(await y.evaluate(n=>getComputedStyle(n).opacity))<.5);
- await page.screenshot({path:join(output,`compare-drag-x-${width}.png`),fullPage:true});await page.mouse.up();assert.equal(await sheet.getAttribute('data-active-axis'),null);
- await drag('y',70,{finish:false});assert.deepEqual(await values(),[35,70]);assert.ok(Number(await x.evaluate(n=>getComputedStyle(n).opacity))<.5);
- await page.screenshot({path:join(output,`compare-drag-y-${width}.png`),fullPage:true});await page.keyboard.press('Escape');await page.mouse.up();assert.deepEqual(await values(),[35,50]);
- // Crossing either grip's old position must still leave both grips hit-testable.
- await drag('x',75);await drag('y',25);assert.deepEqual(await values(),[75,25]);
- for(const h of [x,y]){await h.locator('.material-compare-grip').scrollIntoViewIfNeeded();const hit=await h.locator('.material-compare-grip').evaluate(n=>{const r=n.getBoundingClientRect(),hit=document.elementFromPoint(r.left+r.width/2,r.top+r.height/2);return {correct:hit===n.parentElement,hit:hit?.outerHTML.slice(0,250),rect:r.toJSON(),viewport:[innerWidth,innerHeight]};});assert.equal(hit.correct,true,JSON.stringify(hit));}
- await drag('x',35);await drag('y',65);assert.deepEqual(await values(),[35,65]);
- // Pointer cancellation and lost capture keep the last value but never stick the drag state.
- for(const type of ['pointercancel','lostpointercapture']){
-  await drag('x',40,{finish:false});
-  if(type==='lostpointercapture')await x.evaluate(n=>n.releasePointerCapture(1));else await x.dispatchEvent(type,{pointerId:1});
-  await page.mouse.move(1,1);assert.equal(await sheet.getAttribute('data-active-axis'),null,type);await page.mouse.up();
-  assert.deepEqual(await values(),[40,65]);
+ await reset();
+ const geometry=await sheet.evaluate(n=>{const r=n.getBoundingClientRect(),source=n.querySelector('[data-mode=original]'),image=source.querySelector('img'),svg=n.querySelector('svg');return {clip:getComputedStyle(source).clipPath,source:[image.getBoundingClientRect().width,image.getBoundingClientRect().height],web:[svg.getBoundingClientRect().width,svg.getBoundingClientRect().height],quadrants:[[.2,.2],[.8,.2],[.2,.8],[.8,.8]].map(([x,y])=>document.elementFromPoint(r.left+r.width*x,r.top+r.height*y)?.closest('.material-compare-layer')?.dataset.mode)};});
+ assert.equal(geometry.clip,'inset(50% 0px 0px 50%)');assert.deepEqual(geometry.source,geometry.web);assert.deepEqual(geometry.quadrants,['translation','translation','translation','original']);
+ const r=await sheet.boundingBox();
+ // Both signs of both locks, just inside the 10% intent cone, release and no re-lock.
+ for(const axis of ['x','y'])for(const sign of [-1,1]){
+  await reset();const p=await start(),delta=sign*40;
+  await move(p,axis==='x'?delta:3,axis==='y'?delta:3);
+  assert.equal(await sheet.getAttribute('data-active-axis'),axis);
+  await near(axis==='x'?[50+delta/r.width*100,50]:[50,50+delta/r.height*100]);
+  await move(p,axis==='x'?delta:7.9,axis==='y'?delta:7.9);assert.equal(await sheet.getAttribute('data-active-axis'),axis);
+  await move(p,axis==='x'?delta:8.1,axis==='y'?delta:8.1);assert.equal(await sheet.getAttribute('data-active-axis'),'both');
+  const unlocked=await values();assert.ok(Math.abs(unlocked[axis==='x'?1:0]-50)<.1,'continuous release');
+  await move(p,axis==='x'?delta:20,axis==='y'?delta:20);
+  await near(axis==='x'?[50+delta/r.width*100,50+12/r.height*100]:[50+12/r.width*100,50+delta/r.height*100]);
+  await page.mouse.up();assert.equal(await sheet.getAttribute('data-active-axis'),null);
  }
- await drag('y',60,{finish:false});await page.evaluate(()=>window.dispatchEvent(new Event('blur')));assert.equal(await sheet.getAttribute('data-active-axis'),null);await page.mouse.up();
- await x.focus();await page.keyboard.press('Home');assert.deepEqual(await values(),[0,60]);await page.keyboard.press('ArrowRight');assert.deepEqual(await values(),[1,60]);await page.keyboard.press('Shift+ArrowRight');assert.deepEqual(await values(),[11,60]);await page.keyboard.press('End');assert.deepEqual(await values(),[100,60]);await page.keyboard.press('ArrowRight');assert.deepEqual(await values(),[100,60]);
- await y.focus();await page.keyboard.press('Home');assert.deepEqual(await values(),[100,0]);await page.keyboard.press('ArrowDown');assert.deepEqual(await values(),[100,1]);await page.keyboard.press('ArrowUp');assert.deepEqual(await values(),[100,0]);await page.keyboard.press('End');assert.deepEqual(await values(),[100,100]);
- await page.keyboard.press('PageUp');assert.deepEqual(await values(),[100,90]);
- await x.focus();await page.keyboard.press('Home');await y.focus();await page.keyboard.press('Home');assert.deepEqual(await values(),[0,0]);
- assert.equal(await sheet.locator('.material-compare-web').isVisible(),false);
- const covered=await sheet.locator('.swatch').first().boundingBox();await page.mouse.click(covered.x+covered.width/2,covered.y+covered.height/2);assert.equal(await page.getByRole('button',{name:'Copy HEX',exact:true}).isDisabled(),true);
- // Exact edges retain complete 44px hit targets in the viewer's padding.
- for(const h of [x,y]){await h.locator('.material-compare-grip').scrollIntoViewIfNeeded();const hit=await h.locator('.material-compare-grip').evaluate(n=>{const r=n.getBoundingClientRect(),hit=document.elementFromPoint(r.left+r.width/2,r.top+r.height/2);return {correct:hit===n.parentElement,hit:hit?.outerHTML.slice(0,250),rect:r.toJSON(),viewport:[innerWidth,innerHeight]};});assert.equal(hit.correct,true,JSON.stringify(hit));}
- await drag('x',100);await drag('y',100);assert.deepEqual(await values(),[100,100]);
- for(const h of [x,y]){await h.locator('.material-compare-grip').scrollIntoViewIfNeeded();const hit=await h.locator('.material-compare-grip').evaluate(n=>{const r=n.getBoundingClientRect(),hit=document.elementFromPoint(r.left+r.width/2,r.top+r.height/2);return {correct:hit===n.parentElement,hit:hit?.outerHTML.slice(0,250),rect:r.toJSON(),viewport:[innerWidth,innerHeight]};});assert.equal(hit.correct,true,JSON.stringify(hit));}
- await x.focus();await page.keyboard.press('Home');await y.focus();await page.keyboard.press('Home');
- // A keyboard swatch may be under the scan; focusing it reveals its full bounds.
- const swatch=sheet.locator('.swatch').first();await swatch.focus();await page.keyboard.press('Enter');assert.ok((await values())[0]>0);assert.match(await page.locator('.material-inspector-value').innerText(),/#[0-9A-F]{6}/);
- await page.keyboard.press('ArrowRight');assert.equal(await sheet.locator('.swatch').nth(1).evaluate(n=>n===document.activeElement),true);
- // Restore a useful cut, then exercise resize/zoom and repeated mode/panel transitions.
- await x.focus();await page.keyboard.press('Home');for(let i=0;i<5;i++)await page.keyboard.press('Shift+ArrowRight');
- await y.focus();for(let i=0;i<5;i++)await page.keyboard.press('Shift+ArrowDown');assert.deepEqual(await values(),[50,50]);
- await page.getByLabel('Zoom',{exact:true}).selectOption('3');assert.deepEqual(await values(),[50,50]);assert.ok(await page.locator('.material-stage').evaluate(n=>n.scrollWidth>n.clientWidth&&n.scrollHeight>n.clientHeight));assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true);
- // The whole focused track remains distinct even when its grip is panned out of view.
- await x.focus();await page.keyboard.press('Home');await y.focus();await page.keyboard.press('Home');
- await page.locator('.material-stage').evaluate(n=>n.scrollTo(0,0));
- await x.evaluate(n=>n.focus({preventScroll:true}));await page.keyboard.press('ArrowRight');
- assert.equal(await x.evaluate(n=>getComputedStyle(n,'::before').width),'3px');
- await y.evaluate(n=>n.focus({preventScroll:true}));await page.keyboard.press('ArrowDown');
- assert.equal(await y.evaluate(n=>getComputedStyle(n,'::before').height),'3px');
- await x.focus();await page.keyboard.press('Home');for(let i=0;i<5;i++)await page.keyboard.press('Shift+ArrowRight');
- await y.focus();await page.keyboard.press('Home');for(let i=0;i<5;i++)await page.keyboard.press('Shift+ArrowDown');
- // Drag with real pan offsets at 300%, then retain the same percentages on resize.
- await x.locator('.material-compare-grip').scrollIntoViewIfNeeded();await drag('x',55);assert.deepEqual(await values(),[55,50]);
- await page.setViewportSize({width:width===1440?1000:360,height:width===1440?850:740});assert.deepEqual(await values(),[55,50]);
- await page.getByLabel('Zoom',{exact:true}).selectOption('1');await sheet.scrollIntoViewIfNeeded();await drag('x',30);assert.deepEqual(await values(),[30,50]);
- for(let i=0;i<3;i++){await page.getByRole('button',{name:'Original',exact:true}).click();assert.equal(await page.getByRole('slider').count(),0);await page.getByRole('button',{name:'Compare',exact:true}).click();await sheet.locator('svg').waitFor();assert.deepEqual(await values(),[30,50]);}
- await page.getByLabel('Panel',{exact:true}).selectOption('29');assert.equal(await page.getByRole('slider').count(),0);await page.getByLabel('Panel',{exact:true}).selectOption('2');await sheet.locator('svg').waitFor();assert.deepEqual(await values(),[30,50]);
- // Touch input goes through the browser's real pointer capture and scrolling machinery.
- await page.setViewportSize({width,height:width===1440?1000:844});
+ for(const [dx,dy] of [[30,30],[-30,30],[30,-30],[-30,-30],[40,5]]){
+  await reset();const p=await start();await move(p,dx,dy);assert.equal(await sheet.getAttribute('data-active-axis'),'both');await near([50+dx/r.width*100,50+dy/r.height*100]);await page.mouse.up();
+ }
+ await reset();let p=await start();await move(p,40,30);await page.keyboard.press('Escape');await page.mouse.up();await near([50,50]);
+ for(const type of ['pointercancel','lostpointercapture','blur']){
+  p=await start();await move(p,15,0);const kept=await values();
+  if(type==='blur')await page.evaluate(()=>window.dispatchEvent(new Event('blur')));else if(type==='lostpointercapture')await handle.evaluate(n=>n.releasePointerCapture(1));else await handle.dispatchEvent(type,{pointerId:1});
+  await move(p,40,40);assert.equal(await sheet.getAttribute('data-active-axis'),null);await page.mouse.up();await near(kept);
+ }
+ await reset();await page.keyboard.press('ArrowLeft');await page.keyboard.press('Shift+ArrowDown');await near([49,60]);await page.keyboard.press('PageUp');await near([49,50]);
+ await page.keyboard.down('ArrowRight');await page.keyboard.press('Escape');await page.keyboard.up('ArrowRight');await near([49,50]);
+ for(const key of ['Home','End']){
+  await page.keyboard.press(key);await near(key==='Home'?[0,0]:[100,100]);await reachable();
+  // Proxy at edge can be grabbed without changing the value or jumping.
+  p=await start();await page.mouse.up();await near(key==='Home'?[0,0]:[100,100]);
+  p=await start();const d=key==='Home'?10:-10;await move(p,d,d);await page.mouse.up();await near(key==='Home'?[10/r.width*100,10/r.height*100]:[100-10/r.width*100,100-10/r.height*100]);
+ }
+ await reset();await page.getByLabel('Zoom',{exact:true}).selectOption('3');await near([50,50]);
+ await page.locator('.material-stage').evaluate(n=>n.scrollTo(0,0));await reachable();
+ p=await start();const big=await sheet.boundingBox();await move(p,30,30);await page.mouse.up();await near([50+30/big.width*100,50+30/big.height*100]);const saved=await values();
+ await page.setViewportSize({width:width===1440?1000:360,height:740});await near(saved);await reachable();
+ await page.getByLabel('Zoom',{exact:true}).selectOption('1');await sheet.scrollIntoViewIfNeeded();
+ for(let i=0;i<3;i++){await page.getByRole('button',{name:'Original',exact:true}).click();assert.equal(await handle.count(),0);await page.getByRole('button',{name:'Compare',exact:true}).click();await sheet.locator('svg').waitFor();await near(saved);}
+ await page.getByLabel('Panel',{exact:true}).selectOption('29');assert.equal(await handle.count(),0);await page.getByLabel('Panel',{exact:true}).selectOption('2');await sheet.locator('svg').waitFor();await near(saved);
+ await handle.focus();await page.keyboard.press('Home');const swatch=sheet.locator('.swatch').first();await swatch.focus();await page.keyboard.press('Enter');assert.ok((await values())[0]>0);assert.match(await page.locator('.material-inspector-value').innerText(),/#[0-9A-F]{6}/);
+ await page.setViewportSize({width,height:width===1440?1000:844});await sheet.scrollIntoViewIfNeeded();await reset();
  if(width===390){
-  await sheet.scrollIntoViewIfNeeded();const cdp=await context.newCDPSession(page),r=await sheet.boundingBox(),grip=await x.locator('.material-compare-grip').boundingBox(),start={x:grip.x+grip.width/2,y:grip.y+grip.height/2};
-  await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[start]});await cdp.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{x:r.x+r.width*.6,y:start.y}]});assert.deepEqual(await values(),[60,50]);assert.equal(await sheet.getAttribute('data-active-axis'),'x');await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});assert.equal(await sheet.getAttribute('data-active-axis'),null);
-  const horizontal=await y.locator('.material-compare-grip').boundingBox(),touchY={x:horizontal.x+horizontal.width/2,y:horizontal.y+horizontal.height/2};
-  await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[touchY]});await cdp.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{x:touchY.x,y:r.y+r.height*.65}]});assert.deepEqual(await values(),[60,65]);assert.equal(await sheet.getAttribute('data-active-axis'),'y');await cdp.send('Input.dispatchTouchEvent',{type:'touchCancel',touchPoints:[]});assert.equal(await sheet.getAttribute('data-active-axis'),null);
-  await page.screenshot({path:join(output,'compare-touch-390.png'),fullPage:true});await cdp.detach();await y.focus();await page.keyboard.press('Home');for(let i=0;i<5;i++)await page.keyboard.press('Shift+ArrowDown');
+  const cdp=await context.newCDPSession(page);
+  for(const [dx,dy] of [[30,2],[2,30],[-20,-20]]){
+   await reset();const b=await handle.boundingBox(),t={x:b.x+22,y:b.y+22};
+   await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[t]});await cdp.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{x:t.x+dx,y:t.y+dy}]});await page.waitForTimeout(50);assert.equal(await sheet.getAttribute('data-active-axis'),dx===30?'x':dy===30?'y':'both');
+   await cdp.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{x:t.x+30,y:t.y+30}]});await page.waitForTimeout(50);assert.equal(await sheet.getAttribute('data-active-axis'),'both');
+   await cdp.send('Input.dispatchTouchEvent',{type:'touchCancel',touchPoints:[]});assert.equal(await sheet.getAttribute('data-active-axis'),null);
+  }await cdp.detach();
  }
- // Re-render and workspace teardown during capture must remove every active listener.
- await sheet.scrollIntoViewIfNeeded();await drag('x',45,{finish:false});await page.getByRole('button',{name:'Original',exact:true}).evaluate(n=>n.click());await page.mouse.up();assert.equal(await page.getByRole('slider').count(),0);await page.getByRole('button',{name:'Compare',exact:true}).click();await sheet.locator('svg').waitFor();assert.equal(await sheet.getAttribute('data-active-axis'),null);assert.deepEqual(await values(),[45,50]);
- await sheet.scrollIntoViewIfNeeded();await drag('x',55,{finish:false});await page.getByRole('button',{name:'Reference studies',exact:true}).evaluate(n=>n.click());await page.mouse.up();assert.equal(await page.locator('.material-shell').count(),0);await page.goBack();await sheet.locator('svg').waitFor();assert.deepEqual(await values(),[50,50]);
- await page.setViewportSize({width,height:width===1440?1000:844});
+ await reset();await page.screenshot({path:join(output,`compare-intersection-${width}.png`),fullPage:true});
+ p=await start();await move(p,20,0);await page.getByRole('button',{name:'Original',exact:true}).evaluate(n=>n.click());await page.mouse.up();assert.equal(await handle.count(),0);await page.getByRole('button',{name:'Compare',exact:true}).click();await sheet.locator('svg').waitFor();assert.equal(await sheet.getAttribute('data-active-axis'),null);
+ await sheet.scrollIntoViewIfNeeded();p=await start();await move(p,20,0);await page.getByRole('button',{name:'Reference studies',exact:true}).evaluate(n=>n.click());await page.mouse.up();await page.goBack();await sheet.locator('svg').waitFor();await near([0,0]);
 }
 
 try{
@@ -127,7 +126,7 @@ try{
     const svgHref=await page.getByRole('link',{name:'Download SVG',exact:true}).getAttribute('href');assert.ok(svgHref.endsWith(item.svg));
     if(['plate-i','plate-ii','plate-xiv','plate-xxiii'].includes(item.id)){
      await page.getByRole('button',{name:'Compare',exact:true}).click();await page.locator('.material-sheet svg').waitFor();await page.locator('.material-sheet img').waitFor();
-     assert.equal(await page.locator('.material-sheet').count(),1);assert.equal(await page.getByRole('slider').count(),2);assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true);
+     assert.equal(await page.locator('.material-sheet').count(),1);assert.equal(await page.locator('.material-compare-handle').count(),1);assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true);
      await page.locator('.material-controls').scrollIntoViewIfNeeded();await page.screenshot({path:join(output,`${item.id}-compare-${width}.png`),fullPage:true});
     }
    }else{
@@ -168,5 +167,5 @@ try{
  const fonts=await page.locator('.material-sheet svg text:not([font-family^="Arial"])').evaluateAll(nodes=>nodes.map(n=>getComputedStyle(n).fontFamily));assert.ok(fonts.length>0);assert.ok(fonts.every(font=>font.includes('Times')));
  await context.close();
  assert.deepEqual(errors,[]);assert.deepEqual(external,[]);
- const report={status:'passed',executedAt:new Date().toISOString(),browser:browser.version(),cases:results.length,translationViews:58,originalViews:78,errors,external,flows:['Original/Web translation/two-axis overlay Compare','independent mouse/keyboard/touch reveal and bottom-right source geometry','pointer cancel/lost capture/Escape/blur/teardown','percentage preservation on zoom, resize, mode and panel changes','all 39 panels at desktop/mobile','1,695 swatches and roving keyboard selection','zoom with contained scrolling','supplement fallback and mode restoration','download links','Back/Forward and workspace cleanup','copy success and denied fallback','SVG retry and stale-response protection','inert scoped SVG sanitization'],results};await writeFile(join(output,'results.json'),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report));
+ const report={status:'passed',executedAt:new Date().toISOString(),browser:browser.version(),cases:results.length,translationViews:58,originalViews:78,errors,external,flows:['Original/Web translation/two-axis overlay Compare','single intersection mouse/keyboard/touch reveal, directional snap/release and bottom-right source geometry','pointer cancel/lost capture/Escape/blur/teardown','percentage preservation on zoom, resize, mode and panel changes','all 39 panels at desktop/mobile','1,695 swatches and roving keyboard selection','zoom with contained scrolling','supplement fallback and mode restoration','download links','Back/Forward and workspace cleanup','copy success and denied fallback','SVG retry and stale-response protection','inert scoped SVG sanitization'],results};await writeFile(join(output,'results.json'),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report));
 }finally{await browser.close();await new Promise(r=>server.close(r));}

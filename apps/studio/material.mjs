@@ -52,75 +52,87 @@ async function fetchSVG(item) {
 // change the chosen reveal. Pointer coordinates are measured afresh per event.
 export const materialRevealPercent = (coordinate, start, length) => length > 0 ? Math.max(0, Math.min(100, Math.round((coordinate - start) / length * 100))) : 50;
 export function mountMaterialCompare(sheet, values, onChange = () => {}) {
-  const handles = new Map();
   let active;
   const stage = sheet.closest('.material-stage');
+  const handle = element('div', { class: 'material-compare-handle', role: 'button', tabindex: '0', 'aria-roledescription': 'two-axis comparison control', 'aria-describedby': 'material-compare-help material-keyboard-help', 'aria-keyshortcuts': 'ArrowLeft ArrowRight ArrowUp ArrowDown Home End PageUp PageDown Enter Space Escape' }, element('span', { class: 'material-compare-grip', 'aria-hidden': 'true' }, '✥'));
+  for (const axis of ['x', 'y']) sheet.append(element('span', {class: 'material-compare-line', 'data-axis': axis, 'aria-hidden': 'true'}));
+  sheet.append(handle);
   const positionGrips = () => {
     const page = sheet.getBoundingClientRect(), viewport = stage?.getBoundingClientRect();
     if (!viewport || !page.width || !page.height) return;
-    const visibleLeft = Math.max(0, viewport.left + stage.clientLeft - page.left), visibleTop = Math.max(0, viewport.top + stage.clientTop - page.top);
-    const visibleRight = Math.min(page.width, viewport.left + stage.clientLeft + stage.clientWidth - page.left), visibleBottom = Math.min(page.height, viewport.top + stage.clientTop + stage.clientHeight - page.top);
-    const source = sheet.querySelector('.material-compare-source'), web = sheet.querySelector('.material-compare-web');
-    if (source) { source.style.right = `${page.width - visibleRight + 8}px`; source.style.bottom = `${page.height - visibleBottom + 8}px`; }
-    if (web) { web.style.left = `${visibleLeft + 8}px`; web.style.top = `${visibleTop + 8}px`; web.hidden = visibleLeft >= page.width * values.x / 100 && visibleTop >= page.height * values.y / 100; }
-    for (const [axis, size, start, visibleStart, visibleLength, cut] of [
-      ['x', page.height, page.top, viewport.top + stage.clientTop, stage.clientHeight, values.y],
-      ['y', page.width, page.left, viewport.left + stage.clientLeft, stage.clientWidth, values.x]
-    ]) {
-      // Center the grip in the longer visible segment clear of the other track.
-      const low = Math.max(0, (visibleStart - start) / size * 100) + 18 / size * 100;
-      const high = Math.min(100, (visibleStart + visibleLength - start) / size * 100) - 18 / size * 100;
-      const gap = 30 / size * 100;
-      const segments = [[low, Math.min(high, cut - gap)], [Math.max(low, cut + gap), high]].filter(([a,b]) => b >= a);
-      segments.sort((a,b) => (b[1]-b[0])-(a[1]-a[0]));
-      const [a,b] = segments[0] || [low,high];
-      sheet.style.setProperty(`--compare-${axis}-grip`, `${Math.max(0, Math.min(100, (a+b)/2))}%`);
-    }
+    const left = Math.max(0, viewport.left + stage.clientLeft - page.left), top = Math.max(0, viewport.top + stage.clientTop - page.top);
+    const right = Math.min(page.width, viewport.left + stage.clientLeft + stage.clientWidth - page.left), bottom = Math.min(page.height, viewport.top + stage.clientTop + stage.clientHeight - page.top);
+    // A single reachable proxy stays at the nearest visible point when the true
+    // intersection is offscreen. Pointer-down never changes the true cuts.
+    const clamp = (v, low, high) => Math.max(low, Math.min(high, v));
+    sheet.style.setProperty('--compare-grip-x', `${clamp(page.width * values.x / 100, left + 22, right - 22)}px`);
+    sheet.style.setProperty('--compare-grip-y', `${clamp(page.height * values.y / 100, top + 22, bottom - 22)}px`);
   };
   const refresh = () => {
     sheet.style.setProperty('--compare-x', `${values.x}%`);
     sheet.style.setProperty('--compare-y', `${values.y}%`);
     positionGrips();
-    sheet.dataset.allSource = String(values.x === 0 && values.y === 0);
-    for (const [axis, handle] of handles) {
-      handle.setAttribute('aria-valuenow', String(values[axis]));
-      handle.setAttribute('aria-valuetext', `${values[axis]}% from ${axis === 'x' ? 'left' : 'top'}. Source is below and to the right of both dividers.`);
-    }
+    handle.setAttribute('aria-label', `Move comparison dividers. ${Math.round(values.x)}% from left, ${Math.round(values.y)}% from top.`);
     onChange();
   };
   const set = (axis, value) => { values[axis] = Math.max(0, Math.min(100, value)); refresh(); };
   const stop = () => {
     const previous = active; active = undefined; delete sheet.dataset.activeAxis;
-    if (previous?.pointerId !== undefined && previous.handle.hasPointerCapture(previous.pointerId)) previous.handle.releasePointerCapture(previous.pointerId);
+    if (previous?.pointerId !== undefined && handle.hasPointerCapture(previous.pointerId)) handle.releasePointerCapture(previous.pointerId);
   };
-  for (const [axis, label, orientation] of [['x', 'Vertical divider, move left or right', 'horizontal'], ['y', 'Horizontal divider, move up or down', 'vertical']]) {
-    const handle = element('div', { class: 'material-compare-handle', 'data-axis': axis, role: 'slider', tabindex: '0', 'aria-label': label, 'aria-orientation': orientation, 'aria-valuemin': '0', 'aria-valuemax': '100', 'aria-describedby': 'material-compare-help material-keyboard-help' }, element('span', { class: 'material-compare-grip', 'aria-hidden': 'true' }, axis === 'x' ? '↔' : '↕'));
-    handles.set(axis, handle); sheet.append(handle);
-    const move = event => {
-      const rect = sheet.getBoundingClientRect();
-      set(axis, materialRevealPercent(axis === 'x' ? event.clientX : event.clientY, axis === 'x' ? rect.left : rect.top, axis === 'x' ? rect.width : rect.height));
-    };
-    handle.addEventListener('pointerdown', event => {
-      if (active || !event.isPrimary || event.button !== 0) return;
-      event.preventDefault(); handle.focus({ preventScroll: true });
-      active = { axis, handle, pointerId: event.pointerId, start: values[axis] };
-      sheet.dataset.activeAxis = axis; handle.setPointerCapture(event.pointerId); move(event);
-    });
-    handle.addEventListener('pointermove', event => { if (active?.handle === handle && active.pointerId === event.pointerId) move(event); });
-    handle.addEventListener('pointerup', event => { if (active?.handle === handle && active.pointerId === event.pointerId) { move(event); stop(); } });
-    for (const type of ['pointercancel', 'lostpointercapture']) handle.addEventListener(type, event => { if (active?.handle === handle && active.pointerId === event.pointerId) stop(); });
-    handle.addEventListener('keydown', event => {
-      if (event.key === 'Escape' && active?.handle === handle) { event.preventDefault(); set(axis, active.start); stop(); return; }
-      const backward = axis === 'x' ? 'ArrowLeft' : 'ArrowUp', forward = axis === 'x' ? 'ArrowRight' : 'ArrowDown';
-      if (![backward, forward, 'Home', 'End', 'PageUp', 'PageDown'].includes(event.key) || active?.pointerId !== undefined) return;
-      event.preventDefault();
-      active ??= { axis, handle, start: values[axis] }; sheet.dataset.activeAxis = axis;
-      const step = event.shiftKey || ['PageUp','PageDown'].includes(event.key) ? 10 : 1;
-      set(axis, event.key === 'Home' ? 0 : event.key === 'End' ? 100 : values[axis] + ([backward,'PageUp'].includes(event.key) ? -step : step));
-    });
-    handle.addEventListener('keyup', () => { if (active?.handle === handle && active.pointerId === undefined) stop(); });
-    handle.addEventListener('blur', () => { if (active?.handle === handle) stop(); });
-  }
+  const move = event => {
+    const rect = sheet.getBoundingClientRect(), dx = event.clientX - active.origin.x, dy = event.clientY - active.origin.y;
+    if (!active.axis) {
+      if (Math.max(Math.abs(dx), Math.abs(dy)) < 4) return;
+      active.axis = Math.abs(dy) <= Math.abs(dx) * .1 ? 'x' : Math.abs(dx) <= Math.abs(dy) * .1 ? 'y' : 'both';
+    }
+    if (active.axis !== 'both') {
+      const perpendicular = active.axis === 'x' ? dy : dx, along = active.axis === 'x' ? dx : dy;
+      // Wider release cone and an 8px minimum prevent jitter. Subtract the
+      // dead zone rather than applying it at once, so unlock is continuous.
+      const threshold = Math.max(8, Math.abs(along) * .15);
+      if (Math.abs(perpendicular) > threshold) {
+        active.offset[active.axis === 'x' ? 'y' : 'x'] = Math.sign(perpendicular) * threshold;
+        active.axis = 'both';
+      }
+    }
+    sheet.dataset.activeAxis = active.axis;
+    for (const [axis, delta, size] of [['x',dx,rect.width],['y',dy,rect.height]]) {
+      if (active.axis !== 'both' && active.axis !== axis) continue;
+      const movement = delta - active.offset[axis], [low, high] = active.visible[axis];
+      // Cropped margins must not be a dead zone: on inward movement an
+      // invisible cut starts at the visible edge, never at the inset grip.
+      const origin = active.start[axis] < low && movement > 0 ? low : active.start[axis] > high && movement < 0 ? high : active.start[axis];
+      values[axis] = Math.max(0, Math.min(100, origin + movement / size * 100));
+    }
+    refresh();
+  };
+  handle.addEventListener('pointerdown', event => {
+    if (active || !event.isPrimary || event.button !== 0) return;
+    event.preventDefault(); handle.focus({preventScroll:true});
+    const page = sheet.getBoundingClientRect(), viewport = stage?.getBoundingClientRect();
+    const visible = viewport ? {
+      x:[Math.max(0,(viewport.left + stage.clientLeft - page.left) / page.width * 100),Math.min(100,(viewport.left + stage.clientLeft + stage.clientWidth - page.left) / page.width * 100)],
+      y:[Math.max(0,(viewport.top + stage.clientTop - page.top) / page.height * 100),Math.min(100,(viewport.top + stage.clientTop + stage.clientHeight - page.top) / page.height * 100)]
+    } : {x:[0,100],y:[0,100]};
+    active = {pointerId:event.pointerId, start:{...values}, visible, origin:{x:event.clientX,y:event.clientY}, offset:{x:0,y:0}};
+    handle.setPointerCapture(event.pointerId);
+  });
+  handle.addEventListener('pointermove', event => { if (active?.pointerId === event.pointerId) move(event); });
+  handle.addEventListener('pointerup', event => { if (active?.pointerId === event.pointerId) { move(event); stop(); } });
+  for (const type of ['pointercancel','lostpointercapture']) handle.addEventListener(type, event => { if (active?.pointerId === event.pointerId) stop(); });
+  handle.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && active) { event.preventDefault(); Object.assign(values, active.start); stop(); refresh(); return; }
+    if (active?.pointerId !== undefined) return;
+    if (!['ArrowLeft','ArrowRight','ArrowUp','ArrowDown','Home','End','PageUp','PageDown','Enter',' '].includes(event.key)) return;
+    event.preventDefault();
+    active ??= {start:{...values}};
+    const step = event.shiftKey || ['PageUp','PageDown'].includes(event.key) ? 10 : 1;
+    if (['Home','End','Enter',' '].includes(event.key)) { values.x = values.y = event.key === 'Home' ? 0 : event.key === 'End' ? 100 : 50; refresh(); }
+    else { const axis = ['ArrowLeft','ArrowRight'].includes(event.key) ? 'x' : 'y'; set(axis, values[axis] + (['ArrowLeft','ArrowUp','PageUp'].includes(event.key) ? -step : step)); }
+  });
+  handle.addEventListener('keyup', () => { if (active?.pointerId === undefined) stop(); });
+  handle.addEventListener('blur', stop);
   const visibility = () => { if (document.hidden) stop(); };
   window.addEventListener('blur', stop); document.addEventListener('visibilitychange', visibility);
   stage?.addEventListener('scroll', positionGrips, {passive:true});
@@ -138,7 +150,7 @@ export function mountMaterialCompare(sheet, values, onChange = () => {}) {
 export function mountMaterial(root, material) {
   const initial = materialSelection(material, location.href);
   let current = initial.index, preferredView = initial.view, zoom = 'artwork', alignCharts = true, sequence = 0, destroyed = false, observer, comparison;
-  const reveal = { x: 50, y: 50 };
+  const reveal = { x: 0, y: 0 };
   const main = element('main', { class: 'material-shell' });
   const intro = element('header', { class: 'material-intro' }, element('p', { class: 'material-eyebrow' }, 'MATERIAL / COLOR STUDIES / 1890'), element('h1', {}, material.title), element('p', { class: 'material-author' }, material.author), element('p', {}, '29 chromatic plates, translated into SVG and flat color. Explore the original scans and their web interpretation in the same arrangement.'));
   const content = element('section', { class: 'material-content', 'aria-label': 'Selected material' });
@@ -213,15 +225,14 @@ export function mountMaterial(root, material) {
       content.append(element('div', { class: 'material-alignment-control' }, element('label', { for: 'material-align-chart' }, alignment, document.createTextNode('Align chart to scan')), alignmentNote));
     }
     if (!hasSVG) content.append(element('p', { class: 'material-mode-note', role: 'status' }, 'Supplementary page · original scan only. Web translation is available for the 29 numbered plates.'));
-    if (view === 'compare') content.append(element('p', { class: 'material-mode-note', id: 'material-compare-help' }, 'Source is below and right of the dividers; Web fills the rest. Drag either divider.'));
     const framingNote = element('p', { class: 'material-mode-note', id: 'material-framing-help' });
     zoomPicker.setAttribute('aria-describedby', 'material-framing-help material-zoom-help');
-    stage.setAttribute('aria-describedby', 'material-framing-help');
     const loadStatus = element('div', { class: 'material-load-status' });
     const help = element('details', { class: 'material-help' }, element('summary', {}, 'Viewer controls and fidelity'),
-      element('p', { id: 'material-keyboard-help' }, 'Use arrow keys to adjust a focused divider, Shift + arrows or Page Up / Down for larger steps, and Home / End for its edges. Escape cancels a drag. Keyboard color inspection reveals the focused swatch by moving the vertical divider when needed.'),
+      element('p', { id: 'material-keyboard-help' }, 'Focus the intersection and use arrow keys to move either divider. Shift + arrows take larger steps; Page Up / Down move vertically. Home / End move both to the edges; Enter or Space centers both. Escape cancels a drag. Keyboard color inspection reveals the focused swatch by moving the vertical divider when needed.'),
       element('p', { id: 'material-zoom-help' }, 'Fit artwork enlarges each full page equally and centers the color study. Scroll to see page margins, or select Fit page to reset. Fit width fills the viewer horizontally. 100% is one original scan pixel per CSS pixel; 150%, 200% and 300% use that same basis.'),
       element('p', {}, 'Web geometry is regularized and typography is substituted, so printed details do not align exactly. Align chart to scan applies an approximate, measured correction to the chart, frame and axis labels on plates II–XXII only. Headings, footer and the scan stay unchanged. Turn it off to inspect the original reconstruction. SVG downloads always retain the unchanged source reconstruction.'));
+    if (view === 'compare') help.append(element('p', { class: 'material-mode-note', id: 'material-compare-help' }, 'Source is below and right of the dividers; Web fills the rest. Drag the intersection freely, or start nearly straight to move one divider. Pull sideways to release the snap.'));
     content.append(framingNote, loadStatus, stage, inspector, help, caption);
     let viewedCenter;
     function rememberCenter() {
@@ -234,7 +245,8 @@ export function mountMaterial(root, material) {
       const page = sheets.querySelector('.material-sheet');
       if (!page) return;
       const mode = effectiveZoom();
-      framingNote.textContent = (mode === 'artwork' ? 'Fit artwork shows the color study. Choose Fit page for all margins.' : mode === '1' ? 'Fit page shows the complete page and its margins.' : mode === 'width' ? 'Fit width fills the viewer. Scroll to see the rest of the page.' : `${mode === 'actual' ? 100 : Number(mode) * 100}% of original scan pixels. Scroll to pan.`) + (hasSVG ? ' Web geometry is approximate.' : ' Original scan only.');
+      framingNote.hidden = mode === 'artwork';
+      framingNote.textContent = mode === 'artwork' ? '' : mode === '1' ? 'Fit page shows the complete page and its margins.' : mode === 'width' ? 'Fit width fills the viewer. Scroll to see the rest of the page.' : `${mode === 'actual' ? 100 : Number(mode) * 100}% of original scan pixels. Scroll to pan.`;
       const old = page.getBoundingClientRect(), viewport = stage.getBoundingClientRect();
       const viewportCenter = [viewport.left + stage.clientLeft + stage.clientWidth / 2, viewport.top + stage.clientTop + stage.clientHeight / 2];
       const previousCenter = centerOverride || (old.width > 0 && old.height > 0 ? [(viewportCenter[0] - old.left) / old.width, (viewportCenter[1] - old.top) / old.height] : [.5,.5]);
@@ -260,7 +272,6 @@ export function mountMaterial(root, material) {
       let sheet;
       if (compareSheet) {
         sheet = element('div', { class: 'material-compare-layer', 'data-mode': mode }); compareSheet.append(sheet);
-        if (mode === 'original') sheet.append(element('span', { class: 'material-compare-label material-compare-source', 'aria-hidden': 'true' }, 'Source'));
       } else {
         const slot = element('figure', { class: 'material-sheet-slot', 'data-mode': mode }, element('figcaption', {}, mode === 'original' ? 'Original scan' : 'Web translation · approximate flat colors'));
         sheet = element('div', { class: 'material-sheet', style: `aspect-ratio:${item.width}/${item.height}` }); slot.append(sheet); sheets.append(slot);
@@ -306,7 +317,6 @@ export function mountMaterial(root, material) {
       }
     }
     if (compareSheet) {
-      compareSheet.append(element('span', { class: 'material-compare-label material-compare-web', 'aria-hidden': 'true' }, 'Web'));
       comparison = mountMaterialCompare(compareSheet, reveal);
     }
     let stageSize = [stage.clientWidth, stage.clientHeight];
