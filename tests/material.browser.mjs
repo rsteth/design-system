@@ -16,10 +16,11 @@ async function checkCompare(page,width,context){
  await page.goto(url+'&panel=plate-ii&view=compare');
  const sheet=page.locator('.material-compare'),x=page.getByRole('slider',{name:'Vertical divider, move left or right',exact:true}),y=page.getByRole('slider',{name:'Horizontal divider, move up or down',exact:true});
  await sheet.locator('svg').waitFor();await sheet.locator('img').evaluate(async img=>{await img.decode();});
+ await page.getByLabel('Zoom',{exact:true}).selectOption('1');
  await sheet.scrollIntoViewIfNeeded();
  const values=async()=>[Number(await x.getAttribute('aria-valuenow')),Number(await y.getAttribute('aria-valuenow'))];
  assert.deepEqual(await values(),[50,50]);
- assert.match(await page.locator('#material-compare-help').innerText(),/Keyboard color inspection reveals the focused swatch/);
+ assert.match(await page.locator('#material-keyboard-help').textContent(),/Keyboard color inspection reveals the focused swatch/);
  assert.equal(await x.getAttribute('aria-orientation'),'horizontal');assert.equal(await y.getAttribute('aria-orientation'),'vertical');
  assert.match(await y.getAttribute('aria-valuetext'),/50% from top/);
  const geometry=await sheet.evaluate(n=>{

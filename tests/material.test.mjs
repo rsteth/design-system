@@ -100,3 +100,34 @@ test('Compare uses aligned source and translation layers without modifying sourc
  assert.match(code,/pointercancel/);assert.match(code,/lostpointercapture/);
  assert.doesNotMatch(code,/data-stacked|translation sits below/);
 });
+
+test('Material artwork framing uses exact page coordinates and honest scan-pixel zoom',async()=>{
+ const {materialArtworkBounds,materialFraming}=await import('../apps/studio/material-framing.mjs');
+ const manifest=JSON.parse(await read('collections/material/lacouture-1890/manifest.json'));
+ assert.deepEqual(Object.keys(materialArtworkBounds),manifest.items.filter(i=>i.svg).map(i=>i.id));
+ for(const item of manifest.items){
+  const page=materialFraming(item,'1',800,600),art=materialFraming(item,'artwork',800,600);
+  assert.ok(page.width<=800&&page.width/item.width*item.height<=600.00001);
+  assert.ok(Math.abs(materialFraming(item,'width',800,600).width-800)<1e-9);
+  assert.equal(materialFraming(item,'actual',800,600).width,item.width);
+  assert.equal(materialFraming(item,'2',800,600).width,item.width*2);
+  assert.ok(art.width>=page.width);
+  if(item.svg){const [x1,y1,x2,y2]=materialArtworkBounds[item.id];assert.ok(x1>=0&&x1<x2&&x2<=item.width&&y1>=0&&y1<y2&&y2<=item.height);assert.deepEqual(art.center,[(x1+x2)/2/item.width,(y1+y2)/2/item.height]);}
+  else assert.deepEqual(art,page);
+ }
+});
+
+test('reviewed chart registration improves all 21 pinned frame landmarks without touching source assets',async()=>{
+ const {materialChartRegistration}=await import('../apps/studio/material-registration.mjs');
+ const manifest=JSON.parse(await read('collections/material/lacouture-1890/manifest.json'));
+ const landmarks=JSON.parse(await read('tests/fixtures/material-frame-landmarks.json'));
+ assert.deepEqual(Object.keys(materialChartRegistration),manifest.items.slice(2,23).map(i=>i.id));
+ for(const item of landmarks){
+  const source=manifest.items.find(i=>i.id===item.id),c=materialChartRegistration[item.id];
+  assert.equal(c.svgSha256,source.svgSha256);assert.equal(item.scanSha256,source.sha256);
+  const angle=c.rotation*Math.PI/180,cos=Math.cos(angle),sin=Math.sin(angle);
+  const before=item.svgFrame.map(([x,y],i)=>Math.hypot(x-item.scanFrame[i][0],y-item.scanFrame[i][1]));
+  const after=item.svgFrame.map(([x,y],i)=>{const dx=x-c.center[0],dy=y-c.center[1];return Math.hypot(c.center[0]+c.translate[0]+c.scale*(cos*dx-sin*dy)-item.scanFrame[i][0],c.center[1]+c.translate[1]+c.scale*(sin*dx+cos*dy)-item.scanFrame[i][1]);});
+  assert.ok(after.reduce((a,b)=>a+b)<before.reduce((a,b)=>a+b)/3,item.id);assert.ok(Math.max(...after)<3.6,item.id);
+ }
+});
