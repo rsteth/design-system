@@ -73,7 +73,8 @@ export function mountMaterialCompare(sheet, values, onChange = () => {}) {
   // Symmetric painted bounds (1..19) are centered in the 24-unit viewport.
   arrows.setAttribute('transform', 'translate(2 2)'); icon.append(arrows);
   const handle = element('div', { class: 'material-compare-handle', role: 'button', tabindex: '0', 'aria-roledescription': 'two-axis comparison control', 'aria-describedby': 'material-compare-help material-keyboard-help', 'aria-keyshortcuts': 'ArrowLeft ArrowRight ArrowUp ArrowDown Home End PageUp PageDown Enter Space Escape' }, element('span', { class: 'material-compare-grip', 'aria-hidden': 'true' }, icon));
-  for (const axis of ['x', 'y']) sheet.append(element('span', {class: 'material-compare-line', 'data-axis': axis, 'aria-hidden': 'true'}));
+  const lines = Object.fromEntries(['x', 'y'].map(axis => [axis, element('span', {class: 'material-compare-line', 'data-axis': axis, 'aria-hidden': 'true'})]));
+  sheet.append(lines.x, lines.y);
   sheet.append(handle);
   // Suppress selection/native drags only inside the comparison field. Leave
   // pointer defaults elsewhere intact for focus, swatches, scrolling and copy.
@@ -94,6 +95,12 @@ export function mountMaterialCompare(sheet, values, onChange = () => {}) {
   const refresh = () => {
     sheet.style.setProperty('--compare-x', `${values.x}%`);
     sheet.style.setProperty('--compare-y', `${values.y}%`);
+    // Only mark boundaries shared by Web and the bottom-right Original region.
+    // Empty regions and outer page edges have no comparison boundary. Keep
+    // these true cuts independent from the reachable, possibly inset proxy.
+    const hasOriginal = values.x < 100 && values.y < 100;
+    lines.x.hidden = !hasOriginal || values.x === 0;
+    lines.y.hidden = !hasOriginal || values.y === 0;
     positionGrips();
     handle.setAttribute('aria-label', `Move comparison dividers. ${Math.round(values.x)}% from left, ${Math.round(values.y)}% from top.`);
     onChange();
@@ -191,7 +198,7 @@ export function mountMaterial(root, material) {
   const main = element('main', { class: 'material-shell' });
   const intro = element('header', { class: 'material-intro' }, element('p', { class: 'material-eyebrow' }, 'MATERIAL / COLOR STUDIES / 1890'), element('h1', {}, material.title), element('p', { class: 'material-author' }, material.author), element('p', {}, '29 chromatic plates, translated into SVG and flat color. Explore the original scans and their web interpretation in the same arrangement.'));
   const content = element('section', { class: 'material-content', 'aria-label': 'Selected material' });
-  const credit = element('aside', { class: 'material-credit' }, element('p', {}, material.credit), link('Getty / Internet Archive source ↗', material.sourceURL), document.createTextNode(' · '), link('Source page images · JP2 archive ↗', 'https://archive.org/download/gri_33125012875395/gri_33125012875395_jp2.zip'), element('p', {}, 'Original work by Charles Lacouture, with chromolithographs by G. Severeyns. The SVG reconstruction and this interface are a web interpretation, not the original artwork or a Getty publication. Internet Archive records the source as NOT_IN_COPYRIGHT; no CC0 license is asserted here.'), element('p', {}, 'Flat colors are scan-derived digital approximations, not calibrated measurements of the original inks. Geometry is regularized, typography is substituted, and paper texture, wear and fine ink hatching remain visible only in the scans.'));
+  const credit = element('aside', { class: 'material-credit' }, element('p', {}, material.credit), link('Getty / Internet Archive source ↗', material.sourceURL), document.createTextNode(' · '), link('Source page images · JP2 archive ↗', 'https://archive.org/download/gri_33125012875395/gri_33125012875395_jp2.zip'), element('p', {}, 'archive records source as not in copyright, no copyright is asserted'));
   // Keep native anchor semantics for modified clicks, new tabs and copied links.
   function navigateLink(anchor, action) {
     anchor.addEventListener('click', event => {
@@ -202,13 +209,15 @@ export function mountMaterial(root, material) {
     return anchor;
   }
   function renderIndex(focusID) {
+    const savedSupplements = history.state?.materialIndexSupplementsOpen;
+    if (typeof savedSupplements === 'boolean') supplements.open = savedSupplements;
     const heading = element('div', { class: 'material-index-heading' }, element('h2', {}, 'The plates'), element('span', {}, `${material.items.filter(item => item.svg).length} web translations`));
     const grid = element('ol', { class: 'material-index-grid', 'aria-label': 'Chromatic plates' });
     for (const [index, item] of material.items.entries()) {
       const label = `${item.group === 'plate' ? 'Plate ' + item.number + ' · ' : ''}${item.title}`;
       const anchor = element('a', { class: item.svg ? 'material-index-card' : 'material-supplement-link', id: `index-${item.id}`, href: materialPageURL(location.href, item), 'aria-label': `${label}. Open ${item.svg ? 'web translation' : 'original scan'}.` });
       navigateLink(anchor, () => {
-        history.replaceState({ ...history.state, materialIndexFocus: item.id, materialIndexScroll: window.scrollY }, '', location.href);
+        history.replaceState({ ...history.state, materialIndexFocus: item.id, materialIndexScroll: window.scrollY, materialIndexSupplementsOpen: supplements.open }, '', location.href);
         current = index; preferredView = item.svg ? 'translation' : 'original'; showingIndex = false;
         history.pushState(null, '', anchor.href); render('#material-panel-picker');
       });
@@ -310,9 +319,8 @@ export function mountMaterial(root, material) {
     if (materialChartRegistration[item.id] && view !== 'original') {
       const alignment = element('input', { type: 'checkbox', id: 'material-align-chart' });
       alignment.checked = alignCharts;
-      const alignmentNote = element('span', { class: 'material-alignment-note' }, 'Approximate alignment. Original SVG unchanged.');
       alignment.addEventListener('change', () => { alignCharts = alignment.checked; chartPresentation?.set(alignCharts); });
-      content.append(element('div', { class: 'material-alignment-control' }, element('label', { for: 'material-align-chart' }, alignment, document.createTextNode('Align chart to scan')), alignmentNote));
+      content.append(element('div', { class: 'material-alignment-control' }, element('label', { for: 'material-align-chart' }, alignment, document.createTextNode('Align chart to scan'))));
     }
     if (!hasSVG) content.append(element('p', { class: 'material-mode-note', role: 'status' }, 'Supplementary page · original scan only. Web translation is available for the 29 numbered plates.'));
     const framingNote = element('p', { class: 'material-mode-note', id: 'material-framing-help' });
