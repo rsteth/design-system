@@ -1,4 +1,4 @@
-import {assertInitialCompare} from './material-compare-geometry.mjs';
+import {assertInitialCompare,assertCompareDividers} from './material-compare-geometry.mjs';
 import assert from 'node:assert/strict';
 import {createServer} from 'node:http';
 import {readFile,stat,mkdir,writeFile} from 'node:fs/promises';
@@ -18,7 +18,7 @@ async function checkCompare(page,width,context){
  const sheet=page.locator('.material-compare'),handle=page.locator('.material-compare-handle');
  await sheet.locator('svg:not(.material-compare-icon)').waitFor();await sheet.locator('img').evaluate(n=>n.decode());
  const values=()=>sheet.evaluate(n=>['x','y'].map(a=>parseFloat(n.style.getPropertyValue('--compare-'+a))));
- const near=async(expected)=>{const actual=await values();actual.forEach((n,i)=>assert.ok(Math.abs(n-expected[i])<.05,`${actual} != ${expected}`));};
+ const near=async(expected)=>{const actual=await values();actual.forEach((n,i)=>assert.ok(Math.abs(n-expected[i])<.05,`${actual} != ${expected}`));await assertCompareDividers(page);};
  const reset=async()=>{await handle.focus();await page.keyboard.press('Enter');};
  const reachable=async()=>{await page.locator('.material-stage').scrollIntoViewIfNeeded();await page.evaluate(()=>new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r))));const b=await handle.boundingBox();assert.equal(b.width,44);assert.equal(b.height,44);assert.equal(await handle.evaluate(n=>{const r=n.getBoundingClientRect();return document.elementFromPoint(r.x+22,r.y+22)===n;}),true);};
  const start=async()=>{const b=await handle.boundingBox();const p={x:b.x+22,y:b.y+22};await page.mouse.move(p.x,p.y);await page.mouse.down();return p;};
@@ -103,7 +103,7 @@ async function checkCompare(page,width,context){
    await reset();const b=await handle.boundingBox(),t={x:b.x+22,y:b.y+22};
    await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[t]});await cdp.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{x:t.x+dx,y:t.y+dy}]});await page.waitForTimeout(50);assert.equal(await sheet.getAttribute('data-active-axis'),dx===30?'x':dy===30?'y':'both');
    await cdp.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{x:t.x+30,y:t.y+30}]});await page.waitForTimeout(50);assert.equal(await sheet.getAttribute('data-active-axis'),'both');
-   await cdp.send('Input.dispatchTouchEvent',{type:'touchCancel',touchPoints:[]});assert.equal(await sheet.getAttribute('data-active-axis'),null);
+   await cdp.send('Input.dispatchTouchEvent',{type:'touchCancel',touchPoints:[]});assert.equal(await sheet.getAttribute('data-active-axis'),null);await assertCompareDividers(page);
   }await cdp.detach();
  }
  await reset();await page.screenshot({path:join(output,`compare-intersection-${width}.png`),fullPage:true});

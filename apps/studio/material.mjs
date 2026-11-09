@@ -73,7 +73,8 @@ export function mountMaterialCompare(sheet, values, onChange = () => {}) {
   // Symmetric painted bounds (1..19) are centered in the 24-unit viewport.
   arrows.setAttribute('transform', 'translate(2 2)'); icon.append(arrows);
   const handle = element('div', { class: 'material-compare-handle', role: 'button', tabindex: '0', 'aria-roledescription': 'two-axis comparison control', 'aria-describedby': 'material-compare-help material-keyboard-help', 'aria-keyshortcuts': 'ArrowLeft ArrowRight ArrowUp ArrowDown Home End PageUp PageDown Enter Space Escape' }, element('span', { class: 'material-compare-grip', 'aria-hidden': 'true' }, icon));
-  for (const axis of ['x', 'y']) sheet.append(element('span', {class: 'material-compare-line', 'data-axis': axis, 'aria-hidden': 'true'}));
+  const lines = Object.fromEntries(['x', 'y'].map(axis => [axis, element('span', {class: 'material-compare-line', 'data-axis': axis, 'aria-hidden': 'true'})]));
+  sheet.append(lines.x, lines.y);
   sheet.append(handle);
   // Suppress selection/native drags only inside the comparison field. Leave
   // pointer defaults elsewhere intact for focus, swatches, scrolling and copy.
@@ -94,6 +95,12 @@ export function mountMaterialCompare(sheet, values, onChange = () => {}) {
   const refresh = () => {
     sheet.style.setProperty('--compare-x', `${values.x}%`);
     sheet.style.setProperty('--compare-y', `${values.y}%`);
+    // Only mark boundaries shared by Web and the bottom-right Original region.
+    // Empty regions and outer page edges have no comparison boundary. Keep
+    // these true cuts independent from the reachable, possibly inset proxy.
+    const hasOriginal = values.x < 100 && values.y < 100;
+    lines.x.hidden = !hasOriginal || values.x === 0;
+    lines.y.hidden = !hasOriginal || values.y === 0;
     positionGrips();
     handle.setAttribute('aria-label', `Move comparison dividers. ${Math.round(values.x)}% from left, ${Math.round(values.y)}% from top.`);
     onChange();
