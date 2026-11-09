@@ -1,3 +1,4 @@
+import {assertInitialCompare} from './material-compare-geometry.mjs';
 /** Index navigation, real assets, responsive geometry and interrupted loads. */
 import assert from 'node:assert/strict';
 import {createServer} from 'node:http';
@@ -29,12 +30,15 @@ try{
    const card=page.locator('#index-'+item.id);await card.scrollIntoViewIfNeeded();
    await card.locator('img').evaluate(n=>n.decode());
    const b=await card.boundingBox();assert.ok(b.width>=44&&b.height>=44);
-   await card.click();await page.locator('.material-sheet svg').waitFor();
+   await card.click();await page.locator('.material-sheet svg:not(.material-compare-icon)').waitFor();
    assert.equal(new URL(page.url()).searchParams.get('panel'),item.id);assert.equal(await page.locator('.material-sheet .swatch').count(),item.swatchCount);
+   if(index===0){await page.getByRole('button',{name:'Compare',exact:true}).click();await page.locator('.material-sheet svg:not(.material-compare-icon)').waitFor();await assertInitialCompare(page);}
    await page.getByRole('link',{name:'← All plates',exact:true}).click();
    assert.equal(await card.evaluate(n=>n===document.activeElement),true);
    await overflow(page);
   }
+  // First Compare entry after choosing Fit page also seeds inside the visible page.
+  await page.goto(url+'&panel=plate-ii&view=translation');await page.locator('.material-sheet svg:not(.material-compare-icon)').waitFor();await page.getByLabel('Zoom',{exact:true}).selectOption('1');await page.getByRole('button',{name:'Compare',exact:true}).click();await page.locator('.material-sheet svg:not(.material-compare-icon)').waitFor();await assertInitialCompare(page);await page.locator('.material-stage').scrollIntoViewIfNeeded();await page.screenshot({path:join(output,`compare-first-fit-page-${width}.png`),fullPage:true});await page.getByRole('link',{name:'← All plates',exact:true}).click();
   // Full-page captures include every SVG after explicit decoding, not placeholders.
   await page.locator('.material-index-card img').evaluateAll(async images=>{for(const image of images)image.loading='eager';await Promise.all(images.map(image=>image.decode()));});
   await page.evaluate(()=>scrollTo(0,0));await page.screenshot({path:join(output,`index-${width}.png`),fullPage:true});
@@ -45,20 +49,20 @@ try{
    await page.getByRole('link',{name:'← All plates',exact:true}).click();assert.equal(await card.evaluate(n=>n===document.activeElement),true);
   }
   // Back restores the gallery position as well as its focused link.
-  const last=page.locator('#index-plate-xxviii');await last.scrollIntoViewIfNeeded();const savedY=await page.evaluate(()=>scrollY);await last.click();await page.locator('.material-sheet svg').waitFor();await page.goBack();await last.waitFor();await page.waitForTimeout(100);assert.ok(Math.abs(await page.evaluate(()=>scrollY)-savedY)<2);
+  const last=page.locator('#index-plate-xxviii');await last.scrollIntoViewIfNeeded();const savedY=await page.evaluate(()=>scrollY);await last.click();await page.locator('.material-sheet svg:not(.material-compare-icon)').waitFor();await page.goBack();await last.waitFor();await page.waitForTimeout(100);assert.ok(Math.abs(await page.evaluate(()=>scrollY)-savedY)<2);
   // Keyboard activation, visible focus, reload, Back/Forward and native new-tab links.
   const card=page.locator('#index-plate-ii');await card.focus();await page.keyboard.press('Tab');await page.keyboard.press('Shift+Tab');
   assert.notEqual(await card.evaluate(n=>getComputedStyle(n).outlineStyle),'none');
-  await page.keyboard.press('Enter');await page.locator('.material-sheet svg').waitFor();assert.equal(await page.getByLabel('Panel',{exact:true}).inputValue(),'2');
-  await page.reload();await page.locator('.material-sheet svg').waitFor();
+  await page.keyboard.press('Enter');await page.locator('.material-sheet svg:not(.material-compare-icon)').waitFor();assert.equal(await page.getByLabel('Panel',{exact:true}).inputValue(),'2');
+  await page.reload();await page.locator('.material-sheet svg:not(.material-compare-icon)').waitFor();
   await page.goBack();await card.waitFor();assert.equal(await card.evaluate(n=>n===document.activeElement),true);
-  await page.goForward();await page.locator('.material-sheet svg').waitFor();
+  await page.goForward();await page.locator('.material-sheet svg:not(.material-compare-icon)').waitFor();
   await page.getByRole('link',{name:'← All plates',exact:true}).click();await page.reload();await card.waitFor();
-  const newTab=await context.newPage();await newTab.goto(await card.getAttribute('href'));await newTab.locator('.material-sheet svg').waitFor();assert.equal(await newTab.getByLabel('Panel',{exact:true}).inputValue(),'2');await newTab.close();
+  const newTab=await context.newPage();await newTab.goto(await card.getAttribute('href'));await newTab.locator('.material-sheet svg:not(.material-compare-icon)').waitFor();assert.equal(await newTab.getByLabel('Panel',{exact:true}).inputValue(),'2');await newTab.close();
   for(const [suffix,mode] of [['&view=compare','compare'],['&view=translation','translation'],['&view=panels','original'],['&panel=plate-x&view=compare','compare'],['&panel=plate-x','original']]){
    await page.goto(url+suffix);await page.locator('.material-stage').waitFor();
    assert.equal(await page.locator(`[data-material-view=${mode}]`).getAttribute('aria-pressed'),'true');
-   if(mode==='compare'){await page.locator('.material-sheet svg').waitFor();assert.equal(await page.locator('.material-compare-handle').count(),1);}
+   if(mode==='compare'){await page.locator('.material-sheet svg:not(.material-compare-icon)').waitFor();assert.equal(await page.locator('.material-compare-handle').count(),1);}
   }
   await page.getByRole('button',{name:'Reference studies',exact:true}).click();await page.getByLabel('Collection',{exact:true}).waitFor();
   await page.getByLabel('Material',{exact:true}).selectOption('lacouture-1890');await page.locator('.material-index-grid').waitFor();
@@ -71,11 +75,11 @@ try{
  await page.goto(url);await page.locator('#index-plate-i .material-thumbnail-status').filter({hasText:'Preview unavailable'}).waitFor();
  assert.equal(await page.locator('#index-plate-i').isVisible(),true);
  await page.locator('#index-plate-i').click();await page.getByRole('alert').filter({hasText:'could not load'}).waitFor();
- await page.unroute('**/translation/plates/plate-i.svg');await page.getByRole('button',{name:'Retry',exact:true}).click();await page.locator('.material-sheet svg').waitFor();
+ await page.unroute('**/translation/plates/plate-i.svg');await page.getByRole('button',{name:'Retry',exact:true}).click();await page.locator('.material-sheet svg:not(.material-compare-icon)').waitFor();
  await page.getByRole('link',{name:'← All plates',exact:true}).click();
  await page.route('**/translation/plates/plate-iii.svg',async route=>{await new Promise(r=>setTimeout(r,400));await route.continue();});
- await page.locator('#index-plate-iii').click();await page.getByRole('link',{name:'← All plates',exact:true}).click();await page.locator('#index-plate-iv').click();await page.locator('.material-sheet svg').waitFor();await page.waitForTimeout(550);
- assert.equal(new URL(page.url()).searchParams.get('panel'),'plate-iv');assert.match(await page.locator('.material-sheet svg title').first().textContent(),/IV/);
+ await page.locator('#index-plate-iii').click();await page.getByRole('link',{name:'← All plates',exact:true}).click();await page.locator('#index-plate-iv').click();await page.locator('.material-sheet svg:not(.material-compare-icon)').waitFor();await page.waitForTimeout(550);
+ assert.equal(new URL(page.url()).searchParams.get('panel'),'plate-iv');assert.match(await page.locator('.material-sheet svg:not(.material-compare-icon) title').first().textContent(),/IV/);
  // A late SVG load cannot repopulate the overview after return.
  await page.getByRole('link',{name:'← All plates',exact:true}).click();await page.waitForTimeout(450);assert.equal(await page.locator('.material-sheet').count(),0);assert.equal(await page.locator('.material-index-card').count(),29);
  await page.close();assert.deepEqual(errors,[]);assert.deepEqual(external,[]);

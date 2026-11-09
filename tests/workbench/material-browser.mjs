@@ -39,11 +39,11 @@ try{
  await page.screenshot({path:resolve(artifacts,'material-desktop.png'),fullPage:true});
  for(let i=0;i<3;i++){
   await page.getByRole('button',{name:'Web translation',exact:true}).click();
-  await page.locator('.material-sheet svg').waitFor();
+  await page.locator('.material-sheet svg:not(.material-compare-icon)').waitFor();
   assert.equal(await page.locator('.material-sheet .swatch').count(),manifest.items[0].swatchCount);
   assert.equal(await page.locator('iframe').count(),0);
   await page.goBack();await picker.waitFor();assert.equal(await picker.inputValue(),'0');
-  await page.goForward();await page.locator('.material-sheet svg').waitFor();
+  await page.goForward();await page.locator('.material-sheet svg:not(.material-compare-icon)').waitFor();
   await page.getByRole('button',{name:'Original',exact:true}).click();await picker.waitFor();
  }
  await page.getByRole('button',{name:'Capture studio',exact:true}).click();await page.locator('.cs-shell').waitFor();assert.equal(await page.locator('#library-status').innerText(),'');
