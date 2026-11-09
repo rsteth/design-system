@@ -1,3 +1,5 @@
+import {materialChartRegistration, mountMaterialChart} from './material-registration.mjs';
+import {materialFraming} from './material-framing.mjs';
 const manifestURL = new URL('../../collections/material/lacouture-1890/manifest.json', import.meta.url);
 let materialPromise;
 const svgCache = new Map();
@@ -52,13 +54,33 @@ export const materialRevealPercent = (coordinate, start, length) => length > 0 ?
 export function mountMaterialCompare(sheet, values, onChange = () => {}) {
   const handles = new Map();
   let active;
+  const stage = sheet.closest('.material-stage');
+  const positionGrips = () => {
+    const page = sheet.getBoundingClientRect(), viewport = stage?.getBoundingClientRect();
+    if (!viewport || !page.width || !page.height) return;
+    const visibleLeft = Math.max(0, viewport.left + stage.clientLeft - page.left), visibleTop = Math.max(0, viewport.top + stage.clientTop - page.top);
+    const visibleRight = Math.min(page.width, viewport.left + stage.clientLeft + stage.clientWidth - page.left), visibleBottom = Math.min(page.height, viewport.top + stage.clientTop + stage.clientHeight - page.top);
+    const source = sheet.querySelector('.material-compare-source'), web = sheet.querySelector('.material-compare-web');
+    if (source) { source.style.right = `${page.width - visibleRight + 8}px`; source.style.bottom = `${page.height - visibleBottom + 8}px`; }
+    if (web) { web.style.left = `${visibleLeft + 8}px`; web.style.top = `${visibleTop + 8}px`; web.hidden = visibleLeft >= page.width * values.x / 100 && visibleTop >= page.height * values.y / 100; }
+    for (const [axis, size, start, visibleStart, visibleLength, cut] of [
+      ['x', page.height, page.top, viewport.top + stage.clientTop, stage.clientHeight, values.y],
+      ['y', page.width, page.left, viewport.left + stage.clientLeft, stage.clientWidth, values.x]
+    ]) {
+      // Center the grip in the longer visible segment clear of the other track.
+      const low = Math.max(0, (visibleStart - start) / size * 100) + 18 / size * 100;
+      const high = Math.min(100, (visibleStart + visibleLength - start) / size * 100) - 18 / size * 100;
+      const gap = 30 / size * 100;
+      const segments = [[low, Math.min(high, cut - gap)], [Math.max(low, cut + gap), high]].filter(([a,b]) => b >= a);
+      segments.sort((a,b) => (b[1]-b[0])-(a[1]-a[0]));
+      const [a,b] = segments[0] || [low,high];
+      sheet.style.setProperty(`--compare-${axis}-grip`, `${Math.max(0, Math.min(100, (a+b)/2))}%`);
+    }
+  };
   const refresh = () => {
     sheet.style.setProperty('--compare-x', `${values.x}%`);
     sheet.style.setProperty('--compare-y', `${values.y}%`);
-    // Keep each grip clear of the other divider's hit strip. Its own movement
-    // never moves its grip along the track during a drag.
-    sheet.style.setProperty('--compare-x-grip', values.y >= 50 ? '25%' : '75%');
-    sheet.style.setProperty('--compare-y-grip', values.x <= 50 ? '75%' : '25%');
+    positionGrips();
     sheet.dataset.allSource = String(values.x === 0 && values.y === 0);
     for (const [axis, handle] of handles) {
       handle.setAttribute('aria-valuenow', String(values[axis]));
@@ -72,7 +94,7 @@ export function mountMaterialCompare(sheet, values, onChange = () => {}) {
     if (previous?.pointerId !== undefined && previous.handle.hasPointerCapture(previous.pointerId)) previous.handle.releasePointerCapture(previous.pointerId);
   };
   for (const [axis, label, orientation] of [['x', 'Vertical divider, move left or right', 'horizontal'], ['y', 'Horizontal divider, move up or down', 'vertical']]) {
-    const handle = element('div', { class: 'material-compare-handle', 'data-axis': axis, role: 'slider', tabindex: '0', 'aria-label': label, 'aria-orientation': orientation, 'aria-valuemin': '0', 'aria-valuemax': '100', 'aria-describedby': 'material-compare-help' }, element('span', { class: 'material-compare-grip', 'aria-hidden': 'true' }, axis === 'x' ? '↔' : '↕'));
+    const handle = element('div', { class: 'material-compare-handle', 'data-axis': axis, role: 'slider', tabindex: '0', 'aria-label': label, 'aria-orientation': orientation, 'aria-valuemin': '0', 'aria-valuemax': '100', 'aria-describedby': 'material-compare-help material-keyboard-help' }, element('span', { class: 'material-compare-grip', 'aria-hidden': 'true' }, axis === 'x' ? '↔' : '↕'));
     handles.set(axis, handle); sheet.append(handle);
     const move = event => {
       const rect = sheet.getBoundingClientRect();
@@ -101,19 +123,21 @@ export function mountMaterialCompare(sheet, values, onChange = () => {}) {
   }
   const visibility = () => { if (document.hidden) stop(); };
   window.addEventListener('blur', stop); document.addEventListener('visibilitychange', visibility);
+  stage?.addEventListener('scroll', positionGrips, {passive:true});
   refresh();
   return {
+    layout: positionGrips,
     // Keyboard inspection must not leave the focused swatch hidden by the scan.
     reveal(node) {
       const target = node.getBoundingClientRect(), page = sheet.getBoundingClientRect();
       if (target.right > page.left + page.width * values.x / 100 && target.bottom > page.top + page.height * values.y / 100) set('x', Math.min(100, Math.ceil((target.right - page.left) / page.width * 100) + 1));
     },
-    destroy() { stop(); window.removeEventListener('blur', stop); document.removeEventListener('visibilitychange', visibility); }
+    destroy() { stop(); stage?.removeEventListener('scroll', positionGrips); window.removeEventListener('blur', stop); document.removeEventListener('visibilitychange', visibility); }
   };
 }
 export function mountMaterial(root, material) {
   const initial = materialSelection(material, location.href);
-  let current = initial.index, preferredView = initial.view, zoom = 1, sequence = 0, destroyed = false, observer, comparison;
+  let current = initial.index, preferredView = initial.view, zoom = 'artwork', alignCharts = true, sequence = 0, destroyed = false, observer, comparison;
   const reveal = { x: 50, y: 50 };
   const main = element('main', { class: 'material-shell' });
   const intro = element('header', { class: 'material-intro' }, element('p', { class: 'material-eyebrow' }, 'MATERIAL / COLOR STUDIES / 1890'), element('h1', {}, material.title), element('p', { class: 'material-author' }, material.author), element('p', {}, '29 chromatic plates, translated into SVG and flat color. Explore the original scans and their web interpretation in the same arrangement.'));
@@ -124,7 +148,13 @@ export function mountMaterial(root, material) {
     if (preferredView === 'original') url.searchParams.delete('view'); else url.searchParams.set('view', preferredView);
     if (url.href !== location.href) history.pushState(null, '', url);
   }
-  function render(focusSelector) {
+  function render(focusSelector, preserveViewport = false) {
+    const oldStage = content.querySelector('.material-stage'), oldPage = content.querySelector('.material-sheet');
+    let savedCenter;
+    if (preserveViewport && oldStage && oldPage) {
+      const viewport = oldStage.getBoundingClientRect(), page = oldPage.getBoundingClientRect();
+      savedCenter = [(viewport.left + oldStage.clientLeft + oldStage.clientWidth / 2 - page.left) / page.width, (viewport.top + oldStage.clientTop + oldStage.clientHeight / 2 - page.top) / page.height];
+    }
     const version = ++sequence; observer?.disconnect(); comparison?.destroy(); comparison = undefined;
     const item = material.items[current], hasSVG = Boolean(item.svg), view = hasSVG ? preferredView : 'original';
     content.replaceChildren();
@@ -148,10 +178,11 @@ export function mountMaterial(root, material) {
     for (const [id, label] of [['original','Original'],['translation','Web translation'],['compare','Compare']]) {
       const button = element('button', { type: 'button', 'data-material-view': id, 'aria-pressed': view === id }, label);
       button.disabled = !hasSVG && id !== 'original';
-      button.addEventListener('click', () => { preferredView = id; updateURL(); render(`[data-material-view="${id}"]`); }); modes.append(button);
+      button.addEventListener('click', () => { preferredView = id; updateURL(); render(`[data-material-view="${id}"]`, true); }); modes.append(button);
     }
-    const zoomPicker = element('select', { id: 'material-zoom' }, ...[[1,'Fit'],[1.5,'150%'],[2,'200%'],[3,'300%']].map(([value,label]) => element('option', { value }, label)));
-    zoomPicker.value = String(zoom);
+    const zoomPicker = element('select', { id: 'material-zoom' }, ...[['artwork','Fit artwork'],[1,'Fit page'],['width','Fit width'],['actual','100% · scan pixels'],[1.5,'150%'],[2,'200%'],[3,'300%']].filter(([value]) => value !== 'artwork' || hasSVG).map(([value,label]) => element('option', { value }, label)));
+    const effectiveZoom = () => !hasSVG && zoom === 'artwork' ? '1' : String(zoom);
+    zoomPicker.value = effectiveZoom();
     const zoomControl = element('div', { class: 'material-zoom-control' }, element('label', { for: 'material-zoom' }, 'Zoom'), zoomPicker);
     const controls = element('div', { class: 'material-controls' }, modes, zoomControl);
     const stage = element('div', { class: 'material-stage', tabindex: '0', 'aria-label': 'Plate viewer. Scroll to pan when zoomed.' });
@@ -173,17 +204,51 @@ export function mountMaterial(root, material) {
     if (hasSVG) downloads.append(element('a', { href: assetURL(item.svg), download: `${item.id}.svg` }, 'Download SVG'));
     const caption = element('div', { class: 'material-caption' }, element('h2', { lang: 'fr' }, `${item.group === 'plate' ? 'Plate ' + item.number + ' · ' : ''}${item.title}`), downloads);
     content.append(toolbar, controls);
-    if (!hasSVG) content.append(element('p', { class: 'material-mode-note', role: 'status' }, 'Supplementary page · original scan only. Web translation is available for the 29 numbered plates.'));
-    if (view === 'compare') content.append(element('p', { class: 'material-mode-note', id: 'material-compare-help' }, 'Drag either divider. Source appears below and to the right; Web fills the rest. Use arrow keys to adjust a focused divider, or Home / End for its edges. Keyboard color inspection reveals the focused swatch by moving the vertical divider when needed.'));
-    content.append(stage, inspector, caption);
-    function fit() {
-      const compare = view === 'compare';
-      const availableWidth = stage.clientWidth - (compare ? 48 : 32);
-      const fitWidth = Math.max(90, Math.min(availableWidth, (stage.clientHeight - (compare ? 72 : 60)) * item.width / item.height));
-      sheets.style.setProperty('--sheet-width', `${Math.floor(fitWidth * zoom)}px`);
-      for (const image of sheets.querySelectorAll('img')) image.sizes = `${Math.ceil(fitWidth * zoom)}px`;
+    let chartPresentation;
+    if (materialChartRegistration[item.id] && view !== 'original') {
+      const alignment = element('input', { type: 'checkbox', id: 'material-align-chart' });
+      alignment.checked = alignCharts;
+      const alignmentNote = element('span', { class: 'material-alignment-note' }, 'Approximate alignment. Original SVG unchanged.');
+      alignment.addEventListener('change', () => { alignCharts = alignment.checked; chartPresentation?.set(alignCharts); });
+      content.append(element('div', { class: 'material-alignment-control' }, element('label', { for: 'material-align-chart' }, alignment, document.createTextNode('Align chart to scan')), alignmentNote));
     }
-    zoomPicker.addEventListener('change', () => { zoom = Number(zoomPicker.value); fit(); if (zoom === 1) stage.scrollTo(0,0); });
+    if (!hasSVG) content.append(element('p', { class: 'material-mode-note', role: 'status' }, 'Supplementary page · original scan only. Web translation is available for the 29 numbered plates.'));
+    if (view === 'compare') content.append(element('p', { class: 'material-mode-note', id: 'material-compare-help' }, 'Source is below and right of the dividers; Web fills the rest. Drag either divider.'));
+    const framingNote = element('p', { class: 'material-mode-note', id: 'material-framing-help' });
+    zoomPicker.setAttribute('aria-describedby', 'material-framing-help material-zoom-help');
+    stage.setAttribute('aria-describedby', 'material-framing-help');
+    const loadStatus = element('div', { class: 'material-load-status' });
+    const help = element('details', { class: 'material-help' }, element('summary', {}, 'Viewer controls and fidelity'),
+      element('p', { id: 'material-keyboard-help' }, 'Use arrow keys to adjust a focused divider, Shift + arrows or Page Up / Down for larger steps, and Home / End for its edges. Escape cancels a drag. Keyboard color inspection reveals the focused swatch by moving the vertical divider when needed.'),
+      element('p', { id: 'material-zoom-help' }, 'Fit artwork enlarges each full page equally and centers the color study. Scroll to see page margins, or select Fit page to reset. Fit width fills the viewer horizontally. 100% is one original scan pixel per CSS pixel; 150%, 200% and 300% use that same basis.'),
+      element('p', {}, 'Web geometry is regularized and typography is substituted, so printed details do not align exactly. Align chart to scan applies an approximate, measured correction to the chart, frame and axis labels on plates II–XXII only. Headings, footer and the scan stay unchanged. Turn it off to inspect the original reconstruction. SVG downloads always retain the unchanged source reconstruction.'));
+    content.append(framingNote, loadStatus, stage, inspector, help, caption);
+    let viewedCenter;
+    function rememberCenter() {
+      // Ignore resize-induced scroll events until the observer has reframed.
+      if (stage.clientWidth !== stageSize[0] || stage.clientHeight !== stageSize[1]) return;
+      const page = sheets.querySelector('.material-sheet')?.getBoundingClientRect(), viewport = stage.getBoundingClientRect();
+      if (page?.width && page.height) viewedCenter = [(viewport.left + stage.clientLeft + stage.clientWidth / 2 - page.left) / page.width, (viewport.top + stage.clientTop + stage.clientHeight / 2 - page.top) / page.height];
+    }
+    function fit(reset = false, centerOverride) {
+      const page = sheets.querySelector('.material-sheet');
+      if (!page) return;
+      const mode = effectiveZoom();
+      framingNote.textContent = (mode === 'artwork' ? 'Fit artwork shows the color study. Choose Fit page for all margins.' : mode === '1' ? 'Fit page shows the complete page and its margins.' : mode === 'width' ? 'Fit width fills the viewer. Scroll to see the rest of the page.' : `${mode === 'actual' ? 100 : Number(mode) * 100}% of original scan pixels. Scroll to pan.`) + (hasSVG ? ' Web geometry is approximate.' : ' Original scan only.');
+      const old = page.getBoundingClientRect(), viewport = stage.getBoundingClientRect();
+      const viewportCenter = [viewport.left + stage.clientLeft + stage.clientWidth / 2, viewport.top + stage.clientTop + stage.clientHeight / 2];
+      const previousCenter = centerOverride || (old.width > 0 && old.height > 0 ? [(viewportCenter[0] - old.left) / old.width, (viewportCenter[1] - old.top) / old.height] : [.5,.5]);
+      const frame = materialFraming(item, mode, Math.max(1, stage.clientWidth - 48), Math.max(1, stage.clientHeight - 72));
+      sheets.style.setProperty('--sheet-width', `${frame.width}px`);
+      for (const image of sheets.querySelectorAll('img')) image.sizes = `${Math.ceil(frame.width)}px`;
+      if (reset && ['1','width'].includes(mode)) stage.scrollTo(0,0);
+      else {
+        const center = reset && frame.center ? frame.center : previousCenter, next = page.getBoundingClientRect();
+        stage.scrollTo(stage.scrollLeft + next.left + center[0] * next.width - viewportCenter[0], stage.scrollTop + next.top + center[1] * next.height - viewportCenter[1]);
+      }
+      comparison?.layout(); rememberCenter();
+    }
+    zoomPicker.addEventListener('change', () => { zoom = zoomPicker.value; fit(['artwork','1','width'].includes(zoom)); });
     let compareSheet, compareSlot;
     if (view === 'compare') {
       compareSlot = element('figure', { class: 'material-sheet-slot', 'data-mode': 'compare' }, element('figcaption', {}, 'Web translation / Source scan'));
@@ -200,8 +265,8 @@ export function mountMaterial(root, material) {
         const slot = element('figure', { class: 'material-sheet-slot', 'data-mode': mode }, element('figcaption', {}, mode === 'original' ? 'Original scan' : 'Web translation · approximate flat colors'));
         sheet = element('div', { class: 'material-sheet', style: `aspect-ratio:${item.width}/${item.height}` }); slot.append(sheet); sheets.append(slot);
       }
-      const status = element('p', { class: 'material-image-status', role: 'status' }, mode === 'original' ? 'Loading scan…' : 'Loading web translation…'); (compareSlot || sheet).append(status);
-      const fail = message => { status.textContent = message; status.setAttribute('role','alert'); const retry = element('button', { type: 'button' }, 'Retry'); retry.addEventListener('click', () => render()); status.append(document.createElement('br'), retry); };
+      const status = element('p', { class: 'material-image-status', role: 'status' }, mode === 'original' ? 'Loading scan…' : 'Loading web translation…'); loadStatus.append(status);
+      const fail = message => { status.textContent = message; status.setAttribute('role','alert'); const retry = element('button', { type: 'button' }, 'Retry'); retry.addEventListener('click', () => render(undefined, true)); status.append(document.createElement('br'), retry); };
       if (mode === 'original') {
         const previews = item.previews || [];
         const src = assetURL(previews.at(-1)?.file || item.file);
@@ -213,6 +278,14 @@ export function mountMaterial(root, material) {
       } else {
         fetchSVG(item).then(svg => {
           if (destroyed || version !== sequence) return;
+          chartPresentation = mountMaterialChart(svg, item.id);
+          chartPresentation?.set(alignCharts);
+          if (materialChartRegistration[item.id] && !chartPresentation) {
+            const control = content.querySelector('#material-align-chart');
+            if (control) { control.checked = false; control.disabled = true; }
+            const note = content.querySelector('.material-alignment-note');
+            if (note) note.textContent = 'Chart alignment is unavailable for this asset. Showing the unchanged reconstruction.';
+          }
           const swatches = [...svg.querySelectorAll('.swatch')].filter(node => /^#[0-9a-f]{6}$/i.test(node.dataset.color || node.getAttribute('fill') || ''));
           const selectSwatch = (node, focus = false) => {
             for (const swatch of swatches) { swatch.classList.toggle('is-selected', swatch === node); swatch.setAttribute('tabindex', swatch === node ? '0' : '-1'); swatch.setAttribute('aria-pressed', String(swatch === node)); }
@@ -236,7 +309,20 @@ export function mountMaterial(root, material) {
       compareSheet.append(element('span', { class: 'material-compare-label material-compare-web', 'aria-hidden': 'true' }, 'Web'));
       comparison = mountMaterialCompare(compareSheet, reveal);
     }
-    observer = new ResizeObserver(fit); observer.observe(stage); fit();
+    let stageSize = [stage.clientWidth, stage.clientHeight];
+    observer = new ResizeObserver(() => {
+      const nextSize = [stage.clientWidth, stage.clientHeight];
+      if (nextSize.every((size,index) => size === stageSize[index])) return;
+      const previousCenter = viewedCenter; stageSize = nextSize;
+      if (['artwork','1','width'].includes(effectiveZoom())) fit(true);
+      else {
+        // Saved before resize: browser scroll anchoring may already have moved
+        // the old page by the time this callback runs.
+        fit(false, previousCenter || [.5,.5]);
+      }
+    });
+    stage.addEventListener('scroll', rememberCenter, {passive:true});
+    observer.observe(stage); fit(!savedCenter, savedCenter);
     if (focusSelector) content.querySelector(focusSelector)?.focus();
   }
   main.append(intro, content, credit); root.replaceChildren(main); render();

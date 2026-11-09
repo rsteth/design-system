@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "createdAt": "2026-11-09T00:20:55.294Z",
+  "createdAt": "2026-11-09T01:12:40.434Z",
   "status": "approved-static-release-artifact",
   "licenseGaps": [],
   "focusEpub": "fixture-only",
@@ -104,13 +104,13 @@
     },
     {
       "path": "apps/studio/material.css",
-      "bytes": 7802,
-      "sha256": "a659cdd3fd3b782044e3a3b2f938c1cbbe97fc5cae5d6c69a056d278da79ac48"
+      "bytes": 8746,
+      "sha256": "44a1e1efdaec7a1e90728dcff03d85100653d15cc9f0a82f869e4039f5aaeb40"
     },
     {
       "path": "apps/studio/material.mjs",
-      "bytes": 22200,
-      "sha256": "ea51e2e8959b8ac616c8919e26e1febe6bc964faae66bedc8f0bf88a25eda481"
+      "bytes": 30125,
+      "sha256": "97e951807f8e81b3aee4e349c28c09ee4626226e529806c9574bb49c4ad0cc89"
     },
     {
       "path": "apps/studio/public-sources.mjs",
@@ -6001,6 +6001,16 @@
       "path": "registry/references.json",
       "bytes": 4878,
       "sha256": "3338e590d09c08be0b369288dada6fdf9f39e0654566a85f90531acf40c25819"
+    },
+    {
+      "path": "apps/studio/material-framing.mjs",
+      "bytes": 3333,
+      "sha256": "abdf0f3f86d8b178dbccd536cbf8202633316865873f59496e8b403e22bf37c2"
+    },
+    {
+      "path": "apps/studio/material-registration.mjs",
+      "bytes": 7300,
+      "sha256": "d71b6d85914414e93d056d63a0b321bb22d4ed1f287df04c958bd237e760ee5b"
     }
   ]
 }
