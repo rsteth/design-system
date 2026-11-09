@@ -66,9 +66,20 @@ export const materialRevealPercent = (coordinate, start, length) => length > 0 ?
 export function mountMaterialCompare(sheet, values, onChange = () => {}) {
   let active;
   const stage = sheet.closest('.material-stage');
-  const handle = element('div', { class: 'material-compare-handle', role: 'button', tabindex: '0', 'aria-roledescription': 'two-axis comparison control', 'aria-describedby': 'material-compare-help material-keyboard-help', 'aria-keyshortcuts': 'ArrowLeft ArrowRight ArrowUp ArrowDown Home End PageUp PageDown Enter Space Escape' }, element('span', { class: 'material-compare-grip', 'aria-hidden': 'true' }, '✥'));
+  const icon = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+  for (const [key, value] of Object.entries({class:'material-compare-icon', viewBox:'0 0 24 24', width:'20', height:'20', fill:'none', stroke:'currentColor', 'stroke-width':'1.5', 'stroke-linecap':'round', 'stroke-linejoin':'round', 'aria-hidden':'true', focusable:'false'})) icon.setAttribute(key, value);
+  const arrows = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+  arrows.setAttribute('d', 'M5 5H19M15 1L19 5L15 9M5 5V19M1 15L5 19L9 15M9 5V9H5');
+  // Symmetric painted bounds (1..19) are centered in the 24-unit viewport.
+  arrows.setAttribute('transform', 'translate(2 2)'); icon.append(arrows);
+  const handle = element('div', { class: 'material-compare-handle', role: 'button', tabindex: '0', 'aria-roledescription': 'two-axis comparison control', 'aria-describedby': 'material-compare-help material-keyboard-help', 'aria-keyshortcuts': 'ArrowLeft ArrowRight ArrowUp ArrowDown Home End PageUp PageDown Enter Space Escape' }, element('span', { class: 'material-compare-grip', 'aria-hidden': 'true' }, icon));
   for (const axis of ['x', 'y']) sheet.append(element('span', {class: 'material-compare-line', 'data-axis': axis, 'aria-hidden': 'true'}));
   sheet.append(handle);
+  // Suppress selection/native drags only inside the comparison field. Leave
+  // pointer defaults elsewhere intact for focus, swatches, scrolling and copy.
+  const preventSelection = event => event.preventDefault();
+  sheet.addEventListener('selectstart', preventSelection);
+  sheet.addEventListener('dragstart', preventSelection);
   const positionGrips = () => {
     const page = sheet.getBoundingClientRect(), viewport = stage?.getBoundingClientRect();
     if (!viewport || !page.width || !page.height) return;
@@ -151,12 +162,24 @@ export function mountMaterialCompare(sheet, values, onChange = () => {}) {
   refresh();
   return {
     layout: positionGrips,
+    initialize() {
+      // Seed once, after framing: 5% into the visible page, not cropped margins.
+      const page = sheet.getBoundingClientRect(), viewport = stage.getBoundingClientRect();
+      for (const [axis, start, size, edge, length] of [
+        ['x', page.left, page.width, viewport.left + stage.clientLeft, stage.clientWidth],
+        ['y', page.top, page.height, viewport.top + stage.clientTop, stage.clientHeight]
+      ]) {
+        const low = Math.max(0, edge - start), high = Math.min(size, edge + length - start);
+        values[axis] = (low + Math.min((high - low) / 2, Math.max(22, (high - low) * .05))) / size * 100;
+      }
+      refresh();
+    },
     // Keyboard inspection must not leave the focused swatch hidden by the scan.
     reveal(node) {
       const target = node.getBoundingClientRect(), page = sheet.getBoundingClientRect();
       if (target.right > page.left + page.width * values.x / 100 && target.bottom > page.top + page.height * values.y / 100) set('x', Math.min(100, Math.ceil((target.right - page.left) / page.width * 100) + 1));
     },
-    destroy() { stop(); stage?.removeEventListener('scroll', positionGrips); window.removeEventListener('blur', stop); document.removeEventListener('visibilitychange', visibility); }
+    destroy() { stop(); sheet.removeEventListener('selectstart', preventSelection); sheet.removeEventListener('dragstart', preventSelection); stage?.removeEventListener('scroll', positionGrips); window.removeEventListener('blur', stop); document.removeEventListener('visibilitychange', visibility); }
   };
 }
 export function mountMaterial(root, material) {
@@ -164,6 +187,7 @@ export function mountMaterial(root, material) {
   let showingIndex = materialIsIndex(location.href);
   let current = initial.index, preferredView = initial.view, zoom = 'artwork', alignCharts = true, sequence = 0, destroyed = false, observer, comparison;
   const reveal = { x: 0, y: 0 };
+  let revealInitialized = false;
   const main = element('main', { class: 'material-shell' });
   const intro = element('header', { class: 'material-intro' }, element('p', { class: 'material-eyebrow' }, 'MATERIAL / COLOR STUDIES / 1890'), element('h1', {}, material.title), element('p', { class: 'material-author' }, material.author), element('p', {}, '29 chromatic plates, translated into SVG and flat color. Explore the original scans and their web interpretation in the same arrangement.'));
   const content = element('section', { class: 'material-content', 'aria-label': 'Selected material' });
@@ -399,6 +423,7 @@ export function mountMaterial(root, material) {
     });
     stage.addEventListener('scroll', rememberCenter, {passive:true});
     observer.observe(stage); fit(!savedCenter, savedCenter);
+    if (comparison && !revealInitialized) { comparison.initialize(); revealInitialized = true; }
     if (focusSelector) content.querySelector(focusSelector)?.focus();
   }
   main.append(intro, content, credit); root.replaceChildren(main); render();
