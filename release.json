@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "createdAt": "2026-11-08T21:20:51.798Z",
+  "createdAt": "2026-11-09T00:20:55.294Z",
   "status": "approved-static-release-artifact",
   "licenseGaps": [],
   "focusEpub": "fixture-only",
@@ -104,13 +104,13 @@
     },
     {
       "path": "apps/studio/material.css",
-      "bytes": 4871,
-      "sha256": "1ac2c3c911e781cde0be099a1efe9f9588c99e83ef5d3ddcbc9a1d500dd1228a"
+      "bytes": 7802,
+      "sha256": "a659cdd3fd3b782044e3a3b2f938c1cbbe97fc5cae5d6c69a056d278da79ac48"
     },
     {
       "path": "apps/studio/material.mjs",
-      "bytes": 15914,
-      "sha256": "8142c71f01cc659d37610b62f4c38f28a172f8e9c569df41c6ec341039288bfb"
+      "bytes": 22200,
+      "sha256": "ea51e2e8959b8ac616c8919e26e1febe6bc964faae66bedc8f0bf88a25eda481"
     },
     {
       "path": "apps/studio/public-sources.mjs",
