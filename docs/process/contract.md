@@ -21,3 +21,11 @@ The gradual layout is `src/app`, `src/ui`, `src/features`, `src/domain`, `src/st
 `schemaVersion` changes only for contract-breaking changes. Shared package versions follow semver; collection revisions and source commits are separate. This work uses an explicitly unpublished, hash-pinned local `0.1.0` snapshot. `tooling/sync-consumer.mjs` regenerates vendored source; `verify-vendor.mjs` detects drift. The package is private to prevent accidental registry publication. No default branch, production or deployment is changed.
 
 Release checklist: core tests; each consumer build/typecheck/lint/tests; regenerated CSS and vendor integrity; real-control interaction checks; matching desktop/mobile before/after screenshots; disclose network/font/map nondeterminism; review source/license notices; obtain publication/deployment approval; pin exact released source and verify remote/CI. Never label unavailable fixtures or unrun checks as passed.
+
+## Local-only and unversioned applications
+
+A source app without a remote can declare `source.repository: "local:<collection id>"` and `source.visibility: "local-only"`. This exact identifier is valid only for application collections. It is displayed as text, never a remote link, and carries no publication permission. Existing repositories retain their real HTTPS source and inspected revision.
+
+An unversioned application can record `reviewedRevision: null` with `sourceSnapshot: {algorithm: "sha256", files: [{path, sha256}]}` in its inventory. Every path must be an app-relative file and every digest is verified during explicit registry refresh. This pins source bytes without inventing a Git commit. It is distinct from redacting an actual private revision in a public artifact.
+
+The local project-coverage directory separates registered views, missing adapters and source/provenance constraints. Counts are fixture views, not unique production components. The public export allowlist in `tooling/public-collection-scope.mjs` keeps the local audit and new unapproved app catalogs out of public source and deployable output. Expanding that allowlist requires publication scope review, not just adding a local fixture.

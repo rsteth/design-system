@@ -18,5 +18,14 @@ for(const id of ['focus','great-circle','stethem'])test(`${id} implements the sh
  assert.equal(collection.registrySnapshot.inventorySha256,createHash('sha256').update(inventoryBytes).digest('hex'));
  const mapped=new Set(inventory.items.flatMap(item=>item.fixtures));
  for(const fixture of collection.fixtures)assert.ok(mapped.has(fixture.id),`Unmapped production fixture: ${fixture.id}`);
- if(collection.registrySnapshot.integrationRevision===null){assert.ok(collection.registrySnapshot.withheldRevisions?.includes('integrationRevision'),'Public snapshot explicitly records withheld integration provenance');}else assert.match(collection.registrySnapshot.integrationRevision,/^[a-f0-9]{40}$/);
+ if(collection.registrySnapshot.integrationRevision===null){assert.ok(collection.registrySnapshot.integrationStatus==='unpublished-local-snapshot'||collection.registrySnapshot.withheldRevisions?.includes('integrationRevision'),'A null integration pin is explicitly unpublished or publicly withheld');}else assert.match(collection.registrySnapshot.integrationRevision,/^[a-f0-9]{40}$/);
+});
+
+test('active own-work scope stays within the five existing published applications',async()=>{
+ const {readdir}=await import('node:fs/promises');
+ const expected=['focus','great-circle','stethem','reads','bandit'];
+ const index=JSON.parse(await readFile(new URL('../registry/index.json',import.meta.url),'utf8'));
+ assert.deepEqual(index.collections,['../collections/original/workbench/collection.json',...expected.map(id=>`apps/${id}/collection.json`)]);
+ assert.equal(index.projectCoverage,undefined);
+ assert.deepEqual((await readdir(new URL('../registry/apps/',import.meta.url))).sort(),[...expected].sort());
 });

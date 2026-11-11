@@ -30,7 +30,7 @@ export interface WorkbenchCollection {
   inventory?: string;
   inventoryData?: Inventory;
   themes: string[];
-  source: {repository: string; revision: string | null; path: string; publicVersion?: string; withheldRevisions?: string[]};
+  source: {repository: string; visibility?: 'local-only' | 'public'; revision: string | null; path: string; publicVersion?: string; withheldRevisions?: string[]};
   provenance: {
     status: 'author-owned' | 'independent-analysis' | 'adapted';
     sources: Array<string | {title?: string; url: string}>;
@@ -41,7 +41,7 @@ export interface WorkbenchCollection {
   manifestURL?: string;
   publicRelease?: {status?: string};
 }
-export interface WorkbenchOptions { searchCollections?: boolean; onCollectionChange?: (id: string) => void; collections?: WorkbenchCollection[]; title?: string; skin?: string; initialCollection?: string; initialSection?: WorkbenchSection; }
+export interface WorkbenchOptions { searchCollections?: boolean; searchLabel?: string; collectionNoun?: string; initialFixture?: string; onCollectionChange?: (id: string) => void; collections?: WorkbenchCollection[]; title?: string; skin?: string; initialCollection?: string; initialSection?: WorkbenchSection; }
 export interface WorkbenchHandle { setSkin(skin: string): void; destroy(): void; setCollections(collections: WorkbenchCollection[]): void; }
 export function safeURL(value: string, base?: string | URL): URL;
 export function fixtureURL(value: string, options?: {theme?: string; base?: string | URL}): string;
@@ -56,6 +56,7 @@ export interface Inventory {
  schemaVersion: 1;
  application: string;
  reviewedRevision: string | null;
+ sourceSnapshot?: {algorithm:'sha256';files:Array<{path:string;sha256:string}>};
  withheldRevisions?: string[];
  items: Array<{id: string; title: string; kind: 'component'|'pattern'|'screen'|'domain'|'external'; source: string[]; fixtures: string[]; states: string[]; coverage: 'covered'|'partial'|'excluded'|'blocked'; notes: string}>;
  checks: Array<{id: string; label: string; command: string; status: 'passed'|'failed'|'not-run'; scope: string; evidence?: string}>;

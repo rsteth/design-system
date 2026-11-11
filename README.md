@@ -32,13 +32,13 @@ Workbenches are **one-way for now**: the app owns source, fixtures and tokens; w
 
 ## Workbench self collection and skin
 
-The studio now includes Workbench itself as an original collection. Its fixtures run the same engine: live controls/token inspection, empty/loaded states, and a studio containing only the three app collections. The data is bounded before rendering so self-preview cannot recurse. Open `/apps/studio/?collection=workbench&section=components`.
+The studio now includes Workbench itself as an original collection. Its fixtures run the same engine: live controls/token inspection, empty/loaded states, and a bounded studio containing app collections only. The data is bounded before rendering so self-preview cannot recurse. Open `/apps/studio/?collection=workbench&section=components`.
 
 The workbench now uses filled, square Warp-inspired buttons and panels within its own dark monochrome skin: near-black surfaces, white/gray type, precise borders and compact geometry. It is separate from the personal site. `skins/workbench.tokens.json` is authoritative; the previous `stethem` skin remains an explicit opt-in. The blank starter uses the dark skin and remains empty. Existing app source and pinned application vendors are unchanged.
 
 ## Populated application catalogs
 
-The three app-owned catalogs now register 97 real fixtures: Focus 20, Great Circle 22 and stethem 55. Their code is organized by app, UI, features, domain, styles, workbench and tests, using static entry shims where appropriate rather than forcing a framework or build step. Each collection links a source-mapped inventory. Checks distinguish covered, partial, excluded and blocked items; recorded results are not a live CI assertion.
+The initial three-app expansion registered 97 real fixtures: Focus 20, Great Circle 22 and stethem 55. Current local counts come from the app-owned catalogs and the Project coverage view; later source refreshes and additional apps are not included in those historical counts. Their code is organized by app, UI, features, domain, styles, workbench and tests, using static entry shims where appropriate rather than forcing a framework or build step. Each collection links a source-mapped inventory. Checks distinguish covered, partial, excluded and blocked items; recorded results are not a live CI assertion.
 
 Engine 0.3.0 adds inventory validation and display. See `docs/process/catalog-expansion-review.md` for exact local source identities, preserved appearance evidence and honest limits. No app or package is published by these changes.
 
@@ -74,8 +74,16 @@ Each generated reference sheet now uses a source-derived palette within its own 
 
 ## Reads and Bandit
 
-Reads and Bandit now have app-owned blueprint integrations and derived entries in Robin: eleven Reads fixtures and five Bandit fixtures. Their product identities remain separate from the viewer skin. Start each app's isolated fixture server before opening Screens. See [integration, local commands and verification limits](docs/process/reads-bandit-integration.md). Registry refreshes stay explicit and one-way; neither app was deployed by this work.
+Reads and Bandit have app-owned blueprint integrations and derived entries in Robin. Their initial integration had eleven Reads fixtures and five Bandit fixtures; the local coverage expansion now registers 42 and 52 respectively. The public release remains separately reviewed and packaged. Their product identities remain separate from the viewer skin. Start each app's isolated fixture server before opening Screens. See [integration, local commands and verification limits](docs/process/reads-bandit-integration.md). Registry refreshes stay explicit and one-way; neither app was deployed by this work.
 
 ## Public viewer packaging
 
 See [the public viewer release guide](docs/process/public-viewer-release.md) for the approved synthetic Reads/Bandit previews, Material gallery, version-only public provenance, clean source export and publication checks.
+
+## Existing-app coverage
+
+The active own-work catalog stays limited to **Focus, Great Circle, stethem, Reads and Bandit**, plus the workbench self-collection, matching the published project list. Their source-faithful local expansion contains 209 registered fixture views (previously 113); variants are not unique component counts. Learning Machines and Market River remain within stethem rather than becoming extra project entries. Reference studies, Material and Capture studio are unchanged.
+
+The broader project experiment is no longer active. Its additional registry snapshots and coverage directory are recoverable in the existing local Git history; their source adapters remain in their own local checkouts. Nothing was permanently discarded, pushed or published. See `docs/local/project-coverage-2026-11-11.md` for the current local scope and verification.
+
+App fixtures remain source-owned and arrive through explicit `tooling/sync-registry.mjs` updates. The existing public-app allowlist also remains unchanged. A future public release needs its own packaging review and authorization; local `dist/` is not a publication command.

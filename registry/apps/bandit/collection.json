@@ -87,13 +87,577 @@
         "approved"
       ],
       "description": "Isolated local preview using synthetic data. No backend, account, generation or publishing operations."
+    },
+    {
+      "id": "projects-populated",
+      "title": "Projects and series / populated",
+      "section": "screens",
+      "url": "http://127.0.0.1:4318/projects-populated",
+      "states": [
+        "populated",
+        "reset-on-reload",
+        "synthetic-only"
+      ],
+      "description": "Actual production component or route, isolated in a deterministic in-memory context. No account, backend, paid generation or publication."
+    },
+    {
+      "id": "projects-empty",
+      "title": "Projects and series / empty",
+      "section": "screens",
+      "url": "http://127.0.0.1:4318/projects-empty",
+      "states": [
+        "empty",
+        "reset-on-reload",
+        "synthetic-only"
+      ],
+      "description": "Actual production component or route, isolated in a deterministic in-memory context. No account, backend, paid generation or publication."
+    },
+    {
+      "id": "projects-viewer",
+      "title": "Projects and series / viewer",
+      "section": "screens",
+      "url": "http://127.0.0.1:4318/projects-viewer",
+      "states": [
+        "viewer",
+        "reset-on-reload",
+        "synthetic-only"
+      ],
+      "description": "Actual production component or route, isolated in a deterministic in-memory context. No account, backend, paid generation or publication."
+    },
+    {
+      "id": "profiles-populated",
+      "title": "Content profiles / populated",
+      "section": "screens",
+      "url": "http://127.0.0.1:4318/profiles-populated",
+      "states": [
+        "populated",
+        "reset-on-reload",
+        "synthetic-only"
+      ],
+      "description": "Actual production component or route, isolated in a deterministic in-memory context. No account, backend, paid generation or publication."
+    },
+    {
+      "id": "profiles-empty",
+      "title": "Content profiles / empty",
+      "section": "screens",
+      "url": "http://127.0.0.1:4318/profiles-empty",
+      "states": [
+        "empty",
+        "reset-on-reload",
+        "synthetic-only"
+      ],
+      "description": "Actual production component or route, isolated in a deterministic in-memory context. No account, backend, paid generation or publication."
+    },
+    {
+      "id": "profiles-viewer",
+      "title": "Content profiles / viewer",
+      "section": "screens",
+      "url": "http://127.0.0.1:4318/profiles-viewer",
+      "states": [
+        "viewer",
+        "reset-on-reload",
+        "synthetic-only"
+      ],
+      "description": "Actual production component or route, isolated in a deterministic in-memory context. No account, backend, paid generation or publication."
+    },
+    {
+      "id": "library-populated",
+      "title": "Subject and media library / populated",
+      "section": "screens",
+      "url": "http://127.0.0.1:4318/library-populated",
+      "states": [
+        "populated",
+        "reset-on-reload",
+        "synthetic-only"
+      ],
+      "description": "Actual production component or route, isolated in a deterministic in-memory context. No account, backend, paid generation or publication."
+    },
+    {
+      "id": "library-empty",
+      "title": "Subject and media library / empty",
+      "section": "screens",
+      "url": "http://127.0.0.1:4318/library-empty",
+      "states": [
+        "empty",
+        "reset-on-reload",
+        "synthetic-only"
+      ],
+      "description": "Actual production component or route, isolated in a deterministic in-memory context. No account, backend, paid generation or publication."
+    },
+    {
+      "id": "library-viewer",
+      "title": "Subject and media library / viewer",
+      "section": "screens",
+      "url": "http://127.0.0.1:4318/library-viewer",
+      "states": [
+        "viewer",
+        "reset-on-reload",
+        "synthetic-only"
+      ],
+      "description": "Actual production component or route, isolated in a deterministic in-memory context. No account, backend, paid generation or publication."
+    },
+    {
+      "id": "project-editor",
+      "title": "Project editor",
+      "section": "patterns",
+      "url": "http://127.0.0.1:4318/project-editor",
+      "states": [
+        "populated",
+        "reset-on-reload",
+        "synthetic-only"
+      ],
+      "description": "Actual production component or route, isolated in a deterministic in-memory context. No account, backend, paid generation or publication."
+    },
+    {
+      "id": "series-editor",
+      "title": "Series editor",
+      "section": "patterns",
+      "url": "http://127.0.0.1:4318/series-editor",
+      "states": [
+        "populated",
+        "reset-on-reload",
+        "synthetic-only"
+      ],
+      "description": "Actual production component or route, isolated in a deterministic in-memory context. No account, backend, paid generation or publication."
+    },
+    {
+      "id": "project-new",
+      "title": "New project form",
+      "section": "patterns",
+      "url": "http://127.0.0.1:4318/project-new",
+      "states": [
+        "populated",
+        "reset-on-reload",
+        "synthetic-only"
+      ],
+      "description": "Actual production component or route, isolated in a deterministic in-memory context. No account, backend, paid generation or publication."
+    },
+    {
+      "id": "profile-editor",
+      "title": "Draft profile editor",
+      "section": "patterns",
+      "url": "http://127.0.0.1:4318/profile-editor",
+      "states": [
+        "populated",
+        "reset-on-reload",
+        "synthetic-only"
+      ],
+      "description": "Actual production component or route, isolated in a deterministic in-memory context. No account, backend, paid generation or publication."
+    },
+    {
+      "id": "profile-published",
+      "title": "Published immutable profile",
+      "section": "patterns",
+      "url": "http://127.0.0.1:4318/profile-published",
+      "states": [
+        "populated",
+        "reset-on-reload",
+        "synthetic-only"
+      ],
+      "description": "Actual production component or route, isolated in a deterministic in-memory context. No account, backend, paid generation or publication."
+    },
+    {
+      "id": "profile-import",
+      "title": "Profile import",
+      "section": "patterns",
+      "url": "http://127.0.0.1:4318/profile-import",
+      "states": [
+        "populated",
+        "reset-on-reload",
+        "synthetic-only"
+      ],
+      "description": "Actual production component or route, isolated in a deterministic in-memory context. No account, backend, paid generation or publication."
+    },
+    {
+      "id": "subject-editor",
+      "title": "Subject editor",
+      "section": "patterns",
+      "url": "http://127.0.0.1:4318/subject-editor",
+      "states": [
+        "populated",
+        "reset-on-reload",
+        "synthetic-only"
+      ],
+      "description": "Actual production component or route, isolated in a deterministic in-memory context. No account, backend, paid generation or publication."
+    },
+    {
+      "id": "reference-editor",
+      "title": "Reference set editor",
+      "section": "patterns",
+      "url": "http://127.0.0.1:4318/reference-editor",
+      "states": [
+        "populated",
+        "reset-on-reload",
+        "synthetic-only"
+      ],
+      "description": "Actual production component or route, isolated in a deterministic in-memory context. No account, backend, paid generation or publication."
+    },
+    {
+      "id": "production-new-profile",
+      "title": "New production / profile",
+      "section": "screens",
+      "url": "http://127.0.0.1:4318/production-new-profile",
+      "states": [
+        "profile",
+        "reset-on-reload",
+        "synthetic-only"
+      ],
+      "description": "Actual production component or route, isolated in a deterministic in-memory context. No account, backend, paid generation or publication."
+    },
+    {
+      "id": "production-new-brief",
+      "title": "New production / brief",
+      "section": "screens",
+      "url": "http://127.0.0.1:4318/production-new-brief",
+      "states": [
+        "brief",
+        "reset-on-reload",
+        "synthetic-only"
+      ],
+      "description": "Actual production component or route, isolated in a deterministic in-memory context. No account, backend, paid generation or publication."
+    },
+    {
+      "id": "production-new-plan",
+      "title": "New production / plan",
+      "section": "screens",
+      "url": "http://127.0.0.1:4318/production-new-plan",
+      "states": [
+        "plan",
+        "reset-on-reload",
+        "synthetic-only"
+      ],
+      "description": "Actual production component or route, isolated in a deterministic in-memory context. No account, backend, paid generation or publication."
+    },
+    {
+      "id": "production-new-viewer",
+      "title": "New production / viewer",
+      "section": "screens",
+      "url": "http://127.0.0.1:4318/production-new-viewer",
+      "states": [
+        "viewer",
+        "reset-on-reload",
+        "synthetic-only"
+      ],
+      "description": "Actual production component or route, isolated in a deterministic in-memory context. No account, backend, paid generation or publication."
+    },
+    {
+      "id": "board-populated",
+      "title": "Production board / populated",
+      "section": "screens",
+      "url": "http://127.0.0.1:4318/board-populated",
+      "states": [
+        "populated",
+        "reset-on-reload",
+        "synthetic-only"
+      ],
+      "description": "Actual production component or route, isolated in a deterministic in-memory context. No account, backend, paid generation or publication."
+    },
+    {
+      "id": "board-empty",
+      "title": "Production board / empty",
+      "section": "screens",
+      "url": "http://127.0.0.1:4318/board-empty",
+      "states": [
+        "empty",
+        "reset-on-reload",
+        "synthetic-only"
+      ],
+      "description": "Actual production component or route, isolated in a deterministic in-memory context. No account, backend, paid generation or publication."
+    },
+    {
+      "id": "board-approved",
+      "title": "Production board / approved",
+      "section": "screens",
+      "url": "http://127.0.0.1:4318/board-approved",
+      "states": [
+        "approved",
+        "reset-on-reload",
+        "synthetic-only"
+      ],
+      "description": "Actual production component or route, isolated in a deterministic in-memory context. No account, backend, paid generation or publication."
+    },
+    {
+      "id": "board-archived",
+      "title": "Production board / archived",
+      "section": "screens",
+      "url": "http://127.0.0.1:4318/board-archived",
+      "states": [
+        "archived",
+        "reset-on-reload",
+        "synthetic-only"
+      ],
+      "description": "Actual production component or route, isolated in a deterministic in-memory context. No account, backend, paid generation or publication."
+    },
+    {
+      "id": "board-error",
+      "title": "Production board / error",
+      "section": "screens",
+      "url": "http://127.0.0.1:4318/board-error",
+      "states": [
+        "error",
+        "reset-on-reload",
+        "synthetic-only"
+      ],
+      "description": "Actual production component or route, isolated in a deterministic in-memory context. No account, backend, paid generation or publication."
+    },
+    {
+      "id": "board-loading",
+      "title": "Production board / loading",
+      "section": "screens",
+      "url": "http://127.0.0.1:4318/board-loading",
+      "states": [
+        "loading",
+        "reset-on-reload",
+        "synthetic-only"
+      ],
+      "description": "Actual production component or route, isolated in a deterministic in-memory context. No account, backend, paid generation or publication."
+    },
+    {
+      "id": "board-viewer",
+      "title": "Production board / viewer",
+      "section": "screens",
+      "url": "http://127.0.0.1:4318/board-viewer",
+      "states": [
+        "viewer",
+        "reset-on-reload",
+        "synthetic-only"
+      ],
+      "description": "Actual production component or route, isolated in a deterministic in-memory context. No account, backend, paid generation or publication."
+    },
+    {
+      "id": "shot-editor",
+      "title": "Shot editor and revision history",
+      "section": "patterns",
+      "url": "http://127.0.0.1:4318/shot-editor",
+      "states": [
+        "populated",
+        "reset-on-reload",
+        "synthetic-only"
+      ],
+      "description": "Actual production component or route, isolated in a deterministic in-memory context. No account, backend, paid generation or publication."
+    },
+    {
+      "id": "shot-new",
+      "title": "New shot and dependencies",
+      "section": "patterns",
+      "url": "http://127.0.0.1:4318/shot-new",
+      "states": [
+        "empty",
+        "reset-on-reload",
+        "synthetic-only"
+      ],
+      "description": "Actual production component or route, isolated in a deterministic in-memory context. No account, backend, paid generation or publication."
+    },
+    {
+      "id": "review-populated",
+      "title": "Review room / populated",
+      "section": "screens",
+      "url": "http://127.0.0.1:4318/review-populated",
+      "states": [
+        "populated",
+        "reset-on-reload",
+        "synthetic-only"
+      ],
+      "description": "Actual production component or route, isolated in a deterministic in-memory context. No account, backend, paid generation or publication."
+    },
+    {
+      "id": "review-empty",
+      "title": "Review room / empty",
+      "section": "screens",
+      "url": "http://127.0.0.1:4318/review-empty",
+      "states": [
+        "empty",
+        "reset-on-reload",
+        "synthetic-only"
+      ],
+      "description": "Actual production component or route, isolated in a deterministic in-memory context. No account, backend, paid generation or publication."
+    },
+    {
+      "id": "review-unapproved",
+      "title": "Review room / unapproved",
+      "section": "screens",
+      "url": "http://127.0.0.1:4318/review-unapproved",
+      "states": [
+        "unapproved",
+        "reset-on-reload",
+        "synthetic-only"
+      ],
+      "description": "Actual production component or route, isolated in a deterministic in-memory context. No account, backend, paid generation or publication."
+    },
+    {
+      "id": "review-error",
+      "title": "Review room / error",
+      "section": "screens",
+      "url": "http://127.0.0.1:4318/review-error",
+      "states": [
+        "error",
+        "reset-on-reload",
+        "synthetic-only"
+      ],
+      "description": "Actual production component or route, isolated in a deterministic in-memory context. No account, backend, paid generation or publication."
+    },
+    {
+      "id": "review-loading",
+      "title": "Review room / loading",
+      "section": "screens",
+      "url": "http://127.0.0.1:4318/review-loading",
+      "states": [
+        "loading",
+        "reset-on-reload",
+        "synthetic-only"
+      ],
+      "description": "Actual production component or route, isolated in a deterministic in-memory context. No account, backend, paid generation or publication."
+    },
+    {
+      "id": "review-viewer",
+      "title": "Review room / viewer",
+      "section": "screens",
+      "url": "http://127.0.0.1:4318/review-viewer",
+      "states": [
+        "viewer",
+        "reset-on-reload",
+        "synthetic-only"
+      ],
+      "description": "Actual production component or route, isolated in a deterministic in-memory context. No account, backend, paid generation or publication."
+    },
+    {
+      "id": "asset-ready",
+      "title": "Media preview / ready",
+      "section": "components",
+      "url": "http://127.0.0.1:4318/asset-ready",
+      "states": [
+        "ready",
+        "reset-on-reload",
+        "synthetic-only"
+      ],
+      "description": "Actual production component or route, isolated in a deterministic in-memory context. No account, backend, paid generation or publication."
+    },
+    {
+      "id": "asset-expired",
+      "title": "Media preview / expired",
+      "section": "components",
+      "url": "http://127.0.0.1:4318/asset-expired",
+      "states": [
+        "expired",
+        "reset-on-reload",
+        "synthetic-only"
+      ],
+      "description": "Actual production component or route, isolated in a deterministic in-memory context. No account, backend, paid generation or publication."
+    },
+    {
+      "id": "asset-loading",
+      "title": "Media preview / loading",
+      "section": "components",
+      "url": "http://127.0.0.1:4318/asset-loading",
+      "states": [
+        "loading",
+        "reset-on-reload",
+        "synthetic-only"
+      ],
+      "description": "Actual production component or route, isolated in a deterministic in-memory context. No account, backend, paid generation or publication."
+    },
+    {
+      "id": "error-notice",
+      "title": "Production error notice",
+      "section": "components",
+      "url": "http://127.0.0.1:4318/error-notice",
+      "states": [
+        "default",
+        "reset-on-reload",
+        "synthetic-only"
+      ],
+      "description": "Actual production component or route, isolated in a deterministic in-memory context. No account, backend, paid generation or publication."
+    },
+    {
+      "id": "appearance",
+      "title": "Appearance control",
+      "section": "components",
+      "url": "http://127.0.0.1:4318/appearance",
+      "states": [
+        "default",
+        "reset-on-reload",
+        "synthetic-only"
+      ],
+      "description": "Actual production component or route, isolated in a deterministic in-memory context. No account, backend, paid generation or publication."
+    },
+    {
+      "id": "memory-populated",
+      "title": "Creative Memory / populated",
+      "section": "patterns",
+      "url": "http://127.0.0.1:4318/memory-populated",
+      "states": [
+        "populated",
+        "reset-on-reload",
+        "synthetic-only"
+      ],
+      "description": "Actual production component or route, isolated in a deterministic in-memory context. No account, backend, paid generation or publication."
+    },
+    {
+      "id": "memory-empty",
+      "title": "Creative Memory / empty",
+      "section": "patterns",
+      "url": "http://127.0.0.1:4318/memory-empty",
+      "states": [
+        "empty",
+        "reset-on-reload",
+        "synthetic-only"
+      ],
+      "description": "Actual production component or route, isolated in a deterministic in-memory context. No account, backend, paid generation or publication."
+    },
+    {
+      "id": "memory-error",
+      "title": "Creative Memory / error",
+      "section": "patterns",
+      "url": "http://127.0.0.1:4318/memory-error",
+      "states": [
+        "error",
+        "reset-on-reload",
+        "synthetic-only"
+      ],
+      "description": "Actual production component or route, isolated in a deterministic in-memory context. No account, backend, paid generation or publication."
+    },
+    {
+      "id": "memory-viewer",
+      "title": "Creative Memory / viewer",
+      "section": "patterns",
+      "url": "http://127.0.0.1:4318/memory-viewer",
+      "states": [
+        "viewer",
+        "reset-on-reload",
+        "synthetic-only"
+      ],
+      "description": "Actual production component or route, isolated in a deterministic in-memory context. No account, backend, paid generation or publication."
+    },
+    {
+      "id": "advanced-controls",
+      "title": "Shot reference and event controls",
+      "section": "patterns",
+      "url": "http://127.0.0.1:4318/advanced-controls",
+      "states": [
+        "advanced",
+        "reset-on-reload",
+        "synthetic-only"
+      ],
+      "description": "Production panel with isolated synthetic state. Validation and generation requests are unavailable."
+    },
+    {
+      "id": "advanced-review",
+      "title": "Candidate comparison and advisory review",
+      "section": "patterns",
+      "url": "http://127.0.0.1:4318/advanced-review",
+      "states": [
+        "populated",
+        "reset-on-reload",
+        "synthetic-only"
+      ],
+      "description": "Production panel with isolated synthetic state. Validation and generation requests are unavailable."
     }
   ],
   "registrySnapshot": {
     "authority": "App-owned design collection, tokens and optional inventory",
     "baseRevision": null,
-    "inventorySha256": "a78ea70790e4a954f88e7fb9f569033fdea4da75dfbd8aef632bc2b15d44ea00",
-    "tokenSha256": "9d06d08c8348287383ba83004762a83715713a4f90b3252405a98b17dedc2cdd",
+    "inventorySha256": "db4bbafd36038665fb24f95cb2b6ec0966901425f8adddbb5a19eaebafa67cda",
+    "tokenSha256": "a6781d76c701589ae251677703ae85afde6fca7d64b42425f2135b4256a67a58",
     "integrationStatus": "unpublished-local-snapshot",
     "integrationRevision": null,
     "withheldRevisions": [

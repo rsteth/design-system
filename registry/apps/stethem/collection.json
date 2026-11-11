@@ -11,8 +11,11 @@
   ],
   "source": {
     "repository": "https://github.com/rsteth/rsteth.github.io",
-    "revision": "3ea81c22d0101f2fc537e7e4338010bc981479d5",
-    "path": "."
+    "revision": null,
+    "path": ".",
+    "withheldRevisions": [
+      "revision"
+    ]
   },
   "provenance": {
     "status": "author-owned",
@@ -737,18 +740,252 @@
         "network": "fixture"
       },
       "description": "Fallback simulation: original static DOM, disabled controls and noscript content; verified against browser JavaScript disabled."
+    },
+    {
+      "id": "manifolds-study-default",
+      "title": "Manifolds and motion · default",
+      "section": "screens",
+      "url": "http://127.0.0.1:8776/learning-machines/manifolds/?fixture=manifolds-study-default",
+      "scenario": {
+        "page": "/learning-machines/manifolds/",
+        "state": "default",
+        "setup": "manifolds-study",
+        "network": "blocked"
+      },
+      "description": "Actual committed production DOM and pinned synthetic mechanics; setup uses real controls. Reload restores deterministic state; controls and reset remain live."
+    },
+    {
+      "id": "manifolds-study-no-js",
+      "title": "Manifolds and motion · no-js",
+      "section": "screens",
+      "url": "http://127.0.0.1:8776/learning-machines/manifolds/?fixture=manifolds-study-no-js",
+      "scenario": {
+        "page": "/learning-machines/manifolds/",
+        "state": "no-js",
+        "setup": "manifolds-study",
+        "network": "blocked"
+      },
+      "description": "Actual committed production DOM and pinned synthetic mechanics; setup uses real controls. Static fallback simulation, checked against JavaScript disabled."
+    },
+    {
+      "id": "manifolds-study-no-canvas",
+      "title": "Manifolds and motion · no-canvas",
+      "section": "screens",
+      "url": "http://127.0.0.1:8776/learning-machines/manifolds/?fixture=manifolds-study-no-canvas",
+      "scenario": {
+        "page": "/learning-machines/manifolds/",
+        "state": "no-canvas",
+        "setup": "manifolds-study",
+        "network": "blocked"
+      },
+      "description": "Known partial fallback: original static diagrams remain visible, but production threads.mjs registers a ResizeObserver that throws when the canvas context is unavailable. Source is preserved; this fixture records the limitation."
+    },
+    {
+      "id": "manifolds-free-default",
+      "title": "Fourteen joint coordinates · default",
+      "section": "components",
+      "url": "http://127.0.0.1:8776/learning-machines/manifolds/?fixture=manifolds-free-default#panel-0",
+      "scenario": {
+        "page": "/learning-machines/manifolds/",
+        "state": "default",
+        "setup": "manifolds-free",
+        "network": "blocked"
+      },
+      "description": "Actual committed production DOM and pinned synthetic mechanics; setup uses real controls. Reload restores deterministic state; controls and reset remain live."
+    },
+    {
+      "id": "manifolds-free-adjusted",
+      "title": "Fourteen joint coordinates · adjusted",
+      "section": "components",
+      "url": "http://127.0.0.1:8776/learning-machines/manifolds/?fixture=manifolds-free-adjusted#panel-0",
+      "scenario": {
+        "page": "/learning-machines/manifolds/",
+        "state": "adjusted",
+        "setup": "manifolds-free",
+        "network": "blocked"
+      },
+      "description": "Actual committed production DOM and pinned synthetic mechanics; setup uses real controls. Reload restores deterministic state; controls and reset remain live."
+    },
+    {
+      "id": "manifolds-grasp-accepted",
+      "title": "Rigid grasp and released joints · accepted",
+      "section": "patterns",
+      "url": "http://127.0.0.1:8776/learning-machines/manifolds/?fixture=manifolds-grasp-accepted#panel-1",
+      "scenario": {
+        "page": "/learning-machines/manifolds/",
+        "state": "accepted",
+        "setup": "manifolds-grasp",
+        "network": "blocked"
+      },
+      "description": "Actual committed production DOM and pinned synthetic mechanics; setup uses real controls. Reload restores deterministic state; controls and reset remain live."
+    },
+    {
+      "id": "manifolds-grasp-unreachable",
+      "title": "Rigid grasp and released joints · unreachable",
+      "section": "patterns",
+      "url": "http://127.0.0.1:8776/learning-machines/manifolds/?fixture=manifolds-grasp-unreachable#panel-1",
+      "scenario": {
+        "page": "/learning-machines/manifolds/",
+        "state": "unreachable",
+        "setup": "manifolds-grasp",
+        "network": "blocked"
+      },
+      "description": "Actual committed production DOM and pinned synthetic mechanics; setup uses real controls. Reload restores deterministic state; controls and reset remain live."
+    },
+    {
+      "id": "manifolds-grasp-released",
+      "title": "Rigid grasp and released joints · released",
+      "section": "patterns",
+      "url": "http://127.0.0.1:8776/learning-machines/manifolds/?fixture=manifolds-grasp-released#panel-1",
+      "scenario": {
+        "page": "/learning-machines/manifolds/",
+        "state": "released",
+        "setup": "manifolds-grasp",
+        "network": "blocked"
+      },
+      "description": "Actual committed production DOM and pinned synthetic mechanics; setup uses real controls. Reload restores deterministic state; controls and reset remain live."
+    },
+    {
+      "id": "manifolds-cost-torque",
+      "title": "Cost fields and grid routes · torque",
+      "section": "patterns",
+      "url": "http://127.0.0.1:8776/learning-machines/manifolds/?fixture=manifolds-cost-torque#panel-2",
+      "scenario": {
+        "page": "/learning-machines/manifolds/",
+        "state": "torque",
+        "setup": "manifolds-cost",
+        "network": "blocked"
+      },
+      "description": "Actual committed production DOM and pinned synthetic mechanics; setup uses real controls. Reload restores deterministic state; controls and reset remain live."
+    },
+    {
+      "id": "manifolds-cost-joint-limit",
+      "title": "Cost fields and grid routes · joint-limit",
+      "section": "patterns",
+      "url": "http://127.0.0.1:8776/learning-machines/manifolds/?fixture=manifolds-cost-joint-limit#panel-2",
+      "scenario": {
+        "page": "/learning-machines/manifolds/",
+        "state": "joint-limit",
+        "setup": "manifolds-cost",
+        "network": "blocked"
+      },
+      "description": "Actual committed production DOM and pinned synthetic mechanics; setup uses real controls. Reload restores deterministic state; controls and reset remain live."
+    },
+    {
+      "id": "manifolds-cost-clearance",
+      "title": "Cost fields and grid routes · clearance",
+      "section": "patterns",
+      "url": "http://127.0.0.1:8776/learning-machines/manifolds/?fixture=manifolds-cost-clearance#panel-2",
+      "scenario": {
+        "page": "/learning-machines/manifolds/",
+        "state": "clearance",
+        "setup": "manifolds-cost",
+        "network": "blocked"
+      },
+      "description": "Actual committed production DOM and pinned synthetic mechanics; setup uses real controls. Reload restores deterministic state; controls and reset remain live."
+    },
+    {
+      "id": "manifolds-cost-invalid",
+      "title": "Cost fields and grid routes · invalid",
+      "section": "patterns",
+      "url": "http://127.0.0.1:8776/learning-machines/manifolds/?fixture=manifolds-cost-invalid#panel-2",
+      "scenario": {
+        "page": "/learning-machines/manifolds/",
+        "state": "invalid",
+        "setup": "manifolds-cost",
+        "network": "blocked"
+      },
+      "description": "Actual committed production DOM and pinned synthetic mechanics; setup uses real controls. Reload restores deterministic state; controls and reset remain live."
+    },
+    {
+      "id": "manifolds-skill-task",
+      "title": "Task coordinates and fitted skill · task",
+      "section": "patterns",
+      "url": "http://127.0.0.1:8776/learning-machines/manifolds/?fixture=manifolds-skill-task#panel-3",
+      "scenario": {
+        "page": "/learning-machines/manifolds/",
+        "state": "task",
+        "setup": "manifolds-skill",
+        "network": "blocked"
+      },
+      "description": "Actual committed production DOM and pinned synthetic mechanics; setup uses real controls. Reload restores deterministic state; controls and reset remain live."
+    },
+    {
+      "id": "manifolds-skill-pca",
+      "title": "Task coordinates and fitted skill · pca",
+      "section": "patterns",
+      "url": "http://127.0.0.1:8776/learning-machines/manifolds/?fixture=manifolds-skill-pca#panel-3",
+      "scenario": {
+        "page": "/learning-machines/manifolds/",
+        "state": "pca",
+        "setup": "manifolds-skill",
+        "network": "blocked"
+      },
+      "description": "Actual committed production DOM and pinned synthetic mechanics; setup uses real controls. Reload restores deterministic state; controls and reset remain live."
+    },
+    {
+      "id": "manifolds-skill-held-out",
+      "title": "Task coordinates and fitted skill · held-out",
+      "section": "patterns",
+      "url": "http://127.0.0.1:8776/learning-machines/manifolds/?fixture=manifolds-skill-held-out#panel-3",
+      "scenario": {
+        "page": "/learning-machines/manifolds/",
+        "state": "held-out",
+        "setup": "manifolds-skill",
+        "network": "blocked"
+      },
+      "description": "Actual committed production DOM and pinned synthetic mechanics; setup uses real controls. Reload restores deterministic state; controls and reset remain live."
+    },
+    {
+      "id": "manifolds-skill-outside",
+      "title": "Task coordinates and fitted skill · outside",
+      "section": "patterns",
+      "url": "http://127.0.0.1:8776/learning-machines/manifolds/?fixture=manifolds-skill-outside#panel-3",
+      "scenario": {
+        "page": "/learning-machines/manifolds/",
+        "state": "outside",
+        "setup": "manifolds-skill",
+        "network": "blocked"
+      },
+      "description": "Actual committed production DOM and pinned synthetic mechanics; setup uses real controls. Reload restores deterministic state; controls and reset remain live."
+    },
+    {
+      "id": "manifolds-threads-edge",
+      "title": "Skill thread view controls · edge",
+      "section": "components",
+      "url": "http://127.0.0.1:8776/learning-machines/manifolds/?fixture=manifolds-threads-edge#panel-3",
+      "scenario": {
+        "page": "/learning-machines/manifolds/",
+        "state": "edge",
+        "setup": "manifolds-threads",
+        "network": "blocked"
+      },
+      "description": "Actual committed production DOM and pinned synthetic mechanics; setup uses real controls. Reload restores deterministic state; controls and reset remain live."
+    },
+    {
+      "id": "manifolds-threads-above",
+      "title": "Skill thread view controls · above",
+      "section": "components",
+      "url": "http://127.0.0.1:8776/learning-machines/manifolds/?fixture=manifolds-threads-above#panel-3",
+      "scenario": {
+        "page": "/learning-machines/manifolds/",
+        "state": "above",
+        "setup": "manifolds-threads",
+        "network": "blocked"
+      },
+      "description": "Actual committed production DOM and pinned synthetic mechanics; setup uses real controls. Reload restores deterministic state; controls and reset remain live."
     }
   ],
   "inventory": "inventory.json",
   "registrySnapshot": {
     "authority": "App-owned design collection, tokens and optional inventory",
-    "baseRevision": "3ea81c22d0101f2fc537e7e4338010bc981479d5",
-    "inventorySha256": "fc35e11d7607216f68a9d36f184fccb735cd45e8a11287f2219d1f80814a3450",
+    "baseRevision": null,
+    "inventorySha256": "4d71ddad740b6a07e198bd82caf6ebd51059b9e7a9e68cc5128eada75a823c90",
     "tokenSha256": "27ab783e82cd1dd46fc6b4f566ff778b70d421496cb79d32928577353914bbea",
-    "integrationStatus": "unpublished-local-feature-commit",
+    "integrationStatus": "unpublished-local-snapshot",
     "integrationRevision": null,
     "withheldRevisions": [
-      "integrationRevision"
+      "baseRevision"
     ]
   }
 }

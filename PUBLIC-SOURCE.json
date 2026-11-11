@@ -6,7 +6,9 @@
   "excluded": [
     "Git history",
     "Local review artifacts",
-    "Private revision identifiers"
+    "Private revision identifiers",
+    "Local project coverage audit",
+    "Unapproved application catalogs"
   ],
   "sanitizedFiles": [
     "collections/original/workbench/collection.json",
@@ -17,9 +19,7 @@
     "docs/process/reads-bandit-integration.md",
     "registry/apps/bandit/collection.json",
     "registry/apps/bandit/inventory.json",
-    "registry/apps/focus/collection.json",
     "registry/apps/focus/inventory.json",
-    "registry/apps/great-circle/collection.json",
     "registry/apps/great-circle/inventory.json",
     "registry/apps/reads/collection.json",
     "registry/apps/reads/inventory.json",

@@ -89,7 +89,7 @@
         "cancel/reopen"
       ],
       "coverage": "covered",
-      "notes": "Click Add to Library in processing/error fixtures to enter the live async state. Pending fixture deliberately remains pending until reload; no saved data is touched."
+      "notes": "Click Add to Library in processing/error fixtures to enter the live async state. Pending fixture deliberately remains pending until reload; no saved data is touched. Processing and error fixtures activate the real submit control automatically on entry; native standalone alerts and labeled opaque-frame notifications remain distinct."
     },
     {
       "id": "file",

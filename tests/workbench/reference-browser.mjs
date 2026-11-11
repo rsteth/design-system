@@ -4,8 +4,9 @@ import http from 'node:http';
 import { readFile, mkdir, writeFile } from 'node:fs/promises';
 import { resolve, extname, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
+const ownCollectionCount=JSON.parse(await readFile(new URL('../../registry/index.json',import.meta.url),'utf8')).collections.length;
 const root = fileURLToPath(new URL('../../', import.meta.url));
-const artifacts = new URL('./artifacts/', import.meta.url);
+const artifacts = new URL('../../review/reference-library/', import.meta.url);
 const { chromium } = await import(process.env.PLAYWRIGHT_MODULE ?? 'playwright');
 const server = http.createServer(async (request, response) => {
   const pathname = new URL(request.url, 'http://localhost').pathname;
@@ -30,7 +31,7 @@ try {
   await mkdir(artifacts,{recursive:true});
   await page.goto(base+'/apps/studio/');
   const picker=page.getByLabel('Collection',{exact:true});
-  await picker.waitFor();assert.equal(await picker.locator('option').count(),6);
+  await picker.waitFor();assert.equal(await picker.locator('option').count(),ownCollectionCount);
   assert.equal(await page.getByLabel('Search reference studies',{exact:true}).count(),0);
   const palette=await page.locator('.wb-shell').evaluate(node=>getComputedStyle(node).getPropertyValue('--wb-accent'));
   for(let repeat=0;repeat<3;repeat++){
@@ -40,7 +41,7 @@ try {
     const search=page.getByLabel('Search reference studies',{exact:true});
     await search.fill('definitely no match zzz');
     assert.equal(await picker.isDisabled(),true);
-    await page.getByText(/No matching studies. Clear the search/).waitFor();
+    await page.getByText(/No matches. Clear the search/).waitFor();
     await search.fill('stripe');await picker.selectOption('reference-stripe');
     assert.equal(await picker.inputValue(),'reference-stripe');
     await page.getByRole('button',{name:'Foundations',exact:true}).click();
@@ -55,16 +56,16 @@ try {
     await page.frameLocator('iframe').locator('html[data-workbench-ready=true]').waitFor();
     assert.equal(await page.frameLocator('iframe').locator('.pattern-study').count(),3);
     await page.getByRole('button',{name:'Robin',exact:true}).click();
-    await picker.waitFor();assert.equal(await picker.locator('option').count(),6);
+    await picker.waitFor();assert.equal(await picker.locator('option').count(),ownCollectionCount);
   }
   // Rapid interrupted library transitions must not let an earlier load overwrite the latest choice.
   await page.evaluate(()=>{for(const group of ['references','own','references','own'])document.querySelector(`[data-library="${group}"]`).click();});
-  await picker.waitFor();assert.equal(await picker.locator('option').count(),6);
+  await picker.waitFor();assert.equal(await picker.locator('option').count(),ownCollectionCount);
   await page.getByRole('button',{name:'Reference studies',exact:true}).click();
   await page.getByLabel('Search reference studies',{exact:true}).waitFor();
   await picker.selectOption('reference-stripe');
   await page.screenshot({path:fileURLToPath(new URL('reference-library-desktop.png',artifacts)),fullPage:true});
-  await page.goBack();await picker.waitFor();assert.equal(await picker.locator('option').count(),6);
+  await page.goBack();await picker.waitFor();assert.equal(await picker.locator('option').count(),ownCollectionCount);
   await page.goForward();await page.getByLabel('Search reference studies',{exact:true}).waitFor();
   assert.equal(await picker.inputValue(),'reference-stripe');
   await page.setViewportSize({width:390,height:844});

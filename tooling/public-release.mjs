@@ -7,6 +7,7 @@ import {createHash} from 'node:crypto';
 import {execFileSync} from 'node:child_process';
 import {redactUnverifiedRevisions,publicSourceMetadata,publicMetadataJSON,publicVersionMetadata} from '../apps/studio/public-sources.mjs';
 import {buildPublicAppPreviews} from './public-app-previews.mjs';
+import {publicSourcePath,publicRegistry} from './public-collection-scope.mjs';
 import {assertRegistryFresh} from './registry-freshness.mjs';
 const ROOT=fileURLToPath(new URL('../',import.meta.url));
 const json=x=>JSON.stringify(x,null,2)+'\n';
@@ -38,8 +39,8 @@ export async function buildPublicRelease({output,base='/',focusRoot,greatCircleR
  const version=async path=>JSON.parse(await readFile(join(path,'package.json'),'utf8')).version;
  const sources={designSystem:{repository:git(ROOT,['remote','get-url','origin']),version:await version(ROOT)}};
  for(const [id,path]of inputs)sources[id]={repository:git(path,['remote','get-url','origin']),version:await version(path),status:'synthetic-preview'};
- for(const path of ['apps/studio','packages/workbench','packages/tokens','packages/appearance','packages/react','collections','registry','LICENSE','LICENSING.md','THIRD_PARTY_NOTICES.md'])await copy(join(ROOT,path),join(output,path),{exclude:input=>!includeAppPreviews&&path==='registry'&&/^apps\/(?:reads|bandit)(?:\/|$)/.test(relative(join(ROOT,'registry'),input))});
- const publicRegistry=JSON.parse(await readFile(join(output,'registry/index.json'),'utf8'));publicRegistry.collections=publicRegistry.collections.filter(path=>includeAppPreviews||!/^apps\/(?:reads|bandit)\//.test(path));await writeFile(join(output,'registry/index.json'),json(publicRegistry));
+ for(const path of ['apps/studio','packages/workbench','packages/tokens','packages/appearance','packages/react','collections','registry','LICENSE','LICENSING.md','THIRD_PARTY_NOTICES.md'])await copy(join(ROOT,path),join(output,path),{exclude:input=>!publicSourcePath(relative(ROOT,input))||(!includeAppPreviews&&path==='registry'&&/^apps\/(?:reads|bandit)(?:\/|$)/.test(relative(join(ROOT,'registry'),input)))});
+ const releasedRegistry=publicRegistry(JSON.parse(await readFile(join(output,'registry/index.json'),'utf8')),{includeAppPreviews});await writeFile(join(output,'registry/index.json'),json(releasedRegistry));
  // A public read-only viewer is deliberately separate from the local capture runner.
  await writeFile(join(output,'apps/studio/capture-studio.mjs'),`export function mountCaptureStudio(root){const main=document.createElement('main');main.className='cs-shell';const h=document.createElement('h1');h.textContent='Local capture tools';const p=document.createElement('p');p.textContent='Capture generation runs only in the local source checkout. This public viewer has no capture server, terminal access, local exports, or connection to your computer.';const a=document.createElement('a');a.href='../../RELEASE-NOTES.html';a.textContent='Attribution';main.append(h,p,a);root.replaceChildren(main);return{destroy(){root.replaceChildren();}};}\n`);
  const emittedModules=new Map();

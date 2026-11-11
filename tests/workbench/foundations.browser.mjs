@@ -67,7 +67,8 @@ try {
     if (id === 'reads') { assert.equal(await page.locator('.wb-radius-diagram').count(), 4); assert.equal(await page.locator('.wb-length-diagram').count(), 1); assert.equal(await page.locator('.wb-motion-preview').count(), 1); }
     if (id === 'bandit') {
       assert.equal(await page.locator('.wb-font-preview').count(), 3);
-      assert.match(await page.locator('.wb-font-preview').nth(1).evaluate(n => getComputedStyle(n).fontFamily), /Space Grotesk/);
+      const headingFont = await page.locator('[data-token-name="font.heading"] .wb-font-preview').evaluate(n => ({actual:getComputedStyle(n).fontFamily, expected:(()=>{const probe=document.createElement('span');probe.style.fontFamily=n.closest('.wb-token-card').querySelector('.wb-token-value').textContent;document.body.append(probe);const value=getComputedStyle(probe).fontFamily;probe.remove();return value;})()}));
+      assert.equal(headingFont.actual, headingFont.expected);
     }
     await page.screenshot({ path: resolve(output, id + '-' + width + '.png'), fullPage: true });
     if (id === 'reads') {

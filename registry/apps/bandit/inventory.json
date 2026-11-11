@@ -67,8 +67,807 @@
       "notes": "Native elements using the exact production stylesheet; no duplicate theme."
     },
     {
-      "id": "backend",
-      "title": "Authenticated workflows and generation",
+      "id": "projects-populated",
+      "title": "Projects and series / populated",
+      "kind": "screen",
+      "coverage": "partial",
+      "source": [
+        "apps/web/app/projects/page.tsx"
+      ],
+      "states": [
+        "populated"
+      ],
+      "fixtures": [
+        "projects-populated"
+      ],
+      "notes": "Real production UI with synthetic in-memory state. Form edits are local; backend mutations fail closed. No live workflow acceptance is claimed."
+    },
+    {
+      "id": "projects-empty",
+      "title": "Projects and series / empty",
+      "kind": "screen",
+      "coverage": "partial",
+      "source": [
+        "apps/web/app/projects/page.tsx"
+      ],
+      "states": [
+        "empty"
+      ],
+      "fixtures": [
+        "projects-empty"
+      ],
+      "notes": "Real production UI with synthetic in-memory state. Form edits are local; backend mutations fail closed. No live workflow acceptance is claimed."
+    },
+    {
+      "id": "projects-viewer",
+      "title": "Projects and series / viewer",
+      "kind": "screen",
+      "coverage": "partial",
+      "source": [
+        "apps/web/app/projects/page.tsx"
+      ],
+      "states": [
+        "viewer"
+      ],
+      "fixtures": [
+        "projects-viewer"
+      ],
+      "notes": "Real production UI with synthetic in-memory state. Form edits are local; backend mutations fail closed. No live workflow acceptance is claimed."
+    },
+    {
+      "id": "profiles-populated",
+      "title": "Content profiles / populated",
+      "kind": "screen",
+      "coverage": "partial",
+      "source": [
+        "apps/web/app/profiles/page.tsx"
+      ],
+      "states": [
+        "populated"
+      ],
+      "fixtures": [
+        "profiles-populated"
+      ],
+      "notes": "Real production UI with synthetic in-memory state. Form edits are local; backend mutations fail closed. No live workflow acceptance is claimed."
+    },
+    {
+      "id": "profiles-empty",
+      "title": "Content profiles / empty",
+      "kind": "screen",
+      "coverage": "partial",
+      "source": [
+        "apps/web/app/profiles/page.tsx"
+      ],
+      "states": [
+        "empty"
+      ],
+      "fixtures": [
+        "profiles-empty"
+      ],
+      "notes": "Real production UI with synthetic in-memory state. Form edits are local; backend mutations fail closed. No live workflow acceptance is claimed."
+    },
+    {
+      "id": "profiles-viewer",
+      "title": "Content profiles / viewer",
+      "kind": "screen",
+      "coverage": "partial",
+      "source": [
+        "apps/web/app/profiles/page.tsx"
+      ],
+      "states": [
+        "viewer"
+      ],
+      "fixtures": [
+        "profiles-viewer"
+      ],
+      "notes": "Real production UI with synthetic in-memory state. Form edits are local; backend mutations fail closed. No live workflow acceptance is claimed."
+    },
+    {
+      "id": "library-populated",
+      "title": "Subject and media library / populated",
+      "kind": "screen",
+      "coverage": "partial",
+      "source": [
+        "apps/web/app/library/page.tsx"
+      ],
+      "states": [
+        "populated"
+      ],
+      "fixtures": [
+        "library-populated"
+      ],
+      "notes": "Real production UI with synthetic in-memory state. Form edits are local; backend mutations fail closed. No live workflow acceptance is claimed."
+    },
+    {
+      "id": "library-empty",
+      "title": "Subject and media library / empty",
+      "kind": "screen",
+      "coverage": "partial",
+      "source": [
+        "apps/web/app/library/page.tsx"
+      ],
+      "states": [
+        "empty"
+      ],
+      "fixtures": [
+        "library-empty"
+      ],
+      "notes": "Real production UI with synthetic in-memory state. Form edits are local; backend mutations fail closed. No live workflow acceptance is claimed."
+    },
+    {
+      "id": "library-viewer",
+      "title": "Subject and media library / viewer",
+      "kind": "screen",
+      "coverage": "partial",
+      "source": [
+        "apps/web/app/library/page.tsx"
+      ],
+      "states": [
+        "viewer"
+      ],
+      "fixtures": [
+        "library-viewer"
+      ],
+      "notes": "Real production UI with synthetic in-memory state. Form edits are local; backend mutations fail closed. No live workflow acceptance is claimed."
+    },
+    {
+      "id": "project-editor",
+      "title": "Project editor",
+      "kind": "pattern",
+      "coverage": "covered",
+      "source": [
+        "apps/web/app/projects/page.tsx"
+      ],
+      "states": [
+        "populated",
+        "Edit project"
+      ],
+      "fixtures": [
+        "project-editor"
+      ],
+      "notes": "Real production UI with synthetic in-memory state. Form edits are local; backend mutations fail closed. No live workflow acceptance is claimed."
+    },
+    {
+      "id": "series-editor",
+      "title": "Series editor",
+      "kind": "pattern",
+      "coverage": "covered",
+      "source": [
+        "apps/web/app/projects/page.tsx"
+      ],
+      "states": [
+        "populated",
+        "Edit series"
+      ],
+      "fixtures": [
+        "series-editor"
+      ],
+      "notes": "Real production UI with synthetic in-memory state. Form edits are local; backend mutations fail closed. No live workflow acceptance is claimed."
+    },
+    {
+      "id": "project-new",
+      "title": "New project form",
+      "kind": "pattern",
+      "coverage": "covered",
+      "source": [
+        "apps/web/app/projects/page.tsx"
+      ],
+      "states": [
+        "populated",
+        "+ New project"
+      ],
+      "fixtures": [
+        "project-new"
+      ],
+      "notes": "Real production UI with synthetic in-memory state. Form edits are local; backend mutations fail closed. No live workflow acceptance is claimed."
+    },
+    {
+      "id": "profile-editor",
+      "title": "Draft profile editor",
+      "kind": "pattern",
+      "coverage": "covered",
+      "source": [
+        "apps/web/app/profiles/page.tsx"
+      ],
+      "states": [
+        "populated",
+        "Open editor"
+      ],
+      "fixtures": [
+        "profile-editor"
+      ],
+      "notes": "Real production UI with synthetic in-memory state. Form edits are local; backend mutations fail closed. No live workflow acceptance is claimed."
+    },
+    {
+      "id": "profile-published",
+      "title": "Published immutable profile",
+      "kind": "pattern",
+      "coverage": "covered",
+      "source": [
+        "apps/web/app/profiles/page.tsx"
+      ],
+      "states": [
+        "populated",
+        "Open profile"
+      ],
+      "fixtures": [
+        "profile-published"
+      ],
+      "notes": "Real production UI with synthetic in-memory state. Form edits are local; backend mutations fail closed. No live workflow acceptance is claimed."
+    },
+    {
+      "id": "profile-import",
+      "title": "Profile import",
+      "kind": "pattern",
+      "coverage": "covered",
+      "source": [
+        "apps/web/app/profiles/page.tsx"
+      ],
+      "states": [
+        "populated",
+        "+ Import profile"
+      ],
+      "fixtures": [
+        "profile-import"
+      ],
+      "notes": "Real production UI with synthetic in-memory state. Form edits are local; backend mutations fail closed. No live workflow acceptance is claimed."
+    },
+    {
+      "id": "subject-editor",
+      "title": "Subject editor",
+      "kind": "pattern",
+      "coverage": "covered",
+      "source": [
+        "apps/web/app/library/page.tsx"
+      ],
+      "states": [
+        "populated",
+        "Edit subject"
+      ],
+      "fixtures": [
+        "subject-editor"
+      ],
+      "notes": "Real production UI with synthetic in-memory state. Form edits are local; backend mutations fail closed. No live workflow acceptance is claimed."
+    },
+    {
+      "id": "reference-editor",
+      "title": "Reference set editor",
+      "kind": "pattern",
+      "coverage": "covered",
+      "source": [
+        "apps/web/app/library/page.tsx"
+      ],
+      "states": [
+        "populated",
+        "Synthetic reference set"
+      ],
+      "fixtures": [
+        "reference-editor"
+      ],
+      "notes": "Real production UI with synthetic in-memory state. Form edits are local; backend mutations fail closed. No live workflow acceptance is claimed."
+    },
+    {
+      "id": "production-new-profile",
+      "title": "New production / profile",
+      "kind": "screen",
+      "coverage": "partial",
+      "source": [
+        "apps/web/app/productions/new/page.tsx"
+      ],
+      "states": [
+        "profile"
+      ],
+      "fixtures": [
+        "production-new-profile"
+      ],
+      "notes": "Real production UI with synthetic in-memory state. Form edits are local; backend mutations fail closed. No live workflow acceptance is claimed."
+    },
+    {
+      "id": "production-new-brief",
+      "title": "New production / brief",
+      "kind": "screen",
+      "coverage": "partial",
+      "source": [
+        "apps/web/app/productions/new/page.tsx"
+      ],
+      "states": [
+        "brief"
+      ],
+      "fixtures": [
+        "production-new-brief"
+      ],
+      "notes": "Real production UI with synthetic in-memory state. Form edits are local; backend mutations fail closed. No live workflow acceptance is claimed."
+    },
+    {
+      "id": "production-new-plan",
+      "title": "New production / plan",
+      "kind": "screen",
+      "coverage": "partial",
+      "source": [
+        "apps/web/app/productions/new/page.tsx"
+      ],
+      "states": [
+        "plan"
+      ],
+      "fixtures": [
+        "production-new-plan"
+      ],
+      "notes": "Real production UI with synthetic in-memory state. Form edits are local; backend mutations fail closed. No live workflow acceptance is claimed."
+    },
+    {
+      "id": "production-new-viewer",
+      "title": "New production / viewer",
+      "kind": "screen",
+      "coverage": "partial",
+      "source": [
+        "apps/web/app/productions/new/page.tsx"
+      ],
+      "states": [
+        "viewer"
+      ],
+      "fixtures": [
+        "production-new-viewer"
+      ],
+      "notes": "Real production UI with synthetic in-memory state. Form edits are local; backend mutations fail closed. No live workflow acceptance is claimed."
+    },
+    {
+      "id": "board-populated",
+      "title": "Production board / populated",
+      "kind": "screen",
+      "coverage": "partial",
+      "source": [
+        "apps/web/app/productions/[id]/production-board.tsx"
+      ],
+      "states": [
+        "populated"
+      ],
+      "fixtures": [
+        "board-populated"
+      ],
+      "notes": "Real production UI with synthetic in-memory state. Form edits are local; backend mutations fail closed. No live workflow acceptance is claimed."
+    },
+    {
+      "id": "board-empty",
+      "title": "Production board / empty",
+      "kind": "screen",
+      "coverage": "partial",
+      "source": [
+        "apps/web/app/productions/[id]/production-board.tsx"
+      ],
+      "states": [
+        "empty"
+      ],
+      "fixtures": [
+        "board-empty"
+      ],
+      "notes": "Real production UI with synthetic in-memory state. Form edits are local; backend mutations fail closed. No live workflow acceptance is claimed."
+    },
+    {
+      "id": "board-approved",
+      "title": "Production board / approved",
+      "kind": "screen",
+      "coverage": "partial",
+      "source": [
+        "apps/web/app/productions/[id]/production-board.tsx"
+      ],
+      "states": [
+        "approved"
+      ],
+      "fixtures": [
+        "board-approved"
+      ],
+      "notes": "Real production UI with synthetic in-memory state. Form edits are local; backend mutations fail closed. No live workflow acceptance is claimed."
+    },
+    {
+      "id": "board-archived",
+      "title": "Production board / archived",
+      "kind": "screen",
+      "coverage": "partial",
+      "source": [
+        "apps/web/app/productions/[id]/production-board.tsx"
+      ],
+      "states": [
+        "archived"
+      ],
+      "fixtures": [
+        "board-archived"
+      ],
+      "notes": "Real production UI with synthetic in-memory state. Form edits are local; backend mutations fail closed. No live workflow acceptance is claimed."
+    },
+    {
+      "id": "board-error",
+      "title": "Production board / error",
+      "kind": "screen",
+      "coverage": "partial",
+      "source": [
+        "apps/web/app/productions/[id]/production-board.tsx"
+      ],
+      "states": [
+        "error"
+      ],
+      "fixtures": [
+        "board-error"
+      ],
+      "notes": "Real production UI with synthetic in-memory state. Form edits are local; backend mutations fail closed. No live workflow acceptance is claimed."
+    },
+    {
+      "id": "board-loading",
+      "title": "Production board / loading",
+      "kind": "screen",
+      "coverage": "partial",
+      "source": [
+        "apps/web/app/productions/[id]/production-board.tsx"
+      ],
+      "states": [
+        "loading"
+      ],
+      "fixtures": [
+        "board-loading"
+      ],
+      "notes": "Real production UI with synthetic in-memory state. Form edits are local; backend mutations fail closed. No live workflow acceptance is claimed."
+    },
+    {
+      "id": "board-viewer",
+      "title": "Production board / viewer",
+      "kind": "screen",
+      "coverage": "partial",
+      "source": [
+        "apps/web/app/productions/[id]/production-board.tsx"
+      ],
+      "states": [
+        "viewer"
+      ],
+      "fixtures": [
+        "board-viewer"
+      ],
+      "notes": "Real production UI with synthetic in-memory state. Form edits are local; backend mutations fail closed. No live workflow acceptance is claimed."
+    },
+    {
+      "id": "shot-editor",
+      "title": "Shot editor and revision history",
+      "kind": "pattern",
+      "coverage": "covered",
+      "source": [
+        "apps/web/app/productions/[id]/production-board.tsx"
+      ],
+      "states": [
+        "populated",
+        "Edit shot"
+      ],
+      "fixtures": [
+        "shot-editor"
+      ],
+      "notes": "Real production UI with synthetic in-memory state. Form edits are local; backend mutations fail closed. No live workflow acceptance is claimed."
+    },
+    {
+      "id": "shot-new",
+      "title": "New shot and dependencies",
+      "kind": "pattern",
+      "coverage": "covered",
+      "source": [
+        "apps/web/app/productions/[id]/production-board.tsx"
+      ],
+      "states": [
+        "empty",
+        "+ Add shot"
+      ],
+      "fixtures": [
+        "shot-new"
+      ],
+      "notes": "Real production UI with synthetic in-memory state. Form edits are local; backend mutations fail closed. No live workflow acceptance is claimed."
+    },
+    {
+      "id": "review-populated",
+      "title": "Review room / populated",
+      "kind": "screen",
+      "coverage": "partial",
+      "source": [
+        "apps/web/app/productions/[id]/review/review-room.tsx",
+        "apps/web/app/productions/[id]/review/advanced-review.tsx"
+      ],
+      "states": [
+        "populated"
+      ],
+      "fixtures": [
+        "review-populated"
+      ],
+      "notes": "Real production UI with synthetic in-memory state. Form edits are local; backend mutations fail closed. No live workflow acceptance is claimed."
+    },
+    {
+      "id": "review-empty",
+      "title": "Review room / empty",
+      "kind": "screen",
+      "coverage": "partial",
+      "source": [
+        "apps/web/app/productions/[id]/review/review-room.tsx",
+        "apps/web/app/productions/[id]/review/advanced-review.tsx"
+      ],
+      "states": [
+        "empty"
+      ],
+      "fixtures": [
+        "review-empty"
+      ],
+      "notes": "Real production UI with synthetic in-memory state. Form edits are local; backend mutations fail closed. No live workflow acceptance is claimed."
+    },
+    {
+      "id": "review-unapproved",
+      "title": "Review room / unapproved",
+      "kind": "screen",
+      "coverage": "partial",
+      "source": [
+        "apps/web/app/productions/[id]/review/review-room.tsx",
+        "apps/web/app/productions/[id]/review/advanced-review.tsx"
+      ],
+      "states": [
+        "unapproved"
+      ],
+      "fixtures": [
+        "review-unapproved"
+      ],
+      "notes": "Real production UI with synthetic in-memory state. Form edits are local; backend mutations fail closed. No live workflow acceptance is claimed."
+    },
+    {
+      "id": "review-error",
+      "title": "Review room / error",
+      "kind": "screen",
+      "coverage": "partial",
+      "source": [
+        "apps/web/app/productions/[id]/review/review-room.tsx",
+        "apps/web/app/productions/[id]/review/advanced-review.tsx"
+      ],
+      "states": [
+        "error"
+      ],
+      "fixtures": [
+        "review-error"
+      ],
+      "notes": "Real production UI with synthetic in-memory state. Form edits are local; backend mutations fail closed. No live workflow acceptance is claimed."
+    },
+    {
+      "id": "review-loading",
+      "title": "Review room / loading",
+      "kind": "screen",
+      "coverage": "partial",
+      "source": [
+        "apps/web/app/productions/[id]/review/review-room.tsx",
+        "apps/web/app/productions/[id]/review/advanced-review.tsx"
+      ],
+      "states": [
+        "loading"
+      ],
+      "fixtures": [
+        "review-loading"
+      ],
+      "notes": "Real production UI with synthetic in-memory state. Form edits are local; backend mutations fail closed. No live workflow acceptance is claimed."
+    },
+    {
+      "id": "review-viewer",
+      "title": "Review room / viewer",
+      "kind": "screen",
+      "coverage": "partial",
+      "source": [
+        "apps/web/app/productions/[id]/review/review-room.tsx",
+        "apps/web/app/productions/[id]/review/advanced-review.tsx"
+      ],
+      "states": [
+        "viewer"
+      ],
+      "fixtures": [
+        "review-viewer"
+      ],
+      "notes": "Real production UI with synthetic in-memory state. Form edits are local; backend mutations fail closed. No live workflow acceptance is claimed."
+    },
+    {
+      "id": "asset-ready",
+      "title": "Media preview / ready",
+      "kind": "component",
+      "coverage": "covered",
+      "source": [
+        "apps/web/app/asset-preview.tsx"
+      ],
+      "states": [
+        "ready"
+      ],
+      "fixtures": [
+        "asset-ready"
+      ],
+      "notes": "Real production UI with synthetic in-memory state. Form edits are local; backend mutations fail closed. No live workflow acceptance is claimed."
+    },
+    {
+      "id": "asset-expired",
+      "title": "Media preview / expired",
+      "kind": "component",
+      "coverage": "covered",
+      "source": [
+        "apps/web/app/asset-preview.tsx"
+      ],
+      "states": [
+        "expired"
+      ],
+      "fixtures": [
+        "asset-expired"
+      ],
+      "notes": "Real production UI with synthetic in-memory state. Form edits are local; backend mutations fail closed. No live workflow acceptance is claimed."
+    },
+    {
+      "id": "asset-loading",
+      "title": "Media preview / loading",
+      "kind": "component",
+      "coverage": "covered",
+      "source": [
+        "apps/web/app/asset-preview.tsx"
+      ],
+      "states": [
+        "loading"
+      ],
+      "fixtures": [
+        "asset-loading"
+      ],
+      "notes": "Real production UI with synthetic in-memory state. Form edits are local; backend mutations fail closed. No live workflow acceptance is claimed."
+    },
+    {
+      "id": "error-notice",
+      "title": "Production error notice",
+      "kind": "component",
+      "coverage": "covered",
+      "source": [
+        "apps/web/app/studio-context.tsx"
+      ],
+      "states": [
+        "default"
+      ],
+      "fixtures": [
+        "error-notice"
+      ],
+      "notes": "Real production UI with synthetic in-memory state. Form edits are local; backend mutations fail closed. No live workflow acceptance is claimed."
+    },
+    {
+      "id": "appearance",
+      "title": "Appearance control",
+      "kind": "component",
+      "coverage": "covered",
+      "source": [
+        "apps/web/app/texture-control.tsx"
+      ],
+      "states": [
+        "default"
+      ],
+      "fixtures": [
+        "appearance"
+      ],
+      "notes": "Real production UI with synthetic in-memory state. Form edits are local; backend mutations fail closed. No live workflow acceptance is claimed."
+    },
+    {
+      "id": "memory-populated",
+      "title": "Creative Memory / populated",
+      "kind": "pattern",
+      "coverage": "covered",
+      "source": [
+        "apps/web/app/creative-memory.tsx"
+      ],
+      "states": [
+        "populated"
+      ],
+      "fixtures": [
+        "memory-populated"
+      ],
+      "notes": "Real production UI with synthetic in-memory state. Form edits are local; backend mutations fail closed. No live workflow acceptance is claimed."
+    },
+    {
+      "id": "memory-empty",
+      "title": "Creative Memory / empty",
+      "kind": "pattern",
+      "coverage": "covered",
+      "source": [
+        "apps/web/app/creative-memory.tsx"
+      ],
+      "states": [
+        "empty"
+      ],
+      "fixtures": [
+        "memory-empty"
+      ],
+      "notes": "Real production UI with synthetic in-memory state. Form edits are local; backend mutations fail closed. No live workflow acceptance is claimed."
+    },
+    {
+      "id": "memory-error",
+      "title": "Creative Memory / error",
+      "kind": "pattern",
+      "coverage": "covered",
+      "source": [
+        "apps/web/app/creative-memory.tsx"
+      ],
+      "states": [
+        "error"
+      ],
+      "fixtures": [
+        "memory-error"
+      ],
+      "notes": "Real production UI with synthetic in-memory state. Form edits are local; backend mutations fail closed. No live workflow acceptance is claimed."
+    },
+    {
+      "id": "memory-viewer",
+      "title": "Creative Memory / viewer",
+      "kind": "pattern",
+      "coverage": "covered",
+      "source": [
+        "apps/web/app/creative-memory.tsx"
+      ],
+      "states": [
+        "viewer"
+      ],
+      "fixtures": [
+        "memory-viewer"
+      ],
+      "notes": "Real production UI with synthetic in-memory state. Form edits are local; backend mutations fail closed. No live workflow acceptance is claimed."
+    },
+    {
+      "id": "advanced-controls",
+      "title": "Shot reference and event controls",
+      "kind": "pattern",
+      "coverage": "covered",
+      "source": [
+        "apps/web/app/productions/[id]/advanced-controls.tsx",
+        "apps/web/app/productions/[id]/production-board.tsx"
+      ],
+      "states": [
+        "advanced",
+        "Edit shot",
+        "@open:Advanced controls",
+        "Add reference binding"
+      ],
+      "fixtures": [
+        "advanced-controls"
+      ],
+      "notes": "Real production UI with synthetic in-memory state. Form edits are local; backend mutations fail closed. No live workflow acceptance is claimed."
+    },
+    {
+      "id": "advanced-review",
+      "title": "Candidate comparison and advisory review",
+      "kind": "pattern",
+      "coverage": "covered",
+      "source": [
+        "apps/web/app/productions/[id]/review/advanced-review.tsx"
+      ],
+      "states": [
+        "populated",
+        "@open:Candidate generation and synchronized comparison"
+      ],
+      "fixtures": [
+        "advanced-review"
+      ],
+      "notes": "Real production UI with synthetic in-memory state. Form edits are local; backend mutations fail closed. No live workflow acceptance is claimed."
+    },
+    {
+      "id": "authenticated-shell",
+      "title": "Authenticated shell and health status",
+      "kind": "external",
+      "coverage": "excluded",
+      "source": [
+        "apps/web/app/studio-context.tsx",
+        "apps/web/app/system-status.tsx"
+      ],
+      "states": [],
+      "fixtures": [],
+      "notes": "Actual authentication, workspace switching and health probes are excluded. Exporting the existing context permits route reuse without mounting the authenticated provider; no copied shell is presented as real UI."
+    },
+    {
+      "id": "media-execution",
+      "title": "Media pipeline and provider outcomes",
+      "kind": "external",
+      "coverage": "excluded",
+      "source": [
+        "apps/web/app/productions/[id]/review/review-room.tsx",
+        "apps/web/app/library/page.tsx"
+      ],
+      "states": [],
+      "fixtures": [],
+      "notes": "Synthetic SVG previews, empty/queued/failed/succeeded export cards and request failures cover presentation only. Video playback, signed downloads, successful upload, real generation, account permissions, persistence and export acceptance remain release/integration tests."
+    },
+    {
+      "id": "mutating-workflows",
+      "title": "Server-side mutations and validation",
       "kind": "external",
       "coverage": "excluded",
       "source": [
@@ -76,22 +875,34 @@
       ],
       "states": [],
       "fixtures": [],
-      "notes": "Owned by the backend/release workstream. This integration does not change authentication, API state, generation or deployment."
+      "notes": "Save, delete, approve, clone, generate and authorization API actions fail closed in this fixture. Local form editing, navigation within a screen, keyboard operation and reset are exercised. No backend acceptance claim."
+    },
+    {
+      "id": "alternate-landing",
+      "title": "Unused alternate storytelling landing",
+      "kind": "external",
+      "coverage": "excluded",
+      "source": [
+        "apps/web/app/storytelling-landing.tsx"
+      ],
+      "states": [],
+      "fixtures": [],
+      "notes": "Current production entry uses RiverLanding. Alternate unused landing is not presented as an active product screen."
     }
   ],
   "checks": [
     {
       "id": "design-contract",
-      "label": "Design contract and drift",
+      "label": "Design contract and fixture isolation",
       "command": "npm run design:check",
-      "scope": "App tokens, snapshots, source ownership and decorative glyphs",
+      "scope": "Snapshots, source-map existence, deterministic state and fail-closed transport",
       "status": "passed"
     },
     {
       "id": "design-browser",
-      "label": "Fixture and workbench browser checks",
+      "label": "Production fixtures and workbench",
       "command": "npm run design:test",
-      "scope": "Desktop/mobile fixtures, dialog reset, read-only navigation and workbench reset",
+      "scope": "52 fixtures, desktop/mobile/narrow mobile, selected keyboard/repeated/reset flows, no backend or external calls",
       "status": "passed"
     }
   ],

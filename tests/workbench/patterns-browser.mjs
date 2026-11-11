@@ -4,6 +4,7 @@ import http from 'node:http';
 import {readFile,mkdir,writeFile} from 'node:fs/promises';
 import {resolve,extname,sep} from 'node:path';
 import {fileURLToPath} from 'node:url';
+const ownCollectionCount=JSON.parse(await readFile(new URL('../../registry/index.json',import.meta.url),'utf8')).collections.length;
 const root=resolve(fileURLToPath(new URL('../../',import.meta.url)));
 const {chromium}=await import(process.env.PLAYWRIGHT_MODULE??'playwright');
 const report=JSON.parse(await readFile(resolve(root,'collections/reference-sheets/report.json'),'utf8'));
@@ -42,7 +43,7 @@ try{
  await page.goto(base+'/apps/studio/?library=references&collection=reference-warp&section=screens');await page.getByRole('heading',{name:'Components',exact:true}).waitFor();assert.equal(await page.getByRole('button',{name:/^Screens/}).isDisabled(),true);
  // New collection, old section, repeated navigation and actual history preserve isolation.
  await page.getByLabel('Collection',{exact:true}).selectOption('reference-stripe');await page.getByRole('button',{name:/^Screens/}).click();await page.getByRole('heading',{name:'Screens',exact:true}).waitFor();await page.getByLabel('Collection',{exact:true}).selectOption('reference-warp');await page.getByRole('heading',{name:'Components',exact:true}).waitFor();
- await page.getByRole('button',{name:'Robin',exact:true}).click();await page.getByLabel('Collection',{exact:true}).waitFor();assert.equal(await page.getByLabel('Collection',{exact:true}).locator('option').count(),6);assert.equal(await page.locator('.wb-reference-notice').count(),0);await page.goBack();await page.getByLabel('Search reference studies',{exact:true}).waitFor();
+ await page.getByRole('button',{name:'Robin',exact:true}).click();await page.getByLabel('Collection',{exact:true}).waitFor();assert.equal(await page.getByLabel('Collection',{exact:true}).locator('option').count(),ownCollectionCount);assert.equal(await page.locator('.wb-reference-notice').count(),0);await page.goBack();await page.getByLabel('Search reference studies',{exact:true}).waitFor();
  assert.deepEqual(errors,[]);assert.deepEqual(external,[]);
  await writeFile(resolve(out,'results.json'),JSON.stringify({timestamp:new Date().toISOString(),runs,errors,externalRequests:external,scope:'All 84 standard pattern sets at desktop/mobile through sandbox; repeated controls on six contrasting studies, empty Screens, collection changes, back navigation. Not a brand-fidelity or comprehensive accessibility certification.'},null,2)+'\n');
  console.log(`PASS: ${runs.length} pattern mounts, no overflow, external requests or page errors; repeated action/search/save/cancel and Screens navigation passed.`);

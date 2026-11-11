@@ -35,7 +35,8 @@ test('public packaging keeps attribution reachable and excludes private app snap
  const source=await read('tooling/public-release.mjs');
  assert.doesNotMatch(source,/Static release scope and attribution/);assert.match(source,/data-attribution-link/);
  assert.match(source,/redactUnverifiedRevisions\(original\)/);assert.match(source,/source:publicSourceMetadata\(sources\)/);
- assert.match(source,/reads\|bandit/);assert.match(source,/publicRegistry.collections.filter/);
+ assert.match(source,/reads\|bandit/);assert.match(source,/const releasedRegistry=publicRegistry\(/);
+ const {publicRegistry}=await import('../tooling/public-collection-scope.mjs');assert.deepEqual(publicRegistry({collections:['apps/reads/collection.json','apps/bandit/collection.json','apps/unapproved/collection.json'],projectCoverage:'projects.local.json'},{includeAppPreviews:false}),{collections:[]});
  assert.match(await read('tooling/build.mjs'),/'LICENSE','LICENSING.md','THIRD_PARTY_NOTICES.md'/);
 });
 
