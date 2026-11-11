@@ -112,6 +112,73 @@ export function mountWorkbench(container, options = {}) {
       return String(value);
     };
     const groupFor = row => row.type === 'color' ? 'color' : row.type === 'dimension' ? 'dimensions' : row.type === 'fontFamily' ? 'fonts' : 'other';
+    let previewCleanup = [];
+    const clearPreviews = () => { previewCleanup.forEach(fn => fn()); previewCleanup = []; };
+    cleanup.push(clearPreviews);
+    const dimensionPreview = (row, metadata) => {
+      const value = String(row.value).trim();
+      const radius = /(?:^|\.)(?:radius|radii|rounded)(?:\.|$)|borderradius/i.test(row.name);
+      const time = value.match(/^(\d+(?:\.\d+)?|\.\d+)(ms|s)$/i);
+      const detail = element('span', { class: 'wb-token-detail' });
+      metadata.append(detail);
+      if (time && Number.isFinite(Number(time[1]) * (time[2].toLowerCase() === 's' ? 1000 : 1))) {
+        const duration = Number(time[1]) * (time[2].toLowerCase() === 's' ? 1000 : 1);
+        const dot = element('span', { class: 'wb-motion-dot' });
+        const track = element('span', { class: 'wb-motion-track', 'aria-hidden': 'true' }, dot);
+        const reduced = matchMedia('(prefers-reduced-motion: reduce)');
+        let animation;
+        const reset = () => { animation?.cancel(); animation = undefined; };
+        const play = () => {
+          reset();
+          if (!reduced.matches) animation = dot.animate([{ left: '0%' }, { left: '100%' }], { duration, easing: 'linear', fill: 'forwards' });
+        };
+        const preview = element('button', { type: 'button', class: 'wb-motion-preview', 'data-dimension-kind': 'motion',
+          onpointerenter: play, onpointerleave: () => { if (!preview.matches(':focus-visible')) reset(); }, onpointercancel: reset,
+          onfocus: () => { if (preview.matches(':focus-visible')) play(); }, onblur: () => { if (!preview.matches(':hover')) reset(); }, onclick: play }, track);
+        const preferenceChanged = () => {
+          reset();
+          detail.textContent = reduced.matches ? 'Reduced motion: static preview' : 'Hover, focus or press to play';
+          preview.setAttribute('aria-label', `${row.name}, ${value}. ${reduced.matches ? 'Static preview for reduced motion.' : 'Play a left-to-right motion preview.'}`);
+        };
+        preferenceChanged(); reduced.addEventListener('change', preferenceChanged);
+        previewCleanup.push(() => { reset(); reduced.removeEventListener('change', preferenceChanged); });
+        return preview;
+      }
+      const length = value.match(/^(-?(?:\d+(?:\.\d+)?|\.\d+))(px|rem|em|ch|ex|cm|mm|q|in|pt|pc)?$/i);
+      const numeric = Number(length?.[1]);
+      const supported = length && Number.isFinite(numeric) && (length[2] || numeric === 0) && Math.abs(numeric) <= 10000 && (!radius || numeric >= 0);
+      if (!supported) {
+        detail.textContent = /%|v[wh]|var\(|calc\(/i.test(value) ? 'Needs its original layout context' : 'No single length or duration to render';
+        return element('div', { class: 'wb-dimension-preview wb-dimension-unavailable', 'data-dimension-kind': 'unsupported' }, element('span', {}, 'Preview unavailable'));
+      }
+      const magnitude = `${Math.abs(numeric)}${length[2] || 'px'}`;
+      const glyph = element('span', { class: radius ? 'wb-radius-diagram' : 'wb-length-diagram', 'aria-hidden': 'true' });
+      if (radius) {
+        // A native CSS corner: exact radius, plus short straight edges to show zero/small radii.
+        glyph.style.width = `calc(${magnitude} + 16px)`;
+        glyph.style.height = `calc(${magnitude} + 16px)`;
+        glyph.style.borderTopLeftRadius = value;
+      } else glyph.style.width = magnitude;
+      const canvas = element('div', { class: 'wb-dimension-canvas' }, glyph);
+      const preview = element('div', { class: 'wb-dimension-preview', 'data-dimension-kind': radius ? 'radius' : 'length' }, canvas);
+      const context = numeric < 0 ? 'Negative value: magnitude shown' : /^(rem|em|ch|ex)$/i.test(length[2] || '') ? 'Relative to workbench typography' : '';
+      let initialized = false;
+      const observer = new ResizeObserver(() => {
+        if (!preview.isConnected || !preview.clientWidth) return;
+        const overflow = preview.scrollWidth > preview.clientWidth + 1 || preview.scrollHeight > preview.clientHeight + 1;
+        detail.textContent = [context, overflow ? 'Actual size: scroll to inspect' : ''].filter(Boolean).join(' · ');
+        if (overflow) {
+          preview.setAttribute('tabindex', '0'); preview.setAttribute('role', 'region');
+          preview.setAttribute('aria-label', `${row.name}, ${value}, actual-size preview. Scroll to inspect.`);
+          // Start oversized corners at the visible top endpoint instead of empty space inside the arc.
+          if (!initialized && radius) preview.scrollLeft = preview.scrollWidth;
+          initialized = true;
+        } else { preview.removeAttribute('tabindex'); preview.removeAttribute('role'); preview.removeAttribute('aria-label'); }
+      });
+      observer.observe(preview); observer.observe(canvas); previewCleanup.push(() => observer.disconnect());
+      return preview;
+    };
+
     const card = row => {
       const group = groupFor(row), value = String(row.value), evidence = studyTokens.get(row.name);
       const label = element('code', { class: 'wb-token-name', title: row.name }, group === 'color' ? row.name.replace(/^colors?\./, '') : row.name);
@@ -124,8 +191,7 @@ export function mountWorkbench(container, options = {}) {
         if (CSS.supports('color', value)) swatch.style.backgroundColor = value;
         preview = element('div', { class: 'wb-color-preview', 'aria-hidden': 'true' }, swatch);
       } else if (group === 'dimensions') {
-        const radius = /(?:^|\.)(?:radius|radii|rounded)(?:\.|$)|borderradius/i.test(row.name);
-        preview = element('div', { class: 'wb-dimension-preview', 'aria-hidden': 'true' }, element('span', { class: radius ? 'wb-radius-diagram' : 'wb-length-diagram' }));
+        preview = dimensionPreview(row, metadata);
       } else if (group === 'fonts') {
         preview = element('div', { class: 'wb-font-preview' }, element('span', { class: 'wb-font-monogram', 'aria-hidden': 'true' }, 'Aa'), element('p', {}, 'The quick brown fox jumps over the lazy dog.'), element('span', { class: 'wb-font-characters' }, '0123456789 · Aa Bb Cc'));
         if (CSS.supports('font-family', value)) preview.style.fontFamily = value;
@@ -133,6 +199,7 @@ export function mountWorkbench(container, options = {}) {
       return element('li', { class: `wb-token-card wb-token-${group}`, 'data-token-name': row.name, 'data-source-path': evidence?.sourcePath, 'data-source-line': evidence?.evidence?.line }, preview, metadata);
     };
     const paint = () => {
+      clearPreviews();
       const query = tokenFilter.toLowerCase();
       const filtered = rows.filter(row => `${row.name} ${row.value} ${row.type === 'color' ? hexLabel(row.value) : ''}`.toLowerCase().includes(query));
       sections.replaceChildren();
@@ -141,7 +208,7 @@ export function mountWorkbench(container, options = {}) {
         if (!tokens.length) continue;
         const heading = element('h3', {}, title);
         const group = element('section', { class: `wb-foundation-group wb-foundation-${id}`, 'aria-label': title }, heading);
-        if (id === 'dimensions') group.append(note('Diagrams are not to scale.'));
+        if (id === 'dimensions') group.append(note('Rendered at actual CSS size. Oversized samples scroll.'));
         if (id === 'fonts') group.append(note('Uses fonts available on this device. Missing families fall back.'));
         group.append(element('ul', { class: 'wb-token-grid' }, ...tokens.map(card)));
         sections.append(group);

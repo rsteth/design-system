@@ -64,7 +64,7 @@ try {
     await page.goto(base + '/apps/studio/?section=foundations&collection=' + id + (id.startsWith('reference-') ? '&library=references' : ''));
     await page.getByRole('heading', { name: 'Color', exact: true }).waitFor();
     assert.equal(await page.getByRole('heading', { name: 'Color', exact: true }).count(), 1);
-    if (id === 'reads') { assert.equal(await page.locator('.wb-radius-diagram').count(), 4); assert.equal(await page.locator('.wb-length-diagram').count(), 2); }
+    if (id === 'reads') { assert.equal(await page.locator('.wb-radius-diagram').count(), 4); assert.equal(await page.locator('.wb-length-diagram').count(), 1); assert.equal(await page.locator('.wb-motion-preview').count(), 1); }
     if (id === 'bandit') {
       assert.equal(await page.locator('.wb-font-preview').count(), 3);
       assert.match(await page.locator('.wb-font-preview').nth(1).evaluate(n => getComputedStyle(n).fontFamily), /Space Grotesk/);
