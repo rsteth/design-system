@@ -47,11 +47,11 @@ try {
       fixtures:[{id:'button',title:'Test fixture',section:'components',url:base+'/__fixture'}]
     }]});
   },base);
-  assert.equal(await page.locator('tbody tr').count(),3);
-  assert.equal(await page.locator('td img, td b').count(),0);
+  assert.equal(await page.locator('.wb-token-card').count(),3);
+  assert.equal(await page.locator('.wb-token-card img, .wb-token-card b').count(),0);
   await page.getByRole('searchbox').fill('space');
-  assert.equal(await page.locator('tbody tr').count(),1);
-  assert.equal(await page.locator('tbody').innerText().then(text=>text.includes('space.small')),true);
+  assert.equal(await page.locator('.wb-token-card').count(),1);
+  assert.equal(await page.locator('.wb-foundation-sections').innerText().then(text=>text.includes('space.small')),true);
   await page.getByRole('searchbox').fill('');
   await page.getByRole('button',{name:'Components',exact:true}).click();
   await page.getByText('Theme adapter confirmed: light.',{exact:true}).waitFor();
@@ -69,7 +69,7 @@ try {
   assert.equal(await page.locator('iframe').count(),0);
   await page.getByRole('heading',{name:'Source & provenance'}).waitFor();
   await page.getByRole('button',{name:'Foundations',exact:true}).click();
-  assert.equal(await page.locator('tbody tr').count(),1);
+  assert.equal(await page.locator('.wb-token-card').count(),1);
   await page.getByLabel('Theme',{exact:true}).selectOption('light');
   await page.screenshot({path:fileURLToPath(new URL('./artifacts/tokens-desktop.png',import.meta.url)),fullPage:true});
   await page.setViewportSize({width:390,height:844});

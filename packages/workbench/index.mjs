@@ -97,25 +97,63 @@ export function mountWorkbench(container, options = {}) {
     const rows = tokenRows(collection.tokensData, theme);
     const studyTokens = new Map((collection.studyData?.tokens ?? []).map(token => [token.path, token]));
     const panel = element('div', { class: `wb-panel${collection.kind === 'reference' ? ' wb-reference-foundations' : ''}` });
-    const table = element('table', { class: 'wb-tokens' });
-    const tbody = element('tbody');
-    const paint = () => {
-      const filtered = rows.filter(row => `${row.name} ${row.value}`.toLowerCase().includes(tokenFilter.toLowerCase()));
-      tbody.replaceChildren(...filtered.map(row => {
+    const sections = element('div', { class: 'wb-foundation-sections' });
+    const status = element('p', { class: 'wb-sr-only', role: 'status', 'aria-live': 'polite' });
+    // Preserve authored token values. This label only expands supported sRGB notation.
+    const hexLabel = value => {
+      const hex = String(value).match(/^#([a-f0-9]{3,4}|[a-f0-9]{6}|[a-f0-9]{8})$/i);
+      if (hex) return '#' + (hex[1].length < 5 ? [...hex[1]].map(char => char + char).join('') : hex[1]).toUpperCase();
+      const rgb = String(value).match(/^rgba?\(\s*(\d+(?:\.\d+)?)\s*,\s*(\d+(?:\.\d+)?)\s*,\s*(\d+(?:\.\d+)?)(?:\s*,\s*(0?\.\d+|[01]))?\s*\)$/i);
+      if (rgb && rgb.slice(1, 4).every(channel => Number(channel) <= 255)) {
+        const channels = rgb.slice(1, 4).map(Number);
+        if (rgb[4] !== undefined && Number(rgb[4]) < 1) channels.push(Number(rgb[4]) * 255);
+        return '#' + channels.map(channel => Math.round(channel).toString(16).padStart(2, '0')).join('').toUpperCase();
+      }
+      return String(value);
+    };
+    const groupFor = row => row.type === 'color' ? 'color' : row.type === 'dimension' ? 'dimensions' : row.type === 'fontFamily' ? 'fonts' : 'other';
+    const card = row => {
+      const group = groupFor(row), value = String(row.value), evidence = studyTokens.get(row.name);
+      const label = element('code', { class: 'wb-token-name', title: row.name }, group === 'color' ? row.name.replace(/^colors?\./, '') : row.name);
+      const metadata = element('div', { class: 'wb-token-meta' }, label, element('code', { class: 'wb-token-value', title: value }, group === 'color' ? hexLabel(value) : value));
+      if (group === 'other') metadata.append(element('span', { class: 'wb-token-type' }, row.type ?? 'unknown'));
+      let preview;
+      if (group === 'color') {
         const swatch = element('span', { class: 'wb-swatch', 'aria-hidden': 'true' });
-        // Only valid CSS colors enter this one style property. No remote CSS or fonts are loaded.
-        if (row.type === 'color' && CSS.supports('color', String(row.value))) swatch.style.backgroundColor = String(row.value);
-        return element('tr', { 'data-source-path': studyTokens.get(row.name)?.sourcePath, 'data-source-line': studyTokens.get(row.name)?.evidence?.line }, element('td', {}, element('code', {}, row.name)), element('td', {}, row.type ?? 'unknown'), element('td', {}, swatch, element('code', {}, String(row.value))), element('td', {}, row.mode));
-      }));
-      if (!filtered.length) tbody.append(element('tr', {}, element('td', { colspan: 4 }, rows.length ? 'No matching tokens.' : 'No tokens in this collection.')));
+        // Setting one validated property cannot introduce remote CSS or markup.
+        if (CSS.supports('color', value)) swatch.style.backgroundColor = value;
+        preview = element('div', { class: 'wb-color-preview', 'aria-hidden': 'true' }, swatch);
+      } else if (group === 'dimensions') {
+        const radius = /(?:^|\.)(?:radius|radii|rounded)(?:\.|$)|borderradius/i.test(row.name);
+        preview = element('div', { class: 'wb-dimension-preview', 'aria-hidden': 'true' }, element('span', { class: radius ? 'wb-radius-diagram' : 'wb-length-diagram' }));
+      } else if (group === 'fonts') {
+        preview = element('div', { class: 'wb-font-preview' }, element('span', { class: 'wb-font-monogram', 'aria-hidden': 'true' }, 'Aa'), element('p', {}, 'The quick brown fox jumps over the lazy dog.'), element('span', { class: 'wb-font-characters' }, '0123456789 · Aa Bb Cc'));
+        if (CSS.supports('font-family', value)) preview.style.fontFamily = value;
+      }
+      return element('li', { class: `wb-token-card wb-token-${group}`, 'data-token-name': row.name, 'data-source-path': evidence?.sourcePath, 'data-source-line': evidence?.evidence?.line }, preview, metadata);
+    };
+    const paint = () => {
+      const query = tokenFilter.toLowerCase();
+      const filtered = rows.filter(row => `${row.name} ${row.value} ${row.type === 'color' ? hexLabel(row.value) : ''}`.toLowerCase().includes(query));
+      sections.replaceChildren();
+      for (const [id, title] of [['color', 'Color'], ['dimensions', 'Dimensions'], ['fonts', 'Fonts'], ['other', 'Other tokens']]) {
+        const tokens = filtered.filter(row => groupFor(row) === id);
+        if (!tokens.length) continue;
+        const heading = element('h3', {}, title);
+        const group = element('section', { class: `wb-foundation-group wb-foundation-${id}`, 'aria-label': title }, heading);
+        if (id === 'dimensions') group.append(note('Diagrams are not to scale.'));
+        if (id === 'fonts') group.append(note('Uses fonts available on this device. Missing families fall back.'));
+        group.append(element('ul', { class: 'wb-token-grid' }, ...tokens.map(card)));
+        sections.append(group);
+      }
+      status.textContent = `${filtered.length} ${filtered.length === 1 ? 'token' : 'tokens'} shown.`;
+      if (!filtered.length) sections.append(note(rows.length ? 'No matching tokens.' : 'No tokens in this collection.'));
     };
     if (collection.kind === 'reference' && collection.fixtures?.some(f => f.id.endsWith('-recipe-sheet'))) panel.append(element('div', { class: 'wb-panel-heading' }, note('Explore visual foundations and source-linked component interpretations.'), element('button', { type: 'button', onclick: () => { section = 'components'; fixtureID = collection.fixtures.find(f => f.id.endsWith('-recipe-sheet')).id; render(); } }, 'Open visual workbench')));
-    panel.append(element('div', { class: 'wb-panel-heading' }, element('h2', {}, 'Token inspector'), element('input', { type: 'search', placeholder: 'Filter tokens…', value: tokenFilter, 'aria-label': 'Filter tokens', oninput: event => { tokenFilter = event.target.value; paint(); } })));
-    table.append(element('thead', {}, element('tr', {}, ...['Token', 'Type', 'Value', 'Mode'].map(text => element('th', { scope: 'col' }, text)))), tbody);
-    paint(); panel.append(element('div', { class: 'wb-table-scroll' }, table));
+    panel.append(element('div', { class: 'wb-panel-heading' }, element('div', {}, element('h2', {}, 'Token inspector'), rows.length ? element('span', { class: 'wb-token-mode' }, `Mode: ${rows[0].mode}`) : null), element('input', { type: 'search', placeholder: 'Filter tokens…', value: tokenFilter, 'aria-label': 'Filter tokens', oninput: event => { tokenFilter = event.target.value; paint(); } })));
+    paint(); panel.append(status, sections);
     const aliases = Object.entries(collection.tokensData?.aliases ?? {});
     if (aliases.length) panel.append(element('details', {}, element('summary', {}, `Compatibility aliases (${aliases.length})`), element('pre', {}, aliases.map(([alias, token]) => `${alias} → ${token}`).join('\n'))));
-    panel.append(note('Preview colors belong to the selected collection. The dark workbench chrome stays independent.'));
     if (collection.kind === 'reference') panel.append(studyPanel(collection));
     return panel;
   }

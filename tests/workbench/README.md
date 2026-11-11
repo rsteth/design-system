@@ -27,3 +27,8 @@ Inventory coverage QA is synthetic and does not assert app completeness. `browse
 - Screenshots/results live in `artifacts/reference-sheets/`. They demonstrate local interpreted specimens only; they do not certify official fidelity, complete component behavior or universal accessibility.
 
 - `node tests/workbench/reference-evidence-browser.mjs` checks all 24 recovered declarations at responsive/390px widths (48 cases), exact local rendered heights/borders, nine supplementary input samples, static error/read-only/disabled states, keyboard focus and source-category labels. This tests the local workbench, not the actual brand sites.
+
+## Foundations visual sections
+
+- `node tests/workbench/foundations.browser.mjs` checks all 90 local collections and every stored token mode at 1440px, 390px and 320px (312 cases). It also checks grouped filtering, hex/alpha labels, quarter-circle radii, notched dimension lines, font-family assignment, inert hostile values, hidden provenance and empty states. Use `PLAYWRIGHT_MODULE` and `PLAYWRIGHT_CHANNEL` as above. Evidence is written under ignored `review/foundations/`.
+- Diagrams are schematic, not scaled measurements. Font tiles apply the declared family stack without downloading third-party font files; unavailable fonts use the browser fallback. Source tokens, app vendors and imported reference evidence stay unchanged.
