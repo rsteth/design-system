@@ -42,6 +42,13 @@
     ]
   },
   {
+    "id": "Jost font",
+    "license": "OFL-1.1",
+    "files": [
+      "previews/bandit/fonts/jost-OFL.txt"
+    ]
+  },
+  {
     "id": "react@19.2.3",
     "license": "MIT",
     "files": [

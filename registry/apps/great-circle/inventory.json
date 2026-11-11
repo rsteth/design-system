@@ -116,7 +116,7 @@
         "reopen"
       ],
       "coverage": "covered",
-      "notes": "Actual production components; deterministic offline fixture."
+      "notes": "Actual production components; deterministic offline fixture. Named search/coordinate states initialize through real controls on entry; Settings opens automatically on mobile and remains the production sidebar on desktop."
     },
     {
       "id": "coordinates",
@@ -135,7 +135,7 @@
         "valid apply"
       ],
       "coverage": "covered",
-      "notes": "Actual production components; deterministic offline fixture."
+      "notes": "Actual production components; deterministic offline fixture. Named search/coordinate states initialize through real controls on entry; Settings opens automatically on mobile and remains the production sidebar on desktop."
     },
     {
       "id": "map",
@@ -191,7 +191,7 @@
         "select"
       ],
       "coverage": "covered",
-      "notes": "Production search component and parser against offline Photon-shaped response. Interactive recipe submits a query; no live search provider call."
+      "notes": "Production search component and parser against offline Photon-shaped response. Interactive recipe submits a query; no live search provider call. Named search/coordinate states initialize through real controls on entry; Settings opens automatically on mobile and remains the production sidebar on desktop."
     },
     {
       "id": "planner",
@@ -394,6 +394,14 @@
       "command": "npm run build:lambda",
       "status": "passed",
       "scope": "Local Lambda ZIP build only; no upload or deploy."
+    },
+    {
+      "id": "primitive-themes",
+      "label": "Primitive themes through actual central iframe",
+      "command": "node tests/primitive-theme.browser.mjs",
+      "status": "passed",
+      "scope": "Number/radius/disabled fixtures: canonical adapter confirmation, wrong nonce/source rejection, computed light/dark root backgrounds, malformed requests and repeated navigation. No duplicated visible controls.",
+      "evidence": "review/workbench/primitive-theme.json"
     }
   ],
   "withheldRevisions": [

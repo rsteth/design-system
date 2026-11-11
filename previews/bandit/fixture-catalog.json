@@ -1,0 +1,523 @@
+[
+  {
+    "id": "landing",
+    "title": "Public landing",
+    "section": "screens",
+    "states": [
+      "default",
+      "waiting-list-unavailable",
+      "dialog-closed"
+    ]
+  },
+  {
+    "id": "overview",
+    "title": "Production overview",
+    "section": "screens",
+    "states": [
+      "sample-productions",
+      "planning",
+      "plan-approved"
+    ]
+  },
+  {
+    "id": "empty",
+    "title": "Empty production overview",
+    "section": "screens",
+    "states": [
+      "empty",
+      "read-only"
+    ]
+  },
+  {
+    "id": "controls",
+    "title": "Studio controls",
+    "section": "components",
+    "states": [
+      "default",
+      "disabled",
+      "focus",
+      "selected"
+    ]
+  },
+  {
+    "id": "status",
+    "title": "Studio feedback",
+    "section": "patterns",
+    "states": [
+      "empty",
+      "error",
+      "validation",
+      "approved"
+    ]
+  },
+  {
+    "id": "projects-populated",
+    "title": "Projects and series / populated",
+    "section": "screens",
+    "states": [
+      "populated",
+      "reset-on-reload",
+      "synthetic-only"
+    ]
+  },
+  {
+    "id": "projects-empty",
+    "title": "Projects and series / empty",
+    "section": "screens",
+    "states": [
+      "empty",
+      "reset-on-reload",
+      "synthetic-only"
+    ]
+  },
+  {
+    "id": "projects-viewer",
+    "title": "Projects and series / viewer",
+    "section": "screens",
+    "states": [
+      "viewer",
+      "reset-on-reload",
+      "synthetic-only"
+    ]
+  },
+  {
+    "id": "profiles-populated",
+    "title": "Content profiles / populated",
+    "section": "screens",
+    "states": [
+      "populated",
+      "reset-on-reload",
+      "synthetic-only"
+    ]
+  },
+  {
+    "id": "profiles-empty",
+    "title": "Content profiles / empty",
+    "section": "screens",
+    "states": [
+      "empty",
+      "reset-on-reload",
+      "synthetic-only"
+    ]
+  },
+  {
+    "id": "profiles-viewer",
+    "title": "Content profiles / viewer",
+    "section": "screens",
+    "states": [
+      "viewer",
+      "reset-on-reload",
+      "synthetic-only"
+    ]
+  },
+  {
+    "id": "library-populated",
+    "title": "Subject and media library / populated",
+    "section": "screens",
+    "states": [
+      "populated",
+      "reset-on-reload",
+      "synthetic-only"
+    ]
+  },
+  {
+    "id": "library-empty",
+    "title": "Subject and media library / empty",
+    "section": "screens",
+    "states": [
+      "empty",
+      "reset-on-reload",
+      "synthetic-only"
+    ]
+  },
+  {
+    "id": "library-viewer",
+    "title": "Subject and media library / viewer",
+    "section": "screens",
+    "states": [
+      "viewer",
+      "reset-on-reload",
+      "synthetic-only"
+    ]
+  },
+  {
+    "id": "project-editor",
+    "title": "Project editor",
+    "section": "patterns",
+    "states": [
+      "populated",
+      "reset-on-reload",
+      "synthetic-only"
+    ]
+  },
+  {
+    "id": "series-editor",
+    "title": "Series editor",
+    "section": "patterns",
+    "states": [
+      "populated",
+      "reset-on-reload",
+      "synthetic-only"
+    ]
+  },
+  {
+    "id": "project-new",
+    "title": "New project form",
+    "section": "patterns",
+    "states": [
+      "populated",
+      "reset-on-reload",
+      "synthetic-only"
+    ]
+  },
+  {
+    "id": "profile-editor",
+    "title": "Draft profile editor",
+    "section": "patterns",
+    "states": [
+      "populated",
+      "reset-on-reload",
+      "synthetic-only"
+    ]
+  },
+  {
+    "id": "profile-published",
+    "title": "Published immutable profile",
+    "section": "patterns",
+    "states": [
+      "populated",
+      "reset-on-reload",
+      "synthetic-only"
+    ]
+  },
+  {
+    "id": "profile-import",
+    "title": "Profile import",
+    "section": "patterns",
+    "states": [
+      "populated",
+      "reset-on-reload",
+      "synthetic-only"
+    ]
+  },
+  {
+    "id": "subject-editor",
+    "title": "Subject editor",
+    "section": "patterns",
+    "states": [
+      "populated",
+      "reset-on-reload",
+      "synthetic-only"
+    ]
+  },
+  {
+    "id": "reference-editor",
+    "title": "Reference set editor",
+    "section": "patterns",
+    "states": [
+      "populated",
+      "reset-on-reload",
+      "synthetic-only"
+    ]
+  },
+  {
+    "id": "production-new-profile",
+    "title": "New production / profile",
+    "section": "screens",
+    "states": [
+      "profile",
+      "reset-on-reload",
+      "synthetic-only"
+    ]
+  },
+  {
+    "id": "production-new-brief",
+    "title": "New production / brief",
+    "section": "screens",
+    "states": [
+      "brief",
+      "reset-on-reload",
+      "synthetic-only"
+    ]
+  },
+  {
+    "id": "production-new-plan",
+    "title": "New production / plan",
+    "section": "screens",
+    "states": [
+      "plan",
+      "reset-on-reload",
+      "synthetic-only"
+    ]
+  },
+  {
+    "id": "production-new-viewer",
+    "title": "New production / viewer",
+    "section": "screens",
+    "states": [
+      "viewer",
+      "reset-on-reload",
+      "synthetic-only"
+    ]
+  },
+  {
+    "id": "board-populated",
+    "title": "Production board / populated",
+    "section": "screens",
+    "states": [
+      "populated",
+      "reset-on-reload",
+      "synthetic-only"
+    ]
+  },
+  {
+    "id": "board-empty",
+    "title": "Production board / empty",
+    "section": "screens",
+    "states": [
+      "empty",
+      "reset-on-reload",
+      "synthetic-only"
+    ]
+  },
+  {
+    "id": "board-approved",
+    "title": "Production board / approved",
+    "section": "screens",
+    "states": [
+      "approved",
+      "reset-on-reload",
+      "synthetic-only"
+    ]
+  },
+  {
+    "id": "board-archived",
+    "title": "Production board / archived",
+    "section": "screens",
+    "states": [
+      "archived",
+      "reset-on-reload",
+      "synthetic-only"
+    ]
+  },
+  {
+    "id": "board-error",
+    "title": "Production board / error",
+    "section": "screens",
+    "states": [
+      "error",
+      "reset-on-reload",
+      "synthetic-only"
+    ]
+  },
+  {
+    "id": "board-loading",
+    "title": "Production board / loading",
+    "section": "screens",
+    "states": [
+      "loading",
+      "reset-on-reload",
+      "synthetic-only"
+    ]
+  },
+  {
+    "id": "board-viewer",
+    "title": "Production board / viewer",
+    "section": "screens",
+    "states": [
+      "viewer",
+      "reset-on-reload",
+      "synthetic-only"
+    ]
+  },
+  {
+    "id": "shot-editor",
+    "title": "Shot editor and revision history",
+    "section": "patterns",
+    "states": [
+      "populated",
+      "reset-on-reload",
+      "synthetic-only"
+    ]
+  },
+  {
+    "id": "shot-new",
+    "title": "New shot and dependencies",
+    "section": "patterns",
+    "states": [
+      "empty",
+      "reset-on-reload",
+      "synthetic-only"
+    ]
+  },
+  {
+    "id": "review-populated",
+    "title": "Review room / populated",
+    "section": "screens",
+    "states": [
+      "populated",
+      "reset-on-reload",
+      "synthetic-only"
+    ]
+  },
+  {
+    "id": "review-empty",
+    "title": "Review room / empty",
+    "section": "screens",
+    "states": [
+      "empty",
+      "reset-on-reload",
+      "synthetic-only"
+    ]
+  },
+  {
+    "id": "review-unapproved",
+    "title": "Review room / unapproved",
+    "section": "screens",
+    "states": [
+      "unapproved",
+      "reset-on-reload",
+      "synthetic-only"
+    ]
+  },
+  {
+    "id": "review-error",
+    "title": "Review room / error",
+    "section": "screens",
+    "states": [
+      "error",
+      "reset-on-reload",
+      "synthetic-only"
+    ]
+  },
+  {
+    "id": "review-loading",
+    "title": "Review room / loading",
+    "section": "screens",
+    "states": [
+      "loading",
+      "reset-on-reload",
+      "synthetic-only"
+    ]
+  },
+  {
+    "id": "review-viewer",
+    "title": "Review room / viewer",
+    "section": "screens",
+    "states": [
+      "viewer",
+      "reset-on-reload",
+      "synthetic-only"
+    ]
+  },
+  {
+    "id": "asset-ready",
+    "title": "Media preview / ready",
+    "section": "components",
+    "states": [
+      "ready",
+      "reset-on-reload",
+      "synthetic-only"
+    ]
+  },
+  {
+    "id": "asset-expired",
+    "title": "Media preview / expired",
+    "section": "components",
+    "states": [
+      "expired",
+      "reset-on-reload",
+      "synthetic-only"
+    ]
+  },
+  {
+    "id": "asset-loading",
+    "title": "Media preview / loading",
+    "section": "components",
+    "states": [
+      "loading",
+      "reset-on-reload",
+      "synthetic-only"
+    ]
+  },
+  {
+    "id": "error-notice",
+    "title": "Production error notice",
+    "section": "components",
+    "states": [
+      "default",
+      "reset-on-reload",
+      "synthetic-only"
+    ]
+  },
+  {
+    "id": "appearance",
+    "title": "Appearance control",
+    "section": "components",
+    "states": [
+      "default",
+      "reset-on-reload",
+      "synthetic-only"
+    ]
+  },
+  {
+    "id": "memory-populated",
+    "title": "Creative Memory / populated",
+    "section": "patterns",
+    "states": [
+      "populated",
+      "reset-on-reload",
+      "synthetic-only"
+    ]
+  },
+  {
+    "id": "memory-empty",
+    "title": "Creative Memory / empty",
+    "section": "patterns",
+    "states": [
+      "empty",
+      "reset-on-reload",
+      "synthetic-only"
+    ]
+  },
+  {
+    "id": "memory-error",
+    "title": "Creative Memory / error",
+    "section": "patterns",
+    "states": [
+      "error",
+      "reset-on-reload",
+      "synthetic-only"
+    ]
+  },
+  {
+    "id": "memory-viewer",
+    "title": "Creative Memory / viewer",
+    "section": "patterns",
+    "states": [
+      "viewer",
+      "reset-on-reload",
+      "synthetic-only"
+    ]
+  },
+  {
+    "id": "advanced-controls",
+    "title": "Shot reference and event controls",
+    "section": "patterns",
+    "states": [
+      "advanced",
+      "reset-on-reload",
+      "synthetic-only"
+    ]
+  },
+  {
+    "id": "advanced-review",
+    "title": "Candidate comparison and advisory review",
+    "section": "patterns",
+    "states": [
+      "populated",
+      "reset-on-reload",
+      "synthetic-only"
+    ]
+  }
+]

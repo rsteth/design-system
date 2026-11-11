@@ -437,13 +437,12 @@
   "registrySnapshot": {
     "authority": "App-owned design collection, tokens and optional inventory",
     "baseRevision": null,
-    "inventorySha256": "91a34524eef5c34082100433ffadaee7730e4d0b1d75c44bc758d977ef6f5fda",
+    "inventorySha256": "a5fa3f7e36d78c16d1ee802a7e3ad0064b54ed8ba42ce28e257229504499fca4",
     "tokenSha256": "1ff86a3f92bbe4b58a500ced27c54481c432965066b89d19ce06b23f5a291910",
-    "integrationStatus": "unpublished-local-feature-commit",
+    "integrationStatus": "unpublished-local-snapshot",
     "integrationRevision": null,
     "withheldRevisions": [
-      "baseRevision",
-      "integrationRevision"
+      "baseRevision"
     ]
   },
   "publicRelease": {

@@ -56,6 +56,27 @@
    }
    if(id==='museum-video-error') {video.pause();video.dispatchEvent(new Event('error'));}
   }
+  if(id.startsWith('manifolds-')&&!id.endsWith('-no-js')&&!id.endsWith('-no-canvas')) {
+   const press=(panel,text)=>{const b=[...document.querySelectorAll('#panel-'+panel+' button')].find(b=>b.textContent===text);if(!b)throw new Error('Missing production control: '+text);b.click();};
+   if(id==='manifolds-free-adjusted')change('#joint-0','10','input');
+   if(id==='manifolds-grasp-unreachable')press(1,'Try unreachable target');
+   if(id==='manifolds-grasp-released')press(1,'Release grasp');
+   if(id==='manifolds-cost-joint-limit')change('#cost-field','jointLimit');
+   if(id==='manifolds-cost-clearance')change('#cost-field','clearanceCost');
+   if(id==='manifolds-cost-invalid') {
+    const {FIXTURES}=await import(origin+'/learning-machines/manifolds/fixtures.mjs');
+    const grid=FIXTURES.landscape,index=grid.cells.findIndex(c=>!c.valid);
+    if(index<0)throw new Error('Pinned fixture has no invalid grid cell');
+    change('#goal-y',String(index%grid.width),'input');change('#goal-z',String(Math.floor(index/grid.width)),'input');
+   }
+   if(id==='manifolds-skill-pca')change('#skill-mode','pca');
+   if(id==='manifolds-skill-held-out')press(3,'Inspect held-out demonstration');
+   if(id==='manifolds-skill-outside')press(3,'Outside the skill dataset');
+   if(id==='manifolds-threads-edge')click('[data-view="edge"]');
+   if(id==='manifolds-threads-above')click('[data-view="above"]');
+   // Real view interpolation lasts 600ms; readiness means its final pose is visible.
+   if(id.startsWith('manifolds-threads-'))await new Promise(r=>setTimeout(r,650));
+  }
   if(location.hash)document.getElementById(location.hash.slice(1))?.scrollIntoView();
   document.documentElement.dataset.fixtureReady=id;
   document.documentElement.dataset.workbenchReady='true';

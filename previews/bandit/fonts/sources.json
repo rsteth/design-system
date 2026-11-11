@@ -28,6 +28,16 @@
       "font_weight": "400",
       "sha256": "fb4a81a2d0a893e5c38c394a7e716a1cef0b24610a0af49c96f6d529bd66bf2b",
       "bytes": 16520
+    },
+    {
+      "family": "Jost",
+      "file": "jost-latin.woff2",
+      "source": "https://fonts.gstatic.com/s/jost/v20/92zatBhPNqw73oTd4jQmfxI.woff2",
+      "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/jost/OFL.txt",
+      "font_weight": "300 700",
+      "sha256": "235d8f8964bfdf105fc0c3e4c77b5e70f31bee1dad611d59318b5f2a5cb64d90",
+      "bytes": 26588,
+      "retrieved": "2026-11-09"
     }
   ]
 }

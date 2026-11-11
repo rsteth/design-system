@@ -537,6 +537,132 @@
       ],
       "coverage": "partial",
       "notes": "Actual production animation module runs on the portfolio. Browser-page screenshots do not capture tab-chrome favicon animation; animation appearance has not been separately pixel-compared."
+    },
+    {
+      "id": "manifolds-study",
+      "title": "Manifolds and motion",
+      "kind": "screen",
+      "source": [
+        "learning-machines/manifolds/index.html",
+        "learning-machines/manifolds/page.mjs",
+        "learning-machines/manifolds/manifolds.css"
+      ],
+      "fixtures": [
+        "manifolds-study-default",
+        "manifolds-study-no-js",
+        "manifolds-study-no-canvas"
+      ],
+      "states": [
+        "default",
+        "no-js",
+        "no-canvas"
+      ],
+      "coverage": "partial",
+      "notes": "Committed site source revision-not-publicly-verified. Synthetic pinned teaching data only. Fitted coordinates are not a learned policy or physical safety guarantee. Full page is retained; anchors reveal actual panels without copied markup. No-canvas fallback shows static diagrams, but the production skill-thread ResizeObserver throws on its null context; known source limitation, not a zero-error state."
+    },
+    {
+      "id": "manifolds-free",
+      "title": "Fourteen joint coordinates",
+      "kind": "component",
+      "source": [
+        "learning-machines/manifolds/page.mjs",
+        "learning-machines/manifolds/visuals.mjs"
+      ],
+      "fixtures": [
+        "manifolds-free-default",
+        "manifolds-free-adjusted"
+      ],
+      "states": [
+        "default",
+        "adjusted"
+      ],
+      "coverage": "covered",
+      "notes": "Committed site source revision-not-publicly-verified. Synthetic pinned teaching data only. Fitted coordinates are not a learned policy or physical safety guarantee. Full page is retained; anchors reveal actual panels without copied markup."
+    },
+    {
+      "id": "manifolds-grasp",
+      "title": "Rigid grasp and released joints",
+      "kind": "pattern",
+      "source": [
+        "learning-machines/manifolds/page.mjs",
+        "learning-machines/manifolds/mechanics.mjs"
+      ],
+      "fixtures": [
+        "manifolds-grasp-accepted",
+        "manifolds-grasp-unreachable",
+        "manifolds-grasp-released"
+      ],
+      "states": [
+        "accepted",
+        "unreachable",
+        "released"
+      ],
+      "coverage": "covered",
+      "notes": "Committed site source revision-not-publicly-verified. Synthetic pinned teaching data only. Fitted coordinates are not a learned policy or physical safety guarantee. Full page is retained; anchors reveal actual panels without copied markup."
+    },
+    {
+      "id": "manifolds-cost",
+      "title": "Cost fields and grid routes",
+      "kind": "pattern",
+      "source": [
+        "learning-machines/manifolds/page.mjs",
+        "learning-machines/manifolds/routes.mjs"
+      ],
+      "fixtures": [
+        "manifolds-cost-torque",
+        "manifolds-cost-joint-limit",
+        "manifolds-cost-clearance",
+        "manifolds-cost-invalid"
+      ],
+      "states": [
+        "torque",
+        "joint-limit",
+        "clearance",
+        "invalid"
+      ],
+      "coverage": "covered",
+      "notes": "Committed site source revision-not-publicly-verified. Synthetic pinned teaching data only. Fitted coordinates are not a learned policy or physical safety guarantee. Full page is retained; anchors reveal actual panels without copied markup."
+    },
+    {
+      "id": "manifolds-skill",
+      "title": "Task coordinates and fitted skill",
+      "kind": "pattern",
+      "source": [
+        "learning-machines/manifolds/page.mjs",
+        "learning-machines/manifolds/threads.mjs"
+      ],
+      "fixtures": [
+        "manifolds-skill-task",
+        "manifolds-skill-pca",
+        "manifolds-skill-held-out",
+        "manifolds-skill-outside"
+      ],
+      "states": [
+        "task",
+        "pca",
+        "held-out",
+        "outside"
+      ],
+      "coverage": "covered",
+      "notes": "Committed site source revision-not-publicly-verified. Synthetic pinned teaching data only. Fitted coordinates are not a learned policy or physical safety guarantee. Full page is retained; anchors reveal actual panels without copied markup."
+    },
+    {
+      "id": "manifolds-threads",
+      "title": "Skill thread view controls",
+      "kind": "component",
+      "source": [
+        "learning-machines/manifolds/threads.mjs"
+      ],
+      "fixtures": [
+        "manifolds-threads-edge",
+        "manifolds-threads-above"
+      ],
+      "states": [
+        "edge",
+        "above"
+      ],
+      "coverage": "covered",
+      "notes": "Committed site source revision-not-publicly-verified. Synthetic pinned teaching data only. Fitted coordinates are not a learned policy or physical safety guarantee. Full page is retained; anchors reveal actual panels without copied markup."
     }
   ],
   "checks": [
@@ -587,6 +713,14 @@
       "status": "passed",
       "scope": "Original noscript copy and disabled controls for both studies and archive at both widths",
       "evidence": "design/evidence/nojs.json"
+    },
+    {
+      "id": "coverage-refresh",
+      "label": "Current committed-source refresh and Manifolds coverage",
+      "command": "npm run check && npm run build; node tests/manifolds-browser.cjs; npm run test:workbench; npm run test:nojs; npm run test:appearance; npm run test:interactions; npm run test:video",
+      "status": "passed",
+      "scope": "73 fixtures / 146 desktop-mobile runs: 144 zero-error, 2 documented no-canvas source limitations. Four-width Manifolds interactions, 8 true no-JS comparisons, 24 exact appearance comparisons. Current-source hashes verified.",
+      "evidence": "design/evidence/coverage-refresh.json"
     }
   ],
   "withheldRevisions": [

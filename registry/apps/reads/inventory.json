@@ -256,6 +256,699 @@
       "states": [],
       "coverage": "excluded",
       "notes": "No live identity, waitlist storage, provider calls, deployment or credentials are used by design fixtures."
+    },
+    {
+      "id": "reader-controls",
+      "title": "Reading controls",
+      "kind": "component",
+      "source": [
+        "public/index.html",
+        "public/style.css",
+        "public/app.js",
+        "design/coverage.mjs",
+        "design/fixtures.mjs",
+        "design/fixture-entry.mjs"
+      ],
+      "fixtures": [
+        "reader-controls"
+      ],
+      "states": [
+        "filled text",
+        "pace",
+        "voice selection",
+        "preflight"
+      ],
+      "coverage": "covered",
+      "notes": "Real production rendering. Pending states freeze synthetic requests until reload. Mutations affect memory only; no credentials or provider acceptance."
+    },
+    {
+      "id": "reader-empty",
+      "title": "Empty reader controls",
+      "kind": "component",
+      "source": [
+        "public/index.html",
+        "public/style.css",
+        "public/app.js",
+        "design/coverage.mjs",
+        "design/fixtures.mjs",
+        "design/fixture-entry.mjs"
+      ],
+      "fixtures": [
+        "reader-empty"
+      ],
+      "states": [
+        "empty",
+        "disabled generate"
+      ],
+      "coverage": "covered",
+      "notes": "Real production rendering. Pending states freeze synthetic requests until reload. Mutations affect memory only; no credentials or provider acceptance."
+    },
+    {
+      "id": "reader-long",
+      "title": "Long reader content",
+      "kind": "component",
+      "source": [
+        "public/index.html",
+        "public/style.css",
+        "public/app.js",
+        "design/coverage.mjs",
+        "design/fixtures.mjs",
+        "design/fixture-entry.mjs"
+      ],
+      "fixtures": [
+        "reader-long"
+      ],
+      "states": [
+        "long text",
+        "character count"
+      ],
+      "coverage": "covered",
+      "notes": "Real production rendering. Pending states freeze synthetic requests until reload. Mutations affect memory only; no credentials or provider acceptance."
+    },
+    {
+      "id": "reader-preflight-pending",
+      "title": "Estimate pending",
+      "kind": "component",
+      "source": [
+        "public/index.html",
+        "public/style.css",
+        "public/app.js",
+        "design/coverage.mjs",
+        "design/fixtures.mjs",
+        "design/fixture-entry.mjs"
+      ],
+      "fixtures": [
+        "reader-preflight-pending"
+      ],
+      "states": [
+        "checking estimate",
+        "disabled generate"
+      ],
+      "coverage": "covered",
+      "notes": "Real production rendering. Pending states freeze synthetic requests until reload. Mutations affect memory only; no credentials or provider acceptance."
+    },
+    {
+      "id": "reader-preflight-error",
+      "title": "Estimate unavailable",
+      "kind": "component",
+      "source": [
+        "public/index.html",
+        "public/style.css",
+        "public/app.js",
+        "design/coverage.mjs",
+        "design/fixtures.mjs",
+        "design/fixture-entry.mjs"
+      ],
+      "fixtures": [
+        "reader-preflight-error"
+      ],
+      "states": [
+        "estimate error",
+        "disabled generate"
+      ],
+      "coverage": "covered",
+      "notes": "Real production rendering. Pending states freeze synthetic requests until reload. Mutations affect memory only; no credentials or provider acceptance."
+    },
+    {
+      "id": "hosted-allowance",
+      "title": "Hosted allowance and consent",
+      "kind": "pattern",
+      "source": [
+        "public/index.html",
+        "public/style.css",
+        "public/app.js",
+        "design/coverage.mjs",
+        "design/fixtures.mjs",
+        "design/fixture-entry.mjs"
+      ],
+      "fixtures": [
+        "hosted-allowance"
+      ],
+      "states": [
+        "remaining allowance",
+        "consent reset"
+      ],
+      "coverage": "covered",
+      "notes": "Real production rendering. Pending states freeze synthetic requests until reload. Mutations affect memory only; no credentials or provider acceptance."
+    },
+    {
+      "id": "job-queued",
+      "title": "Queued listen card",
+      "kind": "component",
+      "source": [
+        "public/index.html",
+        "public/style.css",
+        "public/app.js",
+        "design/coverage.mjs",
+        "design/fixtures.mjs",
+        "design/fixture-entry.mjs"
+      ],
+      "fixtures": [
+        "job-queued"
+      ],
+      "states": [
+        "queued",
+        "cancel"
+      ],
+      "coverage": "covered",
+      "notes": "Real production rendering. Pending states freeze synthetic requests until reload. Mutations affect memory only; no credentials or provider acceptance."
+    },
+    {
+      "id": "job-running",
+      "title": "Running listen card",
+      "kind": "component",
+      "source": [
+        "public/index.html",
+        "public/style.css",
+        "public/app.js",
+        "design/coverage.mjs",
+        "design/fixtures.mjs",
+        "design/fixture-entry.mjs"
+      ],
+      "fixtures": [
+        "job-running"
+      ],
+      "states": [
+        "running",
+        "cancel"
+      ],
+      "coverage": "covered",
+      "notes": "Real production rendering. Pending states freeze synthetic requests until reload. Mutations affect memory only; no credentials or provider acceptance."
+    },
+    {
+      "id": "job-completed",
+      "title": "Completed listen card",
+      "kind": "component",
+      "source": [
+        "public/index.html",
+        "public/style.css",
+        "public/app.js",
+        "design/coverage.mjs",
+        "design/fixtures.mjs",
+        "design/fixture-entry.mjs"
+      ],
+      "fixtures": [
+        "job-completed"
+      ],
+      "states": [
+        "completed",
+        "playback",
+        "metadata",
+        "delete"
+      ],
+      "coverage": "covered",
+      "notes": "Real production rendering. Pending states freeze synthetic requests until reload. Mutations affect memory only; no credentials or provider acceptance."
+    },
+    {
+      "id": "job-cancelled",
+      "title": "Cancelled listen card",
+      "kind": "component",
+      "source": [
+        "public/index.html",
+        "public/style.css",
+        "public/app.js",
+        "design/coverage.mjs",
+        "design/fixtures.mjs",
+        "design/fixture-entry.mjs"
+      ],
+      "fixtures": [
+        "job-cancelled"
+      ],
+      "states": [
+        "cancelled",
+        "retry"
+      ],
+      "coverage": "covered",
+      "notes": "Real production rendering. Pending states freeze synthetic requests until reload. Mutations affect memory only; no credentials or provider acceptance."
+    },
+    {
+      "id": "job-failed",
+      "title": "Failed listen card",
+      "kind": "component",
+      "source": [
+        "public/index.html",
+        "public/style.css",
+        "public/app.js",
+        "design/coverage.mjs",
+        "design/fixtures.mjs",
+        "design/fixture-entry.mjs"
+      ],
+      "fixtures": [
+        "job-failed"
+      ],
+      "states": [
+        "failed",
+        "retry"
+      ],
+      "coverage": "covered",
+      "notes": "Real production rendering. Pending states freeze synthetic requests until reload. Mutations affect memory only; no credentials or provider acceptance."
+    },
+    {
+      "id": "job-blocked",
+      "title": "Blocked retry card",
+      "kind": "component",
+      "source": [
+        "public/index.html",
+        "public/style.css",
+        "public/app.js",
+        "design/coverage.mjs",
+        "design/fixtures.mjs",
+        "design/fixture-entry.mjs"
+      ],
+      "fixtures": [
+        "job-blocked"
+      ],
+      "states": [
+        "failed",
+        "retry blocked"
+      ],
+      "coverage": "covered",
+      "notes": "Real production rendering. Pending states freeze synthetic requests until reload. Mutations affect memory only; no credentials or provider acceptance."
+    },
+    {
+      "id": "job-hosted",
+      "title": "Hosted narration card",
+      "kind": "component",
+      "source": [
+        "public/index.html",
+        "public/style.css",
+        "public/app.js",
+        "design/coverage.mjs",
+        "design/fixtures.mjs",
+        "design/fixture-entry.mjs"
+      ],
+      "fixtures": [
+        "job-hosted"
+      ],
+      "states": [
+        "completed",
+        "provider disclosure",
+        "reserved estimate"
+      ],
+      "coverage": "covered",
+      "notes": "Real production rendering. Pending states freeze synthetic requests until reload. Mutations affect memory only; no credentials or provider acceptance."
+    },
+    {
+      "id": "studio-mixed",
+      "title": "Mixed saved listens",
+      "kind": "screen",
+      "source": [
+        "public/index.html",
+        "public/style.css",
+        "public/app.js",
+        "design/coverage.mjs",
+        "design/fixtures.mjs",
+        "design/fixture-entry.mjs"
+      ],
+      "fixtures": [
+        "studio-mixed"
+      ],
+      "states": [
+        "queued",
+        "running",
+        "completed",
+        "failed",
+        "cancelled"
+      ],
+      "coverage": "covered",
+      "notes": "Real production rendering. Pending states freeze synthetic requests until reload. Mutations affect memory only; no credentials or provider acceptance."
+    },
+    {
+      "id": "recording-form",
+      "title": "Recording form",
+      "kind": "component",
+      "source": [
+        "public/index.html",
+        "public/style.css",
+        "public/app.js",
+        "design/coverage.mjs",
+        "design/fixtures.mjs",
+        "design/fixture-entry.mjs"
+      ],
+      "fixtures": [
+        "recording-form"
+      ],
+      "states": [
+        "file selection",
+        "permissions",
+        "synthetic save"
+      ],
+      "coverage": "covered",
+      "notes": "Real production rendering. Pending states freeze synthetic requests until reload. Mutations affect memory only; no credentials or provider acceptance."
+    },
+    {
+      "id": "recording-error",
+      "title": "Recording validation error",
+      "kind": "pattern",
+      "source": [
+        "public/index.html",
+        "public/style.css",
+        "public/app.js",
+        "design/coverage.mjs",
+        "design/fixtures.mjs",
+        "design/fixture-entry.mjs"
+      ],
+      "fixtures": [
+        "recording-error"
+      ],
+      "states": [
+        "invalid recording",
+        "retry"
+      ],
+      "coverage": "covered",
+      "notes": "Real production rendering. Pending states freeze synthetic requests until reload. Mutations affect memory only; no credentials or provider acceptance."
+    },
+    {
+      "id": "recording-saving",
+      "title": "Recording save pending",
+      "kind": "pattern",
+      "source": [
+        "public/index.html",
+        "public/style.css",
+        "public/app.js",
+        "design/coverage.mjs",
+        "design/fixtures.mjs",
+        "design/fixture-entry.mjs"
+      ],
+      "fixtures": [
+        "recording-saving"
+      ],
+      "states": [
+        "saving",
+        "disabled save"
+      ],
+      "coverage": "covered",
+      "notes": "Real production rendering. Pending states freeze synthetic requests until reload. Mutations affect memory only; no credentials or provider acceptance."
+    },
+    {
+      "id": "voice-deleted",
+      "title": "Deleted original recording",
+      "kind": "component",
+      "source": [
+        "public/index.html",
+        "public/style.css",
+        "public/app.js",
+        "design/coverage.mjs",
+        "design/fixtures.mjs",
+        "design/fixture-entry.mjs"
+      ],
+      "fixtures": [
+        "voice-deleted"
+      ],
+      "states": [
+        "sample deleted",
+        "profile deletion"
+      ],
+      "coverage": "covered",
+      "notes": "Real production rendering. Pending states freeze synthetic requests until reload. Mutations affect memory only; no credentials or provider acceptance."
+    },
+    {
+      "id": "hosted-create",
+      "title": "Hosted voice creation consent",
+      "kind": "pattern",
+      "source": [
+        "public/index.html",
+        "public/style.css",
+        "public/app.js",
+        "design/coverage.mjs",
+        "design/fixtures.mjs",
+        "design/fixture-entry.mjs"
+      ],
+      "fixtures": [
+        "hosted-create"
+      ],
+      "states": [
+        "rights consent",
+        "single speaker",
+        "provider consent",
+        "synthetic creation"
+      ],
+      "coverage": "covered",
+      "notes": "Real production rendering. Pending states freeze synthetic requests until reload. Mutations affect memory only; no credentials or provider acceptance."
+    },
+    {
+      "id": "hosted-pending",
+      "title": "Hosted voice awaiting verification",
+      "kind": "component",
+      "source": [
+        "public/index.html",
+        "public/style.css",
+        "public/app.js",
+        "design/coverage.mjs",
+        "design/fixtures.mjs",
+        "design/fixture-entry.mjs"
+      ],
+      "fixtures": [
+        "hosted-pending"
+      ],
+      "states": [
+        "pending",
+        "verify",
+        "provider deletion"
+      ],
+      "coverage": "covered",
+      "notes": "Real production rendering. Pending states freeze synthetic requests until reload. Mutations affect memory only; no credentials or provider acceptance."
+    },
+    {
+      "id": "hosted-ready",
+      "title": "Hosted voice ready",
+      "kind": "component",
+      "source": [
+        "public/index.html",
+        "public/style.css",
+        "public/app.js",
+        "design/coverage.mjs",
+        "design/fixtures.mjs",
+        "design/fixture-entry.mjs"
+      ],
+      "fixtures": [
+        "hosted-ready"
+      ],
+      "states": [
+        "ready",
+        "narration allowance disabled"
+      ],
+      "coverage": "covered",
+      "notes": "Real production rendering. Pending states freeze synthetic requests until reload. Mutations affect memory only; no credentials or provider acceptance."
+    },
+    {
+      "id": "hosted-failed",
+      "title": "Hosted voice verification failed",
+      "kind": "component",
+      "source": [
+        "public/index.html",
+        "public/style.css",
+        "public/app.js",
+        "design/coverage.mjs",
+        "design/fixtures.mjs",
+        "design/fixture-entry.mjs"
+      ],
+      "fixtures": [
+        "hosted-failed"
+      ],
+      "states": [
+        "failed",
+        "verify"
+      ],
+      "coverage": "covered",
+      "notes": "Real production rendering. Pending states freeze synthetic requests until reload. Mutations affect memory only; no credentials or provider acceptance."
+    },
+    {
+      "id": "hosted-uncertain",
+      "title": "Uncertain voice creation",
+      "kind": "pattern",
+      "source": [
+        "public/index.html",
+        "public/style.css",
+        "public/app.js",
+        "design/coverage.mjs",
+        "design/fixtures.mjs",
+        "design/fixture-entry.mjs"
+      ],
+      "fixtures": [
+        "hosted-uncertain"
+      ],
+      "states": [
+        "needs review",
+        "no duplicate creation"
+      ],
+      "coverage": "covered",
+      "notes": "Real production rendering. Pending states freeze synthetic requests until reload. Mutations affect memory only; no credentials or provider acceptance."
+    },
+    {
+      "id": "account-unavailable",
+      "title": "Account loading failure",
+      "kind": "screen",
+      "source": [
+        "public/index.html",
+        "public/style.css",
+        "public/app.js",
+        "design/coverage.mjs",
+        "design/fixtures.mjs",
+        "design/fixture-entry.mjs"
+      ],
+      "fixtures": [
+        "account-unavailable"
+      ],
+      "states": [
+        "account error",
+        "retry"
+      ],
+      "coverage": "covered",
+      "notes": "Real production rendering. Pending states freeze synthetic requests until reload. Mutations affect memory only; no credentials or provider acceptance."
+    },
+    {
+      "id": "account-expired",
+      "title": "Expired session",
+      "kind": "screen",
+      "source": [
+        "public/index.html",
+        "public/style.css",
+        "public/app.js",
+        "design/coverage.mjs",
+        "design/fixtures.mjs",
+        "design/fixture-entry.mjs"
+      ],
+      "fixtures": [
+        "account-expired"
+      ],
+      "states": [
+        "expired session",
+        "studio locked"
+      ],
+      "coverage": "covered",
+      "notes": "Real production rendering. Pending states freeze synthetic requests until reload. Mutations affect memory only; no credentials or provider acceptance."
+    },
+    {
+      "id": "account-denied",
+      "title": "Login failure",
+      "kind": "screen",
+      "source": [
+        "public/index.html",
+        "public/style.css",
+        "public/app.js",
+        "design/coverage.mjs",
+        "design/fixtures.mjs",
+        "design/fixture-entry.mjs"
+      ],
+      "fixtures": [
+        "account-denied"
+      ],
+      "states": [
+        "login denied"
+      ],
+      "coverage": "covered",
+      "notes": "Real production rendering. Pending states freeze synthetic requests until reload. Mutations affect memory only; no credentials or provider acceptance."
+    },
+    {
+      "id": "studio-offline",
+      "title": "Studio connection lost",
+      "kind": "screen",
+      "source": [
+        "public/index.html",
+        "public/style.css",
+        "public/app.js",
+        "design/coverage.mjs",
+        "design/fixtures.mjs",
+        "design/fixture-entry.mjs"
+      ],
+      "fixtures": [
+        "studio-offline"
+      ],
+      "states": [
+        "connection lost"
+      ],
+      "coverage": "covered",
+      "notes": "Real production rendering. Pending states freeze synthetic requests until reload. Mutations affect memory only; no credentials or provider acceptance."
+    },
+    {
+      "id": "waitlist-unavailable",
+      "title": "Unavailable waiting list",
+      "kind": "pattern",
+      "source": [
+        "public/index.html",
+        "public/style.css",
+        "public/waitlist-client.js",
+        "design/coverage.mjs",
+        "design/fixtures.mjs",
+        "design/fixture-entry.mjs"
+      ],
+      "fixtures": [
+        "waitlist-unavailable"
+      ],
+      "states": [
+        "unavailable",
+        "retry",
+        "close reopen"
+      ],
+      "coverage": "covered",
+      "notes": "Real production rendering. Pending states freeze synthetic requests until reload. Mutations affect memory only; no credentials or provider acceptance."
+    },
+    {
+      "id": "waitlist-preparing",
+      "title": "Waiting list preparing",
+      "kind": "pattern",
+      "source": [
+        "public/index.html",
+        "public/style.css",
+        "public/waitlist-client.js",
+        "design/coverage.mjs",
+        "design/fixtures.mjs",
+        "design/fixture-entry.mjs"
+      ],
+      "fixtures": [
+        "waitlist-preparing"
+      ],
+      "states": [
+        "preparing",
+        "cancel reopen"
+      ],
+      "coverage": "covered",
+      "notes": "Real production rendering. Pending states freeze synthetic requests until reload. Mutations affect memory only; no credentials or provider acceptance."
+    },
+    {
+      "id": "waitlist-saving",
+      "title": "Waiting list submission pending",
+      "kind": "pattern",
+      "source": [
+        "public/index.html",
+        "public/style.css",
+        "public/waitlist-client.js",
+        "design/coverage.mjs",
+        "design/fixtures.mjs",
+        "design/fixture-entry.mjs"
+      ],
+      "fixtures": [
+        "waitlist-saving"
+      ],
+      "states": [
+        "submit pending",
+        "close reopen"
+      ],
+      "coverage": "covered",
+      "notes": "Real production rendering. Pending states freeze synthetic requests until reload. Mutations affect memory only; no credentials or provider acceptance."
+    },
+    {
+      "id": "waitlist-error",
+      "title": "Waiting list submission failure",
+      "kind": "pattern",
+      "source": [
+        "public/index.html",
+        "public/style.css",
+        "public/waitlist-client.js",
+        "design/coverage.mjs",
+        "design/fixtures.mjs",
+        "design/fixture-entry.mjs"
+      ],
+      "fixtures": [
+        "waitlist-error"
+      ],
+      "states": [
+        "submission error",
+        "retry"
+      ],
+      "coverage": "covered",
+      "notes": "Real production rendering. Pending states freeze synthetic requests until reload. Mutations affect memory only; no credentials or provider acceptance."
     }
   ],
   "checks": [
@@ -263,28 +956,35 @@
       "id": "syntax",
       "label": "Application syntax/build",
       "command": "npm run build",
-      "scope": "Recorded November 7, 2026: existing JavaScript syntax gate; not TypeScript compilation.",
+      "scope": "November 11, 2026: existing JavaScript syntax/design gate; not TypeScript compilation.",
       "status": "passed"
     },
     {
       "id": "unit",
-      "label": "Full application tests",
+      "label": "Unscoped full test command",
       "command": "npm test",
-      "scope": "Recorded November 7, 2026: 184 tests passed, including four design fixture isolation tests.",
+      "scope": "November 11, 2026: 213 passed; one unrelated ignored deployment snapshot test fails on a missing copied script. Private snapshot untouched.",
+      "status": "failed"
+    },
+    {
+      "id": "tracked-unit",
+      "label": "Tracked application and launcher suites",
+      "command": "node --test test/*.test.js launcher/test/*.test.js",
+      "scope": "November 11, 2026: 213 passed, including six design isolation tests.",
       "status": "passed"
     },
     {
       "id": "design-browser",
       "label": "Design fixture browser coverage",
       "command": "npm run test:design-browser",
-      "scope": "Recorded November 7, 2026: eleven fixtures at 1440, 390 and 320 pixels, sandboxed frames, repeated/interrupted flows; synthetic only.",
+      "scope": "November 11, 2026: 42 fixtures across 1440, 390 and 320 pixels, 126 cases. Keyboard, consent, pending/error, close/reopen, reset, audio and sandboxed viewer checks; zero external requests/page errors.",
       "status": "passed"
     },
     {
       "id": "runtime-browser",
-      "label": "Existing runtime browser journey",
+      "label": "Existing synthetic runtime journey",
       "command": "npm run test:browser",
-      "scope": "Recorded November 7, 2026: three viewport journeys with synthetic OIDC, fake tones, recording upload, download, logout and offline state.",
+      "scope": "November 11, 2026: three viewport journeys with synthetic OIDC, fake tones, recording upload/download/logout/offline; zero external requests.",
       "status": "passed"
     }
   ],

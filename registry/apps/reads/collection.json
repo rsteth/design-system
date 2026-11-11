@@ -10,7 +10,7 @@
     "dark"
   ],
   "source": {
-    "repository": "https://github.com/rsteth/vocai",
+    "repository": "https://github.com/rsteth/reads",
     "revision": null,
     "path": ".",
     "withheldRevisions": [
@@ -156,13 +156,365 @@
         "no automatic retry"
       ],
       "description": "Production public/index.html, style.css and app.js with a synthetic transport. No account, disk data or provider access."
+    },
+    {
+      "id": "reader-controls",
+      "title": "Reading controls",
+      "section": "components",
+      "url": "../../../previews/reads/fixture/?fixture=reader-controls",
+      "states": [
+        "filled text",
+        "pace",
+        "voice selection",
+        "preflight"
+      ],
+      "description": "Actual production DOM, styles and event handlers with isolated synthetic transport. Region fixtures hide sibling regions only; no duplicate product markup. Reload resets all state."
+    },
+    {
+      "id": "reader-empty",
+      "title": "Empty reader controls",
+      "section": "components",
+      "url": "../../../previews/reads/fixture/?fixture=reader-empty",
+      "states": [
+        "empty",
+        "disabled generate"
+      ],
+      "description": "Actual production DOM, styles and event handlers with isolated synthetic transport. Region fixtures hide sibling regions only; no duplicate product markup. Reload resets all state."
+    },
+    {
+      "id": "reader-long",
+      "title": "Long reader content",
+      "section": "components",
+      "url": "../../../previews/reads/fixture/?fixture=reader-long",
+      "states": [
+        "long text",
+        "character count"
+      ],
+      "description": "Actual production DOM, styles and event handlers with isolated synthetic transport. Region fixtures hide sibling regions only; no duplicate product markup. Reload resets all state."
+    },
+    {
+      "id": "reader-preflight-pending",
+      "title": "Estimate pending",
+      "section": "components",
+      "url": "../../../previews/reads/fixture/?fixture=reader-preflight-pending",
+      "states": [
+        "checking estimate",
+        "disabled generate"
+      ],
+      "description": "Actual production DOM, styles and event handlers with isolated synthetic transport. Region fixtures hide sibling regions only; no duplicate product markup. Reload resets all state."
+    },
+    {
+      "id": "reader-preflight-error",
+      "title": "Estimate unavailable",
+      "section": "components",
+      "url": "../../../previews/reads/fixture/?fixture=reader-preflight-error",
+      "states": [
+        "estimate error",
+        "disabled generate"
+      ],
+      "description": "Actual production DOM, styles and event handlers with isolated synthetic transport. Region fixtures hide sibling regions only; no duplicate product markup. Reload resets all state."
+    },
+    {
+      "id": "hosted-allowance",
+      "title": "Hosted allowance and consent",
+      "section": "patterns",
+      "url": "../../../previews/reads/fixture/?fixture=hosted-allowance",
+      "states": [
+        "remaining allowance",
+        "consent reset"
+      ],
+      "description": "Actual production DOM, styles and event handlers with isolated synthetic transport. Region fixtures hide sibling regions only; no duplicate product markup. Reload resets all state."
+    },
+    {
+      "id": "job-queued",
+      "title": "Queued listen card",
+      "section": "components",
+      "url": "../../../previews/reads/fixture/?fixture=job-queued",
+      "states": [
+        "queued",
+        "cancel"
+      ],
+      "description": "Actual production DOM, styles and event handlers with isolated synthetic transport. Region fixtures hide sibling regions only; no duplicate product markup. Reload resets all state."
+    },
+    {
+      "id": "job-running",
+      "title": "Running listen card",
+      "section": "components",
+      "url": "../../../previews/reads/fixture/?fixture=job-running",
+      "states": [
+        "running",
+        "cancel"
+      ],
+      "description": "Actual production DOM, styles and event handlers with isolated synthetic transport. Region fixtures hide sibling regions only; no duplicate product markup. Reload resets all state."
+    },
+    {
+      "id": "job-completed",
+      "title": "Completed listen card",
+      "section": "components",
+      "url": "../../../previews/reads/fixture/?fixture=job-completed",
+      "states": [
+        "completed",
+        "playback",
+        "metadata",
+        "delete"
+      ],
+      "description": "Actual production DOM, styles and event handlers with isolated synthetic transport. Region fixtures hide sibling regions only; no duplicate product markup. Reload resets all state."
+    },
+    {
+      "id": "job-cancelled",
+      "title": "Cancelled listen card",
+      "section": "components",
+      "url": "../../../previews/reads/fixture/?fixture=job-cancelled",
+      "states": [
+        "cancelled",
+        "retry"
+      ],
+      "description": "Actual production DOM, styles and event handlers with isolated synthetic transport. Region fixtures hide sibling regions only; no duplicate product markup. Reload resets all state."
+    },
+    {
+      "id": "job-failed",
+      "title": "Failed listen card",
+      "section": "components",
+      "url": "../../../previews/reads/fixture/?fixture=job-failed",
+      "states": [
+        "failed",
+        "retry"
+      ],
+      "description": "Actual production DOM, styles and event handlers with isolated synthetic transport. Region fixtures hide sibling regions only; no duplicate product markup. Reload resets all state."
+    },
+    {
+      "id": "job-blocked",
+      "title": "Blocked retry card",
+      "section": "components",
+      "url": "../../../previews/reads/fixture/?fixture=job-blocked",
+      "states": [
+        "failed",
+        "retry blocked"
+      ],
+      "description": "Actual production DOM, styles and event handlers with isolated synthetic transport. Region fixtures hide sibling regions only; no duplicate product markup. Reload resets all state."
+    },
+    {
+      "id": "job-hosted",
+      "title": "Hosted narration card",
+      "section": "components",
+      "url": "../../../previews/reads/fixture/?fixture=job-hosted",
+      "states": [
+        "completed",
+        "provider disclosure",
+        "reserved estimate"
+      ],
+      "description": "Actual production DOM, styles and event handlers with isolated synthetic transport. Region fixtures hide sibling regions only; no duplicate product markup. Reload resets all state."
+    },
+    {
+      "id": "studio-mixed",
+      "title": "Mixed saved listens",
+      "section": "screens",
+      "url": "../../../previews/reads/fixture/?fixture=studio-mixed",
+      "states": [
+        "queued",
+        "running",
+        "completed",
+        "failed",
+        "cancelled"
+      ],
+      "description": "Actual production DOM, styles and event handlers with isolated synthetic transport. Region fixtures hide sibling regions only; no duplicate product markup. Reload resets all state."
+    },
+    {
+      "id": "recording-form",
+      "title": "Recording form",
+      "section": "components",
+      "url": "../../../previews/reads/fixture/?fixture=recording-form",
+      "states": [
+        "file selection",
+        "permissions",
+        "synthetic save"
+      ],
+      "description": "Actual production DOM, styles and event handlers with isolated synthetic transport. Region fixtures hide sibling regions only; no duplicate product markup. Reload resets all state."
+    },
+    {
+      "id": "recording-error",
+      "title": "Recording validation error",
+      "section": "patterns",
+      "url": "../../../previews/reads/fixture/?fixture=recording-error",
+      "states": [
+        "invalid recording",
+        "retry"
+      ],
+      "description": "Actual production DOM, styles and event handlers with isolated synthetic transport. Region fixtures hide sibling regions only; no duplicate product markup. Reload resets all state."
+    },
+    {
+      "id": "recording-saving",
+      "title": "Recording save pending",
+      "section": "patterns",
+      "url": "../../../previews/reads/fixture/?fixture=recording-saving",
+      "states": [
+        "saving",
+        "disabled save"
+      ],
+      "description": "Actual production DOM, styles and event handlers with isolated synthetic transport. Region fixtures hide sibling regions only; no duplicate product markup. Reload resets all state."
+    },
+    {
+      "id": "voice-deleted",
+      "title": "Deleted original recording",
+      "section": "components",
+      "url": "../../../previews/reads/fixture/?fixture=voice-deleted",
+      "states": [
+        "sample deleted",
+        "profile deletion"
+      ],
+      "description": "Actual production DOM, styles and event handlers with isolated synthetic transport. Region fixtures hide sibling regions only; no duplicate product markup. Reload resets all state."
+    },
+    {
+      "id": "hosted-create",
+      "title": "Hosted voice creation consent",
+      "section": "patterns",
+      "url": "../../../previews/reads/fixture/?fixture=hosted-create",
+      "states": [
+        "rights consent",
+        "single speaker",
+        "provider consent",
+        "synthetic creation"
+      ],
+      "description": "Actual production DOM, styles and event handlers with isolated synthetic transport. Region fixtures hide sibling regions only; no duplicate product markup. Reload resets all state."
+    },
+    {
+      "id": "hosted-pending",
+      "title": "Hosted voice awaiting verification",
+      "section": "components",
+      "url": "../../../previews/reads/fixture/?fixture=hosted-pending",
+      "states": [
+        "pending",
+        "verify",
+        "provider deletion"
+      ],
+      "description": "Actual production DOM, styles and event handlers with isolated synthetic transport. Region fixtures hide sibling regions only; no duplicate product markup. Reload resets all state."
+    },
+    {
+      "id": "hosted-ready",
+      "title": "Hosted voice ready",
+      "section": "components",
+      "url": "../../../previews/reads/fixture/?fixture=hosted-ready",
+      "states": [
+        "ready",
+        "narration allowance disabled"
+      ],
+      "description": "Actual production DOM, styles and event handlers with isolated synthetic transport. Region fixtures hide sibling regions only; no duplicate product markup. Reload resets all state."
+    },
+    {
+      "id": "hosted-failed",
+      "title": "Hosted voice verification failed",
+      "section": "components",
+      "url": "../../../previews/reads/fixture/?fixture=hosted-failed",
+      "states": [
+        "failed",
+        "verify"
+      ],
+      "description": "Actual production DOM, styles and event handlers with isolated synthetic transport. Region fixtures hide sibling regions only; no duplicate product markup. Reload resets all state."
+    },
+    {
+      "id": "hosted-uncertain",
+      "title": "Uncertain voice creation",
+      "section": "patterns",
+      "url": "../../../previews/reads/fixture/?fixture=hosted-uncertain",
+      "states": [
+        "needs review",
+        "no duplicate creation"
+      ],
+      "description": "Actual production DOM, styles and event handlers with isolated synthetic transport. Region fixtures hide sibling regions only; no duplicate product markup. Reload resets all state."
+    },
+    {
+      "id": "account-unavailable",
+      "title": "Account loading failure",
+      "section": "screens",
+      "url": "../../../previews/reads/fixture/?fixture=account-unavailable",
+      "states": [
+        "account error",
+        "retry"
+      ],
+      "description": "Actual production DOM, styles and event handlers with isolated synthetic transport. Region fixtures hide sibling regions only; no duplicate product markup. Reload resets all state."
+    },
+    {
+      "id": "account-expired",
+      "title": "Expired session",
+      "section": "screens",
+      "url": "../../../previews/reads/fixture/?fixture=account-expired",
+      "states": [
+        "expired session",
+        "studio locked"
+      ],
+      "description": "Actual production DOM, styles and event handlers with isolated synthetic transport. Region fixtures hide sibling regions only; no duplicate product markup. Reload resets all state."
+    },
+    {
+      "id": "account-denied",
+      "title": "Login failure",
+      "section": "screens",
+      "url": "../../../previews/reads/fixture/?fixture=account-denied&auth=failed",
+      "states": [
+        "login denied"
+      ],
+      "description": "Actual production DOM, styles and event handlers with isolated synthetic transport. Region fixtures hide sibling regions only; no duplicate product markup. Reload resets all state."
+    },
+    {
+      "id": "studio-offline",
+      "title": "Studio connection lost",
+      "section": "screens",
+      "url": "../../../previews/reads/fixture/?fixture=studio-offline",
+      "states": [
+        "connection lost"
+      ],
+      "description": "Actual production DOM, styles and event handlers with isolated synthetic transport. Region fixtures hide sibling regions only; no duplicate product markup. Reload resets all state."
+    },
+    {
+      "id": "waitlist-unavailable",
+      "title": "Unavailable waiting list",
+      "section": "patterns",
+      "url": "../../../previews/reads/fixture/?fixture=waitlist-unavailable",
+      "states": [
+        "unavailable",
+        "retry",
+        "close reopen"
+      ],
+      "description": "Actual production DOM, styles and event handlers with isolated synthetic transport. Region fixtures hide sibling regions only; no duplicate product markup. Reload resets all state."
+    },
+    {
+      "id": "waitlist-preparing",
+      "title": "Waiting list preparing",
+      "section": "patterns",
+      "url": "../../../previews/reads/fixture/?fixture=waitlist-preparing",
+      "states": [
+        "preparing",
+        "cancel reopen"
+      ],
+      "description": "Actual production DOM, styles and event handlers with isolated synthetic transport. Region fixtures hide sibling regions only; no duplicate product markup. Reload resets all state."
+    },
+    {
+      "id": "waitlist-saving",
+      "title": "Waiting list submission pending",
+      "section": "patterns",
+      "url": "../../../previews/reads/fixture/?fixture=waitlist-saving",
+      "states": [
+        "submit pending",
+        "close reopen"
+      ],
+      "description": "Actual production DOM, styles and event handlers with isolated synthetic transport. Region fixtures hide sibling regions only; no duplicate product markup. Reload resets all state."
+    },
+    {
+      "id": "waitlist-error",
+      "title": "Waiting list submission failure",
+      "section": "patterns",
+      "url": "../../../previews/reads/fixture/?fixture=waitlist-error",
+      "states": [
+        "submission error",
+        "retry"
+      ],
+      "description": "Actual production DOM, styles and event handlers with isolated synthetic transport. Region fixtures hide sibling regions only; no duplicate product markup. Reload resets all state."
     }
   ],
   "inventory": "inventory.json",
   "registrySnapshot": {
     "authority": "App-owned design collection, tokens and optional inventory",
     "baseRevision": null,
-    "inventorySha256": "b642a959f5008ff38982e940d715504e253cd806cda10ef90719fd6406677200",
+    "inventorySha256": "8247277150411b183121c5b732cb42d3b60bc2e86f2fd5d68e518acd87098179",
     "tokenSha256": "e558c986a09eb8aeba82feaa30fda5fac8b0ab38aa8193d9a7a26d63f85819b3",
     "integrationStatus": "unpublished-local-snapshot",
     "integrationRevision": null,

@@ -54,7 +54,9 @@ export function validateCollection(input) {
   if (!['app','original','reference'].includes(input.kind)) errors.push('Invalid collection kind.');
   if (!['dom','react'].includes(input.renderer)) errors.push('Invalid renderer.');
   if (!Array.isArray(input.themes) || !input.themes.length || input.themes.some(theme => !idPattern.test(theme))) errors.push('Invalid themes.');
-  if (!record(input.source) || !/^https:\/\//.test(input.source.repository ?? '') || !(input.source.revision === null || /^[a-f0-9]{40}$/.test(input.source.revision ?? ''))) errors.push('Source requires HTTPS repository and full commit SHA (or null for unreleased work).');
+  const localSource=input.kind==='app'&&input.source?.visibility==='local-only'&&input.source?.repository===`local:${input.id}`;
+  if (!record(input.source) || (!/^https:\/\//.test(input.source.repository ?? '')&&!localSource) || !(input.source.revision === null || /^[a-f0-9]{40}$/.test(input.source.revision ?? ''))) errors.push('Source requires an HTTPS repository or exact local:<id> with local-only visibility, plus a full commit SHA or null.');
+  if(input.source?.visibility!==undefined&&!['local-only','public'].includes(input.source.visibility))errors.push('Invalid source visibility.');
   if (!['author-owned','independent-analysis','adapted'].includes(input.provenance?.status) || !Array.isArray(input.provenance?.sources)) errors.push('Explicit provenance required.');
   if (!input.license?.spdx || !input.license?.note) errors.push('License declaration and note required.');
   if (!Array.isArray(input.fixtures)) errors.push('fixtures must be an array.');
@@ -83,7 +85,10 @@ export function validateInventory(input, collection) {
   if (input.schemaVersion !== 1) errors.push('Inventory schemaVersion must be 1.');
   if (!idPattern.test(input.application ?? '')) errors.push('Invalid inventory application.');
   if (collection && input.application !== collection.id) errors.push('Inventory application must match collection id.');
-  if (!(/^[a-f0-9]{40}$/.test(input.reviewedRevision ?? '') || (input.reviewedRevision === null && Array.isArray(input.withheldRevisions) && input.withheldRevisions.includes('reviewedRevision')))) errors.push('Inventory reviewedRevision must be a full commit SHA, or explicitly withheld in a public snapshot.');
+  const snapshot=input.sourceSnapshot;
+  const validSnapshot=record(snapshot)&&snapshot.algorithm==='sha256'&&Array.isArray(snapshot.files)&&snapshot.files.length>0&&snapshot.files.every(file=>record(file)&&isLocalPath(file.path)&&/^[a-f0-9]{64}$/.test(file.sha256??''))&&new Set(snapshot.files.map(file=>file.path)).size===snapshot.files.length;
+  if(snapshot!==undefined&&!validSnapshot)errors.push('Invalid immutable sourceSnapshot files.');
+  if (!(/^[a-f0-9]{40}$/.test(input.reviewedRevision ?? '') || (input.reviewedRevision === null && ((Array.isArray(input.withheldRevisions) && input.withheldRevisions.includes('reviewedRevision'))||validSnapshot)))) errors.push('Inventory requires a full commit SHA, explicitly withheld public revision, or hash-pinned unversioned sourceSnapshot.');
   const fixtures = new Set((collection?.fixtures ?? []).map(item => item.id));
   for (const group of ['items','checks']) {
     if (!Array.isArray(input[group])) { errors.push(`Inventory ${group} must be an array.`); continue; }

@@ -1,0 +1,400 @@
+[
+  {
+    "id": "landing",
+    "title": "Landing and waiting-list availability",
+    "section": "screens",
+    "states": [
+      "signed out",
+      "scroll header",
+      "disclosure"
+    ]
+  },
+  {
+    "id": "waitlist",
+    "title": "Waiting-list dialog",
+    "section": "patterns",
+    "states": [
+      "open",
+      "close",
+      "validation",
+      "synthetic submit"
+    ]
+  },
+  {
+    "id": "studio-empty",
+    "title": "Empty studio",
+    "section": "screens",
+    "states": [
+      "empty",
+      "example",
+      "preflight"
+    ]
+  },
+  {
+    "id": "studio-ready",
+    "title": "Saved listen",
+    "section": "screens",
+    "states": [
+      "completed",
+      "playback",
+      "download",
+      "delete"
+    ]
+  },
+  {
+    "id": "studio-progress",
+    "title": "Read in progress",
+    "section": "screens",
+    "states": [
+      "running",
+      "cancel",
+      "retry"
+    ]
+  },
+  {
+    "id": "studio-failed",
+    "title": "Recoverable failed read",
+    "section": "screens",
+    "states": [
+      "failed",
+      "retry"
+    ]
+  },
+  {
+    "id": "studio-draining",
+    "title": "Draining studio",
+    "section": "screens",
+    "states": [
+      "disabled admission",
+      "saved work"
+    ]
+  },
+  {
+    "id": "studio-disconnected",
+    "title": "Login-only studio",
+    "section": "screens",
+    "states": [
+      "provider disconnected",
+      "disabled controls"
+    ]
+  },
+  {
+    "id": "voice-sample",
+    "title": "Saved voice recording",
+    "section": "patterns",
+    "states": [
+      "sample saved",
+      "disclosure",
+      "form controls"
+    ]
+  },
+  {
+    "id": "hosted-consent",
+    "title": "Hosted narration consent",
+    "section": "patterns",
+    "states": [
+      "explicit consent",
+      "estimate",
+      "required consent"
+    ]
+  },
+  {
+    "id": "hosted-review",
+    "title": "Uncertain hosted outcome",
+    "section": "screens",
+    "states": [
+      "needs review",
+      "no automatic retry"
+    ]
+  },
+  {
+    "id": "reader-controls",
+    "title": "Reading controls",
+    "section": "components",
+    "states": [
+      "filled text",
+      "pace",
+      "voice selection",
+      "preflight"
+    ]
+  },
+  {
+    "id": "reader-empty",
+    "title": "Empty reader controls",
+    "section": "components",
+    "states": [
+      "empty",
+      "disabled generate"
+    ]
+  },
+  {
+    "id": "reader-long",
+    "title": "Long reader content",
+    "section": "components",
+    "states": [
+      "long text",
+      "character count"
+    ]
+  },
+  {
+    "id": "reader-preflight-pending",
+    "title": "Estimate pending",
+    "section": "components",
+    "states": [
+      "checking estimate",
+      "disabled generate"
+    ]
+  },
+  {
+    "id": "reader-preflight-error",
+    "title": "Estimate unavailable",
+    "section": "components",
+    "states": [
+      "estimate error",
+      "disabled generate"
+    ]
+  },
+  {
+    "id": "hosted-allowance",
+    "title": "Hosted allowance and consent",
+    "section": "patterns",
+    "states": [
+      "remaining allowance",
+      "consent reset"
+    ]
+  },
+  {
+    "id": "job-queued",
+    "title": "Queued listen card",
+    "section": "components",
+    "states": [
+      "queued",
+      "cancel"
+    ]
+  },
+  {
+    "id": "job-running",
+    "title": "Running listen card",
+    "section": "components",
+    "states": [
+      "running",
+      "cancel"
+    ]
+  },
+  {
+    "id": "job-completed",
+    "title": "Completed listen card",
+    "section": "components",
+    "states": [
+      "completed",
+      "playback",
+      "metadata",
+      "delete"
+    ]
+  },
+  {
+    "id": "job-cancelled",
+    "title": "Cancelled listen card",
+    "section": "components",
+    "states": [
+      "cancelled",
+      "retry"
+    ]
+  },
+  {
+    "id": "job-failed",
+    "title": "Failed listen card",
+    "section": "components",
+    "states": [
+      "failed",
+      "retry"
+    ]
+  },
+  {
+    "id": "job-blocked",
+    "title": "Blocked retry card",
+    "section": "components",
+    "states": [
+      "failed",
+      "retry blocked"
+    ]
+  },
+  {
+    "id": "job-hosted",
+    "title": "Hosted narration card",
+    "section": "components",
+    "states": [
+      "completed",
+      "provider disclosure",
+      "reserved estimate"
+    ]
+  },
+  {
+    "id": "studio-mixed",
+    "title": "Mixed saved listens",
+    "section": "screens",
+    "states": [
+      "queued",
+      "running",
+      "completed",
+      "failed",
+      "cancelled"
+    ]
+  },
+  {
+    "id": "recording-form",
+    "title": "Recording form",
+    "section": "components",
+    "states": [
+      "file selection",
+      "permissions",
+      "synthetic save"
+    ]
+  },
+  {
+    "id": "recording-error",
+    "title": "Recording validation error",
+    "section": "patterns",
+    "states": [
+      "invalid recording",
+      "retry"
+    ]
+  },
+  {
+    "id": "recording-saving",
+    "title": "Recording save pending",
+    "section": "patterns",
+    "states": [
+      "saving",
+      "disabled save"
+    ]
+  },
+  {
+    "id": "voice-deleted",
+    "title": "Deleted original recording",
+    "section": "components",
+    "states": [
+      "sample deleted",
+      "profile deletion"
+    ]
+  },
+  {
+    "id": "hosted-create",
+    "title": "Hosted voice creation consent",
+    "section": "patterns",
+    "states": [
+      "rights consent",
+      "single speaker",
+      "provider consent",
+      "synthetic creation"
+    ]
+  },
+  {
+    "id": "hosted-pending",
+    "title": "Hosted voice awaiting verification",
+    "section": "components",
+    "states": [
+      "pending",
+      "verify",
+      "provider deletion"
+    ]
+  },
+  {
+    "id": "hosted-ready",
+    "title": "Hosted voice ready",
+    "section": "components",
+    "states": [
+      "ready",
+      "narration allowance disabled"
+    ]
+  },
+  {
+    "id": "hosted-failed",
+    "title": "Hosted voice verification failed",
+    "section": "components",
+    "states": [
+      "failed",
+      "verify"
+    ]
+  },
+  {
+    "id": "hosted-uncertain",
+    "title": "Uncertain voice creation",
+    "section": "patterns",
+    "states": [
+      "needs review",
+      "no duplicate creation"
+    ]
+  },
+  {
+    "id": "account-unavailable",
+    "title": "Account loading failure",
+    "section": "screens",
+    "states": [
+      "account error",
+      "retry"
+    ]
+  },
+  {
+    "id": "account-expired",
+    "title": "Expired session",
+    "section": "screens",
+    "states": [
+      "expired session",
+      "studio locked"
+    ]
+  },
+  {
+    "id": "account-denied",
+    "title": "Login failure",
+    "section": "screens",
+    "states": [
+      "login denied"
+    ]
+  },
+  {
+    "id": "studio-offline",
+    "title": "Studio connection lost",
+    "section": "screens",
+    "states": [
+      "connection lost"
+    ]
+  },
+  {
+    "id": "waitlist-unavailable",
+    "title": "Unavailable waiting list",
+    "section": "patterns",
+    "states": [
+      "unavailable",
+      "retry",
+      "close reopen"
+    ]
+  },
+  {
+    "id": "waitlist-preparing",
+    "title": "Waiting list preparing",
+    "section": "patterns",
+    "states": [
+      "preparing",
+      "cancel reopen"
+    ]
+  },
+  {
+    "id": "waitlist-saving",
+    "title": "Waiting list submission pending",
+    "section": "patterns",
+    "states": [
+      "submit pending",
+      "close reopen"
+    ]
+  },
+  {
+    "id": "waitlist-error",
+    "title": "Waiting list submission failure",
+    "section": "patterns",
+    "states": [
+      "submission error",
+      "retry"
+    ]
+  }
+]

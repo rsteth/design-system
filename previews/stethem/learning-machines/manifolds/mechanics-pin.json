@@ -1,0 +1,17 @@
+{
+  "repository": "https://github.com/rsteth/learning-machines",
+  "commit": "revision-not-publicly-verified",
+  "files": {
+    "mechanics.mjs": {
+      "path": "experiments/manifolds/mechanics.mjs",
+      "sha256": "749142a983fe6ef1026e5a44406ea018a4aa7a9e40593df61b11e9fe5d5639b4"
+    },
+    "fixtures.mjs": {
+      "path": "experiments/manifolds/fixtures.mjs",
+      "sha256": "75576664f0cdffc32152a8be073e2446727857cf6b26244ce285832d064290e9"
+    }
+  },
+  "license": "MIT",
+  "licenseFile": "mechanics-LICENSE.txt",
+  "licenseSha256": "26926a11dbfe9ae174f49a3ded516f835f90467e021756905925e064bb2479e4"
+}

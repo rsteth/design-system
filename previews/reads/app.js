@@ -5,7 +5,7 @@ const active = new Set(['queued', 'running']);
 function node(tag, text, cls) { const n = document.createElement(tag); if (text) n.textContent = text; if (cls) n.className = cls; return n; }
 async function api(path, method = 'GET', body) {
   const r = await globalThis.__readsFixtureFetch(`/fixture-data/${path}`, { ...(path === 'session' ? {signal:AbortSignal.timeout(12000)} : {}), method, headers: { ...(body ? { 'Content-Type': 'application/json' } : {}), ...(method !== 'GET' ? { 'X-Vocai-CSRF': sessionInfo?.csrf || '' } : {}) }, body: body ? JSON.stringify(body) : undefined });
-  const value = await r.json(); if (!r.ok) { if (r.status === 401) lockStudio('Your session expired. Sign in again to continue.'); throw Error(value.error || 'Request failed.'); } return value;
+  const value = await r.json(); if (!r.ok) { if (r.status === 401) lockStudio('Your session expired. Log in again to continue.'); throw Error(value.error || 'Request failed.'); } return value;
 }
 function notify(e) { $('message').textContent = e?.message || ''; if (e) $('message').focus(); }
 function payload() { return { ...(state.mode === 'elevenlabs' ? {providerConsent:$('provider-consent').checked,approvalId:state.allowance?.approvalId,requestId:crypto.randomUUID()} : {}), text: $('text').value, voiceId: $('voice').value, delivery: { speed: Number($('speed').value) } }; }
@@ -13,14 +13,14 @@ async function estimate() {
   const version = ++estimateVersion; $('generate').disabled = true;
   $('count').textContent = `${$('text').value.length.toLocaleString()} characters`;
   $('speed-value').textContent = `${Number($('speed').value).toFixed(1)}x`;
-  if (state.mode === 'disconnected') { $('preflight').textContent = 'Login verification only. Voice generation and sample uploads are disconnected.'; return; }
-  if (!admissionOpen) { $('preflight').textContent = 'Studio is draining or recovering. Your words stay here; try again when it reopens.'; return; }
+  if (state.mode === 'disconnected') { $('preflight').textContent = 'Audio generation and recording uploads are temporarily unavailable.'; return; }
+  if (!admissionOpen) { $('preflight').textContent = 'Audio generation is temporarily unavailable. Your words stay here; try again shortly.'; return; }
   if (!$('text').value.trim()) { $('preflight').textContent = 'Add the words you would like read to see an estimate.'; return; }
   $('preflight').textContent = 'Checking these words...';
   try { const p = await api('preflight', 'POST', payload()); if (version !== estimateVersion) return; $('preflight').textContent = `${p.characters.toLocaleString()} characters | ${p.chunks} chunk${p.chunks === 1 ? '' : 's'} | ~${Math.max(1, Math.round(p.estimatedSeconds / 60))} min of speech with a hosted voice. ${p.cost}${p.allowance?.enabled ? ` Remaining: ${p.allowance.remainingUnits} units / ${p.allowance.remainingCalls} calls until ${new Date(p.allowance.expiresAt).toLocaleTimeString()}.` : ''}`; $('generate').disabled = !admissionOpen; }
   catch (e) { if (version === estimateVersion) $('preflight').textContent = e.message; }
 }
-function voiceNote() { const v = state.voices.find(v => v.id === $('voice').value); $('voice-note').textContent = v?.provider === 'elevenlabs' ? 'Approved ElevenLabs voice | provider verification is checked before every call. Text and audio are processed by ElevenLabs.' : v?.id === 'demo' ? 'Studio demo | deterministic tones, not spoken words.' : 'Private sample profile | demo tones only. Hosted verification pending; no voice has been cloned.'; }
+function voiceNote() { const v = state.voices.find(v => v.id === $('voice').value); $('voice-note').textContent = v?.provider === 'elevenlabs' ? 'ElevenLabs narration | Your text and audio are processed by ElevenLabs.' : v?.id === 'demo' ? 'Demo voice | Audio uses tones, not speech.' : 'Saved recording | Demo audio uses tones. This recording has not been used to create a reading voice.'; }
 function button(text, fn) { const b = node('button', text, 'text-button'); b.type = 'button'; b.onclick = async () => { b.disabled = true; try { await fn(); await refresh(); } catch(e) { notify(e); } finally { b.disabled = false; } }; return b; }
 function renderVoices() {
   const value = $('voice').value; $('voice').replaceChildren(...state.voices.filter(v=>v.provider === state.mode && (state.mode!=='elevenlabs'||(['available','ready'].includes(v.state)&&(v.source!=='sample'||state.voiceOperations?.narrationEnabled)))).map(v => { const o = node('option', `${v.name} | ${v.provider === 'elevenlabs' ? 'ElevenLabs narration' : v.id === 'demo' ? 'Demo tones' : 'Sample saved / demo'}`); o.value = v.id; return o; }));
@@ -67,12 +67,12 @@ function renderJobs() {
     if (active.has(j.state)) { const p = node('progress'); p.max = j.total; p.value = j.done; p.setAttribute('aria-label', `${j.done} of ${j.total} chunks`); card.append(p, node('p', `${j.done} of ${j.total} chunks saved`, 'hint progress-label')); }
     if (j.error) card.append(node('p', j.error, 'error'));
     const actions = node('div', '', 'actions');
-    if (j.state === 'completed') { const audio = node('audio'); audio.controls = true; audio.preload = 'none'; audio.src = "/design-system/previews/reads/assets/synthetic-tone.wav"; audio.setAttribute('aria-label', j.provider === 'elevenlabs' ? 'Generated narration' : 'Generated demo audio'); card.append(audio); const a = node('a', 'Download WAV'); a.href = "/design-system/previews/reads/assets/synthetic-tone.wav"; a.download = `reads-${j.provider === 'elevenlabs' ? 'narration' : 'demo'}-${j.id}.wav`; a.onclick = e => { if (!admissionOpen) { e.preventDefault(); notify(Error('Studio is draining. New downloads resume when it reopens.')); } }; actions.append(a); }
+    if (j.state === 'completed') { const audio = node('audio'); audio.controls = true; audio.preload = 'none'; audio.src = "/design-system/previews/reads/assets/synthetic-tone.wav"; audio.setAttribute('aria-label', j.provider === 'elevenlabs' ? 'Generated narration' : 'Generated demo audio'); card.append(audio); const a = node('a', 'Download WAV'); a.href = "/design-system/previews/reads/assets/synthetic-tone.wav"; a.download = `reads-${j.provider === 'elevenlabs' ? 'narration' : 'demo'}-${j.id}.wav`; a.onclick = e => { if (!admissionOpen) { e.preventDefault(); notify(Error('Downloads are temporarily unavailable. Try again shortly.')); } }; actions.append(a); }
     if (active.has(j.state)) actions.append(button('Cancel', () => api(`jobs/${j.id}/cancel`, 'POST')));
     if (['failed', 'cancelled'].includes(j.state) && !j.retryBlocked) actions.append(button('Retry this read', () => api(`jobs/${j.id}/retry`, 'POST')));
     actions.append(button('Delete', async () => { if (confirm(j.provider === 'elevenlabs' ? 'Delete this job, text and audio? Opaque provider-attempt and budget records remain to prevent repeat charges. Provider history is separate.' : 'Delete this job, text, saved chunks and audio?')) await api(`jobs/${j.id}`, 'DELETE'); }));
     const detail = node('details'), summary = node('summary', 'About this audio'); detail.append(summary, node('p', `Provider: ${j.provider} | Model: ${j.model} | Format: mono 24 kHz / 16-bit PCM WAV | Started: ${new Date(j.created).toLocaleString()} | Attempts: ${j.attempts}`, 'hint'), node('p', j.text, 'hint'));
-    if(j.provider === 'elevenlabs') detail.append(node('p', `Approval: ${j.approvalId} | Reserved estimate: $${(j.estimatedMicroUsd / 1000000).toFixed(5)} | Identical submissions reuse this job; uncertain calls never retry automatically.`, 'hint'));
+    if(j.provider === 'elevenlabs') detail.append(node('p', `Reference: ${j.approvalId} | Reserved estimate: $${(j.estimatedMicroUsd / 1000000).toFixed(5)} | Identical submissions reuse this job; uncertain calls never retry automatically.`, 'hint'));
     card.append(actions, detail);
     if (jobNodes.has(j.id)) { const old = jobNodes.get(j.id).el; const hadFocus = old.contains(document.activeElement); old.replaceWith(card); if (hadFocus) { card.tabIndex = -1; card.focus({ preventScroll: true }); } } else $('jobs').insertBefore(card, $('jobs').children[state.jobs.indexOf(j)] || null);
     jobNodes.set(j.id, { el: card, signature });
@@ -85,52 +85,52 @@ function configureProvider() {
   for (const control of document.querySelectorAll('#reader button, #reader input, #reader textarea, #reader select, #voice-form input, #voice-form button')) control.disabled=disconnected;
   if(disconnected) {
     $('provider-consent-label').hidden=true; $('preview').hidden=true;
-    $('provider-footer').textContent='Private studio | Voice provider disconnected';
-    $('generation-notice').textContent='Login verification only. Voice generation, sample uploads and access to saved audio are disconnected. No demo audio or provider calls.';
-    $('generate').textContent='Generation disconnected'; $('generate').disabled=true;
-    $('output-note').textContent='Voice provider not activated'; $('sample-note').textContent='Sample uploads are unavailable during login verification.';
+    $('provider-footer').textContent='Reads | Generation unavailable';
+    $('generation-notice').textContent='Audio generation, uploads and saved audio are temporarily unavailable.';
+    $('generate').textContent='Generation unavailable'; $('generate').disabled=true;
+    $('output-note').textContent='Audio generation is unavailable'; $('sample-note').textContent='Recording uploads are temporarily unavailable.';
     return;
   }
   const hosted=state.mode === 'elevenlabs';
   $('provider-consent-label').hidden=!hosted; $('provider-consent').required=hosted;
-  $('preview').hidden=hosted; $('save-voice').textContent=hosted?'Save recording privately':'Save recording for the demo';
-  $('provider-footer').textContent=hosted?'Private studio | Scoped ElevenLabs narration':'Private studio | Hosted generation disabled';
-  $('generation-notice').textContent=hosted ? 'Private narration pilot. Your exact text is sent to ElevenLabs using the approved voice and rate. Choosing Read this to me reserves a limited allowance. Cancellation may still be charged; uncertain requests stop for operator review.' : 'You\'re in the demo studio. Generation makes simple audio tones, not speech or a cloned voice. Audio and text stay on this Reads server. No paid calls.';
+  $('preview').hidden=hosted; $('save-voice').textContent=hosted?'Save recording':'Save recording';
+  $('provider-footer').textContent=hosted?'Reads | ElevenLabs narration':'Reads | Demo audio';
+  $('generation-notice').textContent=hosted ? 'Your text is sent to ElevenLabs to create audio. The estimate is reserved before generation. Cancelled requests may still be charged; a request with an uncertain outcome will pause further generation.' : 'Demo audio uses tones rather than speech. Your text and recordings stay in Reads; no paid provider call is made.';
   $('generate').textContent=hosted?'Read this to me':'Generate demo audio';
-  $('output-note').textContent=hosted?'One complete WAV | mono 24 kHz / 16-bit | approved usage only':'One complete WAV file | 24 kHz | Free local demo';
-  $('sample-note').textContent=hosted?'With their permission, save a recording of someone you love. Choose separately whether to send it to ElevenLabs to create a voice. Saving alone sends nothing to the provider. Provider verification remains required.':'With their permission, save a recording of someone you love. Demo profiles make tones, not speech; narration needs an activated provider.';
+  $('output-note').textContent=hosted?'One WAV file | mono 24 kHz / 16-bit':'One WAV file | Demo audio: tones, not speech';
+  $('sample-note').textContent=hosted?'Save a recording with the speaker’s permission. Saving keeps it in Reads; sending it to ElevenLabs requires a separate confirmation.':'Save a recording with the speaker’s permission. This demo uses tones, not the recorded voice.';
 }
 async function refresh() {
   const next = await api('state'); const changed = JSON.stringify(next.voices) !== JSON.stringify(state.voices) || JSON.stringify(next.voiceOperations)!==JSON.stringify(state.voiceOperations); const budgetChanged=JSON.stringify(next.allowance)!==JSON.stringify(state.allowance); state = next;
   const wasOpen = admissionOpen; admissionOpen = next.lifecycle?.ready === true && next.mode !== 'disconnected';
-  configureProvider(); if (changed) renderVoices(); renderJobs(); $('connection').textContent = state.mode === 'disconnected' ? 'Signed in. Voice provider is disconnected; login verification only.' : admissionOpen ? '' : 'Studio is preparing to sleep. Existing work can finish. New work and downloads resume when it reopens.';
+  configureProvider(); if (changed) renderVoices(); renderJobs(); $('connection').textContent = state.mode === 'disconnected' ? 'Audio services are temporarily unavailable.' : admissionOpen ? '' : 'Reads is temporarily unavailable for new requests and downloads. Existing work can finish.';
   $('preview').disabled = !admissionOpen; $('save-voice').disabled = !admissionOpen || savingVoice;
   for (const link of document.querySelectorAll('.job a')) link.setAttribute('aria-disabled',String(!admissionOpen));
   if (!admissionOpen) $('generate').disabled = true; else if (!wasOpen || budgetChanged || changed) await estimate();
 }
 function lockStudio(message) {
   document.body.classList.add('signed-out');
-  $('auth-status').classList.toggle('sr-only', !/denied|expired|ended|unavailable/i.test(message || ''));
+  $('auth-status').classList.toggle('sr-only', !/denied|expired|ended|unavailable|unable/i.test(message || ''));
   $('provider-consent').checked = false;
   admissionOpen = false; estimateVersion++; sessionInfo = null; state = { voices: [], jobs: [] }; jobNodes.clear(); shownProvider=undefined;
   $('studio').hidden = true; $('logout').hidden = true; $('auth-panel').hidden = false;
   $('header-login').href = authMode === 'local' ? '/' : "/design-system/previews/reads/fixture/?fixture=studio-empty";
   requestAnimationFrame(updateLandingHeader);
   void loadWaitlist();
-  $('login').hidden = false; $('login').href = authMode === 'local' ? '/' : "/design-system/previews/reads/fixture/?fixture=studio-empty"; $('login').textContent = authMode === 'local' ? 'Reopen local demo' : 'Sign in'; $('auth-status').textContent = authMode === 'local' ? 'Your local demo session ended. Reopen the demo to continue.' : message;
+  $('login').hidden = false; $('login').href = authMode === 'local' ? '/' : "/design-system/previews/reads/fixture/?fixture=studio-empty"; $('login').textContent = authMode === 'local' ? 'Open demo' : 'Log in'; $('auth-status').textContent = authMode === 'local' ? 'Your demo session ended. Open the demo to continue.' : message;
   $('jobs').replaceChildren(); $('voice-shelf').replaceChildren(); $('voice').replaceChildren();
   for (const audio of document.querySelectorAll('audio')) { audio.pause(); audio.removeAttribute('src'); audio.load(); }
 }
-async function poll() { if (!sessionInfo?.authenticated) return; try { await refresh(); } catch { $('connection').textContent = 'Studio connection lost. Sign in again if the server restarted. Your jobs are saved.'; } finally { if (sessionInfo?.authenticated) setTimeout(poll, 1000); } }
+async function poll() { if (!sessionInfo?.authenticated) return; try { await refresh(); } catch { $('connection').textContent = 'Connection lost. Your work is saved. Log in again if prompted.'; } finally { if (sessionInfo?.authenticated) setTimeout(poll, 1000); } }
 async function startSession() {
   try {
     sessionInfo = await api('session'); authMode = sessionInfo.auth;
-    if (!sessionInfo.authenticated) { lockStudio(new URLSearchParams(location.search).get('auth') === 'failed' ? 'Login was denied or could not be verified. Use an approved account, then try again.' : 'Sign in with your approved Google account.'); return; }
+    if (!sessionInfo.authenticated) { lockStudio(new URLSearchParams(location.search).get('auth') === 'failed' ? 'Unable to log in with this account. Try again or join the waiting list.' : 'Log in with Google.'); return; }
     document.body.classList.remove('signed-out');
     $('studio').hidden = false; $('auth-panel').hidden = true; $('logout').hidden = sessionInfo.auth === 'local';
-    $('auth-mode').textContent = sessionInfo.auth === 'local' ? 'LOCAL DEMO' : 'PRIVATE STUDIO';
+    $('auth-mode').textContent = sessionInfo.auth === 'local' ? 'DEMO' : 'STUDIO';
     await poll();
-  } catch { $('auth-status').classList.remove('sr-only'); $('auth-status').textContent = 'Private studio is offline or preparing. Retry in a moment; the waiting list remains available.'; const retryPath=location.pathname==='/studio'?'/studio':'/'; $('login').href=retryPath; $('login').textContent='Retry studio'; $('header-login').href=retryPath; void loadWaitlist(); }
+  } catch { $('auth-status').classList.remove('sr-only'); $('auth-status').textContent = 'Unable to load your account. Try again in a moment.'; const retryPath=location.pathname==='/studio'?'/studio':'/'; $('login').href=retryPath; $('login').textContent='Try again'; $('header-login').href=retryPath; void loadWaitlist(); }
 }
 $('logout').onclick = () => location.assign("/design-system/previews/reads/fixture/?fixture=landing");
 $('reader').onsubmit = async e => { e.preventDefault(); $('generate').disabled = true; notify(); try { await api('jobs', 'POST', payload()); await refresh(); $('jobs').scrollIntoView({ behavior: 'smooth', block: 'nearest' }); } catch(e) { notify(e); } finally { await estimate(); } };
@@ -138,7 +138,14 @@ for (const id of ['text', 'speed']) $(id).oninput = () => { $('provider-consent'
 $('voice').onchange = () => { $('provider-consent').checked=false; voiceNote(); estimate(); };
 $('example').onclick = () => { $('text').value = 'By evening, the garden had grown quiet. A light shone in the kitchen window, and the path home was still warm from the sun.\n\nInside, a book lay open on the table. There was time for a few more pages before the lamps went out.'; estimate(); $('text').focus(); };
 $('preview').onclick = async () => { try { const j = await api('jobs', 'POST', { text: 'This is a short demo preview.', voiceId: $('voice').value, delivery: { speed: Number($('speed').value) } }); await refresh(); $('voice-note').textContent = 'Demo preview queued in Your saved listens below. It produces tones, not speech.'; $('jobs').scrollIntoView({ behavior: 'smooth', block: 'nearest' }); } catch(e) { notify(e); } };
-$('sample').disabled = true;
-$('voice-form').onsubmit = event => { event.preventDefault(); $('voice-status').textContent = 'Recordings are unavailable in this synthetic preview. Nothing is uploaded.'; };
+$('sample').onchange = () => { if (objectUrl) URL.revokeObjectURL(objectUrl); const file = globalThis.__readsSyntheticRecording; $('sample-preview').hidden = !file; if (file) { objectUrl = URL.createObjectURL(file); $('sample-preview').src = objectUrl; } };
+$('voice-form').onsubmit = async e => {
+  e.preventDefault(); savingVoice = true; $('save-voice').disabled = true; $('voice-status').textContent = 'Checking recording and saving locally...';
+  try { const file = globalThis.__readsSyntheticRecording; if (!file || file.size > 12 * 1024 * 1024) throw Error('Choose a WAV file under 12 MB.');
+    const base64 = await new Promise((resolve, reject) => { const reader = new FileReader(); reader.onload = () => resolve(reader.result.split(',')[1]); reader.onerror = () => reject(Error('Could not read sample.')); reader.readAsDataURL(file); });
+    const voice = await api('voices', 'POST', { name: $('name').value, filename: file.name, mime: file.type || 'audio/wav', base64, permission: $('permission').checked, singleSpeaker: $('single').checked });
+    await refresh(); if(state.mode !== 'elevenlabs') $('voice').value = voice.id; voiceNote(); estimate(); $('voice-form').reset(); $('sample-preview').hidden = true; if (objectUrl) URL.revokeObjectURL(objectUrl); $('voice-status').textContent = state.mode === 'elevenlabs' ? 'Recording saved. Sending it to ElevenLabs requires a separate confirmation.' : 'Recording saved. Demo audio uses tones, not the recorded voice.';
+  } catch(e) { $('voice-status').textContent = e.message; } finally { savingVoice = false; $('save-voice').disabled = !admissionOpen; }
+};
 await startSession();
 $('sample').disabled = true;

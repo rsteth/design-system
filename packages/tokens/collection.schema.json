@@ -64,7 +64,8 @@
       "properties": {
         "repository": {
           "type": "string",
-          "format": "uri"
+          "format": "uri",
+          "description": "HTTPS repository, or exact local:<collection id> with local-only visibility for an application without a remote."
         },
         "revision": {
           "type": [
@@ -83,6 +84,12 @@
             "const": "revision"
           },
           "description": "Public source revision deliberately withheld; local provenance remains unchanged."
+        },
+        "visibility": {
+          "enum": [
+            "local-only",
+            "public"
+          ]
         }
       }
     },

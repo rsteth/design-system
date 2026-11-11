@@ -77,7 +77,7 @@ export function mountWorkbench(container, options = {}) {
   if (!container?.replaceChildren) throw new TypeError('A DOM container is required');
   let collections = options.collections ?? [];
   let skin = skinName(options.skin);
-  let selected = options.initialCollection ?? collections[0]?.id, section = SECTIONS.includes(options.initialSection) ? options.initialSection : 'foundations', theme = 'light', viewport = 'responsive', comparison = false, fixtureID;
+  let selected = options.initialCollection ?? collections[0]?.id, section = SECTIONS.includes(options.initialSection) ? options.initialSection : 'foundations', theme = 'light', viewport = 'responsive', comparison = false, fixtureID = options.initialFixture;
   let tokenFilter = '', collectionFilter = '', disposed = false;
   let cleanup = [];
   const clear = () => { cleanup.forEach(fn => fn()); cleanup = []; };
@@ -271,7 +271,7 @@ export function mountWorkbench(container, options = {}) {
     const data = element('dl', { class: 'wb-metadata' });
     for (const [name, value] of Object.entries({ Kind: collection.kind, Renderer: collection.renderer, ...(collection.source?.publicVersion ? {Version: collection.source.publicVersion} : {Revision: collection.source?.revision ?? (collection.source?.withheldRevisions?.includes('revision') ? 'Not publicly verified (withheld)' : undefined)}), Path: collection.source?.path, Provenance: collection.provenance?.status, ...(collection.publicRelease?.status ? {Preview: collection.publicRelease.status} : {}), License: collection.license?.spdx })) data.append(element('dt', {}, name), element('dd', {}, String(value ?? 'Not recorded')));
     return element('article', { class: 'wb-panel' }, element('h2', {}, 'Source & provenance'), note('The source app remains the authority for its UI. Reference collections must not imply authorship or redistribution rights.'), data,
-      collection.source?.repository ? sourceLink('Source repository ↗', collection.source.repository) : note('No source repository recorded.'),
+      collection.source?.visibility==='local-only' ? note('Local-only source: '+collection.id+'. No public repository or redistribution permission is implied.') : collection.source?.repository ? sourceLink('Source repository ↗', collection.source.repository) : note('No source repository recorded.'),
       note(collection.license?.note ?? 'No license note recorded.'), element('h3', {}, 'Reference sources'), ...(collection.provenance?.sources ?? []).map(source => typeof source === 'string' ? sourceLink(source, source) : sourceLink(source.title ?? source.url ?? 'Source', source.url)),
       ...(collection.kind === 'reference' ? [studyPanel(collection)] : []),
       element('details', {}, element('summary', {}, 'Manifest data'), element('pre', {}, JSON.stringify({ ...collection, tokensData: undefined }, null, 2))));
@@ -307,6 +307,7 @@ export function mountWorkbench(container, options = {}) {
     panel.append(note('Authored coverage and recorded evidence only. This view does not run checks or certify completeness, accessibility, visual fidelity, or live success.'));
     if (!inventory) { panel.append(note('No inventory recorded. Coverage is unknown.')); return panel; }
     const items = inventory.items ?? [];
+    if(inventory.sourceSnapshot)panel.append(note(`Unversioned source: ${inventory.sourceSnapshot.files.length} source files pinned by SHA-256. These are file identities, not a Git commit.`));
     panel.append(note(collection.source?.publicVersion ? `Preview version: ${collection.source.publicVersion}` : `Reviewed revision: ${inventory.reviewedRevision ?? (inventory.withheldRevisions?.includes('reviewedRevision') ? 'Not publicly verified (withheld)' : 'Not recorded')}`));
     panel.append(note(items.length ? `${items.length} recorded items · ${['covered','partial','excluded','blocked'].map(status => `${items.filter(item => item.coverage === status).length} ${status}`).join(' · ')}` : 'Empty inventory. Coverage is unknown, not complete.'));
     function table(headers, rows) {
@@ -335,14 +336,14 @@ export function mountWorkbench(container, options = {}) {
     const collectionPicker = element('div');
     function paintCollections() {
       const matches = collections.filter(item => `${item.title} ${item.id} ${item.summary ?? ''}`.toLowerCase().includes(collectionFilter.toLowerCase()));
-      const control = select('Collection', matches.length ? matches.map(item => [item.id, item.title]) : [['', options.searchCollections ? 'No matching studies' : 'No collections']], matches.some(item => item.id === selected) ? selected : '', value => { selected = value; fixtureID = undefined; tokenFilter = ''; options.onCollectionChange?.(value); render(); });
+      const control = select('Collection', matches.length ? matches.map(item => [item.id, item.title]) : [['', 'No matching '+(options.collectionNoun??'studies')]], matches.some(item => item.id === selected) ? selected : '', value => { selected = value; fixtureID = undefined; tokenFilter = ''; options.onCollectionChange?.(value); render(); });
       const picker = control.querySelector('select');
-      if (matches.length && !matches.some(item => item.id === selected)) picker.prepend(element('option', { value: '', selected: '', disabled: '' }, 'Choose a matching study'));
+      if (matches.length && !matches.some(item => item.id === selected)) picker.prepend(element('option', { value: '', selected: '', disabled: '' }, 'Choose a matching collection'));
       picker.disabled = !matches.length;
       collectionPicker.replaceChildren(control);
-      if (options.searchCollections) collectionPicker.append(note(`${matches.length} of ${collections.length} studies${matches.length ? '' : ' · No matching studies. Clear the search to try again.'}`));
+      if (options.searchCollections) collectionPicker.append(note(`${matches.length} of ${collections.length} ${options.collectionNoun??'studies'}${matches.length ? '' : ' · No matches. Clear the search to try again.'}`));
     }
-    if (options.searchCollections) sidebar.append(element('label', { class: 'wb-control' }, element('span', {}, 'Search reference studies'), element('input', { type: 'search', 'aria-label': 'Search reference studies', placeholder: 'Name or keyword…', value: collectionFilter, oninput: event => { collectionFilter = event.target.value; paintCollections(); } })));
+    if (options.searchCollections) sidebar.append(element('label', { class: 'wb-control' }, element('span', {}, options.searchLabel??'Search reference studies'), element('input', { type: 'search', 'aria-label': options.searchLabel??'Search reference studies', placeholder: 'Name or keyword…', value: collectionFilter, oninput: event => { collectionFilter = event.target.value; paintCollections(); } })));
     paintCollections(); sidebar.append(collectionPicker);
     sidebar.append(element('nav', { 'aria-label': 'Workbench sections' }, ...SECTIONS.map(item => {
       const unavailable = item === 'screens' && collection?.kind === 'reference' && !hasScreens;
