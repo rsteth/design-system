@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "createdAt": "2026-11-11T16:49:12.507Z",
+  "createdAt": "2026-11-11T19:46:52.056Z",
   "status": "approved-static-release-artifact",
   "licenseGaps": [],
   "focusEpub": "fixture-only",
@@ -4994,8 +4994,8 @@
     },
     {
       "path": "packages/workbench/index.mjs",
-      "bytes": 31371,
-      "sha256": "d7f7437a16c7e156babecdff5d11ee3b1a9797daaabbe20a6b2f7c2f9c164526"
+      "bytes": 36076,
+      "sha256": "dad50e27efb8ae93b9513a08ccd30c870142c39b846d672529447988ca5a9aff"
     },
     {
       "path": "packages/workbench/README.md",
@@ -5024,8 +5024,8 @@
     },
     {
       "path": "packages/workbench/style.css",
-      "bytes": 13527,
-      "sha256": "acd214d5fa1022f07e2a62862a5d784063e078979a2c4e1bd79c342838fa9fc3"
+      "bytes": 14317,
+      "sha256": "fd4582e452a9f1198a15b4e8837ef1c8262d29de722dece6370f1d9fcf68c030"
     },
     {
       "path": "packages/workbench/theme-adapter.d.mts",
