@@ -5,7 +5,7 @@
     "browser": "157.0.8103.51"
   },
   "schemaVersion": 1,
-  "createdAt": "2026-11-12T18:51:41.413Z",
+  "createdAt": "2026-11-12T20:12:43.979Z",
   "status": "local-candidate-not-published",
   "licenseGaps": [],
   "focusEpub": "fixture-only",
@@ -64,18 +64,18 @@
     },
     {
       "path": "LICENSING.md",
-      "bytes": 3091,
-      "sha256": "b6e1047eeded9d703880a041f94164b6a61ee3c0f5d75227667114df9239945a"
+      "bytes": 3540,
+      "sha256": "40d3cd1b957b7dbdf1052b81e08fea43536973948c2ff2611532af7d8b35579c"
     },
     {
       "path": "RELEASE-NOTES.html",
-      "bytes": 2300,
-      "sha256": "f749bce138c17d30537086ec408c57eed5512ca6caa4e73ce7665f0b078401fc"
+      "bytes": 2344,
+      "sha256": "bb391fa7d1c985551662d899ca9825e1598f44b872a5b913d1bdd32b20aa91e4"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
-      "bytes": 4812,
-      "sha256": "42ae575e660b7bb0d7c841ee263bfb18b3988c2f04d26c8e713ead6742a3960a"
+      "bytes": 5603,
+      "sha256": "b6a2dc8fc8fee6727985a3c442abe992654d587099cabacf17d37078aec0440c"
     },
     {
       "path": "_headers",
@@ -134,13 +134,58 @@
     },
     {
       "path": "apps/studio/public-sources.mjs",
-      "bytes": 2731,
-      "sha256": "14b8c0ed207e4169e1bd441b3e9bff5d82b0bccb425b513027018a8794f20dc3"
+      "bytes": 2870,
+      "sha256": "93e0cbdcf4d800f588a57c44f43f87401ed9dcf063969450428bfb0a825fda11"
     },
     {
       "path": "apps/studio/style.css",
       "bytes": 5251,
       "sha256": "1c847e6d5c0b2ae4f04b27c3b5a89dfde367a0e5095ae82a699344c67b6bcf20"
+    },
+    {
+      "path": "collections/authored-reference/nasa/HDS-LICENSE.md",
+      "bytes": 2774,
+      "sha256": "ac8ca67467b25216f8c136e4750b6a111d362ab9b51c18ee83a9b76a03e93c52"
+    },
+    {
+      "path": "collections/authored-reference/nasa/LICENSE",
+      "bytes": 1070,
+      "sha256": "8d3ab0d6a9f8f460ab5f30d1a5b0901881b0ce7ee8fa530e415fdfd70bf7dc02"
+    },
+    {
+      "path": "collections/authored-reference/nasa/collection.json",
+      "bytes": 2511,
+      "sha256": "24e7b62174ec0e1a356cc32826cd6b0084bf8c7cd1964cbd3d2daec3693305d1"
+    },
+    {
+      "path": "collections/authored-reference/nasa/index.html",
+      "bytes": 7980,
+      "sha256": "c77b93679c5eacd92215a56cc93512b75fc2aaa10b27c7bd1b29e524e987b408"
+    },
+    {
+      "path": "collections/authored-reference/nasa/study.css",
+      "bytes": 1973,
+      "sha256": "4e091ee7f1c575039d9d91efbc2f1512960c8b1434beb48b982378c8c20794d3"
+    },
+    {
+      "path": "collections/authored-reference/nasa/study.json",
+      "bytes": 21112,
+      "sha256": "965f9f7c0caec87121b27d93016dc83fd9195fb411abf04a7d22b4f1f6e2ee4f"
+    },
+    {
+      "path": "collections/authored-reference/nasa/study.mjs",
+      "bytes": 301,
+      "sha256": "0c06e4024d9b55903c167523375e654a2eaca5fd705b984bd488ebf561780882"
+    },
+    {
+      "path": "collections/authored-reference/nasa/tokens.css",
+      "bytes": 1745,
+      "sha256": "3eea94934b4efaa5435fd579bd608a4878309914f0e63a320547c24cbbf5f842"
+    },
+    {
+      "path": "collections/authored-reference/nasa/tokens.json",
+      "bytes": 11514,
+      "sha256": "5b6bcc457fb81d5edd53d9e0ec1c42cf3918ad7662189c284f19bc81d3180504"
     },
     {
       "path": "collections/material/lacouture-1890/READ-ME.txt",
@@ -3963,6 +4008,16 @@
       "sha256": "cb27f42b102f709963d752e3f97c8c187947af0960c5644e3bbc72f77bd30200"
     },
     {
+      "path": "collections/reference-evidence/nasa/HDS-LICENSE.md",
+      "bytes": 2774,
+      "sha256": "ac8ca67467b25216f8c136e4750b6a111d362ab9b51c18ee83a9b76a03e93c52"
+    },
+    {
+      "path": "collections/reference-evidence/nasa/hds-tokens.json",
+      "bytes": 68652,
+      "sha256": "8161e882b8766f48dd3651e11b2d75871f84c520a35742e0c2076ba8627514fd"
+    },
+    {
       "path": "collections/reference-sheets/1win/index.html",
       "bytes": 106469,
       "sha256": "ea1d40e913e53768c49741f0ab843aa62ad73941b15336d2818cd576075ea429"
@@ -4954,8 +5009,8 @@
     },
     {
       "path": "llms.txt",
-      "bytes": 6706,
-      "sha256": "dbf4f099ab93719528d3bcc8ffaeef4998f1cbabab5824f00cec605aa6c7dbbb"
+      "bytes": 6764,
+      "sha256": "bd8fadca559d413b8c9ac5ae8ac59b3285fe85dad2d2fb0e842dc29c67bc2265"
     },
     {
       "path": "packages/appearance/index.d.mts",
@@ -6698,6 +6753,11 @@
       "sha256": "550f1e8ce785620e473d31b7c7ac7dcfdfdb79e8c7f6d789f2f9017ddd3b3fa0"
     },
     {
+      "path": "registry/guides/reference-nasa/design-system.md",
+      "bytes": 4222,
+      "sha256": "825a20fba5be2bf364c018db65db40d8931f47d84f31785858b6d433ebb06ae0"
+    },
+    {
       "path": "registry/guides/reference-nerdwallet/design-system.md",
       "bytes": 8256,
       "sha256": "5ec325babec1ab338c2f67cb7cf4866b8a02c7c20c972b558d1f1cf1e6681f6e"
@@ -6934,8 +6994,8 @@
     },
     {
       "path": "registry/references.json",
-      "bytes": 4878,
-      "sha256": "3338e590d09c08be0b369288dada6fdf9f39e0654566a85f90531acf40c25819"
+      "bytes": 4940,
+      "sha256": "a684ae033d92409e45846d99cb39160963d199ea4f6c6a35b2c1c8aa960912c7"
     },
     {
       "path": "templates/blank/LICENSE",
