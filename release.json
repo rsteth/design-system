@@ -1,6 +1,11 @@
 {
+  "previewVerification": {
+    "status": "passed",
+    "cases": 376,
+    "browser": "157.0.8103.51"
+  },
   "schemaVersion": 1,
-  "createdAt": "2026-11-11T22:56:47.720Z",
+  "createdAt": "2026-11-12T18:51:41.413Z",
   "status": "local-candidate-not-published",
   "licenseGaps": [],
   "focusEpub": "fixture-only",
@@ -94,13 +99,13 @@
     },
     {
       "path": "apps/studio/index.html",
-      "bytes": 1900,
-      "sha256": "53fbc6e7373b4d70660e916d1e97855c1a4e6189a747b0baeac7cafd5008e003"
+      "bytes": 2233,
+      "sha256": "607c922b4506c25a9b93ef3332c28ccedc32f29b1dcee1a1ad9d31c214ea1858"
     },
     {
       "path": "apps/studio/main.mjs",
-      "bytes": 6147,
-      "sha256": "fe618585618a289b09c4ab00768ab88a2f9cc9d530f33d820ea290cafc7f4fc9"
+      "bytes": 6659,
+      "sha256": "9b1a55edbd7e43fbc0fb4defc4c1be81e36a106b4b8ead33ce943647790a283e"
     },
     {
       "path": "apps/studio/material-framing.mjs",
@@ -4878,6 +4883,11 @@
       "sha256": "6a6ad4b7d8c2d625549fe7daaee4f0b0525617d9c437870b32b12948e37caa42"
     },
     {
+      "path": "docs/process/capture-studio.md",
+      "bytes": 11042,
+      "sha256": "c02f34d41e026a7367afa74fceb6ac9ef3cee857e6da1f937accaa0ce008c51a"
+    },
+    {
       "path": "index.html",
       "bytes": 283,
       "sha256": "1c5a7863ac1668692cd5701c03e2a25a3cb889968304c3dd2d539ada214a04e4"
@@ -4941,6 +4951,11 @@
       "path": "licenses/tailwindcss@4.1.18/LICENSE",
       "bytes": 1071,
       "sha256": "60e0b68c0f35c078eef3a5d29419d0b03ff84ec1df9c3f9d6e39a519a5ae7985"
+    },
+    {
+      "path": "llms.txt",
+      "bytes": 6706,
+      "sha256": "dbf4f099ab93719528d3bcc8ffaeef4998f1cbabab5824f00cec605aa6c7dbbb"
     },
     {
       "path": "packages/appearance/index.d.mts",
@@ -5055,92 +5070,92 @@
     {
       "path": "previews/bandit/advanced-controls/index.html",
       "bytes": 715,
-      "sha256": "3709aa1a5bee887166a6bf1d6cd4dd37070cb257f4d0a8c940420e8341fae758"
+      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
     },
     {
       "path": "previews/bandit/advanced-review/index.html",
       "bytes": 715,
-      "sha256": "3709aa1a5bee887166a6bf1d6cd4dd37070cb257f4d0a8c940420e8341fae758"
+      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
     },
     {
       "path": "previews/bandit/appearance/index.html",
       "bytes": 715,
-      "sha256": "3709aa1a5bee887166a6bf1d6cd4dd37070cb257f4d0a8c940420e8341fae758"
+      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
     },
     {
       "path": "previews/bandit/asset-expired/index.html",
       "bytes": 715,
-      "sha256": "3709aa1a5bee887166a6bf1d6cd4dd37070cb257f4d0a8c940420e8341fae758"
+      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
     },
     {
       "path": "previews/bandit/asset-loading/index.html",
       "bytes": 715,
-      "sha256": "3709aa1a5bee887166a6bf1d6cd4dd37070cb257f4d0a8c940420e8341fae758"
+      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
     },
     {
       "path": "previews/bandit/asset-ready/index.html",
       "bytes": 715,
-      "sha256": "3709aa1a5bee887166a6bf1d6cd4dd37070cb257f4d0a8c940420e8341fae758"
+      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
     },
     {
-      "path": "previews/bandit/assets/index-BWiirm_x.css",
-      "bytes": 53933,
-      "sha256": "629acdc07378035ede5f3a3a0991321ee65ced824de61597922660dd42d2702c"
+      "path": "previews/bandit/assets/index-BS_3Duxn.css",
+      "bytes": 81656,
+      "sha256": "dcce29987cc122e70d2f8fbc898f5b8d10e0ee7e73ce8eac5b683836e2cc859a"
     },
     {
-      "path": "previews/bandit/assets/index-CpiDca3x.js",
-      "bytes": 370256,
-      "sha256": "ad0c68998803a2890d63ead4bb03d8715e7e97cad0be45f7c9d840f02da29d53"
+      "path": "previews/bandit/assets/index-DWQEqhFG.js",
+      "bytes": 381562,
+      "sha256": "493b8dcac1ad802973abf67c902cf15110a06ecfcb033ca9918f112b34cad190"
     },
     {
       "path": "previews/bandit/board-approved/index.html",
       "bytes": 715,
-      "sha256": "3709aa1a5bee887166a6bf1d6cd4dd37070cb257f4d0a8c940420e8341fae758"
+      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
     },
     {
       "path": "previews/bandit/board-archived/index.html",
       "bytes": 715,
-      "sha256": "3709aa1a5bee887166a6bf1d6cd4dd37070cb257f4d0a8c940420e8341fae758"
+      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
     },
     {
       "path": "previews/bandit/board-empty/index.html",
       "bytes": 715,
-      "sha256": "3709aa1a5bee887166a6bf1d6cd4dd37070cb257f4d0a8c940420e8341fae758"
+      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
     },
     {
       "path": "previews/bandit/board-error/index.html",
       "bytes": 715,
-      "sha256": "3709aa1a5bee887166a6bf1d6cd4dd37070cb257f4d0a8c940420e8341fae758"
+      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
     },
     {
       "path": "previews/bandit/board-loading/index.html",
       "bytes": 715,
-      "sha256": "3709aa1a5bee887166a6bf1d6cd4dd37070cb257f4d0a8c940420e8341fae758"
+      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
     },
     {
       "path": "previews/bandit/board-populated/index.html",
       "bytes": 715,
-      "sha256": "3709aa1a5bee887166a6bf1d6cd4dd37070cb257f4d0a8c940420e8341fae758"
+      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
     },
     {
       "path": "previews/bandit/board-viewer/index.html",
       "bytes": 715,
-      "sha256": "3709aa1a5bee887166a6bf1d6cd4dd37070cb257f4d0a8c940420e8341fae758"
+      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
     },
     {
       "path": "previews/bandit/controls/index.html",
       "bytes": 715,
-      "sha256": "3709aa1a5bee887166a6bf1d6cd4dd37070cb257f4d0a8c940420e8341fae758"
+      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
     },
     {
       "path": "previews/bandit/empty/index.html",
       "bytes": 715,
-      "sha256": "3709aa1a5bee887166a6bf1d6cd4dd37070cb257f4d0a8c940420e8341fae758"
+      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
     },
     {
       "path": "previews/bandit/error-notice/index.html",
       "bytes": 715,
-      "sha256": "3709aa1a5bee887166a6bf1d6cd4dd37070cb257f4d0a8c940420e8341fae758"
+      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
     },
     {
       "path": "previews/bandit/fixture-catalog.json",
@@ -5220,182 +5235,182 @@
     {
       "path": "previews/bandit/landing/index.html",
       "bytes": 715,
-      "sha256": "3709aa1a5bee887166a6bf1d6cd4dd37070cb257f4d0a8c940420e8341fae758"
+      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
     },
     {
       "path": "previews/bandit/library-empty/index.html",
       "bytes": 715,
-      "sha256": "3709aa1a5bee887166a6bf1d6cd4dd37070cb257f4d0a8c940420e8341fae758"
+      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
     },
     {
       "path": "previews/bandit/library-populated/index.html",
       "bytes": 715,
-      "sha256": "3709aa1a5bee887166a6bf1d6cd4dd37070cb257f4d0a8c940420e8341fae758"
+      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
     },
     {
       "path": "previews/bandit/library-viewer/index.html",
       "bytes": 715,
-      "sha256": "3709aa1a5bee887166a6bf1d6cd4dd37070cb257f4d0a8c940420e8341fae758"
+      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
     },
     {
       "path": "previews/bandit/memory-empty/index.html",
       "bytes": 715,
-      "sha256": "3709aa1a5bee887166a6bf1d6cd4dd37070cb257f4d0a8c940420e8341fae758"
+      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
     },
     {
       "path": "previews/bandit/memory-error/index.html",
       "bytes": 715,
-      "sha256": "3709aa1a5bee887166a6bf1d6cd4dd37070cb257f4d0a8c940420e8341fae758"
+      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
     },
     {
       "path": "previews/bandit/memory-populated/index.html",
       "bytes": 715,
-      "sha256": "3709aa1a5bee887166a6bf1d6cd4dd37070cb257f4d0a8c940420e8341fae758"
+      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
     },
     {
       "path": "previews/bandit/memory-viewer/index.html",
       "bytes": 715,
-      "sha256": "3709aa1a5bee887166a6bf1d6cd4dd37070cb257f4d0a8c940420e8341fae758"
+      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
     },
     {
       "path": "previews/bandit/overview/index.html",
       "bytes": 715,
-      "sha256": "3709aa1a5bee887166a6bf1d6cd4dd37070cb257f4d0a8c940420e8341fae758"
+      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
     },
     {
       "path": "previews/bandit/production-new-brief/index.html",
       "bytes": 715,
-      "sha256": "3709aa1a5bee887166a6bf1d6cd4dd37070cb257f4d0a8c940420e8341fae758"
+      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
     },
     {
       "path": "previews/bandit/production-new-plan/index.html",
       "bytes": 715,
-      "sha256": "3709aa1a5bee887166a6bf1d6cd4dd37070cb257f4d0a8c940420e8341fae758"
+      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
     },
     {
       "path": "previews/bandit/production-new-profile/index.html",
       "bytes": 715,
-      "sha256": "3709aa1a5bee887166a6bf1d6cd4dd37070cb257f4d0a8c940420e8341fae758"
+      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
     },
     {
       "path": "previews/bandit/production-new-viewer/index.html",
       "bytes": 715,
-      "sha256": "3709aa1a5bee887166a6bf1d6cd4dd37070cb257f4d0a8c940420e8341fae758"
+      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
     },
     {
       "path": "previews/bandit/profile-editor/index.html",
       "bytes": 715,
-      "sha256": "3709aa1a5bee887166a6bf1d6cd4dd37070cb257f4d0a8c940420e8341fae758"
+      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
     },
     {
       "path": "previews/bandit/profile-import/index.html",
       "bytes": 715,
-      "sha256": "3709aa1a5bee887166a6bf1d6cd4dd37070cb257f4d0a8c940420e8341fae758"
+      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
     },
     {
       "path": "previews/bandit/profile-published/index.html",
       "bytes": 715,
-      "sha256": "3709aa1a5bee887166a6bf1d6cd4dd37070cb257f4d0a8c940420e8341fae758"
+      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
     },
     {
       "path": "previews/bandit/profiles-empty/index.html",
       "bytes": 715,
-      "sha256": "3709aa1a5bee887166a6bf1d6cd4dd37070cb257f4d0a8c940420e8341fae758"
+      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
     },
     {
       "path": "previews/bandit/profiles-populated/index.html",
       "bytes": 715,
-      "sha256": "3709aa1a5bee887166a6bf1d6cd4dd37070cb257f4d0a8c940420e8341fae758"
+      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
     },
     {
       "path": "previews/bandit/profiles-viewer/index.html",
       "bytes": 715,
-      "sha256": "3709aa1a5bee887166a6bf1d6cd4dd37070cb257f4d0a8c940420e8341fae758"
+      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
     },
     {
       "path": "previews/bandit/project-editor/index.html",
       "bytes": 715,
-      "sha256": "3709aa1a5bee887166a6bf1d6cd4dd37070cb257f4d0a8c940420e8341fae758"
+      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
     },
     {
       "path": "previews/bandit/project-new/index.html",
       "bytes": 715,
-      "sha256": "3709aa1a5bee887166a6bf1d6cd4dd37070cb257f4d0a8c940420e8341fae758"
+      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
     },
     {
       "path": "previews/bandit/projects-empty/index.html",
       "bytes": 715,
-      "sha256": "3709aa1a5bee887166a6bf1d6cd4dd37070cb257f4d0a8c940420e8341fae758"
+      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
     },
     {
       "path": "previews/bandit/projects-populated/index.html",
       "bytes": 715,
-      "sha256": "3709aa1a5bee887166a6bf1d6cd4dd37070cb257f4d0a8c940420e8341fae758"
+      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
     },
     {
       "path": "previews/bandit/projects-viewer/index.html",
       "bytes": 715,
-      "sha256": "3709aa1a5bee887166a6bf1d6cd4dd37070cb257f4d0a8c940420e8341fae758"
+      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
     },
     {
       "path": "previews/bandit/reference-editor/index.html",
       "bytes": 715,
-      "sha256": "3709aa1a5bee887166a6bf1d6cd4dd37070cb257f4d0a8c940420e8341fae758"
+      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
     },
     {
       "path": "previews/bandit/review-empty/index.html",
       "bytes": 715,
-      "sha256": "3709aa1a5bee887166a6bf1d6cd4dd37070cb257f4d0a8c940420e8341fae758"
+      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
     },
     {
       "path": "previews/bandit/review-error/index.html",
       "bytes": 715,
-      "sha256": "3709aa1a5bee887166a6bf1d6cd4dd37070cb257f4d0a8c940420e8341fae758"
+      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
     },
     {
       "path": "previews/bandit/review-loading/index.html",
       "bytes": 715,
-      "sha256": "3709aa1a5bee887166a6bf1d6cd4dd37070cb257f4d0a8c940420e8341fae758"
+      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
     },
     {
       "path": "previews/bandit/review-populated/index.html",
       "bytes": 715,
-      "sha256": "3709aa1a5bee887166a6bf1d6cd4dd37070cb257f4d0a8c940420e8341fae758"
+      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
     },
     {
       "path": "previews/bandit/review-unapproved/index.html",
       "bytes": 715,
-      "sha256": "3709aa1a5bee887166a6bf1d6cd4dd37070cb257f4d0a8c940420e8341fae758"
+      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
     },
     {
       "path": "previews/bandit/review-viewer/index.html",
       "bytes": 715,
-      "sha256": "3709aa1a5bee887166a6bf1d6cd4dd37070cb257f4d0a8c940420e8341fae758"
+      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
     },
     {
       "path": "previews/bandit/series-editor/index.html",
       "bytes": 715,
-      "sha256": "3709aa1a5bee887166a6bf1d6cd4dd37070cb257f4d0a8c940420e8341fae758"
+      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
     },
     {
       "path": "previews/bandit/shot-editor/index.html",
       "bytes": 715,
-      "sha256": "3709aa1a5bee887166a6bf1d6cd4dd37070cb257f4d0a8c940420e8341fae758"
+      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
     },
     {
       "path": "previews/bandit/shot-new/index.html",
       "bytes": 715,
-      "sha256": "3709aa1a5bee887166a6bf1d6cd4dd37070cb257f4d0a8c940420e8341fae758"
+      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
     },
     {
       "path": "previews/bandit/status/index.html",
       "bytes": 715,
-      "sha256": "3709aa1a5bee887166a6bf1d6cd4dd37070cb257f4d0a8c940420e8341fae758"
+      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
     },
     {
       "path": "previews/bandit/subject-editor/index.html",
       "bytes": 715,
-      "sha256": "3709aa1a5bee887166a6bf1d6cd4dd37070cb257f4d0a8c940420e8341fae758"
+      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
     },
     {
       "path": "previews/focus/assets/workbench-D8-kiAf8.css",
@@ -5469,8 +5484,8 @@
     },
     {
       "path": "previews/reads/fixture/index.html",
-      "bytes": 14240,
-      "sha256": "a452ba2ddd9c3c9ef1fc6415e594b740f1ec2466511cdb9685db8889e3448ec1"
+      "bytes": 14438,
+      "sha256": "3517190fe83154305b208ebd282ceeee2226d7640c0b90e643edd3438fc922d7"
     },
     {
       "path": "previews/reads/fixture-catalog.json",
@@ -5479,8 +5494,8 @@
     },
     {
       "path": "previews/reads/style.css",
-      "bytes": 22489,
-      "sha256": "507dd296bb323293d6b1beb71b9c40dfdff7a891afea1e03786d526945b6f919"
+      "bytes": 34091,
+      "sha256": "c7d7e37ed8656cec83f7e14cfd03e2c8cbc4ecc4974b1e7d893e68a0f4af928e"
     },
     {
       "path": "previews/reads/theme-adapter.mjs",
@@ -6370,7 +6385,7 @@
     {
       "path": "registry/apps/bandit/collection.json",
       "bytes": 23789,
-      "sha256": "ee8fd378247d91844771c7e2dad646ab6c3be2078ae204f66b6bc9b8c5655924"
+      "sha256": "db2c825df84d392cd831eb9481130d15ddf9df3ca081614a3100b60124890800"
     },
     {
       "path": "registry/apps/bandit/inventory.json",
@@ -6378,9 +6393,14 @@
       "sha256": "db4bbafd36038665fb24f95cb2b6ec0966901425f8adddbb5a19eaebafa67cda"
     },
     {
+      "path": "registry/apps/bandit/public-guide.md",
+      "bytes": 25982,
+      "sha256": "126f7c29ecd5d42e2309c87f6aeb71976f581fc7e9f40654d12c66874b9964e9"
+    },
+    {
       "path": "registry/apps/bandit/tokens.json",
-      "bytes": 5520,
-      "sha256": "a6781d76c701589ae251677703ae85afde6fca7d64b42425f2135b4256a67a58"
+      "bytes": 25455,
+      "sha256": "7163a391d4a0afb8b2a59baaf1ee1b9406d91598452076b66931a12806755a53"
     },
     {
       "path": "registry/apps/focus/collection.json",
@@ -6415,7 +6435,7 @@
     {
       "path": "registry/apps/reads/collection.json",
       "bytes": 20925,
-      "sha256": "eb8a1f85b008dfb4caec3f0f7620deddaaa7d8a4fbd3f63b27c967e69757c904"
+      "sha256": "afe2163df6efd428c22d112f155ac62e929c2f8e31f2e7eb7004756b9efb3da4"
     },
     {
       "path": "registry/apps/reads/inventory.json",
@@ -6423,9 +6443,14 @@
       "sha256": "8247277150411b183121c5b732cb42d3b60bc2e86f2fd5d68e518acd87098179"
     },
     {
+      "path": "registry/apps/reads/public-guide.md",
+      "bytes": 13282,
+      "sha256": "8d20e2a5e13bc84081f04f37455fbfcb5ac7fb6e775bb25d4891a99b77c560a7"
+    },
+    {
       "path": "registry/apps/reads/tokens.json",
-      "bytes": 5497,
-      "sha256": "e558c986a09eb8aeba82feaa30fda5fac8b0ab38aa8193d9a7a26d63f85819b3"
+      "bytes": 19226,
+      "sha256": "cbcbd0485b32e1320786975098ed2e57bcdcb93f34b85a5b18120f83306b3e1b"
     },
     {
       "path": "registry/apps/stethem/collection.json",
@@ -6441,6 +6466,456 @@
       "path": "registry/apps/stethem/tokens.json",
       "bytes": 1451,
       "sha256": "27ab783e82cd1dd46fc6b4f566ff778b70d421496cb79d32928577353914bbea"
+    },
+    {
+      "path": "registry/guides/bandit/design-system.md",
+      "bytes": 26046,
+      "sha256": "0896bee124559ef6128cf258e351706564d557d6dea7bbf5022b1d849e912fbf"
+    },
+    {
+      "path": "registry/guides/focus/design-system.md",
+      "bytes": 4780,
+      "sha256": "8c9fc5a5b48d8f19ab7cd724109f82de8a531d6be07f494a02215dd25f8dd206"
+    },
+    {
+      "path": "registry/guides/great-circle/design-system.md",
+      "bytes": 7774,
+      "sha256": "7ee1143eddd4bed7e8e1260ec4ee5ac4af1d31242e017ab9b73bb7fa61d03b07"
+    },
+    {
+      "path": "registry/guides/reads/design-system.md",
+      "bytes": 13345,
+      "sha256": "c5dbbbbc6136ba886238c96fce2cd69976e2b05335b739bbfdf2c9f202ceeb50"
+    },
+    {
+      "path": "registry/guides/reference-1win/design-system.md",
+      "bytes": 4229,
+      "sha256": "dd4999c387ecfc42b6bf80e26fbf5f88262da986c297adf4e92426bf43befd2c"
+    },
+    {
+      "path": "registry/guides/reference-airbnb/design-system.md",
+      "bytes": 9917,
+      "sha256": "6528880974591aa32dd537bef08bc014b5ceca8d23e90fb57b4a6dc968efdefb"
+    },
+    {
+      "path": "registry/guides/reference-airtable/design-system.md",
+      "bytes": 8398,
+      "sha256": "b8a0458c435b47b0cefaa01622d38723692daf3d8c8e1f5068e46acf6aaa1542"
+    },
+    {
+      "path": "registry/guides/reference-aljazeera/design-system.md",
+      "bytes": 6572,
+      "sha256": "c60ba1edd306d04015c362c617475cfad4ebe790c615efa8c0cb8cff574d8f6c"
+    },
+    {
+      "path": "registry/guides/reference-apple/design-system.md",
+      "bytes": 9266,
+      "sha256": "cf8f9a4a8f01cc6f4240209e121dad9525280435227d43540477f3d52b24ea15"
+    },
+    {
+      "path": "registry/guides/reference-binance/design-system.md",
+      "bytes": 8587,
+      "sha256": "0cb98bafe1b42e80398f7343a85313fc6b9f9a8cfce704a537eed056cce3d6cc"
+    },
+    {
+      "path": "registry/guides/reference-bmw/design-system.md",
+      "bytes": 7996,
+      "sha256": "63bd613534983e6ff4a116adcb3e1d170a820792d5015973326ed24619b375a9"
+    },
+    {
+      "path": "registry/guides/reference-bmw-m/design-system.md",
+      "bytes": 7555,
+      "sha256": "00a0dd43350528ec9107c3b6e76a84718e1d3594cbe09145318da235928f4a7f"
+    },
+    {
+      "path": "registry/guides/reference-bugatti/design-system.md",
+      "bytes": 6980,
+      "sha256": "08a1b3ce783f52dc52c9fcc04e18e90215d734c96efa4a2b44abb5dd303ceed7"
+    },
+    {
+      "path": "registry/guides/reference-cal/design-system.md",
+      "bytes": 7803,
+      "sha256": "9e57636e8086ba13729a7bb007ff05e9f83b97d270680b817051560f0fa131ff"
+    },
+    {
+      "path": "registry/guides/reference-claude/design-system.md",
+      "bytes": 8276,
+      "sha256": "f0d726ece01a56dd0c70df166f8a68248ab894361a2402acb3f597b827d062bb"
+    },
+    {
+      "path": "registry/guides/reference-clay/design-system.md",
+      "bytes": 8027,
+      "sha256": "f416104938458d63352644dd6edbaf0ae405f9067cee118529967496645e56e5"
+    },
+    {
+      "path": "registry/guides/reference-clickhouse/design-system.md",
+      "bytes": 8386,
+      "sha256": "9fa999bc1d709cf93ef87eb866a798ad99ffda9c0d6b4fad82ee2a3fbf6305f4"
+    },
+    {
+      "path": "registry/guides/reference-cohere/design-system.md",
+      "bytes": 7355,
+      "sha256": "91e59bad9ef9d56436337213f296d872f4316656cbbf88ac0db7f577e1a62d4f"
+    },
+    {
+      "path": "registry/guides/reference-coinbase/design-system.md",
+      "bytes": 9049,
+      "sha256": "1724e37db3feb99455ec355aded214e943a3d58644ad1b19424b76c9b94d7d00"
+    },
+    {
+      "path": "registry/guides/reference-composio/design-system.md",
+      "bytes": 8526,
+      "sha256": "dba8d387a89687c3b362e496c512624748f5e3678dc1915463b59162c155b625"
+    },
+    {
+      "path": "registry/guides/reference-cursor/design-system.md",
+      "bytes": 8271,
+      "sha256": "81e9a50a735f7a8c9b0273b12f0301356c30d2dd98be320a88739b97a953af78"
+    },
+    {
+      "path": "registry/guides/reference-dell-1996/design-system.md",
+      "bytes": 6179,
+      "sha256": "f04f51bf1c98e03b5b33f8442bdb9e1fef82613188ac149a7e35a6e9eef8ffa5"
+    },
+    {
+      "path": "registry/guides/reference-dji/design-system.md",
+      "bytes": 10891,
+      "sha256": "d22e05741493a0c02d2885ce7ed60898f0adcdce330ec3d74a506d40f899d731"
+    },
+    {
+      "path": "registry/guides/reference-elevenlabs/design-system.md",
+      "bytes": 8525,
+      "sha256": "d34435c0217638042b0258519bd584eb5c52113fc70cc41f2d1f6e74bfb6bdea"
+    },
+    {
+      "path": "registry/guides/reference-expo/design-system.md",
+      "bytes": 8552,
+      "sha256": "81c83bf17f40d7f7303c316870b3ad7ca8b67375075d67ac67d5ca5e76962d2b"
+    },
+    {
+      "path": "registry/guides/reference-ferrari/design-system.md",
+      "bytes": 8097,
+      "sha256": "86eba0071aa07dd148d15157538c9e1b45eb145209895191cadf0bc0c8af4e8e"
+    },
+    {
+      "path": "registry/guides/reference-figma/design-system.md",
+      "bytes": 7071,
+      "sha256": "35e7a31cea236262c617a03038de416829b2dc08378ceb70fce348da064b5497"
+    },
+    {
+      "path": "registry/guides/reference-framer/design-system.md",
+      "bytes": 7063,
+      "sha256": "dba7eb2aa3c3f2411009b663c2f81f06f891cb3d05039475a96d8a39cc8e46f2"
+    },
+    {
+      "path": "registry/guides/reference-hashicorp/design-system.md",
+      "bytes": 7778,
+      "sha256": "db3d7872ab71e4f428b90a9bfe72c58bad59f09305cc99fa87b777469dc35b69"
+    },
+    {
+      "path": "registry/guides/reference-hp/design-system.md",
+      "bytes": 8952,
+      "sha256": "c245fedf1ad3f48822e4b5ac93c5edc0dc5fdbc942a2f902077d05156a9bfcc5"
+    },
+    {
+      "path": "registry/guides/reference-ibm/design-system.md",
+      "bytes": 7490,
+      "sha256": "02a238a7f94960c1400d371ed6ece9c658e04224386aee8d4677ad2d16da048b"
+    },
+    {
+      "path": "registry/guides/reference-intercom/design-system.md",
+      "bytes": 7623,
+      "sha256": "fae426806cfb291eb9ed29f44cec503c4a13de8698a238841a324ad1da4fb83b"
+    },
+    {
+      "path": "registry/guides/reference-jobright/design-system.md",
+      "bytes": 6083,
+      "sha256": "1754d86ad3bd9c47bc1b67a0160b5068149d5ba2449dfe901505e510c9bf0dd2"
+    },
+    {
+      "path": "registry/guides/reference-kraken/design-system.md",
+      "bytes": 1598,
+      "sha256": "e9f89867eaf93aead67d73ae8b0a0132ebc5ff28156487139508feaff48f54c4"
+    },
+    {
+      "path": "registry/guides/reference-lamborghini/design-system.md",
+      "bytes": 2103,
+      "sha256": "2107d8d630ac01077e4d26480e226042b548ea2abac357cf457be5f976fbc7c7"
+    },
+    {
+      "path": "registry/guides/reference-linear-app/design-system.md",
+      "bytes": 7782,
+      "sha256": "90a2fed9da8ee593375e94e57cf16264ffa719bf25dcd13758a0bec4ceefd6d1"
+    },
+    {
+      "path": "registry/guides/reference-lovable/design-system.md",
+      "bytes": 1382,
+      "sha256": "fdeb8611fde170455e0e7867dec2c49721b232e92b94f7f0ff28bfc2750f1082"
+    },
+    {
+      "path": "registry/guides/reference-mastercard/design-system.md",
+      "bytes": 2046,
+      "sha256": "c4a04c9e178927ac2a37764cd7d858bd54740221d36679e6a1de1de5e18204d1"
+    },
+    {
+      "path": "registry/guides/reference-mercury/design-system.md",
+      "bytes": 6306,
+      "sha256": "a9baaf26b12fe205d78b3cbd4a764b4fabcd4f5aacf9b35232a2f80ff0c86077"
+    },
+    {
+      "path": "registry/guides/reference-meta/design-system.md",
+      "bytes": 8368,
+      "sha256": "8857d81ddff5325ab8a1689429be0d62d7147275350ca5be64cc1083cc7f3b68"
+    },
+    {
+      "path": "registry/guides/reference-minimax/design-system.md",
+      "bytes": 8065,
+      "sha256": "4626e1fe2d0eebb8d90b96ea72d14b095d4d046361c4f7b5fea5d99d15f5830d"
+    },
+    {
+      "path": "registry/guides/reference-mintlify/design-system.md",
+      "bytes": 9645,
+      "sha256": "de0aa5686a19fb5d1f4c4b6739a743203c5579b83e1e8250e8d9968c7ee83d1d"
+    },
+    {
+      "path": "registry/guides/reference-miro/design-system.md",
+      "bytes": 9827,
+      "sha256": "2819127e8d48a4fd1ccc3477b947ccfaa9401e5147d4052501dd9304eaad9d67"
+    },
+    {
+      "path": "registry/guides/reference-mistral-ai/design-system.md",
+      "bytes": 9693,
+      "sha256": "e948e1a01b63f7f3cc6357c76e6375191c157e702b04cac42f498694b45936a3"
+    },
+    {
+      "path": "registry/guides/reference-mongodb/design-system.md",
+      "bytes": 9432,
+      "sha256": "bc797ee9cfd1828086bc1de5f575695c3ec6c8b47a51137b5f205f528fbf6542"
+    },
+    {
+      "path": "registry/guides/reference-mydealz/design-system.md",
+      "bytes": 5436,
+      "sha256": "550f1e8ce785620e473d31b7c7ac7dcfdfdb79e8c7f6d789f2f9017ddd3b3fa0"
+    },
+    {
+      "path": "registry/guides/reference-nerdwallet/design-system.md",
+      "bytes": 8256,
+      "sha256": "5ec325babec1ab338c2f67cb7cf4866b8a02c7c20c972b558d1f1cf1e6681f6e"
+    },
+    {
+      "path": "registry/guides/reference-nike/design-system.md",
+      "bytes": 7613,
+      "sha256": "c7e73830af1f0bf46b80d1d5f45c625e8e3a72ee7f6175c04387c411ab6fc1a1"
+    },
+    {
+      "path": "registry/guides/reference-nintendo-2001/design-system.md",
+      "bytes": 5228,
+      "sha256": "5ea9a89f6d3fd5ef1d554dd0db1104f8f6f0d5c61c50c2535cec80cee19be1b8"
+    },
+    {
+      "path": "registry/guides/reference-notion/design-system.md",
+      "bytes": 9855,
+      "sha256": "6fc697dc1aa277f822d47890f2f30d26fd6c9be9c10fa3a9e4b416e244cb0a5f"
+    },
+    {
+      "path": "registry/guides/reference-nvidia/design-system.md",
+      "bytes": 9436,
+      "sha256": "16fe22d94567f0412d9c44a1fa427f2c4f155868b290d650c592a8b3154ce9e8"
+    },
+    {
+      "path": "registry/guides/reference-ollama/design-system.md",
+      "bytes": 7367,
+      "sha256": "8aa4260bb226db2184af5ab7f57097331f4d16abd7c2f46881458cb2a1089127"
+    },
+    {
+      "path": "registry/guides/reference-opencode-ai/design-system.md",
+      "bytes": 5891,
+      "sha256": "359a25844c2da4e89f311d7a732e8a71a7f2e62743cf2fa96a83c554662492c0"
+    },
+    {
+      "path": "registry/guides/reference-oracle/design-system.md",
+      "bytes": 9044,
+      "sha256": "fc6aee0000d9bd76b772fee7fd3f25103662ba9b61dfeb0b452f09b454054838"
+    },
+    {
+      "path": "registry/guides/reference-oura/design-system.md",
+      "bytes": 7820,
+      "sha256": "a36dc5be499f8383a397051a071979420b916119865ccb3b06644eff19e8a3a1"
+    },
+    {
+      "path": "registry/guides/reference-pinterest/design-system.md",
+      "bytes": 8244,
+      "sha256": "7f620fcce1671f288993393ca5ed668d0e5df5ab6bf216d42fb57ba3e0f723bd"
+    },
+    {
+      "path": "registry/guides/reference-playstation/design-system.md",
+      "bytes": 8757,
+      "sha256": "9200c5c8a99461e1acec959568d29acda661cff5596af6e94056c4e20d4eaa28"
+    },
+    {
+      "path": "registry/guides/reference-posthog/design-system.md",
+      "bytes": 10498,
+      "sha256": "8ec1e0a4132f1025a04fdcaae6b0841553fd1b5bdfe1ad5daecf19ecab9cebc4"
+    },
+    {
+      "path": "registry/guides/reference-raycast/design-system.md",
+      "bytes": 8773,
+      "sha256": "4d2831b62b38b63b4321a1556dca2969d02026d72a65e60bfc4a0f300a6b57f0"
+    },
+    {
+      "path": "registry/guides/reference-renault/design-system.md",
+      "bytes": 8265,
+      "sha256": "d004d5d39ffd51a8b841ef02bb777f394413ad507d30b49c5ec93e4e245fc521"
+    },
+    {
+      "path": "registry/guides/reference-replicate/design-system.md",
+      "bytes": 9271,
+      "sha256": "de0dabbdb8dc025c88dc76adc06b4032f781937f8777ea7d8c6b72bfb637a6cf"
+    },
+    {
+      "path": "registry/guides/reference-resend/design-system.md",
+      "bytes": 7943,
+      "sha256": "1d815429ee4c5ee9b96d93f72401351170d66024e5d7b12bc49466334484a18c"
+    },
+    {
+      "path": "registry/guides/reference-revolut/design-system.md",
+      "bytes": 9178,
+      "sha256": "170add50ebe369d72803ea0958dba01543aeea5537f87be8e1be559d5b16f19c"
+    },
+    {
+      "path": "registry/guides/reference-runwayml/design-system.md",
+      "bytes": 1932,
+      "sha256": "bb4a1fa1dea3e90f50c224fcff59b0b412a06f55c8464f9ff9ba332be912b123"
+    },
+    {
+      "path": "registry/guides/reference-sanity/design-system.md",
+      "bytes": 1873,
+      "sha256": "4278f8eceea600d23d48a4ca1084b83dd18109b3d12fd11313ade098cf20f180"
+    },
+    {
+      "path": "registry/guides/reference-sap/design-system.md",
+      "bytes": 7054,
+      "sha256": "4ac3ea08509e9e14f9178aa905c252365e36e1044a7bf6a17c0489fcf941f189"
+    },
+    {
+      "path": "registry/guides/reference-sentry/design-system.md",
+      "bytes": 9111,
+      "sha256": "8f0a4947983e44d59bc9faf4ae1cda1af46dbd4598773cf29d7f616f79eb4bec"
+    },
+    {
+      "path": "registry/guides/reference-shopify/design-system.md",
+      "bytes": 8801,
+      "sha256": "cb6ed6c36ecb0d8334cb053fb5c60b06e2aeb4725cda57929314359bed828a76"
+    },
+    {
+      "path": "registry/guides/reference-slack/design-system.md",
+      "bytes": 8914,
+      "sha256": "5041e8235016bad4cb6b53678d4778c0428ad868ace8645341ebbd39b696e847"
+    },
+    {
+      "path": "registry/guides/reference-spacex/design-system.md",
+      "bytes": 5453,
+      "sha256": "1bd70b01bf4d294388c5308ceb3beb9b7ff2c2df7761611af08bb787c928061c"
+    },
+    {
+      "path": "registry/guides/reference-spotify/design-system.md",
+      "bytes": 1985,
+      "sha256": "55576f53be2520cdb42ec620d36a3ce1b6cee8e2ed5ef872b561255167c9cf44"
+    },
+    {
+      "path": "registry/guides/reference-starbucks/design-system.md",
+      "bytes": 1989,
+      "sha256": "3e1ee3d2e60920a34b8c7b8c345b10f39b240d10c5fc3842c5cce9d20c6b003f"
+    },
+    {
+      "path": "registry/guides/reference-stripe/design-system.md",
+      "bytes": 9042,
+      "sha256": "3dd227e3ab69cd8feae54c2c87777e621b22a600e1ef4cb7ac4d5fee331c4491"
+    },
+    {
+      "path": "registry/guides/reference-supabase/design-system.md",
+      "bytes": 7937,
+      "sha256": "48c59397c83f825afa8408f75189067f563345212d9a354856bb9dbeec1ce0c1"
+    },
+    {
+      "path": "registry/guides/reference-superhuman/design-system.md",
+      "bytes": 7487,
+      "sha256": "c1420b2716baf5de647566d2e16ca3a6ca28ea5ce280616974f007ff3ff3c5f9"
+    },
+    {
+      "path": "registry/guides/reference-tesla/design-system.md",
+      "bytes": 1486,
+      "sha256": "a2fe8f6acc03a31fe61262f60725d208380e582d942b1ad295823288974b0e88"
+    },
+    {
+      "path": "registry/guides/reference-theverge/design-system.md",
+      "bytes": 1877,
+      "sha256": "65059e1e0047d726652643859da1ec9ea56d701b867c83660e842d964dd6936e"
+    },
+    {
+      "path": "registry/guides/reference-together-ai/design-system.md",
+      "bytes": 8255,
+      "sha256": "4009694f14c5c8710bebee2455ca2724993f60d5b2576276aa9260780103d09a"
+    },
+    {
+      "path": "registry/guides/reference-uber/design-system.md",
+      "bytes": 6830,
+      "sha256": "b8cfc1fa06193146eecd7970b30658fecd3760120255db0d2d8b48f9c1593fdb"
+    },
+    {
+      "path": "registry/guides/reference-vercel/design-system.md",
+      "bytes": 9167,
+      "sha256": "446cfe700be5b52c6a704e9172eea2280899a6b3db2cc70b99e57e5aaa014375"
+    },
+    {
+      "path": "registry/guides/reference-vodafone/design-system.md",
+      "bytes": 8114,
+      "sha256": "73d4cd40af23f2aa8046aad8e2136e0ffb4bd3a147ea9d1f25678418da75cde1"
+    },
+    {
+      "path": "registry/guides/reference-voltagent/design-system.md",
+      "bytes": 8171,
+      "sha256": "6b19ef0dbc1bd329113f940174cc406cec62a810f30bb702112118b4f33780dc"
+    },
+    {
+      "path": "registry/guides/reference-warp/design-system.md",
+      "bytes": 7229,
+      "sha256": "4c3a2bca4df50d2c636acff1af47d502a93fdd503499f8e2235a952dd383f922"
+    },
+    {
+      "path": "registry/guides/reference-webflow/design-system.md",
+      "bytes": 8624,
+      "sha256": "3796168b0bfc9459db0600900f95b6b1cf95a4815c1eac65c3a049dd592270ca"
+    },
+    {
+      "path": "registry/guides/reference-wired/design-system.md",
+      "bytes": 7438,
+      "sha256": "30b9e54c7589bf8ef76b6210ef2e29658c3fbf916d93f8cc36dc3c41067ed25e"
+    },
+    {
+      "path": "registry/guides/reference-wise/design-system.md",
+      "bytes": 7523,
+      "sha256": "4eb4318778b71960cacee91af24196c48695e664781a514b26b8409a0a1db69b"
+    },
+    {
+      "path": "registry/guides/reference-x-ai/design-system.md",
+      "bytes": 6644,
+      "sha256": "ea27af2482e05bfd6bf4f6169d40a2712efe4e5affd2baa7c5d0d74516339394"
+    },
+    {
+      "path": "registry/guides/reference-zapier/design-system.md",
+      "bytes": 7668,
+      "sha256": "77bcf572b4e45886efe50273209d4bc5882e96d14046804cb981b221fb8a4147"
+    },
+    {
+      "path": "registry/guides/stethem/design-system.md",
+      "bytes": 5517,
+      "sha256": "a83ca113c314b3093a1d0af355f10ffbab31fb25f623a028558648eb7af609e4"
+    },
+    {
+      "path": "registry/guides/workbench/design-system.md",
+      "bytes": 2106,
+      "sha256": "a4593ba55eeefea504dd26cca00af9b96c570e2b31f07e41f273af7847e210ca"
     },
     {
       "path": "registry/index.json",
@@ -6461,6 +6936,21 @@
       "path": "registry/references.json",
       "bytes": 4878,
       "sha256": "3338e590d09c08be0b369288dada6fdf9f39e0654566a85f90531acf40c25819"
+    },
+    {
+      "path": "templates/blank/LICENSE",
+      "bytes": 1070,
+      "sha256": "8d3ab0d6a9f8f460ab5f30d1a5b0901881b0ce7ee8fa530e415fdfd70bf7dc02"
+    },
+    {
+      "path": "templates/blank/LICENSING.md",
+      "bytes": 793,
+      "sha256": "94c9fb54fce26f8f64fda90023edab755de485f2acc16daa18e6c825efea7023"
+    },
+    {
+      "path": "templates/blank/README.md",
+      "bytes": 2028,
+      "sha256": "57aa0d86ea86b09915b97e6f2678c311d4fcef16d5e104a2b372078ef32f0d62"
     }
   ]
 }

@@ -10,7 +10,14 @@ const registryMetadata=fetch(new URL('../../registry/index.json',import.meta.url
 registryMetadata.then(data=>{document.querySelector('[data-library=coverage]').hidden=!data.projectCoverage;}).catch(()=>{});
 let workbench, generation = 0;
 const libraryFromURL = () => ['references','capture','material','coverage'].includes(new URL(location.href).searchParams.get('library')) ? new URL(location.href).searchParams.get('library') : 'own';
+function updateGuide(library,id){
+ const link=document.querySelector('#implementation-guide');
+ link.hidden=!id||!['own','references'].includes(library);
+ link.href=id?`../../registry/guides/${encodeURIComponent(id)}/design-system.md`:'../../llms.txt';
+ link.textContent=library==='references'?'Study adaptation guide':'Implementation guide';
+}
 function remember(library, id) {
+ updateGuide(library,id);
  selections.set(library, id);
  const url = new URL(location.href);
  if (library !== 'own') url.searchParams.set('library', library); else url.searchParams.delete('library');
@@ -19,6 +26,7 @@ function remember(library, id) {
 }
 async function show(library, requested) {
  const version = ++generation;
+ updateGuide(library,null);
  materialNavigation.value = library === 'material' ? 'lacouture-1890' : '';
  for (const button of navigation.querySelectorAll('button[data-library]')) button.setAttribute('aria-pressed', String(button.dataset.library === library));
  const label=library==='coverage'?'Project coverage':library==='material'?'Material':library==='capture'?'Capture studio':library==='references'?'Reference studies':'Robin';
@@ -56,6 +64,7 @@ async function show(library, requested) {
   if (version !== generation) return;
   const initialCollection = requested ?? selections.get(library);
   workbench = mountWorkbench(root, { skin: 'workbench', title: library === 'references' ? 'Reference examples' : 'Robin', collections, initialCollection: collections.some(item => item.id === initialCollection) ? initialCollection : collections[0]?.id, initialSection: new URL(location.href).searchParams.get('section') ?? (library==='references'?'components':'foundations'), initialFixture: new URL(location.href).searchParams.get('fixture') ?? undefined, searchCollections: true, searchLabel: library === 'references' ? 'Search reference studies' : 'Search your work', collectionNoun: library === 'references' ? 'studies' : 'collections', onCollectionChange: id => remember(library, id) });
+  updateGuide(library,collections.some(item=>item.id===initialCollection)?initialCollection:collections[0]?.id);
   notice.textContent = library === 'references' ? 'Independent design studies. Not affiliated with, endorsed by, or sponsored by the referenced companies.' : '';
  } catch (error) {
   if (version !== generation) return;
