@@ -1,0 +1,1 @@
+window.addEventListener('message',event=>{if(event.source!==window.parent||event.data?.type!=='workbench:set-theme')return;window.parent.postMessage({type:'workbench:theme-applied',theme:'analysis',requestId:event.data.requestId},'*');});window.parent.postMessage({type:'workbench:theme-ready'},'*');

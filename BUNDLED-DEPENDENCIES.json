@@ -70,17 +70,17 @@
     ]
   },
   {
-    "id": "idb-keyval@6.2.2",
-    "license": "Apache-2.0",
-    "files": [
-      "licenses/idb-keyval@6.2.2/LICENCE"
-    ]
-  },
-  {
     "id": "lucide-react@0.562.0",
     "license": "ISC",
     "files": [
       "licenses/lucide-react@0.562.0/LICENSE"
+    ]
+  },
+  {
+    "id": "idb-keyval@6.2.2",
+    "license": "Apache-2.0",
+    "files": [
+      "licenses/idb-keyval@6.2.2/LICENCE"
     ]
   },
   {

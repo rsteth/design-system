@@ -73,6 +73,9 @@ function element(tag, attrs = {}, ...children) {
   return node;
 }
 const titleCase = value => value[0].toUpperCase() + value.slice(1);
+// randomUUID exists only in secure contexts; getRandomValues is available over plain HTTP too.
+const nonce = () => typeof crypto.randomUUID === 'function' ? crypto.randomUUID()
+  : Array.from(crypto.getRandomValues(new Uint8Array(16)), byte => byte.toString(16).padStart(2, '0')).join('');
 export function mountWorkbench(container, options = {}) {
   if (!container?.replaceChildren) throw new TypeError('A DOM container is required');
   let collections = options.collections ?? [];
@@ -232,8 +235,10 @@ export function mountWorkbench(container, options = {}) {
     const frame = element('iframe', { title: `${fixture.title} · ${chosenTheme}`, src, sandbox: 'allow-scripts', referrerpolicy: 'no-referrer', loading: 'lazy' });
     // A sandboxed origin is opaque. Verify the exact frame window plus a fresh nonce,
     // never trust a message solely because its origin is "null".
-    const requestId = crypto.randomUUID();
-    const timeout = setTimeout(() => { status.textContent = 'Preview and theme remain unverified. The fixture may be offline, blocked, or missing a theme adapter. Open the source fixture to inspect it.'; }, 8000);
+    const requestId = nonce();
+    // Presentation only: reveal the frame once it has painted, so the stage never flashes.
+    const reveal = () => frame.setAttribute('data-wb-revealed', '');
+    const timeout = setTimeout(() => { reveal(); status.textContent = 'Preview and theme remain unverified. The fixture may be offline, blocked, or missing a theme adapter. Open the source fixture to inspect it.'; }, 8000);
     cleanup.push(() => clearTimeout(timeout));
     const requestTheme = () => frame.contentWindow?.postMessage({ type: 'workbench:set-theme', theme: chosenTheme, requestId }, '*');
     const onMessage = event => {
@@ -246,10 +251,12 @@ export function mountWorkbench(container, options = {}) {
     cleanup.push(() => window.removeEventListener('message', onMessage));
     frame.addEventListener('error', () => {
       clearTimeout(timeout);
+      reveal();
       status.textContent = 'Preview failed to load. Check that the app server is running and permits embedded fixtures.';
     });
     frame.addEventListener('load', () => {
       requestTheme();
+      requestAnimationFrame(() => requestAnimationFrame(reveal));
     });
     const stage = element('div', { class: 'wb-stage', 'data-viewport': viewport }, frame);
     return element('article', { class: 'wb-fixture' }, element('div', { class: 'wb-panel-heading' }, element('h3', {}, titleCase(chosenTheme)), sourceLink('Open source fixture ↗', fixture.url)), stage, status,

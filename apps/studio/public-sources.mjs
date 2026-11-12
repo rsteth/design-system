@@ -1,5 +1,6 @@
-/** Public commit evidence checked against GitHub on 2026-11-08. Source snapshots stay unchanged. */
+/** Public commit evidence checked against GitHub; NASA added 2026-11-12. Source snapshots stay unchanged. */
 export const PUBLIC_SOURCE_REVISIONS = Object.freeze({
+  '17b2929e8ec5b8e3ac9cda5d4c0c3c65f28169de': 'https://github.com/nasa/hds-core/commit/17b2929e8ec5b8e3ac9cda5d4c0c3c65f28169de',
   eaa95bf1316f5e5fcd8a7e9600eafaa2e52665f0: 'https://github.com/rsteth/focus-speed-reader/commit/eaa95bf1316f5e5fcd8a7e9600eafaa2e52665f0',
   f84c7f80dbd115da710fca04e3267e4c96709442: 'https://github.com/rsteth/great_circle/commit/f84c7f80dbd115da710fca04e3267e4c96709442',
   '3ea81c22d0101f2fc537e7e4338010bc981479d5': 'https://github.com/rsteth/rsteth.github.io/commit/3ea81c22d0101f2fc537e7e4338010bc981479d5',
