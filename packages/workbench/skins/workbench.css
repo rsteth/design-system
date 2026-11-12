@@ -1,25 +1,24 @@
 /* Generated from packages/workbench/skins/workbench.tokens.json. Do not edit. Contract v1; workbench. */
 .wb-shell, .wb-shell[data-wb-skin="workbench"] {
-  --ds-color-background: #0f0f10;
-  --ds-color-surface: #141416;
-  --ds-color-text: #e9e7e1;
-  --ds-color-text-muted: #9c9a94;
-  --ds-color-accent: #e9e7e1;
-  --ds-color-accent-hover: #f6f4ef;
-  --ds-color-border: #27272b;
-  --ds-color-selection-background: #1a1a1d;
-  --ds-color-selection-text: #f6f4ef;
-  --ds-color-focus: #e9e7e1;
-  --ds-color-divider: #1d1d20;
-  --ds-color-empty-background: #0f0f10;
-  --ds-color-stage: #0a0a0b;
-  --ds-color-status: #9c9a94;
-  --ds-color-warning: #d6d3cb;
-  --ds-color-error: #f1ede6;
-  --ds-color-panel: #1a1a1d;
+  --ds-color-background: #101011;
+  --ds-color-surface: #161617;
+  --ds-color-text: #f1f1f2;
+  --ds-color-text-muted: #a1a1a6;
+  --ds-color-accent: #f1f1f2;
+  --ds-color-accent-hover: #ffffff;
+  --ds-color-border: #303034;
+  --ds-color-selection-background: #262629;
+  --ds-color-selection-text: #ffffff;
+  --ds-color-focus: #ffffff;
+  --ds-color-divider: #252528;
+  --ds-color-empty-background: #101011;
+  --ds-color-stage: #09090a;
+  --ds-color-status: #a1a1a6;
+  --ds-color-warning: #d1d1d5;
+  --ds-color-error: #f1f1f2;
+  --ds-color-panel: #1b1b1d;
   --ds-color-action: #e9e7e1;
-  --ds-color-action-text: #141414;
-  --ds-color-raised: #222226;
+  --ds-color-action-text: #171717;
   --wb-paper: var(--ds-color-background);
   --wb-wash: var(--ds-color-surface);
   --wb-ink: var(--ds-color-text);
@@ -39,5 +38,4 @@
   --wb-panel: var(--ds-color-panel);
   --wb-action: var(--ds-color-action);
   --wb-action-ink: var(--ds-color-action-text);
-  --wb-raised: var(--ds-color-raised);
 }

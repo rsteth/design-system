@@ -12,35 +12,35 @@
 
 /* Warp-inspired workbench geometry. Original chrome, no brand assets or source CSS.
    The shell stays neutral; study colors never cross an iframe boundary. */
-.wb-shell[data-wb-skin="workbench"]{color-scheme:dark;background:var(--wb-paper);grid-template-columns:232px minmax(0,1fr);min-height:calc(100vh - 60px);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;--wb-ease:cubic-bezier(.2,.7,.2,1);--wb-quick:140ms}
-.wb-shell[data-wb-skin="workbench"] .wb-sidebar{padding:32px 16px;gap:28px;background:var(--wb-paper);border-right-color:var(--wb-divider)}
+.wb-shell[data-wb-skin="workbench"]{color-scheme:dark;background:var(--wb-paper);grid-template-columns:232px minmax(0,1fr);min-height:calc(100vh - 82px)}
+.wb-shell[data-wb-skin="workbench"] .wb-sidebar{padding:30px 18px;gap:28px;background:var(--wb-paper)}
 .wb-shell[data-wb-skin="workbench"] .wb-brand strong{font-size:13px;letter-spacing:-.2px}
 .wb-shell[data-wb-skin="workbench"] .wb-main{padding:38px clamp(20px,3vw,48px);background:var(--wb-stage)}
 .wb-shell[data-wb-skin="workbench"] h1{font-size:36px;letter-spacing:-1.25px;font-weight:450}
 .wb-shell[data-wb-skin="workbench"] h2{font-size:18px;font-weight:550}
 .wb-shell[data-wb-skin="workbench"] .wb-eyebrow{color:var(--wb-muted);letter-spacing:1.2px;font-size:10px}
-.wb-shell[data-wb-skin="workbench"] button,.wb-shell[data-wb-skin="workbench"] select,.wb-shell[data-wb-skin="workbench"] input[type=search]{border-radius:4px;min-height:38px;background:var(--wb-wash);border:1px solid var(--wb-line);box-shadow:none;transition:color var(--wb-quick) var(--wb-ease),background-color var(--wb-quick) var(--wb-ease),border-color var(--wb-quick) var(--wb-ease)}
-.wb-shell[data-wb-skin="workbench"] .wb-sidebar nav{gap:1px}
-.wb-shell[data-wb-skin="workbench"] .wb-sidebar nav button{display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:34px;padding:8px 12px;border:0;background:transparent;font-size:13px;color:var(--wb-muted)}
-.wb-shell[data-wb-skin="workbench"] .wb-sidebar nav button.wb-active{background:var(--wb-panel);color:var(--wb-selection-ink);box-shadow:inset 1px 0 0 var(--wb-accent);font-weight:500}
-.wb-shell[data-wb-skin="workbench"] .wb-panel,.wb-shell[data-wb-skin="workbench"] .wb-fixture{border-radius:6px;background:var(--wb-panel);border-color:var(--wb-divider);box-shadow:0 1px 0 #ffffff06 inset}
+.wb-shell[data-wb-skin="workbench"] button,.wb-shell[data-wb-skin="workbench"] select,.wb-shell[data-wb-skin="workbench"] input[type=search]{border-radius:3px;min-height:40px;background:var(--wb-wash);border:1px solid var(--wb-line);box-shadow:0 1px 0 #ffffff08 inset}
+.wb-shell[data-wb-skin="workbench"] .wb-sidebar nav{gap:7px}
+.wb-shell[data-wb-skin="workbench"] .wb-sidebar nav button{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:11px 12px;background:var(--wb-wash);font-size:12px;color:var(--wb-ink)}
+.wb-shell[data-wb-skin="workbench"] .wb-sidebar nav button.wb-active{border-color:var(--wb-action);background:var(--wb-action);color:var(--wb-action-ink);box-shadow:none;font-weight:650}
+.wb-shell[data-wb-skin="workbench"] .wb-panel,.wb-shell[data-wb-skin="workbench"] .wb-fixture{border-radius:5px;background:var(--wb-panel);box-shadow:0 1px 0 #ffffff08 inset,0 8px 28px #0002}
 .wb-shell[data-wb-skin="workbench"] .wb-panel{padding:24px}
 .wb-shell[data-wb-skin="workbench"] .wb-header{margin-bottom:24px}
-.wb-shell[data-wb-skin="workbench"] .wb-reference-notice{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:5px 24px;border:1px solid var(--wb-divider);border-left:1px solid var(--wb-accent);border-radius:6px;padding:18px 20px;background:var(--wb-panel);box-shadow:0 1px 0 #ffffff06 inset}
+.wb-shell[data-wb-skin="workbench"] .wb-reference-notice{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:5px 24px;border:1px solid var(--wb-line);border-radius:5px;padding:18px 20px;background:var(--wb-panel);box-shadow:0 1px 0 #ffffff08 inset}
 .wb-shell[data-wb-skin="workbench"] .wb-reference-notice strong{font-size:12px;font-weight:600;grid-column:1}
 .wb-shell[data-wb-skin="workbench"] .wb-reference-notice .wb-note{font-size:11px;margin:0;grid-column:1}
 .wb-shell[data-wb-skin="workbench"] .wb-reference-notice>.wb-action,.wb-shell[data-wb-skin="workbench"] .wb-reference-notice>button{grid-column:2;grid-row:1;align-self:center;white-space:nowrap}
-.wb-shell[data-wb-skin="workbench"] .wb-action{display:inline-flex;justify-content:center;align-items:center;min-height:38px;padding:9px 15px;border:1px solid var(--wb-action);border-radius:4px;transition:background-color var(--wb-quick) var(--wb-ease),border-color var(--wb-quick) var(--wb-ease);background:var(--wb-action);color:var(--wb-action-ink);text-decoration:none;font-size:12px;font-weight:600}
-.wb-shell[data-wb-skin="workbench"] .wb-action:hover{background:var(--wb-accent-hover);border-color:var(--wb-accent-hover);color:var(--wb-action-ink)}
+.wb-shell[data-wb-skin="workbench"] .wb-action{display:inline-flex;justify-content:center;align-items:center;min-height:40px;padding:10px 15px;border:1px solid var(--wb-action);border-radius:3px;background:var(--wb-action);color:var(--wb-action-ink);text-decoration:none;font-size:12px;font-weight:600}
+.wb-shell[data-wb-skin="workbench"] .wb-action:hover{background:#fff;border-color:#fff;color:#111}
 .wb-shell[data-wb-skin="workbench"] .wb-fixture{padding:16px}
 .wb-shell[data-wb-skin="workbench"] .wb-stage{padding:0;border:1px solid var(--wb-line);border-radius:3px}
 .wb-shell[data-wb-skin="workbench"] .wb-stage iframe{background:#fff;height:720px;color-scheme:normal}
 .wb-shell[data-wb-skin="workbench"] .wb-controls{gap:10px}
 .wb-shell[data-wb-skin="workbench"] .wb-control select{min-width:108px;font-size:12px}
-.wb-shell[data-wb-skin="workbench"] button:hover:not(:disabled),.wb-shell[data-wb-skin="workbench"] select:hover{border-color:#3a3a3f;background:var(--wb-raised,#222226);color:var(--wb-ink)}
-.wb-shell[data-wb-skin="workbench"] .wb-sidebar nav button:hover:not(:disabled){background:var(--wb-wash);color:var(--wb-ink)}.wb-shell[data-wb-skin="workbench"] .wb-sidebar nav button.wb-active:hover{background:var(--wb-panel);color:var(--wb-selection-ink)}
+.wb-shell[data-wb-skin="workbench"] button:hover:not(:disabled){border-color:#77777e;background:#29292d}
+.wb-shell[data-wb-skin="workbench"] .wb-sidebar nav button.wb-active:hover{background:#fff;border-color:#fff;color:#111}
 .wb-shell[data-wb-skin="workbench"] button:disabled{opacity:.38;cursor:not-allowed;box-shadow:none}
-.wb-shell[data-wb-skin="workbench"] :focus-visible{outline:1px solid var(--wb-focus);outline-offset:3px}@media(prefers-reduced-motion:reduce){.wb-shell[data-wb-skin="workbench"] *{transition:none!important}}
+.wb-shell[data-wb-skin="workbench"] :focus-visible{outline:2px solid var(--wb-focus);outline-offset:4px}
 @media(max-width:650px){.wb-shell[data-wb-skin="workbench"]{grid-template-columns:1fr}.wb-shell[data-wb-skin="workbench"] .wb-sidebar{padding:18px;gap:16px}.wb-shell[data-wb-skin="workbench"] .wb-main{padding:24px 16px}.wb-shell[data-wb-skin="workbench"] .wb-panel{padding:16px}.wb-shell[data-wb-skin="workbench"] .wb-sidebar nav button{padding:10px 9px}.wb-shell[data-wb-skin="workbench"] .wb-reference-notice{grid-template-columns:1fr;padding:16px}.wb-shell[data-wb-skin="workbench"] .wb-reference-notice>.wb-action,.wb-shell[data-wb-skin="workbench"] .wb-reference-notice>button{grid-column:1;grid-row:auto;justify-self:start;margin:10px 0}.wb-shell[data-wb-skin="workbench"] h1{font-size:30px}}
 
 /* Foundations: collection-owned samples inside an independent workbench skin. */
@@ -49,33 +49,3 @@
 .wb-token-type{color:var(--wb-muted);font-size:11px}
 
 .wb-token-detail{color:var(--wb-muted);font-size:11px;line-height:1.5}.wb-token-detail:empty{display:none}.wb-dimension-unavailable{display:flex;align-items:center;justify-content:center;padding:14px;color:var(--wb-muted);font-size:12px}.wb-shell .wb-motion-preview{display:flex;align-items:center;justify-content:center;width:100%;height:112px;padding:22px;border:1px solid var(--wb-line);border-radius:0;background:var(--wb-wash);color:var(--wb-ink)}.wb-motion-track{position:relative;display:block;width:96px;max-width:100%;height:1px;background:currentColor}.wb-motion-dot{position:absolute;left:0;top:50%;width:8px;height:8px;border-radius:50%;background:currentColor;transform:translate(-50%,-50%)}@media(max-width:650px){.wb-shell .wb-motion-preview{height:100px}}
-
-
-/* Workbench type scale: 11 / 13 / 15 / 20 / 28 / 44. Mono samples sit at 12 for optical parity. */
-.wb-shell[data-wb-skin="workbench"]{font-size:13px;line-height:1.55}
-.wb-shell[data-wb-skin="workbench"] h1{font-size:44px;line-height:1.08;font-weight:400;letter-spacing:-.025em;margin-bottom:14px}
-.wb-shell[data-wb-skin="workbench"] h2{font-size:20px;line-height:1.3;font-weight:500;letter-spacing:-.01em}
-.wb-shell[data-wb-skin="workbench"] h3,.wb-shell[data-wb-skin="workbench"] .wb-foundation-group>h3{font-size:15px;line-height:1.4;font-weight:500;letter-spacing:-.005em}
-.wb-shell[data-wb-skin="workbench"] .wb-eyebrow{font-size:11px;font-weight:500;letter-spacing:.08em;color:var(--wb-muted);margin-bottom:16px}
-.wb-shell[data-wb-skin="workbench"] .wb-note{font-size:13px;line-height:1.6}
-.wb-shell[data-wb-skin="workbench"] .wb-brand strong{font-size:13px;font-weight:550}
-.wb-shell[data-wb-skin="workbench"] .wb-control,.wb-shell[data-wb-skin="workbench"] .wb-compare-control,.wb-shell[data-wb-skin="workbench"] .wb-sidebar-note,.wb-shell[data-wb-skin="workbench"] .wb-panel-heading a,.wb-shell[data-wb-skin="workbench"] .wb-token-type,.wb-shell[data-wb-skin="workbench"] .wb-token-detail,.wb-shell[data-wb-skin="workbench"] .wb-token-mode,.wb-shell[data-wb-skin="workbench"] .wb-pass,.wb-shell[data-wb-skin="workbench"] .wb-warning,.wb-shell[data-wb-skin="workbench"] .wb-fixture .wb-note,.wb-shell[data-wb-skin="workbench"] .wb-tokens th,.wb-shell[data-wb-skin="workbench"] .wb-reference-notice .wb-note,.wb-shell[data-wb-skin="workbench"] .wb-dimension-unavailable{font-size:11px;letter-spacing:.01em}
-.wb-shell[data-wb-skin="workbench"] .wb-control{gap:7px}
-.wb-shell[data-wb-skin="workbench"] .wb-control select,.wb-shell[data-wb-skin="workbench"] button,.wb-shell[data-wb-skin="workbench"] .wb-action,.wb-shell[data-wb-skin="workbench"] .wb-tokens,.wb-shell[data-wb-skin="workbench"] .wb-reference-notice strong{font-size:13px}
-.wb-shell[data-wb-skin="workbench"] .wb-reference-notice strong{font-weight:500}
-.wb-shell[data-wb-skin="workbench"] code{font-size:12px;font-variant-numeric:tabular-nums}
-.wb-shell[data-wb-skin="workbench"] .wb-empty h2{font-size:20px}
-.wb-shell[data-wb-skin="workbench"] .wb-font-monogram{font-size:44px;letter-spacing:-.03em}
-.wb-shell[data-wb-skin="workbench"] .wb-font-preview p{font-size:20px}
-.wb-shell[data-wb-skin="workbench"] .wb-font-characters{font-size:13px}
-/* More air: rhythm opens up by about half again. */
-.wb-shell[data-wb-skin="workbench"] .wb-main{padding:48px clamp(20px,4vw,64px) 72px}
-.wb-shell[data-wb-skin="workbench"] .wb-header{margin-bottom:36px}
-.wb-shell[data-wb-skin="workbench"] .wb-foundation-sections{gap:48px;margin-top:36px}
-.wb-shell[data-wb-skin="workbench"] .wb-panel{padding:28px}
-/* Fixture frames fade in once painted instead of flashing their own canvas. */
-.wb-shell[data-wb-skin="workbench"] .wb-stage{background:var(--wb-stage)}
-.wb-shell[data-wb-skin="workbench"] .wb-stage iframe{opacity:0;transition:opacity 320ms var(--wb-ease)}
-.wb-shell[data-wb-skin="workbench"] .wb-stage iframe[data-wb-revealed]{opacity:1}
-@media(prefers-reduced-motion:reduce){.wb-shell[data-wb-skin="workbench"] .wb-stage iframe{transition:none}}
-@media(max-width:650px){.wb-shell[data-wb-skin="workbench"] h1{font-size:28px;letter-spacing:-.02em}.wb-shell[data-wb-skin="workbench"] .wb-main{padding:28px 16px 48px}.wb-shell[data-wb-skin="workbench"] .wb-panel{padding:16px}.wb-shell[data-wb-skin="workbench"] .wb-header{margin-bottom:24px}.wb-shell[data-wb-skin="workbench"] .wb-foundation-sections{gap:32px}}

@@ -97,7 +97,6 @@ Start with the product guide below. Robin workbenches describe app-owned UI; ref
 - [Wise](registry/guides/reference-wise/design-system.md)
 - [X Ai](registry/guides/reference-x-ai/design-system.md)
 - [Zapier](registry/guides/reference-zapier/design-system.md)
-- [NASA](registry/guides/reference-nasa/design-system.md)
 
 ## Capture and blueprint
 
