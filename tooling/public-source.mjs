@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import {assertRegistryFresh} from './registry-freshness.mjs';
 /** Clean-tree source export. Does not copy Git history or mutate the working tree. */
 import {readFile,writeFile,mkdir,lstat} from 'node:fs/promises';
 import {resolve,join,relative,dirname,extname} from 'node:path';
@@ -13,6 +14,7 @@ const hash=value=>createHash('sha256').update(value).digest('hex');
 export async function buildPublicSource({output,readsRoot,banditRoot}={}){
  if(!output||!readsRoot||!banditRoot)throw Error('An explicit fresh output directory and both application roots are required.');output=resolve(output);
  if(!relative(ROOT,output).startsWith('review/'))throw Error('Output must be a fresh directory under ignored review/.');
+ await assertRegistryFresh([readsRoot,banditRoot]);
  const versions={reads:JSON.parse(await readFile(join(readsRoot,'package.json'),'utf8')).version,bandit:JSON.parse(await readFile(join(banditRoot,'package.json'),'utf8')).version};
  let ancestor=dirname(output);while(ancestor!==ROOT){if(dirname(ancestor)===ancestor)throw Error('Output escaped source root.');if((await lstat(ancestor)).isSymbolicLink())throw Error('Output ancestors must not be symlinks.');ancestor=dirname(ancestor);}
  const files=execFileSync('git',['ls-files','-z'],{cwd:ROOT,encoding:'utf8'}).split('\0').filter(Boolean).filter(path=>!path.startsWith('tests/workbench/artifacts/')&&publicSourcePath(path));

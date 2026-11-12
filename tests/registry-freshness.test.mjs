@@ -59,3 +59,12 @@ test('both release entry points run freshness preflight before writing preview o
  assert.ok(previews.indexOf('await assertRegistryFresh(')<previews.indexOf("await mkdir(join(outputRoot,'previews',id)"));
  assert.match(previews,/sources\[id\]\.push\('design\/'.*\.tokens.*\.inventory/);
 });
+test('app-owned public guidance participates in explicit sync and release freshness',async t=>{
+ const {root,app}=await setup(t);
+ for(const [file,key]of [['design/collection.json','id'],['design/palette.json','namespace'],['design/coverage.json','application']]){const path=join(app,file),data=await read(path);data[key]='reads';await writeFile(path,json(data));}
+ await mkdir(join(app,'public'));await writeFile(join(app,'public/design-system.md'),'# Reads\nPublic design guide.\n');
+ await syncRegistry([app],{root});await assertRegistryFresh([app],{root});
+ await writeFile(join(app,'public/design-system.md'),'# Reads\nUpdated guidance.\n');await assert.rejects(assertRegistryFresh([app],{root}),/public guide/);
+ await syncRegistry([app],{root});await assertRegistryFresh([app],{root});
+ await writeFile(join(app,'public/design-system.md'),'# Reads\n/Users/private/path');await assert.rejects(syncRegistry([app],{root}),/private\/local/);
+});

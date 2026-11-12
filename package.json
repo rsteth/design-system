@@ -42,7 +42,7 @@
     "typecheck": "node tooling/check.mjs",
     "lint": "node tooling/check.mjs",
     "test": "node --test tests/*.test.mjs tests/workbench/*.test.mjs",
-    "check:design": "node tooling/check.mjs && node tooling/workbench-skin.mjs check && npm run references:check",
+    "check:design": "node tooling/check.mjs && node tooling/workbench-skin.mjs check && npm run references:check && npm run guides:check",
     "check": "npm run check:design && npm test && npm run build",
     "skin:build": "node tooling/workbench-skin.mjs build",
     "references:import": "node tooling/import-references.mjs",
@@ -53,7 +53,9 @@
     "capture:list": "node tooling/capture.mjs --list",
     "capture:plan": "node tooling/capture.mjs --scene all --profile all --theme both --plan",
     "test:capture:profiles": "node tests/capture/profile-ui.browser.mjs",
-    "test:capture:runner": "node tests/capture/runner.browser.mjs"
+    "test:capture:runner": "node tests/capture/runner.browser.mjs",
+    "guides:build": "node tooling/agent-guides.mjs --write",
+    "guides:check": "node tooling/agent-guides.mjs"
   },
   "engines": {
     "node": ">=20"

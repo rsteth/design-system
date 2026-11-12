@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import {appGuidePath,assertPublicGuide} from './agent-guides.mjs';
 import {readFile,writeFile,mkdir,rename,lstat,realpath} from 'node:fs/promises';
 import {resolve,join,relative,isAbsolute} from 'node:path';
 import {fileURLToPath,pathToFileURL} from 'node:url';
@@ -53,7 +54,7 @@ export async function syncRegistry(workspaces,{root=defaultRoot,check=false}={})
    if(errors.length)throw new Error(errors.join('\n'));
   }
   const dest=join(root,'registry/apps',manifest.id);
-  for(const name of ['collection.json','tokens.json','inventory.json'])await noSymlinks(root,join(dest,name));
+  for(const name of ['collection.json','tokens.json','inventory.json','public-guide.md'])await noSymlinks(root,join(dest,name));
   const previous=await optionalJSON(join(dest,'collection.json'));
   const normalized={...withoutSnapshot(manifest),tokens:'tokens.json',...(inventoryBytes?{inventory:'inventory.json'}:{})};
   const tokenSha256=hash(tokenBytes),inventorySha256=inventoryBytes?hash(inventoryBytes):undefined;
@@ -63,7 +64,9 @@ export async function syncRegistry(workspaces,{root=defaultRoot,check=false}={})
   const snapshot={...normalized,registrySnapshot:{authority:'App-owned design collection, tokens and optional inventory',baseRevision:manifest.source.revision,...(inventoryBytes?{inventorySha256}:{}),tokenSha256,integrationStatus:integrationRevision?(previous.registrySnapshot.integrationStatus??'unpublished-local-feature-commit'):'unpublished-local-snapshot',integrationRevision}};
   // Preserve byte-for-byte formatting for a semantically unchanged snapshot.
   const snapshotBytes=previous&&canonical(previous)===canonical(snapshot)?await readFile(join(dest,'collection.json')):Buffer.from(json(snapshot));
-  const files=[['tokens.json',tokenBytes],...(inventoryBytes?[['inventory.json',inventoryBytes]]:[]),['collection.json',snapshotBytes]];
+  let guideBytes; const guidePath=appGuidePath(manifest.id);
+  if(guidePath){try{guideBytes=await appFile(workspace,guidePath);assertPublicGuide(guideBytes.toString());}catch(error){if(error.code!=='ENOENT')throw error;}}
+  const files=[...(guideBytes?[['public-guide.md',guideBytes]]:[]),['tokens.json',tokenBytes],...(inventoryBytes?[['inventory.json',inventoryBytes]]:[]),['collection.json',snapshotBytes]];
   const entry=`apps/${manifest.id}/collection.json`;if(!entries.includes(entry))entries.push(entry);
   plans.push({dest,files});
  }

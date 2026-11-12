@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import {generateGuides} from './agent-guides.mjs';
 /** Additive public packaging. Never modifies app sources, local manifests, or dist. */
 import {readFile,writeFile,mkdir,cp,readdir,lstat,realpath} from 'node:fs/promises';
 import {resolve,join,relative,dirname,extname,basename} from 'node:path';
@@ -9,6 +10,7 @@ import {redactUnverifiedRevisions,publicSourceMetadata,publicMetadataJSON,public
 import {buildPublicAppPreviews} from './public-app-previews.mjs';
 import {publicSourcePath,publicRegistry} from './public-collection-scope.mjs';
 import {assertRegistryFresh} from './registry-freshness.mjs';
+import {assertBrowserAvailable,appSourceFingerprint,verifyPackagedPreviews} from './preview-release-gate.mjs';
 const ROOT=fileURLToPath(new URL('../',import.meta.url));
 const json=x=>JSON.stringify(x,null,2)+'\n';
 const hash=x=>createHash('sha256').update(x).digest('hex');
@@ -33,13 +35,15 @@ export async function buildPublicRelease({output,base='/',focusRoot,greatCircleR
  await assertOutputPath(output);
  const inputs=[['focus',await realpath(focusRoot)],['great-circle',await realpath(greatCircleRoot)],['stethem',await realpath(stethemRoot)]];
  await assertRegistryFresh([...inputs.map(([,path])=>path),...(includeAppPreviews?[readsRoot,banditRoot]:[])]);
+ if(includeAppPreviews)await assertBrowserAvailable(process.env.PLAYWRIGHT_MODULE);
+ const previewSource=includeAppPreviews?await appSourceFingerprint({readsRoot,banditRoot}):null;
  let fixtureCount=0;for(const [id,path]of inputs){const actual=JSON.parse(await readFile(join(path,'design/collection.json'),'utf8')),snapshot=JSON.parse(await readFile(join(ROOT,`registry/apps/${id}/collection.json`),'utf8'));if(actual.id!==id||JSON.stringify(actual.fixtures)!==JSON.stringify(snapshot.fixtures))throw Error(`App snapshot mismatch: ${id}; refresh explicitly before packaging.`);fixtureCount+=snapshot.fixtures.length;}
  const before=new Map(await Promise.all(inputs.map(async([id,path])=>[id,await signature(path)])));
  await mkdir(output,{recursive:false});
  const version=async path=>JSON.parse(await readFile(join(path,'package.json'),'utf8')).version;
  const sources={designSystem:{repository:git(ROOT,['remote','get-url','origin']),version:await version(ROOT)}};
  for(const [id,path]of inputs)sources[id]={repository:git(path,['remote','get-url','origin']),version:await version(path),status:'synthetic-preview'};
- for(const path of ['apps/studio','packages/workbench','packages/tokens','packages/appearance','packages/react','collections','registry','LICENSE','LICENSING.md','THIRD_PARTY_NOTICES.md'])await copy(join(ROOT,path),join(output,path),{exclude:input=>!publicSourcePath(relative(ROOT,input))||(!includeAppPreviews&&path==='registry'&&/^apps\/(?:reads|bandit)(?:\/|$)/.test(relative(join(ROOT,'registry'),input)))});
+ for(const path of ['apps/studio','packages/workbench','packages/tokens','packages/appearance','packages/react','collections','registry','llms.txt','templates/blank/README.md','templates/blank/LICENSE','templates/blank/LICENSING.md','docs/process/capture-studio.md','LICENSE','LICENSING.md','THIRD_PARTY_NOTICES.md'])await copy(join(ROOT,path),join(output,path),{exclude:input=>!publicSourcePath(relative(ROOT,input))||(!includeAppPreviews&&path==='registry'&&/^apps\/(?:reads|bandit)(?:\/|$)/.test(relative(join(ROOT,'registry'),input)))});
  const releasedRegistry=publicRegistry(JSON.parse(await readFile(join(output,'registry/index.json'),'utf8')),{includeAppPreviews});await writeFile(join(output,'registry/index.json'),json(releasedRegistry));
  // A public read-only viewer is deliberately separate from the local capture runner.
  await writeFile(join(output,'apps/studio/capture-studio.mjs'),`export function mountCaptureStudio(root){const main=document.createElement('main');main.className='cs-shell';const h=document.createElement('h1');h.textContent='Local capture tools';const p=document.createElement('p');p.textContent='Capture generation runs only in the local source checkout. This public viewer has no capture server, terminal access, local exports, or connection to your computer.';const a=document.createElement('a');a.href='../../RELEASE-NOTES.html';a.textContent='Attribution';main.append(h,p,a);root.replaceChildren(main);return{destroy(){root.replaceChildren();}};}\n`);
@@ -114,6 +118,7 @@ export async function buildPublicRelease({output,base='/',focusRoot,greatCircleR
  for(const path of await files(output))if(extname(path)==='.json'){const original=await readFile(path,'utf8'),redacted=publicMetadataJSON(original);if(redacted!==original)await writeFile(path,redacted);}
  for(const id of ['focus','great-circle','stethem',...(includeAppPreviews?['reads','bandit']:[])]){const path=join(output,`registry/apps/${id}/collection.json`),data=publicVersionMetadata(JSON.parse(await readFile(path,'utf8')),sources[id].version);if(data.inventory&&data.registrySnapshot){data.registrySnapshot.inventorySha256=hash(await readFile(join(dirname(path),data.inventory)));await writeFile(path,json(data));}}
  const selfPath=join(output,'collections/original/workbench/collection.json');await writeFile(selfPath,json(publicVersionMetadata(JSON.parse(await readFile(selfPath,'utf8')),sources.designSystem.version)));
+ await generateGuides({root:output,write:true});
  const artifacts=[];
  for(const path of await files(output)){
   const name=relative(output,path);if(isPrivatePath(name))throw Error(`Private file in release: ${name}`);
@@ -121,7 +126,8 @@ export async function buildPublicRelease({output,base='/',focusRoot,greatCircleR
   artifacts.push({path:name,bytes:bytes.length,sha256:hash(bytes)});
  }
  for(const [id,path]of inputs)if(await signature(path)!==before.get(id))throw Error(`Source changed during release: ${id}; output is not verified.`);
- const report={schemaVersion:1,createdAt:new Date().toISOString(),status:licenseGaps.length?'local-candidate-license-review-required':'local-candidate-not-published',licenseGaps,focusEpub,base,fixtureCount,source:publicSourceMetadata(sources),limitations:['No public deployment or permission change performed.','Fixture packaging and browser checks are separate from application production CI.','MIT covers original design-system work only; applications and third-party material retain their own terms.','Opaque sandbox requires CORS for static assets.'],artifacts};
+ const previewVerification=includeAppPreviews?await verifyPackagedPreviews({output,base,readsRoot,banditRoot,sourceFingerprint:previewSource}):null;
+ const report={previewVerification,schemaVersion:1,createdAt:new Date().toISOString(),status:licenseGaps.length?'local-candidate-license-review-required':'local-candidate-not-published',licenseGaps,focusEpub,base,fixtureCount,source:publicSourceMetadata(sources),limitations:['No public deployment or permission change performed.','Fixture packaging and browser checks are separate from application production CI.','MIT covers original design-system work only; applications and third-party material retain their own terms.','Opaque sandbox requires CORS for static assets.'],artifacts};
  await writeFile(join(output,'release.json'),json(report));return {output,base,focusEpub,fixtureCount,licenseGaps,files:artifacts.length,bytes:artifacts.reduce((n,x)=>n+x.bytes,0),source:sources};
 }
 if(process.argv[1]&&import.meta.url===pathToFileURL(resolve(process.argv[1])).href){const args=process.argv.slice(2),options={};for(let i=0;i<args.length;i+=2){const key={'--output':'output','--base':'base','--focus-root':'focusRoot','--great-circle-root':'greatCircleRoot','--stethem-root':'stethemRoot','--focus-epub':'focusEpub','--reads-root':'readsRoot','--bandit-root':'banditRoot'}[args[i]];if(!key||!args[i+1])throw Error('Usage: node tooling/public-release.mjs --output review/new-release --base /design-system/ --focus-root /path --great-circle-root /path --stethem-root /path [--focus-epub full|fixture-only] [--reads-root /path --bandit-root /path]');options[key]=args[i+1];}console.log(JSON.stringify(await buildPublicRelease(options),null,2));}

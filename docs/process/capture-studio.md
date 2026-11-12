@@ -55,7 +55,7 @@ The default source checkouts are `../design-foundation-work/focus-speed-reader` 
 On this computer, an existing Playwright entry and browser are available:
 
 ```sh
-export PLAYWRIGHT_MODULE=/absolute/path/to/playwright/index.mjs
+export PLAYWRIGHT_MODULE=/absolute/app/node_modules/playwright/index.mjs
 export PLAYWRIGHT_CHANNEL=chrome
 npm run capture -- --list
 npm run capture -- --scene all --profile all --theme both --plan

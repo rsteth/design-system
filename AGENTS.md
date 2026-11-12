@@ -25,3 +25,7 @@ Keep the agent path simple; no MCP server is configured or needed. Discover X in
 Use Node 20+ and the existing pinned dependencies. Run `npm run check` for central validation, tests and static build; app-specific checks and browser tests are separate. Do not report missing servers, unavailable capture scenes, stale images or skipped checks as passed. Run focused regression tests while developing and the full gate after final edits.
 
 Do not publish, push, deploy, replace approved images, enable Actions schedules or modify unrelated projects as an incidental step. Any future one-way automation should pin exact source inputs and produce reviewable artifacts/changes; see `docs/process/one-way-sync.md`.
+
+## Agent-facing guidance
+
+`llms.txt` links the public guides for current Robin workbenches and independent reference studies. `tooling/agent-guides.mjs` generates these from registry data and optional app-owned public guidance. Run `npm run guides:build` after explicit snapshot refresh; `npm run guides:check` rejects stale output and broken local links. App edits belong in app checkouts, never generated central guides. Public guides omit local paths, private revisions and operational data; optional llms discovery is not an agent-compliance guarantee.

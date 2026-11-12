@@ -12,7 +12,6 @@
   ],
   "sanitizedFiles": [
     "collections/original/workbench/collection.json",
-    "docs/process/capture-studio.md",
     "docs/process/catalog-expansion-review.md",
     "docs/process/phase-1-2-review.md",
     "docs/process/public-release.md",

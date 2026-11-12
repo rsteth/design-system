@@ -48,3 +48,9 @@ The refresh preserves unmentioned apps, original collections and index metadata.
 Run `node --test tests/sync-registry.test.mjs tests/blueprint.test.mjs` for workflow regression tests, then `npm run check`. Do not confuse central check success with actual app server/browser success.
 
 For a standalone portability smoke test, run `PLAYWRIGHT_MODULE=/absolute/path/to/playwright/index.mjs PLAYWRIGHT_CHANNEL=chrome node tests/workbench/blueprint-browser.mjs` with an existing browser installation. It installs into a temporary target, serves only those copied files, checks desktop/mobile and repeated navigation, and writes local review evidence to `review/blueprint-qa/`.
+
+## Read a product design contract
+
+Start at `llms.txt` or the studio's Implementation guide link. Each existing Robin entry has `registry/guides/<id>/design-system.md`; reference entries have adaptation guidance explicitly distinguished from official product contracts. Reads and Bandit can supply reviewed public guides in their own repositories. Explicit registry sync copies these and release freshness checks compare them to the source. Run `npm run guides:build` after syncing, then `npm run check`. Generated guides contain selected token/fixture fields, not raw source metadata.
+
+For an authorized app change, follow its repo instructions and edit its actual components and tokens, then refresh the one-way snapshot. A public guide does not grant permission or ensure a crawler reads it. Public capture navigation is informational; fresh capture generation still needs a local checkout with approved scenes.

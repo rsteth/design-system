@@ -515,7 +515,7 @@
     "authority": "App-owned design collection, tokens and optional inventory",
     "baseRevision": null,
     "inventorySha256": "8247277150411b183121c5b732cb42d3b60bc2e86f2fd5d68e518acd87098179",
-    "tokenSha256": "e558c986a09eb8aeba82feaa30fda5fac8b0ab38aa8193d9a7a26d63f85819b3",
+    "tokenSha256": "cbcbd0485b32e1320786975098ed2e57bcdcb93f34b85a5b18120f83306b3e1b",
     "integrationStatus": "unpublished-local-snapshot",
     "integrationRevision": null,
     "withheldRevisions": [

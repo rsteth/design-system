@@ -61,3 +61,11 @@ The installed versions and upstream package metadata both explicitly declare MIT
 npm documents that the package `license` field communicates the package license using an SPDX identifier: https://docs.npmjs.com/cli/v11/configuring-npm/package-json/#license . These are affirmative package-level MIT declarations, not evidence that the packages are unlicensed. Neither retrieved repository root nor installed package supplies a complete notice; path-webpack also names Node.js v7.0.0 as its source. We have not established complete attribution for every derived file or invented copyright holders/years. The full-parser candidate conservatively retains the notice-review flag. The fixture-only candidate removes the dependency chain rather than making a legal assumption about redistribution.
 
 Tailwind’s license is also copied explicitly because its preflight CSS is inlined by PostCSS and does not appear in Rollup’s JavaScript module list.
+
+## Required Reads/Bandit release gate
+
+Release packaging with these apps now fails closed without `PLAYWRIGHT_MODULE` pointing to an installed Playwright module and its browser. `PLAYWRIGHT_CHANNEL=chrome` may select an installed Chrome instead of bundled Chromium. The builder runs the full desktop/mobile, standalone/opaque-frame preview matrix; fixture-subset environment settings are ignored. A failed or incomplete run prevents `release.json` from being issued. Browser evidence and logs are written beside the ignored candidate directory, not into the public artifact.
+
+Before and after verification, source manifests/tokens/inventories must match their central snapshots. Allowlisted production UI source and packaged preview bytes must remain unchanged. New fixtures require the complete four-case matrix. The public-source exporter also refuses stale Reads/Bandit snapshots. Existing candidates must be rebuilt after source changes; an old passing report is not reused.
+
+These gates are local release prerequisites, not automatic publication or cross-repository synchronization. They validate synthetic UI behavior and isolation, not live authentication/providers, production health, comprehensive visual similarity, or every future screen. Source ownership stays in each app.
