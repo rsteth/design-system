@@ -301,7 +301,7 @@ export function mountWorkbench(container, options = {}) {
         if (!tokens.length) continue;
         const heading = element('h3', {}, title);
         const group = element('section', { class: `wb-foundation-group wb-foundation-${id}`, 'aria-label': title }, heading);
-        if (id === 'dimensions') group.append(note('Rendered at actual CSS size. Oversized samples scroll.'));
+        if (id === 'dimensions') group.append(note('Rendered at actual CSS size when space allows. Larger values scale to fit.'));
         if (id === 'fonts') group.append(note('Uses fonts available on this device. Missing families fall back.'));
         group.append(element('ul', { class: 'wb-token-grid' }, ...tokens.map(card)));
         sections.append(group);
