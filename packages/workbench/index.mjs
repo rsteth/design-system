@@ -61,7 +61,10 @@ export async function loadCollections(registryURL, { fetcher = globalThis.fetch,
     }
     return { ...collection, tokensData, inventoryData, studyData, manifestURL: manifestURL.href,
       fixtures: (collection.fixtures ?? []).map(fixture => ({ ...fixture, url: safeURL(fixture.url, manifestURL).href })) };
-  }));
+  })).then(orderedCollections);
+}
+function orderedCollections(items) {
+  return items.map(item => ({ ...item, title: item.title.charAt(0).toUpperCase() + item.title.slice(1) })).sort((a, b) => a.title.localeCompare(b.title, 'en', { sensitivity: 'base', numeric: true }));
 }
 function element(tag, attrs = {}, ...children) {
   const node = document.createElement(tag);
@@ -135,7 +138,7 @@ async function copyText(text) {
 }
 export function mountWorkbench(container, options = {}) {
   if (!container?.replaceChildren) throw new TypeError('A DOM container is required');
-  let collections = options.collections ?? [];
+  let collections = orderedCollections(options.collections ?? []);
   let skin = skinName(options.skin);
   let selected = options.initialCollection ?? collections[0]?.id, section = SECTIONS.includes(options.initialSection) ? options.initialSection : 'foundations', theme = 'light', viewport = 'responsive', comparison = false, fixtureID = options.initialFixture;
   let tokenFilter = '', collectionFilter = '', disposed = false;
@@ -235,18 +238,14 @@ export function mountWorkbench(container, options = {}) {
       const canvas = element('div', { class: 'wb-dimension-canvas' }, glyph);
       const preview = element('div', { class: 'wb-dimension-preview', 'data-dimension-kind': fontSize ? 'font-size' : radius ? 'radius' : 'length' }, canvas);
       const context = numeric < 0 ? 'Negative value: magnitude shown' : /^(rem|em|ch|ex)$/i.test(length[2] || '') ? 'Relative to workbench typography' : '';
-      let initialized = false;
       const observer = new ResizeObserver(() => {
         if (!preview.isConnected || !preview.clientWidth) return;
-        const overflow = preview.scrollWidth > preview.clientWidth + 1 || preview.scrollHeight > preview.clientHeight + 1;
-        detail.textContent = [context, overflow ? 'Actual size: scroll to inspect' : ''].filter(Boolean).join(' · ');
-        if (overflow) {
-          preview.setAttribute('tabindex', '0'); preview.setAttribute('role', 'region');
-          preview.setAttribute('aria-label', `${row.name}, ${value}, actual-size preview. Scroll to inspect.`);
-          // Start oversized corners at the visible top endpoint instead of empty space inside the arc.
-          if (!initialized && radius) preview.scrollLeft = preview.scrollWidth;
-          initialized = true;
-        } else { preview.removeAttribute('tabindex'); preview.removeAttribute('role'); preview.removeAttribute('aria-label'); }
+        const scale = Math.min(1, preview.clientWidth / canvas.offsetWidth, preview.clientHeight / canvas.offsetHeight);
+        canvas.style.transform = `translate(-50%, -50%) scale(${scale})`;
+        preview.dataset.scale = String(scale);
+        detail.textContent = [context, scale < 1 ? `Scaled to fit (${Math.round(scale * 100)}%). Value: ${value}` : ''].filter(Boolean).join(' · ');
+        preview.setAttribute('role', 'img');
+        preview.setAttribute('aria-label', `${row.name}, ${value}${scale < 1 ? ', scaled to fit' : ', actual size'}`);
       });
       observer.observe(preview); observer.observe(canvas); previewCleanup.push(() => observer.disconnect());
       return preview;
@@ -302,7 +301,7 @@ export function mountWorkbench(container, options = {}) {
         if (!tokens.length) continue;
         const heading = element('h3', {}, title);
         const group = element('section', { class: `wb-foundation-group wb-foundation-${id}`, 'aria-label': title }, heading);
-        if (id === 'dimensions') group.append(note('Rendered at actual CSS size. Oversized samples scroll.'));
+        if (id === 'dimensions') group.append(note('Rendered at actual CSS size when space allows. Larger values scale to fit.'));
         if (id === 'fonts') group.append(note('Uses fonts available on this device. Missing families fall back.'));
         group.append(element('ul', { class: 'wb-token-grid' }, ...tokens.map(card)));
         sections.append(group);
@@ -518,6 +517,6 @@ export function mountWorkbench(container, options = {}) {
     if (focusKey) [...shell.querySelectorAll('[data-wb-focus]')].find(node => node.dataset.wbFocus === focusKey && !node.disabled)?.focus({ preventScroll: true });
   }
   render();
-  return { setSkin(next) { if (disposed) return; skin = skinName(next); const shell = container.querySelector('.wb-shell'); if (shell) shell.dataset.wbSkin = skin; }, destroy() { clear(); disposed = true; container.replaceChildren(); }, setCollections(next) { collections = next; if (!current()) selected = collections[0]?.id; render(); },
+  return { setSkin(next) { if (disposed) return; skin = skinName(next); const shell = container.querySelector('.wb-shell'); if (shell) shell.dataset.wbSkin = skin; }, destroy() { clear(); disposed = true; container.replaceChildren(); }, setCollections(next) { collections = orderedCollections(next); if (!current()) selected = collections[0]?.id; render(); },
     showCollection(id) { if (disposed || id === selected || !collections.some(item => item.id === id)) return; update(() => { selected = id; fixtureID = undefined; tokenFilter = ''; collectionFilter = ''; options.onCollectionChange?.(id); }); } };
 }

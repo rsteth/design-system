@@ -1,5 +1,45 @@
 # Capture studio: one address, seven formats
 
+## Public screens from anywhere
+
+The default Capture Studio now reads the same release registry as the workbenches.
+It lists screen and pattern fixtures for Bandit, Focus, Great Circle, Reads,
+Stethem and Workbench, without a parallel screen inventory. These are packaged,
+app-owned presentation fixtures with synthetic data, **not live accounts**.
+The public release resolves their URLs on the hosted site. A source-only checkout
+reports missing hosted fixtures rather than contacting localhost app servers.
+
+Select an application, screen and output profile. **Open screen for capture**
+opens the unscaled fixture. **Copy capture address** preserves the selection.
+Capture the opened fixture at the displayed viewport and density, not the scaled
+studio iframe. A browser agent can do this from any machine with browser access;
+no AWS session, signed-in profile or source app development server is required.
+
+For a terminal agent with an existing Playwright/browser installation:
+
+```sh
+node tooling/capture-public.mjs --app reads --screen all --profile mobile --plan
+node tooling/capture-public.mjs --app reads --screen all --profile mobile
+node tooling/capture-public.mjs --app all --profile stethem-thumb
+```
+
+Use `--profile all` for every format, `--full-page` for complete scrolling pages.
+Full-page images exceed the preset height and are not App Store-size exports.
+The remote runner permits only GET/HEAD requests inside the hosted design-system
+path, uses a fresh context per screen, blocks service workers, waits for fonts and
+images, and records PNG hashes and provenance in `review/captures/public-*`.
+It does not upload, publish or replace site imagery. Thumbnail preset is 1200×900;
+the existing local validated runner below additionally produces an 800×600 card.
+
+The static page previews screens; it cannot take server-side screenshots or save
+new images itself. Public downloadable PNG galleries are not yet populated by
+this change. App Store profiles are dimension references, not native captures.
+
+The prior locally validated scene workflow remains at
+`/apps/studio/?library=capture&capture=local`. Existing `scene=` links retain that
+workflow. Public selection links use `app`, `screen` and `profile`.
+
+
 Open `/apps/studio/?library=capture` from the Design system home navigation. Share a precise selection with, for example, `/apps/studio/?library=capture&scene=focus-reader&profile=mobile&theme=dark`. The UI exposes all formats, batch commands, local previews, verified exports and source metadata. App scenes stay app-owned; the studio is a one-way capture/review surface.
 
 ## For an agent arriving at the address

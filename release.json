@@ -5,8 +5,8 @@
     "browser": "157.0.8103.51"
   },
   "schemaVersion": 1,
-  "createdAt": "2026-11-13T05:52:53.534Z",
-  "status": "local-candidate-not-published",
+  "createdAt": "2026-11-13T16:36:00.422Z",
+  "status": "published-static-release",
   "licenseGaps": [],
   "focusEpub": "fixture-only",
   "base": "/design-system/",
@@ -41,7 +41,6 @@
     }
   },
   "limitations": [
-    "No public deployment or permission change performed.",
     "Fixture packaging and browser checks are separate from application production CI.",
     "MIT covers original design-system work only; applications and third-party material retain their own terms.",
     "Opaque sandbox requires CORS for static assets."
@@ -69,8 +68,8 @@
     },
     {
       "path": "RELEASE-NOTES.html",
-      "bytes": 2344,
-      "sha256": "bb391fa7d1c985551662d899ca9825e1598f44b872a5b913d1bdd32b20aa91e4"
+      "bytes": 2400,
+      "sha256": "d7d9077b6b94a9a4c1f860236f3acf547c5ce3622b1b4971773b7b0c53cb4342"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
@@ -94,8 +93,8 @@
     },
     {
       "path": "apps/studio/capture-studio.mjs",
-      "bytes": 588,
-      "sha256": "f726a2506cf61cc0dfc60c4a3542d4e6470382c37389514181559ab75a1a0bb9"
+      "bytes": 151,
+      "sha256": "bd457d9669bdf19be4c161ea46869227894b549597fec1add4bf285c9def6293"
     },
     {
       "path": "apps/studio/chrome.mjs",
@@ -104,13 +103,13 @@
     },
     {
       "path": "apps/studio/index.html",
-      "bytes": 2233,
-      "sha256": "607c922b4506c25a9b93ef3332c28ccedc32f29b1dcee1a1ad9d31c214ea1858"
+      "bytes": 2152,
+      "sha256": "b560733cd1c57cfcd201edb4682efd5a280afd8e193dcd5d96d17f2e63101b6e"
     },
     {
       "path": "apps/studio/main.mjs",
-      "bytes": 7650,
-      "sha256": "7e2701b4278ddb8bde5bb9d635389589b68c7a6886a128728dc73052db133520"
+      "bytes": 7334,
+      "sha256": "c2b888d993969ec880325390866c5986401de38dd2b0b17ff5415aadf8057c97"
     },
     {
       "path": "apps/studio/material-framing.mjs",
@@ -124,18 +123,23 @@
     },
     {
       "path": "apps/studio/material.css",
-      "bytes": 10012,
-      "sha256": "133f49a644614c8e467b824a99993ec44bc15ee32c57d0b9a5b9dcf8af94d406"
+      "bytes": 10364,
+      "sha256": "c1ea5d2686479bf8309a8985137bd9ed6839cb175a8eddd047594806188ff525"
     },
     {
       "path": "apps/studio/material.mjs",
-      "bytes": 36834,
-      "sha256": "f5ff3e48767a81b31bcbafea86505183a0d6a045ccba7f26b6260613d8d07369"
+      "bytes": 38716,
+      "sha256": "54c412543260f704dbe7e2055db94615db1c2b2bdb89b4149d5c75b317f9cb59"
     },
     {
       "path": "apps/studio/project-coverage.mjs",
       "bytes": 6287,
       "sha256": "cbb5deb68c527774605159f9e5e3e25d55f871ed51e5e3f8c1137f6cdc84f01b"
+    },
+    {
+      "path": "apps/studio/public-capture.mjs",
+      "bytes": 5749,
+      "sha256": "621616faa39a1e7bea5dd0710ea3177024f8000fb9c0db5fe2f7c67a2e402982"
     },
     {
       "path": "apps/studio/public-sources.mjs",
@@ -4959,8 +4963,8 @@
     },
     {
       "path": "docs/process/capture-studio.md",
-      "bytes": 11042,
-      "sha256": "c02f34d41e026a7367afa74fceb6ac9ef3cee857e6da1f937accaa0ce008c51a"
+      "bytes": 13269,
+      "sha256": "520a8e13451eb0b999fa39b6cd2e92d573fadb9ab82e11a053dc4802e7143ccc"
     },
     {
       "path": "index.html",
@@ -5029,8 +5033,8 @@
     },
     {
       "path": "llms.txt",
-      "bytes": 6764,
-      "sha256": "bd8fadca559d413b8c9ac5ae8ac59b3285fe85dad2d2fb0e842dc29c67bc2265"
+      "bytes": 6902,
+      "sha256": "088f4505d22aca6844a7e7c8e98fe1476195f39564aab7ddfc1401b1f216c720"
     },
     {
       "path": "packages/appearance/index.d.mts",
@@ -5046,6 +5050,16 @@
       "path": "packages/appearance/index.mjs",
       "bytes": 3296,
       "sha256": "d553e419bf1481512f2d3452a7dcadeb505d0124b9d1089b02201150202fa57a"
+    },
+    {
+      "path": "packages/capture/public-screens.mjs",
+      "bytes": 1701,
+      "sha256": "0d58ff6cd7bb8e2bc9bee0cdaa2d6c52a36e2e3e4f8ff947b426cdf33fb620ec"
+    },
+    {
+      "path": "packages/capture/scenes.mjs",
+      "bytes": 3086,
+      "sha256": "2de604d707357b74905a17feb4441bfb5bf5c2f4f787e4d4cb7eb45577a515f2"
     },
     {
       "path": "packages/react/index.d.mts",
@@ -5104,8 +5118,8 @@
     },
     {
       "path": "packages/workbench/index.mjs",
-      "bytes": 48059,
-      "sha256": "c8bc564c1166c4ae04a99f289b37293167952c7e20135885b105b9863d344efc"
+      "bytes": 48100,
+      "sha256": "7402266d54dbb2f93f57cad09dc37fc3c361723fd84c5e9b7193074c731c71da"
     },
     {
       "path": "packages/workbench/skins/stethem.css",
@@ -5129,8 +5143,8 @@
     },
     {
       "path": "packages/workbench/style.css",
-      "bytes": 30042,
-      "sha256": "7cd0db0290d1ada65e0adb867d4f64589cadf195458ca29c37d28130af9c7fc8"
+      "bytes": 30278,
+      "sha256": "1e42126c97724d7a86625a5de0a0cc37f168b1fc96a6696aef4445ab9d17095f"
     },
     {
       "path": "packages/workbench/theme-adapter.d.mts",

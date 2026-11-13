@@ -1,1 +1,2 @@
-export function mountCaptureStudio(root){const main=document.createElement('main');main.className='cs-shell';const h=document.createElement('h1');h.textContent='Local capture tools';const p=document.createElement('p');p.textContent='Capture generation runs only in the local source checkout. This public viewer has no capture server, terminal access, local exports, or connection to your computer.';const a=document.createElement('a');a.href='../../RELEASE-NOTES.html';a.textContent='Attribution';main.append(h,p,a);root.replaceChildren(main);return{destroy(){root.replaceChildren();}};}
+import {mountPublicCapture} from './public-capture.mjs';
+export function mountCaptureStudio(root){return mountPublicCapture(root,{allowLocal:false});}
