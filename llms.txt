@@ -101,7 +101,7 @@ Start with the product guide below. Robin workbenches describe app-owned UI; ref
 
 ## Capture and blueprint
 
-- [Capture studio](apps/studio/?library=capture): inspect available profiles. Generating new captures requires an authorized local checkout and its approved scenes, not a public endpoint.
+- [Capture studio](apps/studio/?library=capture): browse hosted app-owned synthetic screens and output profiles. Open a screen for a browser agent to capture from anywhere, without app servers or account credentials. This static page does not generate or store PNGs; the capture guide includes an optional remote-browser CLI.
 - [Capture instructions](docs/process/capture-studio.md)
 - [Blank blueprint](templates/blank/README.md): portable framework-neutral starter; existing app source stays authoritative. Installation requires an authorized checkout and its documented tooling.
 - [Workbench](apps/studio/)

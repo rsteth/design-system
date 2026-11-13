@@ -21,6 +21,17 @@ Discover → capture → inspect → export/stage. No MCP setup is part of this 
 
 ## “Grab screens for X”
 
+For public presentation images, start at `/apps/studio/?library=capture`.
+Its app/screen/profile selectors use the same published fixture registry as the
+workbenches. Open the unscaled screen and capture it with a fresh browser context
+at the displayed viewport and density. These are synthetic presentation fixtures,
+not signed-in production screens. No app servers are required. Terminal agents
+can use `node tooling/capture-public.mjs --app X --profile desktop --plan`, then
+omit `--plan`; see the capture guide. The page itself does not generate PNGs.
+
+For locally validated exports and provenance, follow the original workflow:
+
+
 1. Identify X via its collection id, title and source repository. Check whether the user wants real app screen evidence or a presentation capture; ask only if the distinction changes the result and is unclear.
 2. If a capture scene exists, follow `capture-studio.md` and run `node tooling/capture.mjs --help`. Current scenes are `focus-reader` and `great-circle-route`; no arbitrary URL mode exists. Example: `npm run capture -- --scene focus-reader --profile all --theme both --focus-root /absolute/checkout`.
 3. Otherwise inspect X's `fixtures` with `section: "screens"` and app-owned setup. Start the documented local server and capture declared routes/states with a fresh browser context, fixed viewport/theme and sample data. A site that has no capture adapter may still have real screen fixtures; do not mislabel ordinary fixture screenshots as a validated studio scene export.
