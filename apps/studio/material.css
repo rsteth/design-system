@@ -21,3 +21,9 @@
 .material-compare-icon{display:block;width:20px;height:20px;overflow:visible}
 
 .material-compare,.material-compare *{user-select:none;-webkit-user-select:none;-webkit-user-drag:none}
+
+/* Material shares the collection/workbench hierarchy, while the plate viewer keeps its own controls. */
+.material-workbench .material-shell{max-width:none;width:100%;margin:0}
+.material-workbench .material-intro h1{font-size:clamp(28px,3.2vw,42px)}
+.material-workbench .material-credit{margin-top:0}
+.material-workbench [hidden]{display:none!important}

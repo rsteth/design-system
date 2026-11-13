@@ -195,10 +195,31 @@ export function mountMaterial(root, material) {
   let current = initial.index, preferredView = initial.view, zoom = 'artwork', alignCharts = true, sequence = 0, destroyed = false, observer, comparison;
   const reveal = { x: 0, y: 0 };
   let revealInitialized = false;
-  const main = element('main', { class: 'material-shell' });
+  const shell = element('div', { class: 'wb-shell material-workbench', 'data-wb-skin': 'workbench' });
+  const sidebar = element('aside', { class: 'wb-sidebar' }, element('div', { class: 'wb-brand' }, element('strong', {}, 'Material')));
+  const picker = element('select', { id: 'material-collection', 'aria-label': 'Collection' }, element('option', { value: material.id }, `${material.title} · ${material.year}`));
+  sidebar.append(element('label', { class: 'wb-control', for: 'material-collection' }, element('span', {}, 'Collection'), picker));
+  const sections = element('nav', { 'aria-label': 'Material sections' });
+  const sectionButtons = new Map();
+  let section = new URL(location.href).searchParams.get('section') === 'sources' ? 'sources' : 'plates';
+  for (const [id, label] of [['plates', 'Plates'], ['sources', 'Sources']]) {
+    const button = element('button', { type: 'button', 'data-material-section': id }, element('span', { class: 'wb-nav-label' }, label));
+    button.addEventListener('click', () => {
+      if (section === id) return;
+      section = id;
+      const url = new URL(location.href);
+      url.searchParams.set('collection', material.id);
+      if (id === 'sources') url.searchParams.set('section', id); else url.searchParams.delete('section');
+      history.pushState(null, '', url);
+      renderSection();
+    });
+    sections.append(button); sectionButtons.set(id, button);
+  }
+  sidebar.append(sections);
+  const main = element('main', { class: 'wb-main material-shell' });
   const intro = element('header', { class: 'material-intro' }, element('p', { class: 'material-eyebrow' }, 'MATERIAL / COLOR STUDIES / 1890'), element('h1', {}, material.title), element('p', { class: 'material-author' }, material.author), element('p', {}, '29 chromatic plates, translated into SVG and flat color. Explore the original scans and their web interpretation in the same arrangement.'));
   const content = element('section', { class: 'material-content', 'aria-label': 'Selected material' });
-  const credit = element('aside', { class: 'material-credit' }, element('p', {}, material.credit), link('Getty / Internet Archive source ↗', material.sourceURL), document.createTextNode(' · '), link('Source page images · JP2 archive ↗', 'https://archive.org/download/gri_33125012875395/gri_33125012875395_jp2.zip'), element('p', {}, 'archive records source as not in copyright, no copyright is asserted'));
+  const credit = element('aside', { class: 'material-credit' }, element('h2', {}, 'Sources'), element('p', {}, material.credit), link('Getty / Internet Archive source ↗', material.sourceURL), document.createTextNode(' · '), link('Source page images · JP2 archive ↗', 'https://archive.org/download/gri_33125012875395/gri_33125012875395_jp2.zip'), element('p', {}, 'archive records source as not in copyright, no copyright is asserted'));
   // Keep native anchor semantics for modified clicks, new tabs and copied links.
   function navigateLink(anchor, action) {
     anchor.addEventListener('click', event => {
@@ -434,6 +455,14 @@ export function mountMaterial(root, material) {
     if (comparison && !revealInitialized) { comparison.initialize(); revealInitialized = true; }
     if (focusSelector) content.querySelector(focusSelector)?.focus();
   }
-  main.append(intro, content, credit); root.replaceChildren(main); render();
-  return { destroy() { destroyed = true; sequence++; observer?.disconnect(); comparison?.destroy(); main.remove(); } };
+  function renderSection() {
+    for (const [id, button] of sectionButtons) {
+      button.classList.toggle('wb-active', section === id);
+      if (section === id) button.setAttribute('aria-current', 'page'); else button.removeAttribute('aria-current');
+    }
+    content.hidden = section !== 'plates';
+    credit.hidden = section !== 'sources';
+  }
+  main.append(intro, content, credit); shell.append(sidebar, main); root.replaceChildren(shell); render(); renderSection();
+  return { destroy() { destroyed = true; sequence++; observer?.disconnect(); comparison?.destroy(); shell.remove(); } };
 }

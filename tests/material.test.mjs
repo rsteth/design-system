@@ -13,14 +13,14 @@ test('all 29 plates and 10 supplements retain exact acquired bytes and source pa
  assert.match(manifest.credit,/Getty Research Institute/);assert.match(manifest.rights,/NOT_IN_COPYRIGHT/);
  assert.equal(manifest.translationURL,undefined); assert.equal(manifest.translationAccess,undefined); assert.equal(manifest.items.filter(item=>item.svg).length,29);
 });
-test('Material is separate from app and reference registries with a native labelled dropdown',async()=>{
+test('Material is separate from app and reference registries with the shared workspace hierarchy',async()=>{
  const html=await read('apps/studio/index.html'), main=await read('apps/studio/main.mjs');
- assert.match(html,/>Production</);assert.match(html,/<label[^>]*for="material-navigation">Material<\/label>/);
- assert.match(html,/<select id="material-navigation">/);assert.match(main,/library==='material'/);
+ assert.match(html,/>Production</);assert.match(html,/data-library="material"[^>]*>Material<\/button>/);
+ assert.doesNotMatch(html,/<select id="material-navigation">/);assert.match(main,/library==='material'/);
  for(const file of ['registry/index.json','registry/references.json'])assert.doesNotMatch(await read(file),/lacouture/);
  assert.match(html,/data-attribution-link>Attribution/);assert.doesNotMatch(html,/Static release scope and attribution|Independent design studies/);
  assert.match(main,/library === 'references' \? 'Independent design studies/);
- const material=await read('apps/studio/material.mjs');assert.doesNotMatch(material,/<iframe|createElement\('iframe'\)|fetch\(material.translationURL/);
+ const material=await read('apps/studio/material.mjs');assert.match(material,/wb-shell material-workbench/);assert.match(material,/id: 'material-collection'/);assert.match(material,/aria-label': 'Material sections'/);assert.doesNotMatch(material,/<iframe|createElement\('iframe'\)|fetch\(material.translationURL/);
 });
 test('only verified public commit identifiers survive display and public-output redaction',()=>{
  const unknown='0123456789abcdef0123456789abcdef01234567';

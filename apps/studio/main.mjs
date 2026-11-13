@@ -4,7 +4,6 @@ import { mountChrome } from './chrome.mjs';
 document.querySelector('[data-design-system-version]').textContent = VERSION;
 const root = document.querySelector('#workbench');
 const navigation = document.querySelector('#library-navigation');
-const materialNavigation = document.querySelector('#material-navigation');
 const notice = document.querySelector('#library-status');
 const cache = new Map(), loaded = new Map(), selections = new Map();
 const registryMetadata=fetch(new URL('../../registry/index.json',import.meta.url)).then(response=>{if(!response.ok)throw Error('Registry unavailable');return response.json();});
@@ -33,7 +32,6 @@ function remember(library, id) {
 async function show(library, requested) {
  const version = ++generation;
  updateGuide(library,null);
- materialNavigation.value = library === 'material' ? 'lacouture-1890' : '';
  for (const button of navigation.querySelectorAll('button[data-library]')) button.setAttribute('aria-pressed', String(button.dataset.library === library));
  const label=library==='coverage'?'Project coverage':library==='material'?'Material':library==='capture'?'Capture studio':library==='references'?'Reference studies':'Robin';
  notice.removeAttribute('role');
@@ -74,7 +72,6 @@ async function show(library, requested) {
   notice.textContent = library === 'references' ? 'Independent design studies. Not affiliated with, endorsed by, or sponsored by the referenced companies.' : '';
  } catch (error) {
   if (version !== generation) return;
-  if(library==='material') materialNavigation.value='';
   notice.setAttribute('role', 'alert');
   notice.textContent = `${label} could not load: ${error.message}. Select the workspace again to retry.`;
  } finally { if (version === generation) root.removeAttribute('aria-busy'); }
@@ -103,6 +100,5 @@ function openCollection(library, id) {
 }
 mountChrome({ navigation, collectionsFor, loaded, open: openCollection });
 for (const button of navigation.querySelectorAll('button[data-library]')) button.addEventListener('click', () => navigate(button.dataset.library));
-materialNavigation.addEventListener('change', () => { if(materialNavigation.value) navigate('material'); });
 addEventListener('popstate', () => show(libraryFromURL(), new URL(location.href).searchParams.get('collection')));
 show(libraryFromURL(), new URL(location.href).searchParams.get('collection'));

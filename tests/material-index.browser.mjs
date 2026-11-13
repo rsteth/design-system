@@ -20,6 +20,17 @@ try{
   await context.route('**/*',route=>{if(new URL(route.request().url()).origin!==origin){external.push(route.request().url());return route.abort();}return route.continue();});
   const page=await context.newPage();page.on('pageerror',e=>errors.push(e.message));
   await page.goto(url);await page.locator('.material-index-grid').waitFor();await overflow(page);
+  assert.equal(await page.locator('[data-library="material"]').getAttribute('aria-pressed'),'true');
+  await page.getByLabel('Collection',{exact:true}).selectOption('lacouture-1890');
+  await page.getByRole('button',{name:'Sources',exact:true}).click();
+  assert.equal(await page.locator('.material-content').isVisible(),false);
+  assert.equal(await page.locator('.material-credit').isVisible(),true);
+  assert.match(await page.locator('.material-credit').innerText(),/Getty Research Institute/);
+  await page.reload(); await page.locator('.material-credit').waitFor();
+  assert.equal(await page.locator('.material-content').isVisible(),false);
+  await page.getByRole('button',{name:'Plates',exact:true}).click();
+  assert.equal(await page.locator('.material-index-grid').isVisible(),true);
+  await overflow(page);
   assert.equal(await page.locator('.material-supplements').evaluate(n=>n.open),false);
   assert.equal(await page.locator('.material-index-card').count(),29);assert.equal(await page.locator('.material-supplement-link').count(),10);
   assert.equal(await page.locator('.material-stage').count(),0);
@@ -80,7 +91,7 @@ try{
    if(mode==='compare'){await page.locator('.material-sheet svg:not(.material-compare-icon)').waitFor();assert.equal(await page.locator('.material-compare-handle').count(),1);}
   }
   await page.getByRole('button',{name:'Reference studies',exact:true}).click();await page.getByLabel('Collection',{exact:true}).waitFor();
-  await page.getByLabel('Material',{exact:true}).selectOption('lacouture-1890');await page.locator('.material-index-grid').waitFor();
+  await page.getByRole('button',{name:'Material',exact:true}).click();await page.locator('.material-index-grid').waitFor();
   await page.goBack();await page.getByLabel('Collection',{exact:true}).waitFor();await page.goForward();await page.locator('.material-index-grid').waitFor();
   assert.match(await page.locator('.material-credit').innerText(),/Getty Research Institute/);
   results.push({width,plateLinks:29,supplementLinks:10,history:'passed',keyboard:'passed'});await context.close();
