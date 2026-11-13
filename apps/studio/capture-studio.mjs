@@ -1,3 +1,4 @@
+import { mountPublicCapture } from './public-capture.mjs';
 import { SCENES, PROFILES, CAPTURE_VERSION, sceneURL, artifactURL, verifyPNG } from '../../packages/capture/scenes.mjs';
 const node = (tag, attrs = {}, ...children) => {
   const result = document.createElement(tag);
@@ -10,6 +11,7 @@ const node = (tag, attrs = {}, ...children) => {
 };
 export function mountCaptureStudio(container, options = {}) {
   const params = new URL(location.href).searchParams;
+  if (params.get('capture') !== 'local' && !params.has('scene')) return mountPublicCapture(container);
   let profile = PROFILES.find(item => item.id === params.get('profile')) ?? PROFILES[0];
   let disposed = false, scene = SCENES.find(item => item.id === params.get('scene')) ?? SCENES[0], theme = params.get('theme') === 'dark' ? 'dark' : 'light', refreshGeneration = 0, copyGeneration = 0, report, frame, probe, timeout, resize, exportGeneration = 0, exportURLs = [];
   const base = options.base ?? import.meta.url;

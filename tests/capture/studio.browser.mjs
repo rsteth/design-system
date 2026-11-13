@@ -29,7 +29,7 @@ try {
  const errors=[],external=[];const page=await context.newPage();page.on('pageerror',error=>errors.push(error.message));
  await context.route('**/*',route=>{const url=new URL(route.request().url());if(['data:','blob:'].includes(url.protocol)||[base,'http://127.0.0.1:5186','http://127.0.0.1:5187'].includes(url.origin))return route.continue();external.push(url.origin+url.pathname);return route.abort();});
  const ready=()=>page.locator('.cs-status[data-state=ready]').waitFor({timeout:20000});
- await page.goto(base+'/apps/studio/?library=capture');await ready();
+ await page.goto(base+'/apps/studio/?library=capture&capture=local');await ready();
  assert.equal(await page.locator('.cs-shell').count(),1);assert.equal(await page.locator('.wb-shell').count(),0);assert.equal(await page.locator('[data-library=own]').innerText(),'Robin');assert.match(await page.locator('.studio-identity').innerText(),/^Design system \d+\.\d+\.\d+$/);
  assert.equal(await page.locator('.cs-stage iframe').getAttribute('sandbox'),'allow-scripts');
  for(const scene of ['focus-reader','great-circle-route'])for(const theme of ['light','dark']){
