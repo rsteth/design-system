@@ -27,20 +27,22 @@ try {
  browser=await chromium.launch({headless:true,...(process.env.PLAYWRIGHT_CHANNEL?{channel:process.env.PLAYWRIGHT_CHANNEL}:{})});
  for(const width of [1440,390]){
   const page=await browser.newPage({viewport:{width,height:800},hasTouch:width===390});
-  await page.goto(base+'/apps/studio/?collection=workbench&section=components');
-  const frame=page.locator('iframe').first();await frame.waitFor();
-  await frame.evaluate(n=>{n.removeAttribute('src');n.srcdoc='<button onclick="this.textContent=String(Number(this.textContent)+1)">0</button><div style="height:2000px">Scrollable preview</div>';});
-  await page.evaluate(()=>{const footer=document.createElement('div');footer.style.height='1800px';document.body.append(footer)});
-  await frame.scrollIntoViewIfNeeded();await page.waitForTimeout(150);
-  const child=page.frameLocator('iframe');await child.locator('button').waitFor();await child.locator('body').evaluate(()=>scrollTo(0,500));
-  const box=await frame.boundingBox(),before=await page.evaluate(()=>scrollY);await page.mouse.move(box.x+100,Math.min(box.y+200,650));await page.mouse.wheel(0,250);await page.waitForTimeout(200);
-  assert.ok(await page.evaluate(()=>scrollY)>before+50,'Page moves immediately over mid-scroll iframe');assert.equal(await child.locator('body').evaluate(()=>scrollY),500,'Inactive iframe position unchanged');
-  await page.getByRole('button',{name:'Interact with preview',exact:true}).click();await child.locator('button').click();assert.equal(await child.locator('button').innerText(),'1');
-  await frame.scrollIntoViewIfNeeded();const active=await frame.boundingBox();await page.mouse.move(active.x+100,Math.min(active.y+150,650));await page.mouse.wheel(0,120);await page.waitForTimeout(200);assert.ok(await child.locator('body').evaluate(()=>scrollY)>0,'Active preview scrolls');
-  await page.getByRole('button',{name:'Done interacting',exact:true}).click();assert.equal(await frame.evaluate(n=>n.inert),true);
-  await frame.scrollIntoViewIfNeeded();await page.waitForTimeout(100);
-  if(width===390){const b=await frame.boundingBox(),y=await page.evaluate(()=>scrollY),cdp=await page.context().newCDPSession(page);await cdp.send('Input.synthesizeScrollGesture',{x:Math.round(b.x+100),y:Math.round(Math.min(b.y+200,650)),yDistance:-200,gestureSourceType:'touch',speed:500});await page.waitForTimeout(200);assert.ok(await page.evaluate(()=>scrollY)>y+50,'Touch pans page over inactive iframe');await cdp.detach();}
-  const toggle=page.getByRole('button',{name:'Interact with preview',exact:true});await toggle.focus();await page.keyboard.press('Enter');assert.equal(await frame.evaluate(n=>n.inert),false);await page.keyboard.press('Enter');assert.equal(await frame.evaluate(n=>n.inert),true);
-  console.log('PASS',width,'page-first wheel, click, active scroll, keyboard and touch');await page.close();
+  await page.goto(base+'/apps/studio/');
+  await page.setContent(`<link rel="stylesheet" href="${base}/packages/workbench/style.css"><link rel="stylesheet" href="${base}/apps/studio/material.css"><div style="height:500px"></div><div class="wb-dimension-preview" style="width:300px"><div style="height:600px;width:600px">Large literal dimension</div></div><div class="material-stage" style="height:200px;min-height:0;width:300px"><div style="height:700px">Material</div></div><iframe sandbox="allow-scripts" style="width:300px;height:200px" srcdoc="<button onclick=&quot;this.textContent='Clicked'&quot;>Test interaction</button><div style='height:1000px'>Preview</div>"></iframe><div style="height:1500px"></div>`);
+  for(const selector of ['.wb-dimension-preview','.material-stage','iframe']){
+   const target=page.locator(selector);await target.scrollIntoViewIfNeeded();
+   if(selector==='iframe')await page.frameLocator('iframe').locator('body').evaluate(n=>window.scrollTo(0,document.documentElement.scrollHeight));
+   else await target.evaluate(n=>n.scrollTop=n.scrollHeight);
+   await page.waitForTimeout(100);const before=await page.evaluate(()=>scrollY);const box=await target.boundingBox();await page.mouse.move(box.x+100,box.y+60);await page.mouse.wheel(0,350);await page.waitForTimeout(300);
+   const after=await page.evaluate(()=>scrollY);assert.ok(after>before+50,`${width} ${selector} must chain to page at lower boundary: ${before} -> ${after}`);
+   console.log('PASS',width,selector,'wheel boundary');
+  }
+  const sample=page.locator('.wb-dimension-preview');await sample.scrollIntoViewIfNeeded();await sample.evaluate(n=>n.scrollTop=0);await sample.hover();await page.mouse.wheel(0,80);await page.waitForTimeout(200);assert.ok(await sample.evaluate(n=>n.scrollTop)>0,'Overflowing samples remain scrollable');
+  if(width===390){
+   await sample.evaluate(n=>n.scrollTop=n.scrollHeight);await page.evaluate(()=>scrollTo(0,350));await page.waitForTimeout(100);const box=await sample.boundingBox(),before=await page.evaluate(()=>scrollY);const cdp=await page.context().newCDPSession(page);
+   await cdp.send('Input.synthesizeScrollGesture',{x:Math.round(box.x+100),y:Math.round(box.y+60),yDistance:-250,gestureSourceType:'touch',speed:500});await page.waitForTimeout(200);assert.ok(await page.evaluate(()=>scrollY)>before+50,'Touch scroll chains at the sample boundary');await cdp.detach();console.log('PASS mobile touch boundary');
+  }
+  const frame=page.frameLocator('iframe');await frame.locator('button').click();assert.equal(await frame.locator('button').innerText(),'Clicked');
+  await page.close();
  }
 }finally{await browser?.close();await new Promise(r=>server.close(r));}

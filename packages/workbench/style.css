@@ -155,9 +155,3 @@
 @media(prefers-reduced-motion:reduce){.wb-shell[data-wb-skin="workbench"] *,.wb-shell[data-wb-skin="workbench"] ::before,.wb-shell[data-wb-skin="workbench"] ::after{transition-duration:1ms!important;animation-duration:1ms!important;animation-delay:0s!important}}
 
 .wb-font-size-diagram{display:block;flex:none;line-height:1.2;font-weight:400;letter-spacing:normal;white-space:nowrap}
-
-/* Page-first previews: interaction is an explicit, reversible choice. */
-.wb-stage[data-interactive=false]{overflow:hidden;touch-action:pan-y pinch-zoom}
-.wb-stage[data-interactive=false] iframe{pointer-events:none}
-.wb-interaction-toggle{margin-bottom:12px}
-.wb-dimension-preview:not(:focus){overflow:hidden;touch-action:pan-y pinch-zoom}

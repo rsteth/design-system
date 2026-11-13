@@ -56,7 +56,3 @@ Each colour sample shows white and black set on the colour with the WCAG 2 contr
 Section, collection, fixture, theme, viewport and comparison changes still re-render synchronously, and focus now returns to the control that caused the change. Each render marks the shell with `data-wb-section` and `data-wb-enter` (`collection`, `section` or `refresh`) and sets `--wb-nav-shift` on the section indicator to the distance from its previous position. The `workbench` skin uses those hooks for CSS entry motion, off under reduced motion; no state waits on an animation. The skin keeps Components, Patterns and Screens still, so a fixture preview is never moving or fading while someone reaches for it. `handle.showCollection(id)` selects a collection the same way the picker does and keeps the current section.
 
 A host with a fixed header sets `--wb-offset-top` on an ancestor of the shell so the sticky sidebar clears it.
-
-### Preview interaction
-
-Embedded fixtures start in page-scroll mode. Choose **Interact with preview** to use the fixture's controls, internal scrolling and keyboard navigation; **Done interacting** returns gestures to the page. Clicking outside the preview also exits interaction mode. The sandbox is unchanged. Oversized dimension specimens can be focused or clicked to inspect at actual size, then left with Tab. Material is a direct-manipulation viewer rather than an embedded component fixture.

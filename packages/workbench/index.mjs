@@ -239,10 +239,10 @@ export function mountWorkbench(container, options = {}) {
       const observer = new ResizeObserver(() => {
         if (!preview.isConnected || !preview.clientWidth) return;
         const overflow = preview.scrollWidth > preview.clientWidth + 1 || preview.scrollHeight > preview.clientHeight + 1;
-        detail.textContent = [context, overflow ? 'Actual size: focus or click to inspect' : ''].filter(Boolean).join(' · ');
+        detail.textContent = [context, overflow ? 'Actual size: scroll to inspect' : ''].filter(Boolean).join(' · ');
         if (overflow) {
           preview.setAttribute('tabindex', '0'); preview.setAttribute('role', 'region');
-          preview.setAttribute('aria-label', `${row.name}, ${value}, actual-size preview. Focus or click to scroll; Tab to leave.`);
+          preview.setAttribute('aria-label', `${row.name}, ${value}, actual-size preview. Scroll to inspect.`);
           // Start oversized corners at the visible top endpoint instead of empty space inside the arc.
           if (!initialized && radius) preview.scrollLeft = preview.scrollWidth;
           initialized = true;
@@ -395,24 +395,8 @@ export function mountWorkbench(container, options = {}) {
     frame.addEventListener('load', () => {
       requestTheme();
     });
-    const stage = element('div', { class: 'wb-stage', 'data-viewport': viewport, 'data-interactive': 'false' }, frame);
-    const interaction = element('button', { type: 'button', class: 'wb-interaction-toggle', 'aria-pressed': 'false' }, 'Interact with preview');
-    const setInteractive = active => {
-      stage.dataset.interactive = String(active);
-      frame.inert = !active;
-      interaction.setAttribute('aria-pressed', String(active));
-      interaction.textContent = active ? 'Done interacting' : 'Interact with preview';
-    };
-    setInteractive(false);
-    interaction.addEventListener('click', () => setInteractive(stage.dataset.interactive !== 'true'));
-    // Keep the opaque sandbox intact. An explicit mode lets the page own gestures
-    // without intercepting or synthesizing events inside application documents.
-    const exitOnOutsideClick = event => {
-      if (!stage.contains(event.target) && event.target !== interaction) setInteractive(false);
-    };
-    document.addEventListener('pointerdown', exitOnOutsideClick);
-    cleanup.push(() => document.removeEventListener('pointerdown', exitOnOutsideClick));
-    return element('article', { class: 'wb-fixture' }, element('div', { class: 'wb-panel-heading' }, element('h3', {}, titleCase(chosenTheme)), sourceLink('Open source fixture ↗', fixture.url)), interaction, stage, status,
+    const stage = element('div', { class: 'wb-stage', 'data-viewport': viewport }, frame);
+    return element('article', { class: 'wb-fixture' }, element('div', { class: 'wb-panel-heading' }, element('h3', {}, titleCase(chosenTheme)), sourceLink('Open source fixture ↗', fixture.url)), stage, status,
       note('Isolated preview: storage, same-origin access, popups, forms, and top navigation are disabled. A blank preview may mean the app is offline, blocks embedding, or needs capabilities disabled here.'));
   }
   function fixtures(collection) {
