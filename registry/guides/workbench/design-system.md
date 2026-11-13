@@ -10,25 +10,35 @@ Keep semantic controls, visible keyboard focus, meaningful labels and reduced-mo
 
 | Theme | CSS variable | Type | Value |
 | --- | --- | --- | --- |
-| workbench | --ds-color-background | color | #101011 |
-| workbench | --ds-color-surface | color | #161617 |
-| workbench | --ds-color-text | color | #f1f1f2 |
-| workbench | --ds-color-text-muted | color | #a1a1a6 |
-| workbench | --ds-color-accent | color | #f1f1f2 |
-| workbench | --ds-color-accent-hover | color | #ffffff |
-| workbench | --ds-color-border | color | #303034 |
-| workbench | --ds-color-selection-background | color | #262629 |
-| workbench | --ds-color-selection-text | color | #ffffff |
-| workbench | --ds-color-focus | color | #ffffff |
-| workbench | --ds-color-divider | color | #252528 |
-| workbench | --ds-color-empty-background | color | #101011 |
-| workbench | --ds-color-stage | color | #09090a |
-| workbench | --ds-color-status | color | #a1a1a6 |
-| workbench | --ds-color-warning | color | #d1d1d5 |
-| workbench | --ds-color-error | color | #f1f1f2 |
-| workbench | --ds-color-panel | color | #1b1b1d |
-| workbench | --ds-color-action | color | #e9e7e1 |
-| workbench | --ds-color-action-text | color | #171717 |
+| workbench | --ds-color-background | color | #060609 |
+| workbench | --ds-color-surface | color | #0c0e11 |
+| workbench | --ds-color-text | color | #ebe8df |
+| workbench | --ds-color-text-muted | color | #85837e |
+| workbench | --ds-color-accent | color | #ebe8df |
+| workbench | --ds-color-accent-hover | color | #f9f7f1 |
+| workbench | --ds-color-border | color | #18191d |
+| workbench | --ds-color-selection-background | color | #16171b |
+| workbench | --ds-color-selection-text | color | #f9f7f1 |
+| workbench | --ds-color-focus | color | #ebe8df |
+| workbench | --ds-color-divider | color | #18191d |
+| workbench | --ds-color-empty-background | color | #060609 |
+| workbench | --ds-color-stage | color | #060609 |
+| workbench | --ds-color-status | color | #85837e |
+| workbench | --ds-color-warning | color | #b3b1aa |
+| workbench | --ds-color-error | color | #f9f7f1 |
+| workbench | --ds-color-panel | color | #0c0e11 |
+| workbench | --ds-color-action | color | #ebe8df |
+| workbench | --ds-color-action-text | color | #0c0e11 |
+| workbench | --ds-color-text-secondary | color | #b3b1aa |
+| workbench | --ds-color-text-bright | color | #f9f7f1 |
+| workbench | --ds-color-border-strong | color | #2b2c31 |
+| workbench | --ds-color-raised | color | #16171b |
+| workbench | --ds-font-display | fontFamily | ui-serif, "New York", "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif |
+| workbench | --ds-font-sans | fontFamily | system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif |
+| workbench | --ds-font-mono | fontFamily | ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace |
+| workbench | --ds-motion-quick | dimension | 150ms |
+| workbench | --ds-motion-slow | dimension | 380ms |
+| workbench | --ds-motion-ease | string | cubic-bezier(.2, .7, .15, 1) |
 
 ## Fixtures
 

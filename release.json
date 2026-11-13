@@ -5,7 +5,7 @@
     "browser": "157.0.8103.51"
   },
   "schemaVersion": 1,
-  "createdAt": "2026-11-12T20:12:43.979Z",
+  "createdAt": "2026-11-13T02:36:51.000Z",
   "status": "local-candidate-not-published",
   "licenseGaps": [],
   "focusEpub": "fixture-only",
@@ -98,14 +98,19 @@
       "sha256": "f726a2506cf61cc0dfc60c4a3542d4e6470382c37389514181559ab75a1a0bb9"
     },
     {
+      "path": "apps/studio/chrome.mjs",
+      "bytes": 6697,
+      "sha256": "66eab7c9b541e1fad15b298c80b7739f3de4eb4397fec56a3e3dd4754af4c6f7"
+    },
+    {
       "path": "apps/studio/index.html",
       "bytes": 2233,
       "sha256": "607c922b4506c25a9b93ef3332c28ccedc32f29b1dcee1a1ad9d31c214ea1858"
     },
     {
       "path": "apps/studio/main.mjs",
-      "bytes": 6659,
-      "sha256": "9b1a55edbd7e43fbc0fb4defc4c1be81e36a106b4b8ead33ce943647790a283e"
+      "bytes": 7650,
+      "sha256": "7e2701b4278ddb8bde5bb9d635389589b68c7a6886a128728dc73052db133520"
     },
     {
       "path": "apps/studio/material-framing.mjs",
@@ -139,8 +144,8 @@
     },
     {
       "path": "apps/studio/style.css",
-      "bytes": 5251,
-      "sha256": "1c847e6d5c0b2ae4f04b27c3b5a89dfde367a0e5095ae82a699344c67b6bcf20"
+      "bytes": 11268,
+      "sha256": "da1e9d2be7b4c8f141579be19d4c807ffe2b08b750f5c3f9d434bec0f8a9e762"
     },
     {
       "path": "collections/authored-reference/nasa/HDS-LICENSE.md",
@@ -1050,12 +1055,12 @@
     {
       "path": "collections/original/workbench/collection.json",
       "bytes": 1717,
-      "sha256": "4b19461820c75f2acf4712a2193ee3213de6277a6ec2564dadadb326d61de6c6"
+      "sha256": "8b9c0259cda1e760c08a50f0e7bbde2408768930f4f758acf9c8ddfd71daa74e"
     },
     {
       "path": "collections/original/workbench/fixtures/index.html",
       "bytes": 925,
-      "sha256": "9c698339ec0695043dfcd3bcbcd9fd44aac19795f34a7ea5bb5573f4d8719d4a"
+      "sha256": "d9fd09bd65dc801be958314b4efee2d1c2741b53bbb3fd2064ffc8f2e20da1a4"
     },
     {
       "path": "collections/original/workbench/fixtures/main.mjs",
@@ -5074,18 +5079,18 @@
     },
     {
       "path": "packages/workbench/README.md",
-      "bytes": 6587,
-      "sha256": "bde51c2cce1f42717018a7313e9c253cb4c148e7d62644085bb54051a6b8e9a5"
+      "bytes": 8592,
+      "sha256": "3e484259c68d966851d57f0e1e8aa52912da1b2a1321f49075df0ef8b0b2f447"
     },
     {
       "path": "packages/workbench/index.d.mts",
-      "bytes": 4136,
-      "sha256": "f5a34b3f1cba1afaada5d9aab032f4d9c1390f312d4d2acb3079f7f46cd8b68a"
+      "bytes": 4489,
+      "sha256": "9a1721680590a84a5c05619f04007bee15798759a470a247ef4a5b30a6712f81"
     },
     {
       "path": "packages/workbench/index.mjs",
-      "bytes": 36500,
-      "sha256": "faad9fd55d60305f7dfce802937a3c95f90b29589726536fbdfa530d31f00984"
+      "bytes": 47253,
+      "sha256": "258bcf793d2cb94af963fcf498cb61874d374c9654232ae1fb7543439dcc9ca2"
     },
     {
       "path": "packages/workbench/skins/stethem.css",
@@ -5099,18 +5104,18 @@
     },
     {
       "path": "packages/workbench/skins/workbench.css",
-      "bytes": 1572,
-      "sha256": "4ad17ab643502c795257a2dda8499d3018ade375cdd17e9052b65cf8b87d11b3"
+      "bytes": 2503,
+      "sha256": "be3ed7f5ebad2f17cab2dc9ae1917f40588655970f535837656d88cccde444b0"
     },
     {
       "path": "packages/workbench/skins/workbench.tokens.json",
-      "bytes": 2758,
-      "sha256": "77385790d6b3f2475e4f43cea5038f8d5a4d469479b9f8d5d15444e2621cec0a"
+      "bytes": 4313,
+      "sha256": "1ef870f56c12b8bcc0a1d5c558b88af8d5f0172e5c4b5356cf219e6dfcd335f7"
     },
     {
       "path": "packages/workbench/style.css",
-      "bytes": 14317,
-      "sha256": "fd4582e452a9f1198a15b4e8837ef1c8262d29de722dece6370f1d9fcf68c030"
+      "bytes": 29921,
+      "sha256": "5976b0bd25fc6acb6a8d79ef2fd86fa4f47dd39d8e053c3c85bd7a397d7d5a92"
     },
     {
       "path": "packages/workbench/theme-adapter.d.mts",
@@ -6974,8 +6979,8 @@
     },
     {
       "path": "registry/guides/workbench/design-system.md",
-      "bytes": 2106,
-      "sha256": "a4593ba55eeefea504dd26cca00af9b96c570e2b31f07e41f273af7847e210ca"
+      "bytes": 2879,
+      "sha256": "5f4f5b71877e2fbe6ce94a6869a3744157fe5b40e312bded8e184c0b6403550f"
     },
     {
       "path": "registry/index.json",

@@ -42,7 +42,10 @@ export interface WorkbenchCollection {
   publicRelease?: {status?: string};
 }
 export interface WorkbenchOptions { searchCollections?: boolean; searchLabel?: string; collectionNoun?: string; initialFixture?: string; onCollectionChange?: (id: string) => void; collections?: WorkbenchCollection[]; title?: string; skin?: string; initialCollection?: string; initialSection?: WorkbenchSection; }
-export interface WorkbenchHandle { setSkin(skin: string): void; destroy(): void; setCollections(collections: WorkbenchCollection[]): void; }
+export interface WorkbenchHandle { setSkin(skin: string): void; destroy(): void; setCollections(collections: WorkbenchCollection[]): void; showCollection(id: string): void; }
+export interface SignatureColor { name: string; value: string; css: string; hex: string; lightness: number; chroma: number; hue: number; }
+export function colorSignature(document: WorkbenchTokenDocument | undefined, mode?: string): SignatureColor[];
+export function signatureGradient(colors: SignatureColor[]): string;
 export function safeURL(value: string, base?: string | URL): URL;
 export function fixtureURL(value: string, options?: {theme?: string; base?: string | URL}): string;
 export function tokenRows(document: WorkbenchTokenDocument | undefined, mode: string): Array<WorkbenchToken & {name: string; mode: string}>;
