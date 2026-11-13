@@ -45,7 +45,8 @@ Keep semantic controls, visible keyboard focus, meaningful labels and reduced-mo
 | Name | Section | States |
 | --- | --- | --- |
 | Live controls and token inspector | components |  |
+| Studio navigation and jump palette | components | open, search, keyboard, dismiss, library switch |
 | Empty and loaded collection states | patterns |  |
-| Live studio, applications only | screens |  |
+| Live application registry viewer | screens |  |
 
 [Open this workbench](../../../apps/studio/?collection=workbench)

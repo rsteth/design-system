@@ -31,7 +31,7 @@ The default `workbench` shell uses a dark monochrome palette independent of the 
 
 `initialCollection` and `initialSection` select an initial catalog location. Studio links may use `?collection=workbench&section=components`.
 
-The Workbench original collection lives in `collections/original/workbench`. Its fixtures import this exact engine, not copies of component markup. Components shows live controls/token inspection with child fixtures removed. Patterns switches real empty/loaded states using `setCollections`. Screens loads the actual three-app registry with Workbench removed. These data boundaries prevent self-preview recursion without weakening iframe isolation.
+The Workbench original collection lives in `collections/original/workbench`. Its fixtures import this exact engine, not copies of component markup. Components shows live controls/token inspection with child fixtures removed. Patterns switches real empty/loaded states using `setCollections`. Screens loads the actual application registry with Workbench removed. A separate navigation fixture mounts the real studio chrome, including its jump palette, against fixture-free collections. The recorded inventory explicitly lists remaining layout-token and full-host coverage limits. These data boundaries prevent self-preview recursion without weakening iframe isolation.
 
 ## Recorded inventory (0.3.0)
 

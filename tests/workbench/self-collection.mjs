@@ -39,7 +39,7 @@ try {
   const collection = JSON.parse(await readFile(new URL('../../collections/original/workbench/collection.json', import.meta.url)));
   assert.equal(collection.kind, 'original');
   assert.deepEqual(collection.themes, ['workbench']);
-  for (const color of Object.values(palette)) assert.ok((await page.locator('tbody').innerText()).includes(color), `Authored tokens include ${color}`);
+  for (const color of Object.values(palette)) assert.ok((await page.locator('.wb-foundation-sections').innerText()).toLowerCase().includes(color), `Authored tokens include ${color}`);
   await page.screenshot({path:fileURLToPath(new URL('workbench-self-desktop.png',artifacts)),fullPage:true});
   const mobile = await browser.newPage({viewport:{width:390,height:844}});
   mobile.on('pageerror', error => errors.push(error.message));
@@ -72,7 +72,19 @@ try {
     assert.ok(imports.includes('/packages/workbench/index.mjs'), 'Fixture executes the shared real workbench engine');
     assert.ok(imports.includes('/packages/workbench/style.css'), 'Fixture uses shared real workbench stylesheet');
 
-    if (new URL(fixture.url, base).searchParams.get('view') === 'studio') {
+    if (fixture.id === 'studio-navigation') {
+      await inner.getByRole('button',{name:'Jump to'}).click();
+      const field=inner.getByRole('combobox',{name:'Jump to a collection'});
+      await field.fill('NASA');
+      await inner.getByRole('option').filter({hasText:'NASA'}).waitFor();
+      await field.press('Enter');
+      await inner.locator('dialog').waitFor({state:'hidden'});
+      assert.equal(await inner.getByLabel('Collection',{exact:true}).inputValue(),'reference-nasa');
+      await inner.getByRole('button',{name:'Jump to'}).click();
+      await field.press('Escape');
+      await inner.locator('dialog').waitFor({state:'hidden'});
+      assert.equal(await inner.locator('iframe').count(),0);
+    } else if (new URL(fixture.url, base).searchParams.get('view') === 'studio') {
       assert.equal(await inner.getByLabel('Collection',{exact:true}).locator('option[value="workbench"]').count(),0, 'Nested studio excludes itself');
       assert.equal(await inner.getByLabel('Collection',{exact:true}).locator('option').count(),5);
     } else {
