@@ -34,6 +34,19 @@
       "url": "./fixtures/index.html?view=components"
     },
     {
+      "id": "studio-navigation",
+      "title": "Studio navigation and jump palette",
+      "section": "components",
+      "url": "./fixtures/navigation.html",
+      "states": [
+        "open",
+        "search",
+        "keyboard",
+        "dismiss",
+        "library switch"
+      ]
+    },
+    {
       "id": "empty-loaded",
       "title": "Empty and loaded collection states",
       "section": "patterns",
@@ -41,7 +54,7 @@
     },
     {
       "id": "live-studio",
-      "title": "Live studio, applications only",
+      "title": "Live application registry viewer",
       "section": "screens",
       "url": "./fixtures/index.html?view=studio"
     }
@@ -49,5 +62,6 @@
   "verification": {
     "status": "local-unpublished",
     "note": "Self previews use the real engine. Components/patterns contain no child fixtures; the studio preview excludes the Workbench collection to prevent recursion."
-  }
+  },
+  "inventory": "inventory.json"
 }

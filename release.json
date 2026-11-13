@@ -5,7 +5,7 @@
     "browser": "157.0.8103.51"
   },
   "schemaVersion": 1,
-  "createdAt": "2026-11-13T02:36:51.000Z",
+  "createdAt": "2026-11-13T05:52:53.534Z",
   "status": "local-candidate-not-published",
   "licenseGaps": [],
   "focusEpub": "fixture-only",
@@ -1054,8 +1054,8 @@
     },
     {
       "path": "collections/original/workbench/collection.json",
-      "bytes": 1717,
-      "sha256": "8b9c0259cda1e760c08a50f0e7bbde2408768930f4f758acf9c8ddfd71daa74e"
+      "bytes": 2049,
+      "sha256": "8d69aedd23607cb348e528a5d61d6d8c1a902ca0e7f389149538f2645a0ef7e4"
     },
     {
       "path": "collections/original/workbench/fixtures/index.html",
@@ -1066,6 +1066,21 @@
       "path": "collections/original/workbench/fixtures/main.mjs",
       "bytes": 2065,
       "sha256": "ad0ed1d57ce29f17a794c13c9dbbd1d2c7f54e590db95382a9e3743f34dd82d9"
+    },
+    {
+      "path": "collections/original/workbench/fixtures/navigation.html",
+      "bytes": 770,
+      "sha256": "d7165f549da8ece1b95dfcd2e38db4b532023bcfb2463ff5d35b0deffc152062"
+    },
+    {
+      "path": "collections/original/workbench/fixtures/navigation.mjs",
+      "bytes": 1500,
+      "sha256": "c6fecb245cae5fd3dffce90c59f3bcb488393b4af4e4d13514c12e74225a67f1"
+    },
+    {
+      "path": "collections/original/workbench/inventory.json",
+      "bytes": 2901,
+      "sha256": "0e0a96eb5af77ec6aaf82548d2e8b2c049fd9928037b48d8dff81a7e730d295a"
     },
     {
       "path": "collections/original/workbench/registry.json",
@@ -5079,8 +5094,8 @@
     },
     {
       "path": "packages/workbench/README.md",
-      "bytes": 8592,
-      "sha256": "3e484259c68d966851d57f0e1e8aa52912da1b2a1321f49075df0ef8b0b2f447"
+      "bytes": 8811,
+      "sha256": "145a3876c07e9677688a4ddac0da57cc9ad1e896319ee8d93cb5f0fd6f84b3c3"
     },
     {
       "path": "packages/workbench/index.d.mts",
@@ -5089,8 +5104,8 @@
     },
     {
       "path": "packages/workbench/index.mjs",
-      "bytes": 47253,
-      "sha256": "258bcf793d2cb94af963fcf498cb61874d374c9654232ae1fb7543439dcc9ca2"
+      "bytes": 48059,
+      "sha256": "c8bc564c1166c4ae04a99f289b37293167952c7e20135885b105b9863d344efc"
     },
     {
       "path": "packages/workbench/skins/stethem.css",
@@ -5114,8 +5129,8 @@
     },
     {
       "path": "packages/workbench/style.css",
-      "bytes": 29921,
-      "sha256": "5976b0bd25fc6acb6a8d79ef2fd86fa4f47dd39d8e053c3c85bd7a397d7d5a92"
+      "bytes": 30042,
+      "sha256": "7cd0db0290d1ada65e0adb867d4f64589cadf195458ca29c37d28130af9c7fc8"
     },
     {
       "path": "packages/workbench/theme-adapter.d.mts",
@@ -6979,8 +6994,8 @@
     },
     {
       "path": "registry/guides/workbench/design-system.md",
-      "bytes": 2879,
-      "sha256": "5f4f5b71877e2fbe6ce94a6869a3744157fe5b40e312bded8e184c0b6403550f"
+      "bytes": 2983,
+      "sha256": "4efce97f8f6e6a24396221b01127d9738416890ece3b984806d027ac0e4ec053"
     },
     {
       "path": "registry/index.json",

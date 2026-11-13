@@ -162,6 +162,8 @@ export function mountWorkbench(container, options = {}) {
   }
   function foundations(collection) {
     const rows = tokenRows(collection.tokensData, theme);
+    const fontRows = rows.filter(row => row.type === 'fontFamily');
+    const primaryFont = ['primary', 'body', 'sans', 'ui', 'heading', 'display'].map(role => fontRows.find(row => row.name.split(/[.-]/).at(-1) === role)).find(Boolean) ?? fontRows[0];
     const studyTokens = new Map((collection.studyData?.tokens ?? []).map(token => [token.path, token]));
     const panel = element('div', { class: `wb-panel${collection.kind === 'reference' ? ' wb-reference-foundations' : ''}` });
     const sections = element('div', { class: 'wb-foundation-sections' });
@@ -184,6 +186,7 @@ export function mountWorkbench(container, options = {}) {
     cleanup.push(clearPreviews);
     const dimensionPreview = (row, metadata) => {
       const value = String(row.value).trim();
+      const fontSize = /(?:^|[.-])font[.-]?size(?:[.-]|$)|(?:^|[.-])type(?:ography)?[.-]size(?:[.-]|$)/i.test(row.name);
       const radius = /(?:^|\.)(?:radius|radii|rounded)(?:\.|$)|borderradius/i.test(row.name);
       const time = value.match(/^(\d+(?:\.\d+)?|\.\d+)(ms|s)$/i);
       const detail = element('span', { class: 'wb-token-detail' });
@@ -213,21 +216,24 @@ export function mountWorkbench(container, options = {}) {
       }
       const length = value.match(/^(-?(?:\d+(?:\.\d+)?|\.\d+))(px|rem|em|ch|ex|cm|mm|q|in|pt|pc)?$/i);
       const numeric = Number(length?.[1]);
-      const supported = length && Number.isFinite(numeric) && (length[2] || numeric === 0) && Math.abs(numeric) <= 10000 && (!radius || numeric >= 0);
+      const supported = length && Number.isFinite(numeric) && (length[2] || numeric === 0) && Math.abs(numeric) <= 10000 && (!(radius || fontSize) || numeric >= 0);
       if (!supported) {
         detail.textContent = /%|v[wh]|var\(|calc\(/i.test(value) ? 'Needs its original layout context' : 'No single length or duration to render';
         return element('div', { class: 'wb-dimension-preview wb-dimension-unavailable', 'data-dimension-kind': 'unsupported' }, element('span', {}, 'Preview unavailable'));
       }
       const magnitude = `${Math.abs(numeric)}${length[2] || 'px'}`;
-      const glyph = element('span', { class: radius ? 'wb-radius-diagram' : 'wb-length-diagram', 'aria-hidden': 'true' });
-      if (radius) {
+      const glyph = element('span', { class: fontSize ? 'wb-font-size-diagram' : radius ? 'wb-radius-diagram' : 'wb-length-diagram', 'aria-hidden': 'true' }, fontSize ? 'Aa' : null);
+      if (fontSize) {
+        glyph.style.fontSize = value;
+        if (primaryFont && CSS.supports('font-family', String(primaryFont.value))) glyph.style.fontFamily = String(primaryFont.value);
+      } else if (radius) {
         // A native CSS corner: exact radius, plus short straight edges to show zero/small radii.
         glyph.style.width = `calc(${magnitude} + 16px)`;
         glyph.style.height = `calc(${magnitude} + 16px)`;
         glyph.style.borderTopLeftRadius = value;
       } else glyph.style.width = magnitude;
       const canvas = element('div', { class: 'wb-dimension-canvas' }, glyph);
-      const preview = element('div', { class: 'wb-dimension-preview', 'data-dimension-kind': radius ? 'radius' : 'length' }, canvas);
+      const preview = element('div', { class: 'wb-dimension-preview', 'data-dimension-kind': fontSize ? 'font-size' : radius ? 'radius' : 'length' }, canvas);
       const context = numeric < 0 ? 'Negative value: magnitude shown' : /^(rem|em|ch|ex)$/i.test(length[2] || '') ? 'Relative to workbench typography' : '';
       let initialized = false;
       const observer = new ResizeObserver(() => {
@@ -292,6 +298,7 @@ export function mountWorkbench(container, options = {}) {
       sections.replaceChildren();
       for (const [id, title] of [['color', 'Color'], ['dimensions', 'Dimensions'], ['fonts', 'Fonts'], ['other', 'Other tokens']]) {
         const tokens = filtered.filter(row => groupFor(row) === id);
+        if (id === 'dimensions') tokens.sort((a, b) => a.name.localeCompare(b.name, 'en', { sensitivity: 'base', numeric: true }));
         if (!tokens.length) continue;
         const heading = element('h3', {}, title);
         const group = element('section', { class: `wb-foundation-group wb-foundation-${id}`, 'aria-label': title }, heading);

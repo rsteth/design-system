@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "application": "workbench",
+  "reviewedRevision": null,
+  "items": [
+    {
+      "id": "engine-controls",
+      "title": "Engine controls and foundations",
+      "kind": "component",
+      "source": [
+        "packages/workbench/index.mjs",
+        "packages/workbench/style.css"
+      ],
+      "fixtures": [
+        "live-controls"
+      ],
+      "states": [
+        "tokens",
+        "signature",
+        "copy",
+        "section navigation"
+      ],
+      "coverage": "covered",
+      "notes": "Uses the actual shared engine. Clipboard success still depends on browser permissions."
+    },
+    {
+      "id": "studio-navigation",
+      "title": "Studio navigation and jump palette",
+      "kind": "pattern",
+      "source": [
+        "apps/studio/chrome.mjs",
+        "apps/studio/style.css"
+      ],
+      "fixtures": [
+        "studio-navigation"
+      ],
+      "states": [
+        "open",
+        "filter",
+        "keyboard selection",
+        "dismiss",
+        "library switch"
+      ],
+      "coverage": "covered",
+      "notes": "Real mountChrome module with fixture-free collections; no recursive embeds."
+    },
+    {
+      "id": "empty-loaded",
+      "title": "Empty and loaded collection states",
+      "kind": "pattern",
+      "source": [
+        "packages/workbench/index.mjs"
+      ],
+      "fixtures": [
+        "empty-loaded"
+      ],
+      "states": [
+        "empty",
+        "loaded",
+        "repeat"
+      ],
+      "coverage": "covered",
+      "notes": "Uses real setCollections API."
+    },
+    {
+      "id": "app-viewer",
+      "title": "Application registry viewer",
+      "kind": "screen",
+      "source": [
+        "packages/workbench/index.mjs"
+      ],
+      "fixtures": [
+        "live-studio"
+      ],
+      "states": [
+        "collection selection",
+        "fixtures"
+      ],
+      "coverage": "partial",
+      "notes": "Viewer uses actual app registry but deliberately excludes itself; not the entire studio host."
+    },
+    {
+      "id": "production-material",
+      "title": "Capture and Material host views",
+      "kind": "screen",
+      "source": [
+        "apps/studio/main.mjs"
+      ],
+      "fixtures": [],
+      "states": [],
+      "coverage": "excluded",
+      "notes": "Covered in their own production/material browser suites, not duplicated in recursive self-preview."
+    },
+    {
+      "id": "layout-values",
+      "title": "Layout and type scale token inventory",
+      "kind": "component",
+      "source": [
+        "packages/workbench/style.css",
+        "apps/studio/style.css"
+      ],
+      "fixtures": [],
+      "states": [],
+      "coverage": "partial",
+      "notes": "Color, type families and motion are tokenized. Many layout, radius and font-size declarations remain literal CSS and are not yet represented as authored tokens."
+    }
+  ],
+  "withheldRevisions": [
+    "reviewedRevision"
+  ],
+  "checks": []
+}
