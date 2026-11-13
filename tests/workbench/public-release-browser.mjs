@@ -62,8 +62,8 @@ try{
  assert.equal(referenceIds.length,85);
  for(const id of referenceIds){await page.getByLabel('Collection',{exact:true}).selectOption(id);await page.getByRole('button',{name:'Components',exact:true}).click();await page.locator('.wb-status').filter({hasText:'Theme adapter confirmed:'}).waitFor({timeout:10000});}
  await page.screenshot({path:join(output,'reference-mobile.png'),fullPage:true});
- await page.getByRole('button',{name:'Capture studio',exact:true}).click();await page.getByRole('heading',{name:'Local capture tools',exact:true}).waitFor();assert.equal(await page.locator('iframe').count(),0);
- await page.goBack();await page.getByLabel('Collection',{exact:true}).waitFor();await page.goForward();await page.getByRole('heading',{name:'Local capture tools',exact:true}).waitFor();
+ await page.getByRole('button',{name:'Capture studio',exact:true}).click();await page.getByRole('heading',{name:'Every app. Every format.',exact:true}).waitFor();await page.getByRole('link',{name:'Open screen for capture',exact:true}).waitFor();assert.equal(await page.getByRole('link',{name:'Local validated exports',exact:true}).count(),0);
+ await page.goBack();await page.getByLabel('Collection',{exact:true}).waitFor();await page.goForward();await page.getByRole('heading',{name:'Every app. Every format.',exact:true}).waitFor();
  await page.goto(studio+'?collection=workbench&section=components');await page.locator('.wb-status').filter({hasText:'Theme adapter confirmed:'}).waitFor({timeout:10000});
  const report={timestamp:new Date().toISOString(),base,focusedFlows,fixtureRuns:results.length,passed:results.filter(x=>x.passed).length,references:referenceIds.length,errors,external,failed,consoleErrors,knownSourceErrors,results,limitations:'Mount/theme handshake, opaque iframe, base paths, responsive bounds, reference loading, capture exclusion and navigation. Not full application interaction or production CI.'};
  await writeFile(join(output,'results.json'),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify({runs:results.length,passed:report.passed,references:referenceIds.length,errors,external,failed},null,2));

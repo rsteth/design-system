@@ -1,7 +1,7 @@
 import {loadPublicScreens} from '../../packages/capture/public-screens.mjs';
 import {PROFILES} from '../../packages/capture/scenes.mjs';
 const el=(tag,attrs={},...children)=>{const n=document.createElement(tag);for(const [k,v] of Object.entries(attrs)){if(k.startsWith('on'))n.addEventListener(k.slice(2),v);else n.setAttribute(k,v);}n.append(...children);return n;};
-export function mountPublicCapture(container) {
+export function mountPublicCapture(container, {allowLocal = true} = {}) {
   let disposed=false,observer,apps=[],app,screen,frame;
   const params=new URL(location.href).searchParams;
   let profile=PROFILES.find(p=>p.id===params.get('profile'))??PROFILES[0];
@@ -16,7 +16,7 @@ export function mountPublicCapture(container) {
   root.append(el('header',{class:'cs-intro'},el('p',{class:'cs-eyebrow'},'Production / Capture studio'),el('h1',{},'Every app. Every format.'),el('p',{},'Public, app-owned screens with synthetic data. Choose a screen and size, then open it for capture from any browser.')),
     el('div',{class:'cs-controls'},el('label',{},'Application',appSelect),el('label',{},'Screen',screenSelect),el('label',{},'Output format',profileSelect)),
     el('div',{class:'cs-layout'},el('section',{},stage,status),details),actions,
-    el('section',{class:'cs-runner'},el('h2',{},'Capture from anywhere'),el('p',{},'Open the screen in a new tab and capture at the selected viewport and pixel density. This preview is scaled to fit; screenshot the opened screen, not this frame. Full-page captures may be taller than the preset. Images are not generated or stored by this static page.'),el('p',{},'Agents: read the public registry and screen guide. Capture one screen or iterate every listed screen using a fresh browser context, synthetic data and no account cookies. Inspect the result before replacing a website image.'),el('div',{class:'cs-actions'},el('a',{href:'../../docs/process/capture-studio.md'},'Capture guide'),el('a',{href:'../../registry/index.json'},'Application registry'),el('a',{href:'?library=capture&capture=local'},'Local validated exports'))));
+    el('section',{class:'cs-runner'},el('h2',{},'Capture from anywhere'),el('p',{},'Open the screen in a new tab and capture at the selected viewport and pixel density. This preview is scaled to fit; screenshot the opened screen, not this frame. Full-page captures may be taller than the preset. Images are not generated or stored by this static page.'),el('p',{},'Agents: read the public registry and screen guide. Capture one screen or iterate every listed screen using a fresh browser context, synthetic data and no account cookies. Inspect the result before replacing a website image.'),el('div',{class:'cs-actions'},el('a',{href:'../../docs/process/capture-studio.md'},'Capture guide'),el('a',{href:'../../registry/index.json'},'Application registry'),...(allowLocal?[el('a',{href:'?library=capture&capture=local'},'Local validated exports')]:[]))));
   container.replaceChildren(root);
   function populate(){screenSelect.replaceChildren(...app.screens.map(s=>el('option',{value:s.id},`${s.title}${s.section==='patterns'?' · pattern':''}`)));screenSelect.value=screen?.id??'';show();}
   function show(){
