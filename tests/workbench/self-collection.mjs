@@ -22,7 +22,7 @@ const server = http.createServer(async (request, response) => {
 });
 await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
 const base = `http://127.0.0.1:${server.address().port}`;
-const palette = {'--wb-ink':'#f1f1f2','--wb-muted':'#a1a1a6','--wb-accent':'#f1f1f2','--wb-accent-hover':'#ffffff','--wb-paper':'#101011','--wb-wash':'#161617'};
+const palette = {'--wb-ink':'#ebe8df','--wb-muted':'#85837e','--wb-accent':'#ebe8df','--wb-accent-hover':'#f9f7f1','--wb-paper':'#060609','--wb-wash':'#0c0e11'};
 let browser;
 const results = [];
 try {

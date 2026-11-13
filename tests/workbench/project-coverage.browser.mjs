@@ -32,7 +32,7 @@ try{
  assert.match(await page.getByRole('alert').textContent(),/No local project coverage catalog/);assert.equal(auditRequests,0);
  await page.getByRole('button',{name:'Robin',exact:true}).click();await page.getByLabel('Collection',{exact:true}).waitFor();
  await page.getByRole('button',{name:'Reference studies',exact:true}).click();await page.getByRole('searchbox',{name:'Search reference studies'}).waitFor();
- assert.equal(await page.getByLabel('Collection',{exact:true}).locator('option').count(),84);
+ assert.equal(await page.getByLabel('Collection',{exact:true}).locator('option').count(),85);
  await page.goBack();await page.getByRole('searchbox',{name:'Search your work'}).waitFor();
  assert.deepEqual(await page.getByLabel('Collection',{exact:true}).locator('option').evaluateAll(nodes=>nodes.map(n=>n.value)),expected);
  for(const id of ['deferred-example'])assert.equal((await page.request.get(`${base}/registry/apps/${id}/collection.json`)).status(),404,id+' removed from active static source');

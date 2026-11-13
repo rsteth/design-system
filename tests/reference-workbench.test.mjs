@@ -18,14 +18,14 @@ test('missing optional metadata remains unknown, malformed envelopes reject',asy
  }
  await assert.rejects(loadCollections('http://localhost/registry.json',{fetcher:fixture({...study,id:'wrong'})}),/match collection/);
 });
-test('all 84 references stay separate from default app registry and load valid studies',async()=>{
+test('all 85 references stay separate from default app registry and load valid studies',async()=>{
  const root=new URL('../',import.meta.url);
  const fetcher=async url=>{try{return {ok:true,json:async()=>JSON.parse(await readFile(new URL(new URL(url).pathname.slice(1),root),'utf8'))}}catch{return {ok:false,status:404}}};
  const refs=await loadCollections('http://localhost/registry/references.json',{fetcher});
  const own=await loadCollections('http://localhost/registry/index.json',{fetcher});
- assert.equal(refs.length,84);assert.ok(refs.every(item=>item.kind==='reference'&&item.studyData));
+ assert.equal(refs.length,85);assert.ok(refs.every(item=>item.kind==='reference'&&item.studyData));
  assert.ok(own.every(item=>item.kind!=='reference'));assert.equal(own.length,JSON.parse(await readFile(new URL('registry/index.json',root),'utf8')).collections.length);
- assert.equal(new Set(refs.map(item=>item.id)).size,84);
+ assert.equal(new Set(refs.map(item=>item.id)).size,85);
 });
 
 test('generated reference fixtures keep their mount prefix through loadCollections',async()=>{
@@ -36,6 +36,6 @@ test('generated reference fixtures keep their mount prefix through loadCollectio
   try {const text=await readFile(file,'utf8');return {ok:true,json:async()=>JSON.parse(text)};}catch{return {ok:false,status:404};}
  };
  const refs=await loadCollections('https://example.test'+prefix+'registry/references.json',{fetcher});
- const fixtures=refs.flatMap(c=>c.fixtures);assert.equal(fixtures.length,177);
- for(const fixture of fixtures){const url=new URL(fixture.url);assert.equal(url.origin,'https://example.test');assert.ok(url.pathname.startsWith(prefix+'collections/reference-specimens/')||url.pathname.startsWith(prefix+'collections/reference-sheets/'));if(url.pathname.includes('/reference-specimens/'))assert.ok(['components','patterns','screens'].includes(url.searchParams.get('view')));await readFile(new URL(url.pathname.slice(prefix.length),root));}
+ const fixtures=refs.flatMap(c=>c.fixtures);assert.equal(fixtures.length,179);
+ for(const fixture of fixtures){const url=new URL(fixture.url);assert.equal(url.origin,'https://example.test');assert.ok(url.pathname.startsWith(prefix+'collections/reference-specimens/')||url.pathname.startsWith(prefix+'collections/reference-sheets/')||url.pathname.startsWith(prefix+'collections/authored-reference/'));if(url.pathname.includes('/reference-specimens/'))assert.ok(['components','patterns','screens'].includes(url.searchParams.get('view')));await readFile(new URL(url.pathname.slice(prefix.length),root));}
 });

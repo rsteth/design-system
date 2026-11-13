@@ -4,6 +4,7 @@ import { fileURLToPath } from 'node:url';
 import { createHash } from 'node:crypto';
 import { execFileSync } from 'node:child_process';
 import { parseDocument, isAlias, isMap, isSeq, LineCounter } from 'yaml';
+import { nasaReference } from './nasa-reference.mjs';
 import { compileTokens } from '../packages/tokens/index.mjs';
 import { compileSheet } from './reference-sheets.mjs';
 export const REVISION = 'fcc70284932276d085f01ef9f83edde90b1258cb';
@@ -159,6 +160,7 @@ export async function generate({source,check=false,destination=root}={}) {
     collections.push(`../${base}/collection.json`);
   }
   add('collections/reference-sheets/report.json',json({schemaVersion:1,studies:sheetReports}));
+  const nasa=await nasaReference(root);for(const [path,value]of nasa.output)add(path,value);collections.push(nasa.collection);
   add('registry/references.json',json({schemaVersion:1,source:{repository:REPOSITORY,revision:REVISION},collections}));
   const extras=(await walk(join(destination,'collections/reference'))).filter(p=>!output.has(p));
   if(extras.length)throw new Error(`Unexpected generated reference files: ${extras.join(', ')}`);

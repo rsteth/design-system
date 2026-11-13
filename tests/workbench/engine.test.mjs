@@ -69,8 +69,8 @@ test('default dark workbench skin is separate from the optional personal-site sk
  const {compileTokens}=await import('../../packages/tokens/index.mjs');
  const tokens=JSON.parse(await readFile(new URL('../../packages/workbench/skins/workbench.tokens.json',import.meta.url)));
  assert.equal(tokens.modes[0].id,'workbench');
- assert.equal(tokens.modes[0].tokens['color.background'].value,'#101011');
- assert.equal(tokens.modes[0].tokens['color.accent'].value,'#f1f1f2');
+ assert.equal(tokens.modes[0].tokens['color.background'].value,'#060609');
+ assert.equal(tokens.modes[0].tokens['color.accent'].value,'#ebe8df');
  assert.equal(await readFile(new URL('../../packages/workbench/skins/workbench.css',import.meta.url),'utf8'),compileTokens(tokens).replace('design/tokens.json','packages/workbench/skins/workbench.tokens.json'));
  const legacy=JSON.parse(await readFile(new URL('../../packages/workbench/skins/stethem.tokens.json',import.meta.url)));
  assert.equal(legacy.modes[0].selector,'.wb-shell[data-wb-skin="stethem"]');

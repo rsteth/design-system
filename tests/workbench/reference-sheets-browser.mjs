@@ -4,6 +4,7 @@ import http from 'node:http';
 import {readFile,mkdir,writeFile} from 'node:fs/promises';
 import {resolve,extname,sep} from 'node:path';
 import {fileURLToPath} from 'node:url';
+import {clickInPreview} from './preview-input.mjs';
 const ownCollectionCount=JSON.parse(await readFile(new URL('../../registry/index.json',import.meta.url),'utf8')).collections.length;
 const root=resolve(fileURLToPath(new URL('../../',import.meta.url)));
 const {chromium}=await import(process.env.PLAYWRIGHT_MODULE??'playwright');
@@ -25,15 +26,15 @@ try{
    assert.equal(await frame.locator('iframe,img,form').count(),0);
    const applied=await child.evaluate(()=>Object.fromEntries(['canvas','surface','ink','accent'].map(role=>[role,getComputedStyle(document.documentElement).getPropertyValue('--sheet-'+role).trim()])));
    for(const [role,value]of Object.entries(applied))assert.equal(value,study.sheetPalette.roles[role].value,study.id+' applied palette '+role);
-   assert.equal(await page.locator('.wb-shell').evaluate(n=>getComputedStyle(n).getPropertyValue('--wb-paper').trim()),'#101011','Company colors stay inside the sheet');
+   assert.equal(await page.locator('.wb-shell').evaluate(n=>getComputedStyle(n).getPropertyValue('--wb-paper').trim()),'#060609','Company colors stay inside the sheet');
    const badCSS=await child.evaluate(()=>[...document.querySelectorAll('[style]')].flatMap(node=>(node.getAttribute('style')??'').split(';').filter(Boolean).filter(rule=>{const i=rule.indexOf(':');return !CSS.supports(rule.slice(0,i),rule.slice(i+1));})));assert.deepEqual(badCSS,[],study.id+' invalid CSS');assert.ok(await page.locator('.wb-reference-notice').innerText().then(t=>t.includes('Open original site')));
-   await frame.getByLabel('Find a recipe').fill('no-matches-xyz');assert.equal(await frame.locator('.recipe:visible').count(),0);await frame.getByText('No matching recipes. Clear the search or reset filters.').waitFor();await frame.getByRole('button',{name:'Reset',exact:true}).click();assert.equal(await frame.locator('.recipe:visible').count(),study.recipeCount);
+   await frame.getByLabel('Find a recipe').fill('no-matches-xyz');assert.equal(await frame.locator('.recipe:visible').count(),0);await frame.getByText('No matching recipes. Clear the search or reset filters.').waitFor();await clickInPreview(page,child,frame.getByRole('button',{name:'Reset',exact:true}));assert.equal(await frame.locator('.recipe:visible').count(),study.recipeCount);
    if(['reference-stripe','reference-ibm','reference-spotify','reference-runwayml','reference-nintendo-2001'].includes(study.id)){
     for(let repeat=0;repeat<2;repeat++){
-     const button=frame.locator('[data-demo]:not(:disabled)').first();if(await button.count()){await button.click();await button.locator('xpath=ancestor::article[contains(@class,"recipe")]').getByText('Local sample action. Nothing sent or saved.',{exact:true}).waitFor();}
+     const button=frame.locator('[data-demo]:not(:disabled)').first();if(await button.count()){await clickInPreview(page,child,button);await button.locator('xpath=ancestor::article[contains(@class,"recipe")]').getByText('Local sample action. Nothing sent or saved.',{exact:true}).waitFor();}
      const input=frame.locator('input.sample:not(:disabled)').first();if(await input.count()){await input.fill('Local sample');assert.equal(await input.inputValue(),'Local sample');await input.fill('');}
-     const nav=frame.locator('[data-nav]').first();if(await nav.count()){await nav.click();assert.equal(await nav.getAttribute('aria-pressed'),'true');}
-     await frame.getByLabel('Sample type').selectOption('button');await frame.getByRole('button',{name:'Reset',exact:true}).click();assert.equal(await frame.getByLabel('Find a recipe').evaluate(n=>n===document.activeElement),true);
+     const nav=frame.locator('[data-nav]').first();if(await nav.count()){await clickInPreview(page,child,nav);assert.equal(await nav.getAttribute('aria-pressed'),'true');}
+     await frame.getByLabel('Sample type').selectOption('button');await clickInPreview(page,child,frame.getByRole('button',{name:'Reset',exact:true}));assert.equal(await frame.getByLabel('Find a recipe').evaluate(n=>n===document.activeElement),true);
     }
     await child.evaluate(()=>scrollTo(0,0));await page.screenshot({path:resolve(out,study.id+'-'+viewport+'.png')});
     await frame.locator('#recipes').scrollIntoViewIfNeeded();await page.screenshot({path:resolve(out,study.id+'-recipes-'+viewport+'.png')});

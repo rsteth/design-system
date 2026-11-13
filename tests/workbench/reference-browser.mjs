@@ -37,7 +37,7 @@ try {
   for(let repeat=0;repeat<3;repeat++){
     await page.getByRole('button',{name:'Reference studies',exact:true}).click();
     await page.getByLabel('Search reference studies',{exact:true}).waitFor();
-    assert.equal(await picker.locator('option').count(),84);
+    assert.equal(await picker.locator('option').count(),85);
     const search=page.getByLabel('Search reference studies',{exact:true});
     await search.fill('definitely no match zzz');
     assert.equal(await picker.isDisabled(),true);
@@ -47,7 +47,7 @@ try {
     await page.getByRole('button',{name:'Foundations',exact:true}).click();
     await page.getByRole('heading',{name:'Independent reference analysis',exact:true}).waitFor();
     assert.equal(await page.locator('.wb-shell').evaluate(node=>getComputedStyle(node).getPropertyValue('--wb-accent')),palette);
-    await search.fill('');assert.equal(await picker.locator('option').count(),84);
+    await search.fill('');assert.equal(await picker.locator('option').count(),85);
     await picker.selectOption('reference-airbnb');
     await page.getByRole('button',{name:'Components',exact:true}).click();
     await page.frameLocator('iframe').locator('html[data-workbench-ready=true]').waitFor();
@@ -113,5 +113,5 @@ try {
   assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true);
   assert.equal(await page.getByLabel('Compare themes',{exact:true}).isDisabled(),true);
   assert.deepEqual(errors,[]);
-  console.log('PASS: separate 84-study library, repeated search/selection/no matches, Robin default, race-safe transitions, history, inert hostile text, safe URLs, mobile layout, unchanged shell palette.');
+  console.log('PASS: separate 85-study library, repeated search/selection/no matches, Robin default, race-safe transitions, history, inert hostile text, safe URLs, mobile layout, unchanged shell palette.');
 } finally {await browser?.close();await new Promise(resolve=>server.close(resolve));}

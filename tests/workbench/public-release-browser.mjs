@@ -59,7 +59,7 @@ try{
  }
  await page.goto(studio+'?library=references&collection=reference-stripe&section=components');await page.getByLabel('Collection',{exact:true}).waitFor();
  const referenceIds=await page.getByLabel('Collection',{exact:true}).locator('option').evaluateAll(options=>options.map(o=>o.value));
- assert.equal(referenceIds.length,84);
+ assert.equal(referenceIds.length,85);
  for(const id of referenceIds){await page.getByLabel('Collection',{exact:true}).selectOption(id);await page.getByRole('button',{name:'Components',exact:true}).click();await page.locator('.wb-status').filter({hasText:'Theme adapter confirmed:'}).waitFor({timeout:10000});}
  await page.screenshot({path:join(output,'reference-mobile.png'),fullPage:true});
  await page.getByRole('button',{name:'Capture studio',exact:true}).click();await page.getByRole('heading',{name:'Local capture tools',exact:true}).waitFor();assert.equal(await page.locator('iframe').count(),0);

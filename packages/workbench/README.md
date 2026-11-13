@@ -25,7 +25,7 @@ Use `installThemeAdapter(applyTheme, {themes})` from `theme-adapter.mjs` in an a
 
 ## Shell skin and self collection
 
-The default `workbench` shell uses a dark monochrome palette independent of the personal site. `skins/workbench.tokens.json` is authoritative; `npm run skin:build` generates scoped CSS for both `workbench` and the optional legacy `stethem` skin. `npm run check:design` detects drift. Neither skin styles app frames.
+The default `workbench` shell uses a dark monochrome palette independent of the personal site: one warm light on a cool near-black, with hairlines and space in place of boxed panels. Its type families and motion timings are tokens too, so the Workbench collection documents them in its own Foundations. `skins/workbench.tokens.json` is authoritative; `npm run skin:build` generates scoped CSS for both `workbench` and the optional legacy `stethem` skin. `npm run check:design` detects drift. Neither skin styles app frames.
 
 `mountWorkbench(container, {skin: 'stethem'})` sets `data-wb-skin` on this engine instance. `handle.setSkin('another-name')` changes that selector without reloading fixtures. A future skin supplies a separately reviewed `.wb-shell[data-wb-skin="another-name"]` rule with the same `--wb-*` contract. Both workbench and stethem are shipped. The default and the self collection use workbench. Shell skin and the collection's Theme selector are independent.
 
@@ -46,3 +46,13 @@ The v1 inventory contract is in `packages/tokens/inventory.schema.json`; `valida
 An optional adjacent `study` document provides unverified secondary analysis, exact source/hash evidence, imported sections, missing fields, explicit parser repairs and homepage verification separate from design fidelity. Text is inert, links use HTTP(S) safety checks, and reference collections without fixtures are analysis-only. Original neutral specimens do not imply official UI or theme support.
 
 The studio keeps `registry/index.json` (Robin) separate from `registry/references.json` (independent studies). Search and library history are opt-in studio/navigation behavior; app consumers retain their existing registry. The engine adds optional `searchCollections` and `onCollectionChange` options without a framework or parser dependency. Single-theme references cannot enable comparison. The starter stays empty.
+
+## Signature, contrast and entry motion
+
+Every collection page carries a colour signature under its title: the collection's unique colour tokens for the selected mode as one band, neutrals by lightness and then hues in 20° bands, sorted in OKLCH. It is a single `role="slider"` stop. The pointer or the arrow keys read out a token's name, hex and OKLCH value; a click, Enter or Space copies the hex. `colorSignature(tokensData, mode)` and `signatureGradient(colors)` are exported for hosts that want the same band elsewhere. Colours are resolved by the browser through a 1×1 canvas, so the functions return an empty list outside one.
+
+Each colour sample shows white and black set on the colour with the WCAG 2 contrast ratio each would reach, struck through below 4.5. This is arithmetic on the token value, not an accessibility verdict for any interface. Clicking a sample copies the authored value and announces it through the inspector's status region.
+
+Section, collection, fixture, theme, viewport and comparison changes still re-render synchronously, and focus now returns to the control that caused the change. Each render marks the shell with `data-wb-section` and `data-wb-enter` (`collection`, `section` or `refresh`) and sets `--wb-nav-shift` on the section indicator to the distance from its previous position. The `workbench` skin uses those hooks for CSS entry motion, off under reduced motion; no state waits on an animation. The skin keeps Components, Patterns and Screens still, so a fixture preview is never moving or fading while someone reaches for it. `handle.showCollection(id)` selects a collection the same way the picker does and keeps the current section.
+
+A host with a fixed header sets `--wb-offset-top` on an ancestor of the shell so the sticky sidebar clears it.

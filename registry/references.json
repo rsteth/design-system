@@ -88,6 +88,7 @@
     "../collections/reference/wired/collection.json",
     "../collections/reference/wise/collection.json",
     "../collections/reference/x-ai/collection.json",
-    "../collections/reference/zapier/collection.json"
+    "../collections/reference/zapier/collection.json",
+    "../collections/authored-reference/nasa/collection.json"
   ]
 }

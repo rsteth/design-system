@@ -34,7 +34,7 @@ Workbenches are **one-way for now**: the app owns source, fixtures and tokens; w
 
 The studio now includes Workbench itself as an original collection. Its fixtures run the same engine: live controls/token inspection, empty/loaded states, and a bounded studio containing app collections only. The data is bounded before rendering so self-preview cannot recurse. Open `/apps/studio/?collection=workbench&section=components`.
 
-The workbench now uses filled, square Warp-inspired buttons and panels within its own dark monochrome skin: near-black surfaces, white/gray type, precise borders and compact geometry. It is separate from the personal site. `skins/workbench.tokens.json` is authoritative; the previous `stethem` skin remains an explicit opt-in. The blank starter uses the dark skin and remains empty. Existing app source and pinned application vendors are unchanged.
+The workbench uses its own dark monochrome skin: one warm light on a cool near-black, with hairlines and space in place of boxed panels, a serif collection title, and a colour signature under each title drawn from that collection's tokens. It is separate from the personal site. `skins/workbench.tokens.json` is authoritative; the previous `stethem` skin remains an explicit opt-in. The blank starter uses the dark skin and remains empty. Existing app source and pinned application vendors are unchanged.
 
 ## Populated application catalogs
 
@@ -87,3 +87,7 @@ The active own-work catalog stays limited to **Focus, Great Circle, stethem, Rea
 The broader project experiment is no longer active. Its additional registry snapshots and coverage directory are recoverable in the existing local Git history; their source adapters remain in their own local checkouts. Nothing was permanently discarded, pushed or published. See `docs/local/project-coverage-2026-11-11.md` for the current local scope and verification.
 
 App fixtures remain source-owned and arrive through explicit `tooling/sync-registry.mjs` updates. The existing public-app allowlist also remains unchanged. A future public release needs its own packaging review and authorization; local `dist/` is not a publication command.
+
+### NASA official-source reference
+
+The separate NASA study adds selected pinned HDS Core digital colors, typography and dimensions plus original neutral compositions. Its token facts are first-party sourced, unlike the 84 secondary analyses; the compositions remain independent interpretations. The January 1976 manual is linked separately as history. No NASA logos, photography or font binaries are included. Open `?library=references&collection=reference-nasa`. The importer verifies the retained HDS token/license hashes and generates this entry offline.

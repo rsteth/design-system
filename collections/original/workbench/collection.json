@@ -4,7 +4,7 @@
   "title": "Workbench",
   "kind": "original",
   "renderer": "dom",
-  "summary": "The workbench in its own workbench. Dark monochrome chrome, precise containers and independent collection palettes.",
+  "summary": "The workbench in its own workbench. Dark monochrome chrome, hairline structure and independent collection palettes.",
   "tokens": "../../../packages/workbench/skins/workbench.tokens.json",
   "themes": [
     "workbench"

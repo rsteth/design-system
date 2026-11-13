@@ -73,18 +73,85 @@ function element(tag, attrs = {}, ...children) {
   return node;
 }
 const titleCase = value => value[0].toUpperCase() + value.slice(1);
+// Any CSS colour → 8-bit sRGB, resolved by the browser so every notation a token may use is covered.
+let colorContext;
+const resolvedColors = new Map();
+function resolveColor(value) {
+  value = String(value).trim();
+  if (resolvedColors.has(value)) return resolvedColors.get(value);
+  if (typeof document === 'undefined') return null;
+  colorContext ??= Object.assign(document.createElement('canvas'), { width: 1, height: 1 }).getContext('2d', { willReadFrequently: true });
+  let rgb = null;
+  colorContext.fillStyle = '#010203';
+  colorContext.fillStyle = value;
+  // An unparsable value leaves the sentinel in place.
+  if (colorContext.fillStyle !== '#010203' || /^#010203$/i.test(value)) {
+    colorContext.clearRect(0, 0, 1, 1); colorContext.fillRect(0, 0, 1, 1);
+    const [r, g, b, a] = colorContext.getImageData(0, 0, 1, 1).data;
+    if (a) rgb = [r, g, b, Math.round(a / 2.55) / 100];
+  }
+  resolvedColors.set(value, rgb);
+  return rgb;
+}
+const linearChannel = channel => (channel /= 255) <= .04045 ? channel / 12.92 : ((channel + .055) / 1.055) ** 2.4;
+const relativeLuminance = ([r, g, b]) => .2126 * linearChannel(r) + .7152 * linearChannel(g) + .0722 * linearChannel(b);
+const contrastRatio = (a, b) => (Math.max(a, b) + .05) / (Math.min(a, b) + .05);
+function toOKLCH([r, g, b]) {
+  const R = linearChannel(r), G = linearChannel(g), B = linearChannel(b);
+  const l = Math.cbrt(.4122214708 * R + .5363325363 * G + .0514459929 * B), m = Math.cbrt(.2119034982 * R + .6806995451 * G + .1073969566 * B), s = Math.cbrt(.0883024619 * R + .2817188376 * G + .6299787005 * B);
+  const L = .2104542553 * l + .793617785 * m - .0040720468 * s, A = 1.9779984951 * l - 2.428592205 * m + .4505937099 * s, K = .0259040371 * l + .7827717662 * m - .808675766 * s;
+  return { lightness: L, chroma: Math.hypot(A, K), hue: (Math.atan2(K, A) * 180 / Math.PI + 360) % 360 };
+}
+const signatureCache = new WeakMap();
+/** A collection's unique colour tokens in reading order: neutrals dark to light, then hues from
+ *  red round to magenta, each 20° band alternating direction so neighbours meet at similar lightness.
+ *  Browser only; returns an empty list where no canvas is available. */
+export function colorSignature(tokensData, mode) {
+  if (!tokensData || typeof tokensData !== 'object') return [];
+  const modes = signatureCache.get(tokensData) ?? signatureCache.set(tokensData, new Map()).get(tokensData);
+  if (modes.has(mode)) return modes.get(mode);
+  const seen = new Set(), colors = [];
+  for (const row of tokenRows(tokensData, mode)) {
+    if (row.type !== 'color') continue;
+    const rgb = resolveColor(row.value);
+    if (!rgb || seen.has(rgb.join())) continue;
+    seen.add(rgb.join());
+    const [r, g, b, a] = rgb;
+    colors.push({ name: row.name.replace(/^colors?\./, ''), value: String(row.value), css: `rgb(${r} ${g} ${b} / ${a})`,
+      hex: '#' + [r, g, b, ...(a < 1 ? [Math.round(a * 255)] : [])].map(channel => channel.toString(16).padStart(2, '0')).join('').toUpperCase(), ...toOKLCH(rgb) });
+  }
+  const neutral = item => item.chroma < .03, band = item => Math.floor(((item.hue + 15) % 360) / 20);
+  colors.sort((a, b) => neutral(a) !== neutral(b) ? (neutral(a) ? -1 : 1) : neutral(a) ? a.lightness - b.lightness
+    : band(a) - band(b) || (band(a) % 2 ? b.lightness - a.lightness : a.lightness - b.lightness));
+  if (typeof document !== 'undefined') modes.set(mode, colors);
+  return colors;
+}
+/** Hard-stopped gradient for a signature, usable as a background-image. */
+export function signatureGradient(colors) {
+  return colors.length ? `linear-gradient(90deg,${colors.map((item, index) => `${item.css} ${index / colors.length * 100}% ${(index + 1) / colors.length * 100}%`).join(',')})` : 'none';
+}
+async function copyText(text) {
+  try { await navigator.clipboard.writeText(text); return true; } catch { return false; }
+}
 export function mountWorkbench(container, options = {}) {
   if (!container?.replaceChildren) throw new TypeError('A DOM container is required');
   let collections = options.collections ?? [];
   let skin = skinName(options.skin);
   let selected = options.initialCollection ?? collections[0]?.id, section = SECTIONS.includes(options.initialSection) ? options.initialSection : 'foundations', theme = 'light', viewport = 'responsive', comparison = false, fixtureID = options.initialFixture;
   let tokenFilter = '', collectionFilter = '', disposed = false;
-  let cleanup = [];
+  let cleanup = [], drawnSignature = '', entered;
   const clear = () => { cleanup.forEach(fn => fn()); cleanup = []; };
+  /** Apply a state change and re-render at once. A re-render replaces the control that caused it,
+   *  so that control gets focus back. Updates stay synchronous: hosts and tests may read the result immediately. */
+  function update(change, focusKey) {
+    if (disposed) return;
+    const restore = focusKey && container.contains(document.activeElement) ? focusKey : undefined;
+    change(); render(restore);
+  }
   const current = () => collections.find(item => item.id === selected);
   const note = (text, kind = '') => element('p', { class: `wb-note ${kind}` }, text);
   function select(label, values, value, change) {
-    return element('label', { class: 'wb-control' }, element('span', {}, label === 'Theme' ? 'Preview theme' : label), element('select', { 'aria-label': label, onchange: event => change(event.target.value) }, ...values.map(item => {
+    return element('label', { class: 'wb-control' }, element('span', {}, label === 'Theme' ? 'Preview theme' : label), element('select', { 'aria-label': label, 'data-wb-focus': `select:${label}`, onchange: event => { const next = event.target.value; update(() => change(next), `select:${label}`); } }, ...values.map(item => {
       const [id, text] = Array.isArray(item) ? item : [item, titleCase(item)];
       return element('option', { value: id, ...(value === id ? { selected: '' } : {}) }, text);
     })));
@@ -182,14 +249,34 @@ export function mountWorkbench(container, options = {}) {
     const card = row => {
       const group = groupFor(row), value = String(row.value), evidence = studyTokens.get(row.name);
       const label = element('code', { class: 'wb-token-name', title: row.name }, group === 'color' ? row.name.replace(/^colors?\./, '') : row.name);
-      const metadata = element('div', { class: 'wb-token-meta' }, label, element('code', { class: 'wb-token-value', title: value }, group === 'color' ? hexLabel(value) : value));
+      const shown = element('code', { class: 'wb-token-value', title: value }, group === 'color' ? hexLabel(value) : value);
+      const metadata = element('div', { class: 'wb-token-meta' }, label, shown);
       if (group === 'other') metadata.append(element('span', { class: 'wb-token-type' }, row.type ?? 'unknown'));
       let preview;
       if (group === 'color') {
         const swatch = element('span', { class: 'wb-swatch', 'aria-hidden': 'true' });
         // Setting one validated property cannot introduce remote CSS or markup.
         if (CSS.supports('color', value)) swatch.style.backgroundColor = value;
-        preview = element('div', { class: 'wb-color-preview', 'aria-hidden': 'true' }, swatch);
+        preview = element('div', { class: 'wb-color-preview', 'aria-hidden': 'true', title: 'Copy value' }, swatch);
+        const rgb = resolveColor(value);
+        // White and black set on the colour itself, with the WCAG ratio each would achieve.
+        if (rgb?.[3] === 1) {
+          const luminance = relativeLuminance(rgb);
+          preview.append(element('span', { class: 'wb-contrast' }, ...[['#fff', contrastRatio(1, luminance)], ['#000', contrastRatio(luminance, 0)]].map(([ink, ratio]) => {
+            const sample = element('span', { 'data-wb-fail': ratio < 4.5 ? '' : null }, `Aa ${ratio.toFixed(1)}`);
+            sample.style.color = ink;
+            return sample;
+          })));
+        }
+        let restoring;
+        preview.addEventListener('click', async () => {
+          if (!await copyText(value)) return;
+          const item = preview.closest('.wb-token-card');
+          clearTimeout(restoring);
+          item?.setAttribute('data-wb-copied', ''); shown.textContent = 'Copied'; status.textContent = `Copied ${row.name}, ${value}.`;
+          restoring = setTimeout(() => { item?.removeAttribute('data-wb-copied'); shown.textContent = hexLabel(value); }, 1000);
+        });
+        previewCleanup.push(() => clearTimeout(restoring));
       } else if (group === 'dimensions') {
         preview = dimensionPreview(row, metadata);
       } else if (group === 'fonts') {
@@ -216,13 +303,63 @@ export function mountWorkbench(container, options = {}) {
       status.textContent = `${filtered.length} ${filtered.length === 1 ? 'token' : 'tokens'} shown.`;
       if (!filtered.length) sections.append(note(rows.length ? 'No matching tokens.' : 'No tokens in this collection.'));
     };
-    if (collection.kind === 'reference' && collection.fixtures?.some(f => f.id.endsWith('-recipe-sheet'))) panel.append(element('div', { class: 'wb-panel-heading' }, note('Explore visual foundations and source-linked component interpretations.'), element('button', { type: 'button', onclick: () => { section = 'components'; fixtureID = collection.fixtures.find(f => f.id.endsWith('-recipe-sheet')).id; render(); } }, 'Open visual workbench')));
+    if (collection.kind === 'reference' && collection.fixtures?.some(f => f.id.endsWith('-recipe-sheet'))) panel.append(element('div', { class: 'wb-panel-heading' }, note('Explore visual foundations and source-linked component interpretations.'), element('button', { type: 'button', onclick: () => update(() => { section = 'components'; fixtureID = collection.fixtures.find(f => f.id.endsWith('-recipe-sheet')).id; }, 'section:components') }, 'Open visual workbench')));
     panel.append(element('div', { class: 'wb-panel-heading' }, element('div', {}, element('h2', {}, 'Token inspector'), rows.length ? element('span', { class: 'wb-token-mode' }, `Mode: ${rows[0].mode}`) : null), element('input', { type: 'search', placeholder: 'Filter tokens…', value: tokenFilter, 'aria-label': 'Filter tokens', oninput: event => { tokenFilter = event.target.value; paint(); } })));
     paint(); panel.append(status, sections);
     const aliases = Object.entries(collection.tokensData?.aliases ?? {});
     if (aliases.length) panel.append(element('details', {}, element('summary', {}, `Compatibility aliases (${aliases.length})`), element('pre', {}, aliases.map(([alias, token]) => `${alias} → ${token}`).join('\n'))));
     if (collection.kind === 'reference') panel.append(studyPanel(collection));
     return panel;
+  }
+  /** Every colour token in the collection as one band, read with the pointer or the arrow keys. */
+  function signaturePanel(collection) {
+    const colors = colorSignature(collection.tokensData, theme);
+    if (!colors.length) return null;
+    const rows = tokenRows(collection.tokensData, theme);
+    const plural = (count, one, many) => `${count} ${count === 1 ? one : many}`;
+    const others = [['fontFamily', 'type family', 'type families'], ['dimension', 'dimension', 'dimensions']]
+      .map(([type, one, many]) => [rows.filter(row => row.type === type).length, one, many]).filter(([count]) => count).map(item => ` · ${plural(...item)}`).join('');
+    const order = 'Ordered in OKLCH · neutrals by lightness, then hue';
+    const caret = element('span', { class: 'wb-signature-caret', 'aria-hidden': 'true' });
+    const band = element('div', { class: 'wb-signature-band', tabindex: '0', role: 'slider', 'aria-label': `${collection.title} colour signature`, 'aria-orientation': 'horizontal', 'aria-valuemin': '1', 'aria-valuemax': String(colors.length), 'aria-valuenow': '1' }, caret);
+    band.style.backgroundImage = signatureGradient(colors);
+    const reading = element('span'), legend = element('span', {}, order);
+    const rest = () => reading.replaceChildren(element('span', { class: 'wb-signature-name' }, plural(colors.length, 'colour', 'colours')), others);
+    let active = 0, restoring;
+    const point = index => {
+      active = Math.max(0, Math.min(colors.length - 1, index));
+      const item = colors[active], dot = element('span', { class: 'wb-signature-dot' });
+      dot.style.background = item.css;
+      caret.style.left = `${active / colors.length * 100}%`;
+      caret.style.width = `max(${100 / colors.length}%, 5px)`;
+      reading.replaceChildren(dot, element('span', { class: 'wb-signature-name' }, item.name), `  ${item.hex}  oklch(${(item.lightness * 100).toFixed(1)}% ${item.chroma.toFixed(3)} ${item.chroma < .003 ? 0 : item.hue.toFixed(0)})`);
+      band.setAttribute('aria-valuenow', String(active + 1));
+      band.setAttribute('aria-valuetext', `${item.name}, ${item.hex}`);
+    };
+    const take = async () => {
+      if (!await copyText(colors[active].hex)) return;
+      clearTimeout(restoring);
+      legend.textContent = `Copied ${colors[active].hex}`;
+      restoring = setTimeout(() => { legend.textContent = order; }, 1400);
+    };
+    cleanup.push(() => clearTimeout(restoring));
+    band.addEventListener('pointermove', event => { const box = band.getBoundingClientRect(); point(Math.floor((event.clientX - box.left) / box.width * colors.length)); });
+    band.addEventListener('pointerleave', () => { if (document.activeElement !== band) rest(); });
+    band.addEventListener('focus', () => point(active));
+    band.addEventListener('blur', rest);
+    band.addEventListener('click', take);
+    band.addEventListener('keydown', event => {
+      const step = { ArrowLeft: -1, ArrowDown: -1, ArrowRight: 1, ArrowUp: 1 }[event.key];
+      if (step) point(active + step); else if (event.key === 'Home') point(0); else if (event.key === 'End') point(colors.length - 1);
+      else if (event.key === 'Enter' || event.key === ' ') take(); else return;
+      event.preventDefault();
+    });
+    rest();
+    // Draw the band in only when the collection or mode changes, not on every section change.
+    const key = `${collection.id}/${theme}`;
+    if (key !== drawnSignature) band.setAttribute('data-wb-draw', '');
+    drawnSignature = key;
+    return element('figure', { class: 'wb-signature' }, band, element('figcaption', { class: 'wb-signature-readout' }, reading, legend));
   }
   function fixturePanel(fixture, chosenTheme) {
     const status = note('Preview and theme are unverified. Waiting for the fixture adapter; an iframe load alone does not confirm availability.', 'wb-status');
@@ -261,7 +398,7 @@ export function mountWorkbench(container, options = {}) {
     if (!items.length) return element('div', { class: 'wb-empty' }, element('h2', {}, `No ${section} yet`), note('Add an app-owned fixture URL to this collection. The engine does not generate substitute UI.'));
     const fixture = items.find(item => item.id === fixtureID) ?? items[0];
     fixtureID = fixture.id;
-    const panel = element('div', {}, select('Fixture', items.map(item => [item.id, item.title]), fixture.id, value => { fixtureID = value; render(); }));
+    const panel = element('div', {}, select('Fixture', items.map(item => [item.id, item.title]), fixture.id, value => { fixtureID = value; }));
     if (fixture.description) panel.append(note(fixture.description));
     if (fixture.states?.length) panel.append(note(`Recorded fixture states: ${fixture.states.join(', ')}. These are authored examples, not verified test results.`));
     panel.append(element('div', { class: `wb-previews${comparison ? ' wb-compare' : ''}` }, fixturePanel(fixture, theme), ...(comparison ? [fixturePanel(fixture, (collection.themes ?? []).find(item => item !== theme) ?? theme)] : [])));
@@ -323,7 +460,7 @@ export function mountWorkbench(container, options = {}) {
     const checks = [ ['Schema version', collection.schemaVersion === 1], [collection.source?.publicVersion ? 'Source version recorded' : 'Source revision recorded', Boolean(collection.source?.publicVersion ?? collection.source?.revision)], ['License recorded', Boolean(collection.license?.spdx)], ['Provenance recorded', Boolean(collection.provenance?.status)], ['Tokens loaded', Boolean(collection.tokensData)], ['Fixture URLs use HTTP(S)', (collection.fixtures ?? []).every(fixture => { try { safeURL(fixture.url); return true; } catch { return false; } })] ];
     return element('article', { class: 'wb-panel' }, element('h2', {}, 'Collection checks'), note('Metadata checks only. These do not certify accessibility, visual fidelity, licensing, or whether a remote fixture is reachable.'), element('ul', { class: 'wb-checks' }, ...checks.map(([label, pass]) => element('li', {}, element('span', { class: pass ? 'wb-pass' : 'wb-warning' }, pass ? 'Recorded' : 'Needs attention'), label))), inventoryPanel(collection));
   }
-  function render() {
+  function render(focusKey) {
     if (disposed) return;
     clear();
     const collection = current();
@@ -331,12 +468,16 @@ export function mountWorkbench(container, options = {}) {
     if (collection?.kind === 'reference' && section === 'screens' && !hasScreens) section = 'components';
     if ((collection?.themes?.length ?? 0) < 2) comparison = false;
     if (collection && !(collection.themes ?? ['light']).includes(theme)) theme = collection.themes?.[0] ?? 'light';
-    const shell = element('div', { class: 'wb-shell', 'data-wb-skin': skin });
+    const indicatorWas = container.querySelector('.wb-nav-current')?.getBoundingClientRect();
+    // What changed since the last render, so a skin can animate only that: 'collection', 'section' or 'refresh'.
+    const enter = !entered || entered.selected !== selected ? 'collection' : entered.section !== section ? 'section' : 'refresh';
+    entered = { selected, section };
+    const shell = element('div', { class: 'wb-shell', 'data-wb-skin': skin, 'data-wb-section': section, 'data-wb-enter': enter });
     const sidebar = element('aside', { class: 'wb-sidebar' }, element('div', { class: 'wb-brand' }, element('div', {}, element('strong', {}, options.title ?? 'Design workbench'))));
     const collectionPicker = element('div');
     function paintCollections() {
       const matches = collections.filter(item => `${item.title} ${item.id} ${item.summary ?? ''}`.toLowerCase().includes(collectionFilter.toLowerCase()));
-      const control = select('Collection', matches.length ? matches.map(item => [item.id, item.title]) : [['', 'No matching '+(options.collectionNoun??'studies')]], matches.some(item => item.id === selected) ? selected : '', value => { selected = value; fixtureID = undefined; tokenFilter = ''; options.onCollectionChange?.(value); render(); });
+      const control = select('Collection', matches.length ? matches.map(item => [item.id, item.title]) : [['', 'No matching '+(options.collectionNoun??'studies')]], matches.some(item => item.id === selected) ? selected : '', value => { selected = value; fixtureID = undefined; tokenFilter = ''; options.onCollectionChange?.(value); });
       const picker = control.querySelector('select');
       if (matches.length && !matches.some(item => item.id === selected)) picker.prepend(element('option', { value: '', selected: '', disabled: '' }, 'Choose a matching collection'));
       picker.disabled = !matches.length;
@@ -347,11 +488,13 @@ export function mountWorkbench(container, options = {}) {
     paintCollections(); sidebar.append(collectionPicker);
     sidebar.append(element('nav', { 'aria-label': 'Workbench sections' }, ...SECTIONS.map(item => {
       const unavailable = item === 'screens' && collection?.kind === 'reference' && !hasScreens;
-      return element('button', { type: 'button', class: section === item ? 'wb-active' : '', 'aria-current': section === item ? 'page' : null, disabled: unavailable ? '' : null, 'aria-disabled': unavailable ? 'true' : null, title: unavailable ? 'No screens are registered for this study.' : null, onclick: () => { if (unavailable) return; section = item; fixtureID = undefined; render(); } }, element('span', {class:'wb-nav-label'}, titleCase(item)));
+      return element('button', { type: 'button', class: section === item ? 'wb-active' : '', 'aria-current': section === item ? 'page' : null, disabled: unavailable ? '' : null, 'aria-disabled': unavailable ? 'true' : null, title: unavailable ? 'No screens are registered for this study.' : null, 'data-wb-focus': `section:${item}`, onclick: () => { if (unavailable || section === item) return; update(() => { section = item; fixtureID = undefined; }, `section:${item}`); } }, element('span', {class:'wb-nav-label'}, titleCase(item)), section === item ? element('span', { class: 'wb-nav-current', 'aria-hidden': 'true' }) : null);
     })));
     const main = element('main', { class: 'wb-main' });
-    const controls = element('div', { class: 'wb-controls' }, select('Theme', collection?.themes?.length ? collection.themes : ['light'], theme, value => { theme = value; render(); }), select('Viewport', [['responsive', 'Responsive'], ['mobile', 'Mobile · 390'], ['tablet', 'Tablet · 768'], ['desktop', 'Desktop · 1280']], viewport, value => { viewport = value; render(); }), element('label', { class: 'wb-compare-control' }, element('input', { type: 'checkbox', ...(comparison ? { checked: '' } : {}), onchange: event => { comparison = event.target.checked; render(); } }), 'Compare themes'));
+    const controls = element('div', { class: 'wb-controls' }, select('Theme', collection?.themes?.length ? collection.themes : ['light'], theme, value => { theme = value; }), select('Viewport', [['responsive', 'Responsive'], ['mobile', 'Mobile · 390'], ['tablet', 'Tablet · 768'], ['desktop', 'Desktop · 1280']], viewport, value => { viewport = value; }), element('label', { class: 'wb-compare-control' }, element('input', { type: 'checkbox', ...(comparison ? { checked: '' } : {}), 'data-wb-focus': 'compare', onchange: event => { const next = event.target.checked; update(() => { comparison = next; }, 'compare'); } }), 'Compare themes'));
     main.append(element('header', { class: 'wb-header' }, element('div', {}, element('p', { class: 'wb-eyebrow' }, collection?.title ?? 'Your workspace'), element('h1', {}, titleCase(section)), note(collection?.summary ?? 'A clean starting point, ready for your first collection.')), controls));
+    const signature = collection && signaturePanel(collection);
+    if (signature) main.append(signature);
     if (collection?.kind === 'reference') {
       const homepage = collection.studyData?.homepage?.verification;
       const original = homepage?.url ? sourceLink('Open original site ↗', homepage.url) : element('button', { type: 'button', disabled: '', title: 'Original site is not reliably identified in the available evidence.' }, 'Open original site · unavailable');
@@ -362,7 +505,12 @@ export function mountWorkbench(container, options = {}) {
     else main.append(section === 'foundations' ? foundations(collection) : section === 'sources' ? sources(collection) : section === 'checks' ? checks(collection) : fixtures(collection));
     if (collection?.kind === 'reference' && (collection.themes?.length ?? 0) < 2) controls.querySelector('input[type=checkbox]').disabled = true;
     shell.append(sidebar, main); container.replaceChildren(shell);
+    const indicator = shell.querySelector('.wb-nav-current'), indicatorNow = indicator?.getBoundingClientRect();
+    // Distance from the previous section's indicator, for a skin that slides it into place.
+    if (indicatorWas?.height && indicatorNow?.height) indicator.style.setProperty('--wb-nav-shift', `${indicatorWas.top - indicatorNow.top}px`);
+    if (focusKey) [...shell.querySelectorAll('[data-wb-focus]')].find(node => node.dataset.wbFocus === focusKey && !node.disabled)?.focus({ preventScroll: true });
   }
   render();
-  return { setSkin(next) { if (disposed) return; skin = skinName(next); const shell = container.querySelector('.wb-shell'); if (shell) shell.dataset.wbSkin = skin; }, destroy() { clear(); disposed = true; container.replaceChildren(); }, setCollections(next) { collections = next; if (!current()) selected = collections[0]?.id; render(); } };
+  return { setSkin(next) { if (disposed) return; skin = skinName(next); const shell = container.querySelector('.wb-shell'); if (shell) shell.dataset.wbSkin = skin; }, destroy() { clear(); disposed = true; container.replaceChildren(); }, setCollections(next) { collections = next; if (!current()) selected = collections[0]?.id; render(); },
+    showCollection(id) { if (disposed || id === selected || !collections.some(item => item.id === id)) return; update(() => { selected = id; fixtureID = undefined; tokenFilter = ''; collectionFilter = ''; options.onCollectionChange?.(id); }); } };
 }

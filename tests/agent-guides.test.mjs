@@ -22,7 +22,7 @@ test('guide generation uses selected fields, detects drift and checks links',asy
  await writeFile(path,'stale');await assert.rejects(generateGuides({root}),/drift/);await generateGuides({root,write:true});
  await writeFile(join(root,'registry/apps/example/public-guide.md'),'# Guide\n[Broken](missing.md)');await assert.rejects(generateGuides({root,write:true}),/Broken guide link/);
 });
-test('current registry guidance is deterministic and all local links resolve',async()=>{assert.equal((await generateGuides()).guides,90);});
+test('current registry guidance is deterministic and all local links resolve',async()=>{assert.equal((await generateGuides()).guides,91);});
 test('public navigation documents do not contain local user paths',async()=>{
  for(const path of ['docs/process/capture-studio.md','templates/blank/README.md'])assert.doesNotMatch(await readFile(new URL('../'+path,import.meta.url),'utf8'),/\/Users\/|\/home\//);
 });

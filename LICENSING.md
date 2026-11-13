@@ -19,3 +19,7 @@ The same grant covers copies of this design-system code distributed in a starter
 - **Dependencies and other contributions:** retain their own licenses, copyright notices and attribution. A separately identified license takes precedence for that material.
 
 See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md), per-study notices and, in a packaged viewer, `BUNDLED-DEPENDENCIES.json` and included font notices. A source revision or file hash identifies evidence; it does not grant additional rights. Licensing does not change repository visibility, publish a package, or authorize deployment.
+
+### NASA reference exception
+
+The authored NASA study is not part of the VoltAgent import. Its selected HDS Core token facts come from a pinned CC0 source; NASA's full notice is retained alongside the evidence and study. Original study code is MIT. NASA logos, insignia and other identifiers are not included or licensed here; neither are font binaries, photographs or third-party assets. See the study's Sources view and `THIRD_PARTY_NOTICES.md`.
