@@ -61,6 +61,7 @@ try {
     await page.locator('iframe').waitFor();
     assert.equal(await page.locator('iframe').count(),1);
     assert.equal(await page.locator('iframe').getAttribute('sandbox'),'allow-scripts');
+    await page.getByRole('button', {name:'Interact with preview',exact:true}).click();
     const inner = page.frameLocator('iframe');
     await inner.locator('.wb-shell').first().waitFor();
     await page.getByText('Theme adapter confirmed: workbench.',{exact:true}).waitFor();

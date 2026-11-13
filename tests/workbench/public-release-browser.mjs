@@ -29,7 +29,7 @@ try{
    await page.getByLabel('Viewport',{exact:true}).selectOption(viewport);
    for(const fixture of manifest.fixtures){activeFixture={app:id,fixture:fixture.id,viewport};const start=Date.now();try{
     await page.getByRole('button',{name:fixture.section[0].toUpperCase()+fixture.section.slice(1),exact:true}).click();
-    await page.getByLabel('Fixture',{exact:true}).selectOption(fixture.id);
+    await page.getByLabel('Fixture',{exact:true}).selectOption(fixture.id);await page.getByRole('button',{name:'Interact with preview',exact:true}).click();
     assert.equal(await page.locator('iframe').count(),1);assert.equal(await page.locator('iframe').getAttribute('sandbox'),'allow-scripts');
     assert.ok((await page.locator('iframe').getAttribute('src')).startsWith(origin+base+'previews/'));
     await page.locator('iframe').scrollIntoViewIfNeeded();
@@ -49,12 +49,12 @@ try{
  }
  if(release.focusEpub==='fixture-only')for(const viewport of [{width:1440,height:1000},{width:390,height:844}]){
   await page.setViewportSize(viewport);await page.goto(studio+'?collection=focus&section=screens');
-  await page.getByLabel('Fixture',{exact:true}).selectOption('reader-epub');const frame=page.frameLocator('iframe');
+  await page.getByLabel('Fixture',{exact:true}).selectOption('reader-epub');await page.getByRole('button',{name:'Interact with preview',exact:true}).click();const frame=page.frameLocator('iframe');
   await frame.getByTestId('word').waitFor();assert.match(await frame.getByTestId('position').innerText(),/of 128/);
   await frame.getByRole('button',{name:'Play',exact:true}).click();await frame.getByRole('button',{name:'Pause',exact:true}).waitFor();await page.waitForTimeout(350);await frame.getByRole('button',{name:'Pause',exact:true}).click();
   await frame.getByRole('button',{name:'Close reader',exact:true}).click();await frame.getByRole('button',{name:'Reopen reader fixture',exact:true}).click();await frame.getByTestId('word').waitFor();
-  for(const fixture of ['reader-error','reader-loading']){await page.getByLabel('Fixture',{exact:true}).selectOption(fixture);await frame.getByRole('status').waitFor();assert.equal(await frame.getByRole('button',{name:'Play',exact:true}).isDisabled(),true);await frame.getByRole('button',{name:'Close reader',exact:true}).click();await frame.getByRole('button',{name:'Reopen reader fixture',exact:true}).click();await frame.getByRole('status').waitFor();}
-  await page.getByLabel('Fixture',{exact:true}).selectOption('library-populated');await frame.getByRole('group',{name:'Open An EPUB in progress',exact:true}).click();await frame.getByTestId('word').waitFor();assert.match(await frame.getByTestId('position').innerText(),/of 128/);await frame.getByRole('button',{name:'Close reader',exact:true}).click();await frame.getByRole('group',{name:'Open An EPUB in progress',exact:true}).waitFor();
+  for(const fixture of ['reader-error','reader-loading']){await page.getByLabel('Fixture',{exact:true}).selectOption(fixture);await page.getByRole('button',{name:'Interact with preview',exact:true}).click();await frame.getByRole('status').waitFor();assert.equal(await frame.getByRole('button',{name:'Play',exact:true}).isDisabled(),true);await frame.getByRole('button',{name:'Close reader',exact:true}).click();await frame.getByRole('button',{name:'Reopen reader fixture',exact:true}).click();await frame.getByRole('status').waitFor();}
+  await page.getByLabel('Fixture',{exact:true}).selectOption('library-populated');await page.getByRole('button',{name:'Interact with preview',exact:true}).click();await frame.getByRole('group',{name:'Open An EPUB in progress',exact:true}).click();await frame.getByTestId('word').waitFor();assert.match(await frame.getByTestId('position').innerText(),/of 128/);await frame.getByRole('button',{name:'Close reader',exact:true}).click();await frame.getByRole('group',{name:'Open An EPUB in progress',exact:true}).waitFor();
   focusedFlows.push({viewport,epubSampleReader:'passed',playPauseCloseReopen:'passed',loadingErrorInterruption:'passed',libraryEpubSample:'passed',realEpubParsing:'not included'});
  }
  await page.goto(studio+'?library=references&collection=reference-stripe&section=components');await page.getByLabel('Collection',{exact:true}).waitFor();
