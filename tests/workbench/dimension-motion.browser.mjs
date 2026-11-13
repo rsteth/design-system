@@ -34,6 +34,7 @@ try {
   const nearly = (a, b) => assert.ok(Math.abs(a - b) < 0.05, `${a} != ${b}`);
   await page.goto(base + '/apps/studio/?collection=reads&section=foundations');
   await page.locator('[data-token-name="motion.duration"] .wb-motion-preview').waitFor();
+  const projects=await page.getByLabel('Collection',{exact:true}).locator('option').allTextContents();assert.deepEqual(projects,[...projects].sort((a,b)=>a.localeCompare(b,'en',{sensitivity:'base',numeric:true})));assert.ok(projects.includes('Stethem'));
   for (const [name, radius] of [['control',17],['field',14],['panel',26],['panel.mobile',23]]) {
     const measured = await page.locator(`[data-token-name="radius.${name}"] .wb-radius-diagram`).evaluate(n => ({ radius: getComputedStyle(n).borderTopLeftRadius, width:n.getBoundingClientRect().width, height:n.getBoundingClientRect().height }));
     assert.equal(measured.radius, radius + 'px'); nearly(measured.width, radius + 16); nearly(measured.height, radius + 16);
@@ -90,15 +91,15 @@ try {
     }
     nearly(await page.locator('[data-token-name="space.small"] .wb-length-diagram').evaluate(n=>n.getBoundingClientRect().width),8);
     nearly(await page.locator('[data-token-name="space.zero"] .wb-length-diagram').evaluate(n=>n.getBoundingClientRect().width),0);
-    nearly(await page.locator('[data-token-name="space.large"] .wb-length-diagram').evaluate(n=>n.getBoundingClientRect().width),192);
+    nearly(await page.locator('[data-token-name="space.large"] .wb-length-diagram').evaluate(n=>parseFloat(getComputedStyle(n).width)),192);
     nearly(await page.locator('[data-token-name="space.negative"] .wb-length-diagram').evaluate(n=>n.getBoundingClientRect().width),1.4);
     await page.locator('[data-token-name="space.negative"] .wb-token-detail').filter({hasText:'Negative value: magnitude shown'}).waitFor();
     nearly(await page.locator('[data-token-name="radius.none"] .wb-radius-diagram').evaluate(n=>parseFloat(getComputedStyle(n).borderTopLeftRadius)),0);
     nearly(await page.locator('[data-token-name="radius.tiny"] .wb-radius-diagram').evaluate(n=>parseFloat(getComputedStyle(n).borderTopLeftRadius)),1);
     for(const variant of ['decimal','fraction','negative']) nearly(await page.locator(`[data-token-name="radius.zero.${variant}"] .wb-radius-diagram`).evaluate(n=>n.getBoundingClientRect().width),16);
     const big=page.locator('[data-token-name="radius.pill"] .wb-dimension-preview');
-    await page.waitForFunction(()=>document.querySelector('[data-token-name="radius.pill"] .wb-dimension-preview').getAttribute('tabindex')==='0');
-    const geometry=await big.evaluate(n=>({client:n.clientWidth,scroll:n.scrollWidth,left:n.scrollLeft}));assert.ok(geometry.scroll>9999);assert.ok(geometry.client<400);assert.ok(geometry.left>0);
+    await page.waitForFunction(()=>Number(document.querySelector('[data-token-name="radius.pill"] .wb-dimension-preview').dataset.scale)<1);
+    const geometry=await big.evaluate(n=>({client:n.clientWidth,scroll:n.scrollWidth,left:n.scrollLeft}));assert.ok(geometry.client<400);assert.equal(geometry.left,0);assert.equal(await big.evaluate(n=>getComputedStyle(n).overflow),'clip');
     nearly(await big.locator('.wb-radius-diagram').evaluate(n=>parseFloat(getComputedStyle(n).borderTopLeftRadius)),9999);
     assert.equal(await page.locator('[data-dimension-kind="unsupported"]').count(),6);
     assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true);

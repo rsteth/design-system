@@ -37,7 +37,7 @@ try {
    const after=await page.evaluate(()=>scrollY);assert.ok(after>before+50,`${width} ${selector} must chain to page at lower boundary: ${before} -> ${after}`);
    console.log('PASS',width,selector,'wheel boundary');
   }
-  const sample=page.locator('.wb-dimension-preview');await sample.scrollIntoViewIfNeeded();await sample.evaluate(n=>n.scrollTop=0);await sample.hover();await page.mouse.wheel(0,80);await page.waitForTimeout(200);assert.ok(await sample.evaluate(n=>n.scrollTop)>0,'Overflowing samples remain scrollable');
+  const sample=page.locator('.wb-dimension-preview');await sample.scrollIntoViewIfNeeded();await sample.evaluate(n=>n.scrollTop=0);await sample.hover();await page.mouse.wheel(0,80);await page.waitForTimeout(200);assert.equal(await sample.evaluate(n=>n.scrollTop),0,'Foundations never acquire an internal scroll offset');
   if(width===390){
    await sample.evaluate(n=>n.scrollTop=n.scrollHeight);await page.evaluate(()=>scrollTo(0,350));await page.waitForTimeout(100);const box=await sample.boundingBox(),before=await page.evaluate(()=>scrollY);const cdp=await page.context().newCDPSession(page);
    await cdp.send('Input.synthesizeScrollGesture',{x:Math.round(box.x+100),y:Math.round(box.y+60),yDistance:-250,gestureSourceType:'touch',speed:500});await page.waitForTimeout(200);assert.ok(await page.evaluate(()=>scrollY)>before+50,'Touch scroll chains at the sample boundary');await cdp.detach();console.log('PASS mobile touch boundary');
