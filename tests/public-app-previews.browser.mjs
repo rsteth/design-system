@@ -13,7 +13,7 @@ const {chromium,expect}=await import(pathToFileURL(module));
 const reads=JSON.parse(await readFile(join(root,'previews/reads/fixture-catalog.json'),'utf8'));
 const bandit=JSON.parse(await readFile(join(root,'previews/bandit/fixture-catalog.json'),'utf8'));
 assert.equal(reads.length,42,'Reads release includes every source-owned fixture');
-assert.equal(bandit.length,52,'Bandit release includes every source-owned fixture');
+assert.equal(bandit.length,55,'Bandit release includes every source-owned fixture');
 const banditLegacy=new Set(['landing','overview','empty','controls','status']);
 const allFixtures=[...reads.map(({id})=>({app:'reads',id,path:`previews/reads/fixture/?fixture=${id}${id==='account-denied'?'&auth=failed':''}`,theme:'dark'})),...bandit.map(({id})=>({app:'bandit',id,path:`previews/bandit/${id}/`,theme:'light'}))];
 const selected=process.env.PUBLIC_PREVIEW_FIXTURES?.split(',');

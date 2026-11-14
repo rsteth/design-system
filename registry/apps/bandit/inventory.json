@@ -888,6 +888,28 @@
       "states": [],
       "fixtures": [],
       "notes": "Current production entry uses RiverLanding. Alternate unused landing is not presented as an active product screen."
+    },
+    {
+      "id": "director-planning",
+      "title": "Director planning and review",
+      "kind": "pattern",
+      "coverage": "partial",
+      "source": [
+        "apps/web/app/productions/[id]/director-panel.tsx",
+        "apps/web/app/productions/[id]/director-connections.tsx"
+      ],
+      "states": [
+        "planning-packet",
+        "read-only",
+        "configured-local-model",
+        "hosted-connections-disabled"
+      ],
+      "fixtures": [
+        "director-packet",
+        "director-read-only",
+        "director-model"
+      ],
+      "notes": "Production panel with authored synthetic packet. Proposal validation/apply, external-agent quality and independent review are outside isolated fixture coverage."
     }
   ],
   "checks": [

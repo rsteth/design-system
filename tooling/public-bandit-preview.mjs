@@ -9,6 +9,7 @@ export const BANDIT_SOURCES=Object.freeze([
  'apps/web/app/river-landing.tsx','apps/web/app/river-landing.module.css','apps/web/app/waitlist-dialog.tsx',
  'apps/web/app/studio-overview.tsx','apps/web/app/texture-control.tsx','apps/web/app/studio-context.tsx',
  'apps/web/app/projects/page.tsx','apps/web/app/profiles/page.tsx','apps/web/app/library/page.tsx',
+ 'apps/web/app/productions/[id]/director-panel.tsx','apps/web/app/productions/[id]/director-hosted-controls.tsx','apps/web/app/productions/[id]/director-connections.tsx',
  'apps/web/app/productions/new/page.tsx','apps/web/app/productions/[id]/production-board.tsx',
  'apps/web/app/productions/[id]/advanced-controls.tsx','apps/web/app/productions/[id]/review/review-room.tsx',
  'apps/web/app/productions/[id]/review/advanced-review.tsx','apps/web/app/asset-preview.tsx','apps/web/app/creative-memory.tsx',
@@ -57,8 +58,9 @@ export function adaptBanditSource(path,source,{replaceOnce=localReplaceOnce,repl
  }
  if(/\.(?:tsx?|mjs)$/.test(path)){
   source=source.replace(/^"use client";\s*/, '');
+  source=source.replaceAll('https://bandit.stethem.com/auth/login','#preview-navigation').replaceAll('https://gathermotion.io/auth/login','#preview-navigation');
   // API strings are only keys consumed by the in-memory adapter, never URLs.
-  source=source.replaceAll('/api/v1/productions','/fixture-data/v1/production').replaceAll('/api/','/fixture-data/');
+  source=source.replaceAll('/api/v1/director/productions','/fixture-data/v1/director/production').replaceAll('/api/v1/productions','/fixture-data/v1/production').replaceAll('/api/','/fixture-data/');
   source=source.replace(/(["'`])\/(?:auth|productions)\/[^"'`]*\1/g,'"#preview-navigation"');
   // JSX form handlers remain production code; native submission is blocked in opaque frames.
   if(source.includes('<form'))source='import {PreviewForm} from "release-form";\n'+source.replace(/<form(?=[\s>])/g,'<PreviewForm').replaceAll('</form>','</PreviewForm>');
@@ -99,13 +101,13 @@ export function PreviewForm({onSubmit,onClickCapture,onKeyDown,...props}:any){
 }
 `);
   await output(stage,'entry.tsx',`import React from 'react';\nimport {createRoot} from 'react-dom/client';\nimport Fixture from './design/preview/app/[fixture]/page';\nimport {PreviewBoundary} from './design/preview/app/preview-boundary';\nimport './apps/web/app/globals.css';\nimport './design/preview/app/preview.css';\nconst fixture=location.pathname.split('/').filter(Boolean).at(-1);\nif(!${JSON.stringify(collection.fixtures.map(f=>f.id))}.includes(fixture))throw Error('Unknown Bandit fixture.');\ncreateRoot(document.getElementById('root')!).render(<><aside style={{padding:'8px 16px',background:'#111',color:'#ddd',font:'11px/1.6 system-ui',textAlign:'center'}}>${PREVIEW_NOTICE}</aside><PreviewBoundary><Fixture params={{fixture:fixture!}}/></PreviewBoundary></>);\n`);
-  await output(stage,'index.html',`<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta http-equiv="Content-Security-Policy" content="${PREVIEW_CSP}"><title>Bandit | Synthetic design preview</title></head><body><div id="root"></div><script type="module" src="/entry.tsx"></script></body></html>`);
+  await output(stage,'index.html',`<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta http-equiv="Content-Security-Policy" content="${PREVIEW_CSP}"><title>Gather Motion | Synthetic design preview</title></head><body><div id="root"></div><script type="module" src="/entry.tsx"></script></body></html>`);
   const {build}=await import(pathToFileURL(require.resolve('vite')));
   await build({root:stage,configFile:false,envDir:false,publicDir:false,base:prefix,mode:'production',css:{postcss:{plugins:[]}},resolve:{alias:aliases},oxc:{jsx:{runtime:'automatic'}},plugins:[{name:'synthetic-only-boundary',enforce:'pre',resolveId(id){if(id==='release-form')return '\0preview-form';if(['next/image','next/link','next/navigation'].includes(id))return '\0preview-'+id;},load(id){if(id==='\0preview-form')return `export {PreviewForm} from ${JSON.stringify(join(stage,'release-form.tsx'))};`;if(id==='\0preview-next/image')return `export {Image as default} from ${JSON.stringify(shim)};`;if(id==='\0preview-next/link')return `export {Link as default} from ${JSON.stringify(shim)};`;if(id==='\0preview-next/navigation')return `export {notFound,useRouter,usePathname} from ${JSON.stringify(shim)};`;},generateBundle(){for(const id of this.getModuleIds())if(id.includes('/node_modules/'))dependencyModules.add(id.split('?')[0]);}}],build:{outDir:out,emptyOutDir:false,sourcemap:false,modulePreload:{polyfill:false},minify:true,reportCompressedSize:false}});
   const html=await readFile(join(out,'index.html'));
   for(const fixture of collection.fixtures)await output(out,fixture.id+'/index.html',html);
   // A root index is informational only, not an extra unregistered fixture.
-  await output(out,'index.html',`<!doctype html><html lang="en"><meta charset="utf-8"><title>Bandit previews</title><h1>Bandit synthetic previews</h1><p>${PREVIEW_NOTICE}</p><ul>${collection.fixtures.map(f=>`<li><a href="./${f.id}/">${f.id}</a></li>`).join('')}</ul></html>`);
+  await output(out,'index.html',`<!doctype html><html lang="en"><meta charset="utf-8"><title>Gather Motion previews</title><h1>Gather Motion synthetic previews</h1><p>${PREVIEW_NOTICE}</p><ul>${collection.fixtures.map(f=>`<li><a href="./${f.id}/">${f.id}</a></li>`).join('')}</ul></html>`);
   for(const path of BANDIT_ASSETS)await output(out,path,await input(root,'apps/web/public/'+path));
   const licenses=await dependencyNotices(dependencyModules,outputRoot);
   const fonts=JSON.parse((await input(root,'apps/web/public/fonts/sources.json')).toString());

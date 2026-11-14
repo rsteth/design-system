@@ -9,7 +9,7 @@ Start with the product guide below. Robin workbenches describe app-owned UI; ref
 - [Great Circle](registry/guides/great-circle/design-system.md)
 - [stethem](registry/guides/stethem/design-system.md)
 - [Reads](registry/guides/reads/design-system.md)
-- [Bandit](registry/guides/bandit/design-system.md)
+- [Gather Motion](registry/guides/bandit/design-system.md)
 
 ## Reference studies
 

@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import {READS_SOURCES,BANDIT_SOURCES,BANDIT_ASSETS,PREVIEW_CSP,syntheticAudio,adaptReadsApp,adaptReadsWaitlist,adaptBanditWaitlist,buildPublicAppPreviews,assertPublicPreviewText} from '../tooling/public-app-previews.mjs';
 test('preview source allowlists contain frontend presentation only',()=>{
- assert.equal(READS_SOURCES.length,8);assert.equal(BANDIT_SOURCES.length,27);assert.equal(BANDIT_ASSETS.length,13);
+ assert.equal(READS_SOURCES.length,8);assert.equal(BANDIT_SOURCES.length,30);assert.equal(BANDIT_ASSETS.length,13);
  for(const path of [...READS_SOURCES,...BANDIT_SOURCES,...BANDIT_ASSETS])assert.doesNotMatch(path,/(^|\/)(\.env|src|api|auth|backend|infra|node_modules|\.git)(\/|$)|\.map$/);
  assert.ok(BANDIT_ASSETS.every(path=>/^(fonts|images|illustrations)\//.test(path)));
  assert.equal(BANDIT_ASSETS.filter(path=>path.endsWith('.png')).length,1);
@@ -67,4 +67,27 @@ test('dynamic Reads form adaptation skips prior forms instead of abandoning the 
  const source=await readFile(new URL('../tooling/public-app-previews.mjs',import.meta.url),'utf8');
  assert.match(source,/if\(form\.dataset\.previewAdapted\)continue;/);
  assert.doesNotMatch(source,/if\(form\.dataset\.previewAdapted\)return;/);
+});
+test('Gather Motion preview titles use the current public brand',async()=>{
+ const source=await readFile(new URL('../tooling/public-bandit-preview.mjs',import.meta.url),'utf8');
+ assert.match(source,/<title>Gather Motion \| Synthetic design preview<\/title>/);
+ assert.match(source,/<title>Gather Motion previews<\/title><h1>Gather Motion synthetic previews<\/h1>/);
+ assert.doesNotMatch(source,/<(?:title|h1)>Bandit/);
+});
+
+test('director fixture routes are inert and their presentation dependencies are explicit',async()=>{
+ const {adaptBanditSource}=await import('../tooling/public-bandit-preview.mjs');
+ for(const file of ['director-panel','director-hosted-controls','director-connections'])assert.ok(BANDIT_SOURCES.includes(`apps/web/app/productions/[id]/${file}.tsx`));
+ const input='const route = "/api/v1/director/productions/{identity}/context";';
+ const output=adaptBanditSource('fixture.tsx',input);
+ assert.match(output,/fixture-data\/v1\/director\/production/);
+ assert.doesNotMatch(output,/\/(?:api|productions)\//);
+});
+
+test('public previews neutralize absolute product login URLs',async()=>{
+ const {adaptBanditSource}=await import('../tooling/public-bandit-preview.mjs');
+ for(const host of ['bandit.stethem.com','gathermotion.io']){
+  const output=adaptBanditSource('landing.tsx',`const url = "https://${host}/auth/login";`);
+  assert.match(output,/#preview-navigation/);assert.doesNotMatch(output,/https:|\/auth\//);
+ }
 });
