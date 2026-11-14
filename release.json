@@ -1,16 +1,16 @@
 {
   "previewVerification": {
     "status": "passed",
-    "cases": 376,
+    "cases": 388,
     "browser": "157.0.8103.51"
   },
   "schemaVersion": 1,
-  "createdAt": "2026-11-13T16:36:00.422Z",
-  "status": "published-static-release",
+  "createdAt": "2026-11-14T21:58:59.846Z",
+  "status": "local-candidate-not-published",
   "licenseGaps": [],
   "focusEpub": "fixture-only",
   "base": "/design-system/",
-  "fixtureCount": 209,
+  "fixtureCount": 212,
   "source": {
     "designSystem": {
       "repository": "https://github.com/rsteth/design-system.git",
@@ -41,6 +41,7 @@
     }
   },
   "limitations": [
+    "No public deployment or permission change performed.",
     "Fixture packaging and browser checks are separate from application production CI.",
     "MIT covers original design-system work only; applications and third-party material retain their own terms.",
     "Opaque sandbox requires CORS for static assets."
@@ -69,7 +70,7 @@
     {
       "path": "RELEASE-NOTES.html",
       "bytes": 2400,
-      "sha256": "d7d9077b6b94a9a4c1f860236f3acf547c5ce3622b1b4971773b7b0c53cb4342"
+      "sha256": "a050566cddc2dcd0360393b5b1d800339b3214b97a1beee6fc162784231c82ab"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
@@ -5033,8 +5034,8 @@
     },
     {
       "path": "llms.txt",
-      "bytes": 6902,
-      "sha256": "088f4505d22aca6844a7e7c8e98fe1476195f39564aab7ddfc1401b1f216c720"
+      "bytes": 6909,
+      "sha256": "f1995e584f7a750193ca63ec1161535ed65d7e2a0e9eeca5604596181a50db3b"
     },
     {
       "path": "packages/appearance/index.d.mts",
@@ -5158,33 +5159,33 @@
     },
     {
       "path": "previews/bandit/advanced-controls/index.html",
-      "bytes": 715,
-      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
+      "bytes": 722,
+      "sha256": "14f9b235387a964aca3880f4c6c2f1e913aa93c30d0dee6b180f85d0882c3f44"
     },
     {
       "path": "previews/bandit/advanced-review/index.html",
-      "bytes": 715,
-      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
+      "bytes": 722,
+      "sha256": "14f9b235387a964aca3880f4c6c2f1e913aa93c30d0dee6b180f85d0882c3f44"
     },
     {
       "path": "previews/bandit/appearance/index.html",
-      "bytes": 715,
-      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
+      "bytes": 722,
+      "sha256": "14f9b235387a964aca3880f4c6c2f1e913aa93c30d0dee6b180f85d0882c3f44"
     },
     {
       "path": "previews/bandit/asset-expired/index.html",
-      "bytes": 715,
-      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
+      "bytes": 722,
+      "sha256": "14f9b235387a964aca3880f4c6c2f1e913aa93c30d0dee6b180f85d0882c3f44"
     },
     {
       "path": "previews/bandit/asset-loading/index.html",
-      "bytes": 715,
-      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
+      "bytes": 722,
+      "sha256": "14f9b235387a964aca3880f4c6c2f1e913aa93c30d0dee6b180f85d0882c3f44"
     },
     {
       "path": "previews/bandit/asset-ready/index.html",
-      "bytes": 715,
-      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
+      "bytes": 722,
+      "sha256": "14f9b235387a964aca3880f4c6c2f1e913aa93c30d0dee6b180f85d0882c3f44"
     },
     {
       "path": "previews/bandit/assets/index-BS_3Duxn.css",
@@ -5192,64 +5193,79 @@
       "sha256": "dcce29987cc122e70d2f8fbc898f5b8d10e0ee7e73ce8eac5b683836e2cc859a"
     },
     {
-      "path": "previews/bandit/assets/index-DWQEqhFG.js",
-      "bytes": 381562,
-      "sha256": "493b8dcac1ad802973abf67c902cf15110a06ecfcb033ca9918f112b34cad190"
+      "path": "previews/bandit/assets/index-C0hx3r2z.js",
+      "bytes": 400191,
+      "sha256": "65e889d02d4b9d9705e2fd740e25ce23c51cbb024bcb15bf1a6b546204558fa5"
     },
     {
       "path": "previews/bandit/board-approved/index.html",
-      "bytes": 715,
-      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
+      "bytes": 722,
+      "sha256": "14f9b235387a964aca3880f4c6c2f1e913aa93c30d0dee6b180f85d0882c3f44"
     },
     {
       "path": "previews/bandit/board-archived/index.html",
-      "bytes": 715,
-      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
+      "bytes": 722,
+      "sha256": "14f9b235387a964aca3880f4c6c2f1e913aa93c30d0dee6b180f85d0882c3f44"
     },
     {
       "path": "previews/bandit/board-empty/index.html",
-      "bytes": 715,
-      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
+      "bytes": 722,
+      "sha256": "14f9b235387a964aca3880f4c6c2f1e913aa93c30d0dee6b180f85d0882c3f44"
     },
     {
       "path": "previews/bandit/board-error/index.html",
-      "bytes": 715,
-      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
+      "bytes": 722,
+      "sha256": "14f9b235387a964aca3880f4c6c2f1e913aa93c30d0dee6b180f85d0882c3f44"
     },
     {
       "path": "previews/bandit/board-loading/index.html",
-      "bytes": 715,
-      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
+      "bytes": 722,
+      "sha256": "14f9b235387a964aca3880f4c6c2f1e913aa93c30d0dee6b180f85d0882c3f44"
     },
     {
       "path": "previews/bandit/board-populated/index.html",
-      "bytes": 715,
-      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
+      "bytes": 722,
+      "sha256": "14f9b235387a964aca3880f4c6c2f1e913aa93c30d0dee6b180f85d0882c3f44"
     },
     {
       "path": "previews/bandit/board-viewer/index.html",
-      "bytes": 715,
-      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
+      "bytes": 722,
+      "sha256": "14f9b235387a964aca3880f4c6c2f1e913aa93c30d0dee6b180f85d0882c3f44"
     },
     {
       "path": "previews/bandit/controls/index.html",
-      "bytes": 715,
-      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
+      "bytes": 722,
+      "sha256": "14f9b235387a964aca3880f4c6c2f1e913aa93c30d0dee6b180f85d0882c3f44"
+    },
+    {
+      "path": "previews/bandit/director-model/index.html",
+      "bytes": 722,
+      "sha256": "14f9b235387a964aca3880f4c6c2f1e913aa93c30d0dee6b180f85d0882c3f44"
+    },
+    {
+      "path": "previews/bandit/director-packet/index.html",
+      "bytes": 722,
+      "sha256": "14f9b235387a964aca3880f4c6c2f1e913aa93c30d0dee6b180f85d0882c3f44"
+    },
+    {
+      "path": "previews/bandit/director-read-only/index.html",
+      "bytes": 722,
+      "sha256": "14f9b235387a964aca3880f4c6c2f1e913aa93c30d0dee6b180f85d0882c3f44"
     },
     {
       "path": "previews/bandit/empty/index.html",
-      "bytes": 715,
-      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
+      "bytes": 722,
+      "sha256": "14f9b235387a964aca3880f4c6c2f1e913aa93c30d0dee6b180f85d0882c3f44"
     },
     {
       "path": "previews/bandit/error-notice/index.html",
-      "bytes": 715,
-      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
+      "bytes": 722,
+      "sha256": "14f9b235387a964aca3880f4c6c2f1e913aa93c30d0dee6b180f85d0882c3f44"
     },
     {
       "path": "previews/bandit/fixture-catalog.json",
-      "bytes": 9910,
-      "sha256": "643329ace8e9df6dca8b866ec09e2f041eff8236ac19469fb034ea5f74cec918"
+      "bytes": 10363,
+      "sha256": "4713fa71dcd65abde2f7bde31b5fa0a34d5f94599ec4327cda0569f2d0f210cb"
     },
     {
       "path": "previews/bandit/fonts/README.md",
@@ -5318,188 +5334,188 @@
     },
     {
       "path": "previews/bandit/index.html",
-      "bytes": 3069,
-      "sha256": "59312c8a9e00fb61a435888f14dfcd594c8253896d0fe468d9b80b1d887dd07c"
+      "bytes": 3258,
+      "sha256": "f15f3e57981d679d6d485cc8ce6642cd0107c211931b8fbcb28b517a6e318692"
     },
     {
       "path": "previews/bandit/landing/index.html",
-      "bytes": 715,
-      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
+      "bytes": 722,
+      "sha256": "14f9b235387a964aca3880f4c6c2f1e913aa93c30d0dee6b180f85d0882c3f44"
     },
     {
       "path": "previews/bandit/library-empty/index.html",
-      "bytes": 715,
-      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
+      "bytes": 722,
+      "sha256": "14f9b235387a964aca3880f4c6c2f1e913aa93c30d0dee6b180f85d0882c3f44"
     },
     {
       "path": "previews/bandit/library-populated/index.html",
-      "bytes": 715,
-      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
+      "bytes": 722,
+      "sha256": "14f9b235387a964aca3880f4c6c2f1e913aa93c30d0dee6b180f85d0882c3f44"
     },
     {
       "path": "previews/bandit/library-viewer/index.html",
-      "bytes": 715,
-      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
+      "bytes": 722,
+      "sha256": "14f9b235387a964aca3880f4c6c2f1e913aa93c30d0dee6b180f85d0882c3f44"
     },
     {
       "path": "previews/bandit/memory-empty/index.html",
-      "bytes": 715,
-      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
+      "bytes": 722,
+      "sha256": "14f9b235387a964aca3880f4c6c2f1e913aa93c30d0dee6b180f85d0882c3f44"
     },
     {
       "path": "previews/bandit/memory-error/index.html",
-      "bytes": 715,
-      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
+      "bytes": 722,
+      "sha256": "14f9b235387a964aca3880f4c6c2f1e913aa93c30d0dee6b180f85d0882c3f44"
     },
     {
       "path": "previews/bandit/memory-populated/index.html",
-      "bytes": 715,
-      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
+      "bytes": 722,
+      "sha256": "14f9b235387a964aca3880f4c6c2f1e913aa93c30d0dee6b180f85d0882c3f44"
     },
     {
       "path": "previews/bandit/memory-viewer/index.html",
-      "bytes": 715,
-      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
+      "bytes": 722,
+      "sha256": "14f9b235387a964aca3880f4c6c2f1e913aa93c30d0dee6b180f85d0882c3f44"
     },
     {
       "path": "previews/bandit/overview/index.html",
-      "bytes": 715,
-      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
+      "bytes": 722,
+      "sha256": "14f9b235387a964aca3880f4c6c2f1e913aa93c30d0dee6b180f85d0882c3f44"
     },
     {
       "path": "previews/bandit/production-new-brief/index.html",
-      "bytes": 715,
-      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
+      "bytes": 722,
+      "sha256": "14f9b235387a964aca3880f4c6c2f1e913aa93c30d0dee6b180f85d0882c3f44"
     },
     {
       "path": "previews/bandit/production-new-plan/index.html",
-      "bytes": 715,
-      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
+      "bytes": 722,
+      "sha256": "14f9b235387a964aca3880f4c6c2f1e913aa93c30d0dee6b180f85d0882c3f44"
     },
     {
       "path": "previews/bandit/production-new-profile/index.html",
-      "bytes": 715,
-      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
+      "bytes": 722,
+      "sha256": "14f9b235387a964aca3880f4c6c2f1e913aa93c30d0dee6b180f85d0882c3f44"
     },
     {
       "path": "previews/bandit/production-new-viewer/index.html",
-      "bytes": 715,
-      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
+      "bytes": 722,
+      "sha256": "14f9b235387a964aca3880f4c6c2f1e913aa93c30d0dee6b180f85d0882c3f44"
     },
     {
       "path": "previews/bandit/profile-editor/index.html",
-      "bytes": 715,
-      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
+      "bytes": 722,
+      "sha256": "14f9b235387a964aca3880f4c6c2f1e913aa93c30d0dee6b180f85d0882c3f44"
     },
     {
       "path": "previews/bandit/profile-import/index.html",
-      "bytes": 715,
-      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
+      "bytes": 722,
+      "sha256": "14f9b235387a964aca3880f4c6c2f1e913aa93c30d0dee6b180f85d0882c3f44"
     },
     {
       "path": "previews/bandit/profile-published/index.html",
-      "bytes": 715,
-      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
+      "bytes": 722,
+      "sha256": "14f9b235387a964aca3880f4c6c2f1e913aa93c30d0dee6b180f85d0882c3f44"
     },
     {
       "path": "previews/bandit/profiles-empty/index.html",
-      "bytes": 715,
-      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
+      "bytes": 722,
+      "sha256": "14f9b235387a964aca3880f4c6c2f1e913aa93c30d0dee6b180f85d0882c3f44"
     },
     {
       "path": "previews/bandit/profiles-populated/index.html",
-      "bytes": 715,
-      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
+      "bytes": 722,
+      "sha256": "14f9b235387a964aca3880f4c6c2f1e913aa93c30d0dee6b180f85d0882c3f44"
     },
     {
       "path": "previews/bandit/profiles-viewer/index.html",
-      "bytes": 715,
-      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
+      "bytes": 722,
+      "sha256": "14f9b235387a964aca3880f4c6c2f1e913aa93c30d0dee6b180f85d0882c3f44"
     },
     {
       "path": "previews/bandit/project-editor/index.html",
-      "bytes": 715,
-      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
+      "bytes": 722,
+      "sha256": "14f9b235387a964aca3880f4c6c2f1e913aa93c30d0dee6b180f85d0882c3f44"
     },
     {
       "path": "previews/bandit/project-new/index.html",
-      "bytes": 715,
-      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
+      "bytes": 722,
+      "sha256": "14f9b235387a964aca3880f4c6c2f1e913aa93c30d0dee6b180f85d0882c3f44"
     },
     {
       "path": "previews/bandit/projects-empty/index.html",
-      "bytes": 715,
-      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
+      "bytes": 722,
+      "sha256": "14f9b235387a964aca3880f4c6c2f1e913aa93c30d0dee6b180f85d0882c3f44"
     },
     {
       "path": "previews/bandit/projects-populated/index.html",
-      "bytes": 715,
-      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
+      "bytes": 722,
+      "sha256": "14f9b235387a964aca3880f4c6c2f1e913aa93c30d0dee6b180f85d0882c3f44"
     },
     {
       "path": "previews/bandit/projects-viewer/index.html",
-      "bytes": 715,
-      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
+      "bytes": 722,
+      "sha256": "14f9b235387a964aca3880f4c6c2f1e913aa93c30d0dee6b180f85d0882c3f44"
     },
     {
       "path": "previews/bandit/reference-editor/index.html",
-      "bytes": 715,
-      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
+      "bytes": 722,
+      "sha256": "14f9b235387a964aca3880f4c6c2f1e913aa93c30d0dee6b180f85d0882c3f44"
     },
     {
       "path": "previews/bandit/review-empty/index.html",
-      "bytes": 715,
-      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
+      "bytes": 722,
+      "sha256": "14f9b235387a964aca3880f4c6c2f1e913aa93c30d0dee6b180f85d0882c3f44"
     },
     {
       "path": "previews/bandit/review-error/index.html",
-      "bytes": 715,
-      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
+      "bytes": 722,
+      "sha256": "14f9b235387a964aca3880f4c6c2f1e913aa93c30d0dee6b180f85d0882c3f44"
     },
     {
       "path": "previews/bandit/review-loading/index.html",
-      "bytes": 715,
-      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
+      "bytes": 722,
+      "sha256": "14f9b235387a964aca3880f4c6c2f1e913aa93c30d0dee6b180f85d0882c3f44"
     },
     {
       "path": "previews/bandit/review-populated/index.html",
-      "bytes": 715,
-      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
+      "bytes": 722,
+      "sha256": "14f9b235387a964aca3880f4c6c2f1e913aa93c30d0dee6b180f85d0882c3f44"
     },
     {
       "path": "previews/bandit/review-unapproved/index.html",
-      "bytes": 715,
-      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
+      "bytes": 722,
+      "sha256": "14f9b235387a964aca3880f4c6c2f1e913aa93c30d0dee6b180f85d0882c3f44"
     },
     {
       "path": "previews/bandit/review-viewer/index.html",
-      "bytes": 715,
-      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
+      "bytes": 722,
+      "sha256": "14f9b235387a964aca3880f4c6c2f1e913aa93c30d0dee6b180f85d0882c3f44"
     },
     {
       "path": "previews/bandit/series-editor/index.html",
-      "bytes": 715,
-      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
+      "bytes": 722,
+      "sha256": "14f9b235387a964aca3880f4c6c2f1e913aa93c30d0dee6b180f85d0882c3f44"
     },
     {
       "path": "previews/bandit/shot-editor/index.html",
-      "bytes": 715,
-      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
+      "bytes": 722,
+      "sha256": "14f9b235387a964aca3880f4c6c2f1e913aa93c30d0dee6b180f85d0882c3f44"
     },
     {
       "path": "previews/bandit/shot-new/index.html",
-      "bytes": 715,
-      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
+      "bytes": 722,
+      "sha256": "14f9b235387a964aca3880f4c6c2f1e913aa93c30d0dee6b180f85d0882c3f44"
     },
     {
       "path": "previews/bandit/status/index.html",
-      "bytes": 715,
-      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
+      "bytes": 722,
+      "sha256": "14f9b235387a964aca3880f4c6c2f1e913aa93c30d0dee6b180f85d0882c3f44"
     },
     {
       "path": "previews/bandit/subject-editor/index.html",
-      "bytes": 715,
-      "sha256": "28e1101a921de7e61712293c987eccfce16fb1f5cdeddec7bbdd44cc9fba1698"
+      "bytes": 722,
+      "sha256": "14f9b235387a964aca3880f4c6c2f1e913aa93c30d0dee6b180f85d0882c3f44"
     },
     {
       "path": "previews/focus/assets/workbench-D8-kiAf8.css",
@@ -6473,18 +6489,18 @@
     },
     {
       "path": "registry/apps/bandit/collection.json",
-      "bytes": 23789,
-      "sha256": "db2c825df84d392cd831eb9481130d15ddf9df3ca081614a3100b60124890800"
+      "bytes": 24845,
+      "sha256": "0e830f57414500b9ce5ea55dfa387b76e80084e5bf2d3623c03e9c719b4152e1"
     },
     {
       "path": "registry/apps/bandit/inventory.json",
-      "bytes": 27721,
-      "sha256": "db4bbafd36038665fb24f95cb2b6ec0966901425f8adddbb5a19eaebafa67cda"
+      "bytes": 28456,
+      "sha256": "bff59f9b2c3196f1d0cb3ed77df76e1350c95ffba37d916ae93518335d493464"
     },
     {
       "path": "registry/apps/bandit/public-guide.md",
-      "bytes": 25982,
-      "sha256": "126f7c29ecd5d42e2309c87f6aeb71976f581fc7e9f40654d12c66874b9964e9"
+      "bytes": 26232,
+      "sha256": "59cfd243e6bd46cc8cb7a9afab2a5bd24eabd3110be550e9dc9e99f6e9b794be"
     },
     {
       "path": "registry/apps/bandit/tokens.json",
@@ -6558,8 +6574,8 @@
     },
     {
       "path": "registry/guides/bandit/design-system.md",
-      "bytes": 26046,
-      "sha256": "0896bee124559ef6128cf258e351706564d557d6dea7bbf5022b1d849e912fbf"
+      "bytes": 26296,
+      "sha256": "e8b2504937f0112deb876506e0293381ba8029cd26d287f700b907ef4cf5eb20"
     },
     {
       "path": "registry/guides/focus/design-system.md",

@@ -1,6 +1,6 @@
-# Bandit design system
+# Gather Motion design system
 
-Bandit is a human-directed studio for short-form video. Its visual language is app-owned: glacier imagery, blue and copper accents, Jost display type, Inter interface type and Space Mono technical text. Preserve that identity rather than applying the workbench shell's appearance. The product supports its established light theme only.
+Gather Motion is a human-directed studio for short-form video. Its visual language is app-owned: glacier imagery, blue and copper accents, Jost display type, Inter interface type and Space Mono technical text. Preserve that identity rather than applying the workbench shell's appearance. The product supports its established light theme only.
 
 ## Implement within the system
 
@@ -14,9 +14,9 @@ Layout geometry, breakpoints, artwork composition, circular shapes and runtime a
 
 ## Ownership and use
 
-The repository's AGENTS.md and design-system.md specify the editable sources, commands and local validation. This public guide is generated from the app-owned design contract; edit the sources, not this copy. It describes Bandit, not an official design standard for other products. Publication does not grant a new license to imagery or other assets.
+The repository's AGENTS.md and design-system.md specify the editable sources, commands and local validation. This public guide is generated from the app-owned design contract; edit the sources, not this copy. It describes Gather Motion, not an official design standard for other products. Publication does not grant a new license to imagery or other assets.
 
-[Open Bandit](https://bandit.stethem.com/). Public guidance helps discovery; it cannot force an agent to read it or authorize account access, edits or deployment.
+[Open Gather Motion](https://gathermotion.io/). Public guidance helps discovery; it cannot force an agent to read it or authorize account access, edits or deployment.
 
 ## Generated inventory
 
@@ -254,7 +254,7 @@ Supported theme: light.
 
 ### Production-backed specimens
 
-52 fixtures. These use synthetic state; they do not demonstrate live authentication, payments or provider acceptance.
+55 fixtures. These use synthetic state; they do not demonstrate live authentication, payments or provider acceptance.
 
 | Fixture | Name | Section | States |
 | --- | --- | --- | --- |
@@ -310,5 +310,8 @@ Supported theme: light.
 | memory-viewer | Creative Memory / viewer | patterns | viewer, reset-on-reload, synthetic-only |
 | advanced-controls | Shot reference and event controls | patterns | advanced, reset-on-reload, synthetic-only |
 | advanced-review | Candidate comparison and advisory review | patterns | populated, reset-on-reload, synthetic-only |
+| director-packet | Director / planning packet | patterns | populated |
+| director-read-only | Director / read-only | patterns | viewer |
+| director-model | Director / local model controls | patterns | configured-synthetic |
 
 [Open this workbench](../../../apps/studio/?collection=bandit)

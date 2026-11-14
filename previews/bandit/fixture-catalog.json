@@ -519,5 +519,29 @@
       "reset-on-reload",
       "synthetic-only"
     ]
+  },
+  {
+    "id": "director-packet",
+    "title": "Director / planning packet",
+    "section": "patterns",
+    "states": [
+      "populated"
+    ]
+  },
+  {
+    "id": "director-read-only",
+    "title": "Director / read-only",
+    "section": "patterns",
+    "states": [
+      "viewer"
+    ]
+  },
+  {
+    "id": "director-model",
+    "title": "Director / local model controls",
+    "section": "patterns",
+    "states": [
+      "configured-synthetic"
+    ]
   }
 ]

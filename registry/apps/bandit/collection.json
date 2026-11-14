@@ -3,7 +3,7 @@
   "id": "bandit",
   "kind": "app",
   "renderer": "react",
-  "title": "Bandit",
+  "title": "Gather Motion",
   "summary": "A human-directed video studio. Glacier artwork, blue and copper accents, and app-owned production controls.",
   "tokens": "tokens.json",
   "inventory": "inventory.json",
@@ -651,12 +651,42 @@
         "synthetic-only"
       ],
       "description": "Production panel with isolated synthetic state. Validation and generation requests are unavailable."
+    },
+    {
+      "id": "director-packet",
+      "title": "Director / planning packet",
+      "section": "patterns",
+      "url": "../../../previews/bandit/director-packet/",
+      "states": [
+        "populated"
+      ],
+      "description": "Production director panel with authored synthetic context. No external agent, account or persisted action."
+    },
+    {
+      "id": "director-read-only",
+      "title": "Director / read-only",
+      "section": "patterns",
+      "url": "../../../previews/bandit/director-read-only/",
+      "states": [
+        "viewer"
+      ],
+      "description": "Production director panel with authored synthetic context. No external agent, account or persisted action."
+    },
+    {
+      "id": "director-model",
+      "title": "Director / local model controls",
+      "section": "patterns",
+      "url": "../../../previews/bandit/director-model/",
+      "states": [
+        "configured-synthetic"
+      ],
+      "description": "Authored local-model status only. No inference is run; fixture mutations fail closed."
     }
   ],
   "registrySnapshot": {
     "authority": "App-owned design collection, tokens and optional inventory",
     "baseRevision": null,
-    "inventorySha256": "db4bbafd36038665fb24f95cb2b6ec0966901425f8adddbb5a19eaebafa67cda",
+    "inventorySha256": "bff59f9b2c3196f1d0cb3ed77df76e1350c95ffba37d916ae93518335d493464",
     "tokenSha256": "7163a391d4a0afb8b2a59baaf1ee1b9406d91598452076b66931a12806755a53",
     "integrationStatus": "unpublished-local-snapshot",
     "integrationRevision": null,
