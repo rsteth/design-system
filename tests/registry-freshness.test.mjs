@@ -67,6 +67,8 @@ test('app guide notes use one path for every app and participate in explicit syn
  await syncRegistry([app],{root});await assertRegistryFresh([app],{root});
  await writeFile(notes,'# Example\n/Users/private/path');await assert.rejects(syncRegistry([app],{root}),/private\/local/);
  await writeFile(notes,'# Example\n\n| Token | Value |\n| --- | --- |\n');await assert.rejects(syncRegistry([app],{root}),/prose only/);
+ await rm(notes);await writeFile(join(app,'design/guide-public.md'),'# Example\nNotes under the accepted second name.\n');
+ await syncRegistry([app],{root});await assertRegistryFresh([app],{root});assert.match(await readFile(join(snapshot,'public-guide.md'),'utf8'),/accepted second name/);
 });
 test('a central draft direction survives a refresh and yields to the app\'s own',async t=>{
  const {root,app,snapshot}=await setup(t);const path=join(snapshot,'collection.json'),saved=await read(path);

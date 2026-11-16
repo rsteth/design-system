@@ -35,7 +35,7 @@ A collection may carry an optional `direction` block: product, character, world,
 
 ## Guides
 
-Every entry's guide has one structure, composed by `tooling/agent-guides.mjs`: title, direction, the app's prose notes, then token and fixture tables generated from the snapshot. An app keeps its notes in `design/public-guide.md`. Notes that contain a table or repeat a generated section are refused. Guides are never edited by hand.
+Every entry's guide has one structure, composed by `tooling/agent-guides.mjs`: title, direction, the app's prose notes, then token and fixture tables generated from the snapshot. An app keeps its notes in `design/public-guide.md`. `design/guide-public.md` is also read, because Gather Motion already uses that name; new apps use the first. Notes that contain a table or repeat a generated section are refused. Guides are never edited by hand.
 
 ## Semantic values, existing appearance
 

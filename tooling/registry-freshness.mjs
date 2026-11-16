@@ -1,4 +1,4 @@
-import {appGuidePath,assertPublicGuide} from './agent-guides.mjs';
+import {readGuideNotes,assertPublicGuide} from './agent-guides.mjs';
 /** Offline release preflight. Compares app-owned content, not private Git ancestry. */
 import {readFile,realpath} from 'node:fs/promises';
 import {resolve,join,relative,isAbsolute} from 'node:path';
@@ -42,12 +42,9 @@ export async function assertRegistryFresh(workspaces,{root=ROOT}={}){
    const inventory=await localFile(app,`design/${actual.inventory}`),savedInventory=await localFile(directory,snapshot.inventory);
    if(comparable(JSON.parse(inventory))!==comparable(JSON.parse(savedInventory))||snapshot.registrySnapshot?.inventorySha256!==hash(savedInventory))fail('inventory');
   }else if(snapshot.registrySnapshot?.inventorySha256)fail('unexpected inventory hash');
-  const guidePath=appGuidePath(id);
-  if(guidePath){
-   const current=await localFile(app,guidePath).catch(error=>{if(error.code==='ENOENT')return null;throw error;});
-   const saved=await localFile(directory,'public-guide.md').catch(error=>{if(error.code==='ENOENT')return null;throw error;});
-   if(current||saved){if(!current||!saved||!current.equals(saved))fail('public guide');assertPublicGuide(saved.toString());}
-  }
+  const notes=await readGuideNotes(path=>localFile(app,path));
+  const savedNotes=await localFile(directory,'public-guide.md').catch(error=>{if(error.code==='ENOENT')return null;throw error;});
+  if(notes||savedNotes){if(!notes||!savedNotes||!notes.equals(savedNotes))fail('public guide');assertPublicGuide(savedNotes.toString());}
   checked.push(id);
  }
  return checked;

@@ -5,8 +5,10 @@ import {fileURLToPath,pathToFileURL} from 'node:url';
 import {directionFor} from '../packages/workbench/index.mjs';
 const ROOT=fileURLToPath(new URL('../',import.meta.url));
 const cell=value=>String(value??'').replaceAll('|','\\|').replaceAll('\n',' ');
-/** Every app keeps its optional guide notes in the same place: prose only, no tables. */
-export const appGuidePath=()=>'design/public-guide.md';
+/** Where an app keeps its optional guide notes: prose only, no tables. The first name is the standard; the second is accepted because Gather Motion already uses it. */
+export const appGuidePaths=['design/public-guide.md','design/guide-public.md'];
+/** The first notes file that exists in an app checkout, read with the caller's own safe reader. */
+export async function readGuideNotes(read){for(const path of appGuidePaths){try{return await read(path);}catch(error){if(error.code!=='ENOENT')throw error;}}return null;}
 export function assertPublicGuide(text){
  if(/\/Users\/|\/home\/|localhost|127\.0\.0\.1|\b[a-f0-9]{40,64}\b|AKIA[A-Z0-9]{16}|-----BEGIN [A-Z ]*PRIVATE KEY-----/i.test(text))throw Error('Public guide contains private/local identifiers.');
 }

@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import {appGuidePath,assertPublicGuide,guideNotes} from './agent-guides.mjs';
+import {readGuideNotes,assertPublicGuide,guideNotes} from './agent-guides.mjs';
 import {readFile,writeFile,mkdir,rename,lstat,realpath} from 'node:fs/promises';
 import {resolve,join,relative,isAbsolute} from 'node:path';
 import {fileURLToPath,pathToFileURL} from 'node:url';
@@ -66,8 +66,8 @@ export async function syncRegistry(workspaces,{root=defaultRoot,check=false}={})
   const snapshot={...normalized,registrySnapshot:{authority:'App-owned design collection, tokens and optional inventory',baseRevision:manifest.source.revision,...(inventoryBytes?{inventorySha256}:{}),tokenSha256,integrationStatus:integrationRevision?(previous.registrySnapshot.integrationStatus??'unpublished-local-feature-commit'):'unpublished-local-snapshot',integrationRevision}};
   // Preserve byte-for-byte formatting for a semantically unchanged snapshot.
   const snapshotBytes=previous&&canonical(previous)===canonical(snapshot)?await readFile(join(dest,'collection.json')):Buffer.from(json(snapshot));
-  let guideBytes; const guidePath=appGuidePath(manifest.id);
-  if(guidePath){try{guideBytes=await appFile(workspace,guidePath);assertPublicGuide(guideBytes.toString());guideNotes(guideBytes.toString());}catch(error){if(error.code!=='ENOENT')throw error;}}
+  const guideBytes=await readGuideNotes(path=>appFile(workspace,path));
+  if(guideBytes){assertPublicGuide(guideBytes.toString());guideNotes(guideBytes.toString());}
   const files=[...(guideBytes?[['public-guide.md',guideBytes]]:[]),['tokens.json',tokenBytes],...(inventoryBytes?[['inventory.json',inventoryBytes]]:[]),['collection.json',snapshotBytes]];
   const entry=`apps/${manifest.id}/collection.json`;if(!entries.includes(entry))entries.push(entry);
   plans.push({dest,files});
