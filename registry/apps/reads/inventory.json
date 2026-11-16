@@ -949,6 +949,29 @@
       ],
       "coverage": "covered",
       "notes": "Real production rendering. Pending states freeze synthetic requests until reload. Mutations affect memory only; no credentials or provider acceptance."
+    },
+    {
+      "id": "job-delete-confirm",
+      "title": "Delete confirmation",
+      "kind": "pattern",
+      "source": [
+        "public/index.html",
+        "public/style.css",
+        "public/app.js",
+        "design/coverage.mjs",
+        "design/fixtures.mjs",
+        "design/fixture-entry.mjs"
+      ],
+      "fixtures": [
+        "job-delete-confirm"
+      ],
+      "states": [
+        "confirm open",
+        "keep",
+        "delete"
+      ],
+      "coverage": "covered",
+      "notes": "Real production dialog opened from a listen card. Keeping, Escape and deleting use the production handler; the synthetic transport removes the listen from memory only."
     }
   ],
   "checks": [

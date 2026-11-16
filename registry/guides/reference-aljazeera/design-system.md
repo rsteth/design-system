@@ -2,6 +2,12 @@
 
 Independent unverified reference. This is an authored adaptation study, not an official design system or a claim about the current product. Use it for inspiration, not as authority over another project. Preserve source attribution and do not reuse third-party logos or assets without appropriate rights.
 
+## Direction
+
+- **Product:** An analysis of Al Jazeera's design language — a hard-news editorial system built on flat white paper and dense Roboto headline stacks, signed by one saturated orange used as logo block and section-eyebrow bar, punctuated by a live-red that marks breaking…
+
+First line of the study description. Unverified, and not a statement by the brand.
+
 Supported study/app themes: analysis. Contract schema: 1.
 
 Keep semantic controls, visible keyboard focus, meaningful labels and reduced-motion behavior. Sample fixtures are presentation evidence, not live service acceptance.

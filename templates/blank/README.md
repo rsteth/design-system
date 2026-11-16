@@ -4,7 +4,7 @@ Copy this entire folder to a new directory. Serve it using any static HTTP serve
 
 The initial collection list is deliberately empty. Add a version-1 manifest and token document, then add its relative URL to `collections.json`: `{"schemaVersion":1,"collections":["./collections/my-system/collection.json"]}`. A manifest follows the central collection contract and may use DOM or React. Fixtures are HTTP(S) URLs served by your own app; the workbench does not bundle or rewrite that app.
 
-`engine-lock.json` pins the reusable engine version. `vendor/workbench/` is an unmodified distribution of engine 0.4.0, not a starter-specific fork. To upgrade, replace the complete vendor directory, including skins, together from a reviewed release and update the lock. Put your authored collection content outside vendor. No existing app collections are included.
+`engine-lock.json` pins the reusable engine version. `vendor/workbench/` is an unmodified distribution of engine 0.5.0, not a starter-specific fork. To upgrade, replace the complete vendor directory, including skins, together from a reviewed release and update the lock. Put your authored collection content outside vendor. No existing app collections are included.
 
 The engine displays source revision, provenance status, license, and reference sources. Fill these honestly before sharing. A public URL does not grant copying or redistribution rights.
 

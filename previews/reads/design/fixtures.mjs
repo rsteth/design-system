@@ -11,7 +11,7 @@ export function fixtureState(id) {
   if (id==='voice-sample') state.voices.push({id:'sample-voice',name:'Evening storyteller',provider:'fake',state:'demo',validation:{seconds:65},verification:'pending'});
   if(hosted) state.voiceOperations={enabled:false,narrationEnabled:false,createMicroUsd:0,approvalId:'synthetic-fixture',consentVersion:'fixture-only'};
   const job = (status,index=0) => ({id:`sample-read-${index}`,text:sampleText,voice,settings:{speed:1},provider:voice.provider,model:'synthetic-fixture',state:status,done:status==='queued'?0:1,total:3,created:1794045600000,attempts:1,approvalId:'synthetic-fixture',estimatedMicroUsd:12300,...(status==='failed'?{error:'Synthetic interruption. Your saved work is available.'}:{})});
-  const jobStates={'job-queued':'queued','job-running':'running','job-completed':'completed','job-cancelled':'cancelled','job-failed':'failed','job-blocked':'failed','job-hosted':'completed'};
+  const jobStates={'job-queued':'queued','job-running':'running','job-completed':'completed','job-cancelled':'cancelled','job-failed':'failed','job-blocked':'failed','job-hosted':'completed','job-delete-confirm':'completed'};
   if(jobStates[id])state.jobs=[{...job(jobStates[id]),retryBlocked:id==='job-blocked'}];
   if(id==='studio-mixed')state.jobs=['queued','running','completed','failed','cancelled'].map(job);
   if(id==='voice-deleted')state.voices.push({id:'sample-voice',name:'Evening storyteller',provider:'fake',state:'demo',validation:{seconds:65},verification:'pending',sampleDeletedAt:1794045600000});
@@ -39,7 +39,7 @@ export function createFixtureTransport(id) {
     }
     if(url.pathname==='/fixture-data/preflight'&&id==='reader-preflight-pending')return new Promise(()=>{});
     if(url.pathname==='/fixture-data/preflight'&&id==='reader-preflight-error')return response({error:'Synthetic estimate unavailable. Try again shortly.'},503);
-    if(url.pathname==='/fixture-data/preflight')return response({characters:body.text?.length||0,chunks:1,estimatedSeconds:90,allowance:state.allowance,cost:state.mode==='elevenlabs'?'Synthetic estimate: $0.01230. No provider is connected.':'Free local demo.'});
+    if(url.pathname==='/fixture-data/preflight')return response({characters:body.text?.length||0,chunks:1,estimatedSeconds:90,allowance:state.allowance,cost:state.mode==='elevenlabs'?'Synthetic estimate: about $0.01. Nothing is sent.':'The demo is free.'});
     if(url.pathname==='/fixture-data/jobs'&&method==='POST'){
       if(state.mode==='elevenlabs'&&!body.providerConsent)return response({error:'Explicit narration consent is required.'},400);
       const job={id:`fixture-read-${++counter}`,text:body.text,voice:state.voices.find(v=>v.id===body.voiceId)||state.voices[0],settings:body.delivery,provider:state.mode,model:'synthetic-fixture',state:'completed',done:1,total:1,created:1794045600000,attempts:1,approvalId:'synthetic-fixture',estimatedMicroUsd:12300};state.jobs.unshift(job);return response(job);

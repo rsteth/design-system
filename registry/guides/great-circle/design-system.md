@@ -1,5 +1,15 @@
 # Great Circle design system
 
+## Direction
+
+- **Product:** Plans a loop route on the map that stays as close as it can to a circle of the radius you choose.
+- **Character:** practical, outdoorsy, precise
+- **World:** A paper trail map on a table: cream sheet, a moss green line and a rust start marker.
+- **Moments:** The route drawn on the map, with its handles
+- **Signature:** The rust start marker against the green route.
+
+Draft, not yet reviewed by the owner. Treat it as a starting point.
+
 The application owns its appearance, components and behavior. This workbench is a one-way snapshot, not an editor or a second source of truth. In an authorized checkout, read its AGENTS.md and design-system.md (or DESIGN.md when no dedicated guide exists) before editing. Reuse real components and semantic tokens, update synthetic fixtures, run the app checks, then explicitly refresh this snapshot. Do not edit the snapshot to change the application.
 
 Supported study/app themes: light, dark. Contract schema: 1.

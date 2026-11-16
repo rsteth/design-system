@@ -125,4 +125,6 @@ addEventListener('resize', queueLandingHeader);
 reducedMotion.addEventListener('change', queueLandingHeader);
 $('signup').onclick = () => openWaitlist($('signup'));
 $('signup').onkeydown = event => { if (event.key === 'Escape') { $('signup-note').hidden = true; $('signup').setAttribute('aria-expanded', 'false'); } };
+// The wordmark is centered from its measured width, which changes when the web font arrives.
+document.fonts?.ready.then(queueLandingHeader);
 queueLandingHeader();

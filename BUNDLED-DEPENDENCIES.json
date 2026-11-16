@@ -49,6 +49,13 @@
     ]
   },
   {
+    "id": "Nunito font",
+    "license": "OFL-1.1",
+    "files": [
+      "previews/reads/licenses/NUNITO-OFL.txt"
+    ]
+  },
+  {
     "id": "react@19.2.3",
     "license": "MIT",
     "files": [

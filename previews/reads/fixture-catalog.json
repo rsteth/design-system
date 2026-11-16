@@ -396,5 +396,15 @@
       "submission error",
       "retry"
     ]
+  },
+  {
+    "id": "job-delete-confirm",
+    "title": "Delete confirmation",
+    "section": "patterns",
+    "states": [
+      "confirm open",
+      "keep",
+      "delete"
+    ]
   }
 ]

@@ -175,6 +175,57 @@
       "type": "string",
       "minLength": 1,
       "description": "Optional adjacent independent study document, for reference collections only. Local relative path without traversal."
+    },
+    "direction": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Optional public statement of intent. Generated guides lead with it.",
+      "properties": {
+        "status": {
+          "const": "draft",
+          "description": "Present only while the text has not been reviewed by the owner."
+        },
+        "product": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 400
+        },
+        "character": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 400
+        },
+        "world": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 400
+        },
+        "moments": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 12,
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 400
+          }
+        },
+        "signature": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 400
+        },
+        "voice": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 12,
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 400
+          }
+        }
+      }
     }
   },
   "allOf": [

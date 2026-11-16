@@ -1,5 +1,19 @@
 # Workbench design system
 
+## Direction
+
+- **Product:** Shows an app's real tokens, components and screens in one place, without owning any of them.
+- **Character:** exact, quiet, archival
+- **World:** A specimen drawer in a dark room: hairline labels, monospace captions, and each collection's colors lit on their own.
+- **Moments:** The color signature band at the top of a collection; Fixture previews, which belong to the app and keep its appearance
+- **Signature:** The color signature: every color token as one band, read with the pointer or the arrow keys.
+
+Draft, not yet reviewed by the owner. Treat it as a starting point.
+
+## Voice
+
+- Say what a view proves and what it does not.
+
 The application owns its appearance, components and behavior. This workbench is a one-way snapshot, not an editor or a second source of truth. In an authorized checkout, read its AGENTS.md and design-system.md (or DESIGN.md when no dedicated guide exists) before editing. Reuse real components and semantic tokens, update synthetic fixtures, run the app checks, then explicitly refresh this snapshot. Do not edit the snapshot to change the application.
 
 Supported study/app themes: workbench. Contract schema: 1.

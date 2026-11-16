@@ -2,6 +2,20 @@ import {loadWaitlist,updateLandingHeader} from './waitlist-client.js';
 const $ = id => document.getElementById(id);
 let state = { voices: [], jobs: [] }, estimateVersion = 0, objectUrl, sessionInfo, authMode, admissionOpen = false, savingVoice = false;
 const active = new Set(['queued', 'running']);
+// People read these; the stored state names stay in data-state for styling and tests.
+const stateLabels = { queued: 'Queued', running: 'In progress', completed: 'Ready to listen', failed: 'Failed', cancelled: 'Cancelled', needs_review: 'Needs review' };
+const plain = value => String(value ?? '').replaceAll('_', ' ');
+const voiceStates = { pending: 'The voice is being checked', ready: 'The voice is ready', failed: 'The voice could not be made', needs_review: 'The voice needs a look from us', remote_deleted: 'The voice has been deleted' };
+const voiceStatus = v => v.source === 'sample' ? voiceStates[v.state] || `Voice: ${plain(v.state)}` : 'Recording saved privately';
+// Costs are estimates, shown the same way everywhere.
+const money = micro => micro > 0 && micro < 10000 ? 'less than $0.01' : `$${((micro || 0) / 1000000).toFixed(2)}`;
+const when = value => new Date(value).toLocaleString([], { dateStyle: 'medium', timeStyle: 'short' });
+// Resolves true only when the person chooses the named action; Escape and "Keep it" resolve false.
+function ask({ title, body, action }) {
+  const dialog = $('confirm-dialog'); if (dialog.open) return Promise.resolve(false);
+  $('confirm-title').textContent = title; $('confirm-body').textContent = body; $('confirm-yes').textContent = action; dialog.returnValue = '';
+  return new Promise(done => { dialog.addEventListener('close', () => done(dialog.returnValue === 'yes'), { once: true }); dialog.showModal(); $('confirm-no').focus(); });
+}
 function node(tag, text, cls) { const n = document.createElement(tag); if (text) n.textContent = text; if (cls) n.className = cls; return n; }
 async function api(path, method = 'GET', body) {
   const r = await globalThis.__readsFixtureFetch(`/fixture-data/${path}`, { ...(path === 'session' ? {signal:AbortSignal.timeout(12000)} : {}), method, headers: { ...(body ? { 'Content-Type': 'application/json' } : {}), ...(method !== 'GET' ? { 'X-Vocai-CSRF': sessionInfo?.csrf || '' } : {}) }, body: body ? JSON.stringify(body) : undefined });
@@ -13,43 +27,43 @@ async function estimate() {
   const version = ++estimateVersion; $('generate').disabled = true;
   $('count').textContent = `${$('text').value.length.toLocaleString()} characters`;
   $('speed-value').textContent = `${Number($('speed').value).toFixed(1)}x`;
-  if (state.mode === 'disconnected') { $('preflight').textContent = 'Audio generation and recording uploads are temporarily unavailable.'; return; }
-  if (!admissionOpen) { $('preflight').textContent = 'Audio generation is temporarily unavailable. Your words stay here; try again shortly.'; return; }
-  if (!$('text').value.trim()) { $('preflight').textContent = 'Add the words you would like read to see an estimate.'; return; }
+  if (state.mode === 'disconnected') { $('preflight').textContent = 'Readings and new recordings are paused for now.'; return; }
+  if (!admissionOpen) { $('preflight').textContent = 'Reads is resting for a moment. Your words are safe here; try again shortly.'; return; }
+  if (!$('text').value.trim()) { $('preflight').textContent = 'Add some words to see how long the reading will be.'; return; }
   $('preflight').textContent = 'Checking these words...';
-  try { const p = await api('preflight', 'POST', payload()); if (version !== estimateVersion) return; $('preflight').textContent = `${p.characters.toLocaleString()} characters | ${p.chunks} chunk${p.chunks === 1 ? '' : 's'} | ~${Math.max(1, Math.round(p.estimatedSeconds / 60))} min of speech with a hosted voice. ${p.cost}${p.allowance?.enabled ? ` Remaining: ${p.allowance.remainingUnits} units / ${p.allowance.remainingCalls} calls until ${new Date(p.allowance.expiresAt).toLocaleTimeString()}.` : ''}`; $('generate').disabled = !admissionOpen; }
+  try { const p = await api('preflight', 'POST', payload()); if (version !== estimateVersion) return; const minutes = Math.max(1, Math.round(p.estimatedSeconds / 60)); $('preflight').textContent = `About ${minutes} minute${minutes === 1 ? '' : 's'} of listening. ${p.cost}${p.allowance?.enabled ? ` Room for about ${p.allowance.remainingUnits.toLocaleString()} more characters until ${new Date(p.allowance.expiresAt).toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' })}.` : ''}`; $('generate').disabled = !admissionOpen; }
   catch (e) { if (version === estimateVersion) $('preflight').textContent = e.message; }
 }
-function voiceNote() { const v = state.voices.find(v => v.id === $('voice').value); $('voice-note').textContent = v?.provider === 'elevenlabs' ? 'ElevenLabs narration | Your text and audio are processed by ElevenLabs.' : v?.id === 'demo' ? 'Demo voice | Audio uses tones, not speech.' : 'Saved recording | Demo audio uses tones. This recording has not been used to create a reading voice.'; }
+function voiceNote() { const v = state.voices.find(v => v.id === $('voice').value); $('voice-note').textContent = v?.provider === 'elevenlabs' ? 'Your words will be read in this voice.' : v?.id === 'demo' ? 'The demo voice plays soft tones, not speech.' : 'This recording is saved. The demo still plays tones.'; }
 function button(text, fn) { const b = node('button', text, 'text-button'); b.type = 'button'; b.onclick = async () => { b.disabled = true; try { await fn(); await refresh(); } catch(e) { notify(e); } finally { b.disabled = false; } }; return b; }
 function renderVoices() {
-  const value = $('voice').value; $('voice').replaceChildren(...state.voices.filter(v=>v.provider === state.mode && (state.mode!=='elevenlabs'||(['available','ready'].includes(v.state)&&(v.source!=='sample'||state.voiceOperations?.narrationEnabled)))).map(v => { const o = node('option', `${v.name} | ${v.provider === 'elevenlabs' ? 'ElevenLabs narration' : v.id === 'demo' ? 'Demo tones' : 'Sample saved / demo'}`); o.value = v.id; return o; }));
+  const value = $('voice').value; $('voice').replaceChildren(...state.voices.filter(v=>v.provider === state.mode && (state.mode!=='elevenlabs'||(['available','ready'].includes(v.state)&&(v.source!=='sample'||state.voiceOperations?.narrationEnabled)))).map(v => { const o = node('option', v.provider === 'elevenlabs' ? v.name : `${v.name} (${v.id === 'demo' ? 'tones' : 'recording saved'})`); o.value = v.id; return o; }));
   if ([...$('voice').options].some(v => v.value === value)) $('voice').value = value;
   if($('voice').value!==value)$('provider-consent').checked=false;
   voiceNote(); $('voice-shelf').replaceChildren();
   for (const v of state.voices.filter(v => v.validation)) {
-    const row = node('div', '', 'profile'); row.append(node('strong', v.name), node('small', `${Math.round(v.validation.seconds)} sec | ${v.source==='sample'?'ElevenLabs voice: '+v.state:'Original sample saved privately'} | verification: ${v.verification}`));
-    if(!v.sampleDeletedAt){const audio = node('audio'); audio.controls = true; audio.preload = 'none'; audio.src = "/design-system/previews/reads/assets/synthetic-tone.wav"; audio.setAttribute('aria-label', `Original sample for ${v.name}`); row.append(audio,node('small','Original recording - not generated speech.'));
-      row.append(button('Delete original sample',async()=>{if(confirm('Delete the original recording from Reads? Any created provider voice and previously downloaded/backup copies are separate.'))await api(`voices/${v.id}/sample`,'DELETE');}));
-    }else row.append(node('small','Original sample deleted from Reads. Provider retention is separate.'));
+    const row = node('div', '', 'profile'); row.append(node('strong', v.name), node('small', `${Math.round(v.validation.seconds)} seconds. ${voiceStatus(v)}`));
+    if(!v.sampleDeletedAt){const audio = node('audio'); audio.controls = true; audio.preload = 'none'; audio.src = "/design-system/previews/reads/assets/synthetic-tone.wav"; audio.setAttribute('aria-label', `The original recording of ${v.name}`); row.append(audio,node('small','The original recording'));
+      row.append(button('Delete recording',async()=>{if(await ask({title:'Delete this recording?',body:'It will be removed from Reads. A voice already made from it stays until you delete that too.',action:'Delete recording'}))await api(`voices/${v.id}/sample`,'DELETE');}));
+    }else row.append(node('small','The recording has been deleted from Reads.'));
     if(state.mode==='elevenlabs') {
       const ops=state.voiceOperations||{}, operationBody=()=>({approvalId:ops.approvalId});
       if(v.provider==='fake'&&v.state==='demo'&&!v.sampleDeletedAt){
-        const details=node('details'),summary=node('summary','Create a reading voice with ElevenLabs'),form=node('form');details.append(summary,form);
-        form.append(node('p',`This sends the original recording and profile name to ElevenLabs to create an Instant Voice Clone in the connected workspace. It uses a voice slot. Approved creation estimate: $${((ops.createMicroUsd||0)/1000000).toFixed(2)}; existing plan fees are separate. Provider retention and verification apply. Reads requires 60-120 seconds of clean speech. No automatic retry.`, 'hint'));
+        const details=node('details'),summary=node('summary','Make a voice from this recording'),form=node('form');details.append(summary,form);
+        form.append(node('p',`To read in their voice, Reads sends this recording and its name to ElevenLabs, who make the voice and keep it. It needs one to two minutes of clear speech.${ops.createMicroUsd ? ` Making it costs about ${money(ops.createMicroUsd)}.` : ''}`, 'hint'));
         const check=text=>{const label=node('label','','check'),input=node('input');input.type='checkbox';input.required=true;label.append(input,node('span',text));form.append(label);return input;};
-        const rights=check('I have the speaker\'s explicit permission and the rights to clone and reuse this voice.'),clean=check('I reviewed this recording: one clean speaker, no music or background noise.'),consent=check('Send this sample and profile name to ElevenLabs to create a voice. I understand provider processing, retention and verification are separate.');
-        const submit=node('button',ops.enabled?'Send sample & create voice':'Hosted creation not activated','secondary');submit.type='submit';submit.disabled=!ops.enabled||!admissionOpen;form.append(submit);
+        const rights=check('I have their clear permission to recreate their voice and use it for readings.'),clean=check('The recording is one person speaking, with no music or background noise.'),consent=check('Send this recording and its name to ElevenLabs to make the voice. They handle and keep it under their own terms.');
+        const submit=node('button',ops.enabled?'Make their voice':'Making voices is not switched on yet','secondary');submit.type='submit';submit.disabled=!ops.enabled||!admissionOpen;form.append(submit);
         form.onsubmit=async e=>{e.preventDefault();submit.disabled=true;try{await api(`voices/${v.id}/hosted`,'POST',{...operationBody(),rightsConsent:rights.checked,singleSpeaker:clean.checked,providerConsent:consent.checked,consentVersion:ops.consentVersion});await refresh();}catch(error){notify(error);await refresh();}finally{submit.disabled=!ops.enabled;}};row.append(details);
       }
       if(v.source==='sample'&&['pending','ready','failed'].includes(v.state)) {
-        row.append(button('Check provider verification',()=>api(`voices/${v.id}/verify`,'POST',operationBody())));
-        row.append(button('Delete voice from ElevenLabs',async()=>{if(confirm('Permanently delete this voice from ElevenLabs? Existing narration files and original samples stay in Reads until separately deleted. No automatic retry on an uncertain result.'))await api(`voices/${v.id}/provider-delete`,'POST',{...operationBody(),deleteConsent:true});}));
-        if(v.state==='ready'&&!ops.narrationEnabled)row.append(node('small','Provider verification passed. Narration with created voices still requires its own approved allowance.'));
+        row.append(button('Check if the voice is ready',()=>api(`voices/${v.id}/verify`,'POST',operationBody())));
+        row.append(button('Delete voice',async()=>{if(await ask({title:'Delete this voice?',body:'The voice will be removed for good. Readings you have already made stay here, and so does the recording.',action:'Delete voice'}))await api(`voices/${v.id}/provider-delete`,'POST',{...operationBody(),deleteConsent:true});}));
+        if(v.state==='ready'&&!ops.narrationEnabled)row.append(node('small','The voice is ready. Readings in it are not switched on yet.'));
       }
-      if(v.state==='needs_review')row.append(node('p','Provider outcome is uncertain. Do not create another voice. Operator reconciliation is required; deleting this profile does not clear the hold.','error'));
+      if(v.state==='needs_review')row.append(node('p','We could not confirm whether this voice was made. Please do not make another one yet; we will look into it.','error'));
     }
-    row.append(button('Delete voice profile & its audio', async () => { if (confirm('Delete this profile, its original sample and all its jobs/files from Reads? This does not delete any ElevenLabs voice or history. Opaque operation records remain to prevent duplicate creation.')) await api(`voices/${v.id}`, 'DELETE'); })); $('voice-shelf').append(row);
+    row.append(button('Delete profile and readings', async () => { if (await ask({ title: `Delete ${v.name}?`, body: `This removes the recording and every reading made with it from Reads.${v.source === 'sample' ? ' A voice made from it is deleted separately.' : ''}`, action: 'Delete profile' })) await api(`voices/${v.id}`, 'DELETE'); })); $('voice-shelf').append(row);
   }
 }
 const jobNodes = new Map();
@@ -60,19 +74,19 @@ function renderJobs() {
   if (!jobNodes.size) $('jobs').replaceChildren();
   for (const j of state.jobs) {
     const signature = JSON.stringify([j.state, j.error]);
-    if (jobNodes.get(j.id)?.signature === signature) { const el = jobNodes.get(j.id).el; const progress = el.querySelector('progress'); if (progress) { progress.value = j.done; progress.setAttribute('aria-label', `${j.done} of ${j.total} chunks`); el.querySelector('.progress-label').textContent = `${j.done} of ${j.total} chunks saved`; } continue; }
+    if (jobNodes.get(j.id)?.signature === signature) { const el = jobNodes.get(j.id).el; const progress = el.querySelector('progress'); if (progress) { progress.value = j.done; progress.setAttribute('aria-label', `${j.done} of ${j.total} parts`); el.querySelector('.progress-label').textContent = `${j.done} of ${j.total} parts ready`; } continue; }
     const card = node('article', '', 'job'); card.dataset.state = j.state; const top = node('div', '', 'job-top'), title = node('div');
-    title.append(node('h3', j.text.slice(0, 76) + (j.text.length > 76 ? '...' : '')), node('p', `${j.voice.name} | ${j.text.length.toLocaleString()} characters | ${j.settings.speed}x pace`, 'hint'));
-    top.append(title, node('span', j.state === 'completed' ? 'Ready to listen' : j.state, 'badge')); card.append(top, node('p', j.provider === 'elevenlabs' ? 'ELEVENLABS NARRATION | private text processed by provider' : 'DEMO AUDIO | synthetic tones, not speech or a cloned voice', 'hint'));
-    if (active.has(j.state)) { const p = node('progress'); p.max = j.total; p.value = j.done; p.setAttribute('aria-label', `${j.done} of ${j.total} chunks`); card.append(p, node('p', `${j.done} of ${j.total} chunks saved`, 'hint progress-label')); }
+    title.append(node('h3', j.text.slice(0, 76) + (j.text.length > 76 ? '...' : '')), node('p', `Read by ${j.voice.name}, ${j.text.length.toLocaleString()} characters, ${j.settings.speed}x pace`, 'hint'));
+    top.append(title, node('span', stateLabels[j.state] || plain(j.state), 'badge')); card.append(top); if (j.provider !== 'elevenlabs') card.append(node('p', 'Demo reading: tones, not speech', 'hint'));
+    if (active.has(j.state)) { const p = node('progress'); p.max = j.total; p.value = j.done; p.setAttribute('aria-label', `${j.done} of ${j.total} parts`); card.append(p, node('p', `${j.done} of ${j.total} parts ready`, 'hint progress-label')); }
     if (j.error) card.append(node('p', j.error, 'error'));
     const actions = node('div', '', 'actions');
-    if (j.state === 'completed') { const audio = node('audio'); audio.controls = true; audio.preload = 'none'; audio.src = "/design-system/previews/reads/assets/synthetic-tone.wav"; audio.setAttribute('aria-label', j.provider === 'elevenlabs' ? 'Generated narration' : 'Generated demo audio'); card.append(audio); const a = node('a', 'Download WAV'); a.href = "/design-system/previews/reads/assets/synthetic-tone.wav"; a.download = `reads-${j.provider === 'elevenlabs' ? 'narration' : 'demo'}-${j.id}.wav`; a.onclick = e => { if (!admissionOpen) { e.preventDefault(); notify(Error('Downloads are temporarily unavailable. Try again shortly.')); } }; actions.append(a); }
+    if (j.state === 'completed') { const audio = node('audio'); audio.controls = true; audio.preload = 'none'; audio.src = "/design-system/previews/reads/assets/synthetic-tone.wav"; audio.setAttribute('aria-label', j.provider === 'elevenlabs' ? 'Listen to this reading' : 'Listen to this demo reading'); card.append(audio); const a = node('a', 'Download'); a.href = "/design-system/previews/reads/assets/synthetic-tone.wav"; a.download = `reads-${j.provider === 'elevenlabs' ? 'narration' : 'demo'}-${j.id}.wav`; a.onclick = e => { if (!admissionOpen) { e.preventDefault(); notify(Error('Downloads are temporarily unavailable. Try again shortly.')); } }; actions.append(a); }
     if (active.has(j.state)) actions.append(button('Cancel', () => api(`jobs/${j.id}/cancel`, 'POST')));
     if (['failed', 'cancelled'].includes(j.state) && !j.retryBlocked) actions.append(button('Retry this read', () => api(`jobs/${j.id}/retry`, 'POST')));
-    actions.append(button('Delete', async () => { if (confirm(j.provider === 'elevenlabs' ? 'Delete this job, text and audio? Opaque provider-attempt and budget records remain to prevent repeat charges. Provider history is separate.' : 'Delete this job, text, saved chunks and audio?')) await api(`jobs/${j.id}`, 'DELETE'); }));
-    const detail = node('details'), summary = node('summary', 'About this audio'); detail.append(summary, node('p', `Provider: ${j.provider} | Model: ${j.model} | Format: mono 24 kHz / 16-bit PCM WAV | Started: ${new Date(j.created).toLocaleString()} | Attempts: ${j.attempts}`, 'hint'), node('p', j.text, 'hint'));
-    if(j.provider === 'elevenlabs') detail.append(node('p', `Reference: ${j.approvalId} | Reserved estimate: $${(j.estimatedMicroUsd / 1000000).toFixed(5)} | Identical submissions reuse this job; uncertain calls never retry automatically.`, 'hint'));
+    actions.append(button('Delete', async () => { if (await ask({ title: 'Delete this reading?', body: `The words and the audio will be removed from Reads.${j.provider === 'elevenlabs' ? ' It still counts toward what you have used.' : ''}`, action: 'Delete reading' })) await api(`jobs/${j.id}`, 'DELETE'); }));
+    const detail = node('details'), summary = node('summary', 'About this audio'); detail.append(summary, node('p', `${j.provider === 'elevenlabs' ? 'Voice by ElevenLabs' : 'Demo tones'}. Started ${when(j.created)}. WAV, mono 24 kHz.${j.attempts > 1 ? ` Tried ${j.attempts} times.` : ''}`, 'hint'), node('p', j.text, 'hint'));
+    if(j.provider === 'elevenlabs') detail.append(node('p', `Estimated cost ${money(j.estimatedMicroUsd)}. Reference ${j.approvalId}.`, 'hint'));
     card.append(actions, detail);
     if (jobNodes.has(j.id)) { const old = jobNodes.get(j.id).el; const hadFocus = old.contains(document.activeElement); old.replaceWith(card); if (hadFocus) { card.tabIndex = -1; card.focus({ preventScroll: true }); } } else $('jobs').insertBefore(card, $('jobs').children[state.jobs.indexOf(j)] || null);
     jobNodes.set(j.id, { el: card, signature });
@@ -85,25 +99,25 @@ function configureProvider() {
   for (const control of document.querySelectorAll('#reader button, #reader input, #reader textarea, #reader select, #voice-form input, #voice-form button')) control.disabled=disconnected;
   if(disconnected) {
     $('provider-consent-label').hidden=true; $('preview').hidden=true;
-    $('provider-footer').textContent='Reads | Generation unavailable';
-    $('generation-notice').textContent='Audio generation, uploads and saved audio are temporarily unavailable.';
-    $('generate').textContent='Generation unavailable'; $('generate').disabled=true;
-    $('output-note').textContent='Audio generation is unavailable'; $('sample-note').textContent='Recording uploads are temporarily unavailable.';
+    $('provider-footer').textContent='Readings are paused';
+    $('generation-notice').textContent='Readings, new recordings and saved audio are paused for now.';
+    $('generate').textContent='Readings are paused'; $('generate').disabled=true;
+    $('output-note').textContent='Reads will be back shortly.'; $('sample-note').textContent='New recordings are paused for now.';
     return;
   }
   const hosted=state.mode === 'elevenlabs';
   $('provider-consent-label').hidden=!hosted; $('provider-consent').required=hosted;
-  $('preview').hidden=hosted; $('save-voice').textContent=hosted?'Save recording':'Save recording';
-  $('provider-footer').textContent=hosted?'Reads | ElevenLabs narration':'Reads | Demo audio';
-  $('generation-notice').textContent=hosted ? 'Your text is sent to ElevenLabs to create audio. The estimate is reserved before generation. Cancelled requests may still be charged; a request with an uncertain outcome will pause further generation.' : 'Demo audio uses tones rather than speech. Your text and recordings stay in Reads; no paid provider call is made.';
-  $('generate').textContent=hosted?'Read this to me':'Generate demo audio';
-  $('output-note').textContent=hosted?'One WAV file | mono 24 kHz / 16-bit':'One WAV file | Demo audio: tones, not speech';
-  $('sample-note').textContent=hosted?'Save a recording with the speaker’s permission. Saving keeps it in Reads; sending it to ElevenLabs requires a separate confirmation.':'Save a recording with the speaker’s permission. This demo uses tones, not the recorded voice.';
+  $('preview').hidden=hosted; $('save-voice').textContent='Save recording';
+  $('provider-footer').textContent=hosted?'Voices by ElevenLabs':'Demo: tones, not speech';
+  $('generation-notice').textContent=hosted ? 'Your words are read aloud by a voice service outside Reads. You will see the cost and say yes before anything is sent.' : 'This is the demo. You will hear soft tones instead of a voice, and nothing leaves Reads.';
+  $('generate').textContent=hosted?'Read this to me':'Make a demo reading';
+  $('output-note').textContent=hosted?'One audio file, yours to keep.':'One audio file. Demo readings are tones, not speech.';
+  $('sample-note').textContent=hosted?'Save a recording of someone you love, with their permission. It stays in Reads until you choose to make a voice from it.':'Save a recording of someone you love, with their permission. The demo keeps it safe but still plays tones.';
 }
 async function refresh() {
   const next = await api('state'); const changed = JSON.stringify(next.voices) !== JSON.stringify(state.voices) || JSON.stringify(next.voiceOperations)!==JSON.stringify(state.voiceOperations); const budgetChanged=JSON.stringify(next.allowance)!==JSON.stringify(state.allowance); state = next;
   const wasOpen = admissionOpen; admissionOpen = next.lifecycle?.ready === true && next.mode !== 'disconnected';
-  configureProvider(); if (changed) renderVoices(); renderJobs(); $('connection').textContent = state.mode === 'disconnected' ? 'Audio services are temporarily unavailable.' : admissionOpen ? '' : 'Reads is temporarily unavailable for new requests and downloads. Existing work can finish.';
+  configureProvider(); if (changed) renderVoices(); renderJobs(); $('connection').textContent = state.mode === 'disconnected' ? 'Readings are paused for now.' : admissionOpen ? '' : 'Reads is winding down for a rest. Anything in progress will finish, and new readings can start again shortly.';
   $('preview').disabled = !admissionOpen; $('save-voice').disabled = !admissionOpen || savingVoice;
   for (const link of document.querySelectorAll('.job a')) link.setAttribute('aria-disabled',String(!admissionOpen));
   if (!admissionOpen) $('generate').disabled = true; else if (!wasOpen || budgetChanged || changed) await estimate();
@@ -111,9 +125,9 @@ async function refresh() {
 function lockStudio(message) {
   document.body.classList.add('signed-out');
   $('auth-status').classList.toggle('sr-only', !/denied|expired|ended|unavailable|unable/i.test(message || ''));
-  $('provider-consent').checked = false;
+  $('provider-consent').checked = false; if ($('confirm-dialog').open) $('confirm-dialog').close();
   admissionOpen = false; estimateVersion++; sessionInfo = null; state = { voices: [], jobs: [] }; jobNodes.clear(); shownProvider=undefined;
-  $('studio').hidden = true; $('logout').hidden = true; $('auth-panel').hidden = false;
+  $('studio').hidden = true; $('logout').hidden = true; $('owner-admin').hidden = true; $('auth-panel').hidden = false;
   $('header-login').href = authMode === 'local' ? '/' : "/design-system/previews/reads/fixture/?fixture=studio-empty";
   requestAnimationFrame(updateLandingHeader);
   void loadWaitlist();
@@ -121,14 +135,15 @@ function lockStudio(message) {
   $('jobs').replaceChildren(); $('voice-shelf').replaceChildren(); $('voice').replaceChildren();
   for (const audio of document.querySelectorAll('audio')) { audio.pause(); audio.removeAttribute('src'); audio.load(); }
 }
-async function poll() { if (!sessionInfo?.authenticated) return; try { await refresh(); } catch { $('connection').textContent = 'Connection lost. Your work is saved. Log in again if prompted.'; } finally { if (sessionInfo?.authenticated) setTimeout(poll, 1000); } }
+async function poll() { if (!sessionInfo?.authenticated) return; try { await refresh(); } catch { $('connection').textContent = 'Connection lost. Your work is saved.'; } finally { if (sessionInfo?.authenticated) setTimeout(poll, 1000); } }
 async function startSession() {
   try {
     sessionInfo = await api('session'); authMode = sessionInfo.auth;
     if (!sessionInfo.authenticated) { lockStudio(new URLSearchParams(location.search).get('auth') === 'failed' ? 'Unable to log in with this account. Try again or join the waiting list.' : 'Log in with Google.'); return; }
     document.body.classList.remove('signed-out');
     $('studio').hidden = false; $('auth-panel').hidden = true; $('logout').hidden = sessionInfo.auth === 'local';
-    $('auth-mode').textContent = sessionInfo.auth === 'local' ? 'DEMO' : 'STUDIO';
+    $('owner-admin').hidden = sessionInfo.admin !== true;
+    $('auth-mode').textContent = sessionInfo.auth === 'local' ? 'Demo' : 'Studio';
     await poll();
   } catch { $('auth-status').classList.remove('sr-only'); $('auth-status').textContent = 'Unable to load your account. Try again in a moment.'; const retryPath=location.pathname==='/studio'?'/studio':'/'; $('login').href=retryPath; $('login').textContent='Try again'; $('header-login').href=retryPath; void loadWaitlist(); }
 }
@@ -137,14 +152,14 @@ $('reader').onsubmit = async e => { e.preventDefault(); $('generate').disabled =
 for (const id of ['text', 'speed']) $(id).oninput = () => { $('provider-consent').checked=false; estimate(); };
 $('voice').onchange = () => { $('provider-consent').checked=false; voiceNote(); estimate(); };
 $('example').onclick = () => { $('text').value = 'By evening, the garden had grown quiet. A light shone in the kitchen window, and the path home was still warm from the sun.\n\nInside, a book lay open on the table. There was time for a few more pages before the lamps went out.'; estimate(); $('text').focus(); };
-$('preview').onclick = async () => { try { const j = await api('jobs', 'POST', { text: 'This is a short demo preview.', voiceId: $('voice').value, delivery: { speed: Number($('speed').value) } }); await refresh(); $('voice-note').textContent = 'Demo preview queued in Your saved listens below. It produces tones, not speech.'; $('jobs').scrollIntoView({ behavior: 'smooth', block: 'nearest' }); } catch(e) { notify(e); } };
+$('preview').onclick = async () => { try { const j = await api('jobs', 'POST', { text: 'This is a short demo preview.', voiceId: $('voice').value, delivery: { speed: Number($('speed').value) } }); await refresh(); $('voice-note').textContent = 'A short demo is on its way to your saved listens below.'; $('jobs').scrollIntoView({ behavior: 'smooth', block: 'nearest' }); } catch(e) { notify(e); } };
 $('sample').onchange = () => { if (objectUrl) URL.revokeObjectURL(objectUrl); const file = globalThis.__readsSyntheticRecording; $('sample-preview').hidden = !file; if (file) { objectUrl = URL.createObjectURL(file); $('sample-preview').src = objectUrl; } };
 $('voice-form').onsubmit = async e => {
-  e.preventDefault(); savingVoice = true; $('save-voice').disabled = true; $('voice-status').textContent = 'Checking recording and saving locally...';
+  e.preventDefault(); savingVoice = true; $('save-voice').disabled = true; $('voice-status').textContent = 'Checking the recording and saving it...';
   try { const file = globalThis.__readsSyntheticRecording; if (!file || file.size > 12 * 1024 * 1024) throw Error('Choose a WAV file under 12 MB.');
-    const base64 = await new Promise((resolve, reject) => { const reader = new FileReader(); reader.onload = () => resolve(reader.result.split(',')[1]); reader.onerror = () => reject(Error('Could not read sample.')); reader.readAsDataURL(file); });
+    const base64 = await new Promise((resolve, reject) => { const reader = new FileReader(); reader.onload = () => resolve(reader.result.split(',')[1]); reader.onerror = () => reject(Error('Could not read that file.')); reader.readAsDataURL(file); });
     const voice = await api('voices', 'POST', { name: $('name').value, filename: file.name, mime: file.type || 'audio/wav', base64, permission: $('permission').checked, singleSpeaker: $('single').checked });
-    await refresh(); if(state.mode !== 'elevenlabs') $('voice').value = voice.id; voiceNote(); estimate(); $('voice-form').reset(); $('sample-preview').hidden = true; if (objectUrl) URL.revokeObjectURL(objectUrl); $('voice-status').textContent = state.mode === 'elevenlabs' ? 'Recording saved. Sending it to ElevenLabs requires a separate confirmation.' : 'Recording saved. Demo audio uses tones, not the recorded voice.';
+    await refresh(); if(state.mode !== 'elevenlabs') $('voice').value = voice.id; voiceNote(); estimate(); $('voice-form').reset(); $('sample-preview').hidden = true; if (objectUrl) URL.revokeObjectURL(objectUrl); $('voice-status').textContent = state.mode === 'elevenlabs' ? 'Recording saved. It stays here until you choose to make a voice from it.' : 'Recording saved. The demo still plays tones.';
   } catch(e) { $('voice-status').textContent = e.message; } finally { savingVoice = false; $('save-voice').disabled = !admissionOpen; }
 };
 await startSession();

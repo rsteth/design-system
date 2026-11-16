@@ -12,6 +12,7 @@ document.querySelectorAll('.wordmark,#header-login,#login').forEach(link=>{link.
 document.getElementById('logout').onclick=()=>location.assign('/design-system/previews/reads/fixture/?fixture=landing');
 if(id==='waitlist'||id.startsWith('waitlist-'))document.getElementById('waitlist').click();
 if(id==='voice-sample')document.getElementById('voice-details').open=true;
+if(id==='job-delete-confirm')document.querySelector('.job .actions button:last-child').click();
 if(id==='hosted-consent'){const field=document.getElementById('text');field.value=sampleText;field.dispatchEvent(new Event('input'));}
 const scenario=coverage[id];
 if(scenario?.region==='voice')document.getElementById('voice-details').open=true;

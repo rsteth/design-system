@@ -1,5 +1,15 @@
 # stethem design system
 
+## Direction
+
+- **Product:** Robin Stethem's portfolio: projects, essays and interactive studies that explain how learning machines work.
+- **Character:** curious, hand-built, plain-spoken
+- **World:** A workshop notebook: white page, terracotta ink and diagrams drawn to explain something.
+- **Moments:** The interactive studies, such as the token story and attention and memory; Project thumbnails in the portfolio grid
+- **Signature:** Inline arrows drawn in the text's own ink.
+
+Draft, not yet reviewed by the owner. Treat it as a starting point.
+
 The application owns its appearance, components and behavior. This workbench is a one-way snapshot, not an editor or a second source of truth. In an authorized checkout, read its AGENTS.md and design-system.md (or DESIGN.md when no dedicated guide exists) before editing. Reuse real components and semantic tokens, update synthetic fixtures, run the app checks, then explicitly refresh this snapshot. Do not edit the snapshot to change the application.
 
 Supported study/app themes: light. Contract schema: 1.

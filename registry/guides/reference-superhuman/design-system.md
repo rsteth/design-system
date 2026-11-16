@@ -2,6 +2,12 @@
 
 Independent unverified reference. This is an authored adaptation study, not an official design system or a claim about the current product. Use it for inspiration, not as authority over another project. Preserve source attribution and do not reuse third-party logos or assets without appropriate rights.
 
+## Direction
+
+- **Product:** An inspired interpretation of Superhumon's design language — a fast-email productivity brand split between an editorial dark hero (deep indigo navy with violet-sky atmospheric backdrop and a portrait subject) and a quiet white content body with off-warm-grey…
+
+First line of the study description. Unverified, and not a statement by the brand.
+
 Supported study/app themes: analysis. Contract schema: 1.
 
 Keep semantic controls, visible keyboard focus, meaningful labels and reduced-motion behavior. Sample fixtures are presentation evidence, not live service acceptance.

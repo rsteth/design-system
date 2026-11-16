@@ -289,6 +289,16 @@ export const coverage = {
       "submission error",
       "retry"
     ]
+  },
+  "job-delete-confirm": {
+    "title": "Delete confirmation",
+    "section": "patterns",
+    "region": "jobs",
+    "states": [
+      "confirm open",
+      "keep",
+      "delete"
+    ]
   }
 };
 export const signedOutFixture = id => ["landing", "waitlist", "account-unavailable", "account-expired", "account-denied"].includes(id) || id.startsWith("waitlist-");

@@ -5,6 +5,17 @@
   "kind": "app",
   "renderer": "dom",
   "summary": "Author-owned static portfolio and interactive teaching studies. Existing visual language, no React adapter.",
+  "direction": {
+    "status": "draft",
+    "product": "Robin Stethem's portfolio: projects, essays and interactive studies that explain how learning machines work.",
+    "character": "curious, hand-built, plain-spoken",
+    "world": "A workshop notebook: white page, terracotta ink and diagrams drawn to explain something.",
+    "moments": [
+      "The interactive studies, such as the token story and attention and memory",
+      "Project thumbnails in the portfolio grid"
+    ],
+    "signature": "Inline arrows drawn in the text's own ink."
+  },
   "tokens": "tokens.json",
   "themes": [
     "light"

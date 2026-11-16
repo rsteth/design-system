@@ -5,6 +5,16 @@
   "kind": "app",
   "renderer": "react",
   "summary": "Complete production UI catalog with isolated deterministic fixtures and preserved app appearance. Public fixture preview: EPUB states use authored sample text. Real EPUB parsing is not included; uploaded files are not parsed by this preview.",
+  "direction": {
+    "status": "draft",
+    "product": "Shows a text or an EPUB one word at a time, so you can read faster without moving your eyes.",
+    "character": "still, plain, bookish",
+    "world": "A paper page in daylight: cream stock, dark ink and one moss green.",
+    "moments": [
+      "The single word in the reader, held at its recognition point"
+    ],
+    "signature": "The recognition-point letter that every word lines up on."
+  },
   "tokens": "tokens.json",
   "themes": [
     "light",
