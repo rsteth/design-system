@@ -1,6 +1,6 @@
 {
   "name": "@rsteth/design-system",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "private": true,
   "type": "module",
   "description": "Framework-neutral design contracts, appearance behavior and isolated workbenches.",
@@ -55,7 +55,8 @@
     "test:capture:profiles": "node tests/capture/profile-ui.browser.mjs",
     "test:capture:runner": "node tests/capture/runner.browser.mjs",
     "guides:build": "node tooling/agent-guides.mjs --write",
-    "guides:check": "node tooling/agent-guides.mjs"
+    "guides:check": "node tooling/agent-guides.mjs",
+    "tokens:advice": "node tooling/token-advice.mjs"
   },
   "engines": {
     "node": ">=20"

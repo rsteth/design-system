@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": "0.4.0",
+  "version": "0.5.0",
   "scope": "Clean public source tree. Git history, local review artifacts and private revision identifiers are excluded. Application snapshots retain their source terms.",
   "withheldRevisionMetadata": true,
   "excluded": [

@@ -2,6 +2,12 @@
 
 Independent unverified reference. This is an authored adaptation study, not an official design system or a claim about the current product. Use it for inspiration, not as authority over another project. Preserve source attribution and do not reuse third-party logos or assets without appropriate rights.
 
+## Direction
+
+- **Product:** Current digital tokens and brand guidance, with a separate historical manual reference.
+
+First line of the study description. Unverified, and not a statement by the brand.
+
 ## NASA study boundary
 
 Selected digital values come from a pinned first-party HDS Core snapshot. The compositions are original interpretations, not NASA screens. Do not combine historical print rules with current digital tokens. No NASA marks, photography or font files are included.

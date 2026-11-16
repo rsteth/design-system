@@ -2,11 +2,33 @@
 import {readFile,writeFile,mkdir,access} from 'node:fs/promises';
 import {resolve,dirname,relative} from 'node:path';
 import {fileURLToPath,pathToFileURL} from 'node:url';
+import {directionFor} from '../packages/workbench/index.mjs';
 const ROOT=fileURLToPath(new URL('../',import.meta.url));
 const cell=value=>String(value??'').replaceAll('|','\\|').replaceAll('\n',' ');
-export const appGuidePath=id=>id==='reads'?'public/design-system.md':id==='bandit'?'apps/web/public/design-system.md':null;
+/** Every app keeps its optional guide notes in the same place: prose only, no tables. */
+export const appGuidePath=()=>'design/public-guide.md';
 export function assertPublicGuide(text){
  if(/\/Users\/|\/home\/|localhost|127\.0\.0\.1|\b[a-f0-9]{40,64}\b|AKIA[A-Z0-9]{16}|-----BEGIN [A-Z ]*PRIVATE KEY-----/i.test(text))throw Error('Public guide contains private/local identifiers.');
+}
+/** Intent first. Takes a direction block or the result of directionFor; `basis` says where the text came from. */
+export function directionMarkdown(direction,basis='written'){
+ if(basis==='none')return '## Direction\n\nNot written yet. Do not infer one from the tables below.\n\n';
+ if(!direction||typeof direction!=='object')return '';
+ const line=(label,value)=>typeof value==='string'&&value.trim()?`- **${label}:** ${cell(value)}\n`:'';
+ const list=value=>Array.isArray(value)?value.filter(item=>typeof item==='string'&&item.trim()):[];
+ let text=line('Product',direction.product)+line('Character',direction.character)+line('World',direction.world)+(list(direction.moments).length?`- **Moments:** ${list(direction.moments).map(cell).join('; ')}\n`:'')+line('Signature',direction.signature);
+ const origin={draft:'Draft, not yet reviewed by the owner. Treat it as a starting point.',summary:'One line taken from the collection summary. No direction is written yet.',analysis:'First line of the study description. Unverified, and not a statement by the brand.'}[basis];
+ if(text)text='## Direction\n\n'+text+'\n'+(origin??'Decide how something should look or read from this before reaching for the tables below.')+'\n\n';
+ if(list(direction.voice).length)text+='## Voice\n\n'+list(direction.voice).map(item=>`- ${cell(item)}\n`).join('')+'\n';
+ return text;
+}
+/** App notes are prose that sits between the direction and the generated tables. The title and tables are always generated. */
+export function guideNotes(text){
+ if(typeof text!=='string'||!text.trim())return '';
+ const body=text.replace(/^\s*# [^\n]*\n+/,'').trim();
+ if(/^\|.*\|\s*$/m.test(body))throw Error('App guide notes are prose only; token and fixture tables are generated.');
+ if(/^## (Direction|Voice|Tokens|Fixtures)\s*$/m.test(body))throw Error('App guide notes must not repeat a generated section.');
+ return body?body+'\n\n':'';
 }
 export async function generateGuides({root=ROOT,write=false}={}){
  const read=async path=>JSON.parse(await readFile(resolve(root,path),'utf8'));
@@ -14,24 +36,25 @@ export async function generateGuides({root=ROOT,write=false}={}){
  for(const name of ['index','references'])for(const entry of (await read(`registry/${name}.json`)).collections){
   const path=resolve(root,'registry',entry),c=JSON.parse(await readFile(path,'utf8'));
   const tokens=JSON.parse(await readFile(resolve(dirname(path),c.tokens),'utf8'));
-  entries.push({c,tokens});
+  let study;if(typeof c.study==='string'){try{study=JSON.parse(await readFile(resolve(dirname(path),c.study),'utf8'));}catch(error){if(error.code!=='ENOENT')throw error;}}
+  entries.push({c,tokens,study});
  }
  const outputs=new Map();
- for(const {c,tokens} of entries){
-  let authored;try{authored=await readFile(resolve(root,`registry/apps/${c.id}/public-guide.md`),'utf8');}catch(error){if(error.code!=='ENOENT')throw error;}
-  let text=authored;
-  if(!text){
-   text=`# ${c.title} design system\n\n`+(c.kind==='reference'?
-    'Independent unverified reference. This is an authored adaptation study, not an official design system or a claim about the current product. Use it for inspiration, not as authority over another project. Preserve source attribution and do not reuse third-party logos or assets without appropriate rights.\n\n':
-    'The application owns its appearance, components and behavior. This workbench is a one-way snapshot, not an editor or a second source of truth. In an authorized checkout, read its AGENTS.md and design-system.md (or DESIGN.md when no dedicated guide exists) before editing. Reuse real components and semantic tokens, update synthetic fixtures, run the app checks, then explicitly refresh this snapshot. Do not edit the snapshot to change the application.\n\n');
-   if(c.id==='reference-nasa')text+='## NASA study boundary\n\nSelected digital values come from a pinned first-party HDS Core snapshot. The compositions are original interpretations, not NASA screens. Do not combine historical print rules with current digital tokens. No NASA marks, photography or font files are included.\n\n- [Official brand guidance](https://www.nasa.gov/nasa-brand-center/brand-guidelines/)\n- [HDS Core documentation](https://nasa.github.io/hds-core/)\n- [Media usage guidance](https://www.nasa.gov/nasa-brand-center/images-and-media/)\n\n';
-   text+=`Supported study/app themes: ${c.themes.join(', ')}. Contract schema: ${c.schemaVersion}.\n\n`;
-   text+='Keep semantic controls, visible keyboard focus, meaningful labels and reduced-motion behavior. Sample fixtures are presentation evidence, not live service acceptance.\n\n';
-   text+='## Tokens\n\n| Theme | CSS variable | Type | Value |\n| --- | --- | --- | --- |\n';
-   for(const mode of tokens.modes)for(const [name,token] of Object.entries(mode.tokens))text+=`| ${cell(mode.id)} | --ds-${name.replaceAll('.','-')} | ${cell(token.type)} | ${cell(token.value)} |\n`;
-   text+='\n## Fixtures\n\n| Name | Section | States |\n| --- | --- | --- |\n';
-   for(const f of c.fixtures??[])text+=`| ${cell(f.title)} | ${cell(f.section)} | ${cell((f.states??[]).join(', '))} |\n`;
-  }
+ // One path for every entry: title, direction, notes, then tables generated from the snapshot.
+ for(const {c,tokens,study} of entries){
+  let notes;try{notes=await readFile(resolve(root,`registry/apps/${c.id}/public-guide.md`),'utf8');}catch(error){if(error.code!=='ENOENT')throw error;}
+  const shown=directionFor({...c,studyData:study});
+  let text=`# ${c.title} design system\n\n`;
+  if(c.kind==='reference')text+='Independent unverified reference. This is an authored adaptation study, not an official design system or a claim about the current product. Use it for inspiration, not as authority over another project. Preserve source attribution and do not reuse third-party logos or assets without appropriate rights.\n\n';
+  text+=directionMarkdown(shown,shown.basis);
+  if(c.kind!=='reference')text+=guideNotes(notes)||'The application owns its appearance, components and behavior. This workbench is a one-way snapshot, not an editor or a second source of truth. In an authorized checkout, read its AGENTS.md and design-system.md (or DESIGN.md when no dedicated guide exists) before editing. Reuse real components and semantic tokens, update synthetic fixtures, run the app checks, then explicitly refresh this snapshot. Do not edit the snapshot to change the application.\n\n';
+  if(c.id==='reference-nasa')text+='## NASA study boundary\n\nSelected digital values come from a pinned first-party HDS Core snapshot. The compositions are original interpretations, not NASA screens. Do not combine historical print rules with current digital tokens. No NASA marks, photography or font files are included.\n\n- [Official brand guidance](https://www.nasa.gov/nasa-brand-center/brand-guidelines/)\n- [HDS Core documentation](https://nasa.github.io/hds-core/)\n- [Media usage guidance](https://www.nasa.gov/nasa-brand-center/images-and-media/)\n\n';
+  text+=`Supported study/app themes: ${c.themes.join(', ')}. Contract schema: ${c.schemaVersion}.`+(c.source?.publicVersion?` Package version: ${cell(c.source.publicVersion)}, which identifies the package and not a verified deployed release.`:'')+'\n\n';
+  text+='Keep semantic controls, visible keyboard focus, meaningful labels and reduced-motion behavior. Sample fixtures are presentation evidence, not live service acceptance.\n\n';
+  text+='## Tokens\n\n| Theme | CSS variable | Type | Value |\n| --- | --- | --- | --- |\n';
+  for(const mode of tokens.modes)for(const [name,token] of Object.entries(mode.tokens))text+=`| ${cell(mode.id)} | --ds-${name.replaceAll('.','-')} | ${cell(token.type)} | ${cell(token.value)} |\n`;
+  text+='\n## Fixtures\n\n| Name | Section | States |\n| --- | --- | --- |\n';
+  for(const f of c.fixtures??[])text+=`| ${cell(f.title)} | ${cell(f.section)} | ${cell((f.states??[]).join(', '))} |\n`;
   assertPublicGuide(text);
   text+=`\n[Open this workbench](../../../apps/studio/?${c.kind==='reference'?'library=references&':''}collection=${encodeURIComponent(c.id)})\n`;
   outputs.set(`registry/guides/${c.id}/design-system.md`,text);

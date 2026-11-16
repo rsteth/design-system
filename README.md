@@ -13,7 +13,7 @@ A framework-neutral contract and reusable workbench, with real app-owned example
 - `collections/reference-specimens`: original neutral examples for three selected studies.
 - `registry/references.json`: the reference library, separate from `registry/index.json` (Robin).
 
-Run `npm ci` for the pinned YAML development parser, then `npm run check` and `npm run dev` and open `/apps/studio/`. Node 20+ is required. The browser engine has no runtime package dependency; only the offline reference importer uses the pinned YAML parser. App fixture servers are separate and must be started in their own checkouts. Missing servers are not passing checks.
+Run `npm ci` for the pinned YAML development parser, then `npm run check` and `npm run dev` and open `/apps/studio/`. `npm run dev` serves on port 4310 and says so if the port is taken; use `node tooling/serve.mjs . <port>` for another. Node 20+ is required. The browser engine has no runtime package dependency; only the offline reference importer uses the pinned YAML parser. App fixture servers are separate and must be started in their own checkouts. Missing servers are not passing checks.
 
 Local integration uses `node tooling/sync-consumer.mjs /absolute/app/path`. This copies a hash-pinned snapshot into `vendor/design-system`; app code must not modify that copy. The snapshot is intentionally labeled unpublished. Generated token CSS is checked in for static hosting; no runtime CDN or moving-branch fetch is required. A future release should pin a published package or commit and arrive as a reviewable version bump. Nothing here publishes or deploys.
 
@@ -25,7 +25,7 @@ Read [AGENTS.md](AGENTS.md) for ownership and [the task guide](docs/process/agen
 
 - **Capture one or all formats**: open `/apps/studio/?library=capture`, select desktop/mobile/App Store dimensions/stethem thumbnail, and copy the command. Agents can read `/packages/capture/catalog.json` or run `npm run capture -- --list`; `--plan` previews the exact matrix. The address is a static review interface, not a remote execution endpoint.
 - **“Grab screens for X”**: find X's real screen fixtures or registered capture scene, then follow [capture studio](docs/process/capture-studio.md). Capture output is local review material, never an automatic website replacement.
-- **“Put the blueprint in repo Y”**: use [the portable blueprint](blueprints/workbench/README.md). `node tooling/blueprint.mjs --check /absolute/project/path` previews; omit `--check` to add a new self-contained `workbench/`. Existing directories and root files are not overwritten.
+- **“Put the blueprint in repo Y”**: use [the portable blueprint](blueprints/workbench/README.md). `node tooling/blueprint.mjs --check /absolute/project/path` previews; omit `--check` to add a new self-contained `workbench/`. Existing directories and root files are not overwritten. `--upgrade` brings an installed workbench to the current version and keeps the files the app adapted.
 - **“Refresh X in the workbench”**: `node tooling/sync-registry.mjs /absolute/app/path` updates only that app's derived snapshot and retains other collections. Use `--check` to inspect drift without writes.
 
 Workbenches are **one-way for now**: the app owns source, fixtures and tokens; workbenches consume them. The portable engine can be upgraded explicitly, but it is not a two-way editor. stethem remains a static site. The [sync plan](docs/process/one-way-sync.md) describes a possible manual GitHub Action with pinned inputs and reviewable output; no workflow or deployment is enabled.

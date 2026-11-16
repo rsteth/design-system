@@ -18,4 +18,8 @@ createServer(async (req,res) => {
     const body = await readFile(actual);
     res.writeHead(200, {'Content-Type':mime[extname(actual)] ?? 'application/octet-stream','Cache-Control':'no-store','Access-Control-Allow-Origin':'*'}); res.end(body);
   } catch { res.writeHead(404, {'Content-Type':'text/plain'}); res.end('Not found'); }
+}).on('error', error => {
+  // A taken port usually means another checkout is already being served; its pages are not this checkout's.
+  console.error(error.code === 'EADDRINUSE' ? `Port ${port} is already in use, possibly by another checkout. Nothing was started. Choose another port: node tooling/serve.mjs . ${port + 1}` : `Could not start the local workbench: ${error.message}`);
+  process.exitCode = 1;
 }).listen(port,'127.0.0.1',() => console.log(`Local workbench: http://127.0.0.1:${port}/`));

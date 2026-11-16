@@ -2,6 +2,12 @@
 
 Independent unverified reference. This is an authored adaptation study, not an official design system or a claim about the current product. Use it for inspiration, not as authority over another project. Preserve source attribution and do not reuse third-party logos or assets without appropriate rights.
 
+## Direction
+
+- **Product:** Revolut's marketing surfaces pair a stark black canvas with the brand's cobalt-violet (#494fdf) and a wide accent palette of deep, fully-saturated product colours — teal, light-blue, deep pink, light-green, warning orange.
+
+First line of the study description. Unverified, and not a statement by the brand.
+
 Supported study/app themes: analysis. Contract schema: 1.
 
 Keep semantic controls, visible keyboard focus, meaningful labels and reduced-motion behavior. Sample fixtures are presentation evidence, not live service acceptance.

@@ -5,6 +5,17 @@
   "renderer": "react",
   "title": "Gather Motion",
   "summary": "A human-directed video studio. Glacier artwork, blue and copper accents, and app-owned production controls.",
+  "direction": {
+    "status": "draft",
+    "product": "A studio for making short-form video, where a person directs every production from brief to approved shot.",
+    "character": "cool-headed, exacting, unhurried",
+    "world": "A production office with a view of ice: glacier blue, copper fittings and a call sheet set in monospace.",
+    "moments": [
+      "The glacier artwork on the landing",
+      "The production board, where shots move from plan to approved"
+    ],
+    "signature": "Technical details set in Space Mono, like markings on a slate."
+  },
   "tokens": "tokens.json",
   "inventory": "inventory.json",
   "themes": [

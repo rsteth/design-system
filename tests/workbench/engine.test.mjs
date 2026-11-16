@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { safeURL, fixtureURL, tokenRows, loadCollections, skinName, VERSION } from '../../packages/workbench/index.mjs';
+import { safeURL, fixtureURL, tokenRows, loadCollections, skinName, directionFor, VERSION } from '../../packages/workbench/index.mjs';
 import { readFile } from 'node:fs/promises';
 test('only HTTP(S) fixture protocols without credentials', () => {
   for (const bad of [undefined, null, '', 'javascript:alert(1)', 'data:text/html,hi', 'file:///etc/passwd', 'https://user:pass@example.com']) assert.throws(() => safeURL(bad));
@@ -74,4 +74,14 @@ test('default dark workbench skin is separate from the optional personal-site sk
  assert.equal(await readFile(new URL('../../packages/workbench/skins/workbench.css',import.meta.url),'utf8'),compileTokens(tokens).replace('design/tokens.json','packages/workbench/skins/workbench.tokens.json'));
  const legacy=JSON.parse(await readFile(new URL('../../packages/workbench/skins/stethem.tokens.json',import.meta.url)));
  assert.equal(legacy.modes[0].selector,'.wb-shell[data-wb-skin="stethem"]');
+});
+
+test('direction is shown from what is written, and a derived line says where it came from', () => {
+  assert.deepEqual(directionFor({ direction: { product: ' A line. ', moments: ['one', ''], voice: [] } }), { product: 'A line.', character: undefined, world: undefined, moments: ['one'], signature: undefined, voice: [], basis: 'written' });
+  assert.equal(directionFor({ direction: { status: 'draft', character: 'calm' } }).basis, 'draft');
+  assert.deepEqual([directionFor({ direction: {}, summary: 'Shows one thing. And another.' })].map(d => [d.product, d.basis]), [['Shows one thing.', 'summary']]);
+  const study = directionFor({ summary: 'Independent unverified reference', studyData: { description: 'A **warm** canvas with `code` (#ff385c). More.' } });
+  assert.deepEqual([study.product, study.basis], ['A warm canvas with code (#ff385c).', 'analysis']);
+  assert.equal(directionFor({ summary: 'Independent unverified reference' }).basis, 'none'); assert.equal(directionFor(undefined).basis, 'none');
+  const long = directionFor({ summary: 'word '.repeat(80) + 'end.' }).product; assert.ok(long.length <= 260 && long.endsWith('…'));
 });

@@ -4,7 +4,7 @@
 
 Application source → app fixtures/tokens/metadata → explicit central snapshot/workbench/capture. The workbench does not write back to applications. Shared engine upgrades are independent, explicit vendor updates. This is not two-way synchronization. stethem remains static HTML/CSS/JavaScript, built and served as static files.
 
-Today, use on-demand local commands. `tooling/sync-registry.mjs` refreshes named app snapshots without removing other apps. `tooling/blueprint.mjs` installs a reviewed empty blueprint in a new project. Existing app vendors and published site images are unchanged unless separately requested. There is no enabled GitHub Action, schedule, webhook, deployment or new access grant in this plan.
+Today, use on-demand local commands. `tooling/sync-registry.mjs` refreshes named app snapshots without removing other apps. `tooling/blueprint.mjs` installs a reviewed empty blueprint in a new project, and with `--upgrade` brings an installed one to the current version while keeping the files the app adapted. Existing app vendors and published site images are unchanged unless separately requested. There is no enabled GitHub Action, schedule, webhook, deployment or new access grant in this plan.
 
 ## Possible next step: manual GitHub Action
 

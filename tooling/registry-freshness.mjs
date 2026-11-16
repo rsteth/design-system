@@ -33,7 +33,9 @@ export async function assertRegistryFresh(workspaces,{root=ROOT}={}){
   if(!relative(root,directory).startsWith('registry/apps/'))throw Error('Snapshot directory escapes registry.');
   const snapshot=JSON.parse(await localFile(directory,'collection.json'));
   const fail=part=>{throw Error(`App snapshot mismatch: ${id} (${part}); refresh explicitly with tooling/sync-registry.mjs before packaging.`);};
-  if(comparable(manifest(actual))!==comparable(manifest(snapshot)))fail('manifest/fixtures');
+  // A central draft direction is not app content; it stands only until the app records its own.
+  const saved=manifest(snapshot);if(actual.direction===undefined&&saved.direction?.status==='draft')delete saved.direction;
+  if(comparable(manifest(actual))!==comparable(saved))fail('manifest/fixtures');
   const tokens=await localFile(app,`design/${actual.tokens}`),savedTokens=await localFile(directory,snapshot.tokens);
   if(!tokens.equals(savedTokens)||snapshot.registrySnapshot?.tokenSha256!==hash(savedTokens))fail('tokens');
   if(actual.inventory){

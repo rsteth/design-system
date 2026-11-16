@@ -5,6 +5,16 @@
   "kind": "app",
   "renderer": "react",
   "summary": "Production UI inventory with deterministic offline planner, route, search and control scenarios.",
+  "direction": {
+    "status": "draft",
+    "product": "Plans a loop route on the map that stays as close as it can to a circle of the radius you choose.",
+    "character": "practical, outdoorsy, precise",
+    "world": "A paper trail map on a table: cream sheet, a moss green line and a rust start marker.",
+    "moments": [
+      "The route drawn on the map, with its handles"
+    ],
+    "signature": "The rust start marker against the green route."
+  },
   "tokens": "tokens.json",
   "themes": [
     "light",

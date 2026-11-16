@@ -1,5 +1,5 @@
-/** Framework-independent collection workbench. Public API version 0.4.0. */
-export const VERSION = '0.4.0';
+/** Framework-independent collection workbench. Public API version 0.5.0. */
+export const VERSION = '0.5.0';
 export function skinName(value = 'workbench') {
   if (typeof value !== 'string' || !/^[a-z][a-z0-9-]*$/.test(value)) throw new TypeError('Skin must be a kebab-case name');
   return value;
@@ -19,6 +19,27 @@ export function fixtureURL(value, { theme = 'light', base } = {}) {
 export function tokenRows(document, mode) {
   const selected = document?.modes?.find(item => item.id === mode) ?? document?.modes?.[0];
   return Object.entries(selected?.tokens ?? {}).map(([name, token]) => ({ name, ...token, mode: selected.id }));
+}
+/**
+ * The direction to show for a collection, with where it came from.
+ * basis: 'written' (the collection's own), 'draft' (written but not yet reviewed),
+ * 'summary' or 'analysis' (one line taken from text already recorded), or 'none'.
+ * A derived line is a placeholder, never a claim about what the owner intends.
+ */
+export function directionFor(collection) {
+  const text = value => typeof value === 'string' && value.trim() ? value.trim() : undefined;
+  const list = value => Array.isArray(value) ? value.map(text).filter(Boolean) : [];
+  const written = collection?.direction && typeof collection.direction === 'object' ? collection.direction : {};
+  const direction = { product: text(written.product), character: text(written.character), world: text(written.world), moments: list(written.moments), signature: text(written.signature), voice: list(written.voice) };
+  if (direction.product || direction.character || direction.world || direction.signature || direction.moments.length || direction.voice.length) return { ...direction, basis: written.status === 'draft' ? 'draft' : 'written' };
+  const analysis = text(collection?.studyData?.description);
+  const summary = /^independent unverified reference$/i.test(collection?.summary ?? '') ? undefined : text(collection?.summary);
+  const source = analysis ?? summary;
+  if (!source) return { ...direction, basis: 'none' };
+  const plain = source.replace(/\*\*|`/g, '').replace(/\s+/g, ' ');
+  let line = plain.match(/^.*?[.!?](?=\s|$)/)?.[0] ?? plain;
+  if (line.length > 260) line = line.slice(0, line.lastIndexOf(' ', 259)).replace(/[\s,;:(–-]+$/, '') + '…';
+  return { ...direction, product: line, basis: analysis ? 'analysis' : 'summary' };
 }
 /** Imported study prose is inert text, never interpreted as HTML. */
 export function validateStudy(study) {
@@ -317,6 +338,20 @@ export function mountWorkbench(container, options = {}) {
     if (collection.kind === 'reference') panel.append(studyPanel(collection));
     return panel;
   }
+  /** What the product is meant to be, ahead of the values that express it. Shown in every section. Text only; never interpreted as HTML. */
+  function directionPanel(collection, compact) {
+    const direction = directionFor(collection);
+    const panel = element('section', { class: 'wb-direction', 'data-direction-basis': direction.basis, 'data-direction-compact': compact ? '' : null, 'aria-label': `${collection.title} direction` }, element('h2', {}, 'Direction'));
+    if (direction.basis === 'none') { panel.append(note('No direction is written for this collection yet.')); return panel; }
+    if (direction.product) panel.append(element('p', { class: 'wb-direction-lead' }, direction.product));
+    // Beside fixtures the previews need the room: one line there, the whole direction on Foundations.
+    const rows = compact ? [] : [['Character', [direction.character]], ['World', [direction.world]], ['Moments', direction.moments], ['Signature', [direction.signature]]].map(([label, values]) => [label, values.filter(Boolean)]).filter(([, values]) => values.length);
+    if (rows.length) panel.append(element('dl', { class: 'wb-direction-facts' }, ...rows.map(([label, values]) => element('div', {}, element('dt', {}, label), ...values.map(value => element('dd', {}, value))))));
+    if (direction.voice.length && !compact) panel.append(element('div', { class: 'wb-direction-voice' }, element('h3', {}, 'Voice'), element('ul', {}, ...direction.voice.map(item => element('li', {}, item)))));
+    const basis = { draft: 'Draft. Not yet reviewed by the owner.', summary: 'One line taken from the collection summary. No direction is written yet.', analysis: 'First line of the study description. Unverified, and not a statement by the brand.' }[direction.basis];
+    if (basis) panel.append(note(basis, 'wb-direction-basis'));
+    return panel;
+  }
   /** Every colour token in the collection as one band, read with the pointer or the arrow keys. */
   function signaturePanel(collection) {
     const colors = colorSignature(collection.tokensData, theme);
@@ -499,6 +534,7 @@ export function mountWorkbench(container, options = {}) {
     const main = element('main', { class: 'wb-main' });
     const controls = element('div', { class: 'wb-controls' }, select('Theme', collection?.themes?.length ? collection.themes : ['light'], theme, value => { theme = value; }), select('Viewport', [['responsive', 'Responsive'], ['mobile', 'Mobile · 390'], ['tablet', 'Tablet · 768'], ['desktop', 'Desktop · 1280']], viewport, value => { viewport = value; }), element('label', { class: 'wb-compare-control' }, element('input', { type: 'checkbox', ...(comparison ? { checked: '' } : {}), 'data-wb-focus': 'compare', onchange: event => { const next = event.target.checked; update(() => { comparison = next; }, 'compare'); } }), 'Compare themes'));
     main.append(element('header', { class: 'wb-header' }, element('div', {}, element('p', { class: 'wb-eyebrow' }, collection?.title ?? 'Your workspace'), element('h1', {}, titleCase(section)), note(collection?.summary ?? 'A clean starting point, ready for your first collection.')), controls));
+    if (collection) main.append(directionPanel(collection, section !== 'foundations'));
     const signature = collection && signaturePanel(collection);
     if (signature) main.append(signature);
     if (collection?.kind === 'reference') {

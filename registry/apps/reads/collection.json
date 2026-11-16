@@ -5,6 +5,23 @@
   "kind": "app",
   "renderer": "dom",
   "summary": "Real Reads landing and studio UI, rendered with deterministic in-memory fixtures. Warm dark surfaces, soft blue accents and rounded controls remain app-owned.",
+  "direction": {
+    "status": "draft",
+    "product": "Turns a story, an essay or a letter into audio read in the voice of someone you love, with that person's permission.",
+    "character": "hushed, tender, careful",
+    "world": "A bedside at night, with lamp light, a kept letter and headphones.",
+    "moments": [
+      "The listener illustration on the landing",
+      "The finished listen in the studio, which is still a native audio bar and the next place to spend craft"
+    ],
+    "signature": "The listener's slow sway. It is the only looping motion in the product and stops under reduced motion.",
+    "voice": [
+      "Say what will happen in ordinary words, to one person, late in the day.",
+      "Use the product's words: a reading, a part, a recording, their voice.",
+      "Sentence case with no trailing period on headings, labels and buttons.",
+      "Name ElevenLabs only where words or a recording leave Reads."
+    ]
+  },
   "tokens": "tokens.json",
   "themes": [
     "dark"

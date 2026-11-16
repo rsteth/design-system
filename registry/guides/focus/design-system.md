@@ -1,5 +1,15 @@
 # Focus Speed Reader design system
 
+## Direction
+
+- **Product:** Shows a text or an EPUB one word at a time, so you can read faster without moving your eyes.
+- **Character:** still, plain, bookish
+- **World:** A paper page in daylight: cream stock, dark ink and one moss green.
+- **Moments:** The single word in the reader, held at its recognition point
+- **Signature:** The recognition-point letter that every word lines up on.
+
+Draft, not yet reviewed by the owner. Treat it as a starting point.
+
 The application owns its appearance, components and behavior. This workbench is a one-way snapshot, not an editor or a second source of truth. In an authorized checkout, read its AGENTS.md and design-system.md (or DESIGN.md when no dedicated guide exists) before editing. Reuse real components and semantic tokens, update synthetic fixtures, run the app checks, then explicitly refresh this snapshot. Do not edit the snapshot to change the application.
 
 Supported study/app themes: light, dark. Contract schema: 1.

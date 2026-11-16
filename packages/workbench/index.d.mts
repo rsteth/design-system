@@ -1,4 +1,4 @@
-export const VERSION: '0.4.0';
+export const VERSION: '0.5.0';
 export type WorkbenchSection = 'foundations' | 'components' | 'patterns' | 'screens' | 'checks' | 'sources';
 export function skinName(value?: string): string;
 export const SECTIONS: WorkbenchSection[];
@@ -37,6 +37,7 @@ export interface WorkbenchCollection {
   };
   license: {spdx: string; note: string};
   fixtures: CollectionFixture[];
+  direction?: {status?: 'draft'; product?: string; character?: string; world?: string; moments?: string[]; signature?: string; voice?: string[]};
   tokensData?: WorkbenchTokenDocument;
   manifestURL?: string;
   publicRelease?: {status?: string};
@@ -82,3 +83,5 @@ export interface ReferenceStudy {
   limitations?: string[];
 }
 export function validateStudy(study: unknown): string[];
+export interface ShownDirection { product?: string; character?: string; world?: string; moments: string[]; signature?: string; voice: string[]; basis: 'written' | 'draft' | 'summary' | 'analysis' | 'none'; }
+export function directionFor(collection: Partial<WorkbenchCollection> | undefined): ShownDirection;

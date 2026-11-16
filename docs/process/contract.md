@@ -1,8 +1,45 @@
 # Contract and ownership
 
+## How the pieces fit
+
+Each app owns its design data in its own repository. Everything in this repository is derived from it on request.
+
+| In the app | What it holds | Who changes it |
+| --- | --- | --- |
+| `design/tokens.json` | The app's values, as a scale | The app |
+| `design/collection.json` | Fixtures, themes, source, license and the optional `direction` | The app |
+| `design/public-guide.md` | Optional prose notes for the public guide | The app |
+| `DESIGN.md`, root agent instructions | The app's own contract and rules; these win over anything installed | The app |
+| `workbench/`, `design/vendor/` | Installed copies of the blueprint, engine and token validator, pinned by hash | Only `tooling/blueprint.mjs` |
+
+From the app to here, when someone asks for a refresh:
+
+1. `tooling/sync-registry.mjs <app>` copies the collection, tokens, inventory and guide notes into `registry/apps/<id>/`.
+2. `npm run guides:build` regenerates `registry/guides/<id>/design-system.md` and `llms.txt`.
+3. The studio workbench reads the snapshot and shows the direction, tokens and fixtures.
+
+From here to the app, when someone asks for an upgrade: `tooling/blueprint.mjs --upgrade <app>` replaces the installed copies and nothing else.
+
+Nothing flows from a workbench or a guide back into an app. Steps for each of these are in `agent-tasks.md`.
+
+## Direction
+
+A collection may carry an optional `direction` block: product, character, world, moments, signature and voice notes. It records what the product is meant to be, so that intent is read before values.
+
+- **Where it is written:** the app's `design/collection.json`. That is the source. An app's `DESIGN.md` may say the same thing in prose, and the two must agree.
+- **Where it shows:** at the top of every workbench section, in full on Foundations and as one line beside fixtures, and at the top of every generated guide. It is public.
+- **Draft:** `"status": "draft"` marks text the owner has not reviewed. Both places label it. The mark covers the whole block. Text written by an agent carries it until the owner has written or approved every field.
+- **Central drafts:** a snapshot in `registry/apps/` may carry a draft direction written here. It is the one hand-written field in a snapshot. A refresh keeps it while the app has no direction of its own. The first refresh after the app records one, draft or not, replaces it whole; nothing is merged. A direction written into a snapshot without the draft mark is not kept: the freshness check reports it and the next refresh drops it.
+- **Nothing written:** the workbench and the guide show the first sentence of the collection summary or study description and say where it came from, or say that none is written. Reference studies are never given a written direction; theirs is always taken from the study description and labeled unverified.
+- **Limits:** each field is plain text of at most 400 characters without angle brackets; `moments` and `voice` are lists of one to twelve.
+
+## Guides
+
+Every entry's guide has one structure, composed by `tooling/agent-guides.mjs`: title, direction, the app's prose notes, then token and fixture tables generated from the snapshot. An app keeps its notes in `design/public-guide.md`. Notes that contain a table or repeat a generated section are refused. Guides are never edited by hand.
+
 ## Semantic values, existing appearance
 
-The v1 JSON schemas live in `packages/tokens`. Runtime validators add safety and consistency checks beyond JSON Schema. Token documents declare named modes, explicit selectors and typed dotted token names. The CSS compiler emits `--ds-<token-path>` variables and optional aliases for legacy names. Tokens are app-owned during this migration: shared vocabulary does not force a shared palette, font or spacing scale. Preserve current literals, cascade position and specificity. Generated CSS must match exactly on every check.
+The v1 JSON schemas live in `packages/tokens`. Runtime validators add safety and consistency checks beyond JSON Schema. Token documents declare named modes, explicit selectors and typed dotted token names. The CSS compiler emits `--ds-<token-path>` variables and optional aliases for legacy names. Tokens are app-owned: shared vocabulary does not force a shared palette, font or spacing scale. On first adoption, keep the rendered result, cascade position and specificity unchanged. That is a rule for the migration, not a requirement to mint one token per literal or to keep every value forever: an app may later consolidate its values into a deliberate scale, and `adviseTokens` points out where one is missing. Generated CSS must match its token document exactly on every check.
 
 Suggested semantic vocabulary: `color.background`, `color.surface`, `color.text`, `color.text.muted`, `color.accent`, `color.accent.hover`, `color.border`, `font.body`, `font.heading`, `font.mono`, `space.control`, `radius.control`, `motion.duration`. The three connected app base modes share `color.background`, `color.surface`, `color.text`, `color.text.muted` and `color.accent`; registry tests enforce these names and types. Optional `color.border` has the same meaning wherever present. App-specific semantic tokens can be added; this is a vocabulary, not a forced visual theme. Raw asset URLs are not CSS token values.
 

@@ -1,20 +1,28 @@
 # Design-system agent entry point
 
-Read `README.md`, then `docs/process/agent-tasks.md` for the requested task. Read `docs/process/contract.md` before changing interfaces, ownership or snapshots. Check repository status first and preserve unrelated uncommitted work. Look for applicable project-local skills before implementation; do not assume a skill is installed.
+Read `README.md`, then `docs/process/agent-tasks.md` for the requested task. `docs/process/contract.md` opens with how the apps, the registry, the workbench and the guides fit together; read it before changing interfaces, ownership, snapshots, a direction or a guide. Check repository status first and preserve unrelated uncommitted work. Look for applicable project-local skills before implementation; do not assume a skill is installed.
 
 ## Current scope
 
 Workbenches are one-way viewers. Application source, production UI, fixtures, capture scenes and token values stay app-owned. Registry documents and generated catalogs are derived snapshots. Do not add automatic workbench-to-app edits, a general-purpose theme editor, backend persistence or silent cross-project synchronization. stethem stays a static site; do not convert it to React or a hosted editing service.
 
 - `packages/workbench/`: shared engine and scoped workbench skin. Keep any companion changes in `templates/blank/vendor/workbench/` identical and verify the engine tests.
-- `blueprints/workbench/` + `templates/blank/`: portable blueprint and empty runnable starter. `tooling/blueprint.mjs` adds a new `workbench/` to a named target; it refuses existing destinations and leaves root instructions/scripts untouched.
+- `blueprints/workbench/` + `templates/blank/`: portable blueprint and empty runnable starter.
+  - `tooling/blueprint.mjs` adds a new `workbench/` to a named target. It refuses existing destinations and leaves root instructions and scripts untouched.
+  - `tooling/blueprint.mjs --upgrade` brings an installed workbench and its pinned token validator to the current version. It keeps files the app adapted and refuses edited vendor files. Run it only when asked, from a committed checkout, and follow it with the app's own checks.
+  - Blueprint wording is followed literally by every app that installs it. `docs/process/blueprint-guardrails.md` records what that has cost before; read it before changing the wording.
 - `registry/index.json` + `registry/apps/`: own-work catalog and app snapshots. Use `tooling/sync-registry.mjs`, never a parallel hand-edited theme owner. Refreshing one app must preserve other entries and must not claim an old integration revision for changed content.
 - `registry/references.json` + `collections/reference*`: attributed independent studies. They are separate from app snapshots/vendors. Do not treat speculative recipes or neutral patterns as real app screens.
 - `packages/capture/` + `tooling/capture.mjs`: allowlisted local capture recipes. App scenes remain in their source checkouts. Outputs under ignored `review/` are review evidence, not production assets.
 
 ## Common language
 
-“Grab screens for X” means discover X's screen fixtures or approved scenes and make reproducible captures with provenance. “Put the blueprint in repo Y so we can go to work” means verify the target checkout, install/adapt the reusable blueprint without overwriting existing work, and leave a discoverable pointer in the target's own instructions when appropriate. See the task guide for exact entry points and limits.
+- “Grab screens for X”: discover X's screen fixtures or approved scenes and make reproducible captures with provenance.
+- “Put the blueprint in repo Y so we can go to work”: verify the target checkout, install and adapt the reusable blueprint without overwriting existing work, and leave a discoverable pointer in the target's own instructions when appropriate.
+- “Upgrade the blueprint in app X”: bring an installed workbench to the current version with `tooling/blueprint.mjs --upgrade`, then run that app's checks.
+- “Write or rework the direction for X”: edit the `direction` block that says what the product is meant to be. The app's `design/collection.json` is its source.
+
+The task guide has the steps and limits for each.
 
 ## “Grab new thumbs for app X on my personal site”
 
@@ -28,4 +36,10 @@ Do not publish, push, deploy, replace approved images, enable Actions schedules 
 
 ## Agent-facing guidance
 
-`llms.txt` links the public guides for current Robin workbenches and independent reference studies. `tooling/agent-guides.mjs` generates these from registry data and optional app-owned public guidance. Run `npm run guides:build` after explicit snapshot refresh; `npm run guides:check` rejects stale output and broken local links. App edits belong in app checkouts, never generated central guides. Public guides omit local paths, private revisions and operational data; optional llms discovery is not an agent-compliance guarantee.
+- `llms.txt` links the public guides for current Robin workbenches and independent reference studies.
+- `tooling/agent-guides.mjs` generates every guide on one path: the collection's `direction`, the app's prose notes, then token and fixture tables. Notes live in `design/public-guide.md` in the app and `public-guide.md` in its snapshot.
+- The workbench shows the same direction through `directionFor` in the engine.
+- A snapshot may carry a direction marked `"status": "draft"` that was written here. It is the one hand-written field in a snapshot. A refresh keeps it while the app has no direction of its own. The first refresh after the app records one, draft or not, replaces it whole; nothing is merged. A direction written into a snapshot without the draft mark is not kept: the freshness check reports it and the next refresh drops it.
+- Run `npm run guides:build` after an explicit snapshot refresh or a direction change. `npm run guides:check` rejects stale output and broken local links.
+- App edits belong in app checkouts, never in generated central guides.
+- Public guides omit local paths, private revisions and operational data. Optional llms discovery is not an agent-compliance guarantee.

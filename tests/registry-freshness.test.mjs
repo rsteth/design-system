@@ -59,12 +59,21 @@ test('both release entry points run freshness preflight before writing preview o
  assert.ok(previews.indexOf('await assertRegistryFresh(')<previews.indexOf("await mkdir(join(outputRoot,'previews',id)"));
  assert.match(previews,/sources\[id\]\.push\('design\/'.*\.tokens.*\.inventory/);
 });
-test('app-owned public guidance participates in explicit sync and release freshness',async t=>{
- const {root,app}=await setup(t);
- for(const [file,key]of [['design/collection.json','id'],['design/palette.json','namespace'],['design/coverage.json','application']]){const path=join(app,file),data=await read(path);data[key]='reads';await writeFile(path,json(data));}
- await mkdir(join(app,'public'));await writeFile(join(app,'public/design-system.md'),'# Reads\nPublic design guide.\n');
+test('app guide notes use one path for every app and participate in explicit sync and release freshness',async t=>{
+ const {root,app,snapshot}=await setup(t);const notes=join(app,'design/public-guide.md');
+ await writeFile(notes,'# Example\nPublic design notes.\n');
+ await syncRegistry([app],{root});await assertRegistryFresh([app],{root});assert.equal(await readFile(join(snapshot,'public-guide.md'),'utf8'),'# Example\nPublic design notes.\n');
+ await writeFile(notes,'# Example\nUpdated notes.\n');await assert.rejects(assertRegistryFresh([app],{root}),/public guide/);
  await syncRegistry([app],{root});await assertRegistryFresh([app],{root});
- await writeFile(join(app,'public/design-system.md'),'# Reads\nUpdated guidance.\n');await assert.rejects(assertRegistryFresh([app],{root}),/public guide/);
- await syncRegistry([app],{root});await assertRegistryFresh([app],{root});
- await writeFile(join(app,'public/design-system.md'),'# Reads\n/Users/private/path');await assert.rejects(syncRegistry([app],{root}),/private\/local/);
+ await writeFile(notes,'# Example\n/Users/private/path');await assert.rejects(syncRegistry([app],{root}),/private\/local/);
+ await writeFile(notes,'# Example\n\n| Token | Value |\n| --- | --- |\n');await assert.rejects(syncRegistry([app],{root}),/prose only/);
+});
+test('a central draft direction survives a refresh and yields to the app\'s own',async t=>{
+ const {root,app,snapshot}=await setup(t);const path=join(snapshot,'collection.json'),saved=await read(path);
+ saved.direction={status:'draft',product:'A drafted line.'};await writeFile(path,json(saved));
+ await assertRegistryFresh([app],{root});
+ await syncRegistry([app],{root});assert.deepEqual((await read(path)).direction,{status:'draft',product:'A drafted line.'});
+ saved.direction={product:'Hand-edited without the draft mark.'};await writeFile(path,json(saved));await assert.rejects(assertRegistryFresh([app],{root}),/manifest/);
+ const manifest=await read(join(app,'design/collection.json'));manifest.direction={product:'The app\'s own line.'};await writeFile(join(app,'design/collection.json'),json(manifest));
+ await syncRegistry([app],{root});assert.deepEqual((await read(path)).direction,{product:'The app\'s own line.'});await assertRegistryFresh([app],{root});
 });

@@ -1,6 +1,6 @@
 # Task guide and catalog map
 
-Start in `design-system`, check `git status`, and read the task's applicable app instructions. Use explicit absolute checkout paths; do not assume the source app is the default sibling or that another worktree contains the same changes.
+Start in `design-system`, check `git status`, and read the task's applicable app instructions. `contract.md` opens with how the apps, the registry, the workbench and the guides fit together; read that first if the request touches more than one of them. Each task below says what to read for it; the entry and the target app's own root instructions are meant to be enough. Use explicit absolute checkout paths; do not assume the source app is the default sibling or that another worktree contains the same changes.
 
 ## Find the right catalog
 
@@ -8,7 +8,8 @@ Start in `design-system`, check `git status`, and read the task's applicable app
 - App snapshots: `registry/apps/<id>/collection.json`; source repository and inspected revision are in the manifest. An optional inventory maps source paths, fixtures and states and distinguishes recorded check results from current verification.
 - Reference studies: `/apps/studio/?library=references`; `registry/references.json`. Visual sheets and standard patterns are interpretation, not production application screens. Do not invent screenshots from a recipe or claim screens exist when none are registered.
 - Capture studio: `/apps/studio/?library=capture`; registered scenes live in `packages/capture/scenes.mjs`, while actual scene code stays app-owned.
-- Portable blueprint: `blueprints/workbench/README.md`; engine distribution and empty catalog live in `templates/blank/`.
+- Portable blueprint: `blueprints/workbench/README.md`; engine distribution and empty catalog live in `templates/blank/`. `blueprints/workbench/APP-DESIGN.template.md` is the skeleton for an app's own design contract.
+- Token advice: `npm run tokens:advice` prints non-failing notes for the registered app snapshots, or for token files given as arguments. The notes are advice and never fail a check.
 
 ## “Grab new thumbs for app X on my personal site”
 
@@ -46,9 +47,37 @@ Seven profiles cover desktop, mobile, Apple dimension targets (two iPhones, iPad
 
 1. Locate and verify Y's existing local checkout, root instructions, branch and dirty files. Read its applicable skills. A repository name is not permission to guess a filesystem destination.
 2. Read `blueprints/workbench/README.md`. From design-system run `node tooling/blueprint.mjs --check /absolute/project/path`, inspect the plan, then run without `--check` within the user's authorized scope.
-3. The installer creates only a new `workbench/`, with an empty collection list, scoped engine, adaptation notes, agent entry point and source/hash lock. It refuses to overwrite an existing workbench. For an existing integration, inspect and adapt it manually rather than bypassing the guard.
+3. The installer creates only a new `workbench/`, with an empty collection list, scoped engine, adaptation notes, agent entry point and source/hash lock. It refuses to overwrite an existing workbench. For a project that already has one, follow the upgrade task below rather than bypassing the guard.
 4. Follow the copied `workbench/DESIGN.md`. Reuse the target's actual production UI and framework. Add a short pointer to its root AGENTS/README without replacing existing instructions. Add package scripts only when useful for that target; static apps do not need a framework or bundle.
 5. Run that project's checks and fixture/browser QA. Report new/changed files, exact source pin and remaining gaps. No commit, upload, publication or deployment is implied by blueprint installation.
+
+## “Upgrade the blueprint in app X”
+
+This brings an installed `workbench/` and its pinned token validator to the current version. It does not change the app's tokens, fixtures, collection, instructions or scripts.
+
+Read this entry and the app's root instructions. The blueprint README repeats these steps for a reader inside an app; you do not need both.
+
+1. Locate and verify X's local checkout, branch and uncommitted files, and read its root instructions.
+2. Check this repository's `git status`. Upgrade from a committed checkout, so the app's lock records a commit. If there are uncommitted changes here, say so and ask before going on. The lock records the commit's hash but cannot check that the commit is pushed or kept, so use one on a branch the owner intends to keep and name the commit and branch in your report.
+3. Run `node tooling/blueprint.mjs --upgrade --check /absolute/app/path` and read the plan: files it would replace, add and remove, files kept because the app adapted them, and the token validator. Added files can include `APP-DESIGN.template.md`, a skeleton that changes nothing until someone copies it, and the workbench's own MIT `LICENSE` and `LICENSING.md`. The license files cover the copied workbench code only, not the app; name them in your report so the owner sees them arrive.
+4. If the tool refuses, stop and report why. An edited file under `vendor/`, a token copy that does not match its pin, or an app file that clashes with a new blueprint file each need the owner's decision. Do not edit a vendor file or a lock to get past the refusal.
+5. Run it again without `--check`.
+6. The tool says for each kept file whether the blueprint's version changed. Where it did, compare the app's copy with the one in `templates/blank/` and bring over what applies. Where it did not, there is nothing to merge.
+7. Run the app's own checks as its root instructions name them. The upgrade changes what a person sees in the app's local workbench, so include its browser checks where it has them, and open the local workbench to see that it loads.
+8. Report both versions, the files changed and kept, the source pin, and which checks ran and which did not. Do not commit unless asked, even where the app's instructions describe committing as part of its own workflow. If a central refresh was also asked for, continue with the snapshot task below.
+
+## “Write or rework the direction for X”
+
+Read this entry and the Direction section of `contract.md`.
+
+1. Find where X's direction lives. For an app it is `direction` in the app's `design/collection.json`. If the app has none, its snapshot here in `registry/apps/<id>/collection.json` may hold a draft. The Workbench's own is in `collections/original/workbench/collection.json`. Reference studies have none and are not given one.
+2. Derive it from what the product does and who it is for: read the app's `DESIGN.md`, its landing copy and its fixture names. Without the app's checkout, use what its snapshot holds here: the summary, fixture names, inventory and guide notes. Say in your report what you could not read. Do not derive it from the token table or from what is fashionable.
+3. Write the fields the contract lists. Character is two or three concrete words, not clean, modern, sleek, minimal or premium. World is a place or a material, not a list of the app's colors. Moments are the one or two places that get rich color and detail. Leave a field out rather than fill it with words that fit any product.
+4. Where the owner gave words for a field, use them exactly. Revise another field only where it now contradicts the owner's words, and list every field you changed with its old and new text so the owner can undo any of them.
+5. Mark text you wrote with `"status": "draft"`. The mark covers the whole block: keep it while any field is not the owner's own or approved text, and say which fields are the owner's words.
+6. With edit access to the app: change `design/collection.json` there, keep the Direction section of its `DESIGN.md` saying the same thing, run the app's checks, then refresh the snapshot. Without it: edit only the `direction` block of the snapshot here and keep it marked as a draft. Never hand-edit any other field of a snapshot.
+7. Run `npm run guides:build`, then `npm run check`.
+8. Serve this checkout with `npm run dev`. If it reports that port 4310 is taken, another checkout may be using it: run `node tooling/serve.mjs . <port>` with a free port instead. Open `/apps/studio/?collection=<id>`, confirm the version in the header matches `package.json`, and read the Direction panel on Foundations and on one fixture section.
 
 ## Refresh a one-way app snapshot
 
@@ -62,6 +91,6 @@ For a standalone portability smoke test, run `PLAYWRIGHT_MODULE=/absolute/path/t
 
 ## Read a product design contract
 
-Start at `llms.txt` or the studio's Implementation guide link. Each existing Robin entry has `registry/guides/<id>/design-system.md`; reference entries have adaptation guidance explicitly distinguished from official product contracts. Reads and Bandit can supply reviewed public guides in their own repositories. Explicit registry sync copies these and release freshness checks compare them to the source. Run `npm run guides:build` after syncing, then `npm run check`. Generated guides contain selected token/fixture fields, not raw source metadata.
+Start at `llms.txt` or the studio's Implementation guide link. Each existing Robin entry has `registry/guides/<id>/design-system.md`; reference entries have adaptation guidance explicitly distinguished from official product contracts. Every guide has the structure described under Guides in `contract.md`: direction, the app's prose notes, then generated tables. Explicit registry sync copies the notes and release freshness checks compare them to the source. Run `npm run guides:build` after syncing, then `npm run check`. Generated guides contain selected token/fixture fields, not raw source metadata.
 
 For an authorized app change, follow its repo instructions and edit its actual components and tokens, then refresh the one-way snapshot. A public guide does not grant permission or ensure a crawler reads it. Public capture navigation is informational; fresh capture generation still needs a local checkout with approved scenes.

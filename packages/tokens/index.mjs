@@ -59,6 +59,7 @@ export function validateCollection(input) {
   if(input.source?.visibility!==undefined&&!['local-only','public'].includes(input.source.visibility))errors.push('Invalid source visibility.');
   if (!['author-owned','independent-analysis','adapted'].includes(input.provenance?.status) || !Array.isArray(input.provenance?.sources)) errors.push('Explicit provenance required.');
   if (!input.license?.spdx || !input.license?.note) errors.push('License declaration and note required.');
+  if (input.direction !== undefined) errors.push(...validateDirection(input.direction));
   if (!Array.isArray(input.fixtures)) errors.push('fixtures must be an array.');
   else {
     const ids = new Set();
@@ -72,6 +73,61 @@ export function validateCollection(input) {
     }
   }
   return errors;
+}
+
+const directionFields = ['product','character','world','signature'];
+/** Optional, public statement of intent. Every field is optional; present fields must be short plain text. */
+function validateDirection(input) {
+  if (!record(input)) return ['direction must be an object.'];
+  const errors = [], text = value => typeof value === 'string' && !!value.trim() && value.length <= 400 && !/[<>]/.test(value);
+  for (const key of Object.keys(input)) if (![...directionFields,'moments','voice','status'].includes(key)) errors.push(`Unknown direction field: ${key}`);
+  if (input.status !== undefined && input.status !== 'draft') errors.push('direction.status may only be "draft"; remove it once the owner has reviewed the text.');
+  for (const field of directionFields) if (input[field] !== undefined && !text(input[field])) errors.push(`direction.${field} must be short plain text.`);
+  for (const field of ['moments','voice']) if (input[field] !== undefined && !(Array.isArray(input[field]) && input[field].length > 0 && input[field].length <= 12 && input[field].every(text))) errors.push(`direction.${field} must be a short list of plain text.`);
+  return errors;
+}
+
+// Advice thresholds: more distinct steps than this usually means values were recorded, not chosen.
+const scaleLimits = {'font.size': 12, 'space': 16, 'radius': 8, 'font.weight': 4, 'line.height': 5, 'font.tracking': 4};
+const hexChannels = value => { const hex = /^#([0-9a-f]{6})$/i.exec(String(value).trim()); return hex ? [0, 2, 4].map(index => parseInt(hex[1].slice(index, index + 2), 16)) : null; };
+/**
+ * Plain-language notes about a token document. Advice only: it never fails validation,
+ * and an app may have good reasons to keep what a note describes.
+ */
+export function adviseTokens(input) {
+  if (validateTokens(input).length) return [];
+  const notes = [];
+  for (const mode of input.modes) {
+    const entries = Object.entries(mode.tokens), label = input.modes.length > 1 ? ` (${mode.id})` : '';
+    for (const [prefix, limit] of Object.entries(scaleLimits)) {
+      const group = entries.filter(([path, token]) => (path === prefix || path.startsWith(prefix + '.')) && ['dimension','number'].includes(token.type));
+      const values = new Set(group.map(([, token]) => String(token.value).trim()));
+      if (values.size <= limit) continue;
+      // A step named after its value is fine on a chosen scale; it is a sign of recorded literals only when there are this many.
+      const valueNamed = group.filter(([path]) => /^v(?:minus)?\d+(?:p\d+)?(?:px|em|rem)?$/.test(path.split('.').pop())).map(([path]) => path);
+      notes.push(`${prefix} has ${values.size} distinct values${label}. A scale usually needs ${limit} or fewer; check whether some are one-offs.${valueNamed.length ? ` ${valueNamed.length} ${valueNamed.length === 1 ? 'is' : 'are'} named after their value, for example ${valueNamed[0]}, which records a literal rather than a decision.` : ''}`);
+    }
+    // Compare colors only within one role family, such as color.text.*. Close surface steps are how dark themes show depth.
+    const colors = entries.map(([path, token]) => [path, token.type === 'color' ? hexChannels(token.value) : null]).filter(([, channels]) => channels);
+    const family = path => path.split('.').slice(0, 2).join('.');
+    // Interaction states sit close to their base on purpose.
+    const state = path => /^(hover|active|pressed|focus|disabled|selected)$/.test(path.split('.').pop());
+    const close = [];
+    for (let a = 0; a < colors.length; a++) for (let b = a + 1; b < colors.length; b++) {
+      if (family(colors[a][0]) !== family(colors[b][0]) || state(colors[a][0]) || state(colors[b][0])) continue;
+      const distance = Math.max(...colors[a][1].map((channel, index) => Math.abs(channel - colors[b][1][index])));
+      if (distance > 0 && distance <= 6) close.push(`${colors[a][0]} and ${colors[b][0]}`);
+    }
+    if (close.length) notes.push(`${close.length} pair${close.length === 1 ? '' : 's'} of colors in the same role family are nearly identical${label}, for example ${close[0]}. If people cannot tell them apart, one role is enough.`);
+    const platformOnly = new Map();
+    for (const [path, token] of entries) {
+      if (token.type !== 'fontFamily') continue;
+      const first = String(token.value).split(',')[0].trim().replace(/^['"]|['"]$/g, '');
+      if (/^ui-/.test(first)) platformOnly.set(first, [...(platformOnly.get(first) ?? []), path]);
+    }
+    for (const [keyword, paths] of platformOnly) notes.push(`${paths.length === 1 ? `${paths[0]} leads` : `${paths.slice(0, -1).join(', ')} and ${paths.at(-1)} lead`} with ${keyword}${label}, which not every browser resolves. Check what renders in each engine; a named, shipped family is the only way to get the same face everywhere.`);
+  }
+  return notes;
 }
 
 /** Repository-relative file paths only; never URLs, encoded paths, or traversal. */
