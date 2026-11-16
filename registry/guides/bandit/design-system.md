@@ -28,7 +28,7 @@ The repository's AGENTS.md and design-system.md specify the editable sources, co
 
 [Open Gather Motion](https://gathermotion.io/). Public guidance helps discovery; it cannot force an agent to read it or authorize account access, edits or deployment.
 
-Supported study/app themes: light. Contract schema: 1. Package version: 0.0.1, which identifies the package and not a verified deployed release.
+Supported study/app themes: light. Contract schema: 1.
 
 Keep semantic controls, visible keyboard focus, meaningful labels and reduced-motion behavior. Sample fixtures are presentation evidence, not live service acceptance.
 

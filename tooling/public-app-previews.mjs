@@ -11,7 +11,9 @@ const ROOT=fileURLToPath(new URL('../',import.meta.url));
 const hash=bytes=>createHash('sha256').update(bytes).digest('hex');
 const json=value=>JSON.stringify(value,null,2)+'\n';
 export const PREVIEW_NOTICE='Synthetic design preview. No account, backend, provider, or live waiting list is connected. Nothing is saved or sent.';
-export const READS_SOURCES=Object.freeze(['public/index.html','public/style.css','public/app.js','public/waitlist-client.js','design/fixtures.mjs','design/coverage.mjs','design/fixture-entry.mjs','workbench/vendor/workbench/theme-adapter.mjs']);
+export const READS_SOURCES=Object.freeze(['public/index.html','public/style.css','public/app.js','public/waitlist-client.js','design/fixtures.mjs','design/coverage.mjs','design/fixture-entry.mjs','workbench/vendor/workbench/theme-adapter.mjs','public/nunito-latin-wght-normal.woff2','design/licenses/NUNITO-OFL.txt']);
+// The self-hosted face Reads ships. A different file is source drift and needs its license checked again.
+const READS_FONT={file:'nunito-latin-wght-normal.woff2',sha256:'ba344451eab25b217a165363b1982048a5e5830a0daf36577973955a04cac793',license:'licenses/NUNITO-OFL.txt'};
 export const PREVIEW_CSP="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; media-src 'self' blob:; connect-src 'none'; object-src 'none'; frame-src 'none'; base-uri 'none'; form-action 'none'";
 function safeBase(base){if(!/^\/(?:[a-zA-Z0-9_-]+\/)*$/.test(base))throw Error('Preview base must be a safe absolute path with trailing slash.');return base;}
 function inside(root,path){const rel=relative(root,path);return rel!==''&&!rel.startsWith('..')&&!isAbsolute(rel);}
@@ -49,11 +51,14 @@ async function buildReads({root,out,base,collection}){
  const prefix=base+'previews/reads/';
  let html=(await input(root,'public/index.html')).toString();
  html=replaceOnce(html,'href="/style.css"',`href="${prefix}style.css"`,'Reads stylesheet');
+ html=replaceOnce(html,`href="/${READS_FONT.file}"`,`href="${prefix}${READS_FONT.file}"`,'Reads font preload');
  html=replaceOnce(html,'src="/app.js"',`src="${prefix}design/fixture-entry.mjs" crossorigin="anonymous"`,'Reads entry');
  html=html.replace(/href="(?:\/|\/auth\/login)"/g,`href="${prefix}fixture/?fixture=studio-empty"`);
  html=replaceOnce(html,'</head>',`<meta http-equiv="Content-Security-Policy" content="${PREVIEW_CSP}"><style>.design-fixture-notice{position:relative;z-index:10;margin:0;padding:8px 16px;background:#111;color:#ddd;font:11px/1.6 system-ui;text-align:center}</style></head>`,'Reads CSP');
  await output(out,'fixture/index.html',html);
- await output(out,'style.css',await input(root,'public/style.css'));
+ await output(out,'style.css',replaceOnce((await input(root,'public/style.css')).toString(),`url(/${READS_FONT.file})`,`url(${prefix}${READS_FONT.file})`,'Reads font face'));
+ const font=await input(root,'public/'+READS_FONT.file);if(hash(font)!==READS_FONT.sha256)throw Error('Source adapter drift: Reads font file');
+ await output(out,READS_FONT.file,font);await output(out,READS_FONT.license,await input(root,'design/licenses/NUNITO-OFL.txt'));
  await output(out,'app.js',adaptReadsApp((await input(root,'public/app.js')).toString(),prefix));
  await output(out,'waitlist-client.js',adaptReadsWaitlist((await input(root,'public/waitlist-client.js')).toString()));
  let fixtures=(await input(root,'design/fixtures.mjs')).toString().replaceAll('http://127.0.0.1:3148','https://fixture.invalid').replaceAll('/api/','/fixture-data/').replaceAll('\\/api\\/','\\/fixture-data\\/').replaceAll('/auth/logout','/fixture-data/logout');
@@ -65,7 +70,8 @@ async function buildReads({root,out,base,collection}){
  entry=replaceOnce(entry,'globalThis.fetch=createFixtureTransport(id);','globalThis.__readsFixtureFetch=createFixtureTransport(id);','Reads transport');
  entry=replaceOnce(entry,"await import('/app.js')",`globalThis.__readsSyntheticRecording = new File([Uint8Array.from(atob(${JSON.stringify(syntheticAudio().toString('base64'))}),c=>c.charCodeAt(0))],'synthetic-tone.wav',{type:'audio/wav'});\nawait import('../app.js')`,'Reads product entry');
 
- entry=entry.replaceAll("'/fixture?fixture=",`'${prefix}fixture/?fixture=`).replaceAll("'Design preview | Synthetic data only | Nothing is saved or sent'",JSON.stringify(PREVIEW_NOTICE));
+ entry=entry.replaceAll("'/fixture?fixture=",`'${prefix}fixture/?fixture=`);
+ entry=replaceOnce(entry,"'Design preview. Synthetic data only. Nothing is saved or sent.'",JSON.stringify(PREVIEW_NOTICE),'Reads preview notice');
  // Match the packaged link paths too, including the original home-link intent.
  entry=replaceOnce(entry,"document.querySelectorAll('a[href=\"/\"],a[href=\"/auth/login\"]')","document.querySelectorAll('.wordmark,#header-login,#login')",'Reads fixture navigation');
  entry += `
@@ -93,7 +99,7 @@ adaptForms();new MutationObserver(adaptForms).observe(document.body,{childList:t
  await output(out,'design/fixture-entry.mjs',entry);
  await output(out,'theme-adapter.mjs',await input(root,'workbench/vendor/workbench/theme-adapter.mjs'));
  await output(out,'assets/synthetic-tone.wav',syntheticAudio());
- return {fixtures:collection.fixtures.map(({id})=>({id,url:'../../../previews/reads/fixture/?fixture='+encodeURIComponent(id)+(id==='account-denied'?'&auth=failed':'')})),version:JSON.parse((await input(root,'package.json')).toString()).version,status:'synthetic-preview',sourceFiles:READS_SOURCES,adapters:['Product markup, styles and renderer; only in-memory fixture requests.','Waitlist runs against synthetic in-memory responses; contact details replaced before handling. User file selection disabled; recording handlers receive generated audio only. Authentication navigation removed.','A generated one-second tone replaces every original audio route.'],excluded:['src/ (server, authentication, providers, persistence)','launcher/','infra/','environment files','source maps','account data','real audio or voice recordings']};
+ return {fixtures:collection.fixtures.map(({id})=>({id,url:'../../../previews/reads/fixture/?fixture='+encodeURIComponent(id)+(id==='account-denied'?'&auth=failed':'')})),version:JSON.parse((await input(root,'package.json')).toString()).version,status:'synthetic-preview',notices:[{id:'Nunito font',license:'OFL-1.1',files:['previews/reads/'+READS_FONT.license]}],sourceFiles:READS_SOURCES,adapters:['Product markup, styles and renderer; only in-memory fixture requests.','Waitlist runs against synthetic in-memory responses; contact details replaced before handling. User file selection disabled; recording handlers receive generated audio only. Authentication navigation removed.','A generated one-second tone replaces every original audio route.'],excluded:['src/ (server, authentication, providers, persistence)','launcher/','infra/','environment files','source maps','account data','real audio or voice recordings']};
 }
 async function dependencyNotices(modulePaths,outputRoot){
  const notices=[],licenseGaps=[];
@@ -123,9 +129,10 @@ export async function buildPublicAppPreviews({outputRoot,base='/design-system/',
  for(const id of ['reads','bandit']){collections[id]=JSON.parse((await input(roots[id],'design/collection.json')).toString());if(collections[id].id!==id)throw Error('Incorrect app input.');sources[id].push('design/'+collections[id].tokens,...(collections[id].inventory?['design/'+collections[id].inventory]:[]));for(const fixture of collections[id].fixtures)if(!/^[a-z0-9-]+$/.test(fixture.id))throw Error('Unsafe fixture identifier.');before[id]=await signature(roots[id],sources[id]);for(const path of [join(outputRoot,'previews'),join(outputRoot,'previews',id)]){try{if((await lstat(path)).isSymbolicLink())throw Error('Preview output cannot contain symlinks.');}catch(error){if(error.code!=='ENOENT')throw error;}}await mkdir(join(outputRoot,'previews',id),{recursive:true});if((await readdir(join(outputRoot,'previews',id))).length)throw Error('App preview output must be empty.');}
  const reads=await buildReads({root:roots.reads,out:join(outputRoot,'previews/reads'),base,collection:collections.reads});
  const bandit=await buildBandit({root:roots.bandit,out:join(outputRoot,'previews/bandit'),base,collection:collections.bandit,outputRoot},{ROOT,input,output,replaceOnce,replaceSection,dependencyNotices,PREVIEW_CSP,PREVIEW_NOTICE,hash});
- const apps={reads,bandit:bandit.app};
+ const {notices:readsNotices,...readsApp}=reads;
+ const apps={reads:readsApp,bandit:bandit.app};
  for(const id of ['reads','bandit'])await output(outputRoot,'previews/'+id+'/fixture-catalog.json',json(collections[id].fixtures.map(({id,title,section,states})=>({id,title,section,states}))));
  for(const id of ['reads','bandit']){const pkg=JSON.parse((await input(roots[id],'package.json')).toString());if(pkg.version!==apps[id].version)throw Error('App package version drift.');if(before[id]!==await signature(roots[id],sources[id]))throw Error(`Source changed during app preview packaging: ${id}`);}
  const files=[];for(const id of ['reads','bandit'])for(const path of await list(join(outputRoot,'previews',id))){const bytes=await readFile(path),name=relative(outputRoot,path);assertPublicPreviewText(name,bytes.toString());files.push({path:name,bytes:bytes.length,sha256:hash(bytes)});}
- return {apps,notices:bandit.notices,licenseGaps:bandit.licenseGaps,files,sourceUnchanged:true,sourceVerification:'Allowlisted source bytes and git working-tree status matched before and after. Ignored app outputs are not hashed.',limitations:['Synthetic previews only; production authentication, services and private data are not included.','Original-work ownership remains unchanged. Frontend code and listed design assets are inspectable by visitors.','Hosting must supply Access-Control-Allow-Origin: * for opaque allow-scripts-only frames.','No source maps, credentials, environment loading, private commit revisions or public network requests.']};
+ return {apps,notices:[...bandit.notices,...readsNotices],licenseGaps:bandit.licenseGaps,files,sourceUnchanged:true,sourceVerification:'Allowlisted source bytes and git working-tree status matched before and after. Ignored app outputs are not hashed.',limitations:['Synthetic previews only; production authentication, services and private data are not included.','Original-work ownership remains unchanged. Frontend code and listed design assets are inspectable by visitors.','Hosting must supply Access-Control-Allow-Origin: * for opaque allow-scripts-only frames.','No source maps, credentials, environment loading, private commit revisions or public network requests.']};
 }

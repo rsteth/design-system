@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import {READS_SOURCES,BANDIT_SOURCES,BANDIT_ASSETS,PREVIEW_CSP,syntheticAudio,adaptReadsApp,adaptReadsWaitlist,adaptBanditWaitlist,buildPublicAppPreviews,assertPublicPreviewText} from '../tooling/public-app-previews.mjs';
 test('preview source allowlists contain frontend presentation only',()=>{
- assert.equal(READS_SOURCES.length,8);assert.equal(BANDIT_SOURCES.length,30);assert.equal(BANDIT_ASSETS.length,13);
+ assert.equal(READS_SOURCES.length,10);assert.equal(BANDIT_SOURCES.length,31);assert.equal(BANDIT_ASSETS.length,13);
  for(const path of [...READS_SOURCES,...BANDIT_SOURCES,...BANDIT_ASSETS])assert.doesNotMatch(path,/(^|\/)(\.env|src|api|auth|backend|infra|node_modules|\.git)(\/|$)|\.map$/);
  assert.ok(BANDIT_ASSETS.every(path=>/^(fonts|images|illustrations)\//.test(path)));
  assert.equal(BANDIT_ASSETS.filter(path=>path.endsWith('.png')).length,1);

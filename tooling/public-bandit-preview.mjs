@@ -12,7 +12,7 @@ export const BANDIT_SOURCES=Object.freeze([
  'apps/web/app/productions/[id]/director-panel.tsx','apps/web/app/productions/[id]/director-hosted-controls.tsx','apps/web/app/productions/[id]/director-connections.tsx',
  'apps/web/app/productions/new/page.tsx','apps/web/app/productions/[id]/production-board.tsx',
  'apps/web/app/productions/[id]/advanced-controls.tsx','apps/web/app/productions/[id]/review/review-room.tsx',
- 'apps/web/app/productions/[id]/review/advanced-review.tsx','apps/web/app/asset-preview.tsx','apps/web/app/creative-memory.tsx',
+ 'apps/web/app/productions/[id]/review/advanced-review.tsx','apps/web/app/productions/[id]/review/import-take.tsx','apps/web/app/asset-preview.tsx','apps/web/app/creative-memory.tsx',
  'design/tokens.json','design/preview/coverage.json','design/preview/fixture-state.ts','design/preview/app/studio-fixture.tsx',
  'design/preview/app/[fixture]/page.tsx','design/preview/app/preview-boundary.tsx','design/preview/app/preview.css',
  'design/preview/samples.ts','workbench/vendor/workbench/theme-adapter.mjs'

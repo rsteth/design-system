@@ -6,8 +6,7 @@
   "renderer": "dom",
   "summary": "Real Reads landing and studio UI, rendered with deterministic in-memory fixtures. Warm dark surfaces, soft blue accents and rounded controls remain app-owned.",
   "direction": {
-    "status": "draft",
-    "product": "Turns a story, an essay or a letter into audio read in the voice of someone you love, with that person's permission.",
+    "product": "Reads turns a story, an essay or a letter into audio read in the voice of someone you love, with that person's permission.",
     "character": "hushed, tender, careful",
     "world": "A bedside at night, with lamp light, a kept letter and headphones.",
     "moments": [
@@ -525,14 +524,26 @@
         "retry"
       ],
       "description": "Actual production DOM, styles and event handlers with isolated synthetic transport. Region fixtures hide sibling regions only; no duplicate product markup. Reload resets all state."
+    },
+    {
+      "id": "job-delete-confirm",
+      "title": "Delete confirmation",
+      "section": "patterns",
+      "url": "http://127.0.0.1:3148/fixture?fixture=job-delete-confirm",
+      "states": [
+        "confirm open",
+        "keep",
+        "delete"
+      ],
+      "description": "Actual production DOM, styles and event handlers with isolated synthetic transport. Region fixtures hide sibling regions only; no duplicate product markup. Reload resets all state."
     }
   ],
   "inventory": "inventory.json",
   "registrySnapshot": {
     "authority": "App-owned design collection, tokens and optional inventory",
     "baseRevision": null,
-    "inventorySha256": "8247277150411b183121c5b732cb42d3b60bc2e86f2fd5d68e518acd87098179",
-    "tokenSha256": "cbcbd0485b32e1320786975098ed2e57bcdcb93f34b85a5b18120f83306b3e1b",
+    "inventorySha256": "7bc23118fd4b3632daacba13903180c62fb78bce508b761dd692f2f38bf20ea9",
+    "tokenSha256": "a1917f4b70f9883e5fea0165585805a587358aa50afdcb580b77d68d1fe32589",
     "integrationStatus": "unpublished-local-snapshot",
     "integrationRevision": null,
     "withheldRevisions": [

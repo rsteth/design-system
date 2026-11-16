@@ -12,7 +12,7 @@ if(!module)throw Error('Set PLAYWRIGHT_MODULE to an existing installed Playwrigh
 const {chromium,expect}=await import(pathToFileURL(module));
 const reads=JSON.parse(await readFile(join(root,'previews/reads/fixture-catalog.json'),'utf8'));
 const bandit=JSON.parse(await readFile(join(root,'previews/bandit/fixture-catalog.json'),'utf8'));
-assert.equal(reads.length,42,'Reads release includes every source-owned fixture');
+assert.equal(reads.length,43,'Reads release includes every source-owned fixture');
 assert.equal(bandit.length,55,'Bandit release includes every source-owned fixture');
 const banditLegacy=new Set(['landing','overview','empty','controls','status']);
 const allFixtures=[...reads.map(({id})=>({app:'reads',id,path:`previews/reads/fixture/?fixture=${id}${id==='account-denied'?'&auth=failed':''}`,theme:'dark'})),...bandit.map(({id})=>({app:'bandit',id,path:`previews/bandit/${id}/`,theme:'light'}))];
@@ -59,7 +59,7 @@ try{
       await target.locator('#example').click();await expect(target.locator('#generate')).toBeEnabled();await target.locator('#generate').click();await expect(target.locator('.job .badge')).toHaveText('Ready to listen');
      }
      if(['studio-progress','studio-failed'].includes(fixture.id)){
-      if(fixture.id==='studio-progress'){await target.getByRole('button',{name:'Cancel',exact:true}).click();await expect(target.locator('.badge')).toHaveText('cancelled');}
+      if(fixture.id==='studio-progress'){await target.getByRole('button',{name:'Cancel',exact:true}).click();await expect(target.locator('.badge')).toHaveText('Cancelled');}
       await target.getByRole('button',{name:'Retry this read'}).click();await expect(target.locator('.badge')).toHaveText('Ready to listen');
      }
      if(fixture.id==='studio-ready'){const audio=target.locator('.job audio');await audio.evaluate(a=>a.load());await expect.poll(()=>audio.evaluate(a=>a.readyState)).toBeGreaterThanOrEqual(1);}
@@ -70,10 +70,10 @@ try{
      if(fixture.id==='reader-controls') {await target.locator('#speed').focus();await page.keyboard.press('ArrowRight');await expect(target.locator('#speed-value')).toHaveText('1.1x');}
      if(fixture.id==='reader-preflight-pending')await expect(target.locator('#preflight')).toHaveText('Checking these words...');
      if(fixture.id==='reader-preflight-error')await expect(target.locator('#preflight')).toContainText('Synthetic estimate unavailable');
-     if(fixture.id==='hosted-allowance'){await expect(target.locator('#preflight')).toContainText('Remaining: 5000 units / 8 calls');await target.locator('#provider-consent').check();await target.locator('#text').fill('Changed words');await expect(target.locator('#provider-consent')).not.toBeChecked();}
+     if(fixture.id==='hosted-allowance'){await expect(target.locator('#preflight')).toContainText('Room for about 5,000 more characters');await target.locator('#provider-consent').check();await target.locator('#text').fill('Changed words');await expect(target.locator('#provider-consent')).not.toBeChecked();}
      if(fixture.id==='studio-mixed')await expect(target.locator('.job')).toHaveCount(5);
      if(fixture.id==='job-blocked')await expect(target.getByRole('button',{name:'Retry this read'})).toHaveCount(0);
-     if(fixture.id==='hosted-pending'){await target.getByRole('button',{name:'Check provider verification'}).click();await expect(target.locator('#voice-shelf')).toContainText('verification: verified');}
+     if(fixture.id==='hosted-pending'){await target.getByRole('button',{name:'Check if the voice is ready'}).click();await expect(target.locator('#voice-shelf')).toContainText('The voice is ready');}
      if(fixture.id==='hosted-create'){
       // Force a production renderVoices refresh while leaving the earlier reader
       // and recording forms adapted. This must also adapt the replacement form.
@@ -96,11 +96,11 @@ try{
        return form!==globalThis.__readsOldHostedForm;
       })).toBe(true);
       await expect(target.locator('#voice-shelf form button')).toHaveAttribute('type','button');
-      await target.getByText('Create a reading voice with ElevenLabs',{exact:true}).click();const form=target.locator('#voice-shelf form');for(const box of await form.locator('input[type=checkbox]').all())await box.check();await form.getByRole('button',{name:'Send sample & create voice'}).click();await expect(target.locator('#voice-shelf')).toContainText('ElevenLabs voice: pending');
+      await target.getByText('Make a voice from this recording',{exact:true}).click();const form=target.locator('#voice-shelf form');for(const box of await form.locator('input[type=checkbox]').all())await box.check();await form.getByRole('button',{name:'Make their voice'}).click();await expect(target.locator('#voice-shelf')).toContainText('The voice is being checked');
      }
      if(fixture.id.startsWith('recording-')){
       await target.locator('#name').fill('Synthetic recording');await target.locator('#permission').check();await target.locator('#single').check();await target.locator('#save-voice').click();
-      await expect(target.locator('#voice-status')).toContainText(fixture.id==='recording-form'?'Recording saved':fixture.id==='recording-error'?'Synthetic validation':'Checking recording');
+      await expect(target.locator('#voice-status')).toContainText(fixture.id==='recording-form'?'Recording saved':fixture.id==='recording-error'?'Synthetic validation':'Checking the recording');
      }
      if(fixture.id.startsWith('waitlist-')){
       if(['waitlist-saving','waitlist-error'].includes(fixture.id)){await target.locator('#waitlist-email').fill('preview@example.test');await target.locator('#waitlist-consent').check();await target.locator('#waitlist-submit').click();await expect(target.locator('#waitlist-result')).toContainText(fixture.id==='waitlist-saving'?'Saving your request':'Synthetic interruption');}
@@ -152,7 +152,7 @@ try{
     }
     if(!framed&&['landing','studio-ready','overview'].includes(fixture.id)){await target.locator('body').evaluate(()=>{document.activeElement?.blur();window.scrollTo(0,0);});await page.mouse.move(0,0);await page.screenshot({path:join(evidence,`${fixture.app}-${fixture.id}-${viewport.width}.png`),fullPage:true});}
     await page.reload({waitUntil:'domcontentloaded'});
-    if(fixture.app==='reads'){await expect(target.locator('html')).toHaveAttribute('data-fixture-ready',fixture.id);if(fixture.id==='studio-empty')await expect(target.locator('.job')).toHaveCount(0);if(fixture.id==='studio-progress')await expect(target.locator('.badge')).toHaveText('running');if(fixture.id==='reader-controls')await expect(target.locator('#speed-value')).toHaveText('1.0x');if(fixture.id.startsWith('recording-'))await expect(target.locator('#voice-status')).toHaveText('');if(fixture.id==='hosted-pending')await expect(target.locator('#voice-shelf')).toContainText('verification: pending');}
+    if(fixture.app==='reads'){await expect(target.locator('html')).toHaveAttribute('data-fixture-ready',fixture.id);if(fixture.id==='studio-empty')await expect(target.locator('.job')).toHaveCount(0);if(fixture.id==='studio-progress')await expect(target.locator('.badge')).toHaveText('In progress');if(fixture.id==='reader-controls')await expect(target.locator('#speed-value')).toHaveText('1.0x');if(fixture.id.startsWith('recording-'))await expect(target.locator('#voice-status')).toHaveText('');if(fixture.id==='hosted-pending')await expect(target.locator('#voice-shelf')).toContainText('The voice is being checked');}
     else{await expect(target.locator('html')).toHaveAttribute('data-preview-ready','true');if(!banditLegacy.has(fixture.id))await expect(target.locator('html')).toHaveAttribute('data-fixture-ready',fixture.id);if(fixture.id==='profile-import')await expect(target.getByLabel('Profile JSON',{exact:true})).toHaveValue('');if(fixture.id==='appearance')await expect(target.getByLabel('Grain intensity')).toHaveValue('12');if(fixture.id==='overview')await expect(target.getByLabel('Grain intensity')).toHaveValue('12');if(fixture.id==='controls')await expect(target.getByLabel('Production name')).toHaveValue('A quiet morning');}
     console.log('Passed',fixture.app,fixture.id,viewport.width,framed?'opaque':'standalone');
     results.push({app:fixture.app,fixture:fixture.id,width:viewport.width,sandbox:framed,passed:true});
@@ -161,6 +161,6 @@ try{
   await context.close();
  }
  assert.deepEqual(external,[]);assert.deepEqual(operations,[]);assert.deepEqual(failures,[]);assert.deepEqual(errors,[]);
- const report={status:'passed',scope:selected||'all94',cases:results.length,results,banditPresentation,browser:browser.version(),runtimeErrors:errors,externalRequests:external,backendRequests:operations,failedResponses:failures,limits:['Synthetic-only interaction; production acceptance and live providers not tested.','Screenshots must be visually inspected separately.']};
+ const report={status:'passed',scope:selected||'all'+fixtures.length,cases:results.length,results,banditPresentation,browser:browser.version(),runtimeErrors:errors,externalRequests:external,backendRequests:operations,failedResponses:failures,limits:['Synthetic-only interaction; production acceptance and live providers not tested.','Screenshots must be visually inspected separately.']};
  await writeFile(join(evidence,'result.json'),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report));
 }finally{if(errors.length||external.length||operations.length||failures.length)console.error(JSON.stringify({errors,external,operations,failures}));await browser?.close();await new Promise(r=>server.close(r));}
