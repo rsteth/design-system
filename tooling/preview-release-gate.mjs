@@ -22,10 +22,12 @@ export function assertSameFingerprint(before,after,label) {assert.deepEqual(afte
 export function validatePreviewReport(report,catalogs) {
  assert.equal(report.status,'passed','Preview browser checks must pass.');
  for(const field of ['runtimeErrors','externalRequests','backendRequests','failedResponses'])assert.deepEqual(report[field],[],`Preview ${field} must be empty.`);
+ const themes={reads:['dark'],bandit:['light','dark']};
+ assert.deepEqual(Object.keys(catalogs).sort(),Object.keys(themes).sort(),'Both app catalogs are required.');
  const expected=[];
- for(const [app,fixtures] of Object.entries(catalogs))for(const {id}of fixtures)for(const width of [1440,390])for(const sandbox of [false,true])expected.push(`${app}/${id}/${width}/${sandbox}`);
- const actual=report.results?.map(r=>{assert.equal(r.passed,true);return `${r.app}/${r.fixture}/${r.width}/${r.sandbox}`;});
- assert.deepEqual(actual?.sort(),expected.sort(),'Every fixture needs desktop/mobile, standalone and opaque-frame coverage exactly once.');
+ for(const [app,fixtures] of Object.entries(catalogs))for(const {id}of fixtures)for(const theme of themes[app])for(const width of [1440,390])for(const sandbox of [false,true])expected.push(`${app}/${id}/${width}/${sandbox}/${theme}`);
+ const actual=report.results?.map(r=>{assert.equal(r.passed,true);return `${r.app}/${r.fixture}/${r.width}/${r.sandbox}/${r.theme}`;});
+ assert.deepEqual(actual?.sort(),expected.sort(),'Every fixture needs each supported theme, desktop/mobile, standalone and opaque-frame coverage exactly once.');
  assert.equal(report.cases,expected.length);
  return {status:'passed',cases:expected.length,browser:report.browser};
 }

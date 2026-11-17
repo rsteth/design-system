@@ -79,3 +79,30 @@ test('a central draft direction survives a refresh and yields to the app\'s own'
  const manifest=await read(join(app,'design/collection.json'));manifest.direction={product:'The app\'s own line.'};await writeFile(join(app,'design/collection.json'),json(manifest));
  await syncRegistry([app],{root});assert.deepEqual((await read(path)).direction,{product:'The app\'s own line.'});await assertRegistryFresh([app],{root});
 });
+
+test('central drafts cannot silently survive changed app intent, in checks or refreshes',async t=>{
+ for(const part of ['title','summary','themes','public guide']){
+  const {root,app,snapshot}=await setup(t),path=join(snapshot,'collection.json'),saved=await read(path);
+  saved.direction={status:'draft',world:'The old visual world.'};await writeFile(path,json(saved));
+  const before=await readFile(path),manifest=await read(join(app,'design/collection.json'));
+  if(part==='public guide')await writeFile(join(app,'design/public-guide.md'),'# Example\nA completely different visual language.\n');
+  else{manifest[part]=part==='themes'?['light','dark']:'A redesigned app';await writeFile(join(app,'design/collection.json'),json(manifest));}
+  await assert.rejects(assertRegistryFresh([app],{root}),/Central draft direction needs review/);
+  await assert.rejects(syncRegistry([app],{root,check:true}),/Central draft direction needs review/);
+  await assert.rejects(syncRegistry([app],{root}),/Central draft direction needs review/);
+  assert.deepEqual(await readFile(path),before,'refusal must not refresh or launder the stale draft');
+  manifest.direction={product:'Current app-owned intent.',world:'The new visual world.'};
+  await writeFile(join(app,'design/collection.json'),json(manifest));
+  await syncRegistry([app],{root});await assertRegistryFresh([app],{root});
+  assert.deepEqual((await read(path)).direction,manifest.direction);
+ }
+});
+test('unchanged central drafts survive token-only refreshes and explicit removal permits redesign',async t=>{
+ const {root,app,snapshot}=await setup(t),path=join(snapshot,'collection.json'),saved=await read(path);
+ saved.direction={status:'draft',product:'A stable intent.'};await writeFile(path,json(saved));
+ const tokenPath=join(app,'design/palette.json'),tokens=await read(tokenPath);tokens.modes[0].tokens['color.background'].value='#eee';await writeFile(tokenPath,json(tokens));
+ await syncRegistry([app],{root});await assertRegistryFresh([app],{root});assert.deepEqual((await read(path)).direction,saved.direction);
+ const actual=await read(join(app,'design/collection.json'));actual.summary='A new intent';await writeFile(join(app,'design/collection.json'),json(actual));
+ const removed=await read(path);delete removed.direction;await writeFile(path,json(removed));
+ await syncRegistry([app],{root});await assertRegistryFresh([app],{root});assert.equal((await read(path)).direction,undefined);
+});

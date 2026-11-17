@@ -1,4 +1,5 @@
 import {readGuideNotes,assertPublicGuide} from './agent-guides.mjs';
+import {assertDraftDirectionFresh} from './draft-direction.mjs';
 /** Offline release preflight. Compares app-owned content, not private Git ancestry. */
 import {readFile,realpath} from 'node:fs/promises';
 import {resolve,join,relative,isAbsolute} from 'node:path';
@@ -33,7 +34,10 @@ export async function assertRegistryFresh(workspaces,{root=ROOT}={}){
   if(!relative(root,directory).startsWith('registry/apps/'))throw Error('Snapshot directory escapes registry.');
   const snapshot=JSON.parse(await localFile(directory,'collection.json'));
   const fail=part=>{throw Error(`App snapshot mismatch: ${id} (${part}); refresh explicitly with tooling/sync-registry.mjs before packaging.`);};
-  // A central draft direction is not app content; it stands only until the app records its own.
+  const notes=await readGuideNotes(path=>localFile(app,path));
+  const savedNotes=await localFile(directory,'public-guide.md').catch(error=>{if(error.code==='ENOENT')return null;throw error;});
+  assertDraftDirectionFresh(actual,snapshot,notes,savedNotes);
+  // Only an unchanged central draft is exempt from the app-content comparison.
   const saved=manifest(snapshot);if(actual.direction===undefined&&saved.direction?.status==='draft')delete saved.direction;
   if(comparable(manifest(actual))!==comparable(saved))fail('manifest/fixtures');
   const tokens=await localFile(app,`design/${actual.tokens}`),savedTokens=await localFile(directory,snapshot.tokens);
@@ -42,8 +46,6 @@ export async function assertRegistryFresh(workspaces,{root=ROOT}={}){
    const inventory=await localFile(app,`design/${actual.inventory}`),savedInventory=await localFile(directory,snapshot.inventory);
    if(comparable(JSON.parse(inventory))!==comparable(JSON.parse(savedInventory))||snapshot.registrySnapshot?.inventorySha256!==hash(savedInventory))fail('inventory');
   }else if(snapshot.registrySnapshot?.inventorySha256)fail('unexpected inventory hash');
-  const notes=await readGuideNotes(path=>localFile(app,path));
-  const savedNotes=await localFile(directory,'public-guide.md').catch(error=>{if(error.code==='ENOENT')return null;throw error;});
   if(notes||savedNotes){if(!notes||!savedNotes||!notes.equals(savedNotes))fail('public guide');assertPublicGuide(savedNotes.toString());}
   checked.push(id);
  }

@@ -7,20 +7,20 @@ import {createRequire} from 'node:module';
 export const BANDIT_SOURCES=Object.freeze([
  'apps/web/app/globals.css','apps/web/app/design-tokens.css',
  'apps/web/app/river-landing.tsx','apps/web/app/river-landing.module.css','apps/web/app/waitlist-dialog.tsx',
- 'apps/web/app/studio-overview.tsx','apps/web/app/texture-control.tsx','apps/web/app/studio-context.tsx',
+ 'apps/web/app/studio-overview.tsx','apps/web/app/studio-context.tsx',
  'apps/web/app/projects/page.tsx','apps/web/app/profiles/page.tsx','apps/web/app/library/page.tsx',
  'apps/web/app/productions/[id]/director-panel.tsx','apps/web/app/productions/[id]/director-hosted-controls.tsx','apps/web/app/productions/[id]/director-connections.tsx',
  'apps/web/app/productions/new/page.tsx','apps/web/app/productions/[id]/production-board.tsx',
  'apps/web/app/productions/[id]/advanced-controls.tsx','apps/web/app/productions/[id]/review/review-room.tsx',
  'apps/web/app/productions/[id]/review/advanced-review.tsx','apps/web/app/productions/[id]/review/import-take.tsx','apps/web/app/asset-preview.tsx','apps/web/app/creative-memory.tsx',
- 'design/tokens.json','design/preview/coverage.json','design/preview/fixture-state.ts','design/preview/app/studio-fixture.tsx',
+ 'apps/web/app/brand-mark.tsx','apps/web/app/theme-switch.tsx','apps/web/app/sequence-strip.tsx','apps/web/app/format.ts','apps/web/app/productions/[id]/production-frame.tsx','apps/web/app/productions/[id]/media.tsx','apps/web/app/productions/[id]/deliver/deliver-room.tsx',
+ 'design/collection.json','design/tokens.json','design/preview/coverage.json','design/preview/fixture-state.ts','design/preview/app/studio-fixture.tsx',
  'design/preview/app/[fixture]/page.tsx','design/preview/app/preview-boundary.tsx','design/preview/app/preview.css',
  'design/preview/samples.ts','workbench/vendor/workbench/theme-adapter.mjs'
 ]);
 export const BANDIT_ASSETS=Object.freeze([
  'fonts/inter-latin.woff2','fonts/space-grotesk-latin.woff2','fonts/space-mono-latin.woff2','fonts/jost-latin.woff2',
- 'fonts/inter-OFL.txt','fonts/space-grotesk-OFL.txt','fonts/space-mono-OFL.txt','fonts/jost-OFL.txt','fonts/README.md','fonts/sources.json',
- 'illustrations/storyboard-stack.svg','images/bandit-glacier-backdrop-v1.png','images/bandit-grain-v1.svg'
+ 'fonts/inter-OFL.txt','fonts/space-grotesk-OFL.txt','fonts/space-mono-OFL.txt','fonts/jost-OFL.txt','fonts/README.md','fonts/sources.json'
 ]);
 function localReplaceOnce(source,pattern,replacement,label){const next=source.replace(pattern,replacement);if(next===source)throw Error(`Source adapter drift: ${label}`);return next;}
 function localReplaceSection(source,start,end,replacement,label){const a=source.indexOf(start),b=source.indexOf(end,a+start.length);if(a<0||b<0||source.indexOf(start,a+start.length)!==-1)throw Error(`Source adapter drift: ${label}`);return source.slice(0,a)+replacement+source.slice(b);}
@@ -42,6 +42,7 @@ export function extractBanditContext(source){
 export function adaptBanditSource(path,source,{replaceOnce=localReplaceOnce,replaceSection=localReplaceSection}={}){
  if(path==='apps/web/app/studio-context.tsx')source=extractBanditContext(source);
  if(path==='apps/web/app/waitlist-dialog.tsx')source=adaptBanditWaitlist(source,{replaceSection});
+ if(path==='design/collection.json')return JSON.stringify({fixtures:JSON.parse(source).fixtures.map(({id,title})=>({id,title}))});
  if(path==='design/preview/coverage.json')return JSON.stringify(JSON.parse(source).map(({source,...fixture})=>fixture));
  if(path==='apps/web/app/library/page.tsx'){
   source=replaceSection(source,'  const upload = (file: File) =>','  return (\n    <>', '  const upload = (_file: File) => action.run(async () => { throw Error("Uploads are unavailable in this synthetic preview. Nothing was read or sent."); });\n','Bandit file upload');
@@ -51,9 +52,17 @@ export function adaptBanditSource(path,source,{replaceOnce=localReplaceOnce,repl
  if(path==='apps/web/app/creative-memory.tsx'){
   source=replaceSection(source,'              const url = URL.createObjectURL(', '              URL.revokeObjectURL(url);', '              throw Error("Downloads are unavailable in this synthetic preview.");\n','Bandit memory download').replace('              URL.revokeObjectURL(url);','');
  }
+ if(path==='apps/web/app/theme-switch.tsx'){
+  // Opaque frames have no storage. Theme controls remain ephemeral and functional.
+  source=replaceOnce(source,'localStorage.getItem(key)','null','Gather theme read');
+  source=replaceOnce(source,'localStorage.removeItem(key);','','Gather theme reset');
+  source=replaceOnce(source,'localStorage.setItem(key, next);','','Gather theme write');
+ }
  if(path==='apps/web/app/productions/[id]/review/review-room.tsx'){
   source=replaceOnce(source,'import { ComfyGeneration } from "./comfy-generation";','', 'Bandit provider intent module');
-  source=replaceSection(source,'                <ComfyGeneration','              ) : (','                null\n','Bandit provider widget');
+  source=replaceSection(source,'              <ComfyGeneration','            </>','              {null}\n','Bandit provider widget');
+ }
+ if(path==='apps/web/app/productions/[id]/media.tsx'){
   source=replaceSection(source,'            const link = document.createElement("a");','            link.click();', '            throw Error("Downloads are unavailable in this synthetic preview.");\n','Bandit cut download').replace('            link.click();','');
  }
  if(/\.(?:tsx?|mjs)$/.test(path)){
@@ -74,7 +83,7 @@ export async function buildBandit({root,out,base,collection,outputRoot}, helpers
  try{
   for(const path of BANDIT_SOURCES){let text=(await input(root,path)).toString();
    text=adaptBanditSource(path,text,{replaceOnce,replaceSection});
-   if(path==='design/preview/app/preview-boundary.tsx')text=replaceOnce(text,'anchor && !anchor.getAttribute("href")?.startsWith("#")','anchor && (anchor.getAttribute("href") === "#preview-navigation" || !anchor.getAttribute("href")?.startsWith("#"))','Bandit inert navigation');
+   if(path==='design/preview/app/preview-boundary.tsx')text=replaceOnce(text,'!anchor.getAttribute("href")?.startsWith("#")','(anchor.getAttribute("href") === "#preview-navigation" || !anchor.getAttribute("href")?.startsWith("#"))','Bandit inert navigation');
    if(path==='design/preview/app/[fixture]/page.tsx'){
     text=replaceOnce(text,'export default async function Fixture','export default function Fixture','Bandit synchronous fixture');
     text=replaceOnce(text,'params: Promise<{ fixture: string }>','params: { fixture: string }','Bandit static params');
@@ -112,6 +121,6 @@ export function PreviewForm({onSubmit,onClickCapture,onKeyDown,...props}:any){
   const licenses=await dependencyNotices(dependencyModules,outputRoot);
   const fonts=JSON.parse((await input(root,'apps/web/public/fonts/sources.json')).toString());
   for(const font of fonts.fonts){const bytes=await input(root,'apps/web/public/fonts/'+font.file);if(hash(bytes)!==font.sha256)throw Error('Bandit font hash mismatch.');licenses.notices.push({id:font.family+' font',license:'OFL-1.1',files:['previews/bandit/fonts/'+font.file.replace('-latin.woff2','-OFL.txt')]});}
-  return {...licenses,app:{fixtures:collection.fixtures.map(({id})=>({id,url:'../../../previews/bandit/'+id+'/'})),version:JSON.parse((await input(root,'package.json')).toString()).version,status:'synthetic-preview',sourceFiles:[...BANDIT_SOURCES,...BANDIT_ASSETS.map(p=>'apps/web/public/'+p)],adapters:['Original product React components and styles with authored synthetic fixture data.','Native image/link substitutes remove the Next runtime, optimizer, router and server.','Waitlist, uploads and downloads are unavailable; navigation remains guarded.', 'Pure production context helpers are extracted before StudioProvider; 52 source-owned fixtures use the original in-memory data adapter.', 'Opaque-frame form clicks invoke production validation and handlers without native submission.'],excluded:['Next server and runtime','StudioProvider, owner presence, contracts SDK and provider runtime','authenticated shell, auth and API handlers','backend/','infra/','environment files','source maps','real productions/profiles','unused artwork']}};
+  return {...licenses,app:{fixtures:collection.fixtures.map(({id})=>({id,url:'../../../previews/bandit/'+id+'/'})),version:JSON.parse((await input(root,'package.json')).toString()).version,status:'synthetic-preview',sourceFiles:[...BANDIT_SOURCES,...BANDIT_ASSETS.map(p=>'apps/web/public/'+p)],adapters:['Original product React components and styles with authored synthetic fixture data.','Native image/link substitutes remove the Next runtime, optimizer, router and server.','Waitlist, uploads and downloads are unavailable; navigation remains guarded.', 'Pure production context helpers are extracted before StudioProvider; source-owned fixtures use the original in-memory data adapter.', 'Opaque-frame form clicks invoke production validation and handlers without native submission.'],excluded:['Next server and runtime','StudioProvider, owner presence, contracts SDK and provider runtime','authenticated shell, auth and API handlers','backend/','infra/','environment files','source maps','real productions/profiles','unused artwork']}};
  }finally{await rm(stage,{recursive:true,force:true});}
 }

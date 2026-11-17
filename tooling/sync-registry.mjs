@@ -6,6 +6,7 @@ import {fileURLToPath,pathToFileURL} from 'node:url';
 import {createHash,randomUUID} from 'node:crypto';
 import {validateCollection,validateTokens,validateInventory,isLocalPath} from '../packages/tokens/index.mjs';
 import {validateInventoryFiles} from './inventory-files.mjs';
+import {assertDraftDirectionFresh} from './draft-direction.mjs';
 const defaultRoot=fileURLToPath(new URL('../',import.meta.url));
 const hash=bytes=>createHash('sha256').update(bytes).digest('hex');
 const json=value=>JSON.stringify(value,null,2)+'\n';
@@ -56,7 +57,10 @@ export async function syncRegistry(workspaces,{root=defaultRoot,check=false}={})
   const dest=join(root,'registry/apps',manifest.id);
   for(const name of ['collection.json','tokens.json','inventory.json','public-guide.md'])await noSymlinks(root,join(dest,name));
   const previous=await optionalJSON(join(dest,'collection.json'));
-  // A draft direction written into the snapshot survives a refresh until the app records its own.
+  const guideBytes=await readGuideNotes(path=>appFile(workspace,path));
+  const savedGuide=await readFile(join(dest,'public-guide.md')).catch(error=>{if(error.code==='ENOENT')return null;throw error;});
+  assertDraftDirectionFresh(manifest,previous,guideBytes,savedGuide);
+  // A central draft survives only while the app's intent inputs are unchanged.
   const draft=manifest.direction===undefined&&previous?.direction?.status==='draft'?{direction:previous.direction}:{};
   const normalized={...withoutSnapshot(manifest),...draft,tokens:'tokens.json',...(inventoryBytes?{inventory:'inventory.json'}:{})};
   const tokenSha256=hash(tokenBytes),inventorySha256=inventoryBytes?hash(inventoryBytes):undefined;
@@ -66,7 +70,6 @@ export async function syncRegistry(workspaces,{root=defaultRoot,check=false}={})
   const snapshot={...normalized,registrySnapshot:{authority:'App-owned design collection, tokens and optional inventory',baseRevision:manifest.source.revision,...(inventoryBytes?{inventorySha256}:{}),tokenSha256,integrationStatus:integrationRevision?(previous.registrySnapshot.integrationStatus??'unpublished-local-feature-commit'):'unpublished-local-snapshot',integrationRevision}};
   // Preserve byte-for-byte formatting for a semantically unchanged snapshot.
   const snapshotBytes=previous&&canonical(previous)===canonical(snapshot)?await readFile(join(dest,'collection.json')):Buffer.from(json(snapshot));
-  const guideBytes=await readGuideNotes(path=>appFile(workspace,path));
   if(guideBytes){assertPublicGuide(guideBytes.toString());guideNotes(guideBytes.toString());}
   const files=[...(guideBytes?[['public-guide.md',guideBytes]]:[]),['tokens.json',tokenBytes],...(inventoryBytes?[['inventory.json',inventoryBytes]]:[]),['collection.json',snapshotBytes]];
   const entry=`apps/${manifest.id}/collection.json`;if(!entries.includes(entry))entries.push(entry);

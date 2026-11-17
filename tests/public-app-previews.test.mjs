@@ -3,10 +3,10 @@ import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import {READS_SOURCES,BANDIT_SOURCES,BANDIT_ASSETS,PREVIEW_CSP,syntheticAudio,adaptReadsApp,adaptReadsWaitlist,adaptBanditWaitlist,buildPublicAppPreviews,assertPublicPreviewText} from '../tooling/public-app-previews.mjs';
 test('preview source allowlists contain frontend presentation only',()=>{
- assert.equal(READS_SOURCES.length,10);assert.equal(BANDIT_SOURCES.length,31);assert.equal(BANDIT_ASSETS.length,13);
+ assert.equal(READS_SOURCES.length,10);assert.equal(BANDIT_SOURCES.length,38);assert.equal(BANDIT_ASSETS.length,10);
  for(const path of [...READS_SOURCES,...BANDIT_SOURCES,...BANDIT_ASSETS])assert.doesNotMatch(path,/(^|\/)(\.env|src|api|auth|backend|infra|node_modules|\.git)(\/|$)|\.map$/);
  assert.ok(BANDIT_ASSETS.every(path=>/^(fonts|images|illustrations)\//.test(path)));
- assert.equal(BANDIT_ASSETS.filter(path=>path.endsWith('.png')).length,1);
+ assert.equal(BANDIT_ASSETS.filter(path=>path.endsWith('.png')).length,0);
 });
 test('static previews deny connections and preserve the opaque frame boundary',()=>{
  for(const directive of ["connect-src 'none'","form-action 'none'","object-src 'none'","frame-src 'none'","base-uri 'none'"])assert.ok(PREVIEW_CSP.includes(directive));
@@ -90,4 +90,22 @@ test('public previews neutralize absolute product login URLs',async()=>{
   const output=adaptBanditSource('landing.tsx',`const url = "https://${host}/auth/login";`);
   assert.match(output,/#preview-navigation/);assert.doesNotMatch(output,/https:|\/auth\//);
  }
+});
+
+
+test('Gather redesign allowlist excludes retired art and includes delivery presentation',()=>{
+ for(const name of ['brand-mark','theme-switch','sequence-strip'])assert.ok(BANDIT_SOURCES.includes(`apps/web/app/${name}.tsx`));
+ for(const name of ['media','production-frame','deliver/deliver-room'])assert.ok(BANDIT_SOURCES.includes(`apps/web/app/productions/[id]/${name}.tsx`));
+ assert.ok(!BANDIT_SOURCES.some(p=>p.includes('texture-control')));
+ assert.ok(BANDIT_ASSETS.every(p=>p.startsWith('fonts/')));
+});
+test('Gather public manifest exposes only fixture labels, theme controls use no storage, downloads fail closed',async()=>{
+ const {adaptBanditSource}=await import('../tooling/public-bandit-preview.mjs');
+ assert.deepEqual(JSON.parse(adaptBanditSource('design/collection.json',JSON.stringify({source:{root:'/private'},fixtures:[{id:'one',title:'One',url:'http://localhost'}]}))),{fixtures:[{id:'one',title:'One'}]});
+ const theme=adaptBanditSource('apps/web/app/theme-switch.tsx','const stored=localStorage.getItem(key); localStorage.removeItem(key); localStorage.setItem(key, next); document.documentElement.setAttribute("data-theme", next);');
+ assert.doesNotMatch(theme,/localStorage/);assert.match(theme,/setAttribute/);
+ assert.throws(()=>adaptBanditSource('apps/web/app/theme-switch.tsx','unexpected'),/Source adapter drift/);
+ const media=adaptBanditSource('apps/web/app/productions/[id]/media.tsx','            const link = document.createElement("a"); link.href="x";            link.click();');
+ assert.doesNotMatch(media,/createElement|link.click/);assert.match(media,/Downloads are unavailable/);
+ assert.throws(()=>adaptBanditSource('apps/web/app/productions/[id]/media.tsx','unexpected'),/Source adapter drift/);
 });

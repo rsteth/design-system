@@ -13,9 +13,9 @@ const {chromium,expect}=await import(pathToFileURL(module));
 const reads=JSON.parse(await readFile(join(root,'previews/reads/fixture-catalog.json'),'utf8'));
 const bandit=JSON.parse(await readFile(join(root,'previews/bandit/fixture-catalog.json'),'utf8'));
 assert.equal(reads.length,43,'Reads release includes every source-owned fixture');
-assert.equal(bandit.length,55,'Bandit release includes every source-owned fixture');
+assert.equal(bandit.length,56,'Bandit release includes every source-owned fixture');
 const banditLegacy=new Set(['landing','overview','empty','controls','status']);
-const allFixtures=[...reads.map(({id})=>({app:'reads',id,path:`previews/reads/fixture/?fixture=${id}${id==='account-denied'?'&auth=failed':''}`,theme:'dark'})),...bandit.map(({id})=>({app:'bandit',id,path:`previews/bandit/${id}/`,theme:'light'}))];
+const allFixtures=[...reads.map(({id})=>({app:'reads',id,path:`previews/reads/fixture/?fixture=${id}${id==='account-denied'?'&auth=failed':''}`,theme:'dark'})),...bandit.flatMap(({id})=>['light','dark'].map(theme=>({app:'bandit',id,path:`previews/bandit/${id}/?workbenchTheme=${theme}`,theme})))];
 const selected=process.env.PUBLIC_PREVIEW_FIXTURES?.split(',');
 if(selected)for(const id of selected)assert.ok(allFixtures.some(f=>`${f.app}/${f.id}`===id),'Unknown selected fixture: '+id);
 const fixtures=selected?allFixtures.filter(f=>selected.includes(`${f.app}/${f.id}`)):allFixtures;
@@ -24,7 +24,7 @@ const server=http.createServer(async(req,res)=>{
  try{
   const url=new URL(req.url,'http://localhost');
   if(url.pathname===base+'harness.html'){
-   const match=fixtures.find(f=>f.app===url.searchParams.get('app')&&f.id===url.searchParams.get('fixture'));if(!match)throw Error('Unknown fixture');
+   const match=fixtures.find(f=>f.app===url.searchParams.get('app')&&f.id===url.searchParams.get('fixture')&&f.theme===url.searchParams.get('theme'));if(!match)throw Error('Unknown fixture');
    res.writeHead(200,{'Content-Type':'text/html'}).end(`<!doctype html><html lang="en"><meta name="viewport" content="width=device-width,initial-scale=1"><style>html,body{margin:0;height:100%}iframe{width:100%;height:100%;border:0}</style><iframe sandbox="allow-scripts" src="${base+match.path}" title="Synthetic preview"></iframe><script>window.addEventListener('message',event=>{if(event.source!==document.querySelector('iframe').contentWindow)return;if(event.data?.type==='workbench:theme-ready')event.source.postMessage({type:'workbench:set-theme',theme:'${match.theme}',requestId:'preview-qa'},'*');if(event.data?.type==='workbench:theme-applied'&&event.data.requestId==='preview-qa')document.documentElement.dataset.confirmed=event.data.theme;});</script></html>`);return;
   }
   if(!url.pathname.startsWith(base))throw Error('Wrong prefix');let file=resolve(root,decodeURIComponent(url.pathname.slice(base.length)));const rel=relative(root,file);if(rel.startsWith('..')||isAbsolute(rel))throw Error('Invalid path');if((await stat(file)).isDirectory())file=join(file,'index.html');const bytes=await readFile(file);res.writeHead(200,{'Content-Type':mime[extname(file)]||'text/plain','Access-Control-Allow-Origin':'*','Cache-Control':'no-store','X-Content-Type-Options':'nosniff'}).end(bytes);
@@ -42,11 +42,17 @@ try{
   const page=await context.newPage();page.on('pageerror',error=>errors.push(error.message));page.on('response',r=>{if(r.status()>=400)failures.push(r.url());});
   for(const fixture of fixtures){
    for(const framed of [false,true]){
-    await page.goto(origin+base+(framed?`harness.html?app=${fixture.app}&fixture=${fixture.id}`:fixture.path),{waitUntil:'domcontentloaded'});
+    await page.goto(origin+base+(framed?`harness.html?app=${fixture.app}&fixture=${fixture.id}&theme=${fixture.theme}`:fixture.path),{waitUntil:'domcontentloaded'});
     const target=framed?page.frameLocator('iframe'):page;
     if(fixture.app==='reads')await expect(target.locator('html')).toHaveAttribute('data-fixture-ready',fixture.id);
     else {await expect(target.locator('html')).toHaveAttribute('data-preview-ready','true');if(!banditLegacy.has(fixture.id))await expect(target.locator('html')).toHaveAttribute('data-fixture-ready',fixture.id);}
     if(framed){await expect(page.locator('html')).toHaveAttribute('data-confirmed',fixture.theme);assert.equal(await page.locator('iframe').getAttribute('sandbox'),'allow-scripts');}
+    if(fixture.app==='bandit'){
+     await expect(target.locator('html')).toHaveAttribute('data-theme',fixture.theme);
+     await expect(target.locator('body')).toHaveCSS('background-color',fixture.theme==='dark'?'rgb(15, 18, 24)':'rgb(237, 236, 229)');
+     await expect(target.getByLabel('Grain intensity')).toHaveCount(0);
+     assert.equal(await target.locator('body').evaluate(()=>[...document.querySelectorAll('*')].some(el=>/glacier|grain\.(png|webp)|river-art/i.test([el.getAttribute('src'),getComputedStyle(el).backgroundImage].join(' ')))),false,'Retired artwork must not return');
+    }
     await target.locator('body').evaluate(async()=>{await document.fonts.ready;await Promise.all([...document.fonts].map(font=>document.fonts.load('16px '+JSON.stringify(font.family))));await Promise.all([...document.images].map(image=>{image.loading='eager';return image.complete?Promise.resolve():new Promise(r=>{image.onload=r;image.onerror=r;});}));});
     assert.equal(await target.locator('html').evaluate(el=>el.scrollWidth<=innerWidth),true,`${fixture.app}/${fixture.id} ${viewport.width} ${framed?'sandbox':'standalone'} overflow`);
     assert.equal(await target.locator('img').evaluateAll(images=>images.every(i=>i.complete&&i.naturalWidth>0)),true,'images');
@@ -111,28 +117,29 @@ try{
     }else{
      if(fixture.id==='landing'){
       let palette;
+      const colors=fixture.theme==='dark'?{cta:'rgb(124, 151, 255)',hover:'rgb(157, 177, 255)',scrim:'rgba(0, 0, 0, 0.7)',shadow:'rgba(0, 0, 0, 0.4) 0px 20px 70px 0px',border:'rgb(207, 213, 227)'}:{cta:'rgb(33, 72, 230)',hover:'rgb(24, 54, 184)',scrim:'rgba(20, 22, 27, 0.6)',shadow:'rgba(20, 22, 27, 0.267) 0px 20px 70px 0px',border:'rgb(20, 22, 27)'};
       for(const close of ['Close','Escape','Close']){
-       await target.getByRole('button',{name:'Join waiting list',exact:true}).first().click();await expect(target.getByRole('heading',{name:"Join the waiting list."})).toBeVisible();
+       await target.getByRole('button',{name:'Join waiting list',exact:true}).first().click();await expect(target.getByRole('heading',{name:"Join the waiting list"})).toBeVisible();
        const dialog=target.locator('dialog'),google=dialog.getByRole('link',{name:'Log in with Google',exact:true});
-       await page.mouse.move(0,0);await expect(google).toHaveCSS('background-color','rgb(49, 92, 122)');
+       await page.mouse.move(0,0);await expect(google).toHaveCSS('background-color',colors.cta);
        palette=await dialog.evaluate(el=>({scrim:getComputedStyle(el,'::backdrop').backgroundColor,shadow:getComputedStyle(el).boxShadow,border:getComputedStyle(el).borderColor}));
-       assert.equal(palette.scrim,'rgba(21, 45, 62, 0.6)');assert.equal(palette.shadow,'rgba(21, 45, 62, 0.267) 0px 20px 70px 0px');assert.equal(palette.border,'rgb(201, 208, 209)');
-       await google.hover();await expect(google).toHaveCSS('background-color','rgb(36, 71, 97)');
+       assert.equal(palette.scrim,colors.scrim);assert.equal(palette.shadow,colors.shadow);assert.equal(palette.border,colors.border);
+       await google.hover();await expect(google).toHaveCSS('background-color',colors.hover);
        assert.equal(await google.getAttribute('href'),'#preview-navigation');await google.click();await expect(target.getByRole('status')).toContainText('navigation are disabled');await expect(dialog).toBeVisible();await expect(dialog.locator('input')).toHaveCount(0);
        if(close==='Escape')await page.keyboard.press('Escape');else await dialog.getByRole('button',{name:'Close',exact:true}).click();await expect(dialog).not.toBeVisible();await target.getByRole('button',{name:'Dismiss',exact:true}).click();
       }
-      banditPresentation.push({width:viewport.width,sandbox:framed,cta:'rgb(49, 92, 122)',hover:'rgb(36, 71, 97)',...palette});
-      await target.getByRole('button',{name:'Join waiting list',exact:true}).first().click();if(!framed)await page.screenshot({path:join(evidence,`bandit-dialog-${viewport.width}.png`)});await page.keyboard.press('Escape');
-      await target.locator('footer').scrollIntoViewIfNeeded();if(!framed)await page.screenshot({path:join(evidence,`bandit-footer-${viewport.width}.png`)});await target.locator('header').scrollIntoViewIfNeeded();
+      banditPresentation.push({width:viewport.width,sandbox:framed,theme:fixture.theme,cta:colors.cta,hover:colors.hover,...palette});
+      await target.getByRole('button',{name:'Join waiting list',exact:true}).first().click();if(!framed)await page.screenshot({path:join(evidence,`bandit-dialog-${viewport.width}-${fixture.theme}.png`)});await page.keyboard.press('Escape');
+      await target.locator('footer').scrollIntoViewIfNeeded();if(!framed)await page.screenshot({path:join(evidence,`bandit-footer-${viewport.width}-${fixture.theme}.png`)});await target.locator('header').scrollIntoViewIfNeeded();
       await target.getByRole('link',{name:'Log in',exact:true}).first().click();await expect(target.getByRole('status')).toContainText('navigation are disabled');await target.getByRole('button',{name:'Dismiss',exact:true}).click();
      }
-     if(fixture.id==='overview'){await expect(target.locator('.production-card')).toHaveCount(2);await target.getByLabel('Grain intensity').fill('0');await expect(target.locator('.texture-value')).toHaveText('Off');await target.getByRole('link',{name:/New production/}).click();await expect(target.getByRole('status')).toBeVisible();await target.getByRole('button',{name:'Dismiss'}).click();}
+     if(fixture.id==='overview'){await expect(target.locator('.production-card')).toHaveCount(2);await target.getByRole('link',{name:/New production/}).click();await expect(target.getByRole('status')).toBeVisible();await target.getByRole('button',{name:'Dismiss'}).click();}
      if(fixture.id==='empty')await expect(target.getByRole('link',{name:/New production/})).toHaveCount(0);
      if(fixture.id==='controls'){assert.ok((await target.getByRole('button',{name:'Primary action'}).boundingBox()).height>=44);await target.getByLabel('Production name').fill('A local synthetic edit');}
      if(fixture.id==='project-editor'){
       await target.getByLabel('Project title',{exact:true}).fill('Local draft');await target.getByRole('button',{name:'Close',exact:true}).press('Enter');
       for(let i=0;i<2;i++){await target.getByRole('button',{name:'Edit project',exact:true}).click();await expect(target.getByLabel('Project title',{exact:true})).toHaveValue('Quiet mornings');await target.getByRole('button',{name:'Close',exact:true}).click();}
-      await target.getByRole('button',{name:'+ New project',exact:true}).click();await target.getByLabel('Project title',{exact:true}).fill('Local only');await target.getByLabel('Slug',{exact:true}).fill('local-only');await target.getByRole('button',{name:'Save project',exact:true}).click();await expect(target.getByRole('alert')).toContainText('Nothing was saved or sent');
+      await target.getByRole('button',{name:'New project',exact:true}).click();await target.getByLabel('Project title',{exact:true}).fill('Local only');await target.getByLabel('Slug',{exact:true}).fill('local-only');await target.getByRole('button',{name:'Save project',exact:true}).click();await expect(target.getByRole('alert')).toContainText('Nothing was saved or sent');
      }
      if(fixture.id==='profile-import'){await target.getByLabel('Profile JSON',{exact:true}).fill('{');await target.getByRole('button',{name:'Import as draft',exact:true}).click();await expect(target.locator('.error[role=alert]')).toBeVisible();}
      if(fixture.id==='production-new-plan'){
@@ -143,19 +150,24 @@ try{
      if(fixture.id==='review-populated'){
       await target.locator('h1').click();await page.keyboard.press('j');await expect(target.locator('.shot-navigation button[aria-current="step"]')).toContainText('A quiet detail');await page.keyboard.press('k');await expect(target.locator('.shot-navigation button[aria-current="step"]')).toContainText('Morning light');
      }
-     if(fixture.id==='memory-populated'){await target.getByRole('button',{name:'Skip for this shot',exact:true}).click();await target.getByRole('button',{name:'Restore skipped reminders',exact:true}).click();await expect(target.getByRole('button',{name:'Skip for this shot',exact:true})).toBeVisible();}
+     if(fixture.id==='memory-populated'){await target.getByRole('button',{name:'Skip for this shot',exact:true}).click();await target.getByRole('button',{name:'Show skipped preferences',exact:true}).click();await expect(target.getByRole('button',{name:'Skip for this shot',exact:true})).toBeVisible();}
      if(fixture.id==='asset-expired')for(let i=0;i<2;i++){await target.getByRole('button',{name:'Refresh preview',exact:true}).click();await expect(target.getByRole('button',{name:'Refresh preview',exact:true})).toBeVisible();}
-     if(fixture.id==='appearance'){await target.getByLabel('Grain intensity').focus();await page.keyboard.press('ArrowRight');await expect(target.getByLabel('Grain intensity')).toHaveValue('13');}
+     if(fixture.id.startsWith('deliver-')){
+      await expect(target.locator('[data-stage="deliver"]')).toBeVisible();
+      await expect(target.getByRole('heading',{name:'Cuts',exact:true})).toBeVisible();
+      if(fixture.id==='deliver-empty')await expect(target.getByRole('heading',{name:'No cuts yet',exact:true})).toBeVisible();
+      else {await expect(target.locator('.export-card')).toHaveCount(3);await target.getByRole('button',{name:'Assemble selected takes',exact:true}).click();await expect(target.getByRole('alert').filter({hasText:'Nothing was saved or sent'})).toHaveCount(1);}
+     }
      if(fixture.id==='projects-viewer')await expect(target.getByRole('button',{name:'Edit project',exact:true})).toHaveCount(0);
      await expect(target.locator('[data-setup-error]')).toHaveCount(0);
 
     }
-    if(!framed&&['landing','studio-ready','overview'].includes(fixture.id)){await target.locator('body').evaluate(()=>{document.activeElement?.blur();window.scrollTo(0,0);});await page.mouse.move(0,0);await page.screenshot({path:join(evidence,`${fixture.app}-${fixture.id}-${viewport.width}.png`),fullPage:true});}
+    if(!framed&&['landing','studio-ready','overview'].includes(fixture.id)){await target.locator('body').evaluate(()=>{document.activeElement?.blur();window.scrollTo(0,0);});await page.mouse.move(0,0);await page.screenshot({path:join(evidence,`${fixture.app}-${fixture.id}-${viewport.width}-${fixture.theme}.png`),fullPage:true});}
     await page.reload({waitUntil:'domcontentloaded'});
     if(fixture.app==='reads'){await expect(target.locator('html')).toHaveAttribute('data-fixture-ready',fixture.id);if(fixture.id==='studio-empty')await expect(target.locator('.job')).toHaveCount(0);if(fixture.id==='studio-progress')await expect(target.locator('.badge')).toHaveText('In progress');if(fixture.id==='reader-controls')await expect(target.locator('#speed-value')).toHaveText('1.0x');if(fixture.id.startsWith('recording-'))await expect(target.locator('#voice-status')).toHaveText('');if(fixture.id==='hosted-pending')await expect(target.locator('#voice-shelf')).toContainText('The voice is being checked');}
-    else{await expect(target.locator('html')).toHaveAttribute('data-preview-ready','true');if(!banditLegacy.has(fixture.id))await expect(target.locator('html')).toHaveAttribute('data-fixture-ready',fixture.id);if(fixture.id==='profile-import')await expect(target.getByLabel('Profile JSON',{exact:true})).toHaveValue('');if(fixture.id==='appearance')await expect(target.getByLabel('Grain intensity')).toHaveValue('12');if(fixture.id==='overview')await expect(target.getByLabel('Grain intensity')).toHaveValue('12');if(fixture.id==='controls')await expect(target.getByLabel('Production name')).toHaveValue('A quiet morning');}
+    else{await expect(target.locator('html')).toHaveAttribute('data-preview-ready','true');if(!banditLegacy.has(fixture.id))await expect(target.locator('html')).toHaveAttribute('data-fixture-ready',fixture.id);if(fixture.id==='profile-import')await expect(target.getByLabel('Profile JSON',{exact:true})).toHaveValue('');if(fixture.id==='controls')await expect(target.getByLabel('Production name')).toHaveValue('A quiet morning');}
     console.log('Passed',fixture.app,fixture.id,viewport.width,framed?'opaque':'standalone');
-    results.push({app:fixture.app,fixture:fixture.id,width:viewport.width,sandbox:framed,passed:true});
+    results.push({app:fixture.app,fixture:fixture.id,width:viewport.width,theme:fixture.theme,sandbox:framed,passed:true});
    }
   }
   await context.close();

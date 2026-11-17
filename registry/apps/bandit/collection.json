@@ -4,22 +4,12 @@
   "kind": "app",
   "renderer": "react",
   "title": "Gather Motion",
-  "summary": "A human-directed video studio. Glacier artwork, blue and copper accents, and app-owned production controls.",
-  "direction": {
-    "status": "draft",
-    "product": "A studio for making short-form video, where a person directs every production from brief to approved shot.",
-    "character": "cool-headed, exacting, unhurried",
-    "world": "A production office with a view of ice: glacier blue, copper fittings and a call sheet set in monospace.",
-    "moments": [
-      "The glacier artwork on the landing",
-      "The production board, where shots move from plan to approved"
-    ],
-    "signature": "Technical details set in Space Mono, like markings on a slate."
-  },
+  "summary": "A human-directed studio for short-form video, from brief and shot plan through review to a finished cut. Paper light and blue-black dark themes, drawn in one line weight with cut corners, rails and stations.",
   "tokens": "tokens.json",
   "inventory": "inventory.json",
   "themes": [
-    "light"
+    "light",
+    "dark"
   ],
   "source": {
     "repository": "https://github.com/rsteth/shortform-bandit",
@@ -532,6 +522,30 @@
       "description": "Actual production component or route, isolated in a deterministic in-memory context. No account, backend, paid generation or publication."
     },
     {
+      "id": "deliver-populated",
+      "title": "Deliver / populated",
+      "section": "screens",
+      "url": "http://127.0.0.1:4318/deliver-populated",
+      "states": [
+        "populated",
+        "reset-on-reload",
+        "synthetic-only"
+      ],
+      "description": "Actual production component or route, isolated in a deterministic in-memory context. No account, backend, paid generation or publication."
+    },
+    {
+      "id": "deliver-empty",
+      "title": "Deliver / empty",
+      "section": "screens",
+      "url": "http://127.0.0.1:4318/deliver-empty",
+      "states": [
+        "empty",
+        "reset-on-reload",
+        "synthetic-only"
+      ],
+      "description": "Actual production component or route, isolated in a deterministic in-memory context. No account, backend, paid generation or publication."
+    },
+    {
       "id": "asset-ready",
       "title": "Media preview / ready",
       "section": "components",
@@ -572,18 +586,6 @@
       "title": "Production error notice",
       "section": "components",
       "url": "http://127.0.0.1:4318/error-notice",
-      "states": [
-        "default",
-        "reset-on-reload",
-        "synthetic-only"
-      ],
-      "description": "Actual production component or route, isolated in a deterministic in-memory context. No account, backend, paid generation or publication."
-    },
-    {
-      "id": "appearance",
-      "title": "Appearance control",
-      "section": "components",
-      "url": "http://127.0.0.1:4318/appearance",
       "states": [
         "default",
         "reset-on-reload",
@@ -694,11 +696,26 @@
       "description": "Authored local-model status only. No inference is run; fixture mutations fail closed."
     }
   ],
+  "direction": {
+    "status": "draft",
+    "product": "A human-directed studio for short-form video, from brief and shot plan through review to a finished cut.",
+    "character": "A plotting table: the work is the subject and the interface is the instrument laid over it.",
+    "world": "Paper light and blue-black dark themes, drawn in one line weight with cut corners, rails and stations.",
+    "moments": [
+      "Frames passing through the slash of the gather/motion wordmark on the landing.",
+      "Plan, Review and Deliver as stations on one line, with a sequence strip and take rail."
+    ],
+    "signature": "Cut corners as the only bezel; Space Grotesk headings, Inter reading text and Space Mono tags and figures.",
+    "voice": [
+      "Keep accept or reject, select a take, approve plan and approve cut distinct.",
+      "Mono capitals are for state tags and rail numbers, never sentences."
+    ]
+  },
   "registrySnapshot": {
     "authority": "App-owned design collection, tokens and optional inventory",
     "baseRevision": null,
-    "inventorySha256": "bff59f9b2c3196f1d0cb3ed77df76e1350c95ffba37d916ae93518335d493464",
-    "tokenSha256": "7163a391d4a0afb8b2a59baaf1ee1b9406d91598452076b66931a12806755a53",
+    "inventorySha256": "b2f129e582ea4da59f26e77bbdc8e0a971e7051d142c24133400f3a0ee68d245",
+    "tokenSha256": "8ac9ed3bb6e5bfa0313dc84f1bbdc254fc86d05f786085f8a20c118d5c6a8174",
     "integrationStatus": "unpublished-local-snapshot",
     "integrationRevision": null,
     "withheldRevisions": [

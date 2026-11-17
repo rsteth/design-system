@@ -659,6 +659,38 @@
       "notes": "Real production UI with synthetic in-memory state. Form edits are local; backend mutations fail closed. No live workflow acceptance is claimed."
     },
     {
+      "id": "deliver-populated",
+      "title": "Deliver / populated",
+      "kind": "screen",
+      "coverage": "partial",
+      "source": [
+        "apps/web/app/productions/[id]/deliver/deliver-room.tsx"
+      ],
+      "states": [
+        "populated"
+      ],
+      "fixtures": [
+        "deliver-populated"
+      ],
+      "notes": "Real production UI with synthetic in-memory state. Form edits are local; backend mutations fail closed. No live workflow acceptance is claimed."
+    },
+    {
+      "id": "deliver-empty",
+      "title": "Deliver / empty",
+      "kind": "screen",
+      "coverage": "partial",
+      "source": [
+        "apps/web/app/productions/[id]/deliver/deliver-room.tsx"
+      ],
+      "states": [
+        "empty"
+      ],
+      "fixtures": [
+        "deliver-empty"
+      ],
+      "notes": "Real production UI with synthetic in-memory state. Form edits are local; backend mutations fail closed. No live workflow acceptance is claimed."
+    },
+    {
       "id": "asset-ready",
       "title": "Media preview / ready",
       "kind": "component",
@@ -719,22 +751,6 @@
       ],
       "fixtures": [
         "error-notice"
-      ],
-      "notes": "Real production UI with synthetic in-memory state. Form edits are local; backend mutations fail closed. No live workflow acceptance is claimed."
-    },
-    {
-      "id": "appearance",
-      "title": "Appearance control",
-      "kind": "component",
-      "coverage": "covered",
-      "source": [
-        "apps/web/app/texture-control.tsx"
-      ],
-      "states": [
-        "default"
-      ],
-      "fixtures": [
-        "appearance"
       ],
       "notes": "Real production UI with synthetic in-memory state. Form edits are local; backend mutations fail closed. No live workflow acceptance is claimed."
     },
