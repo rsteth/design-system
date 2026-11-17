@@ -53,6 +53,7 @@ function renderVoices() {
         form.append(node('p',`To read in their voice, Reads sends this recording and its name to ElevenLabs, who make the voice and keep it. It needs one to two minutes of clear speech.${ops.createMicroUsd ? ` Making it costs about ${money(ops.createMicroUsd)}.` : ''}`, 'hint'));
         const check=text=>{const label=node('label','','check'),input=node('input');input.type='checkbox';input.required=true;label.append(input,node('span',text));form.append(label);return input;};
         const rights=check('I have their clear permission to recreate their voice and use it for readings.'),clean=check('The recording is one person speaking, with no music or background noise.'),consent=check('Send this recording and its name to ElevenLabs to make the voice. They handle and keep it under their own terms.');
+        form.append(node('p','Once submitted, voice creation cannot be cancelled in Reads. Closing this page will not stop it. If the result is uncertain, wait for review before trying again.','hint'));
         const submit=node('button',ops.enabled?'Make their voice':'Making voices is not switched on yet','secondary');submit.type='submit';submit.disabled=!ops.enabled||!admissionOpen;form.append(submit);
         form.onsubmit=async e=>{e.preventDefault();submit.disabled=true;try{await api(`voices/${v.id}/hosted`,'POST',{...operationBody(),rightsConsent:rights.checked,singleSpeaker:clean.checked,providerConsent:consent.checked,consentVersion:ops.consentVersion});await refresh();}catch(error){notify(error);await refresh();}finally{submit.disabled=!ops.enabled;}};row.append(details);
       }
@@ -98,7 +99,7 @@ function configureProvider() {
   const disconnected=state.mode === 'disconnected';
   for (const control of document.querySelectorAll('#reader button, #reader input, #reader textarea, #reader select, #voice-form input, #voice-form button')) control.disabled=disconnected;
   if(disconnected) {
-    $('provider-consent-label').hidden=true; $('preview').hidden=true;
+    $('provider-consent-label').hidden=true; $('cancellation-note').hidden=true; $('preview').hidden=true;
     $('provider-footer').textContent='Readings are paused';
     $('generation-notice').textContent='Readings, new recordings and saved audio are paused for now.';
     $('generate').textContent='Readings are paused'; $('generate').disabled=true;
@@ -106,7 +107,7 @@ function configureProvider() {
     return;
   }
   const hosted=state.mode === 'elevenlabs';
-  $('provider-consent-label').hidden=!hosted; $('provider-consent').required=hosted;
+  $('provider-consent-label').hidden=!hosted; $('cancellation-note').hidden=!hosted; $('provider-consent').required=hosted;
   $('preview').hidden=hosted; $('save-voice').textContent='Save recording';
   $('provider-footer').textContent=hosted?'Voices by ElevenLabs':'Demo: tones, not speech';
   $('generation-notice').textContent=hosted ? 'Your words are read aloud by a voice service outside Reads. You will see the cost and say yes before anything is sent.' : 'This is the demo. You will hear soft tones instead of a voice, and nothing leaves Reads.';

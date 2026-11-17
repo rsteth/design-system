@@ -1,16 +1,16 @@
 {
   "previewVerification": {
     "status": "passed",
-    "cases": 392,
-    "browser": "157.0.8103.51"
+    "cases": 620,
+    "browser": "157.0.8103.79"
   },
   "schemaVersion": 1,
-  "createdAt": "2026-11-16T22:13:27.307Z",
+  "createdAt": "2026-11-17T19:19:59.769Z",
   "status": "local-candidate-not-published",
   "licenseGaps": [],
   "focusEpub": "fixture-only",
   "base": "/design-system/",
-  "fixtureCount": 213,
+  "fixtureCount": 214,
   "source": {
     "designSystem": {
       "repository": "https://github.com/rsteth/design-system.git",
@@ -55,7 +55,7 @@
     {
       "path": "BUNDLED-DEPENDENCIES.json",
       "bytes": 2137,
-      "sha256": "9fbc52e2861bd28a4be3126909f7b794cfd3405a7c402e300055b2e5c7bb3cf2"
+      "sha256": "ff5df17aa61039e9444c24077326a11b516f9f160affb1ecf2caef6a51d7aeca"
     },
     {
       "path": "LICENSE",
@@ -70,7 +70,7 @@
     {
       "path": "RELEASE-NOTES.html",
       "bytes": 2400,
-      "sha256": "60e42830956e599cb665a50a17157752f8e76aeca1a18f51956db8f17f848485"
+      "sha256": "58b2913423657a26d15acf304d539159d73481bf97b463a1b756c417142d3fea"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
@@ -5160,112 +5160,117 @@
     {
       "path": "previews/bandit/advanced-controls/index.html",
       "bytes": 722,
-      "sha256": "1f9ed4aad997aab2f956a29606f2e527f797d69a8e5e0b00fc0979ed08661eab"
+      "sha256": "b07f77d6bab47387d36a88604751355e673c07614c2d40f266805df782b956b6"
     },
     {
       "path": "previews/bandit/advanced-review/index.html",
       "bytes": 722,
-      "sha256": "1f9ed4aad997aab2f956a29606f2e527f797d69a8e5e0b00fc0979ed08661eab"
-    },
-    {
-      "path": "previews/bandit/appearance/index.html",
-      "bytes": 722,
-      "sha256": "1f9ed4aad997aab2f956a29606f2e527f797d69a8e5e0b00fc0979ed08661eab"
+      "sha256": "b07f77d6bab47387d36a88604751355e673c07614c2d40f266805df782b956b6"
     },
     {
       "path": "previews/bandit/asset-expired/index.html",
       "bytes": 722,
-      "sha256": "1f9ed4aad997aab2f956a29606f2e527f797d69a8e5e0b00fc0979ed08661eab"
+      "sha256": "b07f77d6bab47387d36a88604751355e673c07614c2d40f266805df782b956b6"
     },
     {
       "path": "previews/bandit/asset-loading/index.html",
       "bytes": 722,
-      "sha256": "1f9ed4aad997aab2f956a29606f2e527f797d69a8e5e0b00fc0979ed08661eab"
+      "sha256": "b07f77d6bab47387d36a88604751355e673c07614c2d40f266805df782b956b6"
     },
     {
       "path": "previews/bandit/asset-ready/index.html",
       "bytes": 722,
-      "sha256": "1f9ed4aad997aab2f956a29606f2e527f797d69a8e5e0b00fc0979ed08661eab"
+      "sha256": "b07f77d6bab47387d36a88604751355e673c07614c2d40f266805df782b956b6"
     },
     {
-      "path": "previews/bandit/assets/index-BS_3Duxn.css",
-      "bytes": 81656,
-      "sha256": "dcce29987cc122e70d2f8fbc898f5b8d10e0ee7e73ce8eac5b683836e2cc859a"
+      "path": "previews/bandit/assets/index-WhKj2c8H.css",
+      "bytes": 59128,
+      "sha256": "74bbdf1304cdf4e28cd75ac3bd0b627b028622b01f3a525418c637d4804faa56"
     },
     {
-      "path": "previews/bandit/assets/index-q0S0G8kc.js",
-      "bytes": 401763,
-      "sha256": "e1fda5546e7dc364f846199e5a3dc7dfd7df17365e511b52aba5510b90b685e0"
+      "path": "previews/bandit/assets/index-l5yz8RCF.js",
+      "bytes": 396698,
+      "sha256": "594cf9c12553a2b6b4ba7a8918e73e3866e6ba7108234b37e19df8ffb2225ab7"
     },
     {
       "path": "previews/bandit/board-approved/index.html",
       "bytes": 722,
-      "sha256": "1f9ed4aad997aab2f956a29606f2e527f797d69a8e5e0b00fc0979ed08661eab"
+      "sha256": "b07f77d6bab47387d36a88604751355e673c07614c2d40f266805df782b956b6"
     },
     {
       "path": "previews/bandit/board-archived/index.html",
       "bytes": 722,
-      "sha256": "1f9ed4aad997aab2f956a29606f2e527f797d69a8e5e0b00fc0979ed08661eab"
+      "sha256": "b07f77d6bab47387d36a88604751355e673c07614c2d40f266805df782b956b6"
     },
     {
       "path": "previews/bandit/board-empty/index.html",
       "bytes": 722,
-      "sha256": "1f9ed4aad997aab2f956a29606f2e527f797d69a8e5e0b00fc0979ed08661eab"
+      "sha256": "b07f77d6bab47387d36a88604751355e673c07614c2d40f266805df782b956b6"
     },
     {
       "path": "previews/bandit/board-error/index.html",
       "bytes": 722,
-      "sha256": "1f9ed4aad997aab2f956a29606f2e527f797d69a8e5e0b00fc0979ed08661eab"
+      "sha256": "b07f77d6bab47387d36a88604751355e673c07614c2d40f266805df782b956b6"
     },
     {
       "path": "previews/bandit/board-loading/index.html",
       "bytes": 722,
-      "sha256": "1f9ed4aad997aab2f956a29606f2e527f797d69a8e5e0b00fc0979ed08661eab"
+      "sha256": "b07f77d6bab47387d36a88604751355e673c07614c2d40f266805df782b956b6"
     },
     {
       "path": "previews/bandit/board-populated/index.html",
       "bytes": 722,
-      "sha256": "1f9ed4aad997aab2f956a29606f2e527f797d69a8e5e0b00fc0979ed08661eab"
+      "sha256": "b07f77d6bab47387d36a88604751355e673c07614c2d40f266805df782b956b6"
     },
     {
       "path": "previews/bandit/board-viewer/index.html",
       "bytes": 722,
-      "sha256": "1f9ed4aad997aab2f956a29606f2e527f797d69a8e5e0b00fc0979ed08661eab"
+      "sha256": "b07f77d6bab47387d36a88604751355e673c07614c2d40f266805df782b956b6"
     },
     {
       "path": "previews/bandit/controls/index.html",
       "bytes": 722,
-      "sha256": "1f9ed4aad997aab2f956a29606f2e527f797d69a8e5e0b00fc0979ed08661eab"
+      "sha256": "b07f77d6bab47387d36a88604751355e673c07614c2d40f266805df782b956b6"
+    },
+    {
+      "path": "previews/bandit/deliver-empty/index.html",
+      "bytes": 722,
+      "sha256": "b07f77d6bab47387d36a88604751355e673c07614c2d40f266805df782b956b6"
+    },
+    {
+      "path": "previews/bandit/deliver-populated/index.html",
+      "bytes": 722,
+      "sha256": "b07f77d6bab47387d36a88604751355e673c07614c2d40f266805df782b956b6"
     },
     {
       "path": "previews/bandit/director-model/index.html",
       "bytes": 722,
-      "sha256": "1f9ed4aad997aab2f956a29606f2e527f797d69a8e5e0b00fc0979ed08661eab"
+      "sha256": "b07f77d6bab47387d36a88604751355e673c07614c2d40f266805df782b956b6"
     },
     {
       "path": "previews/bandit/director-packet/index.html",
       "bytes": 722,
-      "sha256": "1f9ed4aad997aab2f956a29606f2e527f797d69a8e5e0b00fc0979ed08661eab"
+      "sha256": "b07f77d6bab47387d36a88604751355e673c07614c2d40f266805df782b956b6"
     },
     {
       "path": "previews/bandit/director-read-only/index.html",
       "bytes": 722,
-      "sha256": "1f9ed4aad997aab2f956a29606f2e527f797d69a8e5e0b00fc0979ed08661eab"
+      "sha256": "b07f77d6bab47387d36a88604751355e673c07614c2d40f266805df782b956b6"
     },
     {
       "path": "previews/bandit/empty/index.html",
       "bytes": 722,
-      "sha256": "1f9ed4aad997aab2f956a29606f2e527f797d69a8e5e0b00fc0979ed08661eab"
+      "sha256": "b07f77d6bab47387d36a88604751355e673c07614c2d40f266805df782b956b6"
     },
     {
       "path": "previews/bandit/error-notice/index.html",
       "bytes": 722,
-      "sha256": "1f9ed4aad997aab2f956a29606f2e527f797d69a8e5e0b00fc0979ed08661eab"
+      "sha256": "b07f77d6bab47387d36a88604751355e673c07614c2d40f266805df782b956b6"
     },
     {
       "path": "previews/bandit/fixture-catalog.json",
-      "bytes": 10363,
-      "sha256": "4713fa71dcd65abde2f7bde31b5fa0a34d5f94599ec4327cda0569f2d0f210cb"
+      "bytes": 10549,
+      "sha256": "481e332122f62091878b417011c5ecd99eff8d1de5d01ab77efc5d99ea5b6ce1"
     },
     {
       "path": "previews/bandit/fonts/README.md",
@@ -5318,204 +5323,189 @@
       "sha256": "fb4a81a2d0a893e5c38c394a7e716a1cef0b24610a0af49c96f6d529bd66bf2b"
     },
     {
-      "path": "previews/bandit/illustrations/storyboard-stack.svg",
-      "bytes": 973,
-      "sha256": "3d472f5ec5ea78e2d517c9451929524b7b76eff793e582fa48d8764d43856d50"
-    },
-    {
-      "path": "previews/bandit/images/bandit-glacier-backdrop-v1.png",
-      "bytes": 8122075,
-      "sha256": "1781e62c0430dc11b4082bb5d713fbb3daf1149f77057ed75121112b1d9d53f2"
-    },
-    {
-      "path": "previews/bandit/images/bandit-grain-v1.svg",
-      "bytes": 611,
-      "sha256": "a98260fdffe1eb7e017fe21cd4cb2be5f78a0359363d52aed5e161c2dc7a68e2"
-    },
-    {
       "path": "previews/bandit/index.html",
-      "bytes": 3258,
-      "sha256": "f15f3e57981d679d6d485cc8ce6642cd0107c211931b8fbcb28b517a6e318692"
+      "bytes": 3325,
+      "sha256": "51b1da8c97201eea2797f976bca3c49f144679ec052e0c44fb58eca89cd4a25d"
     },
     {
       "path": "previews/bandit/landing/index.html",
       "bytes": 722,
-      "sha256": "1f9ed4aad997aab2f956a29606f2e527f797d69a8e5e0b00fc0979ed08661eab"
+      "sha256": "b07f77d6bab47387d36a88604751355e673c07614c2d40f266805df782b956b6"
     },
     {
       "path": "previews/bandit/library-empty/index.html",
       "bytes": 722,
-      "sha256": "1f9ed4aad997aab2f956a29606f2e527f797d69a8e5e0b00fc0979ed08661eab"
+      "sha256": "b07f77d6bab47387d36a88604751355e673c07614c2d40f266805df782b956b6"
     },
     {
       "path": "previews/bandit/library-populated/index.html",
       "bytes": 722,
-      "sha256": "1f9ed4aad997aab2f956a29606f2e527f797d69a8e5e0b00fc0979ed08661eab"
+      "sha256": "b07f77d6bab47387d36a88604751355e673c07614c2d40f266805df782b956b6"
     },
     {
       "path": "previews/bandit/library-viewer/index.html",
       "bytes": 722,
-      "sha256": "1f9ed4aad997aab2f956a29606f2e527f797d69a8e5e0b00fc0979ed08661eab"
+      "sha256": "b07f77d6bab47387d36a88604751355e673c07614c2d40f266805df782b956b6"
     },
     {
       "path": "previews/bandit/memory-empty/index.html",
       "bytes": 722,
-      "sha256": "1f9ed4aad997aab2f956a29606f2e527f797d69a8e5e0b00fc0979ed08661eab"
+      "sha256": "b07f77d6bab47387d36a88604751355e673c07614c2d40f266805df782b956b6"
     },
     {
       "path": "previews/bandit/memory-error/index.html",
       "bytes": 722,
-      "sha256": "1f9ed4aad997aab2f956a29606f2e527f797d69a8e5e0b00fc0979ed08661eab"
+      "sha256": "b07f77d6bab47387d36a88604751355e673c07614c2d40f266805df782b956b6"
     },
     {
       "path": "previews/bandit/memory-populated/index.html",
       "bytes": 722,
-      "sha256": "1f9ed4aad997aab2f956a29606f2e527f797d69a8e5e0b00fc0979ed08661eab"
+      "sha256": "b07f77d6bab47387d36a88604751355e673c07614c2d40f266805df782b956b6"
     },
     {
       "path": "previews/bandit/memory-viewer/index.html",
       "bytes": 722,
-      "sha256": "1f9ed4aad997aab2f956a29606f2e527f797d69a8e5e0b00fc0979ed08661eab"
+      "sha256": "b07f77d6bab47387d36a88604751355e673c07614c2d40f266805df782b956b6"
     },
     {
       "path": "previews/bandit/overview/index.html",
       "bytes": 722,
-      "sha256": "1f9ed4aad997aab2f956a29606f2e527f797d69a8e5e0b00fc0979ed08661eab"
+      "sha256": "b07f77d6bab47387d36a88604751355e673c07614c2d40f266805df782b956b6"
     },
     {
       "path": "previews/bandit/production-new-brief/index.html",
       "bytes": 722,
-      "sha256": "1f9ed4aad997aab2f956a29606f2e527f797d69a8e5e0b00fc0979ed08661eab"
+      "sha256": "b07f77d6bab47387d36a88604751355e673c07614c2d40f266805df782b956b6"
     },
     {
       "path": "previews/bandit/production-new-plan/index.html",
       "bytes": 722,
-      "sha256": "1f9ed4aad997aab2f956a29606f2e527f797d69a8e5e0b00fc0979ed08661eab"
+      "sha256": "b07f77d6bab47387d36a88604751355e673c07614c2d40f266805df782b956b6"
     },
     {
       "path": "previews/bandit/production-new-profile/index.html",
       "bytes": 722,
-      "sha256": "1f9ed4aad997aab2f956a29606f2e527f797d69a8e5e0b00fc0979ed08661eab"
+      "sha256": "b07f77d6bab47387d36a88604751355e673c07614c2d40f266805df782b956b6"
     },
     {
       "path": "previews/bandit/production-new-viewer/index.html",
       "bytes": 722,
-      "sha256": "1f9ed4aad997aab2f956a29606f2e527f797d69a8e5e0b00fc0979ed08661eab"
+      "sha256": "b07f77d6bab47387d36a88604751355e673c07614c2d40f266805df782b956b6"
     },
     {
       "path": "previews/bandit/profile-editor/index.html",
       "bytes": 722,
-      "sha256": "1f9ed4aad997aab2f956a29606f2e527f797d69a8e5e0b00fc0979ed08661eab"
+      "sha256": "b07f77d6bab47387d36a88604751355e673c07614c2d40f266805df782b956b6"
     },
     {
       "path": "previews/bandit/profile-import/index.html",
       "bytes": 722,
-      "sha256": "1f9ed4aad997aab2f956a29606f2e527f797d69a8e5e0b00fc0979ed08661eab"
+      "sha256": "b07f77d6bab47387d36a88604751355e673c07614c2d40f266805df782b956b6"
     },
     {
       "path": "previews/bandit/profile-published/index.html",
       "bytes": 722,
-      "sha256": "1f9ed4aad997aab2f956a29606f2e527f797d69a8e5e0b00fc0979ed08661eab"
+      "sha256": "b07f77d6bab47387d36a88604751355e673c07614c2d40f266805df782b956b6"
     },
     {
       "path": "previews/bandit/profiles-empty/index.html",
       "bytes": 722,
-      "sha256": "1f9ed4aad997aab2f956a29606f2e527f797d69a8e5e0b00fc0979ed08661eab"
+      "sha256": "b07f77d6bab47387d36a88604751355e673c07614c2d40f266805df782b956b6"
     },
     {
       "path": "previews/bandit/profiles-populated/index.html",
       "bytes": 722,
-      "sha256": "1f9ed4aad997aab2f956a29606f2e527f797d69a8e5e0b00fc0979ed08661eab"
+      "sha256": "b07f77d6bab47387d36a88604751355e673c07614c2d40f266805df782b956b6"
     },
     {
       "path": "previews/bandit/profiles-viewer/index.html",
       "bytes": 722,
-      "sha256": "1f9ed4aad997aab2f956a29606f2e527f797d69a8e5e0b00fc0979ed08661eab"
+      "sha256": "b07f77d6bab47387d36a88604751355e673c07614c2d40f266805df782b956b6"
     },
     {
       "path": "previews/bandit/project-editor/index.html",
       "bytes": 722,
-      "sha256": "1f9ed4aad997aab2f956a29606f2e527f797d69a8e5e0b00fc0979ed08661eab"
+      "sha256": "b07f77d6bab47387d36a88604751355e673c07614c2d40f266805df782b956b6"
     },
     {
       "path": "previews/bandit/project-new/index.html",
       "bytes": 722,
-      "sha256": "1f9ed4aad997aab2f956a29606f2e527f797d69a8e5e0b00fc0979ed08661eab"
+      "sha256": "b07f77d6bab47387d36a88604751355e673c07614c2d40f266805df782b956b6"
     },
     {
       "path": "previews/bandit/projects-empty/index.html",
       "bytes": 722,
-      "sha256": "1f9ed4aad997aab2f956a29606f2e527f797d69a8e5e0b00fc0979ed08661eab"
+      "sha256": "b07f77d6bab47387d36a88604751355e673c07614c2d40f266805df782b956b6"
     },
     {
       "path": "previews/bandit/projects-populated/index.html",
       "bytes": 722,
-      "sha256": "1f9ed4aad997aab2f956a29606f2e527f797d69a8e5e0b00fc0979ed08661eab"
+      "sha256": "b07f77d6bab47387d36a88604751355e673c07614c2d40f266805df782b956b6"
     },
     {
       "path": "previews/bandit/projects-viewer/index.html",
       "bytes": 722,
-      "sha256": "1f9ed4aad997aab2f956a29606f2e527f797d69a8e5e0b00fc0979ed08661eab"
+      "sha256": "b07f77d6bab47387d36a88604751355e673c07614c2d40f266805df782b956b6"
     },
     {
       "path": "previews/bandit/reference-editor/index.html",
       "bytes": 722,
-      "sha256": "1f9ed4aad997aab2f956a29606f2e527f797d69a8e5e0b00fc0979ed08661eab"
+      "sha256": "b07f77d6bab47387d36a88604751355e673c07614c2d40f266805df782b956b6"
     },
     {
       "path": "previews/bandit/review-empty/index.html",
       "bytes": 722,
-      "sha256": "1f9ed4aad997aab2f956a29606f2e527f797d69a8e5e0b00fc0979ed08661eab"
+      "sha256": "b07f77d6bab47387d36a88604751355e673c07614c2d40f266805df782b956b6"
     },
     {
       "path": "previews/bandit/review-error/index.html",
       "bytes": 722,
-      "sha256": "1f9ed4aad997aab2f956a29606f2e527f797d69a8e5e0b00fc0979ed08661eab"
+      "sha256": "b07f77d6bab47387d36a88604751355e673c07614c2d40f266805df782b956b6"
     },
     {
       "path": "previews/bandit/review-loading/index.html",
       "bytes": 722,
-      "sha256": "1f9ed4aad997aab2f956a29606f2e527f797d69a8e5e0b00fc0979ed08661eab"
+      "sha256": "b07f77d6bab47387d36a88604751355e673c07614c2d40f266805df782b956b6"
     },
     {
       "path": "previews/bandit/review-populated/index.html",
       "bytes": 722,
-      "sha256": "1f9ed4aad997aab2f956a29606f2e527f797d69a8e5e0b00fc0979ed08661eab"
+      "sha256": "b07f77d6bab47387d36a88604751355e673c07614c2d40f266805df782b956b6"
     },
     {
       "path": "previews/bandit/review-unapproved/index.html",
       "bytes": 722,
-      "sha256": "1f9ed4aad997aab2f956a29606f2e527f797d69a8e5e0b00fc0979ed08661eab"
+      "sha256": "b07f77d6bab47387d36a88604751355e673c07614c2d40f266805df782b956b6"
     },
     {
       "path": "previews/bandit/review-viewer/index.html",
       "bytes": 722,
-      "sha256": "1f9ed4aad997aab2f956a29606f2e527f797d69a8e5e0b00fc0979ed08661eab"
+      "sha256": "b07f77d6bab47387d36a88604751355e673c07614c2d40f266805df782b956b6"
     },
     {
       "path": "previews/bandit/series-editor/index.html",
       "bytes": 722,
-      "sha256": "1f9ed4aad997aab2f956a29606f2e527f797d69a8e5e0b00fc0979ed08661eab"
+      "sha256": "b07f77d6bab47387d36a88604751355e673c07614c2d40f266805df782b956b6"
     },
     {
       "path": "previews/bandit/shot-editor/index.html",
       "bytes": 722,
-      "sha256": "1f9ed4aad997aab2f956a29606f2e527f797d69a8e5e0b00fc0979ed08661eab"
+      "sha256": "b07f77d6bab47387d36a88604751355e673c07614c2d40f266805df782b956b6"
     },
     {
       "path": "previews/bandit/shot-new/index.html",
       "bytes": 722,
-      "sha256": "1f9ed4aad997aab2f956a29606f2e527f797d69a8e5e0b00fc0979ed08661eab"
+      "sha256": "b07f77d6bab47387d36a88604751355e673c07614c2d40f266805df782b956b6"
     },
     {
       "path": "previews/bandit/status/index.html",
       "bytes": 722,
-      "sha256": "1f9ed4aad997aab2f956a29606f2e527f797d69a8e5e0b00fc0979ed08661eab"
+      "sha256": "b07f77d6bab47387d36a88604751355e673c07614c2d40f266805df782b956b6"
     },
     {
       "path": "previews/bandit/subject-editor/index.html",
       "bytes": 722,
-      "sha256": "1f9ed4aad997aab2f956a29606f2e527f797d69a8e5e0b00fc0979ed08661eab"
+      "sha256": "b07f77d6bab47387d36a88604751355e673c07614c2d40f266805df782b956b6"
     },
     {
       "path": "previews/focus/assets/workbench-D8-kiAf8.css",
@@ -5564,8 +5554,8 @@
     },
     {
       "path": "previews/reads/app.js",
-      "bytes": 21701,
-      "sha256": "6a8b28e050d165c1807634a56b7974ba030c545f051e22f8ae9dfe7a15b267ba"
+      "bytes": 21979,
+      "sha256": "eb6c4eb51b31f1926226e9b8e4e3fa16426780db3223ddacfb3fbf7d654ec3d1"
     },
     {
       "path": "previews/reads/assets/synthetic-tone.wav",
@@ -5589,8 +5579,8 @@
     },
     {
       "path": "previews/reads/fixture/index.html",
-      "bytes": 14876,
-      "sha256": "7c74893e25283b6aac9e72f28e79b403d51de7075ece938e06a8aa3c73f36ae4"
+      "bytes": 15207,
+      "sha256": "5462aaaee8da353226f6d9bbc1fdacc180ec2c6cba22127f88523be61ba46247"
     },
     {
       "path": "previews/reads/fixture-catalog.json",
@@ -5609,8 +5599,8 @@
     },
     {
       "path": "previews/reads/style.css",
-      "bytes": 30466,
-      "sha256": "4712eb188ee1c9a1b6a27bfdc9959d91ca519e96b26d4fdd21020133dfa71b84"
+      "bytes": 31666,
+      "sha256": "e38bd1bb28bfc6ada0a6eee87c4f5ee5cafa3d966277d60f2ff48f5de5c04e53"
     },
     {
       "path": "previews/reads/theme-adapter.mjs",
@@ -5619,8 +5609,8 @@
     },
     {
       "path": "previews/reads/waitlist-client.js",
-      "bytes": 9598,
-      "sha256": "3dbb53a8a08e7191066eaa901bfd2c0f2435efb17cc70953220519d2fed05379"
+      "bytes": 9646,
+      "sha256": "c6bbceca58d12ba2751cec8340c73d3b2bd0f6f34cf7484615890daf122600a1"
     },
     {
       "path": "previews/stethem/404.html",
@@ -6499,23 +6489,23 @@
     },
     {
       "path": "registry/apps/bandit/collection.json",
-      "bytes": 25408,
-      "sha256": "2b77ffa137c0efe099d91d437534d43c1b311a50a45a2f1bf9574e7aa218255c"
+      "bytes": 26304,
+      "sha256": "a23c78a9028b00957753ee0b82cf90eaf4f3f9d920a82c1a54b6cf7e96575913"
     },
     {
       "path": "registry/apps/bandit/inventory.json",
-      "bytes": 28456,
-      "sha256": "bff59f9b2c3196f1d0cb3ed77df76e1350c95ffba37d916ae93518335d493464"
+      "bytes": 28970,
+      "sha256": "b2f129e582ea4da59f26e77bbdc8e0a971e7051d142c24133400f3a0ee68d245"
     },
     {
       "path": "registry/apps/bandit/public-guide.md",
-      "bytes": 2184,
-      "sha256": "afdeab260279acc9baff1b4a471c965823f969e18cab8441ad4443778852781b"
+      "bytes": 1840,
+      "sha256": "2978bfa1e98a14b32f4b111df257d200fce8a51b367df9fba6ea6a1cecda65f5"
     },
     {
       "path": "registry/apps/bandit/tokens.json",
-      "bytes": 25455,
-      "sha256": "7163a391d4a0afb8b2a59baaf1ee1b9406d91598452076b66931a12806755a53"
+      "bytes": 14001,
+      "sha256": "8ac9ed3bb6e5bfa0313dc84f1bbdc254fc86d05f786085f8a20c118d5c6a8174"
     },
     {
       "path": "registry/apps/focus/collection.json",
@@ -6584,8 +6574,8 @@
     },
     {
       "path": "registry/guides/bandit/design-system.md",
-      "bytes": 21393,
-      "sha256": "a41a8afbd5b0cc9a666172afea402e0a58835a2e5675f9c6f2cdfe5cd68cc258"
+      "bytes": 14451,
+      "sha256": "8412e41ca526a237437c170a402ba9e24c69415d0554de0b93426888af9e2ca1"
     },
     {
       "path": "registry/guides/focus/design-system.md",

@@ -53,7 +53,10 @@ $('waitlist-dialog').onclose=()=>{
   dialogGeneration++;shownSubmission=null;
   cancelPreparation();
   $('waitlist-form').reset();$('waitlist').setAttribute('aria-expanded','false');$('signup').setAttribute('aria-expanded','false');
-  if(waitlistOpener)$(document.body.classList.contains('landing-scrolled')?'signup':'waitlist').focus({preventScroll:true});
+  // Programmatic opens may have no native return target. Restore only if focus
+  // is still in the closed dialog or on the body, never over newer navigation.
+  const active=document.activeElement;
+  if(waitlistOpener&&(active===document.body||$('waitlist-dialog').contains(active)))$('waitlist').focus({preventScroll:true});
 };
 $('waitlist-form').onsubmit=async event=>{
   event.preventDefault();
@@ -107,17 +110,16 @@ export function updateLandingHeader() {
   brand.style.setProperty('--brand-x', `${startX + (endX - startX) * t}px`);
   brand.style.setProperty('--brand-y', `${Math.max(endY, startY + (endY - startY) * t)}px`);
   brand.style.setProperty('--brand-scale', `${1 + (endScale - 1) * t}`);
-  const active = document.activeElement;
   document.body.classList.toggle('landing-scrolled', compact);
-  document.querySelector('.landing-nav').inert = !compact;
-  document.querySelector('.landing-actions').inert = compact;
-  // Keep the same action focused when its hero/header counterpart takes over.
-  const counterpart = compact ? { waitlist: 'signup', login: 'header-login' } : { signup: 'waitlist', 'header-login': 'login' };
-  if (counterpart[active?.id]) requestAnimationFrame(() => {
-    if (document.body.classList.contains('landing-scrolled') === compact && !$('waitlist-dialog').open && [active, document.body].includes(document.activeElement)) $(counterpart[active.id]).focus({ preventScroll: true });
-  });
-  if (compact) { $('waitlist-note').hidden = true; $('waitlist').setAttribute('aria-expanded', 'false'); }
-  if (!compact) { $('signup-note').hidden = true; $('signup').setAttribute('aria-expanded', 'false'); }
+  const actions = document.querySelector('.landing-actions');
+  const actionSlot = document.querySelector('.actions-slot').getBoundingClientRect();
+  const endWidth = Math.min(250, innerWidth - endX - brand.offsetWidth * endScale - 36);
+  const endActionX = innerWidth - (innerWidth <= 600 ? 22 : 40) - endWidth;
+  actions.style.setProperty('--actions-x', `${actionSlot.left + (endActionX - actionSlot.left) * t}px`);
+  actions.style.setProperty('--actions-y', `${Math.max(18, actionSlot.top + (18 - actionSlot.top) * t)}px`);
+  actions.style.setProperty('--actions-width', `${actionSlot.width + (endWidth - actionSlot.width) * t}px`);
+  document.querySelector('.landing-nav').inert = true;
+  actions.inert = false;
 }
 function queueLandingHeader() { if (!headerFrame) { headerFrame = true; requestAnimationFrame(updateLandingHeader); } }
 addEventListener('scroll', queueLandingHeader, { passive: true });

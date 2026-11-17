@@ -1,7 +1,5 @@
 # Gather Motion design system
 
-Gather Motion is a human-directed studio for short-form video. Its visual language is app-owned: glacier imagery, blue and copper accents, Jost display type, Inter interface type and Space Mono technical text. Preserve that identity rather than applying the workbench shell's appearance. The product supports its established light theme only.
-
 ## Implement within the system
 
 1. Start from the existing component for the screen or state. Extend it rather than making a second component for the workbench.

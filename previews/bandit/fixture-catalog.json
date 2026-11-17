@@ -411,6 +411,26 @@
     ]
   },
   {
+    "id": "deliver-populated",
+    "title": "Deliver / populated",
+    "section": "screens",
+    "states": [
+      "populated",
+      "reset-on-reload",
+      "synthetic-only"
+    ]
+  },
+  {
+    "id": "deliver-empty",
+    "title": "Deliver / empty",
+    "section": "screens",
+    "states": [
+      "empty",
+      "reset-on-reload",
+      "synthetic-only"
+    ]
+  },
+  {
     "id": "asset-ready",
     "title": "Media preview / ready",
     "section": "components",
@@ -443,16 +463,6 @@
   {
     "id": "error-notice",
     "title": "Production error notice",
-    "section": "components",
-    "states": [
-      "default",
-      "reset-on-reload",
-      "synthetic-only"
-    ]
-  },
-  {
-    "id": "appearance",
-    "title": "Appearance control",
     "section": "components",
     "states": [
       "default",
