@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {mkdtemp,writeFile,rm,mkdir} from 'node:fs/promises';
+import {mkdtemp,writeFile,readFile,rm,mkdir} from 'node:fs/promises';
 import {join} from 'node:path';
 import {tmpdir} from 'node:os';
 import {createHash} from 'node:crypto';
@@ -22,4 +22,15 @@ test('public audit rejects deferred projects and local coverage data',async t=>{
  await writeFile(join(dir,'registry/projects.local.json'),'{}');
  const result=await auditPublicRelease(dir);assert.equal(result.status,'blocked');
  for(const issue of ['Unapproved project catalog','Unapproved project registration','Local project directory is not approved for publication','Local coverage data is not approved for publication'])assert.ok(result.findings.some(f=>f.issue===issue),issue);
+});
+
+test('Compass catalog audit requires explicit catalog-only scope and rejects a live or loopback fixture',async t=>{
+ const {COMPASS_CATALOG_STATUS:status,COMPASS_CATALOG_NOTICE:limitation,COMPASS_PUBLIC_SITE:publicSite}=await import('../tooling/public-compass-catalog.mjs');
+ const dir=await fixture(t,'safe');await mkdir(join(dir,'registry/apps/compass'));
+ const path='registry/apps/compass/collection.json',collection={id:'compass',kind:'app',fixtures:[],publicRelease:{status,limitation,publicSite,omittedFixtureIds:['homepage']}};
+ await writeFile(join(dir,path),JSON.stringify(collection));await writeFile(join(dir,'registry/index.json'),JSON.stringify({collections:['apps/compass/collection.json']}));
+ async function manifest(source){const report=JSON.parse(await readFile(join(dir,'release.json'),'utf8'));report.source=source;report.artifacts=await Promise.all(['index.html','registry/index.json',path].map(async path=>{const bytes=await readFile(join(dir,path));return {path,bytes:bytes.length,sha256:createHash('sha256').update(bytes).digest('hex')};}));await writeFile(join(dir,'release.json'),JSON.stringify(report));}
+ await manifest({compass:{status,omittedFixtureCount:1}});assert.equal((await auditPublicRelease(dir)).status,'passed');
+ collection.fixtures=[{id:'homepage',url:'http://127.0.0.1:8788/'}];await writeFile(join(dir,path),JSON.stringify(collection));await manifest({compass:{status,omittedFixtureCount:1}});assert.equal((await auditPublicRelease(dir)).status,'blocked');
+ collection.fixtures=[];await writeFile(join(dir,path),JSON.stringify(collection));await manifest({});assert.equal((await auditPublicRelease(dir)).status,'blocked');
 });

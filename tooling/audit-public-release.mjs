@@ -4,6 +4,7 @@ import {readFile,readdir} from 'node:fs/promises';
 import {resolve,join,relative,extname} from 'node:path';
 import {pathToFileURL} from 'node:url';
 import {createHash} from 'node:crypto';
+import {isCompassCatalog} from './public-compass-catalog.mjs';
 import {PUBLIC_APP_IDS} from './public-collection-scope.mjs';
 import {PUBLIC_SOURCE_REVISIONS} from '../apps/studio/public-sources.mjs';
 const textExtensions=new Set(['.html','.js','.mjs','.cjs','.json','.css','.md','.txt','.svg','.yml','.yaml']);
@@ -14,8 +15,10 @@ export async function auditPublicRelease(root){
  root=resolve(root);const report=JSON.parse(await readFile(join(root,'release.json'),'utf8'));const expected=new Map(report.artifacts.map(item=>[item.path,item]));const findings=[],all=await walk(root);let textFiles=0;
  const registry=JSON.parse(await readFile(join(root,'registry/index.json'),'utf8'));
  if(registry.projectCoverage)findings.push({path:'registry/index.json',issue:'Local project directory is not approved for publication'});
- for(const app of await readdir(join(root,'registry/apps')))if(!PUBLIC_APP_IDS.includes(app))findings.push({path:'registry/apps/'+app,issue:'Unapproved project catalog'});
- for(const entry of registry.collections){const match=/^apps\/([^/]+)\//.exec(entry);if(match&&!PUBLIC_APP_IDS.includes(match[1]))findings.push({path:'registry/index.json',issue:'Unapproved project registration'});}
+ let compassCatalog=false;try{compassCatalog=isCompassCatalog(JSON.parse(await readFile(join(root,'registry/apps/compass/collection.json'),'utf8')),report.source?.compass);}catch(error){if(error.code!=='ENOENT')throw error;}
+ const approved=id=>PUBLIC_APP_IDS.includes(id)||(id==='compass'&&compassCatalog);
+ for(const app of await readdir(join(root,'registry/apps')))if(!approved(app))findings.push({path:'registry/apps/'+app,issue:'Unapproved project catalog'});
+ for(const entry of registry.collections){const match=/^apps\/([^/]+)\//.exec(entry);if(match&&!approved(match[1]))findings.push({path:'registry/index.json',issue:'Unapproved project registration'});}
  if(report.licenseGaps?.length)findings.push({path:'release.json',issue:'Unresolved dependency license notices'});
  for(const file of all){const path=relative(root,file);if(path==='registry/projects.local.json')findings.push({path,issue:'Local coverage data is not approved for publication'});if(privateFile.test(path))findings.push({path,issue:'Prohibited file or directory'});const bytes=await readFile(file);
   if(path!=='release.json'){const item=expected.get(path);if(!item)findings.push({path,issue:'Unlisted release file'});else{if(item.bytes!==bytes.length||item.sha256!==createHash('sha256').update(bytes).digest('hex'))findings.push({path,issue:'Release manifest integrity mismatch'});expected.delete(path);}}

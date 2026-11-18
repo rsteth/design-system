@@ -15,6 +15,7 @@ export async function loadPublicScreens(rootURL, fetcher = fetch) {
     const collection = await read(collectionURL);
     if (collection.kind === 'reference') return null;
     const screens = (collection.fixtures ?? []).filter(f => ['screens', 'patterns'].includes(f.section)).map(f => ({id:f.id,title:f.title,section:f.section,description:f.description ?? '',url:publicScreenURL(f.url,collectionURL,root)}));
+    if(!screens.length)return null; // Catalog-only foundations have no capture journey.
     return {id:collection.id,title:collection.title.charAt(0).toUpperCase()+collection.title.slice(1),themes:collection.themes ?? ['light'],screens};
   }));
   return apps.filter(Boolean).sort((a,b) => a.title.localeCompare(b.title,'en',{sensitivity:'base',numeric:true}));

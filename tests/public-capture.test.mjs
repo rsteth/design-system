@@ -11,3 +11,9 @@ test('catalog inherits current registry, screens and patterns without adding pro
  const apps=await loadPublicScreens(root,async url=>({ok:!!docs[url],json:async()=>docs[url]}));
  assert.equal(apps.length,1);assert.equal(apps[0].screens.length,2);assert.equal(apps[0].screens[1].url,null);assert.deepEqual(apps[0].themes,['dark']);
 });
+
+test('foundations-only catalog cannot displace a working capture screen',async()=>{
+ const docs={[root+'registry/index.json']:{collections:['apps/compass/collection.json','apps/reads/collection.json']},[root+'registry/apps/compass/collection.json']:{id:'compass',title:'Compass',fixtures:[]},[collection]:{id:'reads',title:'Reads',fixtures:[{id:'landing',title:'Landing',section:'screens',url:'../../../previews/reads/fixture/'}]}};
+ const apps=await loadPublicScreens(root,async url=>({ok:!!docs[url],json:async()=>docs[url]}));
+ assert.deepEqual(apps.map(a=>a.id),['reads']);assert.ok(apps[0].screens[0].url);
+});

@@ -1,6 +1,6 @@
 # Public viewer release
 
-The public viewer packages 213 app-owned synthetic fixture views: Focus 20, Great Circle 22, stethem 73, Reads 43 and Bandit 55. Counts include states and variants, not unique components. The project list remains the same five applications plus the workbench. Deferred project catalogs and the local audit directory are excluded. The separate reference library contains 84 attributed studies. Material contains Lacouture’s 29 plates and 10 supplementary pages. Material now includes the 29 existing SVG reconstructions and color/geometry data in its own viewer. The separate original Site keeps its existing access policy.
+The public viewer packages 213 app-owned synthetic fixture views: Focus 20, Great Circle 22, stethem 73, Reads 43 and Bandit 55, plus one workbench fixture (214 total). Counts include states and variants, not unique components. The packaged screens remain the same five applications plus the workbench; an explicit Compass option adds its foundations and guide only. Deferred project catalogs and the local audit directory are excluded. The separate reference library contains 85 attributed studies. Material contains Lacouture’s 29 plates and 10 supplementary pages. Material now includes the 29 existing SVG reconstructions and color/geometry data in its own viewer. The separate original Site keeps its existing access policy.
 
 ## Publication boundaries
 
@@ -30,3 +30,12 @@ The source-preserved Manifolds no-canvas fixture has a known partial fallback: s
 ## Compass source registration
 
 Compass is an explicitly registered sixth app in the source catalog. Its app-owned tokens, direction and guide can be published with `tooling/public-source.mjs --compass-root /absolute/compass/check-out`, alongside the required existing Reads/Bandit roots. This checks its source snapshot before export and withholds private revisions through the same sanitizer. The option does not add Compass to packaged public previews, copy its backend, run ingestion or grant new app access. The public viewer still requires a separately validated synthetic Compass adapter before its local fixture URLs may be included. Never publish loopback fixture URLs as working hosted previews or push this assembly branch's private history.
+
+
+## Compass in the hosted viewer
+
+An explicit `--compass-root` on the public release builder adds Compass foundations, direction and generated guide after checking the app-owned snapshot. The exported catalog has no screen fixtures and clearly names the omitted source fixture IDs. It links the public product site. The existing five packaged preview families and their full browser gates remain unchanged; Compass does not silently gain a static app adapter, backend, inventory bridge or hosted MCP. The audit permits this one catalog only with its exact catalog-only declaration, empty fixture list and matching release scope. Without the option, existing publication scope is unchanged.
+
+### November18 Compass candidate validation
+
+The catalog-only candidate passed620 packaged-preview theme/viewport cases,428 full workbench fixture runs,85 reference loads, Compass desktop/mobile foundations and guide checks, capture navigation, static integrity/privacy audit and the full206-test source check. No unexpected page errors, external requests or failed assets were observed by the workbench runner. Its two documented source-preserved no-canvas exceptions remain; deterministic failure fixtures also emit expected console diagnostics. This is static synthetic-preview validation, not backend or product availability certification. Screenless catalogs are excluded from capture choices so Compass cannot displace a working capture screen.

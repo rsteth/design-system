@@ -57,6 +57,19 @@ try{
   await page.getByLabel('Fixture',{exact:true}).selectOption('library-populated');await frame.getByRole('group',{name:'Open An EPUB in progress',exact:true}).click();await frame.getByTestId('word').waitFor();assert.match(await frame.getByTestId('position').innerText(),/of 128/);await frame.getByRole('button',{name:'Close reader',exact:true}).click();await frame.getByRole('group',{name:'Open An EPUB in progress',exact:true}).waitFor();
   focusedFlows.push({viewport,epubSampleReader:'passed',playPauseCloseReopen:'passed',loadingErrorInterruption:'passed',libraryEpubSample:'passed',realEpubParsing:'not included'});
  }
+ if(release.source.compass){
+  const catalog=JSON.parse(await readFile(join(root,'registry/apps/compass/collection.json'),'utf8'));
+  assert.deepEqual(catalog.fixtures,[]);assert.equal(catalog.publicRelease.status,'foundations-and-guide-only');
+  for(const viewport of [{width:1440,height:1000},{width:390,height:844}]){
+   await page.setViewportSize(viewport);await page.goto(studio+'?collection=compass&section=foundations');
+   await page.getByLabel('Collection',{exact:true}).waitFor();assert.equal(await page.getByLabel('Collection',{exact:true}).inputValue(),'compass');
+   await page.getByRole('heading',{name:'Direction',exact:true}).waitFor();assert.equal(await page.locator('iframe').count(),0);
+   assert.ok((await page.locator('body').innerText()).includes('tokens, direction and guide only'));
+   assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true);
+   const guide=await context.request.get(new URL(await page.locator('#implementation-guide').getAttribute('href'),page.url()).href);assert.equal(guide.status(),200);assert.ok((await guide.text()).includes('hosted MCP remains unavailable'));
+   await page.screenshot({path:join(output,`compass-${viewport.width}.png`),fullPage:true});
+  }
+ }
  await page.goto(studio+'?library=references&collection=reference-stripe&section=components');await page.getByLabel('Collection',{exact:true}).waitFor();
  const referenceIds=await page.getByLabel('Collection',{exact:true}).locator('option').evaluateAll(options=>options.map(o=>o.value));
  assert.equal(referenceIds.length,85);
