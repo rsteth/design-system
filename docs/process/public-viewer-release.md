@@ -25,3 +25,8 @@ Run the complete `npm run check` gate, the standalone `tests/public-app-previews
 Publication is a separate authorized action. Preserve the original checkout and saved stashes. Verify exact remote commits, GitHub Pages deployment and the live viewer before claiming delivery. No repository visibility, default branch, app deployment, credentials or security permissions are changed by these build tools.
 
 The source-preserved Manifolds no-canvas fixture has a known partial fallback: static diagrams remain, but its original ResizeObserver throws when no canvas context is available. The browser report records that exact error separately. It does not waive unexpected errors in any other fixture.
+
+
+## Compass source registration
+
+Compass is an explicitly registered sixth app in the source catalog. Its app-owned tokens, direction and guide can be published with `tooling/public-source.mjs --compass-root /absolute/compass/check-out`, alongside the required existing Reads/Bandit roots. This checks its source snapshot before export and withholds private revisions through the same sanitizer. The option does not add Compass to packaged public previews, copy its backend, run ingestion or grant new app access. The public viewer still requires a separately validated synthetic Compass adapter before its local fixture URLs may be included. Never publish loopback fixture URLs as working hosted previews or push this assembly branch's private history.

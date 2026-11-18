@@ -21,9 +21,10 @@ for(const id of ['focus','great-circle','stethem'])test(`${id} implements the sh
  if(collection.registrySnapshot.integrationRevision===null){assert.ok(collection.registrySnapshot.integrationStatus==='unpublished-local-snapshot'||collection.registrySnapshot.withheldRevisions?.includes('integrationRevision'),'A null integration pin is explicitly unpublished or publicly withheld');}else assert.match(collection.registrySnapshot.integrationRevision,/^[a-f0-9]{40}$/);
 });
 
-test('active own-work scope stays within the five existing published applications',async()=>{
+test('active own-work scope stays within the six registered applications',async()=>{
  const {readdir}=await import('node:fs/promises');
- const expected=['focus','great-circle','stethem','reads','bandit'];
+ // Compass registration may be exported explicitly as source metadata; packaged previews still list the five approved apps.
+ const expected=['focus','great-circle','stethem','reads','bandit','compass'];
  const index=JSON.parse(await readFile(new URL('../registry/index.json',import.meta.url),'utf8'));
  assert.deepEqual(index.collections,['../collections/original/workbench/collection.json',...expected.map(id=>`apps/${id}/collection.json`)]);
  assert.equal(index.projectCoverage,undefined);

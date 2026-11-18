@@ -18,6 +18,7 @@
     "docs/process/reads-bandit-integration.md",
     "registry/apps/bandit/collection.json",
     "registry/apps/bandit/inventory.json",
+    "registry/apps/compass/collection.json",
     "registry/apps/focus/inventory.json",
     "registry/apps/great-circle/inventory.json",
     "registry/apps/reads/collection.json",

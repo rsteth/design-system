@@ -6,6 +6,7 @@
     "apps/great-circle/collection.json",
     "apps/stethem/collection.json",
     "apps/reads/collection.json",
-    "apps/bandit/collection.json"
+    "apps/bandit/collection.json",
+    "apps/compass/collection.json"
   ]
 }

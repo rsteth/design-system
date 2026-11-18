@@ -39,3 +39,13 @@ test('local catalog additions cannot silently expand public publication scope',(
 test('project search includes registered component titles, ids and states',()=>{const project={title:'Example',category:'Tools',notes:'Source UI',gaps:['Unrepresented state'],collection:'demo'};const collections=[{id:'demo',fixtures:[{id:'unique-fixture',title:'Needle component',states:['invalid-value']}]}];const haystack=projectSearchText(project,collections);for(const term of ['needle component','unique-fixture','invalid-value','unrepresented state'])assert.ok(haystack.includes(term));});
 
 test('explicit missing state notes are validated',()=>{assert.ok(validateProjectCoverage({...catalog,projects:[{...catalog.projects[0],gaps:[null]}]}).length);assert.deepEqual(validateProjectCoverage({...catalog,projects:[{...catalog.projects[0],gaps:['Full authenticated chat']}] }),[]);});
+
+test('Compass registration is explicit source-only scope; packaged previews stay unchanged',()=>{
+ assert.equal(PUBLIC_APP_IDS.includes('compass'),false);
+ assert.equal(publicSourcePath('registry/apps/compass/tokens.json'),false);
+ assert.equal(publicSourcePath('registry/apps/compass/tokens.json',{includeCompassSource:true}),true);
+ assert.equal(publicSourcePath('registry/apps/unapproved/tokens.json',{includeCompassSource:true}),false);
+ const index={collections:['apps/compass/collection.json','apps/focus/collection.json']};
+ assert.deepEqual(publicRegistry(index).collections,['apps/focus/collection.json']);
+ assert.deepEqual(publicRegistry(index,{includeCompassSource:true}).collections,index.collections);
+});

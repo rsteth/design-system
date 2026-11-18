@@ -10,6 +10,7 @@ Start with the product guide below. Robin workbenches describe app-owned UI; ref
 - [stethem](registry/guides/stethem/design-system.md)
 - [Reads](registry/guides/reads/design-system.md)
 - [Gather Motion](registry/guides/bandit/design-system.md)
+- [Compass](registry/guides/compass/design-system.md)
 
 ## Reference studies
 

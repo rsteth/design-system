@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "id": "compass",
+  "title": "Compass",
+  "kind": "app",
+  "renderer": "dom",
+  "summary": "The Compass public site: homepage, connection guide and advisory index. One monospace family on a night ground, one blue action colour and one amber contact colour. A day view is kept behind the toggle.",
+  "direction": {
+    "status": "draft",
+    "product": "Compass gives an agent the public vulnerability record and the evidence from projects you select, so it can say what needs a look, with the source and the uncertainty in view.",
+    "character": "watchful, exact, unhurried",
+    "world": "The combat information centre of a ship at night. The lights are down, one screen is lit, and the watch already knows what it will do when a contact is called.",
+    "moments": [
+      "The night globe on the homepage: Earth drawn in characters, lit along one limb, turning slowly, with one contact and its bearing",
+      "The Connect via MCP action at the centre of that screen"
+    ],
+    "signature": "One amber contact on a dark globe, with its bearing read off the compass ring. Amber is used for nothing else.",
+    "voice": [
+      "Say what is known, where it came from and what is not covered.",
+      "A missing match is never called safe.",
+      "Short declarative lines, like a report on a net. No urgency words.",
+      "Capitals are for instrument labels and the hero title. Sentences that explain stay in sentence case."
+    ]
+  },
+  "tokens": "tokens.json",
+  "themes": [
+    "dark",
+    "light"
+  ],
+  "source": {
+    "repository": "https://github.com/rsteth/cve-compass",
+    "revision": null,
+    "path": ".",
+    "withheldRevisions": [
+      "revision"
+    ]
+  },
+  "provenance": {
+    "status": "author-owned",
+    "sources": []
+  },
+  "license": {
+    "spdx": "UNLICENSED",
+    "note": "Existing repository terms apply. No new redistribution grant. IBM Plex Mono is shipped under the SIL Open Font License 1.1."
+  },
+  "fixtures": [
+    {
+      "id": "homepage",
+      "title": "Homepage",
+      "section": "screens",
+      "url": "http://127.0.0.1:8788/",
+      "states": [
+        "dark",
+        "light",
+        "desktop",
+        "mobile",
+        "reduced motion",
+        "no JavaScript"
+      ],
+      "description": "public-index/public/index.html served by npm run preview:public. The globe is decorative; the page reads the same without it."
+    },
+    {
+      "id": "connect",
+      "title": "Connection guide",
+      "section": "screens",
+      "url": "http://127.0.0.1:8788/connect.html",
+      "states": [
+        "dark",
+        "light",
+        "desktop",
+        "mobile",
+        "copy command"
+      ]
+    },
+    {
+      "id": "advisories",
+      "title": "Advisory index",
+      "section": "screens",
+      "url": "http://127.0.0.1:8788/advisories.html",
+      "states": [
+        "dark",
+        "light",
+        "loading",
+        "populated",
+        "no matches",
+        "index unavailable"
+      ],
+      "description": "Reads the local public cache through the same worker as production. No ingestion runs in the preview."
+    }
+  ],
+  "registrySnapshot": {
+    "authority": "App-owned design collection, tokens and optional inventory",
+    "baseRevision": null,
+    "tokenSha256": "171212beea87c6ab5f25fd8e5949cd94a2cf1031cfd1b1f2b81acf778f9d263c",
+    "integrationStatus": "unpublished-local-snapshot",
+    "integrationRevision": null,
+    "withheldRevisions": [
+      "baseRevision"
+    ]
+  }
+}

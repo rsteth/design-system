@@ -56,7 +56,7 @@ test('every guide takes one path: direction, app notes, then generated tables',a
  assert.ok(app.indexOf('Notes from the app.')>app.indexOf('## Direction')&&app.indexOf('Notes from the app.')<app.indexOf('## Tokens'));assert.equal(app.match(/^# /gm).length,1);
  assert.match(study,/Independent unverified reference\.[^]*## Direction\n\n- \*\*Product:\*\* A calm editorial canvas\.\n\nFirst line of the study description/);
 });
-test('current registry guidance is deterministic and all local links resolve',async()=>{assert.equal((await generateGuides()).guides,91);});
+test('current registry guidance is deterministic and all local links resolve',async()=>{assert.equal((await generateGuides()).guides,92);});
 test('public navigation documents do not contain local user paths',async()=>{
  for(const path of ['docs/process/capture-studio.md','templates/blank/README.md'])assert.doesNotMatch(await readFile(new URL('../'+path,import.meta.url),'utf8'),/\/Users\/|\/home\//);
 });
