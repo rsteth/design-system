@@ -5,7 +5,7 @@
     "browser": "157.0.8103.79"
   },
   "schemaVersion": 1,
-  "createdAt": "2026-11-17T19:19:59.769Z",
+  "createdAt": "2026-11-18T20:01:08.334Z",
   "status": "local-candidate-not-published",
   "licenseGaps": [],
   "focusEpub": "fixture-only",
@@ -31,6 +31,12 @@
       "version": "0.0.0",
       "status": "synthetic-preview"
     },
+    "compass": {
+      "repository": "https://github.com/rsteth/cve-compass",
+      "version": "0.1.0",
+      "status": "foundations-and-guide-only",
+      "omittedFixtureCount": 3
+    },
     "reads": {
       "version": "0.1.0",
       "status": "synthetic-preview"
@@ -55,7 +61,7 @@
     {
       "path": "BUNDLED-DEPENDENCIES.json",
       "bytes": 2137,
-      "sha256": "ff5df17aa61039e9444c24077326a11b516f9f160affb1ecf2caef6a51d7aeca"
+      "sha256": "9fbc52e2861bd28a4be3126909f7b794cfd3405a7c402e300055b2e5c7bb3cf2"
     },
     {
       "path": "LICENSE",
@@ -69,8 +75,8 @@
     },
     {
       "path": "RELEASE-NOTES.html",
-      "bytes": 2400,
-      "sha256": "58b2913423657a26d15acf304d539159d73481bf97b463a1b756c417142d3fea"
+      "bytes": 2609,
+      "sha256": "19b82d58c2850a1fc5790ad5f0865aab34bfdd6e55a2a6d4461736e94f8d6a5b"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
@@ -5034,8 +5040,8 @@
     },
     {
       "path": "llms.txt",
-      "bytes": 6909,
-      "sha256": "f1995e584f7a750193ca63ec1161535ed65d7e2a0e9eeca5604596181a50db3b"
+      "bytes": 6963,
+      "sha256": "f2217442cb8248590c8a589224a9dd4589a7591d61d2005d12f1b2bf8c614fed"
     },
     {
       "path": "packages/appearance/index.d.mts",
@@ -5054,8 +5060,8 @@
     },
     {
       "path": "packages/capture/public-screens.mjs",
-      "bytes": 1701,
-      "sha256": "0d58ff6cd7bb8e2bc9bee0cdaa2d6c52a36e2e3e4f8ff947b426cdf33fb620ec"
+      "bytes": 1790,
+      "sha256": "0412555dd3f202f8250a42258d9ff3f95a40e4a36d9ca05fbd755c915d2c8f8e"
     },
     {
       "path": "packages/capture/scenes.mjs",
@@ -6508,6 +6514,21 @@
       "sha256": "8ac9ed3bb6e5bfa0313dc84f1bbdc254fc86d05f786085f8a20c118d5c6a8174"
     },
     {
+      "path": "registry/apps/compass/collection.json",
+      "bytes": 2999,
+      "sha256": "15583e0e58f2bf90dfb758462bd9caebcfaa007a257c5a259a5267cf4fe7a23b"
+    },
+    {
+      "path": "registry/apps/compass/public-guide.md",
+      "bytes": 399,
+      "sha256": "6d5a3de4e76c932d4d48d63b1351fe2a96454b424078516af1e2364c4a46a7b3"
+    },
+    {
+      "path": "registry/apps/compass/tokens.json",
+      "bytes": 1566,
+      "sha256": "171212beea87c6ab5f25fd8e5949cd94a2cf1031cfd1b1f2b81acf778f9d263c"
+    },
+    {
       "path": "registry/apps/focus/collection.json",
       "bytes": 10900,
       "sha256": "a370aa7a9b682dcc44d7adcea811f6c599cddbfd73d9f683d3dfaa5ceba6c159"
@@ -6576,6 +6597,11 @@
       "path": "registry/guides/bandit/design-system.md",
       "bytes": 14451,
       "sha256": "8412e41ca526a237437c170a402ba9e24c69415d0554de0b93426888af9e2ca1"
+    },
+    {
+      "path": "registry/guides/compass/design-system.md",
+      "bytes": 2970,
+      "sha256": "88ec1fa5c2cc6b506ad4e639bfcfc69714c9e970b8013eeebe1b00392ba9b341"
     },
     {
       "path": "registry/guides/focus/design-system.md",
@@ -7029,8 +7055,8 @@
     },
     {
       "path": "registry/index.json",
-      "bytes": 285,
-      "sha256": "52dc90e9b926656eb920153976367e90bdbeb8bcfd83ef8206a8685f700a737f"
+      "bytes": 321,
+      "sha256": "fdf1c6d03b11830df3132c8b5d8f54bac207af82a0e071db4049fda9a61bca60"
     },
     {
       "path": "registry/reference-homepages.json",
