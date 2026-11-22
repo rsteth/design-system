@@ -13,7 +13,7 @@ const {chromium,expect}=await import(pathToFileURL(module));
 const reads=JSON.parse(await readFile(join(root,'previews/reads/fixture-catalog.json'),'utf8'));
 const bandit=JSON.parse(await readFile(join(root,'previews/bandit/fixture-catalog.json'),'utf8'));
 assert.equal(reads.length,43,'Reads release includes every source-owned fixture');
-assert.equal(bandit.length,56,'Bandit release includes every source-owned fixture');
+assert.equal(bandit.length,57,'Bandit release includes every source-owned fixture');
 const banditLegacy=new Set(['landing','overview','empty','controls','status']);
 const allFixtures=[...reads.map(({id})=>({app:'reads',id,path:`previews/reads/fixture/?fixture=${id}${id==='account-denied'?'&auth=failed':''}`,theme:'dark'})),...bandit.flatMap(({id})=>['light','dark'].map(theme=>({app:'bandit',id,path:`previews/bandit/${id}/?workbenchTheme=${theme}`,theme})))];
 const selected=process.env.PUBLIC_PREVIEW_FIXTURES?.split(',');
@@ -143,20 +143,58 @@ try{
      }
      if(fixture.id==='profile-import'){await target.getByLabel('Profile JSON',{exact:true}).fill('{');await target.getByRole('button',{name:'Import as draft',exact:true}).click();await expect(target.locator('.error[role=alert]')).toBeVisible();}
      if(fixture.id==='production-new-plan'){
-      for(let i=0;i<2;i++){await target.getByRole('button',{name:'Back',exact:true}).click();await expect(target.getByText('Step 2 of 3',{exact:true})).toBeVisible();await target.getByRole('button',{name:'Continue',exact:true}).click();await expect(target.getByText('Step 3 of 3',{exact:true})).toBeVisible();}
-      await target.getByRole('button',{name:'Create production',exact:true}).click();await expect(target.getByRole('alert')).toContainText('Nothing was saved or sent');
+      await expect(target.getByLabel('Production title')).toHaveValue('The morning cup');
+      await target.getByRole('button',{name:'Start with your clips',exact:true}).click();
+      await expect(target.getByRole('alert')).toContainText('Nothing was saved or sent');
+      await expect(target.getByLabel('Production title')).toHaveValue('The morning cup');
+     }
+     if(fixture.id==='settings-connections'){
+      await expect(target.getByRole('heading',{name:'Personal AI Connections',exact:true})).toBeVisible();
+      await expect(target.locator('.connection-status dd')).toHaveText(['Off','Not connected','Off']);
+      await expect(target.getByText('This preview shows example availability only.',{exact:false})).toBeVisible();
+      await expect(target.locator('input, button:has-text("Refresh connection status")')).toHaveCount(0);
      }
      if(fixture.id==='shot-editor'){await target.getByRole('button',{name:'Close shot editor',exact:true}).click();await target.getByRole('button',{name:'Edit shot',exact:true}).first().click();await expect(target.getByLabel('Shot editor',{exact:true})).toBeVisible();}
      if(fixture.id==='review-populated'){
-      await target.locator('h1').click();await page.keyboard.press('j');await expect(target.locator('.shot-navigation button[aria-current="step"]')).toContainText('A quiet detail');await page.keyboard.press('k');await expect(target.locator('.shot-navigation button[aria-current="step"]')).toContainText('Morning light');
+      await target.locator('h1').click();await page.keyboard.press('k');await expect(target.locator('.shot-navigation button[aria-current="step"]')).toContainText('A quiet detail');await page.keyboard.press('j');await expect(target.locator('.shot-navigation button[aria-current="step"]')).toContainText('Morning light');
      }
      if(fixture.id==='memory-populated'){await target.getByRole('button',{name:'Skip for this shot',exact:true}).click();await target.getByRole('button',{name:'Show skipped preferences',exact:true}).click();await expect(target.getByRole('button',{name:'Skip for this shot',exact:true})).toBeVisible();}
      if(fixture.id==='asset-expired')for(let i=0;i<2;i++){await target.getByRole('button',{name:'Refresh preview',exact:true}).click();await expect(target.getByRole('button',{name:'Refresh preview',exact:true})).toBeVisible();}
      if(fixture.id.startsWith('deliver-')){
       await expect(target.locator('[data-stage="deliver"]')).toBeVisible();
       await expect(target.getByRole('heading',{name:'Cuts',exact:true})).toBeVisible();
-      if(fixture.id==='deliver-empty')await expect(target.getByRole('heading',{name:'No cuts yet',exact:true})).toBeVisible();
-      else {await expect(target.locator('.export-card')).toHaveCount(3);await target.getByRole('button',{name:'Assemble selected takes',exact:true}).click();await expect(target.getByRole('alert').filter({hasText:'Nothing was saved or sent'})).toHaveCount(1);}
+      const assemble=target.getByRole('button',{name:'Assemble selected takes',exact:true});
+      if(fixture.id==='deliver-empty'){
+       await expect(target.getByRole('heading',{name:'No cuts yet',exact:true})).toBeVisible();
+       await expect(assemble).toBeDisabled();
+      }else{
+       await expect(target.locator('.export-card')).toHaveCount(3);
+       const lanes=target.getByRole('region',{name:'Audio lanes'});
+       const tray=lanes.getByRole('region',{name:'Available audio',exact:true});
+       await tray.getByRole('button',{name:'Add synthetic-tone.wav',exact:true}).click();
+       const inspector=lanes.getByRole('group',{name:'synthetic-tone.wav',exact:true});
+       await inspector.getByRole('slider',{name:'Source trim end',exact:true}).press('ArrowLeft');
+       await expect(inspector.getByText('1.99s kept',{exact:true})).toBeVisible();
+       const source=inspector.getByLabel('Source in (seconds)',{exact:true});
+       await source.fill('0.25');await source.press('Enter');
+       await expect(inspector.getByText('1.74s kept',{exact:true})).toBeVisible();
+       await inspector.getByRole('button',{name:'Play trimmed audio',exact:true}).click();
+       const audio=lanes.locator('audio');
+       await expect.poll(()=>audio.evaluate(a=>a.readyState>=1&&a.currentTime>=0.25)).toBe(true);
+       assert.equal(new URL(await audio.evaluate(a=>a.currentSrc)).pathname,base+'previews/bandit/assets/synthetic-tone.wav');
+       await inspector.getByRole('button',{name:'Remove audio clip',exact:true}).click();
+       await expect(inspector).toHaveCount(0);
+       await target.getByText('Shot trims',{exact:true}).click();
+       const durations=target.getByLabel('Use duration (seconds)',{exact:true});
+       await expect(durations.first()).toHaveValue('5');
+       await expect(assemble).toBeDisabled();
+       await durations.nth(0).fill('4');
+       await durations.nth(1).fill('6');
+       await assemble.click();
+       await expect(target.getByRole('alert').filter({hasText:'Nothing was saved or sent'})).toHaveCount(1);
+       await tray.getByRole('button',{name:'Add synthetic-tone.wav',exact:true}).click();
+       await expect(inspector).toBeVisible();
+      }
      }
      if(fixture.id==='projects-viewer')await expect(target.getByRole('button',{name:'Edit project',exact:true})).toHaveCount(0);
      await expect(target.locator('[data-setup-error]')).toHaveCount(0);
@@ -165,7 +203,7 @@ try{
     if(!framed&&['landing','studio-ready','overview'].includes(fixture.id)){await target.locator('body').evaluate(()=>{document.activeElement?.blur();window.scrollTo(0,0);});await page.mouse.move(0,0);await page.screenshot({path:join(evidence,`${fixture.app}-${fixture.id}-${viewport.width}-${fixture.theme}.png`),fullPage:true});}
     await page.reload({waitUntil:'domcontentloaded'});
     if(fixture.app==='reads'){await expect(target.locator('html')).toHaveAttribute('data-fixture-ready',fixture.id);if(fixture.id==='studio-empty')await expect(target.locator('.job')).toHaveCount(0);if(fixture.id==='studio-progress')await expect(target.locator('.badge')).toHaveText('In progress');if(fixture.id==='reader-controls')await expect(target.locator('#speed-value')).toHaveText('1.0x');if(fixture.id.startsWith('recording-'))await expect(target.locator('#voice-status')).toHaveText('');if(fixture.id==='hosted-pending')await expect(target.locator('#voice-shelf')).toContainText('The voice is being checked');}
-    else{await expect(target.locator('html')).toHaveAttribute('data-preview-ready','true');if(!banditLegacy.has(fixture.id))await expect(target.locator('html')).toHaveAttribute('data-fixture-ready',fixture.id);if(fixture.id==='profile-import')await expect(target.getByLabel('Profile JSON',{exact:true})).toHaveValue('');if(fixture.id==='controls')await expect(target.getByLabel('Production name')).toHaveValue('A quiet morning');}
+    else{await expect(target.locator('html')).toHaveAttribute('data-preview-ready','true');if(!banditLegacy.has(fixture.id))await expect(target.locator('html')).toHaveAttribute('data-fixture-ready',fixture.id);if(fixture.id==='profile-import')await expect(target.getByLabel('Profile JSON',{exact:true})).toHaveValue('');if(fixture.id==='controls')await expect(target.getByLabel('Production name')).toHaveValue('A quiet morning');if(fixture.id==='deliver-populated'){await expect(target.getByRole('group',{name:'synthetic-tone.wav',exact:true})).toHaveCount(0);await target.getByText('Shot trims',{exact:true}).click();await expect(target.getByLabel('Use duration (seconds)',{exact:true}).first()).toHaveValue('5');}}
     console.log('Passed',fixture.app,fixture.id,viewport.width,framed?'opaque':'standalone');
     results.push({app:fixture.app,fixture:fixture.id,width:viewport.width,theme:fixture.theme,sandbox:framed,passed:true});
    }

@@ -8,7 +8,12 @@ export const BANDIT_SOURCES=Object.freeze([
  'apps/web/app/globals.css','apps/web/app/design-tokens.css',
  'apps/web/app/river-landing.tsx','apps/web/app/river-landing.module.css','apps/web/app/waitlist-dialog.tsx',
  'apps/web/app/studio-overview.tsx','apps/web/app/studio-context.tsx',
- 'apps/web/app/projects/page.tsx','apps/web/app/profiles/page.tsx','apps/web/app/library/page.tsx',
+ 'apps/web/app/projects/page.tsx','apps/web/app/profiles/page.tsx','apps/web/app/library/page.tsx','apps/web/app/settings/page.tsx',
+ 'apps/web/app/profile-creator.tsx','apps/web/app/profile-fields.tsx','apps/web/app/duration-field.tsx','apps/web/app/clip-fit.ts',
+ 'apps/web/app/director-capabilities.ts','apps/web/app/shot-overrides.tsx','apps/web/app/shot-reorder.tsx',
+ 'apps/web/app/productions/[id]/shot-director-panel.tsx','apps/web/app/productions/[id]/approved-sequence.tsx','apps/web/app/productions/[id]/cut-trims.ts',
+ 'apps/web/app/productions/[id]/review/review-feedback.tsx','apps/web/app/productions/[id]/deliver/audio-lanes.tsx',
+ 'apps/web/app/productions/[id]/deliver/audio-placement.ts','apps/web/app/productions/[id]/deliver/audio-preview.ts',
  'apps/web/app/productions/[id]/director-panel.tsx','apps/web/app/productions/[id]/director-hosted-controls.tsx','apps/web/app/productions/[id]/director-connections.tsx',
  'apps/web/app/productions/new/page.tsx','apps/web/app/productions/[id]/production-board.tsx',
  'apps/web/app/productions/[id]/advanced-controls.tsx','apps/web/app/productions/[id]/review/review-room.tsx',
@@ -39,7 +44,7 @@ export function extractBanditContext(source){
  if(start<0||end<=start||!source.includes('export function StudioProvider(')||!source.slice(start,end).includes('export const StudioContext'))throw Error('Source adapter drift: Bandit pure context boundary');
  return 'import {createContext,useContext,useState} from "react";\nexport type Model<T extends string> = any;\nexport type Api = any;\n'+source.slice(start,end);
 }
-export function adaptBanditSource(path,source,{replaceOnce=localReplaceOnce,replaceSection=localReplaceSection}={}){
+export function adaptBanditSource(path,source,{replaceOnce=localReplaceOnce,replaceSection=localReplaceSection,fixtureAudioUrl}={}){
  if(path==='apps/web/app/studio-context.tsx')source=extractBanditContext(source);
  if(path==='apps/web/app/waitlist-dialog.tsx')source=adaptBanditWaitlist(source,{replaceSection});
  if(path==='design/collection.json')return JSON.stringify({fixtures:JSON.parse(source).fixtures.map(({id,title})=>({id,title}))});
@@ -57,6 +62,23 @@ export function adaptBanditSource(path,source,{replaceOnce=localReplaceOnce,repl
   source=replaceOnce(source,'localStorage.getItem(key)','null','Gather theme read');
   source=replaceOnce(source,'localStorage.removeItem(key);','','Gather theme reset');
   source=replaceOnce(source,'localStorage.setItem(key, next);','','Gather theme write');
+ }
+ if(path==='apps/web/app/productions/[id]/deliver/deliver-room.tsx'){
+  source=replaceOnce(source,'href={`/productions/${id}${production.approved_plan_id && board.shots.length <= 100 ? "/review" : ""}`}','href="#preview-navigation"','Bandit conditional Deliver stage URL');
+ }
+ if(path==='apps/web/app/settings/page.tsx'){
+  source=replaceOnce(source,'import { DirectorConnections } from "../productions/[id]/director-connections";','','Bandit public Settings connection manager');
+  source=replaceSection(source,'            {capability.local_preview && (','          </>','            <p>This preview shows example availability only. You cannot connect an account or run a model here.</p>\n','Bandit public Settings setup and hosted provider UI');
+ }
+ if(path==='apps/web/app/productions/[id]/cut-trims.ts'||path==='apps/web/app/productions/[id]/deliver/audio-lanes.tsx'){
+  // Use React draft state in both contexts. A public fixture must reset on reload
+  // even when opened outside the opaque iframe, where localStorage exists.
+  source=replaceOnce(source,/localStorage\.getItem\((?:storageKey|key)\)/,'null','Bandit synthetic cut draft read');
+  source=replaceOnce(source,/localStorage\.setItem\((?:storageKey|key), JSON\.stringify\((?:next|draft)\)\);/,'','Bandit synthetic cut draft write');
+ }
+ if(path==='design/preview/fixture-state.ts'){
+  if(!/^\/(?:[a-zA-Z0-9_-]+\/)*previews\/bandit\/assets\/synthetic-tone\.wav$/.test(fixtureAudioUrl??''))throw Error('Bandit fixture audio must be a packaged synthetic asset');
+  source=replaceOnce(source,'      if (path.endsWith("/download-url"))',`      if (path.endsWith("/download-url") && options?.params?.path?.identity === "fixture-audio") return ok({ url: ${JSON.stringify(fixtureAudioUrl)} });\n      if (path.endsWith("/download-url"))`,'Bandit packaged audio fixture asset');
  }
  if(path==='apps/web/app/productions/[id]/review/review-room.tsx'){
   source=replaceOnce(source,'import { ComfyGeneration } from "./comfy-generation";','', 'Bandit provider intent module');
@@ -77,12 +99,12 @@ export function adaptBanditSource(path,source,{replaceOnce=localReplaceOnce,repl
  return source;
 }
 export async function buildBandit({root,out,base,collection,outputRoot}, helpers){
- const {ROOT,input,output,replaceOnce,replaceSection,dependencyNotices,PREVIEW_CSP,PREVIEW_NOTICE,hash}=helpers;
+ const {ROOT,input,output,replaceOnce,replaceSection,dependencyNotices,PREVIEW_CSP,PREVIEW_NOTICE,hash,syntheticAudio}=helpers;
  const prefix=base+'previews/bandit/',stage=await mkdtemp(join(ROOT,'review/app-preview-build-'));
  const inputFiles=[];const dependencyModules=new Set();
  try{
   for(const path of BANDIT_SOURCES){let text=(await input(root,path)).toString();
-   text=adaptBanditSource(path,text,{replaceOnce,replaceSection});
+   text=adaptBanditSource(path,text,{replaceOnce,replaceSection,fixtureAudioUrl:prefix+'assets/synthetic-tone.wav'});
    if(path==='design/preview/app/preview-boundary.tsx')text=replaceOnce(text,'!anchor.getAttribute("href")?.startsWith("#")','(anchor.getAttribute("href") === "#preview-navigation" || !anchor.getAttribute("href")?.startsWith("#"))','Bandit inert navigation');
    if(path==='design/preview/app/[fixture]/page.tsx'){
     text=replaceOnce(text,'export default async function Fixture','export default function Fixture','Bandit synchronous fixture');
@@ -118,9 +140,10 @@ export function PreviewForm({onSubmit,onClickCapture,onKeyDown,...props}:any){
   // A root index is informational only, not an extra unregistered fixture.
   await output(out,'index.html',`<!doctype html><html lang="en"><meta charset="utf-8"><title>Gather Motion previews</title><h1>Gather Motion synthetic previews</h1><p>${PREVIEW_NOTICE}</p><ul>${collection.fixtures.map(f=>`<li><a href="./${f.id}/">${f.id}</a></li>`).join('')}</ul></html>`);
   for(const path of BANDIT_ASSETS)await output(out,path,await input(root,'apps/web/public/'+path));
+  await output(out,'assets/synthetic-tone.wav',syntheticAudio(2));
   const licenses=await dependencyNotices(dependencyModules,outputRoot);
   const fonts=JSON.parse((await input(root,'apps/web/public/fonts/sources.json')).toString());
   for(const font of fonts.fonts){const bytes=await input(root,'apps/web/public/fonts/'+font.file);if(hash(bytes)!==font.sha256)throw Error('Bandit font hash mismatch.');licenses.notices.push({id:font.family+' font',license:'OFL-1.1',files:['previews/bandit/fonts/'+font.file.replace('-latin.woff2','-OFL.txt')]});}
-  return {...licenses,app:{fixtures:collection.fixtures.map(({id})=>({id,url:'../../../previews/bandit/'+id+'/'})),version:JSON.parse((await input(root,'package.json')).toString()).version,status:'synthetic-preview',sourceFiles:[...BANDIT_SOURCES,...BANDIT_ASSETS.map(p=>'apps/web/public/'+p)],adapters:['Original product React components and styles with authored synthetic fixture data.','Native image/link substitutes remove the Next runtime, optimizer, router and server.','Waitlist, uploads and downloads are unavailable; navigation remains guarded.', 'Pure production context helpers are extracted before StudioProvider; source-owned fixtures use the original in-memory data adapter.', 'Opaque-frame form clicks invoke production validation and handlers without native submission.'],excluded:['Next server and runtime','StudioProvider, owner presence, contracts SDK and provider runtime','authenticated shell, auth and API handlers','backend/','infra/','environment files','source maps','real productions/profiles','unused artwork']}};
+  return {...licenses,app:{fixtures:collection.fixtures.map(({id})=>({id,url:'../../../previews/bandit/'+id+'/'})),version:JSON.parse((await input(root,'package.json')).toString()).version,status:'synthetic-preview',sourceFiles:[...BANDIT_SOURCES,...BANDIT_ASSETS.map(p=>'apps/web/public/'+p)],adapters:['Original product React components and styles with authored synthetic fixture data.','Native image/link substitutes remove the Next runtime, optimizer, router and server.','Waitlist, uploads and downloads are unavailable; navigation remains guarded.', 'Pure production context helpers are extracted before StudioProvider; source-owned fixtures use the original in-memory data adapter.', 'Opaque-frame form clicks invoke production validation and handlers without native submission.','Only the authored synthetic audio fixture can play a generated tone; no originals, recordings or signed URLs are distributed.'],excluded:['Next server and runtime','StudioProvider, owner presence, contracts SDK and provider runtime','authenticated shell, auth and API handlers','backend/','infra/','environment files','source maps','real productions/profiles','unused artwork']}};
  }finally{await rm(stage,{recursive:true,force:true});}
 }

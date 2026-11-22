@@ -24,12 +24,12 @@ test('missing, duplicate and unsupported themes cannot satisfy the release matri
  for(const mutate of [r=>delete r.results[0].theme,r=>r.results[0].theme='light',r=>{const i=r.results.findIndex(x=>x.app==='bandit'&&x.theme==='dark');r.results[i].theme='light';},r=>{r.results=r.results.filter(x=>x.theme!=='dark'||x.app==='reads');r.cases=r.results.length;}]){const r=report();mutate(r);assert.throws(()=>validatePreviewReport(r,catalogs));}
  assert.throws(()=>validatePreviewReport(report(),{reads:catalogs.reads}));
 });
-test('current public app catalogs require the complete 620-case theme matrix',async()=>{
+test('current public app catalogs require the complete 628-case theme matrix',async()=>{
  const catalogs={};const results=[];
  for(const app of ['reads','bandit']){
   catalogs[app]=JSON.parse(await readFile(new URL(`../registry/apps/${app}/collection.json`,import.meta.url),'utf8')).fixtures;
   for(const {id} of catalogs[app])for(const theme of app==='reads'?['dark']:['light','dark'])for(const width of [1440,390])for(const sandbox of [false,true])results.push({app,fixture:id,theme,width,sandbox,passed:true});
  }
  const r={...report(),cases:results.length,results};
- assert.equal(validatePreviewReport(r,catalogs).cases,620);
+ assert.equal(validatePreviewReport(r,catalogs).cases,628);
 });

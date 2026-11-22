@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import {READS_SOURCES,BANDIT_SOURCES,BANDIT_ASSETS,PREVIEW_CSP,syntheticAudio,adaptReadsApp,adaptReadsWaitlist,adaptBanditWaitlist,buildPublicAppPreviews,assertPublicPreviewText} from '../tooling/public-app-previews.mjs';
 test('preview source allowlists contain frontend presentation only',()=>{
- assert.equal(READS_SOURCES.length,10);assert.equal(BANDIT_SOURCES.length,38);assert.equal(BANDIT_ASSETS.length,10);
+ assert.equal(READS_SOURCES.length,10);assert.equal(BANDIT_SOURCES.length,53);assert.equal(BANDIT_ASSETS.length,10);
  for(const path of [...READS_SOURCES,...BANDIT_SOURCES,...BANDIT_ASSETS])assert.doesNotMatch(path,/(^|\/)(\.env|src|api|auth|backend|infra|node_modules|\.git)(\/|$)|\.map$/);
  assert.ok(BANDIT_ASSETS.every(path=>/^(fonts|images|illustrations)\//.test(path)));
  assert.equal(BANDIT_ASSETS.filter(path=>path.endsWith('.png')).length,0);
@@ -108,4 +108,34 @@ test('Gather public manifest exposes only fixture labels, theme controls use no 
  const media=adaptBanditSource('apps/web/app/productions/[id]/media.tsx','            const link = document.createElement("a"); link.href="x";            link.click();');
  assert.doesNotMatch(media,/createElement|link.click/);assert.match(media,/Downloads are unavailable/);
  assert.throws(()=>adaptBanditSource('apps/web/app/productions/[id]/media.tsx','unexpected'),/Source adapter drift/);
+});
+
+test("Gather Settings and cut drafts stay synthetic and reload-safe",async()=>{
+ const {adaptBanditSource}=await import("../tooling/public-bandit-preview.mjs");
+ const settings="import { DirectorConnections } from \"../productions/[id]/director-connections\";\n            {capability.local_preview && (<code>SB_DIRECTOR_MODEL_ENABLED</code>)}\n            {capability.hosted_connections_enabled && <DirectorConnections />}\n          </>";
+ const publicSettings=adaptBanditSource("apps/web/app/settings/page.tsx",settings);
+ assert.doesNotMatch(publicSettings,/DirectorConnections|SB_DIRECTOR_MODEL_ENABLED/);
+ assert.match(publicSettings,/cannot connect an account or run a model/);
+ assert.throws(()=>adaptBanditSource("apps/web/app/settings/page.tsx","unexpected"),/Source adapter drift/);
+ for(const [file,key] of [["cut-trims.ts","storageKey"],["deliver/audio-lanes.tsx","key"]]){
+  const path="apps/web/app/productions/[id]/"+file;
+  const before="const draft=localStorage.getItem("+key+"); localStorage.setItem("+key+", JSON.stringify(next)); setDraft(next);";
+  const after=adaptBanditSource(path,before);
+  assert.doesNotMatch(after,/localStorage/);assert.match(after,/setDraft/);
+  assert.throws(()=>adaptBanditSource(path,"unexpected"),/Source adapter drift/);
+ }
+});
+
+test("Gather audio previews only the generated two-second fixture tone",async()=>{
+ const {adaptBanditSource}=await import("../tooling/public-bandit-preview.mjs");
+ const fixture="      if (path.endsWith(\"/download-url\")) return ok({ url: sampleImage });";
+ const path="design/preview/fixture-state.ts";
+ const fixtureAudioUrl="/design-system/previews/bandit/assets/synthetic-tone.wav";
+ const adapted=adaptBanditSource(path,fixture,{fixtureAudioUrl});
+ assert.match(adapted,/identity === "fixture-audio"/);
+ assert.ok(adapted.includes(fixtureAudioUrl));
+ assert.ok(adapted.includes("url: sampleImage"));
+ assert.throws(()=>adaptBanditSource(path,fixture,{fixtureAudioUrl:"https://example.test/private.wav"}),/packaged synthetic asset/);
+ assert.throws(()=>adaptBanditSource(path,"unexpected",{fixtureAudioUrl}),/Source adapter drift/);
+ assert.equal(syntheticAudio(2).readUInt32LE(40),96000);
 });

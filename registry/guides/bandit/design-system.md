@@ -187,9 +187,9 @@ Keep semantic controls, visible keyboard focus, meaningful labels and reduced-mo
 | Profile import | patterns | populated, reset-on-reload, synthetic-only |
 | Subject editor | patterns | populated, reset-on-reload, synthetic-only |
 | Reference set editor | patterns | populated, reset-on-reload, synthetic-only |
-| New production / profile | screens | profile, reset-on-reload, synthetic-only |
-| New production / brief | screens | brief, reset-on-reload, synthetic-only |
-| New production / plan | screens | plan, reset-on-reload, synthetic-only |
+| New production / start with your clips | screens | profile, reset-on-reload, synthetic-only |
+| New production / brief and output | screens | brief, reset-on-reload, synthetic-only |
+| New production / optional profiles | screens | plan, reset-on-reload, synthetic-only |
 | New production / viewer | screens | viewer, reset-on-reload, synthetic-only |
 | Production board / populated | screens | populated, reset-on-reload, synthetic-only |
 | Production board / empty | screens | empty, reset-on-reload, synthetic-only |
@@ -221,5 +221,6 @@ Keep semantic controls, visible keyboard focus, meaningful labels and reduced-mo
 | Director / planning packet | patterns | populated |
 | Director / read-only | patterns | viewer |
 | Director / local model controls | patterns | configured-synthetic |
+| Personal AI Connections | screens | settings-connections, reset-on-reload, synthetic-only |
 
 [Open this workbench](../../../apps/studio/?collection=bandit)

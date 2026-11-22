@@ -295,7 +295,7 @@
     },
     {
       "id": "production-new-profile",
-      "title": "New production / profile",
+      "title": "New production / start with your clips",
       "section": "screens",
       "url": "http://127.0.0.1:4318/production-new-profile",
       "states": [
@@ -307,7 +307,7 @@
     },
     {
       "id": "production-new-brief",
-      "title": "New production / brief",
+      "title": "New production / brief and output",
       "section": "screens",
       "url": "http://127.0.0.1:4318/production-new-brief",
       "states": [
@@ -319,7 +319,7 @@
     },
     {
       "id": "production-new-plan",
-      "title": "New production / plan",
+      "title": "New production / optional profiles",
       "section": "screens",
       "url": "http://127.0.0.1:4318/production-new-plan",
       "states": [
@@ -694,6 +694,18 @@
         "configured-synthetic"
       ],
       "description": "Authored local-model status only. No inference is run; fixture mutations fail closed."
+    },
+    {
+      "id": "settings-connections",
+      "title": "Personal AI Connections",
+      "section": "screens",
+      "url": "http://127.0.0.1:4318/settings-connections",
+      "states": [
+        "settings-connections",
+        "reset-on-reload",
+        "synthetic-only"
+      ],
+      "description": "Actual production component with synthetic availability only. No model or account connection."
     }
   ],
   "direction": {
@@ -714,7 +726,7 @@
   "registrySnapshot": {
     "authority": "App-owned design collection, tokens and optional inventory",
     "baseRevision": null,
-    "inventorySha256": "b2f129e582ea4da59f26e77bbdc8e0a971e7051d142c24133400f3a0ee68d245",
+    "inventorySha256": "d9c5aade94500e78a6313d0976638fb2652c4b1b2e628aa34857b3288d947e70",
     "tokenSha256": "8ac9ed3bb6e5bfa0313dc84f1bbdc254fc86d05f786085f8a20c118d5c6a8174",
     "integrationStatus": "unpublished-local-snapshot",
     "integrationRevision": null,
