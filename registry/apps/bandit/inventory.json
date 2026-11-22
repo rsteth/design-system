@@ -906,6 +906,23 @@
       "notes": "Current production entry uses RiverLanding. Alternate unused landing is not presented as an active product screen."
     },
     {
+      "id": "settings-connections",
+      "title": "Personal AI Connections settings",
+      "kind": "screen",
+      "coverage": "partial",
+      "source": [
+        "apps/web/app/settings/page.tsx",
+        "apps/web/app/director-capabilities.ts"
+      ],
+      "states": [
+        "settings-connections"
+      ],
+      "fixtures": [
+        "settings-connections"
+      ],
+      "notes": "Shows authored synthetic availability only. Does not connect accounts, run inference, validate a provider, or establish account or backend readiness."
+    },
+    {
       "id": "director-planning",
       "title": "Director planning and review",
       "kind": "pattern",

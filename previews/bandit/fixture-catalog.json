@@ -222,7 +222,7 @@
   },
   {
     "id": "production-new-profile",
-    "title": "New production / profile",
+    "title": "New production / start with your clips",
     "section": "screens",
     "states": [
       "profile",
@@ -232,7 +232,7 @@
   },
   {
     "id": "production-new-brief",
-    "title": "New production / brief",
+    "title": "New production / brief and output",
     "section": "screens",
     "states": [
       "brief",
@@ -242,7 +242,7 @@
   },
   {
     "id": "production-new-plan",
-    "title": "New production / plan",
+    "title": "New production / optional profiles",
     "section": "screens",
     "states": [
       "plan",
@@ -552,6 +552,16 @@
     "section": "patterns",
     "states": [
       "configured-synthetic"
+    ]
+  },
+  {
+    "id": "settings-connections",
+    "title": "Personal AI Connections",
+    "section": "screens",
+    "states": [
+      "settings-connections",
+      "reset-on-reload",
+      "synthetic-only"
     ]
   }
 ]
