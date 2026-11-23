@@ -48,7 +48,7 @@
   "registrySnapshot": {
     "authority": "App-owned design collection, tokens and optional inventory",
     "baseRevision": null,
-    "tokenSha256": "171212beea87c6ab5f25fd8e5949cd94a2cf1031cfd1b1f2b81acf778f9d263c",
+    "tokenSha256": "a41e1faa7908b7795c34dcea122e347c88bfa65e5556ef2dc2ad0563ae96d9fc",
     "integrationStatus": "unpublished-local-snapshot",
     "integrationRevision": null,
     "withheldRevisions": [

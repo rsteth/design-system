@@ -6526,7 +6526,7 @@
     {
       "path": "registry/apps/compass/collection.json",
       "bytes": 2999,
-      "sha256": "15583e0e58f2bf90dfb758462bd9caebcfaa007a257c5a259a5267cf4fe7a23b"
+      "sha256": "98187bce2a9c81924b6c2bea6cd6421b6cb9c7660d9fe83fcf83033a70aad8a5"
     },
     {
       "path": "registry/apps/compass/public-guide.md",
@@ -6535,8 +6535,8 @@
     },
     {
       "path": "registry/apps/compass/tokens.json",
-      "bytes": 1566,
-      "sha256": "171212beea87c6ab5f25fd8e5949cd94a2cf1031cfd1b1f2b81acf778f9d263c"
+      "bytes": 3715,
+      "sha256": "a41e1faa7908b7795c34dcea122e347c88bfa65e5556ef2dc2ad0563ae96d9fc"
     },
     {
       "path": "registry/apps/focus/collection.json",
@@ -6610,8 +6610,8 @@
     },
     {
       "path": "registry/guides/compass/design-system.md",
-      "bytes": 2970,
-      "sha256": "88ec1fa5c2cc6b506ad4e639bfcfc69714c9e970b8013eeebe1b00392ba9b341"
+      "bytes": 4677,
+      "sha256": "c11294c09ac5286c1ae327784a0db79ad533361676914a18aee03bd5215c4738"
     },
     {
       "path": "registry/guides/focus/design-system.md",
