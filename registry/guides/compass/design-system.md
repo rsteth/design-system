@@ -38,6 +38,19 @@ Keep semantic controls, visible keyboard focus, meaningful labels and reduced-mo
 | dark | --ds-font-mono | fontFamily | "IBM Plex Mono", "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace |
 | dark | --ds-size-target | dimension | 44px |
 | dark | --ds-motion-duration | dimension | 150ms |
+| dark | --ds-font-size-body | dimension | 15px |
+| dark | --ds-font-size-body-compact | dimension | 14px |
+| dark | --ds-font-size-heading-page | dimension | clamp(32px, 5vw, 52px) |
+| dark | --ds-font-size-heading-section | dimension | 22px |
+| dark | --ds-line-height-body | number | 1.7 |
+| dark | --ds-line-height-heading-page | number | 1.15 |
+| dark | --ds-line-height-heading-section | number | 1.4 |
+| dark | --ds-space-gutter-wide | dimension | 48px |
+| dark | --ds-space-gutter-standard | dimension | 24px |
+| dark | --ds-space-gutter-compact | dimension | 20px |
+| dark | --ds-space-control-block | dimension | 12px |
+| dark | --ds-space-control-inline | dimension | 16px |
+| dark | --ds-radius-control | dimension | 0px |
 | light | --ds-color-background | color | #f6f6f2 |
 | light | --ds-color-surface | color | #edeee8 |
 | light | --ds-color-text | color | #202320 |
@@ -46,6 +59,22 @@ Keep semantic controls, visible keyboard focus, meaningful labels and reduced-mo
 | light | --ds-color-accent | color | #184cdb |
 | light | --ds-color-on-accent | color | #ffffff |
 | light | --ds-color-contact | color | #9a5200 |
+| light | --ds-font-mono | fontFamily | "IBM Plex Mono", "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace |
+| light | --ds-size-target | dimension | 44px |
+| light | --ds-motion-duration | dimension | 150ms |
+| light | --ds-font-size-body | dimension | 15px |
+| light | --ds-font-size-body-compact | dimension | 14px |
+| light | --ds-font-size-heading-page | dimension | clamp(32px, 5vw, 52px) |
+| light | --ds-font-size-heading-section | dimension | 22px |
+| light | --ds-line-height-body | number | 1.7 |
+| light | --ds-line-height-heading-page | number | 1.15 |
+| light | --ds-line-height-heading-section | number | 1.4 |
+| light | --ds-space-gutter-wide | dimension | 48px |
+| light | --ds-space-gutter-standard | dimension | 24px |
+| light | --ds-space-gutter-compact | dimension | 20px |
+| light | --ds-space-control-block | dimension | 12px |
+| light | --ds-space-control-inline | dimension | 16px |
+| light | --ds-radius-control | dimension | 0px |
 
 ## Fixtures
 
